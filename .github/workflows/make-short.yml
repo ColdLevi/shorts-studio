@@ -1,4 +1,4 @@
-name: Make short (from Telegram bot)
+name: Make short (from Shorts Studio bot)
 
 on:
   repository_dispatch:
@@ -28,6 +28,7 @@ jobs:
       CHAT_ID: ${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || secrets.CHAT_ID }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      APP_URL: ${{ github.event.client_payload.app_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -67,17 +68,35 @@ jobs:
         working-directory: remotion
         run: npx remotion render src/story-index.ts StoryShort out/short.mp4 --props=../media/projects/job/props.json --log=error
 
-      - name: Loudness to -14 LUFS
+      - name: Loudness to -14 LUFS, poster frame
         run: |
-          ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k job/final.mp4
-          ls -la job/final.mp4
+          ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart job/final.mp4
+          ffmpeg -y -loglevel error -ss 1.2 -i job/final.mp4 -frames:v 1 -vf scale=540:-2 -q:v 3 job/poster.jpg
+          ls -la job/final.mp4 job/poster.jpg
+
+      - name: Publish to the Studio library
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: short-${{ github.run_number }}
+        run: |
+          cp job/final.mp4 "job/$TAG.mp4"; cp job/poster.jpg "job/$TAG.jpg"
+          TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
+          gh release create "$TAG" "job/$TAG.mp4" "job/$TAG.jpg" --title "$TITLE" --notes "Made by the Shorts Studio bot"
+          python3 tools/library_add.py "$TAG"
+          git config user.name "shorts-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add library.json
+          git commit -m "library: $TITLE [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 3; done
 
       - name: Send to Telegram
         if: env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
         run: |
           TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
+          MARKUP=$(python3 tools/library_add.py --button)
           curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@job/final.mp4 \
-            -F caption="🎬 $TITLE" "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
+            -F caption="🎬 $TITLE" -F reply_markup="$MARKUP" \
+            "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
 
       - name: Keep a copy (artifact)
         uses: actions/upload-artifact@v4
