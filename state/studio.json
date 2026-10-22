@@ -1,7 +1,7 @@
 {
-  "last_update": 312538133,
-  "time": 1792667680117,
-  "stage": "pitch",
+  "last_update": 312538134,
+  "time": 1792667724271,
+  "stage": "script",
   "topic": "how the world rotates",
   "research": {
     "text": "",
@@ -22,16 +22,89 @@
     "music": "cinematic-min",
     "accent": "teal"
   },
-  "script": null,
+  "script": {
+    "title": "Earth Spins at One Thousand Miles an Hour",
+    "beats": [
+      {
+        "narration": "One thousand miles an hour is the speed of the ground right beneath your feet.",
+        "image_prompt": "Vertical cinematic shot of leather boots standing on dark cracked earth, detailed ground textures, moody teal atmospheric lighting, film grain",
+        "tool": "higgsfield",
+        "motion": "Slow camera push down toward the ground as dust particles hover in dark teal light",
+        "still": "flux"
+      },
+      {
+        "narration": "You would expect a planet spinning that fast to create endless hurricane winds.",
+        "image_prompt": "Vertical cinematic photograph of dark stormy clouds rolling over a dark empty landscape, atmospheric teal tone, moody lighting",
+        "tool": "flux"
+      },
+      {
+        "narration": "Gravity and friction pull our atmosphere along at the exact same pace, so everything feels frozen still.",
+        "image_prompt": "Vertical space photo of Earth showing the glowing curvature of the atmosphere, hyperrealistic cloud layers against black space",
+        "tool": "flux"
+      },
+      {
+        "narration": "Four point five billion years ago, swirling dust set Earth in motion, and angular momentum keeps it turning.",
+        "image_prompt": "Vertical cinematic image of glowing cosmic dust swirling in deep outer space, moody teal lighting, film grain",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "4.5 Billion Years",
+          "sub": "Angular Momentum"
+        }
+      },
+      {
+        "narration": "So your morning coffee stays perfectly still while moving faster than a jet.",
+        "image_prompt": "Vertical shot of a ceramic mug sitting on a dark wooden table in a quiet room, teal window light shadows",
+        "tool": "higgsfield",
+        "motion": "Static camera shot as delicate steam rises straight up from the hot coffee mug",
+        "still": "flux"
+      },
+      {
+        "narration": "Then the Moon steps in.",
+        "image_prompt": "Vertical photograph of a bright full moon hanging over dark calm ocean waters at night, moody teal tones",
+        "tool": "flux"
+      },
+      {
+        "narration": "Tidal friction from the ocean slows our spin by two milliseconds every hundred years.",
+        "image_prompt": "Vertical cinematic shot of ocean tide crashing at night under soft moonlight, fine wave textures, teal accent",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 2,
+          "prefix": "",
+          "suffix": " ms / ",
+          "label": "Rotation Slowdown"
+        }
+      },
+      {
+        "narration": "Enjoy the fast ride.",
+        "image_prompt": "Vertical photograph of a dark land horizon at twilight, deep teal glow on the atmosphere, hyperrealistic cinematic aesthetic",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Earth spins at roughly 1,000 miles per hour at the equator.",
+        "supported": true
+      },
+      {
+        "claim": "Atmosphere moves with the planet because of gravity and friction.",
+        "supported": true
+      },
+      {
+        "claim": "Conservation of angular momentum from 4.5 billion years ago keeps Earth rotating.",
+        "supported": true
+      },
+      {
+        "claim": "Moon tidal friction slows Earth spin by roughly 2 milliseconds every hundred years.",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "I mean try making the inage",
-      "t": 1792664284081
-    },
     {
       "role": "bot",
       "text": "Made an image: A majestic golden lion looking powerful and regal, vertical nine by sixteen, highly detailed, dramatic lighting",
@@ -106,6 +179,11 @@
       "role": "bot",
       "text": "Pitched \"Earth Spins at One Thousand Miles an Hour\": One thousand miles an hour is the speed of the ground right beneath your feet.",
       "t": 1792667665989
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Earth Spins at One Thousand Miles an Hour\"",
+      "t": 1792667724271
     }
   ],
   "working": null,
