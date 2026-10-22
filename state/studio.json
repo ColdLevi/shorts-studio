@@ -1,6 +1,6 @@
 {
-  "last_update": 312538128,
-  "time": 1792664846938,
+  "last_update": 312538129,
+  "time": 1792665989616,
   "stage": "script",
   "topic": "how to write YouTube script in Issacverse style",
   "research": {
@@ -95,16 +95,6 @@
   "history": [
     {
       "role": "user",
-      "text": "Lemme see image of one of the scenes in this video you just made",
-      "t": 1792663709028
-    },
-    {
-      "role": "bot",
-      "text": "I'm still finishing up the render for \"One Blank Page Changes Everything\" right now. Once it's done, we can pull up and generate any scene you'd like to see!",
-      "t": 1792663710528
-    },
-    {
-      "role": "user",
       "text": "/studio cancel",
       "t": 1792664063716
     },
@@ -172,6 +162,16 @@
       "role": "bot",
       "text": "Wrote the script for \"How To Write Like Isaac Arthur\"",
       "t": 1792664663757
+    },
+    {
+      "role": "user",
+      "text": "Make a image of a girl skipping rope",
+      "t": 1792665977770
+    },
+    {
+      "role": "bot",
+      "text": "Made an image: A young girl skipping rope, dynamic motion, vibrant lighting, vertical nine by sixteen, highly detailed",
+      "t": 1792665989616
     }
   ],
   "working": null,
