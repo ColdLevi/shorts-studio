@@ -318,7 +318,25 @@ PAID_NOTES = []
 
 def voice(text, voice_name, rate, path):
     """Edge TTS voice + punctuated word timings. Returns (words, seconds)."""
-    words = asyncio.run(_synth(text, voice_name or "en-US-AndrewMultilingualNeural", rate or "+0%", path))
+    import time
+    text = (text or "").strip()
+    if not text:
+        raise SystemExit("No narration text in the spec, nothing to voice")
+    words, last = [], None
+    tries = [(voice_name or "en-US-AndrewMultilingualNeural", rate or "+0%")] * 3 + [("en-US-AndrewMultilingualNeural", "+0%"), ("en-US-GuyNeural", "+0%")]
+    for i, (v, r) in enumerate(tries):
+        try:
+            words = asyncio.run(_synth(text, v, r, path))
+            if words and os.path.getsize(path) > 1000:
+                if i:
+                    print(f"voice ok on try {i + 1} ({v})")
+                break
+        except Exception as e:
+            last = e
+            print(f"edge-tts try {i + 1} with {v} {r} failed: {e}")
+        time.sleep(3 * (i + 1))
+    if not words and last:
+        raise last
     if not words:
         raise SystemExit("edge-tts returned no word timings")
     return punctuate(words, text), duration(path)
