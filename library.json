@@ -29,6 +29,16 @@
       "created": 1792662816475,
       "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-3/short-3.mp4",
       "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-3/short-3.jpg"
+    },
+    {
+      "id": "short-4",
+      "title": "Earth Spins at One Thousand Miles an Hour",
+      "hook": "One thousand miles an hour is the speed of the ground right beneath your feet.",
+      "accent": "#2EE6C5",
+      "duration": 39.8,
+      "created": 1792669184282,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-4/short-4.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-4/short-4.jpg"
     }
   ]
 }
