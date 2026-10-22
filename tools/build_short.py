@@ -2,7 +2,7 @@
 """Spec (from the Telegram bot) -> voice + word timings + one image per beat -> Remotion props.
 Usage: python tools/build_short.py spec.json   (run from the repo root)
 Env: CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN (images), TELEGRAM_TOKEN + CHAT_ID (progress, optional)."""
-import asyncio, base64, json, os, re, subprocess, sys, textwrap, urllib.request
+import asyncio, base64, json, os, re, subprocess, sys, textwrap, time, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -105,9 +105,118 @@ def flux(prompt, path, seed):
             r = json.load(urllib.request.urlopen(req, timeout=120))
             open(path, "wb").write(base64.b64decode(r["result"]["image"]))
             return True
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "ignore")
+            if e.code == 429 or re.search(r"4006|neuron|daily|quota|allocation", body, re.I):
+                raise QuotaError(f"{e.code} {body[:160]}")
+            last = f"{e.code} {body[:160]}"
+            if e.code in (401, 403):
+                break
         except Exception as e:
             last = e
     raise RuntimeError(f"flux failed: {last}")
+
+
+class QuotaError(Exception):
+    pass
+
+
+# ---------- delegated tools (picked per beat by the bot's director step) ----------
+def _key(*names):
+    for n in names:
+        v = (os.getenv(n) or "").strip()
+        if v:
+            return v
+    return ""
+
+
+class PaidToolError(Exception):
+    pass
+
+
+def pixellab(prompt, path):
+    """Pixel-art still from PixelLab (paid credits, about a cent an image), upscaled crisp to 1080x1920."""
+    tok = _key("PIXELLAB_API_KEY", "PIXELLAB_TOKEN", "PIXELLAB_SECRET")
+    if not tok:
+        raise PaidToolError("no PixelLab key")
+    body = {"description": prompt[:900], "image_size": {"width": 144, "height": 256}}
+    req = urllib.request.Request("https://api.pixellab.ai/v1/generate-image-pixflux", data=json.dumps(body).encode(),
+                                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+    try:
+        r = json.load(urllib.request.urlopen(req, timeout=180))
+    except urllib.error.HTTPError as e:
+        raise PaidToolError(f"PixelLab {e.code} {e.read().decode('utf-8', 'ignore')[:140]}")
+    b64 = r["image"]["base64"].split(",", 1)[-1]
+    from PIL import Image
+    import io
+    img = Image.open(io.BytesIO(base64.b64decode(b64))).convert("RGB")
+    img.resize((1080, 1920), Image.NEAREST).save(path, quality=95)
+    USAGE["pixellab_usd"] = round(USAGE.get("pixellab_usd", 0) + float((r.get("usage") or {}).get("usd") or 0.01), 4)
+    return True
+
+
+def public_url(path):
+    """Higgsfield needs a public image URL: attach the still to a short-lived prerelease on this repo."""
+    repo, run = os.getenv("GITHUB_REPOSITORY"), os.getenv("GITHUB_RUN_ID", "local")
+    tag = f"frames-{run}"
+    subprocess.run(["gh", "release", "view", tag], capture_output=True) .returncode == 0 or \
+        subprocess.run(["gh", "release", "create", tag, "--prerelease", "--title", "frames (temporary)", "--notes", "temporary"], check=True, capture_output=True)
+    subprocess.run(["gh", "release", "upload", tag, path, "--clobber"], check=True, capture_output=True)
+    return f"https://github.com/{repo}/releases/download/{tag}/{os.path.basename(path)}"
+
+
+def higgsfield(still, motion, out):
+    """Bring a still to life with Higgsfield image-to-video (paid credits). Returns the clip length in seconds."""
+    kid, sec = _key("HF_API_KEY_ID", "HIGGSFIELD_API_KEY", "HF_API_KEY"), _key("HF_API_KEY_SECRET", "HIGGSFIELD_SECRET", "HF_SECRET")
+    both = _key("HF_KEY", "HF_CREDENTIALS")
+    auth = f"Key {kid}:{sec}" if kid and sec else (f"Key {both}" if ":" in both else "")
+    if not auth:
+        raise PaidToolError("no Higgsfield keys")
+    model = os.getenv("HF_MODEL", "kling-video/v2.5-turbo/standard/image-to-video")
+    body = {"prompt": motion[:900], "image_url": public_url(still), "duration": 5}
+    hdr = {"Authorization": auth, "Content-Type": "application/json", "Idempotency-Key": f"{os.getenv('GITHUB_RUN_ID', 'x')}-{os.path.basename(out)}"}
+    try:
+        sub = json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.higgsfield.ai/{model}", data=json.dumps(body).encode(), headers=hdr), timeout=60))
+    except urllib.error.HTTPError as e:
+        raise PaidToolError(f"Higgsfield {e.code} {e.read().decode('utf-8', 'ignore')[:140]}")
+    status_url = sub.get("status_url") or f"https://api.higgsfield.ai/requests/{sub['request_id']}/status"
+    for _ in range(80):  # up to about 8 minutes
+        time.sleep(6)
+        st = json.load(urllib.request.urlopen(urllib.request.Request(status_url, headers={"Authorization": auth}), timeout=30))
+        if st.get("status") == "completed":
+            url = (st.get("video") or {}).get("url")
+            urllib.request.urlretrieve(url, out)
+            USAGE["higgsfield_clips"] = USAGE.get("higgsfield_clips", 0) + 1
+            return duration(out)
+        if st.get("status") in ("failed", "nsfw", "canceled"):
+            raise PaidToolError(f"Higgsfield {st.get('status')} {str(st.get('error'))[:120]}")
+    raise PaidToolError("Higgsfield timed out")
+
+
+def gemini_image(prompt, path):
+    """Backup still from Gemini when Cloudflare can't deliver (opt-in: /tools > Gemini backup images)."""
+    key = _key("GEMINI_API_KEY")
+    if not key:
+        raise PaidToolError("no Gemini key")
+    model = os.getenv("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "9:16"}}}
+    req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                                 data=json.dumps(body).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+    try:
+        r = json.load(urllib.request.urlopen(req, timeout=120))
+    except urllib.error.HTTPError as e:
+        raise PaidToolError(f"Gemini {e.code} {e.read().decode('utf-8', 'ignore')[:140]}")
+    for part in r["candidates"][0]["content"]["parts"]:
+        data = (part.get("inlineData") or part.get("inline_data") or {}).get("data")
+        if data:
+            open(path, "wb").write(base64.b64decode(data))
+            USAGE["gemini_images"] = USAGE.get("gemini_images", 0) + 1
+            return True
+    raise PaidToolError("Gemini returned no image")
+
+
+USAGE = {}
 
 
 def placeholder(text, path, i):
@@ -138,26 +247,75 @@ def main():
     print(f"voice {total:.1f}s, {len(words)} words")
 
     tg(f"🎨 Painting {len(beats)} images...")
-    fallbacks = []
+    fallbacks, errors, quota, paid_notes = [], [], [], []
+    PIXEL = set()
 
     def make(i):
         b = beats[i]
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
         prompt = f"{b['image_prompt']}. {style}. Vertical 9:16 composition, subject centered, no text, no watermark."
+        tool = (b.get("tool") or "flux").lower()
         try:
-            flux(prompt, path, 1000 + i)
+            if tool == "pixellab" or (tool == "higgsfield" and b.get("still") == "pixellab"):
+                try:
+                    pixellab(f"{b['image_prompt']}. {style}", path)
+                    PIXEL.add(i)
+                except PaidToolError as e:
+                    print("pixellab", i + 1, e); paid_notes.append(str(e)); flux(prompt, path, 1000 + i)
+            else:
+                flux(prompt, path, 1000 + i)
         except Exception as e:
             print("image", i + 1, e)
+            if spec.get("gemini_images"):
+                try:
+                    gemini_image(prompt, path)
+                    return f"{JOB}/img_{i + 1:02d}.jpg"
+                except Exception as g:
+                    print("gemini image", i + 1, g)
+            (quota if isinstance(e, QuotaError) else errors).append(str(e))
             fallbacks.append(i + 1)
             placeholder(b["narration"], path, i)
         return f"{JOB}/img_{i + 1:02d}.jpg"
 
     with ThreadPoolExecutor(4) as ex:
         images = list(ex.map(make, range(len(beats))))
+    if quota and not spec.get("allow_plain"):
+        # Pause instead of shipping a plain video: the bot saves the job and resumes when the quota resets.
+        os.makedirs("job", exist_ok=True)
+        open("job/paused.txt", "w").write("images: " + quota[0][:200])
+        print("PAUSED: image quota used up")
+        raise SystemExit(75)
     if fallbacks:
-        tg(f"⚠️ Image generation failed for beat(s) {fallbacks}; used plain backgrounds there.")
+        why = "the free daily image quota ran out" if quota else (errors[0][:140] if errors else "unknown error")
+        tg(f"⚠️ Images failed for beat(s) {sorted(fallbacks)} ({why}); used plain backgrounds there.")
 
     times = split_beats(beats, words, total)
+
+    # Motion beats: hand the finished stills to Higgsfield in parallel, then fold the clips back in.
+    clips = {}
+    motion = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() == "higgsfield" and (i + 1) not in fallbacks]
+    if motion:
+        tg(f"🎥 Animating {len(motion)} key shot(s) with Higgsfield...")
+
+        def animate(i):
+            out = os.path.join(OUT, f"clip_{i + 1:02d}.mp4")
+            try:
+                d = higgsfield(os.path.join(OUT, f"img_{i + 1:02d}.jpg"), beats[i].get("motion") or beats[i]["image_prompt"], out)
+                beat_len = times[i]["end"] - times[i]["start"]
+                if d / 0.6 >= beat_len:
+                    clips[i] = {"video": f"{JOB}/clip_{i + 1:02d}.mp4", "videoDuration": round(d, 2)}
+            except Exception as e:
+                print("higgsfield", i + 1, e); paid_notes.append(str(e))
+
+        with ThreadPoolExecutor(3) as ex:
+            list(ex.map(animate, motion))
+        try:
+            subprocess.run(["gh", "release", "delete", f"frames-{os.getenv('GITHUB_RUN_ID', 'local')}", "-y", "--cleanup-tag"], capture_output=True)
+        except Exception:
+            pass
+    if paid_notes:
+        tg(f"ℹ️ A paid tool didn't deliver ({paid_notes[0][:120]}), so I used a still for that shot.")
+    json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len(clips)}, open(os.path.join(OUT, "usage.json"), "w"))
     music = spec.get("music") or "docu-pluck"
     mpath = f"library/music/clips/{music}.mp3"
     props = {
@@ -167,7 +325,8 @@ def main():
         "musicVolume": float(spec.get("music_volume", 0.1)),
         "accent": spec.get("accent", "#FFD43B"),
         "duration": round(total + 0.8, 2),
-        "beats": [{"image": img, "text": b["narration"], **t} for img, b, t in zip(images, beats, times)],
+        "beats": [{"image": img, "text": b["narration"], **t, **clips.get(i, {}), **({"pixel": True} if i in PIXEL else {})}
+                  for i, (img, b, t) in enumerate(zip(images, beats, times))],
         "words": words,
     }
     json.dump(props, open(os.path.join(OUT, "props.json"), "w"), indent=1)

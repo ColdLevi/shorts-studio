@@ -1,0 +1,51 @@
+name: Resume paused shorts (quota check)
+
+# Free quotas reset at 00:00 UTC. Check just after the reset (auto-resume jobs carry on then)
+# and again at 07:00 and 12:00 Lagos time (jobs set to "ask me first" get a message).
+on:
+  schedule:
+    - cron: "20 0 * * *"
+    - cron: "0 6 * * *"
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Anything paused?
+        id: s
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          try:
+              s = json.load(open("state/studio.json"))
+          except Exception:
+              s = {}
+          print("pending=" + ("yes" if s.get("pending") else "no"))
+          print("base=" + (s.get("base") or ""))
+          PY
+
+      - name: Check the image quota and wake the bot
+        if: steps.s.outputs.pending == 'yes' && steps.s.outputs.base != ''
+        run: |
+          CF=unknown
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            R=$(curl -s -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/black-forest-labs/flux-1-schnell" \
+              -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" -d '{"prompt":"a dot","steps":1}' | head -c 300)
+            echo "$R" | grep -q '"success":true' && CF=ok
+            echo "$R" | grep -qiE '4006|429|daily|neuron' && CF=limit
+          fi
+          echo "cloudflare: $CF"
+          KEY=$(printf %s "$TELEGRAM_TOKEN" | sha256sum | cut -c1-32)
+          curl -sS "${{ steps.s.outputs.base }}/api/studio?tick=1&cf=$CF" -H "x-studio-key: $KEY"

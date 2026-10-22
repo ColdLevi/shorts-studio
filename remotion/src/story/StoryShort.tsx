@@ -2,7 +2,7 @@
 // into props (voice, word timings, one image per beat) and this composition renders it.
 import React from 'react';
 import {
-  AbsoluteFill, Audio, Img, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig, Easing, CalculateMetadataFunction,
 } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Montserrat';
@@ -10,7 +10,7 @@ import { loadFont } from '@remotion/google-fonts/Montserrat';
 const { fontFamily } = loadFont('normal', { weights: ['800', '900'], subsets: ['latin'] });
 
 export type Word = { word: string; start: number; end: number };
-export type Beat = { image: string; start: number; end: number; text?: string };
+export type Beat = { image: string; start: number; end: number; text?: string; video?: string; videoDuration?: number; pixel?: boolean };
 export type StoryProps = {
   title: string;
   audio: string;
@@ -43,9 +43,19 @@ const BeatImage: React.FC<{ beat: Beat; index: number; len: number }> = ({ beat,
   const dir = index % 4 < 2 ? 1 : -1;
   const x = dir * interpolate(p, [0, 1], [-30, 30]);
   const opacity = interpolate(t, [0, FADE], [0, 1], { extrapolateRight: 'clamp' });
+  if (beat.video) {
+    // Motion clip from Higgsfield: slow it slightly if it is shorter than the beat, never speed it up.
+    const rate = Math.max(0.6, Math.min(1, (beat.videoDuration || len) / Math.max(0.5, len)));
+    return (
+      <AbsoluteFill style={{ opacity }}>
+        <OffthreadVideo src={staticFile(beat.video)} muted playbackRate={rate}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.02 + 0.04 * p})` }} />
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill style={{ opacity }}>
-      <Img src={staticFile(beat.image)} style={{
+      <Img src={staticFile(beat.image)} style={{ imageRendering: beat.pixel ? 'pixelated' : 'auto',
         width: '100%', height: '100%', objectFit: 'cover',
         transform: `scale(${scale}) translateX(${x}px)`,
       }} />
