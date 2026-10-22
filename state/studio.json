@@ -1,7 +1,7 @@
 {
-  "last_update": 312538109,
-  "time": 1792660711634,
-  "stage": "pitch",
+  "last_update": 312538110,
+  "time": 1792660730641,
+  "stage": "script",
   "topic": "Redo it",
   "research": {
     "text": "",
@@ -22,5 +22,55 @@
     "music": "tech-pulse",
     "accent": "teal"
   },
-  "script": null
+  "script": {
+    "title": "The Secret History of Control Y",
+    "beats": [
+      {
+        "narration": "In nineteen sixty-eight, Warren Teitelman wrote a tiny line of code to fix his own mistyped commands.",
+        "image_prompt": "Macro photography of a vintage nineteen sixties computer terminal monitor emitting green retro light, vertical 9:16 framing, glowing teal accent lighting, subject centered, no faces"
+      },
+      {
+        "narration": "We think keyboard shortcuts like undo and redo were master features planned from day one.",
+        "image_prompt": "Extreme close-up macro view of glowing mechanical keyboard switches with teal accent lights, vertical 9:16 framing, subject centered, detailed mechanical textures"
+      },
+      {
+        "narration": "Early computing systems had no memory buffer, so a single wrong keystroke wiped hours of work instantly.",
+        "image_prompt": "Retro vintage keyboard key being pressed in close-up, dark atmospheric studio room with neon teal reflections, vertical 9:16 framing, no faces"
+      },
+      {
+        "narration": "Teitelman built the first fix, then in nineteen seventy-four, Larry Tesler added undo to the Gypsy text editor at Xerox PARC.",
+        "image_prompt": "Retro nineteen seventies computer terminal resting on a wooden desk with moody teal backlighting, vertical 9:16 framing, cinematic depth of field, no faces"
+      },
+      {
+        "narration": "In the early nineteen eighties, Apple standardized Command Z for undo and Command Y for redo on the Lisa and Macintosh.",
+        "image_prompt": "Macro shot of a classic nineteen eighties beige computer keyboard focusing on the modifier keys with subtle teal neon highlight, vertical 9:16 framing, subject centered"
+      },
+      {
+        "narration": "A panicking engineer saved millions of modern typists from total despair.",
+        "image_prompt": "Close-up macro of a modern retro mechanical keyboard with bright teal LED backlighting glowing between keycaps, vertical 9:16 framing, sleek tech atmosphere"
+      },
+      {
+        "narration": "Mistakes happen, but now you can erase them.",
+        "image_prompt": "Single mechanical keyboard keycap floating gently over glowing teal switches, dark background, vertical 9:16 framing, centered, minimalist retro aesthetics"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Warren Teitelman created the first programming undo feature in 1968.",
+        "supported": true
+      },
+      {
+        "claim": "Larry Tesler added the undo command to the Gypsy text editor at Xerox PARC in 1974.",
+        "supported": true
+      },
+      {
+        "claim": "Apple standardized Command Z for undo and Command Y or Shift Z for redo on the Lisa and Macintosh in the early 1980s.",
+        "supported": true
+      },
+      {
+        "claim": "Early computing systems had no undo memory buffer.",
+        "supported": true
+      }
+    ]
+  }
 }
