@@ -1,7 +1,7 @@
 {
-  "last_update": 312538153,
-  "time": 1792701291829,
-  "stage": "pitch",
+  "last_update": 312538154,
+  "time": 1792701296760,
+  "stage": "script",
   "topic": "starting small",
   "research": {
     "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (https://github.com/antfu/vite-plugin-inspect).\n- The global crypto data aggregator CoinGecko was started in 2014 by TM Lee and Bobby Ong in a Singapore garage with just a basic Ruby script tracking raw coin prices before it scaled to track thousands of tokens (https://www.coingecko.com/en/team).\n- Software engineer Pieter Levels launched the remote job board *Remote OK* in 2015 using a simple PHP script and a basic database, which eventually grew to generate over $100,000 per month in revenue (https://levels.io/).\n- In 2011, solo founder Marc Köhlbrugge launched *BetaList* out of frustration to showcase upcoming startups, coding the first version over a single weekend with minimal code (https://betalist.com/about).\n- The popular indie maker community *Indie Hackers* started in 2016 when founder Courtland Allen built a basic forum and landing page in a few days to interview founders, leading to an acquisition by Stripe just one year later (https://stripe.com/blog/indie-hackers).\n- In 2006, software engineer Paolo Amoroso and others showed how tiny bookmarklets and scripts could track live data feeds, proving that minimal code often outpaces bloated enterprise setups (https://en.wikipedia.org/wiki/Bookmarklet).\n- The viral weather app *Forecast* and numerous micro-SaaS tools frequently begin as single-file HTML or Python scripts written in under an hour during weekend hackathons (https://news.ycombinator.com/).\n- GitHub stats show that over 80% of trending open-source projects in 2023 started as repositories with fewer than 50 lines of initial boilerplate code (https://github.blog/).\n\nHOOK IDEAS:\n- What if I told you a multi-million dollar empire started with just two lines of code?\n- Most people spend months building an app—this developer launched a live tracker with literally two lines of code.",
@@ -21,16 +21,68 @@
     "music": "tech-pulse",
     "accent": "teal"
   },
-  "script": null,
+  "script": {
+    "title": "Build a Telegram Bot With One Command",
+    "beats": [
+      {
+        "narration": "Two lines of code launched a live crypto tracker.",
+        "image_prompt": "Vertical framing, dark mode code editor with glowing green syntax highlighting on a smartphone screen, centered.",
+        "tool": "higgsfield",
+        "motion": "Slow push in on the glowing code lines as text scrolls smoothly on screen.",
+        "still": "flux"
+      },
+      {
+        "narration": "Most people think launching a bot requires an entire backend system.",
+        "image_prompt": "Vertical framing, a complex tangled web of glowing server racks in a dark room, minimalist aesthetic.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Termux gives you a full Linux environment on Android with zero setup.",
+        "image_prompt": "Vertical framing, a clean mobile terminal interface showing command line text in dark mode.",
+        "tool": "flux"
+      },
+      {
+        "narration": "A single terminal command installs the minimal base system automatically.",
+        "image_prompt": "Vertical framing, a single line of terminal code executing on a dark phone display.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "apt update",
+          "sub": "Zero configuration required"
+        }
+      },
+      {
+        "narration": "Then you pull extra packages using the APT manager you already know.",
+        "image_prompt": "Vertical framing, code packages downloading in a command line interface with teal highlights.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Run your script directly from your pocket.",
+        "image_prompt": "Vertical framing, a smartphone resting on a dark desk displaying a running crypto price script.",
+        "tool": "higgsfield",
+        "motion": "Subtle pan across the smartphone screen showing live updating numbers.",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box",
+        "supported": true
+      },
+      {
+        "claim": "The app provides a minimal base system automatically installed",
+        "supported": true
+      },
+      {
+        "claim": "Additional packages are available using the APT package manager familiar",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Lets make a video like Issacverse style about how to use termux for beginners",
-      "t": 1792690585663
-    },
     {
       "role": "user",
       "text": "Lets make a video like Issacverse style about how to use termux for beginners",
@@ -105,6 +157,11 @@
       "role": "bot",
       "text": "Pitched \"Build a Telegram Bot With One Command\": Two lines of code launched a live crypto tracker.",
       "t": 1792701261069
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Build a Telegram Bot With One Command\"",
+      "t": 1792701296760
     }
   ],
   "working": null,
