@@ -4,3 +4,4 @@ remotion/out/
 *.log
 job/
 media/projects/job/
+__pycache__/
