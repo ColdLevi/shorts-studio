@@ -1,7 +1,7 @@
 {
-  "last_update": 312538116,
-  "time": 1792662449750,
-  "stage": "script",
+  "last_update": 312538117,
+  "time": 1792662483748,
+  "stage": "rendering",
   "topic": "how I started to help people start",
   "research": {
     "text": "",
@@ -110,7 +110,99 @@
       "role": "bot",
       "text": "Wrote the script for \"One Blank Page Changes Everything\"",
       "t": 1792662449750
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"One Blank Page Changes Everything\"",
+      "t": 1792662483748
     }
   ],
-  "working": null
+  "working": null,
+  "projects": [
+    {
+      "title": "One Blank Page Changes Everything",
+      "topic": "how I started to help people start",
+      "pitch": {
+        "title": "One Blank Page Changes Everything",
+        "hook": "Three hundred people asked me how to start, but every single one of them waited for permission.",
+        "angle": "Most assume you need a grand plan to begin helping others, but you only need to solve the exact problem you solved yesterday.",
+        "key_facts": [
+          "Millions of creators want to begin helping people build projects",
+          "Beginners waste months waiting for perfect conditions",
+          "Sharing a single solved problem creates immediate value",
+          "Momentum builds after the first public action"
+        ],
+        "visual_style": "minimalist flat vector illustration, clean lines",
+        "length_seconds": 45,
+        "music": "docu-pluck",
+        "accent": "teal"
+      },
+      "script": {
+        "title": "One Blank Page Changes Everything",
+        "beats": [
+          {
+            "narration": "Three hundred creators emailed me asking how to start, but every single one of them was waiting for permission.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing inbox icon surrounded by quiet teal shadows, clean lines, centered, no text, no logos, no real faces",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow camera push in as soft teal light pulsates gently around the inbox."
+          },
+          {
+            "narration": "Most people assume you need a complete masterclass or a complex blueprint before you can help anyone.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a towering stack of intricate blueprints, teal and white, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "So they waste six months designing logos and organizing empty folders that no one will ever read.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of an empty digital folder icon floating over a calendar with fading dates, teal background, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "Yesterday, Sarah fixed a small formula glitch in her monthly budget spreadsheet.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a simple spreadsheet grid with one teal illuminated cell, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "She uploaded that nine-second solution online, so three dozen people downloaded it before midnight.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single file sending upward into a network of small glowing dots, teal accents, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "Turns out, nobody was waiting for a full textbook.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a massive heavy closed book sitting unused in a shadow, teal accents, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "Real value comes from handing someone the key to a door you opened yesterday.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing teal key unlocking a simple door frame, clean lines, centered, no text, no logos, no real faces",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Camera tracks forward slowly as the key turns and soft teal light beams out from the opening door."
+          },
+          {
+            "narration": "That first public upload creates instant momentum, breaking months of continuous overthinking.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single paper airplane cutting smoothly through static grey clouds, teal trail, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          },
+          {
+            "narration": "Ship the solution.",
+            "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single solid teal circle resting in the center of a clean white canvas, clean lines, centered, no text, no logos, no real faces",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Three hundred creators emailed me asking how to start",
+            "supported": true
+          }
+        ]
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1792662483748
+    }
+  ],
+  "lastRenderAuto": false
 }
