@@ -9,6 +9,16 @@
       "created": 1792659835575,
       "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-1/short-1.mp4",
       "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-1/short-1.jpg"
+    },
+    {
+      "id": "short-2",
+      "title": "The Secret History of Control Y",
+      "hook": "In nineteen sixty-eight, Warren Teitelman wrote a tiny line of code to fix his own mistyped commands.",
+      "accent": "#2EE6C5",
+      "duration": 45.6,
+      "created": 1792661082896,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-2/short-2.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-2/short-2.jpg"
     }
   ]
 }
