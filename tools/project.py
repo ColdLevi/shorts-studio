@@ -230,7 +230,7 @@ def build_timeline(pid, t, nxt):
                 c["src"] = name
                 if ext.lower() in (".mp4", ".mov", ".webm", ".m4v"):
                     c["duration"] = round(B.duration(TL.asset_path(pid, name)), 2)
-            elif c["kind"] == "ai_video" or tool == "higgsfield":
+            elif c["kind"] == "ai_video" or tool in ("higgsfield", "huggingface"):
                 still = f"assets/{c['id']}_r{nxt}.jpg"
                 B.paint(g.get("prompt", ""), TL.asset_path(pid, still), g.get("still") or "flux", style, hero=False)
                 clip = f"assets/{c['id']}_r{nxt}.mp4"

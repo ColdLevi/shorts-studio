@@ -1,0 +1,61 @@
+name: Fixer
+
+# Self-healing fixer. Runs when a watched workflow FAILS (or when llm-proxy reports a crash: fix-request).
+# Transient errors -> one re-run with backoff. Missing secret -> Telegram tells you which. Code bug -> minimal fix
+# on branch fix/<run_id>, checks, PR, Telegram Approve / Reject (auto-merge only if FIXER_AUTO_MERGE is true).
+# Loop guard: this workflow is never in its own list, skips fix/ and revert/ branches, and ignores its own runs.
+on:
+  workflow_run:
+    # Filled in by install.py from the other workflows' names (edit fixer_config.json "watch" and re-run install).
+    workflows: ["Make short (from Shorts Studio bot)", "Render short", "Resume paused shorts (quota check)"]
+    types: [completed]
+  repository_dispatch:
+    types: [fix-request]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+# One fixer per failed run (a shared group would drop queued failures); state writes merge on conflict.
+concurrency:
+  group: fixer-${{ github.event.workflow_run.id || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    if: >-
+      github.event_name == 'repository_dispatch' ||
+      (github.event.workflow_run.conclusion == 'failure' &&
+       github.event.workflow_run.name != 'Fixer' &&
+       !startsWith(github.event.workflow_run.head_branch, 'fix/') &&
+       !startsWith(github.event.workflow_run.head_branch, 'revert/'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      FIXER_CHAT_ID: ${{ secrets.FIXER_CHAT_ID || secrets.CHAT_ID }}
+      PROXY_URL: ${{ secrets.PROXY_URL }}
+      PROXY_KEY: ${{ secrets.PROXY_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      FIXER_AUTO_MERGE: ${{ vars.FIXER_AUTO_MERGE }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Diagnose, then retry / report / propose a fix
+        timeout-minutes: 20
+        run: |
+          pip install -q pyyaml || true
+          python3 tools/fixer.py

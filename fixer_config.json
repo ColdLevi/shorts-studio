@@ -1,0 +1,15 @@
+{
+ "repo_key": "s",
+ "bot_name": "Shorts Studio",
+ "FIXER_AUTO_MERGE": false,
+ "max_attempts": 2,
+ "max_patch_lines": 80,
+ "max_files": 3,
+ "max_backoff": 300,
+ "proxy_src": "",
+ "watch": [
+  "Make short (from Shorts Studio bot)",
+  "Render short",
+  "Resume paused shorts (quota check)"
+ ]
+}

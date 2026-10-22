@@ -200,7 +200,7 @@ def pixellab(prompt, path):
 
 
 def public_url(path):
-    """Higgsfield needs a public image URL: attach the still to a short-lived prerelease on this repo."""
+    """A public image URL for tools that need one: attach the still to a short-lived prerelease on this repo."""
     repo, run = os.getenv("GITHUB_REPOSITORY"), os.getenv("GITHUB_RUN_ID", "local")
     tag = f"frames-{run}"
     subprocess.run(["gh", "release", "view", tag], capture_output=True) .returncode == 0 or \
@@ -209,32 +209,49 @@ def public_url(path):
     return f"https://github.com/{repo}/releases/download/{tag}/{os.path.basename(path)}"
 
 
-def higgsfield(still, motion, out):
-    """Bring a still to life with Higgsfield image-to-video (paid credits). Returns the clip length in seconds."""
-    kid, sec = _key("HF_API_KEY_ID", "HIGGSFIELD_API_KEY", "HF_API_KEY"), _key("HF_API_KEY_SECRET", "HIGGSFIELD_SECRET", "HF_SECRET")
-    both = _key("HF_KEY", "HF_CREDENTIALS")
-    auth = f"Key {kid}:{sec}" if kid and sec else (f"Key {both}" if ":" in both else "")
-    if not auth:
-        raise PaidToolError("no Higgsfield keys")
-    model = os.getenv("HF_MODEL", "kling-video/v2.5-turbo/standard/image-to-video")
-    body = {"prompt": motion[:900], "image_url": public_url(still), "duration": 5}
-    hdr = {"Authorization": auth, "Content-Type": "application/json", "Idempotency-Key": f"{os.getenv('GITHUB_RUN_ID', 'x')}-{os.path.basename(out)}"}
-    try:
-        sub = json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.higgsfield.ai/{model}", data=json.dumps(body).encode(), headers=hdr), timeout=60))
-    except urllib.error.HTTPError as e:
-        raise PaidToolError(f"Higgsfield {e.code} {e.read().decode('utf-8', 'ignore')[:140]}")
-    status_url = sub.get("status_url") or f"https://api.higgsfield.ai/requests/{sub['request_id']}/status"
-    for _ in range(80):  # up to about 8 minutes
-        time.sleep(6)
-        st = json.load(urllib.request.urlopen(urllib.request.Request(status_url, headers={"Authorization": auth}), timeout=30))
-        if st.get("status") == "completed":
-            url = (st.get("video") or {}).get("url")
-            urllib.request.urlretrieve(url, out)
-            USAGE["higgsfield_clips"] = USAGE.get("higgsfield_clips", 0) + 1
+def hf_token():
+    """Hugging Face token: HF_TOKEN, or a Hugging Face token saved in the old Higgsfield slot."""
+    t = _key("HF_TOKEN", "HUGGINGFACE_TOKEN", "HUGGING_FACE_TOKEN")
+    if t:
+        return t
+    for name in ("HF_API_KEY_ID", "HF_API_KEY_SECRET"):
+        v = _key(name)
+        if v.startswith("hf_") and "-" not in v and ":" not in v:
+            return v
+    return ""
+
+
+def hf_motion(still, motion, out):
+    """Free image-to-video on Hugging Face ZeroGPU (Wan 2.2). Uses the account's daily GPU minutes."""
+    import shutil
+    from gradio_client import Client, handle_file
+    tok = hf_token()
+    spaces = [s.strip() for s in os.getenv("HF_VIDEO_SPACES", "zerogpu-aoti/wan2-2-fp8da-aoti-faster").split(",") if s.strip()]
+    last = None
+    for space in spaces:
+        try:
+            c = Client(space, token=tok or None, verbose=False)
+            r = c.predict(input_image=handle_file(still), prompt=motion[:500], steps=6,
+                          duration_seconds=float(os.getenv("HF_VIDEO_SECONDS", "4")), randomize_seed=True,
+                          api_name="/generate_video")
+            v = r[0] if isinstance(r, (list, tuple)) else r
+            if isinstance(v, dict):
+                v = v.get("video") or v.get("path") or v.get("value")
+            if not v or not os.path.exists(v):
+                raise RuntimeError(f"no video file from {space}")
+            shutil.copyfile(v, out)
+            USAGE["hf_clips"] = USAGE.get("hf_clips", 0) + 1
+            print(f"hugging face motion ok via {space}")
             return duration(out)
-        if st.get("status") in ("failed", "nsfw", "canceled"):
-            raise PaidToolError(f"Higgsfield {st.get('status')} {str(st.get('error'))[:120]}")
-    raise PaidToolError("Higgsfield timed out")
+        except Exception as e:
+            last = e
+            print(f"hugging face {space} failed: {str(e)[:200]}")
+    raise PaidToolError(f"Hugging Face video failed: {str(last)[:160]}")
+
+
+def higgsfield(still, motion, out):
+    """Old tool name kept so saved projects still open. Runs Hugging Face video."""
+    return hf_motion(still, motion, out)
 
 
 def gemini_image(prompt, path):
@@ -389,7 +406,7 @@ def main():
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
         tool = (b.get("tool") or "flux").lower()
-        if tool == "higgsfield":
+        if tool in ("higgsfield", "huggingface"):
             tool = b.get("still") or "flux"
         try:
             if paint(b["image_prompt"], path, tool, style, hero=(i == 0), gemini_ok=bool(spec.get("gemini_images")), seed=1000 + i)["pixel"]:
@@ -415,11 +432,11 @@ def main():
 
     times = split_beats(beats, words, total)
 
-    # Motion beats: hand the finished stills to Higgsfield in parallel, then fold the clips back in.
+    # Motion beats: hand the finished stills to Hugging Face in parallel, then fold the clips back in.
     clips = {}
-    motion = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() == "higgsfield" and (i + 1) not in fallbacks]
+    motion = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() in ("higgsfield", "huggingface") and (i + 1) not in fallbacks]
     if motion:
-        tg(f"🎥 Animating {len(motion)} key shot(s) with Higgsfield...")
+        tg(f"🎥 Animating {len(motion)} key shot(s) with Hugging Face...")
 
         def animate(i):
             out = os.path.join(OUT, f"clip_{i + 1:02d}.mp4")
@@ -429,7 +446,7 @@ def main():
                 if d / 0.6 >= beat_len:
                     clips[i] = {"video": f"{JOB}/clip_{i + 1:02d}.mp4", "videoDuration": round(d, 2)}
             except Exception as e:
-                print("higgsfield", i + 1, e); PAID_NOTES.append(str(e))
+                print("hugging face motion", i + 1, e); PAID_NOTES.append(str(e))
 
         with ThreadPoolExecutor(3) as ex:
             list(ex.map(animate, motion))

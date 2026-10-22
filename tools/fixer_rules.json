@@ -1,0 +1,156 @@
+{
+ "_doc": "Shared by tools/fixer.py (GitHub Actions) and api/_fixer.mjs (Vercel). Patterns must work in both Python re and JS RegExp: no named groups, no lookbehind, no inline flags. Matched case-insensitively unless \"case\": true.",
+ "config": [
+  {
+   "id": "missing-env-keyerror",
+   "pattern": "KeyError: ['\"]([A-Z][A-Z0-9_]{3,})['\"]",
+   "case": true,
+   "secret_group": 1,
+   "label": "a secret / env var is missing"
+  },
+  {
+   "id": "env-not-set",
+   "pattern": "\\b([A-Z][A-Z0-9_]{3,}(?:KEY|TOKEN|SECRET|_ID|URL|PASSWORD))\\b[^\\n]{0,20}\\b(?:is )?(?:not set|missing|required|empty|undefined)",
+   "case": true,
+   "secret_group": 1,
+   "label": "a secret / env var is missing"
+  },
+  {
+   "id": "missing-secret-named",
+   "pattern": "missing (?:secret|env(?:ironment)? var(?:iable)?|api key|token)[: ]+([A-Z][A-Z0-9_]{3,})",
+   "secret_group": 1,
+   "label": "a secret / env var is missing"
+  },
+  {
+   "id": "telegram-unauthorized",
+   "pattern": "api\\.telegram\\.org[\\s\\S]{0,300}(?:401|Unauthorized|chat not found)|\"error_code\":\\s*401[\\s\\S]{0,80}Unauthorized",
+   "secret": "TELEGRAM_TOKEN",
+   "label": "the Telegram bot token or chat id is wrong"
+  },
+  {
+   "id": "github-bad-credentials",
+   "pattern": "Bad credentials|Resource not accessible by (?:integration|personal access token)|HTTP 403: Must have admin rights",
+   "secret": "GitHub token (STUDIO_TOKEN / GH_TOKEN) or the repo's Actions permissions",
+   "label": "a GitHub token lacks permission"
+  },
+  {
+   "id": "cloudflare-auth",
+   "pattern": "api\\.cloudflare\\.com[\\s\\S]{0,300}(?:401|403|Authentication error|Invalid API Token)|\"code\":\\s*10000",
+   "secret": "CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID",
+   "label": "the Cloudflare key is wrong"
+  },
+  {
+   "id": "gemini-key",
+   "pattern": "API key not valid|API_KEY_INVALID|generativelanguage\\.googleapis\\.com[\\s\\S]{0,200}(?:401|403 PERMISSION_DENIED)",
+   "secret": "GEMINI_API_KEY",
+   "label": "the Gemini key is wrong"
+  },
+  {
+   "id": "hf-auth",
+   "pattern": "huggingface\\.co[\\s\\S]{0,200}(?:401|Invalid (?:user )?token|Invalid credentials)",
+   "secret": "HF_TOKEN",
+   "label": "the Hugging Face token is wrong"
+  },
+  {
+   "id": "groq-key",
+   "pattern": "api\\.groq\\.com[\\s\\S]{0,200}(?:401|invalid_api_key)|Invalid API Key",
+   "secret": "GROQ_API_KEY",
+   "label": "an API key is wrong"
+  },
+  {
+   "id": "proxy-key",
+   "pattern": "/api/v1/[a-z/]+ 401|PROXY_KEY (?:is )?(?:missing|not set|wrong)",
+   "secret": "PROXY_KEY",
+   "label": "the llm-proxy key is wrong or missing"
+  }
+ ],
+ "transient": [
+  {
+   "id": "edge-tts-no-audio",
+   "pattern": "NoAudioReceived|No audio was received",
+   "backoff": 45,
+   "label": "edge-tts returned no audio (Microsoft voice service hiccup)"
+  },
+  {
+   "id": "edge-tts-ws",
+   "pattern": "edge_tts[\\s\\S]{0,400}(?:WSServerHandshakeError|ClientConnectorError|WebSocket|403, message='Invalid response status')",
+   "backoff": 45,
+   "label": "edge-tts connection dropped"
+  },
+  {
+   "id": "hf-quota-queue",
+   "pattern": "ZeroGPU|GPU quota|exceeded your GPU|queue is full|Queue (?:is )?full|Space is (?:sleeping|building|paused|starting)|space is in error|gradio_client[\\s\\S]{0,200}(?:AppError|QueueError|TooManyRequests)|huggingface\\.co[\\s\\S]{0,200}(?:429|503)",
+   "backoff": 180,
+   "label": "Hugging Face quota or queue"
+  },
+  {
+   "id": "rate-limit",
+   "pattern": "\\b429\\b|Too Many Requests|rate.?limit(?:ed)?\\b|RESOURCE_EXHAUSTED|quota (?:exceeded|reached)|exceeded your (?:current )?quota|secondary rate limit",
+   "backoff": 120,
+   "label": "a free quota / rate limit"
+  },
+  {
+   "id": "server-5xx",
+   "pattern": "HTTP Error 5\\d\\d|\\b5(?:00|02|03|04|20|22|24)\\b[^\\n]{0,60}(?:Server Error|Bad Gateway|Service Unavailable|Gateway Time-?out)|Bad Gateway|Service Unavailable|Gateway Time-?out|upstream connect error|status(?:_code|code)?[ =:]+5\\d\\d\\b|FUNCTION_INVOCATION_TIMEOUT",
+   "backoff": 60,
+   "label": "a server outage (5xx)"
+  },
+  {
+   "id": "apt-mirror",
+   "pattern": "Failed to fetch https?://\\S*(?:ubuntu|azure|microsoft|launchpad)|Hash Sum mismatch|Mirror sync in progress|Could not get lock /var/lib|Unable to fetch some archives|Temporary failure resolving",
+   "backoff": 60,
+   "label": "the Ubuntu package mirror"
+  },
+  {
+   "id": "npm-pip-network",
+   "pattern": "npm ERR! (?:network|code E(?:TIMEDOUT|CONNRESET|AI_AGAIN|NOTFOUND|50\\d))|npm error (?:network|code E(?:TIMEDOUT|CONNRESET|AI_AGAIN))|ERR_SOCKET_TIMEOUT|ReadTimeoutError|Could not fetch URL https://pypi|pip\\._vendor[\\s\\S]{0,200}(?:ReadTimeout|ProtocolError)",
+   "backoff": 60,
+   "label": "the npm / pip download servers"
+  },
+  {
+   "id": "network",
+   "pattern": "ConnectionResetError|ConnectionError|ConnectTimeout|ReadTimeout|Read timed out|Connection timed out|ETIMEDOUT|ECONNRESET|ECONNREFUSED|EAI_AGAIN|getaddrinfo|Temporary failure in name resolution|Name or service not known|fetch failed|socket hang up|Connection reset by peer|RemoteDisconnected|IncompleteRead|ServerDisconnectedError|ClientConnectorError|SSL: (?:UNEXPECTED_EOF|DECRYPTION_FAILED)|curl: \\((?:6|7|28|35|52|56)\\)",
+   "backoff": 30,
+   "label": "a network blip"
+  },
+  {
+   "id": "runner",
+   "pattern": "The runner has received a shutdown signal|lost communication with the server|hosted runner encountered an error|Received request to deprovision|The operation was canceled|exceeded the maximum execution time|has timed out after",
+   "backoff": 30,
+   "label": "the GitHub runner (stopped or timed out)"
+  },
+  {
+   "id": "git-race",
+   "pattern": "failed to push some refs[\\s\\S]{0,300}(?:fetch first|non-fast-forward|rejected)|cannot lock ref|Updates were rejected because the remote contains work",
+   "backoff": 20,
+   "label": "two runs pushed at the same time"
+  }
+ ],
+ "code": [
+  {
+   "id": "py-traceback",
+   "pattern": "Traceback \\(most recent call last\\)",
+   "label": "Python crash"
+  },
+  {
+   "id": "js-error",
+   "pattern": "\\b(?:TypeError|ReferenceError|SyntaxError|RangeError): [^\\n]*\\n\\s+at |Cannot find module|ERR_MODULE_NOT_FOUND|is not a function|Cannot read propert(?:y|ies) of (?:undefined|null)|error TS\\d+:",
+   "label": "JavaScript / TypeScript error"
+  },
+  {
+   "id": "py-error",
+   "pattern": "^[^\\n]*\\b(?:SyntaxError|IndentationError|NameError|TypeError|AttributeError|KeyError|IndexError|ValueError|ZeroDivisionError|ModuleNotFoundError|ImportError|UnboundLocalError|AssertionError|FileNotFoundError|json\\.decoder\\.JSONDecodeError|RecursionError)\\b",
+   "label": "Python error"
+  },
+  {
+   "id": "shell",
+   "pattern": "command not found|can't open file|No such file or directory|jq: error|syntax error near unexpected token|unbound variable",
+   "label": "script / workflow error"
+  },
+  {
+   "id": "remotion",
+   "pattern": "remotion[\\s\\S]{0,300}(?:Error:|error:)|Composition .* not found|delayRender\\(\\) .* was called but not cleared",
+   "label": "render (Remotion) error"
+  }
+ ]
+}

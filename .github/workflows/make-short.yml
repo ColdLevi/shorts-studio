@@ -45,10 +45,33 @@ jobs:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       APP_URL: ${{ github.event.client_payload.app_url }}
       PIXELLAB_API_KEY: ${{ secrets.PIXELLAB_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_API_KEY_ID: ${{ secrets.HF_API_KEY_ID }}
       HF_API_KEY_SECRET: ${{ secrets.HF_API_KEY_SECRET }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
+      - name: Save trigger for the fixer
+        if: always()
+        continue-on-error: true
+        env:
+          FIXER_EVENT: ${{ toJson(github.event) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          e = json.loads(os.environ.get('FIXER_EVENT') or '{}')
+          t = {'event': os.environ.get('GITHUB_EVENT_NAME'), 'action': e.get('action'), 'client_payload': e.get('client_payload'),
+               'inputs': e.get('inputs'), 'ref': os.environ.get('GITHUB_REF_NAME')}
+          json.dump(t, open('/tmp/fixer-trigger.json', 'w'))
+          PY
+      - name: Keep trigger for the fixer
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixer-trigger
+          path: /tmp/fixer-trigger.json
+          retention-days: 5
+          overwrite: true
       - uses: actions/checkout@v4
 
       - name: Save the request
@@ -86,7 +109,7 @@ jobs:
       - name: Install tools
         timeout-minutes: 12
         run: |
-          pip install -q -U edge-tts gtts pillow
+          pip install -q -U edge-tts gtts pillow gradio_client
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
           sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
           APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Dpkg::Use-Pty=0"
@@ -170,7 +193,7 @@ jobs:
         run: |
           TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
           USED=$(python3 -c "import json;u=json.load(open('media/projects/$PROJECT_ID/assets/usage.json'));p=[];c=u.get('motion_used',0);px=u.get('pixellab_usd',0)
-          c and p.append(f'{c} Higgsfield clip(s)'); px and p.append(f'PixelLab \${px:.2f}'); print(' · Paid: '+', '.join(p) if p else '')" 2>/dev/null)
+          c and p.append(f'{c} Hugging Face clip(s), free'); px and p.append(f'PixelLab \${px:.2f}'); print(' · Paid: '+', '.join(p) if p else '')" 2>/dev/null)
           MARKUP=$(python3 tools/library_add.py --button)
           REV=$(python3 -c "import json;print(json.load(open('media/projects/$PROJECT_ID/timeline.json')).get('rev',''))")
           EDITS=""

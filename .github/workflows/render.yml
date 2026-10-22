@@ -30,6 +30,28 @@ jobs:
       run:
         working-directory: remotion
     steps:
+      - name: Save trigger for the fixer
+        if: always()
+        continue-on-error: true
+        env:
+          FIXER_EVENT: ${{ toJson(github.event) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          e = json.loads(os.environ.get('FIXER_EVENT') or '{}')
+          t = {'event': os.environ.get('GITHUB_EVENT_NAME'), 'action': e.get('action'), 'client_payload': e.get('client_payload'),
+               'inputs': e.get('inputs'), 'ref': os.environ.get('GITHUB_REF_NAME')}
+          json.dump(t, open('/tmp/fixer-trigger.json', 'w'))
+          PY
+      - name: Keep trigger for the fixer
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixer-trigger
+          path: /tmp/fixer-trigger.json
+          retention-days: 5
+          overwrite: true
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
