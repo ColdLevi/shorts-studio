@@ -1,4 +1,26 @@
 {
-  "last_update": 312538105,
-  "time": 1792658881620
+  "last_update": 312538106,
+  "time": 1792659625385,
+  "stage": "pitch",
+  "topic": "Try again",
+  "research": {
+    "text": "",
+    "sources": []
+  },
+  "pitch": {
+    "title": "Thomas Edison and the Ten Thousand Failures",
+    "hook": "Ten thousand failed lightbulbs piled up in a New Jersey laboratory.",
+    "angle": "People think failure means stopping, but Edison treated every wrong material as a finished answer.",
+    "key_facts": [
+      "Thomas Edison tested thousands of materials for the lightbulb filament",
+      "A reporter asked Edison how it felt to fail ten thousand times",
+      "Edison stated he had not failed, but found ten thousand ways that did not work",
+      "The incandescent bulb eventually glowed bright using a carbonized bamboo filament"
+    ],
+    "visual_style": "moody cinematic photo, film grain",
+    "length_seconds": 40,
+    "music": "docu-pluck",
+    "accent": "gold"
+  },
+  "script": null
 }
