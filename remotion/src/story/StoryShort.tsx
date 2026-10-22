@@ -21,6 +21,7 @@ export type StoryProps = {
   duration: number;
   beats: Beat[];
   words: Word[];
+  format?: 'vertical' | 'landscape';
 };
 
 export const defaultStoryProps: StoryProps = {
@@ -29,7 +30,7 @@ export const defaultStoryProps: StoryProps = {
 
 export const calculateStoryMetadata: CalculateMetadataFunction<StoryProps> = ({ props }) => ({
   durationInFrames: Math.max(30, Math.ceil((props.duration || 5) * 30)),
-  fps: 30, width: 1080, height: 1920,
+  fps: 30, ...(props.format === 'landscape' ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 }),
 });
 
 const FADE = 0.35;
@@ -84,7 +85,7 @@ function groupWords(words: Word[]): Word[][] {
   return groups;
 }
 
-const Captions: React.FC<{ words: Word[]; accent: string }> = ({ words, accent }) => {
+const Captions: React.FC<{ words: Word[]; accent: string; wide?: boolean }> = ({ words, accent, wide }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -97,10 +98,10 @@ const Captions: React.FC<{ words: Word[]; accent: string }> = ({ words, accent }
   const startF = Math.round((g[0].start - 0.05) * fps);
   const pop = spring({ frame: frame - startF, fps, config: { damping: 14, stiffness: 220 } });
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-start', alignItems: 'center', top: '60%' }}>
+    <AbsoluteFill style={{ justifyContent: 'flex-start', alignItems: 'center', top: wide ? '74%' : '60%' }}>
       <div style={{
         transform: `scale(${0.85 + 0.15 * pop})`, textAlign: 'center', padding: '0 70px',
-        fontFamily, fontWeight: 900, fontSize: 92, lineHeight: 1.08, letterSpacing: -1,
+        fontFamily, fontWeight: 900, fontSize: wide ? 76 : 92, lineHeight: 1.08, letterSpacing: -1,
         textTransform: 'uppercase', color: 'white',
         textShadow: '0 6px 0 rgba(0,0,0,0.85), 0 0 24px rgba(0,0,0,0.7)',
         WebkitTextStroke: '3px black', paintOrder: 'stroke fill',
@@ -163,13 +164,13 @@ export const StoryShort: React.FC<StoryProps> = (p) => {
         return (
           <Sequence key={i} from={from} durationInFrames={Math.max(1, to - from)}>
             {b.graphic
-              ? <GraphicBeat g={b.graphic} accent={accent} len={(to - from) / fps} image={nearImage(p.beats, i)} />
+              ? <GraphicBeat g={b.graphic} accent={accent} len={(to - from) / fps} image={nearImage(p.beats, i)} wide={p.format === 'landscape'} />
               : <BeatImage beat={b} index={i} len={(to - from) / fps} />}
           </Sequence>
         );
       })}
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)' }} />
-      <Captions words={p.words} accent={accent} />
+      <Captions words={p.words} accent={accent} wide={p.format === 'landscape'} />
       <Sequence durationInFrames={Math.round(3 * fps)}><TitleCard title={p.title} accent={accent} /></Sequence>
       <Progress accent={accent} />
       {p.audio ? <Audio src={staticFile(p.audio)} /> : null}

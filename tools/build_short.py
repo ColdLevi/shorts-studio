@@ -96,7 +96,7 @@ def punctuate(words, text):
 # flux-1-schnell ~80 (old, last resort).
 HERO_MODELS = ["flux-2-klein-9b", "flux-2-klein-4b", "flux-1-schnell"]
 STD_MODELS = ["flux-2-klein-4b", "flux-1-schnell"]
-W, H = 768, 1344  # 9:16-ish, multiples of 16
+W, H = 768, 1344  # 9:16-ish, multiples of 16 (main() swaps these for landscape)
 
 
 def _cf_call(model, prompt, acc, tok):
@@ -162,7 +162,7 @@ def pixellab(prompt, path):
     tok = _key("PIXELLAB_API_KEY", "PIXELLAB_TOKEN", "PIXELLAB_SECRET")
     if not tok:
         raise PaidToolError("no PixelLab key")
-    body = {"description": prompt[:900], "image_size": {"width": 144, "height": 256}}
+    body = {"description": prompt[:900], "image_size": {"width": 256, "height": 144} if W > H else {"width": 144, "height": 256}}
     req = urllib.request.Request("https://api.pixellab.ai/v1/generate-image-pixflux", data=json.dumps(body).encode(),
                                  headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
     try:
@@ -173,7 +173,7 @@ def pixellab(prompt, path):
     from PIL import Image
     import io
     img = Image.open(io.BytesIO(base64.b64decode(b64))).convert("RGB")
-    img.resize((1080, 1920), Image.NEAREST).save(path, quality=95)
+    img.resize((1920, 1080) if W > H else (1080, 1920), Image.NEAREST).save(path, quality=95)
     USAGE["pixellab_usd"] = round(USAGE.get("pixellab_usd", 0) + float((r.get("usage") or {}).get("usd") or 0.01), 4)
     return True
 
@@ -223,7 +223,7 @@ def gemini_image(prompt, path):
         raise PaidToolError("no Gemini key")
     model = os.getenv("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
     body = {"contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "9:16"}}}
+            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "16:9" if W > H else "9:16"}}}
     req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
                                  data=json.dumps(body).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
     try:
@@ -244,7 +244,7 @@ USAGE = {}
 
 def placeholder(text, path, i):
     from PIL import Image, ImageDraw, ImageFont
-    w, h = 1080, 1920
+    w, h = (1920, 1080) if W > H else (1080, 1920)
     top = [(30, 30, 60), (60, 20, 40), (15, 50, 60), (50, 40, 15)][i % 4]
     img = Image.new("RGB", (w, h))
     d = ImageDraw.Draw(img)
@@ -256,6 +256,10 @@ def placeholder(text, path, i):
 
 def main():
     spec = json.load(open(sys.argv[1]))
+    global W, H
+    wide = spec.get("format") == "landscape"
+    if wide:
+        W, H = 1344, 768
     beats = spec["beats"]
     style = spec.get("style", "").strip()
     text = " ".join(b["narration"].strip() for b in beats)
@@ -279,7 +283,7 @@ def main():
         if b.get("graphic"):
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
-        prompt = f"{b['image_prompt']}. {style}. Vertical 9:16 composition, subject centered, cinematic lighting, rich colour, sharp focus, highly detailed, no text, no watermark."
+        prompt = f"{b['image_prompt']}. {style}. {'Wide 16:9 cinematic composition' if wide else 'Vertical 9:16 composition, subject centered'}, cinematic lighting, rich colour, sharp focus, highly detailed, no text, no watermark."
         tool = (b.get("tool") or "flux").lower()
         try:
             if tool == "pixellab" or (tool == "higgsfield" and b.get("still") == "pixellab"):
@@ -355,6 +359,7 @@ def main():
                    **({"graphic": b["graphic"]} if b.get("graphic") else {})}
                   for i, (img, b, t) in enumerate(zip(images, beats, times))],
         "words": words,
+        "format": "landscape" if wide else "vertical",
     }
     json.dump(props, open(os.path.join(OUT, "props.json"), "w"), indent=1)
     tg(f"🎬 Editing the video ({total:.0f}s)...")

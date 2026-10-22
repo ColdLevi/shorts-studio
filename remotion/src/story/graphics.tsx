@@ -274,14 +274,24 @@ const List: React.FC<{ g: Extract<Graphic, { type: 'list' }>; accent: string; le
   );
 };
 
-export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string }> = ({ g, accent, len, image }) => (
+// Landscape: the graphics are laid out on a 1080x1920 canvas; scale that canvas so its graphic zone
+// (y 300 to 1090) sits centred in the top three quarters of a 1920x1080 frame, clear of the captions.
+const WIDE_S = 0.9;
+const Canvas: React.FC<{ wide?: boolean; children: React.ReactNode }> = ({ wide, children }) => wide ? (
+  <div style={{ position: 'absolute', width: 1080, height: 1920, left: (1920 - 1080 * WIDE_S) / 2, top: 50 - TOP * WIDE_S,
+    transform: `scale(${WIDE_S})`, transformOrigin: 'top left' }}>{children}</div>
+) : <AbsoluteFill>{children}</AbsoluteFill>;
+
+export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string; wide?: boolean }> = ({ g, accent, len, image, wide }) => (
   <AbsoluteFill>
     <GraphicBackdrop accent={accent} image={image} len={len} />
+    <Canvas wide={wide}>
     {g.type === 'counter' ? <Counter g={g} accent={accent} len={len} />
       : g.type === 'bars' ? <Bars g={g} accent={accent} len={len} />
       : g.type === 'line' ? <Line g={g} accent={accent} len={len} />
       : g.type === 'title' ? <Title g={g} accent={accent} len={len} />
       : g.type === 'list' ? <List g={g} accent={accent} len={len} />
       : null}
+    </Canvas>
   </AbsoluteFill>
 );
