@@ -1,108 +1,32 @@
 {
-  "last_update": 312538132,
-  "time": 1792667631272,
-  "stage": "script",
-  "topic": "how to write YouTube script in Issacverse style",
+  "last_update": 312538133,
+  "time": 1792667665989,
+  "stage": "pitch",
+  "topic": "how the world rotates",
   "research": {
     "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "How To Write Like Isaac Arthur",
-    "hook": "In two thousand fourteen, one creator started building Dyson spheres using plain text and quiet optimism.",
-    "angle": "Most writers think hard science scripts need cinematic doom and complex technical jargon. Isaac Arthur proves that stepping calmly up a ladder of scale makes massive concepts feel grounded.",
+    "title": "Earth Spins at One Thousand Miles an Hour",
+    "hook": "One thousand miles an hour is the speed of the ground right beneath your feet.",
+    "angle": "People assume a planet spinning that fast should create endless hurricane winds or throw us into space. The atmosphere gets dragged along at the exact same pace, so everything feels frozen still.",
     "key_facts": [
-      "Isaac Arthur launched his futurism channel in two thousand fourteen.",
-      "Scripts establish known physics rules before scaling up solutions.",
-      "Outlines expand outward from local planets to galaxy-wide engineering.",
-      "The tone relies on optimistic problem-solving instead of dark sci-fi tropes."
+      "Earth spins at roughly one thousand miles per hour at the equator",
+      "Conservation of angular momentum from four point five billion years ago keeps Earth rotating",
+      "The atmosphere moves with the planet because of gravity and friction",
+      "Moon gravity creates tidal friction that slows Earth spin by roughly two milliseconds every hundred years"
     ],
-    "visual_style": "blueprint line art on dark slate background, glowing gold wireframes",
+    "visual_style": "moody cinematic photo, film grain, hyperrealistic earth textures",
     "length_seconds": 45,
-    "music": "ambient-pad",
-    "accent": "gold"
+    "music": "cinematic-min",
+    "accent": "teal"
   },
-  "script": {
-    "title": "How To Write Like Isaac Arthur",
-    "beats": [
-      {
-        "narration": "In two thousand fourteen, Isaac Arthur began building Dyson spheres using plain text and quiet optimism.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a Dyson sphere forming around a central star, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "higgsfield",
-        "motion": "Slow camera zoom out as the glowing gold wireframe sphere expands gracefully around the star.",
-        "still": "flux"
-      },
-      {
-        "narration": "Scriptwriters usually think hard science fiction requires apocalyptic dread and heavy technical jargon.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a crumbling futuristic city under meteor rain, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "So they overload scenes with artificial panic, and audiences tune out.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a chaotic tangled script page fragmenting into static, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "Isaac starts with simple physics everyone knows, like a single solar panel sitting on a house roof.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a small suburban house with one bright solar panel on the roof, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then he steps calmly up the ladder, expanding that single panel outward until it rings an entire star.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe ladder rising from a tiny house to an orbital ring around a sun, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "No alien invasions or screaming crew members needed.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a quiet empty starship bridge with calm digital readouts, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "By focusing on practical engineering steps, massive megastructures feel like reasonable weekend projects.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a vast ringworld megastructure rotating in deep space, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "higgsfield",
-        "motion": "Slow orbital camera sweep showcasing the detailed construction of the glowing megastructure.",
-        "still": "flux"
-      },
-      {
-        "narration": "Small steps build infinite worlds.",
-        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe grid expanding outward into a vast starfield, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Isaac Arthur launched his channel in two thousand fourteen.",
-        "supported": true
-      },
-      {
-        "claim": "Scripts start with known physics before scaling up.",
-        "supported": true
-      },
-      {
-        "claim": "Outlines expand outward from local scales to megastructures.",
-        "supported": true
-      },
-      {
-        "claim": "The channel uses optimistic problem-solving over dark tropes.",
-        "supported": true
-      }
-    ]
-  },
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Try again",
-      "t": 1792664268496
-    },
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"One Blank Page Changes Everything\"",
-      "t": 1792664277169
-    },
     {
       "role": "user",
       "text": "I mean try making the inage",
@@ -172,6 +96,16 @@
       "role": "user",
       "text": "/tools",
       "t": 1792667631272
+    },
+    {
+      "role": "user",
+      "text": "Do a short video of how the world rotates",
+      "t": 1792667657156
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Earth Spins at One Thousand Miles an Hour\": One thousand miles an hour is the speed of the ground right beneath your feet.",
+      "t": 1792667665989
     }
   ],
   "working": null,
@@ -262,5 +196,5 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nRelevant memories:\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'."
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'."
 }
