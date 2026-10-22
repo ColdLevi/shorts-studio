@@ -1,6 +1,6 @@
 {
-  "last_update": 312538115,
-  "time": 1792662410436,
+  "last_update": 312538116,
+  "time": 1792662449750,
   "stage": "script",
   "topic": "how I started to help people start",
   "research": {
@@ -26,48 +26,58 @@
     "title": "One Blank Page Changes Everything",
     "beats": [
       {
-        "narration": "Three hundred people asked me how to start, but every single one of them waited for permission.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a blank white page on a teal desk, clean lines, centered, no text, no logos, no real faces",
+        "narration": "Three hundred creators emailed me asking how to start, but every single one of them was waiting for permission.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing inbox icon surrounded by quiet teal shadows, clean lines, centered, no text, no logos, no real faces",
         "tool": "higgsfield",
         "still": "flux",
-        "motion": "Slow push in on the blank page as a soft teal light washes across the desk."
+        "motion": "Slow camera push in as soft teal light pulsates gently around the inbox."
       },
       {
-        "narration": "Most assume you need a grand plan to begin helping others.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a towering stack of complex blueprints, teal and white, centered, no text, no logos, no real faces",
+        "narration": "Most people assume you need a complete masterclass or a complex blueprint before you can help anyone.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a towering stack of intricate blueprints, teal and white, clean lines, centered, no text, no logos, no real faces",
         "tool": "flux"
       },
       {
-        "narration": "Beginners waste months waiting for perfect conditions.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single hourglass with sand frozen in the top bulb, teal accents, centered, no text, no logos, no real faces",
+        "narration": "So they waste six months designing logos and organizing empty folders that no one will ever read.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of an empty digital folder icon floating over a calendar with fading dates, teal background, clean lines, centered, no text, no logos, no real faces",
         "tool": "flux"
       },
       {
-        "narration": "You only need to solve the exact problem you solved yesterday.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single glowing puzzle piece fitting into an empty space, teal and white, centered, no text, no logos, no real faces",
+        "narration": "Yesterday, Sarah fixed a small formula glitch in her monthly budget spreadsheet.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a simple spreadsheet grid with one teal illuminated cell, clean lines, centered, no text, no logos, no real faces",
         "tool": "flux"
       },
       {
-        "narration": "Sharing a single solved problem creates immediate value.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing lightbulb casting teal beams downward, centered, no text, no logos, no real faces",
+        "narration": "She uploaded that nine-second solution online, so three dozen people downloaded it before midnight.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single file sending upward into a network of small glowing dots, teal accents, clean lines, centered, no text, no logos, no real faces",
         "tool": "flux"
       },
       {
-        "narration": "Momentum builds after the first public action.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a tiny paper airplane launching upward against a teal background, centered, no text, no logos, no real faces",
+        "narration": "Turns out, nobody was waiting for a full textbook.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a massive heavy closed book sitting unused in a shadow, teal accents, clean lines, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Real value comes from handing someone the key to a door you opened yesterday.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing teal key unlocking a simple door frame, clean lines, centered, no text, no logos, no real faces",
         "tool": "higgsfield",
         "still": "flux",
-        "motion": "Camera tilts up rapidly as the paper airplane arcs smoothly toward the top of the frame."
+        "motion": "Camera tracks forward slowly as the key turns and soft teal light beams out from the opening door."
       },
       {
-        "narration": "Start small today.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single bold teal dot in the center of a white screen, centered, no text, no logos, no real faces",
+        "narration": "That first public upload creates instant momentum, breaking months of continuous overthinking.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single paper airplane cutting smoothly through static grey clouds, teal trail, clean lines, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Ship the solution.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single solid teal circle resting in the center of a clean white canvas, clean lines, centered, no text, no logos, no real faces",
         "tool": "flux"
       }
     ],
     "fact_check": [
       {
-        "claim": "Three hundred people asked me how to start",
+        "claim": "Three hundred creators emailed me asking how to start",
         "supported": true
       }
     ]
@@ -90,6 +100,16 @@
       "role": "bot",
       "text": "Wrote the script for \"One Blank Page Changes Everything\"",
       "t": 1792662410436
+    },
+    {
+      "role": "user",
+      "text": "The video should be 1 min long",
+      "t": 1792662424769
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"One Blank Page Changes Everything\"",
+      "t": 1792662449750
     }
   ],
   "working": null
