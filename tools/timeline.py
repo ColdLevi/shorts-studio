@@ -381,9 +381,169 @@ def needs_build(t, pid=None):
 
 
 def apply_patch(t, ops):
+    """Apply an edit patch: old timeline -> (new timeline, ids that must be remade).
+    Before patching, a single-file voiceover is described as per-scene segments so a later build
+    re-voices only the lines that changed (see voice_segments / project.py revoice)."""
+    t = copy.deepcopy(t)
+    ensure_segments(t)
     new = json_patch(t, ops)
+    normalize(new)
     changed = mark_dirty(t, new)
     return new, changed
+
+
+# ---------- step 2: edit helpers (scene ids, voice segments, diffs, versions) ----------
+def norm_text(s):
+    return re.sub(r"\s+", " ", (s or "").strip()).lower()
+
+
+def next_id(t, prefix="v"):
+    used = {c.get("id") for tr in ("visuals", "voice", "music", "sfx", "overlays") for c in (t["tracks"].get(tr) or [])}
+    n = 1
+    while f"{prefix}{n}" in used:
+        n += 1
+    return f"{prefix}{n}"
+
+
+def normalize(t):
+    """Make an edited timeline well-formed: ids on new clips, sane placeholder times, library music src,
+    a gen recipe on new image scenes. Safe to run on any timeline (idempotent)."""
+    tr = t.setdefault("tracks", {})
+    for name, prefix in (("visuals", "v"), ("music", "m"), ("sfx", "s"), ("overlays", "o"), ("voice", "vo")):
+        seen = set()
+        for c in tr.get(name) or []:
+            if not isinstance(c, dict):
+                continue
+            if not c.get("id") or c["id"] in seen:
+                c["id"] = None
+                c["id"] = next_id(t, prefix)
+            seen.add(c["id"])
+    prev_end = 0.0
+    for v in tr.get("visuals") or []:
+        if not isinstance(v.get("start"), (int, float)) or v["start"] < 0:
+            v["start"] = prev_end
+        if not isinstance(v.get("end"), (int, float)) or v["end"] <= v["start"]:
+            v["end"] = round(v["start"] + 2.5, 3)
+        prev_end = v["end"]
+        v.setdefault("kind", "image")
+        if v["kind"] == "image" and not v.get("src") and not v.get("gen"):
+            v["gen"] = {"tool": "flux", "prompt": v.get("narration", "")}
+        if v["kind"] == "graphic":
+            v.setdefault("gen", {"tool": "graphic"})
+    for m in tr.get("music") or []:
+        g = m.get("gen") or {}
+        if g.get("tool") == "library" and g.get("name"):
+            want = f"library/music/clips/{g['name']}.mp3"
+            if m.get("src") != want:
+                m["src"] = want
+    return t
+
+
+def _voice_key(g):
+    g = g or {}
+    return f"{g.get('voice') or 'en-US-AndrewMultilingualNeural'}|{g.get('rate') or '+0%'}|{g.get('pitch') or ''}"
+
+
+def ensure_segments(t):
+    """Describe a voiceover as one segment per spoken scene, so edits re-voice only changed lines.
+    Legacy projects (one voice file, no segments) get segments that point at time ranges of that file;
+    project.py cuts them out when the voice is rebuilt. Returns the segment list (or [])."""
+    vo = (t["tracks"].get("voice") or [None])[0]
+    if not vo or (vo.get("gen") or {}).get("tool") != "edge-tts" or vo.get("dirty"):
+        return (vo or {}).get("segments") or []
+    if vo.get("segments"):
+        return vo["segments"]
+    if not vo.get("src"):
+        return []
+    words = (t["tracks"].get("captions") or {}).get("words") or []
+    vis = [v for v in t["tracks"]["visuals"] if (v.get("narration") or "").strip()]
+    end_all = max([w["end"] for w in words] + [vis[-1]["end"] if vis else 0])
+    segs = []
+    for i, v in enumerate(vis):
+        t0 = 0.0 if i == 0 else float(v["start"])
+        t1 = float(vis[i + 1]["start"]) if i + 1 < len(vis) else float(end_all) + 0.25
+        if t1 <= t0:
+            return []
+        ws = [{"word": w["word"], "start": round(w["start"] - t0, 3), "end": round(w["end"] - t0, 3)}
+              for w in words if t0 - 0.02 <= w["start"] < t1 - 0.02]
+        segs.append({"clip": v["id"], "text": v["narration"].strip(), "from": vo["src"], "t0": round(t0, 3), "t1": round(t1, 3),
+                     "words": ws, "voice": _voice_key(vo.get("gen"))})
+    vo["segments"] = segs
+    return segs
+
+
+def scenes(t):
+    """User-facing scene list: 1..N in visual order."""
+    out = []
+    for i, v in enumerate(t["tracks"].get("visuals") or []):
+        what = (v.get("graphic") or {}).get("type") if v.get("kind") == "graphic" else ((v.get("gen") or {}).get("prompt") or v.get("src") or "")
+        out.append({"n": i + 1, "id": v["id"], "kind": v.get("kind"), "tool": (v.get("gen") or {}).get("tool"),
+                    "start": v.get("start"), "end": v.get("end"), "text": (v.get("narration") or "").strip(), "visual": str(what)[:90]})
+    return out
+
+
+def diff(old, new):
+    """What an edit changes, for the user summary and the rebuild report."""
+    ov = {v["id"]: v for v in old["tracks"].get("visuals") or []}
+    nv = {v["id"]: v for v in new["tracks"].get("visuals") or []}
+    oorder = [v["id"] for v in old["tracks"].get("visuals") or []]
+    norder = [v["id"] for v in new["tracks"].get("visuals") or []]
+    d = {"added": [i for i in norder if i not in ov], "removed": [i for i in oorder if i not in nv],
+         "narration": [], "visual": [], "visual_props": [], "reordered": False, "style": [], "canvas": None,
+         "music": False, "voice": False, "captions": False, "overlays": False, "title": old.get("title") != new.get("title")}
+    common_o = [i for i in oorder if i in nv]
+    common_n = [i for i in norder if i in ov]
+    d["reordered"] = common_o != common_n
+    for i in common_n:
+        a, b = ov[i], nv[i]
+        if norm_text(a.get("narration")) != norm_text(b.get("narration")):
+            d["narration"].append(i)
+        if a.get("gen") != b.get("gen") or a.get("kind") != b.get("kind") or a.get("graphic") != b.get("graphic") or (b.get("dirty") and not a.get("dirty")):
+            d["visual"].append(i)
+        elif any(a.get(k) != b.get(k) for k in ("fit", "motion", "transition", "focus", "trim", "playbackRate", "color", "src")):
+            d["visual_props"].append(i)
+    os_, ns = old.get("style") or {}, new.get("style") or {}
+    d["style"] = sorted(k for k in set(os_) | set(ns) if os_.get(k) != ns.get(k))
+    if old.get("canvas") != new.get("canvas"):
+        d["canvas"] = f"{new['canvas']['width']}x{new['canvas']['height']}"
+    strip = lambda x: [{k: v for k, v in c.items() if k not in ("hash",)} for c in x or []]
+    d["music"] = strip(old["tracks"].get("music")) != strip(new["tracks"].get("music"))
+    og = ((old["tracks"].get("voice") or [{}])[0]).get("gen") or {}
+    ng = ((new["tracks"].get("voice") or [{}])[0]).get("gen") or {}
+    d["voice"] = _voice_key(og) != _voice_key(ng)
+    oc = {k: v for k, v in (old["tracks"].get("captions") or {}).items() if k != "words"}
+    nc = {k: v for k, v in (new["tracks"].get("captions") or {}).items() if k != "words"}
+    d["captions"] = oc != nc
+    d["overlays"] = old["tracks"].get("overlays") != new["tracks"].get("overlays")
+    return d
+
+
+def plan(old, new):
+    """What a rebuild will remake: lines to re-voice, images to repaint (everything else is reused)."""
+    d = diff(old, new)
+    vo = (new["tracks"].get("voice") or [None])[0]
+    segs = {(s["clip"], norm_text(s["text"])) for s in (vo or {}).get("segments") or [] if s.get("voice") == _voice_key((vo or {}).get("gen"))}
+    texts = {norm_text(s["text"]) for s in (vo or {}).get("segments") or [] if s.get("voice") == _voice_key((vo or {}).get("gen"))}
+    revoice = []
+    if vo and vo.get("dirty"):
+        for v in new["tracks"]["visuals"]:
+            n = norm_text(v.get("narration"))
+            if n and (v["id"], n) not in segs and n not in texts:
+                revoice.append(v["id"])
+    repaint = [v["id"] for v in new["tracks"]["visuals"] if v.get("dirty")]
+    return {"diff": d, "revoice": revoice, "repaint": repaint, "retime": bool(vo and vo.get("dirty"))}
+
+
+def versions(log):
+    """Collapse history into user-facing versions: a 'rebuilt ...' revision belongs to the edit before it."""
+    out = []
+    for h in log:
+        msg = h.get("message") or ""
+        if out and msg.startswith("rebuilt") and not h.get("edit_id"):
+            out[-1] = {**out[-1], "rev": h["rev"], "at": h.get("at"), "built": True}
+            continue
+        out.append({"rev": h["rev"], "at": h.get("at"), "message": msg, "edit_id": h.get("edit_id"), "kind": h.get("kind")})
+    return out
 
 
 # ---------- timing helpers ----------
@@ -413,7 +573,7 @@ def load(pid):
     return json.load(open(os.path.join(project_dir(pid), "timeline.json")))
 
 
-def save(t, message="save", patch=None):
+def save(t, message="save", patch=None, extra=None):
     """Write timeline.json and a new revision in history/. Returns the new rev."""
     pid = t["id"]
     d = project_dir(pid)
@@ -424,8 +584,12 @@ def save(t, message="save", patch=None):
     open(os.path.join(d, "timeline.json"), "w").write(body)
     open(os.path.join(d, "history", f"r{t['rev']}.json"), "w").write(body)
     with open(os.path.join(d, "history", "log.jsonl"), "a") as f:
-        f.write(json.dumps({"rev": t["rev"], "at": t["meta"]["updated"], "message": message, **({"patch": patch} if patch else {})}, ensure_ascii=False) + "\n")
+        f.write(json.dumps({"rev": t["rev"], "at": t["meta"]["updated"], "message": message, **({"patch": patch} if patch else {}), **(extra or {})}, ensure_ascii=False) + "\n")
     return t["rev"]
+
+
+def applied_edits(pid):
+    return {h["edit_id"] for h in history(pid) if h.get("edit_id")}
 
 
 def history(pid):

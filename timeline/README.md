@@ -58,3 +58,44 @@ to turn a chat request into a patch like:
 ```
 Changing a narration re-records the voice and re-times every clip, caption and anchored SFX.
 Extra op `merge` shallow-merges an object (e.g. `{"op":"merge","path":"/tracks/visuals/@v1","value":{"fit":"contain"}}`).
+
+# Engine step 2: chat re-edits
+
+The Studio bot edits the **current project** from plain chat. Any message about the video ("swap scene 3 for a rocket
+launch", "make the hook punchier", "cut scene 5", "slower pacing", "bigger yellow captions", "change the music",
+"make it 16:9", "rewrite the ending") goes to ONE edit-model call that returns a JSON patch with `@id` paths. The bot
+(`llm-proxy/api/_timeline.mjs`) sanitises it (replace on a missing key becomes add; machine fields like `src`, `words`,
+`segments`, `hash`, `rev` are dropped), applies it to the saved timeline, validates it against `timeline.schema.json`,
+and shows a short summary with what will be remade, plus **Apply / Cancel**. Start the message with "just" to apply at once.
+
+Bot commands: `/scenes` (scenes 1..N with words and visual type), `/history` (versions), `/undo`, `/restore <n>`,
+`/project [n|id]` (which video edits go to), `/edit <change>`; `/reformat` and `/captions` use the same edit queue.
+
+## Edit queue (nothing gets lost)
+`render-project` now carries `edits: [{id, patch | revert, message}]`: every edit the bot sent that the repo has not
+logged yet. `project.py edits <id> job/edits.json` skips ids already in `history/log.jsonl`, applies the rest in order and
+saves **one version per edit** (`edit_id`, `kind`, `remade` in the log). Runs are grouped per project, so a newer run can
+replace a queued one without dropping its edit. Exit code 4 = nothing could be applied (bot is told, no render);
+5 = everything was already applied (no render).
+
+## Change-aware rebuild
+- **Voice:** the voiceover is kept as per-scene segments (`tracks.voice[0].segments`). Old single-file projects are
+  split at the scene boundaries on their first edit. A rebuild re-records only lines whose words changed (or all of
+  them if the voice or rate changed), joins the segments sample-exactly and re-times every scene, caption word,
+  anchored SFX and overlay from the real segment lengths. Cutting or reordering scenes re-records nothing.
+- **Pictures:** only scenes whose recipe (`gen`, `kind`, or `dirty`) changed are repainted (Cloudflare FLUX etc.).
+- Everything else comes from the project release `project-<id>`; then Remotion renders and FFmpeg normalises.
+
+## Versions
+`/history` = `project.py versions <id>` (a step-1 "rebuilt ..." revision folds into the edit before it).
+`/undo` goes to the version before the current state (an undo after an undo keeps going back); `/restore <n>` makes
+v<n> current again as a new version. Restores reuse saved assets, so they only re-render.
+
+```
+python3 tools/project.py scenes <id>
+python3 tools/project.py versions <id>
+python3 tools/project.py edits <id> job/edits.json
+python3 tools/project.py diff old.json new.json        # what would be re-voiced / repainted
+python3 tests/test_edits.py                           # patch/diff/rebuild tests (offline, needs ffmpeg)
+node tests/bot_timeline.test.mjs && node tests/bot_flow.test.mjs   # bot-side tests (finds ../llm-proxy)
+```

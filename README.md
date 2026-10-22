@@ -24,3 +24,8 @@ Every bot video is saved as an editable project (`media/projects/<id>/timeline.j
 release `project-<id>`) and rendered by the universal `Studio` composition at any canvas size (9:16, 16:9, 1:1, 4:5,
 any WxH) with caption, font, transition and colour style tokens. Re-render a saved project with a JSON patch via
 `repository_dispatch` `render-project`. Details: `timeline/README.md`. Old `StoryShort` props still render.
+
+## Video engine step 2: chat re-edit agent
+Tell the Studio bot any change to the current video in plain words; it shows what changes (Apply/Cancel, or start with
+"just"), then re-renders, re-voicing only changed lines and repainting only changed pictures. Every applied edit is a
+version: /scenes, /history, /undo, /restore <n>, /project. Details: `timeline/README.md` (Engine step 2).

@@ -5,3 +5,6 @@ No OpenMontage source files are copied; remotion/src/studio/assets.ts is a rewri
 idea. If OpenMontage code is copied in later steps, that code stays under AGPL-3.0 and this repo
 (public) must keep its source available.
 Remotion engine base: hassancs91/claude-faceless-shorts-creator (MIT).
+Engine step 2 (chat re-edit agent, change-aware rebuild, version history) is original code; the idea of
+edit decisions applied to a saved timeline and re-making only changed assets was studied from OpenMontage
+(AGPL-3.0). No OpenMontage source files are copied.

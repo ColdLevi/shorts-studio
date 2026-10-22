@@ -580,6 +580,46 @@
        },
        "dirty": {
         "type": "boolean"
+       },
+       "segments": {
+        "type": "array",
+        "description": "Engine step 2: one entry per spoken scene, so an edit re-records only changed lines. Written by tools/project.py; never edit by hand.",
+        "items": {
+         "type": "object",
+         "properties": {
+          "clip": {
+           "type": "string"
+          },
+          "text": {
+           "type": "string"
+          },
+          "src": {
+           "type": [
+            "string",
+            "null"
+           ]
+          },
+          "from": {
+           "type": "string"
+          },
+          "t0": {
+           "type": "number"
+          },
+          "t1": {
+           "type": "number"
+          },
+          "voice": {
+           "type": "string"
+          },
+          "words": {
+           "type": "array"
+          }
+         },
+         "required": [
+          "clip",
+          "text"
+         ]
+        }
        }
       },
       "required": [

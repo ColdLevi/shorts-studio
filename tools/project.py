@@ -7,7 +7,11 @@
   python tools/project.py build <id>                 remake only dirty/missing assets (voice, images, AI clips, downloads)
   python tools/project.py reformat <id> <16:9|9:16|1:1|4:5|WxH> [--regen-images]
   python tools/project.py style <id> <preset> [caption-preset]   e.g. style my-vid documentary | style my-vid - neon
-  python tools/project.py history <id>
+  python tools/project.py history <id>             raw revisions   |  versions <id>  user-facing versions (what /history shows)
+  python tools/project.py edits <id> <edits.json>  step 2: apply the bot's queued edits [{id, patch|revert, message}], skip ones
+                                                   already applied, rebuild only what changed, one version each
+  python tools/project.py scenes <id|file.json>    scenes 1..N with text and visual type (what /scenes shows)
+  python tools/project.py diff <old.json> <new.json>   what an edit would remake (lines to re-voice, images to repaint)
   python tools/project.py revert <id> <rev>          make an old revision current again (as a new revision)
   python tools/project.py migrate <props.json> <id> [spec.json]  old StoryShort props -> timeline
   python tools/project.py pull <id> | push <id>      assets <-> GitHub release project-<id> (needs gh)
@@ -68,29 +72,138 @@ def cmd_patch(pid, patch_file, message="edit"):
 
 
 def cmd_build(pid):
-    import build_short as B
     t = TL.load(pid)
-    B.set_project(pid, t["canvas"])
-    todo = TL.needs_build(t)
-    if not todo:
+    if not TL.needs_build(t):
         print("nothing to build")
         return
-    nxt = int(t.get("rev") or 0) + 1
+    rep = build_timeline(pid, t, int(t.get("rev") or 0) + 1)
+    rev = TL.save(t, f"rebuilt {', '.join(rep['done']) or 'nothing'}" + (f"; failed {', '.join(rep['failed'])}" if rep["failed"] else ""))
+    print(f"r{rev}: rebuilt {rep['done'] or '-'}; failed {rep['failed'] or '-'}")
+    if rep["failed"]:
+        sys.exit(3)
+
+
+# ---------- voice: re-record only the scenes whose narration changed ----------
+def _ff(*args):
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *args], capture_output=True, text=True)
+    if r.returncode:
+        raise RuntimeError("ffmpeg: " + r.stderr.strip()[-300:])
+
+
+def _wav_seconds(path):
+    import wave
+    with wave.open(path) as w:
+        return w.getnframes() / float(w.getframerate())
+
+
+def revoice(pid, t, nxt, B):
+    """Rebuild the voiceover from per-scene segments: unchanged lines are reused (cut from the old file or their
+    own segment file), changed lines are re-recorded alone with edge-tts, then everything is joined and every clip,
+    caption word and anchored SFX is re-timed from the real segment lengths. Returns {revoiced, reused}."""
+    import tempfile
+    vo = t["tracks"]["voice"][0]
+    g = vo.get("gen") or {}
+    key = TL._voice_key(g)
+    have = [s for s in vo.get("segments") or [] if s.get("voice") == key]
+    by_clip = {(s["clip"], TL.norm_text(s["text"])): s for s in have}
+    by_text = {TL.norm_text(s["text"]): s for s in have}
+    tmp = tempfile.mkdtemp(prefix="vo-")
+    pieces, segs, revoiced, reused = [], [], [], []
+    for i, v in enumerate(t["tracks"]["visuals"]):
+        text = (v.get("narration") or "").strip()
+        wav = os.path.join(tmp, f"{i:03d}.wav")
+        if not text:  # a silent scene keeps its length
+            _ff("-f", "lavfi", "-t", f"{max(0.4, float(v['end']) - float(v['start'])):.3f}", "-i", "anullsrc=r=24000:cl=mono", wav)
+            pieces.append((v, wav, []))
+            continue
+        old = by_clip.get((v["id"], TL.norm_text(text))) or by_text.get(TL.norm_text(text))
+        seg_src = None
+        if old:
+            src_file = TL.asset_path(pid, old.get("src")) if old.get("src") else None
+            from_file = TL.asset_path(pid, old.get("from")) if old.get("from") else None
+            try:
+                if src_file and os.path.exists(src_file):
+                    _ff("-i", src_file, "-ac", "1", "-ar", "24000", wav)
+                    seg_src = old["src"]
+                elif from_file and os.path.exists(from_file):
+                    _ff("-ss", f"{old['t0']:.3f}", "-to", f"{old['t1']:.3f}", "-i", from_file, "-ac", "1", "-ar", "24000", wav)
+                else:
+                    old = None
+            except Exception as e:
+                print("segment reuse failed, re-recording:", e)
+                old = None
+        if old:
+            words = old.get("words") or []
+            reused.append(v["id"])
+        else:
+            mp3 = os.path.join(tmp, f"{i:03d}.mp3")
+            words, _ = B.voice(text, g.get("voice"), g.get("rate"), mp3)
+            _ff("-i", mp3, "-ac", "1", "-ar", "24000", wav)
+            revoiced.append(v["id"])
+        if not seg_src:  # keep this line as its own file for the next edit
+            seg_src = f"assets/vo_{v['id']}_{TL.file_hash(wav)[:8]}.mp3"
+            dest = TL.asset_path(pid, seg_src)
+            if not os.path.exists(dest):
+                _ff("-i", wav, "-c:a", "libmp3lame", "-b:a", "64k", dest)
+        segs.append({"clip": v["id"], "text": text, "src": seg_src, "words": words, "voice": key})
+        pieces.append((v, wav, words))
+    # join in order (WAV keeps sample-exact lengths), then one mp3 for the render
+    lst = os.path.join(tmp, "list.txt")
+    open(lst, "w").write("".join(f"file '{w}'\n" for _, w, _ in pieces))
+    full_wav = os.path.join(tmp, "voice.wav")
+    _ff("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", full_wav)
+    name = f"assets/voice_r{nxt}.mp3"
+    _ff("-i", full_wav, "-c:a", "libmp3lame", "-b:a", "96k", TL.asset_path(pid, name))
+    at, all_words = 0.0, []
+    for v, wav, words in pieces:
+        d = _wav_seconds(wav)
+        v["start"], v["end"] = round(at, 3), round(at + d, 3)
+        all_words += [{"word": w["word"], "start": round(w["start"] + at, 3), "end": round(w["end"] + at, 3)} for w in words]
+        at += d
+    total = at
+    vo.update(src=name, hash=TL.file_hash(TL.asset_path(pid, name)), segments=segs)
+    vo.pop("dirty", None)
+    g["text"] = TL.voice_text(t)
+    t["tracks"]["captions"] = {**(t["tracks"].get("captions") or {}), "words": all_words}
+    t["duration"] = round(total + 0.8, 2)
+    byid = {v["id"]: v for v in t["tracks"]["visuals"]}
+    for s in t["tracks"].get("sfx") or []:
+        if s.get("anchor") in byid:
+            s["at"] = round(byid[s["anchor"]]["start"] + (s.get("offset") or 0), 3)
+    for o in t["tracks"].get("overlays") or []:
+        if o.get("anchor") in byid:
+            o["start"], o["end"] = byid[o["anchor"]]["start"], byid[o["anchor"]]["end"]
+    print(f"voice: re-recorded {revoiced or 'nothing'}, reused {len(reused)} line(s), {total:.1f}s")
+    return {"revoiced": revoiced, "reused": reused}
+
+
+def build_timeline(pid, t, nxt):
+    """Remake only dirty/missing assets of timeline t (in place). Returns a report dict."""
+    import build_short as B
+    B.set_project(pid, t["canvas"])
+    todo = TL.needs_build(t, pid)
+    rep = {"done": [], "failed": [], "revoiced": [], "reused_lines": 0, "repainted": []}
+    if not todo:
+        return rep
     adir = os.path.join(TL.project_dir(pid), "assets")
     os.makedirs(adir, exist_ok=True)
     style = (t.get("meta") or {}).get("image_style", "")
-    done, failed = [], []
+    done, failed = rep["done"], rep["failed"]
 
     # 1) voice first: it moves every clip's timing
     for tr, c in [x for x in todo if x[0] == "voice"]:
         g = c.get("gen") or {}
-        text = g.get("text") or TL.voice_text(t)
-        name = f"assets/voice_r{nxt}.mp3"
         try:
-            words, total = B.voice(text, g.get("voice"), g.get("rate"), TL.asset_path(pid, name))
-            c["src"], c["hash"] = name, TL.file_hash(TL.asset_path(pid, name))
-            c.pop("dirty", None)
-            TL.retime(t, words, total)
+            if g.get("tool") == "edge-tts" and t["tracks"]["visuals"] and c is t["tracks"]["voice"][0]:
+                r = revoice(pid, t, nxt, B)
+                rep["revoiced"], rep["reused_lines"] = r["revoiced"], len(r["reused"])
+            else:
+                text = g.get("text") or TL.voice_text(t)
+                name = f"assets/voice_r{nxt}.mp3"
+                words, total = B.voice(text, g.get("voice"), g.get("rate"), TL.asset_path(pid, name))
+                c["src"], c["hash"] = name, TL.file_hash(TL.asset_path(pid, name))
+                c.pop("dirty", None)
+                TL.retime(t, words, total)
             done.append(c["id"])
         except BaseException as e:
             print("voice failed:", e); failed.append(c["id"])
@@ -137,6 +250,8 @@ def cmd_build(pid):
             if p and os.path.exists(p):
                 c["hash"] = TL.file_hash(p)
             c.pop("dirty", None)
+            if tr == "visuals":
+                rep["repainted"].append(c["id"])
             return c["id"], True
         except BaseException as e:
             print(f"{c['id']} failed: {e}")
@@ -146,10 +261,90 @@ def cmd_build(pid):
     with ThreadPoolExecutor(4) as ex:
         for cid, ok in ex.map(make, rest):
             (done if ok else failed).append(cid)
-    rev = TL.save(t, f"rebuilt {', '.join(done) or 'nothing'}" + (f"; failed {', '.join(failed)}" if failed else ""))
-    print(f"r{rev}: rebuilt {done or '-'}; failed {failed or '-'}")
-    if failed:
-        sys.exit(3)
+    return rep
+
+
+# ---------- step 2: queued edits from the bot (each one becomes a version) ----------
+def cmd_edits(pid, edits_file):
+    """Apply the bot's queued edits in order, skipping any already in history (matched by edit id), rebuild only
+    what each one changed, save one version per edit. Writes job/edit_report.json for the Telegram message."""
+    edits = json.load(open(edits_file))
+    edits = edits.get("edits", edits) if isinstance(edits, dict) else edits
+    applied = TL.applied_edits(pid)
+    t = TL.load(pid)
+    reports = []
+    for e in edits:
+        eid = e.get("id")
+        if eid and eid in applied:
+            print(f"{eid}: already applied, skipping")
+            continue
+        msg = (e.get("message") or "edit")[:200]
+        try:
+            if e.get("revert") is not None:
+                new = TL.revision(pid, e["revert"])
+                new["rev"] = t.get("rev")
+                kind, ops, before = "revert", None, t
+            else:
+                ops = e.get("patch") or []
+                new, _ = TL.apply_patch(t, ops)
+                kind, before = "edit", t
+            errs = TL.validate(new)
+            if errs:
+                raise ValueError("; ".join(errs[:4]))
+        except Exception as ex:
+            print(f"{eid}: rejected: {ex}")
+            reports.append({"edit_id": eid, "message": msg, "error": str(ex)[:300]})
+            continue
+        pl = TL.plan(before, new) if kind == "edit" else {"revoice": [], "repaint": []}
+        rep = build_timeline(pid, new, int(t.get("rev") or 0) + 1)
+        extra = {"edit_id": eid, "kind": kind, **({"revert_to": int(e["revert"])} if kind == "revert" else {}),
+                 "remade": {"revoiced": rep["revoiced"], "repainted": rep["repainted"], "failed": rep["failed"]}}
+        rev = TL.save(new, msg, patch=ops, extra=extra)
+        print(f"v{rev}: {msg} | re-voiced {rep['revoiced'] or '-'} | repainted {rep['repainted'] or '-'} | failed {rep['failed'] or '-'}")
+        reports.append({"edit_id": eid, "rev": rev, "message": msg, "kind": kind, "planned": {k: pl[k] for k in ("revoice", "repaint")},
+                        **{k: rep[k] for k in ("revoiced", "repainted", "failed", "reused_lines")}})
+        t = new
+    os.makedirs(os.path.join(ROOT, "job"), exist_ok=True)
+    json.dump({"project_id": pid, "rev": t.get("rev"), "edits": reports}, open(os.path.join(ROOT, "job", "edit_report.json"), "w"), indent=1)
+    open(os.path.join(ROOT, "job", "edit_report.txt"), "w").write(report_text(t, reports))
+    print(report_text(t, reports))
+    if not reports:
+        return 5  # every edit was already applied (and rendered): nothing new to do
+    if all(r.get("error") for r in reports):
+        return 4  # nothing could be applied: the project is unchanged
+    return 0
+
+
+def report_text(t, reports):
+    lines = []
+    for r in reports:
+        if r.get("error"):
+            lines.append(f"⚠️ Skipped \"{r['message']}\": {r['error'][:120]}")
+            continue
+        bits = []
+        if r.get("revoiced"):
+            bits.append(f"re-voiced {len(r['revoiced'])} line(s)")
+        if r.get("repainted"):
+            bits.append(f"repainted {len(r['repainted'])} image(s)")
+        if r.get("failed"):
+            bits.append(f"kept the old version of {', '.join(r['failed'])}")
+        lines.append(f"v{r['rev']}: {r['message']}" + (f" ({', '.join(bits)})" if bits else " (render only)"))
+    return "\n".join(lines)[:700]
+
+
+def cmd_scenes(pid_or_file):
+    t = load_any(pid_or_file)
+    for s in TL.scenes(t):
+        print(f"{s['n']:>2}. [{s['kind']}{'/' + s['tool'] if s['tool'] and s['tool'] not in (s['kind'],) else ''}] {s['start']:.1f}-{s['end']:.1f}s  {s['text'][:70]}  | {s['visual'][:50]}  (@{s['id']})")
+
+
+def cmd_versions(pid):
+    for v in TL.versions(TL.history(pid)):
+        print(f"v{v['rev']}  {v['message']}")
+
+
+def cmd_diff(a, b):
+    print(json.dumps(TL.plan(load_any(a), load_any(b)), indent=1))
 
 
 def cmd_reformat(pid, fmt, regen=False):
@@ -180,7 +375,7 @@ def cmd_style(pid, preset, caption=None):
 
 
 def cmd_history(pid):
-    for h in TL.history(pid):
+    for h in TL.history(pid):  # raw revisions; `versions` shows the user-facing list
         print(f"r{h['rev']}  {h['message']}" + (f"  ({len(h['patch'])} op)" if h.get("patch") else ""))
 
 
@@ -188,7 +383,7 @@ def cmd_revert(pid, rev):
     old = TL.revision(pid, rev)
     cur = TL.load(pid)
     old["rev"] = cur.get("rev")
-    print(f"r{TL.save(old, f'revert to r{rev}')}: now matches r{rev}")
+    print(f"r{TL.save(old, f'revert to r{rev}', extra={'kind': 'revert', 'revert_to': int(rev)})}: now matches r{rev}")
 
 
 def cmd_migrate(props_file, pid, spec_file=None):
@@ -266,6 +461,10 @@ def main(a):
         msg = rest[rest.index("-m") + 1] if "-m" in rest else "edit"
         cmd_patch(pos[0], pos[1], msg)
     elif cmd == "build": cmd_build(pos[0])
+    elif cmd == "edits": sys.exit(cmd_edits(pos[0], pos[1]))
+    elif cmd == "scenes": cmd_scenes(pos[0])
+    elif cmd == "versions": cmd_versions(pos[0])
+    elif cmd == "diff": cmd_diff(pos[0], pos[1])
     elif cmd == "reformat": cmd_reformat(pos[0], pos[1], "--regen-images" in flags)
     elif cmd == "style": cmd_style(pos[0], pos[1], pos[2] if len(pos) > 2 else None)
     elif cmd == "history": cmd_history(pos[0])
