@@ -1,101 +1,32 @@
 {
-  "last_update": 312538126,
-  "time": 1792664342898,
-  "stage": "script",
-  "topic": "how I started to help people start",
+  "last_update": 312538127,
+  "time": 1792664469871,
+  "stage": "pitch",
+  "topic": "how to write YouTube script in Issacverse style",
   "research": {
     "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "One Blank Page Changes Everything",
-    "hook": "Three hundred people asked me how to start, but every single one of them waited for permission.",
-    "angle": "Most assume you need a grand plan to begin helping others, but you only need to solve the exact problem you solved yesterday.",
+    "title": "How To Write Like Isaac Arthur",
+    "hook": "In two thousand fourteen, one creator started building Dyson spheres using plain text and quiet optimism.",
+    "angle": "Most writers think hard science scripts need cinematic doom and complex technical jargon. Isaac Arthur proves that stepping calmly up a ladder of scale makes massive concepts feel grounded.",
     "key_facts": [
-      "Millions of creators want to begin helping people build projects",
-      "Beginners waste months waiting for perfect conditions",
-      "Sharing a single solved problem creates immediate value",
-      "Momentum builds after the first public action"
+      "Isaac Arthur launched his futurism channel in two thousand fourteen.",
+      "Scripts establish known physics rules before scaling up solutions.",
+      "Outlines expand outward from local planets to galaxy-wide engineering.",
+      "The tone relies on optimistic problem-solving instead of dark sci-fi tropes."
     ],
-    "visual_style": "minimalist flat vector illustration, clean lines",
+    "visual_style": "blueprint line art on dark slate background, glowing gold wireframes",
     "length_seconds": 45,
-    "music": "docu-pluck",
-    "accent": "teal"
+    "music": "ambient-pad",
+    "accent": "gold"
   },
-  "script": {
-    "title": "One Blank Page Changes Everything",
-    "beats": [
-      {
-        "narration": "Three hundred people asked me how to start, but every single one of them waited for permission.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a blank white sheet of paper resting alone on a dark teal desk, clean lines, centered, no text, no logos, no real faces",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow camera push in toward the center of the blank white paper as a soft teal glow emanates from underneath."
-      },
-      {
-        "narration": "Most assume you need a grand master plan before you can help anyone build anything.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a massive labyrinth drawn on blueprint paper, teal and white, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "So they spend months organizing empty folders and designing logos instead of doing the work.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a neat row of identical empty folders beneath a ticking clock, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "Yesterday, Sarah fixed a broken formula in her budget spreadsheet.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a clean digital spreadsheet grid with one highlighted teal cell, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "She posted that exact fix online, and thirty people downloaded it before midnight.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single small document icon rising toward a cluster of glowing teal nodes, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "Nobody was waiting for a textbook.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a heavy closed tome covered in dust, teal accents, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "You only need to solve the exact problem you solved yesterday.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a simple mechanical gear meshing with a glowing teal wheel, clean lines, centered, no text, no logos, no real faces",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Camera slowly tracks forward as the teal wheel turns smoothly and locks into place."
-      },
-      {
-        "narration": "That first public action breaks months of overthinking instantly.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a paper airplane cutting through a solid grey wall leaving a teal trail, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      },
-      {
-        "narration": "Ship the solution.",
-        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a solid teal circle centered on a plain white background, clean lines, centered, no text, no logos, no real faces",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Three hundred people asked me how to start",
-        "supported": true
-      }
-    ]
-  },
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "I'm currently busy rendering your video, but you can generate standalone images anytime after it's finished!",
-      "t": 1792662986493
-    },
-    {
-      "role": "user",
-      "text": "Do it now",
-      "t": 1792663006961
-    },
     {
       "role": "bot",
       "text": "I'm still rendering your video right now! I'll let you know the second it's ready so we can generate that image.",
@@ -165,6 +96,16 @@
       "role": "bot",
       "text": "Made an image: vertical nine by sixteen photorealistic majestic golden lion looking powerful and regal, highly detailed, dramatic light",
       "t": 1792664342898
+    },
+    {
+      "role": "user",
+      "text": "Create a video like Issacverse style of how to write YouTube script",
+      "t": 1792664458101
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How To Write Like Isaac Arthur\": In two thousand fourteen, one creator started building Dyson spheres using plain text and quiet optimism.",
+      "t": 1792664469871
     }
   ],
   "working": null,
@@ -254,5 +195,6 @@
       "at": 1792662483748
     }
   ],
-  "lastRenderAuto": false
+  "lastRenderAuto": false,
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nRelevant memories:\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'."
 }
