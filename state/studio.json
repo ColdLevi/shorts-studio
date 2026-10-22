@@ -1,7 +1,7 @@
 {
-  "last_update": 312538127,
-  "time": 1792664619310,
-  "stage": "pitch",
+  "last_update": 312538128,
+  "time": 1792664663757,
+  "stage": "script",
   "topic": "how to write YouTube script in Issacverse style",
   "research": {
     "text": "",
@@ -22,16 +22,77 @@
     "music": "ambient-pad",
     "accent": "gold"
   },
-  "script": null,
+  "script": {
+    "title": "How To Write Like Isaac Arthur",
+    "beats": [
+      {
+        "narration": "In two thousand fourteen, Isaac Arthur began building Dyson spheres using plain text and quiet optimism.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a Dyson sphere forming around a central star, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "higgsfield",
+        "motion": "Slow camera zoom out as the glowing gold wireframe sphere expands gracefully around the star.",
+        "still": "flux"
+      },
+      {
+        "narration": "Scriptwriters usually think hard science fiction requires apocalyptic dread and heavy technical jargon.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a crumbling futuristic city under meteor rain, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "So they overload scenes with artificial panic, and audiences tune out.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a chaotic tangled script page fragmenting into static, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Isaac starts with simple physics everyone knows, like a single solar panel sitting on a house roof.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a small suburban house with one bright solar panel on the roof, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then he steps calmly up the ladder, expanding that single panel outward until it rings an entire star.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe ladder rising from a tiny house to an orbital ring around a sun, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "No alien invasions or screaming crew members needed.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a quiet empty starship bridge with calm digital readouts, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "By focusing on practical engineering steps, massive megastructures feel like reasonable weekend projects.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe of a vast ringworld megastructure rotating in deep space, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "higgsfield",
+        "motion": "Slow orbital camera sweep showcasing the detailed construction of the glowing megastructure.",
+        "still": "flux"
+      },
+      {
+        "narration": "Small steps build infinite worlds.",
+        "image_prompt": "Blueprint line art on a dark slate background, glowing gold wireframe grid expanding outward into a vast starfield, vertical 9:16 framing, subject centered, no text, no logos, no real faces",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Isaac Arthur launched his channel in two thousand fourteen.",
+        "supported": true
+      },
+      {
+        "claim": "Scripts start with known physics before scaling up.",
+        "supported": true
+      },
+      {
+        "claim": "Outlines expand outward from local scales to megastructures.",
+        "supported": true
+      },
+      {
+        "claim": "The channel uses optimistic problem-solving over dark tropes.",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "I'm still rendering your video right now! I'll let you know the second it's ready so we can generate that image.",
-      "t": 1792663007825
-    },
     {
       "role": "user",
       "text": "Lemme see image of one of the scenes in this video you just made",
@@ -106,6 +167,11 @@
       "role": "bot",
       "text": "Pitched \"How To Write Like Isaac Arthur\": In two thousand fourteen, one creator started building Dyson spheres using plain text and quiet optimism.",
       "t": 1792664469871
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How To Write Like Isaac Arthur\"",
+      "t": 1792664663757
     }
   ],
   "working": null,
