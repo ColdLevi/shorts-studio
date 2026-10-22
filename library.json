@@ -39,6 +39,20 @@
       "created": 1792669184282,
       "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-4/short-4.mp4",
       "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-4/short-4.jpg"
+    },
+    {
+      "id": "short-6",
+      "title": "Linux Power on Your Phone",
+      "hook": "Termux: a full Linux distro in your pocket",
+      "accent": "#2EE6C5",
+      "duration": 36.2,
+      "created": 1792695541254,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-6/short-6.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-6/short-6.jpg",
+      "project": "linux-power-on-your-phone-mvjwhdps",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }

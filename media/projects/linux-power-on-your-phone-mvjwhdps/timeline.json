@@ -1,0 +1,641 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "linux-power-on-your-phone-mvjwhdps",
+ "rev": 1,
+ "title": "Linux Power on Your Phone",
+ "duration": 36.1,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.688,
+    "narration": "Termux packs a full Linux environment into Android without requiring root access.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a glowing smartphone resting on a dark desk with green terminal text reflecting on the screen, centered subject"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "ccc8064296fe"
+   },
+   {
+    "id": "v2",
+    "start": 5.688,
+    "end": 12.2,
+    "narration": "People assume phones are just for browsing, but thousands of open source Unix utilities run natively here.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a neon teal terminal interface displaying lines of C and C++ code, centered"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "69fc08bc0a1f"
+   },
+   {
+    "id": "v3",
+    "start": 12.2,
+    "end": 18.288,
+    "narration": "Install Python or Git instantly using familiar APT commands just like Debian.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "debian tools on android",
+     "text": "apt package manager",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 18.288,
+    "end": 23.4,
+    "narration": "Type termux setup storage to link your local files directly into the shell.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, digital folders floating above a glowing mobile device in neon light, centered"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "ad2055b61b24"
+   },
+   {
+    "id": "v5",
+    "start": 23.4,
+    "end": 28.163,
+    "narration": "OpenSSH comes built right in so you can manage remote servers from your pocket.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, cybernetic network nodes linking a phone to distant servers, centered"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c2ae2ba5fd4c"
+   },
+   {
+    "id": "v6",
+    "start": 28.163,
+    "end": 33.7,
+    "narration": "Run Node or Apache locally to turn any old smartphone into a portable edge server.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a smartphone glowing brightly in a dark cybernetic workspace, centered"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "18ce166d92e6"
+   },
+   {
+    "id": "v7",
+    "start": 33.7,
+    "end": 35.304,
+    "narration": "Real Linux in your pocket.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a minimalist neon command prompt symbol on a dark background, centered"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "df9468618fb5"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Termux",
+     "start": 0.1,
+     "end": 0.412
+    },
+    {
+     "word": "packs",
+     "start": 0.425,
+     "end": 0.925
+    },
+    {
+     "word": "a",
+     "start": 1.05,
+     "end": 1.125
+    },
+    {
+     "word": "full",
+     "start": 1.125,
+     "end": 1.587
+    },
+    {
+     "word": "Linux",
+     "start": 1.587,
+     "end": 1.925
+    },
+    {
+     "word": "environment",
+     "start": 1.925,
+     "end": 2.5
+    },
+    {
+     "word": "into",
+     "start": 2.55,
+     "end": 2.8
+    },
+    {
+     "word": "Android",
+     "start": 2.812,
+     "end": 3.375
+    },
+    {
+     "word": "without",
+     "start": 3.513,
+     "end": 3.888
+    },
+    {
+     "word": "requiring",
+     "start": 3.9,
+     "end": 4.425
+    },
+    {
+     "word": "root",
+     "start": 4.425,
+     "end": 4.588
+    },
+    {
+     "word": "access.",
+     "start": 4.588,
+     "end": 5.287
+    },
+    {
+     "word": "People",
+     "start": 5.688,
+     "end": 5.938
+    },
+    {
+     "word": "assume",
+     "start": 5.938,
+     "end": 6.25
+    },
+    {
+     "word": "phones",
+     "start": 6.25,
+     "end": 6.625
+    },
+    {
+     "word": "are",
+     "start": 6.625,
+     "end": 6.763
+    },
+    {
+     "word": "just",
+     "start": 6.763,
+     "end": 6.963
+    },
+    {
+     "word": "for",
+     "start": 6.963,
+     "end": 7.062
+    },
+    {
+     "word": "browsing,",
+     "start": 7.062,
+     "end": 7.612
+    },
+    {
+     "word": "but",
+     "start": 7.888,
+     "end": 8.037
+    },
+    {
+     "word": "thousands",
+     "start": 8.05,
+     "end": 8.637
+    },
+    {
+     "word": "of",
+     "start": 8.637,
+     "end": 8.738
+    },
+    {
+     "word": "open",
+     "start": 8.863,
+     "end": 9.175
+    },
+    {
+     "word": "source",
+     "start": 9.175,
+     "end": 9.575
+    },
+    {
+     "word": "Unix",
+     "start": 9.575,
+     "end": 9.875
+    },
+    {
+     "word": "utilities",
+     "start": 9.875,
+     "end": 10.588
+    },
+    {
+     "word": "run",
+     "start": 10.7,
+     "end": 10.963
+    },
+    {
+     "word": "natively",
+     "start": 10.975,
+     "end": 11.387
+    },
+    {
+     "word": "here.",
+     "start": 11.387,
+     "end": 11.812
+    },
+    {
+     "word": "Install",
+     "start": 12.2,
+     "end": 12.588
+    },
+    {
+     "word": "Python",
+     "start": 12.588,
+     "end": 13.188
+    },
+    {
+     "word": "or",
+     "start": 13.312,
+     "end": 13.463
+    },
+    {
+     "word": "Git",
+     "start": 13.588,
+     "end": 13.812
+    },
+    {
+     "word": "instantly",
+     "start": 13.863,
+     "end": 14.463
+    },
+    {
+     "word": "using",
+     "start": 14.75,
+     "end": 15.088
+    },
+    {
+     "word": "familiar",
+     "start": 15.1,
+     "end": 15.787
+    },
+    {
+     "word": "APT",
+     "start": 15.863,
+     "end": 16.35
+    },
+    {
+     "word": "commands",
+     "start": 16.35,
+     "end": 16.887
+    },
+    {
+     "word": "just",
+     "start": 17.062,
+     "end": 17.288
+    },
+    {
+     "word": "like",
+     "start": 17.288,
+     "end": 17.425
+    },
+    {
+     "word": "Debian.",
+     "start": 17.438,
+     "end": 17.875
+    },
+    {
+     "word": "Type",
+     "start": 18.288,
+     "end": 18.5
+    },
+    {
+     "word": "termux",
+     "start": 18.5,
+     "end": 18.95
+    },
+    {
+     "word": "setup",
+     "start": 18.95,
+     "end": 19.238
+    },
+    {
+     "word": "storage",
+     "start": 19.238,
+     "end": 19.738
+    },
+    {
+     "word": "to",
+     "start": 19.938,
+     "end": 20.05
+    },
+    {
+     "word": "link",
+     "start": 20.062,
+     "end": 20.325
+    },
+    {
+     "word": "your",
+     "start": 20.325,
+     "end": 20.45
+    },
+    {
+     "word": "local",
+     "start": 20.45,
+     "end": 20.788
+    },
+    {
+     "word": "files",
+     "start": 20.788,
+     "end": 21.3
+    },
+    {
+     "word": "directly",
+     "start": 21.387,
+     "end": 22.175
+    },
+    {
+     "word": "into",
+     "start": 22.275,
+     "end": 22.462
+    },
+    {
+     "word": "the",
+     "start": 22.462,
+     "end": 22.538
+    },
+    {
+     "word": "shell.",
+     "start": 22.55,
+     "end": 23.012
+    },
+    {
+     "word": "OpenSSH",
+     "start": 23.4,
+     "end": 24.175
+    },
+    {
+     "word": "comes",
+     "start": 24.188,
+     "end": 24.45
+    },
+    {
+     "word": "built",
+     "start": 24.462,
+     "end": 24.75
+    },
+    {
+     "word": "right",
+     "start": 24.75,
+     "end": 25.012
+    },
+    {
+     "word": "in",
+     "start": 25.025,
+     "end": 25.275
+    },
+    {
+     "word": "so",
+     "start": 25.538,
+     "end": 25.65
+    },
+    {
+     "word": "you",
+     "start": 25.65,
+     "end": 25.775
+    },
+    {
+     "word": "can",
+     "start": 25.788,
+     "end": 25.913
+    },
+    {
+     "word": "manage",
+     "start": 25.913,
+     "end": 26.25
+    },
+    {
+     "word": "remote",
+     "start": 26.25,
+     "end": 26.688
+    },
+    {
+     "word": "servers",
+     "start": 26.688,
+     "end": 27.087
+    },
+    {
+     "word": "from",
+     "start": 27.087,
+     "end": 27.212
+    },
+    {
+     "word": "your",
+     "start": 27.212,
+     "end": 27.3
+    },
+    {
+     "word": "pocket.",
+     "start": 27.3,
+     "end": 27.75
+    },
+    {
+     "word": "Run",
+     "start": 28.163,
+     "end": 28.462
+    },
+    {
+     "word": "Node",
+     "start": 28.462,
+     "end": 28.837
+    },
+    {
+     "word": "or",
+     "start": 28.975,
+     "end": 29.125
+    },
+    {
+     "word": "Apache",
+     "start": 29.125,
+     "end": 29.625
+    },
+    {
+     "word": "locally",
+     "start": 29.625,
+     "end": 30.113
+    },
+    {
+     "word": "to",
+     "start": 30.125,
+     "end": 30.225
+    },
+    {
+     "word": "turn",
+     "start": 30.225,
+     "end": 30.488
+    },
+    {
+     "word": "any",
+     "start": 30.65,
+     "end": 30.875
+    },
+    {
+     "word": "old",
+     "start": 30.875,
+     "end": 31.062
+    },
+    {
+     "word": "smartphone",
+     "start": 31.062,
+     "end": 31.75
+    },
+    {
+     "word": "into",
+     "start": 31.9,
+     "end": 32.1
+    },
+    {
+     "word": "a",
+     "start": 32.1,
+     "end": 32.188
+    },
+    {
+     "word": "portable",
+     "start": 32.2,
+     "end": 32.65
+    },
+    {
+     "word": "edge",
+     "start": 32.65,
+     "end": 32.825
+    },
+    {
+     "word": "server.",
+     "start": 32.825,
+     "end": 33.3
+    },
+    {
+     "word": "Real",
+     "start": 33.7,
+     "end": 34.013
+    },
+    {
+     "word": "Linux",
+     "start": 34.025,
+     "end": 34.337
+    },
+    {
+     "word": "in",
+     "start": 34.337,
+     "end": 34.4
+    },
+    {
+     "word": "your",
+     "start": 34.4,
+     "end": 34.487
+    },
+    {
+     "word": "pocket.",
+     "start": 34.487,
+     "end": 34.925
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Termux packs a full Linux environment into Android without requiring root access. People assume phones are just for browsing, but thousands of open source Unix utilities run natively here. Install Python or Git instantly using familiar APT commands just like Debian. Type termux setup storage to link your local files directly into the shell. OpenSSH comes built right in so you can manage remote servers from your pocket. Run Node or Apache locally to turn any old smartphone into a portable edge server. Real Linux in your pocket."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Linux Power on Your Phone"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792695395192,
+  "updated": 1792695395192,
+  "topic": "how to use termux for beginners in Issacverse style",
+  "hook": "Termux: a full Linux distro in your pocket",
+  "image_style": "neon cyberpunk vector illustration",
+  "format": "vertical",
+  "assets_release": "project-linux-power-on-your-phone-mvjwhdps",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "gemini_images": false,
+   "hook": "Termux: a full Linux distro in your pocket",
+   "music": "tech-pulse",
+   "project_id": "linux-power-on-your-phone-mvjwhdps",
+   "style": "neon cyberpunk vector illustration",
+   "title": "Linux Power on Your Phone",
+   "topic": "how to use termux for beginners in Issacverse style",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
