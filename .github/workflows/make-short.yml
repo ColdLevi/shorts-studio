@@ -22,7 +22,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
     env:
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       CHAT_ID: ${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || secrets.CHAT_ID }}
@@ -56,10 +56,14 @@ jobs:
           cache-dependency-path: remotion/package-lock.json
 
       - name: Install tools
+        timeout-minutes: 12
         run: |
           pip install -q edge-tts pillow
-          sudo apt-get update -y
-          sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core \
+          # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
+          APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Dpkg::Use-Pty=0"
+          timeout 240 sudo apt-get $APT update -y || true
+          timeout 420 sudo apt-get $APT install -y --no-install-recommends ffmpeg fonts-dejavu-core \
             libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 \
             libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
