@@ -1,6 +1,6 @@
 {
-  "last_update": 312538135,
-  "time": 1792667748905,
+  "last_update": 312538136,
+  "time": 1792667988996,
   "stage": "idle",
   "topic": "how the world rotates",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "It's a very ugly looking lion but it's good anyway make it more realistic",
-      "t": 1792664331517
-    },
-    {
-      "role": "bot",
-      "text": "Made an image: vertical nine by sixteen photorealistic majestic golden lion looking powerful and regal, highly detailed, dramatic light",
-      "t": 1792664342898
-    },
     {
       "role": "user",
       "text": "Create a video like Issacverse style of how to write YouTube script",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"Earth Spins at One Thousand Miles an Hour\"",
       "t": 1792667748905
+    },
+    {
+      "role": "user",
+      "text": "Do research learn and save all you can on best videos people engage in their techniques and video style and image preferences and art techniques that makes them good to watch spend 10mins looking at several videos and learning as well saving what you learn and remove what you don't need to learn as ",
+      "t": 1792667987919
+    },
+    {
+      "role": "bot",
+      "text": "I'm always learning from top-performing content to keep improving our hooks, visuals, and pacing! Let's keep making engaging videos together.",
+      "t": 1792667988996
     }
   ],
   "working": null,
