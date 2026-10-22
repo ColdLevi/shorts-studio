@@ -1,6 +1,6 @@
 {
   "last_update": 312538133,
-  "time": 1792667667653,
+  "time": 1792667680117,
   "stage": "pitch",
   "topic": "how the world rotates",
   "research": {
@@ -197,9 +197,5 @@
   ],
   "lastRenderAuto": false,
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.",
-  "deep": {
-    "topic": "how the world rotates",
-    "status": "running",
-    "at": 1792667667653
-  }
+  "deep": null
 }
