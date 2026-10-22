@@ -67,6 +67,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-7",
+      "title": "Build a Telegram Bot With One Command",
+      "hook": "Two lines of code launched a live crypto tracker.",
+      "accent": "#2EE6C5",
+      "duration": 25.2,
+      "created": 1792711393001,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-7/short-7.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-7/short-7.jpg",
+      "project": "build-a-telegram-bot-with-one-comman-mvk02h3h",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }

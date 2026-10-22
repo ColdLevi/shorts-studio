@@ -1,0 +1,495 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "build-a-telegram-bot-with-one-comman-mvk02h3h",
+ "rev": 1,
+ "title": "Build a Telegram Bot With One Command",
+ "duration": 25.04,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.712,
+    "narration": "Two lines of code launched a live crypto tracker.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical framing, dark mode code editor with glowing green syntax highlighting on a smartphone screen, centered.",
+     "motion": "Slow push in on the glowing code lines as text scrolls smoothly on screen.",
+     "still": "flux"
+    },
+    "hash": "90711baed5a5"
+   },
+   {
+    "id": "v2",
+    "start": 3.712,
+    "end": 7.75,
+    "narration": "Most people think launching a bot requires an entire backend system.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a complex tangled web of glowing server racks in a dark room, minimalist aesthetic."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4d59cec57937"
+   },
+   {
+    "id": "v3",
+    "start": 7.75,
+    "end": 12.137,
+    "narration": "Termux gives you a full Linux environment on Android with zero setup.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, a clean mobile terminal interface showing command line text in dark mode."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "2bab4cd698ce"
+   },
+   {
+    "id": "v4",
+    "start": 12.137,
+    "end": 17.2,
+    "narration": "A single terminal command installs the minimal base system automatically.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Zero configuration required",
+     "text": "apt update",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 17.2,
+    "end": 21.95,
+    "narration": "Then you pull extra packages using the APT manager you already know.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical framing, code packages downloading in a command line interface with teal highlights."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7fd7365b91d8"
+   },
+   {
+    "id": "v6",
+    "start": 21.95,
+    "end": 24.24,
+    "narration": "Run your script directly from your pocket.",
+    "kind": "ai_video",
+    "src": "assets/clip_06.mp4",
+    "duration": 4.06,
+    "still": "assets/img_06.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical framing, a smartphone resting on a dark desk displaying a running crypto price script.",
+     "motion": "Subtle pan across the smartphone screen showing live updating numbers.",
+     "still": "flux"
+    },
+    "hash": "4f0fd273daad"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Two",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "lines",
+     "start": 0.25,
+     "end": 0.55
+    },
+    {
+     "word": "of",
+     "start": 0.55,
+     "end": 0.625
+    },
+    {
+     "word": "code",
+     "start": 0.625,
+     "end": 0.988
+    },
+    {
+     "word": "launched",
+     "start": 1.225,
+     "end": 1.637
+    },
+    {
+     "word": "a",
+     "start": 1.7,
+     "end": 1.75
+    },
+    {
+     "word": "live",
+     "start": 1.762,
+     "end": 2.275
+    },
+    {
+     "word": "crypto",
+     "start": 2.288,
+     "end": 2.688
+    },
+    {
+     "word": "tracker.",
+     "start": 2.7,
+     "end": 3.3
+    },
+    {
+     "word": "Most",
+     "start": 3.712,
+     "end": 3.913
+    },
+    {
+     "word": "people",
+     "start": 3.913,
+     "end": 4.188
+    },
+    {
+     "word": "think",
+     "start": 4.188,
+     "end": 4.412
+    },
+    {
+     "word": "launching",
+     "start": 4.412,
+     "end": 4.912
+    },
+    {
+     "word": "a",
+     "start": 4.912,
+     "end": 4.975
+    },
+    {
+     "word": "bot",
+     "start": 4.975,
+     "end": 5.35
+    },
+    {
+     "word": "requires",
+     "start": 5.362,
+     "end": 5.875
+    },
+    {
+     "word": "an",
+     "start": 5.888,
+     "end": 5.975
+    },
+    {
+     "word": "entire",
+     "start": 5.975,
+     "end": 6.55
+    },
+    {
+     "word": "backend",
+     "start": 6.55,
+     "end": 6.963
+    },
+    {
+     "word": "system.",
+     "start": 6.963,
+     "end": 7.362
+    },
+    {
+     "word": "Termux",
+     "start": 7.75,
+     "end": 8.225
+    },
+    {
+     "word": "gives",
+     "start": 8.3,
+     "end": 8.5
+    },
+    {
+     "word": "you",
+     "start": 8.5,
+     "end": 8.637
+    },
+    {
+     "word": "a",
+     "start": 8.65,
+     "end": 8.7
+    },
+    {
+     "word": "full",
+     "start": 8.713,
+     "end": 9.137
+    },
+    {
+     "word": "Linux",
+     "start": 9.137,
+     "end": 9.488
+    },
+    {
+     "word": "environment",
+     "start": 9.488,
+     "end": 9.988
+    },
+    {
+     "word": "on",
+     "start": 10.0,
+     "end": 10.15
+    },
+    {
+     "word": "Android",
+     "start": 10.238,
+     "end": 10.8
+    },
+    {
+     "word": "with",
+     "start": 10.812,
+     "end": 10.938
+    },
+    {
+     "word": "zero",
+     "start": 10.938,
+     "end": 11.287
+    },
+    {
+     "word": "setup.",
+     "start": 11.287,
+     "end": 11.738
+    },
+    {
+     "word": "A",
+     "start": 12.137,
+     "end": 12.2
+    },
+    {
+     "word": "single",
+     "start": 12.213,
+     "end": 12.588
+    },
+    {
+     "word": "terminal",
+     "start": 12.6,
+     "end": 12.975
+    },
+    {
+     "word": "command",
+     "start": 12.975,
+     "end": 13.5
+    },
+    {
+     "word": "installs",
+     "start": 13.575,
+     "end": 14.162
+    },
+    {
+     "word": "the",
+     "start": 14.162,
+     "end": 14.262
+    },
+    {
+     "word": "minimal",
+     "start": 14.262,
+     "end": 14.775
+    },
+    {
+     "word": "base",
+     "start": 14.887,
+     "end": 15.213
+    },
+    {
+     "word": "system",
+     "start": 15.225,
+     "end": 15.762
+    },
+    {
+     "word": "automatically.",
+     "start": 16.062,
+     "end": 16.812
+    },
+    {
+     "word": "Then",
+     "start": 17.2,
+     "end": 17.288
+    },
+    {
+     "word": "you",
+     "start": 17.288,
+     "end": 17.4
+    },
+    {
+     "word": "pull",
+     "start": 17.4,
+     "end": 17.762
+    },
+    {
+     "word": "extra",
+     "start": 17.887,
+     "end": 18.188
+    },
+    {
+     "word": "packages",
+     "start": 18.188,
+     "end": 18.863
+    },
+    {
+     "word": "using",
+     "start": 18.988,
+     "end": 19.35
+    },
+    {
+     "word": "the",
+     "start": 19.35,
+     "end": 19.462
+    },
+    {
+     "word": "APT",
+     "start": 19.538,
+     "end": 20.038
+    },
+    {
+     "word": "manager",
+     "start": 20.038,
+     "end": 20.575
+    },
+    {
+     "word": "you",
+     "start": 20.775,
+     "end": 20.925
+    },
+    {
+     "word": "already",
+     "start": 20.925,
+     "end": 21.212
+    },
+    {
+     "word": "know.",
+     "start": 21.212,
+     "end": 21.538
+    },
+    {
+     "word": "Run",
+     "start": 21.95,
+     "end": 22.125
+    },
+    {
+     "word": "your",
+     "start": 22.125,
+     "end": 22.225
+    },
+    {
+     "word": "script",
+     "start": 22.225,
+     "end": 22.637
+    },
+    {
+     "word": "directly",
+     "start": 22.688,
+     "end": 23.225
+    },
+    {
+     "word": "from",
+     "start": 23.225,
+     "end": 23.35
+    },
+    {
+     "word": "your",
+     "start": 23.35,
+     "end": 23.438
+    },
+    {
+     "word": "pocket.",
+     "start": 23.438,
+     "end": 23.875
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Two lines of code launched a live crypto tracker. Most people think launching a bot requires an entire backend system. Termux gives you a full Linux environment on Android with zero setup. A single terminal command installs the minimal base system automatically. Then you pull extra packages using the APT manager you already know. Run your script directly from your pocket."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Build a Telegram Bot With One Command"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792711277731,
+  "updated": 1792711277731,
+  "topic": "starting small",
+  "hook": "Two lines of code launched a live crypto tracker.",
+  "image_style": "minimal dark mode code editor, high contrast syntax highlighting",
+  "format": "vertical",
+  "assets_release": "project-build-a-telegram-bot-with-one-comman-mvk02h3h",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "gemini_images": false,
+   "hook": "Two lines of code launched a live crypto tracker.",
+   "music": "tech-pulse",
+   "project_id": "build-a-telegram-bot-with-one-comman-mvk02h3h",
+   "style": "minimal dark mode code editor, high contrast syntax highlighting",
+   "title": "Build a Telegram Bot With One Command",
+   "topic": "starting small",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
