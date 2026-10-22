@@ -1,115 +1,18 @@
 {
-  "last_update": 312538134,
-  "time": 1792667724271,
-  "stage": "script",
+  "last_update": 312538135,
+  "time": 1792667748905,
+  "stage": "idle",
   "topic": "how the world rotates",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Earth Spins at One Thousand Miles an Hour",
-    "hook": "One thousand miles an hour is the speed of the ground right beneath your feet.",
-    "angle": "People assume a planet spinning that fast should create endless hurricane winds or throw us into space. The atmosphere gets dragged along at the exact same pace, so everything feels frozen still.",
-    "key_facts": [
-      "Earth spins at roughly one thousand miles per hour at the equator",
-      "Conservation of angular momentum from four point five billion years ago keeps Earth rotating",
-      "The atmosphere moves with the planet because of gravity and friction",
-      "Moon gravity creates tidal friction that slows Earth spin by roughly two milliseconds every hundred years"
-    ],
-    "visual_style": "moody cinematic photo, film grain, hyperrealistic earth textures",
-    "length_seconds": 45,
-    "music": "cinematic-min",
-    "accent": "teal"
-  },
-  "script": {
-    "title": "Earth Spins at One Thousand Miles an Hour",
-    "beats": [
-      {
-        "narration": "One thousand miles an hour is the speed of the ground right beneath your feet.",
-        "image_prompt": "Vertical cinematic shot of leather boots standing on dark cracked earth, detailed ground textures, moody teal atmospheric lighting, film grain",
-        "tool": "higgsfield",
-        "motion": "Slow camera push down toward the ground as dust particles hover in dark teal light",
-        "still": "flux"
-      },
-      {
-        "narration": "You would expect a planet spinning that fast to create endless hurricane winds.",
-        "image_prompt": "Vertical cinematic photograph of dark stormy clouds rolling over a dark empty landscape, atmospheric teal tone, moody lighting",
-        "tool": "flux"
-      },
-      {
-        "narration": "Gravity and friction pull our atmosphere along at the exact same pace, so everything feels frozen still.",
-        "image_prompt": "Vertical space photo of Earth showing the glowing curvature of the atmosphere, hyperrealistic cloud layers against black space",
-        "tool": "flux"
-      },
-      {
-        "narration": "Four point five billion years ago, swirling dust set Earth in motion, and angular momentum keeps it turning.",
-        "image_prompt": "Vertical cinematic image of glowing cosmic dust swirling in deep outer space, moody teal lighting, film grain",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "4.5 Billion Years",
-          "sub": "Angular Momentum"
-        }
-      },
-      {
-        "narration": "So your morning coffee stays perfectly still while moving faster than a jet.",
-        "image_prompt": "Vertical shot of a ceramic mug sitting on a dark wooden table in a quiet room, teal window light shadows",
-        "tool": "higgsfield",
-        "motion": "Static camera shot as delicate steam rises straight up from the hot coffee mug",
-        "still": "flux"
-      },
-      {
-        "narration": "Then the Moon steps in.",
-        "image_prompt": "Vertical photograph of a bright full moon hanging over dark calm ocean waters at night, moody teal tones",
-        "tool": "flux"
-      },
-      {
-        "narration": "Tidal friction from the ocean slows our spin by two milliseconds every hundred years.",
-        "image_prompt": "Vertical cinematic shot of ocean tide crashing at night under soft moonlight, fine wave textures, teal accent",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 2,
-          "prefix": "",
-          "suffix": " ms / ",
-          "label": "Rotation Slowdown"
-        }
-      },
-      {
-        "narration": "Enjoy the fast ride.",
-        "image_prompt": "Vertical photograph of a dark land horizon at twilight, deep teal glow on the atmosphere, hyperrealistic cinematic aesthetic",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Earth spins at roughly 1,000 miles per hour at the equator.",
-        "supported": true
-      },
-      {
-        "claim": "Atmosphere moves with the planet because of gravity and friction.",
-        "supported": true
-      },
-      {
-        "claim": "Conservation of angular momentum from 4.5 billion years ago keeps Earth rotating.",
-        "supported": true
-      },
-      {
-        "claim": "Moon tidal friction slows Earth spin by roughly 2 milliseconds every hundred years.",
-        "supported": true
-      }
-    ]
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Made an image: A majestic golden lion looking powerful and regal, vertical nine by sixteen, highly detailed, dramatic lighting",
-      "t": 1792664289673
-    },
     {
       "role": "user",
       "text": "It's a very ugly looking lion but it's good anyway make it more realistic",
@@ -184,10 +87,118 @@
       "role": "bot",
       "text": "Wrote the script for \"Earth Spins at One Thousand Miles an Hour\"",
       "t": 1792667724271
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Earth Spins at One Thousand Miles an Hour\"",
+      "t": 1792667748905
     }
   ],
   "working": null,
   "projects": [
+    {
+      "title": "Earth Spins at One Thousand Miles an Hour",
+      "topic": "how the world rotates",
+      "pitch": {
+        "title": "Earth Spins at One Thousand Miles an Hour",
+        "hook": "One thousand miles an hour is the speed of the ground right beneath your feet.",
+        "angle": "People assume a planet spinning that fast should create endless hurricane winds or throw us into space. The atmosphere gets dragged along at the exact same pace, so everything feels frozen still.",
+        "key_facts": [
+          "Earth spins at roughly one thousand miles per hour at the equator",
+          "Conservation of angular momentum from four point five billion years ago keeps Earth rotating",
+          "The atmosphere moves with the planet because of gravity and friction",
+          "Moon gravity creates tidal friction that slows Earth spin by roughly two milliseconds every hundred years"
+        ],
+        "visual_style": "moody cinematic photo, film grain, hyperrealistic earth textures",
+        "length_seconds": 45,
+        "music": "cinematic-min",
+        "accent": "teal"
+      },
+      "script": {
+        "title": "Earth Spins at One Thousand Miles an Hour",
+        "beats": [
+          {
+            "narration": "One thousand miles an hour is the speed of the ground right beneath your feet.",
+            "image_prompt": "Vertical cinematic shot of leather boots standing on dark cracked earth, detailed ground textures, moody teal atmospheric lighting, film grain",
+            "tool": "higgsfield",
+            "motion": "Slow camera push down toward the ground as dust particles hover in dark teal light",
+            "still": "flux"
+          },
+          {
+            "narration": "You would expect a planet spinning that fast to create endless hurricane winds.",
+            "image_prompt": "Vertical cinematic photograph of dark stormy clouds rolling over a dark empty landscape, atmospheric teal tone, moody lighting",
+            "tool": "flux"
+          },
+          {
+            "narration": "Gravity and friction pull our atmosphere along at the exact same pace, so everything feels frozen still.",
+            "image_prompt": "Vertical space photo of Earth showing the glowing curvature of the atmosphere, hyperrealistic cloud layers against black space",
+            "tool": "flux"
+          },
+          {
+            "narration": "Four point five billion years ago, swirling dust set Earth in motion, and angular momentum keeps it turning.",
+            "image_prompt": "Vertical cinematic image of glowing cosmic dust swirling in deep outer space, moody teal lighting, film grain",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "4.5 Billion Years",
+              "sub": "Angular Momentum"
+            }
+          },
+          {
+            "narration": "So your morning coffee stays perfectly still while moving faster than a jet.",
+            "image_prompt": "Vertical shot of a ceramic mug sitting on a dark wooden table in a quiet room, teal window light shadows",
+            "tool": "higgsfield",
+            "motion": "Static camera shot as delicate steam rises straight up from the hot coffee mug",
+            "still": "flux"
+          },
+          {
+            "narration": "Then the Moon steps in.",
+            "image_prompt": "Vertical photograph of a bright full moon hanging over dark calm ocean waters at night, moody teal tones",
+            "tool": "flux"
+          },
+          {
+            "narration": "Tidal friction from the ocean slows our spin by two milliseconds every hundred years.",
+            "image_prompt": "Vertical cinematic shot of ocean tide crashing at night under soft moonlight, fine wave textures, teal accent",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 2,
+              "prefix": "",
+              "suffix": " ms / ",
+              "label": "Rotation Slowdown"
+            }
+          },
+          {
+            "narration": "Enjoy the fast ride.",
+            "image_prompt": "Vertical photograph of a dark land horizon at twilight, deep teal glow on the atmosphere, hyperrealistic cinematic aesthetic",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Earth spins at roughly 1,000 miles per hour at the equator.",
+            "supported": true
+          },
+          {
+            "claim": "Atmosphere moves with the planet because of gravity and friction.",
+            "supported": true
+          },
+          {
+            "claim": "Conservation of angular momentum from 4.5 billion years ago keeps Earth rotating.",
+            "supported": true
+          },
+          {
+            "claim": "Moon tidal friction slows Earth spin by roughly 2 milliseconds every hundred years.",
+            "supported": true
+          }
+        ]
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1792667748905
+    },
     {
       "title": "One Blank Page Changes Everything",
       "topic": "how I started to help people start",
@@ -275,5 +286,11 @@
   ],
   "lastRenderAuto": false,
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.",
-  "deep": null
+  "deep": null,
+  "renders": [
+    {
+      "title": "Earth Spins at One Thousand Miles an Hour",
+      "at": 1792667748905
+    }
+  ]
 }
