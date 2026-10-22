@@ -1,6 +1,6 @@
 {
-  "last_update": 312538125,
-  "time": 1792664289673,
+  "last_update": 312538126,
+  "time": 1792664342898,
   "stage": "script",
   "topic": "how I started to help people start",
   "research": {
@@ -88,16 +88,6 @@
   "history": [
     {
       "role": "bot",
-      "text": "Rendering \"One Blank Page Changes Everything\"",
-      "t": 1792662483748
-    },
-    {
-      "role": "user",
-      "text": "Creat an image of just one of the scene in the recent video",
-      "t": 1792662985248
-    },
-    {
-      "role": "bot",
       "text": "I'm currently busy rendering your video, but you can generate standalone images anytime after it's finished!",
       "t": 1792662986493
     },
@@ -165,6 +155,16 @@
       "role": "bot",
       "text": "Made an image: A majestic golden lion looking powerful and regal, vertical nine by sixteen, highly detailed, dramatic lighting",
       "t": 1792664289673
+    },
+    {
+      "role": "user",
+      "text": "It's a very ugly looking lion but it's good anyway make it more realistic",
+      "t": 1792664331517
+    },
+    {
+      "role": "bot",
+      "text": "Made an image: vertical nine by sixteen photorealistic majestic golden lion looking powerful and regal, highly detailed, dramatic light",
+      "t": 1792664342898
     }
   ],
   "working": null,
