@@ -1,6 +1,6 @@
 {
-  "last_update": 312538122,
-  "time": 1792664086821,
+  "last_update": 312538123,
+  "time": 1792664123861,
   "stage": "idle",
   "topic": "how I started to help people start",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "I want to make a YouTube video of how I started the main purpose is to help people start",
-      "t": 1792662380531
-    },
     {
       "role": "bot",
       "text": "Pitched \"One Blank Page Changes Everything\": Three hundred people asked me how to start, but every single one of them waited for permission.",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Glad we got that sorted out! What kind of short should we work on next?",
       "t": 1792664086821
+    },
+    {
+      "role": "user",
+      "text": "A image of a golden lion looking majestic",
+      "t": 1792664122896
     }
   ],
   "working": null,
