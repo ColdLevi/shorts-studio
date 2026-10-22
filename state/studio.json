@@ -1,6 +1,6 @@
 {
-  "last_update": 312538119,
-  "time": 1792663617689,
+  "last_update": 312538120,
+  "time": 1792663710528,
   "stage": "rendering",
   "topic": "how I started to help people start",
   "research": {
@@ -135,6 +135,16 @@
       "role": "bot",
       "text": "I'm still rendering your video right now! I'll let you know the second it's ready so we can generate that image.",
       "t": 1792663007825
+    },
+    {
+      "role": "user",
+      "text": "Lemme see image of one of the scenes in this video you just made",
+      "t": 1792663709028
+    },
+    {
+      "role": "bot",
+      "text": "I'm still finishing up the render for \"One Blank Page Changes Everything\" right now. Once it's done, we can pull up and generate any scene you'd like to see!",
+      "t": 1792663710528
     }
   ],
   "working": null,
