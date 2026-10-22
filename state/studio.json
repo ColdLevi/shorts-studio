@@ -1,6 +1,6 @@
 {
-  "last_update": 312538130,
-  "time": 1792666342111,
+  "last_update": 312538131,
+  "time": 1792666377257,
   "stage": "script",
   "topic": "how to write YouTube script in Issacverse style",
   "research": {
@@ -95,16 +95,6 @@
   "history": [
     {
       "role": "user",
-      "text": "Ok",
-      "t": 1792664085560
-    },
-    {
-      "role": "bot",
-      "text": "Glad we got that sorted out! What kind of short should we work on next?",
-      "t": 1792664086821
-    },
-    {
-      "role": "user",
       "text": "A image of a golden lion looking majestic",
       "t": 1792664122896
     },
@@ -172,6 +162,16 @@
       "role": "bot",
       "text": "I can help you brainstorm trending topics, write engaging scripts, and generate visuals or full vertical videos for your YouTube Shorts!",
       "t": 1792666342110
+    },
+    {
+      "role": "user",
+      "text": "What if I want landscape view videos like original YouTube video",
+      "t": 1792666375966
+    },
+    {
+      "role": "bot",
+      "text": "I currently specialize in vertical 9:16 videos optimized for YouTube Shorts, Reels, and TikTok! If you'd like to render the current script, just say the word.",
+      "t": 1792666377257
     }
   ],
   "working": null,
