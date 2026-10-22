@@ -1,0 +1,14 @@
+{
+  "shorts": [
+    {
+      "id": "short-1",
+      "title": "Thomas Edison and the Ten Thousand Failures",
+      "hook": "Ten thousand failed lightbulbs piled up in a New Jersey laboratory.",
+      "accent": "#FFD43B",
+      "duration": 35.9,
+      "created": 1792659835575,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-1/short-1.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-1/short-1.jpg"
+    }
+  ]
+}
