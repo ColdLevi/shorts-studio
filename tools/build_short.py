@@ -331,12 +331,26 @@ def voice(text, voice_name, rate, path):
                 if i:
                     print(f"voice ok on try {i + 1} ({v})")
                 break
+            words = []
         except Exception as e:
             last = e
             print(f"edge-tts try {i + 1} with {v} {r} failed: {e}")
         time.sleep(3 * (i + 1))
-    if not words and last:
-        raise last
+    if not words:
+        print("edge-tts gave nothing, using Google TTS backup with estimated word timings")
+        try:
+            from gtts import gTTS
+            gTTS(text, lang="en", tld="com.ng").save(path)
+        except Exception as e:
+            raise SystemExit(f"Both voices failed. edge-tts: {last}; Google TTS: {e}")
+        toks = text.split()
+        total_s = duration(path)
+        weights = [len(re.sub(r"[^0-9A-Za-z]", "", t)) + 2 for t in toks]
+        span, t0 = total_s * 0.98 / sum(weights), total_s * 0.01
+        for tok, wt in zip(toks, weights):
+            w = re.sub(r"[^0-9A-Za-z'-]", "", tok) or tok
+            words.append({"word": w, "start": round(t0, 3), "end": round(t0 + span * wt * 0.9, 3)})
+            t0 += span * wt
     if not words:
         raise SystemExit("edge-tts returned no word timings")
     return punctuate(words, text), duration(path)

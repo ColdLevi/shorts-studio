@@ -86,7 +86,7 @@ jobs:
       - name: Install tools
         timeout-minutes: 12
         run: |
-          pip install -q -U edge-tts pillow
+          pip install -q -U edge-tts gtts pillow
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
           sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
           APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Dpkg::Use-Pty=0"
