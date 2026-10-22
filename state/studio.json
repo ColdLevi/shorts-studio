@@ -1,6 +1,6 @@
 {
   "last_update": 312538153,
-  "time": 1792701261069,
+  "time": 1792701262291,
   "stage": "pitch",
   "topic": "starting small",
   "research": {
@@ -394,9 +394,9 @@
   "lastRenderAuto": false,
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (fact) The user's YouTube channel is located at https://youtube.com/@shipweb3s.\n- (interest) The user is interested in tutorials and coding projects from the ShipWeb3 channel.\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (interest) The user is interested in line‑by‑line breakdowns of video scripts.\n- (interest) The user is interested in analyzing successful crypto and Telegram bot tutorial channels like ShipWeb3.\n- (interest) The user is interested in learning from the tutorial content of the channel.\n- (interest) The user is interested in finance and AI market trends.",
   "deep": {
-    "topic": "how to use termux for beginners in Issacverse style",
-    "status": "done",
-    "at": 1792692437591
+    "topic": "starting small",
+    "status": "running",
+    "at": 1792701262291
   },
   "renders": [
     {
