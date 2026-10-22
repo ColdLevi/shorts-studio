@@ -1,6 +1,6 @@
 {
-  "last_update": 312538121,
-  "time": 1792664063716,
+  "last_update": 312538122,
+  "time": 1792664086821,
   "stage": "idle",
   "topic": "how I started to help people start",
   "research": {
@@ -82,6 +82,16 @@
       "role": "bot",
       "text": "Cancelled the current short",
       "t": 1792664063716
+    },
+    {
+      "role": "user",
+      "text": "Ok",
+      "t": 1792664085560
+    },
+    {
+      "role": "bot",
+      "text": "Glad we got that sorted out! What kind of short should we work on next?",
+      "t": 1792664086821
     }
   ],
   "working": null,
