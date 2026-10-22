@@ -91,29 +91,52 @@ def punctuate(words, text):
 
 
 # ---------- images ----------
-def flux(prompt, path, seed):
+# Best free Cloudflare model first, cheaper ones as fallbacks. Neurons per portrait image (10,000 free a day):
+# flux-2-klein-9b ~1,400 (best detail, used for the hook shot), flux-2-klein-4b ~110 (FLUX.2 quality, most shots),
+# flux-1-schnell ~80 (old, last resort).
+HERO_MODELS = ["flux-2-klein-9b", "flux-2-klein-4b", "flux-1-schnell"]
+STD_MODELS = ["flux-2-klein-4b", "flux-1-schnell"]
+W, H = 768, 1344  # 9:16-ish, multiples of 16
+
+
+def _cf_call(model, prompt, acc, tok):
+    url = f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/{model}"
+    if model.startswith("flux-2"):
+        b = "----hark" + str(int(time.time() * 1000))
+        parts = [("prompt", prompt[:2000]), ("width", str(W)), ("height", str(H))]
+        data = b"".join(f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode() for k, v in parts) + f"--{b}--\r\n".encode()
+        ctype = "multipart/form-data; boundary=" + b
+    else:
+        data, ctype = json.dumps({"prompt": prompt[:2000], "steps": 8}).encode(), "application/json"
+    req = urllib.request.Request(url, data=data, headers={"Authorization": "Bearer " + tok, "Content-Type": ctype})
+    return json.load(urllib.request.urlopen(req, timeout=150))["result"]["image"]
+
+
+def flux(prompt, path, seed=0, hero=False):
     acc, tok = os.getenv("CLOUDFLARE_ACCOUNT_ID", "").strip(), os.getenv("CLOUDFLARE_API_TOKEN", "").strip()
     if not (acc and tok):
         raise RuntimeError("no Cloudflare keys")
-    body = {"prompt": prompt, "steps": 8}
-    req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
-                                 data=json.dumps(body).encode(),
-                                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
-    last = None
-    for _ in range(3):
-        try:
-            r = json.load(urllib.request.urlopen(req, timeout=120))
-            open(path, "wb").write(base64.b64decode(r["result"]["image"]))
-            return True
-        except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", "ignore")
-            if e.code == 429 or re.search(r"4006|neuron|daily|quota|allocation", body, re.I):
-                raise QuotaError(f"{e.code} {body[:160]}")
-            last = f"{e.code} {body[:160]}"
-            if e.code in (401, 403):
-                break
-        except Exception as e:
-            last = e
+    last, quota_hit = None, None
+    for model in (HERO_MODELS if hero else STD_MODELS):
+        for attempt in range(2):
+            try:
+                open(path, "wb").write(base64.b64decode(_cf_call(model, prompt, acc, tok)))
+                USAGE.setdefault("image_models", {})
+                USAGE["image_models"][model] = USAGE["image_models"].get(model, 0) + 1
+                return True
+            except urllib.error.HTTPError as e:
+                body = e.read().decode("utf-8", "ignore")
+                last = f"{model}: {e.code} {body[:160]}"
+                if e.code == 429 or re.search(r"4006|neuron|daily|quota|allocation", body, re.I):
+                    quota_hit = last
+                    break  # out of budget for this model: a cheaper one may still fit
+                if e.code in (400, 401, 403, 404):
+                    break
+            except Exception as e:
+                last = f"{model}: {e}"
+        print("image model fallback:", last)
+    if quota_hit:
+        raise QuotaError(quota_hit)
     raise RuntimeError(f"flux failed: {last}")
 
 
@@ -253,7 +276,7 @@ def main():
     def make(i):
         b = beats[i]
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
-        prompt = f"{b['image_prompt']}. {style}. Vertical 9:16 composition, subject centered, no text, no watermark."
+        prompt = f"{b['image_prompt']}. {style}. Vertical 9:16 composition, subject centered, cinematic lighting, rich colour, sharp focus, highly detailed, no text, no watermark."
         tool = (b.get("tool") or "flux").lower()
         try:
             if tool == "pixellab" or (tool == "higgsfield" and b.get("still") == "pixellab"):
@@ -261,9 +284,9 @@ def main():
                     pixellab(f"{b['image_prompt']}. {style}", path)
                     PIXEL.add(i)
                 except PaidToolError as e:
-                    print("pixellab", i + 1, e); paid_notes.append(str(e)); flux(prompt, path, 1000 + i)
+                    print("pixellab", i + 1, e); paid_notes.append(str(e)); flux(prompt, path, 1000 + i, hero=(i == 0))
             else:
-                flux(prompt, path, 1000 + i)
+                flux(prompt, path, 1000 + i, hero=(i == 0))
         except Exception as e:
             print("image", i + 1, e)
             if spec.get("gemini_images"):
