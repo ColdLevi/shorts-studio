@@ -269,12 +269,15 @@ def main():
     words = punctuate(words, text)
     print(f"voice {total:.1f}s, {len(words)} words")
 
-    tg(f"🎨 Painting {len(beats)} images...")
+    n_gfx = sum(1 for b in beats if b.get("graphic"))
+    tg(f"🎨 Painting {len(beats) - n_gfx} images" + (f" and animating {n_gfx} graphic(s)..." if n_gfx else "..."))
     fallbacks, errors, quota, paid_notes = [], [], [], []
     PIXEL = set()
 
     def make(i):
         b = beats[i]
+        if b.get("graphic"):
+            return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
         prompt = f"{b['image_prompt']}. {style}. Vertical 9:16 composition, subject centered, cinematic lighting, rich colour, sharp focus, highly detailed, no text, no watermark."
         tool = (b.get("tool") or "flux").lower()
@@ -348,7 +351,8 @@ def main():
         "musicVolume": float(spec.get("music_volume", 0.1)),
         "accent": spec.get("accent", "#FFD43B"),
         "duration": round(total + 0.8, 2),
-        "beats": [{"image": img, "text": b["narration"], **t, **clips.get(i, {}), **({"pixel": True} if i in PIXEL else {})}
+        "beats": [{"image": img, "text": b["narration"], **t, **clips.get(i, {}), **({"pixel": True} if i in PIXEL else {}),
+                   **({"graphic": b["graphic"]} if b.get("graphic") else {})}
                   for i, (img, b, t) in enumerate(zip(images, beats, times))],
         "words": words,
     }

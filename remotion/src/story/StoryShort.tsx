@@ -6,11 +6,12 @@ import {
   useCurrentFrame, useVideoConfig, Easing, CalculateMetadataFunction,
 } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Montserrat';
+import { Graphic, GraphicBeat } from './graphics';
 
 const { fontFamily } = loadFont('normal', { weights: ['800', '900'], subsets: ['latin'] });
 
 export type Word = { word: string; start: number; end: number };
-export type Beat = { image: string; start: number; end: number; text?: string; video?: string; videoDuration?: number; pixel?: boolean };
+export type Beat = { image: string; start: number; end: number; text?: string; video?: string; videoDuration?: number; pixel?: boolean; graphic?: Graphic };
 export type StoryProps = {
   title: string;
   audio: string;
@@ -32,6 +33,14 @@ export const calculateStoryMetadata: CalculateMetadataFunction<StoryProps> = ({ 
 });
 
 const FADE = 0.35;
+
+// The closest beat that has a real picture: blurred behind a graphic beat for continuity.
+const nearImage = (beats: Beat[], i: number) => {
+  for (let d = 1; d < beats.length; d++) {
+    for (const j of [i - d, i + d]) if (beats[j] && !beats[j].graphic && beats[j].image) return beats[j].image;
+  }
+  return undefined;
+};
 
 const BeatImage: React.FC<{ beat: Beat; index: number; len: number }> = ({ beat, index, len }) => {
   const frame = useCurrentFrame();
@@ -153,7 +162,9 @@ export const StoryShort: React.FC<StoryProps> = (p) => {
         const to = next ? Math.round(next.start * fps) + 2 : durationInFrames;
         return (
           <Sequence key={i} from={from} durationInFrames={Math.max(1, to - from)}>
-            <BeatImage beat={b} index={i} len={(to - from) / fps} />
+            {b.graphic
+              ? <GraphicBeat g={b.graphic} accent={accent} len={(to - from) / fps} image={nearImage(p.beats, i)} />
+              : <BeatImage beat={b} index={i} len={(to - from) / fps} />}
           </Sequence>
         );
       })}
