@@ -18,3 +18,9 @@ Engine: hassancs91/claude-faceless-shorts-creator (MIT).
 The bot sends `repository_dispatch` `make-short` with `{chat_id, spec}`. The workflow records the voice (edge-tts),
 paints one image per beat (Cloudflare FLUX), renders `StoryShort` with Remotion, normalises loudness and sends the MP4
 to Telegram. Secrets needed here: TELEGRAM_TOKEN, CHAT_ID, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN.
+
+## Video engine: project timelines (step 1)
+Every bot video is saved as an editable project (`media/projects/<id>/timeline.json` + version history; assets on
+release `project-<id>`) and rendered by the universal `Studio` composition at any canvas size (9:16, 16:9, 1:1, 4:5,
+any WxH) with caption, font, transition and colour style tokens. Re-render a saved project with a JSON patch via
+`repository_dispatch` `render-project`. Details: `timeline/README.md`. Old `StoryShort` props still render.

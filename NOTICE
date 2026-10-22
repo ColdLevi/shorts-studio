@@ -1,0 +1,7 @@
+Shorts Studio engine.
+Ideas for the project timeline / universal renderer (asset resolution, edit-decision and scene structure,
+caption pages) were studied from OpenMontage (AGPL-3.0, https://github.com/calesthio/OpenMontage).
+No OpenMontage source files are copied; remotion/src/studio/assets.ts is a rewrite of the resolveAsset
+idea. If OpenMontage code is copied in later steps, that code stays under AGPL-3.0 and this repo
+(public) must keep its source available.
+Remotion engine base: hassancs91/claude-faceless-shorts-creator (MIT).

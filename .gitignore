@@ -5,3 +5,7 @@ remotion/out/
 job/
 media/projects/job/
 __pycache__/
+# project assets live on the GitHub release project-<id>; timeline.json + history/ are committed
+media/projects/*/assets/
+media/projects/*/props.json
+test/

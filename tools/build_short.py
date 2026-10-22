@@ -1,14 +1,33 @@
 #!/usr/bin/env python3
-"""Spec (from the Telegram bot) -> voice + word timings + one image per beat -> Remotion props.
+"""Spec (from the Telegram bot) -> voice + word timings + one visual per beat -> a saved project timeline.
 Usage: python tools/build_short.py spec.json   (run from the repo root)
+Writes media/projects/<id>/timeline.json (rendered by the "Studio" composition), its assets in
+media/projects/<id>/assets/, a legacy props.json (StoryShort) and job/project_id.txt.
+<id> = spec.project_id, or a slug of the title plus the run number.
+Canvas = spec.canvas ("9:16", "16:9", "1:1", "4:5", "1280x720" or {width,height,fps}) or spec.format.
 Env: CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN (images), TELEGRAM_TOKEN + CHAT_ID (progress, optional)."""
 import asyncio, base64, json, os, re, subprocess, sys, textwrap, time, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JOB = "projects/job"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import timeline as TL  # noqa: E402
+
+PID = "job"
+JOB = "projects/job/assets"           # public path prefix of this project's assets (under media/)
 OUT = os.path.join(ROOT, "media", JOB)
-os.makedirs(OUT, exist_ok=True)
+CV = TL.canvas("vertical")            # output canvas
+
+
+def set_project(pid, cv=None):
+    """Point asset output at media/projects/<pid>/assets and size images for the canvas."""
+    global PID, JOB, OUT, CV, W, H
+    PID, JOB = pid, f"projects/{pid}/assets"
+    OUT = os.path.join(ROOT, "media", JOB)
+    os.makedirs(OUT, exist_ok=True)
+    if cv:
+        CV = cv
+        W, H = TL.gen_size(cv)
 
 
 def tg(text):
@@ -96,7 +115,7 @@ def punctuate(words, text):
 # flux-1-schnell ~80 (old, last resort).
 HERO_MODELS = ["flux-2-klein-9b", "flux-2-klein-4b", "flux-1-schnell"]
 STD_MODELS = ["flux-2-klein-4b", "flux-1-schnell"]
-W, H = 768, 1344  # 9:16-ish, multiples of 16 (main() swaps these for landscape)
+W, H = 768, 1344  # generation size: set_project() matches it to the canvas aspect (multiples of 16)
 
 
 def _cf_call(model, prompt, acc, tok):
@@ -162,7 +181,9 @@ def pixellab(prompt, path):
     tok = _key("PIXELLAB_API_KEY", "PIXELLAB_TOKEN", "PIXELLAB_SECRET")
     if not tok:
         raise PaidToolError("no PixelLab key")
-    body = {"description": prompt[:900], "image_size": {"width": 256, "height": 144} if W > H else {"width": 144, "height": 256}}
+    a = W / H
+    pw, ph = (256, max(64, round(256 / a))) if a >= 1 else (max(64, round(256 * a)), 256)
+    body = {"description": prompt[:900], "image_size": {"width": pw, "height": ph}}
     req = urllib.request.Request("https://api.pixellab.ai/v1/generate-image-pixflux", data=json.dumps(body).encode(),
                                  headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
     try:
@@ -173,7 +194,7 @@ def pixellab(prompt, path):
     from PIL import Image
     import io
     img = Image.open(io.BytesIO(base64.b64decode(b64))).convert("RGB")
-    img.resize((1920, 1080) if W > H else (1080, 1920), Image.NEAREST).save(path, quality=95)
+    img.resize((CV["width"], CV["height"]), Image.NEAREST).save(path, quality=95)
     USAGE["pixellab_usd"] = round(USAGE.get("pixellab_usd", 0) + float((r.get("usage") or {}).get("usd") or 0.01), 4)
     return True
 
@@ -223,7 +244,7 @@ def gemini_image(prompt, path):
         raise PaidToolError("no Gemini key")
     model = os.getenv("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
     body = {"contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "16:9" if W > H else "9:16"}}}
+            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": TL.aspect_label(CV)}}}
     req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
                                  data=json.dumps(body).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
     try:
@@ -244,7 +265,7 @@ USAGE = {}
 
 def placeholder(text, path, i):
     from PIL import Image, ImageDraw, ImageFont
-    w, h = (1920, 1080) if W > H else (1080, 1920)
+    w, h = CV["width"], CV["height"]
     top = [(30, 30, 60), (60, 20, 40), (15, 50, 60), (50, 40, 15)][i % 4]
     img = Image.new("RGB", (w, h))
     d = ImageDraw.Draw(img)
@@ -254,28 +275,80 @@ def placeholder(text, path, i):
     img.save(path, quality=90)
 
 
+def framing(cv):
+    shape = TL.format_name(cv)
+    return {"vertical": "Vertical 9:16 composition, subject centered",
+            "portrait": "Portrait 4:5 composition, subject centered",
+            "square": "Square 1:1 composition, subject centered",
+            "landscape": f"Wide {TL.aspect_label(cv)} cinematic composition"}[shape]
+
+
+def image_prompt(prompt, style, cv):
+    return (f"{prompt}. {style}. {framing(cv)}, cinematic lighting, rich colour, sharp focus, highly detailed, "
+            "no text, no watermark.").replace(". .", ".")
+
+
+def paint(prompt, path, tool="flux", style="", hero=False, gemini_ok=False, seed=0):
+    """One still for a clip, with the bot's tool choice and every fallback. Returns {'pixel': bool}.
+    Raises QuotaError / RuntimeError when nothing could make it (caller decides on a placeholder)."""
+    full = image_prompt(prompt, style, CV)
+    tool = (tool or "flux").lower()
+    if tool == "pixellab":
+        try:
+            pixellab(f"{prompt}. {style}", path)
+            return {"pixel": True}
+        except PaidToolError as e:
+            print("pixellab", e)
+            PAID_NOTES.append(str(e))
+    try:
+        flux(full, path, seed, hero=hero)
+        return {"pixel": False}
+    except Exception as e:
+        if gemini_ok:
+            try:
+                gemini_image(full, path)
+                return {"pixel": False}
+            except Exception as g:
+                print("gemini image", g)
+        raise e
+
+
+PAID_NOTES = []
+
+
+def voice(text, voice_name, rate, path):
+    """Edge TTS voice + punctuated word timings. Returns (words, seconds)."""
+    words = asyncio.run(_synth(text, voice_name or "en-US-AndrewMultilingualNeural", rate or "+0%", path))
+    if not words:
+        raise SystemExit("edge-tts returned no word timings")
+    return punctuate(words, text), duration(path)
+
+
+def project_id(spec):
+    pid = TL.slug(spec.get("project_id"), 60) if spec.get("project_id") else TL.new_id(spec.get("title", "video"))
+    return pid
+
+
 def main():
     spec = json.load(open(sys.argv[1]))
-    global W, H
-    wide = spec.get("format") == "landscape"
-    if wide:
-        W, H = 1344, 768
+    cv = TL.canvas(spec.get("canvas") or spec.get("format") or "vertical", int(spec.get("fps") or 30))
+    pid = project_id(spec)
+    set_project(pid, cv)
+    os.makedirs(os.path.join(ROOT, "job"), exist_ok=True)
+    open(os.path.join(ROOT, "job", "project_id.txt"), "w").write(pid)
+    print(f"project {pid}: {cv['width']}x{cv['height']} @{cv['fps']}fps, images {W}x{H}")
     beats = spec["beats"]
     style = spec.get("style", "").strip()
     text = " ".join(b["narration"].strip() for b in beats)
 
     tg("🎙️ Recording the voiceover...")
     voice_path = os.path.join(OUT, "voice.mp3")
-    words = asyncio.run(_synth(text, spec.get("voice") or "en-US-AndrewMultilingualNeural", spec.get("rate", "+0%"), voice_path))
-    total = duration(voice_path)
-    if not words:
-        raise SystemExit("edge-tts returned no word timings")
-    words = punctuate(words, text)
+    words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
     print(f"voice {total:.1f}s, {len(words)} words")
 
     n_gfx = sum(1 for b in beats if b.get("graphic"))
     tg(f"🎨 Painting {len(beats) - n_gfx} images" + (f" and animating {n_gfx} graphic(s)..." if n_gfx else "..."))
-    fallbacks, errors, quota, paid_notes = [], [], [], []
+    fallbacks, errors, quota = [], [], []
     PIXEL = set()
 
     def make(i):
@@ -283,25 +356,14 @@ def main():
         if b.get("graphic"):
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
-        prompt = f"{b['image_prompt']}. {style}. {'Wide 16:9 cinematic composition' if wide else 'Vertical 9:16 composition, subject centered'}, cinematic lighting, rich colour, sharp focus, highly detailed, no text, no watermark."
         tool = (b.get("tool") or "flux").lower()
+        if tool == "higgsfield":
+            tool = b.get("still") or "flux"
         try:
-            if tool == "pixellab" or (tool == "higgsfield" and b.get("still") == "pixellab"):
-                try:
-                    pixellab(f"{b['image_prompt']}. {style}", path)
-                    PIXEL.add(i)
-                except PaidToolError as e:
-                    print("pixellab", i + 1, e); paid_notes.append(str(e)); flux(prompt, path, 1000 + i, hero=(i == 0))
-            else:
-                flux(prompt, path, 1000 + i, hero=(i == 0))
+            if paint(b["image_prompt"], path, tool, style, hero=(i == 0), gemini_ok=bool(spec.get("gemini_images")), seed=1000 + i)["pixel"]:
+                PIXEL.add(i)
         except Exception as e:
             print("image", i + 1, e)
-            if spec.get("gemini_images"):
-                try:
-                    gemini_image(prompt, path)
-                    return f"{JOB}/img_{i + 1:02d}.jpg"
-                except Exception as g:
-                    print("gemini image", i + 1, g)
             (quota if isinstance(e, QuotaError) else errors).append(str(e))
             fallbacks.append(i + 1)
             placeholder(b["narration"], path, i)
@@ -335,7 +397,7 @@ def main():
                 if d / 0.6 >= beat_len:
                     clips[i] = {"video": f"{JOB}/clip_{i + 1:02d}.mp4", "videoDuration": round(d, 2)}
             except Exception as e:
-                print("higgsfield", i + 1, e); paid_notes.append(str(e))
+                print("higgsfield", i + 1, e); PAID_NOTES.append(str(e))
 
         with ThreadPoolExecutor(3) as ex:
             list(ex.map(animate, motion))
@@ -343,11 +405,12 @@ def main():
             subprocess.run(["gh", "release", "delete", f"frames-{os.getenv('GITHUB_RUN_ID', 'local')}", "-y", "--cleanup-tag"], capture_output=True)
         except Exception:
             pass
-    if paid_notes:
-        tg(f"ℹ️ A paid tool didn't deliver ({paid_notes[0][:120]}), so I used a still for that shot.")
+    if PAID_NOTES:
+        tg(f"ℹ️ A paid tool didn't deliver ({PAID_NOTES[0][:120]}), so I used a still for that shot.")
     json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len(clips)}, open(os.path.join(OUT, "usage.json"), "w"))
     music = spec.get("music") or "docu-pluck"
     mpath = f"library/music/clips/{music}.mp3"
+    wide = TL.format_name(cv) == "landscape"
     props = {
         "title": spec.get("title", ""),
         "audio": f"{JOB}/voice.mp3",
@@ -361,9 +424,18 @@ def main():
         "words": words,
         "format": "landscape" if wide else "vertical",
     }
-    json.dump(props, open(os.path.join(OUT, "props.json"), "w"), indent=1)
+    pdir = TL.project_dir(pid)
+    json.dump(props, open(os.path.join(pdir, "props.json"), "w"), indent=1)  # legacy StoryShort props
+    # The project timeline: what gets rendered, saved and re-edited later.
+    t = TL.from_props(props, spec, pid, cv)
+    for i in fallbacks:
+        t["tracks"]["visuals"][i - 1]["dirty"] = True  # placeholder: remake it on the next build
+    rev = TL.save(t, "first build from the bot's spec")
+    errs = TL.validate(t)
+    if errs:
+        print("timeline warnings:", errs[:5])
     tg(f"🎬 Editing the video ({total:.0f}s)...")
-    print("props written")
+    print(f"timeline r{rev} written: media/projects/{pid}/timeline.json")
 
 
 if __name__ == "__main__":

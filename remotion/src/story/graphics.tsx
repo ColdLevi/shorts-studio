@@ -3,7 +3,7 @@
 // that carry real numbers; every value comes from the spec, so what is drawn is what was checked.
 import React from 'react';
 import {
-  AbsoluteFill, Audio, Easing, Img, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio as RAudio, Easing, Img, Sequence, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig,
 } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Montserrat';
@@ -21,6 +21,9 @@ const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as 
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);
 const EASE_INOUT = Easing.bezier(0.37, 0, 0.63, 1);
 const SFX = (n: string) => staticFile(`library/sfx/clips/${n}.mp3`);
+const SfxContext = React.createContext(true);
+// Built-in graphic sounds; silent when the timeline turns them off (style.graphic_sfx = false).
+const Audio: React.FC<React.ComponentProps<typeof RAudio>> = (p) => (React.useContext(SfxContext) ? <RAudio {...p} /> : null);
 const PALETTE = ['#8b96a5', '#ef5f6b', '#4fc3f7', '#9ccc65', '#ba68c8'];
 
 // Area the graphic lives in: clear of the title card at the top and the captions at 60%.
@@ -51,7 +54,7 @@ export const GraphicBackdrop: React.FC<{ accent: string; image?: string; len: nu
   return (
     <AbsoluteFill style={{ opacity: fade, backgroundColor: '#07080c' }}>
       {image ? (
-        <Img src={staticFile(image)} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.32,
+        <Img src={/^(https?:|data:)/.test(image) ? image : staticFile(image)} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.32,
           filter: 'blur(38px) saturate(1.2)', transform: `scale(${1.25 + 0.06 * p})` }} />
       ) : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 80% 45% at 50% ${38 + 6 * p}%, ${accent}33 0%, transparent 70%)` }} />
@@ -277,15 +280,21 @@ const List: React.FC<{ g: Extract<Graphic, { type: 'list' }>; accent: string; le
 // Landscape: the graphics are laid out on a 1080x1920 canvas; scale that canvas so its graphic zone
 // (y 300 to 1090) sits centred in the top three quarters of a 1920x1080 frame, clear of the captions.
 const WIDE_S = 0.9;
-const Canvas: React.FC<{ wide?: boolean; children: React.ReactNode }> = ({ wide, children }) => wide ? (
+export type GraphicFit = { left: number; top: number; scale: number };
+// Any canvas (Studio composition): `fit` places the design canvas so its graphic zone fills the layout's graphic box.
+const Canvas: React.FC<{ wide?: boolean; fit?: GraphicFit; children: React.ReactNode }> = ({ wide, fit, children }) => fit ? (
+  <div style={{ position: 'absolute', width: 1080, height: 1920, left: fit.left, top: fit.top,
+    transform: `scale(${fit.scale})`, transformOrigin: 'top left' }}>{children}</div>
+) : wide ? (
   <div style={{ position: 'absolute', width: 1080, height: 1920, left: (1920 - 1080 * WIDE_S) / 2, top: 50 - TOP * WIDE_S,
     transform: `scale(${WIDE_S})`, transformOrigin: 'top left' }}>{children}</div>
 ) : <AbsoluteFill>{children}</AbsoluteFill>;
 
-export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string; wide?: boolean }> = ({ g, accent, len, image, wide }) => (
+export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string; wide?: boolean; fit?: GraphicFit; sfx?: boolean }> = ({ g, accent, len, image, wide, fit, sfx }) => (
   <AbsoluteFill>
     <GraphicBackdrop accent={accent} image={image} len={len} />
-    <Canvas wide={wide}>
+    <SfxContext.Provider value={sfx !== false}>
+    <Canvas wide={wide} fit={fit}>
     {g.type === 'counter' ? <Counter g={g} accent={accent} len={len} />
       : g.type === 'bars' ? <Bars g={g} accent={accent} len={len} />
       : g.type === 'line' ? <Line g={g} accent={accent} len={len} />
@@ -293,5 +302,6 @@ export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; im
       : g.type === 'list' ? <List g={g} accent={accent} len={len} />
       : null}
     </Canvas>
+    </SfxContext.Provider>
   </AbsoluteFill>
 );

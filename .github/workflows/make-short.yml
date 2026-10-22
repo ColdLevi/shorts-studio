@@ -1,13 +1,23 @@
 name: Make short (from Shorts Studio bot)
 
+# Two ways in:
+#   make-short      {chat_id, spec}                          new video: spec -> project timeline -> render
+#   render-project  {chat_id, project_id, patch?, message?}  saved project: apply the JSON patch, remake only
+#                                                            changed assets, re-render (re-edits, reformat, restyle)
 on:
   repository_dispatch:
-    types: [make-short]
+    types: [make-short, render-project]
   workflow_dispatch:
     inputs:
       spec:
-        description: "Spec JSON (title, style, music, accent, beats[{narration,image_prompt}])"
-        required: true
+        description: "Spec JSON (title, style, music, accent, canvas, beats[{narration,image_prompt}]); leave empty to re-render a project"
+        required: false
+      project_id:
+        description: "Saved project to re-render (instead of a spec)"
+        required: false
+      patch:
+        description: "Optional JSON patch for that project, e.g. [{\"op\":\"replace\",\"path\":\"/canvas\",\"value\":{\"width\":1920,\"height\":1080,\"fps\":30}}]"
+        required: false
       chat_id:
         description: "Telegram chat id"
         required: false
@@ -36,14 +46,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Save spec
+      - name: Save the request
         env:
           SPEC_DISPATCH: ${{ toJson(github.event.client_payload.spec) }}
           SPEC_INPUT: ${{ github.event.inputs.spec }}
+          PID_IN: ${{ github.event.client_payload.project_id || github.event.inputs.project_id }}
+          PATCH_DISPATCH: ${{ toJson(github.event.client_payload.patch) }}
+          PATCH_INPUT: ${{ github.event.inputs.patch }}
+          EVENT: ${{ github.event.action }}
         run: |
           mkdir -p job
-          if [ -n "$SPEC_INPUT" ]; then printf '%s' "$SPEC_INPUT" > job/spec.json; else printf '%s' "$SPEC_DISPATCH" > job/spec.json; fi
-          python3 -c "import json;s=json.load(open('job/spec.json'));print(s['title'], len(s['beats']), 'beats')"
+          if [ "$EVENT" = "render-project" ] || { [ -n "$PID_IN" ] && [ -z "$SPEC_INPUT" ]; }; then
+            printf '%s' "$PID_IN" > job/project_id.txt
+            P="${PATCH_INPUT:-$PATCH_DISPATCH}"
+            if [ -n "$P" ] && [ "$P" != "null" ]; then printf '%s' "$P" > job/patch.json; fi
+            echo "re-render project $PID_IN"
+          else
+            if [ -n "$SPEC_INPUT" ]; then printf '%s' "$SPEC_INPUT" > job/spec.json; else printf '%s' "$SPEC_DISPATCH" > job/spec.json; fi
+            python3 -c "import json;s=json.load(open('job/spec.json'));print(s['title'], len(s['beats']), 'beats')"
+          fi
 
       - uses: actions/setup-python@v5
         with:
@@ -69,10 +90,22 @@ jobs:
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
           cd remotion && npm ci --no-audit --no-fund
 
-      - name: Voice, images and motion (delegated per beat)
+      - name: Voice, images and motion (delegated per beat) -> project timeline
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 tools/build_short.py job/spec.json
+          EDIT_MESSAGE: ${{ github.event.client_payload.message || 'edit from the bot' }}
+        run: |
+          if [ -s job/project_id.txt ] && [ ! -f job/spec.json ]; then
+            ID=$(cat job/project_id.txt)
+            python3 tools/project.py pull "$ID"
+            if [ -f job/patch.json ]; then python3 tools/project.py patch "$ID" job/patch.json -m "$EDIT_MESSAGE"; fi
+            python3 tools/project.py build "$ID" || echo "::warning::some assets could not be remade; their previous version is kept"
+            python3 tools/project.py jobspec "$ID"
+          else
+            python3 tools/build_short.py job/spec.json
+          fi
+          echo "PROJECT_ID=$(cat job/project_id.txt)" >> "$GITHUB_ENV"
+          python3 tools/project.py info "$(cat job/project_id.txt)"
 
       - name: Paused on a quota? Hand the job back to the bot
         if: failure() && hashFiles('job/paused.txt') != '' && env.APP_URL != ''
@@ -85,7 +118,8 @@ jobs:
 
       - name: Render
         working-directory: remotion
-        run: npx remotion render src/story-index.ts StoryShort out/short.mp4 --props=../media/projects/job/props.json --log=error
+        # "Studio" renders the project timeline at its own canvas size (9:16, 16:9, 1:1, 4:5, any WxH).
+        run: npx remotion render src/studio-index.ts Studio out/short.mp4 --props=../media/projects/$PROJECT_ID/timeline.json --log=error
 
       - name: Loudness to -14 LUFS, poster frame
         run: |
@@ -102,9 +136,12 @@ jobs:
           TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
           gh release create "$TAG" "job/$TAG.mp4" "job/$TAG.jpg" --title "$TITLE" --notes "Made by the Shorts Studio bot"
           python3 tools/library_add.py "$TAG"
+          # Keep the project: assets on release project-<id>, timeline + version history in git.
+          python3 tools/project.py push "$PROJECT_ID" || echo "::warning::project assets not saved"
+          python3 tools/library_add.py --render "$TAG"
           git config user.name "shorts-studio-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add library.json
+          git add library.json "media/projects/$PROJECT_ID/timeline.json" "media/projects/$PROJECT_ID/history" "media/projects/$PROJECT_ID/renders.json"
           git commit -m "library: $TITLE [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 3; done
 
@@ -112,11 +149,11 @@ jobs:
         if: env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
         run: |
           TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
-          USED=$(python3 -c "import json;u=json.load(open('media/projects/job/usage.json'));p=[];c=u.get('motion_used',0);px=u.get('pixellab_usd',0)
+          USED=$(python3 -c "import json;u=json.load(open('media/projects/$PROJECT_ID/assets/usage.json'));p=[];c=u.get('motion_used',0);px=u.get('pixellab_usd',0)
           c and p.append(f'{c} Higgsfield clip(s)'); px and p.append(f'PixelLab \${px:.2f}'); print(' · Paid: '+', '.join(p) if p else '')" 2>/dev/null)
           MARKUP=$(python3 tools/library_add.py --button)
           curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@job/final.mp4 \
-            -F caption="🎬 $TITLE$USED" -F reply_markup="$MARKUP" \
+            -F caption="🎬 $TITLE$USED · project $PROJECT_ID" -F reply_markup="$MARKUP" \
             "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
 
       - name: Keep a copy (artifact)
@@ -126,6 +163,7 @@ jobs:
           path: |
             job/final.mp4
             job/spec.json
+            media/projects/${{ env.PROJECT_ID }}/timeline.json
           retention-days: 14
 
       - name: Tell Telegram it failed

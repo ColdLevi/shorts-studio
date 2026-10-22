@@ -1,0 +1,189 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "example-zim-note",
+ "rev": 1,
+ "title": "Why Zimbabwe Printed a 100 Trillion Dollar Note",
+ "duration": 12.84,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "karaoke-box"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.457,
+    "narration": "In 2008, Zimbabwe printed a note worth one hundred trillion dollars.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "a crumpled banknote on a market table"
+    },
+    "w": 768,
+    "h": 1360
+   },
+   {
+    "id": "v2",
+    "start": 3.457,
+    "end": 5.029,
+    "narration": "Prices doubled every single day.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "counter",
+     "value": 79600000000,
+     "suffix": "%",
+     "label": "monthly inflation, Nov 2008"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 5.029,
+    "end": 7.857,
+    "narration": "People carried bricks of cash just to buy bread.",
+    "kind": "image",
+    "src": "assets/v3_r3.jpg",
+    "gen": {
+     "tool": "pixellab",
+     "prompt": "a woman holding a brick of banknotes outside a bakery"
+    },
+    "w": 768,
+    "h": 1360,
+    "pixel": false
+   },
+   {
+    "id": "v4",
+    "start": 7.857,
+    "end": 12.042,
+    "narration": "Then the country gave up on its own money entirely.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "empty bank counter at dusk"
+    },
+    "w": 768,
+    "h": 1360
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.0,
+     "end": 0.267
+    },
+    {
+     "word": "2008,",
+     "start": 0.314,
+     "end": 0.581
+    },
+    {
+     "word": "Zimbabwe",
+     "start": 0.629,
+     "end": 0.896
+    },
+    {
+     "word": "printed",
+     "start": 0.943,
+     "end": 1.21
+    },
+    {
+     "word": "a",
+     "start": 1.257,
+     "end": 1.524
+    },
+    {
+     "word": "note",
+     "start": 1.571,
+     "end": 1.839
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice_r3.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In 2008, Zimbabwe printed a note worth one hundred trillion dollars. Prices doubled every single day. People carried bricks of cash just to buy bread. Then the country gave up on its own money entirely."
+    },
+    "hash": "40aca71ac2d6"
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "s1",
+    "src": "library/sfx/clips/impact-soft.mp3",
+    "at": 7.957,
+    "anchor": "v4",
+    "offset": 0.1,
+    "volume": 0.4
+   }
+  ],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Why Zimbabwe Printed a 100 Trillion Dollar Note"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792689591367,
+  "updated": 1792689820587,
+  "topic": "",
+  "hook": "One note, fourteen zeros.",
+  "image_style": "documentary photo, warm film grain",
+  "format": "vertical",
+  "assets_release": "project-why-zimbabwe-printed-a-100-trillion-tnbk53",
+  "spec": {
+   "title": "Why Zimbabwe Printed a 100 Trillion Dollar Note",
+   "hook": "One note, fourteen zeros.",
+   "style": "documentary photo, warm film grain",
+   "music": "docu-pluck",
+   "accent": "#2EE6C5",
+   "format": "vertical"
+  },
+  "renders": []
+ }
+}
