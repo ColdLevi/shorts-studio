@@ -19,6 +19,16 @@
       "created": 1792661082896,
       "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-2/short-2.mp4",
       "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-2/short-2.jpg"
+    },
+    {
+      "id": "short-3",
+      "title": "One Blank Page Changes Everything",
+      "hook": "Three hundred people asked me how to start, but every single one of them waited for permission.",
+      "accent": "#2EE6C5",
+      "duration": 47.9,
+      "created": 1792662816475,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-3/short-3.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-3/short-3.jpg"
     }
   ]
 }
