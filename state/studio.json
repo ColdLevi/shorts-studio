@@ -1,28 +1,33 @@
 {
-  "last_update": 312538142,
-  "time": 1792690654118,
-  "stage": "idle",
-  "topic": "how the world rotates",
+  "last_update": 312538143,
+  "time": 1792692375311,
+  "stage": "pitch",
+  "topic": "how to use termux for beginners in Issacverse style",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "Linux Power on Your Phone",
+    "hook": "Termux: a full Linux distro in your pocket",
+    "angle": "Many think Android phones can’t run real Linux tools. Termux proves you can have a genuine Linux shell right on the device.",
+    "key_facts": [
+      "Termux runs on Android 5.0 and newer, offering a Debian‑like environment",
+      "Packages are installed with a single command, e.g., \"pkg install python\"",
+      "It includes OpenSSH, so you can SSH into remote servers from your phone",
+      "You can compile C or C++ code using clang or gcc within Termux",
+      "Running \"termux-setup-storage\" grants access to the phone’s shared files"
+    ],
+    "visual_style": "neon cyberpunk vector illustration",
+    "length_seconds": 45,
+    "music": "tech-pulse",
+    "accent": "teal"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "What if I want landscape view videos like original YouTube video",
-      "t": 1792666375966
-    },
-    {
-      "role": "bot",
-      "text": "I currently specialize in vertical 9:16 videos optimized for YouTube Shorts, Reels, and TikTok! If you'd like to render the current script, just say the word.",
-      "t": 1792666377257
-    },
     {
       "role": "user",
       "text": "/tools",
@@ -92,6 +97,16 @@
       "role": "user",
       "text": "Lets make a video like Issacverse style about how to use termux for beginners",
       "t": 1792690585663
+    },
+    {
+      "role": "user",
+      "text": "Lets make a video like Issacverse style about how to use termux for beginners",
+      "t": 1792692367082
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Linux Power on Your Phone\": Termux: a full Linux distro in your pocket",
+      "t": 1792692375311
     }
   ],
   "working": null,
@@ -285,7 +300,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (interest) The user is interested in tutorials and coding projects from the ShipWeb3 channel.\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (interest) The user is interested in line‑by‑line breakdowns of video scripts.\n- (interest) The user is interested in analyzing successful crypto and Telegram bot tutorial channels like ShipWeb3.\n- (interest) The user is interested in learning from the tutorial content of the channel.\n- (interest) The user is interested in finance and AI market trends.\n- (interest) The user approved a short about how the world rotates.\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (fact) The user's YouTube channel is located at https://youtube.com/@shipweb3s.\n- (interest) The user is interested in tutorials and coding projects from the ShipWeb3 channel.\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (interest) The user is interested in line‑by‑line breakdowns of video scripts.\n- (interest) The user is interested in analyzing successful crypto and Telegram bot tutorial channels like ShipWeb3.\n- (interest) The user is interested in learning from the tutorial content of the channel.\n- (interest) The user is interested in finance and AI market trends.\n- (interest) The user approved a short about how the world rotates.\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.",
   "deep": null,
   "renders": [
     {
