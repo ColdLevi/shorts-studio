@@ -1,6 +1,6 @@
 {
-  "last_update": 312538118,
-  "time": 1792662986493,
+  "last_update": 312538119,
+  "time": 1792663007825,
   "stage": "rendering",
   "topic": "how I started to help people start",
   "research": {
@@ -125,6 +125,16 @@
       "role": "bot",
       "text": "I'm currently busy rendering your video, but you can generate standalone images anytime after it's finished!",
       "t": 1792662986493
+    },
+    {
+      "role": "user",
+      "text": "Do it now",
+      "t": 1792663006961
+    },
+    {
+      "role": "bot",
+      "text": "I'm still rendering your video right now! I'll let you know the second it's ready so we can generate that image.",
+      "t": 1792663007825
     }
   ],
   "working": null,
