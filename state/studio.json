@@ -1,7 +1,7 @@
 {
-  "last_update": 312538114,
-  "time": 1792662386288,
-  "stage": "pitch",
+  "last_update": 312538115,
+  "time": 1792662410436,
+  "stage": "script",
   "topic": "how I started to help people start",
   "research": {
     "text": "",
@@ -22,7 +22,56 @@
     "music": "docu-pluck",
     "accent": "teal"
   },
-  "script": null,
+  "script": {
+    "title": "One Blank Page Changes Everything",
+    "beats": [
+      {
+        "narration": "Three hundred people asked me how to start, but every single one of them waited for permission.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a blank white page on a teal desk, clean lines, centered, no text, no logos, no real faces",
+        "tool": "higgsfield",
+        "still": "flux",
+        "motion": "Slow push in on the blank page as a soft teal light washes across the desk."
+      },
+      {
+        "narration": "Most assume you need a grand plan to begin helping others.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a towering stack of complex blueprints, teal and white, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Beginners waste months waiting for perfect conditions.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single hourglass with sand frozen in the top bulb, teal accents, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "You only need to solve the exact problem you solved yesterday.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single glowing puzzle piece fitting into an empty space, teal and white, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Sharing a single solved problem creates immediate value.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a glowing lightbulb casting teal beams downward, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      },
+      {
+        "narration": "Momentum builds after the first public action.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a tiny paper airplane launching upward against a teal background, centered, no text, no logos, no real faces",
+        "tool": "higgsfield",
+        "still": "flux",
+        "motion": "Camera tilts up rapidly as the paper airplane arcs smoothly toward the top of the frame."
+      },
+      {
+        "narration": "Start small today.",
+        "image_prompt": "vertical nine by sixteen minimalist flat vector illustration of a single bold teal dot in the center of a white screen, centered, no text, no logos, no real faces",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Three hundred people asked me how to start",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
@@ -36,6 +85,11 @@
       "role": "bot",
       "text": "Pitched \"One Blank Page Changes Everything\": Three hundred people asked me how to start, but every single one of them waited for permission.",
       "t": 1792662386288
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"One Blank Page Changes Everything\"",
+      "t": 1792662410436
     }
   ],
   "working": null
