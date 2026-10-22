@@ -1,76 +1,26 @@
 {
-  "last_update": 312538108,
-  "time": 1792659687553,
-  "stage": "rendering",
-  "topic": "Try again",
+  "last_update": 312538109,
+  "time": 1792660711634,
+  "stage": "pitch",
+  "topic": "Redo it",
   "research": {
     "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "Thomas Edison and the Ten Thousand Failures",
-    "hook": "Ten thousand failed lightbulbs piled up in a New Jersey laboratory.",
-    "angle": "People think failure means stopping, but Edison treated every wrong material as a finished answer.",
+    "title": "The Secret History of Control Y",
+    "hook": "In nineteen sixty-eight, Warren Teitelman wrote a tiny line of code to fix his own mistyped commands.",
+    "angle": "Most people assume keyboard shortcuts for undo and redo were designed as master features from the start. They were actually born out of sheer panic when early programmers kept wiping full pages of work with single keystrokes.",
     "key_facts": [
-      "Thomas Edison tested thousands of materials for the lightbulb filament",
-      "A reporter asked Edison how it felt to fail ten thousand times",
-      "Edison stated he had not failed, but found ten thousand ways that did not work",
-      "The incandescent bulb eventually glowed bright using a carbonized bamboo filament"
+      "Warren Teitelman created the first programming undo feature in nineteen sixty-eight.",
+      "Larry Tesler added the undo command to the Gypsy text editor at Xerox PARC in nineteen seventy-four.",
+      "Apple standard1zed Command Z for undo and Command Y or Shift Z for redo on the Lisa and Macintosh in the early nineteen eighties.",
+      "Early computing systems had no undo memory buffer, meaning one mistake destroyed hours of typing."
     ],
-    "visual_style": "moody cinematic photo, film grain",
-    "length_seconds": 40,
-    "music": "docu-pluck",
-    "accent": "gold"
+    "visual_style": "retro ninety-style mechanical keyboard macro photography with glowing neon accent light",
+    "length_seconds": 45,
+    "music": "tech-pulse",
+    "accent": "teal"
   },
-  "script": {
-    "title": "Thomas Edison and the Ten Thousand Failures",
-    "beats": [
-      {
-        "narration": "Ten thousand burnt filaments piled up in a dark New Jersey laboratory in eighteen seventy nine.",
-        "image_prompt": "Moody cinematic photo of a pile of charred delicate wires on a dark wooden workshop table, dim warm lighting, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "Most inventors saw a broken wire as a ruined experiment that wasted valuable time.",
-        "image_prompt": "Moody cinematic photo of a cracked glass bulb with a melted filament on a cluttered 19th century workbench, soft amber glow, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "So a curious reporter asked Thomas Edison how it felt to fail ten thousand times in a row.",
-        "image_prompt": "Cinematic shot from behind a person holding a vintage notebook in a dimly lit Victorian laboratory, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "Edison insisted he made zero mistakes.",
-        "image_prompt": "Cinematic close up photo of a hand writing chemical notes in a leather journal with an ink pen, moody lighting, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "He had simply identified ten thousand materials that would never work.",
-        "image_prompt": "Moody cinematic photo of glass jars filled with various plant fibers and threads on dark wooden shelves, warm accent light, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "Then he tried a strip of carbonized bamboo, and the bulb stayed lit for over twelve hundred hours.",
-        "image_prompt": "Cinematic shot of a single glass filament incandescent bulb shining bright golden light in a pitch black room, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      },
-      {
-        "narration": "Elimination is just discovery in disguise.",
-        "image_prompt": "Dramatic moody photograph of a glowing glass lightbulb casting a strong golden beam across an empty dark workshop, film grain, vertical 9:16 framing, subject centered, no text, no faces"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Thomas Edison tested thousands of materials for the lightbulb filament.",
-        "supported": true
-      },
-      {
-        "claim": "A reporter asked Edison about failing ten thousand times.",
-        "supported": true
-      },
-      {
-        "claim": "Edison stated he had found thousands of ways that did not work.",
-        "supported": true
-      },
-      {
-        "claim": "A carbonized bamboo filament was successfully used to keep the bulb glowing.",
-        "supported": true
-      }
-    ]
-  }
+  "script": null
 }
