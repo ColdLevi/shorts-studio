@@ -118,6 +118,28 @@ jobs:
             libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 \
             libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
+          
+          # ffprobe hardening: '|| true' swallowed apt failures and the render died later on ffprobe
+          for i in 1 2 3; do
+            command -v ffprobe >/dev/null 2>&1 && break
+            echo "ffprobe missing (attempt $i/3) - repairing dpkg, retrying ffmpeg"
+            sudo dpkg --configure -a || true
+            timeout 300 sudo apt-get $APT install -y --reinstall ffmpeg || true
+            timeout 240 sudo apt-get $APT update -y || true
+            sleep $((i * 15))
+          done
+          if ! command -v ffprobe >/dev/null 2>&1; then
+            echo "apt did not deliver ffprobe - fetching the static ffmpeg build"
+            curl -fsSL -o /tmp/ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz || true
+            mkdir -p "$HOME/.local/bin"
+            tar -xJf /tmp/ff.tar.xz -C /tmp 2>/dev/null || true
+            cp /tmp/ffmpeg-*-amd64-static/ffprobe /tmp/ffmpeg-*-amd64-static/ffmpeg "$HOME/.local/bin/" 2>/dev/null || true
+            echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          fi
+          if ! command -v ffprobe >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/ffprobe" ]; then
+            echo "::error::ffprobe unavailable after apt retries AND the static build - not starting the render"
+            exit 1
+          fi
           cd remotion && npm ci --no-audit --no-fund
 
       - name: Voice, images and motion (delegated per beat) -> project timeline
