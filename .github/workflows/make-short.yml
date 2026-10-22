@@ -1,0 +1,96 @@
+name: Make short (from Telegram bot)
+
+on:
+  repository_dispatch:
+    types: [make-short]
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Spec JSON (title, style, music, accent, beats[{narration,image_prompt}])"
+        required: true
+      chat_id:
+        description: "Telegram chat id"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: make-short
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CHAT_ID: ${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || secrets.CHAT_ID }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Save spec
+        env:
+          SPEC_DISPATCH: ${{ toJson(github.event.client_payload.spec) }}
+          SPEC_INPUT: ${{ github.event.inputs.spec }}
+        run: |
+          mkdir -p job
+          if [ -n "$SPEC_INPUT" ]; then printf '%s' "$SPEC_INPUT" > job/spec.json; else printf '%s' "$SPEC_DISPATCH" > job/spec.json; fi
+          python3 -c "import json;s=json.load(open('job/spec.json'));print(s['title'], len(s['beats']), 'beats')"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+
+      - name: Install tools
+        run: |
+          pip install -q edge-tts pillow
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 \
+            libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
+          sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
+          cd remotion && npm ci --no-audit --no-fund
+
+      - name: Voice and images
+        run: python3 tools/build_short.py job/spec.json
+
+      - name: Render
+        working-directory: remotion
+        run: npx remotion render src/story-index.ts StoryShort out/short.mp4 --props=../media/projects/job/props.json --log=error
+
+      - name: Loudness to -14 LUFS
+        run: |
+          ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k job/final.mp4
+          ls -la job/final.mp4
+
+      - name: Send to Telegram
+        if: env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        run: |
+          TITLE=$(python3 -c "import json;print(json.load(open('job/spec.json'))['title'])")
+          curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@job/final.mp4 \
+            -F caption="🎬 $TITLE" "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
+
+      - name: Keep a copy (artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ github.run_number }}
+          path: |
+            job/final.mp4
+            job/spec.json
+          retention-days: 14
+
+      - name: Tell Telegram it failed
+        if: failure() && env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" \
+            -d chat_id="$CHAT_ID" \
+            --data-urlencode text="⚠️ The render failed. Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
