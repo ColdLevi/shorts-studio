@@ -1,104 +1,18 @@
 {
-  "last_update": 312538150,
-  "time": 1792695256031,
-  "stage": "script",
+  "last_update": 312538151,
+  "time": 1792695278741,
+  "stage": "idle",
   "topic": "how to use termux for beginners in Issacverse style",
   "research": {
     "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar to Debian and Ubuntu users (https://wiki.termux.com/wiki/Main_Page)\n- Termux was created by Fredrik Andersson and first released on Google Play in 2015, later moving its primary distribution to F-Droid due to Google Play policy updates regarding target API levels (https://github.com/termux/termux-app)\n- Users can install Python, Node.js, Git, Vim, Nmap, and SSH clients directly on their phone without needing a cloud server or a rooted device (https://wiki.termux.com/wiki/Package_Management)\n- Termux accesses device storage by running `termux-setup-storage`, which creates a symbolic link `~/storage` pointing to emulated external storage (https://wiki.termux.com/wiki/Internal_and_external_storage)\n- You can run a full desktop Linux environment like Ubuntu or Arch inside Termux using PRoot along with a VNC viewer for a graphical interface (https://wiki.termux.com/wiki/Graphical_Environment)\n- The official Termux package repository hosts thousands of ported open-source Unix utilities compiled specifically for Android's Bionic libc architecture (https://repology.org/repository/termux)\n- Termux supports running local servers like Apache, CUPS, or Node.js apps, turning an old smartphone into a portable edge-computing web server (https://wiki.termux.com/wiki/Remote_Access)\n\nHOOK IDEAS:\n- What if your smartphone was actually a secret hacker terminal running a full Linux operating system right under Android's nose?\n- Stop buying expensive cloud servers—your old phone has a hidden Linux mainframe inside it, and all you need is one free app to unlock it.",
     "sources": []
   },
-  "pitch": {
-    "title": "Linux Power on Your Phone",
-    "hook": "Termux: a full Linux distro in your pocket",
-    "angle": "Many think Android phones can’t run real Linux tools. Termux proves you can have a genuine Linux shell right on the device.",
-    "key_facts": [
-      "Termux runs on Android 5.0 and newer, offering a Debian‑like environment",
-      "Packages are installed with a single command, e.g., \"pkg install python\"",
-      "It includes OpenSSH, so you can SSH into remote servers from your phone",
-      "You can compile C or C++ code using clang or gcc within Termux",
-      "Running \"termux-setup-storage\" grants access to the phone’s shared files"
-    ],
-    "visual_style": "neon cyberpunk vector illustration",
-    "length_seconds": 45,
-    "music": "tech-pulse",
-    "accent": "teal"
-  },
-  "script": {
-    "title": "Linux Power on Your Phone",
-    "beats": [
-      {
-        "narration": "Termux packs a full Linux environment into Android without requiring root access.",
-        "image_prompt": "Vertical framing, a glowing smartphone resting on a dark desk with green terminal text reflecting on the screen, centered subject",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Camera pushes slowly into the smartphone screen as terminal text scrolls rapidly."
-      },
-      {
-        "narration": "People assume phones are just for browsing, but thousands of open source Unix utilities run natively here.",
-        "image_prompt": "Vertical framing, a neon teal terminal interface displaying lines of C and C++ code, centered",
-        "tool": "flux"
-      },
-      {
-        "narration": "Install Python or Git instantly using familiar APT commands just like Debian.",
-        "image_prompt": "Vertical framing, glowing code lines on a dark cyan digital display, centered",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "apt package manager",
-          "sub": "debian tools on android"
-        }
-      },
-      {
-        "narration": "Type termux setup storage to link your local files directly into the shell.",
-        "image_prompt": "Vertical framing, digital folders floating above a glowing mobile device in neon light, centered",
-        "tool": "flux"
-      },
-      {
-        "narration": "OpenSSH comes built right in so you can manage remote servers from your pocket.",
-        "image_prompt": "Vertical framing, cybernetic network nodes linking a phone to distant servers, centered",
-        "tool": "flux"
-      },
-      {
-        "narration": "Run Node or Apache locally to turn any old smartphone into a portable edge server.",
-        "image_prompt": "Vertical framing, a smartphone glowing brightly in a dark cybernetic workspace, centered",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Camera slowly orbits around the glowing smartphone as data pulses through the air."
-      },
-      {
-        "narration": "Real Linux in your pocket.",
-        "image_prompt": "Vertical framing, a minimalist neon command prompt symbol on a dark background, centered",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Termux packs a full Linux environment into Android without root access",
-        "supported": true
-      },
-      {
-        "claim": "Thousands of open source Unix utilities run natively",
-        "supported": true
-      },
-      {
-        "claim": "termux setup storage links local files into the shell",
-        "supported": true
-      },
-      {
-        "claim": "OpenSSH comes built right in",
-        "supported": true
-      }
-    ]
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "I'm ready to keep analyzing top-performing content and techniques right away to make our next videos even better!",
-      "t": 1792668007326
-    },
     {
       "role": "user",
       "text": "Use the browser to search and scroll videos and learn",
@@ -173,12 +87,17 @@
       "role": "bot",
       "text": "Wrote the script for \"Linux Power on Your Phone\"",
       "t": 1792695256031
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Linux Power on Your Phone\"",
+      "t": 1792695278741
     }
   ],
   "working": null,
   "projects": [
     {
-      "id": "linux-power-on-your-phone-mvjutsun",
+      "id": "linux-power-on-your-phone-mvjwhdps",
       "canvas": "9:16",
       "title": "Linux Power on Your Phone",
       "topic": "how to use termux for beginners in Issacverse style",
@@ -202,70 +121,65 @@
         "title": "Linux Power on Your Phone",
         "beats": [
           {
-            "narration": "Termux is a full Linux distro in your pocket, running right on your phone without rooting.",
-            "image_prompt": "Vertical framing, a smartphone glowing with neon cyberpunk command lines in a dark room, centered subject",
+            "narration": "Termux packs a full Linux environment into Android without requiring root access.",
+            "image_prompt": "Vertical framing, a glowing smartphone resting on a dark desk with green terminal text reflecting on the screen, centered subject",
             "tool": "higgsfield",
             "still": "flux",
-            "motion": "Camera pushes slowly into the smartphone screen as green text scrolls rapidly."
+            "motion": "Camera pushes slowly into the smartphone screen as terminal text scrolls rapidly."
           },
           {
-            "narration": "Many believe mobile devices can only run consumer apps, but you can install Python using a single command.",
-            "image_prompt": "Vertical framing, a neon teal terminal interface showing software installation code, centered",
+            "narration": "People assume phones are just for browsing, but thousands of open source Unix utilities run natively here.",
+            "image_prompt": "Vertical framing, a neon teal terminal interface displaying lines of C and C++ code, centered",
             "tool": "flux"
           },
           {
-            "narration": "Type pkg install python to pull packages from an APT repository just like Debian.",
+            "narration": "Install Python or Git instantly using familiar APT commands just like Debian.",
             "image_prompt": "Vertical framing, glowing code lines on a dark cyan digital display, centered",
             "tool": "graphic",
             "graphic": {
               "type": "title",
-              "text": "pkg install python",
-              "sub": "Debian packages on mobile"
+              "text": "apt package manager",
+              "sub": "debian tools on android"
             }
           },
           {
-            "narration": "Then you can compile C or C++ code using clang directly inside the app.",
-            "image_prompt": "Vertical framing, abstract glowing code blocks assembling themselves in neon light, centered",
+            "narration": "Type termux setup storage to link your local files directly into the shell.",
+            "image_prompt": "Vertical framing, digital folders floating above a glowing mobile device in neon light, centered",
             "tool": "flux"
           },
           {
-            "narration": "Running termux setup storage grants access to all shared files on your device.",
-            "image_prompt": "Vertical framing, digital folders floating above a glowing mobile device, centered",
-            "tool": "flux"
-          },
-          {
-            "narration": "This includes OpenSSH so you can connect to remote servers on the go.",
+            "narration": "OpenSSH comes built right in so you can manage remote servers from your pocket.",
             "image_prompt": "Vertical framing, cybernetic network nodes linking a phone to distant servers, centered",
             "tool": "flux"
           },
           {
-            "narration": "Turn any old phone into a portable edge computing server.",
+            "narration": "Run Node or Apache locally to turn any old smartphone into a portable edge server.",
             "image_prompt": "Vertical framing, a smartphone glowing brightly in a dark cybernetic workspace, centered",
             "tool": "higgsfield",
             "still": "flux",
             "motion": "Camera slowly orbits around the glowing smartphone as data pulses through the air."
           },
           {
-            "narration": "Real Linux tools in your pocket.",
+            "narration": "Real Linux in your pocket.",
             "image_prompt": "Vertical framing, a minimalist neon command prompt symbol on a dark background, centered",
             "tool": "flux"
           }
         ],
         "fact_check": [
           {
-            "claim": "Termux runs on Android without rooting",
+            "claim": "Termux packs a full Linux environment into Android without root access",
             "supported": true
           },
           {
-            "claim": "Packages are installed with pkg install python",
+            "claim": "Thousands of open source Unix utilities run natively",
             "supported": true
           },
           {
-            "claim": "termux-setup-storage grants access to shared files",
+            "claim": "termux setup storage links local files into the shell",
             "supported": true
           },
           {
-            "claim": "It includes OpenSSH for remote server access",
+            "claim": "OpenSSH comes built right in",
             "supported": true
           }
         ]
@@ -274,7 +188,7 @@
         "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar to Debian and Ubuntu users (https://wiki.termux.com/wiki/Main_Page)\n- Termux was created by Fredrik Andersson and first released on Google Play in 2015, later moving its primary distribution to F-Droid due to Google Play policy updates regarding target API levels (https://github.com/termux/termux-app)\n- Users can install Python, Node.js, Git, Vim, Nmap, and SSH clients directly on their phone without needing a cloud server or a rooted device (https://wiki.termux.com/wiki/Package_Management)\n- Termux accesses device storage by running `termux-setup-storage`, which creates a symbolic link `~/storage` pointing to emulated external storage (https://wiki.termux.com/wiki/Internal_and_external_storage)\n- You can run a full desktop Linux environment like Ubuntu or Arch inside Termux using PRoot along with a VNC viewer for a graphical interface (https://wiki.termux.com/wiki/Graphical_Environment)\n- The official Termux package repository hosts thousands of ported open-source Unix utilities compiled specifically for Android's Bionic libc architecture (https://repology.org/repository/termux)\n- Termux supports running local servers like Apache, CUPS, or Node.js apps, turning an old smartphone into a portable edge-computing web server (https://wiki.termux.com/wiki/Remote_Access)\n\nHOOK IDEAS:\n- What if your smartphone was actually a secret hacker terminal running a full Linux operating system right under Android's nose?\n- Stop buying expensive cloud servers—your old phone has a hidden Linux mainframe inside it, and all you need is one free app to unlock it.",
         "sources": []
       },
-      "at": 1792692498978
+      "at": 1792695278741
     },
     {
       "title": "Earth Spins at One Thousand Miles an Hour",
@@ -474,7 +388,10 @@
   "renders": [
     {
       "title": "Linux Power on Your Phone",
-      "at": 1792692498978
+      "at": 1792695278741,
+      "project": "linux-power-on-your-phone-mvjwhdps"
     }
-  ]
+  ],
+  "current_project": "linux-power-on-your-phone-mvjwhdps",
+  "pending_edit": null
 }
