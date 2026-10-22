@@ -95,7 +95,7 @@ def flux(prompt, path, seed):
     acc, tok = os.getenv("CLOUDFLARE_ACCOUNT_ID", "").strip(), os.getenv("CLOUDFLARE_API_TOKEN", "").strip()
     if not (acc and tok):
         raise RuntimeError("no Cloudflare keys")
-    body = {"prompt": prompt, "steps": 8, "seed": seed}
+    body = {"prompt": prompt, "steps": 8}
     req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
                                  data=json.dumps(body).encode(),
                                  headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
