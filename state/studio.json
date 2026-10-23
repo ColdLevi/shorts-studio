@@ -1,6 +1,6 @@
 {
-  "last_update": 312538172,
-  "time": 1792739787160,
+  "last_update": 312538173,
+  "time": 1792739806550,
   "stage": "pitch",
   "topic": "A buzzing city of Lagos",
   "research": {
@@ -27,16 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "I can generate AI images or graphics for your scenes, but I don't have access to an external stock photo library. Would you like me to adjust the visual style or prompt for a specific scene instead?",
-      "t": 1792737691075
-    },
-    {
-      "role": "user",
-      "text": "From pixellab",
-      "t": 1792737715728
-    },
     {
       "role": "bot",
       "text": "I do not have a direct integration with Pixellab to pull stock photos from their library. I can generate AI images using Flux or create custom graphics for your scenes instead. Would you like me to update one of the scenes with a new AI-generated image?",
@@ -106,6 +96,16 @@
       "role": "bot",
       "text": "Sent a free stock photo for: A cinematic cityscape of Lagos Nigeria at night with glowing skyscrapers and vibrant traffic",
       "t": 1792739787160
+    },
+    {
+      "role": "user",
+      "text": "Abuja image",
+      "t": 1792739801880
+    },
+    {
+      "role": "bot",
+      "text": "Sent a free stock photo for: A cinematic night view of Abuja Nigeria showing the National Mosque, illuminated streets, and modern cityscape",
+      "t": 1792739806550
     }
   ],
   "working": null,
