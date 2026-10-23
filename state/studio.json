@@ -1,6 +1,6 @@
 {
-  "last_update": 312538167,
-  "time": 1792738375084,
+  "last_update": 312538168,
+  "time": 1792739392703,
   "stage": "pitch",
   "topic": "A buzzing city of Lagos",
   "research": {
@@ -27,11 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Build a Telegram Bot With One Command\"",
-      "t": 1792708986519
-    },
     {
       "role": "bot",
       "text": "Rendering \"Build a Telegram Bot With One Command\"",
@@ -106,6 +101,11 @@
       "role": "bot",
       "text": "Pitched \"Inside the Megacity of Lagos\": Twenty million people share a strip of land smaller than London.",
       "t": 1792738342124
+    },
+    {
+      "role": "user",
+      "text": "/image",
+      "t": 1792739392702
     }
   ],
   "working": null,
@@ -630,5 +630,6 @@
         "sources": []
       }
     }
-  }
+  },
+  "awaitImage": 1792739392703
 }
