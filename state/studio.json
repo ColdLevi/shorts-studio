@@ -1,14 +1,80 @@
 {
   "last_update": 312538191,
-  "time": 1792746909359,
+  "time": 1792746963936,
   "stage": "idle",
   "topic": "how a server outage turns into a disaster",
   "research": {
-    "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- In 1998, a single misplaced semicolon in a software update by Network Solutions crashed the authoritative root DNS servers, taking down roughly half of the internet's domain name resolution for hours (https://www.netmeister.org/blog/dns-semicolon.html)\n- Modern cloud outages often start small: in December 2021, an automated system error at AWS US-East-1 triggered a cascading failure across thousands of businesses, including Netflix, Disney+, and smart home devices (https://aws.amazon.com/message/total-us-east-1-event/)\n- The 2017 Cloudflare \"Cloudbleed\" memory leak bug was caused by a single incorrect character in memory-handling code (`<=` instead of `<`), leaking sensitive user data onto public search engines (https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/)\n- A tiny software bug in AT&T's long-distance switching system in January 1990 caused a nationwide collapse, disabling 70 million calls because a single `break` statement in C code caused an infinite loop in error recovery (https://www.nist.gov/blogs/cybersecurity-insights/january-15-1990-great-att-network-outage)\n- In July 2022, a massive Rogers Communications outage in Canada cut off 24 million people—blocking 911 calls, ATM transactions, and hospitals—due to a router configuration error during a routine software update (https://crtc.gc.ca/eng/archive/2022/2022-316.htm)\n- The 2024 CrowdStrike global IT outage grounded airlines and crippled banks worldwide because a faulty channel file in a routine Falcon Sensor security update caused widespread Windows \"Blue Screen of Death\" loops (https://www.crowdstrike.com/blog/falcon-update-for-windows-incident-preliminary-post-incident-report/)\n- Cascading failures happen because modern systems are hyper-interdependent; when one core API or microservice fails, downstream services endlessly retry requests, instantly flooding the recovering server with a catastrophic \"thundering herd\" effect (https://sre.google/sre-book/addressing-cascading-failures/)\n- Many major infrastructure crashes are triggered not by hackers, but by automated configuration pushes (\"config drift\") where human error is instantly replicated across millions of servers worldwide before anyone can hit cancel (https://queue.acm.org/detail.cfm?id=3482299)\n\nHOOK IDEAS:\n- What happens when a single misplaced punctuation mark takes down half the internet?\n- Your entire digital life relies on millions of servers—and all it takes is one tiny typo to burn it to the ground.",
+    "text": "",
     "sources": []
   },
-  "pitch": null,
-  "script": null,
+  "pitch": {
+    "title": "One Single Byte Breaks Every Server",
+    "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+    "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
+    "key_facts": [
+      "A single misplaced semicolon caused a major network outage.",
+      "Server cascades happen when backup systems fail to handle redirected traffic.",
+      "Recovery times often stretch for hours due to manual dependency checks."
+    ],
+    "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
+    "length_seconds": 45,
+    "music": "tech-pulse",
+    "accent": "blue"
+  },
+  "script": {
+    "title": "One Single Byte Breaks Every Server",
+    "beats": [
+      {
+        "narration": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+        "image_prompt": "Vertical framing, a dark moody server room with glowing neon blue server rack lights, cinematic lighting, no text.",
+        "tool": "higgsfield",
+        "motion": "Slow camera push forward down a narrow dark server aisle with pulsing blue lights.",
+        "still": "flux"
+      },
+      {
+        "narration": "People blame massive cyber attacks for network outages, but tiny administrative typos start the cascade.",
+        "image_prompt": "Vertical framing, close up of a glowing command line interface terminal on a dark screen with abstract code lines.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then backup systems fail to handle the sudden wall of redirected traffic.",
+        "image_prompt": "Vertical framing, abstract visualization of digital network traffic overloading a glowing server node.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Recovery times stretch for hours because engineers must run manual dependency checks.",
+        "image_prompt": "Vertical framing, dark server room interior with flickering orange warning lights on a mainframe rack.",
+        "tool": "stock",
+        "query": "server room flashing lights"
+      },
+      {
+        "narration": "One tiny keystroke brings down millions of connected machines.",
+        "image_prompt": "Vertical framing, minimalist dark digital graphic showing a single highlighted error character in a stream of code.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Small mistakes cause massive digital collapses.",
+        "image_prompt": "Vertical framing, dramatic wide shot of a dark data center humming under dim blue emergency lights.",
+        "tool": "higgsfield",
+        "motion": "Camera slowly pans up from floor level revealing towering rows of silent servers.",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "A single misplaced semicolon caused a major network outage.",
+        "supported": true
+      },
+      {
+        "claim": "Server cascades happen when backup systems fail to handle redirected traffic.",
+        "supported": true
+      },
+      {
+        "claim": "Recovery times often stretch for hours due to manual dependency checks.",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
@@ -678,34 +744,85 @@
   "pending_edit": null,
   "edits": [],
   "pending": {
-    "step": "message",
-    "text": "/image A vibrant cyberpunk documentary photo of the city of Lagos at night, with glowing neon markets and bustling energy, high contrast neon lighting, cinematic grain",
-    "title": "your image",
+    "step": "render",
+    "title": "One Single Byte Breaks Every Server",
     "service": "images",
-    "reason": "flux-1-schnell: 429 [{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid pl",
+    "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
     "auto": false,
     "asked": false,
-    "since": 1792743701238,
+    "since": 1792746963936,
     "snapshot": {
-      "topic": "A buzzing city of Lagos",
+      "topic": "how a server outage turns into a disaster",
       "pitch": {
-        "title": "Inside the Megacity of Lagos",
-        "hook": "Twenty million people share a strip of land smaller than London.",
-        "angle": "Most outsiders assume Lagos is just chaotic gridlock, but it operates as a self-sustaining powerhouse producing over forty percent of Nigeria's non-oil GDP.",
+        "title": "One Single Byte Breaks Every Server",
+        "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+        "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
         "key_facts": [
-          "Lagos has an estimated population of over twenty million residents",
-          "It is the financial and commercial hub of Nigeria",
-          "The city generates a massive share of the country's economic output",
-          "It handles the largest volume of maritime trade in West Africa through its ports"
+          "A single misplaced semicolon caused a major network outage.",
+          "Server cascades happen when backup systems fail to handle redirected traffic.",
+          "Recovery times often stretch for hours due to manual dependency checks."
         ],
-        "visual_style": "vibrant cyberpunk documentary photo, high contrast neon lighting, cinematic grain",
-        "length_seconds": 42,
+        "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
+        "length_seconds": 45,
         "music": "tech-pulse",
-        "accent": "gold"
+        "accent": "blue"
       },
-      "script": null,
+      "script": {
+        "title": "One Single Byte Breaks Every Server",
+        "beats": [
+          {
+            "narration": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+            "image_prompt": "Vertical framing, a dark moody server room with glowing neon blue server rack lights, cinematic lighting, no text.",
+            "tool": "higgsfield",
+            "motion": "Slow camera push forward down a narrow dark server aisle with pulsing blue lights.",
+            "still": "flux"
+          },
+          {
+            "narration": "People blame massive cyber attacks for network outages, but tiny administrative typos start the cascade.",
+            "image_prompt": "Vertical framing, close up of a glowing command line interface terminal on a dark screen with abstract code lines.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then backup systems fail to handle the sudden wall of redirected traffic.",
+            "image_prompt": "Vertical framing, abstract visualization of digital network traffic overloading a glowing server node.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Recovery times stretch for hours because engineers must run manual dependency checks.",
+            "image_prompt": "Vertical framing, dark server room interior with flickering orange warning lights on a mainframe rack.",
+            "tool": "stock",
+            "query": "server room flashing lights"
+          },
+          {
+            "narration": "One tiny keystroke brings down millions of connected machines.",
+            "image_prompt": "Vertical framing, minimalist dark digital graphic showing a single highlighted error character in a stream of code.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Small mistakes cause massive digital collapses.",
+            "image_prompt": "Vertical framing, dramatic wide shot of a dark data center humming under dim blue emergency lights.",
+            "tool": "higgsfield",
+            "motion": "Camera slowly pans up from floor level revealing towering rows of silent servers.",
+            "still": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "A single misplaced semicolon caused a major network outage.",
+            "supported": true
+          },
+          {
+            "claim": "Server cascades happen when backup systems fail to handle redirected traffic.",
+            "supported": true
+          },
+          {
+            "claim": "Recovery times often stretch for hours due to manual dependency checks.",
+            "supported": true
+          }
+        ]
+      },
       "research": {
-        "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometers (about 1,381 square miles) (https://lagosstate.gov.ng/about-lagos/)\n- Greater London covers an area of approximately 1,572 square kilometers (607 square miles), meaning Lagos state is only about 2.2 times the size of London, yet houses a vastly larger and rapidly growing population (https://www.london.gov.uk/programmes-strategies/planning/london-plan/good-growth-by-design/about-london)\n- Over 85,000 people are added to the population of Lagos every week through birth and rural-urban migration (https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/wup2018_key_facts.pdf)\n- Lagos generates roughly 30% of Nigeria’s total Gross Domestic Product (GDP), serving as the undisputed economic and financial powerhouse of West Africa (https://www.worldbank.org/en/results/2021/06/14/untapping-lagos-potential-as-a-world-class-city)\n- The iconic yellow minibuses of Lagos, known as \"Danfos,\" are a defining feature of the city's chaotic and resilient informal public transport network (https://www.bbc.com/travel/article/20200211-the-death-of-lagoss-iconic-yellow-buses)\n- Makoko, a famous waterfront settlement in Lagos, is largely built on stilts over the Lagos Lagoon and is home to an estimated 150,000 to 250,000 residents (https://www.nationalgeographic.com/history/article/makoko-lagos-nigeria-water-world)\n- Lagos is projected to become the world's most populous city by the year 2100, with some demographic models predicting a population exceeding 85 million people (https://www.nature.com/articles/d41586-018-05900-x)\n- Eko Atlantic City is a multi-billion dollar futuristic, man-made coastal city built on reclaimed land from the Atlantic Ocean along the bar beach of Lagos to combat erosion and house 250,000 people (https://www.cnn.com/style/article/eko-atlantic-lagos-nigeria/index.html)\n- Despite its massive economic output, a significant portion of Lagos's population lives in informal settlements without reliable piped water or formal sanitation (https://www.unhabitat.org/lagos-urban-profile)\n\nHOOK IDEAS:\n- Imagine crushing the entire population of New York and London into a space barely bigger than a single county—welcome to Lagos, where 20 million people hustle on a strip of land smaller than London!\n- This African mega-city adds 85,000 people to its streets *every single week*, and it's projected to become the biggest city on planet Earth.",
+        "text": "",
         "sources": []
       }
     }
