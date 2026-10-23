@@ -61,6 +61,37 @@ def _rendition(hit):
     return max(vids, key=lambda v: int(v.get("width") or 0)) if vids else None
 
 
+def _judge(clip, query):
+    """Score 0-10 how well a frame of the clip shows the query (Gemini). None = judge unavailable."""
+    key = (os.environ.get("GEMINI_API_KEY") or "").strip()
+    if not key:
+        return None
+    try:
+        import base64
+        import re as _re
+        jpg = clip + ".jpg"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "0.5", "-i", clip, "-frames:v", "1",
+                        "-vf", "scale=480:-2", jpg], check=True, capture_output=True)
+        b64 = base64.b64encode(open(jpg, "rb").read()).decode()
+        ask = ('Score 0-10 how well this video frame shows: "%s". Ignore style words like cinematic. '
+               '9-10 = clearly exactly that, 5-6 = loosely related, 0-2 = unrelated. Reply with only the number.' % query)
+        body = json.dumps({"contents": [{"parts": [{"text": ask}, {"inline_data": {"mime_type": "image/jpeg", "data": b64}}]}],
+                           "generationConfig": {"temperature": 0}}).encode()
+        for m in ("gemini-2.5-flash", "gemini-2.0-flash"):
+            try:
+                req = urllib.request.Request(
+                    "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (m, key),
+                    data=body, headers={"Content-Type": "application/json"})
+                d = json.loads(urllib.request.urlopen(req, timeout=30).read().decode())
+                t = d["candidates"][0]["content"]["parts"][0]["text"]
+                return float(_re.search(r"\d+(\.\d+)?", t).group())
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return None
+
+
 def fetch(query, dest, beat_len, W, H):
     """Download + trim + crop one clip to dest (mp4, no audio). Returns (duration, credit)."""
     query = (query or "").strip()
@@ -100,6 +131,9 @@ def fetch(query, dest, beat_len, W, H):
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-t", "%.2f" % want, "-vf", vf,
                             "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                             "-movflags", "+faststart", dest], check=True, capture_output=True)
+            score = _judge(dest, query)
+            if score is not None and score < 6:
+                raise RuntimeError("clip does not show '%s' (score %s)" % (query, score))
             USED.add(hit.get("id"))
             return _probe(dest), "Pixabay"
         except Exception as e:
