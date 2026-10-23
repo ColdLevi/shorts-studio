@@ -95,6 +95,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-12",
+      "title": "One Single Byte Breaks Every Server",
+      "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+      "accent": "#5AA9FF",
+      "duration": 32.8,
+      "created": 1792747176697,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-12/short-12.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-12/short-12.jpg",
+      "project": "one-single-byte-breaks-every-server-mvkraqhb",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
