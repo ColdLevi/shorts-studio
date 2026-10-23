@@ -1,0 +1,702 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-secret-grid-beneath-your-feet-mvk8qp5u",
+ "rev": 1,
+ "title": "The Secret Grid Beneath Your Feet",
+ "duration": 40.78,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.8,
+    "narration": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical gritty cinematic close-up of a rusted iron pipe underground in moody shadow, film grain, photorealistic",
+     "motion": "The camera slowly pushes forward along the dark rusted pipe surface.",
+     "still": "flux"
+    },
+    "hash": "767032a52bc7"
+   },
+   {
+    "id": "v2",
+    "start": 5.8,
+    "end": 13.988,
+    "narration": "People assume city water comes from a pristine distant lake, but every single drop has already passed through five strangers.",
+    "kind": "ai_video",
+    "src": "assets/clip_02.mp4",
+    "duration": 8.5,
+    "still": "assets/img_02.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical moody urban silhouette at dusk with a hint of blue industrial glow, cinematic photography",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "a7b9b9685063"
+   },
+   {
+    "id": "v3",
+    "start": 13.988,
+    "end": 20.35,
+    "narration": "Philadelphia laid the first cast iron municipal water mains in eighteen zero four.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical vintage sepia-toned gritty photograph of old nineteenth century cobblestone street construction"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c2e3cf2c2f78"
+   },
+   {
+    "id": "v4",
+    "start": 20.35,
+    "end": 25.038,
+    "narration": "New York City alone moves over one billion gallons of water daily.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "gallons daily",
+     "prefix": "",
+     "suffix": "",
+     "type": "counter",
+     "value": 1000000000
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 25.038,
+    "end": 31.788,
+    "narration": "Gravity powers ninety five percent of this entire delivery without using a single electric pump.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Gravity",
+       "value": 95
+      },
+      {
+       "label": "Pumps",
+       "value": 5
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Power Source",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 31.788,
+    "end": 37.975,
+    "narration": "Older networks lose up to thirty percent of their water to underground leaks before reaching a faucet.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "lost to leaks",
+     "prefix": "",
+     "suffix": "%",
+     "type": "counter",
+     "value": 30
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 37.975,
+    "end": 39.984,
+    "narration": "Your tap water carries history.",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 4.06,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical macro shot of a clear water drop falling from a grungy metal faucet, cinematic dark background",
+     "motion": "The camera rapidly pulls back as the water droplet hits the surface.",
+     "still": "flux"
+    },
+    "hash": "67b481d17bce"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Four",
+     "start": 0.125,
+     "end": 0.25
+    },
+    {
+     "word": "thousand",
+     "start": 0.263,
+     "end": 0.75
+    },
+    {
+     "word": "miles",
+     "start": 0.75,
+     "end": 1.125
+    },
+    {
+     "word": "of",
+     "start": 1.125,
+     "end": 1.188
+    },
+    {
+     "word": "iron",
+     "start": 1.188,
+     "end": 1.6
+    },
+    {
+     "word": "tubes",
+     "start": 1.6,
+     "end": 2.188
+    },
+    {
+     "word": "carry",
+     "start": 2.388,
+     "end": 2.7
+    },
+    {
+     "word": "your",
+     "start": 2.712,
+     "end": 2.837
+    },
+    {
+     "word": "morning",
+     "start": 2.85,
+     "end": 3.263
+    },
+    {
+     "word": "shower",
+     "start": 3.263,
+     "end": 3.788
+    },
+    {
+     "word": "straight",
+     "start": 4.125,
+     "end": 4.638
+    },
+    {
+     "word": "into",
+     "start": 4.75,
+     "end": 4.9
+    },
+    {
+     "word": "the",
+     "start": 4.9,
+     "end": 4.987
+    },
+    {
+     "word": "dark.",
+     "start": 5.0,
+     "end": 5.4
+    },
+    {
+     "word": "People",
+     "start": 5.8,
+     "end": 6.1
+    },
+    {
+     "word": "assume",
+     "start": 6.1,
+     "end": 6.487
+    },
+    {
+     "word": "city",
+     "start": 6.5,
+     "end": 6.775
+    },
+    {
+     "word": "water",
+     "start": 6.787,
+     "end": 7.287
+    },
+    {
+     "word": "comes",
+     "start": 7.45,
+     "end": 7.725
+    },
+    {
+     "word": "from",
+     "start": 7.725,
+     "end": 7.838
+    },
+    {
+     "word": "a",
+     "start": 7.838,
+     "end": 7.925
+    },
+    {
+     "word": "pristine",
+     "start": 7.938,
+     "end": 8.562
+    },
+    {
+     "word": "distant",
+     "start": 8.575,
+     "end": 8.963
+    },
+    {
+     "word": "lake,",
+     "start": 8.963,
+     "end": 9.3
+    },
+    {
+     "word": "but",
+     "start": 9.713,
+     "end": 9.863
+    },
+    {
+     "word": "every",
+     "start": 9.988,
+     "end": 10.25
+    },
+    {
+     "word": "single",
+     "start": 10.25,
+     "end": 10.575
+    },
+    {
+     "word": "drop",
+     "start": 10.575,
+     "end": 10.912
+    },
+    {
+     "word": "has",
+     "start": 10.925,
+     "end": 11.1
+    },
+    {
+     "word": "already",
+     "start": 11.137,
+     "end": 11.463
+    },
+    {
+     "word": "passed",
+     "start": 11.463,
+     "end": 12.062
+    },
+    {
+     "word": "through",
+     "start": 12.137,
+     "end": 12.387
+    },
+    {
+     "word": "five",
+     "start": 12.4,
+     "end": 12.825
+    },
+    {
+     "word": "strangers.",
+     "start": 12.825,
+     "end": 13.537
+    },
+    {
+     "word": "Philadelphia",
+     "start": 13.988,
+     "end": 14.675
+    },
+    {
+     "word": "laid",
+     "start": 14.812,
+     "end": 14.988
+    },
+    {
+     "word": "the",
+     "start": 14.988,
+     "end": 15.062
+    },
+    {
+     "word": "first",
+     "start": 15.062,
+     "end": 15.5
+    },
+    {
+     "word": "cast",
+     "start": 15.5,
+     "end": 16.113
+    },
+    {
+     "word": "iron",
+     "start": 16.175,
+     "end": 16.488
+    },
+    {
+     "word": "municipal",
+     "start": 16.488,
+     "end": 17.038
+    },
+    {
+     "word": "water",
+     "start": 17.038,
+     "end": 17.363
+    },
+    {
+     "word": "mains",
+     "start": 17.675,
+     "end": 18.188
+    },
+    {
+     "word": "in",
+     "start": 18.3,
+     "end": 18.538
+    },
+    {
+     "word": "eighteen",
+     "start": 18.7,
+     "end": 19.113
+    },
+    {
+     "word": "zero",
+     "start": 19.125,
+     "end": 19.488
+    },
+    {
+     "word": "four.",
+     "start": 19.5,
+     "end": 19.938
+    },
+    {
+     "word": "New",
+     "start": 20.35,
+     "end": 20.5
+    },
+    {
+     "word": "York",
+     "start": 20.512,
+     "end": 20.725
+    },
+    {
+     "word": "City",
+     "start": 20.725,
+     "end": 21.025
+    },
+    {
+     "word": "alone",
+     "start": 21.025,
+     "end": 21.538
+    },
+    {
+     "word": "moves",
+     "start": 21.775,
+     "end": 22.262
+    },
+    {
+     "word": "over",
+     "start": 22.275,
+     "end": 22.6
+    },
+    {
+     "word": "one",
+     "start": 22.613,
+     "end": 22.962
+    },
+    {
+     "word": "billion",
+     "start": 23.062,
+     "end": 23.438
+    },
+    {
+     "word": "gallons",
+     "start": 23.438,
+     "end": 23.863
+    },
+    {
+     "word": "of",
+     "start": 23.863,
+     "end": 23.913
+    },
+    {
+     "word": "water",
+     "start": 23.913,
+     "end": 24.188
+    },
+    {
+     "word": "daily.",
+     "start": 24.188,
+     "end": 24.625
+    },
+    {
+     "word": "Gravity",
+     "start": 25.038,
+     "end": 25.538
+    },
+    {
+     "word": "powers",
+     "start": 25.538,
+     "end": 26.175
+    },
+    {
+     "word": "ninety",
+     "start": 26.238,
+     "end": 26.65
+    },
+    {
+     "word": "five",
+     "start": 26.65,
+     "end": 26.962
+    },
+    {
+     "word": "percent",
+     "start": 26.962,
+     "end": 27.5
+    },
+    {
+     "word": "of",
+     "start": 27.587,
+     "end": 27.675
+    },
+    {
+     "word": "this",
+     "start": 27.688,
+     "end": 27.85
+    },
+    {
+     "word": "entire",
+     "start": 27.85,
+     "end": 28.438
+    },
+    {
+     "word": "delivery",
+     "start": 28.438,
+     "end": 28.95
+    },
+    {
+     "word": "without",
+     "start": 29.262,
+     "end": 29.688
+    },
+    {
+     "word": "using",
+     "start": 29.688,
+     "end": 30.062
+    },
+    {
+     "word": "a",
+     "start": 30.062,
+     "end": 30.113
+    },
+    {
+     "word": "single",
+     "start": 30.113,
+     "end": 30.6
+    },
+    {
+     "word": "electric",
+     "start": 30.6,
+     "end": 31.0
+    },
+    {
+     "word": "pump.",
+     "start": 31.0,
+     "end": 31.387
+    },
+    {
+     "word": "Older",
+     "start": 31.788,
+     "end": 32.025
+    },
+    {
+     "word": "networks",
+     "start": 32.025,
+     "end": 32.538
+    },
+    {
+     "word": "lose",
+     "start": 32.6,
+     "end": 32.938
+    },
+    {
+     "word": "up",
+     "start": 32.95,
+     "end": 33.1
+    },
+    {
+     "word": "to",
+     "start": 33.112,
+     "end": 33.2
+    },
+    {
+     "word": "thirty",
+     "start": 33.2,
+     "end": 33.6
+    },
+    {
+     "word": "percent",
+     "start": 33.6,
+     "end": 34.087
+    },
+    {
+     "word": "of",
+     "start": 34.1,
+     "end": 34.163
+    },
+    {
+     "word": "their",
+     "start": 34.163,
+     "end": 34.325
+    },
+    {
+     "word": "water",
+     "start": 34.325,
+     "end": 34.75
+    },
+    {
+     "word": "to",
+     "start": 34.962,
+     "end": 35.1
+    },
+    {
+     "word": "underground",
+     "start": 35.112,
+     "end": 35.65
+    },
+    {
+     "word": "leaks",
+     "start": 35.65,
+     "end": 36.1
+    },
+    {
+     "word": "before",
+     "start": 36.212,
+     "end": 36.7
+    },
+    {
+     "word": "reaching",
+     "start": 36.712,
+     "end": 37.0
+    },
+    {
+     "word": "a",
+     "start": 37.0,
+     "end": 37.038
+    },
+    {
+     "word": "faucet.",
+     "start": 37.038,
+     "end": 37.562
+    },
+    {
+     "word": "Your",
+     "start": 37.975,
+     "end": 38.062
+    },
+    {
+     "word": "tap",
+     "start": 38.062,
+     "end": 38.362
+    },
+    {
+     "word": "water",
+     "start": 38.375,
+     "end": 38.75
+    },
+    {
+     "word": "carries",
+     "start": 38.763,
+     "end": 39.112
+    },
+    {
+     "word": "history.",
+     "start": 39.125,
+     "end": 39.612
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Four thousand miles of iron tubes carry your morning shower straight into the dark. People assume city water comes from a pristine distant lake, but every single drop has already passed through five strangers. Philadelphia laid the first cast iron municipal water mains in eighteen zero four. New York City alone moves over one billion gallons of water daily. Gravity powers ninety five percent of this entire delivery without using a single electric pump. Older networks lose up to thirty percent of their water to underground leaks before reaching a faucet. Your tap water carries history."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "The Secret Grid Beneath Your Feet"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792716825478,
+  "updated": 1792716825478,
+  "topic": "about something real-world, like city life",
+  "hook": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
+  "image_style": "gritty cinematic documentary photo, moody urban lighting, film grain",
+  "format": "vertical",
+  "assets_release": "project-the-secret-grid-beneath-your-feet-mvk8qp5u",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "gemini_images": false,
+   "hook": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
+   "music": "docu-pluck",
+   "project_id": "the-secret-grid-beneath-your-feet-mvk8qp5u",
+   "style": "gritty cinematic documentary photo, moody urban lighting, film grain",
+   "title": "The Secret Grid Beneath Your Feet",
+   "topic": "about something real-world, like city life",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

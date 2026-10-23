@@ -81,6 +81,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-10",
+      "title": "The Secret Grid Beneath Your Feet",
+      "hook": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
+      "accent": "#2EE6C5",
+      "duration": 40.9,
+      "created": 1792717088430,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-10/short-10.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-10/short-10.jpg",
+      "project": "the-secret-grid-beneath-your-feet-mvk8qp5u",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
