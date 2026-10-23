@@ -1,6 +1,6 @@
 {
-  "last_update": 312538185,
-  "time": 1792743203491,
+  "last_update": 312538186,
+  "time": 1792743230491,
   "stage": "pitch",
   "topic": "A buzzing city of Lagos",
   "research": {
@@ -27,11 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Sent a free stock photo for: A cinematic night view of Lagos Nigeria showing illuminated bridges, glowing skyscrapers, and vibrant traffic light trai",
-      "t": 1792742626006
-    },
     {
       "role": "user",
       "text": "City of Lagos image",
@@ -106,6 +101,11 @@
       "role": "bot",
       "text": "Lagos at night comes alive with glowing neon markets and bustling energy! Shall we turn this pitch into a script and render it?",
       "t": 1792743203491
+    },
+    {
+      "role": "user",
+      "text": "Image please",
+      "t": 1792743220491
     }
   ],
   "working": null,
@@ -614,13 +614,13 @@
   "edits": [],
   "pending": {
     "step": "message",
-    "text": "/image A vibrant and detailed cinematic photo of the bustling megacity of Lagos Nigeria, showing illuminated bridges, glowing skyscrapers, and vibrant traffic light trails under a night sky",
+    "text": "/image A vibrant cyberpunk documentary photo of Lagos at night, high contrast neon lighting, cinematic grain",
     "title": "your image",
     "service": "images",
     "reason": "flux-1-schnell: 429 [{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid pl",
     "auto": false,
     "asked": false,
-    "since": 1792743001695,
+    "since": 1792743230491,
     "snapshot": {
       "topic": "A buzzing city of Lagos",
       "pitch": {
