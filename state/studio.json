@@ -1,14 +1,118 @@
 {
   "last_update": 312538198,
-  "time": 1792749817288,
+  "time": 1792749876435,
   "stage": "idle",
   "topic": "a guy daily life stop motion style",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
-  "script": null,
+  "pitch": {
+    "title": "Adam Starts His Stop Motion Day",
+    "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+    "angle": "People think stop motion requires a massive Hollywood studio budget. Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
+    "key_facts": [
+      "Adam wakes up at six o'clock every morning for his daily routine.",
+      "Animating on twos requires twelve individual photographs for every single second of video.",
+      "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+      "Locking camera exposure and focus prevents visual flickering between individual frames."
+    ],
+    "visual_style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
+    "length_seconds": 45,
+    "music": "lofi-warm",
+    "accent": "teal"
+  },
+  "script": {
+    "title": "Adam Starts His Stop Motion Day",
+    "beats": [
+      {
+        "narration": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+        "image_prompt": "Vertical overhead view of a wooden desk with cardboard cutout figures arranged neatly under warm craft studio lighting.",
+        "tool": "higgsfield",
+        "motion": "Slow overhead crane shot moving forward across the cardboard craft desk while cutout pieces shift slightly.",
+        "still": "flux"
+      },
+      {
+        "narration": "People think stop motion requires a massive Hollywood studio budget.",
+        "image_prompt": "Vertical macro shot of a single tiny cardboard coffee cup model resting on a dark craft paper surface.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
+        "image_prompt": "Vertical close-up of hands moving a small articulated cardboard figure on a tabletop covered in craft tools.",
+        "tool": "stock",
+        "query": "stop motion animation hands"
+      },
+      {
+        "narration": "Adam wakes up at six o'clock every morning for his daily routine.",
+        "image_prompt": "Vertical still of a small cardboard alarm clock cutout showing six o'clock against a textured background.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Animating on twos requires twelve individual photographs for every single second of video.",
+        "image_prompt": "Vertical graphic displaying frame count comparisons for stop motion animation.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "bars",
+          "title": "Frames Per Second",
+          "prefix": "",
+          "suffix": "",
+          "items": [
+            {
+              "label": "On Ones",
+              "value": 24
+            },
+            {
+              "label": "On Twos",
+              "value": 12
+            }
+          ]
+        }
+      },
+      {
+        "narration": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+        "image_prompt": "Vertical neat grid of tiny paper photo prints spread across a rustic wooden tabletop.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 720,
+          "prefix": "",
+          "suffix": " photo",
+          "label": "Total Frames"
+        }
+      },
+      {
+        "narration": "Locking camera exposure and focus prevents visual flickering between individual frames.",
+        "image_prompt": "Vertical view of a professional digital camera mounted on a sturdy overhead tripod pointing down at a craft workspace.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Every frame tells the story.",
+        "image_prompt": "Vertical hero shot of a tiny cardboard figure stepping forward into bright morning craft light.",
+        "tool": "higgsfield",
+        "motion": "Fast smooth zoom in on the cardboard figure as studio lights flicker and settle.",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Adam wakes up at six o'clock every morning for his daily routine.",
+        "supported": true
+      },
+      {
+        "claim": "Animating on twos requires twelve individual photographs for every single second of video.",
+        "supported": true
+      },
+      {
+        "claim": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+        "supported": true
+      },
+      {
+        "claim": "Locking camera exposure and focus prevents visual flickering between individual frames.",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
@@ -799,6 +903,127 @@
   "current_project": "adam-starts-his-stop-motion-day-mvksybxe",
   "pending_edit": null,
   "edits": [],
-  "pending": null,
+  "pending": {
+    "step": "render",
+    "title": "Adam Starts His Stop Motion Day",
+    "service": "images",
+    "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
+    "auto": false,
+    "asked": false,
+    "since": 1792749876435,
+    "snapshot": {
+      "topic": "a guy daily life stop motion style",
+      "pitch": {
+        "title": "Adam Starts His Stop Motion Day",
+        "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+        "angle": "People think stop motion requires a massive Hollywood studio budget. Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
+        "key_facts": [
+          "Adam wakes up at six o'clock every morning for his daily routine.",
+          "Animating on twos requires twelve individual photographs for every single second of video.",
+          "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+          "Locking camera exposure and focus prevents visual flickering between individual frames."
+        ],
+        "visual_style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
+        "length_seconds": 45,
+        "music": "lofi-warm",
+        "accent": "teal"
+      },
+      "script": {
+        "title": "Adam Starts His Stop Motion Day",
+        "beats": [
+          {
+            "narration": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+            "image_prompt": "Vertical overhead view of a wooden desk with cardboard cutout figures arranged neatly under warm craft studio lighting.",
+            "tool": "higgsfield",
+            "motion": "Slow overhead crane shot moving forward across the cardboard craft desk while cutout pieces shift slightly.",
+            "still": "flux"
+          },
+          {
+            "narration": "People think stop motion requires a massive Hollywood studio budget.",
+            "image_prompt": "Vertical macro shot of a single tiny cardboard coffee cup model resting on a dark craft paper surface.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
+            "image_prompt": "Vertical close-up of hands moving a small articulated cardboard figure on a tabletop covered in craft tools.",
+            "tool": "stock",
+            "query": "stop motion animation hands"
+          },
+          {
+            "narration": "Adam wakes up at six o'clock every morning for his daily routine.",
+            "image_prompt": "Vertical still of a small cardboard alarm clock cutout showing six o'clock against a textured background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Animating on twos requires twelve individual photographs for every single second of video.",
+            "image_prompt": "Vertical graphic displaying frame count comparisons for stop motion animation.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "bars",
+              "title": "Frames Per Second",
+              "prefix": "",
+              "suffix": "",
+              "items": [
+                {
+                  "label": "On Ones",
+                  "value": 24
+                },
+                {
+                  "label": "On Twos",
+                  "value": 12
+                }
+              ]
+            }
+          },
+          {
+            "narration": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+            "image_prompt": "Vertical neat grid of tiny paper photo prints spread across a rustic wooden tabletop.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 720,
+              "prefix": "",
+              "suffix": " photo",
+              "label": "Total Frames"
+            }
+          },
+          {
+            "narration": "Locking camera exposure and focus prevents visual flickering between individual frames.",
+            "image_prompt": "Vertical view of a professional digital camera mounted on a sturdy overhead tripod pointing down at a craft workspace.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Every frame tells the story.",
+            "image_prompt": "Vertical hero shot of a tiny cardboard figure stepping forward into bright morning craft light.",
+            "tool": "higgsfield",
+            "motion": "Fast smooth zoom in on the cardboard figure as studio lights flicker and settle.",
+            "still": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Adam wakes up at six o'clock every morning for his daily routine.",
+            "supported": true
+          },
+          {
+            "claim": "Animating on twos requires twelve individual photographs for every single second of video.",
+            "supported": true
+          },
+          {
+            "claim": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+            "supported": true
+          },
+          {
+            "claim": "Locking camera exposure and focus prevents visual flickering between individual frames.",
+            "supported": true
+          }
+        ]
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      }
+    }
+  },
   "awaitImage": null
 }
