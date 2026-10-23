@@ -1,6 +1,6 @@
 {
-  "last_update": 312538200,
-  "time": 1792750062511,
+  "last_update": 312538202,
+  "time": 1792759381027,
   "stage": "idle",
   "topic": "a guy daily life stop motion style",
   "research": {
@@ -908,7 +908,7 @@
     "title": "Adam Starts His Stop Motion Day",
     "service": "images",
     "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
-    "auto": false,
+    "auto": true,
     "asked": false,
     "since": 1792750062511,
     "snapshot": {
