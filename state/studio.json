@@ -1,6 +1,6 @@
 {
-  "last_update": 312538175,
-  "time": 1792742626006,
+  "last_update": 312538176,
+  "time": 1792742637746,
   "stage": "pitch",
   "topic": "A buzzing city of Lagos",
   "research": {
@@ -27,16 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Inside the Megacity of Lagos\": Twenty million people share a strip of land smaller than London.",
-      "t": 1792738342124
-    },
-    {
-      "role": "user",
-      "text": "/image",
-      "t": 1792739392702
-    },
     {
       "role": "user",
       "text": "A city view of Lagos at night",
@@ -106,6 +96,16 @@
       "role": "bot",
       "text": "Sent a free stock photo for: A cinematic night view of Lagos Nigeria showing illuminated bridges, glowing skyscrapers, and vibrant traffic light trai",
       "t": 1792742626006
+    },
+    {
+      "role": "user",
+      "text": "City of Lagos image",
+      "t": 1792742627432
+    },
+    {
+      "role": "bot",
+      "text": "Sent a free stock photo for: A cinematic night view of Lagos Nigeria showing illuminated bridges, glowing skyscrapers, and vibrant traffic light trai",
+      "t": 1792742637746
     }
   ],
   "working": null,
