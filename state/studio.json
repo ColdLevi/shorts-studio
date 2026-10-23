@@ -1,28 +1,31 @@
 {
-  "last_update": 312538193,
-  "time": 1792747288878,
-  "stage": "idle",
-  "topic": "how a server outage turns into a disaster",
+  "last_update": 312538194,
+  "time": 1792749486166,
+  "stage": "pitch",
+  "topic": "a guy daily life stop motion style",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "Mastering Stop Motion Daily Life Routines",
+    "hook": "Seven hundred and twenty individual photographs form just sixty seconds of a morning coffee routine.",
+    "angle": "People believe fluid animation demands expensive studio gear and complex software. Simple tabletop shifts shot frame by frame turn an everyday routine into a hypnotic visual.",
+    "key_facts": [
+      "Animating on twos requires twelve individual photographs for every single second of video.",
+      "A one-minute stop-motion sequence at twelve frames per second uses seven hundred and twenty photos.",
+      "Locking camera exposure and focus settings prevents visual flickering between individual frames."
+    ],
+    "visual_style": "tactile stop-motion photo style, claymation textures, overhead craft lighting",
+    "length_seconds": 42,
+    "music": "lofi-warm",
+    "accent": "teal"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Sent a free stock photo for: Image of zoo life",
-      "t": 1792742966731
-    },
-    {
-      "role": "user",
-      "text": "City of Lagos Nigeria image",
-      "t": 1792742990603
-    },
     {
       "role": "user",
       "text": "Zoo images",
@@ -92,6 +95,16 @@
       "role": "user",
       "text": "/scenes",
       "t": 1792747288697
+    },
+    {
+      "role": "user",
+      "text": "Make a short video of a guy daily life stop motion style",
+      "t": 1792749473496
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Mastering Stop Motion Daily Life Routines\": Seven hundred and twenty individual photographs form just sixty seconds of a morning coffee routine.",
+      "t": 1792749486166
     }
   ],
   "working": null,
@@ -661,7 +674,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about about something real-world, like city life.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (idea) The user liked a video idea about the City of Lagos at night featuring glowing neon markets and bustling energy.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (interest) The user is interested in Web3 development projects, crypto bots, and automation tools.\n- (fact) Browser bot research on starting small: - In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (ht\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (interest) The user approved a short about about something real-world, like city life.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how a server outage turns into a disaster.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (fact) Browser bot research on how a server outage turns into a disaster: - In 1998, a single misplaced semicolon in a software update by Network Solutions crashed the authoritative root DNS servers, taking down roughly half of the internet's domain name resolution for hours (https://www.netmeister.org/blog/dns-semicolon.html)\n- Modern cloud outages often start small: in\n- (idea) The user liked a video idea about the City of Lagos at night featuring glowing neon markets and bustling energy.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.",
   "deep": {
     "topic": "how a server outage turns into a disaster",
     "status": "done",
