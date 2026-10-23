@@ -1,7 +1,7 @@
 {
-  "last_update": 312538158,
-  "time": 1792715850639,
-  "stage": "pitch",
+  "last_update": 312538159,
+  "time": 1792715862513,
+  "stage": "script",
   "topic": "about something real-world, like city life",
   "research": {
     "text": "",
@@ -22,16 +22,104 @@
     "music": "docu-pluck",
     "accent": "teal"
   },
-  "script": null,
+  "script": {
+    "title": "The Secret Grid Beneath Your Feet",
+    "beats": [
+      {
+        "narration": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
+        "image_prompt": "Vertical gritty cinematic close-up of a rusted iron pipe underground in moody shadow, film grain, photorealistic",
+        "tool": "higgsfield",
+        "motion": "The camera slowly pushes forward along the dark rusted pipe surface.",
+        "still": "flux"
+      },
+      {
+        "narration": "People assume city water comes from a pristine distant lake, but every single drop has already passed through five strangers.",
+        "image_prompt": "Vertical moody urban silhouette at dusk with a hint of blue industrial glow, cinematic photography",
+        "tool": "stock",
+        "query": "city skyline dusk",
+        "still": "flux"
+      },
+      {
+        "narration": "Philadelphia laid the first cast iron municipal water mains in eighteen zero four.",
+        "image_prompt": "Vertical vintage sepia-toned gritty photograph of old nineteenth century cobblestone street construction",
+        "tool": "flux"
+      },
+      {
+        "narration": "New York City alone moves over one billion gallons of water daily.",
+        "image_prompt": "Vertical dramatic industrial water valve underground, teal accent lighting, gritty documentary style",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 1000000000,
+          "prefix": "",
+          "suffix": "",
+          "label": "gallons daily"
+        }
+      },
+      {
+        "narration": "Gravity powers ninety five percent of this entire delivery without using a single electric pump.",
+        "image_prompt": "Vertical dramatic dark tunnel showing descending water pipe architecture, moody lighting",
+        "tool": "graphic",
+        "graphic": {
+          "type": "bars",
+          "title": "Power Source",
+          "prefix": "",
+          "suffix": "%",
+          "items": [
+            {
+              "label": "Gravity",
+              "value": 95
+            },
+            {
+              "label": "Pumps",
+              "value": 5
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Older networks lose up to thirty percent of their water to underground leaks before reaching a faucet.",
+        "image_prompt": "Vertical underground soil view with leaking water pipe dropping moisture into dark earth",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 30,
+          "prefix": "",
+          "suffix": "%",
+          "label": "lost to leaks"
+        }
+      },
+      {
+        "narration": "Your tap water carries history.",
+        "image_prompt": "Vertical macro shot of a clear water drop falling from a grungy metal faucet, cinematic dark background",
+        "tool": "higgsfield",
+        "motion": "The camera rapidly pulls back as the water droplet hits the surface.",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Philadelphia installed the first cast iron municipal water mains in 1804",
+        "supported": true
+      },
+      {
+        "claim": "New York City's aqueduct system moves over one billion gallons of water daily",
+        "supported": true
+      },
+      {
+        "claim": "Gravity powers ninety five percent of the water delivery without using electric pumps",
+        "supported": true
+      },
+      {
+        "claim": "Older urban pipe networks lose up to thirty percent of their water to underground leaks",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/studio",
-      "t": 1792693918904
-    },
     {
       "role": "user",
       "text": "It's not yet ready",
@@ -106,6 +194,11 @@
       "role": "bot",
       "text": "Pitched \"The Secret Grid Beneath Your Feet\": Four thousand miles of iron tubes carry your morning shower straight into the dark.",
       "t": 1792715849676
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Secret Grid Beneath Your Feet\"",
+      "t": 1792715862513
     }
   ],
   "working": null,
