@@ -1,23 +1,24 @@
 {
-  "last_update": 312538194,
-  "time": 1792749560199,
+  "last_update": 312538195,
+  "time": 1792749573707,
   "stage": "pitch",
   "topic": "a guy daily life stop motion style",
   "research": {
-    "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Creating a 60-second stop motion video typically requires between 720 and 1,500 individual photographs, depending on whether the animator shoots at 12 or 24 frames per second (https://www.studiobinder.com/blog/what-is-stop-motion-animation/)\n- A standard cinematic framerate for smooth stop motion is 24 frames per second, meaning 24 separate photos must be manually captured for every single second of footage (https://www.backstage.com/magazine/article/how-to-make-ap-stop-motion-animation-74523/)\n- Animators often use a technique called \"shooting on twos,\" meaning one photo is held for two frames, reducing the workload to 12 photos per second (https://animationmentor.com/blog/what-is-stop-motion-animation/)\n- Capturing just a simple 60-second morning routine in stop motion can easily take an animator 6 to 10 hours of continuous shooting on a locked-down tripod (https://www.premiumbeat.com/blog/stop-motion-animation-tips-beginners/)\n- The slightest accidental bump to the camera or coffee cup between shots ruins the entire sequence, requiring meticulous hardware setups (https://www.bhphotovideo.com/explora/video/tips-and-solutions/stop-motion-animation-tips-and-tricks)\n- Pioneering stop-motion animator Ray Harryhausen spent months animating sequences that lasted only a few minutes for classic films like *Jason and the Argonauts* (https://www.bfi.org.uk/features/ray-harryhausen-master-stop-motion)\n- Modern creators utilize specialized software like Dragonframe to onion-skin and preview frames live while shooting tabletop scenes (https://www.dragonframe.com/)\n- The stop motion market has seen a massive resurgence on platforms like YouTube and TikTok, where painstaking physical crafts contrast with AI-generated content (https://www.tubefilter.com/)\n\nHOOK IDEAS:\n- This guy spent 6 hours, took 720 photos, and bruised his thumb—all just to pour one cup of coffee.\n- What does 720 separate photographs look like when you stitch them together into a single morning?",
+    "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "Mastering Stop Motion Daily Life Routines",
-    "hook": "Seven hundred and twenty individual photographs form just sixty seconds of a morning coffee routine.",
-    "angle": "People believe fluid animation demands expensive studio gear and complex software. Simple tabletop shifts shot frame by frame turn an everyday routine into a hypnotic visual.",
+    "title": "Adam Starts His Stop Motion Day",
+    "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+    "angle": "People think stop motion requires a massive Hollywood studio budget. Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
     "key_facts": [
+      "Adam wakes up at six o'clock every morning for his daily routine.",
       "Animating on twos requires twelve individual photographs for every single second of video.",
-      "A one-minute stop-motion sequence at twelve frames per second uses seven hundred and twenty photos.",
-      "Locking camera exposure and focus settings prevents visual flickering between individual frames."
+      "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+      "Locking camera exposure and focus prevents visual flickering between individual frames."
     ],
-    "visual_style": "tactile stop-motion photo style, claymation textures, overhead craft lighting",
-    "length_seconds": 42,
+    "visual_style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
+    "length_seconds": 45,
     "music": "lofi-warm",
     "accent": "teal"
   },
@@ -26,16 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Zoo images",
-      "t": 1792743179684
-    },
-    {
-      "role": "bot",
-      "text": "Sent a free stock photo for: A vibrant and detailed photo of a bustling zoo with lush enclosures, exotic animals, and visitors",
-      "t": 1792743190485
-    },
     {
       "role": "user",
       "text": "City of Lagos at night",
@@ -105,6 +96,16 @@
       "role": "bot",
       "text": "Pitched \"Mastering Stop Motion Daily Life Routines\": Seven hundred and twenty individual photographs form just sixty seconds of a morning coffee routine.",
       "t": 1792749486166
+    },
+    {
+      "role": "user",
+      "text": "I meant the daily life of a guy named Adam do the graphics in stop motion style",
+      "t": 1792749557405
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Adam Starts His Stop Motion Day\": Seven hundred and twenty individual photographs build a single morning for Adam.",
+      "t": 1792749573707
     }
   ],
   "working": null,
@@ -677,8 +678,8 @@
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (interest) The user approved a short about about something real-world, like city life.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how a server outage turns into a disaster.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (fact) Browser bot research on how a server outage turns into a disaster: - In 1998, a single misplaced semicolon in a software update by Network Solutions crashed the authoritative root DNS servers, taking down roughly half of the internet's domain name resolution for hours (https://www.netmeister.org/blog/dns-semicolon.html)\n- Modern cloud outages often start small: in\n- (idea) The user liked a video idea about the City of Lagos at night featuring glowing neon markets and bustling energy.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.",
   "deep": {
     "topic": "a guy daily life stop motion style",
-    "status": "done",
-    "at": 1792749560199
+    "status": "running",
+    "at": 1792749487537
   },
   "renders": [
     {
