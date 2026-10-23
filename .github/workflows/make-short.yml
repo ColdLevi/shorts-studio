@@ -48,6 +48,7 @@ jobs:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_API_KEY_ID: ${{ secrets.HF_API_KEY_ID }}
       HF_API_KEY_SECRET: ${{ secrets.HF_API_KEY_SECRET }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - name: Save trigger for the fixer

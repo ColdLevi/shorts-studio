@@ -406,7 +406,7 @@ def main():
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
         tool = (b.get("tool") or "flux").lower()
-        if tool in ("higgsfield", "huggingface"):
+        if tool in ("higgsfield", "huggingface", "stock"):
             tool = b.get("still") or "flux"
         try:
             if paint(b["image_prompt"], path, tool, style, hero=(i == 0), gemini_ok=bool(spec.get("gemini_images")), seed=1000 + i)["pixel"]:
@@ -454,9 +454,45 @@ def main():
             subprocess.run(["gh", "release", "delete", f"frames-{os.getenv('GITHUB_RUN_ID', 'local')}", "-y", "--cleanup-tag"], capture_output=True)
         except Exception:
             pass
+    # Stock footage beats: real Pixabay clips (free). Any failure keeps the painted still.
+    stock = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() == "stock" and (i + 1) not in fallbacks and i not in clips]
+    stock_notes, stock_ok = [], []
+    if stock:
+        tg(f"🎞️ Finding {len(stock)} real footage clip(s)...")
+        try:
+            import importlib.util
+            _sp = importlib.util.spec_from_file_location("stock", os.path.join(os.path.dirname(os.path.abspath(__file__)), "stock.py"))
+            STOCK = importlib.util.module_from_spec(_sp)
+            _sp.loader.exec_module(STOCK)
+        except Exception as e:
+            STOCK = None
+            stock_notes.append(f"stock module: {e}")
+
+        def fetch_stock(i):
+            out = os.path.join(OUT, f"clip_{i + 1:02d}.mp4")
+            beat_len = times[i]["end"] - times[i]["start"]
+            try:
+                if STOCK is None:
+                    raise RuntimeError("stock module not loaded")
+                d, credit = STOCK.fetch(beats[i].get("query") or "", out, beat_len, int(cv["width"]), int(cv["height"]))
+                if d / 0.6 >= beat_len:
+                    clips[i] = {"video": f"{JOB}/clip_{i + 1:02d}.mp4", "videoDuration": round(d, 2)}
+                    stock_ok.append(i)
+                else:
+                    raise RuntimeError("clip too short")
+            except Exception as e:
+                print("stock footage", i + 1, e)
+                stock_notes.append(str(e))
+
+        with ThreadPoolExecutor(3) as ex:
+            list(ex.map(fetch_stock, stock))
+        if stock_ok:
+            tg(f"🎞️ Real footage: {len(stock_ok)} clip(s) from Pixabay.")
+        if stock_notes:
+            tg(f"ℹ️ Stock footage didn't deliver for {len(stock_notes)} shot(s) ({stock_notes[0][:100]}), so I kept the picture there.")
     if PAID_NOTES:
         tg(f"ℹ️ A paid tool didn't deliver ({PAID_NOTES[0][:120]}), so I used a still for that shot.")
-    json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len(clips)}, open(os.path.join(OUT, "usage.json"), "w"))
+    json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len([i for i in clips if i in motion]), "stock_requested": len(stock), "stock_used": len(stock_ok)}, open(os.path.join(OUT, "usage.json"), "w"))
     music = spec.get("music") or "docu-pluck"
     mpath = f"library/music/clips/{music}.mp3"
     wide = TL.format_name(cv) == "landscape"
