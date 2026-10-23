@@ -1,6 +1,6 @@
 {
-  "last_update": 312538177,
-  "time": 1792742642351,
+  "last_update": 312538178,
+  "time": 1792742653178,
   "stage": "pitch",
   "topic": "A buzzing city of Lagos",
   "research": {
@@ -27,16 +27,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Sent a free stock photo for: A city view of Lagos at night",
-      "t": 1792739417225
-    },
-    {
-      "role": "user",
-      "text": "A image of Lagos Nigeria at night",
-      "t": 1792739457071
-    },
     {
       "role": "bot",
       "text": "Sent a free stock photo for: A cinematic night view of Lagos Nigeria showing illuminated bridges, glowing skyscrapers, and vibrant traffic light trai",
@@ -106,6 +96,16 @@
       "role": "user",
       "text": "Zoo image of a zoo",
       "t": 1792742638894
+    },
+    {
+      "role": "user",
+      "text": "/image zoo",
+      "t": 1792742643679
+    },
+    {
+      "role": "bot",
+      "text": "Sent a free stock photo for: zoo",
+      "t": 1792742653178
     }
   ],
   "working": null,
