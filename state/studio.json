@@ -1,89 +1,18 @@
 {
-  "last_update": 312538191,
-  "time": 1792746963936,
+  "last_update": 312538192,
+  "time": 1792747036874,
   "stage": "idle",
   "topic": "how a server outage turns into a disaster",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "One Single Byte Breaks Every Server",
-    "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-    "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
-    "key_facts": [
-      "A single misplaced semicolon caused a major network outage.",
-      "Server cascades happen when backup systems fail to handle redirected traffic.",
-      "Recovery times often stretch for hours due to manual dependency checks."
-    ],
-    "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
-    "length_seconds": 45,
-    "music": "tech-pulse",
-    "accent": "blue"
-  },
-  "script": {
-    "title": "One Single Byte Breaks Every Server",
-    "beats": [
-      {
-        "narration": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-        "image_prompt": "Vertical framing, a dark moody server room with glowing neon blue server rack lights, cinematic lighting, no text.",
-        "tool": "higgsfield",
-        "motion": "Slow camera push forward down a narrow dark server aisle with pulsing blue lights.",
-        "still": "flux"
-      },
-      {
-        "narration": "People blame massive cyber attacks for network outages, but tiny administrative typos start the cascade.",
-        "image_prompt": "Vertical framing, close up of a glowing command line interface terminal on a dark screen with abstract code lines.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then backup systems fail to handle the sudden wall of redirected traffic.",
-        "image_prompt": "Vertical framing, abstract visualization of digital network traffic overloading a glowing server node.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Recovery times stretch for hours because engineers must run manual dependency checks.",
-        "image_prompt": "Vertical framing, dark server room interior with flickering orange warning lights on a mainframe rack.",
-        "tool": "stock",
-        "query": "server room flashing lights"
-      },
-      {
-        "narration": "One tiny keystroke brings down millions of connected machines.",
-        "image_prompt": "Vertical framing, minimalist dark digital graphic showing a single highlighted error character in a stream of code.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Small mistakes cause massive digital collapses.",
-        "image_prompt": "Vertical framing, dramatic wide shot of a dark data center humming under dim blue emergency lights.",
-        "tool": "higgsfield",
-        "motion": "Camera slowly pans up from floor level revealing towering rows of silent servers.",
-        "still": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "A single misplaced semicolon caused a major network outage.",
-        "supported": true
-      },
-      {
-        "claim": "Server cascades happen when backup systems fail to handle redirected traffic.",
-        "supported": true
-      },
-      {
-        "claim": "Recovery times often stretch for hours due to manual dependency checks.",
-        "supported": true
-      }
-    ]
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/image",
-      "t": 1792742664128
-    },
     {
       "role": "user",
       "text": "Image of zoo life",
@@ -158,12 +87,17 @@
       "role": "bot",
       "text": "Rendering \"One Single Byte Breaks Every Server\"",
       "t": 1792746899338
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"One Single Byte Breaks Every Server\"",
+      "t": 1792747036874
     }
   ],
   "working": null,
   "projects": [
     {
-      "id": "one-single-byte-breaks-every-server-mvkr7sg2",
+      "id": "one-single-byte-breaks-every-server-mvkraqhb",
       "canvas": "9:16",
       "title": "One Single Byte Breaks Every Server",
       "topic": "how a server outage turns into a disaster",
@@ -239,7 +173,7 @@
         "text": "",
         "sources": []
       },
-      "at": 1792746899337
+      "at": 1792747036874
     },
     {
       "id": "the-secret-grid-beneath-your-feet-mvk8qp5u",
@@ -738,94 +672,16 @@
       "title": "One Single Byte Breaks Every Server",
       "at": 1792746899338,
       "project": "one-single-byte-breaks-every-server-mvkr7sg2"
+    },
+    {
+      "title": "One Single Byte Breaks Every Server",
+      "at": 1792747036874,
+      "project": "one-single-byte-breaks-every-server-mvkraqhb"
     }
   ],
-  "current_project": "one-single-byte-breaks-every-server-mvkr7sg2",
+  "current_project": "one-single-byte-breaks-every-server-mvkraqhb",
   "pending_edit": null,
   "edits": [],
-  "pending": {
-    "step": "render",
-    "title": "One Single Byte Breaks Every Server",
-    "service": "images",
-    "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
-    "auto": false,
-    "asked": false,
-    "since": 1792746963936,
-    "snapshot": {
-      "topic": "how a server outage turns into a disaster",
-      "pitch": {
-        "title": "One Single Byte Breaks Every Server",
-        "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-        "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
-        "key_facts": [
-          "A single misplaced semicolon caused a major network outage.",
-          "Server cascades happen when backup systems fail to handle redirected traffic.",
-          "Recovery times often stretch for hours due to manual dependency checks."
-        ],
-        "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
-        "length_seconds": 45,
-        "music": "tech-pulse",
-        "accent": "blue"
-      },
-      "script": {
-        "title": "One Single Byte Breaks Every Server",
-        "beats": [
-          {
-            "narration": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-            "image_prompt": "Vertical framing, a dark moody server room with glowing neon blue server rack lights, cinematic lighting, no text.",
-            "tool": "higgsfield",
-            "motion": "Slow camera push forward down a narrow dark server aisle with pulsing blue lights.",
-            "still": "flux"
-          },
-          {
-            "narration": "People blame massive cyber attacks for network outages, but tiny administrative typos start the cascade.",
-            "image_prompt": "Vertical framing, close up of a glowing command line interface terminal on a dark screen with abstract code lines.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then backup systems fail to handle the sudden wall of redirected traffic.",
-            "image_prompt": "Vertical framing, abstract visualization of digital network traffic overloading a glowing server node.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Recovery times stretch for hours because engineers must run manual dependency checks.",
-            "image_prompt": "Vertical framing, dark server room interior with flickering orange warning lights on a mainframe rack.",
-            "tool": "stock",
-            "query": "server room flashing lights"
-          },
-          {
-            "narration": "One tiny keystroke brings down millions of connected machines.",
-            "image_prompt": "Vertical framing, minimalist dark digital graphic showing a single highlighted error character in a stream of code.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Small mistakes cause massive digital collapses.",
-            "image_prompt": "Vertical framing, dramatic wide shot of a dark data center humming under dim blue emergency lights.",
-            "tool": "higgsfield",
-            "motion": "Camera slowly pans up from floor level revealing towering rows of silent servers.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "A single misplaced semicolon caused a major network outage.",
-            "supported": true
-          },
-          {
-            "claim": "Server cascades happen when backup systems fail to handle redirected traffic.",
-            "supported": true
-          },
-          {
-            "claim": "Recovery times often stretch for hours due to manual dependency checks.",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      }
-    }
-  },
+  "pending": null,
   "awaitImage": null
 }
