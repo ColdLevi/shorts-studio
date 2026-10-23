@@ -1,0 +1,685 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "adam-starts-his-stop-motion-day-mvksux7u",
+ "rev": 1,
+ "title": "Adam Starts His Stop Motion Day",
+ "duration": 40.74,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.987,
+    "narration": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical overhead view of a wooden desk with cardboard cutout figures arranged neatly under warm craft studio lighting.",
+     "motion": "Slow overhead crane shot moving forward across the cardboard craft desk while cutout pieces shift slightly.",
+     "still": "flux"
+    },
+    "hash": "d5ca3a38f545"
+   },
+   {
+    "id": "v2",
+    "start": 4.987,
+    "end": 9.25,
+    "narration": "People think stop motion requires a massive Hollywood studio budget.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical macro shot of a single tiny cardboard coffee cup model resting on a dark craft paper surface."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "50387c5352e6"
+   },
+   {
+    "id": "v3",
+    "start": 9.25,
+    "end": 16.425,
+    "narration": "Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
+    "kind": "ai_video",
+    "src": "assets/clip_03.mp4",
+    "duration": 7.47,
+    "still": "assets/img_03.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical close-up of hands moving a small articulated cardboard figure on a tabletop covered in craft tools.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "1c75ae68192f"
+   },
+   {
+    "id": "v4",
+    "start": 16.425,
+    "end": 20.113,
+    "narration": "Adam wakes up at six o'clock every morning for his daily routine.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical still of a small cardboard alarm clock cutout showing six o'clock against a textured background."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "32767b4d4db8"
+   },
+   {
+    "id": "v5",
+    "start": 20.113,
+    "end": 26.438,
+    "narration": "Animating on twos requires twelve individual photographs for every single second of video.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "On Ones",
+       "value": 24
+      },
+      {
+       "label": "On Twos",
+       "value": 12
+      }
+     ],
+     "prefix": "",
+     "suffix": "",
+     "title": "Frames Per Second",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 26.438,
+    "end": 31.413,
+    "narration": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Total Frames",
+     "prefix": "",
+     "suffix": " photo",
+     "type": "counter",
+     "value": 720
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 31.413,
+    "end": 37.65,
+    "narration": "Locking camera exposure and focus prevents visual flickering between individual frames.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical view of a professional digital camera mounted on a sturdy overhead tripod pointing down at a craft workspace."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "91c354266cf1"
+   },
+   {
+    "id": "v8",
+    "start": 37.65,
+    "end": 39.936,
+    "narration": "Every frame tells the story.",
+    "kind": "ai_video",
+    "src": "assets/clip_08.mp4",
+    "duration": 4.06,
+    "still": "assets/img_08.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical hero shot of a tiny cardboard figure stepping forward into bright morning craft light.",
+     "motion": "Fast smooth zoom in on the cardboard figure as studio lights flicker and settle.",
+     "still": "flux"
+    },
+    "hash": "dd872767ab3d"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Seven",
+     "start": 0.1,
+     "end": 0.325
+    },
+    {
+     "word": "hundred",
+     "start": 0.325,
+     "end": 0.537
+    },
+    {
+     "word": "and",
+     "start": 0.537,
+     "end": 0.575
+    },
+    {
+     "word": "twenty",
+     "start": 0.575,
+     "end": 0.963
+    },
+    {
+     "word": "individual",
+     "start": 0.975,
+     "end": 1.462
+    },
+    {
+     "word": "photographs",
+     "start": 1.462,
+     "end": 2.225
+    },
+    {
+     "word": "build",
+     "start": 2.388,
+     "end": 2.612
+    },
+    {
+     "word": "a",
+     "start": 2.688,
+     "end": 2.737
+    },
+    {
+     "word": "single",
+     "start": 2.75,
+     "end": 3.25
+    },
+    {
+     "word": "morning",
+     "start": 3.25,
+     "end": 3.788
+    },
+    {
+     "word": "for",
+     "start": 3.962,
+     "end": 4.188
+    },
+    {
+     "word": "Adam.",
+     "start": 4.188,
+     "end": 4.575
+    },
+    {
+     "word": "People",
+     "start": 4.987,
+     "end": 5.287
+    },
+    {
+     "word": "think",
+     "start": 5.287,
+     "end": 5.513
+    },
+    {
+     "word": "stop",
+     "start": 5.513,
+     "end": 5.838
+    },
+    {
+     "word": "motion",
+     "start": 5.838,
+     "end": 6.362
+    },
+    {
+     "word": "requires",
+     "start": 6.45,
+     "end": 6.912
+    },
+    {
+     "word": "a",
+     "start": 6.925,
+     "end": 6.963
+    },
+    {
+     "word": "massive",
+     "start": 6.963,
+     "end": 7.55
+    },
+    {
+     "word": "Hollywood",
+     "start": 7.55,
+     "end": 8.025
+    },
+    {
+     "word": "studio",
+     "start": 8.025,
+     "end": 8.425
+    },
+    {
+     "word": "budget.",
+     "start": 8.438,
+     "end": 8.85
+    },
+    {
+     "word": "Moving",
+     "start": 9.25,
+     "end": 9.65
+    },
+    {
+     "word": "ordinary",
+     "start": 9.662,
+     "end": 10.113
+    },
+    {
+     "word": "cardboard",
+     "start": 10.113,
+     "end": 10.625
+    },
+    {
+     "word": "cutouts",
+     "start": 10.625,
+     "end": 11.062
+    },
+    {
+     "word": "frame",
+     "start": 11.062,
+     "end": 11.5
+    },
+    {
+     "word": "by",
+     "start": 11.775,
+     "end": 11.975
+    },
+    {
+     "word": "frame",
+     "start": 11.975,
+     "end": 12.537
+    },
+    {
+     "word": "brings",
+     "start": 12.787,
+     "end": 13.137
+    },
+    {
+     "word": "an",
+     "start": 13.15,
+     "end": 13.3
+    },
+    {
+     "word": "everyday",
+     "start": 13.412,
+     "end": 13.9
+    },
+    {
+     "word": "routine",
+     "start": 13.9,
+     "end": 14.512
+    },
+    {
+     "word": "to",
+     "start": 14.6,
+     "end": 14.738
+    },
+    {
+     "word": "life",
+     "start": 14.738,
+     "end": 15.213
+    },
+    {
+     "word": "on",
+     "start": 15.338,
+     "end": 15.45
+    },
+    {
+     "word": "a",
+     "start": 15.45,
+     "end": 15.5
+    },
+    {
+     "word": "desk.",
+     "start": 15.5,
+     "end": 16.025
+    },
+    {
+     "word": "Adam",
+     "start": 16.425,
+     "end": 16.663
+    },
+    {
+     "word": "wakes",
+     "start": 16.663,
+     "end": 16.887
+    },
+    {
+     "word": "up",
+     "start": 16.9,
+     "end": 17.0
+    },
+    {
+     "word": "at",
+     "start": 17.0,
+     "end": 17.075
+    },
+    {
+     "word": "six",
+     "start": 17.075,
+     "end": 17.35
+    },
+    {
+     "word": "o'clock",
+     "start": 17.35,
+     "end": 17.85
+    },
+    {
+     "word": "every",
+     "start": 17.988,
+     "end": 18.25
+    },
+    {
+     "word": "morning",
+     "start": 18.25,
+     "end": 18.688
+    },
+    {
+     "word": "for",
+     "start": 18.688,
+     "end": 18.812
+    },
+    {
+     "word": "his",
+     "start": 18.825,
+     "end": 18.925
+    },
+    {
+     "word": "daily",
+     "start": 18.925,
+     "end": 19.212
+    },
+    {
+     "word": "routine.",
+     "start": 19.225,
+     "end": 19.712
+    },
+    {
+     "word": "Animating",
+     "start": 20.113,
+     "end": 20.562
+    },
+    {
+     "word": "on",
+     "start": 20.562,
+     "end": 20.712
+    },
+    {
+     "word": "twos",
+     "start": 20.725,
+     "end": 21.188
+    },
+    {
+     "word": "requires",
+     "start": 21.288,
+     "end": 21.863
+    },
+    {
+     "word": "twelve",
+     "start": 21.875,
+     "end": 22.45
+    },
+    {
+     "word": "individual",
+     "start": 22.587,
+     "end": 23.087
+    },
+    {
+     "word": "photographs",
+     "start": 23.1,
+     "end": 23.863
+    },
+    {
+     "word": "for",
+     "start": 23.962,
+     "end": 24.225
+    },
+    {
+     "word": "every",
+     "start": 24.363,
+     "end": 24.75
+    },
+    {
+     "word": "single",
+     "start": 24.75,
+     "end": 25.1
+    },
+    {
+     "word": "second",
+     "start": 25.1,
+     "end": 25.475
+    },
+    {
+     "word": "of",
+     "start": 25.475,
+     "end": 25.538
+    },
+    {
+     "word": "video.",
+     "start": 25.538,
+     "end": 26.038
+    },
+    {
+     "word": "A",
+     "start": 26.438,
+     "end": 26.5
+    },
+    {
+     "word": "one-minute",
+     "start": 26.5,
+     "end": 27.0
+    },
+    {
+     "word": "stop-motion",
+     "start": 27.012,
+     "end": 27.8
+    },
+    {
+     "word": "sequence",
+     "start": 27.812,
+     "end": 28.387
+    },
+    {
+     "word": "uses",
+     "start": 28.4,
+     "end": 28.762
+    },
+    {
+     "word": "seven",
+     "start": 28.95,
+     "end": 29.275
+    },
+    {
+     "word": "hundred",
+     "start": 29.275,
+     "end": 29.512
+    },
+    {
+     "word": "and",
+     "start": 29.512,
+     "end": 29.575
+    },
+    {
+     "word": "twenty",
+     "start": 29.575,
+     "end": 29.938
+    },
+    {
+     "word": "distinct",
+     "start": 29.95,
+     "end": 30.4
+    },
+    {
+     "word": "photos.",
+     "start": 30.4,
+     "end": 31.025
+    },
+    {
+     "word": "Locking",
+     "start": 31.413,
+     "end": 31.8
+    },
+    {
+     "word": "camera",
+     "start": 31.8,
+     "end": 32.2
+    },
+    {
+     "word": "exposure",
+     "start": 32.2,
+     "end": 32.95
+    },
+    {
+     "word": "and",
+     "start": 33.275,
+     "end": 33.362
+    },
+    {
+     "word": "focus",
+     "start": 33.362,
+     "end": 33.862
+    },
+    {
+     "word": "prevents",
+     "start": 33.862,
+     "end": 34.438
+    },
+    {
+     "word": "visual",
+     "start": 34.5,
+     "end": 35.0
+    },
+    {
+     "word": "flickering",
+     "start": 35.0,
+     "end": 35.575
+    },
+    {
+     "word": "between",
+     "start": 35.675,
+     "end": 36.05
+    },
+    {
+     "word": "individual",
+     "start": 36.062,
+     "end": 36.575
+    },
+    {
+     "word": "frames.",
+     "start": 36.587,
+     "end": 37.263
+    },
+    {
+     "word": "Every",
+     "start": 37.65,
+     "end": 37.9
+    },
+    {
+     "word": "frame",
+     "start": 37.913,
+     "end": 38.513
+    },
+    {
+     "word": "tells",
+     "start": 38.7,
+     "end": 38.987
+    },
+    {
+     "word": "the",
+     "start": 39.0,
+     "end": 39.087
+    },
+    {
+     "word": "story.",
+     "start": 39.1,
+     "end": 39.587
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Seven hundred and twenty individual photographs build a single morning for Adam. People think stop motion requires a massive Hollywood studio budget. Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk. Adam wakes up at six o'clock every morning for his daily routine. Animating on twos requires twelve individual photographs for every single second of video. A one-minute stop-motion sequence uses seven hundred and twenty distinct photos. Locking camera exposure and focus prevents visual flickering between individual frames. Every frame tells the story."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/lofi-warm.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "lofi-warm"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Adam Starts His Stop Motion Day"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792759476211,
+  "updated": 1792759476211,
+  "topic": "a guy daily life stop motion style",
+  "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+  "image_style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
+  "format": "vertical",
+  "assets_release": "project-adam-starts-his-stop-motion-day-mvksux7u",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "gemini_images": false,
+   "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+   "music": "lofi-warm",
+   "project_id": "adam-starts-his-stop-motion-day-mvksux7u",
+   "style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
+   "title": "Adam Starts His Stop Motion Day",
+   "topic": "a guy daily life stop motion style",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

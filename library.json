@@ -109,6 +109,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-13",
+      "title": "Adam Starts His Stop Motion Day",
+      "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
+      "accent": "#2EE6C5",
+      "duration": 40.9,
+      "created": 1792759622354,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-13/short-13.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-13/short-13.jpg",
+      "project": "adam-starts-his-stop-motion-day-mvksux7u",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
