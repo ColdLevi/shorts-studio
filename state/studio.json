@@ -1,42 +1,31 @@
 {
-  "last_update": 312538188,
-  "time": 1792743717404,
+  "last_update": 312538189,
+  "time": 1792746860358,
   "stage": "pitch",
-  "topic": "A buzzing city of Lagos",
+  "topic": "how a server outage turns into a disaster",
   "research": {
-    "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometers (about 1,381 square miles) (https://lagosstate.gov.ng/about-lagos/)\n- Greater London covers an area of approximately 1,572 square kilometers (607 square miles), meaning Lagos state is only about 2.2 times the size of London, yet houses a vastly larger and rapidly growing population (https://www.london.gov.uk/programmes-strategies/planning/london-plan/good-growth-by-design/about-london)\n- Over 85,000 people are added to the population of Lagos every week through birth and rural-urban migration (https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/wup2018_key_facts.pdf)\n- Lagos generates roughly 30% of Nigeria’s total Gross Domestic Product (GDP), serving as the undisputed economic and financial powerhouse of West Africa (https://www.worldbank.org/en/results/2021/06/14/untapping-lagos-potential-as-a-world-class-city)\n- The iconic yellow minibuses of Lagos, known as \"Danfos,\" are a defining feature of the city's chaotic and resilient informal public transport network (https://www.bbc.com/travel/article/20200211-the-death-of-lagoss-iconic-yellow-buses)\n- Makoko, a famous waterfront settlement in Lagos, is largely built on stilts over the Lagos Lagoon and is home to an estimated 150,000 to 250,000 residents (https://www.nationalgeographic.com/history/article/makoko-lagos-nigeria-water-world)\n- Lagos is projected to become the world's most populous city by the year 2100, with some demographic models predicting a population exceeding 85 million people (https://www.nature.com/articles/d41586-018-05900-x)\n- Eko Atlantic City is a multi-billion dollar futuristic, man-made coastal city built on reclaimed land from the Atlantic Ocean along the bar beach of Lagos to combat erosion and house 250,000 people (https://www.cnn.com/style/article/eko-atlantic-lagos-nigeria/index.html)\n- Despite its massive economic output, a significant portion of Lagos's population lives in informal settlements without reliable piped water or formal sanitation (https://www.unhabitat.org/lagos-urban-profile)\n\nHOOK IDEAS:\n- Imagine crushing the entire population of New York and London into a space barely bigger than a single county—welcome to Lagos, where 20 million people hustle on a strip of land smaller than London!\n- This African mega-city adds 85,000 people to its streets *every single week*, and it's projected to become the biggest city on planet Earth.",
+    "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "Inside the Megacity of Lagos",
-    "hook": "Twenty million people share a strip of land smaller than London.",
-    "angle": "Most outsiders assume Lagos is just chaotic gridlock, but it operates as a self-sustaining powerhouse producing over forty percent of Nigeria's non-oil GDP.",
+    "title": "One Single Byte Breaks Every Server",
+    "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+    "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
     "key_facts": [
-      "Lagos has an estimated population of over twenty million residents",
-      "It is the financial and commercial hub of Nigeria",
-      "The city generates a massive share of the country's economic output",
-      "It handles the largest volume of maritime trade in West Africa through its ports"
+      "A single misplaced semicolon caused a major network outage.",
+      "Server cascades happen when backup systems fail to handle redirected traffic.",
+      "Recovery times often stretch for hours due to manual dependency checks."
     ],
-    "visual_style": "vibrant cyberpunk documentary photo, high contrast neon lighting, cinematic grain",
-    "length_seconds": 42,
+    "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
+    "length_seconds": 45,
     "music": "tech-pulse",
-    "accent": "gold"
+    "accent": "blue"
   },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/image zoo",
-      "t": 1792742643679
-    },
-    {
-      "role": "bot",
-      "text": "Sent a free stock photo for: zoo",
-      "t": 1792742653178
-    },
     {
       "role": "user",
       "text": "Image of a zoo",
@@ -106,6 +95,16 @@
       "role": "bot",
       "text": "Sent a free stock photo for: A vivid stock photo of a city skyline at night with glowing lights and vibrant urban energy",
       "t": 1792743717404
+    },
+    {
+      "role": "user",
+      "text": "how a server outage turns into a disaster",
+      "t": 1792746852499
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"One Single Byte Breaks Every Server\": A single misplaced semicolon took down half the internet in nineteen ninety eight.",
+      "t": 1792746860358
     }
   ],
   "working": null,
@@ -596,7 +595,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (interest) The user approved a short about about something real-world, like city life.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.\n- (interest) The user is interested in Web3 development projects, crypto bots, and automation tools.\n- (fact) Browser bot research on starting small: - In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (ht\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about about something real-world, like city life.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (idea) The user liked a video idea about the City of Lagos at night featuring glowing neon markets and bustling energy.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (interest) The user is interested in Web3 development projects, crypto bots, and automation tools.\n- (fact) Browser bot research on starting small: - In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (ht\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.",
   "deep": {
     "topic": "A buzzing city of Lagos",
     "status": "done",
