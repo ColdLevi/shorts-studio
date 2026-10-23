@@ -7,6 +7,8 @@ import {
   useCurrentFrame, useVideoConfig,
 } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Montserrat';
+import { TerminalWindow } from '../lib/terminal';
+import type { TermLine } from '../lib/terminal';
 
 const { fontFamily } = loadFont('normal', { weights: ['600', '800', '900'], subsets: ['latin'] });
 
@@ -15,7 +17,8 @@ export type Graphic =
   | { type: 'bars'; title?: string; prefix?: string; suffix?: string; items: { label: string; value: number }[]; highlight?: number }
   | { type: 'line'; title?: string; prefix?: string; suffix?: string; x_labels?: string[]; series: { label: string; values: number[] }[] }
   | { type: 'title'; text: string; sub?: string }
-  | { type: 'list'; title?: string; items: string[] };
+  | { type: 'list'; title?: string; items: string[] }
+  | { type: 'terminal'; title?: string; lines: { text: string; kind?: 'cmd' | 'out' | 'dim' | 'warn' | 'err' | 'ok' | 'path' }[] };
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);
@@ -277,6 +280,30 @@ const List: React.FC<{ g: Extract<Graphic, { type: 'list' }>; accent: string; le
   );
 };
 
+// ---------- terminal: a dark window that types commands and prints coloured output ----------
+const Terminal: React.FC<{ g: Extract<Graphic, { type: 'terminal' }>; accent: string; len: number }> = ({ g, len }) => {
+  const { fps } = useVideoConfig();
+  const items = g.lines.slice(0, 7);
+  const step = Math.max(8, Math.round(((len * 0.8) / items.length) * fps));
+  const lines: TermLine[] = items.map((ln, i) => {
+    const kind = ln.kind || 'out';
+    const at = Math.round(0.25 * fps) + i * step;
+    return {
+      text: ln.text, kind, at,
+      ...(kind === 'cmd' ? { type: true, cps: Math.max(0.9, ln.text.length / (step * 0.7)) } : {}),
+      ...(kind === 'err' ? { hl: '#ef5f6b' } : {}),
+    };
+  });
+  return (
+    <AbsoluteFill>
+      <TerminalWindow box={{ x: 50, y: TOP, w: 980, h: BOTTOM - TOP }} lines={lines} title={g.title || 'terminal'} promptPath="~" fontSize={32} lineH={50} appearAt={0} />
+      {items.map((ln, i) => ln.kind === 'cmd' ? (
+        <Sequence key={i} from={Math.round(0.25 * fps) + i * step}><Audio src={SFX('ui-click-soft')} volume={0.2} /></Sequence>
+      ) : null)}
+    </AbsoluteFill>
+  );
+};
+
 // Landscape: the graphics are laid out on a 1080x1920 canvas; scale that canvas so its graphic zone
 // (y 300 to 1090) sits centred in the top three quarters of a 1920x1080 frame, clear of the captions.
 const WIDE_S = 0.9;
@@ -300,6 +327,7 @@ export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; im
       : g.type === 'line' ? <Line g={g} accent={accent} len={len} />
       : g.type === 'title' ? <Title g={g} accent={accent} len={len} />
       : g.type === 'list' ? <List g={g} accent={accent} len={len} />
+      : g.type === 'terminal' ? <Terminal g={g} accent={accent} len={len} />
       : null}
     </Canvas>
     </SfxContext.Provider>
