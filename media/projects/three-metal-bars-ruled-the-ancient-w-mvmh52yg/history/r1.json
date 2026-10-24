@@ -1,0 +1,734 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
+ "rev": 1,
+ "title": "Three Metal Bars Ruled The Ancient World",
+ "duration": 42.94,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.513,
+    "narration": "Three thousand years ago, a merchant in Babylon bought a field using a raw lump of silver.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical 9:16 framing, dark historical documentary style, dramatic museum spot lighting, photorealistic ancient Babylonian market, hands exchanging a raw unshaped silver nugget over rustic grain sacks, macro detailed.",
+     "motion": "Camera slowly tilts down as hands trade raw silver metal over woven sacks of grain.",
+     "still": "flux"
+    },
+    "hash": "fbf86313576d"
+   },
+   {
+    "id": "v2",
+    "start": 6.513,
+    "end": 12.312,
+    "narration": "Most people think money started as paper bills, but early trade relied on cattle and barley.",
+    "kind": "ai_video",
+    "src": "assets/clip_02.mp4",
+    "duration": 6.1,
+    "still": "assets/img_02.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical 9:16 framing, dark atmospheric historical documentary style, photorealistic cattle standing in a misty moody field at twilight, cinematic rim lighting.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "63ba754cacae"
+   },
+   {
+    "id": "v3",
+    "start": 12.312,
+    "end": 18.538,
+    "narration": "Herding cows to pay debts got exhausting, so merchants started weighing raw silver metal.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical 9:16 framing, dark museum lighting, photorealistic closeup of bronze ancient scales balancing raw silver chunks against stone weights on dark rustic wood."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7fe9ac252660"
+   },
+   {
+    "id": "v4",
+    "start": 18.538,
+    "end": 24.9,
+    "narration": "One shekel equaled exactly one hundred and eighty grains of barley, setting a fixed value.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "One Babylonian Shekel",
+     "prefix": "",
+     "suffix": " grain",
+     "type": "counter",
+     "value": 180
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 24.9,
+    "end": 31.125,
+    "narration": "Then around six hundred BC, Lydia minted the first official coins to stop silver fraud.",
+    "kind": "ai_video",
+    "src": "assets/clip_05.mp4",
+    "duration": 4.06,
+    "still": "assets/img_05.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vertical 9:16 framing, dark historical documentary museum aesthetic, closeup of an ancient hand-hammered Lydian silver coin stamped with a lion emblem resting on black velvet.",
+     "motion": "Slow push in on the ancient stamped silver coin as light gleams off the carved lion symbol.",
+     "still": "flux"
+    },
+    "hash": "82cd0fab3e32"
+   },
+   {
+    "id": "v6",
+    "start": 31.125,
+    "end": 37.75,
+    "narration": "Centuries later, Chinese traders in the Tang dynasty created paper notes because metal got too heavy.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "Cattle and Barley",
+      "Weighed Silver Shekels",
+      "Stamped Lydian Coins",
+      "Tang Dynasty Paper"
+     ],
+     "title": "Evolution of Currency",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 37.75,
+    "end": 42.144,
+    "narration": "Your modern cash is just a paper shadow of ancient silver.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vertical 9:16 framing, dramatic dark moody background, a modern green banknote casting a dark stark shadow shaped like an ancient raw silver ingot."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "31fa4a8878bf"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Three",
+     "start": 0.138,
+     "end": 0.35
+    },
+    {
+     "word": "thousand",
+     "start": 0.35,
+     "end": 0.85
+    },
+    {
+     "word": "years",
+     "start": 0.85,
+     "end": 1.062
+    },
+    {
+     "word": "ago,",
+     "start": 1.062,
+     "end": 1.488
+    },
+    {
+     "word": "a",
+     "start": 1.9,
+     "end": 1.938
+    },
+    {
+     "word": "merchant",
+     "start": 1.938,
+     "end": 2.438
+    },
+    {
+     "word": "in",
+     "start": 2.438,
+     "end": 2.538
+    },
+    {
+     "word": "Babylon",
+     "start": 2.55,
+     "end": 3.263
+    },
+    {
+     "word": "bought",
+     "start": 3.263,
+     "end": 3.562
+    },
+    {
+     "word": "a",
+     "start": 3.65,
+     "end": 3.688
+    },
+    {
+     "word": "field",
+     "start": 3.7,
+     "end": 4.263
+    },
+    {
+     "word": "using",
+     "start": 4.275,
+     "end": 4.612
+    },
+    {
+     "word": "a",
+     "start": 4.612,
+     "end": 4.725
+    },
+    {
+     "word": "raw",
+     "start": 4.737,
+     "end": 5.013
+    },
+    {
+     "word": "lump",
+     "start": 5.013,
+     "end": 5.388
+    },
+    {
+     "word": "of",
+     "start": 5.4,
+     "end": 5.475
+    },
+    {
+     "word": "silver.",
+     "start": 5.487,
+     "end": 6.112
+    },
+    {
+     "word": "Most",
+     "start": 6.513,
+     "end": 6.688
+    },
+    {
+     "word": "people",
+     "start": 6.7,
+     "end": 6.963
+    },
+    {
+     "word": "think",
+     "start": 6.975,
+     "end": 7.213
+    },
+    {
+     "word": "money",
+     "start": 7.213,
+     "end": 7.625
+    },
+    {
+     "word": "started",
+     "start": 7.638,
+     "end": 8.0
+    },
+    {
+     "word": "as",
+     "start": 8.0,
+     "end": 8.075
+    },
+    {
+     "word": "paper",
+     "start": 8.075,
+     "end": 8.412
+    },
+    {
+     "word": "bills,",
+     "start": 8.412,
+     "end": 8.912
+    },
+    {
+     "word": "but",
+     "start": 9.2,
+     "end": 9.325
+    },
+    {
+     "word": "early",
+     "start": 9.338,
+     "end": 9.588
+    },
+    {
+     "word": "trade",
+     "start": 9.588,
+     "end": 9.95
+    },
+    {
+     "word": "relied",
+     "start": 9.95,
+     "end": 10.463
+    },
+    {
+     "word": "on",
+     "start": 10.463,
+     "end": 10.6
+    },
+    {
+     "word": "cattle",
+     "start": 10.6,
+     "end": 11.1
+    },
+    {
+     "word": "and",
+     "start": 11.213,
+     "end": 11.3
+    },
+    {
+     "word": "barley.",
+     "start": 11.312,
+     "end": 11.9
+    },
+    {
+     "word": "Herding",
+     "start": 12.312,
+     "end": 12.55
+    },
+    {
+     "word": "cows",
+     "start": 12.55,
+     "end": 13.075
+    },
+    {
+     "word": "to",
+     "start": 13.075,
+     "end": 13.188
+    },
+    {
+     "word": "pay",
+     "start": 13.188,
+     "end": 13.475
+    },
+    {
+     "word": "debts",
+     "start": 13.488,
+     "end": 14.012
+    },
+    {
+     "word": "got",
+     "start": 14.162,
+     "end": 14.338
+    },
+    {
+     "word": "exhausting,",
+     "start": 14.338,
+     "end": 14.988
+    },
+    {
+     "word": "so",
+     "start": 15.4,
+     "end": 15.525
+    },
+    {
+     "word": "merchants",
+     "start": 15.525,
+     "end": 16.1
+    },
+    {
+     "word": "started",
+     "start": 16.188,
+     "end": 16.587
+    },
+    {
+     "word": "weighing",
+     "start": 16.587,
+     "end": 17.038
+    },
+    {
+     "word": "raw",
+     "start": 17.05,
+     "end": 17.387
+    },
+    {
+     "word": "silver",
+     "start": 17.387,
+     "end": 17.788
+    },
+    {
+     "word": "metal.",
+     "start": 17.788,
+     "end": 18.15
+    },
+    {
+     "word": "One",
+     "start": 18.538,
+     "end": 18.812
+    },
+    {
+     "word": "shekel",
+     "start": 18.812,
+     "end": 19.312
+    },
+    {
+     "word": "equaled",
+     "start": 19.45,
+     "end": 19.837
+    },
+    {
+     "word": "exactly",
+     "start": 19.925,
+     "end": 20.7
+    },
+    {
+     "word": "one",
+     "start": 21.1,
+     "end": 21.375
+    },
+    {
+     "word": "hundred",
+     "start": 21.375,
+     "end": 21.637
+    },
+    {
+     "word": "and",
+     "start": 21.65,
+     "end": 21.688
+    },
+    {
+     "word": "eighty",
+     "start": 21.688,
+     "end": 21.863
+    },
+    {
+     "word": "grains",
+     "start": 21.863,
+     "end": 22.3
+    },
+    {
+     "word": "of",
+     "start": 22.3,
+     "end": 22.375
+    },
+    {
+     "word": "barley,",
+     "start": 22.375,
+     "end": 22.812
+    },
+    {
+     "word": "setting",
+     "start": 23.238,
+     "end": 23.55
+    },
+    {
+     "word": "a",
+     "start": 23.55,
+     "end": 23.6
+    },
+    {
+     "word": "fixed",
+     "start": 23.613,
+     "end": 24.012
+    },
+    {
+     "word": "value.",
+     "start": 24.012,
+     "end": 24.5
+    },
+    {
+     "word": "Then",
+     "start": 24.9,
+     "end": 24.988
+    },
+    {
+     "word": "around",
+     "start": 24.988,
+     "end": 25.312
+    },
+    {
+     "word": "six",
+     "start": 25.325,
+     "end": 25.6
+    },
+    {
+     "word": "hundred",
+     "start": 25.6,
+     "end": 25.812
+    },
+    {
+     "word": "BC,",
+     "start": 25.812,
+     "end": 26.387
+    },
+    {
+     "word": "Lydia",
+     "start": 26.887,
+     "end": 27.225
+    },
+    {
+     "word": "minted",
+     "start": 27.238,
+     "end": 27.587
+    },
+    {
+     "word": "the",
+     "start": 27.6,
+     "end": 27.675
+    },
+    {
+     "word": "first",
+     "start": 27.675,
+     "end": 28.15
+    },
+    {
+     "word": "official",
+     "start": 28.238,
+     "end": 28.812
+    },
+    {
+     "word": "coins",
+     "start": 28.812,
+     "end": 29.262
+    },
+    {
+     "word": "to",
+     "start": 29.275,
+     "end": 29.375
+    },
+    {
+     "word": "stop",
+     "start": 29.387,
+     "end": 29.825
+    },
+    {
+     "word": "silver",
+     "start": 29.837,
+     "end": 30.25
+    },
+    {
+     "word": "fraud.",
+     "start": 30.25,
+     "end": 30.712
+    },
+    {
+     "word": "Centuries",
+     "start": 31.125,
+     "end": 31.6
+    },
+    {
+     "word": "later,",
+     "start": 31.613,
+     "end": 32.025
+    },
+    {
+     "word": "Chinese",
+     "start": 32.237,
+     "end": 32.712
+    },
+    {
+     "word": "traders",
+     "start": 32.712,
+     "end": 33.2
+    },
+    {
+     "word": "in",
+     "start": 33.2,
+     "end": 33.275
+    },
+    {
+     "word": "the",
+     "start": 33.288,
+     "end": 33.362
+    },
+    {
+     "word": "Tang",
+     "start": 33.362,
+     "end": 33.65
+    },
+    {
+     "word": "dynasty",
+     "start": 33.663,
+     "end": 34.163
+    },
+    {
+     "word": "created",
+     "start": 34.163,
+     "end": 34.587
+    },
+    {
+     "word": "paper",
+     "start": 34.587,
+     "end": 34.862
+    },
+    {
+     "word": "notes",
+     "start": 34.875,
+     "end": 35.312
+    },
+    {
+     "word": "because",
+     "start": 35.575,
+     "end": 35.938
+    },
+    {
+     "word": "metal",
+     "start": 35.938,
+     "end": 36.362
+    },
+    {
+     "word": "got",
+     "start": 36.375,
+     "end": 36.625
+    },
+    {
+     "word": "too",
+     "start": 36.638,
+     "end": 36.888
+    },
+    {
+     "word": "heavy.",
+     "start": 36.9,
+     "end": 37.337
+    },
+    {
+     "word": "Your",
+     "start": 37.75,
+     "end": 37.825
+    },
+    {
+     "word": "modern",
+     "start": 37.837,
+     "end": 38.175
+    },
+    {
+     "word": "cash",
+     "start": 38.175,
+     "end": 38.7
+    },
+    {
+     "word": "is",
+     "start": 38.862,
+     "end": 38.987
+    },
+    {
+     "word": "just",
+     "start": 38.987,
+     "end": 39.188
+    },
+    {
+     "word": "a",
+     "start": 39.2,
+     "end": 39.263
+    },
+    {
+     "word": "paper",
+     "start": 39.263,
+     "end": 39.7
+    },
+    {
+     "word": "shadow",
+     "start": 39.7,
+     "end": 40.3
+    },
+    {
+     "word": "of",
+     "start": 40.425,
+     "end": 40.675
+    },
+    {
+     "word": "ancient",
+     "start": 40.837,
+     "end": 41.188
+    },
+    {
+     "word": "silver.",
+     "start": 41.188,
+     "end": 41.763
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Three thousand years ago, a merchant in Babylon bought a field using a raw lump of silver. Most people think money started as paper bills, but early trade relied on cattle and barley. Herding cows to pay debts got exhausting, so merchants started weighing raw silver metal. One shekel equaled exactly one hundred and eighty grains of barley, setting a fixed value. Then around six hundred BC, Lydia minted the first official coins to stop silver fraud. Centuries later, Chinese traders in the Tang dynasty created paper notes because metal got too heavy. Your modern cash is just a paper shadow of ancient silver."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Three Metal Bars Ruled The Ancient World"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792851074837,
+  "updated": 1792851074837,
+  "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
+  "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
+  "image_style": "dark historical documentary style, dramatic museum lighting, photorealistic",
+  "format": "vertical",
+  "assets_release": "project-three-metal-bars-ruled-the-ancient-w-mvmh52yg",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "gemini_images": false,
+   "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
+   "music": "docu-pluck",
+   "project_id": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
+   "style": "dark historical documentary style, dramatic museum lighting, photorealistic",
+   "title": "Three Metal Bars Ruled The Ancient World",
+   "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

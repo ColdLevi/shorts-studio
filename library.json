@@ -123,6 +123,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-15",
+      "title": "Three Metal Bars Ruled The Ancient World",
+      "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
+      "accent": "#FFD43B",
+      "duration": 43.1,
+      "created": 1792851218740,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-15/short-15.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-15/short-15.jpg",
+      "project": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
