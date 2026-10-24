@@ -1,6 +1,6 @@
 {
-  "last_update": 312538234,
-  "time": 1792870546267,
+  "last_update": 312538235,
+  "time": 1792870751707,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"youtu-2\"",
-      "t": 1792867077049
-    },
-    {
-      "role": "user",
-      "text": "Learn this style now https://youtu.be/C3-FIM2xTIw?si=4gvcXyG4Vja-c0jt",
-      "t": 1792867549079
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"youtu-3\"",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Applying edit to \"How Software Companies Toll Every Click\": Fluid motion style updated",
       "t": 1792870546267
+    },
+    {
+      "role": "user",
+      "text": "And always find the logo off the company you want to reference",
+      "t": 1792870716515
+    },
+    {
+      "role": "bot",
+      "text": "I cannot use real brand logos due to copyright and platform policies, but I can use clean minimalist icons and dark-mode UI mockups to represent companies.",
+      "t": 1792870751707
     }
   ],
   "working": null,
