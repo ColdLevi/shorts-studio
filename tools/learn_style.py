@@ -15,7 +15,7 @@ Runs on GitHub Actions (workflow learn-style.yml), started by the bot when the u
 
 Env: SOURCE (url or tg:<file_id>), STYLE_NAME, TELEGRAM_TOKEN, CHAT_ID, GEMINI_API_KEY, APP_URL.
 """
-import base64, glob, hashlib, json, os, re, subprocess, sys, urllib.request
+import base64, glob, hashlib, json, os, re, subprocess, sys, urllib.request, urllib.error
 
 OUT = "job/ref"
 os.makedirs(OUT, exist_ok=True)
@@ -149,16 +149,52 @@ Return JSON only:
    "progress_bar": true|false, "vignette": true|false}}"""
 
 
-def gemini(sheet, metrics):
-    parts = []
-    yt = re.search(r"(youtube\.com|youtu\.be)/", SRC or "")
-    watch = "Watch the whole video (picture and sound)." if yt else "You see a contact sheet of 12 frames across the video, left to right, top to bottom."
-    if yt:
-        parts.append({"file_data": {"file_uri": SRC}})
-    if sheet:
-        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(open(sheet, "rb").read()).decode()}})
-    parts.append({"text": PROMPT % (watch, json.dumps(metrics), json.dumps(RECIPES), json.dumps(MUSIC), json.dumps(CAPTIONS), json.dumps(FONTS), json.dumps(TRANSITIONS))})
-    body = {"contents": [{"parts": parts}], "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json", "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
+def _http_reason(e):
+    """Google's own reason for an HTTP error (e.g. API key not valid, leaked key, no access to the video)."""
+    try:
+        body = e.read().decode("utf-8", "ignore")
+        j = json.loads(body)
+        err = j.get("error") or {}
+        return f"{err.get('code') or getattr(e, 'code', '')} {err.get('status') or ''}: {(err.get('message') or body)[:160]}".strip()
+    except Exception:
+        return str(e)[:160]
+
+
+def yt_id(url):
+    m = re.search(r"(?:v=|youtu\.be/|shorts/|embed/)([A-Za-z0-9_-]{11})", url or "")
+    return m.group(1) if m else None
+
+
+def yt_thumb_sheet():
+    """When YouTube blocks the download, build a small sheet from YouTube's own auto-thumbnails (start, 25/50/75%)."""
+    vid = yt_id(SRC)
+    if not vid:
+        return None
+    frames = []
+    for n in ["maxresdefault", "1", "2", "3"]:
+        try:
+            data = urllib.request.urlopen(f"https://i.ytimg.com/vi/{vid}/{n}.jpg", timeout=20).read()
+            if len(data) > 2000:
+                f = os.path.join(OUT, f"thumb_{n}.jpg")
+                open(f, "wb").write(data)
+                frames.append(f)
+        except Exception as e:
+            print("thumb", n, e)
+    if not frames:
+        return None
+    out = os.path.join(OUT, "sheet.jpg")
+    inputs = []
+    for f in frames:
+        inputs += ["-i", f]
+    flt = "".join(f"[{i}:v]scale=480:270:force_original_aspect_ratio=decrease,pad=480:270:(ow-iw)/2:(oh-ih)/2[v{i}];" for i in range(len(frames)))
+    flt += "".join(f"[v{i}]" for i in range(len(frames))) + f"hstack=inputs={len(frames)}" if len(frames) > 1 else ""
+    cmd = ["ffmpeg", "-y", "-loglevel", "error"] + inputs + (["-filter_complex", flt] if len(frames) > 1 else []) + ["-frames:v", "1", out]
+    r = run(cmd, 60)
+    return out if os.path.exists(out) else (print("sheet", r.stderr[-300:]) or frames[0])
+
+
+def _ask(parts):
+    body = {"contents": [{"parts": parts}], "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"}}
     errs = []
     for model in [os.environ.get("GEMINI_VIDEO_MODEL"), "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash"]:
         if not model:
@@ -168,10 +204,42 @@ def gemini(sheet, metrics):
                                          data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": GEM})
             d = json.loads(urllib.request.urlopen(req, timeout=240).read().decode())
             t = "".join(p.get("text", "") for p in d["candidates"][0]["content"]["parts"])
-            return json.loads(t[t.find("{"): t.rfind("}") + 1])
+            return json.loads(t[t.find("{"): t.rfind("}") + 1]), None
+        except urllib.error.HTTPError as e:
+            errs.append(f"{model}: {_http_reason(e)}")
+            if e.code in (400, 401) or "API key" in errs[-1] or "API_KEY" in errs[-1]:
+                break  # a bad key fails the same on every model
         except Exception as e:
             errs.append(f"{model}: {str(e)[:120]}")
-    raise RuntimeError("; ".join(errs))
+    return None, "; ".join(errs)
+
+
+def gemini(sheet, metrics):
+    if not GEM:
+        raise RuntimeError("GEMINI_API_KEY is empty in GitHub Actions. Add it under shorts-studio -> Settings -> Secrets and variables -> Actions (name exactly GEMINI_API_KEY).")
+    yt = re.search(r"(youtube\.com|youtu\.be)/", SRC or "")
+    tries = []
+    if yt:
+        tries.append(("video", True))       # Gemini watches the YouTube link itself
+    if sheet:
+        tries.append(("frames", False))     # frames only (works even if Gemini can't open the link)
+    errs = []
+    for label, with_video in tries:
+        parts = []
+        if with_video:
+            parts.append({"file_data": {"file_uri": SRC}})
+            watch = "Watch the whole video (picture and sound)."
+        else:
+            watch = "You see a contact sheet of frames across the video, left to right, top to bottom. Infer the style from them and the metrics."
+        if sheet:
+            parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(open(sheet, "rb").read()).decode()}})
+        parts.append({"text": PROMPT % (watch, json.dumps(metrics), json.dumps(RECIPES), json.dumps(MUSIC), json.dumps(CAPTIONS), json.dumps(FONTS), json.dumps(TRANSITIONS))})
+        r, err = _ask(parts)
+        if r:
+            return r
+        errs.append(f"[{label}] {err}")
+        print("gemini failed", label, err)
+    raise RuntimeError(" | ".join(errs) or "nothing to analyse")
 
 
 def clean(r, metrics):
@@ -239,7 +307,9 @@ def main():
     if path:
         metrics = measure(path)
         sheet = contact_sheet(path, metrics.get("duration_s") or 10)
-    elif not re.search(r"(youtube\.com|youtu\.be)/", SRC):
+    elif re.search(r"(youtube\.com|youtu\.be)/", SRC):
+        sheet = yt_thumb_sheet()
+    else:
         tg("⚠️ I couldn't download that video. Send it as a file in this chat (up to 20 MB), or a YouTube link.")
         sys.exit(1)
     print("metrics", json.dumps(metrics))
