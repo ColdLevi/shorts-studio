@@ -1,0 +1,740 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-paper-defeated-gold-mvmnwpu5",
+ "rev": 1,
+ "title": "How Paper Defeated Gold",
+ "duration": 47.22,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "fade",
+   "dissolve",
+   "blur"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 7.7,
+    "narration": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four point seven five grains of pure gold.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration of a heavy gold coin resting on aged parchment under dramatic chiaroscuro lighting, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a7cf61aff5dd"
+   },
+   {
+    "id": "v2",
+    "start": 7.7,
+    "end": 13.65,
+    "narration": "History books teach that paper money lost its gold backing because the mines simply ran dry.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration of an empty wooden vault with dramatic chiaroscuro lighting and muted earth tones, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b5b0c9fcbf06"
+   },
+   {
+    "id": "v3",
+    "start": 13.65,
+    "end": 20.113,
+    "narration": "But governments printed far more paper receipts than the physical metal sitting locked inside their vaults.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Paper Issued",
+       "value": 100
+      },
+      {
+       "label": "Vault Gold",
+       "value": 30
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Paper Receipts Versus Vault Gold",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 20.113,
+    "end": 25.925,
+    "narration": "This mounting imbalance forced authorities to break the metallic promise entirely.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration of a heavy metal scale tipping abruptly in dramatic chiaroscuro lighting, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c32e284ac3f0"
+   },
+   {
+    "id": "v5",
+    "start": 25.925,
+    "end": 32.75,
+    "narration": "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration of a decree document sealed with wax under dramatic chiaroscuro lighting, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a21a1960caca"
+   },
+   {
+    "id": "v6",
+    "start": 32.75,
+    "end": 40.663,
+    "narration": "Then, on August fifteen, nineteen seventy-one, President Richard Nixon officially suspended convertibility.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration of a presidential desk with a heavy ledger and dramatic chiaroscuro lighting, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "126139ac18b2"
+   },
+   {
+    "id": "v7",
+    "start": 40.663,
+    "end": 46.416,
+    "narration": "Paper money finally stood alone, permanently untethered from any physical metal.",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 4.06,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "painterly historical illustration of a single crisp banknote floating away from a dark vault, museum-diorama depth",
+     "motion": "The camera slowly pulls back as the banknote drifts upward against a dark, muted background.",
+     "still": "flux"
+    },
+    "hash": "a67006308b22"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.175
+    },
+    {
+     "word": "seventeen",
+     "start": 0.175,
+     "end": 0.675
+    },
+    {
+     "word": "ninety-two,",
+     "start": 0.675,
+     "end": 1.387
+    },
+    {
+     "word": "a",
+     "start": 1.825,
+     "end": 1.887
+    },
+    {
+     "word": "single",
+     "start": 1.887,
+     "end": 2.263
+    },
+    {
+     "word": "paper",
+     "start": 2.275,
+     "end": 2.575
+    },
+    {
+     "word": "dollar",
+     "start": 2.575,
+     "end": 2.913
+    },
+    {
+     "word": "was",
+     "start": 2.925,
+     "end": 3.062
+    },
+    {
+     "word": "a",
+     "start": 3.062,
+     "end": 3.112
+    },
+    {
+     "word": "physical",
+     "start": 3.125,
+     "end": 3.675
+    },
+    {
+     "word": "receipt",
+     "start": 3.675,
+     "end": 4.162
+    },
+    {
+     "word": "for",
+     "start": 4.3,
+     "end": 4.45
+    },
+    {
+     "word": "twenty-four",
+     "start": 4.45,
+     "end": 5.025
+    },
+    {
+     "word": "point",
+     "start": 5.025,
+     "end": 5.325
+    },
+    {
+     "word": "seven",
+     "start": 5.338,
+     "end": 5.713
+    },
+    {
+     "word": "five",
+     "start": 5.713,
+     "end": 6.088
+    },
+    {
+     "word": "grains",
+     "start": 6.1,
+     "end": 6.537
+    },
+    {
+     "word": "of",
+     "start": 6.537,
+     "end": 6.6
+    },
+    {
+     "word": "pure",
+     "start": 6.6,
+     "end": 6.912
+    },
+    {
+     "word": "gold.",
+     "start": 6.925,
+     "end": 7.287
+    },
+    {
+     "word": "History",
+     "start": 7.7,
+     "end": 7.987
+    },
+    {
+     "word": "books",
+     "start": 7.987,
+     "end": 8.3
+    },
+    {
+     "word": "teach",
+     "start": 8.3,
+     "end": 8.812
+    },
+    {
+     "word": "that",
+     "start": 8.9,
+     "end": 9.088
+    },
+    {
+     "word": "paper",
+     "start": 9.1,
+     "end": 9.475
+    },
+    {
+     "word": "money",
+     "start": 9.475,
+     "end": 9.725
+    },
+    {
+     "word": "lost",
+     "start": 9.738,
+     "end": 10.113
+    },
+    {
+     "word": "its",
+     "start": 10.113,
+     "end": 10.2
+    },
+    {
+     "word": "gold",
+     "start": 10.2,
+     "end": 10.412
+    },
+    {
+     "word": "backing",
+     "start": 10.412,
+     "end": 10.863
+    },
+    {
+     "word": "because",
+     "start": 11.012,
+     "end": 11.287
+    },
+    {
+     "word": "the",
+     "start": 11.287,
+     "end": 11.363
+    },
+    {
+     "word": "mines",
+     "start": 11.375,
+     "end": 11.838
+    },
+    {
+     "word": "simply",
+     "start": 11.963,
+     "end": 12.4
+    },
+    {
+     "word": "ran",
+     "start": 12.412,
+     "end": 12.738
+    },
+    {
+     "word": "dry.",
+     "start": 12.738,
+     "end": 13.25
+    },
+    {
+     "word": "But",
+     "start": 13.65,
+     "end": 13.8
+    },
+    {
+     "word": "governments",
+     "start": 13.812,
+     "end": 14.312
+    },
+    {
+     "word": "printed",
+     "start": 14.325,
+     "end": 14.738
+    },
+    {
+     "word": "far",
+     "start": 14.75,
+     "end": 15.1
+    },
+    {
+     "word": "more",
+     "start": 15.113,
+     "end": 15.363
+    },
+    {
+     "word": "paper",
+     "start": 15.363,
+     "end": 15.7
+    },
+    {
+     "word": "receipts",
+     "start": 15.7,
+     "end": 16.35
+    },
+    {
+     "word": "than",
+     "start": 16.363,
+     "end": 16.462
+    },
+    {
+     "word": "the",
+     "start": 16.462,
+     "end": 16.538
+    },
+    {
+     "word": "physical",
+     "start": 16.538,
+     "end": 17.05
+    },
+    {
+     "word": "metal",
+     "start": 17.05,
+     "end": 17.462
+    },
+    {
+     "word": "sitting",
+     "start": 17.712,
+     "end": 18.087
+    },
+    {
+     "word": "locked",
+     "start": 18.1,
+     "end": 18.438
+    },
+    {
+     "word": "inside",
+     "start": 18.488,
+     "end": 19.0
+    },
+    {
+     "word": "their",
+     "start": 19.012,
+     "end": 19.137
+    },
+    {
+     "word": "vaults.",
+     "start": 19.137,
+     "end": 19.712
+    },
+    {
+     "word": "This",
+     "start": 20.113,
+     "end": 20.325
+    },
+    {
+     "word": "mounting",
+     "start": 20.325,
+     "end": 20.825
+    },
+    {
+     "word": "imbalance",
+     "start": 20.825,
+     "end": 21.625
+    },
+    {
+     "word": "forced",
+     "start": 21.775,
+     "end": 22.2
+    },
+    {
+     "word": "authorities",
+     "start": 22.212,
+     "end": 22.812
+    },
+    {
+     "word": "to",
+     "start": 22.812,
+     "end": 22.913
+    },
+    {
+     "word": "break",
+     "start": 22.913,
+     "end": 23.425
+    },
+    {
+     "word": "the",
+     "start": 23.562,
+     "end": 23.637
+    },
+    {
+     "word": "metallic",
+     "start": 23.637,
+     "end": 24.175
+    },
+    {
+     "word": "promise",
+     "start": 24.175,
+     "end": 24.675
+    },
+    {
+     "word": "entirely.",
+     "start": 24.688,
+     "end": 25.525
+    },
+    {
+     "word": "In",
+     "start": 25.925,
+     "end": 26.012
+    },
+    {
+     "word": "nineteen",
+     "start": 26.025,
+     "end": 26.387
+    },
+    {
+     "word": "thirty-three,",
+     "start": 26.387,
+     "end": 27.15
+    },
+    {
+     "word": "President",
+     "start": 27.375,
+     "end": 27.8
+    },
+    {
+     "word": "Franklin",
+     "start": 27.8,
+     "end": 28.312
+    },
+    {
+     "word": "Roosevelt",
+     "start": 28.325,
+     "end": 28.95
+    },
+    {
+     "word": "made",
+     "start": 29.1,
+     "end": 29.3
+    },
+    {
+     "word": "holding",
+     "start": 29.3,
+     "end": 29.65
+    },
+    {
+     "word": "gold",
+     "start": 29.663,
+     "end": 29.988
+    },
+    {
+     "word": "coins",
+     "start": 29.988,
+     "end": 30.363
+    },
+    {
+     "word": "illegal",
+     "start": 30.375,
+     "end": 31.025
+    },
+    {
+     "word": "for",
+     "start": 31.038,
+     "end": 31.238
+    },
+    {
+     "word": "private",
+     "start": 31.238,
+     "end": 31.637
+    },
+    {
+     "word": "citizens.",
+     "start": 31.637,
+     "end": 32.337
+    },
+    {
+     "word": "Then,",
+     "start": 32.75,
+     "end": 33.1
+    },
+    {
+     "word": "on",
+     "start": 33.288,
+     "end": 33.475
+    },
+    {
+     "word": "August",
+     "start": 33.6,
+     "end": 34.0
+    },
+    {
+     "word": "fifteen,",
+     "start": 34.0,
+     "end": 34.575
+    },
+    {
+     "word": "nineteen",
+     "start": 34.85,
+     "end": 35.3
+    },
+    {
+     "word": "seventy-one,",
+     "start": 35.3,
+     "end": 36.0
+    },
+    {
+     "word": "President",
+     "start": 36.212,
+     "end": 36.725
+    },
+    {
+     "word": "Richard",
+     "start": 36.737,
+     "end": 37.112
+    },
+    {
+     "word": "Nixon",
+     "start": 37.125,
+     "end": 37.575
+    },
+    {
+     "word": "officially",
+     "start": 37.75,
+     "end": 38.525
+    },
+    {
+     "word": "suspended",
+     "start": 38.825,
+     "end": 39.487
+    },
+    {
+     "word": "convertibility.",
+     "start": 39.5,
+     "end": 40.25
+    },
+    {
+     "word": "Paper",
+     "start": 40.663,
+     "end": 40.925
+    },
+    {
+     "word": "money",
+     "start": 40.925,
+     "end": 41.3
+    },
+    {
+     "word": "finally",
+     "start": 41.312,
+     "end": 41.812
+    },
+    {
+     "word": "stood",
+     "start": 41.825,
+     "end": 42.163
+    },
+    {
+     "word": "alone,",
+     "start": 42.163,
+     "end": 42.688
+    },
+    {
+     "word": "permanently",
+     "start": 43.1,
+     "end": 43.737
+    },
+    {
+     "word": "untethered",
+     "start": 43.837,
+     "end": 44.587
+    },
+    {
+     "word": "from",
+     "start": 44.6,
+     "end": 44.812
+    },
+    {
+     "word": "any",
+     "start": 45.0,
+     "end": 45.25
+    },
+    {
+     "word": "physical",
+     "start": 45.263,
+     "end": 45.688
+    },
+    {
+     "word": "metal.",
+     "start": 45.688,
+     "end": 46.075
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four point seven five grains of pure gold. History books teach that paper money lost its gold backing because the mines simply ran dry. But governments printed far more paper receipts than the physical metal sitting locked inside their vaults. This mounting imbalance forced authorities to break the metallic promise entirely. In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens. Then, on August fifteen, nineteen seventy-one, President Richard Nixon officially suspended convertibility. Paper money finally stood alone, permanently untethered from any physical metal."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "How Paper Defeated Gold"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792862450710,
+  "updated": 1792862450710,
+  "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
+  "hook": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "landscape",
+  "assets_release": "project-how-paper-defeated-gold-mvmnwpu5",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
+   "music": "docu-pluck",
+   "project_id": "how-paper-defeated-gold-mvmnwpu5",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "How Paper Defeated Gold",
+   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

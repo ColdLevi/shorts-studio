@@ -137,6 +137,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-16",
+      "title": "How Paper Defeated Gold",
+      "hook": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
+      "accent": "#FFD43B",
+      "duration": 47.3,
+      "created": 1792862785960,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-16/short-16.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-16/short-16.jpg",
+      "project": "how-paper-defeated-gold-mvmnwpu5",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
