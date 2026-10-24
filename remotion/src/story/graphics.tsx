@@ -9,6 +9,7 @@ import {
 import { loadFont } from '@remotion/google-fonts/Montserrat';
 import { TerminalWindow } from '../lib/terminal';
 import type { TermLine } from '../lib/terminal';
+import { Graphic2, Graphic2Beat, GRAPHIC2_TYPES, Sfx2Context } from './graphics2';
 
 const { fontFamily } = loadFont('normal', { weights: ['600', '800', '900'], subsets: ['latin'] });
 
@@ -18,7 +19,8 @@ export type Graphic =
   | { type: 'line'; title?: string; prefix?: string; suffix?: string; x_labels?: string[]; series: { label: string; values: number[] }[] }
   | { type: 'title'; text: string; sub?: string }
   | { type: 'list'; title?: string; items: string[] }
-  | { type: 'terminal'; title?: string; lines: { text: string; kind?: 'cmd' | 'out' | 'dim' | 'warn' | 'err' | 'ok' | 'path' }[] };
+  | { type: 'terminal'; title?: string; lines: { text: string; kind?: 'cmd' | 'out' | 'dim' | 'warn' | 'err' | 'ok' | 'path' }[] }
+  | Graphic2;
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);
@@ -317,10 +319,12 @@ const Canvas: React.FC<{ wide?: boolean; fit?: GraphicFit; children: React.React
     transform: `scale(${WIDE_S})`, transformOrigin: 'top left' }}>{children}</div>
 ) : <AbsoluteFill>{children}</AbsoluteFill>;
 
-export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string; wide?: boolean; fit?: GraphicFit; sfx?: boolean }> = ({ g, accent, len, image, wide, fit, sfx }) => (
+// backdrop=false: the composition draws one shared animated backdrop under every graphic (explainer mode),
+// so scenes flow into each other instead of each starting from its own dark card.
+export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; image?: string; wide?: boolean; fit?: GraphicFit; sfx?: boolean; backdrop?: boolean }> = ({ g, accent, len, image, wide, fit, sfx, backdrop }) => (
   <AbsoluteFill>
-    <GraphicBackdrop accent={accent} image={image} len={len} />
-    <SfxContext.Provider value={sfx !== false}>
+    {backdrop !== false ? <GraphicBackdrop accent={accent} image={image} len={len} /> : null}
+    <SfxContext.Provider value={sfx !== false}><Sfx2Context.Provider value={sfx !== false}>
     <Canvas wide={wide} fit={fit}>
     {g.type === 'counter' ? <Counter g={g} accent={accent} len={len} />
       : g.type === 'bars' ? <Bars g={g} accent={accent} len={len} />
@@ -328,8 +332,9 @@ export const GraphicBeat: React.FC<{ g: Graphic; accent: string; len: number; im
       : g.type === 'title' ? <Title g={g} accent={accent} len={len} />
       : g.type === 'list' ? <List g={g} accent={accent} len={len} />
       : g.type === 'terminal' ? <Terminal g={g} accent={accent} len={len} />
+      : GRAPHIC2_TYPES.includes(g.type) ? <Graphic2Beat g={g as Graphic2} accent={accent} len={len} />
       : null}
     </Canvas>
-    </SfxContext.Provider>
+    </Sfx2Context.Provider></SfxContext.Provider>
   </AbsoluteFill>
 );

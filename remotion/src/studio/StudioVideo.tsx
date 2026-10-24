@@ -7,6 +7,7 @@ import { layout } from './layout';
 import { Overlay, Progress } from './Overlays';
 import { url } from './assets';
 import { nearestImage, transitionLen, VisualLayer } from './Visuals';
+import { Backdrop, Finish, Held } from './StyleFX';
 import type { AudioClip, Timeline, Word } from './types';
 
 export const defaultTimeline: Timeline = {
@@ -71,7 +72,10 @@ const AudioTrack: React.FC<{ a: AudioClip; pid: string; total: number; words?: W
 
 export const StudioVideo: React.FC<Timeline> = (t) => {
   const { fps, durationInFrames, width, height } = useVideoConfig();
-  const L = layout(width, height);
+  const L0 = layout(width, height);
+  // Cinema bars (style.fx.letterbox) on a wide canvas: keep graphics inside the picture area.
+  const lb = L0.shape === 'wide' ? Math.max(0, Math.min(0.15, t.style?.fx?.letterbox || 0)) * height : 0;
+  const L = lb ? { ...L0, graphic: { ...L0.graphic, y: Math.max(L0.graphic.y, lb + 8), h: L0.graphic.h - Math.max(0, lb + 8 - L0.graphic.y) } } : L0;
   const pid = t.id || 'job';
   const st = t.style || {};
   const accent = st.accent || '#FFD43B';
@@ -79,13 +83,19 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
   const vis = [...(t.tracks.visuals || [])].sort((a, b) => a.start - b.start);
   const words = t.tracks.captions?.words || [];
   const defT = st.transition ?? { type: 'fade' as const, duration: 0.35 };
+  // Variety: a recipe can list transitions to cycle through instead of one fade everywhere.
+  const cycle = (st.transitions || []).filter(Boolean);
+  const trFor = (i: number) => (cycle.length ? { type: cycle[i % cycle.length], duration: cycle[i % cycle.length] === 'cut' ? 0 : (defT.duration ?? 0.35) } : defT);
+  const shared = !!st.backdrop && st.backdrop !== 'none';
   const overlays = t.tracks.overlays ?? (st.title?.show !== false && t.title
     ? [{ id: 'title', kind: 'title' as const, start: 0, end: st.title?.duration ?? 3, text: t.title, position: st.title?.position }] : []);
   const byId = Object.fromEntries(vis.map((c) => [c.id, c]));
   return (
     <AbsoluteFill style={{ backgroundColor: t.canvas?.background || '#0b0b0f' }}>
+      {shared ? <Backdrop kind={st.backdrop} accent={accent} palette={st.palette} L={L} /> : null}
+      <Held fx={st.fx} L={L}>
       {vis.map((c, i) => {
-        const tr = i === 0 ? (c.transition ?? { type: 'fade' as const, duration: 0.35 }) : (c.transition ?? defT);
+        const tr = i === 0 ? (c.transition ?? { type: 'fade' as const, duration: 0.35 }) : (c.transition ?? trFor(i));
         const lead = i === 0 ? 0 : transitionLen(tr);
         const from = Math.max(0, Math.round((c.start - lead) * fps));
         const next = vis[i + 1];
@@ -95,10 +105,12 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
           <Sequence key={c.id || i} from={from} durationInFrames={Math.max(1, capped - from)}>
             <VisualLayer c={{ ...c, transition: tr }} index={i} len={(capped - from) / fps} L={L} pid={pid} accent={accent}
               motion={st.motion || 'kenburns'} grade={st.grade} nearImage={c.kind === 'graphic' ? nearestImage(vis, i, pid) : undefined}
-              graphicSfx={(st as { graphic_sfx?: boolean }).graphic_sfx} />
+              graphicSfx={(st as { graphic_sfx?: boolean }).graphic_sfx} sharedBackdrop={shared} />
           </Sequence>
         );
       })}
+      </Held>
+      <Finish fx={st.fx} L={L} />
       {st.vignette !== false ? (
         <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)' }} />
       ) : null}

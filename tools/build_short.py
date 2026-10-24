@@ -396,7 +396,7 @@ def main():
     print(f"voice {total:.1f}s, {len(words)} words")
 
     n_gfx = sum(1 for b in beats if b.get("graphic"))
-    tg(f"🎨 Painting {len(beats) - n_gfx} images" + (f" and animating {n_gfx} graphic(s)..." if n_gfx else "..."))
+    tg(f"🎨 Animating {n_gfx} motion-graphic scenes..." if n_gfx == len(beats) else f"🎨 Painting {len(beats) - n_gfx} images" + (f" and animating {n_gfx} graphic(s)..." if n_gfx else "..."))
     fallbacks, errors, quota = [], [], []
     PIXEL = set()
 
@@ -474,7 +474,7 @@ def main():
             try:
                 if STOCK is None:
                     raise RuntimeError("stock module not loaded")
-                d, credit = STOCK.fetch(beats[i].get("query") or "", out, beat_len, int(cv["width"]), int(cv["height"]))
+                d, credit = STOCK.fetch(beats[i].get("query") or "", out, beat_len, int(cv["width"]), int(cv["height"]), narration=beats[i].get("narration") or "")
                 if d / 0.6 >= beat_len:
                     clips[i] = {"video": f"{JOB}/clip_{i + 1:02d}.mp4", "videoDuration": round(d, 2)}
                     stock_ok.append(i)
@@ -487,7 +487,7 @@ def main():
         with ThreadPoolExecutor(3) as ex:
             list(ex.map(fetch_stock, stock))
         if stock_ok:
-            tg(f"🎞️ Real footage: {len(stock_ok)} clip(s) from Pixabay.")
+            tg(f"🎞️ Real footage: {len(stock_ok)} clip(s), each checked by eye against its line.")
         if stock_notes:
             tg(f"ℹ️ Stock footage didn't deliver for {len(stock_notes)} shot(s) ({stock_notes[0][:100]}), so I kept the picture there.")
     if PAID_NOTES:

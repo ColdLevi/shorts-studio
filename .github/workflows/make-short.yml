@@ -37,7 +37,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     env:
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       CHAT_ID: ${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || secrets.CHAT_ID }}
@@ -49,6 +49,7 @@ jobs:
       HF_API_KEY_ID: ${{ secrets.HF_API_KEY_ID }}
       HF_API_KEY_SECRET: ${{ secrets.HF_API_KEY_SECRET }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - name: Save trigger for the fixer
@@ -222,7 +223,14 @@ jobs:
           EDITS=""
           if [ -s job/edit_report.txt ]; then EDITS=$(printf '\n%s' "$(cat job/edit_report.txt)"); fi
           CAPTION=$(printf '🎬 %s%s · v%s · project %s%s\n✏️ Reply with any change ("swap scene 3", "bigger captions"). /scenes /history /undo' "$TITLE" "$USED" "$REV" "$PROJECT_ID" "$EDITS" | python3 -c "import sys;print(sys.stdin.read()[:1000])")
-          curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@job/final.mp4 \
+          # Telegram bots can upload 50 MB at most: long videos get a smaller copy for the chat (full quality stays on the release).
+          SEND=job/final.mp4
+          if [ "$(stat -c %s job/final.mp4)" -gt 49000000 ]; then
+            DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 job/final.mp4 | cut -d. -f1)
+            KBPS=$(( 44000 * 8 / (DUR > 0 ? DUR : 1) - 160 ))
+            ffmpeg -y -loglevel error -i job/final.mp4 -c:v libx264 -preset veryfast -b:v ${KBPS}k -maxrate ${KBPS}k -bufsize $((KBPS*2))k -c:a aac -b:a 128k -movflags +faststart job/tg.mp4 && SEND=job/tg.mp4
+          fi
+          curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@$SEND \
             --form-string caption="$CAPTION" -F reply_markup="$MARKUP" \
             "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
 

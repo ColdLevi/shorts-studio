@@ -37,7 +37,11 @@ export type Style = {
   caption?: CaptionStyle;
   title?: { show?: boolean; duration?: number; font?: string; position?: 'top' | 'middle' };
   transition?: Transition;  // default between visual clips
-  motion?: 'kenburns' | 'static';
+  motion?: 'kenburns' | 'static' | 'parallax' | 'drift' | 'handheld';
+  transitions?: TransitionType[]; // cycled between clips that set none (variety instead of one fade)
+  fx?: { hold?: number; jitter?: number; texture?: 'paper' | 'grain' | 'film' | 'vhs' | 'none'; letterbox?: number; flicker?: boolean };
+  backdrop?: 'none' | 'grid' | 'gradient' | 'paper' | 'blueprint' | 'dots'; // shared animated backdrop under graphics
+  recipe?: string;          // style recipe name (stop-motion, documentary, motion-explainer, ...)
   progress_bar?: boolean;
   vignette?: boolean;
   grade?: string;           // CSS filter for every visual, e.g. "contrast(1.08) saturate(1.15)"
@@ -56,7 +60,7 @@ export type VisualClip = {
   w?: number; h?: number;   // source pixel size: lets 'auto' fit pick cover vs blur-fill
   fit?: 'auto' | 'cover' | 'contain' | 'blur-fill';
   focus?: { x: number; y: number }; // 0..1 point to keep in frame when cropping
-  motion?: 'auto' | 'zoom-in' | 'zoom-out' | 'pan-left' | 'pan-right' | 'pan-up' | 'pan-down' | 'static';
+  motion?: 'auto' | 'zoom-in' | 'zoom-out' | 'pan-left' | 'pan-right' | 'pan-up' | 'pan-down' | 'static' | 'parallax' | 'handheld';
   transition?: Transition;  // entering this clip
   trim?: number;            // seconds into a video source
   duration?: number;        // length of a video source
@@ -89,7 +93,7 @@ export type SfxClip = { id: string; src: string; at: number; volume?: number; an
 
 export type TextOverlay = {
   id: string;
-  kind: 'title' | 'text' | 'lower-third' | 'image';
+  kind: 'title' | 'text' | 'lower-third' | 'image' | 'chapter';
   start: number;
   end: number;
   text?: string;

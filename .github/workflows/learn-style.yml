@@ -1,0 +1,41 @@
+# Learn a video style from a reference (link or Telegram upload) and send the style recipe to the Studio bot.
+# Started by the bot: repository_dispatch learn-style {source, name, chat_id, app_url}
+name: learn-style
+on:
+  repository_dispatch:
+    types: [learn-style]
+  workflow_dispatch:
+    inputs:
+      source: { description: "Video URL or tg:<file_id>", required: true }
+      name: { description: "Style name", required: false, default: "my-style" }
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      SOURCE: ${{ github.event.client_payload.source || github.event.inputs.source }}
+      STYLE_NAME: ${{ github.event.client_payload.name || github.event.inputs.name }}
+      CHAT_ID: ${{ github.event.client_payload.chat_id || secrets.CHAT_ID }}
+      APP_URL: ${{ github.event.client_payload.app_url }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        timeout-minutes: 8
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            timeout 240 sudo apt-get update -y -o Acquire::Retries=2 || true
+            timeout 300 sudo apt-get install -y --no-install-recommends ffmpeg || true
+          fi
+          ffmpeg -version | head -1
+      - name: Learn the style
+        run: python3 tools/learn_style.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: style-${{ github.run_number }}
+          path: |
+            job/ref/style.json
+            job/ref/sheet.jpg
+          retention-days: 14

@@ -76,7 +76,39 @@ STYLE_PRESETS = {
     "karaoke": {"caption": {"preset": "karaoke-box"}, "transition": {"type": "slide-left", "duration": 0.35}},
     "punchy": {"caption": {"preset": "word-by-word"}, "transition": {"type": "zoom-in", "duration": 0.25}, "grade": "contrast(1.1) saturate(1.15)"},
     "comic": {"caption": {"preset": "bold-pop", "font": "Bangers", "weight": 400}, "transition": {"type": "wipe", "duration": 0.3}, "font": "Bangers"},
+    # ---- style recipes: a whole look (motion, pacing, texture, captions, graphics backdrop), not just image prompts ----
+    "stop-motion": {"recipe": "stop-motion", "caption": {"preset": "bold-pop", "font": "Permanent Marker", "weight": 400, "case": "none"},
+                    "transition": {"type": "cut", "duration": 0}, "transitions": ["cut", "cut", "slide-left", "cut", "cut", "slide-up"],
+                    "motion": "static", "fx": {"hold": 2, "jitter": 5, "texture": "paper"}, "backdrop": "paper",
+                    "grade": "contrast(1.06) saturate(1.12) sepia(0.12)", "font": "Permanent Marker", "progress_bar": False, "vignette": False},
+    "documentary": {"recipe": "documentary", "caption": {"preset": "subtitle", "font": "Inter"}, "transition": {"type": "dissolve", "duration": 0.8},
+                    "transitions": ["dissolve", "fade", "dissolve", "blur"], "motion": "parallax",
+                    "fx": {"texture": "film", "letterbox": 0.06}, "backdrop": "gradient", "palette": ["#15110c", "#6b4a2b"],
+                    "grade": "contrast(1.08) saturate(0.82) sepia(0.2)", "font": "Playfair Display", "progress_bar": False,
+                    "title": {"font": "Playfair Display"}},
+    "motion-explainer": {"recipe": "motion-explainer", "caption": {"preset": "clean", "font": "Montserrat"}, "transition": {"type": "slide-left", "duration": 0.4},
+                         "transitions": ["slide-left", "zoom-in", "slide-up", "wipe", "zoom-out", "slide-right"], "motion": "static",
+                         "backdrop": "grid", "vignette": False, "font": "Montserrat"},
+    "blueprint": {"recipe": "blueprint", "caption": {"preset": "clean", "font": "Space Grotesk"}, "transition": {"type": "wipe", "duration": 0.4},
+                  "transitions": ["wipe", "slide-up", "zoom-in"], "motion": "static", "backdrop": "blueprint", "accent": "#7fd1ff",
+                  "vignette": False, "font": "Space Grotesk"},
+    "kinetic-news": {"recipe": "kinetic-news", "caption": {"preset": "word-by-word", "font": "Anton", "weight": 400},
+                     "transition": {"type": "flash", "duration": 0.25}, "transitions": ["flash", "zoom-in", "slide-left", "cut", "zoom-out"],
+                     "motion": "kenburns", "backdrop": "dots", "grade": "contrast(1.12) saturate(1.15)", "font": "Anton"},
+    "cinematic": {"recipe": "cinematic", "caption": {"preset": "clean", "font": "Inter"}, "transition": {"type": "dissolve", "duration": 0.7},
+                  "transitions": ["dissolve", "fade", "blur"], "motion": "drift", "fx": {"texture": "grain", "letterbox": 0.1},
+                  "backdrop": "gradient", "grade": "contrast(1.1) saturate(1.05) brightness(0.95)", "progress_bar": False, "font": "DM Serif Display"},
+    "retro-vhs": {"recipe": "retro-vhs", "caption": {"preset": "neon", "font": "Rubik Mono One", "weight": 400},
+                  "transition": {"type": "blur", "duration": 0.3}, "transitions": ["blur", "flash", "slide-left", "cut"], "motion": "kenburns",
+                  "fx": {"texture": "vhs", "jitter": 2}, "backdrop": "grid", "grade": "saturate(1.35) contrast(1.12) hue-rotate(-8deg)", "font": "Rubik Mono One"},
+    "anime": {"recipe": "anime", "caption": {"preset": "bold-pop", "font": "Bangers", "weight": 400}, "transition": {"type": "slide-left", "duration": 0.3},
+              "transitions": ["slide-left", "zoom-in", "flash", "slide-right"], "motion": "kenburns", "backdrop": "gradient",
+              "grade": "saturate(1.25) contrast(1.05)", "font": "Bangers"},
+    "vlog": {"recipe": "vlog", "caption": {"preset": "karaoke-box", "font": "Poppins"}, "transition": {"type": "cut", "duration": 0},
+             "transitions": ["cut", "slide-left", "cut", "zoom-in", "cut"], "motion": "handheld", "backdrop": "gradient",
+             "grade": "contrast(1.04) saturate(1.1)", "progress_bar": False, "font": "Poppins"},
 }
+RECIPES = [k for k, v in STYLE_PRESETS.items() if v.get("recipe")]
 
 
 def deep_merge(a, b):
@@ -99,6 +131,21 @@ def style_from(spec):
     st = deep_merge(st, spec.get("style_tokens") or {})
     st["accent"] = spec.get("accent") or st.get("accent") or "#FFD43B"
     return st
+
+
+def expand_recipe(t):
+    """An edit may set style.apply_recipe = "documentary" (the bot does not know the render tokens):
+    swap in that recipe's whole look, keeping the accent and any caption size the user asked for."""
+    st = t.get("style") or {}
+    name = st.pop("apply_recipe", None)
+    if not name or name not in STYLE_PRESETS:
+        return t
+    keep = {k: st[k] for k in ("accent",) if st.get(k)}
+    new = deep_merge(STYLE_PRESETS["bold-pop"], STYLE_PRESETS[name])
+    new.update(keep)
+    new["preset"] = name
+    t["style"] = new
+    return t
 
 
 # ---------- paths ----------
@@ -203,6 +250,16 @@ def from_props(props, spec=None, pid="job", cv=None):
         "sfx": [],
         "overlays": [{"id": "title", "kind": "title", "start": 0, "end": 3, "text": props.get("title", "")}] if props.get("title") else [],
     }
+    # Long-form chapters: {"title", "beat"} -> documentary chapter cards at the start of that beat.
+    for n, ch in enumerate(spec.get("chapters") or []):
+        try:
+            bi = int(ch.get("beat", 0))
+        except (TypeError, ValueError):
+            continue
+        if 0 < bi < len(visuals) and ch.get("title"):
+            st0 = visuals[bi]["start"]
+            tracks["overlays"].append({"id": f"ch{n + 1}", "kind": "chapter", "start": round(st0, 2), "end": round(min(st0 + 2.6, visuals[bi]["end"] + 1.5), 2),
+                                       "text": str(ch["title"])[:48], "sub": f"Chapter {n + 2}"})
     now = int(time.time() * 1000)
     return {
         "schema": SCHEMA, "id": pid, "rev": 0, "title": props.get("title") or spec.get("title", ""),
@@ -387,6 +444,7 @@ def apply_patch(t, ops):
     t = copy.deepcopy(t)
     ensure_segments(t)
     new = json_patch(t, ops)
+    expand_recipe(new)
     normalize(new)
     changed = mark_dirty(t, new)
     return new, changed

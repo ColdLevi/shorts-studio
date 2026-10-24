@@ -49,6 +49,18 @@ export const Overlay: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid:
       </AbsoluteFill>
     );
   }
+  if (o.kind === 'chapter') {
+    // documentary chapter card: small numeral, wide-tracked title, a rule that draws itself
+    const rule = interpolate(frame, [0.2 * fps, 0.9 * fps], [0, 1], CLAMP);
+    return (
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: Math.min(inP, out), background: `rgba(0,0,0,${0.45 * Math.min(inP, out)})` }}>
+        {o.sub ? <div style={{ color: accent, fontFamily: f.family, fontWeight: f.weight(700), fontSize: 34 * u, letterSpacing: 8 * u, textTransform: 'uppercase' }}>{o.sub}</div> : null}
+        <div style={{ height: 3 * u, width: 360 * u * rule, background: accent, margin: `${18 * u}px 0` }} />
+        <div style={{ color: o.color || 'white', fontFamily: f.family, fontWeight: f.weight(800), fontSize: (L.shape === 'wide' ? 84 : 76) * u, letterSpacing: 3 * u,
+          textAlign: 'center', maxWidth: L.w - L.pad * 2, textTransform: 'uppercase', transform: `translateY(${(1 - inP) * 20 * u}px)`, textShadow: '0 6px 30px rgba(0,0,0,0.6)' }}>{o.text}</div>
+      </AbsoluteFill>
+    );
+  }
   // title card (the original StoryShort look)
   return (
     <AbsoluteFill style={{ alignItems: 'center', top, opacity: out }}>

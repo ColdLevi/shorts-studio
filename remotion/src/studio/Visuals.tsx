@@ -53,9 +53,16 @@ function pickFit(c: VisualClip, L: Layout): 'cover' | 'contain' | 'blur-fill' {
 
 const MOTIONS = ['zoom-in', 'zoom-out', 'zoom-in', 'zoom-out'] as const;
 
-function motionTransform(c: VisualClip, index: number, p: number, L: Layout, still: boolean, style: 'kenburns' | 'static'): string {
-  let m = c.motion || 'auto';
+type MotionStyle = 'kenburns' | 'static' | 'parallax' | 'drift' | 'handheld';
+function motionTransform(c: VisualClip, index: number, p: number, L: Layout, still: boolean, style: MotionStyle, frame = 0): string {
+  let m: string = c.motion || 'auto';
   if (style === 'static' && m === 'auto') m = 'static';
+  if (style === 'handheld' && m === 'auto') m = 'handheld';
+  if (style === 'drift' && m === 'auto') return `scale(${1.06 + 0.03 * p}) translate(${interpolate(p, [0, 1], [-12, 12]) * L.u}px, ${interpolate(p, [0, 1], [6, -6]) * L.u}px)`;
+  if (m === 'handheld') {
+    const t = frame / 30;
+    return `scale(1.08) translate(${(Math.sin(t * 1.3) * 7 + Math.sin(t * 3.1) * 3) * L.u}px, ${(Math.cos(t * 1.1) * 6 + Math.sin(t * 2.7) * 2) * L.u}px) rotate(${Math.sin(t * 0.9) * 0.35}deg)`;
+  }
   if (!still && m === 'auto') return `scale(${1.02 + 0.04 * p})`;
   const dir = index % 4 < 2 ? 1 : -1;
   const px = 30 * L.u;
@@ -89,22 +96,39 @@ const Media: React.FC<{ c: VisualClip; pid: string; fit: string; transform: stri
   return <Img src={src} style={base} />;
 };
 
+// 2.5D parallax for stills (documentary look): a blurred, slower background copy and a sharper,
+// faster foreground cut-out (soft radial mask), moving in opposite directions, so the frame has depth.
+const Parallax: React.FC<{ src: string; p: number; L: Layout; index: number; grade?: string }> = ({ src, p, L, index, grade }) => {
+  const dir = index % 2 ? 1 : -1;
+  const px = 40 * L.u;
+  const mask = 'radial-gradient(ellipse 62% 58% at 50% 52%, black 55%, transparent 100%)';
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', backgroundColor: '#08080c' }}>
+      <Img src={src} style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', filter: `${grade || ''} blur(${3 * L.u}px) brightness(0.8)`,
+        transform: `scale(${1.18 + 0.04 * p}) translateX(${dir * interpolate(p, [0, 1], [-px * 0.4, px * 0.4])}px)` }} />
+      <Img src={src} style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', filter: grade, WebkitMaskImage: mask, maskImage: mask,
+        transform: `scale(${1.12 + 0.12 * p}) translateX(${-dir * interpolate(p, [0, 1], [-px, px])}px) translateY(${interpolate(p, [0, 1], [px * 0.3, -px * 0.3])}px)` }} />
+    </AbsoluteFill>
+  );
+};
+
 export const VisualLayer: React.FC<{ c: VisualClip; index: number; len: number; L: Layout; pid: string; accent: string;
-  motion: 'kenburns' | 'static'; grade?: string; nearImage?: string; graphicSfx?: boolean }> = ({ c, index, len, L, pid, accent, motion, grade, nearImage, graphicSfx }) => {
+  motion: MotionStyle; grade?: string; nearImage?: string; graphicSfx?: boolean; sharedBackdrop?: boolean }> = ({ c, index, len, L, pid, accent, motion, grade, nearImage, graphicSfx, sharedBackdrop }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const p = Math.min(1, frame / fps / Math.max(0.5, len));
   let body: React.ReactNode;
   if (c.kind === 'graphic' && c.graphic) {
-    body = <GraphicBeat g={c.graphic} accent={accent} len={len} image={nearImage} fit={graphicFit(L)} sfx={graphicSfx} />;
+    body = <GraphicBeat g={c.graphic} accent={accent} len={len} image={nearImage} fit={graphicFit(L)} sfx={graphicSfx} backdrop={!sharedBackdrop} />;
   } else if (c.kind === 'color' || !c.src) {
     const col = c.color || '#15151d';
     body = <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 35%, ${col} 0%, #08080c 100%)` }} />;
   } else {
     const fit = pickFit(c, L);
     const still = c.kind === 'image' || (c.kind === 'upload' && !/\.(mp4|mov|webm|m4v)(\?|$)/i.test(c.src));
-    const tf = motionTransform(c, index, p, L, still, motion);
-    body = (
+    const tf = motionTransform(c, index, p, L, still, motion, frame);
+    const para = still && fit !== 'blur-fill' && (c.motion === 'parallax' || (motion === 'parallax' && (!c.motion || c.motion === 'auto')));
+    body = para ? <Parallax src={url(c.src, pid)} p={p} L={L} index={index} grade={grade} /> : (
       <AbsoluteFill style={{ backgroundColor: '#08080c', overflow: 'hidden' }}>
         {fit === 'blur-fill' && still ? (
           <AbsoluteFill>
