@@ -1,6 +1,6 @@
 {
-  "last_update": 312538213,
-  "time": 1792862740700,
+  "last_update": 312538214,
+  "time": 1792862926104,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Three Metal Bars Ruled The Ancient World\": Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
-      "t": 1792850709922
-    },
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Three Metal Bars Ruled The Ancient World\"",
-      "t": 1792850884464
-    },
     {
       "role": "bot",
       "text": "Rendering \"Three Metal Bars Ruled The Ancient World\"",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Yes, send me the link and I'll learn its style right away!",
       "t": 1792862740700
+    },
+    {
+      "role": "user",
+      "text": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
+      "t": 1792862925841
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"youtube-1\"",
+      "t": 1792862926104
     }
   ],
   "working": null,
@@ -1048,5 +1048,10 @@
   "job": null,
   "recent_styles": [
     "documentary"
-  ]
+  ],
+  "learning": {
+    "name": "youtube-1",
+    "source": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
+    "at": 1792862926104
+  }
 }
