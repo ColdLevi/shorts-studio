@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "how-software-companies-toll-every-cl-mvmrcu4n",
- "rev": 2,
+ "rev": 3,
  "title": "How Software Companies Toll Every Click",
  "duration": 80.24,
  "canvas": {
@@ -19,10 +19,10 @@
    "position": "bottom"
   },
   "transition": {
-   "type": "cut",
-   "duration": 0
+   "duration": 0.4,
+   "type": "dissolve"
   },
-  "motion": "static",
+  "motion": "parallax",
   "recipe": "motion-explainer",
   "transitions": [
    "cut",
@@ -2302,7 +2302,7 @@
  },
  "meta": {
   "created": 1792868197211,
-  "updated": 1792870240853,
+  "updated": 1792870625236,
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "hook": "Ten million API requests hit Stripe servers every hour through a thirty-two character text string.",
   "image_style": "Digital Wojak meme artwork paired with dark-mode software UI mockups, terminal text, and minimalist tech icons on black backgrounds.",
