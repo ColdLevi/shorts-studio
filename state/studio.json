@@ -1,6 +1,6 @@
 {
-  "last_update": 312538232,
-  "time": 1792870178349,
+  "last_update": 312538233,
+  "time": 1792870189798,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Got it! Send me the link or title of the video you want me to study, and I'll analyze it right away.",
-      "t": 1792866162128
-    },
     {
       "role": "user",
       "text": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Proposed edit to \"How Software Companies Toll Every Click\": Removed the title overlay from the start of the video",
       "t": 1792870178349
+    },
+    {
+      "role": "bot",
+      "text": "Applying edit to \"How Software Companies Toll Every Click\": Removed title box",
+      "t": 1792870189798
     }
   ],
   "working": null,
@@ -1094,28 +1094,30 @@
   "deep": null,
   "renders": [
     {
-      "title": "How Software Companies Toll Every Click",
-      "at": 1792868067147,
+      "title": "How Software Companies Toll Every Click (Removed title box)",
+      "at": 1792870189798,
       "project": "how-software-companies-toll-every-cl-mvmrcu4n"
     }
   ],
   "current_project": "how-software-companies-toll-every-cl-mvmrcu4n",
-  "pending_edit": {
-    "id": "emvmsm3alsiz",
-    "project_id": "how-software-companies-toll-every-cl-mvmrcu4n",
-    "patch": [
-      {
-        "op": "remove",
-        "path": "/tracks/overlays/@title"
-      }
-    ],
-    "message": "Removed title box",
-    "summary": "Removed the title overlay from the start of the video",
-    "detail": "🔤 Captions/overlays changed\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
-    "base_rev": 1,
-    "at": 1792870178349
-  },
-  "edits": [],
+  "pending_edit": null,
+  "edits": [
+    {
+      "id": "emvmsm3alsiz",
+      "project_id": "how-software-companies-toll-every-cl-mvmrcu4n",
+      "patch": [
+        {
+          "op": "remove",
+          "path": "/tracks/overlays/@title"
+        }
+      ],
+      "message": "Removed title box",
+      "summary": "Removed the title overlay from the start of the video",
+      "detail": "🔤 Captions/overlays changed\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
+      "base_rev": 1,
+      "at": 1792870189584
+    }
+  ],
   "pending": {
     "step": "render",
     "title": "Adam Starts His Stop Motion Day",
