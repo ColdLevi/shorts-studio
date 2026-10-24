@@ -1,1 +1,2 @@
 {"rev": 1, "at": 1792868197212, "message": "first build from the bot's spec"}
+{"rev": 2, "at": 1792870240853, "message": "Removed title box", "patch": [{"op": "remove", "path": "/tracks/overlays/@title"}], "edit_id": "emvmsm3alsiz", "kind": "edit", "remade": {"revoiced": [], "repainted": [], "failed": []}}
