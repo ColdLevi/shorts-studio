@@ -1,6 +1,6 @@
 {
-  "last_update": 312538210,
-  "time": 1792862173170,
+  "last_update": 312538211,
+  "time": 1792862221279,
   "stage": "script",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -29,18 +29,18 @@
     "title": "How Paper Defeated Gold",
     "beats": [
       {
-        "narration": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
+        "narration": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four point seven five grains of pure gold.",
         "image_prompt": "painterly historical illustration of a heavy gold coin resting on aged parchment under dramatic chiaroscuro lighting, museum-diorama depth",
         "tool": "higgsfield",
         "motion": "The camera slowly pushes in toward the gold coin while soft dust motes drift across the aged paper."
       },
       {
-        "narration": "People assume paper money naturally lost its value because gold ran out.",
+        "narration": "History books teach that paper money lost its gold backing because the mines simply ran dry.",
         "image_prompt": "painterly historical illustration of an empty wooden vault with dramatic chiaroscuro lighting and muted earth tones, museum-diorama depth",
         "tool": "flux"
       },
       {
-        "narration": "In reality, governments issued more paper receipts than the physical metal in their vaults.",
+        "narration": "But governments printed far more paper receipts than the physical metal sitting locked inside their vaults.",
         "graphic": {
           "type": "bars",
           "title": "Paper Receipts Versus Vault Gold",
@@ -61,7 +61,7 @@
         "tool": "graphic"
       },
       {
-        "narration": "This imbalance forced authorities to cut the link entirely.",
+        "narration": "This mounting imbalance forced authorities to break the metallic promise entirely.",
         "image_prompt": "painterly historical illustration of a heavy metal scale tipping abruptly in dramatic chiaroscuro lighting, museum-diorama depth",
         "tool": "flux"
       },
@@ -76,7 +76,7 @@
         "tool": "flux"
       },
       {
-        "narration": "Paper money finally stood alone, untethered from any physical metal.",
+        "narration": "Paper money finally stood alone, permanently untethered from any physical metal.",
         "image_prompt": "painterly historical illustration of a single crisp banknote floating away from a dark vault, museum-diorama depth",
         "tool": "higgsfield",
         "motion": "The camera slowly pulls back as the banknote drifts upward against a dark, muted background."
@@ -106,16 +106,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Use what's available",
-      "t": 1792749814981
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"Adam Starts His Stop Motion Day\"",
-      "t": 1792749817288
-    },
     {
       "role": "user",
       "text": "Use pixellab image or Gemini and whisk to build it instead",
@@ -185,6 +175,16 @@
       "role": "bot",
       "text": "Wrote the script for \"How Paper Defeated Gold\"",
       "t": 1792862136682
+    },
+    {
+      "role": "user",
+      "text": "Instead of people assume I'd like to speak directly let the viewer feel like this is talking to them indirectly the duration doesn't matter don't settle for less if you can go more to make the storytelling hit better",
+      "t": 1792862207299
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How Paper Defeated Gold\"",
+      "t": 1792862221279
     }
   ],
   "working": null,
