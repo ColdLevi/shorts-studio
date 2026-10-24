@@ -1,6 +1,6 @@
 {
-  "last_update": 312538231,
-  "time": 1792868513707,
+  "last_update": 312538232,
+  "time": 1792870178349,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Cancelled the current short",
-      "t": 1792866125292
-    },
-    {
-      "role": "user",
-      "text": "I meant this video you studying",
-      "t": 1792866153728
-    },
     {
       "role": "bot",
       "text": "Got it! Send me the link or title of the video you want me to study, and I'll analyze it right away.",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Flux generates all visuals for the video while it renders in the background. The images are being created right now as part of the render step!",
       "t": 1792868513707
+    },
+    {
+      "role": "user",
+      "text": "And don't add that title box you always add in all your rendering it isn't cool and you don't",
+      "t": 1792870150943
+    },
+    {
+      "role": "bot",
+      "text": "Proposed edit to \"How Software Companies Toll Every Click\": Removed the title overlay from the start of the video",
+      "t": 1792870178349
     }
   ],
   "working": null,
@@ -1100,7 +1100,21 @@
     }
   ],
   "current_project": "how-software-companies-toll-every-cl-mvmrcu4n",
-  "pending_edit": null,
+  "pending_edit": {
+    "id": "emvmsm3alsiz",
+    "project_id": "how-software-companies-toll-every-cl-mvmrcu4n",
+    "patch": [
+      {
+        "op": "remove",
+        "path": "/tracks/overlays/@title"
+      }
+    ],
+    "message": "Removed title box",
+    "summary": "Removed the title overlay from the start of the video",
+    "detail": "🔤 Captions/overlays changed\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
+    "base_rev": 1,
+    "at": 1792870178349
+  },
   "edits": [],
   "pending": {
     "step": "render",
