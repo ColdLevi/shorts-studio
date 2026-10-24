@@ -1,6 +1,6 @@
 {
-  "last_update": 312538233,
-  "time": 1792870189798,
+  "last_update": 312538234,
+  "time": 1792870546267,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,21 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
-      "t": 1792866180781
-    },
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"youtube-1\"",
-      "t": 1792866180979
-    },
-    {
-      "role": "user",
-      "text": "Learn this style this is one of my best youtuber that his videos engage me so don't skip any details and make sure you save it up https://youtu.be/LoZ2kpFnqB8?si=IvXVbV4WjN-wPoKp",
-      "t": 1792867076848
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"youtu-2\"",
@@ -92,6 +77,21 @@
       "role": "bot",
       "text": "Applying edit to \"How Software Companies Toll Every Click\": Removed title box",
       "t": 1792870189798
+    },
+    {
+      "role": "user",
+      "text": "Just don't apply it I don't like it and the animation effect of the whole video isn't fluid like nice smooth motion entry and exit",
+      "t": 1792870516373
+    },
+    {
+      "role": "bot",
+      "text": "Proposed edit to \"How Software Companies Toll Every Click\": Updated the video style to use smooth motion transitions for a more fluid animation effect",
+      "t": 1792870545931
+    },
+    {
+      "role": "bot",
+      "text": "Applying edit to \"How Software Companies Toll Every Click\": Fluid motion style updated",
+      "t": 1792870546267
     }
   ],
   "working": null,
@@ -1097,25 +1097,37 @@
       "title": "How Software Companies Toll Every Click (Removed title box)",
       "at": 1792870189798,
       "project": "how-software-companies-toll-every-cl-mvmrcu4n"
+    },
+    {
+      "title": "How Software Companies Toll Every Click (Fluid motion style updated)",
+      "at": 1792870546267,
+      "project": "how-software-companies-toll-every-cl-mvmrcu4n"
     }
   ],
   "current_project": "how-software-companies-toll-every-cl-mvmrcu4n",
   "pending_edit": null,
   "edits": [
     {
-      "id": "emvmsm3alsiz",
+      "id": "emvmstyx7mbj",
       "project_id": "how-software-companies-toll-every-cl-mvmrcu4n",
       "patch": [
         {
-          "op": "remove",
-          "path": "/tracks/overlays/@title"
+          "op": "merge",
+          "path": "/style",
+          "value": {
+            "motion": "parallax",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.4
+            }
+          }
         }
       ],
-      "message": "Removed title box",
-      "summary": "Removed the title overlay from the start of the video",
-      "detail": "🔤 Captions/overlays changed\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
-      "base_rev": 1,
-      "at": 1792870189584
+      "message": "Fluid motion style updated",
+      "summary": "Updated the video style to use smooth motion transitions for a more fluid animation effect",
+      "detail": "🎨 Style: motion, transition\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
+      "base_rev": 2,
+      "at": 1792870546075
     }
   ],
   "pending": {
