@@ -1,6 +1,6 @@
 {
-  "last_update": 312538219,
-  "time": 1792865977644,
+  "last_update": 312538220,
+  "time": 1792865998001,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How Paper Defeated Gold\"",
-      "t": 1792862221279
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"How Paper Defeated Gold\"",
-      "t": 1792862276233
-    },
     {
       "role": "user",
       "text": "Can I show you a YouTube video I'd like you to learn from?",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Understood. Our automated pipeline runs rigorous validation checks at every stage to ensure top quality.",
       "t": 1792865977644
+    },
+    {
+      "role": "user",
+      "text": "Ok thanks",
+      "t": 1792865992105
+    },
+    {
+      "role": "bot",
+      "text": "You're welcome! Let me know when you're ready for the next video or want to adjust anything.",
+      "t": 1792865998001
     }
   ],
   "working": null,
