@@ -1,28 +1,35 @@
 {
-  "last_update": 312538227,
-  "time": 1792867582313,
-  "stage": "idle",
-  "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
+  "last_update": 312538228,
+  "time": 1792867859302,
+  "stage": "pitch",
+  "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "How Software Companies Toll Every Click",
+    "hook": "Ten million API requests hit Stripe servers every hour through a thirty-two character text string.",
+    "angle": "Developers assume companies build software to sell finished apps. In reality, modern tech giants print billions by putting digital tollbooths on individual lines of background code.",
+    "key_facts": [
+      "An API key is a unique string that authenticates and tracks calls between separate software systems.",
+      "Twilio generated over one billion dollars in revenue by charging fractions of a cent per SMS API call for apps like Uber.",
+      "OpenAI bills developers per text token processed through their API endpoints rather than selling raw software downloads.",
+      "Metered rate limiting lets API providers throttle free users while automatically billing paid users based on live consumption."
+    ],
+    "visual_style": "Digital Wojak meme artwork paired with dark-mode software UI mockups, terminal text, and minimalist tech icons on black backgrounds.",
+    "length_seconds": 48,
+    "style": "youtu-2",
+    "style_reason": "Dark terminal mockups and Wojak art clearly explain API key monetization.",
+    "music": "tech-pulse",
+    "accent": "teal",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "And have a backend team vet each stage to make sure every person I'm his doing there job correctly",
-      "t": 1792865971877
-    },
-    {
-      "role": "bot",
-      "text": "Understood. Our automated pipeline runs rigorous validation checks at every stage to ensure top quality.",
-      "t": 1792865977644
-    },
     {
       "role": "user",
       "text": "Ok thanks",
@@ -92,6 +99,16 @@
       "role": "user",
       "text": "/styles",
       "t": 1792867582313
+    },
+    {
+      "role": "user",
+      "text": "Use the second YouTube style to make a video for how to make money with selling API or say how companies make money with selling API key it's a YouTube video so make it good",
+      "t": 1792867843898
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How Software Companies Toll Every Click\": Ten million API requests hit Stripe servers every hour through a thirty-two character text string.",
+      "t": 1792867859302
     }
   ],
   "working": null,
@@ -907,7 +924,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (fact) The user's YouTube channel is located at https://youtube.com/@shipweb3s.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (fact) Browser bot research on a guy daily life stop motion style: - Creating a 60-second stop motion video typically requires between 720 and 1,500 individual photographs, depending on whether the animator shoots at 12 or 24 frames per second (https://www.studiobinder.com/blog/what-is-stop-motion-animation/)\n- A standard cinematic framerate for smooth stop motion\n- (fact) Browser bot research on how a server outage turns into a disaster: - In 1998, a single misplaced semicolon in a software update by Network Solutions crashed the authoritative root DNS servers, taking down roughly half of the internet's domain name resolution for hours (https://www.netmeister.org/blog/dns-semicolon.html)\n- Modern cloud outages often start small: in\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about a guy daily life stop motion style.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\n- The user prefers the studio bot to use the browser to search and analyze top-performing videos for learning purposes.\n- The user wants the Shorts Studio to continuously research top-performing videos to improve hooks, visuals, and pacing.\n- The user inquired about creating landscape videos in addition to vertical ones.\nRelevant memories:\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (fact) The user's YouTube channel is located at https://youtube.com/@shipweb3s.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.\n- (interest) The user approved a short about a guy daily life stop motion style.\n- (interest) The user approved a short about how a server outage turns into a disaster.\n- (interest) The user approved a short about about something real-world, like city life.",
   "deep": null,
   "renders": [
     {
@@ -1046,7 +1063,9 @@
     "format": "landscape",
     "style": "youtu-2"
   },
-  "job": null,
+  "job": {
+    "format": "landscape"
+  },
   "recent_styles": [
     "documentary"
   ],
