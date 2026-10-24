@@ -1,6 +1,6 @@
 {
-  "last_update": 312538212,
-  "time": 1792862276233,
+  "last_update": 312538213,
+  "time": 1792862740700,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/studio",
-      "t": 1792750021954
-    },
-    {
-      "role": "user",
-      "text": "Create a documentary style video like Issacverse of how money came to be done it a 3 mins video for youtube",
-      "t": 1792850674300
-    },
     {
       "role": "bot",
       "text": "Pitched \"Three Metal Bars Ruled The Ancient World\": Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"How Paper Defeated Gold\"",
       "t": 1792862276233
+    },
+    {
+      "role": "user",
+      "text": "Can I show you a YouTube video I'd like you to learn from?",
+      "t": 1792862736347
+    },
+    {
+      "role": "bot",
+      "text": "Yes, send me the link and I'll learn its style right away!",
+      "t": 1792862740700
     }
   ],
   "working": null,
