@@ -1,6 +1,6 @@
 {
-  "last_update": 312538230,
-  "time": 1792868067147,
+  "last_update": 312538231,
+  "time": 1792868513707,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "You still studying that YouTube video?",
-      "t": 1792866070810
-    },
-    {
-      "role": "user",
-      "text": "Cancel this it's already done, update your system to recognize already done tasks",
-      "t": 1792866119379
-    },
     {
       "role": "bot",
       "text": "Cancelled the current short",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"How Software Companies Toll Every Click\"",
       "t": 1792868067147
+    },
+    {
+      "role": "user",
+      "text": "You didnt use images why?",
+      "t": 1792868507083
+    },
+    {
+      "role": "bot",
+      "text": "Flux generates all visuals for the video while it renders in the background. The images are being created right now as part of the render step!",
+      "t": 1792868513707
     }
   ],
   "working": null,
