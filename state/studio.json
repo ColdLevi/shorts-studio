@@ -1,6 +1,6 @@
 {
-  "last_update": 312538224,
-  "time": 1792866837604,
+  "last_update": 312538225,
+  "time": 1792867077049,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"youtube-1\"",
-      "t": 1792864687093
-    },
-    {
-      "role": "user",
-      "text": "Learn this style https://www.youtube.com/watch?v=TfTE8x8wQNo",
-      "t": 1792865774057
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"youtube-1\"",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Studying a reference video as style \"youtube-1\"",
       "t": 1792866180979
+    },
+    {
+      "role": "user",
+      "text": "Learn this style this is one of my best youtuber that his videos engage me so don't skip any details and make sure you save it up https://youtu.be/LoZ2kpFnqB8?si=IvXVbV4WjN-wPoKp",
+      "t": 1792867076848
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"youtu-2\"",
+      "t": 1792867077049
     }
   ],
   "working": null,
@@ -1050,7 +1050,11 @@
   "recent_styles": [
     "documentary"
   ],
-  "learning": null,
+  "learning": {
+    "name": "youtu-2",
+    "source": "https://youtu.be/LoZ2kpFnqB8?si=IvXVbV4WjN-wPoKp",
+    "at": 1792867077049
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
