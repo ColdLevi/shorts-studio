@@ -1,117 +1,18 @@
 {
-  "last_update": 312538204,
-  "time": 1792850884464,
-  "stage": "script",
+  "last_update": 312538205,
+  "time": 1792850909188,
+  "stage": "idle",
   "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Three Metal Bars Ruled The Ancient World",
-    "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
-    "angle": "Most people think money started as paper bills, but physical currency actually evolved from barley and cattle thousands of years before the first coin was struck.",
-    "key_facts": [
-      "Babylonians used silver weighed in shekels as a standard unit of value.",
-      "Cattle and barley served as the earliest forms of commodity money.",
-      "The first standardized metal coins were minted in Lydia around six hundred BC.",
-      "Paper currency first appeared in China during the Tang dynasty."
-    ],
-    "visual_style": "dark historical documentary style, dramatic museum lighting, photorealistic",
-    "length_seconds": 45,
-    "music": "docu-pluck",
-    "accent": "gold"
-  },
-  "script": {
-    "title": "Three Metal Bars Ruled The Ancient World",
-    "beats": [
-      {
-        "narration": "Three thousand years ago, a merchant in Babylon bought a field using a raw lump of silver.",
-        "image_prompt": "Vertical 9:16 framing, dark historical documentary style, dramatic museum spot lighting, photorealistic ancient Babylonian market, hands exchanging a raw unshaped silver nugget over rustic grain sacks, macro detailed.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Camera slowly tilts down as hands trade raw silver metal over woven sacks of grain."
-      },
-      {
-        "narration": "Most people think money started as paper bills, but early trade relied on cattle and barley.",
-        "image_prompt": "Vertical 9:16 framing, dark atmospheric historical documentary style, photorealistic cattle standing in a misty moody field at twilight, cinematic rim lighting.",
-        "tool": "stock",
-        "still": "flux",
-        "query": "cattle herd foggy field"
-      },
-      {
-        "narration": "Herding cows to pay debts got exhausting, so merchants started weighing raw silver metal.",
-        "image_prompt": "Vertical 9:16 framing, dark museum lighting, photorealistic closeup of bronze ancient scales balancing raw silver chunks against stone weights on dark rustic wood.",
-        "tool": "flux"
-      },
-      {
-        "narration": "One shekel equaled exactly one hundred and eighty grains of barley, setting a fixed value.",
-        "image_prompt": "Vertical 9:16 framing, dramatic golden sunlight beam in a dark historic hall, 180 individual golden barley grains neatly piled next to a silver shekel ingot.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 180,
-          "prefix": "",
-          "suffix": " grain",
-          "label": "One Babylonian Shekel"
-        }
-      },
-      {
-        "narration": "Then around six hundred BC, Lydia minted the first official coins to stop silver fraud.",
-        "image_prompt": "Vertical 9:16 framing, dark historical documentary museum aesthetic, closeup of an ancient hand-hammered Lydian silver coin stamped with a lion emblem resting on black velvet.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow push in on the ancient stamped silver coin as light gleams off the carved lion symbol."
-      },
-      {
-        "narration": "Centuries later, Chinese traders in the Tang dynasty created paper notes because metal got too heavy.",
-        "image_prompt": "Vertical 9:16 framing, dark historic mood, ancient Chinese paper banknote with ornate brush calligraphy resting on a polished dark teakwood table.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "Evolution of Currency",
-          "items": [
-            "Cattle and Barley",
-            "Weighed Silver Shekels",
-            "Stamped Lydian Coins",
-            "Tang Dynasty Paper"
-          ]
-        }
-      },
-      {
-        "narration": "Your modern cash is just a paper shadow of ancient silver.",
-        "image_prompt": "Vertical 9:16 framing, dramatic dark moody background, a modern green banknote casting a dark stark shadow shaped like an ancient raw silver ingot.",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Babylonians used silver weighed in shekels as a standard unit of value.",
-        "supported": true
-      },
-      {
-        "claim": "One Babylonian shekel was standardized to 180 grains of barley.",
-        "supported": true
-      },
-      {
-        "claim": "The first standardized coins were minted in Lydia around 600 BC.",
-        "supported": true
-      },
-      {
-        "claim": "Paper currency was first used in China during the Tang dynasty.",
-        "supported": true
-      }
-    ]
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"One Single Byte Breaks Every Server\"",
-      "t": 1792746899338
-    },
     {
       "role": "bot",
       "text": "Rendering \"One Single Byte Breaks Every Server\"",
@@ -186,10 +87,122 @@
       "role": "bot",
       "text": "Wrote the script for \"Three Metal Bars Ruled The Ancient World\"",
       "t": 1792850884464
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Three Metal Bars Ruled The Ancient World\"",
+      "t": 1792850909188
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
+      "canvas": "9:16",
+      "title": "Three Metal Bars Ruled The Ancient World",
+      "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
+      "pitch": {
+        "title": "Three Metal Bars Ruled The Ancient World",
+        "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
+        "angle": "Most people think money started as paper bills, but physical currency actually evolved from barley and cattle thousands of years before the first coin was struck.",
+        "key_facts": [
+          "Babylonians used silver weighed in shekels as a standard unit of value.",
+          "Cattle and barley served as the earliest forms of commodity money.",
+          "The first standardized metal coins were minted in Lydia around six hundred BC.",
+          "Paper currency first appeared in China during the Tang dynasty."
+        ],
+        "visual_style": "dark historical documentary style, dramatic museum lighting, photorealistic",
+        "length_seconds": 45,
+        "music": "docu-pluck",
+        "accent": "gold"
+      },
+      "script": {
+        "title": "Three Metal Bars Ruled The Ancient World",
+        "beats": [
+          {
+            "narration": "Three thousand years ago, a merchant in Babylon bought a field using a raw lump of silver.",
+            "image_prompt": "Vertical 9:16 framing, dark historical documentary style, dramatic museum spot lighting, photorealistic ancient Babylonian market, hands exchanging a raw unshaped silver nugget over rustic grain sacks, macro detailed.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Camera slowly tilts down as hands trade raw silver metal over woven sacks of grain."
+          },
+          {
+            "narration": "Most people think money started as paper bills, but early trade relied on cattle and barley.",
+            "image_prompt": "Vertical 9:16 framing, dark atmospheric historical documentary style, photorealistic cattle standing in a misty moody field at twilight, cinematic rim lighting.",
+            "tool": "stock",
+            "still": "flux",
+            "query": "cattle herd foggy field"
+          },
+          {
+            "narration": "Herding cows to pay debts got exhausting, so merchants started weighing raw silver metal.",
+            "image_prompt": "Vertical 9:16 framing, dark museum lighting, photorealistic closeup of bronze ancient scales balancing raw silver chunks against stone weights on dark rustic wood.",
+            "tool": "flux"
+          },
+          {
+            "narration": "One shekel equaled exactly one hundred and eighty grains of barley, setting a fixed value.",
+            "image_prompt": "Vertical 9:16 framing, dramatic golden sunlight beam in a dark historic hall, 180 individual golden barley grains neatly piled next to a silver shekel ingot.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 180,
+              "prefix": "",
+              "suffix": " grain",
+              "label": "One Babylonian Shekel"
+            }
+          },
+          {
+            "narration": "Then around six hundred BC, Lydia minted the first official coins to stop silver fraud.",
+            "image_prompt": "Vertical 9:16 framing, dark historical documentary museum aesthetic, closeup of an ancient hand-hammered Lydian silver coin stamped with a lion emblem resting on black velvet.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow push in on the ancient stamped silver coin as light gleams off the carved lion symbol."
+          },
+          {
+            "narration": "Centuries later, Chinese traders in the Tang dynasty created paper notes because metal got too heavy.",
+            "image_prompt": "Vertical 9:16 framing, dark historic mood, ancient Chinese paper banknote with ornate brush calligraphy resting on a polished dark teakwood table.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "Evolution of Currency",
+              "items": [
+                "Cattle and Barley",
+                "Weighed Silver Shekels",
+                "Stamped Lydian Coins",
+                "Tang Dynasty Paper"
+              ]
+            }
+          },
+          {
+            "narration": "Your modern cash is just a paper shadow of ancient silver.",
+            "image_prompt": "Vertical 9:16 framing, dramatic dark moody background, a modern green banknote casting a dark stark shadow shaped like an ancient raw silver ingot.",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Babylonians used silver weighed in shekels as a standard unit of value.",
+            "supported": true
+          },
+          {
+            "claim": "One Babylonian shekel was standardized to 180 grains of barley.",
+            "supported": true
+          },
+          {
+            "claim": "The first standardized coins were minted in Lydia around 600 BC.",
+            "supported": true
+          },
+          {
+            "claim": "Paper currency was first used in China during the Tang dynasty.",
+            "supported": true
+          }
+        ]
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1792850909188
+    },
     {
       "id": "adam-starts-his-stop-motion-day-mvksybxe",
       "canvas": "9:16",
@@ -876,17 +889,12 @@
   "deep": null,
   "renders": [
     {
-      "title": "Adam Starts His Stop Motion Day",
-      "at": 1792749658254,
-      "project": "adam-starts-his-stop-motion-day-mvksux7u"
-    },
-    {
-      "title": "Adam Starts His Stop Motion Day",
-      "at": 1792749817288,
-      "project": "adam-starts-his-stop-motion-day-mvksybxe"
+      "title": "Three Metal Bars Ruled The Ancient World",
+      "at": 1792850909188,
+      "project": "three-metal-bars-ruled-the-ancient-w-mvmh52yg"
     }
   ],
-  "current_project": "adam-starts-his-stop-motion-day-mvksybxe",
+  "current_project": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
   "pending_edit": null,
   "edits": [],
   "pending": {
