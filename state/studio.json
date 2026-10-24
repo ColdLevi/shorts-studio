@@ -1,6 +1,6 @@
 {
   "last_update": 312538224,
-  "time": 1792866180979,
+  "time": 1792866837604,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -1043,15 +1043,65 @@
   },
   "awaitImage": null,
   "settings": {
-    "format": "landscape"
+    "format": "landscape",
+    "style": "youtube-1"
   },
   "job": null,
   "recent_styles": [
     "documentary"
   ],
-  "learning": {
-    "name": "youtube-1",
-    "source": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
-    "at": 1792866180979
+  "learning": null,
+  "styles": {
+    "youtube-1": {
+      "name": "youtube-1",
+      "source": "https://www.youtube.com/watch?v=TfTE8x8wQNo",
+      "summary": "Uncut gameplay capture featuring continuous live commentary over The Binding of Isaac. Visuals are raw in-game footage driven by procedural dungeon exploration, fast melee combat, and UI overlays. The production relies on natural game pacing and vocal reactions rather than motion graphics or rapid editing.",
+      "base": "vlog",
+      "mode": "footage",
+      "graphic_ratio": 0,
+      "beat_seconds": 12,
+      "image_style": "Pixel art 2D roguelike dungeon crawler visuals, dark dingy cellar lighting, muted browns, fleshy reds, and grim cartoon subterranean textures.",
+      "format": "landscape",
+      "music": "ambient-pad",
+      "pacing": "Deliberate and continuous real-time flow dictated by active gameplay rooms and boss battles.",
+      "writer_notes": "Energetic, conversational British gaming commentary explaining item mechanics and reacting in real-time. Casual, enthusiastic tone with self-deprecating humor during boss encounters.",
+      "style_tokens": {
+        "caption": {
+          "preset": "none",
+          "font": "Inter",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#FF4500",
+          "color": "#FFFFFF"
+        },
+        "font": "Inter",
+        "transitions": [
+          "cut",
+          "fade"
+        ],
+        "motion": "static",
+        "fx": {
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.0) saturate(1.0)",
+        "accent": "#992222",
+        "palette": [
+          "#1c1614",
+          "#4a2e2b"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {}
+    }
   }
 }
