@@ -1,6 +1,6 @@
 {
-  "last_update": 312538217,
-  "time": 1792865774322,
+  "last_update": 312538218,
+  "time": 1792865900357,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Create a documentary video about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today do it in YouTube video resolution",
-      "t": 1792862094673
-    },
-    {
-      "role": "bot",
-      "text": "Pitched \"How Paper Defeated Gold\": In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
-      "t": 1792862103158
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"How Paper Defeated Gold\"",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Studying a reference video as style \"youtube-1\"",
       "t": 1792865774322
+    },
+    {
+      "role": "user",
+      "text": "You should learn to use the best available model to build the videos so it comes out good",
+      "t": 1792865895954
+    },
+    {
+      "role": "bot",
+      "text": "Understood, I am always prioritizing the highest-performing models and settings to ensure top-quality output for your videos.",
+      "t": 1792865900357
     }
   ],
   "working": null,
