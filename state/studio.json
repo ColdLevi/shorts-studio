@@ -1,7 +1,7 @@
 {
-  "last_update": 312538209,
-  "time": 1792862104787,
-  "stage": "pitch",
+  "last_update": 312538210,
+  "time": 1792862136682,
+  "stage": "script",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
     "text": "",
@@ -25,16 +25,87 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "How Paper Defeated Gold",
+    "beats": [
+      {
+        "narration": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
+        "image_prompt": "painterly historical illustration of a heavy gold coin resting on aged parchment under dramatic chiaroscuro lighting, museum-diorama depth",
+        "tool": "higgsfield",
+        "motion": "The camera slowly pushes in toward the gold coin while soft dust motes drift across the aged paper."
+      },
+      {
+        "narration": "People assume paper money naturally lost its value because gold ran out.",
+        "image_prompt": "painterly historical illustration of an empty wooden vault with dramatic chiaroscuro lighting and muted earth tones, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "In reality, governments issued more paper receipts than the physical metal in their vaults.",
+        "graphic": {
+          "type": "bars",
+          "title": "Paper Receipts Versus Vault Gold",
+          "prefix": "",
+          "suffix": "%",
+          "items": [
+            {
+              "label": "Paper Issued",
+              "value": 100
+            },
+            {
+              "label": "Vault Gold",
+              "value": 30
+            }
+          ]
+        },
+        "image_prompt": "painterly historical illustration of stacked paper documents glowing under dramatic chiaroscuro lighting, museum-diorama depth",
+        "tool": "graphic"
+      },
+      {
+        "narration": "This imbalance forced authorities to cut the link entirely.",
+        "image_prompt": "painterly historical illustration of a heavy metal scale tipping abruptly in dramatic chiaroscuro lighting, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
+        "image_prompt": "painterly historical illustration of a decree document sealed with wax under dramatic chiaroscuro lighting, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then, on August fifteen, nineteen seventy-one, President Richard Nixon officially suspended convertibility.",
+        "image_prompt": "painterly historical illustration of a presidential desk with a heavy ledger and dramatic chiaroscuro lighting, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "Paper money finally stood alone, untethered from any physical metal.",
+        "image_prompt": "painterly historical illustration of a single crisp banknote floating away from a dark vault, museum-diorama depth",
+        "tool": "higgsfield",
+        "motion": "The camera slowly pulls back as the banknote drifts upward against a dark, muted background."
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "In seventeen ninety-two, the United States defined one dollar as twenty-four point seven five grains of pure gold.",
+        "supported": true
+      },
+      {
+        "claim": "Early paper dollars were written receipts for physical metal sitting in bank vaults.",
+        "supported": true
+      },
+      {
+        "claim": "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
+        "supported": true
+      },
+      {
+        "claim": "On August fifteen, nineteen seventy-one, President Richard Nixon officially suspended the dollar's convertibility into gold.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Adam Starts His Stop Motion Day\"",
-      "t": 1792749658254
-    },
     {
       "role": "user",
       "text": "Use what's available",
@@ -109,6 +180,11 @@
       "role": "bot",
       "text": "Pitched \"How Paper Defeated Gold\": In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
       "t": 1792862103158
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How Paper Defeated Gold\"",
+      "t": 1792862136682
     }
   ],
   "working": null,
