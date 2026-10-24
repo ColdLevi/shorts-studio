@@ -1,6 +1,6 @@
 {
   "last_update": 312538225,
-  "time": 1792867077049,
+  "time": 1792867211543,
   "stage": "idle",
   "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
   "research": {
@@ -1044,17 +1044,13 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "youtube-1"
+    "style": "youtu-2"
   },
   "job": null,
   "recent_styles": [
     "documentary"
   ],
-  "learning": {
-    "name": "youtu-2",
-    "source": "https://youtu.be/LoZ2kpFnqB8?si=IvXVbV4WjN-wPoKp",
-    "at": 1792867077049
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -1097,6 +1093,59 @@
         "palette": [
           "#1c1614",
           "#4a2e2b"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {}
+    },
+    "youtu-2": {
+      "name": "youtu-2",
+      "source": "https://youtu.be/LoZ2kpFnqB8?si=IvXVbV4WjN-wPoKp",
+      "summary": "A dark-mode tech explainer combining terminal mockups, UI diagrams, and Wojak meme art. It uses high-contrast neon accents, code animations, and app interface recreations to tell a cautionary engineering story.",
+      "base": "motion-explainer",
+      "mode": "mixed",
+      "graphic_ratio": 0.85,
+      "beat_seconds": 3,
+      "image_style": "Digital Wojak meme artwork paired with dark-mode software UI mockups, terminal text, and minimalist tech icons on black backgrounds.",
+      "format": "landscape",
+      "music": "tech-pulse",
+      "pacing": "Fast-paced tech narrative driven by dynamic terminal execution, UI updates, and dramatic meme reaction pauses.",
+      "writer_notes": "Cautionary engineering story structured around a Friday deployment incident. Uses developer humor and relatable technical pitfalls to convey best practices.",
+      "style_tokens": {
+        "caption": {
+          "preset": "clean",
+          "font": "Space Grotesk",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#22c55e",
+          "color": "#ffffff"
+        },
+        "font": "Space Grotesk",
+        "transitions": [
+          "cut",
+          "fade",
+          "zoom-in",
+          "slide-left"
+        ],
+        "motion": "static",
+        "fx": {
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.1) brightness(0.95)",
+        "accent": "#22c55e",
+        "palette": [
+          "#09090b",
+          "#18181b"
         ],
         "progress_bar": false,
         "vignette": false,
