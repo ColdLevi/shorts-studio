@@ -1,6 +1,6 @@
 {
-  "last_update": 312538207,
-  "time": 1792861941891,
+  "last_update": 312538208,
+  "time": 1792861983258,
   "stage": "idle",
   "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Mastering Stop Motion Daily Life Routines\": Seven hundred and twenty individual photographs form just sixty seconds of a morning coffee routine.",
-      "t": 1792749486166
-    },
-    {
-      "role": "user",
-      "text": "I meant the daily life of a guy named Adam do the graphics in stop motion style",
-      "t": 1792749557405
-    },
     {
       "role": "bot",
       "text": "Pitched \"Adam Starts His Stop Motion Day\": Seven hundred and twenty individual photographs build a single morning for Adam.",
@@ -92,6 +82,16 @@
       "role": "user",
       "text": "Are you working on it",
       "t": 1792861940027
+    },
+    {
+      "role": "user",
+      "text": "No I meant this",
+      "t": 1792861977844
+    },
+    {
+      "role": "bot",
+      "text": "What did you mean? Tell me the exact topic or changes you'd like to make.",
+      "t": 1792861983258
     }
   ],
   "working": null,
