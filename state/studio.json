@@ -1,6 +1,6 @@
 {
-  "last_update": 312538205,
-  "time": 1792850909188,
+  "last_update": 312538206,
+  "time": 1792861263276,
   "stage": "idle",
   "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"One Single Byte Breaks Every Server\"",
-      "t": 1792747036874
-    },
-    {
-      "role": "user",
-      "text": "/scenes",
-      "t": 1792747288697
-    },
     {
       "role": "user",
       "text": "Make a short video of a guy daily life stop motion style",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"Three Metal Bars Ruled The Ancient World\"",
       "t": 1792850909188
+    },
+    {
+      "role": "user",
+      "text": "Create documentary about how money came to be in YouTube video resolution",
+      "t": 1792861256909
+    },
+    {
+      "role": "bot",
+      "text": "Updated tool settings",
+      "t": 1792861263276
     }
   ],
   "working": null,
@@ -1019,5 +1019,8 @@
       }
     }
   },
-  "awaitImage": null
+  "awaitImage": null,
+  "settings": {
+    "format": "landscape"
+  }
 }
