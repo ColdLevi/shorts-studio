@@ -121,22 +121,19 @@ def _judge(clip, query, narration=""):
         ) % ((narration or query)[:300], query[:80])}]
         for jpg in _frames(clip):
             parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(open(jpg, "rb").read()).decode()}})
-        body = json.dumps({"contents": [{"parts": parts}], "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}}).encode()
-        for m in (os.environ.get("GEMINI_JUDGE_MODEL") or "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash"):
-            try:
-                req = urllib.request.Request(
-                    "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % m,
-                    data=body, headers={"Content-Type": "application/json", "x-goog-api-key": key})
-                d = json.loads(urllib.request.urlopen(req, timeout=40).read().decode())
-                t = d["candidates"][0]["content"]["parts"][0]["text"]
-                try:
-                    j = json.loads(t)
-                    print("  judge %s: %s (%s)" % (query, j.get("score"), j.get("sees")))
-                    return float(j.get("score")), int(j.get("best") or 0)
-                except Exception:
-                    return float(_re.search(r"\d+(\.\d+)?", t).group()), 0
-            except Exception:
-                continue
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import gemini_models as gm
+        t, err = gm.generate(key, parts, {"temperature": 0, "responseMimeType": "application/json"}, timeout=40,
+                             prefer=os.environ.get("GEMINI_JUDGE_MODEL"))
+        if t is None:
+            print("  judge unavailable:", (err or "")[:200])
+            return None, 0
+        try:
+            j = json.loads(t[t.find("{"): t.rfind("}") + 1])
+            print("  judge %s: %s (%s)" % (query, j.get("score"), j.get("sees")))
+            return float(j.get("score")), int(j.get("best") or 0)
+        except Exception:
+            return float(_re.search(r"\d+(\.\d+)?", t).group()), 0
     except Exception as e:
         print("  judge error", e)
     return None, 0

@@ -16,6 +16,8 @@ Runs on GitHub Actions (workflow learn-style.yml), started by the bot when the u
 Env: SOURCE (url or tg:<file_id>), STYLE_NAME, TELEGRAM_TOKEN, CHAT_ID, GEMINI_API_KEY, APP_URL.
 """
 import base64, glob, hashlib, json, os, re, subprocess, sys, urllib.request, urllib.error
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import gemini_models as gm
 
 OUT = "job/ref"
 os.makedirs(OUT, exist_ok=True)
@@ -194,24 +196,14 @@ def yt_thumb_sheet():
 
 
 def _ask(parts):
-    body = {"contents": [{"parts": parts}], "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"}}
-    errs = []
-    for model in [os.environ.get("GEMINI_VIDEO_MODEL"), "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash"]:
-        if not model:
-            continue
-        try:
-            req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                                         data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": GEM})
-            d = json.loads(urllib.request.urlopen(req, timeout=240).read().decode())
-            t = "".join(p.get("text", "") for p in d["candidates"][0]["content"]["parts"])
-            return json.loads(t[t.find("{"): t.rfind("}") + 1]), None
-        except urllib.error.HTTPError as e:
-            errs.append(f"{model}: {_http_reason(e)}")
-            if e.code in (400, 401) or "API key" in errs[-1] or "API_KEY" in errs[-1]:
-                break  # a bad key fails the same on every model
-        except Exception as e:
-            errs.append(f"{model}: {str(e)[:120]}")
-    return None, "; ".join(errs)
+    t, err = gm.generate(GEM, parts, {"temperature": 0.2, "responseMimeType": "application/json"}, timeout=240,
+                         prefer=os.environ.get("GEMINI_VIDEO_MODEL"))
+    if t is None:
+        return None, err
+    try:
+        return json.loads(t[t.find("{"): t.rfind("}") + 1]), None
+    except Exception as e:
+        return None, f"bad JSON from Gemini: {str(e)[:80]}"
 
 
 def gemini(sheet, metrics):
