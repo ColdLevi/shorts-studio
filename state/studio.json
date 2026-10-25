@@ -1,6 +1,6 @@
 {
   "last_update": 312538240,
-  "time": 1792905690513,
+  "time": 1792905865636,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -1417,18 +1417,14 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "youtu-2"
+    "style": "upload-3"
   },
   "job": null,
   "recent_styles": [
     "documentary",
     "youtu-2"
   ],
-  "learning": {
-    "name": "upload-3",
-    "source": "tg:BAACAgQAAxkBAAIBqGrdkdmZir8WajGCHlwOjp08F6kbAAKsJwACBA7oUilj5hHvJ_lsPQQ",
-    "at": 1792905690513
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -1533,6 +1529,71 @@
         }
       },
       "metrics": {}
+    },
+    "upload-3": {
+      "name": "upload-3",
+      "source": "telegram upload",
+      "summary": "Minimalist high-contrast tech explainer featuring sleek software UI cards, wireframe schematics, and structured step-by-step workflows. Built on clean monochrome canvases punctuated by glowing red accents and precise micro-typography.",
+      "base": "motion-explainer",
+      "mode": "motion-graphics",
+      "graphic_ratio": 0.95,
+      "beat_seconds": 5.7,
+      "image_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+      "format": "vertical",
+      "music": "tech-pulse",
+      "pacing": "Methodical and analytical, structured around six-second informational beats.",
+      "writer_notes": "Authoritative and concise tech tutorial tone. Hooks with industry insider context before breaking complex workflows into numbered steps.",
+      "style_tokens": {
+        "caption": {
+          "preset": "clean",
+          "font": "Inter",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#FF3333",
+          "color": "#FFFFFF"
+        },
+        "font": "Inter",
+        "transitions": [
+          "cut",
+          "slide-up",
+          "fade"
+        ],
+        "motion": "drift",
+        "fx": {
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "gradient",
+        "grade": "contrast(1.05) brightness(1.0)",
+        "accent": "#FF3333",
+        "palette": [
+          "#0D0D0D",
+          "#F4F4F4"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {
+        "width": 576,
+        "height": 1024,
+        "fps": 30,
+        "duration_s": 91.6,
+        "aspect": "9:16",
+        "cuts": 15,
+        "cuts_per_min": 9.8,
+        "avg_shot_s": 5.72,
+        "held_frame_share": 0,
+        "brightness_0_255": 107,
+        "saturation_0_128": 12,
+        "loudness_lufs": -14.1
+      }
     }
   }
 }
