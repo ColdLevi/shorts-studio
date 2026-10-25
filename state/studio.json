@@ -1,6 +1,6 @@
 {
-  "last_update": 312538238,
-  "time": 1792905298555,
+  "last_update": 312538239,
+  "time": 1792905326089,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"How Software Companies Toll Every Click\"",
-      "t": 1792868067147
-    },
     {
       "role": "user",
       "text": "You didnt use images why?",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "Learn this style too: https://vt.tiktok.com/ZSgxhBPyX/ and then also learn how to incorporate all the style the best way to give the best results",
       "t": 1792905296364
+    },
+    {
+      "role": "user",
+      "text": "https://vt.tiktok.com/ZSgxhBPyX/",
+      "t": 1792905325098
     }
   ],
   "working": null,
