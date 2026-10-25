@@ -1,6 +1,6 @@
 {
-  "last_update": 312538239,
-  "time": 1792905326089,
+  "last_update": 312538240,
+  "time": 1792905690513,
   "stage": "idle",
   "topic": "how to money with selling API or say how companies money with selling API key it's a YouTube so it good",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "You didnt use images why?",
-      "t": 1792868507083
-    },
     {
       "role": "bot",
       "text": "Flux generates all visuals for the video while it renders in the background. The images are being created right now as part of the render step!",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "https://vt.tiktok.com/ZSgxhBPyX/",
       "t": 1792905325098
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"upload-3\"",
+      "t": 1792905690513
     }
   ],
   "working": null,
@@ -1425,9 +1425,9 @@
     "youtu-2"
   ],
   "learning": {
-    "name": "youtu-3",
-    "source": "https://youtu.be/C3-FIM2xTIw?si=4gvcXyG4Vja-c0jt",
-    "at": 1792867549281
+    "name": "upload-3",
+    "source": "tg:BAACAgQAAxkBAAIBqGrdkdmZir8WajGCHlwOjp08F6kbAAKsJwACBA7oUilj5hHvJ_lsPQQ",
+    "at": 1792905690513
   },
   "styles": {
     "youtube-1": {
