@@ -1,1365 +1,18 @@
 {
-  "last_update": 312538242,
-  "time": 1792910826171,
-  "stage": "script",
+  "last_update": 312538243,
+  "time": 1792910858764,
+  "stage": "idle",
   "topic": "how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "The Untold Origin of Digital Money",
-    "hook": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
-    "angle": "Most people view crypto as a speculative casino for day traders. Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority.",
-    "key_facts": [
-      "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
-      "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
-      "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
-      "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met."
-    ],
-    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
-    "length_seconds": 180,
-    "style": "upload-3",
-    "style_reason": "Sleek wireframes and crimson glow highlight cryptographic ledgers and smart contracts.",
-    "music": "tech-pulse",
-    "accent": "red",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "The Untold Origin of Digital Money",
-    "beats": [
-      {
-        "narration": "In October two thousand eight, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
-        "image_prompt": "Vector diagram of nine cryptographic pages glowing with red light on a dark monochrome background",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Nine Pages That Changed Finance",
-          "sub": "October 2008"
-        }
-      },
-      {
-        "narration": "Satoshi Nakamoto released the Bitcoin whitepaper without warning or prior announcement.",
-        "image_prompt": "Sleek wireframe UI card displaying a research whitepaper layout with a crimson accent border",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "Whitepaper Release",
-          "items": [
-            "Anonymous author",
-            "Public mailing list",
-            "Open source code"
-          ]
-        }
-      },
-      {
-        "narration": "Traditional banking required trusted intermediaries to process every single transaction.",
-        "image_prompt": "Monochrome architectural diagram of a centralized financial institution server hub",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Legacy Centralized System",
-          "items": [
-            {
-              "icon": "landmark",
-              "label": "Central Bank"
-            },
-            {
-              "icon": "shield",
-              "label": "Intermediary"
-            },
-            {
-              "icon": "users",
-              "label": "Account Holder"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Then mathematical proof replaced institutional trust.",
-        "image_prompt": "Complex cryptographic hash functions rendered in sharp red vector lines on black canvas",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "consensus.py",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "verify --proof-of-work"
-            },
-            {
-              "kind": "out",
-              "text": "calculating SHA-256 hash..."
-            },
-            {
-              "kind": "ok",
-              "text": "block validated successfully"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Most people view crypto as a speculative casino for day traders.",
-        "image_prompt": "Monochrome UI wireframe of a frantic trading terminal flashing red charts",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Crypto is just a speculative casino for day traders.",
-          "fact": "It is an automated peer-to-peer ledger system."
-        }
-      },
-      {
-        "narration": "Speculators chase short term price action on centralized exchanges.",
-        "image_prompt": "Abstract wireframe stock ticker graph fluctuating wildly with red highlights",
-        "tool": "graphic",
-        "graphic": {
-          "type": "line",
-          "title": "Trading Volume Volatility",
-          "prefix": "$",
-          "suffix": "",
-          "x_labels": [
-            "Jan",
-            "Dec"
-          ],
-          "series": [
-            {
-              "label": "Volume",
-              "values": [
-                12,
-                45,
-                23,
-                67,
-                34,
-                89,
-                45,
-                92,
-                56,
-                110
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Daily trading volume reaches billions of dollars while ignoring the underlying architecture.",
-        "image_prompt": "Glowing red data stream flowing through minimal wireframe server nodes",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Exchange Daily Volume",
-          "items": [
-            {
-              "value": 42.5,
-              "prefix": "$",
-              "suffix": "B",
-              "label": "Global Volume"
-            },
-            {
-              "value": 95,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Speculative Trades"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority.",
-        "image_prompt": "Distributed network diagram showing independent nodes communicating directly in glowing red",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Peer-to-Peer Transfer",
-          "steps": [
-            "User Node",
-            "Broadcast Transaction",
-            "Distributed Ledger",
-            "Peer Verification"
-          ]
-        }
-      },
-      {
-        "narration": "Central banks control fiat currency supplies and monetary policy through closed doors.",
-        "image_prompt": "Monochrome blueprint of a heavily secured vault door with a faint red glow",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Central Bank Controls",
-          "items": [
-            {
-              "icon": "coins",
-              "label": "Money Supply"
-            },
-            {
-              "icon": "lock",
-              "label": "Interest Rates"
-            },
-            {
-              "icon": "shield",
-              "label": "Policy Decrees"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
-        "image_prompt": "Vast grid of glowing red wireframe boxes representing decentralized database nodes",
-        "tool": "graphic",
-        "graphic": {
-          "type": "bars",
-          "title": "Database Architecture",
-          "prefix": "",
-          "suffix": "%",
-          "items": [
-            {
-              "label": "Central Server",
-              "value": 100
-            },
-            {
-              "label": "Distributed Nodes",
-              "value": 0
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Every single participant maintains an identical copy of the financial record.",
-        "image_prompt": "Clean wireframe graphic showing synchronized data blocks across multiple connected terminals",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Ledger Synchronization Across Nodes"
-        }
-      },
-      {
-        "narration": "No single entity can alter past transactions or freeze an account.",
-        "image_prompt": "Minimalist vector illustration of an immutable blockchain link glowing in crimson",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "immutable_ledger.rs",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "modify block #500000"
-            },
-            {
-              "kind": "err",
-              "text": "error: cryptographic hash mismatch"
-            },
-            {
-              "kind": "ok",
-              "text": "consensus rejected alteration"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Trust is shifted from human regulators to immutable software rules.",
-        "image_prompt": "Sleek wireframe UI displaying automated verification code running on a dark canvas",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Trust Shift",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Human Regulators",
-            "value": 0,
-            "sub": "Subject to error"
-          },
-          "right": {
-            "label": "Software Rules",
-            "value": 100,
-            "sub": "Cryptographically secure"
-          }
-        }
-      },
-      {
-        "narration": "The genesis block was mined on January third, two thousand nine.",
-        "image_prompt": "Wireframe calendar interface highlighting the date January third two thousand nine in bright red",
-        "tool": "graphic",
-        "graphic": {
-          "type": "timeline",
-          "title": "Bitcoin Launch Timeline",
-          "events": [
-            {
-              "date": "Oct 2008",
-              "label": "Whitepaper Published"
-            },
-            {
-              "date": "Jan 2009",
-              "label": "Genesis Block Mined"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Embedded inside that first block was a permanent message referencing bank bailouts.",
-        "Image_prompt": "Monochrome terminal window displaying raw hexadecimal block data with a highlighted red text string",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "genesis_block.hex",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "read coinbase input"
-            },
-            {
-              "kind": "out",
-              "text": "The Times 03/Jan/2009 Chancellor on brink "
-            },
-            {
-              "kind": "ok",
-              "text": "timestamp verified"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The headline came from a major UK newspaper published on the exact same day.",
-        "image_prompt": "Wireframe layout of a newspaper front page rendered in stark monochrome and red highlights",
-        "tool": "graphic",
-        "graphic": {
-          "type": "quote",
-          "text": "Chancellor on brink of second bailout for banks",
-          "by": "The Times Newspaper"
-        }
-      },
-      {
-        "narration": "Satoshi permanently anchored the cryptocurrency's birth to the failure of traditional finance.",
-        "image_prompt": "Vector diagram linking a newspaper headline block directly to the Bitcoin genesis block",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Origin Anchor",
-          "steps": [
-            "Bank Bailout",
-            "Newspaper Print",
-            "Genesis Block",
-            "New Financial Era"
-          ]
-        }
-      },
-      {
-        "narration": "That hidden note served as an eternal manifesto against centralized monetary rescue packages.",
-        "image_prompt": "Minimalist wireframe icon of a document sealed inside a cryptographic block with red glow",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Genesis Manifestos",
-          "items": [
-            {
-              "icon": "book",
-              "label": "Embedded Note"
-            },
-            {
-              "icon": "shield",
-              "label": "Permanent Record"
-            },
-            {
-              "icon": "zap",
-              "label": "Anti-Bailout"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Code soon evolved from simple currency transfers into complex financial agreements.",
-        "image_prompt": "Sleek wireframe development environment displaying expanding logic trees in bright crimson",
-        "tool": "graphic",
-        "graphic": {
-          "type": "line",
-          "title": "Evolution of Smart Contracts",
-          "prefix": "",
-          "suffix": "",
-          "x_labels": [
-            "2009",
-            "2015"
-          ],
-          "series": [
-            {
-              "label": "Complexity",
-              "values": [
-                1,
-                3,
-                5,
-                8,
-                13,
-                21,
-                34,
-                55,
-                89,
-                144
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
-        "image_prompt": "Vector flowchart depicting automated conditional logic paths in a smart contract execution",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "contract.sol",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "if condition == true"
-            },
-            {
-              "kind": "out",
-              "text": "transfer funds automatically"
-            },
-            {
-              "kind": "ok",
-              "text": "execution complete without middleman"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Escrow agents and legal paperwork become completely obsolete.",
-        "image_prompt": "Monochrome vector icon of traditional paper contracts dissolving into digital code",
-        "tool": "graphic",
-        "graphic": {
-          "type": "bars",
-          "title": "Intermediary Removal",
-          "prefix": "",
-          "suffix": "%",
-          "items": [
-            {
-              "label": "Legal Paperwork",
-              "value": 0
-            },
-            {
-              "label": "Automated Code",
-              "value": 100
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Execution speed shifts from days of manual clearing to seconds of network validation.",
-        "image_prompt": "Minimalist stopwatch wireframe graphic counting down seconds with a crimson pulse",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Settlement Speed",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Traditional Wire",
-            "value": 72,
-            "sub": "Hours of delay"
-          },
-          "right": {
-            "label": "Smart Contract",
-            "value": 1,
-            "sub": "Seconds to settle"
-          }
-        }
-      },
-      {
-        "narration": "Global trade operates continuously without weekends or banking holidays.",
-        "image_prompt": "Vector wireframe globe surrounded by continuous data exchange pathways glowing red",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 100,
-          "min": 0,
-          "max": 100,
-          "suffix": "%",
-          "label": "Network Uptime"
-        }
-      },
-      {
-        "narration": "Anyone with an internet connection can access the exact same financial infrastructure.",
-        "image_prompt": "Sleek wireframe UI showing global access nodes connecting to a central red core",
-        "tool": "graphic",
-        "graphic": {
-          "type": "pie",
-          "title": "Global Accessibility",
-          "suffix": "%",
-          "items": [
-            {
-              "label": "Connected",
-              "value": 100
-            },
-            {
-              "label": "Excluded",
-              "value": 0
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The underlying architecture remains fully transparent and verifiable by everyone.",
-        "image_prompt": "Transparent wireframe layers revealing the core cryptographic logic of a blockchain node",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Public Auditability"
-        }
-      },
-      {
-        "narration": "Billions of dollars now secure themselves through mathematics rather than corporate promises.",
-        "image_prompt": "Vast glowing red cryptographic vault grid built entirely from vector code lines",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Total Value Secured",
-          "items": [
-            {
-              "value": 1,
-              "prefix": "$",
-              "suffix": "T+",
-              "label": "Network Security"
-            },
-            {
-              "value": 0,
-              "prefix": "",
-              "suffix": "",
-              "label": "Trust Required"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Nine pages of text launched an unstoppable monetary revolution.",
-        "image_prompt": "Dramatic vector rendering of the original whitepaper pages transforming into a sprawling digital network",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Nine",
-            "Pages",
-            "Unstoppable",
-            "Revolution"
-          ]
-        }
-      },
-      {
-        "narration": "Centralized gatekeepers can no longer control the flow of global value.",
-        "image_prompt": "Monochrome firewall wireframe shattering under a surge of crimson cryptographic data",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Gatekeeper Removal",
-          "items": [
-            {
-              "icon": "shield",
-              "label": "No Firewall"
-            },
-            {
-              "icon": "zap",
-              "label": "Direct Transfer"
-            },
-            {
-              "icon": "globe",
-              "label": "Global Access"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The transition from human trust to cryptographic certainty is absolute.",
-        "image_prompt": "Sleek wireframe balance scale tipping completely toward mathematical proof in red glow",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "The Final Shift",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Human Trust",
-            "value": 0
-          },
-          "right": {
-            "label": "Math Certainty",
-            "value": 100
-          }
-        }
-      },
-      {
-        "narration": "Code is law on the decentralized frontier.",
-        "image_prompt": "Minimalist terminal screen displaying the ultimate cryptographic rule in stark red text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Code Is Law",
-          "sub": "The New Financial Reality"
-        }
-      },
-      {
-        "narration": "Mathematics never asks for permission.",
-        "image_prompt": "Final minimalist vector composition of a glowing red cryptographic key floating in absolute darkness",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Camera slowly pushes forward into the glowing red cryptographic key while code particles drift past."
-      },
-      {
-        "narration": "Most people view crypto as a speculative casino for day traders.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing stock charts",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Crypto is just a speculative casino for day traders",
-          "fact": "It is an automated peer to peer ledger system"
-        }
-      },
-      {
-        "narration": "Day trading apps flash bright red and green tickers across millions of consumer screens.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing trading screens",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Trading Volume Focus",
-          "items": [
-            {
-              "value": 99,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Retail Speculation"
-            },
-            {
-              "value": 1,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Core Protocol"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The price volatility dominates every mainstream news cycle.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing news tickers",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 90,
-          "label": "Media focus on price volatility"
-        }
-      },
-      {
-        "narration": "But price speculation hides the underlying architecture.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing hidden wireframes",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Hidden Architecture",
-          "sub": "Beyond the ticker tapes"
-        }
-      },
-      {
-        "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on a dark monochrome background with vivid crimson glows",
-        "tool": "flux",
-        " graphic": {
-          "type": "title",
-          "text": "Nine Pages That Changed Finance",
-          "sub": "October 2008"
-        }
-      },
-      {
-        "narration": "Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list to the public.",
-        "image_prompt": "Minimalist technical diagram of a cryptographic whitepaper release on a dark screen with red accent lines",
-        "tool": "graphic",
-        "graphic": {
-          "type": "quote",
-          "text": "A purely peer-to-peer electronic cash system would allow online payments to be sent directly.",
-          "by": "Satoshi Nakamoto"
-        }
-      },
-      {
-        "narration": "Many observers treat digital assets as pure speculation for day traders seeking quick fortunes.",
-        "image_prompt": "Abstract digital trading candlestick charts fading into shadows with red hazard glows",
-        "tool": "graphic",
-        "graphic": {
-          "type": "bars",
-          "title": "Market Perception",
-          "prefix": "",
-          "suffix": "%",
-          "items": [
-            {
-              "label": "Speculation",
-              "value": 90
-            },
-            {
-              "label": "Utility",
-              "value": 10
-            }
-          ]
-        }
-      },
-      {
-        "narration": "External markets view price charts as a casino game driven entirely by hype.",
-        "image_prompt": "Stylized financial ticker symbols scrolling vertically on a dark crimson wireframe grid",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Speculation",
-            "Casino",
-            "Hype",
-            "Traders"
-          ]
-        }
-      },
-      {
-        "narration": "Popular discourse reduces complex protocols to mere gambling tokens.",
-        "image_prompt": "Monochrome server rack silhouettes illuminated by a harsh crimson warning light",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Crypto is just a speculative casino.",
-          "fact": "It is an automated peer-to-peer ledger system."
-        }
-      },
-      {
-        "narration": "Financial media focuses heavily on daily price volatility instead of underlying technology.",
-        "image_prompt": "Digital stock market fluctuations rendered as jagged red wireframe vectors",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 247,
-          "prefix": "",
-          "suffix": "k",
-          "label": "Daily Trading Volume"
-        }
-      },
-      {
-        "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
-        "image_prompt": "Cinematic wide dark monochrome wireframe of a cryptography document glowing with vivid crimson accents on a black background.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Nine Pages",
-          "sub": "October 2008 cryptography release"
-        }
-      },
-      {
-        "narration": "A pseudonymous developer named Satoshi Nakamoto published the Bitcoin whitepaper without warning.",
-        "image_prompt": "Minimalist tech illustration of a glowing crimson computer terminal showing abstract code lines on a dark slate canvas.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Traditional finance relies entirely on trusted intermediaries to route every single transaction.",
-        "image_prompt": "Vector diagram of a centralized banking hub with multiple branching lines leading to a single point of failure.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Centralized Banking",
-          "steps": [
-            "User",
-            "Bank Server",
-            "Clearinghouse",
-            "Recipient"
-          ]
-        }
-      },
-      {
-        "narration": "Central banks print fiat currency at will, losing purchasing power over decades through inflation.",
-        "image_prompt": "Monochrome wireframe of a currency printing press with a fading crimson glow indicating loss of value.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Fiat currency purchasing power"
-        }
-      },
-      {
-        "narration": "Most observers assume crypto exists solely as a speculative casino for day traders.",
-        "image_prompt": "Sleek software UI wireframe showing fluctuating trading charts bathed in an intense crimson warning light.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Crypto is just a speculative casino",
-          "fact": "It is an automated ledger system"
-        }
-      },
-      {
-        "narration": "Day traders chase short term volatility on centralized exchanges.",
-        "image_prompt": "Dark vector diagram of candlestick charts with glowing red volatility indicators on a monochrome grid.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Trading Volume",
-          "items": [
-            {
-              "value": 24,
-              "prefix": "",
-              "suffix": "H",
-              "label": "Active Hours"
-            },
-            {
-              "value": 99,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Speculation"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Price action dominates headlines while the underlying ledger architecture hums quietly in the background.",
-        "image_prompt": "Cinematic wide view of a server rack wireframe glowing with steady crimson light pulses.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 2008,
-          "prefix": "",
-          "suffix": "",
-          "label": "Protocol inception year"
-        }
-      },
-      {
-        "narration": "Code replaces central authority through pure mathematical rules written into software.",
-        "image_prompt": "Minimalist wireframe schematic showing software algorithms interlocking like gears with crimson highlights.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Code Over Authority",
-          "sub": "Mathematical trust"
-        }
-      },
-      {
-        "narration": "Public blockchains discard centralized databases in favor of distributed consensus.",
-        "image_prompt": "Vector network diagram showing interconnected nodes forming a resilient mesh structure on a dark background.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Network Architecture",
-          "items": [
-            {
-              "icon": "globe",
-              "label": "Distributed"
-            },
-            {
-              "icon": "shield",
-              "label": "Secure"
-            },
-            {
-              "icon": "database",
-              "label": "Immutable"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Thousands of independent nodes verify every state change without knowing or trusting each other.",
-        "image_prompt": "Monochrome UI wireframe of a node synchronization panel with pulsing crimson verification checks.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Consensus Model",
-          "items": [
-            {
-              "value": 1000,
-              "prefix": "",
-              "suffix": "+",
-              "label": "Independent Nodes"
-            },
-            {
-              "value": 0,
-              "prefix": "",
-              "suffix": "",
-              "label": "Trusted Parties"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Double spending becomes impossible when transaction history is chained cryptographically.",
-        "image_prompt": "Vector diagram of linked blocks in a chain glowing bright crimson to show cryptographic security.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Cryptographic Chain",
-          "steps": [
-            "Block N-1",
-            "Hash Pointer",
-            "Block N",
-            "Verification"
-          ]
-        }
-      },
-      {
-        "narration": "No single entity can alter past records once written to the distributed ledger.",
-        "image_prompt": "Sleek monochrome software interface showing a locked ledger entry highlighted in crimson.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Ledger immutability rate"
-        }
-      },
-      {
-        "narration": "Miners secure the network by expending computational power to solve complex cryptographic puzzles.",
-        "image_prompt": "Wireframe illustration of microchips performing hash calculations with glowing red circuit traces.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 99,
-          "min": 0,
-          "max": 100,
-          "suffix": "%",
-          "label": "Hashrate security"
-        }
-      },
-      {
-        "narration": "Energy expenditure ties digital scarcity to the physical laws of thermodynamics.",
-        "image_prompt": "Minimalist tech graphic showing power input converting into digital blocks with a crimson glow.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Thermodynamic Security",
-          "items": [
-            {
-              "icon": "zap",
-              "label": "Energy"
-            },
-            {
-              "icon": "shield",
-              "label": "Scarcity"
-            },
-            {
-              "icon": "lock",
-              "label": "Proof"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "On January third 2009, the genesis block was mined with a permanent message embedded inside.",
-        "image_prompt": "Cinematic monochrome wireframe of a single glowing genesis block on a stark dark canvas.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "January 3 2009",
-          "sub": "Genesis block mined"
-        }
-      },
-      {
-        "narration": "Satoshi embedded a newspaper headline referencing bank bailouts directly into the coinbase parameter.",
-        "Image_prompt": "Vector UI wireframe displaying newspaper text parsing into raw hex code with crimson highlights.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "quote",
-          "text": "Chancellor on brink of second bailout for banks",
-          "by": "Genesis block embedded text"
-        }
-      },
-      {
-        "narration": "That single headline sealed the purpose of the entire peer to peer experiment.",
-        "image_prompt": "Monochrome software schematic zooming into the exact byte sequence of the genesis message.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "block_zero.hex",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "parse coinbase scriptSig"
-            },
-            {
-              "kind": "out",
-              "text": "The Times 03/Jan/2009"
-            },
-            {
-              "kind": "warn",
-              "text": "bailout reference detected"
-            },
-            {
-              "kind": "ok",
-              "text": "block verified"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Traditional banking required physical branches, paper ledgers, and trusted human clerks.",
-        "Image_prompt": "Retro vector diagram of a traditional bank teller counter with monochrome wireframe architecture.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "Legacy Banking",
-          "items": [
-            "Physical branches",
-            "Paper ledgers",
-            "Human clerks",
-            "Delayed settlement"
-          ]
-        }
-      },
-      {
-        "narration": "Digital networks eliminated geography entirely, settling value transfers across continents in minutes.",
-        "image_prompt": "Global wireframe map with glowing crimson connection arcs pulsing between nodes across oceans.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "map",
-          "title": "Global Settlement",
-          "countries": [
-            "United States of America",
-            "United Kingdom",
-            "China",
-            "Nigeria"
-          ],
-          "label": "Borderless peer-to-peer network"
-        }
-      },
-      {
-        "narration": "Blockchains operate twenty four hours a day without maintenance windows or holiday closures.",
-        "Image_prompt": "Sleek monochrome dashboard UI showing a continuous uptime graph with a steady crimson glow.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Network Uptime",
-          "items": [
-            {
-              "value": 24,
-              "prefix": "",
-              "suffix": "H",
-              "label": "Daily Operation"
-            },
-            {
-              "value": 365,
-              "prefix": "",
-              "suffix": "D",
-              "label": "Continuous Blocks"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Programmable smart contracts execute financial agreements automatically when pre-coded conditions are met.",
-        "Image_prompt": "Vector diagram of a smart contract flow chart executing digital triggers with a bright crimson pulse.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Smart Contracts",
-          "steps": [
-            "Condition Met",
-            "Code Execution",
-            "Asset Transfer",
-            "Immutable Log"
-          ]
-        }
-      },
-      {
-        "narration": "Escrow agents and legal paperwork become obsolete when code enforces the rules directly.",
-        "Image_prompt": "Minimalist icon grid comparing legal contract documents to automated software functions.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Contract Execution",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Legal Escrow",
-            "value": 3,
-            "sub": "Days to settle"
-          },
-          "right": {
-            "label": "Smart Contract",
-            "value": 15,
-            "sub": "Seconds to settle"
-          }
-        }
-      },
-      {
-        "narration": "Developers write logic that handles collateral, interest rates, and liquidation without intermediaries.",
-        "Image_prompt": "Sleek code editor wireframe showing smart contract functions on a dark background with crimson syntax highlighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "contract.sol",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "function executeCollateral()"
-            },
-            {
-              "kind": "dim",
-              "text": "checking loan-to-value ratio"
-            },
-            {
-              "kind": "warn",
-              "text": "threshold exceeded"
-            },
-            {
-              "kind": "ok",
-              "text": "liquidation triggered"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Billions of dollars in decentralized finance run autonomously on these transparent software rails.",
-        "Image_prompt": "Dark cinematic wireframe of financial liquidity pools pulsing with interconnected crimson data streams.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "DeFi Ecosystem",
-          "items": [
-            {
-              "value": 100,
-              "prefix": "$",
-              "suffix": "B+",
-              "label": "Total Value Secured"
-            },
-            {
-              "value": 0,
-              "prefix": "",
-              "suffix": "",
-              "label": "Human Administrators"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The underlying architecture remains entirely open source and auditable by anyone on earth.",
-        "Image_prompt": "Minimalist wireframe of an open repository structure with glowing crimson contributor lines.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Open source transparency"
-        }
-      },
-      {
-        "narration": "Satoshi Nakamoto disappeared from public view after launching the protocol, leaving no leader behind.",
-        "Image_prompt": "Cinematic wireframe silhouette of an anonymous figure dissolving into digital data points on a dark canvas.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Founder Departs",
-          "sub": "Decentralized forever"
-        }
-      },
-      {
-        "narration": "Without a founder or corporate headquarters, the network continues to run through sheer consensus.",
-        "Image_prompt": "Wide vector network map glowing steadily with crimson pulses across thousands of independent servers.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Leaderless Network",
-          "items": [
-            {
-              "icon": "users",
-              "label": "Community"
-            },
-            {
-              "icon": "shield",
-              "label": "Protocol"
-            },
-            {
-              "icon": "globe",
-              "label": "Consensus"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Nine pages of cryptography birthed an unstoppable global settlement layer.",
-        "Image_prompt": "Cinematic wireframe of the original whitepaper pages transforming into a glowing crimson blockchain.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Nine",
-            "Pages",
-            "Unstoppable",
-            "Ledger"
-          ]
-        }
-      },
-      {
-        "narration": "Financial sovereignty is now a matter of running software rather than trusting institutions.",
-        "Image_prompt": "Sleek terminal interface displaying node status with a vibrant crimson completion checkmark.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "node.status",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "bitcoind -daemon"
-            },
-            {
-              "kind": "out",
-              "text": "loading block index"
-            },
-            {
-              "kind": "ok",
-              "text": "synced to tip"
-            },
-            {
-              "kind": "ok",
-              "text": "sovereignty verified"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Code executes the rules while mathematics guarantees the supply.",
-        "Image_prompt": "Minimalist mathematical equation wireframe glowing with bright crimson accents on a pure black background.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Math Guarantees Supply",
-          "sub": "Fixed 21 million limit"
-        }
-      },
-      {
-        "narration": "The experiment initiated in two thousand eight rewritten monetary history from the ground up.",
-        "Image_prompt": "Final cinematic wide shot of a glowing crimson blockchain network expanding into the dark horizon.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 21000000,
-          "prefix": "",
-          "suffix": "",
-          "label": "Maximum possible supply"
-        }
-      },
-      {
-        "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showcasing smart contract code execution",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Contracts need human lawyers",
-          "fact": "Code executes transactions automatically"
-        }
-      },
-      {
-        "narration": "Traditional agreements rely on middlemen to verify every single transfer.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating centralized middleman servers",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Traditional Middlemen",
-          "items": [
-            {
-              "icon": "shield",
-              "label": "Bank verify"
-            },
-            {
-              "icon": "landmark",
-              "label": "Clearance"
-            },
-            {
-              "icon": "clock",
-              "label": "Delay"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Distributed execution removes intermediaries completely from the financial equation.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing direct peer to peer node connections",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Direct Execution",
-          "steps": [
-            "Code written",
-            "Trigger met",
-            "Instant settled"
-          ]
-        }
-      },
-      {
-        "narration": "Autonomous code replaces human trust with permanent cryptographic certainty.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting secure cryptographic keys",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Code replaces huma"
-          ]
-        }
-      }
-    ],
-    "chapters": [
-      {
-        "title": "The Casino Illusion",
-        "beat": 31
-      },
-      {
-        "title": "Code Replaces Central Banks",
-        "beat": 35
-      },
-      {
-        "title": "Mining The Genesis Block",
-        "beat": 41
-      },
-      {
-        "title": "Automating Global Agreements",
-        "beat": 72
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
-        "supported": true
-      },
-      {
-        "claim": "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
-        "supported": true
-      },
-      {
-        "claim": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
-        "supported": true
-      },
-      {
-        "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
-        "supported": true
-      },
-      {
-        "claim": "Most people view crypto as a speculative casino for day traders.",
-        "supported": true
-      },
-      {
-        "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
-        "supported": true
-      },
-      {
-        "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
-        "supported": true
-      },
-      {
-        "claim": "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
-        "supported": true
-      },
-      {
-        "claim": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
-        "supported": true
-      },
-      {
-        "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
-        "supported": true
-      },
-      {
-        "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
-        "supported": true
-      }
-    ]
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Applying edit to \"How Software Companies Toll Every Click\": Removed title box",
-      "t": 1792870189798
-    },
     {
       "role": "user",
       "text": "Just don't apply it I don't like it and the animation effect of the whole video isn't fluid like nice smooth motion entry and exit",
@@ -1434,10 +87,1370 @@
       "role": "bot",
       "text": "Wrote the script for \"The Untold Origin of Digital Money\"",
       "t": 1792910826171
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"The Untold Origin of Digital Money\"",
+      "t": 1792910858764
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "the-untold-origin-of-digital-money-mvngu0ax",
+      "canvas": "16:9",
+      "title": "The Untold Origin of Digital Money",
+      "topic": "how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned",
+      "pitch": {
+        "title": "The Untold Origin of Digital Money",
+        "hook": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+        "angle": "Most people view crypto as a speculative casino for day traders. Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority.",
+        "key_facts": [
+          "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
+          "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
+          "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
+          "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met."
+        ],
+        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+        "length_seconds": 180,
+        "style": "upload-3",
+        "style_reason": "Sleek wireframes and crimson glow highlight cryptographic ledgers and smart contracts.",
+        "music": "tech-pulse",
+        "accent": "red",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "The Untold Origin of Digital Money",
+        "beats": [
+          {
+            "narration": "In October two thousand eight, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+            "image_prompt": "Vector diagram of nine cryptographic pages glowing with red light on a dark monochrome background",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Nine Pages That Changed Finance",
+              "sub": "October 2008"
+            }
+          },
+          {
+            "narration": "Satoshi Nakamoto released the Bitcoin whitepaper without warning or prior announcement.",
+            "image_prompt": "Sleek wireframe UI card displaying a research whitepaper layout with a crimson accent border",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "Whitepaper Release",
+              "items": [
+                "Anonymous author",
+                "Public mailing list",
+                "Open source code"
+              ]
+            }
+          },
+          {
+            "narration": "Traditional banking required trusted intermediaries to process every single transaction.",
+            "image_prompt": "Monochrome architectural diagram of a centralized financial institution server hub",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Legacy Centralized System",
+              "items": [
+                {
+                  "icon": "landmark",
+                  "label": "Central Bank"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Intermediary"
+                },
+                {
+                  "icon": "users",
+                  "label": "Account Holder"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Then mathematical proof replaced institutional trust.",
+            "image_prompt": "Complex cryptographic hash functions rendered in sharp red vector lines on black canvas",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "consensus.py",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "verify --proof-of-work"
+                },
+                {
+                  "kind": "out",
+                  "text": "calculating SHA-256 hash..."
+                },
+                {
+                  "kind": "ok",
+                  "text": "block validated successfully"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Most people view crypto as a speculative casino for day traders.",
+            "image_prompt": "Monochrome UI wireframe of a frantic trading terminal flashing red charts",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Crypto is just a speculative casino for day traders.",
+              "fact": "It is an automated peer-to-peer ledger system."
+            }
+          },
+          {
+            "narration": "Speculators chase short term price action on centralized exchanges.",
+            "image_prompt": "Abstract wireframe stock ticker graph fluctuating wildly with red highlights",
+            "tool": "graphic",
+            "graphic": {
+              "type": "line",
+              "title": "Trading Volume Volatility",
+              "prefix": "$",
+              "suffix": "",
+              "x_labels": [
+                "Jan",
+                "Dec"
+              ],
+              "series": [
+                {
+                  "label": "Volume",
+                  "values": [
+                    12,
+                    45,
+                    23,
+                    67,
+                    34,
+                    89,
+                    45,
+                    92,
+                    56,
+                    110
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Daily trading volume reaches billions of dollars while ignoring the underlying architecture.",
+            "image_prompt": "Glowing red data stream flowing through minimal wireframe server nodes",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Exchange Daily Volume",
+              "items": [
+                {
+                  "value": 42.5,
+                  "prefix": "$",
+                  "suffix": "B",
+                  "label": "Global Volume"
+                },
+                {
+                  "value": 95,
+                  "prefix": "",
+                  "suffix": "%",
+                  "label": "Speculative Trades"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority.",
+            "image_prompt": "Distributed network diagram showing independent nodes communicating directly in glowing red",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Peer-to-Peer Transfer",
+              "steps": [
+                "User Node",
+                "Broadcast Transaction",
+                "Distributed Ledger",
+                "Peer Verification"
+              ]
+            }
+          },
+          {
+            "narration": "Central banks control fiat currency supplies and monetary policy through closed doors.",
+            "image_prompt": "Monochrome blueprint of a heavily secured vault door with a faint red glow",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Central Bank Controls",
+              "items": [
+                {
+                  "icon": "coins",
+                  "label": "Money Supply"
+                },
+                {
+                  "icon": "lock",
+                  "label": "Interest Rates"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Policy Decrees"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
+            "image_prompt": "Vast grid of glowing red wireframe boxes representing decentralized database nodes",
+            "tool": "graphic",
+            "graphic": {
+              "type": "bars",
+              "title": "Database Architecture",
+              "prefix": "",
+              "suffix": "%",
+              "items": [
+                {
+                  "label": "Central Server",
+                  "value": 100
+                },
+                {
+                  "label": "Distributed Nodes",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Every single participant maintains an identical copy of the financial record.",
+            "image_prompt": "Clean wireframe graphic showing synchronized data blocks across multiple connected terminals",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Ledger Synchronization Across Nodes"
+            }
+          },
+          {
+            "narration": "No single entity can alter past transactions or freeze an account.",
+            "image_prompt": "Minimalist vector illustration of an immutable blockchain link glowing in crimson",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "immutable_ledger.rs",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "modify block #500000"
+                },
+                {
+                  "kind": "err",
+                  "text": "error: cryptographic hash mismatch"
+                },
+                {
+                  "kind": "ok",
+                  "text": "consensus rejected alteration"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Trust is shifted from human regulators to immutable software rules.",
+            "image_prompt": "Sleek wireframe UI displaying automated verification code running on a dark canvas",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Trust Shift",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Human Regulators",
+                "value": 0,
+                "sub": "Subject to error"
+              },
+              "right": {
+                "label": "Software Rules",
+                "value": 100,
+                "sub": "Cryptographically secure"
+              }
+            }
+          },
+          {
+            "narration": "The genesis block was mined on January third, two thousand nine.",
+            "image_prompt": "Wireframe calendar interface highlighting the date January third two thousand nine in bright red",
+            "tool": "graphic",
+            "graphic": {
+              "type": "timeline",
+              "title": "Bitcoin Launch Timeline",
+              "events": [
+                {
+                  "date": "Oct 2008",
+                  "label": "Whitepaper Published"
+                },
+                {
+                  "date": "Jan 2009",
+                  "label": "Genesis Block Mined"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Embedded inside that first block was a permanent message referencing bank bailouts.",
+            "Image_prompt": "Monochrome terminal window displaying raw hexadecimal block data with a highlighted red text string",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "genesis_block.hex",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "read coinbase input"
+                },
+                {
+                  "kind": "out",
+                  "text": "The Times 03/Jan/2009 Chancellor on brink "
+                },
+                {
+                  "kind": "ok",
+                  "text": "timestamp verified"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The headline came from a major UK newspaper published on the exact same day.",
+            "image_prompt": "Wireframe layout of a newspaper front page rendered in stark monochrome and red highlights",
+            "tool": "graphic",
+            "graphic": {
+              "type": "quote",
+              "text": "Chancellor on brink of second bailout for banks",
+              "by": "The Times Newspaper"
+            }
+          },
+          {
+            "narration": "Satoshi permanently anchored the cryptocurrency's birth to the failure of traditional finance.",
+            "image_prompt": "Vector diagram linking a newspaper headline block directly to the Bitcoin genesis block",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Origin Anchor",
+              "steps": [
+                "Bank Bailout",
+                "Newspaper Print",
+                "Genesis Block",
+                "New Financial Era"
+              ]
+            }
+          },
+          {
+            "narration": "That hidden note served as an eternal manifesto against centralized monetary rescue packages.",
+            "image_prompt": "Minimalist wireframe icon of a document sealed inside a cryptographic block with red glow",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Genesis Manifestos",
+              "items": [
+                {
+                  "icon": "book",
+                  "label": "Embedded Note"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Permanent Record"
+                },
+                {
+                  "icon": "zap",
+                  "label": "Anti-Bailout"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Code soon evolved from simple currency transfers into complex financial agreements.",
+            "image_prompt": "Sleek wireframe development environment displaying expanding logic trees in bright crimson",
+            "tool": "graphic",
+            "graphic": {
+              "type": "line",
+              "title": "Evolution of Smart Contracts",
+              "prefix": "",
+              "suffix": "",
+              "x_labels": [
+                "2009",
+                "2015"
+              ],
+              "series": [
+                {
+                  "label": "Complexity",
+                  "values": [
+                    1,
+                    3,
+                    5,
+                    8,
+                    13,
+                    21,
+                    34,
+                    55,
+                    89,
+                    144
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+            "image_prompt": "Vector flowchart depicting automated conditional logic paths in a smart contract execution",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "contract.sol",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "if condition == true"
+                },
+                {
+                  "kind": "out",
+                  "text": "transfer funds automatically"
+                },
+                {
+                  "kind": "ok",
+                  "text": "execution complete without middleman"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Escrow agents and legal paperwork become completely obsolete.",
+            "image_prompt": "Monochrome vector icon of traditional paper contracts dissolving into digital code",
+            "tool": "graphic",
+            "graphic": {
+              "type": "bars",
+              "title": "Intermediary Removal",
+              "prefix": "",
+              "suffix": "%",
+              "items": [
+                {
+                  "label": "Legal Paperwork",
+                  "value": 0
+                },
+                {
+                  "label": "Automated Code",
+                  "value": 100
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Execution speed shifts from days of manual clearing to seconds of network validation.",
+            "image_prompt": "Minimalist stopwatch wireframe graphic counting down seconds with a crimson pulse",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Settlement Speed",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Traditional Wire",
+                "value": 72,
+                "sub": "Hours of delay"
+              },
+              "right": {
+                "label": "Smart Contract",
+                "value": 1,
+                "sub": "Seconds to settle"
+              }
+            }
+          },
+          {
+            "narration": "Global trade operates continuously without weekends or banking holidays.",
+            "image_prompt": "Vector wireframe globe surrounded by continuous data exchange pathways glowing red",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 100,
+              "min": 0,
+              "max": 100,
+              "suffix": "%",
+              "label": "Network Uptime"
+            }
+          },
+          {
+            "narration": "Anyone with an internet connection can access the exact same financial infrastructure.",
+            "image_prompt": "Sleek wireframe UI showing global access nodes connecting to a central red core",
+            "tool": "graphic",
+            "graphic": {
+              "type": "pie",
+              "title": "Global Accessibility",
+              "suffix": "%",
+              "items": [
+                {
+                  "label": "Connected",
+                  "value": 100
+                },
+                {
+                  "label": "Excluded",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The underlying architecture remains fully transparent and verifiable by everyone.",
+            "image_prompt": "Transparent wireframe layers revealing the core cryptographic logic of a blockchain node",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Public Auditability"
+            }
+          },
+          {
+            "narration": "Billions of dollars now secure themselves through mathematics rather than corporate promises.",
+            "image_prompt": "Vast glowing red cryptographic vault grid built entirely from vector code lines",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Total Value Secured",
+              "items": [
+                {
+                  "value": 1,
+                  "prefix": "$",
+                  "suffix": "T+",
+                  "label": "Network Security"
+                },
+                {
+                  "value": 0,
+                  "prefix": "",
+                  "suffix": "",
+                  "label": "Trust Required"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Nine pages of text launched an unstoppable monetary revolution.",
+            "image_prompt": "Dramatic vector rendering of the original whitepaper pages transforming into a sprawling digital network",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Nine",
+                "Pages",
+                "Unstoppable",
+                "Revolution"
+              ]
+            }
+          },
+          {
+            "narration": "Centralized gatekeepers can no longer control the flow of global value.",
+            "image_prompt": "Monochrome firewall wireframe shattering under a surge of crimson cryptographic data",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Gatekeeper Removal",
+              "items": [
+                {
+                  "icon": "shield",
+                  "label": "No Firewall"
+                },
+                {
+                  "icon": "zap",
+                  "label": "Direct Transfer"
+                },
+                {
+                  "icon": "globe",
+                  "label": "Global Access"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The transition from human trust to cryptographic certainty is absolute.",
+            "image_prompt": "Sleek wireframe balance scale tipping completely toward mathematical proof in red glow",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "The Final Shift",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Human Trust",
+                "value": 0
+              },
+              "right": {
+                "label": "Math Certainty",
+                "value": 100
+              }
+            }
+          },
+          {
+            "narration": "Code is law on the decentralized frontier.",
+            "image_prompt": "Minimalist terminal screen displaying the ultimate cryptographic rule in stark red text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Code Is Law",
+              "sub": "The New Financial Reality"
+            }
+          },
+          {
+            "narration": "Mathematics never asks for permission.",
+            "image_prompt": "Final minimalist vector composition of a glowing red cryptographic key floating in absolute darkness",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Camera slowly pushes forward into the glowing red cryptographic key while code particles drift past."
+          },
+          {
+            "narration": "Most people view crypto as a speculative casino for day traders.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing stock charts",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Crypto is just a speculative casino for day traders",
+              "fact": "It is an automated peer to peer ledger system"
+            }
+          },
+          {
+            "narration": "Day trading apps flash bright red and green tickers across millions of consumer screens.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing trading screens",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Trading Volume Focus",
+              "items": [
+                {
+                  "value": 99,
+                  "prefix": "",
+                  "suffix": "%",
+                  "label": "Retail Speculation"
+                },
+                {
+                  "value": 1,
+                  "prefix": "",
+                  "suffix": "%",
+                  "label": "Core Protocol"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The price volatility dominates every mainstream news cycle.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing news tickers",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 90,
+              "label": "Media focus on price volatility"
+            }
+          },
+          {
+            "narration": "But price speculation hides the underlying architecture.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing hidden wireframes",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Hidden Architecture",
+              "sub": "Beyond the ticker tapes"
+            }
+          },
+          {
+            "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on a dark monochrome background with vivid crimson glows",
+            "tool": "flux",
+            " graphic": {
+              "type": "title",
+              "text": "Nine Pages That Changed Finance",
+              "sub": "October 2008"
+            }
+          },
+          {
+            "narration": "Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list to the public.",
+            "image_prompt": "Minimalist technical diagram of a cryptographic whitepaper release on a dark screen with red accent lines",
+            "tool": "graphic",
+            "graphic": {
+              "type": "quote",
+              "text": "A purely peer-to-peer electronic cash system would allow online payments to be sent directly.",
+              "by": "Satoshi Nakamoto"
+            }
+          },
+          {
+            "narration": "Many observers treat digital assets as pure speculation for day traders seeking quick fortunes.",
+            "image_prompt": "Abstract digital trading candlestick charts fading into shadows with red hazard glows",
+            "tool": "graphic",
+            "graphic": {
+              "type": "bars",
+              "title": "Market Perception",
+              "prefix": "",
+              "suffix": "%",
+              "items": [
+                {
+                  "label": "Speculation",
+                  "value": 90
+                },
+                {
+                  "label": "Utility",
+                  "value": 10
+                }
+              ]
+            }
+          },
+          {
+            "narration": "External markets view price charts as a casino game driven entirely by hype.",
+            "image_prompt": "Stylized financial ticker symbols scrolling vertically on a dark crimson wireframe grid",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Speculation",
+                "Casino",
+                "Hype",
+                "Traders"
+              ]
+            }
+          },
+          {
+            "narration": "Popular discourse reduces complex protocols to mere gambling tokens.",
+            "image_prompt": "Monochrome server rack silhouettes illuminated by a harsh crimson warning light",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Crypto is just a speculative casino.",
+              "fact": "It is an automated peer-to-peer ledger system."
+            }
+          },
+          {
+            "narration": "Financial media focuses heavily on daily price volatility instead of underlying technology.",
+            "image_prompt": "Digital stock market fluctuations rendered as jagged red wireframe vectors",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 247,
+              "prefix": "",
+              "suffix": "k",
+              "label": "Daily Trading Volume"
+            }
+          },
+          {
+            "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+            "image_prompt": "Cinematic wide dark monochrome wireframe of a cryptography document glowing with vivid crimson accents on a black background.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Nine Pages",
+              "sub": "October 2008 cryptography release"
+            }
+          },
+          {
+            "narration": "A pseudonymous developer named Satoshi Nakamoto published the Bitcoin whitepaper without warning.",
+            "image_prompt": "Minimalist tech illustration of a glowing crimson computer terminal showing abstract code lines on a dark slate canvas.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Traditional finance relies entirely on trusted intermediaries to route every single transaction.",
+            "image_prompt": "Vector diagram of a centralized banking hub with multiple branching lines leading to a single point of failure.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Centralized Banking",
+              "steps": [
+                "User",
+                "Bank Server",
+                "Clearinghouse",
+                "Recipient"
+              ]
+            }
+          },
+          {
+            "narration": "Central banks print fiat currency at will, losing purchasing power over decades through inflation.",
+            "image_prompt": "Monochrome wireframe of a currency printing press with a fading crimson glow indicating loss of value.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Fiat currency purchasing power"
+            }
+          },
+          {
+            "narration": "Most observers assume crypto exists solely as a speculative casino for day traders.",
+            "image_prompt": "Sleek software UI wireframe showing fluctuating trading charts bathed in an intense crimson warning light.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Crypto is just a speculative casino",
+              "fact": "It is an automated ledger system"
+            }
+          },
+          {
+            "narration": "Day traders chase short term volatility on centralized exchanges.",
+            "image_prompt": "Dark vector diagram of candlestick charts with glowing red volatility indicators on a monochrome grid.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Trading Volume",
+              "items": [
+                {
+                  "value": 24,
+                  "prefix": "",
+                  "suffix": "H",
+                  "label": "Active Hours"
+                },
+                {
+                  "value": 99,
+                  "prefix": "",
+                  "suffix": "%",
+                  "label": "Speculation"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Price action dominates headlines while the underlying ledger architecture hums quietly in the background.",
+            "image_prompt": "Cinematic wide view of a server rack wireframe glowing with steady crimson light pulses.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 2008,
+              "prefix": "",
+              "suffix": "",
+              "label": "Protocol inception year"
+            }
+          },
+          {
+            "narration": "Code replaces central authority through pure mathematical rules written into software.",
+            "image_prompt": "Minimalist wireframe schematic showing software algorithms interlocking like gears with crimson highlights.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Code Over Authority",
+              "sub": "Mathematical trust"
+            }
+          },
+          {
+            "narration": "Public blockchains discard centralized databases in favor of distributed consensus.",
+            "image_prompt": "Vector network diagram showing interconnected nodes forming a resilient mesh structure on a dark background.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Network Architecture",
+              "items": [
+                {
+                  "icon": "globe",
+                  "label": "Distributed"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Secure"
+                },
+                {
+                  "icon": "database",
+                  "label": "Immutable"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Thousands of independent nodes verify every state change without knowing or trusting each other.",
+            "image_prompt": "Monochrome UI wireframe of a node synchronization panel with pulsing crimson verification checks.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Consensus Model",
+              "items": [
+                {
+                  "value": 1000,
+                  "prefix": "",
+                  "suffix": "+",
+                  "label": "Independent Nodes"
+                },
+                {
+                  "value": 0,
+                  "prefix": "",
+                  "suffix": "",
+                  "label": "Trusted Parties"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Double spending becomes impossible when transaction history is chained cryptographically.",
+            "image_prompt": "Vector diagram of linked blocks in a chain glowing bright crimson to show cryptographic security.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Cryptographic Chain",
+              "steps": [
+                "Block N-1",
+                "Hash Pointer",
+                "Block N",
+                "Verification"
+              ]
+            }
+          },
+          {
+            "narration": "No single entity can alter past records once written to the distributed ledger.",
+            "image_prompt": "Sleek monochrome software interface showing a locked ledger entry highlighted in crimson.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Ledger immutability rate"
+            }
+          },
+          {
+            "narration": "Miners secure the network by expending computational power to solve complex cryptographic puzzles.",
+            "image_prompt": "Wireframe illustration of microchips performing hash calculations with glowing red circuit traces.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 99,
+              "min": 0,
+              "max": 100,
+              "suffix": "%",
+              "label": "Hashrate security"
+            }
+          },
+          {
+            "narration": "Energy expenditure ties digital scarcity to the physical laws of thermodynamics.",
+            "image_prompt": "Minimalist tech graphic showing power input converting into digital blocks with a crimson glow.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Thermodynamic Security",
+              "items": [
+                {
+                  "icon": "zap",
+                  "label": "Energy"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Scarcity"
+                },
+                {
+                  "icon": "lock",
+                  "label": "Proof"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "On January third 2009, the genesis block was mined with a permanent message embedded inside.",
+            "image_prompt": "Cinematic monochrome wireframe of a single glowing genesis block on a stark dark canvas.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "January 3 2009",
+              "sub": "Genesis block mined"
+            }
+          },
+          {
+            "narration": "Satoshi embedded a newspaper headline referencing bank bailouts directly into the coinbase parameter.",
+            "Image_prompt": "Vector UI wireframe displaying newspaper text parsing into raw hex code with crimson highlights.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "quote",
+              "text": "Chancellor on brink of second bailout for banks",
+              "by": "Genesis block embedded text"
+            }
+          },
+          {
+            "narration": "That single headline sealed the purpose of the entire peer to peer experiment.",
+            "image_prompt": "Monochrome software schematic zooming into the exact byte sequence of the genesis message.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "block_zero.hex",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "parse coinbase scriptSig"
+                },
+                {
+                  "kind": "out",
+                  "text": "The Times 03/Jan/2009"
+                },
+                {
+                  "kind": "warn",
+                  "text": "bailout reference detected"
+                },
+                {
+                  "kind": "ok",
+                  "text": "block verified"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Traditional banking required physical branches, paper ledgers, and trusted human clerks.",
+            "Image_prompt": "Retro vector diagram of a traditional bank teller counter with monochrome wireframe architecture.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "Legacy Banking",
+              "items": [
+                "Physical branches",
+                "Paper ledgers",
+                "Human clerks",
+                "Delayed settlement"
+              ]
+            }
+          },
+          {
+            "narration": "Digital networks eliminated geography entirely, settling value transfers across continents in minutes.",
+            "image_prompt": "Global wireframe map with glowing crimson connection arcs pulsing between nodes across oceans.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "map",
+              "title": "Global Settlement",
+              "countries": [
+                "United States of America",
+                "United Kingdom",
+                "China",
+                "Nigeria"
+              ],
+              "label": "Borderless peer-to-peer network"
+            }
+          },
+          {
+            "narration": "Blockchains operate twenty four hours a day without maintenance windows or holiday closures.",
+            "Image_prompt": "Sleek monochrome dashboard UI showing a continuous uptime graph with a steady crimson glow.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Network Uptime",
+              "items": [
+                {
+                  "value": 24,
+                  "prefix": "",
+                  "suffix": "H",
+                  "label": "Daily Operation"
+                },
+                {
+                  "value": 365,
+                  "prefix": "",
+                  "suffix": "D",
+                  "label": "Continuous Blocks"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Programmable smart contracts execute financial agreements automatically when pre-coded conditions are met.",
+            "Image_prompt": "Vector diagram of a smart contract flow chart executing digital triggers with a bright crimson pulse.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Smart Contracts",
+              "steps": [
+                "Condition Met",
+                "Code Execution",
+                "Asset Transfer",
+                "Immutable Log"
+              ]
+            }
+          },
+          {
+            "narration": "Escrow agents and legal paperwork become obsolete when code enforces the rules directly.",
+            "Image_prompt": "Minimalist icon grid comparing legal contract documents to automated software functions.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Contract Execution",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Legal Escrow",
+                "value": 3,
+                "sub": "Days to settle"
+              },
+              "right": {
+                "label": "Smart Contract",
+                "value": 15,
+                "sub": "Seconds to settle"
+              }
+            }
+          },
+          {
+            "narration": "Developers write logic that handles collateral, interest rates, and liquidation without intermediaries.",
+            "Image_prompt": "Sleek code editor wireframe showing smart contract functions on a dark background with crimson syntax highlighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "contract.sol",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "function executeCollateral()"
+                },
+                {
+                  "kind": "dim",
+                  "text": "checking loan-to-value ratio"
+                },
+                {
+                  "kind": "warn",
+                  "text": "threshold exceeded"
+                },
+                {
+                  "kind": "ok",
+                  "text": "liquidation triggered"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Billions of dollars in decentralized finance run autonomously on these transparent software rails.",
+            "Image_prompt": "Dark cinematic wireframe of financial liquidity pools pulsing with interconnected crimson data streams.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "DeFi Ecosystem",
+              "items": [
+                {
+                  "value": 100,
+                  "prefix": "$",
+                  "suffix": "B+",
+                  "label": "Total Value Secured"
+                },
+                {
+                  "value": 0,
+                  "prefix": "",
+                  "suffix": "",
+                  "label": "Human Administrators"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The underlying architecture remains entirely open source and auditable by anyone on earth.",
+            "Image_prompt": "Minimalist wireframe of an open repository structure with glowing crimson contributor lines.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Open source transparency"
+            }
+          },
+          {
+            "narration": "Satoshi Nakamoto disappeared from public view after launching the protocol, leaving no leader behind.",
+            "Image_prompt": "Cinematic wireframe silhouette of an anonymous figure dissolving into digital data points on a dark canvas.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Founder Departs",
+              "sub": "Decentralized forever"
+            }
+          },
+          {
+            "narration": "Without a founder or corporate headquarters, the network continues to run through sheer consensus.",
+            "Image_prompt": "Wide vector network map glowing steadily with crimson pulses across thousands of independent servers.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Leaderless Network",
+              "items": [
+                {
+                  "icon": "users",
+                  "label": "Community"
+                },
+                {
+                  "icon": "shield",
+                  "label": "Protocol"
+                },
+                {
+                  "icon": "globe",
+                  "label": "Consensus"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Nine pages of cryptography birthed an unstoppable global settlement layer.",
+            "Image_prompt": "Cinematic wireframe of the original whitepaper pages transforming into a glowing crimson blockchain.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Nine",
+                "Pages",
+                "Unstoppable",
+                "Ledger"
+              ]
+            }
+          },
+          {
+            "narration": "Financial sovereignty is now a matter of running software rather than trusting institutions.",
+            "Image_prompt": "Sleek terminal interface displaying node status with a vibrant crimson completion checkmark.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "node.status",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "bitcoind -daemon"
+                },
+                {
+                  "kind": "out",
+                  "text": "loading block index"
+                },
+                {
+                  "kind": "ok",
+                  "text": "synced to tip"
+                },
+                {
+                  "kind": "ok",
+                  "text": "sovereignty verified"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Code executes the rules while mathematics guarantees the supply.",
+            "Image_prompt": "Minimalist mathematical equation wireframe glowing with bright crimson accents on a pure black background.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Math Guarantees Supply",
+              "sub": "Fixed 21 million limit"
+            }
+          },
+          {
+            "narration": "The experiment initiated in two thousand eight rewritten monetary history from the ground up.",
+            "Image_prompt": "Final cinematic wide shot of a glowing crimson blockchain network expanding into the dark horizon.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 21000000,
+              "prefix": "",
+              "suffix": "",
+              "label": "Maximum possible supply"
+            }
+          },
+          {
+            "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showcasing smart contract code execution",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Contracts need human lawyers",
+              "fact": "Code executes transactions automatically"
+            }
+          },
+          {
+            "narration": "Traditional agreements rely on middlemen to verify every single transfer.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating centralized middleman servers",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Traditional Middlemen",
+              "items": [
+                {
+                  "icon": "shield",
+                  "label": "Bank verify"
+                },
+                {
+                  "icon": "landmark",
+                  "label": "Clearance"
+                },
+                {
+                  "icon": "clock",
+                  "label": "Delay"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Distributed execution removes intermediaries completely from the financial equation.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing direct peer to peer node connections",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Direct Execution",
+              "steps": [
+                "Code written",
+                "Trigger met",
+                "Instant settled"
+              ]
+            }
+          },
+          {
+            "narration": "Autonomous code replaces human trust with permanent cryptographic certainty.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting secure cryptographic keys",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Code replaces huma"
+              ]
+            }
+          }
+        ],
+        "chapters": [
+          {
+            "title": "The Casino Illusion",
+            "beat": 31
+          },
+          {
+            "title": "Code Replaces Central Banks",
+            "beat": 35
+          },
+          {
+            "title": "Mining The Genesis Block",
+            "beat": 41
+          },
+          {
+            "title": "Automating Global Agreements",
+            "beat": 72
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
+            "supported": true
+          },
+          {
+            "claim": "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
+            "supported": true
+          },
+          {
+            "claim": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
+            "supported": true
+          },
+          {
+            "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+            "supported": true
+          },
+          {
+            "claim": "Most people view crypto as a speculative casino for day traders.",
+            "supported": true
+          },
+          {
+            "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
+            "supported": true
+          },
+          {
+            "claim": "In October 2008 Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list.",
+            "supported": true
+          },
+          {
+            "claim": "The genesis block was mined on January 3 2009 with a message referencing bank bailouts.",
+            "supported": true
+          },
+          {
+            "claim": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
+            "supported": true
+          },
+          {
+            "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+            "supported": true
+          },
+          {
+            "claim": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+            "supported": true
+          }
+        ]
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1792910858764
+    },
     {
       "id": "how-software-companies-toll-every-cl-mvmrcu4n",
       "canvas": "16:9",
@@ -2335,100 +2348,6 @@
         "sources": []
       },
       "at": 1792708991048
-    },
-    {
-      "id": "linux-power-on-your-phone-mvjwhdps",
-      "canvas": "9:16",
-      "title": "Linux Power on Your Phone",
-      "topic": "how to use termux for beginners in Issacverse style",
-      "pitch": {
-        "title": "Linux Power on Your Phone",
-        "hook": "Termux: a full Linux distro in your pocket",
-        "angle": "Many think Android phones can’t run real Linux tools. Termux proves you can have a genuine Linux shell right on the device.",
-        "key_facts": [
-          "Termux runs on Android 5.0 and newer, offering a Debian‑like environment",
-          "Packages are installed with a single command, e.g., \"pkg install python\"",
-          "It includes OpenSSH, so you can SSH into remote servers from your phone",
-          "You can compile C or C++ code using clang or gcc within Termux",
-          "Running \"termux-setup-storage\" grants access to the phone’s shared files"
-        ],
-        "visual_style": "neon cyberpunk vector illustration",
-        "length_seconds": 45,
-        "music": "tech-pulse",
-        "accent": "teal"
-      },
-      "script": {
-        "title": "Linux Power on Your Phone",
-        "beats": [
-          {
-            "narration": "Termux packs a full Linux environment into Android without requiring root access.",
-            "image_prompt": "Vertical framing, a glowing smartphone resting on a dark desk with green terminal text reflecting on the screen, centered subject",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Camera pushes slowly into the smartphone screen as terminal text scrolls rapidly."
-          },
-          {
-            "narration": "People assume phones are just for browsing, but thousands of open source Unix utilities run natively here.",
-            "image_prompt": "Vertical framing, a neon teal terminal interface displaying lines of C and C++ code, centered",
-            "tool": "flux"
-          },
-          {
-            "narration": "Install Python or Git instantly using familiar APT commands just like Debian.",
-            "image_prompt": "Vertical framing, glowing code lines on a dark cyan digital display, centered",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "apt package manager",
-              "sub": "debian tools on android"
-            }
-          },
-          {
-            "narration": "Type termux setup storage to link your local files directly into the shell.",
-            "image_prompt": "Vertical framing, digital folders floating above a glowing mobile device in neon light, centered",
-            "tool": "flux"
-          },
-          {
-            "narration": "OpenSSH comes built right in so you can manage remote servers from your pocket.",
-            "image_prompt": "Vertical framing, cybernetic network nodes linking a phone to distant servers, centered",
-            "tool": "flux"
-          },
-          {
-            "narration": "Run Node or Apache locally to turn any old smartphone into a portable edge server.",
-            "image_prompt": "Vertical framing, a smartphone glowing brightly in a dark cybernetic workspace, centered",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Camera slowly orbits around the glowing smartphone as data pulses through the air."
-          },
-          {
-            "narration": "Real Linux in your pocket.",
-            "image_prompt": "Vertical framing, a minimalist neon command prompt symbol on a dark background, centered",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Termux packs a full Linux environment into Android without root access",
-            "supported": true
-          },
-          {
-            "claim": "Thousands of open source Unix utilities run natively",
-            "supported": true
-          },
-          {
-            "claim": "termux setup storage links local files into the shell",
-            "supported": true
-          },
-          {
-            "claim": "OpenSSH comes built right in",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar to Debian and Ubuntu users (https://wiki.termux.com/wiki/Main_Page)\n- Termux was created by Fredrik Andersson and first released on Google Play in 2015, later moving its primary distribution to F-Droid due to Google Play policy updates regarding target API levels (https://github.com/termux/termux-app)\n- Users can install Python, Node.js, Git, Vim, Nmap, and SSH clients directly on their phone without needing a cloud server or a rooted device (https://wiki.termux.com/wiki/Package_Management)\n- Termux accesses device storage by running `termux-setup-storage`, which creates a symbolic link `~/storage` pointing to emulated external storage (https://wiki.termux.com/wiki/Internal_and_external_storage)\n- You can run a full desktop Linux environment like Ubuntu or Arch inside Termux using PRoot along with a VNC viewer for a graphical interface (https://wiki.termux.com/wiki/Graphical_Environment)\n- The official Termux package repository hosts thousands of ported open-source Unix utilities compiled specifically for Android's Bionic libc architecture (https://repology.org/repository/termux)\n- Termux supports running local servers like Apache, CUPS, or Node.js apps, turning an old smartphone into a portable edge-computing web server (https://wiki.termux.com/wiki/Remote_Access)\n\nHOOK IDEAS:\n- What if your smartphone was actually a secret hacker terminal running a full Linux operating system right under Android's nose?\n- Stop buying expensive cloud servers—your old phone has a hidden Linux mainframe inside it, and all you need is one free app to unlock it.",
-        "sources": []
-      },
-      "at": 1792695278741
     }
   ],
   "lastRenderAuto": false,
@@ -2436,203 +2355,13 @@
   "deep": null,
   "renders": [
     {
-      "title": "How Software Companies Toll Every Click (Removed title box)",
-      "at": 1792870189798,
-      "project": "how-software-companies-toll-every-cl-mvmrcu4n"
-    },
-    {
-      "title": "How Software Companies Toll Every Click (Fluid motion style updated)",
-      "at": 1792870546267,
-      "project": "how-software-companies-toll-every-cl-mvmrcu4n"
+      "title": "The Untold Origin of Digital Money",
+      "at": 1792910858764,
+      "project": "the-untold-origin-of-digital-money-mvngu0ax"
     }
   ],
-  "current_project": "how-software-companies-toll-every-cl-mvmrcu4n",
-  "pending_edit": {
-    "id": "emvmtul37hws",
-    "project_id": "how-software-companies-toll-every-cl-mvmrcu4n",
-    "patch": [
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v1",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Dark mode software interface showing millions of API requests hitting glowing server racks, minimalist tech aesthetic, digital art, dark background with teal accents"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v2",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Abstract digital Wojak meme style programmer staring at complex background code lines on dual monitors, dark mode, high contrast"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v3",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Digital tollbooth glowing neon on a stream of binary data and background code, minimalist tech art, dark background"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v4",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Glowing thirty-two character security token string on a dark terminal screen, high-end software UI mockup"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v5",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Massive data center lighting up with glowing counters and billing metrics, dark mode tech aesthetic"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v6",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "High frequency message API calls visualizing as bright data spikes on a dark dashboard graph"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v7",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Smartphone receiving a text message notification triggered by a micro transaction billing flow, dark minimalist UI"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v8",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "AI text token processing visualization on a sleek dark mode developer dashboard, glowing code blocks"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v9",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "A single text prompt expanding into thousands of glowing data tokens instantly, dark sci-fi tech style"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v10",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Rate limiting gauge needle rising on a dark mode API provider control panel, teal and green accents"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v11",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Terminal window showing red rate limit error and HTTP 429 warning on a dark screen"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v12",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Developer dashboard payment modal with credit card input field, clean dark mode UI mockup"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v13",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Endless lines of glowing source code scrolling down a dark terminal, high contrast cinematic lighting"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v14",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Digital billing meter ticking upwards rapidly next to secure server icons, dark mode tech aesthetic"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v15",
-        "value": {
-          "kind": "image",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Infinite loop of API calls generating financial revenue graphs, minimalist dark tech art, 2k production feel"
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/style/fx",
-        "value": {
-          "hold": 1,
-          "jitter": 2,
-          "letterbox": 0.04,
-          "texture": "film"
-        }
-      }
-    ],
-    "message": "Upgrade visuals to flux images",
-    "summary": "Converted all graphic scenes to high-end digital artwork images matching the dark-mode tech aesthetic",
-    "detail": "🎨 Style: fx\n♻️ I'll repaint 15 images (scene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15); the other 0 scenes are reused.",
-    "base_rev": 3,
-    "at": 1792872254276
-  },
+  "current_project": "the-untold-origin-of-digital-money-mvngu0ax",
+  "pending_edit": null,
   "edits": [],
   "pending": {
     "step": "render",
@@ -2761,13 +2490,11 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {
-    "length": 180,
-    "format": "landscape"
-  },
+  "job": null,
   "recent_styles": [
     "documentary",
-    "youtu-2"
+    "youtu-2",
+    "upload-3"
   ],
   "learning": null,
   "styles": {
