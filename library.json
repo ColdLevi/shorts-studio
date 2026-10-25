@@ -193,6 +193,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 3
+    },
+    {
+      "id": "short-20",
+      "title": "The Untold Origin of Digital Money",
+      "hook": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+      "accent": "#FF5A5F",
+      "duration": 453.9,
+      "created": 1792912241856,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-20/short-20.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-20/short-20.jpg",
+      "project": "the-untold-origin-of-digital-money-mvngu0ax",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

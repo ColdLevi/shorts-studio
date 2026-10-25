@@ -1,0 +1,6296 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-untold-origin-of-digital-money-mvngu0ax",
+ "rev": 1,
+ "title": "The Untold Origin of Digital Money",
+ "duration": 453.78,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "color": "#FFFFFF",
+   "highlight": "#FF3333",
+   "position": "bottom"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "backdrop": "gradient",
+  "vignette": false,
+  "font": "Inter",
+  "preset": "motion-explainer",
+  "accent": "#FF5A5F",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) brightness(1.0)",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 8.65,
+    "narration": "In October two thousand eight, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "October 2008",
+     "text": "Nine Pages That Changed Finance",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 8.65,
+    "end": 14.738,
+    "narration": "Satoshi Nakamoto released the Bitcoin whitepaper without warning or prior announcement.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "Anonymous author",
+      "Public mailing list",
+      "Open source code"
+     ],
+     "title": "Whitepaper Release",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 14.738,
+    "end": 20.775,
+    "narration": "Traditional banking required trusted intermediaries to process every single transaction.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "landmark",
+       "label": "Central Bank"
+      },
+      {
+       "icon": "shield",
+       "label": "Intermediary"
+      },
+      {
+       "icon": "users",
+       "label": "Account Holder"
+      }
+     ],
+     "title": "Legacy Centralized System",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 20.775,
+    "end": 25.062,
+    "narration": "Then mathematical proof replaced institutional trust.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "verify --proof-of-work"
+      },
+      {
+       "kind": "out",
+       "text": "calculating SHA-256 hash..."
+      },
+      {
+       "kind": "ok",
+       "text": "block validated successfully"
+      }
+     ],
+     "title": "consensus.py",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 25.062,
+    "end": 29.137,
+    "narration": "Most people view crypto as a speculative casino for day traders.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "It is an automated peer-to-peer ledger system.",
+     "myth": "Crypto is just a speculative casino for day traders.",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 29.137,
+    "end": 33.875,
+    "narration": "Speculators chase short term price action on centralized exchanges.",
+    "kind": "graphic",
+    "graphic": {
+     "prefix": "$",
+     "series": [
+      {
+       "label": "Volume",
+       "values": [
+        12,
+        45,
+        23,
+        67,
+        34,
+        89,
+        45,
+        92,
+        56,
+        110
+       ]
+      }
+     ],
+     "suffix": "",
+     "title": "Trading Volume Volatility",
+     "type": "line",
+     "x_labels": [
+      "Jan",
+      "Dec"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 33.875,
+    "end": 39.675,
+    "narration": "Daily trading volume reaches billions of dollars while ignoring the underlying architecture.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Global Volume",
+       "prefix": "$",
+       "suffix": "B",
+       "value": 42.5
+      },
+      {
+       "label": "Speculative Trades",
+       "prefix": "",
+       "suffix": "%",
+       "value": 95
+      }
+     ],
+     "title": "Exchange Daily Volume",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 39.675,
+    "end": 47.712,
+    "narration": "Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "User Node",
+      "Broadcast Transaction",
+      "Distributed Ledger",
+      "Peer Verification"
+     ],
+     "title": "Peer-to-Peer Transfer",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 47.712,
+    "end": 54.125,
+    "narration": "Central banks control fiat currency supplies and monetary policy through closed doors.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "coins",
+       "label": "Money Supply"
+      },
+      {
+       "icon": "lock",
+       "label": "Interest Rates"
+      },
+      {
+       "icon": "shield",
+       "label": "Policy Decrees"
+      }
+     ],
+     "title": "Central Bank Controls",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 54.125,
+    "end": 62.35,
+    "narration": "Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Central Server",
+       "value": 100
+      },
+      {
+       "label": "Distributed Nodes",
+       "value": 0
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Database Architecture",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v11",
+    "start": 62.35,
+    "end": 68.088,
+    "narration": "Every single participant maintains an identical copy of the financial record.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Ledger Synchronization Across Nodes",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v12",
+    "start": 68.088,
+    "end": 72.9,
+    "narration": "No single entity can alter past transactions or freeze an account.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "modify block #500000"
+      },
+      {
+       "kind": "err",
+       "text": "error: cryptographic hash mismatch"
+      },
+      {
+       "kind": "ok",
+       "text": "consensus rejected alteration"
+      }
+     ],
+     "title": "immutable_ledger.rs",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v13",
+    "start": 72.9,
+    "end": 78.0,
+    "narration": "Trust is shifted from human regulators to immutable software rules.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Human Regulators",
+      "sub": "Subject to error",
+      "value": 0
+     },
+     "prefix": "",
+     "right": {
+      "label": "Software Rules",
+      "sub": "Cryptographically secure",
+      "value": 100
+     },
+     "suffix": "",
+     "title": "Trust Shift",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v14",
+    "start": 78.0,
+    "end": 82.312,
+    "narration": "The genesis block was mined on January third, two thousand nine.",
+    "kind": "graphic",
+    "graphic": {
+     "events": [
+      {
+       "date": "Oct 2008",
+       "label": "Whitepaper Published"
+      },
+      {
+       "date": "Jan 2009",
+       "label": "Genesis Block Mined"
+      }
+     ],
+     "title": "Bitcoin Launch Timeline",
+     "type": "timeline"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v15",
+    "start": 82.312,
+    "end": 87.6,
+    "narration": "Embedded inside that first block was a permanent message referencing bank bailouts.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "read coinbase input"
+      },
+      {
+       "kind": "out",
+       "text": "The Times 03/Jan/2009 Chancellor on brink "
+      },
+      {
+       "kind": "ok",
+       "text": "timestamp verified"
+      }
+     ],
+     "title": "genesis_block.hex",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v16",
+    "start": 87.6,
+    "end": 92.525,
+    "narration": "The headline came from a major UK newspaper published on the exact same day.",
+    "kind": "graphic",
+    "graphic": {
+     "by": "The Times Newspaper",
+     "text": "Chancellor on brink of second bailout for banks",
+     "type": "quote"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v17",
+    "start": 92.525,
+    "end": 99.125,
+    "narration": "Satoshi permanently anchored the cryptocurrency's birth to the failure of traditional finance.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Bank Bailout",
+      "Newspaper Print",
+      "Genesis Block",
+      "New Financial Era"
+     ],
+     "title": "Origin Anchor",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v18",
+    "start": 99.125,
+    "end": 105.562,
+    "narration": "That hidden note served as an eternal manifesto against centralized monetary rescue packages.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "book",
+       "label": "Embedded Note"
+      },
+      {
+       "icon": "shield",
+       "label": "Permanent Record"
+      },
+      {
+       "icon": "zap",
+       "label": "Anti-Bailout"
+      }
+     ],
+     "title": "Genesis Manifestos",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v19",
+    "start": 105.562,
+    "end": 111.362,
+    "narration": "Code soon evolved from simple currency transfers into complex financial agreements.",
+    "kind": "graphic",
+    "graphic": {
+     "prefix": "",
+     "series": [
+      {
+       "label": "Complexity",
+       "values": [
+        1,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144
+       ]
+      }
+     ],
+     "suffix": "",
+     "title": "Evolution of Smart Contracts",
+     "type": "line",
+     "x_labels": [
+      "2009",
+      "2015"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v20",
+    "start": 111.362,
+    "end": 118.225,
+    "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "if condition == true"
+      },
+      {
+       "kind": "out",
+       "text": "transfer funds automatically"
+      },
+      {
+       "kind": "ok",
+       "text": "execution complete without middleman"
+      }
+     ],
+     "title": "contract.sol",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v21",
+    "start": 118.225,
+    "end": 122.737,
+    "narration": "Escrow agents and legal paperwork become completely obsolete.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Legal Paperwork",
+       "value": 0
+      },
+      {
+       "label": "Automated Code",
+       "value": 100
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Intermediary Removal",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v22",
+    "start": 122.737,
+    "end": 128.637,
+    "narration": "Execution speed shifts from days of manual clearing to seconds of network validation.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Traditional Wire",
+      "sub": "Hours of delay",
+      "value": 72
+     },
+     "prefix": "",
+     "right": {
+      "label": "Smart Contract",
+      "sub": "Seconds to settle",
+      "value": 1
+     },
+     "suffix": "",
+     "title": "Settlement Speed",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v23",
+    "start": 128.637,
+    "end": 133.887,
+    "narration": "Global trade operates continuously without weekends or banking holidays.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Network Uptime",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v24",
+    "start": 133.887,
+    "end": 139.325,
+    "narration": "Anyone with an internet connection can access the exact same financial infrastructure.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Connected",
+       "value": 100
+      },
+      {
+       "label": "Excluded",
+       "value": 0
+      }
+     ],
+     "suffix": "%",
+     "title": "Global Accessibility",
+     "type": "pie"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v25",
+    "start": 139.325,
+    "end": 144.838,
+    "narration": "The underlying architecture remains fully transparent and verifiable by everyone.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Public Auditability",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v26",
+    "start": 144.838,
+    "end": 150.85,
+    "narration": "Billions of dollars now secure themselves through mathematics rather than corporate promises.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Network Security",
+       "prefix": "$",
+       "suffix": "T+",
+       "value": 1
+      },
+      {
+       "label": "Trust Required",
+       "prefix": "",
+       "suffix": "",
+       "value": 0
+      }
+     ],
+     "title": "Total Value Secured",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v27",
+    "start": 150.85,
+    "end": 155.963,
+    "narration": "Nine pages of text launched an unstoppable monetary revolution.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Nine",
+      "Pages",
+      "Unstoppable",
+      "Revolution"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v28",
+    "start": 155.963,
+    "end": 160.637,
+    "narration": "Centralized gatekeepers can no longer control the flow of global value.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "shield",
+       "label": "No Firewall"
+      },
+      {
+       "icon": "zap",
+       "label": "Direct Transfer"
+      },
+      {
+       "icon": "globe",
+       "label": "Global Access"
+      }
+     ],
+     "title": "Gatekeeper Removal",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v29",
+    "start": 160.637,
+    "end": 165.625,
+    "narration": "The transition from human trust to cryptographic certainty is absolute.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Human Trust",
+      "value": 0
+     },
+     "prefix": "",
+     "right": {
+      "label": "Math Certainty",
+      "value": 100
+     },
+     "suffix": "",
+     "title": "The Final Shift",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v30",
+    "start": 165.625,
+    "end": 168.688,
+    "narration": "Code is law on the decentralized frontier.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "The New Financial Reality",
+     "text": "Code Is Law",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v31",
+    "start": 168.688,
+    "end": 171.3,
+    "narration": "Mathematics never asks for permission.",
+    "kind": "ai_video",
+    "src": "assets/clip_31.mp4",
+    "duration": 4.06,
+    "still": "assets/img_31.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Final minimalist vector composition of a glowing red cryptographic key floating in absolute darkness",
+     "motion": "Camera slowly pushes forward into the glowing red cryptographic key while code particles drift past.",
+     "still": "flux"
+    },
+    "hash": "bc487c98733d"
+   },
+   {
+    "id": "v32",
+    "start": 171.3,
+    "end": 175.488,
+    "narration": "Most people view crypto as a speculative casino for day traders.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "It is an automated peer to peer ledger system",
+     "myth": "Crypto is just a speculative casino for day traders",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v33",
+    "start": 175.488,
+    "end": 181.988,
+    "narration": "Day trading apps flash bright red and green tickers across millions of consumer screens.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Retail Speculation",
+       "prefix": "",
+       "suffix": "%",
+       "value": 99
+      },
+      {
+       "label": "Core Protocol",
+       "prefix": "",
+       "suffix": "%",
+       "value": 1
+      }
+     ],
+     "title": "Trading Volume Focus",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v34",
+    "start": 181.988,
+    "end": 186.287,
+    "narration": "The price volatility dominates every mainstream news cycle.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Media focus on price volatility",
+     "type": "percent",
+     "value": 90
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v35",
+    "start": 186.287,
+    "end": 190.3,
+    "narration": "But price speculation hides the underlying architecture.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Beyond the ticker tapes",
+     "text": "Hidden Architecture",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v36",
+    "start": 190.3,
+    "end": 198.975,
+    "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+    "kind": "image",
+    "src": "assets/img_36.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vector diagrams and sleek UI wireframes on a dark monochrome background with vivid crimson glows"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "bc190e90947b"
+   },
+   {
+    "id": "v37",
+    "start": 198.975,
+    "end": 205.637,
+    "narration": "Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list to the public.",
+    "kind": "graphic",
+    "graphic": {
+     "by": "Satoshi Nakamoto",
+     "text": "A purely peer-to-peer electronic cash system would allow online payments to be sent directly.",
+     "type": "quote"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v38",
+    "start": 205.637,
+    "end": 212.725,
+    "narration": "Many observers treat digital assets as pure speculation for day traders seeking quick fortunes.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Speculation",
+       "value": 90
+      },
+      {
+       "label": "Utility",
+       "value": 10
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Market Perception",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v39",
+    "start": 212.725,
+    "end": 218.3,
+    "narration": "External markets view price charts as a casino game driven entirely by hype.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Speculation",
+      "Casino",
+      "Hype",
+      "Traders"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v40",
+    "start": 218.3,
+    "end": 223.637,
+    "narration": "Popular discourse reduces complex protocols to mere gambling tokens.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "It is an automated peer-to-peer ledger system.",
+     "myth": "Crypto is just a speculative casino.",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v41",
+    "start": 223.637,
+    "end": 230.488,
+    "narration": "Financial media focuses heavily on daily price volatility instead of underlying technology.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Daily Trading Volume",
+     "prefix": "",
+     "suffix": "k",
+     "type": "counter",
+     "value": 247
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v42",
+    "start": 230.488,
+    "end": 239.387,
+    "narration": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "October 2008 cryptography release",
+     "text": "Nine Pages",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v43",
+    "start": 239.387,
+    "end": 245.775,
+    "narration": "A pseudonymous developer named Satoshi Nakamoto published the Bitcoin whitepaper without warning.",
+    "kind": "image",
+    "src": "assets/img_43.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist tech illustration of a glowing crimson computer terminal showing abstract code lines on a dark slate canvas."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f49475228511"
+   },
+   {
+    "id": "v44",
+    "start": 245.775,
+    "end": 252.5,
+    "narration": "Traditional finance relies entirely on trusted intermediaries to route every single transaction.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "User",
+      "Bank Server",
+      "Clearinghouse",
+      "Recipient"
+     ],
+     "title": "Centralized Banking",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v45",
+    "start": 252.5,
+    "end": 259.775,
+    "narration": "Central banks print fiat currency at will, losing purchasing power over decades through inflation.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Fiat currency purchasing power",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v46",
+    "start": 259.775,
+    "end": 265.95,
+    "narration": "Most observers assume crypto exists solely as a speculative casino for day traders.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "It is an automated ledger system",
+     "myth": "Crypto is just a speculative casino",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v47",
+    "start": 265.95,
+    "end": 271.225,
+    "narration": "Day traders chase short term volatility on centralized exchanges.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Active Hours",
+       "prefix": "",
+       "suffix": "H",
+       "value": 24
+      },
+      {
+       "label": "Speculation",
+       "prefix": "",
+       "suffix": "%",
+       "value": 99
+      }
+     ],
+     "title": "Trading Volume",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v48",
+    "start": 271.225,
+    "end": 277.975,
+    "narration": "Price action dominates headlines while the underlying ledger architecture hums quietly in the background.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Protocol inception year",
+     "prefix": "",
+     "suffix": "",
+     "type": "counter",
+     "value": 2008
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v49",
+    "start": 277.975,
+    "end": 283.738,
+    "narration": "Code replaces central authority through pure mathematical rules written into software.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Mathematical trust",
+     "text": "Code Over Authority",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v50",
+    "start": 283.738,
+    "end": 290.212,
+    "narration": "Public blockchains discard centralized databases in favor of distributed consensus.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "globe",
+       "label": "Distributed"
+      },
+      {
+       "icon": "shield",
+       "label": "Secure"
+      },
+      {
+       "icon": "database",
+       "label": "Immutable"
+      }
+     ],
+     "title": "Network Architecture",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v51",
+    "start": 290.212,
+    "end": 296.738,
+    "narration": "Thousands of independent nodes verify every state change without knowing or trusting each other.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Independent Nodes",
+       "prefix": "",
+       "suffix": "+",
+       "value": 1000
+      },
+      {
+       "label": "Trusted Parties",
+       "prefix": "",
+       "suffix": "",
+       "value": 0
+      }
+     ],
+     "title": "Consensus Model",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v52",
+    "start": 296.738,
+    "end": 302.725,
+    "narration": "Double spending becomes impossible when transaction history is chained cryptographically.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Block N-1",
+      "Hash Pointer",
+      "Block N",
+      "Verification"
+     ],
+     "title": "Cryptographic Chain",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v53",
+    "start": 302.725,
+    "end": 308.425,
+    "narration": "No single entity can alter past records once written to the distributed ledger.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Ledger immutability rate",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v54",
+    "start": 308.425,
+    "end": 314.8,
+    "narration": "Miners secure the network by expending computational power to solve complex cryptographic puzzles.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Hashrate security",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 99
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v55",
+    "start": 314.8,
+    "end": 321.488,
+    "narration": "Energy expenditure ties digital scarcity to the physical laws of thermodynamics.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "zap",
+       "label": "Energy"
+      },
+      {
+       "icon": "shield",
+       "label": "Scarcity"
+      },
+      {
+       "icon": "lock",
+       "label": "Proof"
+      }
+     ],
+     "title": "Thermodynamic Security",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v56",
+    "start": 321.488,
+    "end": 328.65,
+    "narration": "On January third 2009, the genesis block was mined with a permanent message embedded inside.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Genesis block mined",
+     "text": "January 3 2009",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v57",
+    "start": 328.65,
+    "end": 336.05,
+    "narration": "Satoshi embedded a newspaper headline referencing bank bailouts directly into the coinbase parameter.",
+    "kind": "graphic",
+    "graphic": {
+     "by": "Genesis block embedded text",
+     "text": "Chancellor on brink of second bailout for banks",
+     "type": "quote"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v58",
+    "start": 336.05,
+    "end": 340.95,
+    "narration": "That single headline sealed the purpose of the entire peer to peer experiment.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "parse coinbase scriptSig"
+      },
+      {
+       "kind": "out",
+       "text": "The Times 03/Jan/2009"
+      },
+      {
+       "kind": "warn",
+       "text": "bailout reference detected"
+      },
+      {
+       "kind": "ok",
+       "text": "block verified"
+      }
+     ],
+     "title": "block_zero.hex",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v59",
+    "start": 340.95,
+    "end": 346.413,
+    "narration": "Traditional banking required physical branches, paper ledgers, and trusted human clerks.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "Physical branches",
+      "Paper ledgers",
+      "Human clerks",
+      "Delayed settlement"
+     ],
+     "title": "Legacy Banking",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v60",
+    "start": 346.413,
+    "end": 354.188,
+    "narration": "Digital networks eliminated geography entirely, settling value transfers across continents in minutes.",
+    "kind": "graphic",
+    "graphic": {
+     "countries": [
+      "United States of America",
+      "United Kingdom",
+      "China",
+      "Nigeria"
+     ],
+     "label": "Borderless peer-to-peer network",
+     "title": "Global Settlement",
+     "type": "map"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v61",
+    "start": 354.188,
+    "end": 360.062,
+    "narration": "Blockchains operate twenty four hours a day without maintenance windows or holiday closures.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Daily Operation",
+       "prefix": "",
+       "suffix": "H",
+       "value": 24
+      },
+      {
+       "label": "Continuous Blocks",
+       "prefix": "",
+       "suffix": "D",
+       "value": 365
+      }
+     ],
+     "title": "Network Uptime",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v62",
+    "start": 360.062,
+    "end": 366.825,
+    "narration": "Programmable smart contracts execute financial agreements automatically when pre-coded conditions are met.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Condition Met",
+      "Code Execution",
+      "Asset Transfer",
+      "Immutable Log"
+     ],
+     "title": "Smart Contracts",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v63",
+    "start": 366.825,
+    "end": 373.125,
+    "narration": "Escrow agents and legal paperwork become obsolete when code enforces the rules directly.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Legal Escrow",
+      "sub": "Days to settle",
+      "value": 3
+     },
+     "prefix": "",
+     "right": {
+      "label": "Smart Contract",
+      "sub": "Seconds to settle",
+      "value": 15
+     },
+     "suffix": "",
+     "title": "Contract Execution",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v64",
+    "start": 373.125,
+    "end": 380.163,
+    "narration": "Developers write logic that handles collateral, interest rates, and liquidation without intermediaries.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "function executeCollateral()"
+      },
+      {
+       "kind": "dim",
+       "text": "checking loan-to-value ratio"
+      },
+      {
+       "kind": "warn",
+       "text": "threshold exceeded"
+      },
+      {
+       "kind": "ok",
+       "text": "liquidation triggered"
+      }
+     ],
+     "title": "contract.sol",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v65",
+    "start": 380.163,
+    "end": 387.8,
+    "narration": "Billions of dollars in decentralized finance run autonomously on these transparent software rails.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Total Value Secured",
+       "prefix": "$",
+       "suffix": "B+",
+       "value": 100
+      },
+      {
+       "label": "Human Administrators",
+       "prefix": "",
+       "suffix": "",
+       "value": 0
+      }
+     ],
+     "title": "DeFi Ecosystem",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v66",
+    "start": 387.8,
+    "end": 394.65,
+    "narration": "The underlying architecture remains entirely open source and auditable by anyone on earth.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Open source transparency",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v67",
+    "start": 394.65,
+    "end": 401.212,
+    "narration": "Satoshi Nakamoto disappeared from public view after launching the protocol, leaving no leader behind.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Decentralized forever",
+     "text": "Founder Departs",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v68",
+    "start": 401.212,
+    "end": 407.3,
+    "narration": "Without a founder or corporate headquarters, the network continues to run through sheer consensus.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "users",
+       "label": "Community"
+      },
+      {
+       "icon": "shield",
+       "label": "Protocol"
+      },
+      {
+       "icon": "globe",
+       "label": "Consensus"
+      }
+     ],
+     "title": "Leaderless Network",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v69",
+    "start": 407.3,
+    "end": 412.738,
+    "narration": "Nine pages of cryptography birthed an unstoppable global settlement layer.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Nine",
+      "Pages",
+      "Unstoppable",
+      "Ledger"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v70",
+    "start": 412.738,
+    "end": 419.288,
+    "narration": "Financial sovereignty is now a matter of running software rather than trusting institutions.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "bitcoind -daemon"
+      },
+      {
+       "kind": "out",
+       "text": "loading block index"
+      },
+      {
+       "kind": "ok",
+       "text": "synced to tip"
+      },
+      {
+       "kind": "ok",
+       "text": "sovereignty verified"
+      }
+     ],
+     "title": "node.status",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v71",
+    "start": 419.288,
+    "end": 423.512,
+    "narration": "Code executes the rules while mathematics guarantees the supply.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Fixed 21 million limit",
+     "text": "Math Guarantees Supply",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v72",
+    "start": 423.512,
+    "end": 429.5,
+    "narration": "The experiment initiated in two thousand eight rewritten monetary history from the ground up.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Maximum possible supply",
+     "prefix": "",
+     "suffix": "",
+     "type": "counter",
+     "value": 21000000
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v73",
+    "start": 429.5,
+    "end": 436.613,
+    "narration": "Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Code executes transactions automatically",
+     "myth": "Contracts need human lawyers",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v74",
+    "start": 436.613,
+    "end": 441.812,
+    "narration": "Traditional agreements rely on middlemen to verify every single transfer.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "shield",
+       "label": "Bank verify"
+      },
+      {
+       "icon": "landmark",
+       "label": "Clearance"
+      },
+      {
+       "icon": "clock",
+       "label": "Delay"
+      }
+     ],
+     "title": "Traditional Middlemen",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v75",
+    "start": 441.812,
+    "end": 447.8,
+    "narration": "Distributed execution removes intermediaries completely from the financial equation.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Code written",
+      "Trigger met",
+      "Instant settled"
+     ],
+     "title": "Direct Execution",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v76",
+    "start": 447.8,
+    "end": 452.976,
+    "narration": "Autonomous code replaces human trust with permanent cryptographic certainty.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Code replaces huma"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.075,
+     "end": 0.163
+    },
+    {
+     "word": "October",
+     "start": 0.163,
+     "end": 0.662
+    },
+    {
+     "word": "two",
+     "start": 0.675,
+     "end": 0.875
+    },
+    {
+     "word": "thousand",
+     "start": 0.875,
+     "end": 1.3
+    },
+    {
+     "word": "eight,",
+     "start": 1.3,
+     "end": 1.613
+    },
+    {
+     "word": "nine",
+     "start": 2.038,
+     "end": 2.438
+    },
+    {
+     "word": "pages",
+     "start": 2.45,
+     "end": 2.9
+    },
+    {
+     "word": "of",
+     "start": 2.913,
+     "end": 2.962
+    },
+    {
+     "word": "cryptography",
+     "start": 2.962,
+     "end": 3.763
+    },
+    {
+     "word": "posted",
+     "start": 3.763,
+     "end": 4.362
+    },
+    {
+     "word": "on",
+     "start": 4.362,
+     "end": 4.5
+    },
+    {
+     "word": "an",
+     "start": 4.5,
+     "end": 4.562
+    },
+    {
+     "word": "obscure",
+     "start": 4.562,
+     "end": 5.125
+    },
+    {
+     "word": "mailing",
+     "start": 5.388,
+     "end": 5.812
+    },
+    {
+     "word": "list",
+     "start": 5.812,
+     "end": 6.088
+    },
+    {
+     "word": "changed",
+     "start": 6.088,
+     "end": 6.6
+    },
+    {
+     "word": "global",
+     "start": 6.612,
+     "end": 7.088
+    },
+    {
+     "word": "finance",
+     "start": 7.088,
+     "end": 7.662
+    },
+    {
+     "word": "forever.",
+     "start": 7.662,
+     "end": 8.238
+    },
+    {
+     "word": "Satoshi",
+     "start": 8.65,
+     "end": 9.15
+    },
+    {
+     "word": "Nakamoto",
+     "start": 9.162,
+     "end": 9.85
+    },
+    {
+     "word": "released",
+     "start": 9.85,
+     "end": 10.387
+    },
+    {
+     "word": "the",
+     "start": 10.387,
+     "end": 10.525
+    },
+    {
+     "word": "Bitcoin",
+     "start": 10.675,
+     "end": 11.2
+    },
+    {
+     "word": "whitepaper",
+     "start": 11.2,
+     "end": 11.887
+    },
+    {
+     "word": "without",
+     "start": 12.075,
+     "end": 12.525
+    },
+    {
+     "word": "warning",
+     "start": 12.537,
+     "end": 13.075
+    },
+    {
+     "word": "or",
+     "start": 13.275,
+     "end": 13.387
+    },
+    {
+     "word": "prior",
+     "start": 13.387,
+     "end": 13.787
+    },
+    {
+     "word": "announcement.",
+     "start": 13.8,
+     "end": 14.325
+    },
+    {
+     "word": "Traditional",
+     "start": 14.738,
+     "end": 15.15
+    },
+    {
+     "word": "banking",
+     "start": 15.162,
+     "end": 15.613
+    },
+    {
+     "word": "required",
+     "start": 15.613,
+     "end": 16.212
+    },
+    {
+     "word": "trusted",
+     "start": 16.275,
+     "end": 16.775
+    },
+    {
+     "word": "intermediaries",
+     "start": 16.825,
+     "end": 17.688
+    },
+    {
+     "word": "to",
+     "start": 17.887,
+     "end": 17.988
+    },
+    {
+     "word": "process",
+     "start": 17.988,
+     "end": 18.663
+    },
+    {
+     "word": "every",
+     "start": 18.837,
+     "end": 19.212
+    },
+    {
+     "word": "single",
+     "start": 19.212,
+     "end": 19.587
+    },
+    {
+     "word": "transaction.",
+     "start": 19.587,
+     "end": 20.363
+    },
+    {
+     "word": "Then",
+     "start": 20.775,
+     "end": 20.95
+    },
+    {
+     "word": "mathematical",
+     "start": 20.95,
+     "end": 21.688
+    },
+    {
+     "word": "proof",
+     "start": 21.7,
+     "end": 22.288
+    },
+    {
+     "word": "replaced",
+     "start": 22.575,
+     "end": 23.262
+    },
+    {
+     "word": "institutional",
+     "start": 23.413,
+     "end": 24.113
+    },
+    {
+     "word": "trust.",
+     "start": 24.125,
+     "end": 24.675
+    },
+    {
+     "word": "Most",
+     "start": 25.062,
+     "end": 25.288
+    },
+    {
+     "word": "people",
+     "start": 25.3,
+     "end": 25.575
+    },
+    {
+     "word": "view",
+     "start": 25.575,
+     "end": 25.762
+    },
+    {
+     "word": "crypto",
+     "start": 25.775,
+     "end": 26.337
+    },
+    {
+     "word": "as",
+     "start": 26.413,
+     "end": 26.525
+    },
+    {
+     "word": "a",
+     "start": 26.525,
+     "end": 26.562
+    },
+    {
+     "word": "speculative",
+     "start": 26.562,
+     "end": 27.188
+    },
+    {
+     "word": "casino",
+     "start": 27.188,
+     "end": 27.762
+    },
+    {
+     "word": "for",
+     "start": 27.775,
+     "end": 27.9
+    },
+    {
+     "word": "day",
+     "start": 27.9,
+     "end": 28.087
+    },
+    {
+     "word": "traders.",
+     "start": 28.1,
+     "end": 28.738
+    },
+    {
+     "word": "Speculators",
+     "start": 29.137,
+     "end": 29.762
+    },
+    {
+     "word": "chase",
+     "start": 29.775,
+     "end": 30.163
+    },
+    {
+     "word": "short",
+     "start": 30.238,
+     "end": 30.55
+    },
+    {
+     "word": "term",
+     "start": 30.55,
+     "end": 30.788
+    },
+    {
+     "word": "price",
+     "start": 30.788,
+     "end": 31.163
+    },
+    {
+     "word": "action",
+     "start": 31.163,
+     "end": 31.625
+    },
+    {
+     "word": "on",
+     "start": 31.825,
+     "end": 32.0
+    },
+    {
+     "word": "centralized",
+     "start": 32.013,
+     "end": 32.712
+    },
+    {
+     "word": "exchanges.",
+     "start": 32.712,
+     "end": 33.462
+    },
+    {
+     "word": "Daily",
+     "start": 33.875,
+     "end": 34.175
+    },
+    {
+     "word": "trading",
+     "start": 34.175,
+     "end": 34.562
+    },
+    {
+     "word": "volume",
+     "start": 34.562,
+     "end": 35.075
+    },
+    {
+     "word": "reaches",
+     "start": 35.087,
+     "end": 35.525
+    },
+    {
+     "word": "billions",
+     "start": 35.663,
+     "end": 36.175
+    },
+    {
+     "word": "of",
+     "start": 36.175,
+     "end": 36.25
+    },
+    {
+     "word": "dollars",
+     "start": 36.25,
+     "end": 36.675
+    },
+    {
+     "word": "while",
+     "start": 36.675,
+     "end": 36.825
+    },
+    {
+     "word": "ignoring",
+     "start": 36.825,
+     "end": 37.438
+    },
+    {
+     "word": "the",
+     "start": 37.562,
+     "end": 37.688
+    },
+    {
+     "word": "underlying",
+     "start": 37.763,
+     "end": 38.4
+    },
+    {
+     "word": "architecture.",
+     "start": 38.475,
+     "end": 39.275
+    },
+    {
+     "word": "Satoshi",
+     "start": 39.675,
+     "end": 40.163
+    },
+    {
+     "word": "Nakamoto",
+     "start": 40.163,
+     "end": 40.95
+    },
+    {
+     "word": "actually",
+     "start": 41.1,
+     "end": 41.513
+    },
+    {
+     "word": "built",
+     "start": 41.525,
+     "end": 41.85
+    },
+    {
+     "word": "an",
+     "start": 42.125,
+     "end": 42.275
+    },
+    {
+     "word": "automated",
+     "start": 42.288,
+     "end": 42.837
+    },
+    {
+     "word": "peer-to-peer",
+     "start": 42.837,
+     "end": 43.525
+    },
+    {
+     "word": "ledger",
+     "start": 43.525,
+     "end": 43.85
+    },
+    {
+     "word": "system",
+     "start": 43.85,
+     "end": 44.325
+    },
+    {
+     "word": "designed",
+     "start": 44.562,
+     "end": 44.987
+    },
+    {
+     "word": "to",
+     "start": 44.987,
+     "end": 45.163
+    },
+    {
+     "word": "operate",
+     "start": 45.175,
+     "end": 45.725
+    },
+    {
+     "word": "without",
+     "start": 45.737,
+     "end": 46.125
+    },
+    {
+     "word": "central",
+     "start": 46.125,
+     "end": 46.5
+    },
+    {
+     "word": "bank",
+     "start": 46.5,
+     "end": 46.712
+    },
+    {
+     "word": "authority.",
+     "start": 46.725,
+     "end": 47.312
+    },
+    {
+     "word": "Central",
+     "start": 47.712,
+     "end": 48.062
+    },
+    {
+     "word": "banks",
+     "start": 48.062,
+     "end": 48.45
+    },
+    {
+     "word": "control",
+     "start": 48.462,
+     "end": 49.1
+    },
+    {
+     "word": "fiat",
+     "start": 49.112,
+     "end": 49.688
+    },
+    {
+     "word": "currency",
+     "start": 49.7,
+     "end": 50.163
+    },
+    {
+     "word": "supplies",
+     "start": 50.175,
+     "end": 50.875
+    },
+    {
+     "word": "and",
+     "start": 51.025,
+     "end": 51.212
+    },
+    {
+     "word": "monetary",
+     "start": 51.212,
+     "end": 51.712
+    },
+    {
+     "word": "policy",
+     "start": 51.712,
+     "end": 52.288
+    },
+    {
+     "word": "through",
+     "start": 52.6,
+     "end": 52.788
+    },
+    {
+     "word": "closed",
+     "start": 52.8,
+     "end": 53.225
+    },
+    {
+     "word": "doors.",
+     "start": 53.225,
+     "end": 53.737
+    },
+    {
+     "word": "Public",
+     "start": 54.125,
+     "end": 54.413
+    },
+    {
+     "word": "blockchains",
+     "start": 54.413,
+     "end": 55.125
+    },
+    {
+     "word": "replace",
+     "start": 55.138,
+     "end": 55.763
+    },
+    {
+     "word": "centralized",
+     "start": 55.9,
+     "end": 56.688
+    },
+    {
+     "word": "banking",
+     "start": 56.7,
+     "end": 57.05
+    },
+    {
+     "word": "databases",
+     "start": 57.05,
+     "end": 57.688
+    },
+    {
+     "word": "with",
+     "start": 57.7,
+     "end": 57.837
+    },
+    {
+     "word": "distributed",
+     "start": 57.85,
+     "end": 58.538
+    },
+    {
+     "word": "consensus",
+     "start": 58.55,
+     "end": 59.513
+    },
+    {
+     "word": "across",
+     "start": 59.638,
+     "end": 60.175
+    },
+    {
+     "word": "thousands",
+     "start": 60.188,
+     "end": 60.812
+    },
+    {
+     "word": "of",
+     "start": 60.825,
+     "end": 60.913
+    },
+    {
+     "word": "independent",
+     "start": 60.987,
+     "end": 61.45
+    },
+    {
+     "word": "nodes.",
+     "start": 61.45,
+     "end": 61.962
+    },
+    {
+     "word": "Every",
+     "start": 62.35,
+     "end": 62.65
+    },
+    {
+     "word": "single",
+     "start": 62.65,
+     "end": 63.087
+    },
+    {
+     "word": "participant",
+     "start": 63.087,
+     "end": 63.862
+    },
+    {
+     "word": "maintains",
+     "start": 63.962,
+     "end": 64.912
+    },
+    {
+     "word": "an",
+     "start": 65.15,
+     "end": 65.25
+    },
+    {
+     "word": "identical",
+     "start": 65.25,
+     "end": 65.775
+    },
+    {
+     "word": "copy",
+     "start": 65.787,
+     "end": 66.388
+    },
+    {
+     "word": "of",
+     "start": 66.588,
+     "end": 66.688
+    },
+    {
+     "word": "the",
+     "start": 66.688,
+     "end": 66.75
+    },
+    {
+     "word": "financial",
+     "start": 66.763,
+     "end": 67.275
+    },
+    {
+     "word": "record.",
+     "start": 67.287,
+     "end": 67.675
+    },
+    {
+     "word": "No",
+     "start": 68.088,
+     "end": 68.3
+    },
+    {
+     "word": "single",
+     "start": 68.3,
+     "end": 68.662
+    },
+    {
+     "word": "entity",
+     "start": 68.675,
+     "end": 69.175
+    },
+    {
+     "word": "can",
+     "start": 69.388,
+     "end": 69.575
+    },
+    {
+     "word": "alter",
+     "start": 69.675,
+     "end": 70.025
+    },
+    {
+     "word": "past",
+     "start": 70.025,
+     "end": 70.325
+    },
+    {
+     "word": "transactions",
+     "start": 70.325,
+     "end": 71.213
+    },
+    {
+     "word": "or",
+     "start": 71.425,
+     "end": 71.562
+    },
+    {
+     "word": "freeze",
+     "start": 71.562,
+     "end": 71.963
+    },
+    {
+     "word": "an",
+     "start": 71.963,
+     "end": 72.025
+    },
+    {
+     "word": "account.",
+     "start": 72.025,
+     "end": 72.487
+    },
+    {
+     "word": "Trust",
+     "start": 72.9,
+     "end": 73.325
+    },
+    {
+     "word": "is",
+     "start": 73.487,
+     "end": 73.612
+    },
+    {
+     "word": "shifted",
+     "start": 73.625,
+     "end": 74.138
+    },
+    {
+     "word": "from",
+     "start": 74.15,
+     "end": 74.35
+    },
+    {
+     "word": "human",
+     "start": 74.362,
+     "end": 74.763
+    },
+    {
+     "word": "regulators",
+     "start": 74.763,
+     "end": 75.537
+    },
+    {
+     "word": "to",
+     "start": 75.725,
+     "end": 75.862
+    },
+    {
+     "word": "immutable",
+     "start": 75.875,
+     "end": 76.45
+    },
+    {
+     "word": "software",
+     "start": 76.45,
+     "end": 77.1
+    },
+    {
+     "word": "rules.",
+     "start": 77.1,
+     "end": 77.6
+    },
+    {
+     "word": "The",
+     "start": 78.0,
+     "end": 78.075
+    },
+    {
+     "word": "genesis",
+     "start": 78.075,
+     "end": 78.537
+    },
+    {
+     "word": "block",
+     "start": 78.537,
+     "end": 78.912
+    },
+    {
+     "word": "was",
+     "start": 78.912,
+     "end": 79.1
+    },
+    {
+     "word": "mined",
+     "start": 79.112,
+     "end": 79.575
+    },
+    {
+     "word": "on",
+     "start": 79.575,
+     "end": 79.725
+    },
+    {
+     "word": "January",
+     "start": 79.737,
+     "end": 80.3
+    },
+    {
+     "word": "third,",
+     "start": 80.3,
+     "end": 80.812
+    },
+    {
+     "word": "two",
+     "start": 81.075,
+     "end": 81.25
+    },
+    {
+     "word": "thousand",
+     "start": 81.25,
+     "end": 81.612
+    },
+    {
+     "word": "nine.",
+     "start": 81.612,
+     "end": 81.925
+    },
+    {
+     "word": "Embedded",
+     "start": 82.312,
+     "end": 82.662
+    },
+    {
+     "word": "inside",
+     "start": 82.662,
+     "end": 83.15
+    },
+    {
+     "word": "that",
+     "start": 83.162,
+     "end": 83.338
+    },
+    {
+     "word": "first",
+     "start": 83.338,
+     "end": 83.737
+    },
+    {
+     "word": "block",
+     "start": 83.737,
+     "end": 84.1
+    },
+    {
+     "word": "was",
+     "start": 84.112,
+     "end": 84.263
+    },
+    {
+     "word": "a",
+     "start": 84.263,
+     "end": 84.325
+    },
+    {
+     "word": "permanent",
+     "start": 84.325,
+     "end": 84.85
+    },
+    {
+     "word": "message",
+     "start": 84.85,
+     "end": 85.438
+    },
+    {
+     "word": "referencing",
+     "start": 85.575,
+     "end": 86.15
+    },
+    {
+     "word": "bank",
+     "start": 86.162,
+     "end": 86.463
+    },
+    {
+     "word": "bailouts.",
+     "start": 86.475,
+     "end": 87.175
+    },
+    {
+     "word": "The",
+     "start": 87.6,
+     "end": 87.65
+    },
+    {
+     "word": "headline",
+     "start": 87.65,
+     "end": 88.025
+    },
+    {
+     "word": "came",
+     "start": 88.037,
+     "end": 88.263
+    },
+    {
+     "word": "from",
+     "start": 88.263,
+     "end": 88.362
+    },
+    {
+     "word": "a",
+     "start": 88.362,
+     "end": 88.4
+    },
+    {
+     "word": "major",
+     "start": 88.412,
+     "end": 88.888
+    },
+    {
+     "word": "UK",
+     "start": 88.888,
+     "end": 89.5
+    },
+    {
+     "word": "newspaper",
+     "start": 89.812,
+     "end": 90.388
+    },
+    {
+     "word": "published",
+     "start": 90.4,
+     "end": 90.862
+    },
+    {
+     "word": "on",
+     "start": 90.963,
+     "end": 91.05
+    },
+    {
+     "word": "the",
+     "start": 91.05,
+     "end": 91.088
+    },
+    {
+     "word": "exact",
+     "start": 91.088,
+     "end": 91.5
+    },
+    {
+     "word": "same",
+     "start": 91.5,
+     "end": 91.737
+    },
+    {
+     "word": "day.",
+     "start": 91.75,
+     "end": 92.112
+    },
+    {
+     "word": "Satoshi",
+     "start": 92.525,
+     "end": 93.338
+    },
+    {
+     "word": "permanently",
+     "start": 93.35,
+     "end": 94.15
+    },
+    {
+     "word": "anchored",
+     "start": 94.263,
+     "end": 94.662
+    },
+    {
+     "word": "the",
+     "start": 94.675,
+     "end": 94.737
+    },
+    {
+     "word": "cryptocurrency's",
+     "start": 94.737,
+     "end": 95.638
+    },
+    {
+     "word": "birth",
+     "start": 95.65,
+     "end": 96.15
+    },
+    {
+     "word": "to",
+     "start": 96.338,
+     "end": 96.438
+    },
+    {
+     "word": "the",
+     "start": 96.45,
+     "end": 96.537
+    },
+    {
+     "word": "failure",
+     "start": 96.55,
+     "end": 97.263
+    },
+    {
+     "word": "of",
+     "start": 97.4,
+     "end": 97.487
+    },
+    {
+     "word": "traditional",
+     "start": 97.487,
+     "end": 98.0
+    },
+    {
+     "word": "finance.",
+     "start": 98.0,
+     "end": 98.713
+    },
+    {
+     "word": "That",
+     "start": 99.125,
+     "end": 99.287
+    },
+    {
+     "word": "hidden",
+     "start": 99.287,
+     "end": 99.662
+    },
+    {
+     "word": "note",
+     "start": 99.662,
+     "end": 100.0
+    },
+    {
+     "word": "served",
+     "start": 100.088,
+     "end": 100.588
+    },
+    {
+     "word": "as",
+     "start": 100.6,
+     "end": 100.725
+    },
+    {
+     "word": "an",
+     "start": 100.725,
+     "end": 100.787
+    },
+    {
+     "word": "eternal",
+     "start": 100.8,
+     "end": 101.225
+    },
+    {
+     "word": "manifesto",
+     "start": 101.225,
+     "end": 102.112
+    },
+    {
+     "word": "against",
+     "start": 102.237,
+     "end": 102.575
+    },
+    {
+     "word": "centralized",
+     "start": 102.588,
+     "end": 103.487
+    },
+    {
+     "word": "monetary",
+     "start": 103.5,
+     "end": 104.125
+    },
+    {
+     "word": "rescue",
+     "start": 104.125,
+     "end": 104.475
+    },
+    {
+     "word": "packages.",
+     "start": 104.475,
+     "end": 105.15
+    },
+    {
+     "word": "Code",
+     "start": 105.562,
+     "end": 105.888
+    },
+    {
+     "word": "soon",
+     "start": 106.162,
+     "end": 106.513
+    },
+    {
+     "word": "evolved",
+     "start": 106.525,
+     "end": 106.938
+    },
+    {
+     "word": "from",
+     "start": 106.95,
+     "end": 107.138
+    },
+    {
+     "word": "simple",
+     "start": 107.15,
+     "end": 107.575
+    },
+    {
+     "word": "currency",
+     "start": 107.588,
+     "end": 108.037
+    },
+    {
+     "word": "transfers",
+     "start": 108.05,
+     "end": 108.787
+    },
+    {
+     "word": "into",
+     "start": 108.95,
+     "end": 109.138
+    },
+    {
+     "word": "complex",
+     "start": 109.15,
+     "end": 109.8
+    },
+    {
+     "word": "financial",
+     "start": 109.8,
+     "end": 110.3
+    },
+    {
+     "word": "agreements.",
+     "start": 110.312,
+     "end": 110.963
+    },
+    {
+     "word": "Programmable",
+     "start": 111.362,
+     "end": 111.938
+    },
+    {
+     "word": "smart",
+     "start": 111.938,
+     "end": 112.213
+    },
+    {
+     "word": "contracts",
+     "start": 112.213,
+     "end": 112.888
+    },
+    {
+     "word": "execute",
+     "start": 113.013,
+     "end": 113.513
+    },
+    {
+     "word": "financial",
+     "start": 113.513,
+     "end": 114.0
+    },
+    {
+     "word": "transactions",
+     "start": 114.013,
+     "end": 114.912
+    },
+    {
+     "word": "automatically",
+     "start": 115.05,
+     "end": 115.838
+    },
+    {
+     "word": "when",
+     "start": 116.013,
+     "end": 116.188
+    },
+    {
+     "word": "pre-coded",
+     "start": 116.2,
+     "end": 116.85
+    },
+    {
+     "word": "conditions",
+     "start": 116.85,
+     "end": 117.362
+    },
+    {
+     "word": "are",
+     "start": 117.362,
+     "end": 117.438
+    },
+    {
+     "word": "met.",
+     "start": 117.438,
+     "end": 117.85
+    },
+    {
+     "word": "Escrow",
+     "start": 118.225,
+     "end": 118.65
+    },
+    {
+     "word": "agents",
+     "start": 118.65,
+     "end": 119.2
+    },
+    {
+     "word": "and",
+     "start": 119.325,
+     "end": 119.562
+    },
+    {
+     "word": "legal",
+     "start": 119.575,
+     "end": 119.938
+    },
+    {
+     "word": "paperwork",
+     "start": 119.938,
+     "end": 120.525
+    },
+    {
+     "word": "become",
+     "start": 120.638,
+     "end": 121.062
+    },
+    {
+     "word": "completely",
+     "start": 121.075,
+     "end": 121.7
+    },
+    {
+     "word": "obsolete.",
+     "start": 121.7,
+     "end": 122.35
+    },
+    {
+     "word": "Execution",
+     "start": 122.737,
+     "end": 123.525
+    },
+    {
+     "word": "speed",
+     "start": 123.537,
+     "end": 124.0
+    },
+    {
+     "word": "shifts",
+     "start": 124.0,
+     "end": 124.475
+    },
+    {
+     "word": "from",
+     "start": 124.475,
+     "end": 124.65
+    },
+    {
+     "word": "days",
+     "start": 124.662,
+     "end": 125.1
+    },
+    {
+     "word": "of",
+     "start": 125.1,
+     "end": 125.162
+    },
+    {
+     "word": "manual",
+     "start": 125.162,
+     "end": 125.675
+    },
+    {
+     "word": "clearing",
+     "start": 125.688,
+     "end": 126.162
+    },
+    {
+     "word": "to",
+     "start": 126.35,
+     "end": 126.438
+    },
+    {
+     "word": "seconds",
+     "start": 126.438,
+     "end": 127.025
+    },
+    {
+     "word": "of",
+     "start": 127.037,
+     "end": 127.112
+    },
+    {
+     "word": "network",
+     "start": 127.112,
+     "end": 127.588
+    },
+    {
+     "word": "validation.",
+     "start": 127.588,
+     "end": 128.238
+    },
+    {
+     "word": "Global",
+     "start": 128.637,
+     "end": 128.975
+    },
+    {
+     "word": "trade",
+     "start": 128.975,
+     "end": 129.412
+    },
+    {
+     "word": "operates",
+     "start": 129.562,
+     "end": 130.088
+    },
+    {
+     "word": "continuously",
+     "start": 130.1,
+     "end": 130.925
+    },
+    {
+     "word": "without",
+     "start": 130.925,
+     "end": 131.338
+    },
+    {
+     "word": "weekends",
+     "start": 131.338,
+     "end": 132.012
+    },
+    {
+     "word": "or",
+     "start": 132.225,
+     "end": 132.4
+    },
+    {
+     "word": "banking",
+     "start": 132.4,
+     "end": 132.787
+    },
+    {
+     "word": "holidays.",
+     "start": 132.787,
+     "end": 133.5
+    },
+    {
+     "word": "Anyone",
+     "start": 133.887,
+     "end": 134.3
+    },
+    {
+     "word": "with",
+     "start": 134.3,
+     "end": 134.425
+    },
+    {
+     "word": "an",
+     "start": 134.425,
+     "end": 134.525
+    },
+    {
+     "word": "internet",
+     "start": 134.588,
+     "end": 134.912
+    },
+    {
+     "word": "connection",
+     "start": 134.912,
+     "end": 135.488
+    },
+    {
+     "word": "can",
+     "start": 135.65,
+     "end": 135.812
+    },
+    {
+     "word": "access",
+     "start": 135.825,
+     "end": 136.45
+    },
+    {
+     "word": "the",
+     "start": 136.463,
+     "end": 136.55
+    },
+    {
+     "word": "exact",
+     "start": 136.55,
+     "end": 137.062
+    },
+    {
+     "word": "same",
+     "start": 137.075,
+     "end": 137.575
+    },
+    {
+     "word": "financial",
+     "start": 137.65,
+     "end": 138.162
+    },
+    {
+     "word": "infrastructure.",
+     "start": 138.175,
+     "end": 138.912
+    },
+    {
+     "word": "The",
+     "start": 139.325,
+     "end": 139.425
+    },
+    {
+     "word": "underlying",
+     "start": 139.438,
+     "end": 140.0
+    },
+    {
+     "word": "architecture",
+     "start": 140.012,
+     "end": 140.675
+    },
+    {
+     "word": "remains",
+     "start": 140.675,
+     "end": 141.075
+    },
+    {
+     "word": "fully",
+     "start": 141.125,
+     "end": 141.537
+    },
+    {
+     "word": "transparent",
+     "start": 141.537,
+     "end": 142.387
+    },
+    {
+     "word": "and",
+     "start": 142.762,
+     "end": 142.875
+    },
+    {
+     "word": "verifiable",
+     "start": 142.887,
+     "end": 143.662
+    },
+    {
+     "word": "by",
+     "start": 143.675,
+     "end": 143.85
+    },
+    {
+     "word": "everyone.",
+     "start": 143.863,
+     "end": 144.438
+    },
+    {
+     "word": "Billions",
+     "start": 144.838,
+     "end": 145.287
+    },
+    {
+     "word": "of",
+     "start": 145.287,
+     "end": 145.387
+    },
+    {
+     "word": "dollars",
+     "start": 145.387,
+     "end": 145.812
+    },
+    {
+     "word": "now",
+     "start": 145.825,
+     "end": 146.088
+    },
+    {
+     "word": "secure",
+     "start": 146.088,
+     "end": 146.613
+    },
+    {
+     "word": "themselves",
+     "start": 146.625,
+     "end": 147.275
+    },
+    {
+     "word": "through",
+     "start": 147.412,
+     "end": 147.613
+    },
+    {
+     "word": "mathematics",
+     "start": 147.613,
+     "end": 148.463
+    },
+    {
+     "word": "rather",
+     "start": 148.637,
+     "end": 149.075
+    },
+    {
+     "word": "than",
+     "start": 149.075,
+     "end": 149.25
+    },
+    {
+     "word": "corporate",
+     "start": 149.25,
+     "end": 149.713
+    },
+    {
+     "word": "promises.",
+     "start": 149.713,
+     "end": 150.45
+    },
+    {
+     "word": "Nine",
+     "start": 150.85,
+     "end": 151.213
+    },
+    {
+     "word": "pages",
+     "start": 151.225,
+     "end": 151.7
+    },
+    {
+     "word": "of",
+     "start": 151.713,
+     "end": 151.812
+    },
+    {
+     "word": "text",
+     "start": 151.812,
+     "end": 152.275
+    },
+    {
+     "word": "launched",
+     "start": 152.4,
+     "end": 152.887
+    },
+    {
+     "word": "an",
+     "start": 153.213,
+     "end": 153.412
+    },
+    {
+     "word": "unstoppable",
+     "start": 153.425,
+     "end": 154.312
+    },
+    {
+     "word": "monetary",
+     "start": 154.325,
+     "end": 154.9
+    },
+    {
+     "word": "revolution.",
+     "start": 154.9,
+     "end": 155.562
+    },
+    {
+     "word": "Centralized",
+     "start": 155.963,
+     "end": 156.488
+    },
+    {
+     "word": "gatekeepers",
+     "start": 156.488,
+     "end": 157.137
+    },
+    {
+     "word": "can",
+     "start": 157.15,
+     "end": 157.312
+    },
+    {
+     "word": "no",
+     "start": 157.312,
+     "end": 157.575
+    },
+    {
+     "word": "longer",
+     "start": 157.588,
+     "end": 158.025
+    },
+    {
+     "word": "control",
+     "start": 158.037,
+     "end": 158.537
+    },
+    {
+     "word": "the",
+     "start": 158.537,
+     "end": 158.625
+    },
+    {
+     "word": "flow",
+     "start": 158.625,
+     "end": 159.1
+    },
+    {
+     "word": "of",
+     "start": 159.325,
+     "end": 159.412
+    },
+    {
+     "word": "global",
+     "start": 159.425,
+     "end": 159.787
+    },
+    {
+     "word": "value.",
+     "start": 159.787,
+     "end": 160.238
+    },
+    {
+     "word": "The",
+     "start": 160.637,
+     "end": 160.688
+    },
+    {
+     "word": "transition",
+     "start": 160.688,
+     "end": 161.338
+    },
+    {
+     "word": "from",
+     "start": 161.338,
+     "end": 161.5
+    },
+    {
+     "word": "human",
+     "start": 161.512,
+     "end": 161.825
+    },
+    {
+     "word": "trust",
+     "start": 161.825,
+     "end": 162.275
+    },
+    {
+     "word": "to",
+     "start": 162.5,
+     "end": 162.588
+    },
+    {
+     "word": "cryptographic",
+     "start": 162.588,
+     "end": 163.25
+    },
+    {
+     "word": "certainty",
+     "start": 163.25,
+     "end": 163.963
+    },
+    {
+     "word": "is",
+     "start": 164.2,
+     "end": 164.512
+    },
+    {
+     "word": "absolute.",
+     "start": 164.525,
+     "end": 165.213
+    },
+    {
+     "word": "Code",
+     "start": 165.625,
+     "end": 165.925
+    },
+    {
+     "word": "is",
+     "start": 166.225,
+     "end": 166.35
+    },
+    {
+     "word": "law",
+     "start": 166.35,
+     "end": 166.688
+    },
+    {
+     "word": "on",
+     "start": 166.688,
+     "end": 166.762
+    },
+    {
+     "word": "the",
+     "start": 166.762,
+     "end": 166.838
+    },
+    {
+     "word": "decentralized",
+     "start": 166.838,
+     "end": 167.675
+    },
+    {
+     "word": "frontier.",
+     "start": 167.688,
+     "end": 168.275
+    },
+    {
+     "word": "Mathematics",
+     "start": 168.688,
+     "end": 169.475
+    },
+    {
+     "word": "never",
+     "start": 169.562,
+     "end": 169.9
+    },
+    {
+     "word": "asks",
+     "start": 169.9,
+     "end": 170.238
+    },
+    {
+     "word": "for",
+     "start": 170.238,
+     "end": 170.363
+    },
+    {
+     "word": "permission.",
+     "start": 170.363,
+     "end": 170.9
+    },
+    {
+     "word": "Most",
+     "start": 171.3,
+     "end": 171.5
+    },
+    {
+     "word": "people",
+     "start": 171.5,
+     "end": 171.775
+    },
+    {
+     "word": "view",
+     "start": 171.787,
+     "end": 172.025
+    },
+    {
+     "word": "crypto",
+     "start": 172.025,
+     "end": 172.625
+    },
+    {
+     "word": "as",
+     "start": 172.738,
+     "end": 172.85
+    },
+    {
+     "word": "a",
+     "start": 172.85,
+     "end": 172.887
+    },
+    {
+     "word": "speculative",
+     "start": 172.9,
+     "end": 173.55
+    },
+    {
+     "word": "casino",
+     "start": 173.55,
+     "end": 174.125
+    },
+    {
+     "word": "for",
+     "start": 174.137,
+     "end": 174.262
+    },
+    {
+     "word": "day",
+     "start": 174.262,
+     "end": 174.438
+    },
+    {
+     "word": "traders.",
+     "start": 174.438,
+     "end": 175.075
+    },
+    {
+     "word": "Day",
+     "start": 175.488,
+     "end": 175.662
+    },
+    {
+     "word": "trading",
+     "start": 175.662,
+     "end": 176.125
+    },
+    {
+     "word": "apps",
+     "start": 176.125,
+     "end": 176.5
+    },
+    {
+     "word": "flash",
+     "start": 176.512,
+     "end": 177.025
+    },
+    {
+     "word": "bright",
+     "start": 177.037,
+     "end": 177.463
+    },
+    {
+     "word": "red",
+     "start": 177.475,
+     "end": 177.85
+    },
+    {
+     "word": "and",
+     "start": 178.0,
+     "end": 178.188
+    },
+    {
+     "word": "green",
+     "start": 178.188,
+     "end": 178.9
+    },
+    {
+     "word": "tickers",
+     "start": 178.988,
+     "end": 179.387
+    },
+    {
+     "word": "across",
+     "start": 179.4,
+     "end": 179.85
+    },
+    {
+     "word": "millions",
+     "start": 179.85,
+     "end": 180.488
+    },
+    {
+     "word": "of",
+     "start": 180.488,
+     "end": 180.537
+    },
+    {
+     "word": "consumer",
+     "start": 180.537,
+     "end": 180.975
+    },
+    {
+     "word": "screens.",
+     "start": 180.975,
+     "end": 181.575
+    },
+    {
+     "word": "The",
+     "start": 181.988,
+     "end": 182.05
+    },
+    {
+     "word": "price",
+     "start": 182.05,
+     "end": 182.375
+    },
+    {
+     "word": "volatility",
+     "start": 182.375,
+     "end": 182.95
+    },
+    {
+     "word": "dominates",
+     "start": 182.95,
+     "end": 183.588
+    },
+    {
+     "word": "every",
+     "start": 183.75,
+     "end": 184.012
+    },
+    {
+     "word": "mainstream",
+     "start": 184.012,
+     "end": 184.775
+    },
+    {
+     "word": "news",
+     "start": 184.925,
+     "end": 185.325
+    },
+    {
+     "word": "cycle.",
+     "start": 185.325,
+     "end": 185.863
+    },
+    {
+     "word": "But",
+     "start": 186.287,
+     "end": 186.4
+    },
+    {
+     "word": "price",
+     "start": 186.4,
+     "end": 186.812
+    },
+    {
+     "word": "speculation",
+     "start": 186.825,
+     "end": 187.637
+    },
+    {
+     "word": "hides",
+     "start": 187.863,
+     "end": 188.238
+    },
+    {
+     "word": "the",
+     "start": 188.238,
+     "end": 188.387
+    },
+    {
+     "word": "underlying",
+     "start": 188.5,
+     "end": 189.125
+    },
+    {
+     "word": "architecture.",
+     "start": 189.137,
+     "end": 189.925
+    },
+    {
+     "word": "In",
+     "start": 190.3,
+     "end": 190.375
+    },
+    {
+     "word": "October 2008",
+     "start": 190.375,
+     "end": 191.713
+    },
+    {
+     "word": "nine",
+     "start": 192.175,
+     "end": 192.562
+    },
+    {
+     "word": "pages",
+     "start": 192.575,
+     "end": 192.988
+    },
+    {
+     "word": "of",
+     "start": 192.988,
+     "end": 193.05
+    },
+    {
+     "word": "cryptography",
+     "start": 193.05,
+     "end": 193.825
+    },
+    {
+     "word": "posted",
+     "start": 193.838,
+     "end": 194.4
+    },
+    {
+     "word": "on",
+     "start": 194.4,
+     "end": 194.525
+    },
+    {
+     "word": "an",
+     "start": 194.525,
+     "end": 194.588
+    },
+    {
+     "word": "obscure",
+     "start": 194.588,
+     "end": 195.213
+    },
+    {
+     "word": "mailing",
+     "start": 195.537,
+     "end": 196.05
+    },
+    {
+     "word": "list",
+     "start": 196.05,
+     "end": 196.363
+    },
+    {
+     "word": "changed",
+     "start": 196.363,
+     "end": 196.912
+    },
+    {
+     "word": "global",
+     "start": 196.925,
+     "end": 197.438
+    },
+    {
+     "word": "finance",
+     "start": 197.438,
+     "end": 197.975
+    },
+    {
+     "word": "forever.",
+     "start": 197.975,
+     "end": 198.575
+    },
+    {
+     "word": "Satoshi",
+     "start": 198.975,
+     "end": 199.45
+    },
+    {
+     "word": "Nakamoto",
+     "start": 199.45,
+     "end": 200.113
+    },
+    {
+     "word": "released",
+     "start": 200.125,
+     "end": 200.675
+    },
+    {
+     "word": "the",
+     "start": 200.675,
+     "end": 200.8
+    },
+    {
+     "word": "Bitcoin",
+     "start": 200.912,
+     "end": 201.45
+    },
+    {
+     "word": "whitepaper",
+     "start": 201.45,
+     "end": 202.175
+    },
+    {
+     "word": "on",
+     "start": 202.175,
+     "end": 202.275
+    },
+    {
+     "word": "a",
+     "start": 202.275,
+     "end": 202.312
+    },
+    {
+     "word": "cryptography",
+     "start": 202.312,
+     "end": 203.225
+    },
+    {
+     "word": "mailing",
+     "start": 203.438,
+     "end": 203.975
+    },
+    {
+     "word": "list",
+     "start": 203.975,
+     "end": 204.375
+    },
+    {
+     "word": "to",
+     "start": 204.525,
+     "end": 204.625
+    },
+    {
+     "word": "the",
+     "start": 204.625,
+     "end": 204.713
+    },
+    {
+     "word": "public.",
+     "start": 204.713,
+     "end": 205.225
+    },
+    {
+     "word": "Many",
+     "start": 205.637,
+     "end": 205.9
+    },
+    {
+     "word": "observers",
+     "start": 205.9,
+     "end": 206.463
+    },
+    {
+     "word": "treat",
+     "start": 206.475,
+     "end": 206.938
+    },
+    {
+     "word": "digital",
+     "start": 206.95,
+     "end": 207.338
+    },
+    {
+     "word": "assets",
+     "start": 207.338,
+     "end": 207.988
+    },
+    {
+     "word": "as",
+     "start": 208.338,
+     "end": 208.512
+    },
+    {
+     "word": "pure",
+     "start": 208.525,
+     "end": 208.963
+    },
+    {
+     "word": "speculation",
+     "start": 208.975,
+     "end": 209.7
+    },
+    {
+     "word": "for",
+     "start": 209.7,
+     "end": 209.825
+    },
+    {
+     "word": "day",
+     "start": 209.838,
+     "end": 210.088
+    },
+    {
+     "word": "traders",
+     "start": 210.088,
+     "end": 210.675
+    },
+    {
+     "word": "seeking",
+     "start": 210.887,
+     "end": 211.387
+    },
+    {
+     "word": "quick",
+     "start": 211.387,
+     "end": 211.637
+    },
+    {
+     "word": "fortunes.",
+     "start": 211.637,
+     "end": 212.312
+    },
+    {
+     "word": "External",
+     "start": 212.725,
+     "end": 213.162
+    },
+    {
+     "word": "markets",
+     "start": 213.175,
+     "end": 213.662
+    },
+    {
+     "word": "view",
+     "start": 213.675,
+     "end": 214.012
+    },
+    {
+     "word": "price",
+     "start": 214.012,
+     "end": 214.425
+    },
+    {
+     "word": "charts",
+     "start": 214.438,
+     "end": 214.975
+    },
+    {
+     "word": "as",
+     "start": 215.1,
+     "end": 215.225
+    },
+    {
+     "word": "a",
+     "start": 215.225,
+     "end": 215.275
+    },
+    {
+     "word": "casino",
+     "start": 215.287,
+     "end": 215.812
+    },
+    {
+     "word": "game",
+     "start": 215.812,
+     "end": 216.188
+    },
+    {
+     "word": "driven",
+     "start": 216.35,
+     "end": 216.65
+    },
+    {
+     "word": "entirely",
+     "start": 216.65,
+     "end": 217.312
+    },
+    {
+     "word": "by",
+     "start": 217.312,
+     "end": 217.463
+    },
+    {
+     "word": "hype.",
+     "start": 217.463,
+     "end": 217.887
+    },
+    {
+     "word": "Popular",
+     "start": 218.3,
+     "end": 218.713
+    },
+    {
+     "word": "discourse",
+     "start": 218.713,
+     "end": 219.3
+    },
+    {
+     "word": "reduces",
+     "start": 219.312,
+     "end": 219.95
+    },
+    {
+     "word": "complex",
+     "start": 219.963,
+     "end": 220.537
+    },
+    {
+     "word": "protocols",
+     "start": 220.55,
+     "end": 221.35
+    },
+    {
+     "word": "to",
+     "start": 221.488,
+     "end": 221.588
+    },
+    {
+     "word": "mere",
+     "start": 221.588,
+     "end": 222.012
+    },
+    {
+     "word": "gambling",
+     "start": 222.025,
+     "end": 222.525
+    },
+    {
+     "word": "tokens.",
+     "start": 222.537,
+     "end": 223.188
+    },
+    {
+     "word": "Financial",
+     "start": 223.637,
+     "end": 224.037
+    },
+    {
+     "word": "media",
+     "start": 224.037,
+     "end": 224.45
+    },
+    {
+     "word": "focuses",
+     "start": 224.575,
+     "end": 225.188
+    },
+    {
+     "word": "heavily",
+     "start": 225.2,
+     "end": 225.787
+    },
+    {
+     "word": "on",
+     "start": 225.787,
+     "end": 225.975
+    },
+    {
+     "word": "daily",
+     "start": 226.062,
+     "end": 226.438
+    },
+    {
+     "word": "price",
+     "start": 226.438,
+     "end": 226.775
+    },
+    {
+     "word": "volatility",
+     "start": 226.775,
+     "end": 227.537
+    },
+    {
+     "word": "instead",
+     "start": 227.912,
+     "end": 228.463
+    },
+    {
+     "word": "of",
+     "start": 228.562,
+     "end": 228.713
+    },
+    {
+     "word": "underlying",
+     "start": 228.825,
+     "end": 229.363
+    },
+    {
+     "word": "technology.",
+     "start": 229.375,
+     "end": 230.113
+    },
+    {
+     "word": "In",
+     "start": 230.488,
+     "end": 230.575
+    },
+    {
+     "word": "October 2008",
+     "start": 230.588,
+     "end": 232.0
+    },
+    {
+     "word": "nine",
+     "start": 232.463,
+     "end": 232.863
+    },
+    {
+     "word": "pages",
+     "start": 232.875,
+     "end": 233.3
+    },
+    {
+     "word": "of",
+     "start": 233.312,
+     "end": 233.387
+    },
+    {
+     "word": "cryptography",
+     "start": 233.387,
+     "end": 234.15
+    },
+    {
+     "word": "posted",
+     "start": 234.15,
+     "end": 234.713
+    },
+    {
+     "word": "on",
+     "start": 234.713,
+     "end": 234.85
+    },
+    {
+     "word": "an",
+     "start": 234.85,
+     "end": 234.912
+    },
+    {
+     "word": "obscure",
+     "start": 234.912,
+     "end": 235.562
+    },
+    {
+     "word": "mailing",
+     "start": 235.825,
+     "end": 236.338
+    },
+    {
+     "word": "list",
+     "start": 236.35,
+     "end": 236.65
+    },
+    {
+     "word": "changed",
+     "start": 236.662,
+     "end": 237.25
+    },
+    {
+     "word": "global",
+     "start": 237.262,
+     "end": 237.762
+    },
+    {
+     "word": "finance",
+     "start": 237.775,
+     "end": 238.363
+    },
+    {
+     "word": "forever.",
+     "start": 238.363,
+     "end": 238.975
+    },
+    {
+     "word": "A",
+     "start": 239.387,
+     "end": 239.45
+    },
+    {
+     "word": "pseudonymous",
+     "start": 239.45,
+     "end": 240.1
+    },
+    {
+     "word": "developer",
+     "start": 240.1,
+     "end": 240.713
+    },
+    {
+     "word": "named",
+     "start": 240.988,
+     "end": 241.213
+    },
+    {
+     "word": "Satoshi",
+     "start": 241.213,
+     "end": 241.738
+    },
+    {
+     "word": "Nakamoto",
+     "start": 241.738,
+     "end": 242.6
+    },
+    {
+     "word": "published",
+     "start": 242.613,
+     "end": 243.05
+    },
+    {
+     "word": "the",
+     "start": 243.05,
+     "end": 243.137
+    },
+    {
+     "word": "Bitcoin",
+     "start": 243.15,
+     "end": 243.725
+    },
+    {
+     "word": "whitepaper",
+     "start": 243.725,
+     "end": 244.45
+    },
+    {
+     "word": "without",
+     "start": 244.613,
+     "end": 244.988
+    },
+    {
+     "word": "warning.",
+     "start": 245.0,
+     "end": 245.375
+    },
+    {
+     "word": "Traditional",
+     "start": 245.775,
+     "end": 246.213
+    },
+    {
+     "word": "finance",
+     "start": 246.213,
+     "end": 246.85
+    },
+    {
+     "word": "relies",
+     "start": 246.863,
+     "end": 247.35
+    },
+    {
+     "word": "entirely",
+     "start": 247.35,
+     "end": 248.188
+    },
+    {
+     "word": "on",
+     "start": 248.2,
+     "end": 248.338
+    },
+    {
+     "word": "trusted",
+     "start": 248.338,
+     "end": 248.787
+    },
+    {
+     "word": "intermediaries",
+     "start": 248.787,
+     "end": 249.637
+    },
+    {
+     "word": "to",
+     "start": 249.85,
+     "end": 249.963
+    },
+    {
+     "word": "route",
+     "start": 249.963,
+     "end": 250.325
+    },
+    {
+     "word": "every",
+     "start": 250.575,
+     "end": 250.938
+    },
+    {
+     "word": "single",
+     "start": 250.938,
+     "end": 251.338
+    },
+    {
+     "word": "transaction.",
+     "start": 251.35,
+     "end": 252.1
+    },
+    {
+     "word": "Central",
+     "start": 252.5,
+     "end": 252.838
+    },
+    {
+     "word": "banks",
+     "start": 252.838,
+     "end": 253.3
+    },
+    {
+     "word": "print",
+     "start": 253.412,
+     "end": 253.713
+    },
+    {
+     "word": "fiat",
+     "start": 253.713,
+     "end": 254.162
+    },
+    {
+     "word": "currency",
+     "start": 254.175,
+     "end": 254.85
+    },
+    {
+     "word": "at",
+     "start": 255.0,
+     "end": 255.162
+    },
+    {
+     "word": "will,",
+     "start": 255.162,
+     "end": 255.45
+    },
+    {
+     "word": "losing",
+     "start": 255.938,
+     "end": 256.325
+    },
+    {
+     "word": "purchasing",
+     "start": 256.325,
+     "end": 256.887
+    },
+    {
+     "word": "power",
+     "start": 256.887,
+     "end": 257.45
+    },
+    {
+     "word": "over",
+     "start": 257.575,
+     "end": 257.788
+    },
+    {
+     "word": "decades",
+     "start": 257.8,
+     "end": 258.5
+    },
+    {
+     "word": "through",
+     "start": 258.562,
+     "end": 258.788
+    },
+    {
+     "word": "inflation.",
+     "start": 258.788,
+     "end": 259.387
+    },
+    {
+     "word": "Most",
+     "start": 259.775,
+     "end": 260.025
+    },
+    {
+     "word": "observers",
+     "start": 260.038,
+     "end": 260.512
+    },
+    {
+     "word": "assume",
+     "start": 260.525,
+     "end": 261.0
+    },
+    {
+     "word": "crypto",
+     "start": 261.0,
+     "end": 261.488
+    },
+    {
+     "word": "exists",
+     "start": 261.5,
+     "end": 262.087
+    },
+    {
+     "word": "solely",
+     "start": 262.325,
+     "end": 263.05
+    },
+    {
+     "word": "as",
+     "start": 263.062,
+     "end": 263.2
+    },
+    {
+     "word": "a",
+     "start": 263.2,
+     "end": 263.25
+    },
+    {
+     "word": "speculative",
+     "start": 263.25,
+     "end": 263.875
+    },
+    {
+     "word": "casino",
+     "start": 263.875,
+     "end": 264.488
+    },
+    {
+     "word": "for",
+     "start": 264.625,
+     "end": 264.75
+    },
+    {
+     "word": "day",
+     "start": 264.75,
+     "end": 264.925
+    },
+    {
+     "word": "traders.",
+     "start": 264.925,
+     "end": 265.55
+    },
+    {
+     "word": "Day",
+     "start": 265.95,
+     "end": 266.137
+    },
+    {
+     "word": "traders",
+     "start": 266.15,
+     "end": 266.613
+    },
+    {
+     "word": "chase",
+     "start": 266.613,
+     "end": 267.038
+    },
+    {
+     "word": "short",
+     "start": 267.188,
+     "end": 267.5
+    },
+    {
+     "word": "term",
+     "start": 267.5,
+     "end": 267.762
+    },
+    {
+     "word": "volatility",
+     "start": 267.762,
+     "end": 268.538
+    },
+    {
+     "word": "on",
+     "start": 269.038,
+     "end": 269.262
+    },
+    {
+     "word": "centralized",
+     "start": 269.4,
+     "end": 270.075
+    },
+    {
+     "word": "exchanges.",
+     "start": 270.075,
+     "end": 270.812
+    },
+    {
+     "word": "Price",
+     "start": 271.225,
+     "end": 271.538
+    },
+    {
+     "word": "action",
+     "start": 271.6,
+     "end": 272.025
+    },
+    {
+     "word": "dominates",
+     "start": 272.038,
+     "end": 272.538
+    },
+    {
+     "word": "headlines",
+     "start": 272.538,
+     "end": 273.15
+    },
+    {
+     "word": "while",
+     "start": 273.163,
+     "end": 273.3
+    },
+    {
+     "word": "the",
+     "start": 273.3,
+     "end": 273.425
+    },
+    {
+     "word": "underlying",
+     "start": 273.5,
+     "end": 274.175
+    },
+    {
+     "word": "ledger",
+     "start": 274.175,
+     "end": 274.6
+    },
+    {
+     "word": "architecture",
+     "start": 274.6,
+     "end": 275.35
+    },
+    {
+     "word": "hums",
+     "start": 275.575,
+     "end": 275.85
+    },
+    {
+     "word": "quietly",
+     "start": 275.863,
+     "end": 276.613
+    },
+    {
+     "word": "in",
+     "start": 276.762,
+     "end": 276.837
+    },
+    {
+     "word": "the",
+     "start": 276.837,
+     "end": 276.9
+    },
+    {
+     "word": "background.",
+     "start": 276.9,
+     "end": 277.587
+    },
+    {
+     "word": "Code",
+     "start": 277.975,
+     "end": 278.238
+    },
+    {
+     "word": "replaces",
+     "start": 278.238,
+     "end": 278.85
+    },
+    {
+     "word": "central",
+     "start": 278.975,
+     "end": 279.438
+    },
+    {
+     "word": "authority",
+     "start": 279.438,
+     "end": 280.062
+    },
+    {
+     "word": "through",
+     "start": 280.175,
+     "end": 280.4
+    },
+    {
+     "word": "pure",
+     "start": 280.413,
+     "end": 280.85
+    },
+    {
+     "word": "mathematical",
+     "start": 280.85,
+     "end": 281.637
+    },
+    {
+     "word": "rules",
+     "start": 281.65,
+     "end": 282.087
+    },
+    {
+     "word": "written",
+     "start": 282.1,
+     "end": 282.475
+    },
+    {
+     "word": "into",
+     "start": 282.475,
+     "end": 282.625
+    },
+    {
+     "word": "software.",
+     "start": 282.625,
+     "end": 283.325
+    },
+    {
+     "word": "Public",
+     "start": 283.738,
+     "end": 284.025
+    },
+    {
+     "word": "blockchains",
+     "start": 284.025,
+     "end": 284.688
+    },
+    {
+     "word": "discard",
+     "start": 284.7,
+     "end": 285.25
+    },
+    {
+     "word": "centralized",
+     "start": 285.688,
+     "end": 286.3
+    },
+    {
+     "word": "databases",
+     "start": 286.3,
+     "end": 287.025
+    },
+    {
+     "word": "in",
+     "start": 287.087,
+     "end": 287.238
+    },
+    {
+     "word": "favor",
+     "start": 287.25,
+     "end": 287.95
+    },
+    {
+     "word": "of",
+     "start": 288.075,
+     "end": 288.188
+    },
+    {
+     "word": "distributed",
+     "start": 288.2,
+     "end": 288.825
+    },
+    {
+     "word": "consensus.",
+     "start": 288.837,
+     "end": 289.738
+    },
+    {
+     "word": "Thousands",
+     "start": 290.212,
+     "end": 290.7
+    },
+    {
+     "word": "of",
+     "start": 290.712,
+     "end": 290.788
+    },
+    {
+     "word": "independent",
+     "start": 290.8,
+     "end": 291.312
+    },
+    {
+     "word": "nodes",
+     "start": 291.312,
+     "end": 291.75
+    },
+    {
+     "word": "verify",
+     "start": 291.762,
+     "end": 292.475
+    },
+    {
+     "word": "every",
+     "start": 292.788,
+     "end": 293.125
+    },
+    {
+     "word": "state",
+     "start": 293.125,
+     "end": 293.488
+    },
+    {
+     "word": "change",
+     "start": 293.488,
+     "end": 293.988
+    },
+    {
+     "word": "without",
+     "start": 294.0,
+     "end": 294.475
+    },
+    {
+     "word": "knowing",
+     "start": 294.488,
+     "end": 295.113
+    },
+    {
+     "word": "or",
+     "start": 295.3,
+     "end": 295.363
+    },
+    {
+     "word": "trusting",
+     "start": 295.363,
+     "end": 295.85
+    },
+    {
+     "word": "each",
+     "start": 295.85,
+     "end": 295.975
+    },
+    {
+     "word": "other.",
+     "start": 295.988,
+     "end": 296.337
+    },
+    {
+     "word": "Double",
+     "start": 296.738,
+     "end": 297.0
+    },
+    {
+     "word": "spending",
+     "start": 297.012,
+     "end": 297.387
+    },
+    {
+     "word": "becomes",
+     "start": 297.387,
+     "end": 297.975
+    },
+    {
+     "word": "impossible",
+     "start": 298.087,
+     "end": 298.962
+    },
+    {
+     "word": "when",
+     "start": 299.125,
+     "end": 299.25
+    },
+    {
+     "word": "transaction",
+     "start": 299.25,
+     "end": 299.975
+    },
+    {
+     "word": "history",
+     "start": 299.975,
+     "end": 300.587
+    },
+    {
+     "word": "is",
+     "start": 300.812,
+     "end": 300.913
+    },
+    {
+     "word": "chained",
+     "start": 300.913,
+     "end": 301.375
+    },
+    {
+     "word": "cryptographically.",
+     "start": 301.375,
+     "end": 302.312
+    },
+    {
+     "word": "No",
+     "start": 302.725,
+     "end": 302.988
+    },
+    {
+     "word": "single",
+     "start": 302.988,
+     "end": 303.363
+    },
+    {
+     "word": "entity",
+     "start": 303.363,
+     "end": 303.887
+    },
+    {
+     "word": "can",
+     "start": 304.05,
+     "end": 304.325
+    },
+    {
+     "word": "alter",
+     "start": 304.387,
+     "end": 304.75
+    },
+    {
+     "word": "past",
+     "start": 304.75,
+     "end": 305.137
+    },
+    {
+     "word": "records",
+     "start": 305.137,
+     "end": 305.65
+    },
+    {
+     "word": "once",
+     "start": 305.725,
+     "end": 306.15
+    },
+    {
+     "word": "written",
+     "start": 306.163,
+     "end": 306.625
+    },
+    {
+     "word": "to",
+     "start": 306.788,
+     "end": 306.9
+    },
+    {
+     "word": "the",
+     "start": 306.9,
+     "end": 307.012
+    },
+    {
+     "word": "distributed",
+     "start": 307.025,
+     "end": 307.538
+    },
+    {
+     "word": "ledger.",
+     "start": 307.55,
+     "end": 308.012
+    },
+    {
+     "word": "Miners",
+     "start": 308.425,
+     "end": 308.75
+    },
+    {
+     "word": "secure",
+     "start": 308.75,
+     "end": 309.15
+    },
+    {
+     "word": "the",
+     "start": 309.163,
+     "end": 309.225
+    },
+    {
+     "word": "network",
+     "start": 309.225,
+     "end": 309.725
+    },
+    {
+     "word": "by",
+     "start": 309.863,
+     "end": 310.0
+    },
+    {
+     "word": "expending",
+     "start": 310.012,
+     "end": 310.512
+    },
+    {
+     "word": "computational",
+     "start": 310.525,
+     "end": 311.262
+    },
+    {
+     "word": "power",
+     "start": 311.262,
+     "end": 311.725
+    },
+    {
+     "word": "to",
+     "start": 311.738,
+     "end": 311.825
+    },
+    {
+     "word": "solve",
+     "start": 311.825,
+     "end": 312.163
+    },
+    {
+     "word": "complex",
+     "start": 312.262,
+     "end": 313.062
+    },
+    {
+     "word": "cryptographic",
+     "start": 313.163,
+     "end": 313.825
+    },
+    {
+     "word": "puzzles.",
+     "start": 313.837,
+     "end": 314.413
+    },
+    {
+     "word": "Energy",
+     "start": 314.8,
+     "end": 315.225
+    },
+    {
+     "word": "expenditure",
+     "start": 315.238,
+     "end": 316.025
+    },
+    {
+     "word": "ties",
+     "start": 316.3,
+     "end": 317.087
+    },
+    {
+     "word": "digital",
+     "start": 317.238,
+     "end": 317.587
+    },
+    {
+     "word": "scarcity",
+     "start": 317.587,
+     "end": 318.35
+    },
+    {
+     "word": "to",
+     "start": 318.6,
+     "end": 318.688
+    },
+    {
+     "word": "the",
+     "start": 318.688,
+     "end": 318.788
+    },
+    {
+     "word": "physical",
+     "start": 318.788,
+     "end": 319.3
+    },
+    {
+     "word": "laws",
+     "start": 319.3,
+     "end": 319.85
+    },
+    {
+     "word": "of",
+     "start": 319.962,
+     "end": 320.05
+    },
+    {
+     "word": "thermodynamics.",
+     "start": 320.05,
+     "end": 321.087
+    },
+    {
+     "word": "On",
+     "start": 321.488,
+     "end": 321.613
+    },
+    {
+     "word": "January",
+     "start": 321.625,
+     "end": 322.2
+    },
+    {
+     "word": "third",
+     "start": 322.212,
+     "end": 322.775
+    },
+    {
+     "word": "2009,",
+     "start": 323.038,
+     "end": 323.925
+    },
+    {
+     "word": "the",
+     "start": 324.3,
+     "end": 324.375
+    },
+    {
+     "word": "genesis",
+     "start": 324.387,
+     "end": 324.85
+    },
+    {
+     "word": "block",
+     "start": 324.863,
+     "end": 325.212
+    },
+    {
+     "word": "was",
+     "start": 325.212,
+     "end": 325.375
+    },
+    {
+     "word": "mined",
+     "start": 325.375,
+     "end": 325.775
+    },
+    {
+     "word": "with",
+     "start": 325.775,
+     "end": 325.9
+    },
+    {
+     "word": "a",
+     "start": 325.9,
+     "end": 325.962
+    },
+    {
+     "word": "permanent",
+     "start": 325.962,
+     "end": 326.488
+    },
+    {
+     "word": "message",
+     "start": 326.488,
+     "end": 327.05
+    },
+    {
+     "word": "embedded",
+     "start": 327.175,
+     "end": 327.613
+    },
+    {
+     "word": "inside.",
+     "start": 327.625,
+     "end": 328.25
+    },
+    {
+     "word": "Satoshi",
+     "start": 328.65,
+     "end": 329.275
+    },
+    {
+     "word": "embedded",
+     "start": 329.275,
+     "end": 329.75
+    },
+    {
+     "word": "a",
+     "start": 329.887,
+     "end": 329.913
+    },
+    {
+     "word": "newspaper",
+     "start": 329.913,
+     "end": 330.688
+    },
+    {
+     "word": "headline",
+     "start": 330.688,
+     "end": 331.312
+    },
+    {
+     "word": "referencing",
+     "start": 331.512,
+     "end": 332.025
+    },
+    {
+     "word": "bank",
+     "start": 332.038,
+     "end": 332.387
+    },
+    {
+     "word": "bailouts",
+     "start": 332.387,
+     "end": 333.1
+    },
+    {
+     "word": "directly",
+     "start": 333.288,
+     "end": 334.1
+    },
+    {
+     "word": "into",
+     "start": 334.3,
+     "end": 334.462
+    },
+    {
+     "word": "the",
+     "start": 334.462,
+     "end": 334.55
+    },
+    {
+     "word": "coinbase",
+     "start": 334.55,
+     "end": 335.05
+    },
+    {
+     "word": "parameter.",
+     "start": 335.05,
+     "end": 335.663
+    },
+    {
+     "word": "That",
+     "start": 336.05,
+     "end": 336.188
+    },
+    {
+     "word": "single",
+     "start": 336.2,
+     "end": 336.538
+    },
+    {
+     "word": "headline",
+     "start": 336.538,
+     "end": 337.1
+    },
+    {
+     "word": "sealed",
+     "start": 337.175,
+     "end": 337.613
+    },
+    {
+     "word": "the",
+     "start": 337.625,
+     "end": 337.738
+    },
+    {
+     "word": "purpose",
+     "start": 337.738,
+     "end": 338.325
+    },
+    {
+     "word": "of",
+     "start": 338.337,
+     "end": 338.438
+    },
+    {
+     "word": "the",
+     "start": 338.438,
+     "end": 338.488
+    },
+    {
+     "word": "entire",
+     "start": 338.488,
+     "end": 339.087
+    },
+    {
+     "word": "peer",
+     "start": 339.087,
+     "end": 339.45
+    },
+    {
+     "word": "to",
+     "start": 339.6,
+     "end": 339.7
+    },
+    {
+     "word": "peer",
+     "start": 339.7,
+     "end": 339.95
+    },
+    {
+     "word": "experiment.",
+     "start": 339.95,
+     "end": 340.538
+    },
+    {
+     "word": "Traditional",
+     "start": 340.95,
+     "end": 341.375
+    },
+    {
+     "word": "banking",
+     "start": 341.387,
+     "end": 341.8
+    },
+    {
+     "word": "required",
+     "start": 341.8,
+     "end": 342.262
+    },
+    {
+     "word": "physical",
+     "start": 342.275,
+     "end": 342.725
+    },
+    {
+     "word": "branches,",
+     "start": 342.738,
+     "end": 343.375
+    },
+    {
+     "word": "paper",
+     "start": 343.587,
+     "end": 343.938
+    },
+    {
+     "word": "ledgers,",
+     "start": 343.938,
+     "end": 344.525
+    },
+    {
+     "word": "and",
+     "start": 344.663,
+     "end": 344.762
+    },
+    {
+     "word": "trusted",
+     "start": 344.762,
+     "end": 345.188
+    },
+    {
+     "word": "human",
+     "start": 345.188,
+     "end": 345.45
+    },
+    {
+     "word": "clerks.",
+     "start": 345.462,
+     "end": 346.012
+    },
+    {
+     "word": "Digital",
+     "start": 346.413,
+     "end": 346.812
+    },
+    {
+     "word": "networks",
+     "start": 346.812,
+     "end": 347.475
+    },
+    {
+     "word": "eliminated",
+     "start": 347.6,
+     "end": 348.312
+    },
+    {
+     "word": "geography",
+     "start": 348.312,
+     "end": 349.288
+    },
+    {
+     "word": "entirely,",
+     "start": 349.387,
+     "end": 350.25
+    },
+    {
+     "word": "settling",
+     "start": 350.675,
+     "end": 351.075
+    },
+    {
+     "word": "value",
+     "start": 351.087,
+     "end": 351.538
+    },
+    {
+     "word": "transfers",
+     "start": 351.538,
+     "end": 352.1
+    },
+    {
+     "word": "across",
+     "start": 352.113,
+     "end": 352.488
+    },
+    {
+     "word": "continents",
+     "start": 352.5,
+     "end": 353.087
+    },
+    {
+     "word": "in",
+     "start": 353.1,
+     "end": 353.238
+    },
+    {
+     "word": "minutes.",
+     "start": 353.25,
+     "end": 353.775
+    },
+    {
+     "word": "Blockchains",
+     "start": 354.188,
+     "end": 354.75
+    },
+    {
+     "word": "operate",
+     "start": 354.762,
+     "end": 355.3
+    },
+    {
+     "word": "twenty",
+     "start": 355.312,
+     "end": 355.625
+    },
+    {
+     "word": "four",
+     "start": 355.625,
+     "end": 355.9
+    },
+    {
+     "word": "hours",
+     "start": 355.9,
+     "end": 356.163
+    },
+    {
+     "word": "a",
+     "start": 356.163,
+     "end": 356.212
+    },
+    {
+     "word": "day",
+     "start": 356.212,
+     "end": 356.6
+    },
+    {
+     "word": "without",
+     "start": 356.738,
+     "end": 357.15
+    },
+    {
+     "word": "maintenance",
+     "start": 357.15,
+     "end": 357.637
+    },
+    {
+     "word": "windows",
+     "start": 357.637,
+     "end": 358.325
+    },
+    {
+     "word": "or",
+     "start": 358.337,
+     "end": 358.512
+    },
+    {
+     "word": "holiday",
+     "start": 358.525,
+     "end": 358.95
+    },
+    {
+     "word": "closures.",
+     "start": 358.962,
+     "end": 359.65
+    },
+    {
+     "word": "Programmable",
+     "start": 360.062,
+     "end": 360.637
+    },
+    {
+     "word": "smart",
+     "start": 360.637,
+     "end": 360.975
+    },
+    {
+     "word": "contracts",
+     "start": 360.975,
+     "end": 361.712
+    },
+    {
+     "word": "execute",
+     "start": 361.837,
+     "end": 362.325
+    },
+    {
+     "word": "financial",
+     "start": 362.337,
+     "end": 362.887
+    },
+    {
+     "word": "agreements",
+     "start": 362.887,
+     "end": 363.438
+    },
+    {
+     "word": "automatically",
+     "start": 363.587,
+     "end": 364.387
+    },
+    {
+     "word": "when",
+     "start": 364.6,
+     "end": 364.788
+    },
+    {
+     "word": "pre-coded",
+     "start": 364.8,
+     "end": 365.425
+    },
+    {
+     "word": "conditions",
+     "start": 365.425,
+     "end": 365.925
+    },
+    {
+     "word": "are",
+     "start": 365.925,
+     "end": 365.988
+    },
+    {
+     "word": "met.",
+     "start": 365.988,
+     "end": 366.413
+    },
+    {
+     "word": "Escrow",
+     "start": 366.825,
+     "end": 367.238
+    },
+    {
+     "word": "agents",
+     "start": 367.238,
+     "end": 367.825
+    },
+    {
+     "word": "and",
+     "start": 368.0,
+     "end": 368.175
+    },
+    {
+     "word": "legal",
+     "start": 368.175,
+     "end": 368.5
+    },
+    {
+     "word": "paperwork",
+     "start": 368.512,
+     "end": 369.012
+    },
+    {
+     "word": "become",
+     "start": 369.012,
+     "end": 369.4
+    },
+    {
+     "word": "obsolete",
+     "start": 369.5,
+     "end": 370.15
+    },
+    {
+     "word": "when",
+     "start": 370.413,
+     "end": 370.562
+    },
+    {
+     "word": "code",
+     "start": 370.562,
+     "end": 370.9
+    },
+    {
+     "word": "enforces",
+     "start": 370.913,
+     "end": 371.562
+    },
+    {
+     "word": "the",
+     "start": 371.575,
+     "end": 371.65
+    },
+    {
+     "word": "rules",
+     "start": 371.663,
+     "end": 372.062
+    },
+    {
+     "word": "directly.",
+     "start": 372.062,
+     "end": 372.725
+    },
+    {
+     "word": "Developers",
+     "start": 373.125,
+     "end": 373.688
+    },
+    {
+     "word": "write",
+     "start": 373.7,
+     "end": 374.025
+    },
+    {
+     "word": "logic",
+     "start": 374.025,
+     "end": 374.587
+    },
+    {
+     "word": "that",
+     "start": 374.6,
+     "end": 374.712
+    },
+    {
+     "word": "handles",
+     "start": 374.712,
+     "end": 375.212
+    },
+    {
+     "word": "collateral,",
+     "start": 375.225,
+     "end": 375.962
+    },
+    {
+     "word": "interest",
+     "start": 376.363,
+     "end": 376.775
+    },
+    {
+     "word": "rates,",
+     "start": 376.775,
+     "end": 377.312
+    },
+    {
+     "word": "and",
+     "start": 377.538,
+     "end": 377.738
+    },
+    {
+     "word": "liquidation",
+     "start": 377.75,
+     "end": 378.413
+    },
+    {
+     "word": "without",
+     "start": 378.413,
+     "end": 378.812
+    },
+    {
+     "word": "intermediaries.",
+     "start": 378.875,
+     "end": 379.762
+    },
+    {
+     "word": "Billions",
+     "start": 380.163,
+     "end": 380.675
+    },
+    {
+     "word": "of",
+     "start": 380.688,
+     "end": 380.8
+    },
+    {
+     "word": "dollars",
+     "start": 380.812,
+     "end": 381.3
+    },
+    {
+     "word": "in",
+     "start": 381.3,
+     "end": 381.425
+    },
+    {
+     "word": "decentralized",
+     "start": 381.55,
+     "end": 382.575
+    },
+    {
+     "word": "finance",
+     "start": 382.575,
+     "end": 383.275
+    },
+    {
+     "word": "run",
+     "start": 383.438,
+     "end": 383.875
+    },
+    {
+     "word": "autonomously",
+     "start": 384.125,
+     "end": 385.175
+    },
+    {
+     "word": "on",
+     "start": 385.262,
+     "end": 385.413
+    },
+    {
+     "word": "these",
+     "start": 385.413,
+     "end": 385.575
+    },
+    {
+     "word": "transparent",
+     "start": 385.575,
+     "end": 386.288
+    },
+    {
+     "word": "software",
+     "start": 386.288,
+     "end": 386.85
+    },
+    {
+     "word": "rails.",
+     "start": 386.85,
+     "end": 387.387
+    },
+    {
+     "word": "The",
+     "start": 387.8,
+     "end": 387.9
+    },
+    {
+     "word": "underlying",
+     "start": 387.9,
+     "end": 388.45
+    },
+    {
+     "word": "architecture",
+     "start": 388.45,
+     "end": 389.137
+    },
+    {
+     "word": "remains",
+     "start": 389.15,
+     "end": 389.675
+    },
+    {
+     "word": "entirely",
+     "start": 389.8,
+     "end": 390.675
+    },
+    {
+     "word": "open",
+     "start": 390.688,
+     "end": 390.975
+    },
+    {
+     "word": "source",
+     "start": 390.975,
+     "end": 391.562
+    },
+    {
+     "word": "and",
+     "start": 391.962,
+     "end": 392.163
+    },
+    {
+     "word": "auditable",
+     "start": 392.288,
+     "end": 392.812
+    },
+    {
+     "word": "by",
+     "start": 393.025,
+     "end": 393.212
+    },
+    {
+     "word": "anyone",
+     "start": 393.312,
+     "end": 393.688
+    },
+    {
+     "word": "on",
+     "start": 393.688,
+     "end": 393.825
+    },
+    {
+     "word": "earth.",
+     "start": 393.825,
+     "end": 394.25
+    },
+    {
+     "word": "Satoshi",
+     "start": 394.65,
+     "end": 395.15
+    },
+    {
+     "word": "Nakamoto",
+     "start": 395.15,
+     "end": 395.85
+    },
+    {
+     "word": "disappeared",
+     "start": 395.85,
+     "end": 396.5
+    },
+    {
+     "word": "from",
+     "start": 396.5,
+     "end": 396.65
+    },
+    {
+     "word": "public",
+     "start": 396.65,
+     "end": 397.025
+    },
+    {
+     "word": "view",
+     "start": 397.025,
+     "end": 397.45
+    },
+    {
+     "word": "after",
+     "start": 397.6,
+     "end": 397.875
+    },
+    {
+     "word": "launching",
+     "start": 397.887,
+     "end": 398.325
+    },
+    {
+     "word": "the",
+     "start": 398.337,
+     "end": 398.4
+    },
+    {
+     "word": "protocol,",
+     "start": 398.4,
+     "end": 398.975
+    },
+    {
+     "word": "leaving",
+     "start": 399.45,
+     "end": 399.75
+    },
+    {
+     "word": "no",
+     "start": 399.75,
+     "end": 399.938
+    },
+    {
+     "word": "leader",
+     "start": 399.938,
+     "end": 400.262
+    },
+    {
+     "word": "behind.",
+     "start": 400.275,
+     "end": 400.8
+    },
+    {
+     "word": "Without",
+     "start": 401.212,
+     "end": 401.475
+    },
+    {
+     "word": "a",
+     "start": 401.475,
+     "end": 401.512
+    },
+    {
+     "word": "founder",
+     "start": 401.512,
+     "end": 402.175
+    },
+    {
+     "word": "or",
+     "start": 402.188,
+     "end": 402.3
+    },
+    {
+     "word": "corporate",
+     "start": 402.3,
+     "end": 402.688
+    },
+    {
+     "word": "headquarters,",
+     "start": 402.7,
+     "end": 403.337
+    },
+    {
+     "word": "the",
+     "start": 403.712,
+     "end": 403.788
+    },
+    {
+     "word": "network",
+     "start": 403.788,
+     "end": 404.275
+    },
+    {
+     "word": "continues",
+     "start": 404.35,
+     "end": 404.95
+    },
+    {
+     "word": "to",
+     "start": 404.962,
+     "end": 405.075
+    },
+    {
+     "word": "run",
+     "start": 405.075,
+     "end": 405.45
+    },
+    {
+     "word": "through",
+     "start": 405.462,
+     "end": 405.675
+    },
+    {
+     "word": "sheer",
+     "start": 405.675,
+     "end": 406.025
+    },
+    {
+     "word": "consensus.",
+     "start": 406.038,
+     "end": 406.887
+    },
+    {
+     "word": "Nine",
+     "start": 407.3,
+     "end": 407.65
+    },
+    {
+     "word": "pages",
+     "start": 407.663,
+     "end": 408.188
+    },
+    {
+     "word": "of",
+     "start": 408.188,
+     "end": 408.25
+    },
+    {
+     "word": "cryptography",
+     "start": 408.25,
+     "end": 409.05
+    },
+    {
+     "word": "birthed",
+     "start": 409.163,
+     "end": 409.625
+    },
+    {
+     "word": "an",
+     "start": 409.938,
+     "end": 410.087
+    },
+    {
+     "word": "unstoppable",
+     "start": 410.1,
+     "end": 410.975
+    },
+    {
+     "word": "global",
+     "start": 410.975,
+     "end": 411.45
+    },
+    {
+     "word": "settlement",
+     "start": 411.462,
+     "end": 411.925
+    },
+    {
+     "word": "layer.",
+     "start": 411.925,
+     "end": 412.288
+    },
+    {
+     "word": "Financial",
+     "start": 412.738,
+     "end": 413.137
+    },
+    {
+     "word": "sovereignty",
+     "start": 413.137,
+     "end": 413.837
+    },
+    {
+     "word": "is",
+     "start": 414.075,
+     "end": 414.225
+    },
+    {
+     "word": "now",
+     "start": 414.225,
+     "end": 414.575
+    },
+    {
+     "word": "a",
+     "start": 414.688,
+     "end": 414.712
+    },
+    {
+     "word": "matter",
+     "start": 414.712,
+     "end": 415.275
+    },
+    {
+     "word": "of",
+     "start": 415.275,
+     "end": 415.425
+    },
+    {
+     "word": "running",
+     "start": 415.425,
+     "end": 415.7
+    },
+    {
+     "word": "software",
+     "start": 415.712,
+     "end": 416.45
+    },
+    {
+     "word": "rather",
+     "start": 416.712,
+     "end": 417.2
+    },
+    {
+     "word": "than",
+     "start": 417.312,
+     "end": 417.425
+    },
+    {
+     "word": "trusting",
+     "start": 417.425,
+     "end": 417.975
+    },
+    {
+     "word": "institutions.",
+     "start": 417.975,
+     "end": 418.875
+    },
+    {
+     "word": "Code",
+     "start": 419.288,
+     "end": 419.675
+    },
+    {
+     "word": "executes",
+     "start": 419.788,
+     "end": 420.325
+    },
+    {
+     "word": "the",
+     "start": 420.325,
+     "end": 420.413
+    },
+    {
+     "word": "rules",
+     "start": 420.425,
+     "end": 420.75
+    },
+    {
+     "word": "while",
+     "start": 420.75,
+     "end": 420.887
+    },
+    {
+     "word": "mathematics",
+     "start": 420.9,
+     "end": 421.725
+    },
+    {
+     "word": "guarantees",
+     "start": 421.812,
+     "end": 422.488
+    },
+    {
+     "word": "the",
+     "start": 422.488,
+     "end": 422.562
+    },
+    {
+     "word": "supply.",
+     "start": 422.575,
+     "end": 423.113
+    },
+    {
+     "word": "The",
+     "start": 423.512,
+     "end": 423.575
+    },
+    {
+     "word": "experiment",
+     "start": 423.575,
+     "end": 424.337
+    },
+    {
+     "word": "initiated",
+     "start": 424.512,
+     "end": 425.312
+    },
+    {
+     "word": "in",
+     "start": 425.312,
+     "end": 425.45
+    },
+    {
+     "word": "two",
+     "start": 425.462,
+     "end": 425.738
+    },
+    {
+     "word": "thousand",
+     "start": 425.75,
+     "end": 426.212
+    },
+    {
+     "word": "eight",
+     "start": 426.337,
+     "end": 426.525
+    },
+    {
+     "word": "rewritten",
+     "start": 426.688,
+     "end": 427.25
+    },
+    {
+     "word": "monetary",
+     "start": 427.262,
+     "end": 427.8
+    },
+    {
+     "word": "history",
+     "start": 427.8,
+     "end": 428.3
+    },
+    {
+     "word": "from",
+     "start": 428.312,
+     "end": 428.45
+    },
+    {
+     "word": "the",
+     "start": 428.45,
+     "end": 428.512
+    },
+    {
+     "word": "ground",
+     "start": 428.512,
+     "end": 428.837
+    },
+    {
+     "word": "up.",
+     "start": 428.837,
+     "end": 429.087
+    },
+    {
+     "word": "Programmable",
+     "start": 429.5,
+     "end": 430.05
+    },
+    {
+     "word": "smart",
+     "start": 430.05,
+     "end": 430.35
+    },
+    {
+     "word": "contracts",
+     "start": 430.35,
+     "end": 431.087
+    },
+    {
+     "word": "execute",
+     "start": 431.212,
+     "end": 431.738
+    },
+    {
+     "word": "financial",
+     "start": 431.75,
+     "end": 432.262
+    },
+    {
+     "word": "transactions",
+     "start": 432.275,
+     "end": 433.125
+    },
+    {
+     "word": "automatically",
+     "start": 433.275,
+     "end": 434.087
+    },
+    {
+     "word": "when",
+     "start": 434.262,
+     "end": 434.45
+    },
+    {
+     "word": "pre-coded",
+     "start": 434.5,
+     "end": 435.163
+    },
+    {
+     "word": "conditions",
+     "start": 435.175,
+     "end": 435.738
+    },
+    {
+     "word": "are",
+     "start": 435.738,
+     "end": 435.8
+    },
+    {
+     "word": "met.",
+     "start": 435.812,
+     "end": 436.212
+    },
+    {
+     "word": "Traditional",
+     "start": 436.613,
+     "end": 437.062
+    },
+    {
+     "word": "agreements",
+     "start": 437.062,
+     "end": 437.663
+    },
+    {
+     "word": "rely",
+     "start": 437.712,
+     "end": 438.15
+    },
+    {
+     "word": "on",
+     "start": 438.15,
+     "end": 438.275
+    },
+    {
+     "word": "middlemen",
+     "start": 438.288,
+     "end": 438.812
+    },
+    {
+     "word": "to",
+     "start": 438.887,
+     "end": 439.0
+    },
+    {
+     "word": "verify",
+     "start": 439.0,
+     "end": 439.75
+    },
+    {
+     "word": "every",
+     "start": 440.012,
+     "end": 440.413
+    },
+    {
+     "word": "single",
+     "start": 440.413,
+     "end": 440.75
+    },
+    {
+     "word": "transfer.",
+     "start": 440.75,
+     "end": 441.4
+    },
+    {
+     "word": "Distributed",
+     "start": 441.812,
+     "end": 442.438
+    },
+    {
+     "word": "execution",
+     "start": 442.45,
+     "end": 443.225
+    },
+    {
+     "word": "removes",
+     "start": 443.363,
+     "end": 443.938
+    },
+    {
+     "word": "intermediaries",
+     "start": 444.038,
+     "end": 444.975
+    },
+    {
+     "word": "completely",
+     "start": 445.1,
+     "end": 445.913
+    },
+    {
+     "word": "from",
+     "start": 446.113,
+     "end": 446.25
+    },
+    {
+     "word": "the",
+     "start": 446.25,
+     "end": 446.312
+    },
+    {
+     "word": "financial",
+     "start": 446.325,
+     "end": 446.837
+    },
+    {
+     "word": "equation.",
+     "start": 446.837,
+     "end": 447.4
+    },
+    {
+     "word": "Autonomous",
+     "start": 447.8,
+     "end": 448.375
+    },
+    {
+     "word": "code",
+     "start": 448.375,
+     "end": 448.788
+    },
+    {
+     "word": "replaces",
+     "start": 448.9,
+     "end": 449.475
+    },
+    {
+     "word": "human",
+     "start": 449.488,
+     "end": 449.812
+    },
+    {
+     "word": "trust",
+     "start": 449.812,
+     "end": 450.337
+    },
+    {
+     "word": "with",
+     "start": 450.625,
+     "end": 450.8
+    },
+    {
+     "word": "permanent",
+     "start": 450.8,
+     "end": 451.35
+    },
+    {
+     "word": "cryptographic",
+     "start": 451.363,
+     "end": 452.025
+    },
+    {
+     "word": "certainty.",
+     "start": 452.038,
+     "end": 452.6
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In October two thousand eight, nine pages of cryptography posted on an obscure mailing list changed global finance forever. Satoshi Nakamoto released the Bitcoin whitepaper without warning or prior announcement. Traditional banking required trusted intermediaries to process every single transaction. Then mathematical proof replaced institutional trust. Most people view crypto as a speculative casino for day traders. Speculators chase short term price action on centralized exchanges. Daily trading volume reaches billions of dollars while ignoring the underlying architecture. Satoshi Nakamoto actually built an automated peer-to-peer ledger system designed to operate without central bank authority. Central banks control fiat currency supplies and monetary policy through closed doors. Public blockchains replace centralized banking databases with distributed consensus across thousands of independent nodes. Every single participant maintains an identical copy of the financial record. No single entity can alter past transactions or freeze an account. Trust is shifted from human regulators to immutable software rules. The genesis block was mined on January third, two thousand nine. Embedded inside that first block was a permanent message referencing bank bailouts. The headline came from a major UK newspaper published on the exact same day. Satoshi permanently anchored the cryptocurrency's birth to the failure of traditional finance. That hidden note served as an eternal manifesto against centralized monetary rescue packages. Code soon evolved from simple currency transfers into complex financial agreements. Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met. Escrow agents and legal paperwork become completely obsolete. Execution speed shifts from days of manual clearing to seconds of network validation. Global trade operates continuously without weekends or banking holidays. Anyone with an internet connection can access the exact same financial infrastructure. The underlying architecture remains fully transparent and verifiable by everyone. Billions of dollars now secure themselves through mathematics rather than corporate promises. Nine pages of text launched an unstoppable monetary revolution. Centralized gatekeepers can no longer control the flow of global value. The transition from human trust to cryptographic certainty is absolute. Code is law on the decentralized frontier. Mathematics never asks for permission. Most people view crypto as a speculative casino for day traders. Day trading apps flash bright red and green tickers across millions of consumer screens. The price volatility dominates every mainstream news cycle. But price speculation hides the underlying architecture. In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever. Satoshi Nakamoto released the Bitcoin whitepaper on a cryptography mailing list to the public. Many observers treat digital assets as pure speculation for day traders seeking quick fortunes. External markets view price charts as a casino game driven entirely by hype. Popular discourse reduces complex protocols to mere gambling tokens. Financial media focuses heavily on daily price volatility instead of underlying technology. In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever. A pseudonymous developer named Satoshi Nakamoto published the Bitcoin whitepaper without warning. Traditional finance relies entirely on trusted intermediaries to route every single transaction. Central banks print fiat currency at will, losing purchasing power over decades through inflation. Most observers assume crypto exists solely as a speculative casino for day traders. Day traders chase short term volatility on centralized exchanges. Price action dominates headlines while the underlying ledger architecture hums quietly in the background. Code replaces central authority through pure mathematical rules written into software. Public blockchains discard centralized databases in favor of distributed consensus. Thousands of independent nodes verify every state change without knowing or trusting each other. Double spending becomes impossible when transaction history is chained cryptographically. No single entity can alter past records once written to the distributed ledger. Miners secure the network by expending computational power to solve complex cryptographic puzzles. Energy expenditure ties digital scarcity to the physical laws of thermodynamics. On January third 2009, the genesis block was mined with a permanent message embedded inside. Satoshi embedded a newspaper headline referencing bank bailouts directly into the coinbase parameter. That single headline sealed the purpose of the entire peer to peer experiment. Traditional banking required physical branches, paper ledgers, and trusted human clerks. Digital networks eliminated geography entirely, settling value transfers across continents in minutes. Blockchains operate twenty four hours a day without maintenance windows or holiday closures. Programmable smart contracts execute financial agreements automatically when pre-coded conditions are met. Escrow agents and legal paperwork become obsolete when code enforces the rules directly. Developers write logic that handles collateral, interest rates, and liquidation without intermediaries. Billions of dollars in decentralized finance run autonomously on these transparent software rails. The underlying architecture remains entirely open source and auditable by anyone on earth. Satoshi Nakamoto disappeared from public view after launching the protocol, leaving no leader behind. Without a founder or corporate headquarters, the network continues to run through sheer consensus. Nine pages of cryptography birthed an unstoppable global settlement layer. Financial sovereignty is now a matter of running software rather than trusting institutions. Code executes the rules while mathematics guarantees the supply. The experiment initiated in two thousand eight rewritten monetary history from the ground up. Programmable smart contracts execute financial transactions automatically when pre-coded conditions are met. Traditional agreements rely on middlemen to verify every single transfer. Distributed execution removes intermediaries completely from the financial equation. Autonomous code replaces human trust with permanent cryptographic certainty."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "The Untold Origin of Digital Money"
+   },
+   {
+    "id": "ch1",
+    "kind": "chapter",
+    "start": 171.3,
+    "end": 173.9,
+    "text": "The Casino Illusion",
+    "sub": "Chapter 2"
+   },
+   {
+    "id": "ch2",
+    "kind": "chapter",
+    "start": 190.3,
+    "end": 192.9,
+    "text": "Code Replaces Central Banks",
+    "sub": "Chapter 3"
+   },
+   {
+    "id": "ch3",
+    "kind": "chapter",
+    "start": 230.49,
+    "end": 233.09,
+    "text": "Mining The Genesis Block",
+    "sub": "Chapter 4"
+   },
+   {
+    "id": "ch4",
+    "kind": "chapter",
+    "start": 429.5,
+    "end": 432.1,
+    "text": "Automating Global Agreements",
+    "sub": "Chapter 5"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1792911187830,
+  "updated": 1792911187830,
+  "topic": "how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned",
+  "hook": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+  "image_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+  "format": "landscape",
+  "assets_release": "project-the-untold-origin-of-digital-money-mvngu0ax",
+  "spec": {
+   "accent": "#FF5A5F",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "chapters": [
+    {
+     "beat": 31,
+     "title": "The Casino Illusion"
+    },
+    {
+     "beat": 35,
+     "title": "Code Replaces Central Banks"
+    },
+    {
+     "beat": 41,
+     "title": "Mining The Genesis Block"
+    },
+    {
+     "beat": 72,
+     "title": "Automating Global Agreements"
+    }
+   ],
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
+   "learned_style": "upload-3",
+   "music": "tech-pulse",
+   "project_id": "the-untold-origin-of-digital-money-mvngu0ax",
+   "style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+   "style_preset": "motion-explainer",
+   "style_tokens": {
+    "accent": "#FF3333",
+    "backdrop": "gradient",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Inter",
+     "highlight": "#FF3333",
+     "position": "bottom",
+     "preset": "clean"
+    },
+    "font": "Inter",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) brightness(1.0)",
+    "motion": "drift",
+    "palette": [
+     "#0D0D0D",
+     "#F4F4F4"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "fade"
+    ],
+    "vignette": false
+   },
+   "title": "The Untold Origin of Digital Money",
+   "topic": "how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
