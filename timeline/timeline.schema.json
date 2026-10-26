@@ -181,7 +181,10 @@
                 "zoom-out",
                 "wipe",
                 "blur",
-                "flash"
+                "flash",
+                "page-turn",
+                "leak",
+                "focus"
               ]
             },
             "duration": {
@@ -214,6 +217,45 @@
         },
         "graphic_sfx": {
           "type": "boolean"
+        },
+        "gfx": {
+          "type": "object",
+          "description": "Remotion effects (@remotion/effects): grain, scanlines, paper, vignette, chroma, chroma_hit, barrel, glow, vibrance (numbers), focus_pull, off (booleans)",
+          "properties": {
+            "grain": {
+              "type": "number"
+            },
+            "scanlines": {
+              "type": "number"
+            },
+            "paper": {
+              "type": "number"
+            },
+            "vignette": {
+              "type": "number"
+            },
+            "chroma": {
+              "type": "number"
+            },
+            "chroma_hit": {
+              "type": "number"
+            },
+            "barrel": {
+              "type": "number"
+            },
+            "glow": {
+              "type": "number"
+            },
+            "vibrance": {
+              "type": "number"
+            },
+            "focus_pull": {
+              "type": "boolean"
+            },
+            "off": {
+              "type": "boolean"
+            }
+          }
         }
       }
     },
@@ -309,7 +351,10 @@
                       "zoom-out",
                       "wipe",
                       "blur",
-                      "flash"
+                      "flash",
+                      "page-turn",
+                      "leak",
+                      "focus"
                     ]
                   },
                   "duration": {

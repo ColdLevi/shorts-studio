@@ -83,7 +83,8 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
         {g.map((w, i) => {
           const active = t >= w.start - 0.03 && t < w.end + 0.08;
           const color = r.preset === 'clean' ? (active ? r.color : `${r.color}`) : r.color;
-          return <span key={i} style={{ color, opacity: r.preset === 'clean' && !active ? 0.72 : 1, marginRight: 0.28 * r.size }}>{tx(w.word)}</span>;
+          // inline-block: lets a long subtitle line wrap between words instead of running off the edge
+          return <span key={i} style={{ display: 'inline-block', color, opacity: r.preset === 'clean' && !active ? 0.72 : 1, marginRight: 0.28 * r.size }}>{tx(w.word)}</span>;
         })}
       </div>
     );

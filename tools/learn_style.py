@@ -30,7 +30,7 @@ APP = os.environ.get("APP_URL") or ""
 
 RECIPES = ["stop-motion", "documentary", "motion-explainer", "blueprint", "kinetic-news", "cinematic", "retro-vhs", "anime", "vlog",
            "bold-pop", "minimal", "neon", "punchy", "comic", "karaoke"]
-TRANSITIONS = ["cut", "fade", "dissolve", "slide-left", "slide-right", "slide-up", "slide-down", "zoom-in", "zoom-out", "wipe", "blur", "flash"]
+TRANSITIONS = ["cut", "fade", "dissolve", "slide-left", "slide-right", "slide-up", "slide-down", "zoom-in", "zoom-out", "wipe", "blur", "flash", "page-turn", "leak", "focus"]
 CAPTIONS = ["bold-pop", "karaoke-box", "clean", "subtitle", "neon", "word-by-word", "none"]
 FONTS = ["Montserrat", "Anton", "Bebas Neue", "Inter", "Poppins", "Oswald", "Roboto", "Playfair Display", "Bangers", "Space Grotesk",
          "Archivo Black", "Lora", "DM Serif Display", "Permanent Marker", "Rubik Mono One"]

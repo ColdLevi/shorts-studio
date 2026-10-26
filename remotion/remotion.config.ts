@@ -7,3 +7,6 @@ Config.setPublicDir('../media');
 Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);
 Config.setConcurrency(null); // auto
+
+// Remotion effects (@remotion/effects) are WebGL2: SwiftShader runs them on CPU-only machines like GitHub runners.
+Config.setChromiumOpenGlRenderer('swangle');

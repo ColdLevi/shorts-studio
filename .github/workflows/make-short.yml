@@ -187,7 +187,14 @@ jobs:
         if: env.SKIP_RENDER != '1'
         working-directory: remotion
         # "Studio" renders the project timeline at its own canvas size (9:16, 16:9, 1:1, 4:5, any WxH).
-        run: npx remotion render src/studio-index.ts Studio out/short.mp4 --props=../media/projects/$PROJECT_ID/timeline.json --log=error
+        # --gl=swangle: Remotion's WebGL effects (style.gfx) on the runner's CPU. If they fail, render once more without them.
+        run: |
+          P=../media/projects/$PROJECT_ID/timeline.json
+          if ! npx remotion render src/studio-index.ts Studio out/short.mp4 --props=$P --gl=swangle --crf=20 --log=error; then
+            echo "::warning::render with Remotion effects failed, retrying without them"
+            python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nofx.json','w'))" "$P"
+            npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nofx.json --gl=swangle --crf=20 --log=error
+          fi
 
       - name: Loudness to -14 LUFS, poster frame
         if: env.SKIP_RENDER != '1'

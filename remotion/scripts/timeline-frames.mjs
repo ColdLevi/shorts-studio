@@ -27,7 +27,7 @@ for (const f of files) {
     const frame = Math.max(0, Math.min(composition.durationInFrames - 1, Math.round(s * composition.fps)));
     const name = files.length > 1 ? path.basename(f, '.json') : t.id;
     const out = path.join(outDir, `${name}-${composition.width}x${composition.height}-${s}s.jpg`);
-    await renderStill({ serveUrl, composition, inputProps: t, output: out, frame, scale: SCALE, overwrite: true, imageFormat: 'jpeg', jpegQuality: 85 });
+    await renderStill({ serveUrl, composition, inputProps: t, output: out, frame, scale: SCALE, overwrite: true, imageFormat: 'jpeg', jpegQuality: 85, chromiumOptions: { gl: 'swangle' } });
     console.log('  ->', path.relative(root, out));
   }
 }

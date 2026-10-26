@@ -8,6 +8,7 @@ import { Overlay, Progress } from './Overlays';
 import { url } from './assets';
 import { nearestImage, transitionLen, VisualLayer } from './Visuals';
 import { Backdrop, Finish, Held } from './StyleFX';
+import { GpuFinish, resolveGfx } from './GpuFX';
 import type { AudioClip, Timeline, Word } from './types';
 
 export const defaultTimeline: Timeline = {
@@ -85,8 +86,16 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
   const defT = st.transition ?? { type: 'fade' as const, duration: 0.35 };
   // Variety: a recipe can list transitions to cycle through instead of one fade everywhere.
   const cycle = (st.transitions || []).filter(Boolean);
-  const trFor = (i: number) => (cycle.length ? { type: cycle[i % cycle.length], duration: cycle[i % cycle.length] === 'cut' ? 0 : (defT.duration ?? 0.35) } : defT);
+  const SLOW: Record<string, number> = { 'page-turn': 0.6, leak: 0.7, focus: 0.6 };
+  const trFor = (i: number) => {
+    if (!cycle.length) return defT;
+    const ty = cycle[i % cycle.length];
+    return { type: ty, duration: ty === 'cut' ? 0 : Math.max(defT.duration ?? 0.35, SLOW[ty] || 0) };
+  };
   const shared = !!st.backdrop && st.backdrop !== 'none';
+  // Remotion effects (style.gfx). With them on, they replace the CSS paper/grain/film/VHS texture.
+  const g = resolveGfx(st.gfx);
+  const fxCss = g && st.fx ? { ...st.fx, texture: 'none' as const } : st.fx;
   const overlays = t.tracks.overlays ?? (st.title?.show !== false && t.title
     ? [{ id: 'title', kind: 'title' as const, start: 0, end: st.title?.duration ?? 3, text: t.title, position: st.title?.position }] : []);
   const byId = Object.fromEntries(vis.map((c) => [c.id, c]));
@@ -105,12 +114,13 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
           <Sequence key={c.id || i} from={from} durationInFrames={Math.max(1, capped - from)}>
             <VisualLayer c={{ ...c, transition: tr }} index={i} len={(capped - from) / fps} L={L} pid={pid} accent={accent}
               motion={st.motion || 'kenburns'} grade={st.grade} nearImage={c.kind === 'graphic' ? nearestImage(vis, i, pid) : undefined}
-              graphicSfx={(st as { graphic_sfx?: boolean }).graphic_sfx} sharedBackdrop={shared} />
+              graphicSfx={(st as { graphic_sfx?: boolean }).graphic_sfx} sharedBackdrop={shared} g={g} />
           </Sequence>
         );
       })}
       </Held>
-      <Finish fx={st.fx} L={L} />
+      <Finish fx={fxCss} L={L} />
+      <GpuFinish g={g} L={L} hold={st.fx?.hold} />
       {st.vignette !== false ? (
         <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)' }} />
       ) : null}
