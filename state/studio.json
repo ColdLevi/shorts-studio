@@ -1,134 +1,18 @@
 {
-  "last_update": 312538245,
-  "time": 1793037998607,
-  "stage": "script",
+  "last_update": 312538246,
+  "time": 1793038164032,
+  "stage": "idle",
   "topic": "good about network security and access",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "One Semicolon Crashed Half the Internet",
-    "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
-    "angle": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
-    "key_facts": [
-      "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
-      "The error crashed the authoritative root DNS servers",
-      "Roughly half of the internet domain name resolution went down for hours"
-    ],
-    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
-    "length_seconds": 45,
-    "style": "upload-3",
-    "style_reason": "Clean tech wireframes match network infrastructure concepts.",
-    "music": "tech-pulse",
-    "accent": "red",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "One Semicolon Crashed Half the Internet",
-    "beats": [
-      {
-        "narration": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing code error",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "1998 Code Update",
-          "sub": "Network Solutions Incident"
-        }
-      },
-      {
-        "narration": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating server failure",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Massive cyber attacks cause outages",
-          "fact": "Tiny human errors break infrastructure"
-        }
-      },
-      {
-        "narration": "So this tiny punctuation mark hit the core systems.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting a single punctuation mark",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Root Cause",
-          "items": [
-            {
-              "icon": "shield",
-              "label": "Code base"
-            },
-            {
-              "icon": "zap",
-              "label": "Semicolon"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "The faulty code crashed the authoritative root DNS servers.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows depicting network nodes failing",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Server Cascade",
-          "steps": [
-            "Update Pushed",
-            "Parser Fails",
-            "Root DNS Down"
-          ]
-        }
-      },
-      {
-        "narration": "Then roughly half of the internet domain name resolution went down for hours.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows displaying global connectivity loss",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 50,
-          "label": "Internet Domain Resolution Offline"
-        }
-      },
-      {
-        "narration": "Global systems depend on fragile lines.",
-        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing resilient network architecture",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Fragile",
-            "Digital",
-            "Infrastructure"
-          ]
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
-        "supported": true
-      },
-      {
-        "claim": "The error crashed the authoritative root DNS servers",
-        "supported": true
-      },
-      {
-        "claim": "Roughly half of the internet domain name resolution went down for hours",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "And always find the logo off the company you want to reference",
-      "t": 1792870716515
-    },
     {
       "role": "bot",
       "text": "I cannot use real brand logos due to copyright and platform policies, but I can use clean minimalist icons and dark-mode UI mockups to represent companies.",
@@ -203,10 +87,139 @@
       "role": "bot",
       "text": "Wrote the script for \"One Semicolon Crashed Half the Internet\"",
       "t": 1793037998607
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"One Semicolon Crashed Half the Internet\"",
+      "t": 1793038164032
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "one-semicolon-crashed-half-the-inter-mvpkmlio",
+      "canvas": "16:9",
+      "title": "One Semicolon Crashed Half the Internet",
+      "topic": "good about network security and access",
+      "pitch": {
+        "title": "One Semicolon Crashed Half the Internet",
+        "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+        "angle": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
+        "key_facts": [
+          "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
+          "The error crashed the authoritative root DNS servers",
+          "Roughly half of the internet domain name resolution went down for hours"
+        ],
+        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
+        "length_seconds": 45,
+        "style": "upload-3",
+        "style_reason": "Clean tech wireframes match network infrastructure concepts.",
+        "music": "tech-pulse",
+        "accent": "red",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "One Semicolon Crashed Half the Internet",
+        "beats": [
+          {
+            "narration": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing code error",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "1998 Code Update",
+              "sub": "Network Solutions Incident"
+            }
+          },
+          {
+            "narration": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating server failure",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Massive cyber attacks cause outages",
+              "fact": "Tiny human errors break infrastructure"
+            }
+          },
+          {
+            "narration": "So this tiny punctuation mark hit the core systems.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting a single punctuation mark",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Root Cause",
+              "items": [
+                {
+                  "icon": "shield",
+                  "label": "Code base"
+                },
+                {
+                  "icon": "zap",
+                  "label": "Semicolon"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "The faulty code crashed the authoritative root DNS servers.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows depicting network nodes failing",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Server Cascade",
+              "steps": [
+                "Update Pushed",
+                "Parser Fails",
+                "Root DNS Down"
+              ]
+            }
+          },
+          {
+            "narration": "Then roughly half of the internet domain name resolution went down for hours.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows displaying global connectivity loss",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 50,
+              "label": "Internet Domain Resolution Offline"
+            }
+          },
+          {
+            "narration": "Global systems depend on fragile lines.",
+            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing resilient network architecture",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Fragile",
+                "Digital",
+                "Infrastructure"
+              ]
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
+            "supported": true
+          },
+          {
+            "claim": "The error crashed the authoritative root DNS servers",
+            "supported": true
+          },
+          {
+            "claim": "Roughly half of the internet domain name resolution went down for hours",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1793038164032
+    },
     {
       "id": "the-untold-origin-of-digital-money-mvngu0ax",
       "canvas": "16:9",
@@ -2376,89 +2389,6 @@
         "sources": []
       },
       "at": 1792715868792
-    },
-    {
-      "id": "build-a-telegram-bot-with-one-comman-mvk4na83",
-      "canvas": "9:16",
-      "title": "Build a Telegram Bot With One Command",
-      "topic": "starting small",
-      "pitch": {
-        "title": "Build a Telegram Bot With One Command",
-        "hook": "Two lines of code launched a live crypto tracker.",
-        "angle": "People think building a bot requires an entire backend system, but a single terminal command sets up the entire application.",
-        "key_facts": [
-          "Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box",
-          "The app provides a minimal base system automatically installed",
-          "Additional packages are available using the APT package manager familiar"
-        ],
-        "visual_style": "minimal dark mode code editor, high contrast syntax highlighting",
-        "length_seconds": 40,
-        "music": "tech-pulse",
-        "accent": "teal"
-      },
-      "script": {
-        "title": "Build a Telegram Bot With One Command",
-        "beats": [
-          {
-            "narration": "Two lines of code launched a live crypto tracker.",
-            "image_prompt": "Vertical framing, minimal dark mode code editor with bright teal syntax highlighting on a mobile screen, centered.",
-            "tool": "higgsfield",
-            "motion": "Slow push in on the glowing code lines as text scrolls smoothly on screen.",
-            "still": "flux"
-          },
-          {
-            "narration": "People assume building a bot demands massive server infrastructure.",
-            "image_prompt": "Vertical framing, a complex tangled web of glowing server racks in a dark room, minimalist aesthetic.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Termux delivers a complete Linux environment directly on Android with zero setup.",
-            "image_prompt": "Vertical framing, a clean mobile terminal interface showing command line text in dark mode.",
-            "tool": "flux"
-          },
-          {
-            "narration": "A single terminal command provisions the base system instantly.",
-            "image_prompt": "Vertical framing, a single line of terminal code executing on a dark phone display.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "apt update",
-              "sub": "Zero configuration required"
-            }
-          },
-          {
-            "narration": "Then you add extra tools using the APT package manager you already know.",
-            "image_prompt": "Vertical framing, code packages downloading in a command line interface with teal highlights.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Execute your script directly from your phone.",
-            "image_prompt": "Vertical framing, a smartphone resting on a dark desk displaying a running crypto price script.",
-            "tool": "higgsfield",
-            "motion": "Subtle pan across the smartphone screen showing live updating numbers.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box",
-            "supported": true
-          },
-          {
-            "claim": "The app provides a minimal base system automatically installed",
-            "supported": true
-          },
-          {
-            "claim": "Additional packages are available using the APT package manager familiar",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (https://github.com/antfu/vite-plugin-inspect).\n- The global crypto data aggregator CoinGecko was started in 2014 by TM Lee and Bobby Ong in a Singapore garage with just a basic Ruby script tracking raw coin prices before it scaled to track thousands of tokens (https://www.coingecko.com/en/team).\n- Software engineer Pieter Levels launched the remote job board *Remote OK* in 2015 using a simple PHP script and a basic database, which eventually grew to generate over $100,000 per month in revenue (https://levels.io/).\n- In 2011, solo founder Marc Köhlbrugge launched *BetaList* out of frustration to showcase upcoming startups, coding the first version over a single weekend with minimal code (https://betalist.com/about).\n- The popular indie maker community *Indie Hackers* started in 2016 when founder Courtland Allen built a basic forum and landing page in a few days to interview founders, leading to an acquisition by Stripe just one year later (https://stripe.com/blog/indie-hackers).\n- In 2006, software engineer Paolo Amoroso and others showed how tiny bookmarklets and scripts could track live data feeds, proving that minimal code often outpaces bloated enterprise setups (https://en.wikipedia.org/wiki/Bookmarklet).\n- The viral weather app *Forecast* and numerous micro-SaaS tools frequently begin as single-file HTML or Python scripts written in under an hour during weekend hackathons (https://news.ycombinator.com/).\n- GitHub stats show that over 80% of trending open-source projects in 2023 started as repositories with fewer than 50 lines of initial boilerplate code (https://github.blog/).\n\nHOOK IDEAS:\n- What if I told you a multi-million dollar empire started with just two lines of code?\n- Most people spend months building an app—this developer launched a live tracker with literally two lines of code.",
-        "sources": []
-      },
-      "at": 1792708991048
     }
   ],
   "lastRenderAuto": false,
@@ -2470,12 +2400,12 @@
   },
   "renders": [
     {
-      "title": "The Untold Origin of Digital Money",
-      "at": 1792910858764,
-      "project": "the-untold-origin-of-digital-money-mvngu0ax"
+      "title": "One Semicolon Crashed Half the Internet",
+      "at": 1793038164032,
+      "project": "one-semicolon-crashed-half-the-inter-mvpkmlio"
     }
   ],
-  "current_project": "the-untold-origin-of-digital-money-mvngu0ax",
+  "current_project": "one-semicolon-crashed-half-the-inter-mvpkmlio",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2605,10 +2535,11 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {},
+  "job": null,
   "recent_styles": [
     "documentary",
     "youtu-2",
+    "upload-3",
     "upload-3"
   ],
   "learning": null,
