@@ -1,0 +1,634 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "one-semicolon-crashed-half-the-inter-mvpkmlio",
+ "rev": 1,
+ "title": "One Semicolon Crashed Half the Internet",
+ "duration": 32.89,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "color": "#FFFFFF",
+   "highlight": "#FF3333",
+   "position": "bottom"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "backdrop": "gradient",
+  "vignette": false,
+  "font": "Inter",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FF5A5F",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) brightness(1.0)",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.775,
+    "narration": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Network Solutions Incident",
+     "text": "1998 Code Update",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 6.775,
+    "end": 16.475,
+    "narration": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Tiny human errors break infrastructure",
+     "myth": "Massive cyber attacks cause outages",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 16.475,
+    "end": 20.062,
+    "narration": "So this tiny punctuation mark hit the core systems.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "shield",
+       "label": "Code base"
+      },
+      {
+       "icon": "zap",
+       "label": "Semicolon"
+      }
+     ],
+     "title": "Root Cause",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 20.062,
+    "end": 24.462,
+    "narration": "The faulty code crashed the authoritative root DNS servers.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Update Pushed",
+      "Parser Fails",
+      "Root DNS Down"
+     ],
+     "title": "Server Cascade",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 24.462,
+    "end": 29.05,
+    "narration": "Then roughly half of the internet domain name resolution went down for hours.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Internet Domain Resolution Offline",
+     "type": "percent",
+     "value": 50
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 29.05,
+    "end": 32.088,
+    "narration": "Global systems depend on fragile lines.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Fragile",
+      "Digital",
+      "Infrastructure"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.163
+    },
+    {
+     "word": "nineteen",
+     "start": 0.175,
+     "end": 0.537
+    },
+    {
+     "word": "ninety",
+     "start": 0.55,
+     "end": 0.875
+    },
+    {
+     "word": "eight,",
+     "start": 0.887,
+     "end": 1.2
+    },
+    {
+     "word": "Network",
+     "start": 1.45,
+     "end": 1.825
+    },
+    {
+     "word": "Solutions",
+     "start": 1.825,
+     "end": 2.4
+    },
+    {
+     "word": "shipped",
+     "start": 2.6,
+     "end": 2.913
+    },
+    {
+     "word": "a",
+     "start": 3.013,
+     "end": 3.062
+    },
+    {
+     "word": "software",
+     "start": 3.062,
+     "end": 3.737
+    },
+    {
+     "word": "update",
+     "start": 3.75,
+     "end": 4.2
+    },
+    {
+     "word": "with",
+     "start": 4.35,
+     "end": 4.487
+    },
+    {
+     "word": "a",
+     "start": 4.487,
+     "end": 4.537
+    },
+    {
+     "word": "single",
+     "start": 4.537,
+     "end": 4.987
+    },
+    {
+     "word": "misplaced",
+     "start": 4.987,
+     "end": 5.7
+    },
+    {
+     "word": "semicolon.",
+     "start": 5.713,
+     "end": 6.388
+    },
+    {
+     "word": "Most",
+     "start": 6.775,
+     "end": 7.062
+    },
+    {
+     "word": "assume",
+     "start": 7.125,
+     "end": 7.588
+    },
+    {
+     "word": "major",
+     "start": 7.588,
+     "end": 8.037
+    },
+    {
+     "word": "internet",
+     "start": 8.05,
+     "end": 8.412
+    },
+    {
+     "word": "blackouts",
+     "start": 8.412,
+     "end": 9.037
+    },
+    {
+     "word": "require",
+     "start": 9.05,
+     "end": 9.512
+    },
+    {
+     "word": "sophisticated",
+     "start": 9.512,
+     "end": 10.312
+    },
+    {
+     "word": "cyber",
+     "start": 10.325,
+     "end": 10.713
+    },
+    {
+     "word": "attacks,",
+     "start": 10.713,
+     "end": 11.35
+    },
+    {
+     "word": "but",
+     "start": 11.6,
+     "end": 11.725
+    },
+    {
+     "word": "tiny",
+     "start": 11.725,
+     "end": 12.088
+    },
+    {
+     "word": "human",
+     "start": 12.088,
+     "end": 12.438
+    },
+    {
+     "word": "errors",
+     "start": 12.438,
+     "end": 12.8
+    },
+    {
+     "word": "in",
+     "start": 12.8,
+     "end": 12.925
+    },
+    {
+     "word": "routine",
+     "start": 12.938,
+     "end": 13.375
+    },
+    {
+     "word": "updates",
+     "start": 13.375,
+     "end": 13.938
+    },
+    {
+     "word": "bring",
+     "start": 14.113,
+     "end": 14.375
+    },
+    {
+     "word": "down",
+     "start": 14.387,
+     "end": 14.738
+    },
+    {
+     "word": "global",
+     "start": 14.738,
+     "end": 15.25
+    },
+    {
+     "word": "infrastructure.",
+     "start": 15.262,
+     "end": 16.087
+    },
+    {
+     "word": "So",
+     "start": 16.475,
+     "end": 16.625
+    },
+    {
+     "word": "this",
+     "start": 16.625,
+     "end": 16.837
+    },
+    {
+     "word": "tiny",
+     "start": 16.85,
+     "end": 17.3
+    },
+    {
+     "word": "punctuation",
+     "start": 17.312,
+     "end": 18.05
+    },
+    {
+     "word": "mark",
+     "start": 18.062,
+     "end": 18.375
+    },
+    {
+     "word": "hit",
+     "start": 18.375,
+     "end": 18.587
+    },
+    {
+     "word": "the",
+     "start": 18.6,
+     "end": 18.688
+    },
+    {
+     "word": "core",
+     "start": 18.7,
+     "end": 19.012
+    },
+    {
+     "word": "systems.",
+     "start": 19.012,
+     "end": 19.663
+    },
+    {
+     "word": "The",
+     "start": 20.062,
+     "end": 20.15
+    },
+    {
+     "word": "faulty",
+     "start": 20.15,
+     "end": 20.613
+    },
+    {
+     "word": "code",
+     "start": 20.613,
+     "end": 21.075
+    },
+    {
+     "word": "crashed",
+     "start": 21.325,
+     "end": 21.825
+    },
+    {
+     "word": "the",
+     "start": 21.825,
+     "end": 21.938
+    },
+    {
+     "word": "authoritative",
+     "start": 21.938,
+     "end": 22.712
+    },
+    {
+     "word": "root",
+     "start": 22.712,
+     "end": 23.05
+    },
+    {
+     "word": "DNS",
+     "start": 23.062,
+     "end": 23.525
+    },
+    {
+     "word": "servers.",
+     "start": 23.525,
+     "end": 24.062
+    },
+    {
+     "word": "Then",
+     "start": 24.462,
+     "end": 24.625
+    },
+    {
+     "word": "roughly",
+     "start": 24.625,
+     "end": 24.988
+    },
+    {
+     "word": "half",
+     "start": 24.988,
+     "end": 25.45
+    },
+    {
+     "word": "of",
+     "start": 25.462,
+     "end": 25.538
+    },
+    {
+     "word": "the",
+     "start": 25.55,
+     "end": 25.613
+    },
+    {
+     "word": "internet",
+     "start": 25.625,
+     "end": 26.062
+    },
+    {
+     "word": "domain",
+     "start": 26.212,
+     "end": 26.625
+    },
+    {
+     "word": "name",
+     "start": 26.625,
+     "end": 26.825
+    },
+    {
+     "word": "resolution",
+     "start": 26.837,
+     "end": 27.425
+    },
+    {
+     "word": "went",
+     "start": 27.438,
+     "end": 27.6
+    },
+    {
+     "word": "down",
+     "start": 27.6,
+     "end": 27.887
+    },
+    {
+     "word": "for",
+     "start": 27.887,
+     "end": 28.075
+    },
+    {
+     "word": "hours.",
+     "start": 28.075,
+     "end": 28.663
+    },
+    {
+     "word": "Global",
+     "start": 29.05,
+     "end": 29.4
+    },
+    {
+     "word": "systems",
+     "start": 29.4,
+     "end": 30.025
+    },
+    {
+     "word": "depend",
+     "start": 30.15,
+     "end": 30.525
+    },
+    {
+     "word": "on",
+     "start": 30.525,
+     "end": 30.663
+    },
+    {
+     "word": "fragile",
+     "start": 30.663,
+     "end": 31.15
+    },
+    {
+     "word": "lines.",
+     "start": 31.15,
+     "end": 31.725
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon. Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure. So this tiny punctuation mark hit the core systems. The faulty code crashed the authoritative root DNS servers. Then roughly half of the internet domain name resolution went down for hours. Global systems depend on fragile lines."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "One Semicolon Crashed Half the Internet"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1793038228408,
+  "updated": 1793038228408,
+  "topic": "good about network security and access",
+  "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+  "image_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
+  "format": "landscape",
+  "assets_release": "project-one-semicolon-crashed-half-the-inter-mvpkmlio",
+  "spec": {
+   "accent": "#FF5A5F",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+   "learned_style": "upload-3",
+   "music": "tech-pulse",
+   "project_id": "one-semicolon-crashed-half-the-inter-mvpkmlio",
+   "style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
+   "style_preset": "motion-explainer",
+   "style_tokens": {
+    "accent": "#FF3333",
+    "backdrop": "gradient",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Inter",
+     "highlight": "#FF3333",
+     "position": "bottom",
+     "preset": "clean"
+    },
+    "font": "Inter",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) brightness(1.0)",
+    "motion": "drift",
+    "palette": [
+     "#0D0D0D",
+     "#F4F4F4"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "fade"
+    ],
+    "vignette": false
+   },
+   "title": "One Semicolon Crashed Half the Internet",
+   "topic": "good about network security and access",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

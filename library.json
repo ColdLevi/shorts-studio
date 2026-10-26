@@ -207,6 +207,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-21",
+      "title": "One Semicolon Crashed Half the Internet",
+      "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+      "accent": "#FF5A5F",
+      "duration": 33.0,
+      "created": 1793038439968,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-21/short-21.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-21/short-21.jpg",
+      "project": "one-semicolon-crashed-half-the-inter-mvpkmlio",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
