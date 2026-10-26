@@ -1,7 +1,7 @@
 {
-  "last_update": 312538244,
-  "time": 1793037878596,
-  "stage": "pitch",
+  "last_update": 312538245,
+  "time": 1793037998607,
+  "stage": "script",
   "topic": "good about network security and access",
   "research": {
     "text": "",
@@ -24,16 +24,106 @@
     "accent": "red",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "One Semicolon Crashed Half the Internet",
+    "beats": [
+      {
+        "narration": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing code error",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "1998 Code Update",
+          "sub": "Network Solutions Incident"
+        }
+      },
+      {
+        "narration": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating server failure",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Massive cyber attacks cause outages",
+          "fact": "Tiny human errors break infrastructure"
+        }
+      },
+      {
+        "narration": "So this tiny punctuation mark hit the core systems.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting a single punctuation mark",
+        "tool": "graphic",
+        "graphic": {
+          "type": "icons",
+          "title": "Root Cause",
+          "items": [
+            {
+              "icon": "shield",
+              "label": "Code base"
+            },
+            {
+              "icon": "zap",
+              "label": "Semicolon"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "The faulty code crashed the authoritative root DNS servers.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows depicting network nodes failing",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Server Cascade",
+          "steps": [
+            "Update Pushed",
+            "Parser Fails",
+            "Root DNS Down"
+          ]
+        }
+      },
+      {
+        "narration": "Then roughly half of the internet domain name resolution went down for hours.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows displaying global connectivity loss",
+        "tool": "graphic",
+        "graphic": {
+          "type": "percent",
+          "value": 50,
+          "label": "Internet Domain Resolution Offline"
+        }
+      },
+      {
+        "narration": "Global systems depend on fragile lines.",
+        "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing resilient network architecture",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "Fragile",
+            "Digital",
+            "Infrastructure"
+          ]
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
+        "supported": true
+      },
+      {
+        "claim": "The error crashed the authoritative root DNS servers",
+        "supported": true
+      },
+      {
+        "claim": "Roughly half of the internet domain name resolution went down for hours",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Applying edit to \"How Software Companies Toll Every Click\": Fluid motion style updated",
-      "t": 1792870546267
-    },
     {
       "role": "user",
       "text": "And always find the logo off the company you want to reference",
@@ -108,6 +198,11 @@
       "role": "bot",
       "text": "Pitched \"One Semicolon Crashed Half the Internet\": In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
       "t": 1793037877028
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"One Semicolon Crashed Half the Internet\"",
+      "t": 1793037998607
     }
   ],
   "working": null,
