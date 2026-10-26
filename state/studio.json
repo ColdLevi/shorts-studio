@@ -1,28 +1,34 @@
 {
-  "last_update": 312538243,
-  "time": 1792910858764,
-  "stage": "idle",
-  "topic": "how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned",
+  "last_update": 312538244,
+  "time": 1793037877028,
+  "stage": "pitch",
+  "topic": "good about network security and access",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "One Semicolon Crashed Half the Internet",
+    "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+    "angle": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
+    "key_facts": [
+      "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
+      "The error crashed the authoritative root DNS servers",
+      "Roughly half of the internet domain name resolution went down for hours"
+    ],
+    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
+    "length_seconds": 45,
+    "style": "upload-3",
+    "style_reason": "Clean tech wireframes match network infrastructure concepts.",
+    "music": "tech-pulse",
+    "accent": "red",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Just don't apply it I don't like it and the animation effect of the whole video isn't fluid like nice smooth motion entry and exit",
-      "t": 1792870516373
-    },
-    {
-      "role": "bot",
-      "text": "Proposed edit to \"How Software Companies Toll Every Click\": Updated the video style to use smooth motion transitions for a more fluid animation effect",
-      "t": 1792870545931
-    },
     {
       "role": "bot",
       "text": "Applying edit to \"How Software Companies Toll Every Click\": Fluid motion style updated",
@@ -92,6 +98,16 @@
       "role": "bot",
       "text": "Rendering \"The Untold Origin of Digital Money\"",
       "t": 1792910858764
+    },
+    {
+      "role": "user",
+      "text": "Make a good video about network security and access",
+      "t": 1793037861408
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"One Semicolon Crashed Half the Internet\": In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
+      "t": 1793037877028
     }
   ],
   "working": null,
@@ -2351,7 +2367,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\nRelevant memories:\n- (interest) The user is interested in analyzing the YouTube channel ShipWeb3 for crypto and Telegram bot tutorials.\n- (fact) The user's YouTube channel is located at https://youtube.com/@shipweb3s.\n- (interest) The user is interested in Web3 development projects, crypto bots, and automation tools.\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (interest) The user is interested in analyzing successful crypto and Telegram bot tutorial channels like ShipWeb3.\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (idea) The user created a YouTube Short titled 'One Blank Page Changes Everything'.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about a guy daily life stop motion style.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\nRelevant memories:\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (fact) Browser bot research on how a server outage turns into a disaster: - In 1998, a single misplaced semicolon in a software update by Network Solutions crashed the authoritative root DNS servers, taking down roughly half of the internet's domain name resolution for hours (https://www.netmeister.org/blog/dns-semicolon.html)\n- Modern cloud outages often start small: in\n- (fact) The Shorts Studio bot does not have direct access to Pexels stock photos and uses Flux for custom AI image generation instead.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about a guy daily life stop motion style.\n- (interest) The user approved a short about how a server outage turns into a disaster.\n- (interest) The user approved a short about about something real-world, like city life.\n- (interest) The user approved a short about starting small.\n- (interest) The user is interested in Idril Ilber and her management of the modern Star Trek franchise at Secret Hideout.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (interest) The user approved a short about how crypto was discovered and the hidden opportunity in it makes it and in YouTube 16:9 and don't forget to deliver the best of all you learned.\n- (fact) The user's Shorts Studio bot uses Flux to generate all visuals for videos during the background render step.",
   "deep": null,
   "renders": [
     {
@@ -2490,7 +2506,7 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": null,
+  "job": {},
   "recent_styles": [
     "documentary",
     "youtu-2",
