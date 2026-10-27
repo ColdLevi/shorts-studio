@@ -1,194 +1,18 @@
 {
-  "last_update": 312538248,
-  "time": 1793131795901,
-  "stage": "script",
+  "last_update": 312538249,
+  "time": 1793131804216,
+  "stage": "idle",
   "topic": "for my next fintech product for a music ap called Urganize.app",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Instant Royalty Splits for Independent Artists",
-    "hook": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
-    "angle": "Musicians assume tracking royalty splits requires endless accounting spreadsheets and multi-month wait times. Urganize.app executes automated real-time payout distributions directly at the moment of stream.",
-    "key_facts": [
-      "Independent streaming platforms typically delay royalty payouts by 60 to 90 days.",
-      "Collaborative songs require manual split sheets signed by every songwriter and producer.",
-      "Urganize.app automates instant micro-payout distribution across collaborator digital accounts."
-    ],
-    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
-    "length_seconds": 45,
-    "style": "upload-3",
-    "style_reason": "Sleek wireframes and vector UI highlight complex fintech transaction workflows clearly.",
-    "music": "tech-pulse",
-    "accent": "red",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Instant Royalty Splits for Independent Artists",
-    "beats": [
-      {
-        "narration": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
-        "image_prompt": "Vector diagram displaying high-contrast financial telemetry data, red crimson ambient glows, dark slate wireframe UI background, landscape 16:9 view, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "stats",
-          "title": "Payout Losses",
-          "items": [
-            {
-              "value": 300,
-              "prefix": "",
-              "suffix": "",
-              "label": "Producers Impacted"
-            },
-            {
-              "value": 40,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Payouts Lost"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Most musicians believe tracking collaborative royalties demands endless accounting spreadsheets and multi-month wait times.",
-        "image_prompt": "Minimalist high-contrast tech graphic showing crossed out spreadsheet wireframes with glowing crimson accent lines on a dark canvas, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Tracking royalties requires endless spreadsheets and multi-month waits",
-          "fact": "Automated payouts execute instantly upon streaming"
-        }
-      },
-      {
-        "narration": "Standard streaming platforms hold money for 60 to 90 days while paperwork clears.",
-        "image_prompt": "Sleek tech gauge visualization indicating delay metrics with vivid crimson illuminated highlights on a matte black backdrop, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 90,
-          "min": 0,
-          "max": 90,
-          "suffix": "Days",
-          "label": "Streaming Payout Delay"
-        }
-      },
-      {
-        "narration": "Every collaborative track requires manual split sheets signed by each songwriter and producer.",
-        "image_prompt": "Monochrome vector UI schematic detailing multi-user approval nodes connected by crimson illuminated pathways, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "Manual Split Requirements",
-          "items": [
-            "Songwriter signatures",
-            "Producer approvals",
-            "Manual bank verification"
-          ]
-        }
-      },
-      {
-        "narration": "So legal friction stalls cash flow until collaborators sign off on physical documents.",
-        "image_prompt": "Detailed flow diagram visual with dark aesthetic, crimson directional arrows, modern fintech dashboard style, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Traditional Split Workflow",
-          "steps": [
-            "Stream plays",
-            "Manual split sheet",
-            "Signature waiting period",
-            "60 to 90 day payout"
-          ]
-        }
-      },
-      {
-        "narration": "Urganize app replaces manual banking delays by triggering payout code at the moment of stream.",
-        "image_prompt": "Dark mode software terminal interface visual with glowing crimson code accents and high contrast micro-typography, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "urganize-core",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "urganize execute --split-realtime"
-            },
-            {
-              "kind": "out",
-              "text": "Detecting incoming stream..."
-            },
-            {
-              "kind": "ok",
-              "text": "Distributing micro-payouts instantly"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Micro-payout distributions land directly in collaborator digital accounts without waiting for intermediary banks.",
-        "image_prompt": "Versus comparison vector UI with bright crimson glowing metrics on a clean dark slate background, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Payout Speed",
-          "prefix": "",
-          "suffix": "days",
-          "left": {
-            "label": "Traditional",
-            "value": 90,
-            "sub": "Manual delays"
-          },
-          "right": {
-            "label": "Urganize",
-            "value": 0,
-            "sub": "Instant stream payout"
-          }
-        }
-      },
-      {
-        "narration": "Then royalties move at the speed of sound.",
-        "image_prompt": "Dynamic vector graphic displaying minimalist kinetic typography aesthetics with deep dark backgrounds and intense crimson glows, landscape 16:9, no text",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Royalties",
-            "Move",
-            "Instantly"
-          ]
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
-        "supported": true
-      },
-      {
-        "claim": "Independent streaming platforms typically delay royalty payouts by 60 to 90 days.",
-        "supported": true
-      },
-      {
-        "claim": "Collaborative songs require manual split sheets signed by every songwriter and producer.",
-        "supported": true
-      },
-      {
-        "claim": "Urganize app automates instant micro-payout distribution across collaborator digital accounts.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "You didn't add images to enhance the video feel I want people watching yo feel like this is a 2k video production",
-      "t": 1792872229782
-    },
     {
       "role": "bot",
       "text": "Proposed edit to \"How Software Companies Toll Every Click\": Converted all graphic scenes to high-end digital artwork images matching the dark-mode tech aesthetic",
@@ -263,10 +87,199 @@
       "role": "bot",
       "text": "Wrote the script for \"Instant Royalty Splits for Independent Artists\"",
       "t": 1793131795901
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Instant Royalty Splits for Independent Artists\"",
+      "t": 1793131804216
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "instant-royalty-splits-for-independe-mvr4dmxw",
+      "canvas": "16:9",
+      "title": "Instant Royalty Splits for Independent Artists",
+      "topic": "for my next fintech product for a music ap called Urganize.app",
+      "pitch": {
+        "title": "Instant Royalty Splits for Independent Artists",
+        "hook": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+        "angle": "Musicians assume tracking royalty splits requires endless accounting spreadsheets and multi-month wait times. Urganize.app executes automated real-time payout distributions directly at the moment of stream.",
+        "key_facts": [
+          "Independent streaming platforms typically delay royalty payouts by 60 to 90 days.",
+          "Collaborative songs require manual split sheets signed by every songwriter and producer.",
+          "Urganize.app automates instant micro-payout distribution across collaborator digital accounts."
+        ],
+        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+        "length_seconds": 45,
+        "style": "upload-3",
+        "style_reason": "Sleek wireframes and vector UI highlight complex fintech transaction workflows clearly.",
+        "music": "tech-pulse",
+        "accent": "red",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Instant Royalty Splits for Independent Artists",
+        "beats": [
+          {
+            "narration": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+            "image_prompt": "Vector diagram displaying high-contrast financial telemetry data, red crimson ambient glows, dark slate wireframe UI background, landscape 16:9 view, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "stats",
+              "title": "Payout Losses",
+              "items": [
+                {
+                  "value": 300,
+                  "prefix": "",
+                  "suffix": "",
+                  "label": "Producers Impacted"
+                },
+                {
+                  "value": 40,
+                  "prefix": "",
+                  "suffix": "%",
+                  "label": "Payouts Lost"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Most musicians believe tracking collaborative royalties demands endless accounting spreadsheets and multi-month wait times.",
+            "image_prompt": "Minimalist high-contrast tech graphic showing crossed out spreadsheet wireframes with glowing crimson accent lines on a dark canvas, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Tracking royalties requires endless spreadsheets and multi-month waits",
+              "fact": "Automated payouts execute instantly upon streaming"
+            }
+          },
+          {
+            "narration": "Standard streaming platforms hold money for 60 to 90 days while paperwork clears.",
+            "image_prompt": "Sleek tech gauge visualization indicating delay metrics with vivid crimson illuminated highlights on a matte black backdrop, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 90,
+              "min": 0,
+              "max": 90,
+              "suffix": "Days",
+              "label": "Streaming Payout Delay"
+            }
+          },
+          {
+            "narration": "Every collaborative track requires manual split sheets signed by each songwriter and producer.",
+            "image_prompt": "Monochrome vector UI schematic detailing multi-user approval nodes connected by crimson illuminated pathways, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "Manual Split Requirements",
+              "items": [
+                "Songwriter signatures",
+                "Producer approvals",
+                "Manual bank verification"
+              ]
+            }
+          },
+          {
+            "narration": "So legal friction stalls cash flow until collaborators sign off on physical documents.",
+            "image_prompt": "Detailed flow diagram visual with dark aesthetic, crimson directional arrows, modern fintech dashboard style, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Traditional Split Workflow",
+              "steps": [
+                "Stream plays",
+                "Manual split sheet",
+                "Signature waiting period",
+                "60 to 90 day payout"
+              ]
+            }
+          },
+          {
+            "narration": "Urganize app replaces manual banking delays by triggering payout code at the moment of stream.",
+            "image_prompt": "Dark mode software terminal interface visual with glowing crimson code accents and high contrast micro-typography, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "terminal",
+              "title": "urganize-core",
+              "lines": [
+                {
+                  "kind": "cmd",
+                  "text": "urganize execute --split-realtime"
+                },
+                {
+                  "kind": "out",
+                  "text": "Detecting incoming stream..."
+                },
+                {
+                  "kind": "ok",
+                  "text": "Distributing micro-payouts instantly"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Micro-payout distributions land directly in collaborator digital accounts without waiting for intermediary banks.",
+            "image_prompt": "Versus comparison vector UI with bright crimson glowing metrics on a clean dark slate background, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Payout Speed",
+              "prefix": "",
+              "suffix": "days",
+              "left": {
+                "label": "Traditional",
+                "value": 90,
+                "sub": "Manual delays"
+              },
+              "right": {
+                "label": "Urganize",
+                "value": 0,
+                "sub": "Instant stream payout"
+              }
+            }
+          },
+          {
+            "narration": "Then royalties move at the speed of sound.",
+            "image_prompt": "Dynamic vector graphic displaying minimalist kinetic typography aesthetics with deep dark backgrounds and intense crimson glows, landscape 16:9, no text",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Royalties",
+                "Move",
+                "Instantly"
+              ]
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+            "supported": true
+          },
+          {
+            "claim": "Independent streaming platforms typically delay royalty payouts by 60 to 90 days.",
+            "supported": true
+          },
+          {
+            "claim": "Collaborative songs require manual split sheets signed by every songwriter and producer.",
+            "supported": true
+          },
+          {
+            "claim": "Urganize app automates instant micro-payout distribution across collaborator digital accounts.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1793131804216
+    },
     {
       "id": "one-semicolon-crashed-half-the-inter-mvpkmlio",
       "canvas": "16:9",
@@ -2440,126 +2453,6 @@
         "sources": []
       },
       "at": 1792747036874
-    },
-    {
-      "id": "the-secret-grid-beneath-your-feet-mvk8qp5u",
-      "canvas": "9:16",
-      "title": "The Secret Grid Beneath Your Feet",
-      "topic": "about something real-world, like city life",
-      "pitch": {
-        "title": "The Secret Grid Beneath Your Feet",
-        "hook": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
-        "angle": "People think city water comes from a pristine distant lake, but every drop has already passed through five strangers.",
-        "key_facts": [
-          "New York City's aqueduct system moves over one billion gallons of water daily.",
-          "Gravity powers ninety five percent of the water delivery without using electric pumps.",
-          "Older urban pipe networks lose up to thirty percent of their water to underground leaks before reaching a faucet.",
-          "The first cast iron municipal water mains were installed in Philadelphia in eighteen zero four."
-        ],
-        "visual_style": "gritty cinematic documentary photo, moody urban lighting, film grain",
-        "length_seconds": 45,
-        "music": "docu-pluck",
-        "accent": "teal"
-      },
-      "script": {
-        "title": "The Secret Grid Beneath Your Feet",
-        "beats": [
-          {
-            "narration": "Four thousand miles of iron tubes carry your morning shower straight into the dark.",
-            "image_prompt": "Vertical gritty cinematic close-up of a rusted iron pipe underground in moody shadow, film grain, photorealistic",
-            "tool": "higgsfield",
-            "motion": "The camera slowly pushes forward along the dark rusted pipe surface.",
-            "still": "flux"
-          },
-          {
-            "narration": "People assume city water comes from a pristine distant lake, but every single drop has already passed through five strangers.",
-            "image_prompt": "Vertical moody urban silhouette at dusk with a hint of blue industrial glow, cinematic photography",
-            "tool": "stock",
-            "query": "city skyline dusk",
-            "still": "flux"
-          },
-          {
-            "narration": "Philadelphia laid the first cast iron municipal water mains in eighteen zero four.",
-            "image_prompt": "Vertical vintage sepia-toned gritty photograph of old nineteenth century cobblestone street construction",
-            "tool": "flux"
-          },
-          {
-            "narration": "New York City alone moves over one billion gallons of water daily.",
-            "image_prompt": "Vertical dramatic industrial water valve underground, teal accent lighting, gritty documentary style",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 1000000000,
-              "prefix": "",
-              "suffix": "",
-              "label": "gallons daily"
-            }
-          },
-          {
-            "narration": "Gravity powers ninety five percent of this entire delivery without using a single electric pump.",
-            "image_prompt": "Vertical dramatic dark tunnel showing descending water pipe architecture, moody lighting",
-            "tool": "graphic",
-            "graphic": {
-              "type": "bars",
-              "title": "Power Source",
-              "prefix": "",
-              "suffix": "%",
-              "items": [
-                {
-                  "label": "Gravity",
-                  "value": 95
-                },
-                {
-                  "label": "Pumps",
-                  "value": 5
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Older networks lose up to thirty percent of their water to underground leaks before reaching a faucet.",
-            "image_prompt": "Vertical underground soil view with leaking water pipe dropping moisture into dark earth",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 30,
-              "prefix": "",
-              "suffix": "%",
-              "label": "lost to leaks"
-            }
-          },
-          {
-            "narration": "Your tap water carries history.",
-            "image_prompt": "Vertical macro shot of a clear water drop falling from a grungy metal faucet, cinematic dark background",
-            "tool": "higgsfield",
-            "motion": "The camera rapidly pulls back as the water droplet hits the surface.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Philadelphia installed the first cast iron municipal water mains in 1804",
-            "supported": true
-          },
-          {
-            "claim": "New York City's aqueduct system moves over one billion gallons of water daily",
-            "supported": true
-          },
-          {
-            "claim": "Gravity powers ninety five percent of the water delivery without using electric pumps",
-            "supported": true
-          },
-          {
-            "claim": "Older urban pipe networks lose up to thirty percent of their water to underground leaks",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1792715868792
     }
   ],
   "lastRenderAuto": false,
@@ -2571,12 +2464,12 @@
   },
   "renders": [
     {
-      "title": "One Semicolon Crashed Half the Internet",
-      "at": 1793038164032,
-      "project": "one-semicolon-crashed-half-the-inter-mvpkmlio"
+      "title": "Instant Royalty Splits for Independent Artists",
+      "at": 1793131804216,
+      "project": "instant-royalty-splits-for-independe-mvr4dmxw"
     }
   ],
-  "current_project": "one-semicolon-crashed-half-the-inter-mvpkmlio",
+  "current_project": "instant-royalty-splits-for-independe-mvr4dmxw",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2706,10 +2599,11 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {},
+  "job": null,
   "recent_styles": [
     "documentary",
     "youtu-2",
+    "upload-3",
     "upload-3",
     "upload-3"
   ],
