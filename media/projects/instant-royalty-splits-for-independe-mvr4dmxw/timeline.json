@@ -1,0 +1,840 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "instant-royalty-splits-for-independe-mvr4dmxw",
+ "rev": 1,
+ "title": "Instant Royalty Splits for Independent Artists",
+ "duration": 52.35,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "color": "#FFFFFF",
+   "highlight": "#FF3333",
+   "position": "bottom"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "backdrop": "gradient",
+  "vignette": false,
+  "font": "Inter",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FF5A5F",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) brightness(1.0)",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.763,
+    "narration": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Producers Impacted",
+       "prefix": "",
+       "suffix": "",
+       "value": 300
+      },
+      {
+       "label": "Payouts Lost",
+       "prefix": "",
+       "suffix": "%",
+       "value": 40
+      }
+     ],
+     "title": "Payout Losses",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 6.763,
+    "end": 15.188,
+    "narration": "Most musicians believe tracking collaborative royalties demands endless accounting spreadsheets and multi-month wait times.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Automated payouts execute instantly upon streaming",
+     "myth": "Tracking royalties requires endless spreadsheets and multi-month waits",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 15.188,
+    "end": 21.688,
+    "narration": "Standard streaming platforms hold money for 60 to 90 days while paperwork clears.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Streaming Payout Delay",
+     "max": 90,
+     "min": 0,
+     "suffix": "Days",
+     "type": "gauge",
+     "value": 90
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 21.688,
+    "end": 28.087,
+    "narration": "Every collaborative track requires manual split sheets signed by each songwriter and producer.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "Songwriter signatures",
+      "Producer approvals",
+      "Manual bank verification"
+     ],
+     "title": "Manual Split Requirements",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 28.087,
+    "end": 34.112,
+    "narration": "So legal friction stalls cash flow until collaborators sign off on physical documents.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Stream plays",
+      "Manual split sheet",
+      "Signature waiting period",
+      "60 to 90 day payout"
+     ],
+     "title": "Traditional Split Workflow",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 34.112,
+    "end": 40.263,
+    "narration": "Urganize app replaces manual banking delays by triggering payout code at the moment of stream.",
+    "kind": "graphic",
+    "graphic": {
+     "lines": [
+      {
+       "kind": "cmd",
+       "text": "urganize execute --split-realtime"
+      },
+      {
+       "kind": "out",
+       "text": "Detecting incoming stream..."
+      },
+      {
+       "kind": "ok",
+       "text": "Distributing micro-payouts instantly"
+      }
+     ],
+     "title": "urganize-core",
+     "type": "terminal"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 40.263,
+    "end": 48.663,
+    "narration": "Micro-payout distributions land directly in collaborator digital accounts without waiting for intermediary banks.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Traditional",
+      "sub": "Manual delays",
+      "value": 90
+     },
+     "prefix": "",
+     "right": {
+      "label": "Urganize",
+      "sub": "Instant stream payout",
+      "value": 0
+     },
+     "suffix": "days",
+     "title": "Payout Speed",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 48.663,
+    "end": 51.552,
+    "narration": "Then royalties move at the speed of sound.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Royalties",
+      "Move",
+      "Instantly"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "300",
+     "start": 0.125,
+     "end": 0.588
+    },
+    {
+     "word": "independent",
+     "start": 0.588,
+     "end": 0.988
+    },
+    {
+     "word": "producers",
+     "start": 0.988,
+     "end": 1.538
+    },
+    {
+     "word": "lost",
+     "start": 1.538,
+     "end": 1.95
+    },
+    {
+     "word": "40 percent",
+     "start": 1.962,
+     "end": 2.862
+    },
+    {
+     "word": "of",
+     "start": 2.862,
+     "end": 2.925
+    },
+    {
+     "word": "their",
+     "start": 2.925,
+     "end": 3.075
+    },
+    {
+     "word": "payouts",
+     "start": 3.075,
+     "end": 3.737
+    },
+    {
+     "word": "to",
+     "start": 3.975,
+     "end": 4.075
+    },
+    {
+     "word": "manual",
+     "start": 4.075,
+     "end": 4.688
+    },
+    {
+     "word": "banking",
+     "start": 4.688,
+     "end": 5.112
+    },
+    {
+     "word": "delays",
+     "start": 5.112,
+     "end": 5.6
+    },
+    {
+     "word": "last",
+     "start": 5.6,
+     "end": 5.975
+    },
+    {
+     "word": "year.",
+     "start": 5.975,
+     "end": 6.362
+    },
+    {
+     "word": "Most",
+     "start": 6.763,
+     "end": 7.037
+    },
+    {
+     "word": "musicians",
+     "start": 7.037,
+     "end": 7.7
+    },
+    {
+     "word": "believe",
+     "start": 7.713,
+     "end": 8.312
+    },
+    {
+     "word": "tracking",
+     "start": 8.412,
+     "end": 8.875
+    },
+    {
+     "word": "collaborative",
+     "start": 8.875,
+     "end": 9.463
+    },
+    {
+     "word": "royalties",
+     "start": 9.463,
+     "end": 10.137
+    },
+    {
+     "word": "demands",
+     "start": 10.25,
+     "end": 10.887
+    },
+    {
+     "word": "endless",
+     "start": 11.037,
+     "end": 11.387
+    },
+    {
+     "word": "accounting",
+     "start": 11.387,
+     "end": 11.825
+    },
+    {
+     "word": "spreadsheets",
+     "start": 11.838,
+     "end": 12.675
+    },
+    {
+     "word": "and",
+     "start": 13.037,
+     "end": 13.2
+    },
+    {
+     "word": "multi-month",
+     "start": 13.213,
+     "end": 13.9
+    },
+    {
+     "word": "wait",
+     "start": 13.912,
+     "end": 14.162
+    },
+    {
+     "word": "times.",
+     "start": 14.175,
+     "end": 14.8
+    },
+    {
+     "word": "Standard",
+     "start": 15.188,
+     "end": 15.65
+    },
+    {
+     "word": "streaming",
+     "start": 15.662,
+     "end": 16.1
+    },
+    {
+     "word": "platforms",
+     "start": 16.113,
+     "end": 16.863
+    },
+    {
+     "word": "hold",
+     "start": 17.025,
+     "end": 17.375
+    },
+    {
+     "word": "money",
+     "start": 17.375,
+     "end": 17.812
+    },
+    {
+     "word": "for",
+     "start": 18.087,
+     "end": 18.25
+    },
+    {
+     "word": "60 to 90 days",
+     "start": 18.25,
+     "end": 19.85
+    },
+    {
+     "word": "while",
+     "start": 19.962,
+     "end": 20.225
+    },
+    {
+     "word": "paperwork",
+     "start": 20.225,
+     "end": 20.712
+    },
+    {
+     "word": "clears",
+     "start": 20.712,
+     "end": 21.288
+    },
+    {
+     "word": "Every",
+     "start": 21.688,
+     "end": 21.975
+    },
+    {
+     "word": "collaborative",
+     "start": 21.975,
+     "end": 22.613
+    },
+    {
+     "word": "track",
+     "start": 22.625,
+     "end": 23.087
+    },
+    {
+     "word": "requires",
+     "start": 23.163,
+     "end": 23.688
+    },
+    {
+     "word": "manual",
+     "start": 23.7,
+     "end": 24.212
+    },
+    {
+     "word": "split",
+     "start": 24.212,
+     "end": 24.55
+    },
+    {
+     "word": "sheets",
+     "start": 24.55,
+     "end": 25.1
+    },
+    {
+     "word": "signed",
+     "start": 25.337,
+     "end": 25.775
+    },
+    {
+     "word": "by",
+     "start": 25.775,
+     "end": 25.9
+    },
+    {
+     "word": "each",
+     "start": 25.962,
+     "end": 26.175
+    },
+    {
+     "word": "songwriter",
+     "start": 26.175,
+     "end": 26.863
+    },
+    {
+     "word": "and",
+     "start": 27.038,
+     "end": 27.1
+    },
+    {
+     "word": "producer",
+     "start": 27.1,
+     "end": 27.688
+    },
+    {
+     "word": "So",
+     "start": 28.087,
+     "end": 28.238
+    },
+    {
+     "word": "legal",
+     "start": 28.238,
+     "end": 28.6
+    },
+    {
+     "word": "friction",
+     "start": 28.6,
+     "end": 29.087
+    },
+    {
+     "word": "stalls",
+     "start": 29.1,
+     "end": 29.438
+    },
+    {
+     "word": "cash",
+     "start": 29.438,
+     "end": 29.8
+    },
+    {
+     "word": "flow",
+     "start": 29.812,
+     "end": 30.337
+    },
+    {
+     "word": "until",
+     "start": 30.488,
+     "end": 30.788
+    },
+    {
+     "word": "collaborators",
+     "start": 30.788,
+     "end": 31.5
+    },
+    {
+     "word": "sign",
+     "start": 31.5,
+     "end": 31.8
+    },
+    {
+     "word": "off",
+     "start": 31.8,
+     "end": 32.237
+    },
+    {
+     "word": "on",
+     "start": 32.45,
+     "end": 32.575
+    },
+    {
+     "word": "physical",
+     "start": 32.575,
+     "end": 32.987
+    },
+    {
+     "word": "documents",
+     "start": 33.0,
+     "end": 33.725
+    },
+    {
+     "word": "Urganize",
+     "start": 34.112,
+     "end": 34.612
+    },
+    {
+     "word": "app",
+     "start": 34.612,
+     "end": 34.85
+    },
+    {
+     "word": "replaces",
+     "start": 34.862,
+     "end": 35.45
+    },
+    {
+     "word": "manual",
+     "start": 35.462,
+     "end": 35.975
+    },
+    {
+     "word": "banking",
+     "start": 35.975,
+     "end": 36.325
+    },
+    {
+     "word": "delays",
+     "start": 36.325,
+     "end": 36.788
+    },
+    {
+     "word": "by",
+     "start": 37.038,
+     "end": 37.175
+    },
+    {
+     "word": "triggering",
+     "start": 37.175,
+     "end": 37.712
+    },
+    {
+     "word": "payout",
+     "start": 37.712,
+     "end": 38.237
+    },
+    {
+     "word": "code",
+     "start": 38.237,
+     "end": 38.612
+    },
+    {
+     "word": "at",
+     "start": 38.763,
+     "end": 38.862
+    },
+    {
+     "word": "the",
+     "start": 38.862,
+     "end": 38.925
+    },
+    {
+     "word": "moment",
+     "start": 38.925,
+     "end": 39.35
+    },
+    {
+     "word": "of",
+     "start": 39.35,
+     "end": 39.413
+    },
+    {
+     "word": "stream",
+     "start": 39.413,
+     "end": 39.862
+    },
+    {
+     "word": "Micro-payout",
+     "start": 40.263,
+     "end": 41.212
+    },
+    {
+     "word": "distributions",
+     "start": 41.325,
+     "end": 42.225
+    },
+    {
+     "word": "land",
+     "start": 42.425,
+     "end": 42.9
+    },
+    {
+     "word": "directly",
+     "start": 43.025,
+     "end": 43.837
+    },
+    {
+     "word": "in",
+     "start": 44.25,
+     "end": 44.388
+    },
+    {
+     "word": "collaborator",
+     "start": 44.4,
+     "end": 45.138
+    },
+    {
+     "word": "digital",
+     "start": 45.138,
+     "end": 45.525
+    },
+    {
+     "word": "accounts",
+     "start": 45.525,
+     "end": 46.038
+    },
+    {
+     "word": "without",
+     "start": 46.05,
+     "end": 46.487
+    },
+    {
+     "word": "waiting",
+     "start": 46.5,
+     "end": 46.9
+    },
+    {
+     "word": "for",
+     "start": 46.913,
+     "end": 47.1
+    },
+    {
+     "word": "intermediary",
+     "start": 47.112,
+     "end": 47.7
+    },
+    {
+     "word": "banks",
+     "start": 47.7,
+     "end": 48.263
+    },
+    {
+     "word": "Then",
+     "start": 48.663,
+     "end": 48.85
+    },
+    {
+     "word": "royalties",
+     "start": 48.85,
+     "end": 49.562
+    },
+    {
+     "word": "move",
+     "start": 49.688,
+     "end": 50.062
+    },
+    {
+     "word": "at",
+     "start": 50.062,
+     "end": 50.125
+    },
+    {
+     "word": "the",
+     "start": 50.125,
+     "end": 50.2
+    },
+    {
+     "word": "speed",
+     "start": 50.2,
+     "end": 50.625
+    },
+    {
+     "word": "of",
+     "start": 50.625,
+     "end": 50.7
+    },
+    {
+     "word": "sound",
+     "start": 50.7,
+     "end": 51.2
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "300 independent producers lost 40 percent of their payouts to manual banking delays last year. Most musicians believe tracking collaborative royalties demands endless accounting spreadsheets and multi-month wait times. Standard streaming platforms hold money for 60 to 90 days while paperwork clears. Every collaborative track requires manual split sheets signed by each songwriter and producer. So legal friction stalls cash flow until collaborators sign off on physical documents. Urganize app replaces manual banking delays by triggering payout code at the moment of stream. Micro-payout distributions land directly in collaborator digital accounts without waiting for intermediary banks. Then royalties move at the speed of sound."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Instant Royalty Splits for Independent Artists"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1793131985845,
+  "updated": 1793131985845,
+  "topic": "for my next fintech product for a music ap called Urganize.app",
+  "hook": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+  "image_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+  "format": "landscape",
+  "assets_release": "project-instant-royalty-splits-for-independe-mvr4dmxw",
+  "spec": {
+   "accent": "#FF5A5F",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+   "learned_style": "upload-3",
+   "music": "tech-pulse",
+   "project_id": "instant-royalty-splits-for-independe-mvr4dmxw",
+   "style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+   "style_preset": "motion-explainer",
+   "style_tokens": {
+    "accent": "#FF3333",
+    "backdrop": "gradient",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Inter",
+     "highlight": "#FF3333",
+     "position": "bottom",
+     "preset": "clean"
+    },
+    "font": "Inter",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) brightness(1.0)",
+    "motion": "drift",
+    "palette": [
+     "#0D0D0D",
+     "#F4F4F4"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "fade"
+    ],
+    "vignette": false
+   },
+   "title": "Instant Royalty Splits for Independent Artists",
+   "topic": "for my next fintech product for a music ap called Urganize.app",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
