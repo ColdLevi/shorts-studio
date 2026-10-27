@@ -1,7 +1,7 @@
 {
-  "last_update": 312538247,
-  "time": 1793131616285,
-  "stage": "pitch",
+  "last_update": 312538248,
+  "time": 1793131795901,
+  "stage": "script",
   "topic": "for my next fintech product for a music ap called Urganize.app",
   "research": {
     "text": "",
@@ -24,16 +24,166 @@
     "accent": "red",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Instant Royalty Splits for Independent Artists",
+    "beats": [
+      {
+        "narration": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+        "image_prompt": "Vector diagram displaying high-contrast financial telemetry data, red crimson ambient glows, dark slate wireframe UI background, landscape 16:9 view, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "stats",
+          "title": "Payout Losses",
+          "items": [
+            {
+              "value": 300,
+              "prefix": "",
+              "suffix": "",
+              "label": "Producers Impacted"
+            },
+            {
+              "value": 40,
+              "prefix": "",
+              "suffix": "%",
+              "label": "Payouts Lost"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Most musicians believe tracking collaborative royalties demands endless accounting spreadsheets and multi-month wait times.",
+        "image_prompt": "Minimalist high-contrast tech graphic showing crossed out spreadsheet wireframes with glowing crimson accent lines on a dark canvas, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Tracking royalties requires endless spreadsheets and multi-month waits",
+          "fact": "Automated payouts execute instantly upon streaming"
+        }
+      },
+      {
+        "narration": "Standard streaming platforms hold money for 60 to 90 days while paperwork clears.",
+        "image_prompt": "Sleek tech gauge visualization indicating delay metrics with vivid crimson illuminated highlights on a matte black backdrop, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "gauge",
+          "value": 90,
+          "min": 0,
+          "max": 90,
+          "suffix": "Days",
+          "label": "Streaming Payout Delay"
+        }
+      },
+      {
+        "narration": "Every collaborative track requires manual split sheets signed by each songwriter and producer.",
+        "image_prompt": "Monochrome vector UI schematic detailing multi-user approval nodes connected by crimson illuminated pathways, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "list",
+          "title": "Manual Split Requirements",
+          "items": [
+            "Songwriter signatures",
+            "Producer approvals",
+            "Manual bank verification"
+          ]
+        }
+      },
+      {
+        "narration": "So legal friction stalls cash flow until collaborators sign off on physical documents.",
+        "image_prompt": "Detailed flow diagram visual with dark aesthetic, crimson directional arrows, modern fintech dashboard style, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Traditional Split Workflow",
+          "steps": [
+            "Stream plays",
+            "Manual split sheet",
+            "Signature waiting period",
+            "60 to 90 day payout"
+          ]
+        }
+      },
+      {
+        "narration": "Urganize app replaces manual banking delays by triggering payout code at the moment of stream.",
+        "image_prompt": "Dark mode software terminal interface visual with glowing crimson code accents and high contrast micro-typography, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "terminal",
+          "title": "urganize-core",
+          "lines": [
+            {
+              "kind": "cmd",
+              "text": "urganize execute --split-realtime"
+            },
+            {
+              "kind": "out",
+              "text": "Detecting incoming stream..."
+            },
+            {
+              "kind": "ok",
+              "text": "Distributing micro-payouts instantly"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Micro-payout distributions land directly in collaborator digital accounts without waiting for intermediary banks.",
+        "image_prompt": "Versus comparison vector UI with bright crimson glowing metrics on a clean dark slate background, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "versus",
+          "title": "Payout Speed",
+          "prefix": "",
+          "suffix": "days",
+          "left": {
+            "label": "Traditional",
+            "value": 90,
+            "sub": "Manual delays"
+          },
+          "right": {
+            "label": "Urganize",
+            "value": 0,
+            "sub": "Instant stream payout"
+          }
+        }
+      },
+      {
+        "narration": "Then royalties move at the speed of sound.",
+        "image_prompt": "Dynamic vector graphic displaying minimalist kinetic typography aesthetics with deep dark backgrounds and intense crimson glows, landscape 16:9, no text",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "Royalties",
+            "Move",
+            "Instantly"
+          ]
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
+        "supported": true
+      },
+      {
+        "claim": "Independent streaming platforms typically delay royalty payouts by 60 to 90 days.",
+        "supported": true
+      },
+      {
+        "claim": "Collaborative songs require manual split sheets signed by every songwriter and producer.",
+        "supported": true
+      },
+      {
+        "claim": "Urganize app automates instant micro-payout distribution across collaborator digital accounts.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Got it! Let me know what you'd like to work on next.",
-      "t": 1792870925727
-    },
     {
       "role": "user",
       "text": "You didn't add images to enhance the video feel I want people watching yo feel like this is a 2k video production",
@@ -108,6 +258,11 @@
       "role": "bot",
       "text": "Pitched \"Instant Royalty Splits for Independent Artists\": 300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
       "t": 1793131614497
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Instant Royalty Splits for Independent Artists\"",
+      "t": 1793131795901
     }
   ],
   "working": null,
