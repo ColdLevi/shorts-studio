@@ -1,130 +1,18 @@
 {
-  "last_update": 312538252,
-  "time": 1793823177250,
-  "stage": "script",
+  "last_update": 312538253,
+  "time": 1793823209952,
+  "stage": "idle",
   "topic": "Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "My Day As A Reincarnated Trump",
-    "hook": "Waking up with orange spray tan and a billion dollars sounds great until the teleprompter breaks.",
-    "angle": "People think running the world is about grand strategy, but the daily reality is just arguing with a golf cart and dodging rogue toupees.",
-    "key_facts": [
-      "The satirical animation depicts an accidental reincarnation into the former president.",
-      "Daily routines in the parody focus entirely on fast food runs and social media rants.",
-      "Independent digital satire relies on exaggerated facial rigging for comedic effect."
-    ],
-    "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-    "length_seconds": 45,
-    "style": "documentary",
-    "style_reason": "Historical texture meets absurd modern satire.",
-    "music": "docu-pluck",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "My Day As A Reincarnated Trump",
-    "beats": [
-      {
-        "narration": "Waking up covered in orange spray tan inside a massive gilded tower seems like a high-society dream.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An ornate golden bedroom suite inside a penthouse tower, bathed in dramatic side light, showing an elaborate vanity table with bronzing bottles and gold trimmings.",
-        "tool": "higgsfield",
-        "motion": "Slow pan across an ornate gilded bedroom with chiaroscuro lighting on gold vanity fixtures.",
-        "still": "flux"
-      },
-      {
-        "narration": "Most people assume running the world requires grand strategy. But this satirical animation depicts an accidental reincarnation into a former president.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A grand oval office under moody moonlight with shadows stretching across classical furniture.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Presidential life is grand strategy",
-          "fact": "Satirical animation of accidental presidential reincarnation"
-        }
-      },
-      {
-        "narration": "So daily routines in the parody focus entirely on fast food runs and social media rants.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A lavish dim dining room with silver platters holding fast food paper bags under dramatic oil lamp glow.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A detailed wooden puppet wireframe on a work table with dramatic spotlights.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Digital Satire Tools",
-          "items": [
-            {
-              "icon": "zap",
-              "label": "Facial Rigging"
-            },
-            {
-              "icon": "smartphone",
-              "label": "Media Rants"
-            },
-            {
-              "icon": "truck",
-              "label": "Fast Food"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Then complex 3D rigs turn simple daily absurdities into instant internet satire.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique easel holding a partially finished dramatic portrait in a shadowy artist studio.",
-        "tool": "higgsfield",
-        "motion": "Gentle camera drift forward through a dimly lit artist studio towards an illuminated painting.",
-        "still": "flux"
-      },
-      {
-        "narration": "High politics becomes a series of dramatic digital caricatures.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique carved wooden lectern standing empty under a single spotlight in a grand hall.",
-        "tool": "stock",
-        "query": "oil painting museum"
-      },
-      {
-        "narration": "Power is just performative chaos.",
-        "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A golden crown resting askew on a heavy velvet cushion in darkness.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Power",
-            "is",
-            "performative",
-            "chaos"
-          ]
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "The satirical animation depicts an accidental reincarnation into the former president.",
-        "supported": true
-      },
-      {
-        "claim": "Daily routines in the parody focus entirely on fast food runs and social media rants.",
-        "supported": true
-      },
-      {
-        "claim": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Untold Origin of Digital Money\": In October 2008, nine pages of cryptography posted on an obscure mailing list changed global finance forever.",
-      "t": 1792910783279
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"The Untold Origin of Digital Money\"",
@@ -199,10 +87,135 @@
       "role": "bot",
       "text": "Wrote the script for \"My Day As A Reincarnated Trump\"",
       "t": 1793823177250
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"My Day As A Reincarnated Trump\"",
+      "t": 1793823209952
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "my-day-as-a-reincarnated-trump-mw2k0uze",
+      "canvas": "16:9",
+      "title": "My Day As A Reincarnated Trump",
+      "topic": "Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody",
+      "pitch": {
+        "title": "My Day As A Reincarnated Trump",
+        "hook": "Waking up with orange spray tan and a billion dollars sounds great until the teleprompter breaks.",
+        "angle": "People think running the world is about grand strategy, but the daily reality is just arguing with a golf cart and dodging rogue toupees.",
+        "key_facts": [
+          "The satirical animation depicts an accidental reincarnation into the former president.",
+          "Daily routines in the parody focus entirely on fast food runs and social media rants.",
+          "Independent digital satire relies on exaggerated facial rigging for comedic effect."
+        ],
+        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "length_seconds": 45,
+        "style": "documentary",
+        "style_reason": "Historical texture meets absurd modern satire.",
+        "music": "docu-pluck",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "My Day As A Reincarnated Trump",
+        "beats": [
+          {
+            "narration": "Waking up covered in orange spray tan inside a massive gilded tower seems like a high-society dream.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An ornate golden bedroom suite inside a penthouse tower, bathed in dramatic side light, showing an elaborate vanity table with bronzing bottles and gold trimmings.",
+            "tool": "higgsfield",
+            "motion": "Slow pan across an ornate gilded bedroom with chiaroscuro lighting on gold vanity fixtures.",
+            "still": "flux"
+          },
+          {
+            "narration": "Most people assume running the world requires grand strategy. But this satirical animation depicts an accidental reincarnation into a former president.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A grand oval office under moody moonlight with shadows stretching across classical furniture.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Presidential life is grand strategy",
+              "fact": "Satirical animation of accidental presidential reincarnation"
+            }
+          },
+          {
+            "narration": "So daily routines in the parody focus entirely on fast food runs and social media rants.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A lavish dim dining room with silver platters holding fast food paper bags under dramatic oil lamp glow.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A detailed wooden puppet wireframe on a work table with dramatic spotlights.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Digital Satire Tools",
+              "items": [
+                {
+                  "icon": "zap",
+                  "label": "Facial Rigging"
+                },
+                {
+                  "icon": "smartphone",
+                  "label": "Media Rants"
+                },
+                {
+                  "icon": "truck",
+                  "label": "Fast Food"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Then complex 3D rigs turn simple daily absurdities into instant internet satire.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique easel holding a partially finished dramatic portrait in a shadowy artist studio.",
+            "tool": "higgsfield",
+            "motion": "Gentle camera drift forward through a dimly lit artist studio towards an illuminated painting.",
+            "still": "flux"
+          },
+          {
+            "narration": "High politics becomes a series of dramatic digital caricatures.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique carved wooden lectern standing empty under a single spotlight in a grand hall.",
+            "tool": "stock",
+            "query": "oil painting museum"
+          },
+          {
+            "narration": "Power is just performative chaos.",
+            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A golden crown resting askew on a heavy velvet cushion in darkness.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Power",
+                "is",
+                "performative",
+                "chaos"
+              ]
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "The satirical animation depicts an accidental reincarnation into the former president.",
+            "supported": true
+          },
+          {
+            "claim": "Daily routines in the parody focus entirely on fast food runs and social media rants.",
+            "supported": true
+          },
+          {
+            "claim": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1793823209952
+    },
     {
       "id": "instant-royalty-splits-for-independe-mvr4dmxw",
       "canvas": "16:9",
@@ -2481,85 +2494,6 @@
         "sources": []
       },
       "at": 1792749817288
-    },
-    {
-      "id": "one-single-byte-breaks-every-server-mvkraqhb",
-      "canvas": "9:16",
-      "title": "One Single Byte Breaks Every Server",
-      "topic": "how a server outage turns into a disaster",
-      "pitch": {
-        "title": "One Single Byte Breaks Every Server",
-        "hook": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-        "angle": "People think server disasters start with massive cyber attacks, but they actually start with one tiny administrative typo.",
-        "key_facts": [
-          "A single misplaced semicolon caused a major network outage.",
-          "Server cascades happen when backup systems fail to handle redirected traffic.",
-          "Recovery times often stretch for hours due to manual dependency checks."
-        ],
-        "visual_style": "dark moody server room, neon blue server rack lights, cinematic lighting",
-        "length_seconds": 45,
-        "music": "tech-pulse",
-        "accent": "blue"
-      },
-      "script": {
-        "title": "One Single Byte Breaks Every Server",
-        "beats": [
-          {
-            "narration": "A single misplaced semicolon took down half the internet in nineteen ninety eight.",
-            "image_prompt": "Vertical framing, a dark moody server room with glowing neon blue server rack lights, cinematic lighting, no text.",
-            "tool": "higgsfield",
-            "motion": "Slow camera push forward down a narrow dark server aisle with pulsing blue lights.",
-            "still": "flux"
-          },
-          {
-            "narration": "People blame massive cyber attacks for network outages, but tiny administrative typos start the cascade.",
-            "image_prompt": "Vertical framing, close up of a glowing command line interface terminal on a dark screen with abstract code lines.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then backup systems fail to handle the sudden wall of redirected traffic.",
-            "image_prompt": "Vertical framing, abstract visualization of digital network traffic overloading a glowing server node.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Recovery times stretch for hours because engineers must run manual dependency checks.",
-            "image_prompt": "Vertical framing, dark server room interior with flickering orange warning lights on a mainframe rack.",
-            "tool": "stock",
-            "query": "server room flashing lights"
-          },
-          {
-            "narration": "One tiny keystroke brings down millions of connected machines.",
-            "image_prompt": "Vertical framing, minimalist dark digital graphic showing a single highlighted error character in a stream of code.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Small mistakes cause massive digital collapses.",
-            "image_prompt": "Vertical framing, dramatic wide shot of a dark data center humming under dim blue emergency lights.",
-            "tool": "higgsfield",
-            "motion": "Camera slowly pans up from floor level revealing towering rows of silent servers.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "A single misplaced semicolon caused a major network outage.",
-            "supported": true
-          },
-          {
-            "claim": "Server cascades happen when backup systems fail to handle redirected traffic.",
-            "supported": true
-          },
-          {
-            "claim": "Recovery times often stretch for hours due to manual dependency checks.",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1792747036874
     }
   ],
   "lastRenderAuto": false,
@@ -2571,12 +2505,12 @@
   },
   "renders": [
     {
-      "title": "Instant Royalty Splits for Independent Artists",
-      "at": 1793131804216,
-      "project": "instant-royalty-splits-for-independe-mvr4dmxw"
+      "title": "My Day As A Reincarnated Trump",
+      "at": 1793823209952,
+      "project": "my-day-as-a-reincarnated-trump-mw2k0uze"
     }
   ],
-  "current_project": "instant-royalty-splits-for-independe-mvr4dmxw",
+  "current_project": "my-day-as-a-reincarnated-trump-mw2k0uze",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2706,15 +2640,13 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {
-    "style": "documentary"
-  },
+  "job": null,
   "recent_styles": [
-    "documentary",
     "youtu-2",
     "upload-3",
     "upload-3",
-    "upload-3"
+    "upload-3",
+    "documentary"
   ],
   "learning": null,
   "styles": {
