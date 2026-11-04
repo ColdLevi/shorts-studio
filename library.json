@@ -235,6 +235,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-23",
+      "title": "My Day As A Reincarnated Trump",
+      "hook": "Waking up with orange spray tan and a billion dollars sounds great until the teleprompter breaks.",
+      "accent": "#FFD43B",
+      "duration": 44.0,
+      "created": 1793824211945,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-23/short-23.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-23/short-23.jpg",
+      "project": "my-day-as-a-reincarnated-trump-mw2k0uze",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
