@@ -215,7 +215,9 @@ def from_props(props, spec=None, pid="job", cv=None):
     for i, b in enumerate(props.get("beats", [])):
         sb = beats[i] if i < len(beats) else {}
         clip = {"id": f"v{i + 1}", "start": b["start"], "end": b["end"], "narration": b.get("text") or sb.get("narration", "")}
-        if b.get("graphic"):
+        if b.get("scene"):
+            clip.update(kind="scene", scene=b["scene"], gen={"tool": "scene"})
+        elif b.get("graphic"):
             clip.update(kind="graphic", graphic=b["graphic"], gen={"tool": "graphic"})
         elif b.get("video"):
             clip.update(kind="ai_video", src=rel_src(pid, b["video"]), duration=b.get("videoDuration"),
@@ -272,7 +274,7 @@ def from_props(props, spec=None, pid="job", cv=None):
 
 
 # ---------- validation ----------
-KINDS = {"image", "ai_video", "graphic", "stock", "upload", "color"}
+KINDS = {"image", "ai_video", "graphic", "stock", "upload", "color", "scene"}
 
 
 def validate(t):
@@ -302,6 +304,8 @@ def validate(t):
             errs.append(f"{v.get('id')}: needs 0 <= start < end")
         if v.get("kind") == "graphic" and not isinstance(v.get("graphic"), dict):
             errs.append(f"{v.get('id')}: graphic clip needs a graphic object")
+        if v.get("kind") == "scene" and not isinstance(v.get("scene"), dict):
+            errs.append(f"{v.get('id')}: scene clip needs a scene object")
     try:  # full JSON Schema check when jsonschema is installed
         import jsonschema
         schema = json.load(open(os.path.join(ROOT, "timeline", "timeline.schema.json")))
@@ -407,7 +411,7 @@ def mark_dirty(old, new):
         for c in new["tracks"].get(tr) or []:
             o = oldv.get(c["id"])
             if o is None or (o.get("gen") != c.get("gen")) or (tr == "visuals" and o.get("kind") != c.get("kind")):
-                if c.get("gen") and c["gen"].get("tool") not in ("graphic", "library") and not c.get("src_locked"):
+                if c.get("gen") and c["gen"].get("tool") not in ("graphic", "library", "scene") and not c.get("src_locked"):
                     c["dirty"] = True
                     changed.append(c["id"])
     vo = (new["tracks"].get("voice") or [None])[0]
@@ -429,7 +433,7 @@ def needs_build(t, pid=None):
     out = []
     for tr in ("visuals", "voice", "music"):
         for c in t["tracks"].get(tr) or []:
-            if c.get("kind") in ("graphic", "color"):
+            if c.get("kind") in ("graphic", "color", "scene"):
                 continue
             p = asset_path(pid, c.get("src"))
             if c.get("dirty") or (c.get("src") is None and c.get("gen")) or (p and not os.path.exists(p)):
@@ -488,6 +492,8 @@ def normalize(t):
             v["gen"] = {"tool": "flux", "prompt": v.get("narration", "")}
         if v["kind"] == "graphic":
             v.setdefault("gen", {"tool": "graphic"})
+        if v["kind"] == "scene":
+            v.setdefault("gen", {"tool": "scene"})
     for m in tr.get("music") or []:
         g = m.get("gen") or {}
         if g.get("tool") == "library" and g.get("name"):
@@ -534,7 +540,11 @@ def scenes(t):
     """User-facing scene list: 1..N in visual order."""
     out = []
     for i, v in enumerate(t["tracks"].get("visuals") or []):
-        what = (v.get("graphic") or {}).get("type") if v.get("kind") == "graphic" else ((v.get("gen") or {}).get("prompt") or v.get("src") or "")
+        if v.get("kind") == "scene":
+            sc = v.get("scene") or {}
+            what = f"{sc.get('scene', 'scene')} ({sc.get('shot', 'wide')})"
+        else:
+            what = (v.get("graphic") or {}).get("type") if v.get("kind") == "graphic" else ((v.get("gen") or {}).get("prompt") or v.get("src") or "")
         out.append({"n": i + 1, "id": v["id"], "kind": v.get("kind"), "tool": (v.get("gen") or {}).get("tool"),
                     "start": v.get("start"), "end": v.get("end"), "text": (v.get("narration") or "").strip(), "visual": str(what)[:90]})
     return out
@@ -556,7 +566,7 @@ def diff(old, new):
         a, b = ov[i], nv[i]
         if norm_text(a.get("narration")) != norm_text(b.get("narration")):
             d["narration"].append(i)
-        if a.get("gen") != b.get("gen") or a.get("kind") != b.get("kind") or a.get("graphic") != b.get("graphic") or (b.get("dirty") and not a.get("dirty")):
+        if a.get("gen") != b.get("gen") or a.get("kind") != b.get("kind") or a.get("graphic") != b.get("graphic") or a.get("scene") != b.get("scene") or (b.get("dirty") and not a.get("dirty")):
             d["visual"].append(i)
         elif any(a.get(k) != b.get(k) for k in ("fit", "motion", "transition", "focus", "trim", "playbackRate", "color", "src")):
             d["visual_props"].append(i)

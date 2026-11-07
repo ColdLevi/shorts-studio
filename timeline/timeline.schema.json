@@ -280,7 +280,8 @@
                   "graphic",
                   "stock",
                   "upload",
-                  "color"
+                  "color",
+                  "scene"
                 ]
               },
               "start": {
@@ -390,6 +391,9 @@
               },
               "color": {
                 "type": "string"
+              },
+              "scene": {
+                "type": "object"
               },
               "graphic": {
                 "type": "object",

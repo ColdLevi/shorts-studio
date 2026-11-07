@@ -395,14 +395,14 @@ def main():
     words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
     print(f"voice {total:.1f}s, {len(words)} words")
 
-    n_gfx = sum(1 for b in beats if b.get("graphic"))
+    n_gfx = sum(1 for b in beats if b.get("graphic") or b.get("scene"))
     tg(f"🎨 Animating {n_gfx} motion-graphic scenes..." if n_gfx == len(beats) else f"🎨 Painting {len(beats) - n_gfx} images" + (f" and animating {n_gfx} graphic(s)..." if n_gfx else "..."))
     fallbacks, errors, quota = [], [], []
     PIXEL = set()
 
     def make(i):
         b = beats[i]
-        if b.get("graphic"):
+        if b.get("graphic") or b.get("scene"):
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
         tool = (b.get("tool") or "flux").lower()
@@ -504,7 +504,7 @@ def main():
         "accent": spec.get("accent", "#FFD43B"),
         "duration": round(total + 0.8, 2),
         "beats": [{"image": img, "text": b["narration"], **t, **clips.get(i, {}), **({"pixel": True} if i in PIXEL else {}),
-                   **({"graphic": b["graphic"]} if b.get("graphic") else {})}
+                   **({"graphic": b["graphic"]} if b.get("graphic") else {}), **({"scene": b["scene"]} if b.get("scene") else {})}
                   for i, (img, b, t) in enumerate(zip(images, beats, times))],
         "words": words,
         "format": "landscape" if wide else "vertical",

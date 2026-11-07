@@ -3,6 +3,7 @@
 import React from 'react';
 import { AbsoluteFill, CanvasImage, Img, Loop, OffthreadVideo, interpolate, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 import { GraphicBeat } from '../story/graphics';
+import { SceneBeat } from '../packs/whatif/SceneBeat';
 import { url, publicPath } from './assets';
 import { graphicFit, Layout } from './layout';
 import type { Transition, VisualClip } from './types';
@@ -140,6 +141,8 @@ export const VisualLayer: React.FC<{ c: VisualClip; index: number; len: number; 
   let lensFocus = false;
   if (c.kind === 'graphic' && c.graphic) {
     body = <GraphicBeat g={c.graphic} accent={accent} len={len} image={nearImage} fit={graphicFit(L)} sfx={graphicSfx} backdrop={!sharedBackdrop} />;
+  } else if (c.kind === 'scene' && c.scene) {
+    body = <SceneBeat spec={c.scene} />;
   } else if (c.kind === 'color' || !c.src) {
     const col = c.color || '#15151d';
     body = <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 35%, ${col} 0%, #08080c 100%)` }} />;

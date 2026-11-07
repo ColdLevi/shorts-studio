@@ -1,0 +1,19 @@
+{
+  "schema": "shorts-studio/timeline@1",
+  "id": "whatif-test",
+  "rev": 0,
+  "title": "What If test",
+  "duration": 9.5,
+  "canvas": { "width": 1080, "height": 1920, "fps": 30 },
+  "style": { "accent": "#FFD43B", "caption": { "preset": "none" }, "vignette": false, "progress_bar": false, "title": { "show": false }, "transition": { "type": "cut" } },
+  "tracks": {
+    "visuals": [
+      { "id": "v1", "kind": "scene", "start": 0, "end": 3, "scene": { "pack": "whatif", "scene": "demo", "shot": "wide", "prop": "cookie", "action": "copy" }, "gen": { "tool": "scene" } },
+      { "id": "v2", "kind": "scene", "start": 3, "end": 6, "scene": { "pack": "whatif", "scene": "title", "title": ["WHAT IF YOU COULD", "COPY AND PASTE ANYTHING?"], "rule": "one rule: copies cost energy" }, "gen": { "tool": "scene" } },
+      { "id": "v3", "kind": "scene", "start": 6, "end": 8, "scene": { "pack": "whatif", "scene": "demo", "shot": "close", "prop": "cookie", "action": "paste", "seed": 3 }, "gen": { "tool": "scene" } },
+      { "id": "v4", "kind": "scene", "start": 8, "end": 9.5, "scene": { "pack": "whatif", "scene": "fact", "number": "13 min", "label": "of world power for one cookie" }, "gen": { "tool": "scene" } }
+    ],
+    "captions": { "enabled": false, "words": [] },
+    "voice": [], "music": [], "sfx": [], "overlays": []
+  }
+}

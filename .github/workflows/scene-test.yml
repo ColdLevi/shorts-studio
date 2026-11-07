@@ -1,0 +1,42 @@
+name: Scene test (What If pack)
+
+# Manual only. Renders timeline/whatif-test.json with the Studio composition and attaches the MP4 plus
+# a contact sheet of stills as an artifact. No secrets, no image generation, no voice.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+      - name: Install
+        run: |
+          sudo apt-get update -y || true
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
+          sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
+          cd remotion && npm ci --no-audit --no-fund
+      - name: Render the test timeline
+        working-directory: remotion
+        run: |
+          mkdir -p out
+          npx remotion render src/studio-index.ts Studio out/whatif-test.mp4 --props=../timeline/whatif-test.json --gl=swangle --crf=20 --log=error
+          for f in 15 60 105 150 195 240 270; do
+            npx remotion still src/studio-index.ts Studio out/still-$f.png --frame=$f --props=../timeline/whatif-test.json --gl=swangle --log=error || true
+          done
+          ffmpeg -y -pattern_type glob -i 'out/still-*.png' -filter_complex "scale=270:-1,tile=7x1" out/sheet.png || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: whatif-test
+          path: |
+            remotion/out/whatif-test.mp4
+            remotion/out/sheet.png

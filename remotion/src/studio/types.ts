@@ -3,6 +3,7 @@
 // renders any timeline at any canvas size; tools/timeline.py builds, patches and versions it.
 // JSON Schema: timeline/timeline.schema.json. Times are in seconds from the start of the video.
 import type { Graphic } from '../story/graphics';
+import type { SceneSpec } from '../packs/whatif/SceneBeat';
 
 export type Word = { word: string; start: number; end: number };
 
@@ -53,7 +54,7 @@ export type Style = {
 // How an asset was (or will be) made. Kept so a re-edit can remake only what changed.
 export type Gen = { tool: string; prompt?: string; model?: string; still?: string; motion?: string; url?: string; [k: string]: unknown };
 
-export type VisualKind = 'image' | 'ai_video' | 'graphic' | 'stock' | 'upload' | 'color';
+export type VisualKind = 'image' | 'ai_video' | 'graphic' | 'stock' | 'upload' | 'color' | 'scene';
 export type VisualClip = {
   id: string;
   kind: VisualKind;
@@ -73,6 +74,7 @@ export type VisualClip = {
   pixel?: boolean;
   color?: string;           // kind 'color'
   graphic?: Graphic;        // kind 'graphic'
+  scene?: SceneSpec;        // kind 'scene': a code-drawn scene from a style pack (packs/<pack>/SceneBeat.tsx)
   narration?: string;       // the words spoken over this clip (for re-timing after a voice change)
   gen?: Gen;
   hash?: string;
