@@ -1,28 +1,35 @@
 {
-  "last_update": 312538253,
-  "time": 1793823209952,
-  "stage": "idle",
-  "topic": "Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody",
+  "last_update": 312538254,
+  "time": 1794083373611,
+  "stage": "pitch",
+  "topic": "what if I can code at age 5 and now am 30",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "Thirty Years of Code Burnout",
+    "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+    "angle": "Starting code in kindergarten seems like a shortcut to building tech empires by age thirty. Twenty-five years of shifting frameworks turns early mastery into endless syntax unlearning.",
+    "key_facts": [
+      "Dartmouth College introduced BASIC in 1964 to make computer programming accessible to beginners.",
+      "The Commodore 64 featured BASIC built directly into its system ROM upon release in 1982.",
+      "Brendan Eich created the initial version of JavaScript in ten days in 1995.",
+      "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser DOM elements straight to editor source code."
+    ],
+    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+    "length_seconds": 45,
+    "style": "upload-3",
+    "style_reason": "Monochrome wireframes with crimson accents highlight structural tech evolution clearly.",
+    "music": "tech-pulse",
+    "accent": "red",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Untold Origin of Digital Money\"",
-      "t": 1792910826171
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"The Untold Origin of Digital Money\"",
-      "t": 1792910858764
-    },
     {
       "role": "user",
       "text": "Make a good video about network security and access",
@@ -92,6 +99,16 @@
       "role": "bot",
       "text": "Rendering \"My Day As A Reincarnated Trump\"",
       "t": 1793823209952
+    },
+    {
+      "role": "user",
+      "text": "Make a video of what if I can code at age 5 and now am 30",
+      "t": 1794083364257
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Thirty Years of Code Burnout\": A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+      "t": 1794083373611
     }
   ],
   "working": null,
@@ -2497,7 +2514,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\n- The user prefers an in‑depth analysis of all videos on a channel rather than a superficial front‑page overview.\nRelevant memories:\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (idea) The user likes video concepts about the daily life of a guy named Adam featuring stop-motion style graphics.\n- (fact) Browser bot research on a guy daily life stop motion style: - Creating a 60-second stop motion video typically requires between 720 and 1,500 individual photographs, depending on whether the animator shoots at 12 or 24 frames per second (https://www.studiobinder.com/blog/what-is-stop-motion-animation/)\n- A standard cinematic framerate for smooth stop motion\n- (interest) The user approved a short about a guy daily life stop motion style.\n- (interest) The user approved a short about how to use termux for beginners in Issacverse style.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\n- The user prefers educational content that uses immediate proof of working projects in the hook.\nRelevant memories:\n- (fact) Browser bot research on starting small: - In 2020, developer and coder Anthony Fu created *Vite Plugin Inspector*, which allows developers to click an element in their browser and jump straight to the source code in their editor, starting from a tiny personal script that grew into an essential tool for millions of Vite users worldwide (ht\n- (interest) The user is interested in analyzing web3 content, hooks, code structures, and pacing from the YouTube channel shipweb3s.\n- (interest) The user approved a short about Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody.\n- (idea) The user liked the concept of a satirical first-person short about being reincarnated as Donald Trump.",
   "deep": {
     "topic": "Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody",
     "status": "running",
@@ -2640,7 +2657,7 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": null,
+  "job": {},
   "recent_styles": [
     "youtu-2",
     "upload-3",
