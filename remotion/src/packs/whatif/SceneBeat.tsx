@@ -100,7 +100,8 @@ const Demo: React.FC<{ s: SceneSpec }> = ({ s }) => {
   // acting: Pip moves from one pose to another between 20% and 55% of the clip
   const endPose: PoseName = s.pose || (s.prop ? 'reach' : 'idle');
   const startPose: PoseName = s.from || 'idle';
-  const act = interpolate(frame, [durationInFrames * 0.2, durationInFrames * 0.55], [0, 1], { ...CLAMP, easing: Easing.out(Easing.cubic) });
+  const isInsert = shot === 'insert'; // inserts start already in their final pose, so the camera never chases the hand
+  const act = isInsert ? 1 : interpolate(frame, [durationInFrames * 0.2, durationInFrames * 0.55], [0, 1], { ...CLAMP, easing: Easing.out(Easing.cubic) });
   const pose = mixPose(POSES[startPose], POSES[endPose], act);
   const walking = s.x_to !== undefined;
   const px = walking ? interpolate(frame, [0, durationInFrames], [s.x ?? -200, s.x_to as number], CLAMP) : (s.x ?? -80);
@@ -114,7 +115,7 @@ const Demo: React.FC<{ s: SceneSpec }> = ({ s }) => {
   const dl = Math.max(1, Math.sqrt(dx * dx + dy * dy));
   const handWX = px + PIP_SCALE * (R.hx + (dx / dl) * 34);
   const handWY = PIP_Y + PIP_SCALE * (R.hy + (dy / dl) * 34);
-  const popAt = Math.round(durationInFrames * 0.45);
+  const popAt = Math.round(durationInFrames * (isInsert ? 0.1 : 0.45));
   const pop = spring({ frame: frame - popAt, fps, config: { damping: 12 } });
   const showProp = !!s.prop && frame >= popAt;
 
