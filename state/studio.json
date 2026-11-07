@@ -1,150 +1,18 @@
 {
-  "last_update": 312538255,
-  "time": 1794083423258,
-  "stage": "script",
+  "last_update": 312538256,
+  "time": 1794083431441,
+  "stage": "idle",
   "topic": "what if I can code at age 5 and now am 30",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Thirty Years of Code Burnout",
-    "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
-    "angle": "Starting code in kindergarten seems like a shortcut to building tech empires by age thirty. Twenty-five years of shifting frameworks turns early mastery into endless syntax unlearning.",
-    "key_facts": [
-      "Dartmouth College introduced BASIC in 1964 to make computer programming accessible to beginners.",
-      "The Commodore 64 featured BASIC built directly into its system ROM upon release in 1982.",
-      "Brendan Eich created the initial version of JavaScript in ten days in 1995.",
-      "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser DOM elements straight to editor source code."
-    ],
-    "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
-    "length_seconds": 45,
-    "style": "upload-3",
-    "style_reason": "Monochrome wireframes with crimson accents highlight structural tech evolution clearly.",
-    "music": "tech-pulse",
-    "accent": "red",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Thirty Years of Code Burnout",
-    "beats": [
-      {
-        "narration": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine.",
-        "image_prompt": "Vector diagram of a sleek vintage terminal screen showing glowing green text against a dark wireframe background with glowing crimson nodes, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "PRINT",
-            "HELLO",
-            "WORLD",
-            "1999"
-          ]
-        }
-      },
-      {
-        "narration": "Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners.",
-        "image_prompt": "Minimalist architectural wireframe diagram of a university laboratory with red glowing signal pulses, landscape 16:9 aspect ratio.",
-        "tool": "flux"
-      },
-      {
-        "narration": "By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM.",
-        "image_prompt": "Sleek tech UI schematic of a microchip circuit board on a dark grid with deep red highlight paths, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "ROM Integration",
-          "items": [
-            {
-              "icon": "landmark",
-              "label": "Hardware ROM"
-            },
-            {
-              "icon": "zap",
-              "label": "Instant BASIC"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Starting in kindergarten feels like a shortcut to building digital empires before age thirty.",
-        "image_prompt": "High-contrast monochrome flow chart mapping a child desktop node to a massive tech tower, accented with red vector lines, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Early coding guarantees lifelong mastery",
-          "fact": "Endless framework changes force constant unlearning"
-        }
-      },
-      {
-        "narration": "Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five.",
-        "image_prompt": "Clean digital countdown interface overlaying code syntax diagrams with intense red ambient glows, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 10,
-          "prefix": "",
-          "suffix": "Days",
-          "label": "JavaScript Initial Build"
-        }
-      },
-      {
-        "narration": "By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code.",
-        "image_prompt": "Monochrome browser wireframe window connected by glowing crimson vector arrows to an editor IDE interface, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Inspector Pipeline",
-          "steps": [
-            "Browser DOM Element",
-            "Vite Plugin Inspector",
-            "Editor Source Code"
-          ]
-        }
-      },
-      {
-        "narration": "Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory.",
-        "image_prompt": "Abstract digital vector gauge reaching critical levels on a dark grid canvas with stark red neon highlights, landscape 16:9 aspect ratio.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 95,
-          "min": 0,
-          "max": 100,
-          "suffix": "%",
-          "label": "Syntax Shift Speed"
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Dartmouth College introduced BASIC in 1964 to make programming simple for beginners.",
-        "supported": true
-      },
-      {
-        "claim": "Commodore 64 systems booted BASIC directly from hardware ROM upon release in 1982.",
-        "supported": true
-      },
-      {
-        "claim": "Brendan Eich created JavaScript in ten days in 1995.",
-        "supported": true
-      },
-      {
-        "claim": "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser elements to editor source code.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"One Semicolon Crashed Half the Internet\": In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
-      "t": 1793037877028
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"One Semicolon Crashed Half the Internet\"",
@@ -219,10 +87,155 @@
       "role": "bot",
       "text": "Wrote the script for \"Thirty Years of Code Burnout\"",
       "t": 1794083423258
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Thirty Years of Code Burnout\"",
+      "t": 1794083431441
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "thirty-years-of-code-burnout-mw6uyb8g",
+      "canvas": "16:9",
+      "title": "Thirty Years of Code Burnout",
+      "topic": "what if I can code at age 5 and now am 30",
+      "pitch": {
+        "title": "Thirty Years of Code Burnout",
+        "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+        "angle": "Starting code in kindergarten seems like a shortcut to building tech empires by age thirty. Twenty-five years of shifting frameworks turns early mastery into endless syntax unlearning.",
+        "key_facts": [
+          "Dartmouth College introduced BASIC in 1964 to make computer programming accessible to beginners.",
+          "The Commodore 64 featured BASIC built directly into its system ROM upon release in 1982.",
+          "Brendan Eich created the initial version of JavaScript in ten days in 1995.",
+          "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser DOM elements straight to editor source code."
+        ],
+        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+        "length_seconds": 45,
+        "style": "upload-3",
+        "style_reason": "Monochrome wireframes with crimson accents highlight structural tech evolution clearly.",
+        "music": "tech-pulse",
+        "accent": "red",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Thirty Years of Code Burnout",
+        "beats": [
+          {
+            "narration": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine.",
+            "image_prompt": "Vector diagram of a sleek vintage terminal screen showing glowing green text against a dark wireframe background with glowing crimson nodes, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "PRINT",
+                "HELLO",
+                "WORLD",
+                "1999"
+              ]
+            }
+          },
+          {
+            "narration": "Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners.",
+            "image_prompt": "Minimalist architectural wireframe diagram of a university laboratory with red glowing signal pulses, landscape 16:9 aspect ratio.",
+            "tool": "flux"
+          },
+          {
+            "narration": "By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM.",
+            "image_prompt": "Sleek tech UI schematic of a microchip circuit board on a dark grid with deep red highlight paths, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "ROM Integration",
+              "items": [
+                {
+                  "icon": "landmark",
+                  "label": "Hardware ROM"
+                },
+                {
+                  "icon": "zap",
+                  "label": "Instant BASIC"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Starting in kindergarten feels like a shortcut to building digital empires before age thirty.",
+            "image_prompt": "High-contrast monochrome flow chart mapping a child desktop node to a massive tech tower, accented with red vector lines, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Early coding guarantees lifelong mastery",
+              "fact": "Endless framework changes force constant unlearning"
+            }
+          },
+          {
+            "narration": "Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five.",
+            "image_prompt": "Clean digital countdown interface overlaying code syntax diagrams with intense red ambient glows, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 10,
+              "prefix": "",
+              "suffix": "Days",
+              "label": "JavaScript Initial Build"
+            }
+          },
+          {
+            "narration": "By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code.",
+            "image_prompt": "Monochrome browser wireframe window connected by glowing crimson vector arrows to an editor IDE interface, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Inspector Pipeline",
+              "steps": [
+                "Browser DOM Element",
+                "Vite Plugin Inspector",
+                "Editor Source Code"
+              ]
+            }
+          },
+          {
+            "narration": "Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory.",
+            "image_prompt": "Abstract digital vector gauge reaching critical levels on a dark grid canvas with stark red neon highlights, landscape 16:9 aspect ratio.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 95,
+              "min": 0,
+              "max": 100,
+              "suffix": "%",
+              "label": "Syntax Shift Speed"
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Dartmouth College introduced BASIC in 1964 to make programming simple for beginners.",
+            "supported": true
+          },
+          {
+            "claim": "Commodore 64 systems booted BASIC directly from hardware ROM upon release in 1982.",
+            "supported": true
+          },
+          {
+            "claim": "Brendan Eich created JavaScript in ten days in 1995.",
+            "supported": true
+          },
+          {
+            "claim": "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser elements to editor source code.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794083431440
+    },
     {
       "id": "my-day-as-a-reincarnated-trump-mw2k0uze",
       "canvas": "16:9",
@@ -2504,123 +2517,6 @@
         "sources": []
       },
       "at": 1792850909188
-    },
-    {
-      "id": "adam-starts-his-stop-motion-day-mvksybxe",
-      "canvas": "9:16",
-      "title": "Adam Starts His Stop Motion Day",
-      "topic": "a guy daily life stop motion style",
-      "pitch": {
-        "title": "Adam Starts His Stop Motion Day",
-        "hook": "Seven hundred and twenty individual photographs build a single morning for Adam.",
-        "angle": "People think stop motion requires a massive Hollywood studio budget. Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
-        "key_facts": [
-          "Adam wakes up at six o'clock every morning for his daily routine.",
-          "Animating on twos requires twelve individual photographs for every single second of video.",
-          "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
-          "Locking camera exposure and focus prevents visual flickering between individual frames."
-        ],
-        "visual_style": "tactile stop-motion photo style, cardboard cutout textures, overhead craft lighting",
-        "length_seconds": 45,
-        "music": "lofi-warm",
-        "accent": "teal"
-      },
-      "script": {
-        "title": "Adam Starts His Stop Motion Day",
-        "beats": [
-          {
-            "narration": "Seven hundred and twenty individual photographs build a single morning for Adam.",
-            "image_prompt": "Vertical overhead view of a wooden desk with cardboard cutout figures arranged neatly under warm craft studio lighting.",
-            "tool": "higgsfield",
-            "motion": "Slow overhead crane shot moving forward across the cardboard craft desk while cutout pieces shift slightly.",
-            "still": "flux"
-          },
-          {
-            "narration": "People think stop motion requires a massive Hollywood studio budget.",
-            "image_prompt": "Vertical macro shot of a single tiny cardboard coffee cup model resting on a dark craft paper surface.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Moving ordinary cardboard cutouts frame by frame brings an everyday routine to life on a desk.",
-            "image_prompt": "Vertical close-up of hands moving a small articulated cardboard figure on a tabletop covered in craft tools.",
-            "tool": "stock",
-            "query": "stop motion animation hands"
-          },
-          {
-            "narration": "Adam wakes up at six o'clock every morning for his daily routine.",
-            "image_prompt": "Vertical still of a small cardboard alarm clock cutout showing six o'clock against a textured background.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Animating on twos requires twelve individual photographs for every single second of video.",
-            "image_prompt": "Vertical graphic displaying frame count comparisons for stop motion animation.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "bars",
-              "title": "Frames Per Second",
-              "prefix": "",
-              "suffix": "",
-              "items": [
-                {
-                  "label": "On Ones",
-                  "value": 24
-                },
-                {
-                  "label": "On Twos",
-                  "value": 12
-                }
-              ]
-            }
-          },
-          {
-            "narration": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
-            "image_prompt": "Vertical neat grid of tiny paper photo prints spread across a rustic wooden tabletop.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 720,
-              "prefix": "",
-              "suffix": " photo",
-              "label": "Total Frames"
-            }
-          },
-          {
-            "narration": "Locking camera exposure and focus prevents visual flickering between individual frames.",
-            "image_prompt": "Vertical view of a professional digital camera mounted on a sturdy overhead tripod pointing down at a craft workspace.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Every frame tells the story.",
-            "image_prompt": "Vertical hero shot of a tiny cardboard figure stepping forward into bright morning craft light.",
-            "tool": "higgsfield",
-            "motion": "Fast smooth zoom in on the cardboard figure as studio lights flicker and settle.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Adam wakes up at six o'clock every morning for his daily routine.",
-            "supported": true
-          },
-          {
-            "claim": "Animating on twos requires twelve individual photographs for every single second of video.",
-            "supported": true
-          },
-          {
-            "claim": "A one-minute stop-motion sequence uses seven hundred and twenty distinct photos.",
-            "supported": true
-          },
-          {
-            "claim": "Locking camera exposure and focus prevents visual flickering between individual frames.",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1792749817288
     }
   ],
   "lastRenderAuto": false,
@@ -2628,12 +2524,12 @@
   "deep": null,
   "renders": [
     {
-      "title": "My Day As A Reincarnated Trump",
-      "at": 1793823209952,
-      "project": "my-day-as-a-reincarnated-trump-mw2k0uze"
+      "title": "Thirty Years of Code Burnout",
+      "at": 1794083431441,
+      "project": "thirty-years-of-code-burnout-mw6uyb8g"
     }
   ],
-  "current_project": "my-day-as-a-reincarnated-trump-mw2k0uze",
+  "current_project": "thirty-years-of-code-burnout-mw6uyb8g",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2763,13 +2659,13 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {},
+  "job": null,
   "recent_styles": [
-    "youtu-2",
     "upload-3",
     "upload-3",
     "upload-3",
-    "documentary"
+    "documentary",
+    "upload-3"
   ],
   "learning": null,
   "styles": {
