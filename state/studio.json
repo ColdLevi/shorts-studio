@@ -1,7 +1,7 @@
 {
-  "last_update": 312538254,
-  "time": 1794083389477,
-  "stage": "pitch",
+  "last_update": 312538255,
+  "time": 1794083423258,
+  "stage": "script",
   "topic": "what if I can code at age 5 and now am 30",
   "research": {
     "text": "",
@@ -25,16 +25,121 @@
     "accent": "red",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Thirty Years of Code Burnout",
+    "beats": [
+      {
+        "narration": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine.",
+        "image_prompt": "Vector diagram of a sleek vintage terminal screen showing glowing green text against a dark wireframe background with glowing crimson nodes, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "PRINT",
+            "HELLO",
+            "WORLD",
+            "1999"
+          ]
+        }
+      },
+      {
+        "narration": "Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners.",
+        "image_prompt": "Minimalist architectural wireframe diagram of a university laboratory with red glowing signal pulses, landscape 16:9 aspect ratio.",
+        "tool": "flux"
+      },
+      {
+        "narration": "By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM.",
+        "image_prompt": "Sleek tech UI schematic of a microchip circuit board on a dark grid with deep red highlight paths, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "icons",
+          "title": "ROM Integration",
+          "items": [
+            {
+              "icon": "landmark",
+              "label": "Hardware ROM"
+            },
+            {
+              "icon": "zap",
+              "label": "Instant BASIC"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Starting in kindergarten feels like a shortcut to building digital empires before age thirty.",
+        "image_prompt": "High-contrast monochrome flow chart mapping a child desktop node to a massive tech tower, accented with red vector lines, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Early coding guarantees lifelong mastery",
+          "fact": "Endless framework changes force constant unlearning"
+        }
+      },
+      {
+        "narration": "Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five.",
+        "image_prompt": "Clean digital countdown interface overlaying code syntax diagrams with intense red ambient glows, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 10,
+          "prefix": "",
+          "suffix": "Days",
+          "label": "JavaScript Initial Build"
+        }
+      },
+      {
+        "narration": "By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code.",
+        "image_prompt": "Monochrome browser wireframe window connected by glowing crimson vector arrows to an editor IDE interface, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Inspector Pipeline",
+          "steps": [
+            "Browser DOM Element",
+            "Vite Plugin Inspector",
+            "Editor Source Code"
+          ]
+        }
+      },
+      {
+        "narration": "Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory.",
+        "image_prompt": "Abstract digital vector gauge reaching critical levels on a dark grid canvas with stark red neon highlights, landscape 16:9 aspect ratio.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "gauge",
+          "value": 95,
+          "min": 0,
+          "max": 100,
+          "suffix": "%",
+          "label": "Syntax Shift Speed"
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Dartmouth College introduced BASIC in 1964 to make programming simple for beginners.",
+        "supported": true
+      },
+      {
+        "claim": "Commodore 64 systems booted BASIC directly from hardware ROM upon release in 1982.",
+        "supported": true
+      },
+      {
+        "claim": "Brendan Eich created JavaScript in ten days in 1995.",
+        "supported": true
+      },
+      {
+        "claim": "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser elements to editor source code.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Make a good video about network security and access",
-      "t": 1793037861408
-    },
     {
       "role": "bot",
       "text": "Pitched \"One Semicolon Crashed Half the Internet\": In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
@@ -109,6 +214,11 @@
       "role": "bot",
       "text": "Pitched \"Thirty Years of Code Burnout\": A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
       "t": 1794083373611
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Thirty Years of Code Burnout\"",
+      "t": 1794083423258
     }
   ],
   "working": null,
