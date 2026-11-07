@@ -1,0 +1,531 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "cats-only-get-one-life-mw6vjxdj",
+ "rev": 1,
+ "title": "Cats Only Get One Life",
+ "duration": 21.85,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.0,
+    "narration": "Tap the box. Count. One life.",
+    "kind": "scene",
+    "scene": {
+     "action": "count",
+     "focus": "pip",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "reach",
+     "prop": "box",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "wide"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.0,
+    "end": 5.7,
+    "narration": "Tap your phone. Count. One life.",
+    "kind": "scene",
+    "scene": {
+     "action": "count",
+     "focus": "prop",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "point",
+     "prop": "phone",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "insert"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 5.7,
+    "end": 9.137,
+    "narration": "Tap yourself. Count. Zero lives.",
+    "kind": "scene",
+    "scene": {
+     "action": "count",
+     "focus": "light",
+     "from": "idle",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "shock",
+     "prop": "clock",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "medium"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 9.137,
+    "end": 11.213,
+    "narration": "What if cats had only one life?",
+    "kind": "scene",
+    "scene": {
+     "pack": "whatif",
+     "rule": "no extra lives exist",
+     "scene": "title",
+     "title": [
+      "WHAT IF CATS HAD",
+      "ONLY ONE LIFE?"
+     ]
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 11.213,
+    "end": 13.338,
+    "narration": "Your cat sits near the desk edge.",
+    "kind": "scene",
+    "scene": {
+     "focus": "pip",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "think",
+     "prop": "laptop",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "close"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 13.338,
+    "end": 17.312,
+    "narration": "Falling cats reach sixty miles per hour. That's real.",
+    "kind": "scene",
+    "scene": {
+     "label": "cat terminal velocity speed",
+     "number": "60 mph",
+     "pack": "whatif",
+     "scene": "fact"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 17.312,
+    "end": 19.35,
+    "narration": "He wears a helmet to walk around.",
+    "kind": "scene",
+    "scene": {
+     "focus": "pip",
+     "from": "walk",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "walk",
+     "prop": "box",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "wide",
+     "x": -50,
+     "x_to": 80
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 19.35,
+    "end": 21.048,
+    "narration": "Will you still leave that window open?",
+    "kind": "scene",
+    "scene": {
+     "focus": "window",
+     "mood": "dusk",
+     "pack": "whatif",
+     "pose": "wave",
+     "prop": "cup",
+     "room": "desk",
+     "scene": "demo",
+     "shot": "medium"
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Tap",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "the",
+     "start": 0.25,
+     "end": 0.312
+    },
+    {
+     "word": "box.",
+     "start": 0.312,
+     "end": 0.863
+    },
+    {
+     "word": "Count.",
+     "start": 1.25,
+     "end": 1.6
+    },
+    {
+     "word": "One",
+     "start": 2.0,
+     "end": 2.163
+    },
+    {
+     "word": "life.",
+     "start": 2.163,
+     "end": 2.6
+    },
+    {
+     "word": "Tap",
+     "start": 3.0,
+     "end": 3.163
+    },
+    {
+     "word": "your",
+     "start": 3.163,
+     "end": 3.25
+    },
+    {
+     "word": "phone.",
+     "start": 3.25,
+     "end": 3.612
+    },
+    {
+     "word": "Count.",
+     "start": 4.013,
+     "end": 4.35
+    },
+    {
+     "word": "One",
+     "start": 4.75,
+     "end": 4.875
+    },
+    {
+     "word": "life.",
+     "start": 4.875,
+     "end": 5.287
+    },
+    {
+     "word": "Tap",
+     "start": 5.7,
+     "end": 5.925
+    },
+    {
+     "word": "yourself.",
+     "start": 5.938,
+     "end": 6.7
+    },
+    {
+     "word": "Count.",
+     "start": 7.1,
+     "end": 7.438
+    },
+    {
+     "word": "Zero",
+     "start": 7.838,
+     "end": 8.137
+    },
+    {
+     "word": "lives.",
+     "start": 8.15,
+     "end": 8.75
+    },
+    {
+     "word": "What",
+     "start": 9.137,
+     "end": 9.213
+    },
+    {
+     "word": "if",
+     "start": 9.213,
+     "end": 9.3
+    },
+    {
+     "word": "cats",
+     "start": 9.3,
+     "end": 9.625
+    },
+    {
+     "word": "had",
+     "start": 9.625,
+     "end": 9.75
+    },
+    {
+     "word": "only",
+     "start": 9.762,
+     "end": 10.025
+    },
+    {
+     "word": "one",
+     "start": 10.025,
+     "end": 10.287
+    },
+    {
+     "word": "life?",
+     "start": 10.287,
+     "end": 10.8
+    },
+    {
+     "word": "Your",
+     "start": 11.213,
+     "end": 11.3
+    },
+    {
+     "word": "cat",
+     "start": 11.3,
+     "end": 11.575
+    },
+    {
+     "word": "sits",
+     "start": 11.588,
+     "end": 11.85
+    },
+    {
+     "word": "near",
+     "start": 11.85,
+     "end": 12.012
+    },
+    {
+     "word": "the",
+     "start": 12.012,
+     "end": 12.1
+    },
+    {
+     "word": "desk",
+     "start": 12.1,
+     "end": 12.488
+    },
+    {
+     "word": "edge.",
+     "start": 12.488,
+     "end": 12.85
+    },
+    {
+     "word": "Falling",
+     "start": 13.338,
+     "end": 13.613
+    },
+    {
+     "word": "cats",
+     "start": 13.613,
+     "end": 14.0
+    },
+    {
+     "word": "reach",
+     "start": 14.012,
+     "end": 14.375
+    },
+    {
+     "word": "sixty",
+     "start": 14.5,
+     "end": 14.9
+    },
+    {
+     "word": "miles",
+     "start": 14.9,
+     "end": 15.312
+    },
+    {
+     "word": "per",
+     "start": 15.325,
+     "end": 15.5
+    },
+    {
+     "word": "hour.",
+     "start": 15.512,
+     "end": 15.887
+    },
+    {
+     "word": "That's",
+     "start": 16.288,
+     "end": 16.462
+    },
+    {
+     "word": "real.",
+     "start": 16.475,
+     "end": 16.913
+    },
+    {
+     "word": "He",
+     "start": 17.312,
+     "end": 17.375
+    },
+    {
+     "word": "wears",
+     "start": 17.387,
+     "end": 17.562
+    },
+    {
+     "word": "a",
+     "start": 17.562,
+     "end": 17.613
+    },
+    {
+     "word": "helmet",
+     "start": 17.613,
+     "end": 18.062
+    },
+    {
+     "word": "to",
+     "start": 18.062,
+     "end": 18.163
+    },
+    {
+     "word": "walk",
+     "start": 18.163,
+     "end": 18.488
+    },
+    {
+     "word": "around.",
+     "start": 18.488,
+     "end": 18.95
+    },
+    {
+     "word": "Will",
+     "start": 19.35,
+     "end": 19.413
+    },
+    {
+     "word": "you",
+     "start": 19.413,
+     "end": 19.475
+    },
+    {
+     "word": "still",
+     "start": 19.475,
+     "end": 19.675
+    },
+    {
+     "word": "leave",
+     "start": 19.675,
+     "end": 19.887
+    },
+    {
+     "word": "that",
+     "start": 19.887,
+     "end": 20.025
+    },
+    {
+     "word": "window",
+     "start": 20.038,
+     "end": 20.413
+    },
+    {
+     "word": "open?",
+     "start": 20.413,
+     "end": 20.7
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Tap the box. Count. One life. Tap your phone. Count. One life. Tap yourself. Count. Zero lives. What if cats had only one life? Your cat sits near the desk edge. Falling cats reach sixty miles per hour. That's real. He wears a helmet to walk around. Will you still leave that window open?"
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Cats Only Get One Life"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794084511274,
+  "updated": 1794084511274,
+  "topic": "What if cats have 1 live",
+  "hook": "Whiskers jumped off a five story balcony and did not bounce.",
+  "image_style": "code-drawn stick-figure cartoon, dusk palette, warm rim light, clean line art",
+  "format": "landscape",
+  "assets_release": "project-cats-only-get-one-life-mw6vjxdj",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Whiskers jumped off a five story balcony and did not bounce.",
+   "music": "tech-pulse",
+   "project_id": "cats-only-get-one-life-mw6vjxdj",
+   "style": "code-drawn stick-figure cartoon, dusk palette, warm rim light, clean line art",
+   "style_preset": "bold-pop",
+   "title": "Cats Only Get One Life",
+   "topic": "What if cats have 1 live",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

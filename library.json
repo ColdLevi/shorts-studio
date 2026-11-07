@@ -263,6 +263,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-25",
+      "title": "Cats Only Get One Life",
+      "hook": "Whiskers jumped off a five story balcony and did not bounce.",
+      "accent": "#2EE6C5",
+      "duration": 21.9,
+      "created": 1794084595570,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-25/short-25.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-25/short-25.jpg",
+      "project": "cats-only-get-one-life-mw6vjxdj",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
