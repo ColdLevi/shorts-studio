@@ -1,171 +1,18 @@
 {
-  "last_update": 312538258,
-  "time": 1794084405074,
-  "stage": "script",
+  "last_update": 312538259,
+  "time": 1794084439894,
+  "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Cats Only Get One Life",
-    "hook": "Whiskers jumped off a five story balcony and did not bounce.",
-    "angle": "What if cats actually knew they only had one life, so every high altitude stunt carried absolute finality?",
-    "key_facts": [
-      "An ancient English proverb claimed cats have nine lives.",
-      "A falling cat reaches terminal velocity at sixty miles per hour."
-    ],
-    "visual_style": "code-drawn stick-figure cartoon, dusk palette, warm rim light, clean line art",
-    "length_seconds": 20,
-    "style": "what-if",
-    "style_reason": "Fits short stick-figure cold open animation.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Cats Only Get One Life",
-    "beats": [
-      {
-        "narration": "Tap the box. Count. One life.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "wide",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "reach",
-          "prop": "box",
-          "action": "count",
-          "focus": "pip"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "Tap your phone. Count. One life.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "insert",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "point",
-          "prop": "phone",
-          "action": "count",
-          "focus": "prop"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "Tap yourself. Count. Zero lives.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "medium",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "shock",
-          "from": "idle",
-          "prop": "clock",
-          "action": "count",
-          "focus": "light"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "What if cats had only one life?",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "title",
-          "title": [
-            "WHAT IF CATS HAD",
-            "ONLY ONE LIFE?"
-          ],
-          "rule": "no extra lives exist"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "Your cat sits near the desk edge.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "close",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "think",
-          "prop": "laptop",
-          "focus": "pip"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "Falling cats reach sixty miles per hour. That's real.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "fact",
-          "number": "60 mph",
-          "label": "cat terminal velocity speed"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "He wears a helmet to walk around.",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "wide",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "walk",
-          "from": "walk",
-          "prop": "box",
-          "x": -50,
-          "x_to": 80,
-          "focus": "pip"
-        },
-        "image_prompt": ""
-      },
-      {
-        "narration": "Will you still leave that window open?",
-        "tool": "scene",
-        "scene": {
-          "pack": "whatif",
-          "scene": "demo",
-          "shot": "medium",
-          "room": "desk",
-          "mood": "dusk",
-          "pose": "wave",
-          "prop": "cup",
-          "focus": "window"
-        },
-        "image_prompt": ""
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "A falling cat reaches terminal velocity at sixty miles per hour.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Instant Royalty Splits for Independent Artists\": 300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
-      "t": 1793131614497
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Instant Royalty Splits for Independent Artists\"",
@@ -240,10 +87,176 @@
       "role": "bot",
       "text": "Wrote the script for \"Cats Only Get One Life\"",
       "t": 1794084405074
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Cats Only Get One Life\"",
+      "t": 1794084439894
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "cats-only-get-one-life-mw6vjxdj",
+      "canvas": "16:9",
+      "title": "Cats Only Get One Life",
+      "topic": "What if cats have 1 live",
+      "pitch": {
+        "title": "Cats Only Get One Life",
+        "hook": "Whiskers jumped off a five story balcony and did not bounce.",
+        "angle": "What if cats actually knew they only had one life, so every high altitude stunt carried absolute finality?",
+        "key_facts": [
+          "An ancient English proverb claimed cats have nine lives.",
+          "A falling cat reaches terminal velocity at sixty miles per hour."
+        ],
+        "visual_style": "code-drawn stick-figure cartoon, dusk palette, warm rim light, clean line art",
+        "length_seconds": 20,
+        "style": "what-if",
+        "style_reason": "Fits short stick-figure cold open animation.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Cats Only Get One Life",
+        "beats": [
+          {
+            "narration": "Tap the box. Count. One life.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "wide",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "reach",
+              "prop": "box",
+              "action": "count",
+              "focus": "pip"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "Tap your phone. Count. One life.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "insert",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "point",
+              "prop": "phone",
+              "action": "count",
+              "focus": "prop"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "Tap yourself. Count. Zero lives.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "medium",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "shock",
+              "from": "idle",
+              "prop": "clock",
+              "action": "count",
+              "focus": "light"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "What if cats had only one life?",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "title",
+              "title": [
+                "WHAT IF CATS HAD",
+                "ONLY ONE LIFE?"
+              ],
+              "rule": "no extra lives exist"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "Your cat sits near the desk edge.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "close",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "think",
+              "prop": "laptop",
+              "focus": "pip"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "Falling cats reach sixty miles per hour. That's real.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "fact",
+              "number": "60 mph",
+              "label": "cat terminal velocity speed"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "He wears a helmet to walk around.",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "wide",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "walk",
+              "from": "walk",
+              "prop": "box",
+              "x": -50,
+              "x_to": 80,
+              "focus": "pip"
+            },
+            "image_prompt": ""
+          },
+          {
+            "narration": "Will you still leave that window open?",
+            "tool": "scene",
+            "scene": {
+              "pack": "whatif",
+              "scene": "demo",
+              "shot": "medium",
+              "room": "desk",
+              "mood": "dusk",
+              "pose": "wave",
+              "prop": "cup",
+              "focus": "window"
+            },
+            "image_prompt": ""
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "A falling cat reaches terminal velocity at sixty miles per hour.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794084439894
+    },
     {
       "id": "thirty-years-of-code-burnout-mw6uyb8g",
       "canvas": "16:9",
@@ -2558,113 +2571,6 @@
         "sources": []
       },
       "at": 1792862276233
-    },
-    {
-      "id": "three-metal-bars-ruled-the-ancient-w-mvmh52yg",
-      "canvas": "9:16",
-      "title": "Three Metal Bars Ruled The Ancient World",
-      "topic": "how money came to be, documentary style like Issacverse, 3 minutes long for YouTube",
-      "pitch": {
-        "title": "Three Metal Bars Ruled The Ancient World",
-        "hook": "Three thousand years ago, a merchant in Babylon bought a field of barley using a lump of silver.",
-        "angle": "Most people think money started as paper bills, but physical currency actually evolved from barley and cattle thousands of years before the first coin was struck.",
-        "key_facts": [
-          "Babylonians used silver weighed in shekels as a standard unit of value.",
-          "Cattle and barley served as the earliest forms of commodity money.",
-          "The first standardized metal coins were minted in Lydia around six hundred BC.",
-          "Paper currency first appeared in China during the Tang dynasty."
-        ],
-        "visual_style": "dark historical documentary style, dramatic museum lighting, photorealistic",
-        "length_seconds": 45,
-        "music": "docu-pluck",
-        "accent": "gold"
-      },
-      "script": {
-        "title": "Three Metal Bars Ruled The Ancient World",
-        "beats": [
-          {
-            "narration": "Three thousand years ago, a merchant in Babylon bought a field using a raw lump of silver.",
-            "image_prompt": "Vertical 9:16 framing, dark historical documentary style, dramatic museum spot lighting, photorealistic ancient Babylonian market, hands exchanging a raw unshaped silver nugget over rustic grain sacks, macro detailed.",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Camera slowly tilts down as hands trade raw silver metal over woven sacks of grain."
-          },
-          {
-            "narration": "Most people think money started as paper bills, but early trade relied on cattle and barley.",
-            "image_prompt": "Vertical 9:16 framing, dark atmospheric historical documentary style, photorealistic cattle standing in a misty moody field at twilight, cinematic rim lighting.",
-            "tool": "stock",
-            "still": "flux",
-            "query": "cattle herd foggy field"
-          },
-          {
-            "narration": "Herding cows to pay debts got exhausting, so merchants started weighing raw silver metal.",
-            "image_prompt": "Vertical 9:16 framing, dark museum lighting, photorealistic closeup of bronze ancient scales balancing raw silver chunks against stone weights on dark rustic wood.",
-            "tool": "flux"
-          },
-          {
-            "narration": "One shekel equaled exactly one hundred and eighty grains of barley, setting a fixed value.",
-            "image_prompt": "Vertical 9:16 framing, dramatic golden sunlight beam in a dark historic hall, 180 individual golden barley grains neatly piled next to a silver shekel ingot.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 180,
-              "prefix": "",
-              "suffix": " grain",
-              "label": "One Babylonian Shekel"
-            }
-          },
-          {
-            "narration": "Then around six hundred BC, Lydia minted the first official coins to stop silver fraud.",
-            "image_prompt": "Vertical 9:16 framing, dark historical documentary museum aesthetic, closeup of an ancient hand-hammered Lydian silver coin stamped with a lion emblem resting on black velvet.",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Slow push in on the ancient stamped silver coin as light gleams off the carved lion symbol."
-          },
-          {
-            "narration": "Centuries later, Chinese traders in the Tang dynasty created paper notes because metal got too heavy.",
-            "image_prompt": "Vertical 9:16 framing, dark historic mood, ancient Chinese paper banknote with ornate brush calligraphy resting on a polished dark teakwood table.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "list",
-              "title": "Evolution of Currency",
-              "items": [
-                "Cattle and Barley",
-                "Weighed Silver Shekels",
-                "Stamped Lydian Coins",
-                "Tang Dynasty Paper"
-              ]
-            }
-          },
-          {
-            "narration": "Your modern cash is just a paper shadow of ancient silver.",
-            "image_prompt": "Vertical 9:16 framing, dramatic dark moody background, a modern green banknote casting a dark stark shadow shaped like an ancient raw silver ingot.",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Babylonians used silver weighed in shekels as a standard unit of value.",
-            "supported": true
-          },
-          {
-            "claim": "One Babylonian shekel was standardized to 180 grains of barley.",
-            "supported": true
-          },
-          {
-            "claim": "The first standardized coins were minted in Lydia around 600 BC.",
-            "supported": true
-          },
-          {
-            "claim": "Paper currency was first used in China during the Tang dynasty.",
-            "supported": true
-          }
-        ]
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1792850909188
     }
   ],
   "lastRenderAuto": false,
@@ -2675,9 +2581,14 @@
       "title": "Thirty Years of Code Burnout",
       "at": 1794083431441,
       "project": "thirty-years-of-code-burnout-mw6uyb8g"
+    },
+    {
+      "title": "Cats Only Get One Life",
+      "at": 1794084439894,
+      "project": "cats-only-get-one-life-mw6vjxdj"
     }
   ],
-  "current_project": "thirty-years-of-code-burnout-mw6uyb8g",
+  "current_project": "cats-only-get-one-life-mw6vjxdj",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2807,16 +2718,13 @@
     "format": "landscape",
     "style": "upload-3"
   },
-  "job": {
-    "style": "what-if",
-    "research": "light"
-  },
+  "job": null,
   "recent_styles": [
     "upload-3",
     "upload-3",
-    "upload-3",
     "documentary",
-    "upload-3"
+    "upload-3",
+    "what-if"
   ],
   "learning": null,
   "styles": {
