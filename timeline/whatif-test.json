@@ -3,15 +3,18 @@
   "id": "whatif-test",
   "rev": 0,
   "title": "What If test",
-  "duration": 9.5,
+  "duration": 15,
   "canvas": { "width": 1080, "height": 1920, "fps": 30 },
   "style": { "accent": "#FFD43B", "caption": { "preset": "none" }, "vignette": false, "progress_bar": false, "title": { "show": false }, "transition": { "type": "cut" } },
   "tracks": {
     "visuals": [
-      { "id": "v1", "kind": "scene", "start": 0, "end": 3, "scene": { "pack": "whatif", "scene": "demo", "shot": "wide", "prop": "cookie", "action": "copy" }, "gen": { "tool": "scene" } },
-      { "id": "v2", "kind": "scene", "start": 3, "end": 6, "scene": { "pack": "whatif", "scene": "title", "title": ["WHAT IF YOU COULD", "COPY AND PASTE ANYTHING?"], "rule": "one rule: copies cost energy" }, "gen": { "tool": "scene" } },
-      { "id": "v3", "kind": "scene", "start": 6, "end": 8, "scene": { "pack": "whatif", "scene": "demo", "shot": "close", "prop": "cookie", "action": "paste", "seed": 3 }, "gen": { "tool": "scene" } },
-      { "id": "v4", "kind": "scene", "start": 8, "end": 9.5, "scene": { "pack": "whatif", "scene": "fact", "number": "13 min", "label": "of world power for one cookie" }, "gen": { "tool": "scene" } }
+      { "id": "v1", "kind": "scene", "start": 0, "end": 2.5, "scene": { "pack": "whatif", "scene": "title", "title": ["WHAT IF YOU COULD", "COPY AND PASTE ANYTHING?"], "rule": "one rule: copies cost energy" }, "gen": { "tool": "scene" } },
+      { "id": "v2", "kind": "scene", "start": 2.5, "end": 5.5, "scene": { "pack": "whatif", "scene": "demo", "shot": "wide", "room": "desk", "prop": "cookie", "action": "copy" }, "gen": { "tool": "scene" } },
+      { "id": "v3", "kind": "scene", "start": 5.5, "end": 7.5, "scene": { "pack": "whatif", "scene": "demo", "shot": "medium", "room": "kitchen", "pose": "shock", "seed": 2 }, "gen": { "tool": "scene" } },
+      { "id": "v4", "kind": "scene", "start": 7.5, "end": 9.5, "scene": { "pack": "whatif", "scene": "demo", "shot": "close", "room": "desk", "pose": "think", "seed": 3 }, "gen": { "tool": "scene" } },
+      { "id": "v5", "kind": "scene", "start": 9.5, "end": 11, "scene": { "pack": "whatif", "scene": "demo", "shot": "insert", "room": "desk", "pose": "hold", "prop": "cookie", "action": "paste" }, "gen": { "tool": "scene" } },
+      { "id": "v6", "kind": "scene", "start": 11, "end": 13.5, "scene": { "pack": "whatif", "scene": "demo", "shot": "medium", "room": "street", "mood": "night", "pose": "walk", "from": "walk", "x": -300, "x_to": 160, "seed": 5 }, "gen": { "tool": "scene" } },
+      { "id": "v7", "kind": "scene", "start": 13.5, "end": 15, "scene": { "pack": "whatif", "scene": "fact", "number": "13 min", "label": "of world power for one cookie" }, "gen": { "tool": "scene" } }
     ],
     "captions": { "enabled": false, "words": [] },
     "voice": [], "music": [], "sfx": [], "overlays": []
