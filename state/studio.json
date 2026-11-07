@@ -1,7 +1,7 @@
 {
-  "last_update": 312538257,
-  "time": 1794084368778,
-  "stage": "pitch",
+  "last_update": 312538258,
+  "time": 1794084405074,
+  "stage": "script",
   "topic": "What if cats have 1 live",
   "research": {
     "text": "",
@@ -23,16 +23,144 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Cats Only Get One Life",
+    "beats": [
+      {
+        "narration": "Tap the box. Count. One life.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "wide",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "reach",
+          "prop": "box",
+          "action": "count",
+          "focus": "pip"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "Tap your phone. Count. One life.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "insert",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "point",
+          "prop": "phone",
+          "action": "count",
+          "focus": "prop"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "Tap yourself. Count. Zero lives.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "medium",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "shock",
+          "from": "idle",
+          "prop": "clock",
+          "action": "count",
+          "focus": "light"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "What if cats had only one life?",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "title",
+          "title": [
+            "WHAT IF CATS HAD",
+            "ONLY ONE LIFE?"
+          ],
+          "rule": "no extra lives exist"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "Your cat sits near the desk edge.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "close",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "think",
+          "prop": "laptop",
+          "focus": "pip"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "Falling cats reach sixty miles per hour. That's real.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "fact",
+          "number": "60 mph",
+          "label": "cat terminal velocity speed"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "He wears a helmet to walk around.",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "wide",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "walk",
+          "from": "walk",
+          "prop": "box",
+          "x": -50,
+          "x_to": 80,
+          "focus": "pip"
+        },
+        "image_prompt": ""
+      },
+      {
+        "narration": "Will you still leave that window open?",
+        "tool": "scene",
+        "scene": {
+          "pack": "whatif",
+          "scene": "demo",
+          "shot": "medium",
+          "room": "desk",
+          "mood": "dusk",
+          "pose": "wave",
+          "prop": "cup",
+          "focus": "window"
+        },
+        "image_prompt": ""
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "A falling cat reaches terminal velocity at sixty miles per hour.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Make a video for my next fintech product for a music ap called Urganize.app",
-      "t": 1793131605293
-    },
     {
       "role": "bot",
       "text": "Pitched \"Instant Royalty Splits for Independent Artists\": 300 independent producers lost 40 percent of their payouts to manual banking delays last year.",
@@ -107,6 +235,11 @@
       "role": "bot",
       "text": "Pitched \"Cats Only Get One Life\": Whiskers jumped off a five story balcony and did not bounce.",
       "t": 1794084368777
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Cats Only Get One Life\"",
+      "t": 1794084405074
     }
   ],
   "working": null,
