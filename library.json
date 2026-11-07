@@ -249,6 +249,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-24",
+      "title": "Thirty Years of Code Burnout",
+      "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+      "accent": "#FF5A5F",
+      "duration": 50.9,
+      "created": 1794083885844,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-24/short-24.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-24/short-24.jpg",
+      "project": "thirty-years-of-code-burnout-mw6uyb8g",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

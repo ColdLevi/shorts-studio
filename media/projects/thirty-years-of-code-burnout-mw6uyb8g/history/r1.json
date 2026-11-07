@@ -1,0 +1,865 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "thirty-years-of-code-burnout-mw6uyb8g",
+ "rev": 1,
+ "title": "Thirty Years of Code Burnout",
+ "duration": 50.79,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "color": "#FFFFFF",
+   "highlight": "#FF3333",
+   "position": "bottom"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "backdrop": "gradient",
+  "vignette": false,
+  "font": "Inter",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FF5A5F",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) brightness(1.0)",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.987,
+    "narration": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "PRINT",
+      "HELLO",
+      "WORLD",
+      "1999"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.987,
+    "end": 12.05,
+    "narration": "Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist architectural wireframe diagram of a university laboratory with red glowing signal pulses, landscape 16:9 aspect ratio."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e8dc34ee5ffb"
+   },
+   {
+    "id": "v3",
+    "start": 12.05,
+    "end": 18.312,
+    "narration": "By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "landmark",
+       "label": "Hardware ROM"
+      },
+      {
+       "icon": "zap",
+       "label": "Instant BASIC"
+      }
+     ],
+     "title": "ROM Integration",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 18.312,
+    "end": 24.337,
+    "narration": "Starting in kindergarten feels like a shortcut to building digital empires before age thirty.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Endless framework changes force constant unlearning",
+     "myth": "Early coding guarantees lifelong mastery",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 24.337,
+    "end": 31.975,
+    "narration": "Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "JavaScript Initial Build",
+     "prefix": "",
+     "suffix": "Days",
+     "type": "counter",
+     "value": 10
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 31.975,
+    "end": 40.65,
+    "narration": "By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Browser DOM Element",
+      "Vite Plugin Inspector",
+      "Editor Source Code"
+     ],
+     "title": "Inspector Pipeline",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 40.65,
+    "end": 49.992,
+    "narration": "Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Syntax Shift Speed",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 95
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.1,
+     "end": 0.15
+    },
+    {
+     "word": "five",
+     "start": 0.163,
+     "end": 0.463
+    },
+    {
+     "word": "year",
+     "start": 0.463,
+     "end": 0.713
+    },
+    {
+     "word": "old",
+     "start": 0.812,
+     "end": 1.025
+    },
+    {
+     "word": "typed",
+     "start": 1.025,
+     "end": 1.35
+    },
+    {
+     "word": "PRINT",
+     "start": 1.35,
+     "end": 1.675
+    },
+    {
+     "word": "HELLO",
+     "start": 1.675,
+     "end": 2.062
+    },
+    {
+     "word": "WORLD",
+     "start": 2.062,
+     "end": 2.55
+    },
+    {
+     "word": "into",
+     "start": 2.737,
+     "end": 2.962
+    },
+    {
+     "word": "a",
+     "start": 2.962,
+     "end": 3.038
+    },
+    {
+     "word": "monochrome",
+     "start": 3.05,
+     "end": 3.737
+    },
+    {
+     "word": "terminal",
+     "start": 3.75,
+     "end": 4.338
+    },
+    {
+     "word": "in",
+     "start": 4.513,
+     "end": 4.638
+    },
+    {
+     "word": "nineteen",
+     "start": 4.638,
+     "end": 5.0
+    },
+    {
+     "word": "ninety",
+     "start": 5.0,
+     "end": 5.213
+    },
+    {
+     "word": "nine.",
+     "start": 5.213,
+     "end": 5.55
+    },
+    {
+     "word": "Dartmouth",
+     "start": 5.987,
+     "end": 6.3
+    },
+    {
+     "word": "College",
+     "start": 6.312,
+     "end": 6.75
+    },
+    {
+     "word": "introduced",
+     "start": 6.875,
+     "end": 7.438
+    },
+    {
+     "word": "BASIC",
+     "start": 7.45,
+     "end": 7.9
+    },
+    {
+     "word": "in",
+     "start": 7.987,
+     "end": 8.1
+    },
+    {
+     "word": "nineteen",
+     "start": 8.1,
+     "end": 8.55
+    },
+    {
+     "word": "sixty",
+     "start": 8.562,
+     "end": 8.9
+    },
+    {
+     "word": "four",
+     "start": 8.9,
+     "end": 9.3
+    },
+    {
+     "word": "to",
+     "start": 9.5,
+     "end": 9.575
+    },
+    {
+     "word": "make",
+     "start": 9.575,
+     "end": 9.875
+    },
+    {
+     "word": "programming",
+     "start": 9.887,
+     "end": 10.5
+    },
+    {
+     "word": "simple",
+     "start": 10.5,
+     "end": 10.887
+    },
+    {
+     "word": "for",
+     "start": 10.9,
+     "end": 11.025
+    },
+    {
+     "word": "beginners.",
+     "start": 11.037,
+     "end": 11.65
+    },
+    {
+     "word": "By",
+     "start": 12.05,
+     "end": 12.113
+    },
+    {
+     "word": "nineteen",
+     "start": 12.113,
+     "end": 12.575
+    },
+    {
+     "word": "eighty",
+     "start": 12.575,
+     "end": 12.787
+    },
+    {
+     "word": "two,",
+     "start": 12.787,
+     "end": 13.225
+    },
+    {
+     "word": "Commodore",
+     "start": 13.65,
+     "end": 14.15
+    },
+    {
+     "word": "sixty",
+     "start": 14.15,
+     "end": 14.525
+    },
+    {
+     "word": "four",
+     "start": 14.537,
+     "end": 14.812
+    },
+    {
+     "word": "systems",
+     "start": 14.812,
+     "end": 15.35
+    },
+    {
+     "word": "booted",
+     "start": 15.463,
+     "end": 15.838
+    },
+    {
+     "word": "BASIC",
+     "start": 15.887,
+     "end": 16.337
+    },
+    {
+     "word": "directly",
+     "start": 16.462,
+     "end": 17.0
+    },
+    {
+     "word": "from",
+     "start": 17.012,
+     "end": 17.175
+    },
+    {
+     "word": "hardware",
+     "start": 17.175,
+     "end": 17.613
+    },
+    {
+     "word": "ROM.",
+     "start": 17.613,
+     "end": 17.913
+    },
+    {
+     "word": "Starting",
+     "start": 18.312,
+     "end": 18.688
+    },
+    {
+     "word": "in",
+     "start": 18.688,
+     "end": 18.875
+    },
+    {
+     "word": "kindergarten",
+     "start": 18.95,
+     "end": 19.625
+    },
+    {
+     "word": "feels",
+     "start": 19.637,
+     "end": 20.038
+    },
+    {
+     "word": "like",
+     "start": 20.05,
+     "end": 20.163
+    },
+    {
+     "word": "a",
+     "start": 20.163,
+     "end": 20.188
+    },
+    {
+     "word": "shortcut",
+     "start": 20.188,
+     "end": 20.837
+    },
+    {
+     "word": "to",
+     "start": 20.925,
+     "end": 21.038
+    },
+    {
+     "word": "building",
+     "start": 21.038,
+     "end": 21.512
+    },
+    {
+     "word": "digital",
+     "start": 21.637,
+     "end": 22.05
+    },
+    {
+     "word": "empires",
+     "start": 22.113,
+     "end": 22.712
+    },
+    {
+     "word": "before",
+     "start": 22.712,
+     "end": 23.188
+    },
+    {
+     "word": "age",
+     "start": 23.2,
+     "end": 23.5
+    },
+    {
+     "word": "thirty.",
+     "start": 23.5,
+     "end": 23.938
+    },
+    {
+     "word": "Then",
+     "start": 24.337,
+     "end": 24.637
+    },
+    {
+     "word": "rapid",
+     "start": 24.65,
+     "end": 25.075
+    },
+    {
+     "word": "innovation",
+     "start": 25.075,
+     "end": 25.738
+    },
+    {
+     "word": "changed",
+     "start": 25.913,
+     "end": 26.438
+    },
+    {
+     "word": "everything.",
+     "start": 26.587,
+     "end": 27.163
+    },
+    {
+     "word": "Brendan",
+     "start": 27.562,
+     "end": 27.887
+    },
+    {
+     "word": "Eich",
+     "start": 27.887,
+     "end": 28.15
+    },
+    {
+     "word": "created",
+     "start": 28.212,
+     "end": 28.688
+    },
+    {
+     "word": "JavaScript",
+     "start": 28.688,
+     "end": 29.4
+    },
+    {
+     "word": "in",
+     "start": 29.413,
+     "end": 29.55
+    },
+    {
+     "word": "ten",
+     "start": 29.562,
+     "end": 29.887
+    },
+    {
+     "word": "days",
+     "start": 29.887,
+     "end": 30.337
+    },
+    {
+     "word": "in",
+     "start": 30.35,
+     "end": 30.45
+    },
+    {
+     "word": "nineteen",
+     "start": 30.45,
+     "end": 30.863
+    },
+    {
+     "word": "ninety",
+     "start": 30.863,
+     "end": 31.062
+    },
+    {
+     "word": "five.",
+     "start": 31.075,
+     "end": 31.562
+    },
+    {
+     "word": "By",
+     "start": 31.975,
+     "end": 32.062
+    },
+    {
+     "word": "twenty",
+     "start": 32.062,
+     "end": 32.362
+    },
+    {
+     "word": "twenty,",
+     "start": 32.362,
+     "end": 32.712
+    },
+    {
+     "word": "developer",
+     "start": 32.938,
+     "end": 33.5
+    },
+    {
+     "word": "Anthony",
+     "start": 33.513,
+     "end": 33.925
+    },
+    {
+     "word": "Fu",
+     "start": 33.938,
+     "end": 34.288
+    },
+    {
+     "word": "built",
+     "start": 34.288,
+     "end": 34.625
+    },
+    {
+     "word": "Vite",
+     "start": 34.638,
+     "end": 35.0
+    },
+    {
+     "word": "Plugin",
+     "start": 35.075,
+     "end": 35.462
+    },
+    {
+     "word": "Inspector",
+     "start": 35.462,
+     "end": 36.112
+    },
+    {
+     "word": "to",
+     "start": 36.312,
+     "end": 36.4
+    },
+    {
+     "word": "map",
+     "start": 36.4,
+     "end": 36.837
+    },
+    {
+     "word": "complex",
+     "start": 36.938,
+     "end": 37.538
+    },
+    {
+     "word": "browser",
+     "start": 37.55,
+     "end": 38.038
+    },
+    {
+     "word": "elements",
+     "start": 38.038,
+     "end": 38.388
+    },
+    {
+     "word": "back",
+     "start": 38.4,
+     "end": 38.812
+    },
+    {
+     "word": "to",
+     "start": 39.087,
+     "end": 39.225
+    },
+    {
+     "word": "editor",
+     "start": 39.288,
+     "end": 39.575
+    },
+    {
+     "word": "source",
+     "start": 39.575,
+     "end": 39.875
+    },
+    {
+     "word": "code.",
+     "start": 39.875,
+     "end": 40.237
+    },
+    {
+     "word": "Twenty",
+     "start": 40.65,
+     "end": 40.925
+    },
+    {
+     "word": "five",
+     "start": 40.925,
+     "end": 41.263
+    },
+    {
+     "word": "years",
+     "start": 41.263,
+     "end": 41.7
+    },
+    {
+     "word": "of",
+     "start": 41.712,
+     "end": 41.825
+    },
+    {
+     "word": "shifting",
+     "start": 41.837,
+     "end": 42.337
+    },
+    {
+     "word": "tools",
+     "start": 42.337,
+     "end": 42.763
+    },
+    {
+     "word": "turns",
+     "start": 42.775,
+     "end": 43.175
+    },
+    {
+     "word": "early",
+     "start": 43.237,
+     "end": 43.587
+    },
+    {
+     "word": "prodigies",
+     "start": 43.6,
+     "end": 44.375
+    },
+    {
+     "word": "into",
+     "start": 44.525,
+     "end": 44.688
+    },
+    {
+     "word": "full",
+     "start": 44.7,
+     "end": 45.075
+    },
+    {
+     "word": "time",
+     "start": 45.087,
+     "end": 45.45
+    },
+    {
+     "word": "syntax",
+     "start": 45.625,
+     "end": 46.413
+    },
+    {
+     "word": "unlearners.",
+     "start": 46.525,
+     "end": 47.263
+    },
+    {
+     "word": "Code",
+     "start": 47.675,
+     "end": 47.975
+    },
+    {
+     "word": "moves",
+     "start": 47.975,
+     "end": 48.212
+    },
+    {
+     "word": "faster",
+     "start": 48.212,
+     "end": 48.8
+    },
+    {
+     "word": "than",
+     "start": 48.812,
+     "end": 48.925
+    },
+    {
+     "word": "human",
+     "start": 48.925,
+     "end": 49.2
+    },
+    {
+     "word": "memory.",
+     "start": 49.2,
+     "end": 49.625
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine. Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners. By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM. Starting in kindergarten feels like a shortcut to building digital empires before age thirty. Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five. By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code. Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Thirty Years of Code Burnout"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794083568854,
+  "updated": 1794083568854,
+  "topic": "what if I can code at age 5 and now am 30",
+  "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+  "image_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+  "format": "landscape",
+  "assets_release": "project-thirty-years-of-code-burnout-mw6uyb8g",
+  "spec": {
+   "accent": "#FF5A5F",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
+   "learned_style": "upload-3",
+   "music": "tech-pulse",
+   "project_id": "thirty-years-of-code-burnout-mw6uyb8g",
+   "style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
+   "style_preset": "motion-explainer",
+   "style_tokens": {
+    "accent": "#FF3333",
+    "backdrop": "gradient",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Inter",
+     "highlight": "#FF3333",
+     "position": "bottom",
+     "preset": "clean"
+    },
+    "font": "Inter",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) brightness(1.0)",
+    "motion": "drift",
+    "palette": [
+     "#0D0D0D",
+     "#F4F4F4"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "fade"
+    ],
+    "vignette": false
+   },
+   "title": "Thirty Years of Code Burnout",
+   "topic": "what if I can code at age 5 and now am 30",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
