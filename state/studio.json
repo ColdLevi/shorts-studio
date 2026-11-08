@@ -1,6 +1,6 @@
 {
-  "last_update": 312538265,
-  "time": 1794122179758,
+  "last_update": 312538266,
+  "time": 1794123344478,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Thirty Years of Code Burnout\": A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
-      "t": 1794083373611
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Thirty Years of Code Burnout\"",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Take your time! Send the MD file whenever you're ready, and I'll ingest it for our scripts.",
       "t": 1794122179758
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"upload-5\"",
+      "t": 1794123344478
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "upload-5",
+    "source": "tg:BQACAgQAAxkBAAICC2rwJk9Hfs_hEqUdBliHzo9yc1-0AAJdIQACIUWAU92tdpGOnBUIPQQ",
+    "at": 1794123344478
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
