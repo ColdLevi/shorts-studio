@@ -1,6 +1,6 @@
 {
-  "last_update": 312538292,
-  "time": 1794153707575,
+  "last_update": 312538293,
+  "time": 1794153761281,
   "stage": "script",
   "topic": "growing up as a developer in 2026",
   "research": {
@@ -28,33 +28,32 @@
     "title": "The Death of Syntax in 2026",
     "beats": [
       {
-        "narration": "In twenty twenty, Anthony Fu built a tiny personal script to click browser elements.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Anthony Fu twenty twenty",
-          "sub": "tiny personal script"
-        }
-      },
-      {
-        "narration": "He needed a faster way to find code.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "narration": "2020: Anthony Fu turned a tiny script into click‑code.",
+        "image_prompt": "Minimalist digital app interface mockup, flat illustration on bold teal backdrop, crisp lighting",
         "tool": "graphic",
         "graphic": {
           "type": "kinetic",
           "words": [
-            "faster",
-            "way",
-            "to",
-            "find",
-            "code"
+            "2020",
+            "Anthony",
+            "Fu",
+            "click‑code"
           ]
         }
       },
       {
-        "narration": "So he created Vite Plugin Inspector.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "narration": "Beginners think you must memorize thousands.",
+        "image_prompt": "Flat UI sketch of a crowded code editor, bold colors, solid background",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Memorize thousands of lines",
+          "fact": "Modern tools replace manual typing"
+        }
+      },
+      {
+        "narration": "He built Vite Plugin Inspector to jump from browser.",
+        "image_prompt": "Illustrated Vite logo with a plug icon, simple UI overlay, vibrant solid backdrop",
         "tool": "graphic",
         "graphic": {
           "type": "icons",
@@ -62,101 +61,32 @@
           "items": [
             {
               "icon": "zap",
-              "label": "inspector"
+              "label": "inspect"
             },
             {
               "icon": "globe",
               "label": "browser"
             },
             {
-              "icon": "book",
+              "icon": "code",
               "label": "source"
             }
           ]
         }
       },
       {
-        "narration": "Developers clicked any browser element.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "narration": "Click any element, inspector opens source file.",
+        "image_prompt": "Flat diagram of a mouse click on a webpage leading to code view, bold colors",
         "tool": "graphic",
         "graphic": {
           "type": "flow",
-          "title": "Browser to Editor",
+          "title": "Browser → Editor",
           "steps": [
             "Click element",
-            "Jump straight",
-            "Source code"
+            "Open inspector",
+            "Show source"
           ]
         }
-      },
-      {
-        "narration": "Then they jumped straight to source code in their editor.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "terminal",
-          "title": "editor.js",
-          "lines": [
-            {
-              "kind": "cmd",
-              "text": "open source --element"
-            },
-            {
-              "kind": "out",
-              "text": "jumped to line 42"
-            },
-            {
-              "kind": "ok",
-              "text": "editor ready"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "A small personal tool reached millions of Vite users.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 1000000,
-          "prefix": "",
-          "suffix": "M+",
-          "label": "Vite users worldwide"
-        }
-      },
-      {
-        "narration": "Beginners believe coding requires memorizing thousands of lines.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Memorize thousands of lines",
-          "fact": "Modern software engineering shifted"
-        }
-      },
-      {
-        "narration": "They think syntax rules everything.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 90,
-          "label": "syntax focus"
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In twenty twenty, developer Anthony Fu created Vite Plugin Inspector.",
-        "supported": true
-      },
-      {
-        "claim": "The inspector allowed developers to click an element in their browser to jump straight to source code in their editor.",
-        "supported": true
-      },
-      {
-        "claim": "The inspector began as a small personal tool before reaching millions of Vite users worldwide.",
-        "supported": true
       }
     ],
     "chapters": []
@@ -165,16 +95,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"fastedit2\"",
-      "t": 1794140334951
-    },
-    {
-      "role": "user",
-      "text": "That's the MD file I told you about earlier that I will drop for you to learn",
-      "t": 1794142508837
-    },
     {
       "role": "bot",
       "text": "Got it! Let me know whenever you want to edit the video or drop the document.",
@@ -244,6 +164,16 @@
       "role": "bot",
       "text": "Wrote the script for \"The Death of Syntax in 2026\"",
       "t": 1794153707575
+    },
+    {
+      "role": "user",
+      "text": "Use auto style",
+      "t": 1794153721118
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Death of Syntax in 2026\"",
+      "t": 1794153761281
     }
   ],
   "working": null,
