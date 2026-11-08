@@ -333,6 +333,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-30",
+      "title": "Coding for Dummies Reality Check",
+      "hook": "Zero lines of code was written by the person who built the first compiler.",
+      "accent": "#2EE6C5",
+      "duration": 45.0,
+      "created": 1794157687910,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-30/short-30.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-30/short-30.jpg",
+      "project": "coding-for-dummies-reality-check-mw82nx5g",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
