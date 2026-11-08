@@ -1,7 +1,7 @@
 {
-  "last_update": 312538309,
-  "time": 1794162199650,
-  "stage": "pitch",
+  "last_update": 312538310,
+  "time": 1794162262089,
+  "stage": "script",
   "topic": "Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments",
   "research": {
     "text": "",
@@ -25,16 +25,532 @@
     "accent": "blue",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Why Your Phone Dies in the Cold",
+    "beats": [
+      {
+        "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "image_prompt": "Minimalist digital app interface mockup of a smartphone showing low battery icon against a solid icy blue background with crisp modern lighting.",
+        "tool": "higgsfield",
+        "motion": "Camera zooms in fast on the battery icon as frost creeps across the screen.",
+        "still": "flux"
+      },
+      {
+        "narration": "Your phone shuts down instantly in the freezing wind.",
+        "image_prompt": "Playful 2D flat illustration of a dark smartphone silhouette on a solid navy blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Panic sets in because your daily schedule lives inside that glass screen.",
+        "image_prompt": "Minimalist digital app interface mockup showing blank calendar widgets on a solid teal backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "So you assume the cold weather killed your expensive battery permanently.",
+        "image_prompt": "Playful 2D flat illustration of a broken battery icon with a lightning bolt on a solid coral backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "People believe freezing temperatures destroy the chemical juice inside forever.",
+        "image_prompt": "Minimalist digital app interface mockup showing a warning alert screen on a solid yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Every winter brings the same frustrating ritual of sudden power loss.",
+        "image_prompt": "Playful 2D flat illustration of a smartphone wrapped in a warm scarf on a solid magenta backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "You rush indoors and plug the device into the nearest wall socket.",
+        "image_prompt": "Minimalist digital app interface mockup showing a charging cord animation on a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Magic happens as soon as the metal casing warms back up to room temperature.",
+        "image_prompt": "Playful 2D flat illustration of a glowing energy orb rising on a solid orange backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The percentage jumps right back to where it was before stepping outside.",
+        "image_prompt": "Minimalist digital app interface mockup showing a rising battery percentage counter on a solid purple backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The cold did not destroy your battery at all.",
+        "image_prompt": "Playful 2D flat illustration of a smiling smartphone holding a shield on a solid cyan backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Lithium-ion batteries rely entirely on liquid electrolyte chemical reactions to generate power.",
+        "image_prompt": "Minimalist digital app interface mockup showing a glowing liquid battery cell icon on a solid vibrant blue background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Inside your pocket, these microscopic ions flow smoothly back and forth to keep your screen bright.",
+        "image_prompt": "Playful 2D flat illustration of tiny glowing particles moving across a modern smartphone layout",
+        "tool": "flux"
+      },
+      {
+        "narration": "But freezing temperatures hit your phone and suddenly everything grinds to a halt.",
+        "image_prompt": "Minimalist digital app interface mockup showing a frozen blue smartphone graphic with ice crystal vectors",
+        "tool": "flux"
+      },
+      {
+        "narration": "Freezing conditions dramatically slow down ion movement inside the cell.",
+        "image_prompt": "Playful 2D flat illustration of glowing ions trapped in slow motion inside a battery container",
+        "tool": "flux"
+      },
+      {
+        "narration": "The liquid electrolyte thickens up so much that chemical reactions slow to a crawl.",
+        "image_prompt": "Minimalist digital app interface mockup of a slow moving liquid progress bar in pastel tones",
+        "tool": "flux"
+      },
+      {
+        "narration": "Because the ions cannot travel fast enough, the battery output drops instantly.",
+        "image_prompt": "Playful 2D flat illustration of a digital voltage gauge dropping sharply on a solid orange background",
+        "tool": "flux"
+      },
+      {
+        "narration": "This sudden restriction causes temporary voltage drops across the internal circuitry.",
+        "image_prompt": "Minimalist digital app interface mockup showing warning circuits blinking in a clean vector style",
+        "tool": "flux"
+      },
+      {
+        "narration": "Your phone reads that sudden voltage dip as an empty charge.",
+        "image_prompt": "Playful 2D flat illustration of a giant zero percent battery icon flashing on a bold pink backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "The operating system triggers an automatic shutdown to protect its hardware from damage.",
+        "image_prompt": "Minimalist digital app interface mockup displaying a clean shutdown power screen with modern typography",
+        "tool": "flux"
+      },
+      {
+        "narration": "The phone powers off itself, but the energy inside has not actually vanished.",
+        "image_prompt": "Playful 2D flat illustration of a smartphone sleeping peacefully with glowing dormant energy vectors",
+        "tool": "flux"
+      },
+      {
+        "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "image_prompt": "Minimalist digital app interface mockup showing a smartphone battery icon at fifty percent on a bold solid blue backdrop with crisp modern lighting",
+        "tool": "higgsfield",
+        "motion": "Camera zooms in fast on the declining battery icon while crisp modern lighting pulses across the solid blue backdrop."
+      },
+      {
+        "narration": "People think cold weather drains battery juice permanently, but the chemistry just slows down.",
+        "image_prompt": "Playful 2D flat illustration of a tiny thermometer dropping below zero next to a smartphone on a vibrant pastel pink backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power.",
+        "image_prompt": "Minimalist digital app interface mockup showing animated liquid glowing inside a smartphone shape on a solid yellow backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Freezing temperatures slow down ion movement inside the cell.",
+        "image_prompt": "Playful 2D flat illustration of tiny energy particles slowing down inside a phone case on a bold solid orange backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Extreme cold causes temporary voltage drops that trigger automatic shutdowns.",
+        "image_prompt": "Minimalist digital app interface mockup showing a red warning screen on a phone on a solid dark purple backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Warming the device restores most of the lost power without permanent damage.",
+        "image_prompt": "Playful 2D flat illustration of a small sun icon warming a smartphone on a vibrant teal backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "The voltage dip is completely reversible when the battery returns to normal temperature.",
+        "image_prompt": "Minimalist digital app interface mockup showing a battery gauge rising back to full on a solid green backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Keep your phone in an insulated pocket to trap natural body heat.",
+        "image_prompt": "Playful 2D flat illustration of a stylized winter jacket pocket holding a smartphone on a bold solid red backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Use a warm pouch or briefly power cycle the device to reset voltage sensors.",
+        "image_prompt": "Minimalist digital app interface mockup showing a restart button glowing on a solid violet backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Cold only slows chemistry down, so let it warm up before you panic.",
+        "image_prompt": "Minimalist digital app interface mockup showing a completed battery charge ring on a bold solid blue backdrop",
+        "tool": "flux",
+        "motion": "Camera slowly pulls back to reveal the full solid blue background while the battery charge ring pulses brightly."
+      },
+      {
+        "narration": "A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "image_prompt": "Minimalist digital app interface mockup showing a smartphone battery icon at fifty percent on a bold solid blue background with crisp modern lighting.",
+        "tool": "flux",
+        "motion": "Camera zooms in fast on the dropping battery percentage bar while frost particles drift past the screen."
+      },
+      {
+        "narration": "Stepping out into the freeze causes an instant drop in power.",
+        "image_prompt": "Playful 2D flat illustration of a modern smartphone resting on a block of ice with a bright pastel yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Most people assume the battery is dead for good.",
+        "image_prompt": "Minimalist digital app interface mockup showing a red warning screen on a solid dark red background.",
+        "tool": "flux"
+      },
+      {
+        "narration": "They throw the phone away or buy a brand new replacement.",
+        "image_prompt": "Playful 2D flat illustration of a recycling bin with a smartphone graphic on a bold solid orange backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "But the power loss is only temporary.",
+        "image_prompt": "Minimalist digital app interface mockup showing a battery icon filling back up with a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The chemistry just takes a nap when temperatures drop.",
+        "image_prompt": "Playful 2D flat illustration of a cartoon lithium ion character sleeping under a snow blanket on a solid purple backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Freezing cold triggers sudden voltage drops that force the phone to shut down.",
+        "image_prompt": "Minimalist digital app interface mockup showing a sudden shutdown alert on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "This safety feature protects the cell from internal stress.",
+        "image_prompt": "Playful 2D flat illustration of a shield icon guarding a battery cell on a solid teal backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "So the shutdown is actually saving the hardware.",
+        "image_prompt": "Minimalist digital app interface mockup showing a healthy system status check on a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Yet the panic sets in the moment the screen goes black.",
+        "image_prompt": "Playful 2D flat illustration of a blank smartphone screen reflecting a worried expression on a solid grey backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Lithium ion batteries rely entirely on liquid electrolyte chemical reactions to generate power.",
+        "image_prompt": "Minimalist digital app interface mockup showing animated liquid moving inside a battery cell graphic on a solid cyan backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Ions flow back and forth to keep the device running.",
+        "image_prompt": "Playful 2D flat illustration of tiny particles zipping across a circuit board on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Warm weather keeps those ions moving fast and smooth.",
+        "image_prompt": "Minimalist digital app interface mockup showing a fast particle speed indicator on a solid yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then the winter air arrives and changes everything.",
+        "image_prompt": "Playful 2D flat illustration of snowflakes landing on a warm glowing phone on a solid dark blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Freezing temperatures slow down ion movement inside the cell.",
+        "image_prompt": "Minimalist digital app interface mockup showing slow motion particles on a solid ice blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The liquid electrolyte thickens up like cold syrup.",
+        "image_prompt": "Playful 2D flat illustration of amber syrup pouring slowly inside a battery outline on a solid amber backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Internal resistance shoots straight up.",
+        "image_prompt": "Minimalist digital app interface mockup showing a rising resistance graph on a solid red backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Voltage plummets before the ions can deliver their charge.",
+        "image_prompt": "Playful 2D flat illustration of a gauge needle dropping to zero on a solid pink backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Sensors read this drop as a dead battery.",
+        "image_prompt": "Playful 2D flat illustration of a digital sensor scanning a low power cell on a solid violet backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Automatic shutdowns happen to prevent permanent cell damage.",
+        "image_prompt": "Minimalist digital app interface mockup showing a power off sequence on a solid dark slate backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Bringing the device inside tells a completely different story.",
+        "image_prompt": "Minimalist digital app interface mockup showing a cozy indoor temperature reading on a solid warm orange backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Warming the device restores most of the lost power.",
+        "image_prompt": "Playful 2D flat illustration of a smartphone absorbing heat waves on a solid yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "No permanent damage happens to the chemistry.",
+        "image_prompt": "Playful 2D flat illustration of a checkmark hovering over a pristine battery icon on a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The liquid electrolyte thins right back out.",
+        "image_prompt": "Playful 2D flat illustration of fluid particles flowing freely again on a solid teal backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Ions resume their normal sprint across the cell.",
+        "image_prompt": "Minimalist digital app interface mockup showing fast moving data streams on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Voltage climbs back to where it started.",
+        "image_prompt": "Playful 2D flat illustration of a battery icon filling from empty to full on a solid bright green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "That lost percentage reappears on the screen.",
+        "image_prompt": "Minimalist digital app interface mockup showing fifty percent jumping back to one hundred percent on a solid pastel pink backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The phone powers on without losing a single cycle of life.",
+        "image_prompt": "Playful 2D flat illustration of a smiling smartphone waking up from sleep on a solid yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Cold weather only creates a pause in the action.",
+        "image_prompt": "Minimalist digital app interface mockup showing a pause icon over a battery graph on a solid purple backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Patience beats panic every single time.",
+        "image_prompt": "Playful 2D flat illustration of a clock ticking next to a warm smartphone on a solid coral backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Smart habits keep the phone running longer outside.",
+        "image_prompt": "Minimalist digital app interface mockup showing optimized settings on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Keep your phone in an insulated pocket close to body heat.",
+        "image_prompt": "Playful 2D flat illustration of a smartphone tucked safely inside a warm jacket pocket on a solid navy backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Body warmth stops the internal temperature from hitting zero.",
+        "image_prompt": "Minimalist digital app interface mockup showing a stable temperature thermometer on a solid orange backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Use a hand warmer pouch inside your carrying bag.",
+        "image_prompt": "Playful 2D flat illustration of a small thermal pouch holding a smartphone on a solid red backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Avoid leaving devices exposed in car mounts during winter storms.",
+        "image_prompt": "Playful 2D flat illustration of a frosty car windshield with a dark phone mount on a solid slate backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Briefly power cycle the device once it returns indoors.",
+        "image_prompt": "Minimalist digital app interface mockup showing a reboot progress wheel on a solid teal backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Resetting voltage sensors clears out false low battery reads.",
+        "image_prompt": "Playful 2D flat illustration of a digital sensor calibrating on a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Never blast freezing phones with sudden high heat from hair dryers.",
+        "image_prompt": "Playful 2D flat illustration of a hairdryer blowing hot air at a cracking ice block on a solid yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Rapid temperature swings cause internal condensation to form.",
+        "image_prompt": "Playful 2D flat illustration of water droplets forming on circuit boards on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Let the device warm up slowly at room temperature instead.",
+        "image_prompt": "Playful 2D flat illustration of a smartphone resting on a wooden desk with warm sunlight on a solid cream backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Cold weather never destroys battery capacity permanently.",
+        "image_prompt": "Minimalist digital app interface mockup showing an invincible battery health score on a solid green backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "The chemistry just slows down until it warms back up.",
+        "image_prompt": "Playful 2D flat illustration of ions waking up from a winter rest on a solid pastel blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Voltage drops trigger shutdowns to protect the internal cells.",
+        "image_prompt": "Playful 2D flat illustration of a protective dome over a glowing battery on a solid violet backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Warming the hardware brings every single percent back online.",
+        "image_prompt": "Minimalist digital app interface mockup showing a full battery charge indicator on a solid bright yellow backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "image_prompt": "Playful 2D flat illustration of a large fifty percent badge next to a frosty smartphone on a solid blue backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "That lost power was never gone in the first place.",
+        "image_prompt": "Minimalist digital app interface mockup showing hidden power bars unlocking on a solid teal backdrop.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Protect the device from the freeze and watch the charge return.",
+        "image_prompt": "Playful 2D flat illustration of a warm glowing smartphone emerging from winter snow on a solid green backdrop.",
+        "tool": "flux",
+        "motion": "Camera pulls back smoothly to reveal a fully charged battery icon glowing brightly against a solid background."
+      },
+      {
+        "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "image_prompt": "Minimalist digital app interface mockup of a smartphone showing low battery percentage against a bold cyan background",
+        "tool": "flux",
+        "motion": "Push in slowly on the smartphone screen as the battery icon drops to zero."
+      },
+      {
+        "narration": "Cold weather traps energy inside the device.",
+        "image_prompt": "Playful 2D flat illustration of ice crystals forming around a modern smartphone silhouette on a solid pink backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "People panic when their phone shuts down.",
+        "image_prompt": "Minimalist UI mockup showing a sudden shutdown warning icon on a vibrant yellow solid background",
+        "tool": "flux"
+      },
+      {
+        "narration": "The chemistry just slows down.",
+        "image_prompt": "Playful 2D flat vector art of chemical bonds slowing down inside a smartphone shape on a purple background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Warm temperatures bring the power right back.",
+        "image_prompt": "Minimalist digital app screen showing battery levels rising with a glowing sun icon on a bright orange background",
+        "tool": "flux"
+      },
+      {
+        "narration": "No permanent damage happens to the cell.",
+        "image_prompt": "Playful 2D flat illustration of a healthy battery badge with a checkmark on a solid green background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Keep your device warm to keep it running.",
+        "image_prompt": "Minimalist digital app mockup of a smartphone inside an insulated sleeve on a bold blue backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Cold slows the charge, but it never steals it.",
+        "image_prompt": "Minimalist digital app interface showing full battery bars on a vibrant coral solid color background",
+        "tool": "flux",
+        "motion": "Quick zoom out to reveal the full battery status with a clean modern finish."
+      }
+    ],
+    "chapters": [
+      {
+        "title": "The Chemistry Myth",
+        "beat": 10
+      },
+      {
+        "title": "Why It’s Not Permanent",
+        "beat": 20
+      },
+      {
+        "title": "Practical Warm‑Up Hacks",
+        "beat": 30
+      },
+      {
+        "title": "Payoff & Reminder",
+        "beat": 77
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "supported": true
+      },
+      {
+        "claim": "Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power.",
+        "supported": true
+      },
+      {
+        "claim": "Freezing temperatures slow down ion movement inside the cell.",
+        "supported": true
+      },
+      {
+        "claim": "Extreme cold causes temporary voltage drops that trigger automatic shutdowns.",
+        "supported": true
+      },
+      {
+        "claim": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "supported": true
+      },
+      {
+        "claim": "Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power.",
+        "supported": true
+      },
+      {
+        "claim": "Freezing temperatures slow down ion movement inside the cell.",
+        "supported": true
+      },
+      {
+        "claim": "Extreme cold causes temporary voltage drops that trigger automatic shutdowns.",
+        "supported": true
+      },
+      {
+        "claim": "Warming the device restores most of the lost power without permanent damage.",
+        "supported": true
+      },
+      {
+        "claim": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "supported": true
+      },
+      {
+        "claim": "Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power.",
+        "supported": true
+      },
+      {
+        "claim": "Freezing temperatures slow down ion movement inside the cell.",
+        "supported": true
+      },
+      {
+        "claim": "Extreme cold causes temporary voltage drops that trigger automatic shutdowns.",
+        "supported": true
+      },
+      {
+        "claim": "Warming the device restores most of the lost power without permanent damage.",
+        "supported": true
+      },
+      {
+        "claim": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+        "supported": true
+      },
+      {
+        "claim": "Warming the device restores most of the lost power without permanent damage.",
+        "supported": true
+      }
+    ]
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Updated tool settings",
-      "t": 1794156705036
-    },
     {
       "role": "user",
       "text": "turn Off Browser bot",
@@ -109,6 +625,11 @@
       "role": "bot",
       "text": "Pitched \"Why Your Phone Dies in the Cold\": A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
       "t": 1794162199650
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Why Your Phone Dies in the Cold\"",
+      "t": 1794162262089
     }
   ],
   "working": null,
