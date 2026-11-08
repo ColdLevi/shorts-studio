@@ -1,0 +1,511 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-architect-who-admitted-defeat-mw7uu6j5",
+ "rev": 1,
+ "title": "The Architect Who Admitted Defeat",
+ "duration": 22.52,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 7.812,
+    "narration": "In nineteen seventy-eight, architect William LeMessurier found a fatal flaw in his new Manhattan skyscraper.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a high-rise skyscraper leaning under strong wind vectors, rendered on a vibrant solid cyan background with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a71f17755f45"
+   },
+   {
+    "id": "v2",
+    "start": 7.812,
+    "end": 10.3,
+    "narration": "Hiding it seemed like career survival.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a locked folder labeled secret, rendered on a bold deep blue backdrop with modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e89da5039ea5"
+   },
+   {
+    "id": "v3",
+    "start": 10.3,
+    "end": 13.1,
+    "narration": "But William reported the danger voluntarily.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Silence",
+      "sub": "Cover Up",
+      "value": 0
+     },
+     "prefix": "",
+     "right": {
+      "label": "Honesty",
+      "sub": "Report Defect",
+      "value": 100
+     },
+     "suffix": "",
+     "title": "Architect Choice",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.1,
+    "end": 17.025,
+    "narration": "So engineers retrofitted the joints secretly at night.",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 4.23,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Cinematic evening shot of city skyscrapers illuminated under a night sky with construction cranes silhouette.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "5a9f1153bfed"
+   },
+   {
+    "id": "v5",
+    "start": 17.025,
+    "end": 19.413,
+    "narration": "They fixed the tower before disaster hit.",
+    "kind": "graphic",
+    "graphic": {
+     "events": [
+      {
+       "date": "1978",
+       "label": "Flaw Discovered"
+      },
+      {
+       "date": "Nightly",
+       "label": "Secret Retrofit"
+      },
+      {
+       "date": "Storm Season",
+       "label": "Tower Secured"
+      }
+     ],
+     "title": "Crisis Timeline",
+     "type": "timeline"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 19.413,
+    "end": 21.72,
+    "narration": "Integrity saved the skyline.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a perfectly stable golden structural frame standing strong on a vibrant solid teal background with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "19ee1ccfe36b"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.163
+    },
+    {
+     "word": "nineteen",
+     "start": 0.175,
+     "end": 0.562
+    },
+    {
+     "word": "seventy-eight,",
+     "start": 0.575,
+     "end": 1.238
+    },
+    {
+     "word": "architect",
+     "start": 1.688,
+     "end": 2.275
+    },
+    {
+     "word": "William",
+     "start": 2.288,
+     "end": 2.812
+    },
+    {
+     "word": "LeMessurier",
+     "start": 2.938,
+     "end": 3.763
+    },
+    {
+     "word": "found",
+     "start": 4.037,
+     "end": 4.263
+    },
+    {
+     "word": "a",
+     "start": 4.263,
+     "end": 4.312
+    },
+    {
+     "word": "fatal",
+     "start": 4.312,
+     "end": 4.763
+    },
+    {
+     "word": "flaw",
+     "start": 4.763,
+     "end": 5.237
+    },
+    {
+     "word": "in",
+     "start": 5.5,
+     "end": 5.575
+    },
+    {
+     "word": "his",
+     "start": 5.575,
+     "end": 5.7
+    },
+    {
+     "word": "new",
+     "start": 5.713,
+     "end": 5.925
+    },
+    {
+     "word": "Manhattan",
+     "start": 5.925,
+     "end": 6.55
+    },
+    {
+     "word": "skyscraper.",
+     "start": 6.562,
+     "end": 7.4
+    },
+    {
+     "word": "Hiding",
+     "start": 7.812,
+     "end": 8.062
+    },
+    {
+     "word": "it",
+     "start": 8.075,
+     "end": 8.15
+    },
+    {
+     "word": "seemed",
+     "start": 8.15,
+     "end": 8.463
+    },
+    {
+     "word": "like",
+     "start": 8.463,
+     "end": 8.7
+    },
+    {
+     "word": "career",
+     "start": 8.7,
+     "end": 9.25
+    },
+    {
+     "word": "survival.",
+     "start": 9.262,
+     "end": 9.887
+    },
+    {
+     "word": "But",
+     "start": 10.3,
+     "end": 10.412
+    },
+    {
+     "word": "William",
+     "start": 10.412,
+     "end": 10.812
+    },
+    {
+     "word": "reported",
+     "start": 10.812,
+     "end": 11.338
+    },
+    {
+     "word": "the",
+     "start": 11.338,
+     "end": 11.45
+    },
+    {
+     "word": "danger",
+     "start": 11.463,
+     "end": 11.9
+    },
+    {
+     "word": "voluntarily.",
+     "start": 11.9,
+     "end": 12.688
+    },
+    {
+     "word": "So",
+     "start": 13.1,
+     "end": 13.312
+    },
+    {
+     "word": "engineers",
+     "start": 13.325,
+     "end": 13.825
+    },
+    {
+     "word": "retrofitted",
+     "start": 13.838,
+     "end": 14.625
+    },
+    {
+     "word": "the",
+     "start": 14.637,
+     "end": 14.725
+    },
+    {
+     "word": "joints",
+     "start": 14.725,
+     "end": 15.3
+    },
+    {
+     "word": "secretly",
+     "start": 15.488,
+     "end": 16.1
+    },
+    {
+     "word": "at",
+     "start": 16.113,
+     "end": 16.2
+    },
+    {
+     "word": "night.",
+     "start": 16.2,
+     "end": 16.613
+    },
+    {
+     "word": "They",
+     "start": 17.025,
+     "end": 17.125
+    },
+    {
+     "word": "fixed",
+     "start": 17.125,
+     "end": 17.387
+    },
+    {
+     "word": "the",
+     "start": 17.387,
+     "end": 17.462
+    },
+    {
+     "word": "tower",
+     "start": 17.475,
+     "end": 17.913
+    },
+    {
+     "word": "before",
+     "start": 17.925,
+     "end": 18.238
+    },
+    {
+     "word": "disaster",
+     "start": 18.238,
+     "end": 18.712
+    },
+    {
+     "word": "hit.",
+     "start": 18.712,
+     "end": 19.0
+    },
+    {
+     "word": "Integrity",
+     "start": 19.413,
+     "end": 20.087
+    },
+    {
+     "word": "saved",
+     "start": 20.275,
+     "end": 20.663
+    },
+    {
+     "word": "the",
+     "start": 20.663,
+     "end": 20.712
+    },
+    {
+     "word": "skyline.",
+     "start": 20.712,
+     "end": 21.363
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In nineteen seventy-eight, architect William LeMessurier found a fatal flaw in his new Manhattan skyscraper. Hiding it seemed like career survival. But William reported the danger voluntarily. So engineers retrofitted the joints secretly at night. They fixed the tower before disaster hit. Integrity saved the skyline."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "The Architect Who Admitted Defeat"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794144254715,
+  "updated": 1794144254715,
+  "topic": "making mistakes and learning to live with integrity 17sec",
+  "hook": "In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-the-architect-who-admitted-defeat-mw7uu6j5",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "the-architect-who-admitted-defeat-mw7uu6j5",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "The Architect Who Admitted Defeat",
+   "topic": "making mistakes and learning to live with integrity 17sec",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

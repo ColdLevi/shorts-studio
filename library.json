@@ -291,6 +291,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-27",
+      "title": "The Architect Who Admitted Defeat",
+      "hook": "In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
+      "accent": "#2EE6C5",
+      "duration": 22.6,
+      "created": 1794144352578,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-27/short-27.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-27/short-27.jpg",
+      "project": "the-architect-who-admitted-defeat-mw7uu6j5",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
