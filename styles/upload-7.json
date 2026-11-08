@@ -141,5 +141,32 @@
   "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action footage of hardware and video editing workflows is accented by minimalist white-line overlays and futuristic interface designs.",
   "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression.",
   "id": "upload-7",
-  "learned_at": 1794151690847
+  "learned_at": 1794151690847,
+  "triggers": [
+    "upload-7",
+    "upload"
+  ],
+  "cuts": {
+    "p25": 1.0,
+    "p50": 2.0,
+    "p75": 3.5,
+    "unit": "s"
+  },
+  "bpm": 0,
+  "beat_cuts_per_30s": 0,
+  "caption": {
+    "per_line_chars": 20,
+    "cps": 15,
+    "density": "med"
+  },
+  "palette": [],
+  "motion": {
+    "score": 0.5
+  },
+  "effects": [],
+  "grade": {
+    "contrast": 1.0,
+    "saturation": 1.0
+  },
+  "_updated": "2026-11-08T17:22:54"
 }

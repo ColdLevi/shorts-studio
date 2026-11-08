@@ -1,64 +1,112 @@
 {
-  "styles": {
-    "fastedit": {
+  "styles": [
+    {
       "name": "fastedit",
       "base": "bold-pop",
       "summary": "A punchy, modern app promo featuring rapid-fire UI mockups against bold, colorful flat backgrounds. Kinetic typography and floating graphica",
-      "learned_at": 1794151690854
+      "learned_at": 1794151690854,
+      "id": "fastedit",
+      "triggers": [
+        "fastedit"
+      ]
     },
-    "fastedit2": {
+    {
       "name": "fastedit2",
       "base": "bold-pop",
       "summary": "A punchy, modern app showcase combining high-contrast solid backgrounds with clean 3D phone mockups and vector icons. Fast-paced cuts flash ",
-      "learned_at": 1794151690857
+      "learned_at": 1794151690857,
+      "id": "fastedit2",
+      "triggers": [
+        "fastedit2"
+      ]
     },
-    "upload-3": {
+    {
       "name": "upload-3",
       "base": "motion-explainer",
       "summary": "Minimalist high-contrast tech explainer featuring sleek software UI cards, wireframe schematics, and structured step-by-step workflows. Buil",
-      "learned_at": 1794151690836
+      "learned_at": 1794151690836,
+      "id": "upload-3",
+      "triggers": [
+        "upload-3",
+        "upload"
+      ]
     },
-    "upload-5": {
+    {
       "name": "upload-5",
       "base": "motion-explainer",
       "summary": "Satirical digital UI simulation formatted as a remote video conference meeting. High-contrast monochromatic UI framing features desaturated ",
-      "learned_at": 1794151690841
+      "learned_at": 1794151690841,
+      "id": "upload-5",
+      "triggers": [
+        "upload-5",
+        "upload"
+      ]
     },
-    "upload-6": {
+    {
       "name": "upload-6",
       "base": "neon",
       "summary": "High-contrast neon contour animation against deep black backgrounds, accented by golden-yellow glowing linework. Minimalist cinematic storyt",
-      "learned_at": 1794151690845
+      "learned_at": 1794151690845,
+      "id": "upload-6",
+      "triggers": [
+        "upload-6",
+        "upload"
+      ]
     },
-    "upload-7": {
+    {
       "name": "upload-7",
       "base": "cinematic",
       "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action",
-      "learned_at": 1794151690847
+      "learned_at": 1794151690847,
+      "id": "upload-7",
+      "triggers": [
+        "upload-7",
+        "upload"
+      ]
     },
-    "upload-8": {
+    {
       "name": "upload-8",
       "base": "bold-pop",
       "summary": "High-energy commercial motion graphics featuring bold saturated color blocking, layered diagonal stripes, and smoothly sliding 3D product ca",
-      "learned_at": 1794151690851
+      "learned_at": 1794151690851,
+      "id": "upload-8",
+      "triggers": [
+        "upload-8",
+        "upload"
+      ]
     },
-    "youtu-2": {
+    {
       "name": "youtu-2",
       "base": "motion-explainer",
       "summary": "A dark-mode tech explainer combining terminal mockups, UI diagrams, and Wojak meme art. It uses high-contrast neon accents, code animations,",
-      "learned_at": 1794151690833
+      "learned_at": 1794151690833,
+      "id": "youtu-2",
+      "triggers": [
+        "youtu-2",
+        "youtu"
+      ]
     },
-    "youtu-4": {
+    {
       "name": "youtu-4",
       "base": "motion-explainer",
       "summary": "A moody cybercrime documentary style blending photorealistic live-action plates with minimalist line-drawn NPC meme faces. Dark-mode tech UI",
-      "learned_at": 1794151690838
+      "learned_at": 1794151690838,
+      "id": "youtu-4",
+      "triggers": [
+        "youtu-4",
+        "youtu"
+      ]
     },
-    "youtube-1": {
+    {
       "name": "youtube-1",
       "base": "vlog",
       "summary": "Uncut gameplay capture featuring continuous live commentary over The Binding of Isaac. Visuals are raw in-game footage driven by procedural ",
-      "learned_at": 1794151690831
+      "learned_at": 1794151690831,
+      "id": "youtube-1",
+      "triggers": [
+        "youtube-1",
+        "youtube"
+      ]
     }
-  }
+  ]
 }

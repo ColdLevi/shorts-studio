@@ -98,8 +98,8 @@
     "p75": 3.5,
     "unit": "s"
   },
-  "bpm": 0,
-  "beat_cuts_per_30s": 0,
+  "bpm": 0.0,
+  "beat_cuts_per_30s": 0.0,
   "caption": {
     "per_line_chars": 20,
     "cps": 15,
@@ -114,5 +114,5 @@
     "contrast": 1.0,
     "saturation": 1.0
   },
-  "_updated": "2026-11-08T16:55:55"
+  "_updated": "2026-11-08T17:22:54"
 }

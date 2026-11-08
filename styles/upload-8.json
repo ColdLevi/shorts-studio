@@ -147,5 +147,32 @@
   "summary": "High-energy commercial motion graphics featuring bold saturated color blocking, layered diagonal stripes, and smoothly sliding 3D product cans. The aesthetic relies on strong typography, tropical fruit flavor palettes, and retail CTA elements like an animated shopping cart before closing on a centered logo reveal.",
   "writer_notes": "Punchy retail-oriented copy announcing hydrating fruit drink flavors. Builds anticipation with vibrant flavor names before driving immediate conversion with a clear call to action.",
   "id": "upload-8",
-  "learned_at": 1794151690851
+  "learned_at": 1794151690851,
+  "triggers": [
+    "upload-8",
+    "upload"
+  ],
+  "cuts": {
+    "p25": 1.0,
+    "p50": 2.0,
+    "p75": 3.5,
+    "unit": "s"
+  },
+  "bpm": 0,
+  "beat_cuts_per_30s": 0,
+  "caption": {
+    "per_line_chars": 20,
+    "cps": 15,
+    "density": "med"
+  },
+  "palette": [],
+  "motion": {
+    "score": 0.5
+  },
+  "effects": [],
+  "grade": {
+    "contrast": 1.0,
+    "saturation": 1.0
+  },
+  "_updated": "2026-11-08T17:22:54"
 }

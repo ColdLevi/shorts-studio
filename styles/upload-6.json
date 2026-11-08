@@ -81,5 +81,32 @@
     "motion_level": "gentle"
   },
   "id": "upload-6",
-  "learned_at": 1794151690845
+  "learned_at": 1794151690845,
+  "triggers": [
+    "upload-6",
+    "upload"
+  ],
+  "cuts": {
+    "p25": 1.0,
+    "p50": 2.0,
+    "p75": 3.5,
+    "unit": "s"
+  },
+  "bpm": 0,
+  "beat_cuts_per_30s": 0,
+  "caption": {
+    "per_line_chars": 20,
+    "cps": 15,
+    "density": "med"
+  },
+  "palette": [],
+  "motion": {
+    "score": 0.5
+  },
+  "effects": [],
+  "grade": {
+    "contrast": 1.0,
+    "saturation": 1.0
+  },
+  "_updated": "2026-11-08T17:22:54"
 }
