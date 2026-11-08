@@ -1,6 +1,6 @@
 {
   "last_update": 312538274,
-  "time": 1794135485207,
+  "time": 1794135633325,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2716,7 +2716,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "upload-7"
+    "style": "upload-8"
   },
   "job": null,
   "recent_styles": [
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-8",
-    "source": "tg:BAACAgQAAxkBAAICKWrwVbuFGH_lNLrBBx-ZT0wsW0N0AAKvIQACIUWAU07Drm_AiS1ZPQQ",
-    "at": 1794135485206
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3263,6 +3259,91 @@
       },
       "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action footage of hardware and video editing workflows is accented by minimalist white-line overlays and futuristic interface designs.",
       "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression."
+    },
+    "upload-8": {
+      "name": "upload-8",
+      "source": "telegram upload",
+      "summary": "High-energy commercial motion graphics featuring bold saturated color blocking, layered diagonal stripes, and smoothly sliding 3D product cans. The aesthetic relies on strong typography, tropical fruit flavor palettes, and retail CTA elements like an animated shopping cart before closing on a centered logo reveal.",
+      "base": "bold-pop",
+      "mode": "motion-graphics",
+      "graphic_ratio": 0.9,
+      "beat_seconds": 7.1,
+      "image_style": "Vibrant commercial 3D beverage packshots with studio rim lighting, vivid red and lime green saturated backgrounds, crisp metallic textures, and clean cutout fruit illustrations.",
+      "format": "vertical",
+      "music": "tech-pulse",
+      "pacing": "Layered continuous motion with staggered product slides and text reveals, transitioning into a focused call-to-action hold and logo lockup.",
+      "writer_notes": "Punchy retail-oriented copy announcing hydrating fruit drink flavors. Builds anticipation with vibrant flavor names before driving immediate conversion with a clear call to action.",
+      "style_tokens": {
+        "caption": {
+          "preset": "bold-pop",
+          "font": "Montserrat",
+          "case": "upper",
+          "position": "middle",
+          "highlight": "#FFD200",
+          "color": "#FFFFFF"
+        },
+        "font": "Montserrat",
+        "transitions": [
+          "slide-up",
+          "slide-left",
+          "cut",
+          "zoom-in"
+        ],
+        "motion": "parallax",
+        "fx": {
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "gradient",
+        "grade": "contrast(1.1) saturate(1.25)",
+        "accent": "#FFD200",
+        "palette": [
+          "#A80B24",
+          "#216C37"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "slide-up",
+          "duration": 0.35
+        }
+      },
+      "metrics": {
+        "width": 720,
+        "height": 1280,
+        "fps": 25,
+        "duration_s": 14.2,
+        "aspect": "9:16",
+        "cuts": 1,
+        "cuts_per_min": 4.2,
+        "avg_shot_s": 7.08,
+        "held_frame_share": 0.14,
+        "brightness_0_255": 92,
+        "saturation_0_128": 50,
+        "loudness_lufs": -7.9,
+        "shot_s_median": 7.08,
+        "shot_s_p10": 6.83,
+        "shot_s_p90": 7.34,
+        "shot_spread": 0.04,
+        "shot_spread_label": "too few cuts",
+        "hook_s": 7.4,
+        "motion_ydif": 3.01,
+        "motion_level": "moderate",
+        "tempo_bpm": 99.9,
+        "tempo_confidence": 0.26
+      },
+      "rhythm": {
+        "shot_s_median": 7.08,
+        "shot_s_p10": 6.83,
+        "shot_s_p90": 7.34,
+        "shot_spread_label": "too few cuts",
+        "hook_s": 7.4,
+        "tempo_bpm": 99.9,
+        "motion_level": "moderate"
+      }
     }
   }
 }
