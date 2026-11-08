@@ -277,6 +277,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-26",
+      "title": "The Death of Manual Syntax",
+      "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+      "accent": "#2EE6C5",
+      "duration": 61.7,
+      "created": 1794143167484,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-26/short-26.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-26/short-26.jpg",
+      "project": "the-death-of-manual-syntax-mw7uacsp",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

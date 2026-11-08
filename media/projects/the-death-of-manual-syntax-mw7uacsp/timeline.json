@@ -1,0 +1,1018 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-death-of-manual-syntax-mw7uacsp",
+ "rev": 1,
+ "title": "The Death of Manual Syntax",
+ "duration": 61.62,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 7.562,
+    "narration": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Assembly Code",
+     "text": "3,000 Lines",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 7.562,
+    "end": 15.188,
+    "narration": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Direct intent",
+     "myth": "Memorize syntax",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 15.188,
+    "end": 18.538,
+    "narration": "Manual memory management ruled early engineering.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "cpu",
+       "label": "Memory"
+      },
+      {
+       "icon": "book",
+       "label": "Syntax"
+      }
+     ],
+     "title": "Legacy Systems",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 18.538,
+    "end": 23.025,
+    "narration": "Exact low level execution demanded endless focus.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Manual Effort",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 23.025,
+    "end": 25.125,
+    "narration": "Then generative models arrived.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Generative AI",
+      "Changes Everything"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 25.125,
+    "end": 32.237,
+    "narration": "Now modern artificial intelligence produces functional app codebases directly from plain language prompts.",
+    "kind": "graphic",
+    "graphic": {
+     "messages": [
+      {
+       "from": "me",
+       "text": "Build a dashboard app"
+      },
+      {
+       "from": "them",
+       "text": "Generated full codebase"
+      }
+     ],
+     "title": "AI Prompt",
+     "type": "chat"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 32.237,
+    "end": 35.375,
+    "narration": "Vibe coding completely flips this paradigm.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Manual typing",
+      "Direct intent",
+      "Creative editing"
+     ],
+     "title": "The Paradigm Shift",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 35.375,
+    "end": 39.275,
+    "narration": "Developers replace manual typing with direct intent.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Typing",
+      "value": 10
+     },
+     "prefix": "",
+     "right": {
+      "label": "Intent",
+      "value": 90
+     },
+     "suffix": "",
+     "title": "Coding Evolution",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 39.275,
+    "end": 42.3,
+    "narration": "This turns developers into creative editors.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "System Architect",
+      "Creative Editor",
+      "Vision Guide"
+     ],
+     "title": "New Roles",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 42.3,
+    "end": 49.175,
+    "narration": "Engineers using generative AI coding tools complete tasks up to fifty five percent faster.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Faster Completion",
+     "prefix": "",
+     "suffix": "%",
+     "type": "counter",
+     "value": 55
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v11",
+    "start": 49.175,
+    "end": 51.087,
+    "narration": "Speed changes everything.",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5b856337734d"
+   },
+   {
+    "id": "v12",
+    "start": 51.087,
+    "end": 55.375,
+    "narration": "Modern developer workflows shift from manual syntax authoring.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Syntax",
+       "value": 10
+      },
+      {
+       "label": "Architecture",
+       "value": 90
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Workflow Shift",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v13",
+    "start": 55.375,
+    "end": 59.4,
+    "narration": "System architecture validation takes center stage.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Validation Focus",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 90
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v14",
+    "start": 59.4,
+    "end": 60.816,
+    "narration": "Syntax is dead.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Long live intent",
+     "text": "Syntax is Dead",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Three",
+     "start": 0.138,
+     "end": 0.35
+    },
+    {
+     "word": "thousand",
+     "start": 0.35,
+     "end": 0.838
+    },
+    {
+     "word": "lines",
+     "start": 0.838,
+     "end": 1.175
+    },
+    {
+     "word": "of",
+     "start": 1.188,
+     "end": 1.25
+    },
+    {
+     "word": "manual",
+     "start": 1.262,
+     "end": 1.75
+    },
+    {
+     "word": "assembly",
+     "start": 1.75,
+     "end": 2.275
+    },
+    {
+     "word": "code",
+     "start": 2.275,
+     "end": 2.663
+    },
+    {
+     "word": "were",
+     "start": 2.875,
+     "end": 3.0
+    },
+    {
+     "word": "required",
+     "start": 3.0,
+     "end": 3.575
+    },
+    {
+     "word": "just",
+     "start": 3.737,
+     "end": 3.913
+    },
+    {
+     "word": "to",
+     "start": 3.913,
+     "end": 3.962
+    },
+    {
+     "word": "draw",
+     "start": 3.962,
+     "end": 4.225
+    },
+    {
+     "word": "a",
+     "start": 4.225,
+     "end": 4.312
+    },
+    {
+     "word": "blue",
+     "start": 4.325,
+     "end": 4.675
+    },
+    {
+     "word": "rectangle",
+     "start": 4.675,
+     "end": 5.312
+    },
+    {
+     "word": "on",
+     "start": 5.325,
+     "end": 5.438
+    },
+    {
+     "word": "a",
+     "start": 5.438,
+     "end": 5.475
+    },
+    {
+     "word": "screen",
+     "start": 5.475,
+     "end": 6.0
+    },
+    {
+     "word": "in",
+     "start": 6.275,
+     "end": 6.375
+    },
+    {
+     "word": "nineteen",
+     "start": 6.375,
+     "end": 6.763
+    },
+    {
+     "word": "ninety.",
+     "start": 6.763,
+     "end": 7.175
+    },
+    {
+     "word": "Engineers",
+     "start": 7.562,
+     "end": 8.137
+    },
+    {
+     "word": "believed",
+     "start": 8.15,
+     "end": 8.662
+    },
+    {
+     "word": "mastering",
+     "start": 8.738,
+     "end": 9.325
+    },
+    {
+     "word": "software",
+     "start": 9.338,
+     "end": 9.925
+    },
+    {
+     "word": "meant",
+     "start": 10.1,
+     "end": 10.387
+    },
+    {
+     "word": "memorizing",
+     "start": 10.4,
+     "end": 11.113
+    },
+    {
+     "word": "thousands",
+     "start": 11.113,
+     "end": 11.762
+    },
+    {
+     "word": "of",
+     "start": 11.775,
+     "end": 11.925
+    },
+    {
+     "word": "rigid",
+     "start": 11.925,
+     "end": 12.238
+    },
+    {
+     "word": "syntax",
+     "start": 12.25,
+     "end": 12.875
+    },
+    {
+     "word": "rules",
+     "start": 12.875,
+     "end": 13.35
+    },
+    {
+     "word": "and",
+     "start": 13.475,
+     "end": 13.613
+    },
+    {
+     "word": "pointer",
+     "start": 13.613,
+     "end": 14.012
+    },
+    {
+     "word": "operations.",
+     "start": 14.012,
+     "end": 14.787
+    },
+    {
+     "word": "Manual",
+     "start": 15.188,
+     "end": 15.613
+    },
+    {
+     "word": "memory",
+     "start": 15.613,
+     "end": 15.963
+    },
+    {
+     "word": "management",
+     "start": 15.963,
+     "end": 16.55
+    },
+    {
+     "word": "ruled",
+     "start": 16.562,
+     "end": 17.062
+    },
+    {
+     "word": "early",
+     "start": 17.238,
+     "end": 17.562
+    },
+    {
+     "word": "engineering.",
+     "start": 17.562,
+     "end": 18.15
+    },
+    {
+     "word": "Exact",
+     "start": 18.538,
+     "end": 19.087
+    },
+    {
+     "word": "low",
+     "start": 19.35,
+     "end": 19.712
+    },
+    {
+     "word": "level",
+     "start": 19.725,
+     "end": 20.15
+    },
+    {
+     "word": "execution",
+     "start": 20.15,
+     "end": 20.863
+    },
+    {
+     "word": "demanded",
+     "start": 21.012,
+     "end": 21.575
+    },
+    {
+     "word": "endless",
+     "start": 21.738,
+     "end": 21.988
+    },
+    {
+     "word": "focus.",
+     "start": 22.0,
+     "end": 22.625
+    },
+    {
+     "word": "Then",
+     "start": 23.025,
+     "end": 23.275
+    },
+    {
+     "word": "generative",
+     "start": 23.4,
+     "end": 23.788
+    },
+    {
+     "word": "models",
+     "start": 23.788,
+     "end": 24.163
+    },
+    {
+     "word": "arrived.",
+     "start": 24.163,
+     "end": 24.725
+    },
+    {
+     "word": "Now",
+     "start": 25.125,
+     "end": 25.312
+    },
+    {
+     "word": "modern",
+     "start": 25.312,
+     "end": 25.613
+    },
+    {
+     "word": "artificial",
+     "start": 25.613,
+     "end": 26.1
+    },
+    {
+     "word": "intelligence",
+     "start": 26.113,
+     "end": 26.587
+    },
+    {
+     "word": "produces",
+     "start": 26.6,
+     "end": 27.312
+    },
+    {
+     "word": "functional",
+     "start": 27.538,
+     "end": 28.163
+    },
+    {
+     "word": "app",
+     "start": 28.25,
+     "end": 28.475
+    },
+    {
+     "word": "codebases",
+     "start": 28.488,
+     "end": 29.275
+    },
+    {
+     "word": "directly",
+     "start": 29.562,
+     "end": 30.25
+    },
+    {
+     "word": "from",
+     "start": 30.363,
+     "end": 30.55
+    },
+    {
+     "word": "plain",
+     "start": 30.562,
+     "end": 30.95
+    },
+    {
+     "word": "language",
+     "start": 30.95,
+     "end": 31.25
+    },
+    {
+     "word": "prompts.",
+     "start": 31.25,
+     "end": 31.837
+    },
+    {
+     "word": "Vibe",
+     "start": 32.237,
+     "end": 32.55
+    },
+    {
+     "word": "coding",
+     "start": 32.562,
+     "end": 32.95
+    },
+    {
+     "word": "completely",
+     "start": 32.962,
+     "end": 33.587
+    },
+    {
+     "word": "flips",
+     "start": 33.6,
+     "end": 34.2
+    },
+    {
+     "word": "this",
+     "start": 34.212,
+     "end": 34.388
+    },
+    {
+     "word": "paradigm.",
+     "start": 34.4,
+     "end": 34.962
+    },
+    {
+     "word": "Developers",
+     "start": 35.375,
+     "end": 35.888
+    },
+    {
+     "word": "replace",
+     "start": 35.888,
+     "end": 36.45
+    },
+    {
+     "word": "manual",
+     "start": 36.513,
+     "end": 37.05
+    },
+    {
+     "word": "typing",
+     "start": 37.062,
+     "end": 37.625
+    },
+    {
+     "word": "with",
+     "start": 37.763,
+     "end": 37.875
+    },
+    {
+     "word": "direct",
+     "start": 37.888,
+     "end": 38.337
+    },
+    {
+     "word": "intent.",
+     "start": 38.35,
+     "end": 38.875
+    },
+    {
+     "word": "This",
+     "start": 39.275,
+     "end": 39.45
+    },
+    {
+     "word": "turns",
+     "start": 39.462,
+     "end": 39.85
+    },
+    {
+     "word": "developers",
+     "start": 39.85,
+     "end": 40.525
+    },
+    {
+     "word": "into",
+     "start": 40.538,
+     "end": 40.812
+    },
+    {
+     "word": "creative",
+     "start": 40.812,
+     "end": 41.3
+    },
+    {
+     "word": "editors.",
+     "start": 41.3,
+     "end": 41.925
+    },
+    {
+     "word": "Engineers",
+     "start": 42.3,
+     "end": 42.9
+    },
+    {
+     "word": "using",
+     "start": 42.913,
+     "end": 43.237
+    },
+    {
+     "word": "generative",
+     "start": 43.25,
+     "end": 43.8
+    },
+    {
+     "word": "AI",
+     "start": 43.938,
+     "end": 44.5
+    },
+    {
+     "word": "coding",
+     "start": 44.513,
+     "end": 44.9
+    },
+    {
+     "word": "tools",
+     "start": 44.913,
+     "end": 45.263
+    },
+    {
+     "word": "complete",
+     "start": 45.275,
+     "end": 45.737
+    },
+    {
+     "word": "tasks",
+     "start": 45.737,
+     "end": 46.3
+    },
+    {
+     "word": "up",
+     "start": 46.438,
+     "end": 46.625
+    },
+    {
+     "word": "to",
+     "start": 46.913,
+     "end": 47.0
+    },
+    {
+     "word": "fifty",
+     "start": 47.0,
+     "end": 47.375
+    },
+    {
+     "word": "five",
+     "start": 47.388,
+     "end": 47.763
+    },
+    {
+     "word": "percent",
+     "start": 47.775,
+     "end": 48.163
+    },
+    {
+     "word": "faster.",
+     "start": 48.175,
+     "end": 48.788
+    },
+    {
+     "word": "Speed",
+     "start": 49.175,
+     "end": 49.587
+    },
+    {
+     "word": "changes",
+     "start": 49.6,
+     "end": 50.112
+    },
+    {
+     "word": "everything.",
+     "start": 50.112,
+     "end": 50.688
+    },
+    {
+     "word": "Modern",
+     "start": 51.087,
+     "end": 51.337
+    },
+    {
+     "word": "developer",
+     "start": 51.337,
+     "end": 51.85
+    },
+    {
+     "word": "workflows",
+     "start": 51.85,
+     "end": 52.487
+    },
+    {
+     "word": "shift",
+     "start": 52.5,
+     "end": 52.975
+    },
+    {
+     "word": "from",
+     "start": 52.987,
+     "end": 53.2
+    },
+    {
+     "word": "manual",
+     "start": 53.2,
+     "end": 53.688
+    },
+    {
+     "word": "syntax",
+     "start": 53.688,
+     "end": 54.362
+    },
+    {
+     "word": "authoring.",
+     "start": 54.487,
+     "end": 54.962
+    },
+    {
+     "word": "System",
+     "start": 55.375,
+     "end": 55.837
+    },
+    {
+     "word": "architecture",
+     "start": 55.95,
+     "end": 56.562
+    },
+    {
+     "word": "validation",
+     "start": 56.562,
+     "end": 57.312
+    },
+    {
+     "word": "takes",
+     "start": 57.562,
+     "end": 57.913
+    },
+    {
+     "word": "center",
+     "start": 58.038,
+     "end": 58.388
+    },
+    {
+     "word": "stage.",
+     "start": 58.388,
+     "end": 58.987
+    },
+    {
+     "word": "Syntax",
+     "start": 59.4,
+     "end": 59.938
+    },
+    {
+     "word": "is",
+     "start": 59.95,
+     "end": 60.112
+    },
+    {
+     "word": "dead.",
+     "start": 60.125,
+     "end": 60.462
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety. Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations. Manual memory management ruled early engineering. Exact low level execution demanded endless focus. Then generative models arrived. Now modern artificial intelligence produces functional app codebases directly from plain language prompts. Vibe coding completely flips this paradigm. Developers replace manual typing with direct intent. This turns developers into creative editors. Engineers using generative AI coding tools complete tasks up to fifty five percent faster. Speed changes everything. Modern developer workflows shift from manual syntax authoring. System architecture validation takes center stage. Syntax is dead."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "The Death of Manual Syntax"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794142882952,
+  "updated": 1794142882952,
+  "topic": "about writing codes before and currently vibe coding",
+  "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-the-death-of-manual-syntax-mw7uacsp",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "the-death-of-manual-syntax-mw7uacsp",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "The Death of Manual Syntax",
+   "topic": "about writing codes before and currently vibe coding",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
