@@ -1,6 +1,6 @@
 {
-  "last_update": 312538274,
-  "time": 1794135633325,
+  "last_update": 312538275,
+  "time": 1794137596227,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "I want you to learn the script writing so you be better at writing scripts and storytelling that hooks people and get results",
-      "t": 1794122017795
-    },
     {
       "role": "user",
       "text": "If I send over an MD file of skills for writing great coy and YouTube script writing can you use that to build yourself and how doing know you actually save what you learned for use",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Studying a reference video as style \"upload-8\"",
       "t": 1794135485206
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"upload-8\"",
+      "t": 1794137596227
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "upload-8",
+    "source": "tg:BAACAgQAAxkBAAICLWrwXfrzDYg_y4UTsGcDqqowggAB5wACxyEAAiFFgFMUlvgXalcXlD0E",
+    "at": 1794137596227
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
