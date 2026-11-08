@@ -1,0 +1,52 @@
+==================================================================
+SHORTS STUDIO STYLE FIX  20261108-162801
+==================================================================
+repo:     /data/data/com.termux/files/home/shorts-studio
+bot:      /data/data/com.termux/files/home/llm-proxy
+backups:  /data/data/com.termux/files/home/style-fix-backup-20261108-162801  (restore with: cp -r /data/data/com.termux/files/home/style-fix-backup-20261108-162801/. ~/)
+
+[0] Reading the bot's live style state (state/studio.json)...
+    settings.style = 'fastedit2'   <- THE PIN: every new video gets this look
+    learned styles (10): youtube-1, youtu-2, upload-3, youtu-4, upload-5, upload-6, upload-7, upload-8, fastedit, fastedit2
+    styles used by your last videos: ['fastedit2', 'fastedit2', 'what-if', 'upload-3', 'documentary', 'upload-3', 'upload-3', 'upload-3']
+    ^ this setting is why output 'stays the first style'. Next patch adds a
+      one-tap switch after every learn; meanwhile say e.g. 'use upload-8' in the bot.
+
+[1] Updating ~/shorts-studio from GitHub...
+    up to date
+
+[2] Creating the durable style store (styles/) and backfilling your 10 learned styles...
+    backfilled 10 style(s) from the bot state
+    styles/index.json written (10 styles)
+
+[3] Patching the renderer so it understands learned styles...
+  ok    timeline.py: learned style loader
+  ok    timeline.py: style_from() resolves learned styles
+  ok    timeline.py: apply_recipe() resolves learned styles
+  ok    build_short.py: learned image look
+  ok    learn_style.py: usage hint after learning
+
+[4] Adding the style save/commit tools...
+  ok    tools/save_style.py (new) -> /data/data/com.termux/files/home/shorts-studio/tools/save_style.py
+  ok    tools/commit_style.sh (new) -> /data/data/com.termux/files/home/shorts-studio/tools/commit_style.sh
+
+[5] Patching learn-style.yml (write permission + save to repo)...
+  ok    learn workflow: contents:write permission
+  ok    learn workflow: save style step
+
+[6] Adding the bot-side learned-style store (Vercel)...
+  ok    api/_learned_styles.mjs (new) -> /data/data/com.termux/files/home/llm-proxy/api/_learned_styles.mjs
+  ok    _style.mjs: bridge re-exports
+    node --check _learned_styles.mjs: OK
+
+[7] Verifying the patched repo code...
+    python compile: OK
+    bash syntax:    OK
+    find_learned(fastedit2) -> fastedit2 | tokens: True
+    style_from -> ['accent', 'backdrop', 'caption', 'font', 'fx', 'grade'] ...
+
+[8] Committing and pushing the style fix to GitHub (main)...
+    committed
+    push: OK
+
+[9] Pushing bot api snapshot to the `bot-diagnostics` branch (lets me wire the picker next)...

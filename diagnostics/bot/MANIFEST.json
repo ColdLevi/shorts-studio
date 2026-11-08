@@ -1,0 +1,60 @@
+{
+ "copied_at": "20261108-162801",
+ "files": [
+  {
+   "name": "_fixer.mjs",
+   "bytes": 17720,
+   "sha1": "846b1e786d"
+  },
+  {
+   "name": "_fixer_rules.mjs",
+   "bytes": 8317,
+   "sha1": "ae74d996b5"
+  },
+  {
+   "name": "_learned_styles.mjs",
+   "bytes": 2801,
+   "sha1": "6b596835e3"
+  },
+  {
+   "name": "_match.mjs",
+   "bytes": 5098,
+   "sha1": "84a84b832a"
+  },
+  {
+   "name": "_style.mjs",
+   "bytes": 28676,
+   "sha1": "671140ab18"
+  },
+  {
+   "name": "_timeline.mjs",
+   "bytes": 19046,
+   "sha1": "d8e92456ba"
+  },
+  {
+   "name": "fixer.mjs",
+   "bytes": 1778,
+   "sha1": "e1d9f959ea"
+  },
+  {
+   "name": "form.mjs",
+   "bytes": 1957,
+   "sha1": "3b2918d74f"
+  },
+  {
+   "name": "studio-app.mjs",
+   "bytes": 12440,
+   "sha1": "a7ab5bf43c"
+  },
+  {
+   "name": "studio.mjs",
+   "bytes": 110424,
+   "sha1": "46e453033b"
+  },
+  {
+   "name": "telegram.mjs",
+   "bytes": 9182,
+   "sha1": "3b0d36e2d9"
+  }
+ ]
+}
