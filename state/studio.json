@@ -1,6 +1,6 @@
 {
   "last_update": 312538278,
-  "time": 1794140334951,
+  "time": 1794140631947,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2716,7 +2716,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "fastedit"
+    "style": "fastedit2"
   },
   "job": null,
   "recent_styles": [
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "fastedit2",
-    "source": "tg:BAACAgQAAxkBAAICMmrwYzeuN7acU_kJOoXC53bsRfPrAALRIQACIUWAUyo8xt96A8XRPQQ",
-    "at": 1794140334951
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3456,6 +3452,96 @@
           "#0E62F7",
           "#FF424D",
           "#04C659"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {
+        "width": 720,
+        "height": 1280,
+        "fps": 30,
+        "duration_s": 15.9,
+        "aspect": "9:16",
+        "cuts": 28,
+        "cuts_per_min": 105.8,
+        "avg_shot_s": 0.55,
+        "held_frame_share": 0.24,
+        "brightness_0_255": 154,
+        "saturation_0_128": 39,
+        "loudness_lufs": -14.3,
+        "shot_s_median": 0.43,
+        "shot_s_p10": 0.17,
+        "shot_s_p90": 0.73,
+        "shot_spread": 1.08,
+        "shot_spread_label": "wild",
+        "hook_s": 0.6,
+        "motion_ydif": 12.1,
+        "motion_level": "fast",
+        "tempo_bpm": 101.5,
+        "tempo_confidence": 0.41,
+        "cuts_on_beat": 0.18,
+        "cuts_on_beat_chance": 0.27,
+        "cuts_snap_to_beat": false
+      },
+      "rhythm": {
+        "shot_s_median": 0.43,
+        "shot_s_p10": 0.17,
+        "shot_s_p90": 0.73,
+        "shot_spread_label": "wild",
+        "hook_s": 0.6,
+        "tempo_bpm": 101.5,
+        "cuts_on_beat": 0.18,
+        "cuts_snap_to_beat": false,
+        "motion_level": "fast"
+      }
+    },
+    "fastedit2": {
+      "name": "fastedit2",
+      "source": "telegram upload",
+      "summary": "A punchy, modern app showcase combining high-contrast solid backgrounds with clean 3D phone mockups and vector icons. Fast-paced cuts flash bold promotional text and UI screens in vibrant primary and pastel tones.",
+      "base": "bold-pop",
+      "mode": "motion-graphics",
+      "graphic_ratio": 1,
+      "beat_seconds": 1.5,
+      "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+      "format": "vertical",
+      "music": "tech-pulse",
+      "pacing": "Rapid-fire montage with cuts averaging half a second, bursting through app features with dynamic UI animations.",
+      "writer_notes": "Punchy, benefit-driven copy highlighting effortless finance management. Hooks instantly with bold branding followed by quick feature callouts, ending on a clear brand logo lockup.",
+      "style_tokens": {
+        "caption": {
+          "preset": "bold-pop",
+          "font": "Poppins",
+          "case": "none",
+          "position": "top",
+          "highlight": "#FF4B6E",
+          "color": "#FFFFFF"
+        },
+        "font": "Poppins",
+        "transitions": [
+          "cut",
+          "slide-up",
+          "zoom-in"
+        ],
+        "motion": "static",
+        "fx": {
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.05) saturate(1.15)",
+        "accent": "#FF4B6E",
+        "palette": [
+          "#1952E8",
+          "#0E9E56",
+          "#FF647C"
         ],
         "progress_bar": false,
         "vignette": false,
