@@ -1,6 +1,6 @@
 {
-  "last_update": 312538299,
-  "time": 1794156705036,
+  "last_update": 312538300,
+  "time": 1794156744259,
   "stage": "idle",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Architect Who Admitted Defeat\": In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
-      "t": 1794143416352
-    },
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Architect Who Admitted Defeat\"",
-      "t": 1794143515619
-    },
     {
       "role": "bot",
       "text": "Rendering \"The Architect Who Admitted Defeat\"",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Updated tool settings",
       "t": 1794156705036
+    },
+    {
+      "role": "user",
+      "text": "turn Off Browser bot",
+      "t": 1794156743295
+    },
+    {
+      "role": "bot",
+      "text": "Updated tool settings",
+      "t": 1794156744259
     }
   ],
   "working": null,
@@ -1481,7 +1481,8 @@
   "settings": {
     "format": "landscape",
     "style": "fastedit2",
-    "graphics": false
+    "graphics": false,
+    "browser_bot": false
   },
   "job": null,
   "recent_styles": [
