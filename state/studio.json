@@ -1,6 +1,6 @@
 {
-  "last_update": 312538284,
-  "time": 1794142665813,
+  "last_update": 312538285,
+  "time": 1794142705007,
   "stage": "pitch",
   "topic": "about writing codes before and currently vibe coding",
   "research": {
@@ -8,19 +8,19 @@
     "sources": []
   },
   "pitch": {
-    "title": "From Semicolons to Pure Vibe Coding",
-    "hook": "In 2010, senior software engineers spent forty hours hunting down a single misplaced semicolon.",
-    "angle": "People assumed programming would always require memorizing strict syntax rules. Modern software build workflows now turn plain English prompts into complete web applications in seconds.",
+    "title": "The Death of Manual Syntax",
+    "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+    "angle": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations. Vibe coding completely flips this by replacing manual typing with direct intent, turning developers into creative editors.",
     "key_facts": [
-      "Traditional software engineering required exact syntax compliance where a single missing character halted compilation.",
-      "Large language models generate functional codebases directly from natural language prompts.",
-      "Modern developer workflows shift effort from manual typing to architecture direction and system oversight.",
-      "Prototyping full-stack web applications has dropped from weeks of engineering to minutes of iteration."
+      "Early software engineering required manual memory management and exact low-level syntax execution.",
+      "Generative AI models produce functional app codebases directly from plain language prompts.",
+      "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
+      "Modern developer workflows shift from manual syntax authoring to system architecture validation."
     ],
     "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
     "length_seconds": 60,
     "style": "fastedit2",
-    "style_reason": "High contrast UI mockups clearly contrast dense code terminals with modern AI prompts.",
+    "style_reason": "Clean UI cuts contrast dense low-level terminals with sleek modern prompts.",
     "music": "tech-pulse",
     "accent": "teal",
     "format": "landscape"
@@ -30,11 +30,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"upload-7\"",
-      "t": 1794132113811
-    },
     {
       "role": "user",
       "text": "add this to my style",
@@ -109,6 +104,11 @@
       "role": "bot",
       "text": "Pitched \"From Semicolons to Pure Vibe Coding\": In 2010, senior software engineers spent forty hours hunting down a single misplaced semicolon.",
       "t": 1794142664499
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"The Death of Manual Syntax\": Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+      "t": 1794142705007
     }
   ],
   "working": null,
