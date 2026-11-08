@@ -180,6 +180,14 @@ def style_from(spec):
     if spec.get("caption_font"):
         st = deep_merge(st, {"caption": {"font": spec["caption_font"]}})
     st = deep_merge(st, spec.get("style_tokens") or {})
+    # Captions are subtle by default. captions="none" switches them off, "bold" keeps the loud pop style, "auto" keeps whatever
+    # the look chose. Named recipes and presets (comic, anime, neon, ...) keep their own captions.
+    cap = str(spec.get("captions") or "").lower()
+    cur = (st.get("caption") or {}).get("preset") or "bold-pop"
+    plain_look = not st.get("recipe") and (spec.get("style_preset") or "bold-pop") == "bold-pop"
+    want = {"none": "none", "off": "none", "subtle": "subtitle"}.get(cap) or ("subtitle" if cur == "bold-pop" and plain_look and cap not in ("bold", "auto") else None)
+    if want:
+        st = deep_merge(st, {"caption": {"preset": want}})
     st["accent"] = spec.get("accent") or st.get("accent") or "#FFD43B"
     return st
 
@@ -309,7 +317,7 @@ def from_props(props, spec=None, pid="job", cv=None):
                    "fade_in": 0.5, "fade_out": 1.0, "duck": True, "gen": {"tool": "library", "name": spec.get("music") or ""}}]
         if props.get("music") else [],
         "sfx": [],
-        "overlays": [{"id": "title", "kind": "title", "start": 0, "end": 3, "text": props.get("title", "")}] if props.get("title") else [],
+        "overlays": [{"id": "title", "kind": "title", "start": 0, "end": 3, "text": props.get("title", "")}] if props.get("title") and spec.get("title_card") else [],
     }
     # Long-form chapters: {"title", "beat"} -> documentary chapter cards at the start of that beat.
     for n, ch in enumerate(spec.get("chapters") or []):
