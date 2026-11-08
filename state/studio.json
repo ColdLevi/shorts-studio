@@ -1,6 +1,6 @@
 {
-  "last_update": 312538261,
-  "time": 1794121849780,
+  "last_update": 312538262,
+  "time": 1794121973577,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "I want to create Zack video style animation of the day I got reincanted as Donald Trump it's a fun satire and parody",
-      "t": 1793822989705
-    },
-    {
-      "role": "bot",
-      "text": "Pitched \"Reincarnated As Donald Trump\": Fourteen million views turned a viral parody into an unexpected animated empire.",
-      "t": 1793823023655
-    },
     {
       "role": "user",
       "text": "No it's not like documentary it's a fun one not documentary make it like it's happening or what happened to me kinda",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Studying a reference video as style \"youtu-4\"",
       "t": 1794121638609
+    },
+    {
+      "role": "user",
+      "text": "Did you learn the script writing framework",
+      "t": 1794121971864
+    },
+    {
+      "role": "bot",
+      "text": "I'm focusing on your video styles and production, but I can study specific frameworks if you share the details or a link!",
+      "t": 1794121973577
     }
   ],
   "working": null,
