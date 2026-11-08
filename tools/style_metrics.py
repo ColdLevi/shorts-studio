@@ -99,23 +99,60 @@ def tempo(path):
             tot += on[j]
             k += 1
     phase = max(range(pi), key=score)
-    return {"tempo_bpm": round(bpm, 1), "tempo_confidence": round(conf, 2), "_beat_period": period, "_beat_phase": phase}
+    return {"tempo_bpm": round(bpm, 1), "tempo_confidence": round(conf, 2), "_beat_period": period, "_beat_phase": phase, "_on": on}
+
+
+GRIDS = ((1.0, "1x"), (2.0, "2x"), (0.5, "0.5x"))   # same pulse, double-time, half-time
+
+
+def _best_phase(on, period):
+    """Offset (in envelope frames) where onsets pile up for a grid of this period. Uses audio only, never the cuts."""
+    n, pi = len(on), max(1, int(period))
+    def score(ph):
+        k, tot = 0, 0.0
+        while True:
+            j = int(round(ph + k * period))
+            if j >= n:
+                return tot
+            tot += on[j]
+            k += 1
+    return max(range(pi), key=score)
+
+
+def _grid_hits(cut_times, period, phase):
+    tol = min(BEAT_TOL, 0.2 * period / ENV_FPS)       # fast grids get a tighter window so chance stays honest
+    near = 0
+    for ct in cut_times:
+        d = (ct * ENV_FPS - phase) % period
+        if min(d, period - d) / ENV_FPS <= tol:
+            near += 1
+    share = near / len(cut_times)
+    chance = min(1.0, 2 * tol * ENV_FPS / period)
+    return share, chance, bool(len(cut_times) >= 4 and share >= chance + 0.25)
 
 
 def beat_alignment(cut_times, t):
+    """Do the cuts land on the beat? Tries the measured pulse, double-time and half-time; reports the best grid that snaps."""
     if not t or len(cut_times) < 3:
         return {}
-    period, phase = t["_beat_period"], t["_beat_phase"]
-    near = 0
-    for ct in cut_times:
-        d = ((ct * ENV_FPS - phase) % period)
-        d = min(d, period - d) / ENV_FPS
-        if d <= BEAT_TOL:
-            near += 1
-    share = near / len(cut_times)
-    chance = min(1.0, 2 * BEAT_TOL * ENV_FPS / period)
-    return {"cuts_on_beat": round(share, 2), "cuts_on_beat_chance": round(chance, 2),
-            "cuts_snap_to_beat": bool(len(cut_times) >= 4 and share >= chance + 0.25)}
+    base, on = t["_beat_period"], t.get("_on")
+    first = None
+    best = None
+    for mult, label in GRIDS:
+        period = base / mult
+        if period < 20:                                # faster than 300 BPM is not a beat
+            continue
+        if mult == 1.0 or not on:
+            phase = t["_beat_phase"]
+        else:
+            phase = _best_phase(on, period)
+        share, chance, snap = _grid_hits(cut_times, period, phase)
+        row = {"cuts_on_beat": round(share, 2), "cuts_on_beat_chance": round(chance, 2), "cuts_snap_to_beat": snap}
+        if first is None:
+            first = row
+        if snap and (best is None or share - chance > best[0]):
+            best = (share - chance, dict(row, beat_grid=label, beat_grid_bpm=round(60.0 * ENV_FPS / period, 1)))
+    return best[1] if best else (first or {})
 
 
 # ---------- motion ----------
@@ -151,7 +188,7 @@ def rhythm(path, dur, cut_times):
 
 MIN_CONF = 0.12
 RHYTHM_KEYS = ["shot_s_median", "shot_s_p10", "shot_s_p90", "shot_spread_label", "hook_s", "tempo_bpm", "cuts_on_beat",
-               "cuts_snap_to_beat", "motion_level"]
+               "cuts_snap_to_beat", "beat_grid", "beat_grid_bpm", "motion_level"]
 
 
 def rhythm_summary(metrics):
