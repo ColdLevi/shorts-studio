@@ -1,6 +1,6 @@
 {
   "last_update": 312538269,
-  "time": 1794127742732,
+  "time": 1794127824826,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2716,7 +2716,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "upload-6"
+    "style": "upload-7"
   },
   "job": null,
   "recent_styles": [
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-7",
-    "source": "tg:BQACAgQAAxkBAAICFmrwN326luGlVkeu-6iTTGnr-POQAAJoIQACIUWAU9sp4BkijMAlPQQ",
-    "at": 1794127742731
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3080,6 +3076,89 @@
         "palette": [
           "#080808",
           "#FF9900"
+        ],
+        "progress_bar": false,
+        "vignette": true,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 360,
+        "fps": 30,
+        "duration_s": 45,
+        "aspect": "16:9",
+        "cuts": 7,
+        "cuts_per_min": 9.3,
+        "avg_shot_s": 5.62,
+        "held_frame_share": 0.15,
+        "brightness_0_255": 33,
+        "saturation_0_128": 8,
+        "loudness_lufs": -17.9,
+        "shot_s_median": 2.37,
+        "shot_s_p10": 0.78,
+        "shot_s_p90": 19.32,
+        "shot_spread": 1.71,
+        "shot_spread_label": "wild",
+        "hook_s": 2.5,
+        "motion_ydif": 2.14,
+        "motion_level": "gentle",
+        "tempo_bpm": null,
+        "tempo_confidence": 0.04
+      },
+      "rhythm": {
+        "shot_s_median": 2.37,
+        "shot_s_p10": 0.78,
+        "shot_s_p90": 19.32,
+        "shot_spread_label": "wild",
+        "hook_s": 2.5,
+        "motion_level": "gentle"
+      }
+    },
+    "upload-7": {
+      "name": "upload-7",
+      "source": "telegram upload",
+      "summary": "Combines meme footage intro hooks with dark, luminous yellow line-art sketch illustrations. Delivers a focused, dramatic storytelling mood with glowing character animations.",
+      "base": "neon",
+      "mode": "mixed",
+      "graphic_ratio": 0.75,
+      "beat_seconds": 5.6,
+      "image_style": "Glowing golden-yellow line-art sketch on a pitch-black background with dramatic chiaroscuro lighting and subtle film grain.",
+      "format": "landscape",
+      "music": "cinematic-min",
+      "pacing": "Deliberate pacing averaging 5.6 seconds per shot to let atmospheric line art breathe.",
+      "writer_notes": "Starts with a quick meme visual hook, then shifts into a reflective breakdown of scriptwriting secrets.",
+      "style_tokens": {
+        "caption": {
+          "preset": "subtitle",
+          "font": "Inter",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#FFC800",
+          "color": "#FFFFFF"
+        },
+        "font": "Space Grotesk",
+        "transitions": [
+          "cut",
+          "fade",
+          "dissolve"
+        ],
+        "motion": "drift",
+        "fx": {
+          "hold": 1,
+          "jitter": 2,
+          "letterbox": 0,
+          "texture": "grain",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.25) brightness(0.9)",
+        "accent": "#FFC800",
+        "palette": [
+          "#000000",
+          "#FFC800"
         ],
         "progress_bar": false,
         "vignette": true,
