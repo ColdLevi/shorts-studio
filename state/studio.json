@@ -1,186 +1,18 @@
 {
-  "last_update": 312538296,
-  "time": 1794155171057,
-  "stage": "script",
+  "last_update": 312538297,
+  "time": 1794155269081,
+  "stage": "idle",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
     "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome assembly language (https://www.britannica.com/technology/compiler-computer-science).\n- Hopper famously stated that humans are allergic to change and kept telling her that computers could only do arithmetic, not understand English words (https://history.aip.org/history/exhibits/hopper/ftf4.htm).\n- The A-0 compiler translated mathematical notation and English-like pseudocode into machine-readable binary code (https://spectrum.ieee.org/grace-hopper-compiler).\n- Hopper wanted to make programming accessible to non-mathematicians and business people who didn't know binary (https://www.womenshistory.org/education-resources/biographies/grace-hopper).\n- Her pioneering work directly led to the creation of COBOL in 1959, one of the first high-level programming languages (https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/grace-hopper.pdf).\n- Hopper earned the nickname \"Amazing Grace\" and rose to the rank of Rear Admiral in the United States Navy (https://www.defensenc.mil/News/News-Stories/Article/Article/2198083/rear-admiral-grace-m-hopper-amazing-grace/).\n- Despite creating the breakthrough tool that spawned all modern software development, Hopper's original A-0 system predated modern keyboard-based coding environments, operating largely via punch cards (https://americanhistory.si.edu/collections/search/object/nmah_334547).\n\nHOOK IDEAS:\n1. The person who invented software coding didn't actually write a single line of code.\n2. Meet the woman who invented the compiler—even though everyone told her computers could only do math.",
     "sources": []
   },
-  "pitch": {
-    "title": "Coding for Dummies Reality Check",
-    "hook": "Zero lines of code was written by the person who built the first compiler.",
-    "angle": "Most assume coding requires a math degree and years of memorizing syntax, but early programming was just flipping hardware switches.",
-    "key_facts": [
-      "Grace Hopper developed the first compiler called A-0 in 1952.",
-      "Early programming involved manually plugging wires into a giant plugboard.",
-      "The first high level programming language was Fortran created by IBM in 1957."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 30,
-    "style": "fastedit2",
-    "style_reason": "High-energy flat vector graphics match rapid beginner tech tutorials.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Coding for Dummies Reality Check",
-    "beats": [
-      {
-        "narration": "Zero lines of code was written by the person who built the first compiler.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Zero Lines of Code",
-          "sub": "The surprising origin of programming"
-        }
-      },
-      {
-        "narration": "Most assume coding requires a math degree and years of memorizing syntax.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Math degree required",
-          "fact": "Early programming was hardware"
-        }
-      },
-      {
-        "narration": "Early programming was just flipping hardware switches and plugging wires into a giant plugboard.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Early Hardware Setup",
-          "items": [
-            {
-              "icon": "zap",
-              "label": "Switches"
-            },
-            {
-              "icon": "cpu",
-              "label": "Wires"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "flux"
-      },
-      {
-        "narration": "She proved software could translate human logic into machine instructions automatically.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Automation Flow",
-          "steps": [
-            "Human logic",
-            "Compiler translation",
-            "Machine execution"
-          ]
-        }
-      },
-      {
-        "narration": "But hardware was still painfully slow to program for everyday tasks.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 15,
-          "min": 0,
-          "max": 100,
-          "suffix": "%",
-          "label": "Hardware efficiency"
-        }
-      },
-      {
-        "narration": "Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Programmers finally wrote readable formulas instead of punching raw numerical codes.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Language Shift",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Raw Numbers",
-            "sub": "Binary punching"
-          },
-          "right": {
-            "label": "Fortran",
-            "sub": "Readable formulas"
-          }
-        }
-      },
-      {
-        "narration": "Code evolved from physical copper wires into abstract human language.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Evolution of Code",
-          "steps": [
-            "Copper wires",
-            "Compilers",
-            "High level languages"
-          ]
-        }
-      },
-      {
-        "narration": "Software builds on layers of automation created decades ago.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Layers of abstraction"
-        }
-      },
-      {
-        "narration": "You stand on giants when you write your very first script.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Stand",
-            "On",
-            "Giants"
-          ]
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Grace Hopper developed the first compiler called A-0 in 1952.",
-        "supported": true
-      },
-      {
-        "claim": "The first high level programming language was Fortran created by IBM in 1957.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Death of Manual Syntax\": Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
-      "t": 1794142705007
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"The Death of Manual Syntax\"",
@@ -255,10 +87,191 @@
       "role": "bot",
       "text": "Wrote the script for \"Coding for Dummies Reality Check\"",
       "t": 1794155149904
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Coding for Dummies Reality Check\"",
+      "t": 1794155269081
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "coding-for-dummies-reality-check-mw81q1jp",
+      "canvas": "16:9",
+      "title": "Coding for Dummies Reality Check",
+      "topic": "YouTube Issacverse of about the idea of how to code for dummies",
+      "pitch": {
+        "title": "Coding for Dummies Reality Check",
+        "hook": "Zero lines of code was written by the person who built the first compiler.",
+        "angle": "Most assume coding requires a math degree and years of memorizing syntax, but early programming was just flipping hardware switches.",
+        "key_facts": [
+          "Grace Hopper developed the first compiler called A-0 in 1952.",
+          "Early programming involved manually plugging wires into a giant plugboard.",
+          "The first high level programming language was Fortran created by IBM in 1957."
+        ],
+        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "length_seconds": 30,
+        "style": "fastedit2",
+        "style_reason": "High-energy flat vector graphics match rapid beginner tech tutorials.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Coding for Dummies Reality Check",
+        "beats": [
+          {
+            "narration": "Zero lines of code was written by the person who built the first compiler.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Zero Lines of Code",
+              "sub": "The surprising origin of programming"
+            }
+          },
+          {
+            "narration": "Most assume coding requires a math degree and years of memorizing syntax.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Math degree required",
+              "fact": "Early programming was hardware"
+            }
+          },
+          {
+            "narration": "Early programming was just flipping hardware switches and plugging wires into a giant plugboard.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Early Hardware Setup",
+              "items": [
+                {
+                  "icon": "zap",
+                  "label": "Switches"
+                },
+                {
+                  "icon": "cpu",
+                  "label": "Wires"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "flux"
+          },
+          {
+            "narration": "She proved software could translate human logic into machine instructions automatically.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Automation Flow",
+              "steps": [
+                "Human logic",
+                "Compiler translation",
+                "Machine execution"
+              ]
+            }
+          },
+          {
+            "narration": "But hardware was still painfully slow to program for everyday tasks.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 15,
+              "min": 0,
+              "max": 100,
+              "suffix": "%",
+              "label": "Hardware efficiency"
+            }
+          },
+          {
+            "narration": "Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Programmers finally wrote readable formulas instead of punching raw numerical codes.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Language Shift",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Raw Numbers",
+                "sub": "Binary punching"
+              },
+              "right": {
+                "label": "Fortran",
+                "sub": "Readable formulas"
+              }
+            }
+          },
+          {
+            "narration": "Code evolved from physical copper wires into abstract human language.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Evolution of Code",
+              "steps": [
+                "Copper wires",
+                "Compilers",
+                "High level languages"
+              ]
+            }
+          },
+          {
+            "narration": "Software builds on layers of automation created decades ago.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Layers of abstraction"
+            }
+          },
+          {
+            "narration": "You stand on giants when you write your very first script.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Stand",
+                "On",
+                "Giants"
+              ]
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Grace Hopper developed the first compiler called A-0 in 1952.",
+            "supported": true
+          },
+          {
+            "claim": "The first high level programming language was Fortran created by IBM in 1957.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome assembly language (https://www.britannica.com/technology/compiler-computer-science).\n- Hopper famously stated that humans are allergic to change and kept telling her that computers could only do arithmetic, not understand English words (https://history.aip.org/history/exhibits/hopper/ftf4.htm).\n- The A-0 compiler translated mathematical notation and English-like pseudocode into machine-readable binary code (https://spectrum.ieee.org/grace-hopper-compiler).\n- Hopper wanted to make programming accessible to non-mathematicians and business people who didn't know binary (https://www.womenshistory.org/education-resources/biographies/grace-hopper).\n- Her pioneering work directly led to the creation of COBOL in 1959, one of the first high-level programming languages (https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/grace-hopper.pdf).\n- Hopper earned the nickname \"Amazing Grace\" and rose to the rank of Rear Admiral in the United States Navy (https://www.defensenc.mil/News/News-Stories/Article/Article/2198083/rear-admiral-grace-m-hopper-amazing-grace/).\n- Despite creating the breakthrough tool that spawned all modern software development, Hopper's original A-0 system predated modern keyboard-based coding environments, operating largely via punch cards (https://americanhistory.si.edu/collections/search/object/nmah_334547).\n\nHOOK IDEAS:\n1. The person who invented software coding didn't actually write a single line of code.\n2. Meet the woman who invented the compiler—even though everyone told her computers could only do math.",
+        "sources": []
+      },
+      "at": 1794155269081
+    },
     {
       "id": "the-death-of-syntax-in-2026-mw80u5o7",
       "canvas": "16:9",
@@ -1318,130 +1331,6 @@
         "sources": []
       },
       "at": 1793131804216
-    },
-    {
-      "id": "one-semicolon-crashed-half-the-inter-mvpkmlio",
-      "canvas": "16:9",
-      "title": "One Semicolon Crashed Half the Internet",
-      "topic": "good about network security and access",
-      "pitch": {
-        "title": "One Semicolon Crashed Half the Internet",
-        "hook": "In 1998, Network Solutions pushed a software update containing a single misplaced semicolon.",
-        "angle": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
-        "key_facts": [
-          "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
-          "The error crashed the authoritative root DNS servers",
-          "Roughly half of the internet domain name resolution went down for hours"
-        ],
-        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows",
-        "length_seconds": 45,
-        "style": "upload-3",
-        "style_reason": "Clean tech wireframes match network infrastructure concepts.",
-        "music": "tech-pulse",
-        "accent": "red",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "One Semicolon Crashed Half the Internet",
-        "beats": [
-          {
-            "narration": "In nineteen ninety eight, Network Solutions shipped a software update with a single misplaced semicolon.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing code error",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "1998 Code Update",
-              "sub": "Network Solutions Incident"
-            }
-          },
-          {
-            "narration": "Most assume major internet blackouts require sophisticated cyber attacks, but tiny human errors in routine updates bring down global infrastructure.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows illustrating server failure",
-            "tool": "graphic",
-            "graphic": {
-              "type": "myth",
-              "myth": "Massive cyber attacks cause outages",
-              "fact": "Tiny human errors break infrastructure"
-            }
-          },
-          {
-            "narration": "So this tiny punctuation mark hit the core systems.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows highlighting a single punctuation mark",
-            "tool": "graphic",
-            "graphic": {
-              "type": "icons",
-              "title": "Root Cause",
-              "items": [
-                {
-                  "icon": "shield",
-                  "label": "Code base"
-                },
-                {
-                  "icon": "zap",
-                  "label": "Semicolon"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "The faulty code crashed the authoritative root DNS servers.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows depicting network nodes failing",
-            "tool": "graphic",
-            "graphic": {
-              "type": "flow",
-              "title": "Server Cascade",
-              "steps": [
-                "Update Pushed",
-                "Parser Fails",
-                "Root DNS Down"
-              ]
-            }
-          },
-          {
-            "narration": "Then roughly half of the internet domain name resolution went down for hours.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows displaying global connectivity loss",
-            "tool": "graphic",
-            "graphic": {
-              "type": "percent",
-              "value": 50,
-              "label": "Internet Domain Resolution Offline"
-            }
-          },
-          {
-            "narration": "Global systems depend on fragile lines.",
-            "image_prompt": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows showing resilient network architecture",
-            "tool": "graphic",
-            "graphic": {
-              "type": "kinetic",
-              "words": [
-                "Fragile",
-                "Digital",
-                "Infrastructure"
-              ]
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In 1998, a software update by Network Solutions contained a single misplaced semicolon",
-            "supported": true
-          },
-          {
-            "claim": "The error crashed the authoritative root DNS servers",
-            "supported": true
-          },
-          {
-            "claim": "Roughly half of the internet domain name resolution went down for hours",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1793038164032
     }
   ],
   "lastRenderAuto": false,
@@ -1456,9 +1345,14 @@
       "title": "The Death of Syntax in 2026",
       "at": 1794153781468,
       "project": "the-death-of-syntax-in-2026-mw80u5o7"
+    },
+    {
+      "title": "Coding for Dummies Reality Check",
+      "at": 1794155269081,
+      "project": "coding-for-dummies-reality-check-mw81q1jp"
     }
   ],
-  "current_project": "the-death-of-syntax-in-2026-mw80u5o7",
+  "current_project": "coding-for-dummies-reality-check-mw81q1jp",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1588,14 +1482,10 @@
     "format": "landscape",
     "style": "fastedit2"
   },
-  "job": {
-    "length": 30,
-    "format": "landscape",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "upload-3",
     "what-if",
+    "fastedit2",
     "fastedit2",
     "fastedit2",
     "fastedit2"
