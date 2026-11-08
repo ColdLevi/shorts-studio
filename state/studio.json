@@ -1,6 +1,6 @@
 {
-  "last_update": 312538271,
-  "time": 1794132901332,
+  "last_update": 312538272,
+  "time": 1794133909624,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "https://youtu.be/FGz2yPTjrAY?si=Z56-36uXPqpnA0MP",
-      "t": 1794121638440
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"youtu-4\"",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Please send over the file or link you'd like me to add to your style, and I'll make sure it's incorporated!",
       "t": 1794132901332
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"upload-7\"",
+      "t": 1794133909624
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "upload-7",
+    "source": "tg:BQACAgQAAxkBAAICImrwT5Oqj9qLmnSAknVmAAFK1UdfCQACnSEAAiFFgFPhRofOTyx5qD0E",
+    "at": 1794133909624
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
