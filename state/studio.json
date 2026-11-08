@@ -1,6 +1,6 @@
 {
-  "last_update": 312538276,
-  "time": 1794139073520,
+  "last_update": 312538277,
+  "time": 1794139393429,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Yes, send over the MD file! I will ingest the scriptwriting skills and apply them directly to our storytelling and hooks.",
-      "t": 1794122140358
-    },
     {
       "role": "user",
       "text": "Ok, I'll get it",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Studying a reference video as style \"upload-8\"",
       "t": 1794138936999
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"fastedit\"",
+      "t": 1794139393429
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "fastedit",
+    "source": "tg:BAACAgQAAxkBAAICMmrwYzeuN7acU_kJOoXC53bsRfPrAALRIQACIUWAUyo8xt96A8XRPQQ",
+    "at": 1794139393428
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
