@@ -1,6 +1,6 @@
 {
-  "last_update": 312538307,
-  "time": 1794162137516,
+  "last_update": 312538308,
+  "time": 1794162153139,
   "stage": "idle",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
@@ -1273,139 +1273,7 @@
     }
   ],
   "current_project": "coding-for-dummies-reality-check-mw82nx5g",
-  "pending_edit": {
-    "id": "emw85t9d8m75",
-    "project_id": "coding-for-dummies-reality-check-mw82nx5g",
-    "patch": [
-      {
-        "op": "merge",
-        "path": "/style/caption",
-        "value": {
-          "preset": "bold-pop",
-          "color": "#FFFFFF",
-          "highlight": "#FFD43B"
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/style/transition",
-        "value": {
-          "duration": 0.1,
-          "type": "cut"
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/voice/@vo/gen/rate",
-        "value": "+10%"
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v1/narration",
-        "value": "Zero degrees outside drains your smartphone battery twice as fast."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v1/gen/prompt",
-        "value": "Minimalist flat 2D illustration of a smartphone screen showing a blinking low battery icon surrounded by digital snowflakes on a solid deep blue background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v2/narration",
-        "value": "Most people blame an old battery, but freezing cold stalls liquid chemical reactions inside."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v2/gen/prompt",
-        "value": "Minimalist 2D vector graphic of chemical molecules inside a battery slowing down and freezing into geometric crystals on a solid ice blue backdrop."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v3/narration",
-        "value": "Lithium ions can no longer flow quickly enough to deliver full power."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v3/gen/prompt",
-        "value": "Playful 2D flat illustration of tiny glowing energy spheres trapped behind ice barriers on a dark cyan background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v4/narration",
-        "value": "So your phone detects a false voltage drop and shuts down to protect itself."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v4/gen/prompt",
-        "value": "Minimalist digital app interface mockup showing a phone power off warning screen with crisp vector lighting on a solid dark gray backdrop."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v5/narration",
-        "value": "Habit one: keep your device in an inside jacket pocket close to body heat."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v5/gen/prompt",
-        "value": "Minimalist 2D illustration of a warm winter jacket pocket with a phone safely tucked inside on a solid warm orange background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v6/narration",
-        "value": "Habit two: never charge a freezing phone, which causes permanent cell damage."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v6/gen/prompt",
-        "value": "Minimalist vector illustration of a charging cable disconnected from a frosty phone on a vibrant solid red background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v7/narration",
-        "value": "Habit three: enable low power mode before stepping outdoors into the cold."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v7/gen/prompt",
-        "value": "Playful 2D flat UI mockup of a toggle switch switching to Low Power Mode on a solid teal background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v8/narration",
-        "value": "Habit four: use a insulated phone case to block subzero wind chill."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v8/gen/prompt",
-        "value": "Minimalist 2D graphic of a thick protective phone case wrapped in subtle heat wave vectors on a solid purple backdrop."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v9/narration",
-        "value": "Habit five: let the device warm to room temperature before high performance use."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v9/gen/prompt",
-        "value": "Minimalist 2D flat illustration of a smartphone sitting beside a warm cup of tea with rising steam lines on a solid warm yellow background."
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v10/narration",
-        "value": "How many times has your battery died in the snow this winter?"
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v10/gen/prompt",
-        "value": "Sleek minimalist 2D illustration of a smartphone resting in soft white snow on a dark navy background."
-      }
-    ],
-    "message": "Rewrote script for cold weather battery guide",
-    "summary": "Updated the video to explain cold weather phone battery drain with 5 habits and bold captions",
-    "detail": "📝 New words in scene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n🎨 Style: caption, transition\n🎙️ Voice or pace changed\n♻️ I'll re-voice 10 lines and repaint 10 images (scene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10); the other 0 scenes are reused.",
-    "base_rev": 2,
-    "at": 1794162137516
-  },
+  "pending_edit": null,
   "edits": [],
   "pending": {
     "step": "render",
