@@ -1,111 +1,18 @@
 {
-  "last_update": 312538303,
-  "time": 1794156815265,
-  "stage": "script",
+  "last_update": 312538304,
+  "time": 1794156849736,
+  "stage": "idle",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
     "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome assembly language (https://www.britannica.com/technology/compiler-computer-science).\n- Hopper famously stated that humans are allergic to change and kept telling her that computers could only do arithmetic, not understand English words (https://history.aip.org/history/exhibits/hopper/ftf4.htm).\n- The A-0 compiler translated mathematical notation and English-like pseudocode into machine-readable binary code (https://spectrum.ieee.org/grace-hopper-compiler).\n- Hopper wanted to make programming accessible to non-mathematicians and business people who didn't know binary (https://www.womenshistory.org/education-resources/biographies/grace-hopper).\n- Her pioneering work directly led to the creation of COBOL in 1959, one of the first high-level programming languages (https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/grace-hopper.pdf).\n- Hopper earned the nickname \"Amazing Grace\" and rose to the rank of Rear Admiral in the United States Navy (https://www.defensenc.mil/News/News-Stories/Article/Article/2198083/rear-admiral-grace-m-hopper-amazing-grace/).\n- Despite creating the breakthrough tool that spawned all modern software development, Hopper's original A-0 system predated modern keyboard-based coding environments, operating largely via punch cards (https://americanhistory.si.edu/collections/search/object/nmah_334547).\n\nHOOK IDEAS:\n1. The person who invented software coding didn't actually write a single line of code.\n2. Meet the woman who invented the compiler—even though everyone told her computers could only do math.",
     "sources": []
   },
-  "pitch": {
-    "title": "Coding for Dummies Reality Check",
-    "hook": "Zero lines of code was written by the person who built the first compiler.",
-    "angle": "Most assume coding requires a math degree and years of memorizing syntax, but early programming was just flipping hardware switches.",
-    "key_facts": [
-      "Grace Hopper developed the first compiler called A-0 in 1952.",
-      "Early programming involved manually plugging wires into a giant plugboard.",
-      "The first high level programming language was Fortran created by IBM in 1957."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 30,
-    "style": "fastedit2",
-    "style_reason": "High-energy flat vector graphics match rapid beginner tech tutorials.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Coding for Dummies Reality Check",
-    "beats": [
-      {
-        "narration": "In nineteen fifty-two, Grace Hopper built the first compiler without writing code.",
-        "image_prompt": "Minimalist digital app interface mockup of a glowing computer terminal with zero code lines, set against a bold solid teal background with modern 2D flat vector icon lighting.",
-        "tool": "higgsfield",
-        "motion": "Camera slowly zooms into the vector computer screen while glowing geometric elements pulse smoothly.",
-        "still": "flux"
-      },
-      {
-        "narration": "Engineers manually plugged physical wires into giant patch panels to run equations.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "stock",
-        "query": "vintage mainframe server cables"
-      },
-      {
-        "narration": "Critics claimed computers could only compute math, not read words.",
-        "image_prompt": "Minimalist 2D vector graphic showing mathematical symbols floating inside a vintage computer casing on a vibrant solid orange background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "So Hopper created the A-Zero system on the UNIVAC.",
-        "image_prompt": "Playful 2D flat illustration of a vintage UNIVAC computer frame surrounded by clean, minimalist UI cards on a solid cyan backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "It automatically translated human words into machine binary.",
-        "image_prompt": "Minimalist vector illustration showing English letters entering a filter box and emerging as neat binary numbers on a sleek solid yellow backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Suddenly, non-mathematicians could instruct complex computers.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "stock",
-        "query": "typing on laptop keyboard"
-      },
-      {
-        "narration": "Then IBM released Fortran in nineteen fifty-seven based on her compiler.",
-        "image_prompt": "Playful 2D flat graphic of the year 1957 stamped on a sleek software card over a solid dark navy background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Coding shifted from physical wires into readable logic.",
-        "image_prompt": "Minimalist vector illustration of tangled copper patch cables morphing into clean lines of text on a bold teal backdrop.",
-        "tool": "higgsfield",
-        "motion": "Dynamic pan right showing physical wires transforming into clean digital vector UI lines.",
-        "still": "flux"
-      },
-      {
-        "narration": "Modern software relies on those automated translation layers.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "stock",
-        "query": "abstract digital code motion"
-      },
-      {
-        "narration": "Every script runs on her foundation.",
-        "image_prompt": "Sleek minimalist 2D flat illustration of layered software building blocks stacked on a solid purple background with crisp modern light.",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Grace Hopper built the first compiler called A-0 in 1952.",
-        "supported": true
-      },
-      {
-        "claim": "IBM released Fortran in 1957 based on compiler concepts.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Death of Syntax in 2026\"",
-      "t": 1794153761281
-    },
     {
       "role": "bot",
       "text": "Rendering \"The Death of Syntax in 2026\"",
@@ -180,12 +87,17 @@
       "role": "bot",
       "text": "Updated tool settings",
       "t": 1794156815265
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Coding for Dummies Reality Check\"",
+      "t": 1794156849736
     }
   ],
   "working": null,
   "projects": [
     {
-      "id": "coding-for-dummies-reality-check-mw81q1jp",
+      "id": "coding-for-dummies-reality-check-mw82nx5g",
       "canvas": "16:9",
       "title": "Coding for Dummies Reality Check",
       "topic": "YouTube Issacverse of about the idea of how to code for dummies",
@@ -210,145 +122,70 @@
         "title": "Coding for Dummies Reality Check",
         "beats": [
           {
-            "narration": "Zero lines of code was written by the person who built the first compiler.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "Zero Lines of Code",
-              "sub": "The surprising origin of programming"
-            }
+            "narration": "In nineteen fifty-two, Grace Hopper built the first compiler without writing code.",
+            "image_prompt": "Minimalist digital app interface mockup of a glowing computer terminal with zero code lines, set against a bold solid teal background with modern 2D flat vector icon lighting.",
+            "tool": "higgsfield",
+            "motion": "Camera slowly zooms into the vector computer screen while glowing geometric elements pulse smoothly.",
+            "still": "flux"
           },
           {
-            "narration": "Most assume coding requires a math degree and years of memorizing syntax.",
+            "narration": "Engineers manually plugged physical wires into giant patch panels to run equations.",
             "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "myth",
-              "myth": "Math degree required",
-              "fact": "Early programming was hardware"
-            }
+            "tool": "stock",
+            "query": "vintage mainframe server cables"
           },
           {
-            "narration": "Early programming was just flipping hardware switches and plugging wires into a giant plugboard.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "icons",
-              "title": "Early Hardware Setup",
-              "items": [
-                {
-                  "icon": "zap",
-                  "label": "Switches"
-                },
-                {
-                  "icon": "cpu",
-                  "label": "Wires"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "narration": "Critics claimed computers could only compute math, not read words.",
+            "image_prompt": "Minimalist 2D vector graphic showing mathematical symbols floating inside a vintage computer casing on a vibrant solid orange background.",
             "tool": "flux"
           },
           {
-            "narration": "She proved software could translate human logic into machine instructions automatically.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "flow",
-              "title": "Automation Flow",
-              "steps": [
-                "Human logic",
-                "Compiler translation",
-                "Machine execution"
-              ]
-            }
-          },
-          {
-            "narration": "But hardware was still painfully slow to program for everyday tasks.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "gauge",
-              "value": 15,
-              "min": 0,
-              "max": 100,
-              "suffix": "%",
-              "label": "Hardware efficiency"
-            }
-          },
-          {
-            "narration": "Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "narration": "So Hopper created the A-Zero system on the UNIVAC.",
+            "image_prompt": "Playful 2D flat illustration of a vintage UNIVAC computer frame surrounded by clean, minimalist UI cards on a solid cyan backdrop.",
             "tool": "flux"
           },
           {
-            "narration": "Programmers finally wrote readable formulas instead of punching raw numerical codes.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "versus",
-              "title": "Language Shift",
-              "prefix": "",
-              "suffix": "",
-              "left": {
-                "label": "Raw Numbers",
-                "sub": "Binary punching"
-              },
-              "right": {
-                "label": "Fortran",
-                "sub": "Readable formulas"
-              }
-            }
+            "narration": "It automatically translated human words into machine binary.",
+            "image_prompt": "Minimalist vector illustration showing English letters entering a filter box and emerging as neat binary numbers on a sleek solid yellow backdrop.",
+            "tool": "flux"
           },
           {
-            "narration": "Code evolved from physical copper wires into abstract human language.",
+            "narration": "Suddenly, non-mathematicians could instruct complex computers.",
             "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "flow",
-              "title": "Evolution of Code",
-              "steps": [
-                "Copper wires",
-                "Compilers",
-                "High level languages"
-              ]
-            }
+            "tool": "stock",
+            "query": "typing on laptop keyboard"
           },
           {
-            "narration": "Software builds on layers of automation created decades ago.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "percent",
-              "value": 100,
-              "label": "Layers of abstraction"
-            }
+            "narration": "Then IBM released Fortran in nineteen fifty-seven based on her compiler.",
+            "image_prompt": "Playful 2D flat graphic of the year 1957 stamped on a sleek software card over a solid dark navy background.",
+            "tool": "flux"
           },
           {
-            "narration": "You stand on giants when you write your very first script.",
+            "narration": "Coding shifted from physical wires into readable logic.",
+            "image_prompt": "Minimalist vector illustration of tangled copper patch cables morphing into clean lines of text on a bold teal backdrop.",
+            "tool": "higgsfield",
+            "motion": "Dynamic pan right showing physical wires transforming into clean digital vector UI lines.",
+            "still": "flux"
+          },
+          {
+            "narration": "Modern software relies on those automated translation layers.",
             "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "kinetic",
-              "words": [
-                "Stand",
-                "On",
-                "Giants"
-              ]
-            }
+            "tool": "stock",
+            "query": "abstract digital code motion"
+          },
+          {
+            "narration": "Every script runs on her foundation.",
+            "image_prompt": "Sleek minimalist 2D flat illustration of layered software building blocks stacked on a solid purple background with crisp modern light.",
+            "tool": "flux"
           }
         ],
         "fact_check": [
           {
-            "claim": "Grace Hopper developed the first compiler called A-0 in 1952.",
+            "claim": "Grace Hopper built the first compiler called A-0 in 1952.",
             "supported": true
           },
           {
-            "claim": "The first high level programming language was Fortran created by IBM in 1957.",
+            "claim": "IBM released Fortran in 1957 based on compiler concepts.",
             "supported": true
           }
         ],
@@ -358,7 +195,7 @@
         "text": "\n\nDEEP RESEARCH (browser bot, read the pages itself):\n- Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome assembly language (https://www.britannica.com/technology/compiler-computer-science).\n- Hopper famously stated that humans are allergic to change and kept telling her that computers could only do arithmetic, not understand English words (https://history.aip.org/history/exhibits/hopper/ftf4.htm).\n- The A-0 compiler translated mathematical notation and English-like pseudocode into machine-readable binary code (https://spectrum.ieee.org/grace-hopper-compiler).\n- Hopper wanted to make programming accessible to non-mathematicians and business people who didn't know binary (https://www.womenshistory.org/education-resources/biographies/grace-hopper).\n- Her pioneering work directly led to the creation of COBOL in 1959, one of the first high-level programming languages (https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/grace-hopper.pdf).\n- Hopper earned the nickname \"Amazing Grace\" and rose to the rank of Rear Admiral in the United States Navy (https://www.defensenc.mil/News/News-Stories/Article/Article/2198083/rear-admiral-grace-m-hopper-amazing-grace/).\n- Despite creating the breakthrough tool that spawned all modern software development, Hopper's original A-0 system predated modern keyboard-based coding environments, operating largely via punch cards (https://americanhistory.si.edu/collections/search/object/nmah_334547).\n\nHOOK IDEAS:\n1. The person who invented software coding didn't actually write a single line of code.\n2. Meet the woman who invented the compiler—even though everyone told her computers could only do math.",
         "sources": []
       },
-      "at": 1794155269081
+      "at": 1794156849736
     },
     {
       "id": "the-death-of-syntax-in-2026-mw80u5o7",
@@ -1430,17 +1267,12 @@
   },
   "renders": [
     {
-      "title": "The Death of Syntax in 2026",
-      "at": 1794153781468,
-      "project": "the-death-of-syntax-in-2026-mw80u5o7"
-    },
-    {
       "title": "Coding for Dummies Reality Check",
-      "at": 1794155269081,
-      "project": "coding-for-dummies-reality-check-mw81q1jp"
+      "at": 1794156849736,
+      "project": "coding-for-dummies-reality-check-mw82nx5g"
     }
   ],
-  "current_project": "coding-for-dummies-reality-check-mw81q1jp",
+  "current_project": "coding-for-dummies-reality-check-mw82nx5g",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1574,7 +1406,7 @@
   },
   "job": null,
   "recent_styles": [
-    "what-if",
+    "fastedit2",
     "fastedit2",
     "fastedit2",
     "fastedit2",
