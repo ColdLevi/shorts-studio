@@ -1,0 +1,1007 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "coding-for-dummies-reality-check-mw81q1jp",
+ "rev": 1,
+ "title": "Coding for Dummies Reality Check",
+ "duration": 56.74,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "bold-pop",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.537,
+    "narration": "Zero lines of code was written by the person who built the first compiler.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "The surprising origin of programming",
+     "text": "Zero Lines of Code",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.537,
+    "end": 9.637,
+    "narration": "Most assume coding requires a math degree and years of memorizing syntax.",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Early programming was hardware",
+     "myth": "Math degree required",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.637,
+    "end": 15.512,
+    "narration": "Early programming was just flipping hardware switches and plugging wires into a giant plugboard.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "zap",
+       "label": "Switches"
+      },
+      {
+       "icon": "cpu",
+       "label": "Wires"
+      }
+     ],
+     "title": "Early Hardware Setup",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 15.512,
+    "end": 20.825,
+    "narration": "Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a4e627c4fd5f"
+   },
+   {
+    "id": "v5",
+    "start": 20.825,
+    "end": 26.575,
+    "narration": "She proved software could translate human logic into machine instructions automatically.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Human logic",
+      "Compiler translation",
+      "Machine execution"
+     ],
+     "title": "Automation Flow",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 26.575,
+    "end": 31.425,
+    "narration": "But hardware was still painfully slow to program for everyday tasks.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Hardware efficiency",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 15
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 31.425,
+    "end": 37.875,
+    "narration": "Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e8524195d17e"
+   },
+   {
+    "id": "v8",
+    "start": 37.875,
+    "end": 43.75,
+    "narration": "Programmers finally wrote readable formulas instead of punching raw numerical codes.",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Raw Numbers",
+      "sub": "Binary punching"
+     },
+     "prefix": "",
+     "right": {
+      "label": "Fortran",
+      "sub": "Readable formulas"
+     },
+     "suffix": "",
+     "title": "Language Shift",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 43.75,
+    "end": 48.475,
+    "narration": "Code evolved from physical copper wires into abstract human language.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Copper wires",
+      "Compilers",
+      "High level languages"
+     ],
+     "title": "Evolution of Code",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 48.475,
+    "end": 52.725,
+    "narration": "Software builds on layers of automation created decades ago.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Layers of abstraction",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v11",
+    "start": 52.725,
+    "end": 55.944,
+    "narration": "You stand on giants when you write your very first script.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Stand",
+      "On",
+      "Giants"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Zero",
+     "start": 0.087,
+     "end": 0.338
+    },
+    {
+     "word": "lines",
+     "start": 0.338,
+     "end": 0.675
+    },
+    {
+     "word": "of",
+     "start": 0.675,
+     "end": 0.762
+    },
+    {
+     "word": "code",
+     "start": 0.762,
+     "end": 1.15
+    },
+    {
+     "word": "was",
+     "start": 1.363,
+     "end": 1.587
+    },
+    {
+     "word": "written",
+     "start": 1.587,
+     "end": 1.925
+    },
+    {
+     "word": "by",
+     "start": 1.925,
+     "end": 2.087
+    },
+    {
+     "word": "the",
+     "start": 2.1,
+     "end": 2.188
+    },
+    {
+     "word": "person",
+     "start": 2.188,
+     "end": 2.675
+    },
+    {
+     "word": "who",
+     "start": 2.688,
+     "end": 2.8
+    },
+    {
+     "word": "built",
+     "start": 2.8,
+     "end": 3.087
+    },
+    {
+     "word": "the",
+     "start": 3.087,
+     "end": 3.163
+    },
+    {
+     "word": "first",
+     "start": 3.175,
+     "end": 3.525
+    },
+    {
+     "word": "compiler.",
+     "start": 3.525,
+     "end": 4.125
+    },
+    {
+     "word": "Most",
+     "start": 4.537,
+     "end": 4.8
+    },
+    {
+     "word": "assume",
+     "start": 4.8,
+     "end": 5.225
+    },
+    {
+     "word": "coding",
+     "start": 5.237,
+     "end": 5.575
+    },
+    {
+     "word": "requires",
+     "start": 5.575,
+     "end": 6.013
+    },
+    {
+     "word": "a",
+     "start": 6.025,
+     "end": 6.062
+    },
+    {
+     "word": "math",
+     "start": 6.062,
+     "end": 6.513
+    },
+    {
+     "word": "degree",
+     "start": 6.513,
+     "end": 7.013
+    },
+    {
+     "word": "and",
+     "start": 7.162,
+     "end": 7.35
+    },
+    {
+     "word": "years",
+     "start": 7.35,
+     "end": 7.775
+    },
+    {
+     "word": "of",
+     "start": 7.775,
+     "end": 7.825
+    },
+    {
+     "word": "memorizing",
+     "start": 7.838,
+     "end": 8.488
+    },
+    {
+     "word": "syntax.",
+     "start": 8.488,
+     "end": 9.25
+    },
+    {
+     "word": "Early",
+     "start": 9.637,
+     "end": 9.887
+    },
+    {
+     "word": "programming",
+     "start": 9.9,
+     "end": 10.5
+    },
+    {
+     "word": "was",
+     "start": 10.562,
+     "end": 10.713
+    },
+    {
+     "word": "just",
+     "start": 10.725,
+     "end": 10.988
+    },
+    {
+     "word": "flipping",
+     "start": 11.0,
+     "end": 11.425
+    },
+    {
+     "word": "hardware",
+     "start": 11.425,
+     "end": 11.85
+    },
+    {
+     "word": "switches",
+     "start": 11.85,
+     "end": 12.463
+    },
+    {
+     "word": "and",
+     "start": 12.75,
+     "end": 12.975
+    },
+    {
+     "word": "plugging",
+     "start": 12.975,
+     "end": 13.525
+    },
+    {
+     "word": "wires",
+     "start": 13.525,
+     "end": 13.975
+    },
+    {
+     "word": "into",
+     "start": 13.988,
+     "end": 14.175
+    },
+    {
+     "word": "a",
+     "start": 14.175,
+     "end": 14.225
+    },
+    {
+     "word": "giant",
+     "start": 14.225,
+     "end": 14.575
+    },
+    {
+     "word": "plugboard.",
+     "start": 14.575,
+     "end": 15.1
+    },
+    {
+     "word": "Then",
+     "start": 15.512,
+     "end": 15.75
+    },
+    {
+     "word": "Grace",
+     "start": 15.75,
+     "end": 16.087
+    },
+    {
+     "word": "Hopper",
+     "start": 16.087,
+     "end": 16.35
+    },
+    {
+     "word": "developed",
+     "start": 16.363,
+     "end": 16.812
+    },
+    {
+     "word": "the",
+     "start": 16.825,
+     "end": 16.925
+    },
+    {
+     "word": "first",
+     "start": 16.938,
+     "end": 17.35
+    },
+    {
+     "word": "compiler",
+     "start": 17.35,
+     "end": 17.863
+    },
+    {
+     "word": "called",
+     "start": 17.863,
+     "end": 18.15
+    },
+    {
+     "word": "A-Zero",
+     "start": 18.325,
+     "end": 18.95
+    },
+    {
+     "word": "in",
+     "start": 19.175,
+     "end": 19.275
+    },
+    {
+     "word": "nineteen",
+     "start": 19.275,
+     "end": 19.738
+    },
+    {
+     "word": "fifty-two.",
+     "start": 19.738,
+     "end": 20.425
+    },
+    {
+     "word": "She",
+     "start": 20.825,
+     "end": 20.975
+    },
+    {
+     "word": "proved",
+     "start": 20.975,
+     "end": 21.25
+    },
+    {
+     "word": "software",
+     "start": 21.25,
+     "end": 21.938
+    },
+    {
+     "word": "could",
+     "start": 21.95,
+     "end": 22.113
+    },
+    {
+     "word": "translate",
+     "start": 22.125,
+     "end": 22.812
+    },
+    {
+     "word": "human",
+     "start": 22.812,
+     "end": 23.188
+    },
+    {
+     "word": "logic",
+     "start": 23.2,
+     "end": 23.663
+    },
+    {
+     "word": "into",
+     "start": 23.725,
+     "end": 23.925
+    },
+    {
+     "word": "machine",
+     "start": 23.938,
+     "end": 24.387
+    },
+    {
+     "word": "instructions",
+     "start": 24.387,
+     "end": 25.212
+    },
+    {
+     "word": "automatically.",
+     "start": 25.375,
+     "end": 26.163
+    },
+    {
+     "word": "But",
+     "start": 26.575,
+     "end": 26.637
+    },
+    {
+     "word": "hardware",
+     "start": 26.65,
+     "end": 27.075
+    },
+    {
+     "word": "was",
+     "start": 27.075,
+     "end": 27.212
+    },
+    {
+     "word": "still",
+     "start": 27.225,
+     "end": 27.7
+    },
+    {
+     "word": "painfully",
+     "start": 27.712,
+     "end": 28.25
+    },
+    {
+     "word": "slow",
+     "start": 28.262,
+     "end": 28.625
+    },
+    {
+     "word": "to",
+     "start": 28.625,
+     "end": 28.7
+    },
+    {
+     "word": "program",
+     "start": 28.7,
+     "end": 29.337
+    },
+    {
+     "word": "for",
+     "start": 29.475,
+     "end": 29.712
+    },
+    {
+     "word": "everyday",
+     "start": 29.887,
+     "end": 30.275
+    },
+    {
+     "word": "tasks.",
+     "start": 30.275,
+     "end": 31.025
+    },
+    {
+     "word": "Therefore",
+     "start": 31.425,
+     "end": 31.863
+    },
+    {
+     "word": "IBM",
+     "start": 31.875,
+     "end": 32.425
+    },
+    {
+     "word": "created",
+     "start": 32.475,
+     "end": 32.925
+    },
+    {
+     "word": "Fortran",
+     "start": 32.925,
+     "end": 33.525
+    },
+    {
+     "word": "in",
+     "start": 33.525,
+     "end": 33.612
+    },
+    {
+     "word": "nineteen",
+     "start": 33.625,
+     "end": 34.1
+    },
+    {
+     "word": "fifty-seven",
+     "start": 34.112,
+     "end": 34.862
+    },
+    {
+     "word": "as",
+     "start": 35.163,
+     "end": 35.275
+    },
+    {
+     "word": "the",
+     "start": 35.288,
+     "end": 35.362
+    },
+    {
+     "word": "first",
+     "start": 35.362,
+     "end": 35.825
+    },
+    {
+     "word": "high",
+     "start": 35.825,
+     "end": 36.038
+    },
+    {
+     "word": "level",
+     "start": 36.05,
+     "end": 36.375
+    },
+    {
+     "word": "programming",
+     "start": 36.375,
+     "end": 36.913
+    },
+    {
+     "word": "language.",
+     "start": 36.925,
+     "end": 37.475
+    },
+    {
+     "word": "Programmers",
+     "start": 37.875,
+     "end": 38.413
+    },
+    {
+     "word": "finally",
+     "start": 38.413,
+     "end": 38.913
+    },
+    {
+     "word": "wrote",
+     "start": 38.913,
+     "end": 39.325
+    },
+    {
+     "word": "readable",
+     "start": 39.337,
+     "end": 39.763
+    },
+    {
+     "word": "formulas",
+     "start": 39.763,
+     "end": 40.562
+    },
+    {
+     "word": "instead",
+     "start": 40.7,
+     "end": 41.163
+    },
+    {
+     "word": "of",
+     "start": 41.175,
+     "end": 41.288
+    },
+    {
+     "word": "punching",
+     "start": 41.288,
+     "end": 41.862
+    },
+    {
+     "word": "raw",
+     "start": 41.975,
+     "end": 42.225
+    },
+    {
+     "word": "numerical",
+     "start": 42.225,
+     "end": 42.775
+    },
+    {
+     "word": "codes.",
+     "start": 42.788,
+     "end": 43.35
+    },
+    {
+     "word": "Code",
+     "start": 43.75,
+     "end": 44.025
+    },
+    {
+     "word": "evolved",
+     "start": 44.038,
+     "end": 44.487
+    },
+    {
+     "word": "from",
+     "start": 44.487,
+     "end": 44.688
+    },
+    {
+     "word": "physical",
+     "start": 44.7,
+     "end": 45.15
+    },
+    {
+     "word": "copper",
+     "start": 45.163,
+     "end": 45.562
+    },
+    {
+     "word": "wires",
+     "start": 45.562,
+     "end": 46.087
+    },
+    {
+     "word": "into",
+     "start": 46.225,
+     "end": 46.45
+    },
+    {
+     "word": "abstract",
+     "start": 46.562,
+     "end": 47.15
+    },
+    {
+     "word": "human",
+     "start": 47.163,
+     "end": 47.462
+    },
+    {
+     "word": "language.",
+     "start": 47.462,
+     "end": 48.075
+    },
+    {
+     "word": "Software",
+     "start": 48.475,
+     "end": 49.025
+    },
+    {
+     "word": "builds",
+     "start": 49.038,
+     "end": 49.438
+    },
+    {
+     "word": "on",
+     "start": 49.438,
+     "end": 49.65
+    },
+    {
+     "word": "layers",
+     "start": 49.65,
+     "end": 50.087
+    },
+    {
+     "word": "of",
+     "start": 50.1,
+     "end": 50.175
+    },
+    {
+     "word": "automation",
+     "start": 50.188,
+     "end": 50.925
+    },
+    {
+     "word": "created",
+     "start": 51.0,
+     "end": 51.487
+    },
+    {
+     "word": "decades",
+     "start": 51.5,
+     "end": 51.925
+    },
+    {
+     "word": "ago.",
+     "start": 51.938,
+     "end": 52.325
+    },
+    {
+     "word": "You",
+     "start": 52.725,
+     "end": 52.8
+    },
+    {
+     "word": "stand",
+     "start": 52.812,
+     "end": 53.138
+    },
+    {
+     "word": "on",
+     "start": 53.138,
+     "end": 53.288
+    },
+    {
+     "word": "giants",
+     "start": 53.3,
+     "end": 53.875
+    },
+    {
+     "word": "when",
+     "start": 53.888,
+     "end": 53.987
+    },
+    {
+     "word": "you",
+     "start": 53.987,
+     "end": 54.112
+    },
+    {
+     "word": "write",
+     "start": 54.112,
+     "end": 54.35
+    },
+    {
+     "word": "your",
+     "start": 54.362,
+     "end": 54.462
+    },
+    {
+     "word": "very",
+     "start": 54.462,
+     "end": 54.8
+    },
+    {
+     "word": "first",
+     "start": 54.8,
+     "end": 55.1
+    },
+    {
+     "word": "script.",
+     "start": 55.112,
+     "end": 55.575
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Zero lines of code was written by the person who built the first compiler. Most assume coding requires a math degree and years of memorizing syntax. Early programming was just flipping hardware switches and plugging wires into a giant plugboard. Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two. She proved software could translate human logic into machine instructions automatically. But hardware was still painfully slow to program for everyday tasks. Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language. Programmers finally wrote readable formulas instead of punching raw numerical codes. Code evolved from physical copper wires into abstract human language. Software builds on layers of automation created decades ago. You stand on giants when you write your very first script."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "title",
+    "kind": "title",
+    "start": 0,
+    "end": 3,
+    "text": "Coding for Dummies Reality Check"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794155387419,
+  "updated": 1794155387419,
+  "topic": "YouTube Issacverse of about the idea of how to code for dummies",
+  "hook": "Zero lines of code was written by the person who built the first compiler.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-coding-for-dummies-reality-check-mw81q1jp",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Zero lines of code was written by the person who built the first compiler.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "coding-for-dummies-reality-check-mw81q1jp",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "Coding for Dummies Reality Check",
+   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}
