@@ -1,6 +1,6 @@
 {
   "last_update": 312538266,
-  "time": 1794123344478,
+  "time": 1794123502596,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2716,7 +2716,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "youtu-4"
+    "style": "upload-5"
   },
   "job": null,
   "recent_styles": [
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-5",
-    "source": "tg:BQACAgQAAxkBAAICC2rwJk9Hfs_hEqUdBliHzo9yc1-0AAJdIQACIUWAU92tdpGOnBUIPQQ",
-    "at": 1794123344478
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -2955,6 +2951,88 @@
       },
       "metrics": {},
       "rhythm": {}
+    },
+    "upload-5": {
+      "name": "upload-5",
+      "source": "telegram upload",
+      "summary": "Satirical digital UI simulation formatted as a remote video conference meeting. High-contrast monochromatic UI framing features desaturated webcam participants disrupted by a surreal red figure.",
+      "base": "motion-explainer",
+      "mode": "mixed",
+      "graphic_ratio": 0.4,
+      "beat_seconds": 12,
+      "image_style": "Dark corporate digital UI mixed with desaturated grayscale webcam headshots and vivid scarlet red humanoid figures.",
+      "format": "landscape",
+      "music": "tech-pulse",
+      "pacing": "Deliberate, slow-burn pacing with prolonged static shots mimicking an awkward corporate video call.",
+      "writer_notes": "Dry, deadpan corporate satire. Uses mundane tech workplace tropes escalating into surreal financial and AI commentary.",
+      "style_tokens": {
+        "caption": {
+          "preset": "none",
+          "font": "Inter",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#FF2A2A",
+          "color": "#FFFFFF"
+        },
+        "font": "Inter",
+        "transitions": [
+          "cut",
+          "fade"
+        ],
+        "motion": "static",
+        "fx": {
+          "hold": 2,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.15) saturate(0.6)",
+        "accent": "#FF1E27",
+        "palette": [
+          "#121214",
+          "#202124"
+        ],
+        "progress_bar": false,
+        "vignette": false,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {
+        "width": 426,
+        "height": 240,
+        "fps": 29.97,
+        "duration_s": 60,
+        "aspect": "16:9",
+        "cuts": 2,
+        "cuts_per_min": 2,
+        "avg_shot_s": 20.01,
+        "held_frame_share": 0.38,
+        "brightness_0_255": 57,
+        "saturation_0_128": 6,
+        "loudness_lufs": -9.6,
+        "shot_s_median": 7.84,
+        "shot_s_p10": 4.77,
+        "shot_s_p90": 40.11,
+        "shot_spread": 1,
+        "shot_spread_label": "wild",
+        "hook_s": 48.18,
+        "motion_ydif": 0.17,
+        "motion_level": "static",
+        "tempo_bpm": null,
+        "tempo_confidence": 0.03
+      },
+      "rhythm": {
+        "shot_s_median": 7.84,
+        "shot_s_p10": 4.77,
+        "shot_s_p90": 40.11,
+        "shot_spread_label": "wild",
+        "hook_s": 48.18,
+        "motion_level": "static"
+      }
     }
   }
 }
