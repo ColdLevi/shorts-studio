@@ -18,6 +18,7 @@ Env: SOURCE (url or tg:<file_id>), STYLE_NAME, TELEGRAM_TOKEN, CHAT_ID, GEMINI_A
 import base64, glob, hashlib, json, os, re, subprocess, sys, urllib.request, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini_models as gm
+import style_metrics as sm
 
 OUT = "job/ref"
 os.makedirs(OUT, exist_ok=True)
@@ -82,7 +83,8 @@ def measure(path):
              aspect="9:16" if h > w * 1.4 else "4:5" if h > w * 1.1 else "1:1" if h > w * 0.85 else "16:9")
     # cuts: scene-change score above 0.32
     sc = run(["ffmpeg", "-hide_banner", "-i", path, "-vf", "select='gt(scene,0.32)',showinfo", "-an", "-f", "null", "-"], 900)
-    cuts = len(re.findall(r"pts_time:", sc.stderr or ""))
+    cut_times = [float(x) for x in re.findall(r"pts_time:([\d.]+)", sc.stderr or "")]
+    cuts = len(cut_times)
     m["cuts"] = cuts
     m["cuts_per_min"] = round(cuts / max(0.1, dur / 60), 1)
     m["avg_shot_s"] = round(dur / max(1, cuts + 1), 2)
@@ -103,6 +105,10 @@ def measure(path):
     lu = re.findall(r"I:\s+(-?[\d.]+) LUFS", ln.stderr or "")
     if lu:
         m["loudness_lufs"] = float(lu[-1])
+    try:
+        m.update(sm.rhythm(path, dur, cut_times))
+    except Exception as e:
+        print("rhythm skipped:", str(e)[:120])
     return m
 
 
@@ -127,6 +133,8 @@ def contact_sheet(path, dur):
 PROMPT = """You are an expert motion designer and video editor. Study this reference video and describe its STYLE so a
 code-based renderer can reproduce it on any topic. %s
 Measurements from ffmpeg (trust these over guesses): %s
+Extra keys: shot_s_median, shot_s_p10, shot_s_p90 (cut-length spread), hook_s (first shot), tempo_bpm (null when there is no steady beat),
+cuts_on_beat (share of cuts within 80 ms of a beat; cuts_snap_to_beat says if that is well above chance), motion_level (static/gentle/moderate/fast).
 
 Return JSON only:
 {"summary": "2-3 sentences: what makes this style recognisable",
@@ -287,7 +295,7 @@ def clean(r, metrics):
             "base": r.get("base") if r.get("base") in RECIPES else "bold-pop", "mode": r.get("mode") if r.get("mode") in ("motion-graphics", "footage", "illustrated", "stop-motion", "mixed") else "mixed",
             "graphic_ratio": round(gr, 2), "beat_seconds": round(beat, 1), "image_style": str(r.get("image_style") or "")[:300],
             "format": fmt, "music": r.get("music") if r.get("music") in MUSIC else "docu-pluck", "pacing": str(r.get("pacing") or "")[:200],
-            "writer_notes": str(r.get("writer_notes") or "")[:500], "style_tokens": tokens, "metrics": metrics}
+            "writer_notes": str(r.get("writer_notes") or "")[:500], "style_tokens": tokens, "metrics": metrics, "rhythm": sm.rhythm_summary(metrics)}
 
 
 def main():
@@ -306,6 +314,7 @@ def main():
         sys.exit(1)
     print("metrics", json.dumps(metrics))
     style = clean(gemini(sheet, metrics), metrics)
+    style = sm.merge_prev(style, os.environ.get("PREV_STYLE"))
     json.dump(style, open(os.path.join(OUT, "style.json"), "w"), indent=2)
     print(json.dumps(style, indent=2))
     if not APP:

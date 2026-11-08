@@ -1,31 +1,39 @@
 # Shorts Studio
 
-Free cloud renderer for vertical Remotion shorts, running on GitHub Actions.
+Free cloud video renderer for the Telegram bot, running on GitHub Actions. The bot (the `llm-proxy` repo, on Vercel)
+writes the script, plans the scenes and calls the workflows here. Everything is rendered by one Remotion composition,
+`Studio`, from an editable project timeline.
 
-## Render a short
-- Phone browser: repo > Actions > "Render short" > Run workflow > type the shot id > Run.
-- Or from Termux: `echo Short10Fees > render-request.txt && git add -A && git commit -m render && git push`
-- When it finishes (about 5 to 8 minutes), the MP4 is under Releases, with a direct download link.
+## How a video gets made
+1. You message the bot a topic (or a reference video to copy the look of).
+2. The bot researches (or not, for personal stories), writes the script and picks scenes with the director.
+3. `make-short.yml` records the voice (edge-tts), paints the pictures (Cloudflare FLUX), renders `Studio` with
+   Remotion, normalises loudness and sends the MP4 to Telegram.
+4. Every video is saved as a project: `media/projects/<id>/timeline.json` plus version history, assets on the
+   release `project-<id>`. Details: `timeline/README.md`.
 
-## Add a new short
-1. Put its composition in `remotion/src/shots/<name>/` and add it to `remotion/src/shots.manifest.json`.
-2. Put its audio and images in `media/projects/<name>/`.
-3. Push, then render it by id.
+## Looks
+- **Style learning (`learn-style.yml`)**: send the bot a reference video (link, or file up to 20 MB). It measures cuts,
+  shot-length spread, hook length, tempo, how many cuts land on the beat, motion, colour and loudness
+  (`tools/learn_style.py`, `tools/style_metrics.py`), has Gemini describe the style, and saves it as a reusable recipe.
+  Several videos from one creator can be merged into one style.
+- **What If pack** (`remotion/src/packs/whatif/`): the cartoon "what if..." look with insert shots, one room and one
+  mood per video. The bot picks it for "what if" topics unless you name another look.
 
-Engine: hassancs91/claude-faceless-shorts-creator (MIT).
-
-## Telegram bot renders (make-short.yml)
-The bot sends `repository_dispatch` `make-short` with `{chat_id, spec}`. The workflow records the voice (edge-tts),
-paints one image per beat (Cloudflare FLUX), renders `StoryShort` with Remotion, normalises loudness and sends the MP4
-to Telegram. Secrets needed here: TELEGRAM_TOKEN, CHAT_ID, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN.
-
-## Video engine: project timelines (step 1)
-Every bot video is saved as an editable project (`media/projects/<id>/timeline.json` + version history; assets on
-release `project-<id>`) and rendered by the universal `Studio` composition at any canvas size (9:16, 16:9, 1:1, 4:5,
-any WxH) with caption, font, transition and colour style tokens. Re-render a saved project with a JSON patch via
-`repository_dispatch` `render-project`. Details: `timeline/README.md`. Old `StoryShort` props still render.
-
-## Video engine step 2: chat re-edit agent
-Tell the Studio bot any change to the current video in plain words; it shows what changes (Apply/Cancel, or start with
+## Chat edits
+Tell the bot any change in plain words ("make scene 4 a close-up"). It shows what changes (Apply/Cancel, or start with
 "just"), then re-renders, re-voicing only changed lines and repainting only changed pictures. Every applied edit is a
-version: /scenes, /history, /undo, /restore <n>, /project. Details: `timeline/README.md` (Engine step 2).
+version: `/scenes`, `/history`, `/undo`, `/restore <n>`, `/project`.
+
+## Workflows (`.github/workflows/`)
+- `make-short.yml`: render a video for the bot (`repository_dispatch` `make-short`).
+- Re-rendering a saved project with a JSON patch is triggered by `repository_dispatch` `render-project`.
+- `learn-style.yml`: learn a style from a reference video.
+- `scene-test.yml`: manual test render of the What If scenes, with a contact sheet.
+
+## Secrets (Settings > Secrets and variables > Actions)
+`TELEGRAM_TOKEN`, `CHAT_ID`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, `GEMINI_API_KEY`.
+
+## Notes
+- The old hand-built shorts and their render workflow were removed in commit `881ffbb`. Restore with `git revert 881ffbb`.
+- Engine: hassancs91/claude-faceless-shorts-creator (MIT).

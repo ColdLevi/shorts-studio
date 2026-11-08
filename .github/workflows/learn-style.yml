@@ -8,6 +8,7 @@ on:
     inputs:
       source: { description: "Video URL or tg:<file_id>", required: true }
       name: { description: "Style name", required: false, default: "my-style" }
+      prev_style: { description: "Earlier style JSON to merge this video into (optional)", required: false }
 jobs:
   learn:
     runs-on: ubuntu-latest
@@ -17,6 +18,7 @@ jobs:
       STYLE_NAME: ${{ github.event.client_payload.name || github.event.inputs.name }}
       CHAT_ID: ${{ github.event.client_payload.chat_id || secrets.CHAT_ID }}
       APP_URL: ${{ github.event.client_payload.app_url }}
+      PREV_STYLE: ${{ github.event.client_payload.prev_style && toJSON(github.event.client_payload.prev_style) || github.event.inputs.prev_style }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
