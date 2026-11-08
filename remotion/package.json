@@ -2,12 +2,9 @@
   "name": "video-editor-remotion",
   "private": true,
   "version": "1.0.0",
-  "description": "Remotion project for the AI Video Editor \u2014 renders VidTSX-style shots in bulk.",
+  "description": "Remotion project for the AI Video Editor — renders VidTSX-style shots in bulk.",
   "scripts": {
-    "gen": "node scripts/gen-registry.mjs",
-    "studio": "node scripts/gen-registry.mjs && remotion studio src/index.ts",
-    "render": "node scripts/gen-registry.mjs && node scripts/render-all.mjs",
-    "still": "node scripts/gen-registry.mjs && node scripts/render-all.mjs --still"
+    "studio": "remotion studio src/studio-index.ts"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.538",
