@@ -1,6 +1,6 @@
 {
   "last_update": 312538270,
-  "time": 1794132113811,
+  "time": 1794132338754,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-7",
-    "source": "tg:BQACAgQAAxkBAAICG2rwSI_VcwNb1ZEzp05TvGK6RioZAAKNIQACIUWAU-_QkGQ0VPRoPQQ",
-    "at": 1794132113810
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3122,91 +3118,141 @@
       }
     },
     "upload-7": {
-      "name": "upload-7",
-      "source": "telegram upload",
-      "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action footage of hardware and video editing workflows is accented by minimalist white-line overlays and futuristic interface designs.",
       "base": "cinematic",
-      "mode": "mixed",
-      "graphic_ratio": 0.35,
-      "beat_seconds": 3.2,
-      "image_style": "Cinematic low-key studio lighting, desaturated monochromatic palette with crisp white highlights, macro tech focus, sharp digital texture.",
+      "beat_seconds": 3.5,
       "format": "landscape",
+      "graphic_ratio": 0.52,
+      "image_style": "Cinematic low-key studio lighting, desaturated monochromatic palette with crisp white highlights, macro tech focus, sharp digital texture.",
+      "metrics": {
+        "width": 560,
+        "height": 315,
+        "fps": 23.99,
+        "duration_s": 159.9,
+        "aspect": "16:9",
+        "cuts": 42.5,
+        "cuts_per_min": 16.5,
+        "avg_shot_s": 3.48,
+        "held_frame_share": 0.19,
+        "brightness_0_255": 49.5,
+        "saturation_0_128": 5.5,
+        "loudness_lufs": -17.35,
+        "shot_s_median": 2.4,
+        "shot_s_p10": 0.83,
+        "shot_s_p90": 6.17,
+        "shot_spread": 1.35,
+        "shot_spread_label": "wild",
+        "hook_s": 2.9,
+        "motion_ydif": 2.37,
+        "motion_level": "gentle",
+        "tempo_bpm": 117.7,
+        "tempo_confidence": 0.1,
+        "cuts_on_beat": 0.08,
+        "cuts_on_beat_chance": 0.31,
+        "cuts_snap_to_beat": false
+      },
+      "mode": "mixed",
       "music": "tech-pulse",
+      "name": "upload-7",
       "pacing": "Deliberate and rhythmic with varied shot lengths around three seconds, using quick tech cutaways to maintain momentum.",
-      "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression.",
+      "rhythm": {
+        "shot_s_median": 2.4,
+        "shot_s_p10": 0.83,
+        "shot_s_p90": 6.17,
+        "shot_spread_label": "wild",
+        "hook_s": 2.9,
+        "tempo_bpm": 117.7,
+        "cuts_on_beat": 0.08,
+        "cuts_snap_to_beat": false,
+        "motion_level": "gentle"
+      },
+      "source": "merged from 2 videos",
       "style_tokens": {
+        "accent": "#FFFFFF",
+        "backdrop": "none",
         "caption": {
-          "preset": "clean",
-          "font": "Space Grotesk",
           "case": "upper",
-          "position": "bottom",
+          "color": "#E5E5E5",
+          "font": "Space Grotesk",
           "highlight": "#FFFFFF",
-          "color": "#E5E5E5"
+          "position": "bottom",
+          "preset": "clean"
         },
         "font": "Space Grotesk",
-        "transitions": [
-          "cut",
-          "flash"
-        ],
-        "motion": "handheld",
         "fx": {
+          "flicker": false,
           "hold": 1,
           "jitter": 1,
           "letterbox": 0,
-          "texture": "grain",
-          "flicker": false
+          "texture": "grain"
         },
-        "backdrop": "none",
         "grade": "contrast(1.25) saturate(0.2) brightness(0.85)",
-        "accent": "#FFFFFF",
+        "motion": "handheld",
         "palette": [
           "#0B0D0F",
           "#1E2227"
         ],
         "progress_bar": false,
-        "vignette": true,
         "transition": {
           "type": "cut",
           "duration": 0
+        },
+        "transitions": [
+          "cut",
+          "flash",
+          "zoom-in",
+          "fade"
+        ],
+        "vignette": true
+      },
+      "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action footage of hardware and video editing workflows is accented by minimalist white-line overlays and futuristic interface designs.",
+      "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression.",
+      "samples": 2,
+      "_tally": {
+        "base": {
+          "cinematic": 1,
+          "neon": 1
+        },
+        "mode": {
+          "mixed": 2
+        },
+        "music": {
+          "tech-pulse": 2
+        },
+        "format": {
+          "landscape": 2
+        },
+        "motion": {
+          "handheld": 1,
+          "drift": 1
+        },
+        "backdrop": {
+          "none": 2
+        },
+        "font": {
+          "Space Grotesk": 1,
+          "Inter": 1
+        },
+        "texture": {
+          "grain": 1,
+          "none": 1
+        },
+        "caption_preset": {
+          "clean": 2
+        },
+        "caption_font": {
+          "Space Grotesk": 1,
+          "Inter": 1
+        },
+        "accent": {
+          "#FFFFFF": 1,
+          "#39FF14": 1
+        },
+        "transitions": {
+          "cut": 2,
+          "flash": 1,
+          "zoom-in": 1,
+          "fade": 1
         }
-      },
-      "metrics": {
-        "width": 640,
-        "height": 360,
-        "fps": 23.98,
-        "duration_s": 45,
-        "aspect": "16:9",
-        "cuts": 13,
-        "cuts_per_min": 17.3,
-        "avg_shot_s": 3.21,
-        "held_frame_share": 0.17,
-        "brightness_0_255": 62,
-        "saturation_0_128": 4,
-        "loudness_lufs": -16.6,
-        "shot_s_median": 2.71,
-        "shot_s_p10": 1.26,
-        "shot_s_p90": 5.1,
-        "shot_spread": 0.72,
-        "shot_spread_label": "wild",
-        "hook_s": 3.29,
-        "motion_ydif": 2.75,
-        "motion_level": "gentle",
-        "tempo_bpm": 117.7,
-        "tempo_confidence": 0.15,
-        "cuts_on_beat": 0.08,
-        "cuts_on_beat_chance": 0.31,
-        "cuts_snap_to_beat": false
-      },
-      "rhythm": {
-        "shot_s_median": 2.71,
-        "shot_s_p10": 1.26,
-        "shot_s_p90": 5.1,
-        "shot_spread_label": "wild",
-        "hook_s": 3.29,
-        "tempo_bpm": 117.7,
-        "cuts_on_beat": 0.08,
-        "cuts_snap_to_beat": false,
-        "motion_level": "gentle"
       }
     }
   }
