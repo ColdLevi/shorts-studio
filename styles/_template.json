@@ -1,0 +1,14 @@
+{
+  "id": "my-style",
+  "name": "My Style",
+  "triggers": ["my", "style", "keywords"],
+  "cuts": { "p25": 1.2, "p50": 2.0, "p75": 3.4, "unit": "s" },
+  "hook": { "max_len_s": 2.0, "style": "hard-cut" },
+  "bpm": 128,
+  "beat_cuts_per_30s": 14,
+  "caption": { "per_line_chars": 18, "cps": 17, "density": "high" },
+  "palette": ["#0B0F1A", "#FF2E63", "#08D9D6", "#F9F7F7"],
+  "motion": { "score": 0.72, "camera": "handheld" },
+  "effects": ["punch-in", "flash-cut"],
+  "grade": { "contrast": 1.12, "saturation": 1.15, "temp": "cool" }
+}
