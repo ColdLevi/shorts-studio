@@ -1,7 +1,7 @@
 {
-  "last_update": 312538285,
-  "time": 1794142705007,
-  "stage": "pitch",
+  "last_update": 312538286,
+  "time": 1794142761176,
+  "stage": "script",
   "topic": "about writing codes before and currently vibe coding",
   "research": {
     "text": "",
@@ -25,16 +25,226 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Death of Manual Syntax",
+    "beats": [
+      {
+        "narration": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "3,000 Lines",
+          "sub": "Assembly Code"
+        }
+      },
+      {
+        "narration": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Memorize syntax",
+          "fact": "Direct intent"
+        }
+      },
+      {
+        "narration": "Manual memory management ruled early engineering.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "icons",
+          "title": "Legacy Systems",
+          "items": [
+            {
+              "icon": "cpu",
+              "label": "Memory"
+            },
+            {
+              "icon": "book",
+              "label": "Syntax"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Exact low level execution demanded endless focus.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "percent",
+          "value": 100,
+          "label": "Manual Effort"
+        }
+      },
+      {
+        "narration": "Then generative models arrived.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "Generative AI",
+            "Changes Everything"
+          ]
+        }
+      },
+      {
+        "narration": "Now modern artificial intelligence produces functional app codebases directly from plain language prompts.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "chat",
+          "title": "AI Prompt",
+          "messages": [
+            {
+              "from": "me",
+              "text": "Build a dashboard app"
+            },
+            {
+              "from": "them",
+              "text": "Generated full codebase"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Vibe coding completely flips this paradigm.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "The Paradigm Shift",
+          "steps": [
+            "Manual typing",
+            "Direct intent",
+            "Creative editing"
+          ]
+        }
+      },
+      {
+        "narration": "Developers replace manual typing with direct intent.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "versus",
+          "title": "Coding Evolution",
+          "prefix": "",
+          "suffix": "",
+          "left": {
+            "label": "Typing",
+            "value": 10
+          },
+          "right": {
+            "label": "Intent",
+            "value": 90
+          }
+        }
+      },
+      {
+        "narration": "This turns developers into creative editors.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "list",
+          "title": "New Roles",
+          "items": [
+            "System Architect",
+            "Creative Editor",
+            "Vision Guide"
+          ]
+        }
+      },
+      {
+        "narration": "Engineers using generative AI coding tools complete tasks up to fifty five percent faster.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 55,
+          "prefix": "",
+          "suffix": "%",
+          "label": "Faster Completion"
+        }
+      },
+      {
+        "narration": "Speed changes everything.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Modern developer workflows shift from manual syntax authoring.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "bars",
+          "title": "Workflow Shift",
+          "prefix": "",
+          "suffix": "%",
+          "items": [
+            {
+              "label": "Syntax",
+              "value": 10
+            },
+            {
+              "label": "Architecture",
+              "value": 90
+            }
+          ]
+        }
+      },
+      {
+        "narration": "System architecture validation takes center stage.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "gauge",
+          "value": 90,
+          "min": 0,
+          "max": 100,
+          "suffix": "%",
+          "label": "Validation Focus"
+        }
+      },
+      {
+        "narration": "Syntax is dead.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "Syntax is Dead",
+          "sub": "Long live intent"
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+        "supported": true
+      },
+      {
+        "claim": "Early software engineering required manual memory management and exact low-level syntax execution.",
+        "supported": true
+      },
+      {
+        "claim": "Generative AI models produce functional app codebases directly from plain language prompts.",
+        "supported": true
+      },
+      {
+        "claim": "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
+        "supported": true
+      },
+      {
+        "claim": "Modern developer workflows shift from manual syntax authoring to system architecture validation.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "add this to my style",
-      "t": 1794132899230
-    },
     {
       "role": "bot",
       "text": "Please send over the file or link you'd like me to add to your style, and I'll make sure it's incorporated!",
@@ -109,6 +319,11 @@
       "role": "bot",
       "text": "Pitched \"The Death of Manual Syntax\": Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
       "t": 1794142705007
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Death of Manual Syntax\"",
+      "t": 1794142761176
     }
   ],
   "working": null,
