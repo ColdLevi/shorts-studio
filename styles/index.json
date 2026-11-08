@@ -1,11 +1,9 @@
 {
+  "version": 1,
   "styles": [
     {
-      "name": "fastedit",
-      "base": "bold-pop",
-      "summary": "A punchy, modern app promo featuring rapid-fire UI mockups against bold, colorful flat backgrounds. Kinetic typography and floating graphica",
-      "learned_at": 1794151690854,
       "id": "fastedit",
+      "name": "fastedit",
       "triggers": [
         "fastedit"
       ]
