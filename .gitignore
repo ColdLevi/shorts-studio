@@ -9,3 +9,9 @@ __pycache__/
 media/projects/*/assets/
 media/projects/*/props.json
 test/
+node_modules/
+.env
+.env.*
+.next/
+.vercel/
+*.log
