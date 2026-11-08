@@ -1,6 +1,6 @@
 {
   "last_update": 312538276,
-  "time": 1794138936999,
+  "time": 1794139073520,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-8",
-    "source": "tg:BAACAgQAAxkBAAICMmrwYzeuN7acU_kJOoXC53bsRfPrAALRIQACIUWAUyo8xt96A8XRPQQ",
-    "at": 1794138936999
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3265,49 +3261,112 @@
       "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression."
     },
     "upload-8": {
+      "_tally": {
+        "accent": {
+          "#FFD200": 1,
+          "#d97706": 1,
+          "#00C853": 1
+        },
+        "backdrop": {
+          "gradient": 2,
+          "none": 1
+        },
+        "base": {
+          "bold-pop": 2,
+          "minimal": 1
+        },
+        "caption_font": {
+          "Inter": 1,
+          "Montserrat": 1,
+          "Poppins": 1
+        },
+        "caption_preset": {
+          "bold-pop": 2,
+          "clean": 1
+        },
+        "font": {
+          "Inter": 1,
+          "Montserrat": 1,
+          "Poppins": 1
+        },
+        "format": {
+          "landscape": 1,
+          "vertical": 2
+        },
+        "mode": {
+          "mixed": 1,
+          "motion-graphics": 2
+        },
+        "motion": {
+          "drift": 1,
+          "parallax": 1,
+          "static": 1
+        },
+        "music": {
+          "tech-pulse": 3
+        },
+        "texture": {
+          "none": 3
+        },
+        "transitions": {
+          "blur": 1,
+          "cut": 3,
+          "dissolve": 1,
+          "fade": 1,
+          "slide-left": 1,
+          "slide-up": 2,
+          "zoom-in": 2
+        }
+      },
       "base": "bold-pop",
-      "beat_seconds": 5.75,
+      "beat_seconds": 4.33,
       "format": "vertical",
-      "graphic_ratio": 0.8,
+      "graphic_ratio": 0.87,
       "image_style": "Vibrant commercial 3D beverage packshots with studio rim lighting, vivid red and lime green saturated backgrounds, crisp metallic textures, and clean cutout fruit illustrations.",
       "metrics": {
-        "width": 840,
-        "height": 910,
-        "fps": 24.5,
-        "duration_s": 33.6,
+        "width": 800,
+        "height": 1033.33,
+        "fps": 26.33,
+        "duration_s": 27.7,
         "aspect": "9:16",
-        "cuts": 6,
-        "cuts_per_min": 8.35,
-        "avg_shot_s": 5.75,
-        "held_frame_share": 0.12,
-        "brightness_0_255": 120.5,
-        "saturation_0_128": 31.5,
-        "loudness_lufs": -12.85,
-        "shot_s_median": 5.56,
-        "shot_s_p10": 4.25,
-        "shot_s_p90": 7.19,
-        "shot_spread": 0.29,
+        "cuts": 13.33,
+        "cuts_per_min": 40.83,
+        "avg_shot_s": 4.02,
+        "held_frame_share": 0.16,
+        "brightness_0_255": 131.67,
+        "saturation_0_128": 34,
+        "loudness_lufs": -13.33,
+        "shot_s_median": 3.85,
+        "shot_s_p10": 2.89,
+        "shot_s_p90": 5.04,
+        "shot_spread": 0.55,
         "shot_spread_label": "too few cuts",
-        "hook_s": 5.37,
-        "motion_ydif": 2.69,
+        "hook_s": 3.78,
+        "motion_ydif": 5.83,
         "motion_level": "moderate",
-        "tempo_bpm": 99.9,
-        "tempo_confidence": 0.15
+        "tempo_bpm": 100.43,
+        "tempo_confidence": 0.24,
+        "cuts_on_beat": 0.18,
+        "cuts_on_beat_chance": 0.27,
+        "cuts_snap_to_beat": false
       },
       "mode": "motion-graphics",
       "music": "tech-pulse",
       "name": "upload-8",
       "pacing": "Layered continuous motion with staggered product slides and text reveals, transitioning into a focused call-to-action hold and logo lockup.",
       "rhythm": {
-        "shot_s_median": 5.56,
-        "shot_s_p10": 4.25,
-        "shot_s_p90": 7.19,
+        "shot_s_median": 3.85,
+        "shot_s_p10": 2.89,
+        "shot_s_p90": 5.04,
         "shot_spread_label": "too few cuts",
-        "hook_s": 5.37,
-        "tempo_bpm": 99.9,
+        "hook_s": 3.78,
+        "tempo_bpm": 100.43,
+        "cuts_on_beat": 0.18,
+        "cuts_snap_to_beat": false,
         "motion_level": "moderate"
       },
-      "source": "merged from 2 videos",
+      "samples": 3,
+      "source": "merged from 3 videos",
       "style_tokens": {
         "accent": "#FFD200",
         "backdrop": "gradient",
@@ -3341,67 +3400,14 @@
         "transitions": [
           "cut",
           "slide-up",
-          "slide-left",
           "zoom-in",
+          "blur",
           "dissolve"
         ],
         "vignette": false
       },
       "summary": "High-energy commercial motion graphics featuring bold saturated color blocking, layered diagonal stripes, and smoothly sliding 3D product cans. The aesthetic relies on strong typography, tropical fruit flavor palettes, and retail CTA elements like an animated shopping cart before closing on a centered logo reveal.",
-      "writer_notes": "Punchy retail-oriented copy announcing hydrating fruit drink flavors. Builds anticipation with vibrant flavor names before driving immediate conversion with a clear call to action.",
-      "samples": 2,
-      "_tally": {
-        "base": {
-          "bold-pop": 1,
-          "minimal": 1
-        },
-        "mode": {
-          "motion-graphics": 1,
-          "mixed": 1
-        },
-        "music": {
-          "tech-pulse": 2
-        },
-        "format": {
-          "vertical": 1,
-          "landscape": 1
-        },
-        "motion": {
-          "parallax": 1,
-          "drift": 1
-        },
-        "backdrop": {
-          "gradient": 2
-        },
-        "font": {
-          "Montserrat": 1,
-          "Inter": 1
-        },
-        "texture": {
-          "none": 2
-        },
-        "caption_preset": {
-          "bold-pop": 1,
-          "clean": 1
-        },
-        "caption_font": {
-          "Montserrat": 1,
-          "Inter": 1
-        },
-        "accent": {
-          "#FFD200": 1,
-          "#d97706": 1
-        },
-        "transitions": {
-          "slide-up": 1,
-          "slide-left": 1,
-          "cut": 2,
-          "zoom-in": 1,
-          "dissolve": 1,
-          "fade": 1,
-          "blur": 1
-        }
-      }
+      "writer_notes": "Punchy retail-oriented copy announcing hydrating fruit drink flavors. Builds anticipation with vibrant flavor names before driving immediate conversion with a clear call to action."
     }
   }
 }
