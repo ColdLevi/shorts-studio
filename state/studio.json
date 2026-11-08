@@ -1,6 +1,6 @@
 {
-  "last_update": 312538262,
-  "time": 1794121973577,
+  "last_update": 312538263,
+  "time": 1794122018973,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "No it's not like documentary it's a fun one not documentary make it like it's happening or what happened to me kinda",
-      "t": 1793823084270
-    },
     {
       "role": "bot",
       "text": "Pitched \"My Day As A Reincarnated Trump\": Waking up with orange spray tan and a billion dollars sounds great until the teleprompter breaks.",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "I'm focusing on your video styles and production, but I can study specific frameworks if you share the details or a link!",
       "t": 1794121973577
+    },
+    {
+      "role": "user",
+      "text": "I want you to learn the script writing so you be better at writing scripts and storytelling that hooks people and get results",
+      "t": 1794122017795
     }
   ],
   "working": null,
