@@ -1,6 +1,6 @@
 {
-  "last_update": 312538260,
-  "time": 1794121621045,
+  "last_update": 312538261,
+  "time": 1794121638609,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Instant Royalty Splits for Independent Artists\"",
-      "t": 1793131795901
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"Instant Royalty Splits for Independent Artists\"",
-      "t": 1793131804216
-    },
     {
       "role": "user",
       "text": "I want to create Zack video style animation of the day I got reincanted as Donald Trump it's a fun satire and parody",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"Cats Only Get One Life\"",
       "t": 1794084439894
+    },
+    {
+      "role": "user",
+      "text": "https://youtu.be/FGz2yPTjrAY?si=Z56-36uXPqpnA0MP",
+      "t": 1794121638440
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"youtu-4\"",
+      "t": 1794121638609
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "youtu-4",
+    "source": "https://youtu.be/FGz2yPTjrAY?si=Z56-36uXPqpnA0MP",
+    "at": 1794121638609
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
