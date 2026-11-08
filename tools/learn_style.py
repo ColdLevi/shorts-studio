@@ -60,12 +60,12 @@ def download():
         with open(dest, "wb") as f:
             f.write(urllib.request.urlopen(f"https://api.telegram.org/file/bot{TG}/{path}", timeout=120).read())
         return dest
-    run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], 300)
-    r = run([sys.executable, "-m", "yt_dlp", "-q", "--no-playlist", "-f", "bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",
-             "--download-sections", "*0-180", "--max-filesize", "300M", "-o", os.path.join(OUT, "ref.%(ext)s"), SRC], 900)
+    run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp[default]"], 300)
+    r = run([sys.executable, "-m", "yt_dlp", "--no-playlist", "--js-runtimes", "node", "-f", "bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",
+             "--download-sections", "*0-180", "--max-filesize", "300M", "-o", os.path.join(OUT, "ref.%(ext)s"), SRC], 300)
     files = [f for f in glob.glob(os.path.join(OUT, "ref.*")) if not f.endswith((".part", ".ytdl"))]
     if not files:
-        print("yt-dlp failed:", (r.stderr or "")[-600:])
+        print("yt-dlp failed:", " | ".join(l for l in (r.stderr or "").splitlines() if "ERROR" in l)[-500:] or (r.stderr or "")[-600:])
         return None
     return files[0]
 
