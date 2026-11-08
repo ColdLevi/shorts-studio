@@ -1,6 +1,6 @@
 {
-  "last_update": 312538273,
-  "time": 1794135435931,
+  "last_update": 312538274,
+  "time": 1794135485207,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "I'm focusing on your video styles and production, but I can study specific frameworks if you share the details or a link!",
-      "t": 1794121973577
-    },
     {
       "role": "user",
       "text": "I want you to learn the script writing so you be better at writing scripts and storytelling that hooks people and get results",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Please send over the link or file you'd like me to add to your style!",
       "t": 1794135435930
+    },
+    {
+      "role": "bot",
+      "text": "Studying a reference video as style \"upload-8\"",
+      "t": 1794135485206
     }
   ],
   "working": null,
@@ -2726,7 +2726,11 @@
     "upload-3",
     "what-if"
   ],
-  "learning": null,
+  "learning": {
+    "name": "upload-8",
+    "source": "tg:BAACAgQAAxkBAAICKWrwVbuFGH_lNLrBBx-ZT0wsW0N0AAKvIQACIUWAU07Drm_AiS1ZPQQ",
+    "at": 1794135485206
+  },
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
