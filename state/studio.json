@@ -1,6 +1,6 @@
 {
-  "last_update": 312538270,
-  "time": 1794132338754,
+  "last_update": 312538271,
+  "time": 1794132901332,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Cats Only Get One Life\"",
-      "t": 1794084405074
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"Cats Only Get One Life\"",
-      "t": 1794084439894
-    },
     {
       "role": "user",
       "text": "https://youtu.be/FGz2yPTjrAY?si=Z56-36uXPqpnA0MP",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Studying a reference video as style \"upload-7\"",
       "t": 1794132113811
+    },
+    {
+      "role": "user",
+      "text": "add this to my style",
+      "t": 1794132899230
+    },
+    {
+      "role": "bot",
+      "text": "Please send over the file or link you'd like me to add to your style, and I'll make sure it's incorporated!",
+      "t": 1794132901332
     }
   ],
   "working": null,
