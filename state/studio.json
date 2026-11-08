@@ -1,7 +1,7 @@
 {
-  "last_update": 312538295,
-  "time": 1794155124393,
-  "stage": "pitch",
+  "last_update": 312538296,
+  "time": 1794155149904,
+  "stage": "script",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
     "text": "",
@@ -24,16 +24,158 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Coding for Dummies Reality Check",
+    "beats": [
+      {
+        "narration": "Zero lines of code was written by the person who built the first compiler.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "Zero Lines of Code",
+          "sub": "The surprising origin of programming"
+        }
+      },
+      {
+        "narration": "Most assume coding requires a math degree and years of memorizing syntax.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Math degree required",
+          "fact": "Early programming was hardware"
+        }
+      },
+      {
+        "narration": "Early programming was just flipping hardware switches and plugging wires into a giant plugboard.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "icons",
+          "title": "Early Hardware Setup",
+          "items": [
+            {
+              "icon": "zap",
+              "label": "Switches"
+            },
+            {
+              "icon": "cpu",
+              "label": "Wires"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Then Grace Hopper developed the first compiler called A-Zero in nineteen fifty-two.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "flux"
+      },
+      {
+        "narration": "She proved software could translate human logic into machine instructions automatically.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Automation Flow",
+          "steps": [
+            "Human logic",
+            "Compiler translation",
+            "Machine execution"
+          ]
+        }
+      },
+      {
+        "narration": "But hardware was still painfully slow to program for everyday tasks.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "gauge",
+          "value": 15,
+          "min": 0,
+          "max": 100,
+          "suffix": "%",
+          "label": "Hardware efficiency"
+        }
+      },
+      {
+        "narration": "Therefore IBM created Fortran in nineteen fifty-seven as the first high level programming language.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "flux"
+      },
+      {
+        "narration": "Programmers finally wrote readable formulas instead of punching raw numerical codes.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "versus",
+          "title": "Language Shift",
+          "prefix": "",
+          "suffix": "",
+          "left": {
+            "label": "Raw Numbers",
+            "sub": "Binary punching"
+          },
+          "right": {
+            "label": "Fortran",
+            "sub": "Readable formulas"
+          }
+        }
+      },
+      {
+        "narration": "Code evolved from physical copper wires into abstract human language.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Evolution of Code",
+          "steps": [
+            "Copper wires",
+            "Compilers",
+            "High level languages"
+          ]
+        }
+      },
+      {
+        "narration": "Software builds on layers of automation created decades ago.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "percent",
+          "value": 100,
+          "label": "Layers of abstraction"
+        }
+      },
+      {
+        "narration": "You stand on giants when you write your very first script.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "Stand",
+            "On",
+            "Giants"
+          ]
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Grace Hopper developed the first compiler called A-0 in 1952.",
+        "supported": true
+      },
+      {
+        "claim": "The first high level programming language was Fortran created by IBM in 1957.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"From Semicolons to Pure Vibe Coding\": In 2010, senior software engineers spent forty hours hunting down a single misplaced semicolon.",
-      "t": 1794142664499
-    },
     {
       "role": "bot",
       "text": "Pitched \"The Death of Manual Syntax\": Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
@@ -108,6 +250,11 @@
       "role": "bot",
       "text": "Pitched \"Coding for Dummies Reality Check\": Zero lines of code was written by the person who built the first compiler.",
       "t": 1794155123217
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Coding for Dummies Reality Check\"",
+      "t": 1794155149904
     }
   ],
   "working": null,
