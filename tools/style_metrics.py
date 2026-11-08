@@ -41,7 +41,7 @@ def cut_stats(cut_times, dur):
         "shot_s_p10": round(_pct(s, 0.1), 2),
         "shot_s_p90": round(_pct(s, 0.9), 2),
         "shot_spread": round(cv, 2),
-        "shot_spread_label": "steady" if cv < 0.25 else "varied" if cv < 0.6 else "wild",
+        "shot_spread_label": "too few cuts" if len(shots) < 6 else "steady" if cv < 0.25 else "varied" if cv < 0.6 else "wild",
     }
     if cut_times:
         out["hook_s"] = round(shots[0], 2)      # length of the first shot = how long the hook holds before the first cut
