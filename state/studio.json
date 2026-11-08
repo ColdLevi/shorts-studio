@@ -1,6 +1,6 @@
 {
   "last_update": 312538267,
-  "time": 1794124923827,
+  "time": 1794125164470,
   "stage": "idle",
   "topic": "What if cats have 1 live",
   "research": {
@@ -2716,7 +2716,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "upload-5"
+    "style": "upload-6"
   },
   "job": null,
   "recent_styles": [
@@ -2726,11 +2726,7 @@
     "upload-3",
     "what-if"
   ],
-  "learning": {
-    "name": "upload-6",
-    "source": "tg:BQACAgQAAxkBAAICD2rwLHq7MHqCiqH8Eue15QtFflRyAAJiIQACIUWAU3_otbhC4WsjPQQ",
-    "at": 1794124923827
-  },
+  "learning": null,
   "styles": {
     "youtube-1": {
       "name": "youtube-1",
@@ -3036,6 +3032,89 @@
         "shot_spread_label": "wild",
         "hook_s": 48.18,
         "motion_level": "static"
+      }
+    },
+    "upload-6": {
+      "name": "upload-6",
+      "source": "telegram upload",
+      "summary": "High-contrast neon contour animation against deep black backgrounds, accented by golden-yellow glowing linework. Minimalist cinematic storytelling framed in wide aspect ratios, featuring slow, dramatic character close-ups and low-key lighting.",
+      "base": "neon",
+      "mode": "illustrated",
+      "graphic_ratio": 0.25,
+      "beat_seconds": 5.6,
+      "image_style": "Golden glowing neon sketch outlines on a pitch-black background, dramatic chiaroscuro cinematic lighting, dark and moody atmosphere.",
+      "format": "landscape",
+      "music": "ambient-pad",
+      "pacing": "Deliberate and slow-paced with wide shot duration variance, relying on extended visual holds.",
+      "writer_notes": "Introspective, serious instructional tone. Starts with a relatable creator struggle hook, progressing methodically through dramatic narrative steps.",
+      "style_tokens": {
+        "caption": {
+          "preset": "subtitle",
+          "font": "Lora",
+          "case": "none",
+          "position": "bottom",
+          "highlight": "#FFB800",
+          "color": "#FFFFFF"
+        },
+        "font": "Space Grotesk",
+        "transitions": [
+          "cut",
+          "fade",
+          "dissolve"
+        ],
+        "motion": "drift",
+        "fx": {
+          "hold": 1,
+          "jitter": 1,
+          "letterbox": 0.08,
+          "texture": "grain",
+          "flicker": false
+        },
+        "backdrop": "none",
+        "grade": "contrast(1.4) brightness(0.7) sepia(0.3) saturate(1.2)",
+        "accent": "#FFB800",
+        "palette": [
+          "#080808",
+          "#FF9900"
+        ],
+        "progress_bar": false,
+        "vignette": true,
+        "transition": {
+          "type": "cut",
+          "duration": 0
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 360,
+        "fps": 30,
+        "duration_s": 45,
+        "aspect": "16:9",
+        "cuts": 7,
+        "cuts_per_min": 9.3,
+        "avg_shot_s": 5.62,
+        "held_frame_share": 0.15,
+        "brightness_0_255": 33,
+        "saturation_0_128": 8,
+        "loudness_lufs": -17.9,
+        "shot_s_median": 2.37,
+        "shot_s_p10": 0.78,
+        "shot_s_p90": 19.32,
+        "shot_spread": 1.71,
+        "shot_spread_label": "wild",
+        "hook_s": 2.5,
+        "motion_ydif": 2.14,
+        "motion_level": "gentle",
+        "tempo_bpm": null,
+        "tempo_confidence": 0.04
+      },
+      "rhythm": {
+        "shot_s_median": 2.37,
+        "shot_s_p10": 0.78,
+        "shot_s_p90": 19.32,
+        "shot_spread_label": "wild",
+        "hook_s": 2.5,
+        "motion_level": "gentle"
       }
     }
   }
