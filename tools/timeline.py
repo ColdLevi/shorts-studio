@@ -110,6 +110,52 @@ STYLE_PRESETS = {
 }
 RECIPES = [k for k, v in STYLE_PRESETS.items() if v.get("recipe")]
 
+# ---- learned styles (style-fix): styles/<id>.json committed by learn-style.yml ----
+_learned_cache = None
+
+
+def learned_styles():
+    """id -> full learned style recipe, read from styles/ (every *.json except index.json)."""
+    global _learned_cache
+    if _learned_cache is None:
+        out = {}
+        d = os.path.join(ROOT, "styles")
+        try:
+            for f in sorted(os.listdir(d)):
+                if f.endswith(".json") and f != "index.json":
+                    try:
+                        s = json.load(open(os.path.join(d, f)))
+                        out[str(s.get("id") or f[:-5])] = s
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+        _learned_cache = out
+    return _learned_cache
+
+
+def find_learned(name):
+    """Resolve a learned style by id or display name (exact first, then inside the text)."""
+    n = (name or "").strip().lower()
+    if not n:
+        return None, None
+    for sid, s in learned_styles().items():
+        if n == sid.lower() or n == (s.get("name") or "").lower():
+            return sid, s
+    cands = []
+    for sid, s in learned_styles().items():
+        for key in {sid.lower(), (s.get("name") or "").lower()} - {""}:
+            if key in n:
+                cands.append((len(key), sid, s))
+    if cands:
+        cands.sort(key=lambda x: -x[0])  # longest match wins: 'fastedit2' beats 'fastedit'
+        return cands[0][1], cands[0][2]
+    return None, None
+
+
+RECIPES = RECIPES + sorted(learned_styles().keys())
+# ---- end learned styles (style-fix) ----
+
 
 def deep_merge(a, b):
     out = copy.deepcopy(a)
@@ -122,6 +168,11 @@ def style_from(spec):
     """Spec fields -> style tokens. spec.style is the image-prompt style text (kept in meta);
     spec.style_preset / spec.style_tokens / spec.caption_style choose the look."""
     st = deep_merge(STYLE_PRESETS["bold-pop"], STYLE_PRESETS.get(spec.get("style_preset") or "", {}))
+    # learned styles (style-fix): spec.style_preset may name a learned look -> merge its tokens
+    _lid, _learned = find_learned(spec.get("style_preset") or "")
+    if _learned:
+        st = deep_merge(st, _learned.get("style_tokens") or {})
+        st["learned"] = _lid
     if spec.get("style_preset"):
         st["preset"] = spec["style_preset"]
     if spec.get("caption_style"):
@@ -138,10 +189,18 @@ def expand_recipe(t):
     swap in that recipe's whole look, keeping the accent and any caption size the user asked for."""
     st = t.get("style") or {}
     name = st.pop("apply_recipe", None)
-    if not name or name not in STYLE_PRESETS:
+    if not name:
         return t
     keep = {k: st[k] for k in ("accent",) if st.get(k)}
-    new = deep_merge(STYLE_PRESETS["bold-pop"], STYLE_PRESETS[name])
+    if name in STYLE_PRESETS:
+        new = deep_merge(STYLE_PRESETS["bold-pop"], STYLE_PRESETS[name])
+    else:
+        # learned styles (style-fix): apply_recipe may name a learned look, e.g. "fastedit"
+        _lid, _learned = find_learned(name)
+        if not _learned:
+            return t
+        new = deep_merge(STYLE_PRESETS["bold-pop"], _learned.get("style_tokens") or {})
+        new["learned"] = _lid
     new.update(keep)
     new["preset"] = name
     t["style"] = new

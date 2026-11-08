@@ -9,6 +9,9 @@ on:
       source: { description: "Video URL or tg:<file_id>", required: true }
       name: { description: "Style name", required: false, default: "my-style" }
       prev_style: { description: "Earlier style JSON to merge this video into (optional)", required: false }
+permissions:
+  contents: write
+
 jobs:
   learn:
     runs-on: ubuntu-latest
@@ -33,6 +36,11 @@ jobs:
           ffmpeg -version | head -1
       - name: Learn the style
         run: python3 tools/learn_style.py
+      - name: Save the style to the repo (styles/) so renders and the bot always find it
+        if: hashFiles('job/ref/style.json') != ''
+        run: |
+          python3 tools/save_style.py
+          bash tools/commit_style.sh "$(python3 -c "import json;print(json.load(open('job/ref/style.json')).get('name','style'))")"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

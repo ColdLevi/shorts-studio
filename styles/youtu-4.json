@@ -1,0 +1,57 @@
+{
+  "name": "youtu-4",
+  "source": "https://youtu.be/FGz2yPTjrAY?si=Z56-36uXPqpnA0MP",
+  "summary": "A moody cybercrime documentary style blending photorealistic live-action plates with minimalist line-drawn NPC meme faces. Dark-mode tech UI simulations, cloud infrastructure diagrams, and dramatic narrative storytelling drive the investigative pace.",
+  "base": "motion-explainer",
+  "mode": "mixed",
+  "graphic_ratio": 0.65,
+  "beat_seconds": 4.5,
+  "image_style": "Cinematic low-key corporate stock photography and nocturnal interiors composited with stylized minimalist vector NPC facial expressions.",
+  "format": "landscape",
+  "music": "tech-pulse",
+  "pacing": "Suspenseful docu-drama pacing balancing deliberate narrative exposition with crisp technical UI walkthroughs.",
+  "writer_notes": "Forensic true-crime tech breakdown focusing on insider threats and infrastructure vulnerabilities. Balances detailed architectural accuracy with subtle dark humor and ego-driven character dynamics.",
+  "style_tokens": {
+    "caption": {
+      "preset": "none",
+      "font": "Inter",
+      "case": "none",
+      "position": "bottom",
+      "highlight": "#FF3B30",
+      "color": "#FFFFFF"
+    },
+    "font": "Inter",
+    "transitions": [
+      "cut",
+      "fade",
+      "dissolve",
+      "zoom-in"
+    ],
+    "motion": "drift",
+    "fx": {
+      "hold": 1,
+      "jitter": 0,
+      "letterbox": 0,
+      "texture": "grain",
+      "flicker": false
+    },
+    "backdrop": "none",
+    "grade": "contrast(1.15) saturate(0.9) brightness(0.95)",
+    "accent": "#FF3B30",
+    "palette": [
+      "#0D1117",
+      "#161B22",
+      "#238636"
+    ],
+    "progress_bar": false,
+    "vignette": true,
+    "transition": {
+      "type": "cut",
+      "duration": 0
+    }
+  },
+  "metrics": {},
+  "rhythm": {},
+  "id": "youtu-4",
+  "learned_at": 1794151690838
+}

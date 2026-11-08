@@ -1,0 +1,145 @@
+{
+  "_tally": {
+    "accent": {
+      "#39FF14": 1,
+      "#FFFFFF": 1,
+      "#FF2A2A": 1
+    },
+    "backdrop": {
+      "none": 3
+    },
+    "base": {
+      "cinematic": 1,
+      "neon": 1,
+      "motion-explainer": 1
+    },
+    "caption_font": {
+      "Inter": 1,
+      "Space Grotesk": 2
+    },
+    "caption_preset": {
+      "clean": 3
+    },
+    "font": {
+      "Inter": 1,
+      "Space Grotesk": 2
+    },
+    "format": {
+      "landscape": 3
+    },
+    "mode": {
+      "mixed": 3
+    },
+    "motion": {
+      "drift": 1,
+      "handheld": 1,
+      "static": 1
+    },
+    "music": {
+      "tech-pulse": 3
+    },
+    "texture": {
+      "grain": 2,
+      "none": 1
+    },
+    "transitions": {
+      "cut": 3,
+      "fade": 1,
+      "flash": 1,
+      "zoom-in": 2,
+      "slide-left": 1
+    }
+  },
+  "base": "cinematic",
+  "beat_seconds": 3.53,
+  "format": "landscape",
+  "graphic_ratio": 0.48,
+  "image_style": "Cinematic low-key studio lighting, desaturated monochromatic palette with crisp white highlights, macro tech focus, sharp digital texture.",
+  "metrics": {
+    "width": 533.33,
+    "height": 300,
+    "fps": 23.99,
+    "duration_s": 196.6,
+    "aspect": "16:9",
+    "cuts": 52.67,
+    "cuts_per_min": 16.4,
+    "avg_shot_s": 3.54,
+    "held_frame_share": 0.18,
+    "brightness_0_255": 55,
+    "saturation_0_128": 5,
+    "loudness_lufs": -17.03,
+    "shot_s_median": 2.66,
+    "shot_s_p10": 0.93,
+    "shot_s_p90": 6.48,
+    "shot_spread": 1.14,
+    "shot_spread_label": "wild",
+    "hook_s": 3.03,
+    "motion_ydif": 2.82,
+    "motion_level": "gentle",
+    "tempo_bpm": 117.7,
+    "tempo_confidence": 0.1,
+    "cuts_on_beat": 0.08,
+    "cuts_on_beat_chance": 0.31,
+    "cuts_snap_to_beat": false
+  },
+  "mode": "mixed",
+  "music": "tech-pulse",
+  "name": "upload-7",
+  "pacing": "Deliberate and rhythmic with varied shot lengths around three seconds, using quick tech cutaways to maintain momentum.",
+  "rhythm": {
+    "shot_s_median": 2.66,
+    "shot_s_p10": 0.93,
+    "shot_s_p90": 6.48,
+    "shot_spread_label": "wild",
+    "hook_s": 3.03,
+    "tempo_bpm": 117.7,
+    "cuts_on_beat": 0.08,
+    "cuts_snap_to_beat": false,
+    "motion_level": "gentle"
+  },
+  "samples": 3,
+  "source": "merged from 3 videos",
+  "style_tokens": {
+    "accent": "#FFFFFF",
+    "backdrop": "none",
+    "caption": {
+      "case": "upper",
+      "color": "#E5E5E5",
+      "font": "Space Grotesk",
+      "highlight": "#FFFFFF",
+      "position": "bottom",
+      "preset": "clean"
+    },
+    "font": "Space Grotesk",
+    "fx": {
+      "flicker": false,
+      "hold": 1,
+      "jitter": 1,
+      "letterbox": 0,
+      "texture": "grain"
+    },
+    "grade": "contrast(1.25) saturate(0.2) brightness(0.85)",
+    "motion": "handheld",
+    "palette": [
+      "#0B0D0F",
+      "#1E2227"
+    ],
+    "progress_bar": false,
+    "transition": {
+      "type": "cut",
+      "duration": 0
+    },
+    "transitions": [
+      "cut",
+      "zoom-in",
+      "fade",
+      "flash",
+      "slide-left"
+    ],
+    "vignette": true
+  },
+  "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action footage of hardware and video editing workflows is accented by minimalist white-line overlays and futuristic interface designs.",
+  "writer_notes": "Focused, process-driven tech narration with an analytical yet inspiring tone. Hook opens on tactile workstation gear before diving into creative progression.",
+  "id": "upload-7",
+  "learned_at": 1794151690847
+}

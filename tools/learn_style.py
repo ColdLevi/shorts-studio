@@ -324,6 +324,8 @@ def main():
     req = urllib.request.Request(base + "/api/studio?event=style", data=json.dumps({"style": style}).encode(),
                                  headers={"Content-Type": "application/json", "x-studio-key": key})
     print(urllib.request.urlopen(req, timeout=60).read()[:300])
+    # style-fix: tell the user how to actually use the new style
+    tg(f"✅ Style '{NAME}' learned and saved to styles/{NAME}.json. Say 'use {NAME}' to make your next videos in this look.")
 
 
 if __name__ == "__main__":

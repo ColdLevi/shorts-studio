@@ -388,6 +388,19 @@ def main():
     print(f"project {pid}: {cv['width']}x{cv['height']} @{cv['fps']}fps, images {W}x{H}")
     beats = spec["beats"]
     style = spec.get("style", "").strip()
+    # learned styles (style-fix): put the learned look's art direction in front of the image prompts
+    try:
+        _lid, _learned = TL.find_learned(spec.get("style_preset") or "")
+        if not _learned:
+            _lid, _learned = TL.find_learned(style)
+        if _learned:
+            _is = (_learned.get("image_style") or "").strip()
+            if _is and _is.lower() not in style.lower():
+                style = f"{_is}. {style}".strip(". ")
+            spec.setdefault("style_preset", _lid)
+            print(f"learned style '{_lid}' applied")
+    except Exception as _e:
+        print("learned style lookup skipped:", _e)
     text = " ".join(b["narration"].strip() for b in beats)
 
     tg("🎙️ Recording the voiceover...")

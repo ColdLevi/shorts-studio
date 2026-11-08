@@ -1,0 +1,92 @@
+{
+  "name": "fastedit",
+  "source": "telegram upload",
+  "summary": "A punchy, modern app promo featuring rapid-fire UI mockups against bold, colorful flat backgrounds. Kinetic typography and floating graphical UI chips pop on screen with dynamic speed.",
+  "base": "bold-pop",
+  "mode": "motion-graphics",
+  "graphic_ratio": 1,
+  "beat_seconds": 1.5,
+  "image_style": "Flat minimalist vector illustrations, crisp mobile UI frames, vivid candy palette, clean digital vector textures.",
+  "format": "vertical",
+  "music": "tech-pulse",
+  "pacing": "Hyper-fast, rhythmic montage with quick jump cuts averaging around half a second per shot.",
+  "writer_notes": "Punchy, concise copy focused on ease and speed. Hooks instantly with bold brand value proposition and resolves with a clean logo sign-off.",
+  "style_tokens": {
+    "caption": {
+      "preset": "bold-pop",
+      "font": "Poppins",
+      "case": "none",
+      "position": "top",
+      "highlight": "#FF5E5E",
+      "color": "#FFFFFF"
+    },
+    "font": "Poppins",
+    "transitions": [
+      "cut",
+      "zoom-in",
+      "slide-up"
+    ],
+    "motion": "static",
+    "fx": {
+      "hold": 1,
+      "jitter": 0,
+      "letterbox": 0,
+      "texture": "none",
+      "flicker": false
+    },
+    "backdrop": "none",
+    "grade": "contrast(1.05) saturate(1.1)",
+    "accent": "#FF424D",
+    "palette": [
+      "#0E62F7",
+      "#FF424D",
+      "#04C659"
+    ],
+    "progress_bar": false,
+    "vignette": false,
+    "transition": {
+      "type": "cut",
+      "duration": 0
+    }
+  },
+  "metrics": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration_s": 15.9,
+    "aspect": "9:16",
+    "cuts": 28,
+    "cuts_per_min": 105.8,
+    "avg_shot_s": 0.55,
+    "held_frame_share": 0.24,
+    "brightness_0_255": 154,
+    "saturation_0_128": 39,
+    "loudness_lufs": -14.3,
+    "shot_s_median": 0.43,
+    "shot_s_p10": 0.17,
+    "shot_s_p90": 0.73,
+    "shot_spread": 1.08,
+    "shot_spread_label": "wild",
+    "hook_s": 0.6,
+    "motion_ydif": 12.1,
+    "motion_level": "fast",
+    "tempo_bpm": 101.5,
+    "tempo_confidence": 0.41,
+    "cuts_on_beat": 0.18,
+    "cuts_on_beat_chance": 0.27,
+    "cuts_snap_to_beat": false
+  },
+  "rhythm": {
+    "shot_s_median": 0.43,
+    "shot_s_p10": 0.17,
+    "shot_s_p90": 0.73,
+    "shot_spread_label": "wild",
+    "hook_s": 0.6,
+    "tempo_bpm": 101.5,
+    "cuts_on_beat": 0.18,
+    "cuts_snap_to_beat": false,
+    "motion_level": "fast"
+  },
+  "id": "fastedit",
+  "learned_at": 1794151690854
+}
