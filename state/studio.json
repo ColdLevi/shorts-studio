@@ -1,6 +1,6 @@
 {
-  "last_update": 312538302,
-  "time": 1794156808629,
+  "last_update": 312538303,
+  "time": 1794156815265,
   "stage": "script",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
@@ -104,16 +104,6 @@
     {
       "role": "bot",
       "text": "Wrote the script for \"The Death of Syntax in 2026\"",
-      "t": 1794153707575
-    },
-    {
-      "role": "user",
-      "text": "Use auto style",
-      "t": 1794153721118
-    },
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Death of Syntax in 2026\"",
       "t": 1794153761281
     },
     {
@@ -180,6 +170,16 @@
       "role": "bot",
       "text": "Wrote the script for \"Coding for Dummies Reality Check\"",
       "t": 1794156808629
+    },
+    {
+      "role": "user",
+      "text": "Don't use the browser bot for research anymore",
+      "t": 1794156814411
+    },
+    {
+      "role": "bot",
+      "text": "Updated tool settings",
+      "t": 1794156815265
     }
   ],
   "working": null,
