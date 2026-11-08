@@ -305,6 +305,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-28",
+      "title": "The Death of Syntax in 2026",
+      "hook": "In twenty twenty, Anthony Fu built a tiny personal script just to click browser elements.",
+      "accent": "#2EE6C5",
+      "duration": 15.1,
+      "created": 1794153914686,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-28/short-28.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-28/short-28.jpg",
+      "project": "the-death-of-syntax-in-2026-mw80u5o7",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
