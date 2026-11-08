@@ -1,6 +1,6 @@
 {
-  "last_update": 312538305,
-  "time": 1794158556876,
+  "last_update": 312538306,
+  "time": 1794158567220,
   "stage": "idle",
   "topic": "YouTube Issacverse of about the idea of how to code for dummies",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Coding for Dummies Reality Check\": Zero lines of code was written by the person who built the first compiler.",
-      "t": 1794155123217
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Coding for Dummies Reality Check\"",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Proposed edit to \"Coding for Dummies Reality Check\": Removed captions, added smooth zoom transitions, and applied dynamic camera motion to all scenes",
       "t": 1794158556876
+    },
+    {
+      "role": "bot",
+      "text": "Applying edit to \"Coding for Dummies Reality Check\": Remove captions and enhance motion",
+      "t": 1794158567220
     }
   ],
   "working": null,
@@ -1267,152 +1267,154 @@
   },
   "renders": [
     {
-      "title": "Coding for Dummies Reality Check",
-      "at": 1794156849736,
+      "title": "Coding for Dummies Reality Check (Remove captions and enhance motion)",
+      "at": 1794158567220,
       "project": "coding-for-dummies-reality-check-mw82nx5g"
     }
   ],
   "current_project": "coding-for-dummies-reality-check-mw82nx5g",
-  "pending_edit": {
-    "id": "emw83oij09zb",
-    "project_id": "coding-for-dummies-reality-check-mw82nx5g",
-    "patch": [
-      {
-        "op": "replace",
-        "path": "/style/caption/preset",
-        "value": "none"
-      },
-      {
-        "op": "replace",
-        "path": "/style/transition",
-        "value": {
-          "type": "zoom-in",
-          "duration": 0.4
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/style/motion",
-        "value": "parallax"
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v1",
-        "value": {
-          "motion": "zoom-in",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
+  "pending_edit": null,
+  "edits": [
+    {
+      "id": "emw83oij09zb",
+      "project_id": "coding-for-dummies-reality-check-mw82nx5g",
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/style/caption/preset",
+          "value": "none"
+        },
+        {
+          "op": "replace",
+          "path": "/style/transition",
+          "value": {
+            "type": "zoom-in",
+            "duration": 0.4
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/style/motion",
+          "value": "parallax"
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v1",
+          "value": {
+            "motion": "zoom-in",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v2",
+          "value": {
+            "motion": "pan-left",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v3",
+          "value": {
+            "motion": "zoom-out",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v4",
+          "value": {
+            "motion": "pan-right",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v5",
+          "value": {
+            "motion": "zoom-in",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v6",
+          "value": {
+            "motion": "pan-up",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v7",
+          "value": {
+            "motion": "zoom-out",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v8",
+          "value": {
+            "motion": "pan-right",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v9",
+          "value": {
+            "motion": "zoom-in",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
+          }
+        },
+        {
+          "op": "merge",
+          "path": "/tracks/visuals/@v10",
+          "value": {
+            "motion": "pan-down",
+            "transition": {
+              "type": "dissolve",
+              "duration": 0.3
+            }
           }
         }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v2",
-        "value": {
-          "motion": "pan-left",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v3",
-        "value": {
-          "motion": "zoom-out",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v4",
-        "value": {
-          "motion": "pan-right",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v5",
-        "value": {
-          "motion": "zoom-in",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v6",
-        "value": {
-          "motion": "pan-up",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v7",
-        "value": {
-          "motion": "zoom-out",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v8",
-        "value": {
-          "motion": "pan-right",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v9",
-        "value": {
-          "motion": "zoom-in",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      },
-      {
-        "op": "merge",
-        "path": "/tracks/visuals/@v10",
-        "value": {
-          "motion": "pan-down",
-          "transition": {
-            "type": "dissolve",
-            "duration": 0.3
-          }
-        }
-      }
-    ],
-    "message": "Remove captions and enhance motion",
-    "summary": "Removed captions, added smooth zoom transitions, and applied dynamic camera motion to all scenes",
-    "detail": "🎨 Style: caption, motion, transition\n🎬 Framing/motion of scene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
-    "base_rev": 1,
-    "at": 1794158556876
-  },
-  "edits": [],
+      ],
+      "message": "Remove captions and enhance motion",
+      "summary": "Removed captions, added smooth zoom transitions, and applied dynamic camera motion to all scenes",
+      "detail": "🎨 Style: caption, motion, transition\n🎬 Framing/motion of scene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n♻️ Nothing to regenerate: same voice and pictures, just a re-render.",
+      "base_rev": 1,
+      "at": 1794158567047
+    }
+  ],
   "pending": {
     "step": "render",
     "title": "Adam Starts His Stop Motion Day",
