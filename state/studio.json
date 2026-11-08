@@ -1,255 +1,18 @@
 {
-  "last_update": 312538286,
-  "time": 1794142761176,
-  "stage": "script",
+  "last_update": 312538287,
+  "time": 1794142779886,
+  "stage": "idle",
   "topic": "about writing codes before and currently vibe coding",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "The Death of Manual Syntax",
-    "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
-    "angle": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations. Vibe coding completely flips this by replacing manual typing with direct intent, turning developers into creative editors.",
-    "key_facts": [
-      "Early software engineering required manual memory management and exact low-level syntax execution.",
-      "Generative AI models produce functional app codebases directly from plain language prompts.",
-      "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
-      "Modern developer workflows shift from manual syntax authoring to system architecture validation."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 60,
-    "style": "fastedit2",
-    "style_reason": "Clean UI cuts contrast dense low-level terminals with sleek modern prompts.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "The Death of Manual Syntax",
-    "beats": [
-      {
-        "narration": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "3,000 Lines",
-          "sub": "Assembly Code"
-        }
-      },
-      {
-        "narration": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Memorize syntax",
-          "fact": "Direct intent"
-        }
-      },
-      {
-        "narration": "Manual memory management ruled early engineering.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "Legacy Systems",
-          "items": [
-            {
-              "icon": "cpu",
-              "label": "Memory"
-            },
-            {
-              "icon": "book",
-              "label": "Syntax"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Exact low level execution demanded endless focus.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Manual Effort"
-        }
-      },
-      {
-        "narration": "Then generative models arrived.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "Generative AI",
-            "Changes Everything"
-          ]
-        }
-      },
-      {
-        "narration": "Now modern artificial intelligence produces functional app codebases directly from plain language prompts.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "chat",
-          "title": "AI Prompt",
-          "messages": [
-            {
-              "from": "me",
-              "text": "Build a dashboard app"
-            },
-            {
-              "from": "them",
-              "text": "Generated full codebase"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "Vibe coding completely flips this paradigm.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "The Paradigm Shift",
-          "steps": [
-            "Manual typing",
-            "Direct intent",
-            "Creative editing"
-          ]
-        }
-      },
-      {
-        "narration": "Developers replace manual typing with direct intent.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Coding Evolution",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "Typing",
-            "value": 10
-          },
-          "right": {
-            "label": "Intent",
-            "value": 90
-          }
-        }
-      },
-      {
-        "narration": "This turns developers into creative editors.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "New Roles",
-          "items": [
-            "System Architect",
-            "Creative Editor",
-            "Vision Guide"
-          ]
-        }
-      },
-      {
-        "narration": "Engineers using generative AI coding tools complete tasks up to fifty five percent faster.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 55,
-          "prefix": "",
-          "suffix": "%",
-          "label": "Faster Completion"
-        }
-      },
-      {
-        "narration": "Speed changes everything.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Modern developer workflows shift from manual syntax authoring.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "bars",
-          "title": "Workflow Shift",
-          "prefix": "",
-          "suffix": "%",
-          "items": [
-            {
-              "label": "Syntax",
-              "value": 10
-            },
-            {
-              "label": "Architecture",
-              "value": 90
-            }
-          ]
-        }
-      },
-      {
-        "narration": "System architecture validation takes center stage.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "gauge",
-          "value": 90,
-          "min": 0,
-          "max": 100,
-          "suffix": "%",
-          "label": "Validation Focus"
-        }
-      },
-      {
-        "narration": "Syntax is dead.",
-        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Syntax is Dead",
-          "sub": "Long live intent"
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
-        "supported": true
-      },
-      {
-        "claim": "Early software engineering required manual memory management and exact low-level syntax execution.",
-        "supported": true
-      },
-      {
-        "claim": "Generative AI models produce functional app codebases directly from plain language prompts.",
-        "supported": true
-      },
-      {
-        "claim": "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
-        "supported": true
-      },
-      {
-        "claim": "Modern developer workflows shift from manual syntax authoring to system architecture validation.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Please send over the file or link you'd like me to add to your style, and I'll make sure it's incorporated!",
-      "t": 1794132901332
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"upload-7\"",
@@ -324,10 +87,260 @@
       "role": "bot",
       "text": "Wrote the script for \"The Death of Manual Syntax\"",
       "t": 1794142761176
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"The Death of Manual Syntax\"",
+      "t": 1794142779886
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "the-death-of-manual-syntax-mw7uacsp",
+      "canvas": "16:9",
+      "title": "The Death of Manual Syntax",
+      "topic": "about writing codes before and currently vibe coding",
+      "pitch": {
+        "title": "The Death of Manual Syntax",
+        "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+        "angle": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations. Vibe coding completely flips this by replacing manual typing with direct intent, turning developers into creative editors.",
+        "key_facts": [
+          "Early software engineering required manual memory management and exact low-level syntax execution.",
+          "Generative AI models produce functional app codebases directly from plain language prompts.",
+          "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
+          "Modern developer workflows shift from manual syntax authoring to system architecture validation."
+        ],
+        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "length_seconds": 60,
+        "style": "fastedit2",
+        "style_reason": "Clean UI cuts contrast dense low-level terminals with sleek modern prompts.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "The Death of Manual Syntax",
+        "beats": [
+          {
+            "narration": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "3,000 Lines",
+              "sub": "Assembly Code"
+            }
+          },
+          {
+            "narration": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Memorize syntax",
+              "fact": "Direct intent"
+            }
+          },
+          {
+            "narration": "Manual memory management ruled early engineering.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "Legacy Systems",
+              "items": [
+                {
+                  "icon": "cpu",
+                  "label": "Memory"
+                },
+                {
+                  "icon": "book",
+                  "label": "Syntax"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Exact low level execution demanded endless focus.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Manual Effort"
+            }
+          },
+          {
+            "narration": "Then generative models arrived.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "Generative AI",
+                "Changes Everything"
+              ]
+            }
+          },
+          {
+            "narration": "Now modern artificial intelligence produces functional app codebases directly from plain language prompts.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "chat",
+              "title": "AI Prompt",
+              "messages": [
+                {
+                  "from": "me",
+                  "text": "Build a dashboard app"
+                },
+                {
+                  "from": "them",
+                  "text": "Generated full codebase"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "Vibe coding completely flips this paradigm.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "The Paradigm Shift",
+              "steps": [
+                "Manual typing",
+                "Direct intent",
+                "Creative editing"
+              ]
+            }
+          },
+          {
+            "narration": "Developers replace manual typing with direct intent.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Coding Evolution",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "Typing",
+                "value": 10
+              },
+              "right": {
+                "label": "Intent",
+                "value": 90
+              }
+            }
+          },
+          {
+            "narration": "This turns developers into creative editors.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "New Roles",
+              "items": [
+                "System Architect",
+                "Creative Editor",
+                "Vision Guide"
+              ]
+            }
+          },
+          {
+            "narration": "Engineers using generative AI coding tools complete tasks up to fifty five percent faster.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 55,
+              "prefix": "",
+              "suffix": "%",
+              "label": "Faster Completion"
+            }
+          },
+          {
+            "narration": "Speed changes everything.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Modern developer workflows shift from manual syntax authoring.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "bars",
+              "title": "Workflow Shift",
+              "prefix": "",
+              "suffix": "%",
+              "items": [
+                {
+                  "label": "Syntax",
+                  "value": 10
+                },
+                {
+                  "label": "Architecture",
+                  "value": 90
+                }
+              ]
+            }
+          },
+          {
+            "narration": "System architecture validation takes center stage.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "gauge",
+              "value": 90,
+              "min": 0,
+              "max": 100,
+              "suffix": "%",
+              "label": "Validation Focus"
+            }
+          },
+          {
+            "narration": "Syntax is dead.",
+            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Syntax is Dead",
+              "sub": "Long live intent"
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
+            "supported": true
+          },
+          {
+            "claim": "Early software engineering required manual memory management and exact low-level syntax execution.",
+            "supported": true
+          },
+          {
+            "claim": "Generative AI models produce functional app codebases directly from plain language prompts.",
+            "supported": true
+          },
+          {
+            "claim": "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
+            "supported": true
+          },
+          {
+            "claim": "Modern developer workflows shift from manual syntax authoring to system architecture validation.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794142779886
+    },
     {
       "id": "cats-only-get-one-life-mw6vjxdj",
       "canvas": "16:9",
@@ -2697,112 +2710,6 @@
         "sources": []
       },
       "at": 1792868067147
-    },
-    {
-      "id": "how-paper-defeated-gold-mvmnwpu5",
-      "canvas": "16:9",
-      "title": "How Paper Defeated Gold",
-      "topic": "how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution",
-      "pitch": {
-        "title": "How Paper Defeated Gold",
-        "hook": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four grains of pure gold.",
-        "angle": "People assume paper money naturally lost its gold value because gold ran out. In reality, governments issued more paper receipts than the physical metal in their vaults, forcing them to cut the link entirely.",
-        "key_facts": [
-          "In seventeen ninety-two, the United States defined one dollar as twenty-four point seven five grains of pure gold.",
-          "Early paper dollars were written receipts for physical metal sitting in bank vaults.",
-          "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
-          "On August fifteen, nineteen seventy-one, President Richard Nixon officially suspended the dollar's convertibility into gold."
-        ],
-        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "length_seconds": 45,
-        "style": "documentary",
-        "style_reason": "Gives historical currency transitions an authoritative, museum-grade storytelling atmosphere.",
-        "music": "docu-pluck",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "How Paper Defeated Gold",
-        "beats": [
-          {
-            "narration": "In seventeen ninety-two, a single paper dollar was a physical receipt for twenty-four point seven five grains of pure gold.",
-            "image_prompt": "painterly historical illustration of a heavy gold coin resting on aged parchment under dramatic chiaroscuro lighting, museum-diorama depth",
-            "tool": "higgsfield",
-            "motion": "The camera slowly pushes in toward the gold coin while soft dust motes drift across the aged paper."
-          },
-          {
-            "narration": "History books teach that paper money lost its gold backing because the mines simply ran dry.",
-            "image_prompt": "painterly historical illustration of an empty wooden vault with dramatic chiaroscuro lighting and muted earth tones, museum-diorama depth",
-            "tool": "flux"
-          },
-          {
-            "narration": "But governments printed far more paper receipts than the physical metal sitting locked inside their vaults.",
-            "graphic": {
-              "type": "bars",
-              "title": "Paper Receipts Versus Vault Gold",
-              "prefix": "",
-              "suffix": "%",
-              "items": [
-                {
-                  "label": "Paper Issued",
-                  "value": 100
-                },
-                {
-                  "label": "Vault Gold",
-                  "value": 30
-                }
-              ]
-            },
-            "image_prompt": "painterly historical illustration of stacked paper documents glowing under dramatic chiaroscuro lighting, museum-diorama depth",
-            "tool": "graphic"
-          },
-          {
-            "narration": "This mounting imbalance forced authorities to break the metallic promise entirely.",
-            "image_prompt": "painterly historical illustration of a heavy metal scale tipping abruptly in dramatic chiaroscuro lighting, museum-diorama depth",
-            "tool": "flux"
-          },
-          {
-            "narration": "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
-            "image_prompt": "painterly historical illustration of a decree document sealed with wax under dramatic chiaroscuro lighting, museum-diorama depth",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then, on August fifteen, nineteen seventy-one, President Richard Nixon officially suspended convertibility.",
-            "image_prompt": "painterly historical illustration of a presidential desk with a heavy ledger and dramatic chiaroscuro lighting, museum-diorama depth",
-            "tool": "flux"
-          },
-          {
-            "narration": "Paper money finally stood alone, permanently untethered from any physical metal.",
-            "image_prompt": "painterly historical illustration of a single crisp banknote floating away from a dark vault, museum-diorama depth",
-            "tool": "higgsfield",
-            "motion": "The camera slowly pulls back as the banknote drifts upward against a dark, muted background."
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In seventeen ninety-two, the United States defined one dollar as twenty-four point seven five grains of pure gold.",
-            "supported": true
-          },
-          {
-            "claim": "Early paper dollars were written receipts for physical metal sitting in bank vaults.",
-            "supported": true
-          },
-          {
-            "claim": "In nineteen thirty-three, President Franklin Roosevelt made holding gold coins illegal for private citizens.",
-            "supported": true
-          },
-          {
-            "claim": "On August fifteen, nineteen seventy-one, President Richard Nixon officially suspended the dollar's convertibility into gold.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1792862276233
     }
   ],
   "lastRenderAuto": false,
@@ -2814,17 +2721,12 @@
   },
   "renders": [
     {
-      "title": "Thirty Years of Code Burnout",
-      "at": 1794083431441,
-      "project": "thirty-years-of-code-burnout-mw6uyb8g"
-    },
-    {
-      "title": "Cats Only Get One Life",
-      "at": 1794084439894,
-      "project": "cats-only-get-one-life-mw6vjxdj"
+      "title": "The Death of Manual Syntax",
+      "at": 1794142779886,
+      "project": "the-death-of-manual-syntax-mw7uacsp"
     }
   ],
-  "current_project": "cats-only-get-one-life-mw6vjxdj",
+  "current_project": "the-death-of-manual-syntax-mw7uacsp",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -2954,16 +2856,13 @@
     "format": "landscape",
     "style": "fastedit2"
   },
-  "job": {
-    "length": 60,
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "upload-3",
     "upload-3",
     "documentary",
     "upload-3",
-    "what-if"
+    "what-if",
+    "fastedit2"
   ],
   "learning": null,
   "styles": {
