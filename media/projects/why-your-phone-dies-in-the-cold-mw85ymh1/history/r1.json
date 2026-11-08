@@ -1,0 +1,5758 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "why-your-phone-dies-in-the-cold-mw85ymh1",
+ "rev": 1,
+ "title": "Why Your Phone Dies in the Cold",
+ "duration": 356.89,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#5AA9FF",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.025,
+    "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup of a smartphone showing low battery icon against a solid icy blue background with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3919173574ca"
+   },
+   {
+    "id": "v2",
+    "start": 6.025,
+    "end": 9.15,
+    "narration": "Your phone shuts down instantly in the freezing wind.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a dark smartphone silhouette on a solid navy blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6a349497a2f0"
+   },
+   {
+    "id": "v3",
+    "start": 9.15,
+    "end": 13.887,
+    "narration": "Panic sets in because your daily schedule lives inside that glass screen.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing blank calendar widgets on a solid teal backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "013bba97a980"
+   },
+   {
+    "id": "v4",
+    "start": 13.887,
+    "end": 18.288,
+    "narration": "So you assume the cold weather killed your expensive battery permanently.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a broken battery icon with a lightning bolt on a solid coral backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "67c267e7f5ef"
+   },
+   {
+    "id": "v5",
+    "start": 18.288,
+    "end": 23.775,
+    "narration": "People believe freezing temperatures destroy the chemical juice inside forever.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a warning alert screen on a solid yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "772f1daaa0fe"
+   },
+   {
+    "id": "v6",
+    "start": 23.775,
+    "end": 28.863,
+    "narration": "Every winter brings the same frustrating ritual of sudden power loss.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smartphone wrapped in a warm scarf on a solid magenta backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3d7b631449ea"
+   },
+   {
+    "id": "v7",
+    "start": 28.863,
+    "end": 33.112,
+    "narration": "You rush indoors and plug the device into the nearest wall socket.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a charging cord animation on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "39c0d1e23c65"
+   },
+   {
+    "id": "v8",
+    "start": 33.112,
+    "end": 37.763,
+    "narration": "Magic happens as soon as the metal casing warms back up to room temperature.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a glowing energy orb rising on a solid orange backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b3f56b6ffd3d"
+   },
+   {
+    "id": "v9",
+    "start": 37.763,
+    "end": 41.95,
+    "narration": "The percentage jumps right back to where it was before stepping outside.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a rising battery percentage counter on a solid purple backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c92a7b0ad054"
+   },
+   {
+    "id": "v10",
+    "start": 41.95,
+    "end": 44.288,
+    "narration": "The cold did not destroy your battery at all.",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smiling smartphone holding a shield on a solid cyan backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f21cbac2f3d5"
+   },
+   {
+    "id": "v11",
+    "start": 44.288,
+    "end": 51.212,
+    "narration": "Lithium-ion batteries rely entirely on liquid electrolyte chemical reactions to generate power.",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a glowing liquid battery cell icon on a solid vibrant blue background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5a487059ceaa"
+   },
+   {
+    "id": "v12",
+    "start": 51.212,
+    "end": 57.55,
+    "narration": "Inside your pocket, these microscopic ions flow smoothly back and forth to keep your screen bright.",
+    "kind": "image",
+    "src": "assets/img_12.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of tiny glowing particles moving across a modern smartphone layout"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "984fc3b8dec1"
+   },
+   {
+    "id": "v13",
+    "start": 57.55,
+    "end": 62.212,
+    "narration": "But freezing temperatures hit your phone and suddenly everything grinds to a halt.",
+    "kind": "image",
+    "src": "assets/img_13.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a frozen blue smartphone graphic with ice crystal vectors"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c5c9c1f8f512"
+   },
+   {
+    "id": "v14",
+    "start": 62.212,
+    "end": 67.525,
+    "narration": "Freezing conditions dramatically slow down ion movement inside the cell.",
+    "kind": "image",
+    "src": "assets/img_14.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of glowing ions trapped in slow motion inside a battery container"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "ef698a46c3d3"
+   },
+   {
+    "id": "v15",
+    "start": 67.525,
+    "end": 73.612,
+    "narration": "The liquid electrolyte thickens up so much that chemical reactions slow to a crawl.",
+    "kind": "image",
+    "src": "assets/img_15.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup of a slow moving liquid progress bar in pastel tones"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "bcf14f0273e8"
+   },
+   {
+    "id": "v16",
+    "start": 73.612,
+    "end": 79.237,
+    "narration": "Because the ions cannot travel fast enough, the battery output drops instantly.",
+    "kind": "image",
+    "src": "assets/img_16.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a digital voltage gauge dropping sharply on a solid orange background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f279d178d799"
+   },
+   {
+    "id": "v17",
+    "start": 79.237,
+    "end": 84.45,
+    "narration": "This sudden restriction causes temporary voltage drops across the internal circuitry.",
+    "kind": "image",
+    "src": "assets/img_17.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing warning circuits blinking in a clean vector style"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a1b8389e351d"
+   },
+   {
+    "id": "v18",
+    "start": 84.45,
+    "end": 88.175,
+    "narration": "Your phone reads that sudden voltage dip as an empty charge.",
+    "kind": "image",
+    "src": "assets/img_18.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a giant zero percent battery icon flashing on a bold pink backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2c7e84cd599d"
+   },
+   {
+    "id": "v19",
+    "start": 88.175,
+    "end": 93.925,
+    "narration": "The operating system triggers an automatic shutdown to protect its hardware from damage.",
+    "kind": "image",
+    "src": "assets/img_19.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup displaying a clean shutdown power screen with modern typography"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a6d39a9d3c27"
+   },
+   {
+    "id": "v20",
+    "start": 93.925,
+    "end": 99.162,
+    "narration": "The phone powers off itself, but the energy inside has not actually vanished.",
+    "kind": "image",
+    "src": "assets/img_20.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smartphone sleeping peacefully with glowing dormant energy vectors"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "ecac391377e2"
+   },
+   {
+    "id": "v21",
+    "start": 99.162,
+    "end": 104.938,
+    "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+    "kind": "image",
+    "src": "assets/img_21.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a smartphone battery icon at fifty percent on a bold solid blue backdrop with crisp modern lighting"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7eed943dd6d5"
+   },
+   {
+    "id": "v22",
+    "start": 104.938,
+    "end": 111.688,
+    "narration": "People think cold weather drains battery juice permanently, but the chemistry just slows down.",
+    "kind": "image",
+    "src": "assets/img_22.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a tiny thermometer dropping below zero next to a smartphone on a vibrant pastel pink backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "03ab48702bc2"
+   },
+   {
+    "id": "v23",
+    "start": 111.688,
+    "end": 117.737,
+    "narration": "Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power.",
+    "kind": "image",
+    "src": "assets/img_23.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing animated liquid glowing inside a smartphone shape on a solid yellow backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4ebefdb5db0a"
+   },
+   {
+    "id": "v24",
+    "start": 117.737,
+    "end": 122.338,
+    "narration": "Freezing temperatures slow down ion movement inside the cell.",
+    "kind": "image",
+    "src": "assets/img_24.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of tiny energy particles slowing down inside a phone case on a bold solid orange backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "723ac3b4009f"
+   },
+   {
+    "id": "v25",
+    "start": 122.338,
+    "end": 127.625,
+    "narration": "Extreme cold causes temporary voltage drops that trigger automatic shutdowns.",
+    "kind": "image",
+    "src": "assets/img_25.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a red warning screen on a phone on a solid dark purple backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "cae2cb730126"
+   },
+   {
+    "id": "v26",
+    "start": 127.625,
+    "end": 132.662,
+    "narration": "Warming the device restores most of the lost power without permanent damage.",
+    "kind": "image",
+    "src": "assets/img_26.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a small sun icon warming a smartphone on a vibrant teal backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "26e282eaa7a8"
+   },
+   {
+    "id": "v27",
+    "start": 132.662,
+    "end": 137.65,
+    "narration": "The voltage dip is completely reversible when the battery returns to normal temperature.",
+    "kind": "image",
+    "src": "assets/img_27.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a battery gauge rising back to full on a solid green backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9dafe6f5f935"
+   },
+   {
+    "id": "v28",
+    "start": 137.65,
+    "end": 141.775,
+    "narration": "Keep your phone in an insulated pocket to trap natural body heat.",
+    "kind": "image",
+    "src": "assets/img_28.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a stylized winter jacket pocket holding a smartphone on a bold solid red backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7c6fe81998e5"
+   },
+   {
+    "id": "v29",
+    "start": 141.775,
+    "end": 147.375,
+    "narration": "Use a warm pouch or briefly power cycle the device to reset voltage sensors.",
+    "kind": "image",
+    "src": "assets/img_29.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a restart button glowing on a solid violet backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "797a6704ec64"
+   },
+   {
+    "id": "v30",
+    "start": 147.375,
+    "end": 151.975,
+    "narration": "Cold only slows chemistry down, so let it warm up before you panic.",
+    "kind": "image",
+    "src": "assets/img_30.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a completed battery charge ring on a bold solid blue backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d32117884c8d"
+   },
+   {
+    "id": "v31",
+    "start": 151.975,
+    "end": 158.325,
+    "narration": "A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+    "kind": "image",
+    "src": "assets/img_31.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a smartphone battery icon at fifty percent on a bold solid blue background with crisp modern lighting."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "544a0dc1f826"
+   },
+   {
+    "id": "v32",
+    "start": 158.325,
+    "end": 162.45,
+    "narration": "Stepping out into the freeze causes an instant drop in power.",
+    "kind": "image",
+    "src": "assets/img_32.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a modern smartphone resting on a block of ice with a bright pastel yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9e7b77cfa83c"
+   },
+   {
+    "id": "v33",
+    "start": 162.45,
+    "end": 165.0,
+    "narration": "Most people assume the battery is dead for good.",
+    "kind": "image",
+    "src": "assets/img_33.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a red warning screen on a solid dark red background."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "0f12c613726e"
+   },
+   {
+    "id": "v34",
+    "start": 165.0,
+    "end": 167.95,
+    "narration": "They throw the phone away or buy a brand new replacement.",
+    "kind": "image",
+    "src": "assets/img_34.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a recycling bin with a smartphone graphic on a bold solid orange backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "725058de60a4"
+   },
+   {
+    "id": "v35",
+    "start": 167.95,
+    "end": 170.537,
+    "narration": "But the power loss is only temporary.",
+    "kind": "image",
+    "src": "assets/img_35.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a battery icon filling back up with a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e5637ca88b0a"
+   },
+   {
+    "id": "v36",
+    "start": 170.537,
+    "end": 173.675,
+    "narration": "The chemistry just takes a nap when temperatures drop.",
+    "kind": "image",
+    "src": "assets/img_36.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a cartoon lithium ion character sleeping under a snow blanket on a solid purple backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "428f4acd0d44"
+   },
+   {
+    "id": "v37",
+    "start": 173.675,
+    "end": 179.05,
+    "narration": "Freezing cold triggers sudden voltage drops that force the phone to shut down.",
+    "kind": "image",
+    "src": "assets/img_37.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a sudden shutdown alert on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "cf900ea91ad0"
+   },
+   {
+    "id": "v38",
+    "start": 179.05,
+    "end": 182.762,
+    "narration": "This safety feature protects the cell from internal stress.",
+    "kind": "image",
+    "src": "assets/img_38.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a shield icon guarding a battery cell on a solid teal backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "cd9bdadcc30a"
+   },
+   {
+    "id": "v39",
+    "start": 182.762,
+    "end": 185.875,
+    "narration": "So the shutdown is actually saving the hardware.",
+    "kind": "image",
+    "src": "assets/img_39.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a healthy system status check on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "81285af77bd0"
+   },
+   {
+    "id": "v40",
+    "start": 185.875,
+    "end": 189.363,
+    "narration": "Yet the panic sets in the moment the screen goes black.",
+    "kind": "image",
+    "src": "assets/img_40.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a blank smartphone screen reflecting a worried expression on a solid grey backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "434944924a0f"
+   },
+   {
+    "id": "v41",
+    "start": 189.363,
+    "end": 196.75,
+    "narration": "Lithium ion batteries rely entirely on liquid electrolyte chemical reactions to generate power.",
+    "kind": "image",
+    "src": "assets/img_41.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing animated liquid moving inside a battery cell graphic on a solid cyan backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "eb121cb1bc27"
+   },
+   {
+    "id": "v42",
+    "start": 196.75,
+    "end": 199.838,
+    "narration": "Ions flow back and forth to keep the device running.",
+    "kind": "image",
+    "src": "assets/img_42.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of tiny particles zipping across a circuit board on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e43f505a33ab"
+   },
+   {
+    "id": "v43",
+    "start": 199.838,
+    "end": 203.675,
+    "narration": "Warm weather keeps those ions moving fast and smooth.",
+    "kind": "image",
+    "src": "assets/img_43.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a fast particle speed indicator on a solid yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a23aaa5a7f05"
+   },
+   {
+    "id": "v44",
+    "start": 203.675,
+    "end": 207.225,
+    "narration": "Then the winter air arrives and changes everything.",
+    "kind": "image",
+    "src": "assets/img_44.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of snowflakes landing on a warm glowing phone on a solid dark blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3a54fc60e23b"
+   },
+   {
+    "id": "v45",
+    "start": 207.225,
+    "end": 211.5,
+    "narration": "Freezing temperatures slow down ion movement inside the cell.",
+    "kind": "image",
+    "src": "assets/img_45.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing slow motion particles on a solid ice blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b0a2d02cb963"
+   },
+   {
+    "id": "v46",
+    "start": 211.5,
+    "end": 215.15,
+    "narration": "The liquid electrolyte thickens up like cold syrup.",
+    "kind": "image",
+    "src": "assets/img_46.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of amber syrup pouring slowly inside a battery outline on a solid amber backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a0a2df81a105"
+   },
+   {
+    "id": "v47",
+    "start": 215.15,
+    "end": 218.137,
+    "narration": "Internal resistance shoots straight up.",
+    "kind": "image",
+    "src": "assets/img_47.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a rising resistance graph on a solid red backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "8fe7e2b0f9c4"
+   },
+   {
+    "id": "v48",
+    "start": 218.137,
+    "end": 222.338,
+    "narration": "Voltage plummets before the ions can deliver their charge.",
+    "kind": "image",
+    "src": "assets/img_48.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a gauge needle dropping to zero on a solid pink backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e2bbc60fa300"
+   },
+   {
+    "id": "v49",
+    "start": 222.338,
+    "end": 225.188,
+    "narration": "Sensors read this drop as a dead battery.",
+    "kind": "image",
+    "src": "assets/img_49.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a digital sensor scanning a low power cell on a solid violet backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2817e37f2b4a"
+   },
+   {
+    "id": "v50",
+    "start": 225.188,
+    "end": 229.275,
+    "narration": "Automatic shutdowns happen to prevent permanent cell damage.",
+    "kind": "image",
+    "src": "assets/img_50.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a power off sequence on a solid dark slate backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a69bbbc2efce"
+   },
+   {
+    "id": "v51",
+    "start": 229.275,
+    "end": 233.262,
+    "narration": "Bringing the device inside tells a completely different story.",
+    "kind": "image",
+    "src": "assets/img_51.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a cozy indoor temperature reading on a solid warm orange backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "ba330e2c8dde"
+   },
+   {
+    "id": "v52",
+    "start": 233.262,
+    "end": 236.787,
+    "narration": "Warming the device restores most of the lost power.",
+    "kind": "image",
+    "src": "assets/img_52.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smartphone absorbing heat waves on a solid yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "db641fd6ae3e"
+   },
+   {
+    "id": "v53",
+    "start": 236.787,
+    "end": 239.912,
+    "narration": "No permanent damage happens to the chemistry.",
+    "kind": "image",
+    "src": "assets/img_53.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a checkmark hovering over a pristine battery icon on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "af145fe22c1a"
+   },
+   {
+    "id": "v54",
+    "start": 239.912,
+    "end": 243.075,
+    "narration": "The liquid electrolyte thins right back out.",
+    "kind": "image",
+    "src": "assets/img_54.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of fluid particles flowing freely again on a solid teal backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9ef2a7921c57"
+   },
+   {
+    "id": "v55",
+    "start": 243.075,
+    "end": 246.6,
+    "narration": "Ions resume their normal sprint across the cell.",
+    "kind": "image",
+    "src": "assets/img_55.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing fast moving data streams on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4fe1fa044bfa"
+   },
+   {
+    "id": "v56",
+    "start": 246.6,
+    "end": 249.3,
+    "narration": "Voltage climbs back to where it started.",
+    "kind": "image",
+    "src": "assets/img_56.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a battery icon filling from empty to full on a solid bright green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "90dfc1f4dd43"
+   },
+   {
+    "id": "v57",
+    "start": 249.3,
+    "end": 252.012,
+    "narration": "That lost percentage reappears on the screen.",
+    "kind": "image",
+    "src": "assets/img_57.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing fifty percent jumping back to one hundred percent on a solid pastel pink backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7b4189346f24"
+   },
+   {
+    "id": "v58",
+    "start": 252.012,
+    "end": 256.1,
+    "narration": "The phone powers on without losing a single cycle of life.",
+    "kind": "image",
+    "src": "assets/img_58.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smiling smartphone waking up from sleep on a solid yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c7573c2ea90b"
+   },
+   {
+    "id": "v59",
+    "start": 256.1,
+    "end": 259.238,
+    "narration": "Cold weather only creates a pause in the action.",
+    "kind": "image",
+    "src": "assets/img_59.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a pause icon over a battery graph on a solid purple backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "ed98ad1655ba"
+   },
+   {
+    "id": "v60",
+    "start": 259.238,
+    "end": 262.113,
+    "narration": "Patience beats panic every single time.",
+    "kind": "image",
+    "src": "assets/img_60.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a clock ticking next to a warm smartphone on a solid coral backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4ed9b51fd545"
+   },
+   {
+    "id": "v61",
+    "start": 262.113,
+    "end": 265.562,
+    "narration": "Smart habits keep the phone running longer outside.",
+    "kind": "image",
+    "src": "assets/img_61.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing optimized settings on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "880f4eacdf25"
+   },
+   {
+    "id": "v62",
+    "start": 265.562,
+    "end": 269.262,
+    "narration": "Keep your phone in an insulated pocket close to body heat.",
+    "kind": "image",
+    "src": "assets/img_62.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smartphone tucked safely inside a warm jacket pocket on a solid navy backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "003acc171292"
+   },
+   {
+    "id": "v63",
+    "start": 269.262,
+    "end": 273.401,
+    "narration": "Body warmth stops the internal temperature from hitting zero.",
+    "kind": "image",
+    "src": "assets/img_63.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a stable temperature thermometer on a solid orange backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "554097108bfe"
+   },
+   {
+    "id": "v64",
+    "start": 273.401,
+    "end": 276.463,
+    "narration": "Use a hand warmer pouch inside your carrying bag.",
+    "kind": "image",
+    "src": "assets/img_64.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a small thermal pouch holding a smartphone on a solid red backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "1a1d4256369f"
+   },
+   {
+    "id": "v65",
+    "start": 276.463,
+    "end": 280.688,
+    "narration": "Avoid leaving devices exposed in car mounts during winter storms.",
+    "kind": "image",
+    "src": "assets/img_65.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a frosty car windshield with a dark phone mount on a solid slate backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6ab7d5603b39"
+   },
+   {
+    "id": "v66",
+    "start": 280.688,
+    "end": 284.351,
+    "narration": "Briefly power cycle the device once it returns indoors.",
+    "kind": "image",
+    "src": "assets/img_66.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a reboot progress wheel on a solid teal backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2b72f17eb073"
+   },
+   {
+    "id": "v67",
+    "start": 284.351,
+    "end": 288.526,
+    "narration": "Resetting voltage sensors clears out false low battery reads.",
+    "kind": "image",
+    "src": "assets/img_67.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a digital sensor calibrating on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2585966dbcaa"
+   },
+   {
+    "id": "v68",
+    "start": 288.526,
+    "end": 292.901,
+    "narration": "Never blast freezing phones with sudden high heat from hair dryers.",
+    "kind": "image",
+    "src": "assets/img_68.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a hairdryer blowing hot air at a cracking ice block on a solid yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "ebefb2075adb"
+   },
+   {
+    "id": "v69",
+    "start": 292.901,
+    "end": 297.25,
+    "narration": "Rapid temperature swings cause internal condensation to form.",
+    "kind": "image",
+    "src": "assets/img_69.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of water droplets forming on circuit boards on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4bb806f3b2db"
+   },
+   {
+    "id": "v70",
+    "start": 297.25,
+    "end": 300.913,
+    "narration": "Let the device warm up slowly at room temperature instead.",
+    "kind": "image",
+    "src": "assets/img_70.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a smartphone resting on a wooden desk with warm sunlight on a solid cream backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "75bc37a37f1d"
+   },
+   {
+    "id": "v71",
+    "start": 300.913,
+    "end": 305.25,
+    "narration": "Cold weather never destroys battery capacity permanently.",
+    "kind": "image",
+    "src": "assets/img_71.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing an invincible battery health score on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "93dfcf2dc1c9"
+   },
+   {
+    "id": "v72",
+    "start": 305.25,
+    "end": 309.0,
+    "narration": "The chemistry just slows down until it warms back up.",
+    "kind": "image",
+    "src": "assets/img_72.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of ions waking up from a winter rest on a solid pastel blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c1a92974055e"
+   },
+   {
+    "id": "v73",
+    "start": 309.0,
+    "end": 314.05,
+    "narration": "Voltage drops trigger shutdowns to protect the internal cells.",
+    "kind": "image",
+    "src": "assets/img_73.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a protective dome over a glowing battery on a solid violet backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "fc84b494f6c0"
+   },
+   {
+    "id": "v74",
+    "start": 314.05,
+    "end": 317.95,
+    "narration": "Warming the hardware brings every single percent back online.",
+    "kind": "image",
+    "src": "assets/img_74.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a full battery charge indicator on a solid bright yellow backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "98e0ec403b58"
+   },
+   {
+    "id": "v75",
+    "start": 317.95,
+    "end": 324.313,
+    "narration": "A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+    "kind": "image",
+    "src": "assets/img_75.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a large fifty percent badge next to a frosty smartphone on a solid blue backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "97671809c6ea"
+   },
+   {
+    "id": "v76",
+    "start": 324.313,
+    "end": 327.563,
+    "narration": "That lost power was never gone in the first place.",
+    "kind": "image",
+    "src": "assets/img_76.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing hidden power bars unlocking on a solid teal backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "10c7a6df5018"
+   },
+   {
+    "id": "v77",
+    "start": 327.563,
+    "end": 331.25,
+    "narration": "Protect the device from the freeze and watch the charge return.",
+    "kind": "image",
+    "src": "assets/img_77.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a warm glowing smartphone emerging from winter snow on a solid green backdrop."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b8688d8608df"
+   },
+   {
+    "id": "v78",
+    "start": 331.25,
+    "end": 337.175,
+    "narration": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+    "kind": "image",
+    "src": "assets/img_78.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup of a smartphone showing low battery percentage against a bold cyan background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "8adc639a73df"
+   },
+   {
+    "id": "v79",
+    "start": 337.175,
+    "end": 340.476,
+    "narration": "Cold weather traps energy inside the device.",
+    "kind": "image",
+    "src": "assets/img_79.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of ice crystals forming around a modern smartphone silhouette on a solid pink backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f3ef171bcd5c"
+   },
+   {
+    "id": "v80",
+    "start": 340.476,
+    "end": 343.026,
+    "narration": "People panic when their phone shuts down.",
+    "kind": "image",
+    "src": "assets/img_80.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist UI mockup showing a sudden shutdown warning icon on a vibrant yellow solid background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7384e7389f7c"
+   },
+   {
+    "id": "v81",
+    "start": 343.026,
+    "end": 344.963,
+    "narration": "The chemistry just slows down.",
+    "kind": "image",
+    "src": "assets/img_81.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat vector art of chemical bonds slowing down inside a smartphone shape on a purple background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6e9facfb6764"
+   },
+   {
+    "id": "v82",
+    "start": 344.963,
+    "end": 347.601,
+    "narration": "Warm temperatures bring the power right back.",
+    "kind": "image",
+    "src": "assets/img_82.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app screen showing battery levels rising with a glowing sun icon on a bright orange background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "15efe9d4ad88"
+   },
+   {
+    "id": "v83",
+    "start": 347.601,
+    "end": 350.438,
+    "narration": "No permanent damage happens to the cell.",
+    "kind": "image",
+    "src": "assets/img_83.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a healthy battery badge with a checkmark on a solid green background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "def471feec8e"
+   },
+   {
+    "id": "v84",
+    "start": 350.438,
+    "end": 352.788,
+    "narration": "Keep your device warm to keep it running.",
+    "kind": "image",
+    "src": "assets/img_84.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app mockup of a smartphone inside an insulated sleeve on a bold blue backdrop"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "1936e3be09b4"
+   },
+   {
+    "id": "v85",
+    "start": 352.788,
+    "end": 356.088,
+    "narration": "Cold slows the charge, but it never steals it.",
+    "kind": "image",
+    "src": "assets/img_85.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface showing full battery bars on a vibrant coral solid color background"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "dfaf8b12fb16"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.1,
+     "end": 0.15
+    },
+    {
+     "word": "lithium-ion",
+     "start": 0.15,
+     "end": 0.825
+    },
+    {
+     "word": "battery",
+     "start": 0.825,
+     "end": 1.312
+    },
+    {
+     "word": "loses",
+     "start": 1.375,
+     "end": 1.938
+    },
+    {
+     "word": "fifty",
+     "start": 2.087,
+     "end": 2.487
+    },
+    {
+     "word": "percent",
+     "start": 2.487,
+     "end": 3.025
+    },
+    {
+     "word": "of",
+     "start": 3.038,
+     "end": 3.138
+    },
+    {
+     "word": "its",
+     "start": 3.138,
+     "end": 3.263
+    },
+    {
+     "word": "charge",
+     "start": 3.263,
+     "end": 3.862
+    },
+    {
+     "word": "at",
+     "start": 4.05,
+     "end": 4.213
+    },
+    {
+     "word": "zero",
+     "start": 4.225,
+     "end": 4.575
+    },
+    {
+     "word": "degrees",
+     "start": 4.575,
+     "end": 4.95
+    },
+    {
+     "word": "Fahrenheit.",
+     "start": 4.95,
+     "end": 5.625
+    },
+    {
+     "word": "Your",
+     "start": 6.025,
+     "end": 6.112
+    },
+    {
+     "word": "phone",
+     "start": 6.112,
+     "end": 6.388
+    },
+    {
+     "word": "shuts",
+     "start": 6.388,
+     "end": 6.662
+    },
+    {
+     "word": "down",
+     "start": 6.662,
+     "end": 6.925
+    },
+    {
+     "word": "instantly",
+     "start": 6.975,
+     "end": 7.588
+    },
+    {
+     "word": "in",
+     "start": 7.75,
+     "end": 7.85
+    },
+    {
+     "word": "the",
+     "start": 7.85,
+     "end": 7.9
+    },
+    {
+     "word": "freezing",
+     "start": 7.912,
+     "end": 8.387
+    },
+    {
+     "word": "wind.",
+     "start": 8.387,
+     "end": 8.738
+    },
+    {
+     "word": "Panic",
+     "start": 9.15,
+     "end": 9.438
+    },
+    {
+     "word": "sets",
+     "start": 9.438,
+     "end": 9.762
+    },
+    {
+     "word": "in",
+     "start": 9.762,
+     "end": 9.988
+    },
+    {
+     "word": "because",
+     "start": 10.0,
+     "end": 10.45
+    },
+    {
+     "word": "your",
+     "start": 10.45,
+     "end": 10.6
+    },
+    {
+     "word": "daily",
+     "start": 10.613,
+     "end": 11.0
+    },
+    {
+     "word": "schedule",
+     "start": 11.0,
+     "end": 11.488
+    },
+    {
+     "word": "lives",
+     "start": 11.5,
+     "end": 11.838
+    },
+    {
+     "word": "inside",
+     "start": 11.85,
+     "end": 12.5
+    },
+    {
+     "word": "that",
+     "start": 12.512,
+     "end": 12.688
+    },
+    {
+     "word": "glass",
+     "start": 12.688,
+     "end": 13.062
+    },
+    {
+     "word": "screen.",
+     "start": 13.075,
+     "end": 13.488
+    },
+    {
+     "word": "So",
+     "start": 13.887,
+     "end": 13.988
+    },
+    {
+     "word": "you",
+     "start": 13.988,
+     "end": 14.113
+    },
+    {
+     "word": "assume",
+     "start": 14.113,
+     "end": 14.5
+    },
+    {
+     "word": "the",
+     "start": 14.5,
+     "end": 14.588
+    },
+    {
+     "word": "cold",
+     "start": 14.588,
+     "end": 14.988
+    },
+    {
+     "word": "weather",
+     "start": 15.0,
+     "end": 15.412
+    },
+    {
+     "word": "killed",
+     "start": 15.525,
+     "end": 15.9
+    },
+    {
+     "word": "your",
+     "start": 15.9,
+     "end": 16.025
+    },
+    {
+     "word": "expensive",
+     "start": 16.025,
+     "end": 16.525
+    },
+    {
+     "word": "battery",
+     "start": 16.525,
+     "end": 17.075
+    },
+    {
+     "word": "permanently.",
+     "start": 17.188,
+     "end": 17.875
+    },
+    {
+     "word": "People",
+     "start": 18.288,
+     "end": 18.525
+    },
+    {
+     "word": "believe",
+     "start": 18.525,
+     "end": 19.125
+    },
+    {
+     "word": "freezing",
+     "start": 19.25,
+     "end": 19.8
+    },
+    {
+     "word": "temperatures",
+     "start": 19.8,
+     "end": 20.3
+    },
+    {
+     "word": "destroy",
+     "start": 20.312,
+     "end": 20.887
+    },
+    {
+     "word": "the",
+     "start": 20.9,
+     "end": 21.0
+    },
+    {
+     "word": "chemical",
+     "start": 21.0,
+     "end": 21.4
+    },
+    {
+     "word": "juice",
+     "start": 21.4,
+     "end": 21.913
+    },
+    {
+     "word": "inside",
+     "start": 22.038,
+     "end": 22.75
+    },
+    {
+     "word": "forever.",
+     "start": 22.762,
+     "end": 23.375
+    },
+    {
+     "word": "Every",
+     "start": 23.775,
+     "end": 24.038
+    },
+    {
+     "word": "winter",
+     "start": 24.038,
+     "end": 24.462
+    },
+    {
+     "word": "brings",
+     "start": 24.475,
+     "end": 24.788
+    },
+    {
+     "word": "the",
+     "start": 24.788,
+     "end": 24.875
+    },
+    {
+     "word": "same",
+     "start": 24.875,
+     "end": 25.35
+    },
+    {
+     "word": "frustrating",
+     "start": 25.625,
+     "end": 26.337
+    },
+    {
+     "word": "ritual",
+     "start": 26.35,
+     "end": 26.837
+    },
+    {
+     "word": "of",
+     "start": 27.05,
+     "end": 27.163
+    },
+    {
+     "word": "sudden",
+     "start": 27.25,
+     "end": 27.6
+    },
+    {
+     "word": "power",
+     "start": 27.613,
+     "end": 27.9
+    },
+    {
+     "word": "loss.",
+     "start": 27.913,
+     "end": 28.462
+    },
+    {
+     "word": "You",
+     "start": 28.863,
+     "end": 28.988
+    },
+    {
+     "word": "rush",
+     "start": 28.988,
+     "end": 29.3
+    },
+    {
+     "word": "indoors",
+     "start": 29.312,
+     "end": 29.925
+    },
+    {
+     "word": "and",
+     "start": 30.2,
+     "end": 30.337
+    },
+    {
+     "word": "plug",
+     "start": 30.35,
+     "end": 30.688
+    },
+    {
+     "word": "the",
+     "start": 30.688,
+     "end": 30.762
+    },
+    {
+     "word": "device",
+     "start": 30.762,
+     "end": 31.387
+    },
+    {
+     "word": "into",
+     "start": 31.462,
+     "end": 31.587
+    },
+    {
+     "word": "the",
+     "start": 31.6,
+     "end": 31.688
+    },
+    {
+     "word": "nearest",
+     "start": 31.688,
+     "end": 32.062
+    },
+    {
+     "word": "wall",
+     "start": 32.062,
+     "end": 32.237
+    },
+    {
+     "word": "socket.",
+     "start": 32.237,
+     "end": 32.725
+    },
+    {
+     "word": "Magic",
+     "start": 33.112,
+     "end": 33.45
+    },
+    {
+     "word": "happens",
+     "start": 33.45,
+     "end": 33.875
+    },
+    {
+     "word": "as",
+     "start": 33.875,
+     "end": 33.987
+    },
+    {
+     "word": "soon",
+     "start": 34.0,
+     "end": 34.425
+    },
+    {
+     "word": "as",
+     "start": 34.438,
+     "end": 34.562
+    },
+    {
+     "word": "the",
+     "start": 34.575,
+     "end": 34.65
+    },
+    {
+     "word": "metal",
+     "start": 34.65,
+     "end": 35.125
+    },
+    {
+     "word": "casing",
+     "start": 35.138,
+     "end": 35.587
+    },
+    {
+     "word": "warms",
+     "start": 35.6,
+     "end": 35.913
+    },
+    {
+     "word": "back",
+     "start": 35.913,
+     "end": 36.2
+    },
+    {
+     "word": "up",
+     "start": 36.2,
+     "end": 36.362
+    },
+    {
+     "word": "to",
+     "start": 36.462,
+     "end": 36.562
+    },
+    {
+     "word": "room",
+     "start": 36.562,
+     "end": 36.8
+    },
+    {
+     "word": "temperature.",
+     "start": 36.8,
+     "end": 37.362
+    },
+    {
+     "word": "The",
+     "start": 37.763,
+     "end": 37.825
+    },
+    {
+     "word": "percentage",
+     "start": 37.825,
+     "end": 38.35
+    },
+    {
+     "word": "jumps",
+     "start": 38.362,
+     "end": 38.763
+    },
+    {
+     "word": "right",
+     "start": 38.775,
+     "end": 39.025
+    },
+    {
+     "word": "back",
+     "start": 39.038,
+     "end": 39.3
+    },
+    {
+     "word": "to",
+     "start": 39.312,
+     "end": 39.413
+    },
+    {
+     "word": "where",
+     "start": 39.413,
+     "end": 39.65
+    },
+    {
+     "word": "it",
+     "start": 39.65,
+     "end": 39.75
+    },
+    {
+     "word": "was",
+     "start": 39.763,
+     "end": 39.938
+    },
+    {
+     "word": "before",
+     "start": 39.938,
+     "end": 40.55
+    },
+    {
+     "word": "stepping",
+     "start": 40.562,
+     "end": 40.95
+    },
+    {
+     "word": "outside.",
+     "start": 40.95,
+     "end": 41.538
+    },
+    {
+     "word": "The",
+     "start": 41.95,
+     "end": 42.013
+    },
+    {
+     "word": "cold",
+     "start": 42.013,
+     "end": 42.263
+    },
+    {
+     "word": "did",
+     "start": 42.275,
+     "end": 42.4
+    },
+    {
+     "word": "not",
+     "start": 42.4,
+     "end": 42.688
+    },
+    {
+     "word": "destroy",
+     "start": 42.688,
+     "end": 43.05
+    },
+    {
+     "word": "your",
+     "start": 43.05,
+     "end": 43.163
+    },
+    {
+     "word": "battery",
+     "start": 43.175,
+     "end": 43.55
+    },
+    {
+     "word": "at",
+     "start": 43.562,
+     "end": 43.625
+    },
+    {
+     "word": "all.",
+     "start": 43.638,
+     "end": 43.888
+    },
+    {
+     "word": "Lithium-ion",
+     "start": 44.288,
+     "end": 44.938
+    },
+    {
+     "word": "batteries",
+     "start": 44.938,
+     "end": 45.45
+    },
+    {
+     "word": "rely",
+     "start": 45.462,
+     "end": 45.9
+    },
+    {
+     "word": "entirely",
+     "start": 45.913,
+     "end": 46.763
+    },
+    {
+     "word": "on",
+     "start": 46.775,
+     "end": 46.975
+    },
+    {
+     "word": "liquid",
+     "start": 46.975,
+     "end": 47.4
+    },
+    {
+     "word": "electrolyte",
+     "start": 47.487,
+     "end": 48.4
+    },
+    {
+     "word": "chemical",
+     "start": 48.438,
+     "end": 48.862
+    },
+    {
+     "word": "reactions",
+     "start": 48.862,
+     "end": 49.575
+    },
+    {
+     "word": "to",
+     "start": 49.763,
+     "end": 49.875
+    },
+    {
+     "word": "generate",
+     "start": 49.875,
+     "end": 50.337
+    },
+    {
+     "word": "power.",
+     "start": 50.337,
+     "end": 50.8
+    },
+    {
+     "word": "Inside",
+     "start": 51.212,
+     "end": 51.612
+    },
+    {
+     "word": "your",
+     "start": 51.612,
+     "end": 51.7
+    },
+    {
+     "word": "pocket,",
+     "start": 51.7,
+     "end": 52.125
+    },
+    {
+     "word": "these",
+     "start": 52.388,
+     "end": 52.587
+    },
+    {
+     "word": "microscopic",
+     "start": 52.6,
+     "end": 53.3
+    },
+    {
+     "word": "ions",
+     "start": 53.3,
+     "end": 53.737
+    },
+    {
+     "word": "flow",
+     "start": 53.925,
+     "end": 54.362
+    },
+    {
+     "word": "smoothly",
+     "start": 54.45,
+     "end": 55.038
+    },
+    {
+     "word": "back",
+     "start": 55.05,
+     "end": 55.475
+    },
+    {
+     "word": "and",
+     "start": 55.475,
+     "end": 55.55
+    },
+    {
+     "word": "forth",
+     "start": 55.55,
+     "end": 56.05
+    },
+    {
+     "word": "to",
+     "start": 56.05,
+     "end": 56.15
+    },
+    {
+     "word": "keep",
+     "start": 56.15,
+     "end": 56.362
+    },
+    {
+     "word": "your",
+     "start": 56.362,
+     "end": 56.45
+    },
+    {
+     "word": "screen",
+     "start": 56.45,
+     "end": 56.763
+    },
+    {
+     "word": "bright.",
+     "start": 56.763,
+     "end": 57.15
+    },
+    {
+     "word": "But",
+     "start": 57.55,
+     "end": 57.638
+    },
+    {
+     "word": "freezing",
+     "start": 57.65,
+     "end": 58.125
+    },
+    {
+     "word": "temperatures",
+     "start": 58.125,
+     "end": 58.638
+    },
+    {
+     "word": "hit",
+     "start": 58.638,
+     "end": 58.8
+    },
+    {
+     "word": "your",
+     "start": 58.8,
+     "end": 58.938
+    },
+    {
+     "word": "phone",
+     "start": 58.95,
+     "end": 59.375
+    },
+    {
+     "word": "and",
+     "start": 59.737,
+     "end": 59.862
+    },
+    {
+     "word": "suddenly",
+     "start": 59.862,
+     "end": 60.25
+    },
+    {
+     "word": "everything",
+     "start": 60.263,
+     "end": 60.688
+    },
+    {
+     "word": "grinds",
+     "start": 60.7,
+     "end": 61.212
+    },
+    {
+     "word": "to",
+     "start": 61.212,
+     "end": 61.312
+    },
+    {
+     "word": "a",
+     "start": 61.312,
+     "end": 61.375
+    },
+    {
+     "word": "halt.",
+     "start": 61.375,
+     "end": 61.763
+    },
+    {
+     "word": "Freezing",
+     "start": 62.212,
+     "end": 62.6
+    },
+    {
+     "word": "conditions",
+     "start": 62.6,
+     "end": 63.163
+    },
+    {
+     "word": "dramatically",
+     "start": 63.163,
+     "end": 63.837
+    },
+    {
+     "word": "slow",
+     "start": 64.013,
+     "end": 64.588
+    },
+    {
+     "word": "down",
+     "start": 64.675,
+     "end": 65.1
+    },
+    {
+     "word": "ion",
+     "start": 65.112,
+     "end": 65.55
+    },
+    {
+     "word": "movement",
+     "start": 65.55,
+     "end": 66.05
+    },
+    {
+     "word": "inside",
+     "start": 66.162,
+     "end": 66.612
+    },
+    {
+     "word": "the",
+     "start": 66.612,
+     "end": 66.662
+    },
+    {
+     "word": "cell.",
+     "start": 66.662,
+     "end": 67.125
+    },
+    {
+     "word": "The",
+     "start": 67.525,
+     "end": 67.612
+    },
+    {
+     "word": "liquid",
+     "start": 67.612,
+     "end": 67.95
+    },
+    {
+     "word": "electrolyte",
+     "start": 67.95,
+     "end": 68.75
+    },
+    {
+     "word": "thickens",
+     "start": 68.775,
+     "end": 69.287
+    },
+    {
+     "word": "up",
+     "start": 69.287,
+     "end": 69.425
+    },
+    {
+     "word": "so",
+     "start": 69.562,
+     "end": 70.0
+    },
+    {
+     "word": "much",
+     "start": 70.0,
+     "end": 70.438
+    },
+    {
+     "word": "that",
+     "start": 70.438,
+     "end": 70.612
+    },
+    {
+     "word": "chemical",
+     "start": 70.612,
+     "end": 71.05
+    },
+    {
+     "word": "reactions",
+     "start": 71.05,
+     "end": 71.713
+    },
+    {
+     "word": "slow",
+     "start": 71.888,
+     "end": 72.463
+    },
+    {
+     "word": "to",
+     "start": 72.562,
+     "end": 72.7
+    },
+    {
+     "word": "a",
+     "start": 72.7,
+     "end": 72.775
+    },
+    {
+     "word": "crawl.",
+     "start": 72.775,
+     "end": 73.2
+    },
+    {
+     "word": "Because",
+     "start": 73.612,
+     "end": 73.85
+    },
+    {
+     "word": "the",
+     "start": 73.862,
+     "end": 73.963
+    },
+    {
+     "word": "ions",
+     "start": 73.975,
+     "end": 74.362
+    },
+    {
+     "word": "cannot",
+     "start": 74.362,
+     "end": 74.912
+    },
+    {
+     "word": "travel",
+     "start": 74.925,
+     "end": 75.388
+    },
+    {
+     "word": "fast",
+     "start": 75.388,
+     "end": 75.825
+    },
+    {
+     "word": "enough,",
+     "start": 75.825,
+     "end": 76.237
+    },
+    {
+     "word": "the",
+     "start": 76.487,
+     "end": 76.6
+    },
+    {
+     "word": "battery",
+     "start": 76.612,
+     "end": 77.088
+    },
+    {
+     "word": "output",
+     "start": 77.088,
+     "end": 77.562
+    },
+    {
+     "word": "drops",
+     "start": 77.575,
+     "end": 78.112
+    },
+    {
+     "word": "instantly.",
+     "start": 78.237,
+     "end": 78.838
+    },
+    {
+     "word": "This",
+     "start": 79.237,
+     "end": 79.438
+    },
+    {
+     "word": "sudden",
+     "start": 79.438,
+     "end": 79.763
+    },
+    {
+     "word": "restriction",
+     "start": 79.763,
+     "end": 80.412
+    },
+    {
+     "word": "causes",
+     "start": 80.463,
+     "end": 80.975
+    },
+    {
+     "word": "temporary",
+     "start": 80.987,
+     "end": 81.513
+    },
+    {
+     "word": "voltage",
+     "start": 81.525,
+     "end": 82.075
+    },
+    {
+     "word": "drops",
+     "start": 82.088,
+     "end": 82.525
+    },
+    {
+     "word": "across",
+     "start": 82.525,
+     "end": 83.013
+    },
+    {
+     "word": "the",
+     "start": 83.013,
+     "end": 83.088
+    },
+    {
+     "word": "internal",
+     "start": 83.1,
+     "end": 83.487
+    },
+    {
+     "word": "circuitry.",
+     "start": 83.487,
+     "end": 84.05
+    },
+    {
+     "word": "Your",
+     "start": 84.45,
+     "end": 84.55
+    },
+    {
+     "word": "phone",
+     "start": 84.55,
+     "end": 84.875
+    },
+    {
+     "word": "reads",
+     "start": 84.888,
+     "end": 85.162
+    },
+    {
+     "word": "that",
+     "start": 85.175,
+     "end": 85.3
+    },
+    {
+     "word": "sudden",
+     "start": 85.312,
+     "end": 85.688
+    },
+    {
+     "word": "voltage",
+     "start": 85.7,
+     "end": 86.213
+    },
+    {
+     "word": "dip",
+     "start": 86.213,
+     "end": 86.513
+    },
+    {
+     "word": "as",
+     "start": 86.725,
+     "end": 86.85
+    },
+    {
+     "word": "an",
+     "start": 86.85,
+     "end": 86.938
+    },
+    {
+     "word": "empty",
+     "start": 87.0,
+     "end": 87.2
+    },
+    {
+     "word": "charge.",
+     "start": 87.2,
+     "end": 87.763
+    },
+    {
+     "word": "The",
+     "start": 88.175,
+     "end": 88.25
+    },
+    {
+     "word": "operating",
+     "start": 88.263,
+     "end": 88.763
+    },
+    {
+     "word": "system",
+     "start": 88.775,
+     "end": 89.287
+    },
+    {
+     "word": "triggers",
+     "start": 89.375,
+     "end": 89.938
+    },
+    {
+     "word": "an",
+     "start": 90.05,
+     "end": 90.188
+    },
+    {
+     "word": "automatic",
+     "start": 90.188,
+     "end": 90.7
+    },
+    {
+     "word": "shutdown",
+     "start": 90.7,
+     "end": 91.325
+    },
+    {
+     "word": "to",
+     "start": 91.463,
+     "end": 91.575
+    },
+    {
+     "word": "protect",
+     "start": 91.575,
+     "end": 92.025
+    },
+    {
+     "word": "its",
+     "start": 92.037,
+     "end": 92.138
+    },
+    {
+     "word": "hardware",
+     "start": 92.138,
+     "end": 92.737
+    },
+    {
+     "word": "from",
+     "start": 92.75,
+     "end": 92.912
+    },
+    {
+     "word": "damage.",
+     "start": 92.912,
+     "end": 93.5
+    },
+    {
+     "word": "The",
+     "start": 93.925,
+     "end": 93.987
+    },
+    {
+     "word": "phone",
+     "start": 93.987,
+     "end": 94.287
+    },
+    {
+     "word": "powers",
+     "start": 94.287,
+     "end": 94.763
+    },
+    {
+     "word": "off",
+     "start": 94.775,
+     "end": 94.963
+    },
+    {
+     "word": "itself,",
+     "start": 94.975,
+     "end": 95.65
+    },
+    {
+     "word": "but",
+     "start": 95.888,
+     "end": 95.987
+    },
+    {
+     "word": "the",
+     "start": 95.987,
+     "end": 96.1
+    },
+    {
+     "word": "energy",
+     "start": 96.188,
+     "end": 96.638
+    },
+    {
+     "word": "inside",
+     "start": 96.638,
+     "end": 97.237
+    },
+    {
+     "word": "has",
+     "start": 97.237,
+     "end": 97.45
+    },
+    {
+     "word": "not",
+     "start": 97.45,
+     "end": 97.8
+    },
+    {
+     "word": "actually",
+     "start": 97.812,
+     "end": 98.188
+    },
+    {
+     "word": "vanished.",
+     "start": 98.188,
+     "end": 98.787
+    },
+    {
+     "word": "A",
+     "start": 99.162,
+     "end": 99.213
+    },
+    {
+     "word": "lithium-ion",
+     "start": 99.213,
+     "end": 99.875
+    },
+    {
+     "word": "battery",
+     "start": 99.875,
+     "end": 100.338
+    },
+    {
+     "word": "loses",
+     "start": 100.35,
+     "end": 100.85
+    },
+    {
+     "word": "fifty",
+     "start": 100.987,
+     "end": 101.35
+    },
+    {
+     "word": "percent",
+     "start": 101.362,
+     "end": 101.875
+    },
+    {
+     "word": "of",
+     "start": 101.925,
+     "end": 102.025
+    },
+    {
+     "word": "its",
+     "start": 102.025,
+     "end": 102.138
+    },
+    {
+     "word": "charge",
+     "start": 102.138,
+     "end": 102.763
+    },
+    {
+     "word": "at",
+     "start": 102.963,
+     "end": 103.112
+    },
+    {
+     "word": "zero",
+     "start": 103.125,
+     "end": 103.5
+    },
+    {
+     "word": "degrees",
+     "start": 103.513,
+     "end": 103.888
+    },
+    {
+     "word": "Fahrenheit.",
+     "start": 103.888,
+     "end": 104.525
+    },
+    {
+     "word": "People",
+     "start": 104.938,
+     "end": 105.188
+    },
+    {
+     "word": "think",
+     "start": 105.188,
+     "end": 105.487
+    },
+    {
+     "word": "cold",
+     "start": 105.487,
+     "end": 105.912
+    },
+    {
+     "word": "weather",
+     "start": 105.987,
+     "end": 106.275
+    },
+    {
+     "word": "drains",
+     "start": 106.275,
+     "end": 106.812
+    },
+    {
+     "word": "battery",
+     "start": 106.825,
+     "end": 107.287
+    },
+    {
+     "word": "juice",
+     "start": 107.45,
+     "end": 107.9
+    },
+    {
+     "word": "permanently,",
+     "start": 107.912,
+     "end": 108.6
+    },
+    {
+     "word": "but",
+     "start": 109.013,
+     "end": 109.138
+    },
+    {
+     "word": "the",
+     "start": 109.138,
+     "end": 109.237
+    },
+    {
+     "word": "chemistry",
+     "start": 109.25,
+     "end": 109.938
+    },
+    {
+     "word": "just",
+     "start": 110.075,
+     "end": 110.263
+    },
+    {
+     "word": "slows",
+     "start": 110.263,
+     "end": 110.862
+    },
+    {
+     "word": "down.",
+     "start": 110.875,
+     "end": 111.287
+    },
+    {
+     "word": "Lithium-ion",
+     "start": 111.688,
+     "end": 112.3
+    },
+    {
+     "word": "batteries",
+     "start": 112.3,
+     "end": 112.85
+    },
+    {
+     "word": "rely",
+     "start": 112.862,
+     "end": 113.388
+    },
+    {
+     "word": "on",
+     "start": 113.4,
+     "end": 113.6
+    },
+    {
+     "word": "liquid",
+     "start": 113.612,
+     "end": 114.0
+    },
+    {
+     "word": "electrolyte",
+     "start": 114.013,
+     "end": 114.862
+    },
+    {
+     "word": "chemical",
+     "start": 114.875,
+     "end": 115.287
+    },
+    {
+     "word": "reactions",
+     "start": 115.3,
+     "end": 116.062
+    },
+    {
+     "word": "to",
+     "start": 116.237,
+     "end": 116.338
+    },
+    {
+     "word": "generate",
+     "start": 116.338,
+     "end": 116.812
+    },
+    {
+     "word": "power.",
+     "start": 116.812,
+     "end": 117.287
+    },
+    {
+     "word": "Freezing",
+     "start": 117.737,
+     "end": 118.15
+    },
+    {
+     "word": "temperatures",
+     "start": 118.15,
+     "end": 118.763
+    },
+    {
+     "word": "slow",
+     "start": 118.975,
+     "end": 119.388
+    },
+    {
+     "word": "down",
+     "start": 119.4,
+     "end": 119.775
+    },
+    {
+     "word": "ion",
+     "start": 119.9,
+     "end": 120.312
+    },
+    {
+     "word": "movement",
+     "start": 120.312,
+     "end": 120.812
+    },
+    {
+     "word": "inside",
+     "start": 120.975,
+     "end": 121.412
+    },
+    {
+     "word": "the",
+     "start": 121.425,
+     "end": 121.475
+    },
+    {
+     "word": "cell.",
+     "start": 121.487,
+     "end": 121.938
+    },
+    {
+     "word": "Extreme",
+     "start": 122.338,
+     "end": 122.875
+    },
+    {
+     "word": "cold",
+     "start": 122.888,
+     "end": 123.213
+    },
+    {
+     "word": "causes",
+     "start": 123.225,
+     "end": 123.638
+    },
+    {
+     "word": "temporary",
+     "start": 123.65,
+     "end": 124.138
+    },
+    {
+     "word": "voltage",
+     "start": 124.138,
+     "end": 124.588
+    },
+    {
+     "word": "drops",
+     "start": 124.6,
+     "end": 125.138
+    },
+    {
+     "word": "that",
+     "start": 125.275,
+     "end": 125.438
+    },
+    {
+     "word": "trigger",
+     "start": 125.45,
+     "end": 125.95
+    },
+    {
+     "word": "automatic",
+     "start": 125.963,
+     "end": 126.425
+    },
+    {
+     "word": "shutdowns.",
+     "start": 126.425,
+     "end": 127.225
+    },
+    {
+     "word": "Warming",
+     "start": 127.625,
+     "end": 127.938
+    },
+    {
+     "word": "the",
+     "start": 127.938,
+     "end": 128.012
+    },
+    {
+     "word": "device",
+     "start": 128.025,
+     "end": 128.575
+    },
+    {
+     "word": "restores",
+     "start": 128.575,
+     "end": 129.137
+    },
+    {
+     "word": "most",
+     "start": 129.15,
+     "end": 129.562
+    },
+    {
+     "word": "of",
+     "start": 129.562,
+     "end": 129.613
+    },
+    {
+     "word": "the",
+     "start": 129.613,
+     "end": 129.7
+    },
+    {
+     "word": "lost",
+     "start": 129.7,
+     "end": 130.125
+    },
+    {
+     "word": "power",
+     "start": 130.125,
+     "end": 130.6
+    },
+    {
+     "word": "without",
+     "start": 130.812,
+     "end": 131.238
+    },
+    {
+     "word": "permanent",
+     "start": 131.238,
+     "end": 131.688
+    },
+    {
+     "word": "damage.",
+     "start": 131.688,
+     "end": 132.262
+    },
+    {
+     "word": "The",
+     "start": 132.662,
+     "end": 132.738
+    },
+    {
+     "word": "voltage",
+     "start": 132.738,
+     "end": 133.25
+    },
+    {
+     "word": "dip",
+     "start": 133.25,
+     "end": 133.525
+    },
+    {
+     "word": "is",
+     "start": 133.637,
+     "end": 133.75
+    },
+    {
+     "word": "completely",
+     "start": 133.762,
+     "end": 134.363
+    },
+    {
+     "word": "reversible",
+     "start": 134.363,
+     "end": 135.025
+    },
+    {
+     "word": "when",
+     "start": 135.15,
+     "end": 135.275
+    },
+    {
+     "word": "the",
+     "start": 135.287,
+     "end": 135.363
+    },
+    {
+     "word": "battery",
+     "start": 135.363,
+     "end": 135.8
+    },
+    {
+     "word": "returns",
+     "start": 135.8,
+     "end": 136.25
+    },
+    {
+     "word": "to",
+     "start": 136.25,
+     "end": 136.325
+    },
+    {
+     "word": "normal",
+     "start": 136.325,
+     "end": 136.675
+    },
+    {
+     "word": "temperature.",
+     "start": 136.688,
+     "end": 137.25
+    },
+    {
+     "word": "Keep",
+     "start": 137.65,
+     "end": 137.812
+    },
+    {
+     "word": "your",
+     "start": 137.812,
+     "end": 137.925
+    },
+    {
+     "word": "phone",
+     "start": 137.925,
+     "end": 138.387
+    },
+    {
+     "word": "in",
+     "start": 138.5,
+     "end": 138.575
+    },
+    {
+     "word": "an",
+     "start": 138.575,
+     "end": 138.662
+    },
+    {
+     "word": "insulated",
+     "start": 138.713,
+     "end": 139.213
+    },
+    {
+     "word": "pocket",
+     "start": 139.213,
+     "end": 139.625
+    },
+    {
+     "word": "to",
+     "start": 139.838,
+     "end": 139.925
+    },
+    {
+     "word": "trap",
+     "start": 139.925,
+     "end": 140.287
+    },
+    {
+     "word": "natural",
+     "start": 140.3,
+     "end": 140.662
+    },
+    {
+     "word": "body",
+     "start": 140.675,
+     "end": 140.988
+    },
+    {
+     "word": "heat.",
+     "start": 140.988,
+     "end": 141.387
+    },
+    {
+     "word": "Use",
+     "start": 141.775,
+     "end": 141.95
+    },
+    {
+     "word": "a",
+     "start": 141.95,
+     "end": 142.012
+    },
+    {
+     "word": "warm",
+     "start": 142.012,
+     "end": 142.35
+    },
+    {
+     "word": "pouch",
+     "start": 142.35,
+     "end": 142.787
+    },
+    {
+     "word": "or",
+     "start": 142.912,
+     "end": 143.025
+    },
+    {
+     "word": "briefly",
+     "start": 143.037,
+     "end": 143.525
+    },
+    {
+     "word": "power",
+     "start": 143.525,
+     "end": 143.963
+    },
+    {
+     "word": "cycle",
+     "start": 143.963,
+     "end": 144.3
+    },
+    {
+     "word": "the",
+     "start": 144.3,
+     "end": 144.363
+    },
+    {
+     "word": "device",
+     "start": 144.375,
+     "end": 144.938
+    },
+    {
+     "word": "to",
+     "start": 145.175,
+     "end": 145.325
+    },
+    {
+     "word": "reset",
+     "start": 145.325,
+     "end": 145.963
+    },
+    {
+     "word": "voltage",
+     "start": 145.975,
+     "end": 146.375
+    },
+    {
+     "word": "sensors.",
+     "start": 146.387,
+     "end": 146.988
+    },
+    {
+     "word": "Cold",
+     "start": 147.375,
+     "end": 147.662
+    },
+    {
+     "word": "only",
+     "start": 147.787,
+     "end": 148.1
+    },
+    {
+     "word": "slows",
+     "start": 148.1,
+     "end": 148.575
+    },
+    {
+     "word": "chemistry",
+     "start": 148.588,
+     "end": 149.075
+    },
+    {
+     "word": "down,",
+     "start": 149.075,
+     "end": 149.425
+    },
+    {
+     "word": "so",
+     "start": 149.812,
+     "end": 149.938
+    },
+    {
+     "word": "let",
+     "start": 149.95,
+     "end": 150.062
+    },
+    {
+     "word": "it",
+     "start": 150.062,
+     "end": 150.162
+    },
+    {
+     "word": "warm",
+     "start": 150.162,
+     "end": 150.45
+    },
+    {
+     "word": "up",
+     "start": 150.45,
+     "end": 150.625
+    },
+    {
+     "word": "before",
+     "start": 150.625,
+     "end": 151.012
+    },
+    {
+     "word": "you",
+     "start": 151.012,
+     "end": 151.1
+    },
+    {
+     "word": "panic.",
+     "start": 151.113,
+     "end": 151.588
+    },
+    {
+     "word": "A",
+     "start": 151.975,
+     "end": 152.025
+    },
+    {
+     "word": "lithium",
+     "start": 152.025,
+     "end": 152.613
+    },
+    {
+     "word": "ion",
+     "start": 152.75,
+     "end": 153.175
+    },
+    {
+     "word": "battery",
+     "start": 153.188,
+     "end": 153.662
+    },
+    {
+     "word": "loses",
+     "start": 153.675,
+     "end": 154.25
+    },
+    {
+     "word": "fifty",
+     "start": 154.4,
+     "end": 154.775
+    },
+    {
+     "word": "percent",
+     "start": 154.787,
+     "end": 155.312
+    },
+    {
+     "word": "of",
+     "start": 155.363,
+     "end": 155.463
+    },
+    {
+     "word": "its",
+     "start": 155.475,
+     "end": 155.588
+    },
+    {
+     "word": "charge",
+     "start": 155.588,
+     "end": 156.175
+    },
+    {
+     "word": "at",
+     "start": 156.312,
+     "end": 156.488
+    },
+    {
+     "word": "zero",
+     "start": 156.575,
+     "end": 156.912
+    },
+    {
+     "word": "degrees",
+     "start": 156.912,
+     "end": 157.287
+    },
+    {
+     "word": "Fahrenheit.",
+     "start": 157.3,
+     "end": 157.925
+    },
+    {
+     "word": "Stepping",
+     "start": 158.325,
+     "end": 158.7
+    },
+    {
+     "word": "out",
+     "start": 158.7,
+     "end": 158.85
+    },
+    {
+     "word": "into",
+     "start": 158.863,
+     "end": 159.012
+    },
+    {
+     "word": "the",
+     "start": 159.012,
+     "end": 159.1
+    },
+    {
+     "word": "freeze",
+     "start": 159.1,
+     "end": 159.8
+    },
+    {
+     "word": "causes",
+     "start": 159.938,
+     "end": 160.412
+    },
+    {
+     "word": "an",
+     "start": 160.425,
+     "end": 160.562
+    },
+    {
+     "word": "instant",
+     "start": 160.575,
+     "end": 160.963
+    },
+    {
+     "word": "drop",
+     "start": 160.963,
+     "end": 161.363
+    },
+    {
+     "word": "in",
+     "start": 161.375,
+     "end": 161.5
+    },
+    {
+     "word": "power.",
+     "start": 161.5,
+     "end": 162.05
+    },
+    {
+     "word": "Most",
+     "start": 162.45,
+     "end": 162.637
+    },
+    {
+     "word": "people",
+     "start": 162.65,
+     "end": 162.9
+    },
+    {
+     "word": "assume",
+     "start": 162.9,
+     "end": 163.2
+    },
+    {
+     "word": "the",
+     "start": 163.2,
+     "end": 163.275
+    },
+    {
+     "word": "battery",
+     "start": 163.287,
+     "end": 163.738
+    },
+    {
+     "word": "is",
+     "start": 163.75,
+     "end": 163.912
+    },
+    {
+     "word": "dead",
+     "start": 163.912,
+     "end": 164.15
+    },
+    {
+     "word": "for",
+     "start": 164.15,
+     "end": 164.312
+    },
+    {
+     "word": "good.",
+     "start": 164.325,
+     "end": 164.588
+    },
+    {
+     "word": "They",
+     "start": 165.0,
+     "end": 165.088
+    },
+    {
+     "word": "throw",
+     "start": 165.088,
+     "end": 165.275
+    },
+    {
+     "word": "the",
+     "start": 165.287,
+     "end": 165.363
+    },
+    {
+     "word": "phone",
+     "start": 165.363,
+     "end": 165.6
+    },
+    {
+     "word": "away",
+     "start": 165.6,
+     "end": 166.025
+    },
+    {
+     "word": "or",
+     "start": 166.15,
+     "end": 166.275
+    },
+    {
+     "word": "buy",
+     "start": 166.275,
+     "end": 166.475
+    },
+    {
+     "word": "a",
+     "start": 166.475,
+     "end": 166.525
+    },
+    {
+     "word": "brand",
+     "start": 166.537,
+     "end": 166.8
+    },
+    {
+     "word": "new",
+     "start": 166.812,
+     "end": 166.9
+    },
+    {
+     "word": "replacement.",
+     "start": 166.912,
+     "end": 167.537
+    },
+    {
+     "word": "But",
+     "start": 167.95,
+     "end": 168.012
+    },
+    {
+     "word": "the",
+     "start": 168.025,
+     "end": 168.1
+    },
+    {
+     "word": "power",
+     "start": 168.1,
+     "end": 168.475
+    },
+    {
+     "word": "loss",
+     "start": 168.488,
+     "end": 168.95
+    },
+    {
+     "word": "is",
+     "start": 169.088,
+     "end": 169.225
+    },
+    {
+     "word": "only",
+     "start": 169.238,
+     "end": 169.488
+    },
+    {
+     "word": "temporary.",
+     "start": 169.5,
+     "end": 170.113
+    },
+    {
+     "word": "The",
+     "start": 170.537,
+     "end": 170.6
+    },
+    {
+     "word": "chemistry",
+     "start": 170.6,
+     "end": 171.213
+    },
+    {
+     "word": "just",
+     "start": 171.225,
+     "end": 171.4
+    },
+    {
+     "word": "takes",
+     "start": 171.4,
+     "end": 171.6
+    },
+    {
+     "word": "a",
+     "start": 171.6,
+     "end": 171.637
+    },
+    {
+     "word": "nap",
+     "start": 171.65,
+     "end": 172.088
+    },
+    {
+     "word": "when",
+     "start": 172.1,
+     "end": 172.25
+    },
+    {
+     "word": "temperatures",
+     "start": 172.25,
+     "end": 172.8
+    },
+    {
+     "word": "drop.",
+     "start": 172.8,
+     "end": 173.225
+    },
+    {
+     "word": "Freezing",
+     "start": 173.675,
+     "end": 174.1
+    },
+    {
+     "word": "cold",
+     "start": 174.113,
+     "end": 174.512
+    },
+    {
+     "word": "triggers",
+     "start": 174.525,
+     "end": 175.1
+    },
+    {
+     "word": "sudden",
+     "start": 175.287,
+     "end": 175.65
+    },
+    {
+     "word": "voltage",
+     "start": 175.65,
+     "end": 176.1
+    },
+    {
+     "word": "drops",
+     "start": 176.1,
+     "end": 176.65
+    },
+    {
+     "word": "that",
+     "start": 176.838,
+     "end": 176.963
+    },
+    {
+     "word": "force",
+     "start": 176.963,
+     "end": 177.312
+    },
+    {
+     "word": "the",
+     "start": 177.312,
+     "end": 177.425
+    },
+    {
+     "word": "phone",
+     "start": 177.425,
+     "end": 177.838
+    },
+    {
+     "word": "to",
+     "start": 177.925,
+     "end": 177.988
+    },
+    {
+     "word": "shut",
+     "start": 177.988,
+     "end": 178.3
+    },
+    {
+     "word": "down.",
+     "start": 178.3,
+     "end": 178.65
+    },
+    {
+     "word": "This",
+     "start": 179.05,
+     "end": 179.188
+    },
+    {
+     "word": "safety",
+     "start": 179.188,
+     "end": 179.562
+    },
+    {
+     "word": "feature",
+     "start": 179.562,
+     "end": 179.925
+    },
+    {
+     "word": "protects",
+     "start": 179.925,
+     "end": 180.387
+    },
+    {
+     "word": "the",
+     "start": 180.4,
+     "end": 180.488
+    },
+    {
+     "word": "cell",
+     "start": 180.5,
+     "end": 180.938
+    },
+    {
+     "word": "from",
+     "start": 181.162,
+     "end": 181.312
+    },
+    {
+     "word": "internal",
+     "start": 181.312,
+     "end": 181.725
+    },
+    {
+     "word": "stress.",
+     "start": 181.725,
+     "end": 182.35
+    },
+    {
+     "word": "So",
+     "start": 182.762,
+     "end": 182.875
+    },
+    {
+     "word": "the",
+     "start": 182.875,
+     "end": 182.938
+    },
+    {
+     "word": "shutdown",
+     "start": 182.938,
+     "end": 183.55
+    },
+    {
+     "word": "is",
+     "start": 183.825,
+     "end": 183.975
+    },
+    {
+     "word": "actually",
+     "start": 183.988,
+     "end": 184.35
+    },
+    {
+     "word": "saving",
+     "start": 184.363,
+     "end": 184.787
+    },
+    {
+     "word": "the",
+     "start": 184.787,
+     "end": 184.838
+    },
+    {
+     "word": "hardware.",
+     "start": 184.838,
+     "end": 185.475
+    },
+    {
+     "word": "Yet",
+     "start": 185.875,
+     "end": 186.062
+    },
+    {
+     "word": "the",
+     "start": 186.188,
+     "end": 186.287
+    },
+    {
+     "word": "panic",
+     "start": 186.3,
+     "end": 186.738
+    },
+    {
+     "word": "sets",
+     "start": 186.738,
+     "end": 187.125
+    },
+    {
+     "word": "in",
+     "start": 187.137,
+     "end": 187.213
+    },
+    {
+     "word": "the",
+     "start": 187.213,
+     "end": 187.262
+    },
+    {
+     "word": "moment",
+     "start": 187.262,
+     "end": 187.675
+    },
+    {
+     "word": "the",
+     "start": 187.688,
+     "end": 187.762
+    },
+    {
+     "word": "screen",
+     "start": 187.762,
+     "end": 188.213
+    },
+    {
+     "word": "goes",
+     "start": 188.213,
+     "end": 188.475
+    },
+    {
+     "word": "black.",
+     "start": 188.488,
+     "end": 188.975
+    },
+    {
+     "word": "Lithium",
+     "start": 189.363,
+     "end": 189.8
+    },
+    {
+     "word": "ion",
+     "start": 189.812,
+     "end": 190.238
+    },
+    {
+     "word": "batteries",
+     "start": 190.238,
+     "end": 190.775
+    },
+    {
+     "word": "rely",
+     "start": 190.787,
+     "end": 191.363
+    },
+    {
+     "word": "entirely",
+     "start": 191.463,
+     "end": 192.325
+    },
+    {
+     "word": "on",
+     "start": 192.338,
+     "end": 192.537
+    },
+    {
+     "word": "liquid",
+     "start": 192.55,
+     "end": 192.988
+    },
+    {
+     "word": "electrolyte",
+     "start": 193.075,
+     "end": 193.975
+    },
+    {
+     "word": "chemical",
+     "start": 193.988,
+     "end": 194.375
+    },
+    {
+     "word": "reactions",
+     "start": 194.387,
+     "end": 195.088
+    },
+    {
+     "word": "to",
+     "start": 195.275,
+     "end": 195.387
+    },
+    {
+     "word": "generate",
+     "start": 195.387,
+     "end": 195.85
+    },
+    {
+     "word": "power.",
+     "start": 195.85,
+     "end": 196.35
+    },
+    {
+     "word": "Ions",
+     "start": 196.75,
+     "end": 197.062
+    },
+    {
+     "word": "flow",
+     "start": 197.062,
+     "end": 197.375
+    },
+    {
+     "word": "back",
+     "start": 197.375,
+     "end": 197.775
+    },
+    {
+     "word": "and",
+     "start": 197.775,
+     "end": 197.838
+    },
+    {
+     "word": "forth",
+     "start": 197.838,
+     "end": 198.325
+    },
+    {
+     "word": "to",
+     "start": 198.325,
+     "end": 198.425
+    },
+    {
+     "word": "keep",
+     "start": 198.425,
+     "end": 198.662
+    },
+    {
+     "word": "the",
+     "start": 198.662,
+     "end": 198.725
+    },
+    {
+     "word": "device",
+     "start": 198.738,
+     "end": 199.162
+    },
+    {
+     "word": "running.",
+     "start": 199.162,
+     "end": 199.45
+    },
+    {
+     "word": "Warm",
+     "start": 199.838,
+     "end": 200.075
+    },
+    {
+     "word": "weather",
+     "start": 200.075,
+     "end": 200.312
+    },
+    {
+     "word": "keeps",
+     "start": 200.325,
+     "end": 200.65
+    },
+    {
+     "word": "those",
+     "start": 200.65,
+     "end": 200.863
+    },
+    {
+     "word": "ions",
+     "start": 200.863,
+     "end": 201.262
+    },
+    {
+     "word": "moving",
+     "start": 201.275,
+     "end": 201.588
+    },
+    {
+     "word": "fast",
+     "start": 201.588,
+     "end": 202.375
+    },
+    {
+     "word": "and",
+     "start": 202.6,
+     "end": 202.688
+    },
+    {
+     "word": "smooth.",
+     "start": 202.7,
+     "end": 203.275
+    },
+    {
+     "word": "Then",
+     "start": 203.675,
+     "end": 203.75
+    },
+    {
+     "word": "the",
+     "start": 203.75,
+     "end": 203.825
+    },
+    {
+     "word": "winter",
+     "start": 203.825,
+     "end": 204.213
+    },
+    {
+     "word": "air",
+     "start": 204.35,
+     "end": 204.525
+    },
+    {
+     "word": "arrives",
+     "start": 204.537,
+     "end": 205.312
+    },
+    {
+     "word": "and",
+     "start": 205.588,
+     "end": 205.738
+    },
+    {
+     "word": "changes",
+     "start": 205.738,
+     "end": 206.262
+    },
+    {
+     "word": "everything.",
+     "start": 206.262,
+     "end": 206.775
+    },
+    {
+     "word": "Freezing",
+     "start": 207.225,
+     "end": 207.588
+    },
+    {
+     "word": "temperatures",
+     "start": 207.588,
+     "end": 208.125
+    },
+    {
+     "word": "slow",
+     "start": 208.35,
+     "end": 208.7
+    },
+    {
+     "word": "down",
+     "start": 208.7,
+     "end": 209.05
+    },
+    {
+     "word": "ion",
+     "start": 209.062,
+     "end": 209.475
+    },
+    {
+     "word": "movement",
+     "start": 209.475,
+     "end": 209.975
+    },
+    {
+     "word": "inside",
+     "start": 210.137,
+     "end": 210.575
+    },
+    {
+     "word": "the",
+     "start": 210.575,
+     "end": 210.625
+    },
+    {
+     "word": "cell.",
+     "start": 210.637,
+     "end": 211.1
+    },
+    {
+     "word": "The",
+     "start": 211.5,
+     "end": 211.588
+    },
+    {
+     "word": "liquid",
+     "start": 211.6,
+     "end": 211.963
+    },
+    {
+     "word": "electrolyte",
+     "start": 212.05,
+     "end": 212.875
+    },
+    {
+     "word": "thickens",
+     "start": 212.887,
+     "end": 213.375
+    },
+    {
+     "word": "up",
+     "start": 213.375,
+     "end": 213.613
+    },
+    {
+     "word": "like",
+     "start": 213.775,
+     "end": 213.938
+    },
+    {
+     "word": "cold",
+     "start": 213.938,
+     "end": 214.275
+    },
+    {
+     "word": "syrup.",
+     "start": 214.275,
+     "end": 214.738
+    },
+    {
+     "word": "Internal",
+     "start": 215.15,
+     "end": 215.575
+    },
+    {
+     "word": "resistance",
+     "start": 215.588,
+     "end": 216.238
+    },
+    {
+     "word": "shoots",
+     "start": 216.425,
+     "end": 216.938
+    },
+    {
+     "word": "straight",
+     "start": 217.137,
+     "end": 217.488
+    },
+    {
+     "word": "up.",
+     "start": 217.488,
+     "end": 217.725
+    },
+    {
+     "word": "Voltage",
+     "start": 218.137,
+     "end": 218.65
+    },
+    {
+     "word": "plummets",
+     "start": 218.662,
+     "end": 219.3
+    },
+    {
+     "word": "before",
+     "start": 219.438,
+     "end": 219.887
+    },
+    {
+     "word": "the",
+     "start": 219.887,
+     "end": 220.0
+    },
+    {
+     "word": "ions",
+     "start": 220.0,
+     "end": 220.575
+    },
+    {
+     "word": "can",
+     "start": 220.7,
+     "end": 220.825
+    },
+    {
+     "word": "deliver",
+     "start": 220.825,
+     "end": 221.188
+    },
+    {
+     "word": "their",
+     "start": 221.188,
+     "end": 221.325
+    },
+    {
+     "word": "charge.",
+     "start": 221.338,
+     "end": 221.925
+    },
+    {
+     "word": "Sensors",
+     "start": 222.338,
+     "end": 222.75
+    },
+    {
+     "word": "read",
+     "start": 222.762,
+     "end": 223.113
+    },
+    {
+     "word": "this",
+     "start": 223.113,
+     "end": 223.312
+    },
+    {
+     "word": "drop",
+     "start": 223.312,
+     "end": 223.775
+    },
+    {
+     "word": "as",
+     "start": 223.912,
+     "end": 224.025
+    },
+    {
+     "word": "a",
+     "start": 224.025,
+     "end": 224.088
+    },
+    {
+     "word": "dead",
+     "start": 224.1,
+     "end": 224.325
+    },
+    {
+     "word": "battery.",
+     "start": 224.325,
+     "end": 224.8
+    },
+    {
+     "word": "Automatic",
+     "start": 225.188,
+     "end": 225.662
+    },
+    {
+     "word": "shutdowns",
+     "start": 225.662,
+     "end": 226.3
+    },
+    {
+     "word": "happen",
+     "start": 226.438,
+     "end": 226.988
+    },
+    {
+     "word": "to",
+     "start": 227.0,
+     "end": 227.1
+    },
+    {
+     "word": "prevent",
+     "start": 227.1,
+     "end": 227.588
+    },
+    {
+     "word": "permanent",
+     "start": 227.588,
+     "end": 227.988
+    },
+    {
+     "word": "cell",
+     "start": 227.988,
+     "end": 228.25
+    },
+    {
+     "word": "damage.",
+     "start": 228.25,
+     "end": 228.85
+    },
+    {
+     "word": "Bringing",
+     "start": 229.275,
+     "end": 229.512
+    },
+    {
+     "word": "the",
+     "start": 229.512,
+     "end": 229.575
+    },
+    {
+     "word": "device",
+     "start": 229.575,
+     "end": 230.05
+    },
+    {
+     "word": "inside",
+     "start": 230.05,
+     "end": 230.688
+    },
+    {
+     "word": "tells",
+     "start": 230.887,
+     "end": 231.162
+    },
+    {
+     "word": "a",
+     "start": 231.162,
+     "end": 231.225
+    },
+    {
+     "word": "completely",
+     "start": 231.225,
+     "end": 231.975
+    },
+    {
+     "word": "different",
+     "start": 231.988,
+     "end": 232.338
+    },
+    {
+     "word": "story.",
+     "start": 232.338,
+     "end": 232.85
+    },
+    {
+     "word": "Warming",
+     "start": 233.262,
+     "end": 233.562
+    },
+    {
+     "word": "the",
+     "start": 233.562,
+     "end": 233.637
+    },
+    {
+     "word": "device",
+     "start": 233.637,
+     "end": 234.137
+    },
+    {
+     "word": "restores",
+     "start": 234.15,
+     "end": 234.8
+    },
+    {
+     "word": "most",
+     "start": 235.012,
+     "end": 235.438
+    },
+    {
+     "word": "of",
+     "start": 235.438,
+     "end": 235.488
+    },
+    {
+     "word": "the",
+     "start": 235.488,
+     "end": 235.55
+    },
+    {
+     "word": "lost",
+     "start": 235.55,
+     "end": 235.938
+    },
+    {
+     "word": "power.",
+     "start": 235.938,
+     "end": 236.387
+    },
+    {
+     "word": "No",
+     "start": 236.787,
+     "end": 237.037
+    },
+    {
+     "word": "permanent",
+     "start": 237.05,
+     "end": 237.613
+    },
+    {
+     "word": "damage",
+     "start": 237.625,
+     "end": 238.113
+    },
+    {
+     "word": "happens",
+     "start": 238.25,
+     "end": 238.713
+    },
+    {
+     "word": "to",
+     "start": 238.713,
+     "end": 238.812
+    },
+    {
+     "word": "the",
+     "start": 238.812,
+     "end": 238.9
+    },
+    {
+     "word": "chemistry.",
+     "start": 238.9,
+     "end": 239.512
+    },
+    {
+     "word": "The",
+     "start": 239.912,
+     "end": 239.975
+    },
+    {
+     "word": "liquid",
+     "start": 239.975,
+     "end": 240.338
+    },
+    {
+     "word": "electrolyte",
+     "start": 240.425,
+     "end": 241.188
+    },
+    {
+     "word": "thins",
+     "start": 241.2,
+     "end": 241.688
+    },
+    {
+     "word": "right",
+     "start": 241.787,
+     "end": 242.062
+    },
+    {
+     "word": "back",
+     "start": 242.062,
+     "end": 242.35
+    },
+    {
+     "word": "out.",
+     "start": 242.35,
+     "end": 242.662
+    },
+    {
+     "word": "Ions",
+     "start": 243.075,
+     "end": 243.375
+    },
+    {
+     "word": "resume",
+     "start": 243.375,
+     "end": 243.875
+    },
+    {
+     "word": "their",
+     "start": 244.162,
+     "end": 244.275
+    },
+    {
+     "word": "normal",
+     "start": 244.275,
+     "end": 244.713
+    },
+    {
+     "word": "sprint",
+     "start": 244.713,
+     "end": 245.175
+    },
+    {
+     "word": "across",
+     "start": 245.287,
+     "end": 245.65
+    },
+    {
+     "word": "the",
+     "start": 245.662,
+     "end": 245.738
+    },
+    {
+     "word": "cell.",
+     "start": 245.75,
+     "end": 246.188
+    },
+    {
+     "word": "Voltage",
+     "start": 246.6,
+     "end": 247.2
+    },
+    {
+     "word": "climbs",
+     "start": 247.363,
+     "end": 247.775
+    },
+    {
+     "word": "back",
+     "start": 247.775,
+     "end": 248.1
+    },
+    {
+     "word": "to",
+     "start": 248.113,
+     "end": 248.213
+    },
+    {
+     "word": "where",
+     "start": 248.213,
+     "end": 248.387
+    },
+    {
+     "word": "it",
+     "start": 248.387,
+     "end": 248.438
+    },
+    {
+     "word": "started.",
+     "start": 248.438,
+     "end": 248.875
+    },
+    {
+     "word": "That",
+     "start": 249.3,
+     "end": 249.438
+    },
+    {
+     "word": "lost",
+     "start": 249.438,
+     "end": 249.725
+    },
+    {
+     "word": "percentage",
+     "start": 249.738,
+     "end": 250.225
+    },
+    {
+     "word": "reappears",
+     "start": 250.225,
+     "end": 251.012
+    },
+    {
+     "word": "on",
+     "start": 251.025,
+     "end": 251.113
+    },
+    {
+     "word": "the",
+     "start": 251.113,
+     "end": 251.162
+    },
+    {
+     "word": "screen.",
+     "start": 251.162,
+     "end": 251.6
+    },
+    {
+     "word": "The",
+     "start": 252.012,
+     "end": 252.075
+    },
+    {
+     "word": "phone",
+     "start": 252.088,
+     "end": 252.363
+    },
+    {
+     "word": "powers",
+     "start": 252.363,
+     "end": 252.85
+    },
+    {
+     "word": "on",
+     "start": 252.85,
+     "end": 253.037
+    },
+    {
+     "word": "without",
+     "start": 253.175,
+     "end": 253.662
+    },
+    {
+     "word": "losing",
+     "start": 253.662,
+     "end": 254.213
+    },
+    {
+     "word": "a",
+     "start": 254.3,
+     "end": 254.35
+    },
+    {
+     "word": "single",
+     "start": 254.35,
+     "end": 254.738
+    },
+    {
+     "word": "cycle",
+     "start": 254.738,
+     "end": 255.137
+    },
+    {
+     "word": "of",
+     "start": 255.137,
+     "end": 255.213
+    },
+    {
+     "word": "life.",
+     "start": 255.225,
+     "end": 255.7
+    },
+    {
+     "word": "Cold",
+     "start": 256.1,
+     "end": 256.475
+    },
+    {
+     "word": "weather",
+     "start": 256.587,
+     "end": 256.962
+    },
+    {
+     "word": "only",
+     "start": 256.975,
+     "end": 257.262
+    },
+    {
+     "word": "creates",
+     "start": 257.262,
+     "end": 257.637
+    },
+    {
+     "word": "a",
+     "start": 257.65,
+     "end": 257.7
+    },
+    {
+     "word": "pause",
+     "start": 257.7,
+     "end": 258.288
+    },
+    {
+     "word": "in",
+     "start": 258.288,
+     "end": 258.337
+    },
+    {
+     "word": "the",
+     "start": 258.337,
+     "end": 258.4
+    },
+    {
+     "word": "action.",
+     "start": 258.4,
+     "end": 258.837
+    },
+    {
+     "word": "Patience",
+     "start": 259.238,
+     "end": 259.663
+    },
+    {
+     "word": "beats",
+     "start": 259.675,
+     "end": 259.988
+    },
+    {
+     "word": "panic",
+     "start": 260.0,
+     "end": 260.538
+    },
+    {
+     "word": "every",
+     "start": 260.762,
+     "end": 261.038
+    },
+    {
+     "word": "single",
+     "start": 261.038,
+     "end": 261.35
+    },
+    {
+     "word": "time.",
+     "start": 261.35,
+     "end": 261.712
+    },
+    {
+     "word": "Smart",
+     "start": 262.113,
+     "end": 262.413
+    },
+    {
+     "word": "habits",
+     "start": 262.413,
+     "end": 262.975
+    },
+    {
+     "word": "keep",
+     "start": 263.175,
+     "end": 263.387
+    },
+    {
+     "word": "the",
+     "start": 263.387,
+     "end": 263.475
+    },
+    {
+     "word": "phone",
+     "start": 263.488,
+     "end": 263.9
+    },
+    {
+     "word": "running",
+     "start": 263.975,
+     "end": 264.25
+    },
+    {
+     "word": "longer",
+     "start": 264.25,
+     "end": 264.587
+    },
+    {
+     "word": "outside.",
+     "start": 264.587,
+     "end": 265.163
+    },
+    {
+     "word": "Keep",
+     "start": 265.562,
+     "end": 265.725
+    },
+    {
+     "word": "your",
+     "start": 265.725,
+     "end": 265.837
+    },
+    {
+     "word": "phone",
+     "start": 265.837,
+     "end": 266.275
+    },
+    {
+     "word": "in",
+     "start": 266.363,
+     "end": 266.45
+    },
+    {
+     "word": "an",
+     "start": 266.45,
+     "end": 266.55
+    },
+    {
+     "word": "insulated",
+     "start": 266.613,
+     "end": 267.1
+    },
+    {
+     "word": "pocket",
+     "start": 267.113,
+     "end": 267.525
+    },
+    {
+     "word": "close",
+     "start": 267.712,
+     "end": 268.05
+    },
+    {
+     "word": "to",
+     "start": 268.062,
+     "end": 268.15
+    },
+    {
+     "word": "body",
+     "start": 268.163,
+     "end": 268.475
+    },
+    {
+     "word": "heat.",
+     "start": 268.475,
+     "end": 268.837
+    },
+    {
+     "word": "Body",
+     "start": 269.262,
+     "end": 269.5
+    },
+    {
+     "word": "warmth",
+     "start": 269.5,
+     "end": 269.85
+    },
+    {
+     "word": "stops",
+     "start": 269.85,
+     "end": 270.288
+    },
+    {
+     "word": "the",
+     "start": 270.3,
+     "end": 270.538
+    },
+    {
+     "word": "internal",
+     "start": 270.976,
+     "end": 271.363
+    },
+    {
+     "word": "temperature",
+     "start": 271.375,
+     "end": 271.888
+    },
+    {
+     "word": "from",
+     "start": 272.075,
+     "end": 272.213
+    },
+    {
+     "word": "hitting",
+     "start": 272.213,
+     "end": 272.513
+    },
+    {
+     "word": "zero.",
+     "start": 272.513,
+     "end": 273.026
+    },
+    {
+     "word": "Use",
+     "start": 273.401,
+     "end": 273.55
+    },
+    {
+     "word": "a",
+     "start": 273.563,
+     "end": 273.613
+    },
+    {
+     "word": "hand",
+     "start": 273.613,
+     "end": 273.976
+    },
+    {
+     "word": "warmer",
+     "start": 273.976,
+     "end": 274.213
+    },
+    {
+     "word": "pouch",
+     "start": 274.213,
+     "end": 274.625
+    },
+    {
+     "word": "inside",
+     "start": 274.75,
+     "end": 275.2
+    },
+    {
+     "word": "your",
+     "start": 275.2,
+     "end": 275.276
+    },
+    {
+     "word": "carrying",
+     "start": 275.288,
+     "end": 275.663
+    },
+    {
+     "word": "bag.",
+     "start": 275.663,
+     "end": 276.05
+    },
+    {
+     "word": "Avoid",
+     "start": 276.463,
+     "end": 276.813
+    },
+    {
+     "word": "leaving",
+     "start": 276.813,
+     "end": 277.101
+    },
+    {
+     "word": "devices",
+     "start": 277.101,
+     "end": 277.601
+    },
+    {
+     "word": "exposed",
+     "start": 277.613,
+     "end": 278.25
+    },
+    {
+     "word": "in",
+     "start": 278.25,
+     "end": 278.351
+    },
+    {
+     "word": "car",
+     "start": 278.351,
+     "end": 278.688
+    },
+    {
+     "word": "mounts",
+     "start": 278.7,
+     "end": 279.151
+    },
+    {
+     "word": "during",
+     "start": 279.163,
+     "end": 279.425
+    },
+    {
+     "word": "winter",
+     "start": 279.425,
+     "end": 279.663
+    },
+    {
+     "word": "storms.",
+     "start": 279.675,
+     "end": 280.288
+    },
+    {
+     "word": "Briefly",
+     "start": 280.688,
+     "end": 281.063
+    },
+    {
+     "word": "power",
+     "start": 281.063,
+     "end": 281.513
+    },
+    {
+     "word": "cycle",
+     "start": 281.526,
+     "end": 281.863
+    },
+    {
+     "word": "the",
+     "start": 281.875,
+     "end": 281.938
+    },
+    {
+     "word": "device",
+     "start": 281.938,
+     "end": 282.526
+    },
+    {
+     "word": "once",
+     "start": 282.663,
+     "end": 282.875
+    },
+    {
+     "word": "it",
+     "start": 282.888,
+     "end": 282.95
+    },
+    {
+     "word": "returns",
+     "start": 282.95,
+     "end": 283.363
+    },
+    {
+     "word": "indoors.",
+     "start": 283.363,
+     "end": 283.963
+    },
+    {
+     "word": "Resetting",
+     "start": 284.351,
+     "end": 284.75
+    },
+    {
+     "word": "voltage",
+     "start": 284.75,
+     "end": 285.175
+    },
+    {
+     "word": "sensors",
+     "start": 285.188,
+     "end": 285.688
+    },
+    {
+     "word": "clears",
+     "start": 285.7,
+     "end": 286.125
+    },
+    {
+     "word": "out",
+     "start": 286.125,
+     "end": 286.3
+    },
+    {
+     "word": "false",
+     "start": 286.313,
+     "end": 286.825
+    },
+    {
+     "word": "low",
+     "start": 286.838,
+     "end": 287.138
+    },
+    {
+     "word": "battery",
+     "start": 287.138,
+     "end": 287.613
+    },
+    {
+     "word": "reads.",
+     "start": 287.613,
+     "end": 288.138
+    },
+    {
+     "word": "Never",
+     "start": 288.526,
+     "end": 288.75
+    },
+    {
+     "word": "blast",
+     "start": 288.75,
+     "end": 289.175
+    },
+    {
+     "word": "freezing",
+     "start": 289.188,
+     "end": 289.7
+    },
+    {
+     "word": "phones",
+     "start": 289.713,
+     "end": 290.263
+    },
+    {
+     "word": "with",
+     "start": 290.276,
+     "end": 290.438
+    },
+    {
+     "word": "sudden",
+     "start": 290.438,
+     "end": 290.788
+    },
+    {
+     "word": "high",
+     "start": 290.8,
+     "end": 291.05
+    },
+    {
+     "word": "heat",
+     "start": 291.05,
+     "end": 291.425
+    },
+    {
+     "word": "from",
+     "start": 291.438,
+     "end": 291.638
+    },
+    {
+     "word": "hair",
+     "start": 291.638,
+     "end": 291.863
+    },
+    {
+     "word": "dryers.",
+     "start": 291.863,
+     "end": 292.488
+    },
+    {
+     "word": "Rapid",
+     "start": 292.901,
+     "end": 293.213
+    },
+    {
+     "word": "temperature",
+     "start": 293.213,
+     "end": 293.613
+    },
+    {
+     "word": "swings",
+     "start": 293.625,
+     "end": 294.226
+    },
+    {
+     "word": "cause",
+     "start": 294.45,
+     "end": 294.8
+    },
+    {
+     "word": "internal",
+     "start": 294.813,
+     "end": 295.351
+    },
+    {
+     "word": "condensation",
+     "start": 295.351,
+     "end": 296.2
+    },
+    {
+     "word": "to",
+     "start": 296.325,
+     "end": 296.413
+    },
+    {
+     "word": "form.",
+     "start": 296.413,
+     "end": 296.851
+    },
+    {
+     "word": "Let",
+     "start": 297.25,
+     "end": 297.338
+    },
+    {
+     "word": "the",
+     "start": 297.338,
+     "end": 297.413
+    },
+    {
+     "word": "device",
+     "start": 297.413,
+     "end": 297.888
+    },
+    {
+     "word": "warm",
+     "start": 297.888,
+     "end": 298.213
+    },
+    {
+     "word": "up",
+     "start": 298.213,
+     "end": 298.338
+    },
+    {
+     "word": "slowly",
+     "start": 298.351,
+     "end": 299.088
+    },
+    {
+     "word": "at",
+     "start": 299.101,
+     "end": 299.276
+    },
+    {
+     "word": "room",
+     "start": 299.276,
+     "end": 299.513
+    },
+    {
+     "word": "temperature",
+     "start": 299.513,
+     "end": 299.95
+    },
+    {
+     "word": "instead.",
+     "start": 299.963,
+     "end": 300.5
+    },
+    {
+     "word": "Cold",
+     "start": 300.913,
+     "end": 301.276
+    },
+    {
+     "word": "weather",
+     "start": 301.338,
+     "end": 301.738
+    },
+    {
+     "word": "never",
+     "start": 301.901,
+     "end": 302.25
+    },
+    {
+     "word": "destroys",
+     "start": 302.25,
+     "end": 302.738
+    },
+    {
+     "word": "battery",
+     "start": 302.75,
+     "end": 303.138
+    },
+    {
+     "word": "capacity",
+     "start": 303.151,
+     "end": 303.963
+    },
+    {
+     "word": "permanently.",
+     "start": 304.138,
+     "end": 304.851
+    },
+    {
+     "word": "The",
+     "start": 305.25,
+     "end": 305.313
+    },
+    {
+     "word": "chemistry",
+     "start": 305.313,
+     "end": 306.026
+    },
+    {
+     "word": "just",
+     "start": 306.113,
+     "end": 306.288
+    },
+    {
+     "word": "slows",
+     "start": 306.288,
+     "end": 306.875
+    },
+    {
+     "word": "down",
+     "start": 306.875,
+     "end": 307.338
+    },
+    {
+     "word": "until",
+     "start": 307.476,
+     "end": 307.75
+    },
+    {
+     "word": "it",
+     "start": 307.75,
+     "end": 307.813
+    },
+    {
+     "word": "warms",
+     "start": 307.813,
+     "end": 308.05
+    },
+    {
+     "word": "back",
+     "start": 308.05,
+     "end": 308.338
+    },
+    {
+     "word": "up.",
+     "start": 308.338,
+     "end": 308.601
+    },
+    {
+     "word": "Voltage",
+     "start": 309.0,
+     "end": 309.55
+    },
+    {
+     "word": "drops",
+     "start": 309.55,
+     "end": 310.038
+    },
+    {
+     "word": "trigger",
+     "start": 310.151,
+     "end": 310.601
+    },
+    {
+     "word": "shutdowns",
+     "start": 310.75,
+     "end": 311.538
+    },
+    {
+     "word": "to",
+     "start": 311.638,
+     "end": 311.738
+    },
+    {
+     "word": "protect",
+     "start": 311.738,
+     "end": 312.338
+    },
+    {
+     "word": "the",
+     "start": 312.488,
+     "end": 312.55
+    },
+    {
+     "word": "internal",
+     "start": 312.55,
+     "end": 313.0
+    },
+    {
+     "word": "cells.",
+     "start": 313.013,
+     "end": 313.625
+    },
+    {
+     "word": "Warming",
+     "start": 314.05,
+     "end": 314.375
+    },
+    {
+     "word": "the",
+     "start": 314.375,
+     "end": 314.438
+    },
+    {
+     "word": "hardware",
+     "start": 314.438,
+     "end": 315.075
+    },
+    {
+     "word": "brings",
+     "start": 315.088,
+     "end": 315.5
+    },
+    {
+     "word": "every",
+     "start": 315.651,
+     "end": 316.038
+    },
+    {
+     "word": "single",
+     "start": 316.05,
+     "end": 316.351
+    },
+    {
+     "word": "percent",
+     "start": 316.351,
+     "end": 316.763
+    },
+    {
+     "word": "back",
+     "start": 316.763,
+     "end": 317.038
+    },
+    {
+     "word": "online.",
+     "start": 317.038,
+     "end": 317.55
+    },
+    {
+     "word": "A",
+     "start": 317.95,
+     "end": 318.013
+    },
+    {
+     "word": "lithium",
+     "start": 318.026,
+     "end": 318.563
+    },
+    {
+     "word": "ion",
+     "start": 318.7,
+     "end": 319.113
+    },
+    {
+     "word": "battery",
+     "start": 319.113,
+     "end": 319.613
+    },
+    {
+     "word": "loses",
+     "start": 319.625,
+     "end": 320.163
+    },
+    {
+     "word": "fifty",
+     "start": 320.3,
+     "end": 320.688
+    },
+    {
+     "word": "percent",
+     "start": 320.688,
+     "end": 321.238
+    },
+    {
+     "word": "of",
+     "start": 321.3,
+     "end": 321.388
+    },
+    {
+     "word": "its",
+     "start": 321.401,
+     "end": 321.526
+    },
+    {
+     "word": "charge",
+     "start": 321.526,
+     "end": 322.125
+    },
+    {
+     "word": "at",
+     "start": 322.325,
+     "end": 322.488
+    },
+    {
+     "word": "zero",
+     "start": 322.5,
+     "end": 322.875
+    },
+    {
+     "word": "degrees",
+     "start": 322.875,
+     "end": 323.276
+    },
+    {
+     "word": "Fahrenheit.",
+     "start": 323.288,
+     "end": 323.913
+    },
+    {
+     "word": "That",
+     "start": 324.313,
+     "end": 324.5
+    },
+    {
+     "word": "lost",
+     "start": 324.513,
+     "end": 324.863
+    },
+    {
+     "word": "power",
+     "start": 324.863,
+     "end": 325.3
+    },
+    {
+     "word": "was",
+     "start": 325.3,
+     "end": 325.45
+    },
+    {
+     "word": "never",
+     "start": 325.45,
+     "end": 325.838
+    },
+    {
+     "word": "gone",
+     "start": 325.838,
+     "end": 326.138
+    },
+    {
+     "word": "in",
+     "start": 326.138,
+     "end": 326.175
+    },
+    {
+     "word": "the",
+     "start": 326.188,
+     "end": 326.25
+    },
+    {
+     "word": "first",
+     "start": 326.263,
+     "end": 326.575
+    },
+    {
+     "word": "place.",
+     "start": 326.575,
+     "end": 327.151
+    },
+    {
+     "word": "Protect",
+     "start": 327.563,
+     "end": 327.888
+    },
+    {
+     "word": "the",
+     "start": 327.888,
+     "end": 327.963
+    },
+    {
+     "word": "device",
+     "start": 327.963,
+     "end": 328.351
+    },
+    {
+     "word": "from",
+     "start": 328.351,
+     "end": 328.45
+    },
+    {
+     "word": "the",
+     "start": 328.45,
+     "end": 328.5
+    },
+    {
+     "word": "freeze",
+     "start": 328.513,
+     "end": 329.2
+    },
+    {
+     "word": "and",
+     "start": 329.401,
+     "end": 329.588
+    },
+    {
+     "word": "watch",
+     "start": 329.588,
+     "end": 329.988
+    },
+    {
+     "word": "the",
+     "start": 329.988,
+     "end": 330.088
+    },
+    {
+     "word": "charge",
+     "start": 330.101,
+     "end": 330.463
+    },
+    {
+     "word": "return.",
+     "start": 330.463,
+     "end": 330.863
+    },
+    {
+     "word": "A",
+     "start": 331.25,
+     "end": 331.3
+    },
+    {
+     "word": "lithium-ion",
+     "start": 331.3,
+     "end": 331.976
+    },
+    {
+     "word": "battery",
+     "start": 331.976,
+     "end": 332.463
+    },
+    {
+     "word": "loses",
+     "start": 332.476,
+     "end": 333.026
+    },
+    {
+     "word": "fifty",
+     "start": 333.163,
+     "end": 333.563
+    },
+    {
+     "word": "percent",
+     "start": 333.563,
+     "end": 334.125
+    },
+    {
+     "word": "of",
+     "start": 334.138,
+     "end": 334.226
+    },
+    {
+     "word": "its",
+     "start": 334.238,
+     "end": 334.363
+    },
+    {
+     "word": "charge",
+     "start": 334.363,
+     "end": 335.0
+    },
+    {
+     "word": "at",
+     "start": 335.238,
+     "end": 335.401
+    },
+    {
+     "word": "zero",
+     "start": 335.401,
+     "end": 335.776
+    },
+    {
+     "word": "degrees",
+     "start": 335.776,
+     "end": 336.151
+    },
+    {
+     "word": "Fahrenheit.",
+     "start": 336.151,
+     "end": 336.788
+    },
+    {
+     "word": "Cold",
+     "start": 337.175,
+     "end": 337.476
+    },
+    {
+     "word": "weather",
+     "start": 337.476,
+     "end": 337.776
+    },
+    {
+     "word": "traps",
+     "start": 337.788,
+     "end": 338.263
+    },
+    {
+     "word": "energy",
+     "start": 338.401,
+     "end": 338.863
+    },
+    {
+     "word": "inside",
+     "start": 338.875,
+     "end": 339.351
+    },
+    {
+     "word": "the",
+     "start": 339.351,
+     "end": 339.413
+    },
+    {
+     "word": "device.",
+     "start": 339.425,
+     "end": 340.063
+    },
+    {
+     "word": "People",
+     "start": 340.476,
+     "end": 340.713
+    },
+    {
+     "word": "panic",
+     "start": 340.713,
+     "end": 341.188
+    },
+    {
+     "word": "when",
+     "start": 341.313,
+     "end": 341.425
+    },
+    {
+     "word": "their",
+     "start": 341.425,
+     "end": 341.538
+    },
+    {
+     "word": "phone",
+     "start": 341.538,
+     "end": 341.925
+    },
+    {
+     "word": "shuts",
+     "start": 341.925,
+     "end": 342.263
+    },
+    {
+     "word": "down.",
+     "start": 342.263,
+     "end": 342.625
+    },
+    {
+     "word": "The",
+     "start": 343.026,
+     "end": 343.113
+    },
+    {
+     "word": "chemistry",
+     "start": 343.113,
+     "end": 343.726
+    },
+    {
+     "word": "just",
+     "start": 343.738,
+     "end": 343.913
+    },
+    {
+     "word": "slows",
+     "start": 343.913,
+     "end": 344.238
+    },
+    {
+     "word": "down.",
+     "start": 344.238,
+     "end": 344.601
+    },
+    {
+     "word": "Warm",
+     "start": 344.963,
+     "end": 345.2
+    },
+    {
+     "word": "temperatures",
+     "start": 345.2,
+     "end": 345.738
+    },
+    {
+     "word": "bring",
+     "start": 345.738,
+     "end": 345.913
+    },
+    {
+     "word": "the",
+     "start": 345.913,
+     "end": 345.988
+    },
+    {
+     "word": "power",
+     "start": 346.0,
+     "end": 346.425
+    },
+    {
+     "word": "right",
+     "start": 346.55,
+     "end": 346.763
+    },
+    {
+     "word": "back.",
+     "start": 346.763,
+     "end": 347.213
+    },
+    {
+     "word": "No",
+     "start": 347.601,
+     "end": 347.776
+    },
+    {
+     "word": "permanent",
+     "start": 347.776,
+     "end": 348.263
+    },
+    {
+     "word": "damage",
+     "start": 348.263,
+     "end": 348.776
+    },
+    {
+     "word": "happens",
+     "start": 348.913,
+     "end": 349.363
+    },
+    {
+     "word": "to",
+     "start": 349.363,
+     "end": 349.45
+    },
+    {
+     "word": "the",
+     "start": 349.463,
+     "end": 349.55
+    },
+    {
+     "word": "cell.",
+     "start": 349.563,
+     "end": 350.026
+    },
+    {
+     "word": "Keep",
+     "start": 350.438,
+     "end": 350.613
+    },
+    {
+     "word": "your",
+     "start": 350.613,
+     "end": 350.7
+    },
+    {
+     "word": "device",
+     "start": 350.713,
+     "end": 351.125
+    },
+    {
+     "word": "warm",
+     "start": 351.138,
+     "end": 351.513
+    },
+    {
+     "word": "to",
+     "start": 351.688,
+     "end": 351.763
+    },
+    {
+     "word": "keep",
+     "start": 351.763,
+     "end": 351.988
+    },
+    {
+     "word": "it",
+     "start": 351.988,
+     "end": 352.075
+    },
+    {
+     "word": "running.",
+     "start": 352.088,
+     "end": 352.388
+    },
+    {
+     "word": "Cold",
+     "start": 352.788,
+     "end": 353.113
+    },
+    {
+     "word": "slows",
+     "start": 353.125,
+     "end": 353.613
+    },
+    {
+     "word": "the",
+     "start": 353.625,
+     "end": 353.7
+    },
+    {
+     "word": "charge,",
+     "start": 353.7,
+     "end": 354.363
+    },
+    {
+     "word": "but",
+     "start": 354.538,
+     "end": 354.651
+    },
+    {
+     "word": "it",
+     "start": 354.651,
+     "end": 354.726
+    },
+    {
+     "word": "never",
+     "start": 354.738,
+     "end": 355.05
+    },
+    {
+     "word": "steals",
+     "start": 355.05,
+     "end": 355.513
+    },
+    {
+     "word": "it.",
+     "start": 355.513,
+     "end": 355.738
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit. Your phone shuts down instantly in the freezing wind. Panic sets in because your daily schedule lives inside that glass screen. So you assume the cold weather killed your expensive battery permanently. People believe freezing temperatures destroy the chemical juice inside forever. Every winter brings the same frustrating ritual of sudden power loss. You rush indoors and plug the device into the nearest wall socket. Magic happens as soon as the metal casing warms back up to room temperature. The percentage jumps right back to where it was before stepping outside. The cold did not destroy your battery at all. Lithium-ion batteries rely entirely on liquid electrolyte chemical reactions to generate power. Inside your pocket, these microscopic ions flow smoothly back and forth to keep your screen bright. But freezing temperatures hit your phone and suddenly everything grinds to a halt. Freezing conditions dramatically slow down ion movement inside the cell. The liquid electrolyte thickens up so much that chemical reactions slow to a crawl. Because the ions cannot travel fast enough, the battery output drops instantly. This sudden restriction causes temporary voltage drops across the internal circuitry. Your phone reads that sudden voltage dip as an empty charge. The operating system triggers an automatic shutdown to protect its hardware from damage. The phone powers off itself, but the energy inside has not actually vanished. A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit. People think cold weather drains battery juice permanently, but the chemistry just slows down. Lithium-ion batteries rely on liquid electrolyte chemical reactions to generate power. Freezing temperatures slow down ion movement inside the cell. Extreme cold causes temporary voltage drops that trigger automatic shutdowns. Warming the device restores most of the lost power without permanent damage. The voltage dip is completely reversible when the battery returns to normal temperature. Keep your phone in an insulated pocket to trap natural body heat. Use a warm pouch or briefly power cycle the device to reset voltage sensors. Cold only slows chemistry down, so let it warm up before you panic. A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit. Stepping out into the freeze causes an instant drop in power. Most people assume the battery is dead for good. They throw the phone away or buy a brand new replacement. But the power loss is only temporary. The chemistry just takes a nap when temperatures drop. Freezing cold triggers sudden voltage drops that force the phone to shut down. This safety feature protects the cell from internal stress. So the shutdown is actually saving the hardware. Yet the panic sets in the moment the screen goes black. Lithium ion batteries rely entirely on liquid electrolyte chemical reactions to generate power. Ions flow back and forth to keep the device running. Warm weather keeps those ions moving fast and smooth. Then the winter air arrives and changes everything. Freezing temperatures slow down ion movement inside the cell. The liquid electrolyte thickens up like cold syrup. Internal resistance shoots straight up. Voltage plummets before the ions can deliver their charge. Sensors read this drop as a dead battery. Automatic shutdowns happen to prevent permanent cell damage. Bringing the device inside tells a completely different story. Warming the device restores most of the lost power. No permanent damage happens to the chemistry. The liquid electrolyte thins right back out. Ions resume their normal sprint across the cell. Voltage climbs back to where it started. That lost percentage reappears on the screen. The phone powers on without losing a single cycle of life. Cold weather only creates a pause in the action. Patience beats panic every single time. Smart habits keep the phone running longer outside. Keep your phone in an insulated pocket close to body heat. Body warmth stops the internal temperature from hitting zero. Use a hand warmer pouch inside your carrying bag. Avoid leaving devices exposed in car mounts during winter storms. Briefly power cycle the device once it returns indoors. Resetting voltage sensors clears out false low battery reads. Never blast freezing phones with sudden high heat from hair dryers. Rapid temperature swings cause internal condensation to form. Let the device warm up slowly at room temperature instead. Cold weather never destroys battery capacity permanently. The chemistry just slows down until it warms back up. Voltage drops trigger shutdowns to protect the internal cells. Warming the hardware brings every single percent back online. A lithium ion battery loses fifty percent of its charge at zero degrees Fahrenheit. That lost power was never gone in the first place. Protect the device from the freeze and watch the charge return. A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit. Cold weather traps energy inside the device. People panic when their phone shuts down. The chemistry just slows down. Warm temperatures bring the power right back. No permanent damage happens to the cell. Keep your device warm to keep it running. Cold slows the charge, but it never steals it."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [
+   {
+    "id": "ch1",
+    "kind": "chapter",
+    "start": 44.29,
+    "end": 46.89,
+    "text": "The Chemistry Myth",
+    "sub": "Chapter 2"
+   },
+   {
+    "id": "ch2",
+    "kind": "chapter",
+    "start": 99.16,
+    "end": 101.76,
+    "text": "Why It’s Not Permanent",
+    "sub": "Chapter 3"
+   },
+   {
+    "id": "ch3",
+    "kind": "chapter",
+    "start": 151.97,
+    "end": 154.57,
+    "text": "Practical Warm‑Up Hacks",
+    "sub": "Chapter 4"
+   },
+   {
+    "id": "ch4",
+    "kind": "chapter",
+    "start": 331.25,
+    "end": 333.85,
+    "text": "Payoff & Reminder",
+    "sub": "Chapter 5"
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794163170330,
+  "updated": 1794163170330,
+  "topic": "Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments",
+  "hook": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-why-your-phone-dies-in-the-cold-mw85ymh1",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "chapters": [
+    {
+     "beat": 10,
+     "title": "The Chemistry Myth"
+    },
+    {
+     "beat": 20,
+     "title": "Why It’s Not Permanent"
+    },
+    {
+     "beat": 30,
+     "title": "Practical Warm‑Up Hacks"
+    },
+    {
+     "beat": 77,
+     "title": "Payoff & Reminder"
+    }
+   ],
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "why-your-phone-dies-in-the-cold-mw85ymh1",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "Why Your Phone Dies in the Cold",
+   "topic": "Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": []
+ }
+}

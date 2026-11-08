@@ -361,6 +361,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 2
+    },
+    {
+      "id": "short-32",
+      "title": "Why Your Phone Dies in the Cold",
+      "hook": "A lithium-ion battery loses fifty percent of its charge at zero degrees Fahrenheit.",
+      "accent": "#5AA9FF",
+      "duration": 357.0,
+      "created": 1794163580185,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-32/short-32.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-32/short-32.jpg",
+      "project": "why-your-phone-dies-in-the-cold-mw85ymh1",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
