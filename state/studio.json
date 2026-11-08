@@ -1,7 +1,7 @@
 {
-  "last_update": 312538291,
-  "time": 1794153664516,
-  "stage": "pitch",
+  "last_update": 312538292,
+  "time": 1794153707575,
+  "stage": "script",
   "topic": "growing up as a developer in 2026",
   "research": {
     "text": "",
@@ -24,16 +24,147 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Death of Syntax in 2026",
+    "beats": [
+      {
+        "narration": "In twenty twenty, Anthony Fu built a tiny personal script to click browser elements.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "Anthony Fu twenty twenty",
+          "sub": "tiny personal script"
+        }
+      },
+      {
+        "narration": "He needed a faster way to find code.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "faster",
+            "way",
+            "to",
+            "find",
+            "code"
+          ]
+        }
+      },
+      {
+        "narration": "So he created Vite Plugin Inspector.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "icons",
+          "title": "Vite Plugin Inspector",
+          "items": [
+            {
+              "icon": "zap",
+              "label": "inspector"
+            },
+            {
+              "icon": "globe",
+              "label": "browser"
+            },
+            {
+              "icon": "book",
+              "label": "source"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Developers clicked any browser element.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "flow",
+          "title": "Browser to Editor",
+          "steps": [
+            "Click element",
+            "Jump straight",
+            "Source code"
+          ]
+        }
+      },
+      {
+        "narration": "Then they jumped straight to source code in their editor.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "terminal",
+          "title": "editor.js",
+          "lines": [
+            {
+              "kind": "cmd",
+              "text": "open source --element"
+            },
+            {
+              "kind": "out",
+              "text": "jumped to line 42"
+            },
+            {
+              "kind": "ok",
+              "text": "editor ready"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "A small personal tool reached millions of Vite users.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 1000000,
+          "prefix": "",
+          "suffix": "M+",
+          "label": "Vite users worldwide"
+        }
+      },
+      {
+        "narration": "Beginners believe coding requires memorizing thousands of lines.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Memorize thousands of lines",
+          "fact": "Modern software engineering shifted"
+        }
+      },
+      {
+        "narration": "They think syntax rules everything.",
+        "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "percent",
+          "value": 90,
+          "label": "syntax focus"
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "In twenty twenty, developer Anthony Fu created Vite Plugin Inspector.",
+        "supported": true
+      },
+      {
+        "claim": "The inspector allowed developers to click an element in their browser to jump straight to source code in their editor.",
+        "supported": true
+      },
+      {
+        "claim": "The inspector began as a small personal tool before reaching millions of Vite users worldwide.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"fastedit\"",
-      "t": 1794139393429
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"fastedit2\"",
@@ -108,6 +239,11 @@
       "role": "bot",
       "text": "Pitched \"The Death of Syntax in 2026\": In twenty twenty, Anthony Fu built a tiny personal script just to click browser elements.",
       "t": 1794153649648
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Death of Syntax in 2026\"",
+      "t": 1794153707575
     }
   ],
   "working": null,
