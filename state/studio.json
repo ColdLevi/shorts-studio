@@ -1,28 +1,34 @@
 {
-  "last_update": 312538287,
-  "time": 1794142779886,
-  "stage": "idle",
-  "topic": "about writing codes before and currently vibe coding",
+  "last_update": 312538288,
+  "time": 1794143416352,
+  "stage": "pitch",
+  "topic": "making mistakes and learning to live with integrity 17sec",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "The Architect Who Admitted Defeat",
+    "hook": "In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
+    "angle": "Hiding a massive blunder seems like career survival. Admitting a fatal design flaw voluntarily turned a potential disaster into the ultimate masterclass in integrity.",
+    "key_facts": [
+      "In 1978, architect William LeMessurier discovered a critical structural flaw in Manhattan's Citigroup Center.",
+      "He reported the engineering defect voluntarily to owners and city authorities despite massive liability.",
+      "Engineers retrofitted the tower's joints secretly at night to prevent structural failure during major storms."
+    ],
+    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+    "length_seconds": 17,
+    "style": "fastedit2",
+    "style_reason": "Clean modern UI mockups highlight fast-paced structural storytelling clearly.",
+    "music": "tech-pulse",
+    "accent": "teal",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Studying a reference video as style \"upload-7\"",
-      "t": 1794133909624
-    },
-    {
-      "role": "user",
-      "text": "add this to my style",
-      "t": 1794135433779
-    },
     {
       "role": "bot",
       "text": "Please send over the link or file you'd like me to add to your style!",
@@ -92,6 +98,16 @@
       "role": "bot",
       "text": "Rendering \"The Death of Manual Syntax\"",
       "t": 1794142779886
+    },
+    {
+      "role": "user",
+      "text": "Give me a 17sec video about making mistakes and learning to live with integrity",
+      "t": 1794143403480
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"The Architect Who Admitted Defeat\": In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
+      "t": 1794143416352
     }
   ],
   "working": null,
@@ -2713,7 +2729,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\nRelevant memories:\n- (interest) The user is interested in analyzing coding projects, hooks, and video structures from the YouTube channel @shipweb3s.\n- (interest) The user is interested in tutorials and coding projects from the ShipWeb3 channel.\n- (interest) The user approved a short about What if cats have 1 live.\n- (interest) The user approved a short about what if I can code at age 5 and now am 30.\n- (interest) The user approved a short about Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody.\n- (idea) The user liked the concept of a satirical first-person short about being reincarnated as Donald Trump.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\n- The user prioritizes storytelling depth over keeping video duration short.\n- The user is located in Azikoro, Yenagoa, Bayelsa State, Nigeria.\n- The user prefers direct and action-oriented responses, using phrases like 'Get to work'.\n- The user prefers obtaining full video transcripts via free online transcription services rather than relying on video descriptions.\n- The user wants the assistant to process multiple videos continuously rather than stopping after one.\nRelevant memories:\n- (interest) The user is interested in learning from the tutorial content of the channel.\n- (interest) The user approved a short about What if cats have 1 live.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (interest) The user approved a short about about writing codes before and currently vibe coding.\n- (interest) The user approved a short about what if I can code at age 5 and now am 30.\n- (interest) The user approved a short about Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody.\n- (idea) The user liked the concept of a satirical first-person short about being reincarnated as Donald Trump.",
   "deep": {
     "topic": "about writing codes before and currently vibe coding",
     "status": "running",
@@ -2856,7 +2872,10 @@
     "format": "landscape",
     "style": "fastedit2"
   },
-  "job": null,
+  "job": {
+    "length": 17,
+    "research": "full"
+  },
   "recent_styles": [
     "upload-3",
     "documentary",
