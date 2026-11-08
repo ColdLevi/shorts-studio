@@ -1,131 +1,18 @@
 {
-  "last_update": 312538313,
-  "time": 1794168747989,
-  "stage": "script",
+  "last_update": 312538314,
+  "time": 1794168869899,
+  "stage": "idle",
   "topic": "how I met my girlfriend",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Accidental Swipes and Coffee Dates",
-    "hook": "A broken screen on an old phone made me swipe right by accident.",
-    "angle": "Finding a partner seems like a carefully planned mission, but pure clumsiness wrote this story. Dropping a phone triggered a random mis-click that led directly to a real relationship.",
-    "key_facts": [
-      "A cracked screen caused an accidental right swipe on a dating profile.",
-      "A misplaced pocket text accidentally started a three-hour late night conversation.",
-      "A planned five-minute coffee meetup turned into a six-hour city walk."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 42,
-    "style": "fastedit2",
-    "style_reason": "App interface mockups capture modern digital romance and accidental swipes cleanly.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Accidental Swipes and Coffee Dates",
-    "beats": [
-      {
-        "narration": "An old smartphone with a shattered glass screen changed everything.",
-        "image_prompt": "Minimalist 2D flat illustration of a retro smartphone with a spiderweb cracked screen resting on a vibrant solid turquoise backdrop under crisp top lighting, landscape 16:9.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow tilt downwards as the phone rests on the vibrant background."
-      },
-      {
-        "narration": "People assume finding love requires perfect planning.",
-        "image_prompt": "Minimalist digital app interface mockup showing neat calendar grids and strategic heart icons on a solid vibrant blue backdrop with modern studio lighting.",
-        "tool": "flux"
-      },
-      {
-        "narration": "I thought every match needed careful evaluation.",
-        "image_prompt": "Playful 2D flat illustration of abstract profile cards floating in orderly rows on a solid coral red background with crisp sharp shadows.",
-        "tool": "flux"
-      },
-      {
-        "narration": "But then I dropped my phone onto hard pavement.",
-        "image_prompt": "A modern smartphone slipping and falling through the air, high contrast lighting.",
-        "tool": "stock",
-        "query": "phone slipping falling ground"
-      },
-      {
-        "narration": "A spiderweb crack ripped straight through the glass.",
-        "image_prompt": "Minimalist close-up graphic illustration of glowing crack lines spreading across a stylized dark phone screen against a solid yellow backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "My thumb glitched across the display.",
-        "image_prompt": "Minimalist flat 2D vector art of a stylized silhouette hand touching an app screen, causing visual motion ripples on a bright teal background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "That cracked screen caused an accidental right swipe on a profile.",
-        "image_prompt": "Minimalist app interface mockup of a profile card sliding rapidly to the right with a vibrant green like icon on a solid lavender background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "So I quickly shoved the phone into my pocket.",
-        "image_prompt": "Playful 2D illustration of a hand sliding a glowing mobile phone into a coat pocket on a solid navy blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then a misplaced pocket text accidentally sent.",
-        "image_prompt": "Minimalist digital mockup of a chat bubble popping up randomly with exclamation points on a vibrant mint green solid background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "That single text started a three-hour late night conversation.",
-        "image_prompt": "Playful 2D flat illustration of alternating speech bubbles stretching across the frame, backlit by a soft moonlit glow on a solid midnight blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "We set up a brief five-minute coffee meetup.",
-        "image_prompt": "Close up of two warm coffee cups on a clean wooden tabletop in a bright cafe.",
-        "tool": "stock",
-        "query": "coffee cups table cafe"
-      },
-      {
-        "narration": "But five minutes turned into a six-hour city walk.",
-        "image_prompt": "Minimalist 2D flat illustration of two stylized silhouettes walking together along a glowing city street path on a solid deep purple background.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Smooth horizontal camera pan tracking two silhouettes walking along a stylized street."
-      },
-      {
-        "narration": "Pure clumsiness created a real relationship.",
-        "image_prompt": "Minimalist digital artwork showing two glowing heart symbols entwining over a cracked glass pattern on a solid warm pink backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Accidental missteps beat perfect plans.",
-        "image_prompt": "Playful 2D illustration of a checkered finish line with colorful confetti bursting over a solid orange background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "A broken screen triggered total magic.",
-        "image_prompt": "Minimalist digital app screen sparkling with geometric stars and warm neon outlines on a bold blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Drop the plan.",
-        "image_prompt": "Minimalist flat illustration of a simplified phone dropping onto a soft cushion of light on a solid magenta background.",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Coding for Dummies Reality Check\"",
-      "t": 1794156808629
-    },
     {
       "role": "user",
       "text": "Don't use the browser bot for research anymore",
@@ -200,10 +87,136 @@
       "role": "bot",
       "text": "Wrote the script for \"Accidental Swipes and Coffee Dates\"",
       "t": 1794168747989
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Accidental Swipes and Coffee Dates\"",
+      "t": 1794168869899
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "accidental-swipes-and-coffee-dates-mw89tjza",
+      "canvas": "16:9",
+      "title": "Accidental Swipes and Coffee Dates",
+      "topic": "how I met my girlfriend",
+      "pitch": {
+        "title": "Accidental Swipes and Coffee Dates",
+        "hook": "A broken screen on an old phone made me swipe right by accident.",
+        "angle": "Finding a partner seems like a carefully planned mission, but pure clumsiness wrote this story. Dropping a phone triggered a random mis-click that led directly to a real relationship.",
+        "key_facts": [
+          "A cracked screen caused an accidental right swipe on a dating profile.",
+          "A misplaced pocket text accidentally started a three-hour late night conversation.",
+          "A planned five-minute coffee meetup turned into a six-hour city walk."
+        ],
+        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "length_seconds": 42,
+        "style": "fastedit2",
+        "style_reason": "App interface mockups capture modern digital romance and accidental swipes cleanly.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Accidental Swipes and Coffee Dates",
+        "beats": [
+          {
+            "narration": "An old smartphone with a shattered glass screen changed everything.",
+            "image_prompt": "Minimalist 2D flat illustration of a retro smartphone with a spiderweb cracked screen resting on a vibrant solid turquoise backdrop under crisp top lighting, landscape 16:9.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow tilt downwards as the phone rests on the vibrant background."
+          },
+          {
+            "narration": "People assume finding love requires perfect planning.",
+            "image_prompt": "Minimalist digital app interface mockup showing neat calendar grids and strategic heart icons on a solid vibrant blue backdrop with modern studio lighting.",
+            "tool": "flux"
+          },
+          {
+            "narration": "I thought every match needed careful evaluation.",
+            "image_prompt": "Playful 2D flat illustration of abstract profile cards floating in orderly rows on a solid coral red background with crisp sharp shadows.",
+            "tool": "flux"
+          },
+          {
+            "narration": "But then I dropped my phone onto hard pavement.",
+            "image_prompt": "A modern smartphone slipping and falling through the air, high contrast lighting.",
+            "tool": "stock",
+            "query": "phone slipping falling ground"
+          },
+          {
+            "narration": "A spiderweb crack ripped straight through the glass.",
+            "image_prompt": "Minimalist close-up graphic illustration of glowing crack lines spreading across a stylized dark phone screen against a solid yellow backdrop.",
+            "tool": "flux"
+          },
+          {
+            "narration": "My thumb glitched across the display.",
+            "image_prompt": "Minimalist flat 2D vector art of a stylized silhouette hand touching an app screen, causing visual motion ripples on a bright teal background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "That cracked screen caused an accidental right swipe on a profile.",
+            "image_prompt": "Minimalist app interface mockup of a profile card sliding rapidly to the right with a vibrant green like icon on a solid lavender background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "So I quickly shoved the phone into my pocket.",
+            "image_prompt": "Playful 2D illustration of a hand sliding a glowing mobile phone into a coat pocket on a solid navy blue backdrop.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then a misplaced pocket text accidentally sent.",
+            "image_prompt": "Minimalist digital mockup of a chat bubble popping up randomly with exclamation points on a vibrant mint green solid background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "That single text started a three-hour late night conversation.",
+            "image_prompt": "Playful 2D flat illustration of alternating speech bubbles stretching across the frame, backlit by a soft moonlit glow on a solid midnight blue backdrop.",
+            "tool": "flux"
+          },
+          {
+            "narration": "We set up a brief five-minute coffee meetup.",
+            "image_prompt": "Close up of two warm coffee cups on a clean wooden tabletop in a bright cafe.",
+            "tool": "stock",
+            "query": "coffee cups table cafe"
+          },
+          {
+            "narration": "But five minutes turned into a six-hour city walk.",
+            "image_prompt": "Minimalist 2D flat illustration of two stylized silhouettes walking together along a glowing city street path on a solid deep purple background.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Smooth horizontal camera pan tracking two silhouettes walking along a stylized street."
+          },
+          {
+            "narration": "Pure clumsiness created a real relationship.",
+            "image_prompt": "Minimalist digital artwork showing two glowing heart symbols entwining over a cracked glass pattern on a solid warm pink backdrop.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Accidental missteps beat perfect plans.",
+            "image_prompt": "Playful 2D illustration of a checkered finish line with colorful confetti bursting over a solid orange background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "A broken screen triggered total magic.",
+            "image_prompt": "Minimalist digital app screen sparkling with geometric stars and warm neon outlines on a bold blue backdrop.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Drop the plan.",
+            "image_prompt": "Minimalist flat illustration of a simplified phone dropping onto a soft cushion of light on a solid magenta background.",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794168869899
+    },
     {
       "id": "why-your-phone-dies-in-the-cold-mw85ymh1",
       "canvas": "16:9",
@@ -1611,126 +1624,6 @@
         "sources": []
       },
       "at": 1794083431440
-    },
-    {
-      "id": "my-day-as-a-reincarnated-trump-mw2k0uze",
-      "canvas": "16:9",
-      "title": "My Day As A Reincarnated Trump",
-      "topic": "Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody",
-      "pitch": {
-        "title": "My Day As A Reincarnated Trump",
-        "hook": "Waking up with orange spray tan and a billion dollars sounds great until the teleprompter breaks.",
-        "angle": "People think running the world is about grand strategy, but the daily reality is just arguing with a golf cart and dodging rogue toupees.",
-        "key_facts": [
-          "The satirical animation depicts an accidental reincarnation into the former president.",
-          "Daily routines in the parody focus entirely on fast food runs and social media rants.",
-          "Independent digital satire relies on exaggerated facial rigging for comedic effect."
-        ],
-        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "length_seconds": 45,
-        "style": "documentary",
-        "style_reason": "Historical texture meets absurd modern satire.",
-        "music": "docu-pluck",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "My Day As A Reincarnated Trump",
-        "beats": [
-          {
-            "narration": "Waking up covered in orange spray tan inside a massive gilded tower seems like a high-society dream.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An ornate golden bedroom suite inside a penthouse tower, bathed in dramatic side light, showing an elaborate vanity table with bronzing bottles and gold trimmings.",
-            "tool": "higgsfield",
-            "motion": "Slow pan across an ornate gilded bedroom with chiaroscuro lighting on gold vanity fixtures.",
-            "still": "flux"
-          },
-          {
-            "narration": "Most people assume running the world requires grand strategy. But this satirical animation depicts an accidental reincarnation into a former president.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A grand oval office under moody moonlight with shadows stretching across classical furniture.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "myth",
-              "myth": "Presidential life is grand strategy",
-              "fact": "Satirical animation of accidental presidential reincarnation"
-            }
-          },
-          {
-            "narration": "So daily routines in the parody focus entirely on fast food runs and social media rants.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A lavish dim dining room with silver platters holding fast food paper bags under dramatic oil lamp glow.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A detailed wooden puppet wireframe on a work table with dramatic spotlights.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "icons",
-              "title": "Digital Satire Tools",
-              "items": [
-                {
-                  "icon": "zap",
-                  "label": "Facial Rigging"
-                },
-                {
-                  "icon": "smartphone",
-                  "label": "Media Rants"
-                },
-                {
-                  "icon": "truck",
-                  "label": "Fast Food"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Then complex 3D rigs turn simple daily absurdities into instant internet satire.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique easel holding a partially finished dramatic portrait in a shadowy artist studio.",
-            "tool": "higgsfield",
-            "motion": "Gentle camera drift forward through a dimly lit artist studio towards an illuminated painting.",
-            "still": "flux"
-          },
-          {
-            "narration": "High politics becomes a series of dramatic digital caricatures.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. An antique carved wooden lectern standing empty under a single spotlight in a grand hall.",
-            "tool": "stock",
-            "query": "oil painting museum"
-          },
-          {
-            "narration": "Power is just performative chaos.",
-            "image_prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth. A golden crown resting askew on a heavy velvet cushion in darkness.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "kinetic",
-              "words": [
-                "Power",
-                "is",
-                "performative",
-                "chaos"
-              ]
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "The satirical animation depicts an accidental reincarnation into the former president.",
-            "supported": true
-          },
-          {
-            "claim": "Daily routines in the parody focus entirely on fast food runs and social media rants.",
-            "supported": true
-          },
-          {
-            "claim": "Independent digital satire relies on exaggerated facial rigging for comedic effect.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1793823209952
     }
   ],
   "lastRenderAuto": false,
@@ -1742,12 +1635,12 @@
   },
   "renders": [
     {
-      "title": "Why Your Phone Dies in the Cold",
-      "at": 1794162387943,
-      "project": "why-your-phone-dies-in-the-cold-mw85ymh1"
+      "title": "Accidental Swipes and Coffee Dates",
+      "at": 1794168869899,
+      "project": "accidental-swipes-and-coffee-dates-mw89tjza"
     }
   ],
-  "current_project": "why-your-phone-dies-in-the-cold-mw85ymh1",
+  "current_project": "accidental-swipes-and-coffee-dates-mw89tjza",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1879,9 +1772,7 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "research": "none"
-  },
+  "job": null,
   "recent_styles": [
     "fastedit2",
     "fastedit2",
