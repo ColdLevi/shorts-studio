@@ -1,7 +1,7 @@
 {
-  "last_update": 312538288,
-  "time": 1794143435779,
-  "stage": "pitch",
+  "last_update": 312538289,
+  "time": 1794143515619,
+  "stage": "script",
   "topic": "making mistakes and learning to live with integrity 17sec",
   "research": {
     "text": "",
@@ -24,16 +24,97 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Architect Who Admitted Defeat",
+    "beats": [
+      {
+        "narration": "In nineteen seventy-eight, architect William LeMessurier found a fatal flaw in his new Manhattan skyscraper.",
+        "image_prompt": "Minimalist 2D flat illustration of a high-rise skyscraper leaning under strong wind vectors, rendered on a vibrant solid cyan background with crisp modern lighting.",
+        "tool": "higgsfield",
+        "still": "flux",
+        "motion": "Smooth pan up along the towering skyscraper as wind force lines ripple past."
+      },
+      {
+        "narration": "Hiding it seemed like career survival.",
+        "image_prompt": "Minimalist digital app interface mockup showing a locked folder labeled secret, rendered on a bold deep blue backdrop with modern lighting.",
+        "tool": "flux"
+      },
+      {
+        "narration": "But William reported the danger voluntarily.",
+        "image_prompt": "Minimalist 2D vector graphic of a microphone and warning signal on a solid bright teal background with crisp clean lighting.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "versus",
+          "title": "Architect Choice",
+          "prefix": "",
+          "suffix": "",
+          "left": {
+            "label": "Silence",
+            "value": 0,
+            "sub": "Cover Up"
+          },
+          "right": {
+            "label": "Honesty",
+            "value": 100,
+            "sub": "Report Defect"
+          }
+        }
+      },
+      {
+        "narration": "So engineers retrofitted the joints secretly at night.",
+        "image_prompt": "Cinematic evening shot of city skyscrapers illuminated under a night sky with construction cranes silhouette.",
+        "tool": "stock",
+        "query": "night city skyscraper construction"
+      },
+      {
+        "narration": "They fixed the tower before disaster hit.",
+        "image_prompt": "Minimalist 2D graphic showing a storm countdown timeline on a solid dark gray backdrop with vibrant accent colors.",
+        "tool": "graphic",
+        "graphic": {
+          "type": "timeline",
+          "title": "Crisis Timeline",
+          "events": [
+            {
+              "date": "1978",
+              "label": "Flaw Discovered"
+            },
+            {
+              "date": "Nightly",
+              "label": "Secret Retrofit"
+            },
+            {
+              "date": "Storm Season",
+              "label": "Tower Secured"
+            }
+          ]
+        }
+      },
+      {
+        "narration": "Integrity saved the skyline.",
+        "image_prompt": "Minimalist 2D flat illustration of a perfectly stable golden structural frame standing strong on a vibrant solid teal background with crisp modern lighting.",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "In 1978, architect William LeMessurier discovered a structural flaw in his Manhattan skyscraper.",
+        "supported": true
+      },
+      {
+        "claim": "William LeMessurier voluntarily reported the structural defect to owners and authorities.",
+        "supported": true
+      },
+      {
+        "claim": "Engineers retrofitted the tower joints secretly at night to prevent structural collapse during major storms.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Please send over the link or file you'd like me to add to your style!",
-      "t": 1794135435930
-    },
     {
       "role": "bot",
       "text": "Studying a reference video as style \"upload-8\"",
@@ -108,6 +189,11 @@
       "role": "bot",
       "text": "Pitched \"The Architect Who Admitted Defeat\": In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
       "t": 1794143416352
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Architect Who Admitted Defeat\"",
+      "t": 1794143515619
     }
   ],
   "working": null,
