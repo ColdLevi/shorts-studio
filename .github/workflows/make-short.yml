@@ -183,6 +183,14 @@ jobs:
           curl -sS -X POST "$BASE/api/studio?event=paused" -H "x-studio-key: $KEY" -H "Content-Type: application/json" \
             --data "$(python3 -c 'import json,sys;print(json.dumps({"service":"images","reason":sys.argv[1]}))' "$REASON")"
 
+      - name: Subject cutout for the hook (text behind subject)
+        if: env.SKIP_RENDER != '1'
+        continue-on-error: true
+        timeout-minutes: 8
+        run: |
+          pip install -q "rembg[cpu]" onnxruntime
+          python3 tools/make_cutouts.py "$PROJECT_ID"
+
       - name: Render
         if: env.SKIP_RENDER != '1'
         working-directory: remotion
@@ -193,7 +201,11 @@ jobs:
           if ! npx remotion render src/studio-index.ts Studio out/short.mp4 --props=$P --gl=swangle --crf=20 --log=error; then
             echo "::warning::render with Remotion effects failed, retrying without them"
             python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nofx.json','w'))" "$P"
-            npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nofx.json --gl=swangle --crf=20 --log=error
+            npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nofx.json --gl=swangle --crf=20 --log=error || {
+              echo "::warning::still failing, retrying without the new layers"
+              python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t['tracks'].pop('layers',None);t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nolayers.json','w'))" "$P"
+              npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nolayers.json --gl=swangle --crf=20 --log=error
+            }
           fi
 
       - name: Loudness to -14 LUFS, poster frame
