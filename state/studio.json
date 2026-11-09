@@ -1,136 +1,35 @@
 {
-  "last_update": 312538315,
-  "time": 1794215493472,
-  "stage": "idle",
-  "topic": "how I met my girlfriend",
+  "last_update": 312538316,
+  "time": 1794215528825,
+  "stage": "pitch",
+  "topic": "vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle captions",
   "research": {
     "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "Accidental Swipes and Coffee Dates",
-    "hook": "A broken screen on an old phone made me swipe right by accident.",
-    "angle": "Finding a partner seems like a carefully planned mission, but pure clumsiness wrote this story. Dropping a phone triggered a random mis-click that led directly to a real relationship.",
+    "title": "Fourteen Days Across Oceans",
+    "hook": "One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
+    "angle": "People think cheap shipping means instant delivery, but ocean cargo and local port clearance turn a simple order into a fourteen day journey.",
     "key_facts": [
-      "A cracked screen caused an accidental right swipe on a dating profile.",
-      "A misplaced pocket text accidentally started a three-hour late night conversation.",
-      "A planned five-minute coffee meetup turned into a six-hour city walk."
+      "Shipping takes fourteen days from China to Nigeria",
+      "Cargo travels by sea and air routes",
+      "Freight costs roughly four to seven dollars per kilo",
+      "Customs clearance can trigger unexpected port delays"
     ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 42,
-    "style": "fastedit2",
-    "style_reason": "App interface mockups capture modern digital romance and accidental swipes cleanly.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
+    "visual_style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
+    "length_seconds": 60,
+    "style": "cinematic",
+    "style_reason": "Cinematic tone enhances global logistics documentary feel",
+    "music": "docu-pluck",
+    "accent": "gold",
+    "format": "vertical"
   },
-  "script": {
-    "title": "Accidental Swipes and Coffee Dates",
-    "beats": [
-      {
-        "narration": "An old smartphone with a shattered glass screen changed everything.",
-        "image_prompt": "Minimalist 2D flat illustration of a retro smartphone with a spiderweb cracked screen resting on a vibrant solid turquoise backdrop under crisp top lighting, landscape 16:9.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow tilt downwards as the phone rests on the vibrant background."
-      },
-      {
-        "narration": "People assume finding love requires perfect planning.",
-        "image_prompt": "Minimalist digital app interface mockup showing neat calendar grids and strategic heart icons on a solid vibrant blue backdrop with modern studio lighting.",
-        "tool": "flux"
-      },
-      {
-        "narration": "I thought every match needed careful evaluation.",
-        "image_prompt": "Playful 2D flat illustration of abstract profile cards floating in orderly rows on a solid coral red background with crisp sharp shadows.",
-        "tool": "flux"
-      },
-      {
-        "narration": "But then I dropped my phone onto hard pavement.",
-        "image_prompt": "A modern smartphone slipping and falling through the air, high contrast lighting.",
-        "tool": "stock",
-        "query": "phone slipping falling ground"
-      },
-      {
-        "narration": "A spiderweb crack ripped straight through the glass.",
-        "image_prompt": "Minimalist close-up graphic illustration of glowing crack lines spreading across a stylized dark phone screen against a solid yellow backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "My thumb glitched across the display.",
-        "image_prompt": "Minimalist flat 2D vector art of a stylized silhouette hand touching an app screen, causing visual motion ripples on a bright teal background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "That cracked screen caused an accidental right swipe on a profile.",
-        "image_prompt": "Minimalist app interface mockup of a profile card sliding rapidly to the right with a vibrant green like icon on a solid lavender background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "So I quickly shoved the phone into my pocket.",
-        "image_prompt": "Playful 2D illustration of a hand sliding a glowing mobile phone into a coat pocket on a solid navy blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then a misplaced pocket text accidentally sent.",
-        "image_prompt": "Minimalist digital mockup of a chat bubble popping up randomly with exclamation points on a vibrant mint green solid background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "That single text started a three-hour late night conversation.",
-        "image_prompt": "Playful 2D flat illustration of alternating speech bubbles stretching across the frame, backlit by a soft moonlit glow on a solid midnight blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "We set up a brief five-minute coffee meetup.",
-        "image_prompt": "Close up of two warm coffee cups on a clean wooden tabletop in a bright cafe.",
-        "tool": "stock",
-        "query": "coffee cups table cafe"
-      },
-      {
-        "narration": "But five minutes turned into a six-hour city walk.",
-        "image_prompt": "Minimalist 2D flat illustration of two stylized silhouettes walking together along a glowing city street path on a solid deep purple background.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Smooth horizontal camera pan tracking two silhouettes walking along a stylized street."
-      },
-      {
-        "narration": "Pure clumsiness created a real relationship.",
-        "image_prompt": "Minimalist digital artwork showing two glowing heart symbols entwining over a cracked glass pattern on a solid warm pink backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Accidental missteps beat perfect plans.",
-        "image_prompt": "Playful 2D illustration of a checkered finish line with colorful confetti bursting over a solid orange background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "A broken screen triggered total magic.",
-        "image_prompt": "Minimalist digital app screen sparkling with geometric stars and warm neon outlines on a bold blue backdrop.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Drop the plan.",
-        "image_prompt": "Minimalist flat illustration of a simplified phone dropping onto a soft cushion of light on a solid magenta background.",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [],
-    "chapters": []
-  },
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Don't use the browser bot for research anymore",
-      "t": 1794156814411
-    },
-    {
-      "role": "bot",
-      "text": "Updated tool settings",
-      "t": 1794156815265
-    },
     {
       "role": "bot",
       "text": "Rendering \"Coding for Dummies Reality Check\"",
@@ -200,6 +99,16 @@
       "role": "bot",
       "text": "Rendering \"Accidental Swipes and Coffee Dates\"",
       "t": 1794168869899
+    },
+    {
+      "role": "user",
+      "text": "Make a 60 second vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warni",
+      "t": 1794215498059
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"Fourteen Days Across Oceans\": One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
+      "t": 1794215528825
     }
   ],
   "working": null,
@@ -1735,7 +1644,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\nRelevant memories:\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (idea) The user likes YouTube Shorts ideas about tech facts, specifically why phone batteries die faster in the cold.\n- (fact) Browser bot research on YouTube Issacverse of about the idea of how to code for dummies: - Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome ass\n- (interest) The user approved a short about growing up as a developer in 2026.\n- (interest) The user approved a short about making mistakes and learning to live with integrity 17sec.\n- (interest) The user approved a short about about writing codes before and currently vibe coding.\n- (interest) The user approved a short about What if cats have 1 live.\n- (interest) The user approved a short about what if I can code at age 5 and now am 30.\n- (interest) The user approved a short about Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody.\n- (idea) The user liked the concept of a satirical first-person short about being reincarnated as Donald Trump.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\nRelevant memories:\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (interest) The user approved a short about Zack animation of the day I got reincarnated as Donald Trump it's a fun satire and parody.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about growing up as a developer in 2026.\n- (interest) The user approved a short about making mistakes and learning to live with integrity 17sec.\n- (interest) The user approved a short about about writing codes before and currently vibe coding.\n- (interest) The user approved a short about What if cats have 1 live.\n- (interest) The user approved a short about what if I can code at age 5 and now am 30.\n- (interest) The user approved a short about a guy daily life stop motion style.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1759,7 +1668,12 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": null,
+  "job": {
+    "length": 60,
+    "format": "vertical",
+    "style": "cinematic",
+    "research": "full"
+  },
   "recent_styles": [
     "fastedit2",
     "fastedit2",
