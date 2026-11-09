@@ -1,109 +1,18 @@
 {
-  "last_update": 312538342,
-  "time": 1794239623065,
-  "stage": "script",
+  "last_update": 312538348,
+  "time": 1794239683147,
+  "stage": "idle",
   "topic": "that teach people how to money buying and selling old used items",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "5 Dollar Thrift Store Goldmine",
-    "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-    "angle": "Most people assume old gadgets are worthless junk destined for the trash. The twist is that vintage tech creates huge resale profit when moved from a local yard to a global online market.",
-    "key_facts": [
-      "Garage sale items are typically priced far below online market value.",
-      "Online resale platforms allow local items to reach international collectors instantly.",
-      "Nostalgia trends drive high demand for original nineteen eighties electronics."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 40,
-    "style": "fastedit2",
-    "style_reason": "Clean UI mockups highlight fast resale profit margins.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "5 Dollar Thrift Store Goldmine",
-    "beats": [
-      {
-        "narration": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-        "image_prompt": "Minimalist digital app interface mockup of a retro cassette player on a solid teal background with crisp modern lighting",
-        "tool": "higgsfield",
-        "motion": "Slow camera zoom in on the vintage cassette player resting on the bright surface."
-      },
-      {
-        "narration": "Most people assume old gadgets are worthless junk destined for the trash.",
-        "image_prompt": "Playful 2D flat illustration of an old television set in a recycling bin on a vibrant coral background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Garage sale items are typically priced far below online market value.",
-        "image_prompt": "Minimalist digital app interface mockup showing a price tag icon dropping from five dollars to zero on a solid yellow background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Local yard finds sit quietly right next to massive global demand.",
-        "image_prompt": "Playful 2D flat illustration of a small cardboard box next to a glowing world map icon on a solid purple backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "Online resale platforms allow local items to reach international collectors instantly.",
-        "image_prompt": "Minimalist digital app interface mockup displaying a shipping route connecting a small town to a giant globe",
-        "tool": "flux"
-      },
-      {
-        "narration": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
-        "image_prompt": "Playful 2D flat illustration of a vintage headphone icon pulsing with bright neon waves on a solid teal background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Buyers across the planet search every day for working vintage gear.",
-        "image_prompt": "Minimalist digital app interface mockup showing a search bar filled with retro audio tags on a clean white backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "A tiny five dollar bill turns into serious profit when moved online.",
-        "image_prompt": "Playful 2D flat illustration of a small banknote transforming into a stack of golden coins on a solid mint background",
-        "tool": "higgsfield",
-        "motion": "Fast camera pan across the multiplying coins as they stack up high."
-      },
-      {
-        "narration": "Vintage tech creates huge resale profit when shifted to a global market.",
-        "image_prompt": "Minimalist digital app interface mockup highlighting a profit margin arrow shooting straight up on a vibrant orange backdrop",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-        "supported": true
-      },
-      {
-        "claim": "Garage sale items are typically priced far below online market value.",
-        "supported": true
-      },
-      {
-        "claim": "Online resale platforms allow local items to reach international collectors instantly.",
-        "supported": true
-      },
-      {
-        "claim": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Make a classic video about getting up early and why I hate it",
-      "t": 1794220409668
-    },
     {
       "role": "bot",
       "text": "Pitched \"The Five AM Alarm Myth\": Five o'clock in the morning rings out with a screech while the brain sits frozen.",
@@ -178,10 +87,114 @@
       "role": "bot",
       "text": "Wrote the script for \"5 Dollar Thrift Store Goldmine\"",
       "t": 1794239623065
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"5 Dollar Thrift Store Goldmine\"",
+      "t": 1794239683147
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+      "canvas": "16:9",
+      "title": "5 Dollar Thrift Store Goldmine",
+      "topic": "that teach people how to money buying and selling old used items",
+      "pitch": {
+        "title": "5 Dollar Thrift Store Goldmine",
+        "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+        "angle": "Most people assume old gadgets are worthless junk destined for the trash. The twist is that vintage tech creates huge resale profit when moved from a local yard to a global online market.",
+        "key_facts": [
+          "Garage sale items are typically priced far below online market value.",
+          "Online resale platforms allow local items to reach international collectors instantly.",
+          "Nostalgia trends drive high demand for original nineteen eighties electronics."
+        ],
+        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "length_seconds": 40,
+        "style": "fastedit2",
+        "style_reason": "Clean UI mockups highlight fast resale profit margins.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "5 Dollar Thrift Store Goldmine",
+        "beats": [
+          {
+            "narration": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+            "image_prompt": "Minimalist digital app interface mockup of a retro cassette player on a solid teal background with crisp modern lighting",
+            "tool": "higgsfield",
+            "motion": "Slow camera zoom in on the vintage cassette player resting on the bright surface."
+          },
+          {
+            "narration": "Most people assume old gadgets are worthless junk destined for the trash.",
+            "image_prompt": "Playful 2D flat illustration of an old television set in a recycling bin on a vibrant coral background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Garage sale items are typically priced far below online market value.",
+            "image_prompt": "Minimalist digital app interface mockup showing a price tag icon dropping from five dollars to zero on a solid yellow background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Local yard finds sit quietly right next to massive global demand.",
+            "image_prompt": "Playful 2D flat illustration of a small cardboard box next to a glowing world map icon on a solid purple backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "Online resale platforms allow local items to reach international collectors instantly.",
+            "image_prompt": "Minimalist digital app interface mockup displaying a shipping route connecting a small town to a giant globe",
+            "tool": "flux"
+          },
+          {
+            "narration": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
+            "image_prompt": "Playful 2D flat illustration of a vintage headphone icon pulsing with bright neon waves on a solid teal background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Buyers across the planet search every day for working vintage gear.",
+            "image_prompt": "Minimalist digital app interface mockup showing a search bar filled with retro audio tags on a clean white backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "A tiny five dollar bill turns into serious profit when moved online.",
+            "image_prompt": "Playful 2D flat illustration of a small banknote transforming into a stack of golden coins on a solid mint background",
+            "tool": "higgsfield",
+            "motion": "Fast camera pan across the multiplying coins as they stack up high."
+          },
+          {
+            "narration": "Vintage tech creates huge resale profit when shifted to a global market.",
+            "image_prompt": "Minimalist digital app interface mockup highlighting a profit margin arrow shooting straight up on a vibrant orange backdrop",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+            "supported": true
+          },
+          {
+            "claim": "Garage sale items are typically priced far below online market value.",
+            "supported": true
+          },
+          {
+            "claim": "Online resale platforms allow local items to reach international collectors instantly.",
+            "supported": true
+          },
+          {
+            "claim": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794239683147
+    },
     {
       "id": "seventeen-year-old-beer-heist-mw95wno8",
       "canvas": "16:9",
@@ -1397,121 +1410,6 @@
         "sources": []
       },
       "at": 1794153781468
-    },
-    {
-      "id": "the-architect-who-admitted-defeat-mw7uu6j5",
-      "canvas": "16:9",
-      "title": "The Architect Who Admitted Defeat",
-      "topic": "making mistakes and learning to live with integrity 17sec",
-      "pitch": {
-        "title": "The Architect Who Admitted Defeat",
-        "hook": "In nineteen seventy-eight, architect William LeMessurier realized his new Manhattan skyscraper could collapse in high winds.",
-        "angle": "Hiding a massive blunder seems like career survival. Admitting a fatal design flaw voluntarily turned a potential disaster into the ultimate masterclass in integrity.",
-        "key_facts": [
-          "In 1978, architect William LeMessurier discovered a critical structural flaw in Manhattan's Citigroup Center.",
-          "He reported the engineering defect voluntarily to owners and city authorities despite massive liability.",
-          "Engineers retrofitted the tower's joints secretly at night to prevent structural failure during major storms."
-        ],
-        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "length_seconds": 17,
-        "style": "fastedit2",
-        "style_reason": "Clean modern UI mockups highlight fast-paced structural storytelling clearly.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "The Architect Who Admitted Defeat",
-        "beats": [
-          {
-            "narration": "In nineteen seventy-eight, architect William LeMessurier found a fatal flaw in his new Manhattan skyscraper.",
-            "image_prompt": "Minimalist 2D flat illustration of a high-rise skyscraper leaning under strong wind vectors, rendered on a vibrant solid cyan background with crisp modern lighting.",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Smooth pan up along the towering skyscraper as wind force lines ripple past."
-          },
-          {
-            "narration": "Hiding it seemed like career survival.",
-            "image_prompt": "Minimalist digital app interface mockup showing a locked folder labeled secret, rendered on a bold deep blue backdrop with modern lighting.",
-            "tool": "flux"
-          },
-          {
-            "narration": "But William reported the danger voluntarily.",
-            "image_prompt": "Minimalist 2D vector graphic of a microphone and warning signal on a solid bright teal background with crisp clean lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "versus",
-              "title": "Architect Choice",
-              "prefix": "",
-              "suffix": "",
-              "left": {
-                "label": "Silence",
-                "value": 0,
-                "sub": "Cover Up"
-              },
-              "right": {
-                "label": "Honesty",
-                "value": 100,
-                "sub": "Report Defect"
-              }
-            }
-          },
-          {
-            "narration": "So engineers retrofitted the joints secretly at night.",
-            "image_prompt": "Cinematic evening shot of city skyscrapers illuminated under a night sky with construction cranes silhouette.",
-            "tool": "stock",
-            "query": "night city skyscraper construction"
-          },
-          {
-            "narration": "They fixed the tower before disaster hit.",
-            "image_prompt": "Minimalist 2D graphic showing a storm countdown timeline on a solid dark gray backdrop with vibrant accent colors.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "timeline",
-              "title": "Crisis Timeline",
-              "events": [
-                {
-                  "date": "1978",
-                  "label": "Flaw Discovered"
-                },
-                {
-                  "date": "Nightly",
-                  "label": "Secret Retrofit"
-                },
-                {
-                  "date": "Storm Season",
-                  "label": "Tower Secured"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Integrity saved the skyline.",
-            "image_prompt": "Minimalist 2D flat illustration of a perfectly stable golden structural frame standing strong on a vibrant solid teal background with crisp modern lighting.",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In 1978, architect William LeMessurier discovered a structural flaw in his Manhattan skyscraper.",
-            "supported": true
-          },
-          {
-            "claim": "William LeMessurier voluntarily reported the structural defect to owners and authorities.",
-            "supported": true
-          },
-          {
-            "claim": "Engineers retrofitted the tower joints secretly at night to prevent structural collapse during major storms.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794143704926
     }
   ],
   "lastRenderAuto": false,
@@ -1523,12 +1421,12 @@
   },
   "renders": [
     {
-      "title": "Seventeen Year Old Beer Heist",
-      "at": 1794222762362,
-      "project": "seventeen-year-old-beer-heist-mw95wno8"
+      "title": "5 Dollar Thrift Store Goldmine",
+      "at": 1794239683147,
+      "project": "5-dollar-thrift-store-goldmine-mw9fzbsz"
     }
   ],
-  "current_project": "seventeen-year-old-beer-heist-mw95wno8",
+  "current_project": "5-dollar-thrift-store-goldmine-mw9fzbsz",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1643,15 +1541,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "fastedit2",
     "fastedit2",
     "cinematic",
     "fastedit2",
-    "retro-vhs"
+    "retro-vhs",
+    "fastedit2"
   ],
   "learning": null,
   "styles": {
