@@ -308,6 +308,46 @@ def image_prompt(prompt, style, cv):
             "no text, no watermark.").replace(". .", ".")
 
 
+def _save_image(data, path):
+    import io
+    from PIL import Image
+    Image.open(io.BytesIO(data)).convert("RGB").save(path, "JPEG", quality=92)
+
+
+def together_image(prompt, path, seed=0):
+    key = os.getenv("TOGETHER_API_KEY", "").strip()
+    if not key:
+        raise RuntimeError("no TOGETHER_API_KEY")
+    last = None
+    for model in ("black-forest-labs/FLUX.1-schnell-Free", "black-forest-labs/FLUX.1-schnell"):
+        try:
+            body = json.dumps({"model": model, "prompt": prompt[:1500], "width": W, "height": H, "steps": 4, "n": 1, "response_format": "b64_json"}).encode()
+            req = urllib.request.Request("https://api.together.xyz/v1/images/generations", data=body,
+                                         headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+            d = json.load(urllib.request.urlopen(req, timeout=120))
+            _save_image(base64.b64decode(d["data"][0]["b64_json"]), path)
+            USAGE.setdefault("image_models", {})
+            USAGE["image_models"]["together-" + model.split("/")[-1]] = USAGE["image_models"].get("together-" + model.split("/")[-1], 0) + 1
+            return True
+        except Exception as e:
+            last = e
+    raise RuntimeError("together failed: %s" % last)
+
+
+def pollinations_image(prompt, path, seed=0):
+    import urllib.parse
+    q = urllib.parse.quote(prompt[:900])
+    url = "https://image.pollinations.ai/prompt/%s?width=%d&height=%d&seed=%d&model=flux&nologo=true" % (q, W, H, seed)
+    req = urllib.request.Request(url, headers={"User-Agent": "shorts-studio/1.0"})
+    data = urllib.request.urlopen(req, timeout=150).read()
+    if len(data) < 5000:
+        raise RuntimeError("pollinations returned too little data")
+    _save_image(data, path)
+    USAGE.setdefault("image_models", {})
+    USAGE["image_models"]["pollinations"] = USAGE["image_models"].get("pollinations", 0) + 1
+    return True
+
+
 def paint(prompt, path, tool="flux", style="", hero=False, gemini_ok=False, seed=0):
     """One still for a clip, with the bot's tool choice and every fallback. Returns {'pixel': bool}.
     Raises QuotaError / RuntimeError when nothing could make it (caller decides on a placeholder)."""
@@ -324,12 +364,19 @@ def paint(prompt, path, tool="flux", style="", hero=False, gemini_ok=False, seed
         flux(full, path, seed, hero=hero)
         return {"pixel": False}
     except Exception as e:
-        if gemini_ok:
+        if gemini_ok or os.getenv("GEMINI_API_KEY"):
             try:
                 gemini_image(full, path)
                 return {"pixel": False}
             except Exception as g:
                 print("gemini image", g)
+        for _name, _fn in (("together", together_image), ("pollinations", pollinations_image)):
+            try:
+                _fn(full, path, seed)
+                print("image fallback ok:", _name)
+                return {"pixel": False}
+            except Exception as g:
+                print("image fallback", _name, g)
         raise e
 
 
