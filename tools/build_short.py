@@ -137,7 +137,7 @@ def flux(prompt, path, seed=0, hero=False):
         raise RuntimeError("no Cloudflare keys")
     last, quota_hit = None, None
     for model in (HERO_MODELS if hero else STD_MODELS):
-        for attempt in range(2):
+        for attempt in range(3):
             try:
                 open(path, "wb").write(base64.b64decode(_cf_call(model, prompt, acc, tok)))
                 USAGE.setdefault("image_models", {})
@@ -146,9 +146,12 @@ def flux(prompt, path, seed=0, hero=False):
             except urllib.error.HTTPError as e:
                 body = e.read().decode("utf-8", "ignore")
                 last = f"{model}: {e.code} {body[:160]}"
-                if e.code == 429 or re.search(r"4006|neuron|daily|quota|allocation", body, re.I):
+                if re.search(r"4006|daily free allocation|used up your daily", body, re.I):
                     quota_hit = last
-                    break  # out of budget for this model: a cheaper one may still fit
+                    break  # real daily quota: a cheaper model may still fit
+                if e.code == 429 or e.code >= 500:
+                    time.sleep(4 + attempt * 8)  # per-minute rate limit or hiccup: wait, retry the same model
+                    continue
                 if e.code in (400, 401, 403, 404):
                     break
             except Exception as e:
@@ -422,7 +425,7 @@ def main():
         if tool in ("higgsfield", "huggingface", "stock"):
             tool = b.get("still") or "flux"
         try:
-            if paint(b["image_prompt"], path, tool, style, hero=(i == 0), gemini_ok=bool(spec.get("gemini_images")), seed=1000 + i)["pixel"]:
+            if paint(b["image_prompt"], path, tool, style, hero=(i == 0 and bool(spec.get("hq"))), gemini_ok=bool(spec.get("gemini_images")), seed=1000 + i)["pixel"]:
                 PIXEL.add(i)
         except Exception as e:
             print("image", i + 1, e)
@@ -438,6 +441,7 @@ def main():
         os.makedirs("job", exist_ok=True)
         open("job/paused.txt", "w").write("images: " + quota[0][:200])
         print("PAUSED: image quota used up")
+        tg("⏸️ Cloudflare said: " + quota[0][:200])
         raise SystemExit(75)
     if fallbacks:
         why = "the free daily image quota ran out" if quota else (errors[0][:140] if errors else "unknown error")
