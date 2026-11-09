@@ -1,138 +1,18 @@
 {
-  "last_update": 312538321,
-  "time": 1794220477626,
-  "stage": "script",
+  "last_update": 312538322,
+  "time": 1794220481820,
+  "stage": "idle",
   "topic": "classic about getting up early and why I hate it",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "The Five AM Alarm Myth",
-    "hook": "Five o'clock in the morning rings out with a screech while the brain sits frozen.",
-    "angle": "Self-help gurus claim dawn wake-ups create elite productivity. Biology shows that forcing early mornings triggers severe mental fog and stress spikes for millions of night owls.",
-    "key_facts": [
-      "Benjamin Franklin popularized the phrase 'Early to bed and early to rise' in seventeen thirty-five.",
-      "Sleep inertia impairs memory and reaction times for up to four hours after waking.",
-      "Cortisol levels naturally surge by up to seventy-five percent within thirty minutes of waking.",
-      "Genetics control roughly fifteen percent of an individual's natural sleep timing preference."
-    ],
-    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-    "length_seconds": 42,
-    "style": "fastedit2",
-    "style_reason": "Bright app UI visuals fit digital alarm and productivity tracker themes.",
-    "music": "tech-pulse",
-    "accent": "red",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "The Five AM Alarm Myth",
-    "beats": [
-      {
-        "narration": "5 AM alarm screams, brain still frozen.",
-        "image_prompt": "Close‑up of a digital alarm clock screen glowing red, a stylized frozen brain icon beside it, bold solid teal background, flat 2D illustration",
-        "tool": "higgsfield",
-        "motion": "Camera zooms rapidly into the alarm, then a quick freeze‑frame as the brain icon shivers",
-        "still": "flux"
-      },
-      {
-        "narration": "Gurus claim early rise fuels elite output.",
-        "image_prompt": "Silhouette of a charismatic speaker with sunrise gradient behind, overlaid with a sleek app UI showing a productivity chart, bold orange backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "But forced dawn wakes spark mental fog.",
-        "image_prompt": "Foggy cloud swirling around a sleepy eye icon, early‑morning city skyline in low contrast, solid blue background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Sleep inertia blurs memory for four hours.",
-        "image_prompt": "Hourglass half empty, sleep icons blurred inside, digital timer counting 4h, minimalist purple backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "Cortisol spikes up to seventy‑five percent fast.",
-        "image_prompt": "Rising red bar graph labeled 75%, cortisol molecule icon, clean white background with subtle grid",
-        "tool": "flux"
-      },
-      {
-        "narration": "Your body isn’t wired for that rush.",
-        "image_prompt": "Human silhouette with exclamation mark over chest, warning triangle, solid gray backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "Genetics set fifteen percent of sleep timing.",
-        "image_prompt": "DNA helix intertwined with a clock face, 15% highlighted in teal, flat teal background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Night owls feel stress when forced early.",
-        "image_prompt": "Owl perched on a night lamp, sweat drops, early dawn light leaking, dark navy backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "So the promised boost often vanishes.",
-        "image_prompt": "Broken upward arrow turning into a flat line, muted green background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then a mid‑morning crash hits.",
-        "image_prompt": "Graph line plunging down, crash icon exploding, bright yellow backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "Result: wasted time, more mistakes.",
-        "image_prompt": "Clock with scattered pieces, error symbols, solid red background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Match wake‑time to your natural rhythm.",
-        "image_prompt": "Phone mockup showing sunrise alarm setting aligning with a sun icon, soft pastel background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Use an app to track natural cycles.",
-        "image_prompt": "App interface displaying sleep stage rings, calm teal UI, minimalist white backdrop",
-        "tool": "flux"
-      },
-      {
-        "narration": "Let alarm follow sunrise, not screech.",
-        "image_prompt": "Sunrise horizon with a gentle alarm bell icon fading in, warm orange background",
-        "tool": "flux"
-      },
-      {
-        "narration": "Sleep smarter, not earlier.",
-        "image_prompt": "Bold kinetic text ‘Sleep smarter, not earlier’ appearing one word at a time, dark slate background",
-        "tool": "higgsfield",
-        "motion": "Camera pulls back slowly as the words settle, then a soft pulse on the final word",
-        "still": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Sleep inertia blurs memory for four hours",
-        "supported": true
-      },
-      {
-        "claim": "Cortisol spikes up to seventy‑five percent fast",
-        "supported": true
-      },
-      {
-        "claim": "Genetics set fifteen percent of sleep timing",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Proposed edit to \"Coding for Dummies Reality Check\": Updated the video to explain cold weather phone battery drain with 5 habits and bold captions",
-      "t": 1794162137516
-    },
     {
       "role": "user",
       "text": "Create a video Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to 3 minutes, fast cuts, bold captions, hook in the first 3 seconds, end with a question to get comments.",
@@ -207,10 +87,143 @@
       "role": "bot",
       "text": "Wrote the script for \"The Five AM Alarm Myth\"",
       "t": 1794220477626
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"The Five AM Alarm Myth\"",
+      "t": 1794220481820
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "the-five-am-alarm-myth-mw94jrzk",
+      "canvas": "16:9",
+      "title": "The Five AM Alarm Myth",
+      "topic": "classic about getting up early and why I hate it",
+      "pitch": {
+        "title": "The Five AM Alarm Myth",
+        "hook": "Five o'clock in the morning rings out with a screech while the brain sits frozen.",
+        "angle": "Self-help gurus claim dawn wake-ups create elite productivity. Biology shows that forcing early mornings triggers severe mental fog and stress spikes for millions of night owls.",
+        "key_facts": [
+          "Benjamin Franklin popularized the phrase 'Early to bed and early to rise' in seventeen thirty-five.",
+          "Sleep inertia impairs memory and reaction times for up to four hours after waking.",
+          "Cortisol levels naturally surge by up to seventy-five percent within thirty minutes of waking.",
+          "Genetics control roughly fifteen percent of an individual's natural sleep timing preference."
+        ],
+        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+        "length_seconds": 42,
+        "style": "fastedit2",
+        "style_reason": "Bright app UI visuals fit digital alarm and productivity tracker themes.",
+        "music": "tech-pulse",
+        "accent": "red",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "The Five AM Alarm Myth",
+        "beats": [
+          {
+            "narration": "5 AM alarm screams, brain still frozen.",
+            "image_prompt": "Close‑up of a digital alarm clock screen glowing red, a stylized frozen brain icon beside it, bold solid teal background, flat 2D illustration",
+            "tool": "higgsfield",
+            "motion": "Camera zooms rapidly into the alarm, then a quick freeze‑frame as the brain icon shivers",
+            "still": "flux"
+          },
+          {
+            "narration": "Gurus claim early rise fuels elite output.",
+            "image_prompt": "Silhouette of a charismatic speaker with sunrise gradient behind, overlaid with a sleek app UI showing a productivity chart, bold orange backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "But forced dawn wakes spark mental fog.",
+            "image_prompt": "Foggy cloud swirling around a sleepy eye icon, early‑morning city skyline in low contrast, solid blue background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Sleep inertia blurs memory for four hours.",
+            "image_prompt": "Hourglass half empty, sleep icons blurred inside, digital timer counting 4h, minimalist purple backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "Cortisol spikes up to seventy‑five percent fast.",
+            "image_prompt": "Rising red bar graph labeled 75%, cortisol molecule icon, clean white background with subtle grid",
+            "tool": "flux"
+          },
+          {
+            "narration": "Your body isn’t wired for that rush.",
+            "image_prompt": "Human silhouette with exclamation mark over chest, warning triangle, solid gray backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "Genetics set fifteen percent of sleep timing.",
+            "image_prompt": "DNA helix intertwined with a clock face, 15% highlighted in teal, flat teal background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Night owls feel stress when forced early.",
+            "image_prompt": "Owl perched on a night lamp, sweat drops, early dawn light leaking, dark navy backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "So the promised boost often vanishes.",
+            "image_prompt": "Broken upward arrow turning into a flat line, muted green background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then a mid‑morning crash hits.",
+            "image_prompt": "Graph line plunging down, crash icon exploding, bright yellow backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "Result: wasted time, more mistakes.",
+            "image_prompt": "Clock with scattered pieces, error symbols, solid red background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Match wake‑time to your natural rhythm.",
+            "image_prompt": "Phone mockup showing sunrise alarm setting aligning with a sun icon, soft pastel background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Use an app to track natural cycles.",
+            "image_prompt": "App interface displaying sleep stage rings, calm teal UI, minimalist white backdrop",
+            "tool": "flux"
+          },
+          {
+            "narration": "Let alarm follow sunrise, not screech.",
+            "image_prompt": "Sunrise horizon with a gentle alarm bell icon fading in, warm orange background",
+            "tool": "flux"
+          },
+          {
+            "narration": "Sleep smarter, not earlier.",
+            "image_prompt": "Bold kinetic text ‘Sleep smarter, not earlier’ appearing one word at a time, dark slate background",
+            "tool": "higgsfield",
+            "motion": "Camera pulls back slowly as the words settle, then a soft pulse on the final word",
+            "still": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Sleep inertia blurs memory for four hours",
+            "supported": true
+          },
+          {
+            "claim": "Cortisol spikes up to seventy‑five percent fast",
+            "supported": true
+          },
+          {
+            "claim": "Genetics set fifteen percent of sleep timing",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794220481819
+    },
     {
       "id": "fourteen-days-across-oceans-mw91nhoc",
       "canvas": "9:16",
@@ -1558,167 +1571,6 @@
         "sources": []
       },
       "at": 1794142779886
-    },
-    {
-      "id": "cats-only-get-one-life-mw6vjxdj",
-      "canvas": "16:9",
-      "title": "Cats Only Get One Life",
-      "topic": "What if cats have 1 live",
-      "pitch": {
-        "title": "Cats Only Get One Life",
-        "hook": "Whiskers jumped off a five story balcony and did not bounce.",
-        "angle": "What if cats actually knew they only had one life, so every high altitude stunt carried absolute finality?",
-        "key_facts": [
-          "An ancient English proverb claimed cats have nine lives.",
-          "A falling cat reaches terminal velocity at sixty miles per hour."
-        ],
-        "visual_style": "code-drawn stick-figure cartoon, dusk palette, warm rim light, clean line art",
-        "length_seconds": 20,
-        "style": "what-if",
-        "style_reason": "Fits short stick-figure cold open animation.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Cats Only Get One Life",
-        "beats": [
-          {
-            "narration": "Tap the box. Count. One life.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "wide",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "reach",
-              "prop": "box",
-              "action": "count",
-              "focus": "pip"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "Tap your phone. Count. One life.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "insert",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "point",
-              "prop": "phone",
-              "action": "count",
-              "focus": "prop"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "Tap yourself. Count. Zero lives.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "medium",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "shock",
-              "from": "idle",
-              "prop": "clock",
-              "action": "count",
-              "focus": "light"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "What if cats had only one life?",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "title",
-              "title": [
-                "WHAT IF CATS HAD",
-                "ONLY ONE LIFE?"
-              ],
-              "rule": "no extra lives exist"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "Your cat sits near the desk edge.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "close",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "think",
-              "prop": "laptop",
-              "focus": "pip"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "Falling cats reach sixty miles per hour. That's real.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "fact",
-              "number": "60 mph",
-              "label": "cat terminal velocity speed"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "He wears a helmet to walk around.",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "wide",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "walk",
-              "from": "walk",
-              "prop": "box",
-              "x": -50,
-              "x_to": 80,
-              "focus": "pip"
-            },
-            "image_prompt": ""
-          },
-          {
-            "narration": "Will you still leave that window open?",
-            "tool": "scene",
-            "scene": {
-              "pack": "whatif",
-              "scene": "demo",
-              "shot": "medium",
-              "room": "desk",
-              "mood": "dusk",
-              "pose": "wave",
-              "prop": "cup",
-              "focus": "window"
-            },
-            "image_prompt": ""
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "A falling cat reaches terminal velocity at sixty miles per hour.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794084439894
     }
   ],
   "lastRenderAuto": false,
@@ -1730,12 +1582,12 @@
   },
   "renders": [
     {
-      "title": "Fourteen Days Across Oceans",
-      "at": 1794215616227,
-      "project": "fourteen-days-across-oceans-mw91nhoc"
+      "title": "The Five AM Alarm Myth",
+      "at": 1794220481820,
+      "project": "the-five-am-alarm-myth-mw94jrzk"
     }
   ],
-  "current_project": "fourteen-days-across-oceans-mw91nhoc",
+  "current_project": "the-five-am-alarm-myth-mw94jrzk",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1870,15 +1722,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
     "fastedit2",
     "fastedit2",
     "fastedit2",
-    "fastedit2",
-    "cinematic"
+    "cinematic",
+    "fastedit2"
   ],
   "learning": null,
   "styles": {
