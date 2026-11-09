@@ -1,6 +1,6 @@
 {
-  "last_update": 312538356,
-  "time": 1794245680646,
+  "last_update": 312538357,
+  "time": 1794245694317,
   "stage": "idle",
   "topic": "short portrait view of a finance parody of latest news",
   "research": {
@@ -1427,134 +1427,7 @@
     }
   ],
   "current_project": "5-dollar-thrift-store-goldmine-mw9fzbsz",
-  "pending_edit": {
-    "id": "emw9jjvnp7l7",
-    "project_id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
-    "patch": [
-      {
-        "op": "replace",
-        "path": "/canvas",
-        "value": {
-          "width": 1080,
-          "height": 1920,
-          "fps": 30
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v1",
-        "value": {
-          "kind": "image",
-          "narration": "Three hidden keyboard shortcuts separate amateur timelines from professional cuts.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Minimalist digital app interface mockup of a video timeline with glowing shortcut keys on a solid teal background"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v2",
-        "value": {
-          "kind": "image",
-          "narration": "Most editors think long hours make a better video.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Playful 2D flat illustration of a desk clock surrounded by editing software icons on a vibrant coral background"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v3",
-        "value": {
-          "kind": "image",
-          "narration": "Pacing relies entirely on cutting every breath and silent gap.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Minimalist digital app interface mockup showing an audio waveform with unwanted gaps being sliced out on a solid yellow background"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v4",
-        "value": {
-          "kind": "image",
-          "narration": "Speed ramps guide viewer attention to key action beats.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Playful 2D flat illustration of a speed graph curving sharply upward on a solid purple backdrop"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v5",
-        "value": {
-          "kind": "image",
-          "narration": "Sound design carries half the emotional weight of the project.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Minimalist digital app interface mockup displaying layered audio tracks with crisp modern lighting"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v6",
-        "value": {
-          "kind": "image",
-          "narration": "Subtle zoom pushes match natural eye movement during dialogue.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Playful 2D flat illustration of a camera frame scaling inward on a solid teal background"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v7",
-        "value": {
-          "kind": "image",
-          "narration": "Color grading unifies mismatched clips into one consistent look.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Minimalist digital app interface mockup showing RGB color wheels adjusting tones on a clean white backdrop"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v8",
-        "value": {
-          "kind": "image",
-          "narration": "Tight cuts build momentum so viewers stay until the final frame.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Playful 2D flat illustration of a play button surrounded by fast moving motion lines on a solid mint background"
-          }
-        }
-      },
-      {
-        "op": "replace",
-        "path": "/tracks/visuals/@v9",
-        "value": {
-          "kind": "image",
-          "narration": "Clean transitions keep the story moving without distracting the audience.",
-          "gen": {
-            "tool": "flux",
-            "prompt": "Minimalist digital app interface mockup highlighting smooth frame transitions on a vibrant orange backdrop"
-          }
-        }
-      }
-    ],
-    "message": "9:16 edit guide",
-    "summary": "Changed canvas to portrait 9:16 and rewrote the video about professional video editing techniques",
-    "detail": "📝 New words in scene 1, 2, 3, 4, 5, 6, 7, 8, 9\n📐 Shape 1080x1920\n♻️ I'll re-voice 9 lines and repaint 9 images (scene 1, 2, 3, 4, 5, 6, 7, 8, 9); the other 0 scenes are reused.",
-    "base_rev": 1,
-    "at": 1794245680646
-  },
+  "pending_edit": null,
   "edits": [],
   "pending": {
     "step": "render",
