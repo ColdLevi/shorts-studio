@@ -1,6 +1,6 @@
 {
-  "last_update": 312538348,
-  "time": 1794239683147,
+  "last_update": 312538349,
+  "time": 1794240086825,
   "stage": "idle",
   "topic": "that teach people how to money buying and selling old used items",
   "research": {
@@ -2413,5 +2413,12 @@
       }
     }
   },
-  "voice_pick": null
+  "voice_pick": null,
+  "disliked": [
+    {
+      "title": "5 Dollar Thrift Store Goldmine",
+      "first": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+      "at": 1794240086825
+    }
+  ]
 }
