@@ -1,6 +1,6 @@
 {
-  "last_update": 312538357,
-  "time": 1794245694317,
+  "last_update": 312538358,
+  "time": 1794245752101,
   "stage": "idle",
   "topic": "short portrait view of a finance parody of latest news",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "cd ~/shorts-studio\npython - <<'EOF'\nimport asyncio, edge_tts\nvs = asyncio.run(edge_tts.list_voices())\nfor v in sorted((v for v in vs if v[\"Locale\"].startswith(\"en-\")), key=lambda v: v[\"ShortName\"]):\n    print(v[\"ShortName\"], v[\"Gender\"])\nEOF",
-      "t": 1794223355662
-    },
-    {
-      "role": "bot",
-      "text": "Looks like you're running some python code to check out available voices! Let me know if you want to apply one to your video or change anything else.",
-      "t": 1794223357284
-    },
     {
       "role": "user",
       "text": "Use images to create the video so later you do the rich looking one",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Proposed edit to \"5 Dollar Thrift Store Goldmine\": Changed canvas to portrait 9:16 and rewrote the video about professional video editing techniques",
       "t": 1794245680646
+    },
+    {
+      "role": "user",
+      "text": "It's a new video Write a YouTube short style video of how to edit like pro video editor make it 9:16",
+      "t": 1794245724836
+    },
+    {
+      "role": "bot",
+      "text": "To create a brand new video, please start a new project from the home screen.",
+      "t": 1794245752101
     }
   ],
   "working": null,
