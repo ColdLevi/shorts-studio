@@ -66,6 +66,12 @@
  ],
  "transient": [
   {
+   "id": "cf-neurons",
+   "pattern": "daily free allocation|used up your daily|PAUSED: image quota",
+   "backoff": 0,
+   "label": "the Cloudflare free image quota is used up for today (resets 00:00 UTC)"
+  },
+  {
    "id": "edge-tts-no-audio",
    "pattern": "NoAudioReceived|No audio was received",
    "backoff": 45,

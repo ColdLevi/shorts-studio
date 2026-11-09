@@ -692,6 +692,9 @@ def handle(io, event_name, event, cfg=None, rules=None):
     if cls["kind"] == "transient":
         if ctx["target"] == "llm-proxy":
             return {"action": "ignore-transient", "class": cls}
+        if cls.get("rule") == "cf-neurons":
+            print("fixer: daily image quota is used up, no retry (it resets 00:00 UTC)")
+            return {"action": "quota-wait", "class": cls}
         if ctx["attempt"] >= 2 or state.data["retries"].get(ctx["run_id"], 0) >= 1:
             notify(io, cfg, f"⚠️ {cfg['bot_name']}: {what} failed again after a retry.\nWhy: {cls['label']}.\n"
                             f"Probably still down on their side; no code change. Log: {link}",
