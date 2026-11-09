@@ -1,7 +1,7 @@
 {
-  "last_update": 312538320,
-  "time": 1794220420440,
-  "stage": "pitch",
+  "last_update": 312538321,
+  "time": 1794220477626,
+  "stage": "script",
   "topic": "classic about getting up early and why I hate it",
   "research": {
     "text": "",
@@ -25,16 +25,109 @@
     "accent": "red",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Five AM Alarm Myth",
+    "beats": [
+      {
+        "narration": "5 AM alarm screams, brain still frozen.",
+        "image_prompt": "Close‑up of a digital alarm clock screen glowing red, a stylized frozen brain icon beside it, bold solid teal background, flat 2D illustration",
+        "tool": "higgsfield",
+        "motion": "Camera zooms rapidly into the alarm, then a quick freeze‑frame as the brain icon shivers",
+        "still": "flux"
+      },
+      {
+        "narration": "Gurus claim early rise fuels elite output.",
+        "image_prompt": "Silhouette of a charismatic speaker with sunrise gradient behind, overlaid with a sleek app UI showing a productivity chart, bold orange backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "But forced dawn wakes spark mental fog.",
+        "image_prompt": "Foggy cloud swirling around a sleepy eye icon, early‑morning city skyline in low contrast, solid blue background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Sleep inertia blurs memory for four hours.",
+        "image_prompt": "Hourglass half empty, sleep icons blurred inside, digital timer counting 4h, minimalist purple backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Cortisol spikes up to seventy‑five percent fast.",
+        "image_prompt": "Rising red bar graph labeled 75%, cortisol molecule icon, clean white background with subtle grid",
+        "tool": "flux"
+      },
+      {
+        "narration": "Your body isn’t wired for that rush.",
+        "image_prompt": "Human silhouette with exclamation mark over chest, warning triangle, solid gray backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Genetics set fifteen percent of sleep timing.",
+        "image_prompt": "DNA helix intertwined with a clock face, 15% highlighted in teal, flat teal background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Night owls feel stress when forced early.",
+        "image_prompt": "Owl perched on a night lamp, sweat drops, early dawn light leaking, dark navy backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "So the promised boost often vanishes.",
+        "image_prompt": "Broken upward arrow turning into a flat line, muted green background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then a mid‑morning crash hits.",
+        "image_prompt": "Graph line plunging down, crash icon exploding, bright yellow backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Result: wasted time, more mistakes.",
+        "image_prompt": "Clock with scattered pieces, error symbols, solid red background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Match wake‑time to your natural rhythm.",
+        "image_prompt": "Phone mockup showing sunrise alarm setting aligning with a sun icon, soft pastel background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Use an app to track natural cycles.",
+        "image_prompt": "App interface displaying sleep stage rings, calm teal UI, minimalist white backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Let alarm follow sunrise, not screech.",
+        "image_prompt": "Sunrise horizon with a gentle alarm bell icon fading in, warm orange background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Sleep smarter, not earlier.",
+        "image_prompt": "Bold kinetic text ‘Sleep smarter, not earlier’ appearing one word at a time, dark slate background",
+        "tool": "higgsfield",
+        "motion": "Camera pulls back slowly as the words settle, then a soft pulse on the final word",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Sleep inertia blurs memory for four hours",
+        "supported": true
+      },
+      {
+        "claim": "Cortisol spikes up to seventy‑five percent fast",
+        "supported": true
+      },
+      {
+        "claim": "Genetics set fifteen percent of sleep timing",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to 3 minutes, fast cuts, bold captions, hook in the first 3 seconds, end with a question to get comments.",
-      "t": 1794162122167
-    },
     {
       "role": "bot",
       "text": "Proposed edit to \"Coding for Dummies Reality Check\": Updated the video to explain cold weather phone battery drain with 5 habits and bold captions",
@@ -109,6 +202,11 @@
       "role": "bot",
       "text": "Pitched \"The Five AM Alarm Myth\": Five o'clock in the morning rings out with a screech while the brain sits frozen.",
       "t": 1794220420440
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Five AM Alarm Myth\"",
+      "t": 1794220477626
     }
   ],
   "working": null,
