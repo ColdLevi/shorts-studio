@@ -1,6 +1,6 @@
 {
-  "last_update": 312538324,
-  "time": 1794222500738,
+  "last_update": 312538333,
+  "time": 1794222735458,
   "stage": "script",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -29,52 +29,54 @@
     "beats": [
       {
         "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a teenager in denim standing at a brightly lit convenience store counter holding dollar bills",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
         "tool": "higgsfield",
-        "motion": "Slow camera push in on retro convenience store counter as neon sign glows"
+        "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
+        "still": "flux"
       },
       {
-        "narration": "Most teens think sneaking drinks was harder back in the day.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, teenagers hanging out on the hood of a vintage car in a parking lot at dusk",
+        "narration": "Teens think sneaking a drink was harder back then.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
         "tool": "flux"
       },
       {
-        "narration": "Old paper licenses didn't have holograms or digital chips.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, extreme close up of an old laminated state driver license on a wooden surface",
+        "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
         "tool": "stock",
-        "query": "vintage license paper"
+        "query": "vintage paper document"
       },
       {
-        "narration": "Anyone with a typewriter changed a birth date in minutes.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, mechanical typewriter sitting on a desk under a glowing desk lamp",
+        "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
         "tool": "flux"
       },
       {
-        "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, grocery store aisle with rows of bottled beverages under warm vintage fluorescent lighting",
+        "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
         "tool": "stock",
-        "query": "1980s supermarket checkout"
+        "query": "1980s supermarket aisle"
       },
       {
-        "narration": "So cashiers barely even looked at them.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, grocery cashier pressing keys on a retro cash register",
+        "narration": "So store cashiers rarely even checked who was buying.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
         "tool": "flux"
       },
       {
-        "narration": "Then the National Minimum Drinking Age Act of nineteen eighty-four set twenty-one as the national standard.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television set in a dimly lit room displaying glowing static lines",
+        "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
         "tool": "stock",
-        "query": "vintage television static"
+        "query": "retro TV static"
       },
       {
-        "narration": "Today's scanners read barcodes to catch fakes instantly.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, modern barcode scanner emitting a sharp red laser line across a plastic card",
+        "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
         "tool": "higgsfield",
-        "motion": "Fast camera zoom on scanner laser reading barcode on card"
+        "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
+        "still": "flux"
       },
       {
-        "narration": "Getting away with it was just way simpler then.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage neon convenience store sign buzzing softly on a rainy city street at midnight",
+        "narration": "The analog beer run was just built on simpler rules.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
         "tool": "flux"
       }
     ],
@@ -98,16 +100,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Why Your Phone Dies in the Cold\"",
-      "t": 1794162387943
-    },
-    {
-      "role": "user",
-      "text": "Create a video on how I met my girlfriend",
-      "t": 1794168684756
-    },
     {
       "role": "bot",
       "text": "Pitched \"Accidental Swipes and Coffee Dates\": A broken screen on an old phone made me swipe right by accident.",
@@ -177,6 +169,16 @@
       "role": "bot",
       "text": "Wrote the script for \"Seventeen Year Old Beer Heist\"",
       "t": 1794222500738
+    },
+    {
+      "role": "user",
+      "text": "Use Guys voice",
+      "t": 1794222691937
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Seventeen Year Old Beer Heist\"",
+      "t": 1794222735458
     }
   ],
   "working": null,
