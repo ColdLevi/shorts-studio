@@ -1,7 +1,7 @@
 {
-  "last_update": 312538323,
-  "time": 1794222428139,
-  "stage": "pitch",
+  "last_update": 312538324,
+  "time": 1794222500738,
+  "stage": "script",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
     "text": "",
@@ -24,16 +24,80 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Seventeen Year Old Beer Heist",
+    "beats": [
+      {
+        "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a teenager in denim standing at a brightly lit convenience store counter holding dollar bills",
+        "tool": "higgsfield",
+        "motion": "Slow camera push in on retro convenience store counter as neon sign glows"
+      },
+      {
+        "narration": "Most teens think sneaking drinks was harder back in the day.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, teenagers hanging out on the hood of a vintage car in a parking lot at dusk",
+        "tool": "flux"
+      },
+      {
+        "narration": "Old paper licenses didn't have holograms or digital chips.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, extreme close up of an old laminated state driver license on a wooden surface",
+        "tool": "stock",
+        "query": "vintage license paper"
+      },
+      {
+        "narration": "Anyone with a typewriter changed a birth date in minutes.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, mechanical typewriter sitting on a desk under a glowing desk lamp",
+        "tool": "flux"
+      },
+      {
+        "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, grocery store aisle with rows of bottled beverages under warm vintage fluorescent lighting",
+        "tool": "stock",
+        "query": "1980s supermarket checkout"
+      },
+      {
+        "narration": "So cashiers barely even looked at them.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, grocery cashier pressing keys on a retro cash register",
+        "tool": "flux"
+      },
+      {
+        "narration": "Then the National Minimum Drinking Age Act of nineteen eighty-four set twenty-one as the national standard.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television set in a dimly lit room displaying glowing static lines",
+        "tool": "stock",
+        "query": "vintage television static"
+      },
+      {
+        "narration": "Today's scanners read barcodes to catch fakes instantly.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, modern barcode scanner emitting a sharp red laser line across a plastic card",
+        "tool": "higgsfield",
+        "motion": "Fast camera zoom on scanner laser reading barcode on card"
+      },
+      {
+        "narration": "Getting away with it was just way simpler then.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage neon convenience store sign buzzing softly on a rainy city street at midnight",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
+        "supported": true
+      },
+      {
+        "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+        "supported": true
+      },
+      {
+        "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Why Your Phone Dies in the Cold\"",
-      "t": 1794162262089
-    },
     {
       "role": "bot",
       "text": "Rendering \"Why Your Phone Dies in the Cold\"",
@@ -108,6 +172,11 @@
       "role": "bot",
       "text": "Pitched \"Seventeen Year Old Beer Heist\": In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
       "t": 1794222428138
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Seventeen Year Old Beer Heist\"",
+      "t": 1794222500738
     }
   ],
   "working": null,
