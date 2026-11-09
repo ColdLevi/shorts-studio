@@ -239,6 +239,11 @@ jobs:
           USED=$(python3 -c "import json;u=json.load(open('media/projects/$PROJECT_ID/assets/usage.json'));p=[];c=u.get('motion_used',0);px=u.get('pixellab_usd',0)
           c and p.append(f'{c} Hugging Face clip(s), free'); px and p.append(f'PixelLab \${px:.2f}'); print(' · Paid: '+', '.join(p) if p else '')" 2>/dev/null)
           MARKUP=$(python3 tools/library_add.py --button)
+          MARKUP=$(PROJECT_ID="$PROJECT_ID" MK="$MARKUP" python3 -c "import json,os;pid=os.environ['PROJECT_ID'][:54]
+          try:
+           m=json.loads(os.environ['MK'] or '{\"inline_keyboard\":[]}');m['inline_keyboard'].append([{'text':'👍 Nailed it','callback_data':'r:u:'+pid},{'text':'👎 Meh','callback_data':'r:d:'+pid}]);print(json.dumps(m))
+          except Exception:
+           print(os.environ['MK'])")
           REV=$(python3 -c "import json;print(json.load(open('media/projects/$PROJECT_ID/timeline.json')).get('rev',''))")
           EDITS=""
           if [ -s job/edit_report.txt ]; then EDITS=$(printf '\n%s' "$(cat job/edit_report.txt)"); fi
