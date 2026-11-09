@@ -334,12 +334,33 @@ def together_image(prompt, path, seed=0):
     raise RuntimeError("together failed: %s" % last)
 
 
+_POLL_LOCK = __import__("threading").Semaphore(1)
+
+
+def _poll_fetch(req):
+    last = None
+    with _POLL_LOCK:
+        for attempt in range(4):
+            try:
+                return urllib.request.urlopen(req, timeout=150).read()
+            except urllib.error.HTTPError as e:
+                body = e.read().decode("utf-8", "ignore")[:120]
+                last = "HTTP %s %s" % (e.code, body)
+                if e.code in (400, 401, 402, 403, 404):
+                    break
+                time.sleep(6 + attempt * 10)
+            except Exception as e:
+                last = str(e)[:120]
+                time.sleep(4)
+    raise RuntimeError("pollinations: %s" % last)
+
+
 def pollinations_image(prompt, path, seed=0):
     import urllib.parse
     q = urllib.parse.quote(prompt[:900])
     url = "https://image.pollinations.ai/prompt/%s?width=%d&height=%d&seed=%d&model=flux&nologo=true" % (q, W, H, seed)
     req = urllib.request.Request(url, headers={"User-Agent": "shorts-studio/1.0"})
-    data = urllib.request.urlopen(req, timeout=150).read()
+    data = _poll_fetch(req)
     if len(data) < 5000:
         raise RuntimeError("pollinations returned too little data")
     _save_image(data, path)
@@ -376,11 +397,12 @@ def paint(prompt, path, tool="flux", style="", hero=False, gemini_ok=False, seed
                 print("image fallback ok:", _name)
                 return {"pixel": False}
             except Exception as g:
-                print("image fallback", _name, g)
+                print("image fallback", _name, g); _FB_ERR.append("%s: %s" % (_name, str(g)[:100]))
         raise e
 
 
 PAID_NOTES = []
+_FB_ERR = []
 
 
 def voice(text, voice_name, rate, path):
@@ -488,7 +510,7 @@ def main():
         os.makedirs("job", exist_ok=True)
         open("job/paused.txt", "w").write("images: " + quota[0][:200])
         print("PAUSED: image quota used up")
-        tg("⏸️ Cloudflare said: " + quota[0][:200])
+        tg("⏸️ Cloudflare said: " + quota[0][:200] + "\nFallbacks: " + (" | ".join(_FB_ERR[-4:]) or "none ran"))
         raise SystemExit(75)
     if fallbacks:
         why = "the free daily image quota ran out" if quota else (errors[0][:140] if errors else "unknown error")
