@@ -1,7 +1,7 @@
 {
-  "last_update": 312538341,
-  "time": 1794239573306,
-  "stage": "pitch",
+  "last_update": 312538342,
+  "time": 1794239623065,
+  "stage": "script",
   "topic": "that teach people how to money buying and selling old used items",
   "research": {
     "text": "",
@@ -24,16 +24,81 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "5 Dollar Thrift Store Goldmine",
+    "beats": [
+      {
+        "narration": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+        "image_prompt": "Minimalist digital app interface mockup of a retro cassette player on a solid teal background with crisp modern lighting",
+        "tool": "higgsfield",
+        "motion": "Slow camera zoom in on the vintage cassette player resting on the bright surface."
+      },
+      {
+        "narration": "Most people assume old gadgets are worthless junk destined for the trash.",
+        "image_prompt": "Playful 2D flat illustration of an old television set in a recycling bin on a vibrant coral background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Garage sale items are typically priced far below online market value.",
+        "image_prompt": "Minimalist digital app interface mockup showing a price tag icon dropping from five dollars to zero on a solid yellow background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Local yard finds sit quietly right next to massive global demand.",
+        "image_prompt": "Playful 2D flat illustration of a small cardboard box next to a glowing world map icon on a solid purple backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "Online resale platforms allow local items to reach international collectors instantly.",
+        "image_prompt": "Minimalist digital app interface mockup displaying a shipping route connecting a small town to a giant globe",
+        "tool": "flux"
+      },
+      {
+        "narration": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
+        "image_prompt": "Playful 2D flat illustration of a vintage headphone icon pulsing with bright neon waves on a solid teal background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Buyers across the planet search every day for working vintage gear.",
+        "image_prompt": "Minimalist digital app interface mockup showing a search bar filled with retro audio tags on a clean white backdrop",
+        "tool": "flux"
+      },
+      {
+        "narration": "A tiny five dollar bill turns into serious profit when moved online.",
+        "image_prompt": "Playful 2D flat illustration of a small banknote transforming into a stack of golden coins on a solid mint background",
+        "tool": "higgsfield",
+        "motion": "Fast camera pan across the multiplying coins as they stack up high."
+      },
+      {
+        "narration": "Vintage tech creates huge resale profit when shifted to a global market.",
+        "image_prompt": "Minimalist digital app interface mockup highlighting a profit margin arrow shooting straight up on a vibrant orange backdrop",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+        "supported": true
+      },
+      {
+        "claim": "Garage sale items are typically priced far below online market value.",
+        "supported": true
+      },
+      {
+        "claim": "Online resale platforms allow local items to reach international collectors instantly.",
+        "supported": true
+      },
+      {
+        "claim": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Fourteen Days Across Oceans\"",
-      "t": 1794215616227
-    },
     {
       "role": "user",
       "text": "Make a classic video about getting up early and why I hate it",
@@ -108,6 +173,11 @@
       "role": "bot",
       "text": "Pitched \"5 Dollar Thrift Store Goldmine\": A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
       "t": 1794239573306
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"5 Dollar Thrift Store Goldmine\"",
+      "t": 1794239623065
     }
   ],
   "working": null,
