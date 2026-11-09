@@ -734,3 +734,151 @@ def history(pid):
 
 def revision(pid, rev):
     return json.load(open(os.path.join(project_dir(pid), "history", f"r{int(rev)}.json")))
+
+
+# ---- director (layers): decides the layer stack per beat and narrates its choices ----
+import random as _random
+
+_STOP = set("the a an and or but if then than that this those these with from into onto over under about after before while when where which what who your you they them their its is are was were be been being have has had do does did will would can could should may might must not no so too very just only also more most some any each every both few many much such because since until between during without within through across along around his her him our we i me my to of in on at by for as up out off down how why".split())
+_ICONS = [
+    (r"\b(money|cost|price|pay|paid|cash|dollar|naira|profit|earn|salary|rich)\b", "coin"),
+    (r"\b(danger|risk|warn|scam|fake|fraud|threat|careful|never)\b", "warn"),
+    (r"\b(fast|speed|quick|instant|power|energy|charge|battery)\b", "bolt"),
+    (r"\b(time|hour|hours|minute|minutes|second|seconds|year|years|day|days|wait)\b", "clock"),
+    (r"\b(safe|protect|secure|trust|guard|safety)\b", "shield"),
+    (r"\b(love|heart|care|health)\b", "heart"),
+    (r"\b(idea|think|smart|brain|learn|tip|trick)\b", "bulb"),
+    (r"\b(true|correct|real|proven|works|fix|solved)\b", "check"),
+    (r"\b(hot|fire|burn|heat|warm)\b", "fire"),
+    (r"\b(best|top|win|winner|favorite)\b", "star"),
+]
+_ROUTE = r"\b(travel|journey|route|flight|road trip|distance|miles|kilometers|km|across the|border|migrat|arrive|shipping|delivery)\b"
+
+
+def _key_word(text):
+    ws = [w for w in re.findall(r"[A-Za-z]{4,}", text) if w.lower() not in _STOP][:8]
+    return max(ws, key=len) if ws else ""
+
+
+def _director_say(lines):
+    msg = "\n".join(lines)[:3800]
+    print(msg)
+    tok, chat = os.getenv("TELEGRAM_TOKEN"), os.getenv("CHAT_ID")
+    if not (tok and chat):
+        return
+    try:
+        import urllib.request
+        urllib.request.urlopen(urllib.request.Request("https://api.telegram.org/bot%s/sendMessage" % tok,
+            data=json.dumps({"chat_id": chat, "text": msg, "disable_notification": True}).encode(),
+            headers={"Content-Type": "application/json"}), timeout=15)
+    except Exception as e:
+        print("director tg", e)
+
+
+def director_pass(t, spec=None):
+    spec = spec or {}
+    tr = t.setdefault("tracks", {})
+    vis = tr.get("visuals") or []
+    if not vis or str(spec.get("layers", "")).lower() in ("off", "none", "false"):
+        return t
+    st = t.get("style") or {}
+    density = {"documentary": 0.5, "stop-motion": 0.35}.get(st.get("recipe") or "", 0.85)
+    if (st.get("preset") or "") == "minimal":
+        density = 0.3
+    rnd = _random.Random(str(t.get("id")))
+    pid = t.get("id") or "job"
+    layers, notes, last = [], [], None
+
+    def put(kind, c, delay=0.15, **kw):
+        s = round(c["start"] + delay, 2)
+        e = round(max(s + 0.6, c["end"] - 0.05), 2)
+        layers.append(dict({"id": "ly%d" % (len(layers) + 1), "kind": kind, "anchor": c["id"], "delay": delay, "start": s, "end": e}, **kw))
+
+    for i, c in enumerate(vis):
+        text = (c.get("narration") or "").strip()
+        if not text or (c["end"] - c["start"]) < 1.2:
+            continue
+        low = text.lower()
+        snip = text if len(text) <= 38 else text[:35] + "..."
+        tag = 'Beat %d ("%s")' % (i + 1, snip)
+        if i == 0:
+            word = _key_word(text) or text.split()[0]
+            cut = None
+            if c.get("kind") == "image" and c.get("src"):
+                cand = os.path.splitext(c["src"])[0] + "_cut.png"
+                p = asset_path(pid, cand)
+                if p and os.path.exists(p):
+                    cut = cand
+                put("depth-text", c, 0.1, src=c["src"], cutout=cut, text=word, y=0.3, push=0.12)
+                notes.append('%s: this is the hook, so it needs weight. I am setting %s huge behind the subject (%s) and pushing in slowly, under a moving colour wash.' % (tag, word.upper(), "real cutout" if cut else "no cutout yet, using a soft mask"))
+            else:
+                put("kinetic", c, 0.1, text=word, y=0.3)
+                notes.append('%s: hook beat. I am slamming %s on screen word by word under a moving colour wash.' % (tag, word.upper()))
+            put("color-wash", c, 0.0, opacity=0.5, seed=round(rnd.random() * 6, 2))
+            last = "hook"
+            continue
+        if rnd.random() > density:
+            notes.append("%s: nothing new to add here. I am letting the picture breathe." % tag)
+            last = None
+            continue
+        m = re.search(r"\d[\d,.]*\s?(?:%|percent|million|billion|thousand|x|k)?", text)
+        icon = next((ic for rx, ic in _ICONS if re.search(rx, low)), None)
+        if m and last != "num":
+            big = m.group(0).strip()
+            put("kinetic", c, 0.2, text=big, y=0.24)
+            put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.31, w=0.6)
+            notes.append("%s: there is a number (%s). I am slamming it in and underlining it so it sticks." % (tag, big))
+            last = "num"
+        elif re.search(_ROUTE, low) and last != "route":
+            j = rnd.random() * 0.1
+            put("route-map", c, 0.1, **{"from": [0.2, 0.72 - j], "to": [0.8, 0.3 + j], "via": [0.5, 0.84]})
+            notes.append("%s: this is about movement, so I am drawing a route across a map grid with a travelling dot." % tag)
+            last = "route"
+        elif icon and last != "icon":
+            put("icon-pop", c, 0.2, icon=icon, x=round(0.3 + rnd.random() * 0.4, 2), y=0.22)
+            notes.append("%s: this beat is about '%s', so I am popping a '%s' icon in." % (tag, icon, icon))
+            last = "icon"
+        elif "?" in text and last != "icon":
+            put("icon-pop", c, 0.2, icon="question", x=0.5, y=0.22)
+            notes.append("%s: it is a question, so I am popping a question mark to hold attention." % tag)
+            last = "icon"
+        elif last != "wash":
+            put("color-wash", c, 0.0, opacity=0.45, seed=round(rnd.random() * 6, 2))
+            notes.append("%s: no strong visual hook, so I am shifting the colour mood with a gradient wash." % tag)
+            last = "wash"
+        else:
+            put("draw-line", c, 0.5, shape=rnd.choice(["circle", "arrow", "bracket"]), x=0.25, y=0.38, w=0.5)
+            notes.append("%s: I just used a wash, so I am hand-drawing a highlight mark instead." % tag)
+            last = "mark"
+    if layers:
+        tr["layers"] = layers
+        t.setdefault("meta", {})["director"] = notes
+        _director_say(["Director notes (%d layers on %d beats)" % (len(layers), len(vis))] + ["- " + n for n in notes[:30]])
+    return t
+
+
+_from_props_orig = from_props
+
+
+def from_props(props, spec=None, pid="job", cv=None):
+    t = _from_props_orig(props, spec, pid, cv)
+    if spec and spec.get("beats"):
+        try:
+            director_pass(t, spec)
+        except Exception as e:
+            print("director_pass failed (ignored):", e)
+    return t
+
+
+_retime_orig = retime
+
+
+def retime(t, words, total):
+    _retime_orig(t, words, total)
+    byid = {v["id"]: v for v in t["tracks"]["visuals"]}
+    for l in t["tracks"].get("layers") or []:
+        a = byid.get(l.get("anchor"))
+        if a:
+            l["start"] = round(a["start"] + (l.get("delay") or 0.15), 2)
+            l["end"] = round(max(l["start"] + 0.6, a["end"] - 0.05), 2)
+# ---- end director (layers) ----

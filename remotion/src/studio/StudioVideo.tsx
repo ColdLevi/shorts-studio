@@ -5,6 +5,7 @@ import { AbsoluteFill, Audio, Sequence, CalculateMetadataFunction, useVideoConfi
 import { Captions } from './Captions';
 import { layout } from './layout';
 import { Overlay, Progress } from './Overlays';
+import { LayerStack } from './Layers';
 import { url } from './assets';
 import { nearestImage, transitionLen, VisualLayer } from './Visuals';
 import { Backdrop, Finish, Held } from './StyleFX';
@@ -119,6 +120,7 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
         );
       })}
       </Held>
+      <LayerStack layers={(t.tracks as any).layers} L={L} accent={accent} pid={pid} palette={st.palette} font={st.font} grade={st.grade} />
       <Finish fx={fxCss} L={L} />
       <GpuFinish g={g} L={L} hold={st.fx?.hold} />
       {st.vignette !== false ? (

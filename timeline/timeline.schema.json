@@ -848,6 +848,9 @@
               "end"
             ]
           }
+        },
+        "layers": {
+          "type": "array"
         }
       }
     },
