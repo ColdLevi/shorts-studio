@@ -1,130 +1,18 @@
 {
-  "last_update": 312538317,
-  "time": 1794215588625,
-  "stage": "script",
+  "last_update": 312538318,
+  "time": 1794215616227,
+  "stage": "idle",
   "topic": "vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle captions",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Fourteen Days Across Oceans",
-    "hook": "One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
-    "angle": "People think cheap shipping means instant delivery, but ocean cargo and local port clearance turn a simple order into a fourteen day journey.",
-    "key_facts": [
-      "Shipping takes fourteen days from China to Nigeria",
-      "Cargo travels by sea and air routes",
-      "Freight costs roughly four to seven dollars per kilo",
-      "Customs clearance can trigger unexpected port delays"
-    ],
-    "visual_style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
-    "length_seconds": 60,
-    "style": "cinematic",
-    "style_reason": "Cinematic tone enhances global logistics documentary feel",
-    "music": "docu-pluck",
-    "accent": "gold",
-    "format": "vertical"
-  },
-  "script": {
-    "title": "Fourteen Days Across Oceans",
-    "beats": [
-      {
-        "narration": "One cardboard parcel sits on a cold metal warehouse floor in Guangzhou.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered single cardboard box resting on industrial concrete warehouse floor",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow camera pull back revealing endless rows of stacked brown boxes under dim industrial ceiling lights."
-      },
-      {
-        "narration": "Buyers expect cheap online orders to arrive overnight.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered close-up of hands typing fast on a illuminated glowing smartphone screen in a dark room",
-        "tool": "flux"
-      },
-      {
-        "narration": "But crossing oceans takes a precise chain of international logistics.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive ocean cargo vessel cutting through deep blue sea waves at sunset",
-        "tool": "stock",
-        "query": "cargo ship ocean"
-      },
-      {
-        "narration": "Cargo moves along dedicated sea and air routes across thousands of miles.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, silhouette of a heavy freight airplane flying high above thick clouds during twilight",
-        "tool": "flux"
-      },
-      {
-        "narration": "Moving this freight costs roughly four to seven dollars per kilo.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, digital industrial scale in a dark hub showing a sealed box being weighed",
-        "tool": "flux"
-      },
-      {
-        "narration": "Under ideal conditions, shipping from China to Nigeria takes fourteen days.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wall clock inside a logistics shipping office with time zones lit up",
-        "tool": "flux"
-      },
-      {
-        "narration": "So the package boards a container vessel at the Guangzhou docks.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive harbour gantry crane lifting heavy steel shipping container onto ship",
-        "tool": "stock",
-        "query": "container ship departure"
-      },
-      {
-        "narration": "Then it completes the long voyage across open waters to West Africa.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wide view of a container vessel navigating open sea water near shoreline",
-        "tool": "flux"
-      },
-      {
-        "narration": "But landing at the seaport is only half the battle.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, crowded ocean port terminal filled with thousands of multicolored metal containers",
-        "tool": "flux"
-      },
-      {
-        "narration": "Customs clearance can trigger unexpected port delays that freeze movement for days.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary inspector standing near locked freight containers bathed in dramatic amber floodlights",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow push forward along narrow corridors of stacked steel shipping containers in a quiet port yard."
-      },
-      {
-        "narration": "Paperwork checks and inspections keep the box waiting inside stacked containers.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, heavy mechanical crane holding a shipping container static mid-air over a port yard",
-        "tool": "stock",
-        "query": "port container crane"
-      },
-      {
-        "narration": "Fourteen days across oceans turns global trade into patient waiting.",
-        "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary cardboard box sitting at a quiet local distribution hub counter ready for final pickup",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Shipping takes fourteen days from China to Nigeria",
-        "supported": true
-      },
-      {
-        "claim": "Cargo travels by sea and air routes",
-        "supported": true
-      },
-      {
-        "claim": "Freight costs roughly four to seven dollars per kilo",
-        "supported": true
-      },
-      {
-        "claim": "Customs clearance can trigger unexpected port delays",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Remove the caption and then make the transitions better and camera movement too should be in it and smooth moves from scene to scene and when highlight something",
-      "t": 1794158553055
-    },
     {
       "role": "bot",
       "text": "Proposed edit to \"Coding for Dummies Reality Check\": Removed captions, added smooth zoom transitions, and applied dynamic camera motion to all scenes",
@@ -199,10 +87,135 @@
       "role": "bot",
       "text": "Wrote the script for \"Fourteen Days Across Oceans\"",
       "t": 1794215588625
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Fourteen Days Across Oceans\"",
+      "t": 1794215616227
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "fourteen-days-across-oceans-mw91nhoc",
+      "canvas": "9:16",
+      "title": "Fourteen Days Across Oceans",
+      "topic": "vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle captions",
+      "pitch": {
+        "title": "Fourteen Days Across Oceans",
+        "hook": "One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
+        "angle": "People think cheap shipping means instant delivery, but ocean cargo and local port clearance turn a simple order into a fourteen day journey.",
+        "key_facts": [
+          "Shipping takes fourteen days from China to Nigeria",
+          "Cargo travels by sea and air routes",
+          "Freight costs roughly four to seven dollars per kilo",
+          "Customs clearance can trigger unexpected port delays"
+        ],
+        "visual_style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
+        "length_seconds": 60,
+        "style": "cinematic",
+        "style_reason": "Cinematic tone enhances global logistics documentary feel",
+        "music": "docu-pluck",
+        "accent": "gold",
+        "format": "vertical"
+      },
+      "script": {
+        "title": "Fourteen Days Across Oceans",
+        "beats": [
+          {
+            "narration": "One cardboard parcel sits on a cold metal warehouse floor in Guangzhou.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered single cardboard box resting on industrial concrete warehouse floor",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow camera pull back revealing endless rows of stacked brown boxes under dim industrial ceiling lights."
+          },
+          {
+            "narration": "Buyers expect cheap online orders to arrive overnight.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered close-up of hands typing fast on a illuminated glowing smartphone screen in a dark room",
+            "tool": "flux"
+          },
+          {
+            "narration": "But crossing oceans takes a precise chain of international logistics.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive ocean cargo vessel cutting through deep blue sea waves at sunset",
+            "tool": "stock",
+            "query": "cargo ship ocean"
+          },
+          {
+            "narration": "Cargo moves along dedicated sea and air routes across thousands of miles.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, silhouette of a heavy freight airplane flying high above thick clouds during twilight",
+            "tool": "flux"
+          },
+          {
+            "narration": "Moving this freight costs roughly four to seven dollars per kilo.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, digital industrial scale in a dark hub showing a sealed box being weighed",
+            "tool": "flux"
+          },
+          {
+            "narration": "Under ideal conditions, shipping from China to Nigeria takes fourteen days.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wall clock inside a logistics shipping office with time zones lit up",
+            "tool": "flux"
+          },
+          {
+            "narration": "So the package boards a container vessel at the Guangzhou docks.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive harbour gantry crane lifting heavy steel shipping container onto ship",
+            "tool": "stock",
+            "query": "container ship departure"
+          },
+          {
+            "narration": "Then it completes the long voyage across open waters to West Africa.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wide view of a container vessel navigating open sea water near shoreline",
+            "tool": "flux"
+          },
+          {
+            "narration": "But landing at the seaport is only half the battle.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, crowded ocean port terminal filled with thousands of multicolored metal containers",
+            "tool": "flux"
+          },
+          {
+            "narration": "Customs clearance can trigger unexpected port delays that freeze movement for days.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary inspector standing near locked freight containers bathed in dramatic amber floodlights",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow push forward along narrow corridors of stacked steel shipping containers in a quiet port yard."
+          },
+          {
+            "narration": "Paperwork checks and inspections keep the box waiting inside stacked containers.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, heavy mechanical crane holding a shipping container static mid-air over a port yard",
+            "tool": "stock",
+            "query": "port container crane"
+          },
+          {
+            "narration": "Fourteen days across oceans turns global trade into patient waiting.",
+            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary cardboard box sitting at a quiet local distribution hub counter ready for final pickup",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Shipping takes fourteen days from China to Nigeria",
+            "supported": true
+          },
+          {
+            "claim": "Cargo travels by sea and air routes",
+            "supported": true
+          },
+          {
+            "claim": "Freight costs roughly four to seven dollars per kilo",
+            "supported": true
+          },
+          {
+            "claim": "Customs clearance can trigger unexpected port delays",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794215616227
+    },
     {
       "id": "accidental-swipes-and-coffee-dates-mw89tjza",
       "canvas": "16:9",
@@ -1591,146 +1604,6 @@
         "sources": []
       },
       "at": 1794084439894
-    },
-    {
-      "id": "thirty-years-of-code-burnout-mw6uyb8g",
-      "canvas": "16:9",
-      "title": "Thirty Years of Code Burnout",
-      "topic": "what if I can code at age 5 and now am 30",
-      "pitch": {
-        "title": "Thirty Years of Code Burnout",
-        "hook": "A five year old typed PRINT HELLO WORLD into a terminal in 1999.",
-        "angle": "Starting code in kindergarten seems like a shortcut to building tech empires by age thirty. Twenty-five years of shifting frameworks turns early mastery into endless syntax unlearning.",
-        "key_facts": [
-          "Dartmouth College introduced BASIC in 1964 to make computer programming accessible to beginners.",
-          "The Commodore 64 featured BASIC built directly into its system ROM upon release in 1982.",
-          "Brendan Eich created the initial version of JavaScript in ten days in 1995.",
-          "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser DOM elements straight to editor source code."
-        ],
-        "visual_style": "Vector diagrams and sleek UI wireframes on monochrome backgrounds with vivid crimson glows.",
-        "length_seconds": 45,
-        "style": "upload-3",
-        "style_reason": "Monochrome wireframes with crimson accents highlight structural tech evolution clearly.",
-        "music": "tech-pulse",
-        "accent": "red",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Thirty Years of Code Burnout",
-        "beats": [
-          {
-            "narration": "A five year old typed PRINT HELLO WORLD into a monochrome terminal in nineteen ninety nine.",
-            "image_prompt": "Vector diagram of a sleek vintage terminal screen showing glowing green text against a dark wireframe background with glowing crimson nodes, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "kinetic",
-              "words": [
-                "PRINT",
-                "HELLO",
-                "WORLD",
-                "1999"
-              ]
-            }
-          },
-          {
-            "narration": "Dartmouth College introduced BASIC in nineteen sixty four to make programming simple for beginners.",
-            "image_prompt": "Minimalist architectural wireframe diagram of a university laboratory with red glowing signal pulses, landscape 16:9 aspect ratio.",
-            "tool": "flux"
-          },
-          {
-            "narration": "By nineteen eighty two, Commodore sixty four systems booted BASIC directly from hardware ROM.",
-            "image_prompt": "Sleek tech UI schematic of a microchip circuit board on a dark grid with deep red highlight paths, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "icons",
-              "title": "ROM Integration",
-              "items": [
-                {
-                  "icon": "landmark",
-                  "label": "Hardware ROM"
-                },
-                {
-                  "icon": "zap",
-                  "label": "Instant BASIC"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Starting in kindergarten feels like a shortcut to building digital empires before age thirty.",
-            "image_prompt": "High-contrast monochrome flow chart mapping a child desktop node to a massive tech tower, accented with red vector lines, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "myth",
-              "myth": "Early coding guarantees lifelong mastery",
-              "fact": "Endless framework changes force constant unlearning"
-            }
-          },
-          {
-            "narration": "Then rapid innovation changed everything. Brendan Eich created JavaScript in ten days in nineteen ninety five.",
-            "image_prompt": "Clean digital countdown interface overlaying code syntax diagrams with intense red ambient glows, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 10,
-              "prefix": "",
-              "suffix": "Days",
-              "label": "JavaScript Initial Build"
-            }
-          },
-          {
-            "narration": "By twenty twenty, developer Anthony Fu built Vite Plugin Inspector to map complex browser elements back to editor source code.",
-            "image_prompt": "Monochrome browser wireframe window connected by glowing crimson vector arrows to an editor IDE interface, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "flow",
-              "title": "Inspector Pipeline",
-              "steps": [
-                "Browser DOM Element",
-                "Vite Plugin Inspector",
-                "Editor Source Code"
-              ]
-            }
-          },
-          {
-            "narration": "Twenty five years of shifting tools turns early prodigies into full time syntax unlearners. Code moves faster than human memory.",
-            "image_prompt": "Abstract digital vector gauge reaching critical levels on a dark grid canvas with stark red neon highlights, landscape 16:9 aspect ratio.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "gauge",
-              "value": 95,
-              "min": 0,
-              "max": 100,
-              "suffix": "%",
-              "label": "Syntax Shift Speed"
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Dartmouth College introduced BASIC in 1964 to make programming simple for beginners.",
-            "supported": true
-          },
-          {
-            "claim": "Commodore 64 systems booted BASIC directly from hardware ROM upon release in 1982.",
-            "supported": true
-          },
-          {
-            "claim": "Brendan Eich created JavaScript in ten days in 1995.",
-            "supported": true
-          },
-          {
-            "claim": "Developer Anthony Fu built Vite Plugin Inspector in 2020 to link browser elements to editor source code.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794083431440
     }
   ],
   "lastRenderAuto": false,
@@ -1742,12 +1615,12 @@
   },
   "renders": [
     {
-      "title": "Accidental Swipes and Coffee Dates",
-      "at": 1794168869899,
-      "project": "accidental-swipes-and-coffee-dates-mw89tjza"
+      "title": "Fourteen Days Across Oceans",
+      "at": 1794215616227,
+      "project": "fourteen-days-across-oceans-mw91nhoc"
     }
   ],
-  "current_project": "accidental-swipes-and-coffee-dates-mw89tjza",
+  "current_project": "fourteen-days-across-oceans-mw91nhoc",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1758,18 +1631,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "length": 60,
-    "format": "vertical",
-    "style": "cinematic",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
     "fastedit2",
     "fastedit2",
     "fastedit2",
     "fastedit2",
-    "fastedit2"
+    "cinematic"
   ],
   "learning": null,
   "styles": {
