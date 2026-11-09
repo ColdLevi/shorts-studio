@@ -1,6 +1,6 @@
 {
-  "last_update": 312538339,
-  "time": 1794223357284,
+  "last_update": 312538340,
+  "time": 1794223771407,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -101,11 +101,6 @@
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
     {
-      "role": "user",
-      "text": "Make a 60 second vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warni",
-      "t": 1794215498059
-    },
-    {
       "role": "bot",
       "text": "Pitched \"Fourteen Days Across Oceans\": One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
       "t": 1794215528825
@@ -179,6 +174,11 @@
       "role": "bot",
       "text": "Looks like you're running some python code to check out available voices! Let me know if you want to apply one to your video or change anything else.",
       "t": 1794223357284
+    },
+    {
+      "role": "user",
+      "text": "Use images to create the video so later you do the rich looking one",
+      "t": 1794223768245
     }
   ],
   "working": null,
