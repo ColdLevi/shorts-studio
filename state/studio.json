@@ -1,110 +1,18 @@
 {
-  "last_update": 312538333,
-  "time": 1794222735458,
-  "stage": "script",
+  "last_update": 312538337,
+  "time": 1794222762362,
+  "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Seventeen Year Old Beer Heist",
-    "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
-    "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
-    "key_facts": [
-      "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-      "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-      "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
-    ],
-    "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
-    "length_seconds": 40,
-    "style": "retro-vhs",
-    "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
-    "music": "lofi-warm",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Seventeen Year Old Beer Heist",
-    "beats": [
-      {
-        "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
-        "tool": "higgsfield",
-        "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
-        "still": "flux"
-      },
-      {
-        "narration": "Teens think sneaking a drink was harder back then.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
-        "tool": "flux"
-      },
-      {
-        "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
-        "tool": "stock",
-        "query": "vintage paper document"
-      },
-      {
-        "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
-        "tool": "flux"
-      },
-      {
-        "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
-        "tool": "stock",
-        "query": "1980s supermarket aisle"
-      },
-      {
-        "narration": "So store cashiers rarely even checked who was buying.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
-        "tool": "stock",
-        "query": "retro TV static"
-      },
-      {
-        "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
-        "tool": "higgsfield",
-        "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
-        "still": "flux"
-      },
-      {
-        "narration": "The analog beer run was just built on simpler rules.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-        "supported": true
-      },
-      {
-        "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-        "supported": true
-      },
-      {
-        "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Accidental Swipes and Coffee Dates\": A broken screen on an old phone made me swipe right by accident.",
-      "t": 1794168694592
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Accidental Swipes and Coffee Dates\"",
@@ -179,10 +87,115 @@
       "role": "bot",
       "text": "Wrote the script for \"Seventeen Year Old Beer Heist\"",
       "t": 1794222735458
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Seventeen Year Old Beer Heist\"",
+      "t": 1794222762362
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "seventeen-year-old-beer-heist-mw95wno8",
+      "canvas": "16:9",
+      "title": "Seventeen Year Old Beer Heist",
+      "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
+      "pitch": {
+        "title": "Seventeen Year Old Beer Heist",
+        "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+        "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
+        "key_facts": [
+          "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
+          "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+          "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
+        ],
+        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
+        "length_seconds": 40,
+        "style": "retro-vhs",
+        "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
+        "music": "lofi-warm",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Seventeen Year Old Beer Heist",
+        "beats": [
+          {
+            "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
+            "tool": "higgsfield",
+            "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
+            "still": "flux"
+          },
+          {
+            "narration": "Teens think sneaking a drink was harder back then.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
+            "tool": "flux"
+          },
+          {
+            "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
+            "tool": "stock",
+            "query": "vintage paper document"
+          },
+          {
+            "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
+            "tool": "flux"
+          },
+          {
+            "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
+            "tool": "stock",
+            "query": "1980s supermarket aisle"
+          },
+          {
+            "narration": "So store cashiers rarely even checked who was buying.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
+            "tool": "stock",
+            "query": "retro TV static"
+          },
+          {
+            "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
+            "tool": "higgsfield",
+            "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
+            "still": "flux"
+          },
+          {
+            "narration": "The analog beer run was just built on simpler rules.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
+            "supported": true
+          },
+          {
+            "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+            "supported": true
+          },
+          {
+            "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794222762362
+    },
     {
       "id": "the-five-am-alarm-myth-mw94jrzk",
       "canvas": "16:9",
@@ -1413,251 +1426,6 @@
         "sources": []
       },
       "at": 1794143704926
-    },
-    {
-      "id": "the-death-of-manual-syntax-mw7uacsp",
-      "canvas": "16:9",
-      "title": "The Death of Manual Syntax",
-      "topic": "about writing codes before and currently vibe coding",
-      "pitch": {
-        "title": "The Death of Manual Syntax",
-        "hook": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
-        "angle": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations. Vibe coding completely flips this by replacing manual typing with direct intent, turning developers into creative editors.",
-        "key_facts": [
-          "Early software engineering required manual memory management and exact low-level syntax execution.",
-          "Generative AI models produce functional app codebases directly from plain language prompts.",
-          "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
-          "Modern developer workflows shift from manual syntax authoring to system architecture validation."
-        ],
-        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "length_seconds": 60,
-        "style": "fastedit2",
-        "style_reason": "Clean UI cuts contrast dense low-level terminals with sleek modern prompts.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "The Death of Manual Syntax",
-        "beats": [
-          {
-            "narration": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in nineteen ninety.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "3,000 Lines",
-              "sub": "Assembly Code"
-            }
-          },
-          {
-            "narration": "Engineers believed mastering software meant memorizing thousands of rigid syntax rules and pointer operations.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "myth",
-              "myth": "Memorize syntax",
-              "fact": "Direct intent"
-            }
-          },
-          {
-            "narration": "Manual memory management ruled early engineering.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "icons",
-              "title": "Legacy Systems",
-              "items": [
-                {
-                  "icon": "cpu",
-                  "label": "Memory"
-                },
-                {
-                  "icon": "book",
-                  "label": "Syntax"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Exact low level execution demanded endless focus.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "percent",
-              "value": 100,
-              "label": "Manual Effort"
-            }
-          },
-          {
-            "narration": "Then generative models arrived.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "kinetic",
-              "words": [
-                "Generative AI",
-                "Changes Everything"
-              ]
-            }
-          },
-          {
-            "narration": "Now modern artificial intelligence produces functional app codebases directly from plain language prompts.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "chat",
-              "title": "AI Prompt",
-              "messages": [
-                {
-                  "from": "me",
-                  "text": "Build a dashboard app"
-                },
-                {
-                  "from": "them",
-                  "text": "Generated full codebase"
-                }
-              ]
-            }
-          },
-          {
-            "narration": "Vibe coding completely flips this paradigm.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "flow",
-              "title": "The Paradigm Shift",
-              "steps": [
-                "Manual typing",
-                "Direct intent",
-                "Creative editing"
-              ]
-            }
-          },
-          {
-            "narration": "Developers replace manual typing with direct intent.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "versus",
-              "title": "Coding Evolution",
-              "prefix": "",
-              "suffix": "",
-              "left": {
-                "label": "Typing",
-                "value": 10
-              },
-              "right": {
-                "label": "Intent",
-                "value": 90
-              }
-            }
-          },
-          {
-            "narration": "This turns developers into creative editors.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "list",
-              "title": "New Roles",
-              "items": [
-                "System Architect",
-                "Creative Editor",
-                "Vision Guide"
-              ]
-            }
-          },
-          {
-            "narration": "Engineers using generative AI coding tools complete tasks up to fifty five percent faster.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "counter",
-              "value": 55,
-              "prefix": "",
-              "suffix": "%",
-              "label": "Faster Completion"
-            }
-          },
-          {
-            "narration": "Speed changes everything.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "flux"
-          },
-          {
-            "narration": "Modern developer workflows shift from manual syntax authoring.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "bars",
-              "title": "Workflow Shift",
-              "prefix": "",
-              "suffix": "%",
-              "items": [
-                {
-                  "label": "Syntax",
-                  "value": 10
-                },
-                {
-                  "label": "Architecture",
-                  "value": 90
-                }
-              ]
-            }
-          },
-          {
-            "narration": "System architecture validation takes center stage.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "gauge",
-              "value": 90,
-              "min": 0,
-              "max": 100,
-              "suffix": "%",
-              "label": "Validation Focus"
-            }
-          },
-          {
-            "narration": "Syntax is dead.",
-            "image_prompt": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-            "tool": "graphic",
-            "graphic": {
-              "type": "title",
-              "text": "Syntax is Dead",
-              "sub": "Long live intent"
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Three thousand lines of manual assembly code were required just to draw a blue rectangle on a screen in 1990.",
-            "supported": true
-          },
-          {
-            "claim": "Early software engineering required manual memory management and exact low-level syntax execution.",
-            "supported": true
-          },
-          {
-            "claim": "Generative AI models produce functional app codebases directly from plain language prompts.",
-            "supported": true
-          },
-          {
-            "claim": "Developers using generative AI coding tools complete engineering tasks up to fifty-five percent faster.",
-            "supported": true
-          },
-          {
-            "claim": "Modern developer workflows shift from manual syntax authoring to system architecture validation.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794142779886
     }
   ],
   "lastRenderAuto": false,
@@ -1669,12 +1437,12 @@
   },
   "renders": [
     {
-      "title": "The Five AM Alarm Myth",
-      "at": 1794220481820,
-      "project": "the-five-am-alarm-myth-mw94jrzk"
+      "title": "Seventeen Year Old Beer Heist",
+      "at": 1794222762362,
+      "project": "seventeen-year-old-beer-heist-mw95wno8"
     }
   ],
-  "current_project": "the-five-am-alarm-myth-mw94jrzk",
+  "current_project": "seventeen-year-old-beer-heist-mw95wno8",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1817,16 +1585,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "style": "retro-vhs",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
     "fastedit2",
     "fastedit2",
-    "fastedit2",
     "cinematic",
-    "fastedit2"
+    "fastedit2",
+    "retro-vhs"
   ],
   "learning": null,
   "styles": {
@@ -2691,5 +2456,6 @@
         "motion_level": "fast"
       }
     }
-  }
+  },
+  "voice_pick": null
 }
