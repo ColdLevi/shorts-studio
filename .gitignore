@@ -16,3 +16,8 @@ node_modules/
 .vercel/
 *.log
 *.bak-*
+
+*.bak-*
+remotion/node
+remotion/esbuild@*
+remotion/public/timeline.json
