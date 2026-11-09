@@ -390,8 +390,8 @@ def paint(prompt, path, tool="flux", style="", hero=False, gemini_ok=False, seed
                 gemini_image(full, path)
                 return {"pixel": False}
             except Exception as g:
-                print("gemini image", g)
-        for _name, _fn in (("together", together_image), ("pollinations", pollinations_image)):
+                print("gemini image", g); _FB_ERR.append("gemini: " + str(g)[:100])
+        for _name, _fn in (("together", together_image),):
             try:
                 _fn(full, path, seed)
                 print("image fallback ok:", _name)
