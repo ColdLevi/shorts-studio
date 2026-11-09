@@ -1,115 +1,34 @@
 {
-  "last_update": 312538340,
-  "time": 1794223771407,
-  "stage": "idle",
-  "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
+  "last_update": 312538341,
+  "time": 1794239573306,
+  "stage": "pitch",
+  "topic": "that teach people how to money buying and selling old used items",
   "research": {
     "text": "",
     "sources": []
   },
   "pitch": {
-    "title": "Seventeen Year Old Beer Heist",
-    "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
-    "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
+    "title": "5 Dollar Thrift Store Goldmine",
+    "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+    "angle": "Most people assume old gadgets are worthless junk destined for the trash. The twist is that vintage tech creates huge resale profit when moved from a local yard to a global online market.",
     "key_facts": [
-      "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-      "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-      "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
+      "Garage sale items are typically priced far below online market value.",
+      "Online resale platforms allow local items to reach international collectors instantly.",
+      "Nostalgia trends drive high demand for original nineteen eighties electronics."
     ],
-    "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
+    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
     "length_seconds": 40,
-    "style": "retro-vhs",
-    "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
-    "music": "lofi-warm",
+    "style": "fastedit2",
+    "style_reason": "Clean UI mockups highlight fast resale profit margins.",
+    "music": "tech-pulse",
     "accent": "teal",
     "format": "landscape"
   },
-  "script": {
-    "title": "Seventeen Year Old Beer Heist",
-    "beats": [
-      {
-        "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
-        "tool": "higgsfield",
-        "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
-        "still": "flux"
-      },
-      {
-        "narration": "Teens think sneaking a drink was harder back then.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
-        "tool": "flux"
-      },
-      {
-        "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
-        "tool": "stock",
-        "query": "vintage paper document"
-      },
-      {
-        "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
-        "tool": "flux"
-      },
-      {
-        "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
-        "tool": "stock",
-        "query": "1980s supermarket aisle"
-      },
-      {
-        "narration": "So store cashiers rarely even checked who was buying.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
-        "tool": "stock",
-        "query": "retro TV static"
-      },
-      {
-        "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
-        "tool": "higgsfield",
-        "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
-        "still": "flux"
-      },
-      {
-        "narration": "The analog beer run was just built on simpler rules.",
-        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-        "supported": true
-      },
-      {
-        "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-        "supported": true
-      },
-      {
-        "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Fourteen Days Across Oceans\": One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
-      "t": 1794215528825
-    },
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Fourteen Days Across Oceans\"",
-      "t": 1794215588625
-    },
     {
       "role": "bot",
       "text": "Rendering \"Fourteen Days Across Oceans\"",
@@ -179,6 +98,16 @@
       "role": "user",
       "text": "Use images to create the video so later you do the rich looking one",
       "t": 1794223768245
+    },
+    {
+      "role": "user",
+      "text": "Create a video that teach people how to make money buying and selling old used items",
+      "t": 1794239553934
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"5 Dollar Thrift Store Goldmine\": A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+      "t": 1794239573306
     }
   ],
   "working": null,
@@ -1516,7 +1445,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\nRelevant memories:\n- (interest) The user approved a short about classic about getting up early and why I hate it.\n- (interest) The user approved a short about what if I can code at age 5 and now am 30.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle caption\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (idea) The user likes YouTube Shorts ideas about tech facts, specifically why phone batteries die faster in the cold.\n- (fact) Browser bot research on YouTube Issacverse of about the idea of how to code for dummies: - Grace Hopper invented the first compiler, called A-0, in 1952 while working on the UNIVAC I at Eckert-Mauchly Computer Corporation (https://www.computerhistory.org/tdih/august/16/).\n- Before Hopper's compiler, programmers had to write instructions entirely in numeric machine code or cumbersome ass\n- (interest) The user approved a short about growing up as a developer in 2026.\n- (interest) The user approved a short about making mistakes and learning to live with integrity 17sec.\n- (interest) The user approved a short about about writing codes before and currently vibe coding.\n- (interest) The user approved a short about What if cats have 1 live.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\n- The user prefers indirect viewer address over direct speaking in videos to enhance immersion.\nRelevant memories:\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about classic about getting up early and why I hate it.\n- (interest) The user approved a short about vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle caption\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1644,7 +1573,9 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": null,
+  "job": {
+    "research": "full"
+  },
   "recent_styles": [
     "fastedit2",
     "fastedit2",
