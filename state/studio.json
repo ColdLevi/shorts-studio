@@ -1,6 +1,6 @@
 {
-  "last_update": 312538337,
-  "time": 1794223013050,
+  "last_update": 312538338,
+  "time": 1794223295252,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -1537,7 +1537,7 @@
     "title": "Seventeen Year Old Beer Heist",
     "service": "images",
     "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
-    "auto": false,
+    "auto": true,
     "asked": false,
     "since": 1794223013050,
     "snapshot": {
