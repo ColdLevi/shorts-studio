@@ -1,7 +1,7 @@
 {
-  "last_update": 312538353,
-  "time": 1794244032882,
-  "stage": "pitch",
+  "last_update": 312538354,
+  "time": 1794244093837,
+  "stage": "script",
   "topic": "short portrait view of a finance parody of latest news",
   "research": {
     "text": "",
@@ -25,16 +25,108 @@
     "accent": "red",
     "format": "vertical"
   },
-  "script": null,
+  "script": {
+    "title": "How to Lose Money on Breaking News",
+    "beats": [
+      {
+        "narration": "Four hundred influencers stare at red ticker.",
+        "image_prompt": "vertical phone mockup showing a bold red stock ticker on a solid dark background",
+        "tool": "higgsfield",
+        "motion": "camera zooms into the ticker, slight shake",
+        "still": "flux"
+      },
+      {
+        "narration": "They think it promises quick profit.",
+        "image_prompt": "minimalist app screen with flashing green and red icons, bold colors",
+        "tool": "flux"
+      },
+      {
+        "narration": "Ticker flips green, red every ten seconds.",
+        "image_prompt": "illustration of a timer counting ten seconds beside a ticker graphic",
+        "tool": "flux"
+      },
+      {
+        "narration": "That rhythm fuels panic, not insight.",
+        "image_prompt": "abstract wave of red alerts over a calm blue UI background",
+        "tool": "flux"
+      },
+      {
+        "narration": "Panic selling drops assets five percent fast.",
+        "image_prompt": "simple chart dropping from green to red, 5% label highlighted",
+        "tool": "flux"
+      },
+      {
+        "narration": "Buyers rush, lock in loss.",
+        "image_prompt": "hand tapping a 'Buy' button on a phone, red warning overlay",
+        "tool": "flux"
+      },
+      {
+        "narration": "Influencers charge ninety‑nine dollars for alerts.",
+        "image_prompt": "subscription card UI showing $99/month price, minimalist layout",
+        "tool": "flux"
+      },
+      {
+        "narration": "Alerts come after the crash.",
+        "image_prompt": "notification bubble appearing on a dimmed screen, timestamp delayed",
+        "tool": "flux"
+      },
+      {
+        "narration": "Broker apps crash under trade surge.",
+        "image_prompt": "phone screen glitching, error icon, solid red overlay",
+        "tool": "flux"
+      },
+      {
+        "narration": "Orders fail, balances freeze.",
+        "image_prompt": "static balance screen with frozen icon, muted colors",
+        "tool": "flux"
+      },
+      {
+        "narration": "Headline chase drains your bank.",
+        "image_prompt": "bank account UI sliding down, red drain effect",
+        "tool": "flux"
+      },
+      {
+        "narration": "Smart move: ignore the flashing ticker.",
+        "image_prompt": "calm UI with muted tones, ticker blurred out",
+        "tool": "flux"
+      },
+      {
+        "narration": "Stay calm, wait, then act.",
+        "image_prompt": "timer counting down, then green checkmark appears",
+        "tool": "flux"
+      },
+      {
+        "narration": "Four hundred lost money; you could too.",
+        "image_prompt": "vertical view of empty phone screen, ticker fading to black",
+        "tool": "higgsfield",
+        "motion": "camera pulls back revealing empty screens, ticker fades out",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Ticker flips green, red every ten seconds",
+        "supported": true
+      },
+      {
+        "claim": "Panic selling drops assets five percent fast",
+        "supported": true
+      },
+      {
+        "claim": "Influencers charge ninety‑nine dollars for alerts",
+        "supported": true
+      },
+      {
+        "claim": "Broker apps crash under trade surge",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Seventeen Year Old Beer Heist\"",
-      "t": 1794222500738
-    },
     {
       "role": "user",
       "text": "Use Guys voice",
@@ -109,6 +201,11 @@
       "role": "bot",
       "text": "Pitched \"How to Lose Money on Breaking News\": Four hundred financial influencers stared at a glowing red stock ticker.",
       "t": 1794244032882
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How to Lose Money on Breaking News\"",
+      "t": 1794244093837
     }
   ],
   "working": null,
