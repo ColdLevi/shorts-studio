@@ -1,0 +1,950 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+ "rev": 1,
+ "title": "5 Dollar Thrift Store Goldmine",
+ "duration": 44.26,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.875,
+    "narration": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup of a retro cassette player on a solid teal background with crisp modern lighting"
+    },
+    "w": 1280,
+    "h": 850,
+    "hash": "a523fbed45c5"
+   },
+   {
+    "id": "v2",
+    "start": 5.875,
+    "end": 10.387,
+    "narration": "Most people assume old gadgets are worthless junk destined for the trash.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of an old television set in a recycling bin on a vibrant coral background"
+    },
+    "w": 1280,
+    "h": 853,
+    "hash": "462ef871e885"
+   },
+   {
+    "id": "v3",
+    "start": 10.387,
+    "end": 15.012,
+    "narration": "Garage sale items are typically priced far below online market value.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a price tag icon dropping from five dollars to zero on a solid yellow background"
+    },
+    "w": 1280,
+    "h": 853,
+    "hash": "1ee068f8822c"
+   },
+   {
+    "id": "v4",
+    "start": 15.012,
+    "end": 19.387,
+    "narration": "Local yard finds sit quietly right next to massive global demand.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a small cardboard box next to a glowing world map icon on a solid purple backdrop"
+    },
+    "w": 1280,
+    "h": 1006,
+    "hash": "3f1d3b99c00a"
+   },
+   {
+    "id": "v5",
+    "start": 19.387,
+    "end": 25.062,
+    "narration": "Online resale platforms allow local items to reach international collectors instantly.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup displaying a shipping route connecting a small town to a giant globe"
+    },
+    "w": 1280,
+    "h": 853,
+    "hash": "2861a93579c0"
+   },
+   {
+    "id": "v6",
+    "start": 25.062,
+    "end": 30.163,
+    "narration": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a vintage headphone icon pulsing with bright neon waves on a solid teal background"
+    },
+    "w": 1280,
+    "h": 768,
+    "hash": "392bc069c94e"
+   },
+   {
+    "id": "v7",
+    "start": 30.163,
+    "end": 34.388,
+    "narration": "Buyers across the planet search every day for working vintage gear.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a search bar filled with retro audio tags on a clean white backdrop"
+    },
+    "w": 1280,
+    "h": 853,
+    "hash": "ce5dfa53b32c"
+   },
+   {
+    "id": "v8",
+    "start": 34.388,
+    "end": 38.975,
+    "narration": "A tiny five dollar bill turns into serious profit when moved online.",
+    "kind": "ai_video",
+    "src": "assets/clip_08.mp4",
+    "duration": 4.06,
+    "still": "assets/img_08.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Playful 2D flat illustration of a small banknote transforming into a stack of golden coins on a solid mint background",
+     "motion": "Fast camera pan across the multiplying coins as they stack up high.",
+     "still": "flux"
+    },
+    "hash": "145000d17793"
+   },
+   {
+    "id": "v9",
+    "start": 38.975,
+    "end": 43.464,
+    "narration": "Vintage tech creates huge resale profit when shifted to a global market.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup highlighting a profit margin arrow shooting straight up on a vibrant orange backdrop"
+    },
+    "w": 1280,
+    "h": 850,
+    "hash": "a523fbed45c5"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.075,
+     "end": 0.125
+    },
+    {
+     "word": "nineteen",
+     "start": 0.138,
+     "end": 0.6
+    },
+    {
+     "word": "eighty-five",
+     "start": 0.613,
+     "end": 1.087
+    },
+    {
+     "word": "Sony",
+     "start": 1.1,
+     "end": 1.413
+    },
+    {
+     "word": "Walkman",
+     "start": 1.425,
+     "end": 1.863
+    },
+    {
+     "word": "sat",
+     "start": 1.875,
+     "end": 2.263
+    },
+    {
+     "word": "in",
+     "start": 2.275,
+     "end": 2.4
+    },
+    {
+     "word": "a",
+     "start": 2.413,
+     "end": 2.487
+    },
+    {
+     "word": "dusty",
+     "start": 2.5,
+     "end": 2.825
+    },
+    {
+     "word": "box",
+     "start": 2.837,
+     "end": 3.237
+    },
+    {
+     "word": "labeled",
+     "start": 3.25,
+     "end": 3.6
+    },
+    {
+     "word": "five",
+     "start": 3.612,
+     "end": 3.875
+    },
+    {
+     "word": "dollars",
+     "start": 3.888,
+     "end": 4.362
+    },
+    {
+     "word": "at",
+     "start": 4.375,
+     "end": 4.513
+    },
+    {
+     "word": "a",
+     "start": 4.525,
+     "end": 4.588
+    },
+    {
+     "word": "garage",
+     "start": 4.6,
+     "end": 5.013
+    },
+    {
+     "word": "sale.",
+     "start": 5.025,
+     "end": 5.475
+    },
+    {
+     "word": "Most",
+     "start": 5.875,
+     "end": 6.138
+    },
+    {
+     "word": "people",
+     "start": 6.15,
+     "end": 6.463
+    },
+    {
+     "word": "assume",
+     "start": 6.475,
+     "end": 6.85
+    },
+    {
+     "word": "old",
+     "start": 6.862,
+     "end": 7.088
+    },
+    {
+     "word": "gadgets",
+     "start": 7.1,
+     "end": 7.638
+    },
+    {
+     "word": "are",
+     "start": 7.65,
+     "end": 7.862
+    },
+    {
+     "word": "worthless",
+     "start": 7.875,
+     "end": 8.35
+    },
+    {
+     "word": "junk",
+     "start": 8.363,
+     "end": 8.738
+    },
+    {
+     "word": "destined",
+     "start": 8.75,
+     "end": 9.213
+    },
+    {
+     "word": "for",
+     "start": 9.225,
+     "end": 9.338
+    },
+    {
+     "word": "the",
+     "start": 9.35,
+     "end": 9.412
+    },
+    {
+     "word": "trash.",
+     "start": 9.425,
+     "end": 9.988
+    },
+    {
+     "word": "Garage",
+     "start": 10.387,
+     "end": 10.787
+    },
+    {
+     "word": "sale",
+     "start": 10.8,
+     "end": 11.15
+    },
+    {
+     "word": "items",
+     "start": 11.162,
+     "end": 11.575
+    },
+    {
+     "word": "are",
+     "start": 11.588,
+     "end": 11.725
+    },
+    {
+     "word": "typically",
+     "start": 11.738,
+     "end": 12.175
+    },
+    {
+     "word": "priced",
+     "start": 12.188,
+     "end": 12.6
+    },
+    {
+     "word": "far",
+     "start": 12.613,
+     "end": 12.9
+    },
+    {
+     "word": "below",
+     "start": 12.912,
+     "end": 13.363
+    },
+    {
+     "word": "online",
+     "start": 13.375,
+     "end": 13.8
+    },
+    {
+     "word": "market",
+     "start": 13.812,
+     "end": 14.113
+    },
+    {
+     "word": "value.",
+     "start": 14.125,
+     "end": 14.613
+    },
+    {
+     "word": "Local",
+     "start": 15.012,
+     "end": 15.35
+    },
+    {
+     "word": "yard",
+     "start": 15.363,
+     "end": 15.725
+    },
+    {
+     "word": "finds",
+     "start": 15.738,
+     "end": 16.137
+    },
+    {
+     "word": "sit",
+     "start": 16.15,
+     "end": 16.425
+    },
+    {
+     "word": "quietly",
+     "start": 16.438,
+     "end": 16.938
+    },
+    {
+     "word": "right",
+     "start": 16.95,
+     "end": 17.275
+    },
+    {
+     "word": "next",
+     "start": 17.288,
+     "end": 17.575
+    },
+    {
+     "word": "to",
+     "start": 17.587,
+     "end": 17.663
+    },
+    {
+     "word": "massive",
+     "start": 17.675,
+     "end": 18.087
+    },
+    {
+     "word": "global",
+     "start": 18.1,
+     "end": 18.45
+    },
+    {
+     "word": "demand.",
+     "start": 18.462,
+     "end": 18.988
+    },
+    {
+     "word": "Online",
+     "start": 19.387,
+     "end": 19.863
+    },
+    {
+     "word": "resale",
+     "start": 19.875,
+     "end": 20.275
+    },
+    {
+     "word": "platforms",
+     "start": 20.288,
+     "end": 21.0
+    },
+    {
+     "word": "allow",
+     "start": 21.025,
+     "end": 21.4
+    },
+    {
+     "word": "local",
+     "start": 21.413,
+     "end": 21.837
+    },
+    {
+     "word": "items",
+     "start": 21.85,
+     "end": 22.262
+    },
+    {
+     "word": "to",
+     "start": 22.275,
+     "end": 22.4
+    },
+    {
+     "word": "reach",
+     "start": 22.413,
+     "end": 22.738
+    },
+    {
+     "word": "international",
+     "start": 22.762,
+     "end": 23.425
+    },
+    {
+     "word": "collectors",
+     "start": 23.438,
+     "end": 23.975
+    },
+    {
+     "word": "instantly.",
+     "start": 23.988,
+     "end": 24.663
+    },
+    {
+     "word": "Nostalgia",
+     "start": 25.062,
+     "end": 25.6
+    },
+    {
+     "word": "trends",
+     "start": 25.613,
+     "end": 26.087
+    },
+    {
+     "word": "drive",
+     "start": 26.1,
+     "end": 26.462
+    },
+    {
+     "word": "high",
+     "start": 26.475,
+     "end": 26.725
+    },
+    {
+     "word": "demand",
+     "start": 26.738,
+     "end": 27.225
+    },
+    {
+     "word": "for",
+     "start": 27.238,
+     "end": 27.55
+    },
+    {
+     "word": "original",
+     "start": 27.575,
+     "end": 28.113
+    },
+    {
+     "word": "nineteen",
+     "start": 28.125,
+     "end": 28.587
+    },
+    {
+     "word": "eighties",
+     "start": 28.6,
+     "end": 28.925
+    },
+    {
+     "word": "electronics.",
+     "start": 28.938,
+     "end": 29.762
+    },
+    {
+     "word": "Buyers",
+     "start": 30.163,
+     "end": 30.613
+    },
+    {
+     "word": "across",
+     "start": 30.625,
+     "end": 31.087
+    },
+    {
+     "word": "the",
+     "start": 31.1,
+     "end": 31.188
+    },
+    {
+     "word": "planet",
+     "start": 31.2,
+     "end": 31.562
+    },
+    {
+     "word": "search",
+     "start": 31.575,
+     "end": 32.013
+    },
+    {
+     "word": "every",
+     "start": 32.038,
+     "end": 32.337
+    },
+    {
+     "word": "day",
+     "start": 32.35,
+     "end": 32.65
+    },
+    {
+     "word": "for",
+     "start": 32.663,
+     "end": 32.862
+    },
+    {
+     "word": "working",
+     "start": 32.875,
+     "end": 33.225
+    },
+    {
+     "word": "vintage",
+     "start": 33.237,
+     "end": 33.625
+    },
+    {
+     "word": "gear.",
+     "start": 33.638,
+     "end": 34.025
+    },
+    {
+     "word": "A",
+     "start": 34.388,
+     "end": 34.487
+    },
+    {
+     "word": "tiny",
+     "start": 34.5,
+     "end": 34.825
+    },
+    {
+     "word": "five",
+     "start": 34.837,
+     "end": 35.1
+    },
+    {
+     "word": "dollar",
+     "start": 35.112,
+     "end": 35.462
+    },
+    {
+     "word": "bill",
+     "start": 35.475,
+     "end": 35.688
+    },
+    {
+     "word": "turns",
+     "start": 35.7,
+     "end": 36.15
+    },
+    {
+     "word": "into",
+     "start": 36.163,
+     "end": 36.413
+    },
+    {
+     "word": "serious",
+     "start": 36.425,
+     "end": 36.9
+    },
+    {
+     "word": "profit",
+     "start": 36.913,
+     "end": 37.425
+    },
+    {
+     "word": "when",
+     "start": 37.438,
+     "end": 37.612
+    },
+    {
+     "word": "moved",
+     "start": 37.625,
+     "end": 37.938
+    },
+    {
+     "word": "online.",
+     "start": 37.95,
+     "end": 38.575
+    },
+    {
+     "word": "Vintage",
+     "start": 38.975,
+     "end": 39.413
+    },
+    {
+     "word": "tech",
+     "start": 39.425,
+     "end": 39.663
+    },
+    {
+     "word": "creates",
+     "start": 39.675,
+     "end": 40.062
+    },
+    {
+     "word": "huge",
+     "start": 40.075,
+     "end": 40.475
+    },
+    {
+     "word": "resale",
+     "start": 40.487,
+     "end": 40.862
+    },
+    {
+     "word": "profit",
+     "start": 40.875,
+     "end": 41.375
+    },
+    {
+     "word": "when",
+     "start": 41.388,
+     "end": 41.538
+    },
+    {
+     "word": "shifted",
+     "start": 41.55,
+     "end": 41.987
+    },
+    {
+     "word": "to",
+     "start": 42.0,
+     "end": 42.112
+    },
+    {
+     "word": "a",
+     "start": 42.125,
+     "end": 42.188
+    },
+    {
+     "word": "global",
+     "start": 42.2,
+     "end": 42.562
+    },
+    {
+     "word": "market.",
+     "start": 42.575,
+     "end": 43.1
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-BrianMultilingualNeural",
+     "rate": "+0%",
+     "text": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale. Most people assume old gadgets are worthless junk destined for the trash. Garage sale items are typically priced far below online market value. Local yard finds sit quietly right next to massive global demand. Online resale platforms allow local items to reach international collectors instantly. Nostalgia trends drive high demand for original nineteen eighties electronics. Buyers across the planet search every day for working vintage gear. A tiny five dollar bill turns into serious profit when moved online. Vintage tech creates huge resale profit when shifted to a global market."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.83,
+    "src": "assets/img_01.jpg",
+    "cutout": null,
+    "text": "nineteen",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.83,
+    "opacity": 0.5,
+    "seed": 3.82
+   },
+   {
+    "id": "ly3",
+    "kind": "color-wash",
+    "anchor": "v2",
+    "delay": 0.0,
+    "start": 5.88,
+    "end": 10.34,
+    "opacity": 0.45,
+    "seed": 5.43
+   },
+   {
+    "id": "ly4",
+    "kind": "draw-line",
+    "anchor": "v3",
+    "delay": 0.5,
+    "start": 10.89,
+    "end": 14.96,
+    "shape": "bracket",
+    "x": 0.25,
+    "y": 0.38,
+    "w": 0.5
+   },
+   {
+    "id": "ly5",
+    "kind": "color-wash",
+    "anchor": "v4",
+    "delay": 0.0,
+    "start": 15.01,
+    "end": 19.34,
+    "opacity": 0.45,
+    "seed": 1.2
+   },
+   {
+    "id": "ly6",
+    "kind": "draw-line",
+    "anchor": "v5",
+    "delay": 0.5,
+    "start": 19.89,
+    "end": 25.01,
+    "shape": "bracket",
+    "x": 0.25,
+    "y": 0.38,
+    "w": 0.5
+   },
+   {
+    "id": "ly7",
+    "kind": "color-wash",
+    "anchor": "v6",
+    "delay": 0.0,
+    "start": 25.06,
+    "end": 30.11,
+    "opacity": 0.45,
+    "seed": 0.73
+   },
+   {
+    "id": "ly8",
+    "kind": "route-map",
+    "anchor": "v7",
+    "delay": 0.1,
+    "start": 30.26,
+    "end": 34.34,
+    "from": [
+     0.2,
+     0.6365559159827191
+    ],
+    "to": [
+     0.8,
+     0.3834440840172809
+    ],
+    "via": [
+     0.5,
+     0.84
+    ]
+   },
+   {
+    "id": "ly9",
+    "kind": "icon-pop",
+    "anchor": "v9",
+    "delay": 0.2,
+    "start": 39.18,
+    "end": 43.41,
+    "icon": "coin",
+    "x": 0.47,
+    "y": 0.22
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794239818862,
+  "updated": 1794239819261,
+  "topic": "that teach people how to money buying and selling old used items",
+  "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-5-dollar-thrift-store-goldmine-mw9fzbsz",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "5 Dollar Thrift Store Goldmine",
+   "topic": "that teach people how to money buying and selling old used items",
+   "voice": "en-US-BrianMultilingualNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"A nineteen eighty-five Sony Walkman...\"): this is the hook, so it needs weight. I am setting NINETEEN huge behind the subject (no cutout yet, using a soft mask) and pushing in slowly, under a moving colour wash.",
+   "Beat 2 (\"Most people assume old gadgets are ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 3 (\"Garage sale items are typically pri...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 4 (\"Local yard finds sit quietly right ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 5 (\"Online resale platforms allow local...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 6 (\"Nostalgia trends drive high demand ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 7 (\"Buyers across the planet search eve...\"): this is about movement, so I am drawing a route across a map grid with a travelling dot.",
+   "Beat 8 (\"A tiny five dollar bill turns into ...\"): nothing new to add here. I am letting the picture breathe.",
+   "Beat 9 (\"Vintage tech creates huge resale pr...\"): this beat is about 'coin', so I am popping a 'coin' icon in."
+  ]
+ }
+}

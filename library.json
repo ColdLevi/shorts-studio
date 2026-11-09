@@ -375,6 +375,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-37",
+      "title": "5 Dollar Thrift Store Goldmine",
+      "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+      "accent": "#2EE6C5",
+      "duration": 44.3,
+      "created": 1794239993869,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-37/short-37.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-37/short-37.jpg",
+      "project": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
