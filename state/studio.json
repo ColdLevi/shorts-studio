@@ -1,7 +1,7 @@
 {
-  "last_update": 312538367,
-  "time": 1794294180146,
-  "stage": "pitch",
+  "last_update": 312538368,
+  "time": 1794294242611,
+  "stage": "script",
   "topic": "for how easy it is to buy beer like a funny comparison of the old days and now then also it",
   "research": {
     "text": "",
@@ -25,16 +25,74 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Buying Beer Is Too Easy Now",
+    "beats": [
+      {
+        "narration": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack,",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, a nervous teenager holding a fake ID outside a convenience store at night",
+        "tool": "higgsfield",
+        "motion": "The camera slowly pushes in on the nervous teenager holding a fake ID.",
+        "still": "flux"
+      },
+      {
+        "narration": "because getting alcohol back then required high stakes espionage and sheer luck, but",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, dimly lit convenience store counter with an old cash register and beer displays",
+        "tool": "flux"
+      },
+      {
+        "narration": "today an app brings it to your sofa before you finish tying your shoes,",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, glowing smartphone screen displaying a food and alcohol delivery app in a modern living room",
+        "tool": "flux"
+      },
+      {
+        "narration": "so nobody has to endure the absolute humiliation of walking to a physical gas station,",
+        "image_prompt": "1980s retro photo, VHS tape, neon colors, film grain, empty retro gas station exterior under buzzing fluorescent lights",
+        "tool": "stock",
+        "query": "gas station night"
+      },
+      {
+        "narration": "and facing an unimpressed clerk checking cash only purchases.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, bored store clerk leaning against a counter with neon signs in the window",
+        "tool": "flux"
+      },
+      {
+        "narration": "Instead, modern delivery services operate late into the night with automated tracking,",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, modern smartphone showing a live delivery map with a moving car icon",
+        "tool": "flux"
+      },
+      {
+        "narration": "letting customers order instantly through a smartphone without ever standing up.",
+        "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, person relaxing on a vintage sofa tapping a glowing phone screen",
+        "tool": "higgsfield",
+        "motion": "The camera pans slightly across the room as the phone screen glows brightly.",
+        "still": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "A seventeen year old teenager trying to sneak some beer in the old days faced strict age verification and cash only purchases",
+        "supported": true
+      },
+      {
+        "claim": "Modern delivery apps let customers order beer instantly through a smartphone",
+        "supported": true
+      },
+      {
+        "claim": "Old school beer buying required walking to a physical convenience store or gas station",
+        "supported": true
+      },
+      {
+        "claim": "Current alcohol delivery services operate late into the night with automated tracking",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Proposed edit to \"5 Dollar Thrift Store Goldmine\": Added dynamic camera motion and updated scene visuals to match the ideas better",
-      "t": 1794240179302
-    },
     {
       "role": "user",
       "text": "/short",
@@ -109,6 +167,11 @@
       "role": "bot",
       "text": "Pitched \"Buying Beer Is Too Easy Now\": A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
       "t": 1794294180146
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Buying Beer Is Too Easy Now\"",
+      "t": 1794294242611
     }
   ],
   "working": null,
@@ -2501,6 +2564,6 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "host",
-  "editing": true
+  "narr_pick": "sharp",
+  "editing": false
 }
