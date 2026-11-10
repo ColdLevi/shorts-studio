@@ -417,6 +417,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-40",
+      "title": "Cheese the 90s Fast",
+      "hook": "A neon cassette spins in a dark room.",
+      "accent": "#2EE6C5",
+      "duration": 67.1,
+      "created": 1794304295170,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-40/short-40.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-40/short-40.jpg",
+      "project": "cheese-the-90s-fast-mwai2n89",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }

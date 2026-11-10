@@ -1,0 +1,1483 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "cheese-the-90s-fast-mwai2n89",
+ "rev": 1,
+ "title": "Cheese the 90s Fast",
+ "duration": 67.06,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 1.902,
+    "narration": "A neon cassette spins in a dark room,",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "clean flat vector illustration of a glowing neon cassette tape spinning on a dark background, bold simple shapes, high contrast",
+     "motion": "Slow rotation of the cassette with pulsing neon glow lighting effects.",
+     "still": "flux"
+    },
+    "hash": "3bd8735aba20"
+   },
+   {
+    "id": "v2",
+    "start": 1.902,
+    "end": 4.762,
+    "narration": "because creators assume nineties vibes are totally overused,",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a vintage television showing abstract static lines, dark background, bold simple shapes, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "b2dc08c525d1"
+   },
+   {
+    "id": "v3",
+    "start": 4.762,
+    "end": 8.875,
+    "narration": "but neon color palettes actually dominated MTV branding throughout the nineteen nineties,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a glowing retro music television logo with vibrant teal and pink tones on a dark background"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "e9dfe47ffd40"
+   },
+   {
+    "id": "v4",
+    "start": 8.875,
+    "end": 11.873,
+    "narration": "so adding bright primary shades instantly revives that era,",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of bold abstract geometric shapes in bright teal and orange, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "f1cca3323a7e"
+   },
+   {
+    "id": "v5",
+    "start": 11.873,
+    "end": 16.271,
+    "narration": "and VHS tapes were the primary home video format from nineteen ninety to nineteen ninety nine,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a chunky black video cassette tape with a bright teal label, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "cd1192e639ba"
+   },
+   {
+    "id": "v6",
+    "start": 16.271,
+    "end": 20.083,
+    "narration": "meaning every digital clip needs that distinct analog grain to feel authentic,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a computer monitor with horizontal scanlines and a glowing teal frame on a dark background"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "88bdb3066c01"
+   },
+   {
+    "id": "v7",
+    "start": 20.083,
+    "end": 24.931,
+    "narration": "because dial up modems peaked at fifty six kbps in nineteen ninety five,",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of an old desktop computer connected to a chunky modem with glowing cables, dark background"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "a2fe2006d035"
+   },
+   {
+    "id": "v8",
+    "start": 24.931,
+    "end": 27.518,
+    "narration": "producing that iconic connection sound everyone remembers,",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of sound wave frequency lines glowing in bright teal against a dark background, bold simple shapes"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7c741490559b"
+   },
+   {
+    "id": "v9",
+    "start": 27.518,
+    "end": 30.728,
+    "narration": "so layering audio static transforms a modern edit immediately,",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a vintage audio mixing board with bright neon sliders, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "6c414405835e"
+   },
+   {
+    "id": "v10",
+    "start": 30.728,
+    "end": 35.663,
+    "narration": "while pixel art rose straight from early console games like Super Mario World released in nineteen ninety,",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a pixelated arcade game coin floating above a block, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "adf90c4fef9c"
+   },
+   {
+    "id": "v11",
+    "start": 35.663,
+    "end": 38.251,
+    "narration": "giving modern transitions a blocky retro texture,",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a retro video game health bar with glowing squares, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "badaf748edc9"
+   },
+   {
+    "id": "v12",
+    "start": 38.251,
+    "end": 41.501,
+    "narration": "so you skip boring filters and build real nostalgia from scratch,",
+    "kind": "ai_video",
+    "src": "assets/clip_12.mp4",
+    "duration": 4.06,
+    "still": "assets/img_12.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "clean flat vector illustration of a glowing neon pencil sketching a retro game controller, dark background, high contrast",
+     "motion": "Camera zooms in smoothly on the glowing controller as lines flash.",
+     "still": "flux"
+    },
+    "hash": "2e7479f89ceb"
+   },
+   {
+    "id": "v13",
+    "start": 41.501,
+    "end": 44.3,
+    "narration": "because throwing random effects at a timeline wastes hours,",
+    "kind": "image",
+    "src": "assets/img_13.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a confused robot sitting in front of a messy computer screen, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "166b9ceca3da"
+   },
+   {
+    "id": "v14",
+    "start": 44.3,
+    "end": 48.061,
+    "narration": "while a targeted retro color grade fixes your pacing instantly,",
+    "kind": "image",
+    "src": "assets/img_14.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a video timeline slider snapping neatly into place, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "05e5eed6be93"
+   },
+   {
+    "id": "v15",
+    "start": 48.061,
+    "end": 52.931,
+    "narration": "and mixing MTV neon with chunky pixel fonts creates an elite visual contrast,",
+    "kind": "image",
+    "src": "assets/img_15.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of bold typography spelling retro in bright teal against a dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "f17716cd2139"
+   },
+   {
+    "id": "v16",
+    "start": 52.931,
+    "end": 55.428,
+    "narration": "so your viewers stop scrolling to watch the whole loop,",
+    "kind": "image",
+    "src": "assets/img_16.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a smartphone screen displaying a glowing heart icon, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "bc6200d7a196"
+   },
+   {
+    "id": "v17",
+    "start": 55.428,
+    "end": 58.0,
+    "narration": "because nobody clicks away from clean nostalgic design,",
+    "kind": "image",
+    "src": "assets/img_17.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of an old handheld gaming console glowing brightly in the dark, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "2e7540841306"
+   },
+   {
+    "id": "v18",
+    "start": 58.0,
+    "end": 60.713,
+    "narration": "and applying these three simple tricks takes less than two minutes,",
+    "kind": "image",
+    "src": "assets/img_18.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a digital stopwatch counting down with teal numbers, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "2bb8b32a68f5"
+   },
+   {
+    "id": "v19",
+    "start": 60.713,
+    "end": 62.998,
+    "narration": "so open your editor right now and test them out,",
+    "kind": "image",
+    "src": "assets/img_19.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a computer mouse clicking a glowing play button, dark background, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7a5fdcff8ce2"
+   },
+   {
+    "id": "v20",
+    "start": 62.998,
+    "end": 66.264,
+    "narration": "because your next upload deserves that vintage nineties magic.",
+    "kind": "image",
+    "src": "assets/img_20.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration of a glowing neon star bursting on a dark background, bold simple shapes, high contrast"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "b7d376c89848"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.087,
+     "end": 0.15
+    },
+    {
+     "word": "neon",
+     "start": 0.163,
+     "end": 0.487
+    },
+    {
+     "word": "cassette",
+     "start": 0.5,
+     "end": 0.812
+    },
+    {
+     "word": "spins",
+     "start": 0.825,
+     "end": 1.188
+    },
+    {
+     "word": "in",
+     "start": 1.2,
+     "end": 1.288
+    },
+    {
+     "word": "a",
+     "start": 1.3,
+     "end": 1.363
+    },
+    {
+     "word": "dark",
+     "start": 1.375,
+     "end": 1.675
+    },
+    {
+     "word": "room,",
+     "start": 1.688,
+     "end": 1.938
+    },
+    {
+     "word": "because",
+     "start": 1.962,
+     "end": 2.2
+    },
+    {
+     "word": "creators",
+     "start": 2.212,
+     "end": 2.575
+    },
+    {
+     "word": "assume",
+     "start": 2.587,
+     "end": 2.875
+    },
+    {
+     "word": "nineties",
+     "start": 2.888,
+     "end": 3.2
+    },
+    {
+     "word": "vibes",
+     "start": 3.212,
+     "end": 3.513
+    },
+    {
+     "word": "are",
+     "start": 3.525,
+     "end": 3.587
+    },
+    {
+     "word": "totally",
+     "start": 3.6,
+     "end": 3.962
+    },
+    {
+     "word": "overused,",
+     "start": 3.975,
+     "end": 4.662
+    },
+    {
+     "word": "but",
+     "start": 4.822,
+     "end": 5.022
+    },
+    {
+     "word": "neon",
+     "start": 5.035,
+     "end": 5.31
+    },
+    {
+     "word": "color",
+     "start": 5.322,
+     "end": 5.572
+    },
+    {
+     "word": "palettes",
+     "start": 5.585,
+     "end": 5.985
+    },
+    {
+     "word": "actually",
+     "start": 5.998,
+     "end": 6.285
+    },
+    {
+     "word": "dominated",
+     "start": 6.298,
+     "end": 6.81
+    },
+    {
+     "word": "MTV",
+     "start": 6.822,
+     "end": 7.26
+    },
+    {
+     "word": "branding",
+     "start": 7.272,
+     "end": 7.635
+    },
+    {
+     "word": "throughout",
+     "start": 7.647,
+     "end": 7.898
+    },
+    {
+     "word": "the",
+     "start": 7.91,
+     "end": 7.96
+    },
+    {
+     "word": "nineteen",
+     "start": 7.973,
+     "end": 8.285
+    },
+    {
+     "word": "nineties,",
+     "start": 8.297,
+     "end": 8.76
+    },
+    {
+     "word": "so",
+     "start": 8.935,
+     "end": 9.172
+    },
+    {
+     "word": "adding",
+     "start": 9.185,
+     "end": 9.447
+    },
+    {
+     "word": "bright",
+     "start": 9.46,
+     "end": 9.697
+    },
+    {
+     "word": "primary",
+     "start": 9.71,
+     "end": 10.072
+    },
+    {
+     "word": "shades",
+     "start": 10.085,
+     "end": 10.422
+    },
+    {
+     "word": "instantly",
+     "start": 10.435,
+     "end": 10.835
+    },
+    {
+     "word": "revives",
+     "start": 10.847,
+     "end": 11.223
+    },
+    {
+     "word": "that",
+     "start": 11.235,
+     "end": 11.435
+    },
+    {
+     "word": "era,",
+     "start": 11.447,
+     "end": 11.773
+    },
+    {
+     "word": "and",
+     "start": 11.933,
+     "end": 12.158
+    },
+    {
+     "word": "VHS",
+     "start": 12.171,
+     "end": 12.596
+    },
+    {
+     "word": "tapes",
+     "start": 12.609,
+     "end": 12.946
+    },
+    {
+     "word": "were",
+     "start": 12.958,
+     "end": 13.046
+    },
+    {
+     "word": "the",
+     "start": 13.058,
+     "end": 13.146
+    },
+    {
+     "word": "primary",
+     "start": 13.158,
+     "end": 13.533
+    },
+    {
+     "word": "home",
+     "start": 13.546,
+     "end": 13.734
+    },
+    {
+     "word": "video",
+     "start": 13.746,
+     "end": 13.996
+    },
+    {
+     "word": "format",
+     "start": 14.009,
+     "end": 14.433
+    },
+    {
+     "word": "from",
+     "start": 14.446,
+     "end": 14.571
+    },
+    {
+     "word": "nineteen",
+     "start": 14.584,
+     "end": 14.884
+    },
+    {
+     "word": "ninety",
+     "start": 14.896,
+     "end": 15.158
+    },
+    {
+     "word": "to",
+     "start": 15.171,
+     "end": 15.259
+    },
+    {
+     "word": "nineteen",
+     "start": 15.271,
+     "end": 15.558
+    },
+    {
+     "word": "ninety",
+     "start": 15.571,
+     "end": 15.783
+    },
+    {
+     "word": "nine,",
+     "start": 15.796,
+     "end": 16.171
+    },
+    {
+     "word": "meaning",
+     "start": 16.331,
+     "end": 16.605
+    },
+    {
+     "word": "every",
+     "start": 16.618,
+     "end": 16.868
+    },
+    {
+     "word": "digital",
+     "start": 16.881,
+     "end": 17.193
+    },
+    {
+     "word": "clip",
+     "start": 17.206,
+     "end": 17.48
+    },
+    {
+     "word": "needs",
+     "start": 17.493,
+     "end": 17.706
+    },
+    {
+     "word": "that",
+     "start": 17.718,
+     "end": 17.881
+    },
+    {
+     "word": "distinct",
+     "start": 17.893,
+     "end": 18.305
+    },
+    {
+     "word": "analog",
+     "start": 18.318,
+     "end": 18.73
+    },
+    {
+     "word": "grain",
+     "start": 18.743,
+     "end": 19.018
+    },
+    {
+     "word": "to",
+     "start": 19.031,
+     "end": 19.118
+    },
+    {
+     "word": "feel",
+     "start": 19.131,
+     "end": 19.355
+    },
+    {
+     "word": "authentic,",
+     "start": 19.368,
+     "end": 19.943
+    },
+    {
+     "word": "because",
+     "start": 20.143,
+     "end": 20.468
+    },
+    {
+     "word": "dial",
+     "start": 20.48,
+     "end": 20.855
+    },
+    {
+     "word": "up",
+     "start": 20.868,
+     "end": 21.055
+    },
+    {
+     "word": "modems",
+     "start": 21.068,
+     "end": 21.593
+    },
+    {
+     "word": "peaked",
+     "start": 21.605,
+     "end": 21.98
+    },
+    {
+     "word": "at",
+     "start": 21.993,
+     "end": 22.18
+    },
+    {
+     "word": "fifty",
+     "start": 22.193,
+     "end": 22.493
+    },
+    {
+     "word": "six",
+     "start": 22.506,
+     "end": 22.781
+    },
+    {
+     "word": "kbps",
+     "start": 22.793,
+     "end": 23.568
+    },
+    {
+     "word": "in",
+     "start": 23.581,
+     "end": 23.718
+    },
+    {
+     "word": "nineteen",
+     "start": 23.73,
+     "end": 24.068
+    },
+    {
+     "word": "ninety",
+     "start": 24.081,
+     "end": 24.355
+    },
+    {
+     "word": "five,",
+     "start": 24.368,
+     "end": 24.831
+    },
+    {
+     "word": "producing",
+     "start": 24.991,
+     "end": 25.453
+    },
+    {
+     "word": "that",
+     "start": 25.465,
+     "end": 25.665
+    },
+    {
+     "word": "iconic",
+     "start": 25.678,
+     "end": 26.066
+    },
+    {
+     "word": "connection",
+     "start": 26.078,
+     "end": 26.491
+    },
+    {
+     "word": "sound",
+     "start": 26.503,
+     "end": 26.803
+    },
+    {
+     "word": "everyone",
+     "start": 26.816,
+     "end": 27.116
+    },
+    {
+     "word": "remembers,",
+     "start": 27.128,
+     "end": 27.553
+    },
+    {
+     "word": "so",
+     "start": 27.578,
+     "end": 27.766
+    },
+    {
+     "word": "layering",
+     "start": 27.778,
+     "end": 28.128
+    },
+    {
+     "word": "audio",
+     "start": 28.14,
+     "end": 28.428
+    },
+    {
+     "word": "static",
+     "start": 28.441,
+     "end": 28.778
+    },
+    {
+     "word": "transforms",
+     "start": 28.79,
+     "end": 29.316
+    },
+    {
+     "word": "a",
+     "start": 29.328,
+     "end": 29.378
+    },
+    {
+     "word": "modern",
+     "start": 29.39,
+     "end": 29.728
+    },
+    {
+     "word": "edit",
+     "start": 29.741,
+     "end": 30.003
+    },
+    {
+     "word": "immediately,",
+     "start": 30.016,
+     "end": 30.628
+    },
+    {
+     "word": "while",
+     "start": 30.788,
+     "end": 31.012
+    },
+    {
+     "word": "pixel",
+     "start": 31.025,
+     "end": 31.35
+    },
+    {
+     "word": "art",
+     "start": 31.363,
+     "end": 31.55
+    },
+    {
+     "word": "rose",
+     "start": 31.563,
+     "end": 31.762
+    },
+    {
+     "word": "straight",
+     "start": 31.775,
+     "end": 32.1
+    },
+    {
+     "word": "from",
+     "start": 32.113,
+     "end": 32.287
+    },
+    {
+     "word": "early",
+     "start": 32.3,
+     "end": 32.537
+    },
+    {
+     "word": "console",
+     "start": 32.55,
+     "end": 32.95
+    },
+    {
+     "word": "games",
+     "start": 32.963,
+     "end": 33.275
+    },
+    {
+     "word": "like",
+     "start": 33.287,
+     "end": 33.425
+    },
+    {
+     "word": "Super",
+     "start": 33.438,
+     "end": 33.737
+    },
+    {
+     "word": "Mario",
+     "start": 33.75,
+     "end": 34.063
+    },
+    {
+     "word": "World",
+     "start": 34.075,
+     "end": 34.375
+    },
+    {
+     "word": "released",
+     "start": 34.387,
+     "end": 34.737
+    },
+    {
+     "word": "in",
+     "start": 34.75,
+     "end": 34.813
+    },
+    {
+     "word": "nineteen",
+     "start": 34.825,
+     "end": 35.125
+    },
+    {
+     "word": "ninety,",
+     "start": 35.137,
+     "end": 35.563
+    },
+    {
+     "word": "giving",
+     "start": 35.723,
+     "end": 36.023
+    },
+    {
+     "word": "modern",
+     "start": 36.036,
+     "end": 36.323
+    },
+    {
+     "word": "transitions",
+     "start": 36.335,
+     "end": 36.873
+    },
+    {
+     "word": "a",
+     "start": 36.885,
+     "end": 36.948
+    },
+    {
+     "word": "blocky",
+     "start": 36.961,
+     "end": 37.286
+    },
+    {
+     "word": "retro",
+     "start": 37.298,
+     "end": 37.61
+    },
+    {
+     "word": "texture,",
+     "start": 37.623,
+     "end": 38.135
+    },
+    {
+     "word": "so",
+     "start": 38.311,
+     "end": 38.448
+    },
+    {
+     "word": "you",
+     "start": 38.461,
+     "end": 38.536
+    },
+    {
+     "word": "skip",
+     "start": 38.548,
+     "end": 38.823
+    },
+    {
+     "word": "boring",
+     "start": 38.835,
+     "end": 39.135
+    },
+    {
+     "word": "filters",
+     "start": 39.148,
+     "end": 39.623
+    },
+    {
+     "word": "and",
+     "start": 39.635,
+     "end": 39.748
+    },
+    {
+     "word": "build",
+     "start": 39.76,
+     "end": 40.023
+    },
+    {
+     "word": "real",
+     "start": 40.036,
+     "end": 40.223
+    },
+    {
+     "word": "nostalgia",
+     "start": 40.235,
+     "end": 40.723
+    },
+    {
+     "word": "from",
+     "start": 40.735,
+     "end": 40.86
+    },
+    {
+     "word": "scratch,",
+     "start": 40.873,
+     "end": 41.398
+    },
+    {
+     "word": "because",
+     "start": 41.561,
+     "end": 41.811
+    },
+    {
+     "word": "throwing",
+     "start": 41.823,
+     "end": 42.148
+    },
+    {
+     "word": "random",
+     "start": 42.161,
+     "end": 42.461
+    },
+    {
+     "word": "effects",
+     "start": 42.473,
+     "end": 42.835
+    },
+    {
+     "word": "at",
+     "start": 42.848,
+     "end": 42.911
+    },
+    {
+     "word": "a",
+     "start": 42.923,
+     "end": 42.973
+    },
+    {
+     "word": "timeline",
+     "start": 42.985,
+     "end": 43.385
+    },
+    {
+     "word": "wastes",
+     "start": 43.398,
+     "end": 43.698
+    },
+    {
+     "word": "hours,",
+     "start": 43.711,
+     "end": 44.148
+    },
+    {
+     "word": "while",
+     "start": 44.36,
+     "end": 44.598
+    },
+    {
+     "word": "a",
+     "start": 44.61,
+     "end": 44.686
+    },
+    {
+     "word": "targeted",
+     "start": 44.698,
+     "end": 45.211
+    },
+    {
+     "word": "retro",
+     "start": 45.223,
+     "end": 45.561
+    },
+    {
+     "word": "color",
+     "start": 45.573,
+     "end": 45.898
+    },
+    {
+     "word": "grade",
+     "start": 45.911,
+     "end": 46.248
+    },
+    {
+     "word": "fixes",
+     "start": 46.26,
+     "end": 46.711
+    },
+    {
+     "word": "your",
+     "start": 46.723,
+     "end": 46.848
+    },
+    {
+     "word": "pacing",
+     "start": 46.86,
+     "end": 47.273
+    },
+    {
+     "word": "instantly,",
+     "start": 47.286,
+     "end": 47.961
+    },
+    {
+     "word": "and",
+     "start": 48.121,
+     "end": 48.384
+    },
+    {
+     "word": "mixing",
+     "start": 48.396,
+     "end": 48.858
+    },
+    {
+     "word": "MTV",
+     "start": 48.871,
+     "end": 49.346
+    },
+    {
+     "word": "neon",
+     "start": 49.358,
+     "end": 49.746
+    },
+    {
+     "word": "with",
+     "start": 49.759,
+     "end": 50.083
+    },
+    {
+     "word": "chunky",
+     "start": 50.203,
+     "end": 50.541
+    },
+    {
+     "word": "pixel",
+     "start": 50.553,
+     "end": 50.891
+    },
+    {
+     "word": "fonts",
+     "start": 50.903,
+     "end": 51.254
+    },
+    {
+     "word": "creates",
+     "start": 51.266,
+     "end": 51.591
+    },
+    {
+     "word": "an",
+     "start": 51.604,
+     "end": 51.666
+    },
+    {
+     "word": "elite",
+     "start": 51.678,
+     "end": 51.966
+    },
+    {
+     "word": "visual",
+     "start": 51.979,
+     "end": 52.328
+    },
+    {
+     "word": "contrast,",
+     "start": 52.341,
+     "end": 52.966
+    },
+    {
+     "word": "so",
+     "start": 52.991,
+     "end": 53.129
+    },
+    {
+     "word": "your",
+     "start": 53.141,
+     "end": 53.266
+    },
+    {
+     "word": "viewers",
+     "start": 53.279,
+     "end": 53.604
+    },
+    {
+     "word": "stop",
+     "start": 53.616,
+     "end": 53.866
+    },
+    {
+     "word": "scrolling",
+     "start": 53.879,
+     "end": 54.303
+    },
+    {
+     "word": "to",
+     "start": 54.316,
+     "end": 54.403
+    },
+    {
+     "word": "watch",
+     "start": 54.416,
+     "end": 54.691
+    },
+    {
+     "word": "the",
+     "start": 54.703,
+     "end": 54.766
+    },
+    {
+     "word": "whole",
+     "start": 54.779,
+     "end": 54.979
+    },
+    {
+     "word": "loop,",
+     "start": 54.991,
+     "end": 55.328
+    },
+    {
+     "word": "because",
+     "start": 55.488,
+     "end": 55.713
+    },
+    {
+     "word": "nobody",
+     "start": 55.726,
+     "end": 56.001
+    },
+    {
+     "word": "clicks",
+     "start": 56.013,
+     "end": 56.263
+    },
+    {
+     "word": "away",
+     "start": 56.276,
+     "end": 56.501
+    },
+    {
+     "word": "from",
+     "start": 56.513,
+     "end": 56.663
+    },
+    {
+     "word": "clean",
+     "start": 56.675,
+     "end": 56.9
+    },
+    {
+     "word": "nostalgic",
+     "start": 56.913,
+     "end": 57.388
+    },
+    {
+     "word": "design,",
+     "start": 57.4,
+     "end": 57.9
+    },
+    {
+     "word": "and",
+     "start": 58.06,
+     "end": 58.236
+    },
+    {
+     "word": "applying",
+     "start": 58.248,
+     "end": 58.623
+    },
+    {
+     "word": "these",
+     "start": 58.636,
+     "end": 58.81
+    },
+    {
+     "word": "three",
+     "start": 58.823,
+     "end": 59.01
+    },
+    {
+     "word": "simple",
+     "start": 59.023,
+     "end": 59.298
+    },
+    {
+     "word": "tricks",
+     "start": 59.31,
+     "end": 59.636
+    },
+    {
+     "word": "takes",
+     "start": 59.648,
+     "end": 59.898
+    },
+    {
+     "word": "less",
+     "start": 59.91,
+     "end": 60.136
+    },
+    {
+     "word": "than",
+     "start": 60.148,
+     "end": 60.26
+    },
+    {
+     "word": "two",
+     "start": 60.273,
+     "end": 60.423
+    },
+    {
+     "word": "minutes,",
+     "start": 60.435,
+     "end": 60.748
+    },
+    {
+     "word": "so",
+     "start": 60.773,
+     "end": 60.998
+    },
+    {
+     "word": "open",
+     "start": 61.01,
+     "end": 61.248
+    },
+    {
+     "word": "your",
+     "start": 61.26,
+     "end": 61.386
+    },
+    {
+     "word": "editor",
+     "start": 61.398,
+     "end": 61.698
+    },
+    {
+     "word": "right",
+     "start": 61.711,
+     "end": 61.886
+    },
+    {
+     "word": "now",
+     "start": 61.898,
+     "end": 62.123
+    },
+    {
+     "word": "and",
+     "start": 62.136,
+     "end": 62.211
+    },
+    {
+     "word": "test",
+     "start": 62.223,
+     "end": 62.473
+    },
+    {
+     "word": "them",
+     "start": 62.485,
+     "end": 62.598
+    },
+    {
+     "word": "out,",
+     "start": 62.61,
+     "end": 62.898
+    },
+    {
+     "word": "because",
+     "start": 63.058,
+     "end": 63.27
+    },
+    {
+     "word": "your",
+     "start": 63.283,
+     "end": 63.383
+    },
+    {
+     "word": "next",
+     "start": 63.395,
+     "end": 63.658
+    },
+    {
+     "word": "upload",
+     "start": 63.67,
+     "end": 64.02
+    },
+    {
+     "word": "deserves",
+     "start": 64.033,
+     "end": 64.446
+    },
+    {
+     "word": "that",
+     "start": 64.458,
+     "end": 64.621
+    },
+    {
+     "word": "vintage",
+     "start": 64.633,
+     "end": 64.996
+    },
+    {
+     "word": "nineties",
+     "start": 65.008,
+     "end": 65.321
+    },
+    {
+     "word": "magic.",
+     "start": 65.333,
+     "end": 65.845
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-BrianNeural",
+     "rate": "+0%",
+     "text": "A neon cassette spins in a dark room, because creators assume nineties vibes are totally overused, but neon color palettes actually dominated MTV branding throughout the nineteen nineties, so adding bright primary shades instantly revives that era, and VHS tapes were the primary home video format from nineteen ninety to nineteen ninety nine, meaning every digital clip needs that distinct analog grain to feel authentic, because dial up modems peaked at fifty six kbps in nineteen ninety five, producing that iconic connection sound everyone remembers, so layering audio static transforms a modern edit immediately, while pixel art rose straight from early console games like Super Mario World released in nineteen ninety, giving modern transitions a blocky retro texture, so you skip boring filters and build real nostalgia from scratch, because throwing random effects at a timeline wastes hours, while a targeted retro color grade fixes your pacing instantly, and mixing MTV neon with chunky pixel fonts creates an elite visual contrast, so your viewers stop scrolling to watch the whole loop, because nobody clicks away from clean nostalgic design, and applying these three simple tricks takes less than two minutes, so open your editor right now and test them out, because your next upload deserves that vintage nineties magic."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 1.85,
+    "text": "cassette",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 1.85,
+    "opacity": 0.35,
+    "seed": 2.84
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794303830583,
+  "updated": 1794303831051,
+  "topic": "how to cheese the 90s, 9:16 format, purely",
+  "hook": "A neon cassette spins in a dark room.",
+  "image_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast",
+  "format": "vertical",
+  "assets_release": "project-cheese-the-90s-fast-mwai2n89",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A neon cassette spins in a dark room.",
+   "music": "tech-pulse",
+   "project_id": "cheese-the-90s-fast-mwai2n89",
+   "style": "clean flat vector illustration, bold simple shapes, dark background, high contrast",
+   "style_preset": "motion-explainer",
+   "title": "Cheese the 90s Fast",
+   "topic": "how to cheese the 90s, 9:16 format, purely",
+   "voice": "en-US-BrianNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"A neon cassette spins in a dark room,\"): the hook. No subject cutout, so I put CASSETTE in the top band where it cannot cover the face.",
+   "Left 19 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ]
+ }
+}
