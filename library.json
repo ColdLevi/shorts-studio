@@ -403,6 +403,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-39",
+      "title": "Buying Beer Is Too Easy Now",
+      "hook": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
+      "accent": "#FFD43B",
+      "duration": 32.4,
+      "created": 1794295479917,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-39/short-39.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-39/short-39.jpg",
+      "project": "buying-beer-is-too-easy-now-mwacj6yz",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

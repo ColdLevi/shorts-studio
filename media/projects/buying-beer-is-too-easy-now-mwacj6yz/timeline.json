@@ -1,0 +1,799 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "buying-beer-is-too-easy-now-mwacj6yz",
+ "rev": 1,
+ "title": "Buying Beer Is Too Easy Now",
+ "duration": 32.31,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "neon",
+   "font": "Rubik Mono One",
+   "weight": 400
+  },
+  "transition": {
+   "type": "blur",
+   "duration": 0.3
+  },
+  "motion": "kenburns",
+  "recipe": "retro-vhs",
+  "transitions": [
+   "blur",
+   "flash",
+   "slide-left",
+   "cut"
+  ],
+  "fx": {
+   "texture": "vhs",
+   "jitter": 2
+  },
+  "gfx": {
+   "scanlines": 0.4,
+   "grain": 0.16,
+   "chroma": 5,
+   "barrel": 0.08,
+   "vignette": 0.6
+  },
+  "backdrop": "grid",
+  "grade": "saturate(1.35) contrast(1.12) hue-rotate(-8deg)",
+  "font": "Rubik Mono One",
+  "preset": "retro-vhs",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.74,
+    "narration": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack,",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, a nervous teenager holding a fake ID outside a convenience store at night",
+     "motion": "The camera slowly pushes in on the nervous teenager holding a fake ID.",
+     "still": "flux"
+    },
+    "hash": "33d27c9bbb87"
+   },
+   {
+    "id": "v2",
+    "start": 5.74,
+    "end": 10.065,
+    "narration": "because getting alcohol back then required high stakes espionage and sheer luck, but",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, dimly lit convenience store counter with an old cash register and beer displays"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7364bc39cfd9"
+   },
+   {
+    "id": "v3",
+    "start": 10.065,
+    "end": 13.625,
+    "narration": "today an app brings it to your sofa before you finish tying your shoes,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, glowing smartphone screen displaying a food and alcohol delivery app in a modern living room"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "7838095a892b"
+   },
+   {
+    "id": "v4",
+    "start": 13.625,
+    "end": 18.26,
+    "narration": "so nobody has to endure the absolute humiliation of walking to a physical gas station,",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 4.93,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "1980s retro photo, VHS tape, neon colors, film grain, empty retro gas station exterior under buzzing fluorescent lights",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "bac4a7ac2934"
+   },
+   {
+    "id": "v5",
+    "start": 18.26,
+    "end": 21.84,
+    "narration": "and facing an unimpressed clerk checking cash only purchases.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, bored store clerk leaning against a counter with neon signs in the window"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "75439cbee48e"
+   },
+   {
+    "id": "v6",
+    "start": 21.84,
+    "end": 26.575,
+    "narration": "Instead, modern delivery services operate late into the night with automated tracking,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, modern smartphone showing a live delivery map with a moving car icon"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a67c995b54bb"
+   },
+   {
+    "id": "v7",
+    "start": 26.575,
+    "end": 31.512,
+    "narration": "letting customers order instantly through a smartphone without ever standing up.",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 4.06,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, person relaxing on a vintage sofa tapping a glowing phone screen",
+     "motion": "The camera pans slightly across the room as the phone screen glows brightly.",
+     "still": "flux"
+    },
+    "hash": "1279288c3232"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "seventeen",
+     "start": 0.263,
+     "end": 0.75
+    },
+    {
+     "word": "year",
+     "start": 0.762,
+     "end": 0.938
+    },
+    {
+     "word": "old",
+     "start": 0.95,
+     "end": 1.137
+    },
+    {
+     "word": "in",
+     "start": 1.15,
+     "end": 1.262
+    },
+    {
+     "word": "nineteen",
+     "start": 1.275,
+     "end": 1.712
+    },
+    {
+     "word": "eighty",
+     "start": 1.725,
+     "end": 1.962
+    },
+    {
+     "word": "five",
+     "start": 1.975,
+     "end": 2.3
+    },
+    {
+     "word": "needed",
+     "start": 2.312,
+     "end": 2.625
+    },
+    {
+     "word": "forged",
+     "start": 2.638,
+     "end": 2.975
+    },
+    {
+     "word": "ID",
+     "start": 2.987,
+     "end": 3.462
+    },
+    {
+     "word": "and",
+     "start": 3.475,
+     "end": 3.587
+    },
+    {
+     "word": "pure",
+     "start": 3.6,
+     "end": 3.875
+    },
+    {
+     "word": "panic",
+     "start": 3.888,
+     "end": 4.188
+    },
+    {
+     "word": "to",
+     "start": 4.2,
+     "end": 4.287
+    },
+    {
+     "word": "buy",
+     "start": 4.3,
+     "end": 4.513
+    },
+    {
+     "word": "a",
+     "start": 4.525,
+     "end": 4.6
+    },
+    {
+     "word": "warm",
+     "start": 4.612,
+     "end": 4.963
+    },
+    {
+     "word": "six",
+     "start": 4.975,
+     "end": 5.263
+    },
+    {
+     "word": "pack,",
+     "start": 5.275,
+     "end": 5.6
+    },
+    {
+     "word": "because",
+     "start": 5.8,
+     "end": 6.025
+    },
+    {
+     "word": "getting",
+     "start": 6.037,
+     "end": 6.4
+    },
+    {
+     "word": "alcohol",
+     "start": 6.412,
+     "end": 6.875
+    },
+    {
+     "word": "back",
+     "start": 6.888,
+     "end": 7.162
+    },
+    {
+     "word": "then",
+     "start": 7.175,
+     "end": 7.338
+    },
+    {
+     "word": "required",
+     "start": 7.35,
+     "end": 7.8
+    },
+    {
+     "word": "high",
+     "start": 7.812,
+     "end": 8.025
+    },
+    {
+     "word": "stakes",
+     "start": 8.037,
+     "end": 8.387
+    },
+    {
+     "word": "espionage",
+     "start": 8.4,
+     "end": 9.062
+    },
+    {
+     "word": "and",
+     "start": 9.075,
+     "end": 9.175
+    },
+    {
+     "word": "sheer",
+     "start": 9.188,
+     "end": 9.45
+    },
+    {
+     "word": "luck,",
+     "start": 9.463,
+     "end": 9.812
+    },
+    {
+     "word": "but",
+     "start": 10.0,
+     "end": 10.113
+    },
+    {
+     "word": "today",
+     "start": 10.125,
+     "end": 10.4
+    },
+    {
+     "word": "an",
+     "start": 10.412,
+     "end": 10.488
+    },
+    {
+     "word": "app",
+     "start": 10.5,
+     "end": 10.713
+    },
+    {
+     "word": "brings",
+     "start": 10.725,
+     "end": 11.012
+    },
+    {
+     "word": "it",
+     "start": 11.025,
+     "end": 11.125
+    },
+    {
+     "word": "to",
+     "start": 11.137,
+     "end": 11.2
+    },
+    {
+     "word": "your",
+     "start": 11.213,
+     "end": 11.363
+    },
+    {
+     "word": "sofa",
+     "start": 11.375,
+     "end": 11.787
+    },
+    {
+     "word": "before",
+     "start": 11.8,
+     "end": 12.075
+    },
+    {
+     "word": "you",
+     "start": 12.088,
+     "end": 12.225
+    },
+    {
+     "word": "finish",
+     "start": 12.238,
+     "end": 12.55
+    },
+    {
+     "word": "tying",
+     "start": 12.562,
+     "end": 12.85
+    },
+    {
+     "word": "your",
+     "start": 12.863,
+     "end": 13.012
+    },
+    {
+     "word": "shoes,",
+     "start": 13.025,
+     "end": 13.525
+    },
+    {
+     "word": "so",
+     "start": 13.685,
+     "end": 13.798
+    },
+    {
+     "word": "nobody",
+     "start": 13.81,
+     "end": 14.247
+    },
+    {
+     "word": "has",
+     "start": 14.26,
+     "end": 14.447
+    },
+    {
+     "word": "to",
+     "start": 14.46,
+     "end": 14.585
+    },
+    {
+     "word": "endure",
+     "start": 14.597,
+     "end": 14.935
+    },
+    {
+     "word": "the",
+     "start": 14.947,
+     "end": 15.097
+    },
+    {
+     "word": "absolute",
+     "start": 15.11,
+     "end": 15.635
+    },
+    {
+     "word": "humiliation",
+     "start": 15.648,
+     "end": 16.26
+    },
+    {
+     "word": "of",
+     "start": 16.272,
+     "end": 16.36
+    },
+    {
+     "word": "walking",
+     "start": 16.373,
+     "end": 16.723
+    },
+    {
+     "word": "to",
+     "start": 16.735,
+     "end": 16.86
+    },
+    {
+     "word": "a",
+     "start": 16.873,
+     "end": 16.923
+    },
+    {
+     "word": "physical",
+     "start": 16.935,
+     "end": 17.397
+    },
+    {
+     "word": "gas",
+     "start": 17.41,
+     "end": 17.673
+    },
+    {
+     "word": "station,",
+     "start": 17.685,
+     "end": 18.16
+    },
+    {
+     "word": "and",
+     "start": 18.32,
+     "end": 18.457
+    },
+    {
+     "word": "facing",
+     "start": 18.47,
+     "end": 18.895
+    },
+    {
+     "word": "an",
+     "start": 18.907,
+     "end": 18.97
+    },
+    {
+     "word": "unimpressed",
+     "start": 18.983,
+     "end": 19.532
+    },
+    {
+     "word": "clerk",
+     "start": 19.545,
+     "end": 19.87
+    },
+    {
+     "word": "checking",
+     "start": 19.882,
+     "end": 20.22
+    },
+    {
+     "word": "cash",
+     "start": 20.233,
+     "end": 20.545
+    },
+    {
+     "word": "only",
+     "start": 20.558,
+     "end": 20.845
+    },
+    {
+     "word": "purchases.",
+     "start": 20.858,
+     "end": 21.62
+    },
+    {
+     "word": "Instead,",
+     "start": 21.9,
+     "end": 22.462
+    },
+    {
+     "word": "modern",
+     "start": 22.675,
+     "end": 22.987
+    },
+    {
+     "word": "delivery",
+     "start": 22.999,
+     "end": 23.4
+    },
+    {
+     "word": "services",
+     "start": 23.412,
+     "end": 23.962
+    },
+    {
+     "word": "operate",
+     "start": 23.975,
+     "end": 24.374
+    },
+    {
+     "word": "late",
+     "start": 24.387,
+     "end": 24.662
+    },
+    {
+     "word": "into",
+     "start": 24.675,
+     "end": 24.9
+    },
+    {
+     "word": "the",
+     "start": 24.912,
+     "end": 24.999
+    },
+    {
+     "word": "night",
+     "start": 25.012,
+     "end": 25.35
+    },
+    {
+     "word": "with",
+     "start": 25.362,
+     "end": 25.487
+    },
+    {
+     "word": "automated",
+     "start": 25.499,
+     "end": 26.049
+    },
+    {
+     "word": "tracking,",
+     "start": 26.062,
+     "end": 26.475
+    },
+    {
+     "word": "letting",
+     "start": 26.635,
+     "end": 26.909
+    },
+    {
+     "word": "customers",
+     "start": 26.922,
+     "end": 27.422
+    },
+    {
+     "word": "order",
+     "start": 27.435,
+     "end": 27.734
+    },
+    {
+     "word": "instantly",
+     "start": 27.747,
+     "end": 28.247
+    },
+    {
+     "word": "through",
+     "start": 28.26,
+     "end": 28.51
+    },
+    {
+     "word": "a",
+     "start": 28.522,
+     "end": 28.585
+    },
+    {
+     "word": "smartphone",
+     "start": 28.597,
+     "end": 29.26
+    },
+    {
+     "word": "without",
+     "start": 29.272,
+     "end": 29.659
+    },
+    {
+     "word": "ever",
+     "start": 29.672,
+     "end": 29.835
+    },
+    {
+     "word": "standing",
+     "start": 29.847,
+     "end": 30.31
+    },
+    {
+     "word": "up.",
+     "start": 30.322,
+     "end": 30.585
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-GB-RyanNeural",
+     "rate": "+0%",
+     "text": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack, because getting alcohol back then required high stakes espionage and sheer luck, but today an app brings it to your sofa before you finish tying your shoes, so nobody has to endure the absolute humiliation of walking to a physical gas station, and facing an unimpressed clerk checking cash only purchases. Instead, modern delivery services operate late into the night with automated tracking, letting customers order instantly through a smartphone without ever standing up."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.69,
+    "text": "seventeen",
+    "y": 0.3
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.69,
+    "opacity": 0.5,
+    "seed": 5.49
+   },
+   {
+    "id": "ly3",
+    "kind": "color-wash",
+    "anchor": "v2",
+    "delay": 0.0,
+    "start": 5.74,
+    "end": 10.01,
+    "opacity": 0.45,
+    "seed": 3.32
+   },
+   {
+    "id": "ly4",
+    "kind": "draw-line",
+    "anchor": "v3",
+    "delay": 0.5,
+    "start": 10.56,
+    "end": 13.57,
+    "shape": "bracket",
+    "x": 0.25,
+    "y": 0.38,
+    "w": 0.5
+   },
+   {
+    "id": "ly5",
+    "kind": "color-wash",
+    "anchor": "v4",
+    "delay": 0.0,
+    "start": 13.62,
+    "end": 18.21,
+    "opacity": 0.45,
+    "seed": 1.84
+   },
+   {
+    "id": "ly6",
+    "kind": "icon-pop",
+    "anchor": "v5",
+    "delay": 0.2,
+    "start": 18.46,
+    "end": 21.79,
+    "icon": "coin",
+    "x": 0.39,
+    "y": 0.22
+   },
+   {
+    "id": "ly7",
+    "kind": "route-map",
+    "anchor": "v6",
+    "delay": 0.1,
+    "start": 21.94,
+    "end": 26.52,
+    "from": [
+     0.2,
+     0.6390473255955625
+    ],
+    "to": [
+     0.8,
+     0.3809526744044375
+    ],
+    "via": [
+     0.5,
+     0.84
+    ]
+   },
+   {
+    "id": "ly8",
+    "kind": "color-wash",
+    "anchor": "v7",
+    "delay": 0.0,
+    "start": 26.57,
+    "end": 31.46,
+    "opacity": 0.45,
+    "seed": 2.06
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794295084160,
+  "updated": 1794295084554,
+  "topic": "for how easy it is to buy beer like a funny comparison of the old days and now then also it",
+  "hook": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
+  "image_style": "1980s retro photo, VHS tape look, neon colours, film grain",
+  "format": "landscape",
+  "assets_release": "project-buying-beer-is-too-easy-now-mwacj6yz",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
+   "music": "docu-pluck",
+   "project_id": "buying-beer-is-too-easy-now-mwacj6yz",
+   "style": "1980s retro photo, VHS tape look, neon colours, film grain",
+   "style_preset": "retro-vhs",
+   "title": "Buying Beer Is Too Easy Now",
+   "topic": "for how easy it is to buy beer like a funny comparison of the old days and now then also it",
+   "voice": "en-GB-RyanNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"A seventeen year old in nineteen ei...\"): hook beat. I am slamming SEVENTEEN on screen word by word under a moving colour wash.",
+   "Beat 2 (\"because getting alcohol back then r...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 3 (\"today an app brings it to your sofa...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 4 (\"so nobody has to endure the absolut...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 5 (\"and facing an unimpressed clerk che...\"): this beat is about 'coin', so I am popping a 'coin' icon in.",
+   "Beat 6 (\"Instead, modern delivery services o...\"): this is about movement, so I am drawing a route across a map grid with a travelling dot.",
+   "Beat 7 (\"letting customers order instantly t...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash."
+  ]
+ }
+}
