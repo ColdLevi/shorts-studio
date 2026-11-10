@@ -933,6 +933,10 @@ def from_props(props, spec=None, pid="job", cv=None):
             director_pass(t, spec)
         except Exception as e:
             print("director_pass failed (ignored):", e)
+    try:
+        camera_pass(t, spec)      # step2-camera
+    except Exception as e:
+        print("camera_pass failed (ignored):", e)
     return t
 
 
@@ -948,3 +952,101 @@ def retime(t, words, total):
             l["start"] = round(a["start"] + (l.get("delay") or 0.15), 2)
             l["end"] = round(max(l["start"] + 0.6, a["end"] - 0.05), 2)
 # ---- end director (layers) ----
+
+# ---- camera (step2-camera): a move per picture, motivated transitions between pictures ----
+_CAM_KEEP_RECIPES = ("stop-motion",)
+_CAM_REVEAL = re.compile(r"\b(but|until|then|suddenly|turns out|except|however|instead|yet)\b|\?\s*$", re.I)
+_CAM_ENERGY = re.compile(r"\b(suddenly|crash|crashed|exploded|boom|everything changed|snapped|collapsed)\b|!\s*$", re.I)
+_CAM_END = re.compile(r"[.!?\u2026][\"'\u201d)]*\s*$")
+
+
+def camera_pass(t, spec=None):
+    """Virtual camera. Every picture gets a motivated move (never the same twice in a row), every change between
+    pictures is led by the camera: settle (a quick punch on mid-sentence cuts), push-through or carry on sentence
+    ends (continuing the previous move), whip at most twice. Evidence beats hold still. Off with spec.camera = off."""
+    spec = spec or {}
+    if str(spec.get("camera", "")).lower() in ("off", "none", "false"):
+        return t
+    st = t.get("style") or {}
+    if (st.get("recipe") or "") in _CAM_KEEP_RECIPES:
+        return t
+    tr = t.get("tracks") or {}
+    vis = tr.get("visuals") or []
+    if not vis:
+        return t
+    notes, whips, last_whip = [], 0, -99.0
+    laid = {}
+    for l in tr.get("layers") or []:
+        laid.setdefault(l.get("anchor"), set()).add(l.get("kind"))
+    sb = spec.get("beats") or []
+    prev_move, carried, dirn = None, 0, 1
+    camable = lambda c: c.get("kind") == "image" and c.get("src")
+    for i, c in enumerate(vis):
+        c.pop("cam", None)
+        if not camable(c):
+            continue
+        text = (c.get("narration") or "").strip()
+        dur = c["end"] - c["start"]
+        k = laid.get(c.get("id"), set())
+        sbi = sb[i] if i < len(sb) and isinstance(sb[i], dict) else {}
+        fact = bool(str(sbi.get("callout") or "").strip()) or any(re.search(rx, text) for rx in _FACT_RX)
+        has_cut = bool(c.get("cutout"))
+        dirn = -dirn
+        amp = round(max(0.35, min(0.8, 0.3 + 0.12 * dur)), 2)
+        if i == 0:
+            move, why = ("hold", "hook: the text is behind the subject, the camera stays out of its way") if "depth-text" in k else ("push-in", "hook: slow push-in")
+        elif k & {"kinetic", "icon-pop", "depth-text"} or (fact and k):
+            move, why = "hold", "evidence on screen: the camera stops"
+        elif _CAM_REVEAL.search(text):
+            move, why = "pull-out", "a turn in the story: pull back to reveal"
+        elif has_cut and i % 3 == 0:
+            move, why = "orbit", "subject cutout: a small orbit with parallax"
+        elif i % 4 == 2:
+            move, why = "truck", "side move for variety"
+        else:
+            move, why = "drift", "alive baseline"
+        if i == len(vis) - 1 and i > 0:
+            move, why = "pull-out", "last picture: slow pull-out"
+        if move == prev_move and move not in ("hold",):
+            move, why = ("drift", why + " (not the same move twice)") if move != "drift" else ("truck", why + " (not the same move twice)")
+        cam = {"move": move, "amp": amp, "dir": dirn}
+        if move == "hold":
+            cam["wobble"] = 0
+        c["cam"] = cam
+        notes.append("Beat %d: %s (%s)." % (i + 1, move, why))
+        prev_move = move
+    # transitions between two camera pictures
+    for i in range(1, len(vis)):
+        a, b = vis[i - 1], vis[i]
+        if not (camable(a) and camable(b)):
+            continue
+        ends = bool(_CAM_END.search((a.get("narration") or "").strip()))
+        pm = (a.get("cam") or {}).get("move")
+        pd = (a.get("cam") or {}).get("dir") or 1
+        nxt = (b.get("narration") or "")
+        if ends and whips < 2 and b["start"] - last_whip > 8.0 and _CAM_ENERGY.search(nxt):
+            ty, du = ("whip-left" if pd > 0 else "whip-right"), 0.27
+            whips += 1
+            last_whip = b["start"]
+        elif ends:
+            carried += 1
+            if pm == "push-in" or (carried % 2 == 0 and pm in ("hold", "orbit", "pull-out", None)):
+                ty, du = "push-through", 0.45
+            elif pm in ("drift", "truck") and carried % 2 == 1:
+                ty, du = ("carry-left" if pd > 0 else "carry-right"), 0.4
+            else:
+                ty, du = "settle", 0.5
+        else:
+            ty, du = "settle", 0.22      # mid-sentence slice: a quick camera punch, not a slide
+        b["transition"] = {"type": ty, "duration": du}
+    if notes:
+        t.setdefault("meta", {})["camera"] = notes
+        kinds = {}
+        for c in vis:
+            ty = (c.get("transition") or {}).get("type")
+            if ty:
+                kinds[ty] = kinds.get(ty, 0) + 1
+        _director_say(["Camera (%d moves; changes: %s)" % (len(notes), ", ".join("%s x%d" % kv for kv in sorted(kinds.items())))] + ["- " + n for n in notes[:24]])
+    return t
+# ---- end camera ----
+

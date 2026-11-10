@@ -114,6 +114,7 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
         return (
           <Sequence key={c.id || i} from={from} durationInFrames={Math.max(1, capped - from)}>
             <VisualLayer c={{ ...c, transition: tr }} index={i} len={(capped - from) / fps} L={L} pid={pid} accent={accent}
+              exit={next ? (next.transition ?? trFor(i + 1)) : undefined}
               motion={st.motion || 'kenburns'} grade={st.grade} nearImage={c.kind === 'graphic' ? nearestImage(vis, i, pid) : undefined}
               graphicSfx={(st as { graphic_sfx?: boolean }).graphic_sfx} sharedBackdrop={shared} g={g} />
           </Sequence>

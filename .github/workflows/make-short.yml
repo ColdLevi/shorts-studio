@@ -206,7 +206,7 @@ jobs:
             python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nofx.json','w'))" "$P"
             npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nofx.json --gl=swangle --crf=20 --log=error || {
               echo "::warning::still failing, retrying without the new layers"
-              python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t['tracks'].pop('layers',None);t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nolayers.json','w'))" "$P"
+              python3 -c "import json,sys;t=json.load(open(sys.argv[1]));t['tracks'].pop('layers',None);[(v.pop('cam',None),v.pop('cutout',None),v.update(transition={'type':'fade','duration':0.35})) for v in t['tracks']['visuals']];t.setdefault('style',{}).setdefault('gfx',{})['off']=True;json.dump(t,open('/tmp/nolayers.json','w'))" "$P"
               npx remotion render src/studio-index.ts Studio out/short.mp4 --props=/tmp/nolayers.json --gl=swangle --crf=20 --log=error
             }
           fi

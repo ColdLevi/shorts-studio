@@ -8,6 +8,8 @@ import { url, publicPath } from './assets';
 import { graphicFit, Layout } from './layout';
 import type { Transition, VisualClip } from './types';
 import { GFX, LeakFlash, pageTurnStyle, pictureEffects, wantsPictureFx } from './GpuFX';
+import { CamStack } from './Camera';
+import { enterStyle, exitStyle } from './camera-math';
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);
@@ -21,6 +23,8 @@ const Enter: React.FC<{ t?: Transition; L: Layout; g?: GFX; lensFocus?: boolean;
   const len = transitionLen(t);
   if (!len) return <AbsoluteFill>{children}</AbsoluteFill>;
   const p = interpolate(frame, [0, len * fps], [0, 1], { ...CLAMP, easing: EASE });
+  const camStyle = enterStyle(t!.type, frame / (len * fps), L.w, L.u);   // step2-camera
+  if (camStyle) return <AbsoluteFill style={camStyle}>{children}</AbsoluteFill>;
   const q = 1 - p;
   let style: React.CSSProperties = {};
   switch (t!.type) {
@@ -132,8 +136,18 @@ const Parallax: React.FC<{ src: string; p: number; L: Layout; index: number; gra
   );
 };
 
+// Leaving transition (step2-camera): the outgoing shot moves at matched speed during the next shot's entrance.
+const Exit: React.FC<{ t?: Transition; len: number; L: Layout; children: React.ReactNode }> = ({ t, len, L, children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const dur = transitionLen(t) * fps;
+  if (!t || !dur) return <>{children}</>;
+  const st = exitStyle(t.type, (frame - (len * fps - 2 - dur)) / dur, L.w, L.u);
+  return st ? <AbsoluteFill style={st}>{children}</AbsoluteFill> : <>{children}</>;
+};
+
 export const VisualLayer: React.FC<{ c: VisualClip; index: number; len: number; L: Layout; pid: string; accent: string;
-  motion: MotionStyle; grade?: string; nearImage?: string; graphicSfx?: boolean; sharedBackdrop?: boolean; g?: GFX }> = ({ c, index, len, L, pid, accent, motion, grade, nearImage, graphicSfx, sharedBackdrop, g }) => {
+  motion: MotionStyle; grade?: string; nearImage?: string; graphicSfx?: boolean; sharedBackdrop?: boolean; g?: GFX; exit?: Transition }> = ({ c, index, len, L, pid, accent, motion, grade, nearImage, graphicSfx, sharedBackdrop, g, exit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const p = Math.min(1, frame / fps / Math.max(0.5, len));
@@ -152,7 +166,16 @@ export const VisualLayer: React.FC<{ c: VisualClip; index: number; len: number; 
     const tf = motionTransform(c, index, p, L, still, motion, frame);
     const para = still && fit !== 'blur-fill' && (c.motion === 'parallax' || (motion === 'parallax' && (!c.motion || c.motion === 'auto')));
     lensFocus = !para && canvasStill(c, fit, g);
-    body = para ? <Parallax src={url(c.src, pid)} p={p} L={L} index={index} grade={grade} /> : (
+    const useCam = !!c.cam && still && fit === 'cover';   // step2-camera: the virtual camera replaces the flat Ken Burns
+    const camBody = useCam ? (
+      <AbsoluteFill style={{ backgroundColor: '#08080c', overflow: 'hidden' }}>
+        <CamStack cam={c.cam!} p={p} seed={index * 1.7 + 0.5} W={L.w} H={L.h} u={L.u}
+          fg={c.cutout && !c.focus ? <Img src={url(c.cutout, pid)} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: grade }} /> : undefined}>
+          <Media c={c} pid={pid} fit={fit} transform="none" grade={grade} len={len} fps={fps} L={L} g={g} />
+        </CamStack>
+      </AbsoluteFill>
+    ) : null;
+    body = useCam ? camBody : para ? <Parallax src={url(c.src, pid)} p={p} L={L} index={index} grade={grade} /> : (
       <AbsoluteFill style={{ backgroundColor: '#08080c', overflow: 'hidden' }}>
         {fit === 'blur-fill' && still ? (
           <AbsoluteFill>
@@ -163,7 +186,7 @@ export const VisualLayer: React.FC<{ c: VisualClip; index: number; len: number; 
       </AbsoluteFill>
     );
   }
-  return <Enter t={c.transition} L={L} g={g} lensFocus={lensFocus} seed={index + 1}>{body}</Enter>;
+  return <Enter t={c.transition} L={L} g={g} lensFocus={lensFocus} seed={index + 1}><Exit t={exit} len={len} L={L}>{body}</Exit></Enter>;
 };
 
 /** Closest clip with a real picture, used blurred behind graphic clips (path relative to media/). */

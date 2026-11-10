@@ -4,6 +4,7 @@
 // JSON Schema: timeline/timeline.schema.json. Times are in seconds from the start of the video.
 import type { Graphic } from '../story/graphics';
 import type { SceneSpec } from '../packs/whatif/SceneBeat';
+import type { Cam } from './camera-math';
 
 export type Word = { word: string; start: number; end: number; em?: boolean };
 
@@ -11,7 +12,8 @@ export type Canvas = { width: number; height: number; fps: number; background?: 
 
 export type TransitionType =
   | 'cut' | 'fade' | 'dissolve' | 'slide-left' | 'slide-right' | 'slide-up' | 'slide-down'
-  | 'zoom-in' | 'zoom-out' | 'wipe' | 'blur' | 'flash' | 'page-turn' | 'leak' | 'focus';
+  | 'zoom-in' | 'zoom-out' | 'wipe' | 'blur' | 'flash' | 'page-turn' | 'leak' | 'focus'
+  | 'settle' | 'push-through' | 'carry-left' | 'carry-right' | 'whip-left' | 'whip-right';
 export type Transition = { type: TransitionType; duration?: number };
 
 export type CaptionPreset = 'bold-pop' | 'karaoke-box' | 'clean' | 'subtitle' | 'neon' | 'word-by-word' | 'none';
@@ -76,6 +78,8 @@ export type VisualClip = {
   graphic?: Graphic;        // kind 'graphic'
   scene?: SceneSpec;        // kind 'scene': a code-drawn scene from a style pack (packs/<pack>/SceneBeat.tsx)
   narration?: string;       // the words spoken over this clip (for re-timing after a voice change)
+  cam?: Cam;                // step2-camera: the virtual camera move for this picture
+  cutout?: string;          // step2-camera: the subject cutout PNG (2.5D parallax)
   gen?: Gen;
   hash?: string;
 };

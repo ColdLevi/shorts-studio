@@ -184,7 +184,13 @@
                 "flash",
                 "page-turn",
                 "leak",
-                "focus"
+                "focus",
+                "settle",
+                "push-through",
+                "carry-left",
+                "carry-right",
+                "whip-left",
+                "whip-right"
               ]
             },
             "duration": {
@@ -355,7 +361,13 @@
                       "flash",
                       "page-turn",
                       "leak",
-                      "focus"
+                      "focus",
+                      "settle",
+                      "push-through",
+                      "carry-left",
+                      "carry-right",
+                      "whip-left",
+                      "whip-right"
                     ]
                   },
                   "duration": {
