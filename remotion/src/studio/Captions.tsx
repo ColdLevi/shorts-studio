@@ -84,7 +84,9 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
           const active = t >= w.start - 0.03 && t < w.end + 0.08;
           const color = r.preset === 'clean' ? (active ? r.color : `${r.color}`) : r.color;
           // inline-block: lets a long subtitle line wrap between words instead of running off the edge
-          return <span key={i} style={{ display: 'inline-block', color, opacity: r.preset === 'clean' && !active ? 0.72 : 1, marginRight: 0.28 * r.size }}>{tx(w.word)}</span>;
+          const emw = !!w.em;
+          return <span key={i} style={{ display: 'inline-block', color: emw ? r.highlight : color, opacity: r.preset === 'clean' && !active && !emw ? 0.72 : 1,
+            fontWeight: emw ? Math.min(900, f.weight(r.weight) + 200) : undefined, marginRight: 0.28 * r.size }}>{tx(w.word)}</span>;
         })}
       </div>
     );
@@ -97,7 +99,7 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
           if (r.preset === 'karaoke-box') {
             return (
               <span key={i} style={{ display: 'inline-block', margin: `0 ${0.12 * r.size}px ${0.12 * r.size}px`, padding: `0 ${0.16 * r.size}px`,
-                borderRadius: 0.16 * r.size, background: active ? r.highlight : 'transparent', color: active ? '#111' : r.color,
+                borderRadius: 0.16 * r.size, background: active ? r.highlight : 'transparent', color: active ? '#111' : (w.em ? r.highlight : r.color),
                 textShadow: active ? 'none' : shadow }}>{word}</span>
             );
           }
@@ -105,6 +107,14 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
             const c = active ? r.highlight : r.color;
             return <span key={i} style={{ display: 'inline-block', marginRight: 0.22 * r.size, color: c,
               textShadow: `0 0 ${10 * L.u}px ${c}, 0 0 ${28 * L.u}px ${r.highlight}, 0 0 ${60 * L.u}px ${r.highlight}aa` }}>{word}</span>;
+          }
+          if (w.em) {
+            // emphasised word: larger, highlight colour; a white-to-accent gradient fill when the preset has no outline
+            const grad: React.CSSProperties = r.stroke ? { color: r.highlight } : {
+              background: `linear-gradient(120deg, #ffffff, ${r.highlight})`, WebkitBackgroundClip: 'text', backgroundClip: 'text',
+              color: 'transparent', WebkitTextFillColor: 'transparent', textShadow: 'none', filter: `drop-shadow(0 ${4 * L.u}px ${12 * L.u}px rgba(0,0,0,0.6))`,
+            };
+            return <span key={i} style={{ ...grad, marginRight: 0.24 * r.size, display: 'inline-block', transform: `scale(${1 + 0.14 * Math.min(1, pop)})` }}>{word}</span>;
           }
           return <span key={i} style={{ color: active ? r.highlight : r.color, marginRight: 0.24 * r.size, display: 'inline-block' }}>{word}</span>;
         })}

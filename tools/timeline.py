@@ -763,6 +763,8 @@ def _key_word(text):
 def _director_say(lines):
     msg = "\n".join(lines)[:3800]
     print(msg)
+    if os.getenv("DIRECTOR_DEFER") == "1":   # step1-subjects: notes are sent by tools/subjects.py after the re-run
+        return
     tok, chat = os.getenv("TELEGRAM_TOKEN"), os.getenv("CHAT_ID")
     if not (tok and chat):
         return
@@ -903,6 +905,11 @@ def director_pass(t, spec=None):
             continue
         icon = next((ic for rx, ic in _ICONS2 if re.search(rx, low)), None)
         if icon and n_icon < cap_icon and last_kind != "icon":
+            ibox = _subject_box(c, pid)
+            if ibox and ibox[0] < 0.28:
+                notes.append('%s: a "%s" icon fits, but the subject is up in the top of the frame, so I skipped it.' % (tag, icon))
+                left_clean += 1
+                continue
             put("icon-pop", c, 0.2, icon=icon, x=(0.2 if n_icon % 2 == 0 else 0.8), y=0.14)
             n_icon += 1
             last_end, last_kind = c["end"], "icon"

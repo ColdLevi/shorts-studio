@@ -5,7 +5,7 @@
 import type { Graphic } from '../story/graphics';
 import type { SceneSpec } from '../packs/whatif/SceneBeat';
 
-export type Word = { word: string; start: number; end: number };
+export type Word = { word: string; start: number; end: number; em?: boolean };
 
 export type Canvas = { width: number; height: number; fps: number; background?: string };
 

@@ -149,6 +149,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           EDIT_MESSAGE: ${{ github.event.client_payload.message || 'edit from the bot' }}
+          DIRECTOR_DEFER: "1"   # step1-subjects
         run: |
           if [ -s job/project_id.txt ] && [ ! -f job/spec.json ]; then
             ID=$(cat job/project_id.txt)
@@ -189,8 +190,9 @@ jobs:
         continue-on-error: true
         timeout-minutes: 8
         run: |
-          pip install -q "rembg[cpu]" onnxruntime
-          python3 tools/make_cutouts.py "$PROJECT_ID"
+          pip install -q "rembg[cpu]" onnxruntime || echo "::warning::rembg did not install, no cutouts this run"
+          python3 tools/subjects.py "$PROJECT_ID" || true
+          python3 tools/make_cutouts.py "$PROJECT_ID" || true
 
       - name: Render
         if: env.SKIP_RENDER != '1'
