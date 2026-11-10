@@ -775,19 +775,78 @@ def _director_say(lines):
         print("director tg", e)
 
 
+_ICONS2 = [
+    (r"\b(money|cost|costs|price|paid|cash|dollars?|naira|profit|salary|rich|broke)\b", "coin"),
+    (r"\b(danger|dangerous|risk|warning|scam|fraud|threat|deadly)\b", "warn"),
+    (r"\b(speed|instant|battery|electric|lightning)\b", "bolt"),
+    (r"\b(safe|protect|secure|safety|guard)\b", "shield"),
+    (r"\b(heart|love|health)\b", "heart"),
+    (r"\b(idea|genius|trick|brain)\b", "bulb"),
+    (r"\b(proven|solved|fixed|worked)\b", "check"),
+    (r"\b(fire|burning|burned|flames?)\b", "fire"),
+    (r"\b(winner|champion|record)\b", "star"),
+]
+_FACT_RX = [
+    r"\b(?:1[0-9]{3}|20[0-9]{2})\b",
+    r"[$£€₦]\s?\d[\d,.]*\s?(?:k|m|bn|million|billion|thousand)?",
+    r"\b\d[\d,.]*\s?(?:%|percent)",
+    r"\b\d[\d,.]*\s?(?:million|billion|trillion|thousand|times)\b",
+]
+
+
+def _subject_box(c, pid):
+    """(top, bottom) of the subject or a face as fractions of the frame height, or None when unknown.
+    Uses the subject cutout when one exists, else OpenCV face detection when it is installed."""
+    try:
+        src = c.get("src")
+        if not src:
+            return None
+        cut = asset_path(pid, os.path.splitext(src)[0] + "_cut.png")
+        if cut and os.path.exists(cut):
+            from PIL import Image
+            im = Image.open(cut).convert("RGBA")
+            bb = im.split()[3].point(lambda v: 255 if v > 40 else 0).getbbox()
+            if bb:
+                return (bb[1] / float(im.height), bb[3] / float(im.height))
+        base = asset_path(pid, src)
+        if base and os.path.exists(base):
+            import cv2
+            img = cv2.imread(base)
+            if img is None:
+                return None
+            g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            cas = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+            faces = cas.detectMultiScale(g, 1.1, 5, minSize=(max(24, g.shape[1] // 14),) * 2)
+            if len(faces):
+                return (min(f[1] for f in faces) / float(g.shape[0]), max(f[1] + f[3] for f in faces) / float(g.shape[0]))
+    except Exception:
+        return None
+    return None
+
+
 def director_pass(t, spec=None):
+    """Director v2. Few layers, each one motivated, none over a face.
+    - hook beat: the key word behind the subject when a cutout exists, else big in the top band
+    - a number, year or money amount (the writer's "callout", or a strong match in the line): big in the top band with an underline
+    - an icon in a top corner, only on a strong word
+    No random marks, no map lines, no colour wash except one soft one on the hook."""
     spec = spec or {}
     tr = t.setdefault("tracks", {})
     vis = tr.get("visuals") or []
     if not vis or str(spec.get("layers", "")).lower() in ("off", "none", "false"):
         return t
     st = t.get("style") or {}
-    density = {"documentary": 0.5, "stop-motion": 0.35}.get(st.get("recipe") or "", 0.85)
-    if (st.get("preset") or "") == "minimal":
-        density = 0.3
-    rnd = _random.Random(str(t.get("id")))
+    sb = spec.get("beats") or []
     pid = t.get("id") or "job"
-    layers, notes, last = [], [], None
+    rnd = _random.Random(str(t.get("id")))
+    dur = float(t.get("duration") or vis[-1]["end"])
+    gap = {"documentary": 4.5, "cinematic": 4.5, "stop-motion": 4.5, "kinetic-news": 2.2}.get(st.get("recipe") or "", 3.0)
+    if (st.get("preset") or "") == "minimal":
+        gap = 5.0
+    cap_callout, cap_icon = 3 + int(dur // 60), 2 + int(dur // 45)
+    n_callout = n_icon = 0
+    layers, notes = [], []
+    last_end, last_kind, left_clean = -99.0, None, 0
 
     def put(kind, c, delay=0.15, **kw):
         s = round(c["start"] + delay, 2)
@@ -796,66 +855,66 @@ def director_pass(t, spec=None):
 
     for i, c in enumerate(vis):
         text = (c.get("narration") or "").strip()
-        if not text or (c["end"] - c["start"]) < 1.2:
+        if not text or (c["end"] - c["start"]) < 1.4:
             continue
         low = text.lower()
         snip = text if len(text) <= 38 else text[:35] + "..."
         tag = 'Beat %d ("%s")' % (i + 1, snip)
+        sbi = sb[i] if i < len(sb) and isinstance(sb[i], dict) else {}
+        co = str(sbi.get("callout") or "").strip()[:14]
         if i == 0:
-            word = _key_word(text) or text.split()[0]
+            word = co or _key_word(text) or text.split()[0]
             cut = None
             if c.get("kind") == "image" and c.get("src"):
                 cand = os.path.splitext(c["src"])[0] + "_cut.png"
                 p = asset_path(pid, cand)
                 if p and os.path.exists(p):
                     cut = cand
+            if cut:
                 put("depth-text", c, 0.1, src=c["src"], cutout=cut, text=word, y=0.3, push=0.12)
-                notes.append('%s: this is the hook, so it needs weight. I am setting %s huge behind the subject (%s) and pushing in slowly, under a moving colour wash.' % (tag, word.upper(), "real cutout" if cut else "no cutout yet, using a soft mask"))
+                notes.append('%s: the hook. I set %s huge BEHIND the subject (real cutout) and push in slowly.' % (tag, word.upper()))
             else:
-                put("kinetic", c, 0.1, text=word, y=0.3)
-                notes.append('%s: hook beat. I am slamming %s on screen word by word under a moving colour wash.' % (tag, word.upper()))
-            put("color-wash", c, 0.0, opacity=0.5, seed=round(rnd.random() * 6, 2))
-            last = "hook"
+                put("kinetic", c, 0.1, text=word, y=0.14)
+                notes.append('%s: the hook. No subject cutout, so I put %s in the top band where it cannot cover the face.' % (tag, word.upper()))
+            put("color-wash", c, 0.0, opacity=0.35, seed=round(rnd.random() * 6, 2))
+            last_end, last_kind = c["end"], "hook"
             continue
-        if rnd.random() > density:
-            notes.append("%s: nothing new to add here. I am letting the picture breathe." % tag)
-            last = None
+        if c["start"] < last_end + gap and not co:   # a callout the writer chose skips the spacing rule
+            left_clean += 1
             continue
-        m = re.search(r"\d[\d,.]*\s?(?:%|percent|million|billion|thousand|x|k)?", text)
-        icon = next((ic for rx, ic in _ICONS if re.search(rx, low)), None)
-        if m and last != "num":
-            big = m.group(0).strip()
-            put("kinetic", c, 0.2, text=big, y=0.24)
-            put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.31, w=0.6)
-            notes.append("%s: there is a number (%s). I am slamming it in and underlining it so it sticks." % (tag, big))
-            last = "num"
-        elif re.search(_ROUTE, low) and last != "route":
-            j = rnd.random() * 0.1
-            put("route-map", c, 0.1, **{"from": [0.2, 0.72 - j], "to": [0.8, 0.3 + j], "via": [0.5, 0.84]})
-            notes.append("%s: this is about movement, so I am drawing a route across a map grid with a travelling dot." % tag)
-            last = "route"
-        elif icon and last != "icon":
-            put("icon-pop", c, 0.2, icon=icon, x=round(0.3 + rnd.random() * 0.4, 2), y=0.22)
-            notes.append("%s: this beat is about '%s', so I am popping a '%s' icon in." % (tag, icon, icon))
-            last = "icon"
-        elif "?" in text and last != "icon":
-            put("icon-pop", c, 0.2, icon="question", x=0.5, y=0.22)
-            notes.append("%s: it is a question, so I am popping a question mark to hold attention." % tag)
-            last = "icon"
-        elif last != "wash":
-            put("color-wash", c, 0.0, opacity=0.45, seed=round(rnd.random() * 6, 2))
-            notes.append("%s: no strong visual hook, so I am shifting the colour mood with a gradient wash." % tag)
-            last = "wash"
-        else:
-            put("draw-line", c, 0.5, shape=rnd.choice(["circle", "arrow", "bracket"]), x=0.25, y=0.38, w=0.5)
-            notes.append("%s: I just used a wash, so I am hand-drawing a highlight mark instead." % tag)
-            last = "mark"
+        fact = co
+        if not fact:
+            for rx in _FACT_RX:
+                m = re.search(rx, text)
+                if m:
+                    fact = m.group(0).strip()
+                    break
+        if fact and n_callout < cap_callout and last_kind != "callout":
+            box = _subject_box(c, pid)
+            if box and box[0] < 0.22:
+                notes.append('%s: %s is worth showing, but the subject is up in the top of the frame, so I left it off rather than cover it.' % (tag, fact))
+                left_clean += 1
+                continue
+            put("kinetic", c, 0.2, text=fact, y=0.14)
+            put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
+            n_callout += 1
+            last_end, last_kind = c["end"], "callout"
+            notes.append('%s: %s goes big in the top band with an underline, clear of the subject.' % (tag, fact))
+            continue
+        icon = next((ic for rx, ic in _ICONS2 if re.search(rx, low)), None)
+        if icon and n_icon < cap_icon and last_kind != "icon":
+            put("icon-pop", c, 0.2, icon=icon, x=(0.2 if n_icon % 2 == 0 else 0.8), y=0.14)
+            n_icon += 1
+            last_end, last_kind = c["end"], "icon"
+            notes.append('%s: a "%s" icon pops in the top corner.' % (tag, icon))
+            continue
+        left_clean += 1
+    notes.append("Left %d beat(s) clean on purpose: no random lines, no map lines, nothing over a face." % left_clean)
     if layers:
         tr["layers"] = layers
         t.setdefault("meta", {})["director"] = notes
         _director_say(["Director notes (%d layers on %d beats)" % (len(layers), len(vis))] + ["- " + n for n in notes[:30]])
     return t
-
 
 _from_props_orig = from_props
 

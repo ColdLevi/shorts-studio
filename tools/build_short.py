@@ -322,7 +322,7 @@ def framing(cv):
 
 def image_prompt(prompt, style, cv):
     return (f"{prompt}. {style}. {framing(cv)}, cinematic lighting, rich colour, sharp focus, highly detailed, "
-            "no text, no watermark.").replace(". .", ".")
+            "natural anatomy, no extra limbs, empty space across the top fifth of the frame, no text, no watermark.").replace(". .", ".")
 
 
 def _save_image(data, path):
