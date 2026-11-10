@@ -648,6 +648,41 @@ def tighten_voice(words, total, path, beats, spec):
         return words, total
 
 
+def polish_voice(path, total):
+    """High-pass the rumble, compress lightly, then two-pass loudness to -16 LUFS with -3 dBTP peaks.
+    Word times are untouched (nothing here changes timing). Any problem keeps the original audio."""
+    try:
+        chain = "highpass=f=70,acompressor=threshold=-21dB:ratio=2:attack=15:release=180:makeup=1"
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-af", chain + ",loudnorm=I=-16:TP=-3:LRA=11:print_format=json", "-f", "null", "-"],
+                           capture_output=True, text=True)
+        m = re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", r.stderr or "", re.S)
+        if r.returncode or not m:
+            print("voice polish skipped (measure)")
+            return total
+        j = json.loads(m.group(0))
+        ln = ("loudnorm=I=-16:TP=-3:LRA=11:measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s:linear=true"
+              % (float(j["input_i"]), float(j["input_tp"]), float(j["input_lra"]), float(j["input_thresh"]), float(j["target_offset"])))
+        sr = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate", "-of", "csv=p=0", path],
+                            capture_output=True, text=True).stdout.strip() or "24000"
+        tmp = path + ".polish.mp3"
+        r2 = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", path, "-af", chain + "," + ln, "-ar", sr, "-c:a", "libmp3lame", "-q:a", "2", tmp],
+                            capture_output=True, text=True)
+        if r2.returncode or not os.path.exists(tmp):
+            print("voice polish skipped (ffmpeg):", (r2.stderr or "")[:140])
+            return total
+        new_total = duration(tmp)
+        if abs(new_total - total) > 0.3:
+            print("voice polish skipped (length changed)")
+            os.remove(tmp)
+            return total
+        os.replace(tmp, path)
+        print("voice polished: %.1f LUFS -> -16 LUFS" % float(j["input_i"]))
+        return new_total
+    except Exception as e:
+        print("voice polish skipped:", e)
+        return total
+
+
 def project_id(spec):
     pid = TL.slug(spec.get("project_id"), 60) if spec.get("project_id") else TL.new_id(spec.get("title", "video"))
     return pid
@@ -682,6 +717,7 @@ def main():
     voice_path = os.path.join(OUT, "voice.mp3")
     words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
     words, total = tighten_voice(words, total, voice_path, beats, spec)
+    total = polish_voice(voice_path, total)
     print(f"voice {total:.1f}s, {len(words)} words")
 
     n_gfx = sum(1 for b in beats if b.get("graphic") or b.get("scene"))
