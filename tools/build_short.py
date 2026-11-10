@@ -71,6 +71,23 @@ def chars(s):
 
 
 def split_beats(beats, words, total):
+    """Each beat starts on the exact first word of its slice, a hair before the voice (cuts can land mid-sentence).
+    Falls back to the letter-share method when the word counts do not line up."""
+    counts = [len(str(b["narration"]).split()) for b in beats]
+    if words and all(c > 0 for c in counts) and sum(counts) == len(words):
+        starts, k = [], 0
+        for c in counts:
+            starts.append(float(words[k]["start"]))
+            k += c
+        starts[0] = 0.0
+        for i in range(1, len(starts)):
+            starts[i] = max(starts[i - 1] + 0.25, starts[i] - 0.06)
+        if starts[-1] < total - 0.2:
+            return [{"start": round(starts[i], 3), "end": round(starts[i + 1] if i + 1 < len(starts) else total, 3)} for i in range(len(starts))]
+    return _split_beats_letters(beats, words, total)
+
+
+def _split_beats_letters(beats, words, total):
     """Assign each beat a start/end from the word timings, by share of letters spoken."""
     sizes = [max(1, chars(b["narration"])) for b in beats]
     bounds, acc = [], 0
@@ -510,6 +527,127 @@ def voice(text, voice_name, rate, path):
     return punctuate(words, text), duration(path)
 
 
+# ---------- flow: tighter pauses + the writer's [beat]/[pause]/*emphasis* cues ----------
+# pace "tight" (default) shortens long gaps after full stops and commas, "fast" shortens more, "natural" leaves them alone.
+# A cue the writer put in (b["cues"]) is honoured exactly: a longer pause is added, a shorter one is cut to that length.
+PACE_CAPS = {"tight": (0.28, 0.16, 0.12), "fast": (0.18, 0.12, 0.12)}  # after . ? !  |  after , ; :  |  between other words
+
+
+def _tighten_plan(words, beats, caps):
+    """Returns (cuts, inserts) in seconds, plus marks cue words as emphasised. Pure function, easy to test."""
+    counts = [len(str(b["narration"]).split()) for b in beats]
+    want = {}
+    if sum(counts) == len(words):
+        off = 0
+        for b, n in zip(beats, counts):
+            c = b.get("cues") or {}
+            for p in c.get("pauses", []) or []:
+                try:
+                    a, sec = int(p.get("after", 0)), float(p.get("s", 0.3))
+                except Exception:
+                    continue
+                if 1 <= a <= n:
+                    want[off + a - 1] = max(want.get(off + a - 1, 0.0), max(0.12, min(1.5, sec)))
+            for e in c.get("emphasis", []) or []:
+                try:
+                    e = int(e)
+                except Exception:
+                    continue
+                if 0 <= e < n:
+                    words[off + e]["em"] = True
+            off += n
+    elif any(b.get("cues") for b in beats):
+        print("cues skipped: word count differs from the voice's words")
+    cuts, inserts = [], []
+    for g in range(len(words) - 1):
+        a_end, b_start = float(words[g]["end"]), float(words[g + 1]["start"])
+        nat = max(0.0, b_start - a_end)
+        last = (words[g]["word"] or "")[-1:]
+        cap = caps[0] if last in ".?!" else caps[1] if last in ",;:" else caps[2]
+        target = want.get(g, cap)
+        if nat > target + 0.06:
+            cuts.append((a_end + target / 2, b_start - target / 2))
+        elif g in want and nat < target - 0.02:
+            inserts.append((a_end + nat / 2, target - nat))
+    return cuts, inserts
+
+
+def _map_time(t, cuts, inserts):
+    shift = 0.0
+    for a, b in cuts:
+        if t >= b:
+            shift -= (b - a)
+        elif t > a:
+            shift -= (t - a)
+    for p, d in inserts:
+        if t >= p:
+            shift += d
+    return max(0.0, t + shift)
+
+
+def tighten_voice(words, total, path, beats, spec):
+    """Shorten long pauses in the one-take voice and re-sync every word time. Any problem keeps the original audio."""
+    pace = str(spec.get("pace") or "tight").lower()
+    caps = PACE_CAPS.get(pace)
+    has_cues = any(b.get("cues") for b in beats)
+    if caps is None and not has_cues:
+        return words, total
+    caps = caps or (9.0, 9.0, 9.0)
+    try:
+        cuts, inserts = _tighten_plan(words, beats, caps)
+        if not cuts and not inserts:
+            return words, total
+        events = sorted([("cut", a, b) for a, b in cuts] + [("ins", p, d) for p, d in inserts], key=lambda e: e[1])
+        ops, cur = [], 0.0
+        for kind, x, y in events:
+            if kind == "cut":
+                if x > cur:
+                    ops.append(("seg", cur, x))
+                cur = max(cur, y)
+            else:
+                if x > cur:
+                    ops.append(("seg", cur, x))
+                    cur = x
+                ops.append(("sil", y, 0))
+        if total > cur:
+            ops.append(("seg", cur, total))
+        sr = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate", "-of", "csv=p=0", path],
+                            capture_output=True, text=True).stdout.strip() or "24000"
+        lines, names = [], []
+        for i, (kind, x, y) in enumerate(ops):
+            if kind == "seg":
+                d = y - x
+                f = min(0.008, d / 3)
+                lines.append(f"[0:a]atrim=start={x:.4f}:end={y:.4f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d={f:.4f},afade=t=out:st={d - f:.4f}:d={f:.4f}[a{i}]")
+            else:
+                lines.append(f"anullsrc=r={sr}:cl=mono,atrim=duration={x:.4f}[a{i}]")
+            names.append(f"[a{i}]")
+        lines.append("".join(names) + f"concat=n={len(names)}:v=0:a=1[out]")
+        script, tmp = path + ".filter.txt", path + ".tight.mp3"
+        open(script, "w").write(";\n".join(lines))
+        r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", path, "-filter_complex_script", script, "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "3", tmp],
+                           capture_output=True, text=True)
+        if r.returncode or not os.path.exists(tmp):
+            print("pause tightening skipped (ffmpeg):", (r.stderr or "")[:160])
+            return words, total
+        new_total = duration(tmp)
+        expect = total - sum(b - a for a, b in cuts) + sum(d for _, d in inserts)
+        if abs(new_total - expect) > 0.6 or new_total < total * 0.5:
+            print(f"pause tightening skipped (length check: {new_total:.1f}s vs {expect:.1f}s)")
+            os.remove(tmp)
+            return words, total
+        for w in words:
+            w["start"] = round(_map_time(float(w["start"]), cuts, inserts), 3)
+            w["end"] = round(_map_time(float(w["end"]), cuts, inserts), 3)
+        os.replace(tmp, path)
+        os.remove(script)
+        print(f"pauses tightened ({pace}): {total:.1f}s -> {new_total:.1f}s, {len(cuts)} cut, {len(inserts)} added")
+        return words, new_total
+    except Exception as e:
+        print("pause tightening skipped:", e)
+        return words, total
+
+
 def project_id(spec):
     pid = TL.slug(spec.get("project_id"), 60) if spec.get("project_id") else TL.new_id(spec.get("title", "video"))
     return pid
@@ -543,6 +681,7 @@ def main():
     tg("🎙️ Recording the voiceover...")
     voice_path = os.path.join(OUT, "voice.mp3")
     words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
+    words, total = tighten_voice(words, total, voice_path, beats, spec)
     print(f"voice {total:.1f}s, {len(words)} words")
 
     n_gfx = sum(1 for b in beats if b.get("graphic") or b.get("scene"))
