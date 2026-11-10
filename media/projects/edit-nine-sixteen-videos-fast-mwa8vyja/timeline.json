@@ -1,0 +1,1097 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "edit-nine-sixteen-videos-fast-mwa8vyja",
+ "rev": 1,
+ "title": "Edit Nine Sixteen Videos Fast",
+ "duration": 53.41,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#5AA9FF",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.713,
+    "narration": "Ten million creators crop horizontal footage into vertical boxes.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Minimalist digital app interface mockup showing a wide video timeline being squeezed into a vertical phone screen on a solid electric blue backdrop",
+     "motion": "Camera zooms in fast on the center of the vertical phone mockup as the wide video frame snaps into place.",
+     "still": "flux"
+    },
+    "hash": "2beb972bb677"
+   },
+   {
+    "id": "v2",
+    "start": 4.713,
+    "end": 9.775,
+    "narration": "Standard horizontal timelines measure nineteen twenty by ten eighty pixels.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a wide computer monitor displaying pixel dimensions on a solid pastel pink backdrop"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "02e620cf96e9"
+   },
+   {
+    "id": "v3",
+    "start": 9.775,
+    "end": 14.688,
+    "narration": "Vertical aspect ratios require ten eighty by nineteen twenty pixels.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a tall smartphone screen showing vertical dimensions on a solid vibrant yellow backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4cebbebd2fff"
+   },
+   {
+    "id": "v4",
+    "start": 14.688,
+    "end": 18.038,
+    "narration": "People think cropping the center works just fine.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a video cut off awkwardly on the sides inside a phone frame on a solid mint green backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "203229e0d5e0"
+   },
+   {
+    "id": "v5",
+    "start": 18.038,
+    "end": 21.675,
+    "narration": "Moving the focal point ruins the pacing completely.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a playhead bouncing frantically across a broken video timeline on a solid coral orange backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "29f2e5b6f3bc"
+   },
+   {
+    "id": "v6",
+    "start": 21.675,
+    "end": 25.975,
+    "narration": "Auto framing tools track movement across the frame automatically.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a bright tracking box locked onto a moving object inside a vertical phone on a solid deep purple backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "cadea9abdeb7"
+   },
+   {
+    "id": "v7",
+    "start": 25.975,
+    "end": 30.312,
+    "narration": "The software detects the action so you avoid manual keyframes.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of gears turning inside a glowing smartphone app icon on a solid teal backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "11539c92d7ff"
+   },
+   {
+    "id": "v8",
+    "start": 30.312,
+    "end": 34.15,
+    "narration": "Key subjects stay right in the center of the vertical crop.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a perfectly centered subject inside a vertical video player on a solid bright red backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "0b2be3bd329d"
+   },
+   {
+    "id": "v9",
+    "start": 34.15,
+    "end": 37.3,
+    "narration": "No boring dead space left on the sides.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of clean margins filling a vertical frame on a solid mustard yellow backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "b15ae16e4071"
+   },
+   {
+    "id": "v10",
+    "start": 37.3,
+    "end": 40.85,
+    "narration": "Then export starts in seconds instead of hours.",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a progress bar filling up rapidly on a solid electric blue backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "a38c1ab6fbad"
+   },
+   {
+    "id": "v11",
+    "start": 40.85,
+    "end": 43.737,
+    "narration": "Your clips look ready for any feed.",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of multiple glowing vertical phone screens stacked neatly on a solid lavender backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "f6470cd940ee"
+   },
+   {
+    "id": "v12",
+    "start": 43.737,
+    "end": 46.875,
+    "narration": "Stop wasting time on manual framing.",
+    "kind": "image",
+    "src": "assets/img_12.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D flat illustration of a hand tapping a glowing edit button on a solid turquoise backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "bd43d7bd49e9"
+   },
+   {
+    "id": "v13",
+    "start": 46.875,
+    "end": 49.788,
+    "narration": "Let the software do the heavy lifting.",
+    "kind": "image",
+    "src": "assets/img_13.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing an AI automation badge lighting up on a solid pastel pink backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "f206b1f13f69"
+   },
+   {
+    "id": "v14",
+    "start": 49.788,
+    "end": 52.608,
+    "narration": "Ready to reframe your next upload?",
+    "kind": "image",
+    "src": "assets/img_14.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup showing a clean export button ready to tap on a solid mint green backdrop"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "19a8c564c890"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Ten",
+     "start": 0.1,
+     "end": 0.338
+    },
+    {
+     "word": "million",
+     "start": 0.35,
+     "end": 0.7
+    },
+    {
+     "word": "creators",
+     "start": 0.725,
+     "end": 1.225
+    },
+    {
+     "word": "crop",
+     "start": 1.25,
+     "end": 1.525
+    },
+    {
+     "word": "horizontal",
+     "start": 1.538,
+     "end": 2.188
+    },
+    {
+     "word": "footage",
+     "start": 2.212,
+     "end": 2.562
+    },
+    {
+     "word": "into",
+     "start": 2.587,
+     "end": 2.8
+    },
+    {
+     "word": "vertical",
+     "start": 2.825,
+     "end": 3.237
+    },
+    {
+     "word": "boxes.",
+     "start": 3.263,
+     "end": 3.825
+    },
+    {
+     "word": "Standard",
+     "start": 4.713,
+     "end": 5.225
+    },
+    {
+     "word": "horizontal",
+     "start": 5.25,
+     "end": 5.862
+    },
+    {
+     "word": "timelines",
+     "start": 5.888,
+     "end": 6.412
+    },
+    {
+     "word": "measure",
+     "start": 6.425,
+     "end": 6.737
+    },
+    {
+     "word": "nineteen",
+     "start": 6.763,
+     "end": 7.188
+    },
+    {
+     "word": "twenty",
+     "start": 7.213,
+     "end": 7.575
+    },
+    {
+     "word": "by",
+     "start": 7.6,
+     "end": 7.75
+    },
+    {
+     "word": "ten",
+     "start": 7.775,
+     "end": 8.05
+    },
+    {
+     "word": "eighty",
+     "start": 8.075,
+     "end": 8.287
+    },
+    {
+     "word": "pixels.",
+     "start": 8.312,
+     "end": 8.887
+    },
+    {
+     "word": "Vertical",
+     "start": 9.775,
+     "end": 10.3
+    },
+    {
+     "word": "aspect",
+     "start": 10.312,
+     "end": 10.713
+    },
+    {
+     "word": "ratios",
+     "start": 10.738,
+     "end": 11.25
+    },
+    {
+     "word": "require",
+     "start": 11.275,
+     "end": 11.7
+    },
+    {
+     "word": "ten",
+     "start": 11.713,
+     "end": 11.95
+    },
+    {
+     "word": "eighty",
+     "start": 11.975,
+     "end": 12.238
+    },
+    {
+     "word": "by",
+     "start": 12.262,
+     "end": 12.387
+    },
+    {
+     "word": "nineteen",
+     "start": 12.412,
+     "end": 12.9
+    },
+    {
+     "word": "twenty",
+     "start": 12.912,
+     "end": 13.213
+    },
+    {
+     "word": "pixels.",
+     "start": 13.238,
+     "end": 13.812
+    },
+    {
+     "word": "People",
+     "start": 14.688,
+     "end": 15.037
+    },
+    {
+     "word": "think",
+     "start": 15.062,
+     "end": 15.238
+    },
+    {
+     "word": "cropping",
+     "start": 15.262,
+     "end": 15.625
+    },
+    {
+     "word": "the",
+     "start": 15.65,
+     "end": 15.762
+    },
+    {
+     "word": "center",
+     "start": 15.775,
+     "end": 16.15
+    },
+    {
+     "word": "works",
+     "start": 16.175,
+     "end": 16.462
+    },
+    {
+     "word": "just",
+     "start": 16.488,
+     "end": 16.738
+    },
+    {
+     "word": "fine.",
+     "start": 16.75,
+     "end": 17.15
+    },
+    {
+     "word": "Moving",
+     "start": 18.038,
+     "end": 18.45
+    },
+    {
+     "word": "the",
+     "start": 18.475,
+     "end": 18.575
+    },
+    {
+     "word": "focal",
+     "start": 18.6,
+     "end": 18.962
+    },
+    {
+     "word": "point",
+     "start": 18.988,
+     "end": 19.262
+    },
+    {
+     "word": "ruins",
+     "start": 19.275,
+     "end": 19.6
+    },
+    {
+     "word": "the",
+     "start": 19.625,
+     "end": 19.738
+    },
+    {
+     "word": "pacing",
+     "start": 19.762,
+     "end": 20.125
+    },
+    {
+     "word": "completely.",
+     "start": 20.137,
+     "end": 20.788
+    },
+    {
+     "word": "Auto",
+     "start": 21.675,
+     "end": 22.0
+    },
+    {
+     "word": "framing",
+     "start": 22.025,
+     "end": 22.413
+    },
+    {
+     "word": "tools",
+     "start": 22.438,
+     "end": 22.75
+    },
+    {
+     "word": "track",
+     "start": 22.775,
+     "end": 23.062
+    },
+    {
+     "word": "movement",
+     "start": 23.075,
+     "end": 23.438
+    },
+    {
+     "word": "across",
+     "start": 23.462,
+     "end": 23.8
+    },
+    {
+     "word": "the",
+     "start": 23.825,
+     "end": 23.938
+    },
+    {
+     "word": "frame",
+     "start": 23.95,
+     "end": 24.225
+    },
+    {
+     "word": "automatically.",
+     "start": 24.25,
+     "end": 25.087
+    },
+    {
+     "word": "The",
+     "start": 25.975,
+     "end": 26.113
+    },
+    {
+     "word": "software",
+     "start": 26.137,
+     "end": 26.587
+    },
+    {
+     "word": "detects",
+     "start": 26.613,
+     "end": 27.025
+    },
+    {
+     "word": "the",
+     "start": 27.05,
+     "end": 27.175
+    },
+    {
+     "word": "action",
+     "start": 27.2,
+     "end": 27.575
+    },
+    {
+     "word": "so",
+     "start": 27.6,
+     "end": 27.712
+    },
+    {
+     "word": "you",
+     "start": 27.725,
+     "end": 27.863
+    },
+    {
+     "word": "avoid",
+     "start": 27.887,
+     "end": 28.212
+    },
+    {
+     "word": "manual",
+     "start": 28.238,
+     "end": 28.688
+    },
+    {
+     "word": "keyframes.",
+     "start": 28.712,
+     "end": 29.425
+    },
+    {
+     "word": "Key",
+     "start": 30.312,
+     "end": 30.525
+    },
+    {
+     "word": "subjects",
+     "start": 30.55,
+     "end": 31.038
+    },
+    {
+     "word": "stay",
+     "start": 31.062,
+     "end": 31.262
+    },
+    {
+     "word": "right",
+     "start": 31.288,
+     "end": 31.575
+    },
+    {
+     "word": "in",
+     "start": 31.587,
+     "end": 31.65
+    },
+    {
+     "word": "the",
+     "start": 31.675,
+     "end": 31.775
+    },
+    {
+     "word": "center",
+     "start": 31.788,
+     "end": 32.175
+    },
+    {
+     "word": "of",
+     "start": 32.2,
+     "end": 32.275
+    },
+    {
+     "word": "the",
+     "start": 32.3,
+     "end": 32.388
+    },
+    {
+     "word": "vertical",
+     "start": 32.413,
+     "end": 32.862
+    },
+    {
+     "word": "crop.",
+     "start": 32.888,
+     "end": 33.263
+    },
+    {
+     "word": "No",
+     "start": 34.15,
+     "end": 34.425
+    },
+    {
+     "word": "boring",
+     "start": 34.438,
+     "end": 34.775
+    },
+    {
+     "word": "dead",
+     "start": 34.788,
+     "end": 35.0
+    },
+    {
+     "word": "space",
+     "start": 35.025,
+     "end": 35.35
+    },
+    {
+     "word": "left",
+     "start": 35.362,
+     "end": 35.638
+    },
+    {
+     "word": "on",
+     "start": 35.663,
+     "end": 35.763
+    },
+    {
+     "word": "the",
+     "start": 35.788,
+     "end": 35.888
+    },
+    {
+     "word": "sides.",
+     "start": 35.913,
+     "end": 36.425
+    },
+    {
+     "word": "Then",
+     "start": 37.3,
+     "end": 37.55
+    },
+    {
+     "word": "export",
+     "start": 37.575,
+     "end": 37.987
+    },
+    {
+     "word": "starts",
+     "start": 38.013,
+     "end": 38.375
+    },
+    {
+     "word": "in",
+     "start": 38.388,
+     "end": 38.513
+    },
+    {
+     "word": "seconds",
+     "start": 38.538,
+     "end": 38.987
+    },
+    {
+     "word": "instead",
+     "start": 39.013,
+     "end": 39.375
+    },
+    {
+     "word": "of",
+     "start": 39.4,
+     "end": 39.5
+    },
+    {
+     "word": "hours.",
+     "start": 39.525,
+     "end": 39.962
+    },
+    {
+     "word": "Your",
+     "start": 40.85,
+     "end": 41.087
+    },
+    {
+     "word": "clips",
+     "start": 41.112,
+     "end": 41.438
+    },
+    {
+     "word": "look",
+     "start": 41.45,
+     "end": 41.65
+    },
+    {
+     "word": "ready",
+     "start": 41.675,
+     "end": 41.95
+    },
+    {
+     "word": "for",
+     "start": 41.975,
+     "end": 42.175
+    },
+    {
+     "word": "any",
+     "start": 42.2,
+     "end": 42.4
+    },
+    {
+     "word": "feed.",
+     "start": 42.425,
+     "end": 42.862
+    },
+    {
+     "word": "Stop",
+     "start": 43.737,
+     "end": 44.163
+    },
+    {
+     "word": "wasting",
+     "start": 44.175,
+     "end": 44.575
+    },
+    {
+     "word": "time",
+     "start": 44.6,
+     "end": 44.875
+    },
+    {
+     "word": "on",
+     "start": 44.9,
+     "end": 45.025
+    },
+    {
+     "word": "manual",
+     "start": 45.05,
+     "end": 45.5
+    },
+    {
+     "word": "framing.",
+     "start": 45.525,
+     "end": 46.0
+    },
+    {
+     "word": "Let",
+     "start": 46.875,
+     "end": 47.112
+    },
+    {
+     "word": "the",
+     "start": 47.138,
+     "end": 47.263
+    },
+    {
+     "word": "software",
+     "start": 47.288,
+     "end": 47.825
+    },
+    {
+     "word": "do",
+     "start": 47.85,
+     "end": 47.975
+    },
+    {
+     "word": "the",
+     "start": 47.987,
+     "end": 48.1
+    },
+    {
+     "word": "heavy",
+     "start": 48.112,
+     "end": 48.425
+    },
+    {
+     "word": "lifting.",
+     "start": 48.45,
+     "end": 48.9
+    },
+    {
+     "word": "Ready",
+     "start": 49.788,
+     "end": 50.138
+    },
+    {
+     "word": "to",
+     "start": 50.163,
+     "end": 50.275
+    },
+    {
+     "word": "reframe",
+     "start": 50.3,
+     "end": 50.812
+    },
+    {
+     "word": "your",
+     "start": 50.837,
+     "end": 50.975
+    },
+    {
+     "word": "next",
+     "start": 51.0,
+     "end": 51.312
+    },
+    {
+     "word": "upload?",
+     "start": 51.325,
+     "end": 51.725
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-GuyNeural",
+     "rate": "+0%",
+     "text": "Ten million creators crop horizontal footage into vertical boxes. Standard horizontal timelines measure nineteen twenty by ten eighty pixels. Vertical aspect ratios require ten eighty by nineteen twenty pixels. People think cropping the center works just fine. Moving the focal point ruins the pacing completely. Auto framing tools track movement across the frame automatically. The software detects the action so you avoid manual keyframes. Key subjects stay right in the center of the vertical crop. No boring dead space left on the sides. Then export starts in seconds instead of hours. Your clips look ready for any feed. Stop wasting time on manual framing. Let the software do the heavy lifting. Ready to reframe your next upload?"
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.66,
+    "text": "horizontal",
+    "y": 0.3
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.66,
+    "opacity": 0.5,
+    "seed": 1.09
+   },
+   {
+    "id": "ly3",
+    "kind": "color-wash",
+    "anchor": "v2",
+    "delay": 0.0,
+    "start": 4.71,
+    "end": 9.72,
+    "opacity": 0.45,
+    "seed": 6.0
+   },
+   {
+    "id": "ly4",
+    "kind": "draw-line",
+    "anchor": "v3",
+    "delay": 0.5,
+    "start": 10.28,
+    "end": 14.64,
+    "shape": "bracket",
+    "x": 0.25,
+    "y": 0.38,
+    "w": 0.5
+   },
+   {
+    "id": "ly5",
+    "kind": "icon-pop",
+    "anchor": "v4",
+    "delay": 0.2,
+    "start": 14.89,
+    "end": 17.99,
+    "icon": "bulb",
+    "x": 0.61,
+    "y": 0.22
+   },
+   {
+    "id": "ly6",
+    "kind": "color-wash",
+    "anchor": "v5",
+    "delay": 0.0,
+    "start": 18.04,
+    "end": 21.62,
+    "opacity": 0.45,
+    "seed": 5.23
+   },
+   {
+    "id": "ly7",
+    "kind": "color-wash",
+    "anchor": "v7",
+    "delay": 0.0,
+    "start": 25.98,
+    "end": 30.26,
+    "opacity": 0.45,
+    "seed": 2.36
+   },
+   {
+    "id": "ly8",
+    "kind": "color-wash",
+    "anchor": "v9",
+    "delay": 0.0,
+    "start": 34.15,
+    "end": 37.25,
+    "opacity": 0.45,
+    "seed": 3.23
+   },
+   {
+    "id": "ly9",
+    "kind": "color-wash",
+    "anchor": "v11",
+    "delay": 0.0,
+    "start": 40.85,
+    "end": 43.69,
+    "opacity": 0.45,
+    "seed": 2.53
+   },
+   {
+    "id": "ly10",
+    "kind": "icon-pop",
+    "anchor": "v12",
+    "delay": 0.2,
+    "start": 43.94,
+    "end": 46.83,
+    "icon": "clock",
+    "x": 0.31,
+    "y": 0.22
+   },
+   {
+    "id": "ly11",
+    "kind": "color-wash",
+    "anchor": "v13",
+    "delay": 0.0,
+    "start": 46.88,
+    "end": 49.74,
+    "opacity": 0.45,
+    "seed": 0.59
+   },
+   {
+    "id": "ly12",
+    "kind": "icon-pop",
+    "anchor": "v14",
+    "delay": 0.2,
+    "start": 49.99,
+    "end": 52.56,
+    "icon": "question",
+    "x": 0.5,
+    "y": 0.22
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794288354621,
+  "updated": 1794288354979,
+  "topic": "YouTube short of how to edit editor it 9:16",
+  "hook": "Ten million creators crop horizontal footage into vertical boxes.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "vertical",
+  "assets_release": "project-edit-nine-sixteen-videos-fast-mwa8vyja",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Ten million creators crop horizontal footage into vertical boxes.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "edit-nine-sixteen-videos-fast-mwa8vyja",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "Edit Nine Sixteen Videos Fast",
+   "topic": "YouTube short of how to edit editor it 9:16",
+   "voice": "en-US-GuyNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Ten million creators crop horizonta...\"): hook beat. I am slamming HORIZONTAL on screen word by word under a moving colour wash.",
+   "Beat 2 (\"Standard horizontal timelines measu...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 3 (\"Vertical aspect ratios require ten ...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 4 (\"People think cropping the center wo...\"): this beat is about 'bulb', so I am popping a 'bulb' icon in.",
+   "Beat 5 (\"Moving the focal point ruins the pa...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 6 (\"Auto framing tools track movement a...\"): nothing new to add here. I am letting the picture breathe.",
+   "Beat 7 (\"The software detects the action so ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 8 (\"Key subjects stay right in the cent...\"): nothing new to add here. I am letting the picture breathe.",
+   "Beat 9 (\"No boring dead space left on the si...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 10 (\"Then export starts in seconds inste...\"): nothing new to add here. I am letting the picture breathe.",
+   "Beat 11 (\"Your clips look ready for any feed.\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 12 (\"Stop wasting time on manual framing.\"): this beat is about 'clock', so I am popping a 'clock' icon in.",
+   "Beat 13 (\"Let the software do the heavy lifting.\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 14 (\"Ready to reframe your next upload?\"): it is a question, so I am popping a question mark to hold attention."
+  ]
+ }
+}
