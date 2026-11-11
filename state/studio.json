@@ -1,23 +1,35 @@
 {
-  "last_update": 312538400,
-  "time": 1794391184516,
-  "stage": "idle",
-  "topic": "how the world war ii ended",
+  "last_update": 312538401,
+  "time": 1794391217128,
+  "stage": "pitch",
+  "topic": "Creat that's more of tech that teach people how API works",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "How APIs Actually Move The Internet",
+    "hook": "Ten billion automated API requests fire across the internet every single hour.",
+    "angle": "People assume their phone apps directly tap into an airline or weather database. Software actually communicates through a strict digital courier that only accepts standardized question templates.",
+    "key_facts": [
+      "Application Programming Interfaces define specific rules and formats for separate software systems to exchange data.",
+      "Most modern web APIs transmit structured text using HTTP protocols and JSON payloads.",
+      "Apps use private API keys to authenticate requests and enforce rate limits on external developers.",
+      "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously."
+    ],
+    "visual_style": "Dark corporate digital UI mixed with desaturated grayscale webcam headshots and vivid scarlet red humanoid figures.",
+    "length_seconds": 45,
+    "style": "upload-5",
+    "style_reason": "Satirical remote call interface turns abstract digital handshakes into tangible bureaucratic absurdities.",
+    "music": "tech-pulse",
+    "accent": "red",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Cheese the 90s Fast\": A neon cassette spins in a dark room.",
-      "t": 1794303071503
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Cheese the 90s Fast\"",
@@ -92,6 +104,11 @@
       "role": "bot",
       "text": "Yes, I'm active and ready to help you with your videos!",
       "t": 1794391110554
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How APIs Actually Move The Internet\": Ten billion automated API requests fire across the internet every single hour.",
+      "t": 1794391217128
     }
   ],
   "working": null,
@@ -1074,7 +1091,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about about something real-world, like city life.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about short about what is going on in the ai industry today.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.\n- (interest) The user approved a short about YouTube short of how to edit editor it 9:16.\n- (interest) The user is interested in professional video editing techniques.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (idea) The user likes YouTube Shorts ideas about tech facts, specifically why phone batteries die faster in the cold.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about how the world war ii ended.\n- (interest) The user approved a short about short about what is going on in the ai industry today.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1202,7 +1219,10 @@
     "browser_bot": false,
     "style": "upload-5"
   },
-  "job": null,
+  "job": {
+    "format": "landscape",
+    "research": "full"
+  },
   "recent_styles": [
     "fastedit2",
     "retro-vhs",
@@ -2136,13 +2156,6 @@
     }
   ],
   "assets": null,
-  "intake": {
-    "topic": "Creat an explainer video that's more of tech that teach people how API works",
-    "job": {
-      "format": "landscape"
-    },
-    "items": [],
-    "n": 0,
-    "at": 1794391184516
-  }
+  "intake": null,
+  "assets_at": 1794391192461
 }
