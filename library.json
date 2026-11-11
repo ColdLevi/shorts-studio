@@ -459,6 +459,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-43",
+      "title": "How APIs Actually Move The Internet",
+      "hook": "Ten billion automated API requests fire across the internet every single hour.",
+      "accent": "#FF5A5F",
+      "duration": 30.1,
+      "created": 1794392417463,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-43/short-43.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-43/short-43.jpg",
+      "project": "how-apis-actually-move-the-internet-mwbyg8u3",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

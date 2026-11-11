@@ -1,0 +1,744 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-apis-actually-move-the-internet-mwbyg8u3",
+ "rev": 1,
+ "title": "How APIs Actually Move The Internet",
+ "duration": 29.96,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 24
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter",
+   "case": "none",
+   "color": "#FFFFFF",
+   "highlight": "#FF2A2A",
+   "position": "bottom"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "cut",
+   "fade"
+  ],
+  "backdrop": "none",
+  "vignette": false,
+  "font": "Inter",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FF5A5F",
+  "fx": {
+   "flicker": false,
+   "hold": 2,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.15) saturate(0.6)",
+  "palette": [
+   "#121214",
+   "#202124"
+  ],
+  "progress_bar": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.115,
+    "narration": "You open a travel app expecting a direct peek inside an airline database, but",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Dark corporate digital UI framing a desaturated grayscale video conference grid with red data streams, landscape",
+     "motion": "Static corporate UI window with a subtle slow zoom toward a desaturated webcam tile as glowing red code lines activate",
+     "still": "flux"
+    },
+    "hash": "2555e5c43c1b"
+   },
+   {
+    "id": "v2",
+    "start": 4.115,
+    "end": 10.967,
+    "narration": "separate software systems won't speak directly, so your phone uses a strict digital courier that only takes standard question templates.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Dark corporate digital UI featuring a vivid scarlet red humanoid figure acting as an office clerk handing paper-like digital forms to desaturated grayscale server icons, landscape"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "27ab9db70acf",
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.967,
+    "end": 16.592,
+    "narration": "They format every query into structured text using standard HTTP protocols and JSON payloads, so",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Dark corporate digital UI displaying desaturated grayscale terminal text blocks highlighted by glowing scarlet red brackets, landscape"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "5e4770478ee0",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.592,
+    "end": 21.352,
+    "narration": "travel platforms can query multiple independent airline reservation engines all at once, but",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Dark corporate digital UI showing multiple desaturated grayscale webcam windows connecting to central airline server blocks, landscape"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "346be27c86cf",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 21.352,
+    "end": 29.16,
+    "narration": "the receiving servers will instantly freeze the data stream unless a private API key authenticates the call and enforces strict rate limits.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Dark corporate digital UI featuring a vivid scarlet red key locking down desaturated grayscale network channels, landscape"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e15102ce6bdb",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "You",
+     "start": 0.1,
+     "end": 0.3
+    },
+    {
+     "word": "open",
+     "start": 0.325,
+     "end": 0.55
+    },
+    {
+     "word": "a",
+     "start": 0.575,
+     "end": 0.625
+    },
+    {
+     "word": "travel",
+     "start": 0.65,
+     "end": 1.038
+    },
+    {
+     "word": "app",
+     "start": 1.062,
+     "end": 1.225
+    },
+    {
+     "word": "expecting",
+     "start": 1.25,
+     "end": 1.738
+    },
+    {
+     "word": "a",
+     "start": 1.762,
+     "end": 1.812
+    },
+    {
+     "word": "direct",
+     "start": 1.825,
+     "end": 2.15
+    },
+    {
+     "word": "peek",
+     "start": 2.175,
+     "end": 2.388,
+     "em": true
+    },
+    {
+     "word": "inside",
+     "start": 2.4,
+     "end": 2.763
+    },
+    {
+     "word": "an",
+     "start": 2.775,
+     "end": 2.875
+    },
+    {
+     "word": "airline",
+     "start": 2.9,
+     "end": 3.225
+    },
+    {
+     "word": "database,",
+     "start": 3.237,
+     "end": 3.8
+    },
+    {
+     "word": "but",
+     "start": 4.0,
+     "end": 4.15
+    },
+    {
+     "word": "separate",
+     "start": 4.175,
+     "end": 4.525
+    },
+    {
+     "word": "software",
+     "start": 4.55,
+     "end": 5.013
+    },
+    {
+     "word": "systems",
+     "start": 5.037,
+     "end": 5.438
+    },
+    {
+     "word": "won't",
+     "start": 5.463,
+     "end": 5.638
+    },
+    {
+     "word": "speak",
+     "start": 5.662,
+     "end": 5.888
+    },
+    {
+     "word": "directly,",
+     "start": 5.9,
+     "end": 6.362
+    },
+    {
+     "word": "so",
+     "start": 6.522,
+     "end": 6.622
+    },
+    {
+     "word": "your",
+     "start": 6.647,
+     "end": 6.81
+    },
+    {
+     "word": "phone",
+     "start": 6.835,
+     "end": 7.097
+    },
+    {
+     "word": "uses",
+     "start": 7.122,
+     "end": 7.409
+    },
+    {
+     "word": "a",
+     "start": 7.434,
+     "end": 7.497
+    },
+    {
+     "word": "strict",
+     "start": 7.522,
+     "end": 7.847
+    },
+    {
+     "word": "digital",
+     "start": 7.859,
+     "end": 8.235
+    },
+    {
+     "word": "courier",
+     "start": 8.259,
+     "end": 8.659
+    },
+    {
+     "word": "that",
+     "start": 8.684,
+     "end": 8.822
+    },
+    {
+     "word": "only",
+     "start": 8.847,
+     "end": 9.06
+    },
+    {
+     "word": "takes",
+     "start": 9.072,
+     "end": 9.31
+    },
+    {
+     "word": "standard",
+     "start": 9.335,
+     "end": 9.735
+    },
+    {
+     "word": "question",
+     "start": 9.759,
+     "end": 10.159
+    },
+    {
+     "word": "templates.",
+     "start": 10.184,
+     "end": 10.747
+    },
+    {
+     "word": "They",
+     "start": 11.027,
+     "end": 11.164
+    },
+    {
+     "word": "format",
+     "start": 11.189,
+     "end": 11.627
+    },
+    {
+     "word": "every",
+     "start": 11.64,
+     "end": 11.877
+    },
+    {
+     "word": "query",
+     "start": 11.902,
+     "end": 12.24
+    },
+    {
+     "word": "into",
+     "start": 12.265,
+     "end": 12.439
+    },
+    {
+     "word": "structured",
+     "start": 12.452,
+     "end": 12.902
+    },
+    {
+     "word": "text",
+     "start": 12.927,
+     "end": 13.215
+    },
+    {
+     "word": "using",
+     "start": 13.24,
+     "end": 13.527
+    },
+    {
+     "word": "standard",
+     "start": 13.552,
+     "end": 13.977
+    },
+    {
+     "word": "HTTP",
+     "start": 14.002,
+     "end": 14.677
+    },
+    {
+     "word": "protocols",
+     "start": 14.702,
+     "end": 15.277
+    },
+    {
+     "word": "and",
+     "start": 15.289,
+     "end": 15.377
+    },
+    {
+     "word": "JSON",
+     "start": 15.402,
+     "end": 15.827
+    },
+    {
+     "word": "payloads,",
+     "start": 15.852,
+     "end": 16.315
+    },
+    {
+     "word": "so",
+     "start": 16.527,
+     "end": 16.64
+    },
+    {
+     "word": "travel",
+     "start": 16.652,
+     "end": 16.989
+    },
+    {
+     "word": "platforms",
+     "start": 17.002,
+     "end": 17.552
+    },
+    {
+     "word": "can",
+     "start": 17.577,
+     "end": 17.715
+    },
+    {
+     "word": "query",
+     "start": 17.739,
+     "end": 18.039
+    },
+    {
+     "word": "multiple",
+     "start": 18.065,
+     "end": 18.539
+    },
+    {
+     "word": "independent",
+     "start": 18.565,
+     "end": 19.089
+    },
+    {
+     "word": "airline",
+     "start": 19.114,
+     "end": 19.427
+    },
+    {
+     "word": "reservation",
+     "start": 19.44,
+     "end": 20.052
+    },
+    {
+     "word": "engines",
+     "start": 20.077,
+     "end": 20.44
+    },
+    {
+     "word": "all",
+     "start": 20.465,
+     "end": 20.614
+    },
+    {
+     "word": "at",
+     "start": 20.64,
+     "end": 20.727
+    },
+    {
+     "word": "once,",
+     "start": 20.752,
+     "end": 21.089
+    },
+    {
+     "word": "but",
+     "start": 21.249,
+     "end": 21.387
+    },
+    {
+     "word": "the",
+     "start": 21.412,
+     "end": 21.487
+    },
+    {
+     "word": "receiving",
+     "start": 21.499,
+     "end": 21.949
+    },
+    {
+     "word": "servers",
+     "start": 21.975,
+     "end": 22.387
+    },
+    {
+     "word": "will",
+     "start": 22.412,
+     "end": 22.55
+    },
+    {
+     "word": "instantly",
+     "start": 22.574,
+     "end": 22.987
+    },
+    {
+     "word": "freeze",
+     "start": 23.012,
+     "end": 23.287
+    },
+    {
+     "word": "the",
+     "start": 23.312,
+     "end": 23.425
+    },
+    {
+     "word": "data",
+     "start": 23.449,
+     "end": 23.712
+    },
+    {
+     "word": "stream",
+     "start": 23.725,
+     "end": 24.012
+    },
+    {
+     "word": "unless",
+     "start": 24.037,
+     "end": 24.3
+    },
+    {
+     "word": "a",
+     "start": 24.324,
+     "end": 24.387
+    },
+    {
+     "word": "private",
+     "start": 24.399,
+     "end": 24.762
+    },
+    {
+     "word": "API",
+     "start": 24.787,
+     "end": 25.199
+    },
+    {
+     "word": "key",
+     "start": 25.225,
+     "end": 25.437
+    },
+    {
+     "word": "authenticates",
+     "start": 25.462,
+     "end": 26.125
+    },
+    {
+     "word": "the",
+     "start": 26.137,
+     "end": 26.237
+    },
+    {
+     "word": "call",
+     "start": 26.262,
+     "end": 26.55
+    },
+    {
+     "word": "and",
+     "start": 26.562,
+     "end": 26.649
+    },
+    {
+     "word": "enforces",
+     "start": 26.675,
+     "end": 27.149
+    },
+    {
+     "word": "strict",
+     "start": 27.162,
+     "end": 27.487
+    },
+    {
+     "word": "rate",
+     "start": 27.512,
+     "end": 27.725
+    },
+    {
+     "word": "limits.",
+     "start": 27.749,
+     "end": 28.212,
+     "em": true
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-GuyNeural",
+     "rate": "+0%",
+     "text": "You open a travel app expecting a direct peek inside an airline database, but separate software systems won't speak directly, so your phone uses a strict digital courier that only takes standard question templates. They format every query into structured text using standard HTTP protocols and JSON payloads, so travel platforms can query multiple independent airline reservation engines all at once, but the receiving servers will instantly freeze the data stream unless a private API key authenticates the call and enforces strict rate limits."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 10.767,
+    "volume": 0.55,
+    "anchor": "v3",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.07,
+    "text": "expecting",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.07,
+    "opacity": 0.35,
+    "seed": 1.99
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794391756236,
+  "updated": 1794391756239,
+  "topic": "Creat that's more of tech that teach people how API works",
+  "hook": "Ten billion automated API requests fire across the internet every single hour.",
+  "image_style": "Dark corporate digital UI mixed with desaturated grayscale webcam headshots and vivid scarlet red humanoid figures.",
+  "format": "landscape",
+  "assets_release": "project-how-apis-actually-move-the-internet-mwbyg8u3",
+  "spec": {
+   "accent": "#FF5A5F",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 24,
+   "gemini_images": false,
+   "hook": "Ten billion automated API requests fire across the internet every single hour.",
+   "learned_style": "upload-5",
+   "music": "tech-pulse",
+   "project_id": "how-apis-actually-move-the-internet-mwbyg8u3",
+   "style": "Dark corporate digital UI mixed with desaturated grayscale webcam headshots and vivid scarlet red humanoid figures.",
+   "style_preset": "motion-explainer",
+   "style_tokens": {
+    "accent": "#FF1E27",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Inter",
+     "highlight": "#FF2A2A",
+     "position": "bottom",
+     "preset": "none"
+    },
+    "font": "Inter",
+    "fx": {
+     "flicker": false,
+     "hold": 2,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.15) saturate(0.6)",
+    "motion": "static",
+    "palette": [
+     "#121214",
+     "#202124"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "fade"
+    ],
+    "vignette": false
+   },
+   "title": "How APIs Actually Move The Internet",
+   "topic": "Creat that's more of tech that teach people how API works",
+   "voice": "en-US-GuyNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"You open a travel app expecting a d...\"): the hook. No subject cutout, so I put EXPECTING in the top band where it cannot cover the face.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 5: drift (last picture: slow pull-out (not the same move twice))."
+  ],
+  "qa": [],
+  "sound": "2 effects: swish, tick"
+ }
+}
