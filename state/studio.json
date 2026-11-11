@@ -1,6 +1,6 @@
 {
-  "last_update": 312538388,
-  "time": 1794369850241,
+  "last_update": 312538389,
+  "time": 1794370022728,
   "stage": "idle",
   "topic": "short about what is going on in the ai industry today",
   "research": {
@@ -1162,7 +1162,6 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "style": "fastedit2",
     "graphics": false,
     "browser_bot": false
   },
@@ -2169,7 +2168,9 @@
         "kind": "learned"
       }
     ],
-    "job": {},
+    "job": {
+      "style": "documentary"
+    },
     "at": 1794369850240
   }
 }
