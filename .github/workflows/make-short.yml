@@ -219,7 +219,12 @@ jobs:
         if: env.SKIP_RENDER != '1'
         run: |
           python3 tools/qa.py post remotion/out/short.mp4 "$PROJECT_ID" || true   # step4-sound: QA after the render
-          ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart job/final.mp4
+          GVF=$(python3 tools/grade.py "$PROJECT_ID" 2>/dev/null || true)   # step-grade: per-style colour grade
+          if [ -n "$GVF" ] && ffmpeg -y -loglevel error -i remotion/out/short.mp4 -vf "$GVF" -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart job/final.mp4; then
+            echo "grade applied: $GVF"
+          else
+            ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart job/final.mp4
+          fi
           ffmpeg -y -loglevel error -ss 1.2 -i job/final.mp4 -frames:v 1 -vf scale=540:-2 -q:v 3 job/poster.jpg
           ls -la job/final.mp4 job/poster.jpg
 
