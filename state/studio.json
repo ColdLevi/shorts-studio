@@ -1,166 +1,18 @@
 {
-  "last_update": 312538391,
-  "time": 1794370108920,
-  "stage": "script",
+  "last_update": 312538395,
+  "time": 1794370220245,
+  "stage": "idle",
   "topic": "how the world war ii ended",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "How World War Two Really Ended",
-    "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
-    "angle": "Most people think World War Two ended instantly with the atomic bomb. In reality, it took nuclear strikes, a massive Soviet army invasion, and an unprecedented royal broadcast to break Japan's final stance.",
-    "key_facts": [
-      "Germany unconditionally surrendered on May eighth, nineteen forty-five, ending the conflict in Europe.",
-      "The United States dropped atomic bombs on Hiroshima on August sixth and Nagasaki on August ninth, nineteen forty-five.",
-      "The Soviet Union launched a massive invasion of Japanese-held Manchuria on August ninth, nineteen forty-five.",
-      "Japan officially signed the surrender documents aboard the USS Missouri on September second, nineteen forty-five."
-    ],
-    "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-    "length_seconds": 45,
-    "style": "documentary",
-    "style_reason": "Gives historical events a cinematic museum quality with dramatic depth.",
-    "music": "cinematic-min",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How World War Two Really Ended",
-    "beats": [
-      {
-        "narration": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
-        "image_prompt": "16:9 landscape aspect ratio. A wide painterly historical illustration of Allied soldiers celebrating in ruined European streets, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, subject in lower two-thirds",
-        "tool": "higgsfield",
-        "motion": "slow push forward across the cheering crowd toward the smoky sky",
-        "still": "flux",
-        "callout": "May 8, 1945",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            13
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
-        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of Japanese military officials seated around a dark wooden war room table, low key lighting, deep shadows, muted earth tones, museum-diorama depth",
-        "tool": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            13
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
-        "image_prompt": "16:9 landscape aspect ratio. Historical footage of a massive smoke plume rising over destroyed terrain, grainy archival look, dramatic contrast",
-        "tool": "stock",
-        "query": "vintage explosion smoke cloud",
-        "callout": "August 1945",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            1
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "but inside Tokyo, military leadership still planned to fight to the last man.",
-        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of silhouettes of generals standing before a illuminated tactical wall map of the Pacific, dramatic chiaroscuro lighting, aged paper texture",
-        "tool": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            5
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
-        "image_prompt": "16:9 landscape aspect ratio. Archival style video of tanks rolling through dusty open plains",
-        "tool": "stock",
-        "query": "tanks moving desert dust",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            1
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "wiping out their entire northern force and leaving them completely cornered,",
-        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of abandoned military encampments across cold northern plains, heavy fog, muted earth tones, dramatic shadows, museum-diorama depth",
-        "tool": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            9
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
-        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of a single vintage radio microphone sitting under a bright spotlight on a dark wooden table, dramatic chiaroscuro lighting, aged paper texture",
-        "tool": "flux"
-      },
-      {
-        "narration": "ending it all on September second, nineteen forty-five, aboard the USS Missouri.",
-        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of the massive deck of the USS Missouri surrounded by ocean waters, dramatic horizon lighting, muted golden tones, museum-diorama depth",
-        "tool": "higgsfield",
-        "motion": "cinematic slow pan across the battleship deck toward the open ocean",
-        "still": "flux",
-        "callout": "Sept 2, 1945",
-        "cues": {
-          "pauses": [
-            {
-              "after": 0,
-              "s": 0.3
-            }
-          ],
-          "emphasis": [
-            11
-          ],
-          "sfx": []
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Victory in Europe was celebrated on May 8, 1945.",
-        "supported": true
-      },
-      {
-        "claim": "Atomic bombs were dropped on Hiroshima on August 6 and Nagasaki on August 9, 1945.",
-        "supported": true
-      },
-      {
-        "claim": "The Soviet Union launched a massive invasion of Manchuria on August 9, 1945.",
-        "supported": true
-      },
-      {
-        "claim": "Japan officially signed surrender documents aboard the USS Missouri on September 2, 1945.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Buying Beer Is Too Easy Now\": A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
-      "t": 1794294180146
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Buying Beer Is Too Easy Now\"",
@@ -235,10 +87,171 @@
       "role": "bot",
       "text": "Wrote the script for \"How World War Two Really Ended\"",
       "t": 1794370108920
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How World War Two Really Ended\"",
+      "t": 1794370220245
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-world-war-two-really-ended-mwblp6v8",
+      "canvas": "16:9",
+      "title": "How World War Two Really Ended",
+      "topic": "how the world war ii ended",
+      "pitch": {
+        "title": "How World War Two Really Ended",
+        "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+        "angle": "Most people think World War Two ended instantly with the atomic bomb. In reality, it took nuclear strikes, a massive Soviet army invasion, and an unprecedented royal broadcast to break Japan's final stance.",
+        "key_facts": [
+          "Germany unconditionally surrendered on May eighth, nineteen forty-five, ending the conflict in Europe.",
+          "The United States dropped atomic bombs on Hiroshima on August sixth and Nagasaki on August ninth, nineteen forty-five.",
+          "The Soviet Union launched a massive invasion of Japanese-held Manchuria on August ninth, nineteen forty-five.",
+          "Japan officially signed the surrender documents aboard the USS Missouri on September second, nineteen forty-five."
+        ],
+        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "length_seconds": 45,
+        "style": "documentary",
+        "style_reason": "Gives historical events a cinematic museum quality with dramatic depth.",
+        "music": "cinematic-min",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How World War Two Really Ended",
+        "beats": [
+          {
+            "narration": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
+            "image_prompt": "16:9 landscape aspect ratio. A wide painterly historical illustration of Allied soldiers celebrating in ruined European streets, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, subject in lower two-thirds",
+            "tool": "higgsfield",
+            "motion": "slow push forward across the cheering crowd toward the smoky sky",
+            "still": "flux",
+            "callout": "May 8, 1945",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                13
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
+            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of Japanese military officials seated around a dark wooden war room table, low key lighting, deep shadows, muted earth tones, museum-diorama depth",
+            "tool": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                13
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
+            "image_prompt": "16:9 landscape aspect ratio. Historical footage of a massive smoke plume rising over destroyed terrain, grainy archival look, dramatic contrast",
+            "tool": "stock",
+            "query": "vintage explosion smoke cloud",
+            "callout": "August 1945",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                1
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "but inside Tokyo, military leadership still planned to fight to the last man.",
+            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of silhouettes of generals standing before a illuminated tactical wall map of the Pacific, dramatic chiaroscuro lighting, aged paper texture",
+            "tool": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                5
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
+            "image_prompt": "16:9 landscape aspect ratio. Archival style video of tanks rolling through dusty open plains",
+            "tool": "stock",
+            "query": "tanks moving desert dust",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                1
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "wiping out their entire northern force and leaving them completely cornered,",
+            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of abandoned military encampments across cold northern plains, heavy fog, muted earth tones, dramatic shadows, museum-diorama depth",
+            "tool": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                9
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
+            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of a single vintage radio microphone sitting under a bright spotlight on a dark wooden table, dramatic chiaroscuro lighting, aged paper texture",
+            "tool": "flux"
+          },
+          {
+            "narration": "ending it all on September second, nineteen forty-five, aboard the USS Missouri.",
+            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of the massive deck of the USS Missouri surrounded by ocean waters, dramatic horizon lighting, muted golden tones, museum-diorama depth",
+            "tool": "higgsfield",
+            "motion": "cinematic slow pan across the battleship deck toward the open ocean",
+            "still": "flux",
+            "callout": "Sept 2, 1945",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 0,
+                  "s": 0.3
+                }
+              ],
+              "emphasis": [
+                11
+              ],
+              "sfx": []
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Victory in Europe was celebrated on May 8, 1945.",
+            "supported": true
+          },
+          {
+            "claim": "Atomic bombs were dropped on Hiroshima on August 6 and Nagasaki on August 9, 1945.",
+            "supported": true
+          },
+          {
+            "claim": "The Soviet Union launched a massive invasion of Manchuria on August 9, 1945.",
+            "supported": true
+          },
+          {
+            "claim": "Japan officially signed surrender documents aboard the USS Missouri on September 2, 1945.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794370220245
+    },
     {
       "id": "the-real-money-behind-ai-mwbixkwb",
       "canvas": "9:16",
@@ -1058,126 +1071,6 @@
         "sources": []
       },
       "at": 1794220481819
-    },
-    {
-      "id": "fourteen-days-across-oceans-mw91nhoc",
-      "canvas": "9:16",
-      "title": "Fourteen Days Across Oceans",
-      "topic": "vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle captions",
-      "pitch": {
-        "title": "Fourteen Days Across Oceans",
-        "hook": "One cardboard parcel sits on a metal warehouse floor in Guangzhou.",
-        "angle": "People think cheap shipping means instant delivery, but ocean cargo and local port clearance turn a simple order into a fourteen day journey.",
-        "key_facts": [
-          "Shipping takes fourteen days from China to Nigeria",
-          "Cargo travels by sea and air routes",
-          "Freight costs roughly four to seven dollars per kilo",
-          "Customs clearance can trigger unexpected port delays"
-        ],
-        "visual_style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
-        "length_seconds": 60,
-        "style": "cinematic",
-        "style_reason": "Cinematic tone enhances global logistics documentary feel",
-        "music": "docu-pluck",
-        "accent": "gold",
-        "format": "vertical"
-      },
-      "script": {
-        "title": "Fourteen Days Across Oceans",
-        "beats": [
-          {
-            "narration": "One cardboard parcel sits on a cold metal warehouse floor in Guangzhou.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered single cardboard box resting on industrial concrete warehouse floor",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Slow camera pull back revealing endless rows of stacked brown boxes under dim industrial ceiling lights."
-          },
-          {
-            "narration": "Buyers expect cheap online orders to arrive overnight.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, centered close-up of hands typing fast on a illuminated glowing smartphone screen in a dark room",
-            "tool": "flux"
-          },
-          {
-            "narration": "But crossing oceans takes a precise chain of international logistics.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive ocean cargo vessel cutting through deep blue sea waves at sunset",
-            "tool": "stock",
-            "query": "cargo ship ocean"
-          },
-          {
-            "narration": "Cargo moves along dedicated sea and air routes across thousands of miles.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, silhouette of a heavy freight airplane flying high above thick clouds during twilight",
-            "tool": "flux"
-          },
-          {
-            "narration": "Moving this freight costs roughly four to seven dollars per kilo.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, digital industrial scale in a dark hub showing a sealed box being weighed",
-            "tool": "flux"
-          },
-          {
-            "narration": "Under ideal conditions, shipping from China to Nigeria takes fourteen days.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wall clock inside a logistics shipping office with time zones lit up",
-            "tool": "flux"
-          },
-          {
-            "narration": "So the package boards a container vessel at the Guangzhou docks.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, massive harbour gantry crane lifting heavy steel shipping container onto ship",
-            "tool": "stock",
-            "query": "container ship departure"
-          },
-          {
-            "narration": "Then it completes the long voyage across open waters to West Africa.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, wide view of a container vessel navigating open sea water near shoreline",
-            "tool": "flux"
-          },
-          {
-            "narration": "But landing at the seaport is only half the battle.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, crowded ocean port terminal filled with thousands of multicolored metal containers",
-            "tool": "flux"
-          },
-          {
-            "narration": "Customs clearance can trigger unexpected port delays that freeze movement for days.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary inspector standing near locked freight containers bathed in dramatic amber floodlights",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Slow push forward along narrow corridors of stacked steel shipping containers in a quiet port yard."
-          },
-          {
-            "narration": "Paperwork checks and inspections keep the box waiting inside stacked containers.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, heavy mechanical crane holding a shipping container static mid-air over a port yard",
-            "tool": "stock",
-            "query": "port container crane"
-          },
-          {
-            "narration": "Fourteen days across oceans turns global trade into patient waiting.",
-            "image_prompt": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, vertical 9:16 framing, solitary cardboard box sitting at a quiet local distribution hub counter ready for final pickup",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Shipping takes fourteen days from China to Nigeria",
-            "supported": true
-          },
-          {
-            "claim": "Cargo travels by sea and air routes",
-            "supported": true
-          },
-          {
-            "claim": "Freight costs roughly four to seven dollars per kilo",
-            "supported": true
-          },
-          {
-            "claim": "Customs clearance can trigger unexpected port delays",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794215616227
     }
   ],
   "lastRenderAuto": false,
@@ -1189,12 +1082,12 @@
   },
   "renders": [
     {
-      "title": "The Real Money Behind AI",
-      "at": 1794365572811,
-      "project": "the-real-money-behind-ai-mwbixkwb"
+      "title": "How World War Two Really Ended",
+      "at": 1794370220245,
+      "project": "how-world-war-two-really-ended-mwblp6v8"
     }
   ],
-  "current_project": "the-real-money-behind-ai-mwbixkwb",
+  "current_project": "how-world-war-two-really-ended-mwblp6v8",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1308,17 +1201,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "style": "documentary",
-    "format": "landscape",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "fastedit2",
     "fastedit2",
     "retro-vhs",
     "motion-explainer",
-    "fastedit2"
+    "fastedit2",
+    "documentary"
   ],
   "learning": null,
   "styles": {
