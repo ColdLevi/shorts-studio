@@ -1,101 +1,18 @@
 {
-  "last_update": 312538415,
-  "time": 1794408425926,
-  "stage": "script",
+  "last_update": 312538419,
+  "time": 1794408524904,
+  "stage": "idle",
   "topic": "how APIs work, how companies money from selling APIs, and how you can the same",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "The Secret Empire of API Keys",
-    "hook": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code.",
-    "angle": "Most people believe apps build all their features from scratch, but massive tech companies actually rent out single-function messengers called APIs. By wrapping useful data or AI tools into custom endpoints, anyone can sell access keys on a per-request subscription.",
-    "key_facts": [
-      "Stripe charges a fixed fee plus a percentage for every payment processed through its API code.",
-      "Twilio charges fractions of a cent per request to send text messages for apps like Uber.",
-      "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits.",
-      "Developers build wrapper APIs around public data sources to charge monthly fees for clean access."
-    ],
-    "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents",
-    "length_seconds": 45,
-    "style": "motion-explainer",
-    "style_reason": "Clean vectors clarify complex data flows and backend connections visually.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "The Secret Empire of API Keys",
-    "beats": [
-      {
-        "narration": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing two lines of glowing code on a dark screen with a digital coin dropping",
-        "tool": "flux"
-      },
-      {
-        "narration": "because building apps from scratch is a trap, so massive tech companies rent out tiny tools called APIs,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a glowing messenger pod sending data blocks between two futuristic software blocks",
-        "tool": "flux"
-      },
-      {
-        "narration": "where Twilio charges fractions of a cent per request just to send text messages for apps like Uber,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a tiny text message bubble floating past a neon car icon",
-        "tool": "flux"
-      },
-      {
-        "narration": "and you think apps own every feature they show you, but they are just assembling rented parts like digital Lego blocks,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing various software modules clicking together with glowing neon joints",
-        "tool": "flux"
-      },
-      {
-        "narration": "so solo devs use marketplaces like RapidAPI to sell micro services with strict rate limits,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a marketplace storefront with neon pricing tiers floating above",
-        "tool": "flux"
-      },
-      {
-        "narration": "wrapping clunky public data sources into clean access points so they can charge monthly subscription fees,",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing messy data streams entering a neat teal box and emerging as shiny coins",
-        "tool": "flux"
-      },
-      {
-        "narration": "turning a simple software connection into a quiet machine that prints money while you sleep.",
-        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a sleek digital server rack pulsing with neon light under a starry sky",
-        "tool": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            12
-          ],
-          "sfx": []
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Stripe started charging seven cents per transaction for just two lines of code in 2011",
-        "supported": true
-      },
-      {
-        "claim": "Twilio charges fractions of a cent per request to send text messages for apps like Uber",
-        "supported": true
-      },
-      {
-        "claim": "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Ok when it's done give me it I mean the video rendering now",
-      "t": 1794366713327
-    },
     {
       "role": "user",
       "text": "Do a video about how the world war ii ended",
@@ -170,10 +87,106 @@
       "role": "bot",
       "text": "Wrote the script for \"The Secret Empire of API Keys\"",
       "t": 1794408425926
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"The Secret Empire of API Keys\"",
+      "t": 1794408524904
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "the-secret-empire-of-api-keys-mwc8i6vk",
+      "canvas": "16:9",
+      "title": "The Secret Empire of API Keys",
+      "topic": "how APIs work, how companies money from selling APIs, and how you can the same",
+      "pitch": {
+        "title": "The Secret Empire of API Keys",
+        "hook": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code.",
+        "angle": "Most people believe apps build all their features from scratch, but massive tech companies actually rent out single-function messengers called APIs. By wrapping useful data or AI tools into custom endpoints, anyone can sell access keys on a per-request subscription.",
+        "key_facts": [
+          "Stripe charges a fixed fee plus a percentage for every payment processed through its API code.",
+          "Twilio charges fractions of a cent per request to send text messages for apps like Uber.",
+          "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits.",
+          "Developers build wrapper APIs around public data sources to charge monthly fees for clean access."
+        ],
+        "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents",
+        "length_seconds": 45,
+        "style": "motion-explainer",
+        "style_reason": "Clean vectors clarify complex data flows and backend connections visually.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "The Secret Empire of API Keys",
+        "beats": [
+          {
+            "narration": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing two lines of glowing code on a dark screen with a digital coin dropping",
+            "tool": "flux"
+          },
+          {
+            "narration": "because building apps from scratch is a trap, so massive tech companies rent out tiny tools called APIs,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a glowing messenger pod sending data blocks between two futuristic software blocks",
+            "tool": "flux"
+          },
+          {
+            "narration": "where Twilio charges fractions of a cent per request just to send text messages for apps like Uber,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a tiny text message bubble floating past a neon car icon",
+            "tool": "flux"
+          },
+          {
+            "narration": "and you think apps own every feature they show you, but they are just assembling rented parts like digital Lego blocks,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing various software modules clicking together with glowing neon joints",
+            "tool": "flux"
+          },
+          {
+            "narration": "so solo devs use marketplaces like RapidAPI to sell micro services with strict rate limits,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a marketplace storefront with neon pricing tiers floating above",
+            "tool": "flux"
+          },
+          {
+            "narration": "wrapping clunky public data sources into clean access points so they can charge monthly subscription fees,",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing messy data streams entering a neat teal box and emerging as shiny coins",
+            "tool": "flux"
+          },
+          {
+            "narration": "turning a simple software connection into a quiet machine that prints money while you sleep.",
+            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a sleek digital server rack pulsing with neon light under a starry sky",
+            "tool": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                12
+              ],
+              "sfx": []
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Stripe started charging seven cents per transaction for just two lines of code in 2011",
+            "supported": true
+          },
+          {
+            "claim": "Twilio charges fractions of a cent per request to send text messages for apps like Uber",
+            "supported": true
+          },
+          {
+            "claim": "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794408524904
+    },
     {
       "id": "how-apis-actually-move-the-internet-mwbyg8u3",
       "canvas": "16:9",
@@ -1015,106 +1028,6 @@
         "sources": []
       },
       "at": 1794239683147
-    },
-    {
-      "id": "seventeen-year-old-beer-heist-mw95wno8",
-      "canvas": "16:9",
-      "title": "Seventeen Year Old Beer Heist",
-      "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
-      "pitch": {
-        "title": "Seventeen Year Old Beer Heist",
-        "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
-        "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
-        "key_facts": [
-          "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-          "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-          "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
-        ],
-        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
-        "length_seconds": 40,
-        "style": "retro-vhs",
-        "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
-        "music": "lofi-warm",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Seventeen Year Old Beer Heist",
-        "beats": [
-          {
-            "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
-            "tool": "higgsfield",
-            "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
-            "still": "flux"
-          },
-          {
-            "narration": "Teens think sneaking a drink was harder back then.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
-            "tool": "flux"
-          },
-          {
-            "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
-            "tool": "stock",
-            "query": "vintage paper document"
-          },
-          {
-            "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
-            "tool": "flux"
-          },
-          {
-            "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
-            "tool": "stock",
-            "query": "1980s supermarket aisle"
-          },
-          {
-            "narration": "So store cashiers rarely even checked who was buying.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
-            "tool": "stock",
-            "query": "retro TV static"
-          },
-          {
-            "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
-            "tool": "higgsfield",
-            "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
-            "still": "flux"
-          },
-          {
-            "narration": "The analog beer run was just built on simpler rules.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-            "supported": true
-          },
-          {
-            "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-            "supported": true
-          },
-          {
-            "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794222762362
     }
   ],
   "lastRenderAuto": false,
@@ -1126,12 +1039,12 @@
   },
   "renders": [
     {
-      "title": "How APIs Actually Move The Internet",
-      "at": 1794391637900,
-      "project": "how-apis-actually-move-the-internet-mwbyg8u3"
+      "title": "The Secret Empire of API Keys",
+      "at": 1794408524904,
+      "project": "the-secret-empire-of-api-keys-mwc8i6vk"
     }
   ],
-  "current_project": "how-apis-actually-move-the-internet-mwbyg8u3",
+  "current_project": "the-secret-empire-of-api-keys-mwc8i6vk",
   "pending_edit": null,
   "edits": [],
   "pending": {
@@ -1245,17 +1158,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "style": "motion-explainer",
-    "format": "landscape",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "retro-vhs",
     "motion-explainer",
     "fastedit2",
     "documentary",
-    "upload-5"
+    "upload-5",
+    "motion-explainer"
   ],
   "learning": null,
   "styles": {
