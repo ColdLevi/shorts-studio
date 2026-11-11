@@ -1,7 +1,7 @@
 {
-  "last_update": 312538414,
-  "time": 1794408381955,
-  "stage": "pitch",
+  "last_update": 312538415,
+  "time": 1794408425926,
+  "stage": "script",
   "topic": "how APIs work, how companies money from selling APIs, and how you can the same",
   "research": {
     "text": "",
@@ -25,16 +25,72 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Secret Empire of API Keys",
+    "beats": [
+      {
+        "narration": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing two lines of glowing code on a dark screen with a digital coin dropping",
+        "tool": "flux"
+      },
+      {
+        "narration": "because building apps from scratch is a trap, so massive tech companies rent out tiny tools called APIs,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a glowing messenger pod sending data blocks between two futuristic software blocks",
+        "tool": "flux"
+      },
+      {
+        "narration": "where Twilio charges fractions of a cent per request just to send text messages for apps like Uber,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a tiny text message bubble floating past a neon car icon",
+        "tool": "flux"
+      },
+      {
+        "narration": "and you think apps own every feature they show you, but they are just assembling rented parts like digital Lego blocks,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing various software modules clicking together with glowing neon joints",
+        "tool": "flux"
+      },
+      {
+        "narration": "so solo devs use marketplaces like RapidAPI to sell micro services with strict rate limits,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a marketplace storefront with neon pricing tiers floating above",
+        "tool": "flux"
+      },
+      {
+        "narration": "wrapping clunky public data sources into clean access points so they can charge monthly subscription fees,",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing messy data streams entering a neat teal box and emerging as shiny coins",
+        "tool": "flux"
+      },
+      {
+        "narration": "turning a simple software connection into a quiet machine that prints money while you sleep.",
+        "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a sleek digital server rack pulsing with neon light under a starry sky",
+        "tool": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            12
+          ],
+          "sfx": []
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Stripe started charging seven cents per transaction for just two lines of code in 2011",
+        "supported": true
+      },
+      {
+        "claim": "Twilio charges fractions of a cent per request to send text messages for apps like Uber",
+        "supported": true
+      },
+      {
+        "claim": "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Where is the video",
-      "t": 1794366647985
-    },
     {
       "role": "user",
       "text": "Ok when it's done give me it I mean the video rendering now",
@@ -109,6 +165,11 @@
       "role": "bot",
       "text": "Pitched \"The Secret Empire of API Keys\": In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code.",
       "t": 1794408381955
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Secret Empire of API Keys\"",
+      "t": 1794408425926
     }
   ],
   "working": null,
@@ -2106,7 +2167,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "you",
+  "narr_pick": "host",
   "editing": false,
   "pick": null,
   "liked": [
