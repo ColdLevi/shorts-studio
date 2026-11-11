@@ -431,6 +431,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-41",
+      "title": "The Real Money Behind AI",
+      "hook": "Five hundred billion dollars poured into microchips and data centers this year alone.",
+      "accent": "#2EE6C5",
+      "duration": 46.9,
+      "created": 1794367316259,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-41/short-41.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-41/short-41.jpg",
+      "project": "the-real-money-behind-ai-mwbixkwb",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }

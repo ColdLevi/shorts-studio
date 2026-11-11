@@ -1,0 +1,1242 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-real-money-behind-ai-mwbixkwb",
+ "rev": 1,
+ "title": "The Real Money Behind AI",
+ "duration": 46.83,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.438,
+    "narration": "Five hundred billion dollars poured into microchips and data centers this year alone,",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface mockup of financial charts, bold solid teal background, crisp modern lighting, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "52fca4b11571",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.438,
+    "end": 9.273,
+    "narration": "because most people think tech giants make fortunes selling ten dollar chat subscriptions,",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a chat bubble UI on a solid pastel background, clean vector style, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "47c099b664ec",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.273,
+    "end": 13.181,
+    "narration": "but I learned the reality is an insane land rush for power plants",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist vector illustration of an electrical power plant, solid vibrant backdrop, modern studio lighting, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "5e54c4838ea4",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.77,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.181,
+    "end": 15.148,
+    "narration": "and server racks just to keep up.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app mockup showing server rack load gauges, solid color backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "15aff1aa3b3c",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.54,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 15.148,
+    "end": 19.37,
+    "narration": "Tech companies spent over one hundred billion dollars on infrastructure in twenty twenty four,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of a massive bank vault with digital coin symbols, solid backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "2e251d45aef0",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 19.37,
+    "end": 21.829,
+    "narration": "so I checked how much hardware that actually buys,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app interface showing a shopping cart icon with microchips, solid pastel backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "f59e1467d33b",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.6,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 21.829,
+    "end": 25.801,
+    "narration": "and a single modern AI cluster uses over one hundred thousand GPUs,",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat vector illustration of stacked computer processor chips, bold solid color backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "50f5979ae2eb",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.78,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 25.801,
+    "end": 27.947,
+    "narration": "which sounds impressive until you realize",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital app UI dashboard with an exclamation warning icon, solid teal background, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "a1f192ba632f",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.56,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 27.947,
+    "end": 32.714,
+    "narration": "training one frontier model burns millions of kilowatt hours of power.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist vector illustration of a lightning bolt next to a glowing battery indicator, solid backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "dcc575901b77",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_09_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v10",
+    "start": 32.714,
+    "end": 37.561,
+    "narration": "Generative AI startups spend up to eighty percent of their capital on cloud computing,",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist app interface showing a pie chart with eighty percent highlighted, solid color backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c829fb4d5ccd",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_10_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 37.561,
+    "end": 40.466,
+    "narration": "leaving almost nothing for actual profits.",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Playful 2D flat illustration of an empty piggy bank with digital sparkles, solid pastel backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "3c28adf14a12",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_11_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.65,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v12",
+    "start": 40.466,
+    "end": 42.515,
+    "narration": "So next time you prompt a chatbot, remember",
+    "kind": "image",
+    "src": "assets/img_12.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist vector illustration of a smartphone screen showing a blinking cursor, solid vibrant backdrop, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "b0c8e5e96838",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_12_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.55,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v13",
+    "start": 42.515,
+    "end": 46.032,
+    "narration": "you are renting space in a very expensive power plant.",
+    "kind": "image",
+    "src": "assets/img_13.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist digital illustration of a glowing server cooling tower, solid teal backdrop, crisp modern lighting, vertical 9:16"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "95dc632d3bab",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.72,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Five",
+     "start": 0.138,
+     "end": 0.362
+    },
+    {
+     "word": "hundred",
+     "start": 0.362,
+     "end": 0.688
+    },
+    {
+     "word": "billion",
+     "start": 0.775,
+     "end": 1.212
+    },
+    {
+     "word": "dollars",
+     "start": 1.212,
+     "end": 1.587
+    },
+    {
+     "word": "poured",
+     "start": 1.587,
+     "end": 1.975
+    },
+    {
+     "word": "into",
+     "start": 1.975,
+     "end": 2.112
+    },
+    {
+     "word": "microchips",
+     "start": 2.112,
+     "end": 2.875
+    },
+    {
+     "word": "and",
+     "start": 2.875,
+     "end": 2.95
+    },
+    {
+     "word": "data",
+     "start": 2.95,
+     "end": 3.237
+    },
+    {
+     "word": "centers",
+     "start": 3.25,
+     "end": 3.575
+    },
+    {
+     "word": "this",
+     "start": 3.575,
+     "end": 3.763
+    },
+    {
+     "word": "year",
+     "start": 3.763,
+     "end": 3.938
+    },
+    {
+     "word": "alone,",
+     "start": 3.938,
+     "end": 4.338
+    },
+    {
+     "word": "because",
+     "start": 4.498,
+     "end": 4.836
+    },
+    {
+     "word": "most",
+     "start": 4.836,
+     "end": 5.123
+    },
+    {
+     "word": "people",
+     "start": 5.123,
+     "end": 5.386
+    },
+    {
+     "word": "think",
+     "start": 5.386,
+     "end": 5.611
+    },
+    {
+     "word": "tech",
+     "start": 5.611,
+     "end": 5.861
+    },
+    {
+     "word": "giants",
+     "start": 5.936,
+     "end": 6.324
+    },
+    {
+     "word": "make",
+     "start": 6.336,
+     "end": 6.511
+    },
+    {
+     "word": "fortunes",
+     "start": 6.524,
+     "end": 7.061
+    },
+    {
+     "word": "selling",
+     "start": 7.074,
+     "end": 7.574
+    },
+    {
+     "word": "ten",
+     "start": 7.636,
+     "end": 7.898
+    },
+    {
+     "word": "dollar",
+     "start": 7.898,
+     "end": 8.198
+    },
+    {
+     "word": "chat",
+     "start": 8.198,
+     "end": 8.436
+    },
+    {
+     "word": "subscriptions,",
+     "start": 8.436,
+     "end": 9.173
+    },
+    {
+     "word": "but",
+     "start": 9.333,
+     "end": 9.446
+    },
+    {
+     "word": "I",
+     "start": 9.446,
+     "end": 9.483
+    },
+    {
+     "word": "learned",
+     "start": 9.483,
+     "end": 9.77
+    },
+    {
+     "word": "the",
+     "start": 9.77,
+     "end": 9.82
+    },
+    {
+     "word": "reality",
+     "start": 9.82,
+     "end": 10.533
+    },
+    {
+     "word": "is",
+     "start": 10.653,
+     "end": 10.754
+    },
+    {
+     "word": "an",
+     "start": 10.754,
+     "end": 10.816
+    },
+    {
+     "word": "insane",
+     "start": 10.816,
+     "end": 11.428
+    },
+    {
+     "word": "land",
+     "start": 11.441,
+     "end": 11.754
+    },
+    {
+     "word": "rush",
+     "start": 11.754,
+     "end": 12.104
+    },
+    {
+     "word": "for",
+     "start": 12.129,
+     "end": 12.291
+    },
+    {
+     "word": "power",
+     "start": 12.303,
+     "end": 12.678
+    },
+    {
+     "word": "plants",
+     "start": 12.691,
+     "end": 13.166
+    },
+    {
+     "word": "and",
+     "start": 13.241,
+     "end": 13.403
+    },
+    {
+     "word": "server",
+     "start": 13.403,
+     "end": 13.791
+    },
+    {
+     "word": "racks",
+     "start": 13.803,
+     "end": 14.229
+    },
+    {
+     "word": "just",
+     "start": 14.241,
+     "end": 14.391
+    },
+    {
+     "word": "to",
+     "start": 14.391,
+     "end": 14.453
+    },
+    {
+     "word": "keep",
+     "start": 14.453,
+     "end": 14.678
+    },
+    {
+     "word": "up.",
+     "start": 14.678,
+     "end": 14.928
+    },
+    {
+     "word": "Tech",
+     "start": 15.208,
+     "end": 15.395
+    },
+    {
+     "word": "companies",
+     "start": 15.395,
+     "end": 15.782
+    },
+    {
+     "word": "spent",
+     "start": 15.782,
+     "end": 16.008
+    },
+    {
+     "word": "over",
+     "start": 16.02,
+     "end": 16.258
+    },
+    {
+     "word": "one",
+     "start": 16.27,
+     "end": 16.37
+    },
+    {
+     "word": "hundred",
+     "start": 16.383,
+     "end": 16.77
+    },
+    {
+     "word": "billion",
+     "start": 16.782,
+     "end": 17.095
+    },
+    {
+     "word": "dollars",
+     "start": 17.107,
+     "end": 17.458
+    },
+    {
+     "word": "on",
+     "start": 17.458,
+     "end": 17.545
+    },
+    {
+     "word": "infrastructure",
+     "start": 17.558,
+     "end": 18.258
+    },
+    {
+     "word": "in",
+     "start": 18.258,
+     "end": 18.345
+    },
+    {
+     "word": "twenty",
+     "start": 18.357,
+     "end": 18.62
+    },
+    {
+     "word": "twenty",
+     "start": 18.633,
+     "end": 18.87
+    },
+    {
+     "word": "four,",
+     "start": 18.883,
+     "end": 19.27
+    },
+    {
+     "word": "so",
+     "start": 19.43,
+     "end": 19.567
+    },
+    {
+     "word": "I",
+     "start": 19.567,
+     "end": 19.63
+    },
+    {
+     "word": "checked",
+     "start": 19.63,
+     "end": 19.88
+    },
+    {
+     "word": "how",
+     "start": 19.88,
+     "end": 20.005
+    },
+    {
+     "word": "much",
+     "start": 20.005,
+     "end": 20.217
+    },
+    {
+     "word": "hardware",
+     "start": 20.217,
+     "end": 20.642
+    },
+    {
+     "word": "that",
+     "start": 20.654,
+     "end": 20.767
+    },
+    {
+     "word": "actually",
+     "start": 20.779,
+     "end": 21.104
+    },
+    {
+     "word": "buys,",
+     "start": 21.104,
+     "end": 21.729
+    },
+    {
+     "word": "and",
+     "start": 21.889,
+     "end": 22.001
+    },
+    {
+     "word": "a",
+     "start": 22.001,
+     "end": 22.039
+    },
+    {
+     "word": "single",
+     "start": 22.051,
+     "end": 22.376
+    },
+    {
+     "word": "modern",
+     "start": 22.376,
+     "end": 22.701
+    },
+    {
+     "word": "AI",
+     "start": 22.701,
+     "end": 23.001
+    },
+    {
+     "word": "cluster",
+     "start": 23.001,
+     "end": 23.514
+    },
+    {
+     "word": "uses",
+     "start": 23.527,
+     "end": 23.939
+    },
+    {
+     "word": "over",
+     "start": 23.951,
+     "end": 24.201
+    },
+    {
+     "word": "one",
+     "start": 24.214,
+     "end": 24.352
+    },
+    {
+     "word": "hundred",
+     "start": 24.352,
+     "end": 24.652
+    },
+    {
+     "word": "thousand",
+     "start": 24.652,
+     "end": 24.989
+    },
+    {
+     "word": "GPUs,",
+     "start": 24.989,
+     "end": 25.701
+    },
+    {
+     "word": "which",
+     "start": 25.861,
+     "end": 26.036
+    },
+    {
+     "word": "sounds",
+     "start": 26.036,
+     "end": 26.286
+    },
+    {
+     "word": "impressive",
+     "start": 26.286,
+     "end": 26.937
+    },
+    {
+     "word": "until",
+     "start": 27.057,
+     "end": 27.295
+    },
+    {
+     "word": "you",
+     "start": 27.295,
+     "end": 27.469
+    },
+    {
+     "word": "realize",
+     "start": 27.469,
+     "end": 27.995
+    },
+    {
+     "word": "training",
+     "start": 28.007,
+     "end": 28.519
+    },
+    {
+     "word": "one",
+     "start": 28.532,
+     "end": 28.795
+    },
+    {
+     "word": "frontier",
+     "start": 28.795,
+     "end": 29.319
+    },
+    {
+     "word": "model",
+     "start": 29.332,
+     "end": 29.719
+    },
+    {
+     "word": "burns",
+     "start": 29.719,
+     "end": 30.094
+    },
+    {
+     "word": "millions",
+     "start": 30.107,
+     "end": 30.882
+    },
+    {
+     "word": "of",
+     "start": 30.895,
+     "end": 30.969
+    },
+    {
+     "word": "kilowatt",
+     "start": 30.982,
+     "end": 31.557
+    },
+    {
+     "word": "hours",
+     "start": 31.569,
+     "end": 31.92
+    },
+    {
+     "word": "of",
+     "start": 31.92,
+     "end": 31.982
+    },
+    {
+     "word": "power.",
+     "start": 31.994,
+     "end": 32.494
+    },
+    {
+     "word": "Generative",
+     "start": 32.774,
+     "end": 33.223
+    },
+    {
+     "word": "AI",
+     "start": 33.236,
+     "end": 33.623
+    },
+    {
+     "word": "startups",
+     "start": 33.623,
+     "end": 34.123
+    },
+    {
+     "word": "spend",
+     "start": 34.223,
+     "end": 34.486
+    },
+    {
+     "word": "up",
+     "start": 34.498,
+     "end": 34.586
+    },
+    {
+     "word": "to",
+     "start": 34.586,
+     "end": 34.761
+    },
+    {
+     "word": "eighty",
+     "start": 34.873,
+     "end": 35.136
+    },
+    {
+     "word": "percent",
+     "start": 35.136,
+     "end": 35.736
+    },
+    {
+     "word": "of",
+     "start": 35.748,
+     "end": 35.824
+    },
+    {
+     "word": "their",
+     "start": 35.824,
+     "end": 35.948
+    },
+    {
+     "word": "capital",
+     "start": 35.948,
+     "end": 36.399
+    },
+    {
+     "word": "on",
+     "start": 36.411,
+     "end": 36.561
+    },
+    {
+     "word": "cloud",
+     "start": 36.574,
+     "end": 36.973
+    },
+    {
+     "word": "computing,",
+     "start": 36.973,
+     "end": 37.461
+    },
+    {
+     "word": "leaving",
+     "start": 37.621,
+     "end": 37.934
+    },
+    {
+     "word": "almost",
+     "start": 37.934,
+     "end": 38.446
+    },
+    {
+     "word": "nothing",
+     "start": 38.459,
+     "end": 38.971
+    },
+    {
+     "word": "for",
+     "start": 38.984,
+     "end": 39.184
+    },
+    {
+     "word": "actual",
+     "start": 39.196,
+     "end": 39.546
+    },
+    {
+     "word": "profits.",
+     "start": 39.546,
+     "end": 40.246
+    },
+    {
+     "word": "So",
+     "start": 40.526,
+     "end": 40.638
+    },
+    {
+     "word": "next",
+     "start": 40.651,
+     "end": 40.839
+    },
+    {
+     "word": "time",
+     "start": 40.839,
+     "end": 40.988
+    },
+    {
+     "word": "you",
+     "start": 40.988,
+     "end": 41.064
+    },
+    {
+     "word": "prompt",
+     "start": 41.076,
+     "end": 41.388
+    },
+    {
+     "word": "a",
+     "start": 41.388,
+     "end": 41.426
+    },
+    {
+     "word": "chatbot,",
+     "start": 41.426,
+     "end": 42.064
+    },
+    {
+     "word": "remember",
+     "start": 42.224,
+     "end": 42.575
+    },
+    {
+     "word": "you",
+     "start": 42.575,
+     "end": 42.675
+    },
+    {
+     "word": "are",
+     "start": 42.687,
+     "end": 42.887
+    },
+    {
+     "word": "renting",
+     "start": 42.887,
+     "end": 43.249
+    },
+    {
+     "word": "space",
+     "start": 43.249,
+     "end": 43.837
+    },
+    {
+     "word": "in",
+     "start": 43.925,
+     "end": 44.012
+    },
+    {
+     "word": "a",
+     "start": 44.025,
+     "end": 44.062
+    },
+    {
+     "word": "very",
+     "start": 44.075,
+     "end": 44.462
+    },
+    {
+     "word": "expensive",
+     "start": 44.462,
+     "end": 44.925
+    },
+    {
+     "word": "power",
+     "start": 44.925,
+     "end": 45.212
+    },
+    {
+     "word": "plant.",
+     "start": 45.212,
+     "end": 45.612
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Five hundred billion dollars poured into microchips and data centers this year alone, because most people think tech giants make fortunes selling ten dollar chat subscriptions, but I learned the reality is an insane land rush for power plants and server racks just to keep up. Tech companies spent over one hundred billion dollars on infrastructure in twenty twenty four, so I checked how much hardware that actually buys, and a single modern AI cluster uses over one hundred thousand GPUs, which sounds impressive until you realize training one frontier model burns millions of kilowatt hours of power. Generative AI startups spend up to eighty percent of their capital on cloud computing, leaving almost nothing for actual profits. So next time you prompt a chatbot, remember you are renting space in a very expensive power plant."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 15.67,
+    "volume": 0.3,
+    "anchor": "v5",
+    "offset": 0.52
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 40.266,
+    "volume": 0.55,
+    "anchor": "v12",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.39,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "microchips",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.39,
+    "opacity": 0.35,
+    "seed": 4.77
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v5",
+    "delay": 0.4,
+    "start": 15.55,
+    "end": 19.32,
+    "asset": "coin",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794365697454,
+  "updated": 1794365697457,
+  "topic": "short about what is going on in the ai industry today",
+  "hook": "Five hundred billion dollars poured into microchips and data centers this year alone.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "vertical",
+  "assets_release": "project-the-real-money-behind-ai-mwbixkwb",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Five hundred billion dollars poured into microchips and data centers this year alone.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "the-real-money-behind-ai-mwbixkwb",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "The Real Money Behind AI",
+   "topic": "short about what is going on in the ai industry today",
+   "voice": "en-US-AndrewMultilingualNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Five hundred billion dollars poured...\"): the hook. I set MICROCHIPS huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 5 (\"Tech companies spent over one hundr...\"): a \"coin\" illustration builds itself on the right after the words land.",
+   "Left 11 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: truck (alive baseline (not the same move twice)).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 8: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 9: drift (alive baseline).",
+   "Beat 10: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 11: truck (side move for variety).",
+   "Beat 12: drift (alive baseline).",
+   "Beat 13: pull-out (last picture: slow pull-out)."
+  ],
+  "qa": [],
+  "sound": "3 effects: hit_low, pop, swish"
+ }
+}
