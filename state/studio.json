@@ -1,6 +1,6 @@
 {
-  "last_update": 312538387,
-  "time": 1794369785609,
+  "last_update": 312538388,
+  "time": 1794369850241,
   "stage": "idle",
   "topic": "short about what is going on in the ai industry today",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Edit Nine Sixteen Videos Fast\"",
-      "t": 1794245949202
-    },
     {
       "role": "bot",
       "text": "Rendering \"Edit Nine Sixteen Videos Fast\"",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "Ok when it's done give me it I mean the video rendering now",
       "t": 1794366713327
+    },
+    {
+      "role": "user",
+      "text": "Do a video about how the world war ii ended",
+      "t": 1794369845835
     }
   ],
   "working": null,
@@ -2080,5 +2080,96 @@
   ],
   "ideas_at": 1794243976053,
   "narr_pick": "me",
-  "editing": false
+  "editing": false,
+  "pick": {
+    "topic": "how the world war ii ended",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794369850240
+  }
 }
