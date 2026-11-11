@@ -1,6 +1,6 @@
 {
-  "last_update": 312538395,
-  "time": 1794370220245,
+  "last_update": 312538396,
+  "time": 1794377344923,
   "stage": "idle",
   "topic": "how the world war ii ended",
   "research": {
@@ -2116,5 +2116,22 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": null
+  "pick": null,
+  "liked": [
+    {
+      "title": "How World War Two Really Ended",
+      "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+      "lines": [
+        "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
+        "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
+        "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
+        "but inside Tokyo, military leadership still planned to fight to the last man.",
+        "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
+        "wiping out their entire northern force and leaving them completely cornered,",
+        "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
+        "ending it all on September second, nineteen forty-five, aboard the USS Missouri."
+      ],
+      "at": 1794377344923
+    }
+  ]
 }
