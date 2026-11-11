@@ -1,7 +1,7 @@
 {
-  "last_update": 312538390,
-  "time": 1794370049732,
-  "stage": "pitch",
+  "last_update": 312538391,
+  "time": 1794370108920,
+  "stage": "script",
   "topic": "how the world war ii ended",
   "research": {
     "text": "",
@@ -25,16 +25,137 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "How World War Two Really Ended",
+    "beats": [
+      {
+        "narration": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
+        "image_prompt": "16:9 landscape aspect ratio. A wide painterly historical illustration of Allied soldiers celebrating in ruined European streets, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, subject in lower two-thirds",
+        "tool": "higgsfield",
+        "motion": "slow push forward across the cheering crowd toward the smoky sky",
+        "still": "flux",
+        "callout": "May 8, 1945",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            13
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
+        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of Japanese military officials seated around a dark wooden war room table, low key lighting, deep shadows, muted earth tones, museum-diorama depth",
+        "tool": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            13
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
+        "image_prompt": "16:9 landscape aspect ratio. Historical footage of a massive smoke plume rising over destroyed terrain, grainy archival look, dramatic contrast",
+        "tool": "stock",
+        "query": "vintage explosion smoke cloud",
+        "callout": "August 1945",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            1
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "but inside Tokyo, military leadership still planned to fight to the last man.",
+        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of silhouettes of generals standing before a illuminated tactical wall map of the Pacific, dramatic chiaroscuro lighting, aged paper texture",
+        "tool": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            5
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
+        "image_prompt": "16:9 landscape aspect ratio. Archival style video of tanks rolling through dusty open plains",
+        "tool": "stock",
+        "query": "tanks moving desert dust",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            1
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "wiping out their entire northern force and leaving them completely cornered,",
+        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of abandoned military encampments across cold northern plains, heavy fog, muted earth tones, dramatic shadows, museum-diorama depth",
+        "tool": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            9
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
+        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of a single vintage radio microphone sitting under a bright spotlight on a dark wooden table, dramatic chiaroscuro lighting, aged paper texture",
+        "tool": "flux"
+      },
+      {
+        "narration": "ending it all on September second, nineteen forty-five, aboard the USS Missouri.",
+        "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of the massive deck of the USS Missouri surrounded by ocean waters, dramatic horizon lighting, muted golden tones, museum-diorama depth",
+        "tool": "higgsfield",
+        "motion": "cinematic slow pan across the battleship deck toward the open ocean",
+        "still": "flux",
+        "callout": "Sept 2, 1945",
+        "cues": {
+          "pauses": [
+            {
+              "after": 0,
+              "s": 0.3
+            }
+          ],
+          "emphasis": [
+            11
+          ],
+          "sfx": []
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Victory in Europe was celebrated on May 8, 1945.",
+        "supported": true
+      },
+      {
+        "claim": "Atomic bombs were dropped on Hiroshima on August 6 and Nagasaki on August 9, 1945.",
+        "supported": true
+      },
+      {
+        "claim": "The Soviet Union launched a massive invasion of Manchuria on August 9, 1945.",
+        "supported": true
+      },
+      {
+        "claim": "Japan officially signed surrender documents aboard the USS Missouri on September 2, 1945.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Make a video for how easy it is to buy beer like a funny comparison of the old days and now then also make it retro style",
-      "t": 1794294148980
-    },
     {
       "role": "bot",
       "text": "Pitched \"Buying Beer Is Too Easy Now\": A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
@@ -109,6 +230,11 @@
       "role": "bot",
       "text": "Pitched \"How World War Two Really Ended\": On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
       "t": 1794370049732
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How World War Two Really Ended\"",
+      "t": 1794370108920
     }
   ],
   "working": null,
@@ -2099,7 +2225,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "me",
+  "narr_pick": "you",
   "editing": false,
   "pick": null
 }
