@@ -1,6 +1,6 @@
 {
   "last_update": 312538404,
-  "time": 1794391476425,
+  "time": 1794391509172,
   "stage": "script",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -29,29 +29,50 @@
     "title": "How APIs Actually Move The Internet",
     "beats": [
       {
-        "narration": "Ten billion automated API requests fire across the internet every single hour, and you think your phone app directly checks airline prices, but",
-        "image_prompt": "Dark corporate digital UI framing a desaturated grayscale webcam window with a glowing number ten billion on screen, cinematic lighting, landscape",
+        "narration": "You open a travel app expecting a direct peek inside an airline database, but",
+        "image_prompt": "Dark corporate digital UI framing a desaturated grayscale video conference grid with red data streams, landscape",
+        "tool": "higgsfield",
+        "motion": "Static corporate UI window with a subtle slow zoom toward a desaturated webcam tile as glowing red code lines activate",
+        "still": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            8
+          ],
+          "sfx": []
+        }
+      },
+      {
+        "narration": "separate software systems won't speak directly, so your phone uses a strict digital courier that only takes standard question templates.",
+        "image_prompt": "Dark corporate digital UI featuring a vivid scarlet red humanoid figure acting as an office clerk handing paper-like digital forms to desaturated grayscale server icons, landscape",
         "tool": "flux"
       },
       {
-        "narration": "it actually begs a strict digital courier running on standardized templates, because software systems refuse to talk without exact paperwork, so",
-        "image_prompt": "Dark corporate digital UI with a vivid scarlet red humanoid figure handing a digital form across a minimalist desk, landscape",
+        "narration": "They format every query into structured text using standard HTTP protocols and JSON payloads, so",
+        "image_prompt": "Dark corporate digital UI displaying desaturated grayscale terminal text blocks highlighted by glowing scarlet red brackets, landscape",
         "tool": "flux"
       },
       {
-        "narration": "travel comparison websites query multiple independent reservation engines simultaneously using HTTP protocols and JSON payloads, yet",
-        "image_prompt": "Dark corporate digital UI showing multiple desaturated grayscale webcam windows connecting to a central data stream, landscape",
+        "narration": "travel platforms can query multiple independent airline reservation engines all at once, but",
+        "image_prompt": "Dark corporate digital UI showing multiple desaturated grayscale webcam windows connecting to central airline server blocks, landscape",
         "tool": "flux"
       },
       {
-        "narration": "developers must use private API keys to authenticate every single request and enforce strict rate limits before anything moves.",
-        "image_prompt": "Dark corporate digital UI featuring a glowing red security lock icon next to a desaturated grayscale developer face, landscape",
-        "tool": "flux"
+        "narration": "the receiving servers will instantly freeze the data stream unless a private API key authenticates the call and enforces strict rate limits.",
+        "image_prompt": "Dark corporate digital UI featuring a vivid scarlet red key locking down desaturated grayscale network channels, landscape",
+        "tool": "flux",
+        "cues": {
+          "pauses": [],
+          "emphasis": [
+            21
+          ],
+          "sfx": []
+        }
       }
     ],
     "fact_check": [
       {
-        "claim": "Ten billion automated API requests fire across the internet every single hour",
+        "claim": "Application Programming Interfaces define specific rules and formats for separate software systems to exchange data",
         "supported": true
       },
       {
@@ -59,11 +80,11 @@
         "supported": true
       },
       {
-        "claim": "Apps use private API keys to authenticate requests and enforce rate limits on external developers",
+        "claim": "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously",
         "supported": true
       },
       {
-        "claim": "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously",
+        "claim": "Apps use private API keys to authenticate requests and enforce rate limits on external developers",
         "supported": true
       }
     ],
@@ -73,11 +94,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Cheese the 90s Fast\"",
-      "t": 1794303663359
-    },
     {
       "role": "user",
       "text": "Make a short video about what is going on in the ai industry today",
@@ -152,6 +168,11 @@
       "role": "bot",
       "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
       "t": 1794391277650
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
+      "t": 1794391509172
     }
   ],
   "working": null,
@@ -2178,7 +2199,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": null,
+  "narr_pick": "you",
   "editing": false,
   "pick": null,
   "liked": [
