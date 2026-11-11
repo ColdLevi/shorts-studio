@@ -1,6 +1,6 @@
 {
-  "last_update": 312538411,
-  "time": 1794408048204,
+  "last_update": 312538412,
+  "time": 1794408199144,
   "stage": "idle",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -1165,8 +1165,7 @@
   "settings": {
     "format": "landscape",
     "graphics": false,
-    "browser_bot": false,
-    "style": "upload-5"
+    "browser_bot": false
   },
   "job": null,
   "recent_styles": [
@@ -2176,7 +2175,9 @@
         "kind": "learned"
       }
     ],
-    "job": {},
+    "job": {
+      "style": "motion-explainer"
+    },
     "at": 1794408048204
   },
   "liked": [
