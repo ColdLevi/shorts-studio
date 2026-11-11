@@ -114,6 +114,12 @@ export type TextOverlay = {
   background?: string;
 };
 
+export type TimelineLayerKeyframe = {
+  t: number;
+  values: Partial<Record<'x' | 'y' | 'scale' | 'scaleX' | 'scaleY' | 'rotation' | 'opacity' | 'width' | 'height' | 'blur' | 'brightness' | 'saturation', number>>;
+  ease?: 'linear' | 'hold' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'smooth' | 'back-out';
+};
+
 export type Timeline = {
   schema: 'shorts-studio/timeline@1';
   id: string;
@@ -129,6 +135,13 @@ export type Timeline = {
     music?: AudioClip[];
     sfx?: SfxClip[];
     overlays?: TextOverlay[];
+    /** Optional independent motion-graphics layers. Existing LayerStack kinds remain supported. */
+    layers?: Array<{
+      id: string; kind: string; start: number; end: number;
+      keyframes?: TimelineLayerKeyframe[];
+      transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number };
+      [key: string]: unknown;
+    }>;
   };
   meta?: Record<string, unknown>;
   [key: string]: unknown;

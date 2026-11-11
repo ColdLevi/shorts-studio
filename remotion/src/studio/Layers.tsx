@@ -3,6 +3,7 @@ import React from 'react';
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { url } from './assets';
 import type { Layout } from './layout';
+import { evaluateKeyframes, motionStyle, type MotionKeyframe } from '../motion-engine';
 import { AssetPng, CornerText, GlyphChip, Illustration } from './Layers2';   // step3-assets
 import { BarChart, ChapterCard, UiPanel } from './Layers3';   // step6-data
 
@@ -11,7 +12,11 @@ export type Layer = {
   icon?: string; shape?: string; x?: number; y?: number; w?: number; opacity?: number;
   from?: number[]; to?: number[]; via?: number[]; seed?: number; push?: number;
   asset?: string; subject?: string; fallback?: string; tilt?: number; side?: string;
-  n?: number | string; title?: string; labels?: string[]; values?: number[]; unit?: string;
+  n?: number | string; title?: string; labels?: string[]; values?: number[];
+  /** Optional layer-local animation keyframes (seconds). */
+  keyframes?: MotionKeyframe[];
+  /** Static transform defaults used when no keyframe overrides them. */
+  transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number }; unit?: string;
   tiles?: { label: string; value: string }[]; alert?: string; log?: string[];
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
@@ -182,11 +187,11 @@ const Kinetic: React.FC<P> = ({ l, L, accent, font }) => {
   );
 };
 
-const KINDS: Record<string, React.FC<P>> = {
+const KINDS = {
   'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
   'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel,
-};
+} as unknown as Record<string, React.ComponentType<P>>;
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {
   const { fps } = useVideoConfig();
@@ -197,9 +202,20 @@ export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string;
       {layers.map((l) => {
         const C = KINDS[l.kind];
         if (!C) return null;
+        const AnimatedLayer: React.FC = () => {
+          const frame = useCurrentFrame();
+          const localSeconds = frame / fps;
+          const animated = evaluateKeyframes(l.keyframes, localSeconds);
+          const style = motionStyle(animated, l.transform || {});
+          return (
+            <AbsoluteFill style={{ transform: style.transform, opacity: style.opacity, filter: style.filter, width: style.width, height: style.height }}>
+              <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} />
+            </AbsoluteFill>
+          );
+        };
         return (
           <Sequence key={l.id} from={Math.round(l.start * fps)} durationInFrames={Math.max(3, Math.round((l.end - l.start) * fps))}>
-            <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} />
+            <AnimatedLayer />
           </Sequence>
         );
       })}

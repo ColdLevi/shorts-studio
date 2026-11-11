@@ -711,13 +711,24 @@ def main():
             print(f"learned style '{_lid}' applied")
     except Exception as _e:
         print("learned style lookup skipped:", _e)
+    try:   # step-assets
+        import user_assets as UA
+        UA_ITEMS = UA.fetch_all(spec)
+        UMAP = UA.plan(spec, beats, tg)
+    except Exception as _e:
+        print("user assets skipped:", _e)
+        UA, UA_ITEMS, UMAP = None, [], {}
     text = " ".join(b["narration"].strip() for b in beats)
 
     tg("🎙️ Recording the voiceover...")
     voice_path = os.path.join(OUT, "voice.mp3")
-    words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
-    words, total = tighten_voice(words, total, voice_path, beats, spec)
-    total = polish_voice(voice_path, total)
+    UVO = UA.voiceover(spec, UA_ITEMS, beats, voice_path, tg) if UA else None   # step-assets
+    if UVO:
+        words, total = UVO
+    else:
+        words, total = voice(text, spec.get("voice"), spec.get("rate", "+0%"), voice_path)
+        words, total = tighten_voice(words, total, voice_path, beats, spec)
+        total = polish_voice(voice_path, total)
     print(f"voice {total:.1f}s, {len(words)} words")
 
     n_gfx = sum(1 for b in beats if b.get("graphic") or b.get("scene"))
@@ -727,6 +738,8 @@ def main():
 
     def make(i):
         b = beats[i]
+        if UA and i in UMAP:   # step-assets
+            return UA.make_still(UMAP[i], os.path.join(OUT, f"img_{i + 1:02d}.jpg"), W, H, f"{JOB}/img_{i + 1:02d}.jpg")
         if b.get("graphic") or b.get("scene"):
             return ""  # drawn in code by Remotion: no image, no Cloudflare neurons
         path = os.path.join(OUT, f"img_{i + 1:02d}.jpg")
@@ -760,6 +773,8 @@ def main():
 
     # Motion beats: hand the finished stills to Hugging Face in parallel, then fold the clips back in.
     clips = {}
+    if UA and UMAP:   # step-assets
+        UA.apply_videos(UMAP, clips, times, cv, OUT, JOB, tg)
     motion = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() in ("higgsfield", "huggingface") and (i + 1) not in fallbacks]
     if motion:
         tg(f"🎥 Animating {len(motion)} key shot(s) with Hugging Face...")
@@ -821,6 +836,8 @@ def main():
     json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len([i for i in clips if i in motion]), "stock_requested": len(stock), "stock_used": len(stock_ok)}, open(os.path.join(OUT, "usage.json"), "w"))
     music = spec.get("music") or "docu-pluck"
     mpath = f"library/music/clips/{music}.mp3"
+    if UA:   # step-assets
+        mpath = UA.music_path(spec, UA_ITEMS, OUT, JOB, mpath)
     wide = TL.format_name(cv) == "landscape"
     props = {
         "title": spec.get("title", ""),

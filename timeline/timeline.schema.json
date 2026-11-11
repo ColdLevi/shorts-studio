@@ -862,7 +862,139 @@
           }
         },
         "layers": {
-          "type": "array"
+          "type": "array",
+          "description": "Optional independent motion-graphics layers. Times in seconds; keyframe t is relative to layer start.",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "start",
+              "end"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "start": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end": {
+                "type": "number",
+                "minimum": 0
+              },
+              "keyframes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "t",
+                    "values"
+                  ],
+                  "properties": {
+                    "t": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "ease": {
+                      "enum": [
+                        "linear",
+                        "hold",
+                        "ease-in",
+                        "ease-out",
+                        "ease-in-out",
+                        "smooth",
+                        "back-out"
+                      ]
+                    },
+                    "values": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        },
+                        "scale": {
+                          "type": "number"
+                        },
+                        "scaleX": {
+                          "type": "number"
+                        },
+                        "scaleY": {
+                          "type": "number"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "opacity": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "height": {
+                          "type": "number"
+                        },
+                        "blur": {
+                          "type": "number"
+                        },
+                        "brightness": {
+                          "type": "number"
+                        },
+                        "saturation": {
+                          "type": "number"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  }
+                }
+              },
+              "transform": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "number"
+                  },
+                  "y": {
+                    "type": "number"
+                  },
+                  "scale": {
+                    "type": "number"
+                  },
+                  "scaleX": {
+                    "type": "number"
+                  },
+                  "scaleY": {
+                    "type": "number"
+                  },
+                  "rotation": {
+                    "type": "number"
+                  },
+                  "opacity": {
+                    "type": "number"
+                  },
+                  "blur": {
+                    "type": "number"
+                  },
+                  "brightness": {
+                    "type": "number"
+                  },
+                  "saturation": {
+                    "type": "number"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": true
+          }
         }
       }
     },
