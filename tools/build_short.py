@@ -688,6 +688,65 @@ def project_id(spec):
     return pid
 
 
+def split_long_holds(props, beats, spec, max_hold=None):
+    # step-holds: a still that stays on screen too long is cut into 2 or 3 shots (same picture, a new camera move each)
+    import math
+    mh = float(max_hold or spec.get("max_hold") or 5.0)
+    pb, words = props["beats"], props.get("words") or []
+    if not words or len(pb) != len(beats):
+        return 0
+    new_pb, new_b, remap, nsplit = [], [], {}, 0
+    for i, (p, b) in enumerate(zip(pb, beats)):
+        start, end = float(p["start"]), float(p["end"])
+        dur = end - start
+        plain = not (p.get("video") or p.get("graphic") or p.get("scene") or b.get("graphic") or b.get("scene"))
+        cuts = []
+        if plain and dur > (7.0 if i == 0 else mh):
+            n = min(int(math.ceil(dur / mh)), int(dur // 2.2))
+            ws = [w for w in words if start - 0.05 <= float(w["start"]) < end]
+            last = start
+            for k in range(1, n):
+                target = start + k * dur / n
+                best, bs = None, 9e9
+                for j, w in enumerate(ws):
+                    t = float(w["start"])
+                    if t < last + 1.8 or t > end - 1.8:
+                        continue
+                    punct = j > 0 and str(ws[j - 1]["word"])[-1:] in ".?!,;:"
+                    sc = abs(t - target) - (0.8 if punct else 0.0)
+                    if sc < bs:
+                        best, bs = t, sc
+                if best is None:
+                    break
+                cuts.append(best)
+                last = best
+        remap[i] = len(new_pb)
+        edges = [start] + cuts + [end]
+        for k in range(len(edges) - 1):
+            a, z = edges[k], edges[k + 1]
+            txt = " ".join(str(w["word"]) for w in words if a - 0.001 <= float(w["start"]) < z - (0 if k == len(edges) - 2 else 0.001)) or str(p.get("text", ""))
+            q, c = dict(p), dict(b)
+            q["start"], q["end"] = round(a, 3), round(z, 3)
+            if cuts:
+                q["text"], c["narration"] = txt, txt
+            if k:
+                for key in ("callout", "cues", "graphic", "scene"):
+                    c.pop(key, None)
+            new_pb.append(q)
+            new_b.append(c)
+        nsplit += 1 if cuts else 0
+    if nsplit:
+        pb[:] = new_pb
+        beats[:] = new_b
+        for ch in (spec.get("chapters") or []):
+            try:
+                ch["beat"] = remap.get(int(ch["beat"]), ch["beat"])
+            except Exception:
+                pass
+        print(f"holds: cut {nsplit} long shot(s); {len(new_pb)} shots now")
+    return nsplit
+
+
 def main():
     spec = json.load(open(sys.argv[1]))
     cv = TL.canvas(spec.get("canvas") or spec.get("format") or "vertical", int(spec.get("fps") or 30))
@@ -852,6 +911,8 @@ def main():
         "words": words,
         "format": "landscape" if wide else "vertical",
     }
+    if not fallbacks:   # step-holds
+        split_long_holds(props, beats, spec)
     pdir = TL.project_dir(pid)
     json.dump(props, open(os.path.join(pdir, "props.json"), "w"), indent=1)  # legacy StoryShort props
     # The project timeline: what gets rendered, saved and re-edited later.
