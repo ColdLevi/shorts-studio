@@ -1,6 +1,6 @@
 {
-  "last_update": 312538408,
-  "time": 1794391637901,
+  "last_update": 312538409,
+  "time": 1794395422594,
   "stage": "idle",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -2042,6 +2042,11 @@
   },
   "voice_pick": null,
   "disliked": [
+    {
+      "title": "How APIs Actually Move The Internet",
+      "first": "You open a travel app expecting a direct peek inside an airline database, but",
+      "at": 1794395422594
+    },
     {
       "title": "The Real Money Behind AI",
       "first": "Five hundred billion dollars poured into microchips and data centers this year alone,",
