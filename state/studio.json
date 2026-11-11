@@ -1,7 +1,7 @@
 {
-  "last_update": 312538401,
-  "time": 1794391217128,
-  "stage": "pitch",
+  "last_update": 312538402,
+  "time": 1794391277650,
+  "stage": "script",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
     "text": "",
@@ -25,16 +25,54 @@
     "accent": "red",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "How APIs Actually Move The Internet",
+    "beats": [
+      {
+        "narration": "Ten billion automated API requests fire across the internet every single hour, and you think your phone app directly checks airline prices, but",
+        "image_prompt": "Dark corporate digital UI framing a desaturated grayscale webcam window with a glowing number ten billion on screen, cinematic lighting, landscape",
+        "tool": "flux"
+      },
+      {
+        "narration": "it actually begs a strict digital courier running on standardized templates, because software systems refuse to talk without exact paperwork, so",
+        "image_prompt": "Dark corporate digital UI with a vivid scarlet red humanoid figure handing a digital form across a minimalist desk, landscape",
+        "tool": "flux"
+      },
+      {
+        "narration": "travel comparison websites query multiple independent reservation engines simultaneously using HTTP protocols and JSON payloads, yet",
+        "image_prompt": "Dark corporate digital UI showing multiple desaturated grayscale webcam windows connecting to a central data stream, landscape",
+        "tool": "flux"
+      },
+      {
+        "narration": "developers must use private API keys to authenticate every single request and enforce strict rate limits before anything moves.",
+        "image_prompt": "Dark corporate digital UI featuring a glowing red security lock icon next to a desaturated grayscale developer face, landscape",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Ten billion automated API requests fire across the internet every single hour",
+        "supported": true
+      },
+      {
+        "claim": "Most modern web APIs transmit structured text using HTTP protocols and JSON payloads",
+        "supported": true
+      },
+      {
+        "claim": "Apps use private API keys to authenticate requests and enforce rate limits on external developers",
+        "supported": true
+      },
+      {
+        "claim": "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"Cheese the 90s Fast\"",
-      "t": 1794303284533
-    },
     {
       "role": "bot",
       "text": "Rendering \"Cheese the 90s Fast\"",
@@ -109,6 +147,11 @@
       "role": "bot",
       "text": "Pitched \"How APIs Actually Move The Internet\": Ten billion automated API requests fire across the internet every single hour.",
       "t": 1794391217128
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
+      "t": 1794391277650
     }
   ],
   "working": null,
@@ -2135,7 +2178,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "you",
+  "narr_pick": "sharp",
   "editing": false,
   "pick": null,
   "liked": [
