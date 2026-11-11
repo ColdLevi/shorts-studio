@@ -13,8 +13,9 @@ mkdir -p "$KEEP/p"
 cp "$P/timeline.json" "$KEEP/p/" 2>/dev/null || true
 cp "$P/renders.json" "$KEEP/p/" 2>/dev/null || true
 cp -r "$P/history" "$KEEP/p/" 2>/dev/null || true
+mkdir -p "$KEEP/a"; cp -r media/library/assets/. "$KEEP/a/" 2>/dev/null || true   # step3-assets
 add() {
-  for f in library.json "$P/timeline.json" "$P/history" "$P/renders.json"; do [ -e "$f" ] && git add "$f"; done
+  for f in library.json media/library/assets "$P/timeline.json" "$P/history" "$P/renders.json"; do [ -e "$f" ] && git add "$f"; done
   git commit -qm "$MSG" || true
 }
 add
@@ -25,6 +26,9 @@ for i in 1 2 3 4 5; do
   git fetch -q origin
   git reset -q --hard "origin/$(git rev-parse --abbrev-ref HEAD)"
   mkdir -p "$P"; cp -r "$KEEP/p/." "$P/"
+  mkdir -p media/library/assets   # step3-assets: put our new pictures back, merge the manifest instead of overwriting it
+  find "$KEEP/a" -type f ! -name manifest.json -exec cp {} media/library/assets/ \; 2>/dev/null || true
+  [ -f "$KEEP/a/manifest.json" ] && python3 tools/assets.py merge "$KEEP/a/manifest.json" >/dev/null || true
   python3 tools/library_add.py "$TAG" >/dev/null
   add
   sleep $((i * 3))

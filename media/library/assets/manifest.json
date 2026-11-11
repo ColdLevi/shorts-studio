@@ -1,0 +1,198 @@
+{
+  "styleToken": "night-flat",
+  "note": "Asset manifest. One subject, one asset, one style. Illustrations are code; cutouts are generated once and checked.",
+  "assets": [
+    {
+      "id": "house",
+      "file": null,
+      "subject": "house",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "house"
+      ]
+    },
+    {
+      "id": "building",
+      "file": null,
+      "subject": "building",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "building"
+      ]
+    },
+    {
+      "id": "phone",
+      "file": null,
+      "subject": "phone",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "battery",
+      "file": null,
+      "subject": "battery",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "battery"
+      ]
+    },
+    {
+      "id": "thermometer",
+      "file": null,
+      "subject": "thermometer",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "thermometer"
+      ]
+    },
+    {
+      "id": "bank",
+      "file": null,
+      "subject": "bank",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "bank"
+      ]
+    },
+    {
+      "id": "chart-down",
+      "file": null,
+      "subject": "chart-down",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "chart-down"
+      ]
+    },
+    {
+      "id": "chart-up",
+      "file": null,
+      "subject": "chart-up",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "chart-up"
+      ]
+    },
+    {
+      "id": "coin",
+      "file": null,
+      "subject": "coin",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "coin"
+      ]
+    },
+    {
+      "id": "store",
+      "file": null,
+      "subject": "store",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "store"
+      ]
+    },
+    {
+      "id": "car",
+      "file": null,
+      "subject": "car",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "car"
+      ]
+    },
+    {
+      "id": "document",
+      "file": null,
+      "subject": "document",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "document"
+      ]
+    },
+    {
+      "id": "lock",
+      "file": null,
+      "subject": "lock",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "lock"
+      ]
+    },
+    {
+      "id": "globe",
+      "file": null,
+      "subject": "globe",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "globe"
+      ]
+    },
+    {
+      "id": "bulb",
+      "file": null,
+      "subject": "bulb",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "bulb"
+      ]
+    },
+    {
+      "id": "person",
+      "file": null,
+      "subject": "person",
+      "style": "night-flat",
+      "source": "registry-code",
+      "tier": "illustration",
+      "checked": true,
+      "tags": [
+        "person"
+      ]
+    }
+  ]
+}

@@ -3,11 +3,13 @@ import React from 'react';
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { url } from './assets';
 import type { Layout } from './layout';
+import { AssetPng, CornerText, GlyphChip, Illustration } from './Layers2';   // step3-assets
 
 export type Layer = {
   id: string; kind: string; start: number; end: number; text?: string; src?: string; cutout?: string | null;
   icon?: string; shape?: string; x?: number; y?: number; w?: number; opacity?: number;
   from?: number[]; to?: number[]; via?: number[]; seed?: number; push?: number;
+  asset?: string; subject?: string; fallback?: string; tilt?: number; side?: string;
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
@@ -178,7 +180,8 @@ const Kinetic: React.FC<P> = ({ l, L, accent, font }) => {
 };
 
 const KINDS: Record<string, React.FC<P>> = {
-  'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': IconPop, kinetic: Kinetic,
+  'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic,
+  illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
 };
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {

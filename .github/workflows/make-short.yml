@@ -192,6 +192,7 @@ jobs:
         run: |
           pip install -q "rembg[cpu]" onnxruntime || echo "::warning::rembg did not install, no cutouts this run"
           python3 tools/subjects.py "$PROJECT_ID" || true
+          python3 tools/assets_step.py "$PROJECT_ID" || true   # step3-assets
           python3 tools/make_cutouts.py "$PROJECT_ID" || true
 
       - name: Render

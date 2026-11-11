@@ -777,6 +777,30 @@ def _director_say(lines):
         print("director tg", e)
 
 
+# ---- illustration tier (step3-assets): which code illustration plays which noun ----
+_ILLUS = [
+    (r"\b(houses?|homes?|property|properties|mortgage|landlords?|rent|real estate|housing|apartments?)\b", "house"),
+    (r"\b(buildings?|towers?|skyscrapers?|offices?|downtown|headquarters)\b", "building"),
+    (r"\b(phones?|smartphones?|iphones?|android|mobile|apps?)\b", "phone"),
+    (r"\b(batter(?:y|ies)|charging|charged|power bank)\b", "battery"),
+    (r"\b(cold|freezing|frozen|frost|temperatures?|winter|degrees)\b", "thermometer"),
+    (r"\b(banks?|loans?|credit|debts?|interest rates?|invest(?:ing|ment|ments|ors?)?|funds?)\b", "bank"),
+    (r"\b(crash(?:ed|es)?|fell|dropped|declin(?:e|ed|ing)|collaps(?:e|ed|ing)|plunged?|recession|losses|lost)\b", "chart-down"),
+    (r"\b(growth|grew|rose|increased?|soared|surged?|boom(?:ed|ing)?|profits?|revenue|record sales)\b", "chart-up"),
+    (r"\b(money|cash|dollars?|prices?|costs?|paid|salary|salaries|naira|cheap|expensive|worth)\b", "coin"),
+    (r"\b(stores?|shops?|retail|thrift|mall|customers?|brands?)\b", "store"),
+    (r"\b(cars?|drive|driving|vehicles?|trucks?|uber)\b", "car"),
+    (r"\b(contracts?|documents?|papers?|law|legal|reports?|files?|forms?|records?|deeds?|certificates?|tax(?:es)?)\b", "document"),
+    (r"\b(passwords?|security|secure|hacked?|privacy|encrypt(?:ed|ion)?|locked|breach(?:ed)?)\b", "lock"),
+    (r"\b(world|global|countries|country|international|worldwide|planet|africa|nigeria)\b", "globe"),
+    (r"\b(ideas?|innovation|invention|genius|smart|tricks?)\b", "bulb"),
+    (r"\b(workers?|employees?|bosses|boss|founders?|ceo|neighbou?rs?|people|man|woman)\b", "person"),
+]
+# concrete things only: a real-style cutout of an abstract idea (a chart, a price) or a person would be wrong
+_ILLUS_REAL = {"house": "modern suburban house", "building": "glass office building", "phone": "smartphone", "coin": "stack of gold coins",
+               "bank": "classical bank building with columns", "store": "small shop storefront", "car": "sedan car", "document": "paper contract document",
+               "thermometer": "mercury thermometer", "battery": "battery", "lock": "brass padlock", "globe": "world globe", "bulb": "glowing light bulb"}
+
 _ICONS2 = [
     (r"\b(money|cost|costs|price|paid|cash|dollars?|naira|profit|salary|rich|broke)\b", "coin"),
     (r"\b(danger|dangerous|risk|warning|scam|fraud|threat|deadly)\b", "warn"),
@@ -897,11 +921,37 @@ def director_pass(t, spec=None):
                 notes.append('%s: %s is worth showing, but the subject is up in the top of the frame, so I left it off rather than cover it.' % (tag, fact))
                 left_clean += 1
                 continue
-            put("kinetic", c, 0.2, text=fact, y=0.14)
-            put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
+            corner = n_callout % 2 == 1 and len(fact) <= 12     # step3-assets: alternate with tilted corner text
+            if corner:
+                put("corner-text", c, 0.2, text=fact, side=("tr" if n_callout % 4 == 1 else "tl"), y=0.12)
+            else:
+                put("kinetic", c, 0.2, text=fact, y=0.14)
+                put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
             n_callout += 1
             last_end, last_kind = c["end"], "callout"
-            notes.append('%s: %s goes big in the top band with an underline, clear of the subject.' % (tag, fact))
+            notes.append(('%s: %s sits tilted in a corner, revealed through a mask, clear of the subject.' if corner else
+                          '%s: %s goes big in the top band with an underline, clear of the subject.') % (tag, fact))
+            continue
+        want = str(sbi.get("asset") or "").strip()[:48]          # step3-assets: props from the library
+        ill = next((iid for rx, iid in _ILLUS if re.search(rx, low)), None)
+        if (want or ill) and n_icon < cap_icon and last_kind != "icon":
+            pbox = _subject_box(c, pid)
+            if pbox and pbox[0] < 0.28:
+                notes.append('%s: a "%s" prop fits, but the subject is up in the top of the frame, so I skipped it.' % (tag, want or ill))
+                left_clean += 1
+                continue
+            side_x = 0.8 if n_icon % 2 == 0 else 0.2
+            if want:
+                put("asset", c, 0.4, subject=want, fallback=ill, x=side_x, y=0.22, w=0.33)
+                notes.append('%s: the writer asked for a real "%s" cutout. It comes from the asset library (made once, then reused).' % (tag, want))
+            elif str(spec.get("assets", "")).lower() in ("real", "photo", "cutout") and ill in _ILLUS_REAL:
+                put("asset", c, 0.4, subject=_ILLUS_REAL[ill], fallback=ill, x=side_x, y=0.22, w=0.33)
+                notes.append('%s: a real-style cutout of a %s comes from the asset library.' % (tag, _ILLUS_REAL[ill]))
+            else:
+                put("illustration", c, 0.4, asset=ill, x=side_x, y=0.2, w=0.3)
+                notes.append('%s: a "%s" illustration builds itself on the %s after the words land.' % (tag, ill, "right" if side_x > 0.5 else "left"))
+            n_icon += 1
+            last_end, last_kind = c["end"], "icon"
             continue
         icon = next((ic for rx, ic in _ICONS2 if re.search(rx, low)), None)
         if icon and n_icon < cap_icon and last_kind != "icon":
