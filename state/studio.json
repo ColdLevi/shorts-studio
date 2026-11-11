@@ -1,23 +1,35 @@
 {
-  "last_update": 312538389,
-  "time": 1794370022728,
-  "stage": "idle",
-  "topic": "short about what is going on in the ai industry today",
+  "last_update": 312538390,
+  "time": 1794370049732,
+  "stage": "pitch",
+  "topic": "how the world war ii ended",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "How World War Two Really Ended",
+    "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+    "angle": "Most people think World War Two ended instantly with the atomic bomb. In reality, it took nuclear strikes, a massive Soviet army invasion, and an unprecedented royal broadcast to break Japan's final stance.",
+    "key_facts": [
+      "Germany unconditionally surrendered on May eighth, nineteen forty-five, ending the conflict in Europe.",
+      "The United States dropped atomic bombs on Hiroshima on August sixth and Nagasaki on August ninth, nineteen forty-five.",
+      "The Soviet Union launched a massive invasion of Japanese-held Manchuria on August ninth, nineteen forty-five.",
+      "Japan officially signed the surrender documents aboard the USS Missouri on September second, nineteen forty-five."
+    ],
+    "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+    "length_seconds": 45,
+    "style": "documentary",
+    "style_reason": "Gives historical events a cinematic museum quality with dramatic depth.",
+    "music": "cinematic-min",
+    "accent": "gold",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Edit Nine Sixteen Videos Fast\"",
-      "t": 1794288234827
-    },
     {
       "role": "user",
       "text": "Make a video for how easy it is to buy beer like a funny comparison of the old days and now then also make it retro style",
@@ -92,6 +104,11 @@
       "role": "user",
       "text": "Do a video about how the world war ii ended",
       "t": 1794369845835
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How World War Two Really Ended\": On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+      "t": 1794370049732
     }
   ],
   "working": null,
@@ -1038,7 +1055,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about YouTube short of how to edit editor it 9:16.\n- (interest) The user approved a short about vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle caption\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about classic about getting up early and why I hate it.\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (interest) The user approved a short about growing up as a developer in 2026.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about about something real-world, like city life.\n- (fact) Browser bot research on A buzzing city of Lagos: - Lagos, Nigeria's population is estimated at over 20 million to 24 million people, making it one of the largest megacities in the world (https://www.worldbank.org/en/country/nigeria/overview)\n- Lagos State is the smallest state in Nigeria by land area, measuring approximately 3,577 square kilometer\n- (fact) Browser bot research on about something real-world, like city life: - New York City's water supply system is one of the last unfiltered surface water supplies in the United States, serving over 8.3 million city residents and 1 million upstate consumers daily (https://www.nyc.gov/site/dep/water/drinking-water.page)\n- The NYC water system relies on an infrastructure n\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about short about what is going on in the ai industry today.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.\n- (interest) The user approved a short about YouTube short of how to edit editor it 9:16.\n- (interest) The user is interested in professional video editing techniques.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1165,7 +1182,11 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": null,
+  "job": {
+    "style": "documentary",
+    "format": "landscape",
+    "research": "full"
+  },
   "recent_styles": [
     "fastedit2",
     "fastedit2",
@@ -2080,97 +2101,5 @@
   "ideas_at": 1794243976053,
   "narr_pick": "me",
   "editing": false,
-  "pick": {
-    "topic": "how the world war ii ended",
-    "list": [
-      {
-        "id": "motion-explainer",
-        "kind": "recipe"
-      },
-      {
-        "id": "documentary",
-        "kind": "recipe"
-      },
-      {
-        "id": "stop-motion",
-        "kind": "recipe"
-      },
-      {
-        "id": "cinematic",
-        "kind": "recipe"
-      },
-      {
-        "id": "kinetic-news",
-        "kind": "recipe"
-      },
-      {
-        "id": "retro-vhs",
-        "kind": "recipe"
-      },
-      {
-        "id": "anime",
-        "kind": "recipe"
-      },
-      {
-        "id": "vlog",
-        "kind": "recipe"
-      },
-      {
-        "id": "blueprint",
-        "kind": "recipe"
-      },
-      {
-        "id": "what-if",
-        "kind": "recipe"
-      },
-      {
-        "id": "bold-pop",
-        "kind": "recipe"
-      },
-      {
-        "id": "youtube-1",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-2",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-3",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-4",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-5",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-6",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-7",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-8",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit2",
-        "kind": "learned"
-      }
-    ],
-    "job": {
-      "style": "documentary"
-    },
-    "at": 1794369850240
-  }
+  "pick": null
 }
