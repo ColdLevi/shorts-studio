@@ -1,7 +1,7 @@
 {
-  "last_update": 312538379,
-  "time": 1794365250668,
-  "stage": "pitch",
+  "last_update": 312538380,
+  "time": 1794365322498,
+  "stage": "script",
   "topic": "short about what is going on in the ai industry today",
   "research": {
     "text": "",
@@ -25,16 +25,99 @@
     "accent": "teal",
     "format": "vertical"
   },
-  "script": null,
+  "script": {
+    "title": "The Real Money Behind AI",
+    "beats": [
+      {
+        "narration": "Five hundred billion dollars poured into microchips and data centers this year alone,",
+        "image_prompt": "Minimalist digital app interface mockup of financial charts, bold solid teal background, crisp modern lighting, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "because most people think tech giants make fortunes selling ten dollar chat subscriptions,",
+        "image_prompt": "Playful 2D flat illustration of a chat bubble UI on a solid pastel background, clean vector style, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "but I learned the reality is an insane land rush for power plants",
+        "image_prompt": "Minimalist vector illustration of an electrical power plant, solid vibrant backdrop, modern studio lighting, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "and server racks just to keep up.",
+        "image_prompt": "Minimalist digital app mockup showing server rack load gauges, solid color backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "Tech companies spent over one hundred billion dollars on infrastructure in twenty twenty four,",
+        "image_prompt": "Playful 2D flat illustration of a massive bank vault with digital coin symbols, solid backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "so I checked how much hardware that actually buys,",
+        "image_prompt": "Minimalist digital app interface showing a shopping cart icon with microchips, solid pastel backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "and a single modern AI cluster uses over one hundred thousand GPUs,",
+        "image_prompt": "Playful 2D flat vector illustration of stacked computer processor chips, bold solid color backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "which sounds impressive until you realize",
+        "image_prompt": "Minimalist digital app UI dashboard with an exclamation warning icon, solid teal background, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "training one frontier model burns millions of kilowatt hours of power.",
+        "image_prompt": "Minimalist vector illustration of a lightning bolt next to a glowing battery indicator, solid backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "Generative AI startups spend up to eighty percent of their capital on cloud computing,",
+        "image_prompt": "Minimalist app interface showing a pie chart with eighty percent highlighted, solid color backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "leaving almost nothing for actual profits.",
+        "image_prompt": "Playful 2D flat illustration of an empty piggy bank with digital sparkles, solid pastel backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "So next time you prompt a chatbot, remember",
+        "image_prompt": "Minimalist vector illustration of a smartphone screen showing a blinking cursor, solid vibrant backdrop, vertical 9:16",
+        "tool": "flux"
+      },
+      {
+        "narration": "you are renting space in a very expensive power plant.",
+        "image_prompt": "Minimalist digital illustration of a glowing server cooling tower, solid teal backdrop, crisp modern lighting, vertical 9:16",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Tech companies spent over one hundred billion dollars on AI infrastructure in twenty twenty four.",
+        "supported": true
+      },
+      {
+        "claim": "A single modern AI cluster uses over one hundred thousand GPUs.",
+        "supported": true
+      },
+      {
+        "claim": "Training one frontier model burns millions of kilowatt hours of power.",
+        "supported": true
+      },
+      {
+        "claim": "Generative AI startups spend up to eighty percent of their capital on cloud computing.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "It's a new video Write a YouTube short style video of how to edit like pro video editor make it 9:16",
-      "t": 1794245724836
-    },
     {
       "role": "bot",
       "text": "To create a brand new video, please start a new project from the home screen.",
@@ -109,6 +192,11 @@
       "role": "bot",
       "text": "Pitched \"The Real Money Behind AI\": Five hundred billion dollars poured into microchips and data centers this year alone.",
       "t": 1794365250668
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Real Money Behind AI\"",
+      "t": 1794365322498
     }
   ],
   "working": null,
@@ -2097,6 +2185,6 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "sharp",
+  "narr_pick": "me",
   "editing": false
 }
