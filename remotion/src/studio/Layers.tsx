@@ -4,12 +4,15 @@ import { AbsoluteFill, Easing, Img, Sequence, interpolate, spring, useCurrentFra
 import { url } from './assets';
 import type { Layout } from './layout';
 import { AssetPng, CornerText, GlyphChip, Illustration } from './Layers2';   // step3-assets
+import { BarChart, ChapterCard, UiPanel } from './Layers3';   // step6-data
 
 export type Layer = {
   id: string; kind: string; start: number; end: number; text?: string; src?: string; cutout?: string | null;
   icon?: string; shape?: string; x?: number; y?: number; w?: number; opacity?: number;
   from?: number[]; to?: number[]; via?: number[]; seed?: number; push?: number;
   asset?: string; subject?: string; fallback?: string; tilt?: number; side?: string;
+  n?: number | string; title?: string; labels?: string[]; values?: number[]; unit?: string;
+  tiles?: { label: string; value: string }[]; alert?: string; log?: string[];
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
@@ -182,6 +185,7 @@ const Kinetic: React.FC<P> = ({ l, L, accent, font }) => {
 const KINDS: Record<string, React.FC<P>> = {
   'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
+  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel,
 };
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {

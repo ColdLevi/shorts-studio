@@ -9,8 +9,8 @@ import json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import timeline as TL
 
-MOMENT = ("kinetic", "corner-text", "depth-text", "illustration", "asset", "icon-pop")
-PRIO = {"depth-text": 6, "kinetic": 5, "corner-text": 5, "asset": 4, "illustration": 3, "icon-pop": 2}
+MOMENT = ("kinetic", "corner-text", "depth-text", "illustration", "asset", "icon-pop", "chapter-card", "chart", "panel")
+PRIO = {"depth-text": 6, "chapter-card": 6, "kinetic": 5, "corner-text": 5, "chart": 5, "asset": 4, "panel": 4, "illustration": 3, "icon-pop": 2}
 
 
 def prune(t):

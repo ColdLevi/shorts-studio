@@ -812,6 +812,54 @@ _ICONS2 = [
     (r"\b(fire|burning|burned|flames?)\b", "fire"),
     (r"\b(winner|champion|record)\b", "star"),
 ]
+# ---- data tier (step6-data): chapters and charts the director can see in the words ----
+_NUMW = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+_CHAPTER_RX = re.compile(r"^\s*(?:rule|law|lesson|tip|step|reason|mistake|number|part|chapter)\s*(?:#|no\.?\s*)?(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)\b[\s:,.\u2013\u2014-]*(.*)$", re.I | re.S)
+_PAIR_RX = re.compile(r"\b((?:19|20)\d\d)\b[^.!?\n]{0,48}?([$\u00a3\u20ac\u20a6])\s?(\d[\d,]*(?:\.\d+)?)\s?(k|m|bn|million|billion|thousand)?\b", re.I)
+_MULT = {"k": 1e3, "thousand": 1e3, "m": 1e6, "million": 1e6, "bn": 1e9, "billion": 1e9}
+
+
+def _chapter_of(text, given=None):
+    """(number, title) when the line opens a numbered chapter ("Rule three: ..."), or the writer gave one."""
+    if isinstance(given, dict) and given.get("n") is not None:
+        try:
+            return int(given["n"]), str(given.get("title") or "")[:46]
+        except (TypeError, ValueError):
+            return None
+    m = _CHAPTER_RX.match(text or "")
+    if not m:
+        return None
+    n = m.group(1).lower()
+    n = int(n) if n.isdigit() else _NUMW.get(n, 0)
+    rest = re.sub(r"^(?:is|are|was)\s+", "", re.split(r"[.!?]", m.group(2).strip(), 1)[0].strip(), flags=re.I)
+    return (n, rest[:46]) if n else None
+
+
+def _chart_of(text, given=None):
+    """Bar-chart data: from the writer ({labels, values, unit, title}) or three or more year + amount pairs in the line."""
+    if isinstance(given, dict) and given.get("labels") and given.get("values"):
+        try:
+            labs, vals = [str(x)[:8] for x in given["labels"]][:6], [float(x) for x in given["values"]][:6]
+        except (TypeError, ValueError):
+            return None
+        if len(labs) == len(vals) >= 2:
+            return {"title": str(given.get("title") or "")[:40], "labels": labs, "values": vals, "unit": str(given.get("unit") or "")[:2]}
+        return None
+    pairs = _PAIR_RX.findall(text or "")
+    if len(pairs) < 3:
+        return None
+    labs, vals = [], []
+    for yr, cur, num, mult in pairs[:6]:
+        try:
+            v = float(num.replace(",", "").rstrip(".")) * _MULT.get((mult or "").lower(), 1)
+        except ValueError:
+            return None
+        labs.append(yr)
+        vals.append(v)
+    if labs != sorted(labs) or len(set(labs)) < len(labs):
+        return None
+    return {"title": "By year", "labels": labs, "values": vals, "unit": pairs[0][1]}
+
 _FACT_RX = [
     r"\b(?:1[0-9]{3}|20[0-9]{2})\b",
     r"[$£€₦]\s?\d[\d,.]*\s?(?:k|m|bn|million|billion|thousand)?",
@@ -904,6 +952,25 @@ def director_pass(t, spec=None):
                 notes.append('%s: the hook. No subject cutout, so I put %s in the top band where it cannot cover the face.' % (tag, word.upper()))
             put("color-wash", c, 0.0, opacity=0.35, seed=round(rnd.random() * 6, 2))
             last_end, last_kind = c["end"], "hook"
+            continue
+        ch = _chapter_of(text, sbi.get("chapter"))                    # step6-data
+        if ch:
+            put("chapter-card", c, 0.1, n=ch[0], title=ch[1])
+            notes.append('%s: a numbered chapter card, chapter %d.' % (tag, ch[0]))
+            last_end, last_kind = c["end"], "chapter"
+            continue
+        cd = _chart_of(text, sbi.get("chart"))
+        if cd and last_kind != "chart" and (c["end"] - c["start"]) >= 2.4:
+            put("chart", c, 0.45, **cd)
+            notes.append('%s: %d numbers in one line, so a real bar chart (%s).' % (tag, len(cd["labels"]), ", ".join(cd["labels"])))
+            last_end, last_kind = c["end"], "chart"
+            continue
+        pn = sbi.get("panel")
+        if isinstance(pn, dict) and (pn.get("tiles") or pn.get("log") or pn.get("alert")) and (c["end"] - c["start"]) >= 2.4:
+            tiles = [{"label": str(x.get("label", ""))[:22], "value": str(x.get("value", ""))[:12]} for x in (pn.get("tiles") or []) if isinstance(x, dict)][:4]
+            put("panel", c, 0.3, title=str(pn.get("title") or "")[:34], tiles=tiles, alert=str(pn.get("alert") or "")[:60], log=[str(x)[:44] for x in (pn.get("log") or [])][:4])
+            notes.append('%s: a dashboard panel the writer asked for.' % tag)
+            last_end, last_kind = c["end"], "panel"
             continue
         if c["start"] < last_end + gap and not co:   # a callout the writer chose skips the spacing rule
             left_clean += 1
@@ -1045,7 +1112,7 @@ def camera_pass(t, spec=None):
         amp = round(max(0.35, min(0.8, 0.3 + 0.12 * dur)), 2)
         if i == 0:
             move, why = ("hold", "hook: the text is behind the subject, the camera stays out of its way") if "depth-text" in k else ("push-in", "hook: slow push-in")
-        elif k & {"kinetic", "icon-pop", "depth-text"} or (fact and k):
+        elif k & {"kinetic", "icon-pop", "depth-text", "corner-text", "chart", "panel", "chapter-card"} or (fact and k):
             move, why = "hold", "evidence on screen: the camera stops"
         elif _CAM_REVEAL.search(text):
             move, why = "pull-out", "a turn in the story: pull back to reveal"
