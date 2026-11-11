@@ -1,6 +1,6 @@
 {
-  "last_update": 312538398,
-  "time": 1794391110554,
+  "last_update": 312538399,
+  "time": 1794391174723,
   "stage": "idle",
   "topic": "how the world war ii ended",
   "research": {
@@ -1199,7 +1199,8 @@
   "settings": {
     "format": "landscape",
     "graphics": false,
-    "browser_bot": false
+    "browser_bot": false,
+    "style": "upload-5"
   },
   "job": null,
   "recent_styles": [
