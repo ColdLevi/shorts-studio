@@ -1,6 +1,6 @@
 {
-  "last_update": 312538397,
-  "time": 1794391024372,
+  "last_update": 312538398,
+  "time": 1794391110554,
   "stage": "idle",
   "topic": "how the world war ii ended",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"Buying Beer Is Too Easy Now\"",
-      "t": 1794294357740
-    },
-    {
-      "role": "user",
-      "text": "Lets build a new video it should be 9:16 and purely motion graphics animation and it should be great the topic is how to make cheese like in the 90s",
-      "t": 1794303034397
-    },
     {
       "role": "bot",
       "text": "Pitched \"Cheese the 90s Fast\": A neon cassette spins in a dark room.",
@@ -92,6 +82,16 @@
       "role": "user",
       "text": "Creat an explainer video that's more of tech that teach people how API works",
       "t": 1794391021980
+    },
+    {
+      "role": "user",
+      "text": "Are you active?",
+      "t": 1794391108288
+    },
+    {
+      "role": "bot",
+      "text": "Yes, I'm active and ready to help you with your videos!",
+      "t": 1794391110554
     }
   ],
   "working": null,
