@@ -1,6 +1,6 @@
 {
-  "last_update": 312538384,
-  "time": 1794365572811,
+  "last_update": 312538385,
+  "time": 1794366650640,
   "stage": "idle",
   "topic": "short about what is going on in the ai industry today",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Create a video YouTube short style video of how to edit like pro video editor make it 9:16",
-      "t": 1794245812080
-    },
     {
       "role": "bot",
       "text": "Pitched \"Edit Nine Sixteen Videos Fast\": Ten million creators crop horizontal footage into vertical boxes.",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Rendering \"The Real Money Behind AI\"",
       "t": 1794365572811
+    },
+    {
+      "role": "user",
+      "text": "Where is the video",
+      "t": 1794366647985
     }
   ],
   "working": null,
