@@ -194,6 +194,9 @@ jobs:
           python3 tools/subjects.py "$PROJECT_ID" || true
           python3 tools/assets_step.py "$PROJECT_ID" || true   # step3-assets
           python3 tools/make_cutouts.py "$PROJECT_ID" || true
+          python3 tools/qa.py pre "$PROJECT_ID" || true            # step4-sound: restraint budget
+          python3 tools/sfx_gen.py || true
+          python3 tools/sound_pass.py "$PROJECT_ID" || true
 
       - name: Render
         if: env.SKIP_RENDER != '1'
@@ -215,6 +218,7 @@ jobs:
       - name: Loudness to -14 LUFS, poster frame
         if: env.SKIP_RENDER != '1'
         run: |
+          python3 tools/qa.py post remotion/out/short.mp4 "$PROJECT_ID" || true   # step4-sound: QA after the render
           ffmpeg -y -loglevel error -i remotion/out/short.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart job/final.mp4
           ffmpeg -y -loglevel error -ss 1.2 -i job/final.mp4 -frames:v 1 -vf scale=540:-2 -q:v 3 job/poster.jpg
           ls -la job/final.mp4 job/poster.jpg
