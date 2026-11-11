@@ -445,6 +445,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-42",
+      "title": "How World War Two Really Ended",
+      "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+      "accent": "#FFD43B",
+      "duration": 40.1,
+      "created": 1794373286528,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-42/short-42.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-42/short-42.jpg",
+      "project": "how-world-war-two-really-ended-mwblp6v8",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

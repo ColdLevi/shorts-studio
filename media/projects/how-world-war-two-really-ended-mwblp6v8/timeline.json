@@ -1,0 +1,989 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-world-war-two-really-ended-mwblp6v8",
+ "rev": 1,
+ "title": "How World War Two Really Ended",
+ "duration": 40.04,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.415,
+    "narration": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "16:9 landscape aspect ratio. A wide painterly historical illustration of Allied soldiers celebrating in ruined European streets, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, subject in lower two-thirds",
+     "motion": "slow push forward across the cheering crowd toward the smoky sky",
+     "still": "flux"
+    },
+    "hash": "c92ba5055d3c"
+   },
+   {
+    "id": "v2",
+    "start": 5.415,
+    "end": 10.205,
+    "narration": "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "16:9 landscape aspect ratio. Painterly historical illustration of Japanese military officials seated around a dark wooden war room table, low key lighting, deep shadows, muted earth tones, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "efda99f1dc50",
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.205,
+    "end": 16.093,
+    "narration": "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "16:9 landscape aspect ratio. Historical footage of a massive smoke plume rising over destroyed terrain, grainy archival look, dramatic contrast"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c36bfbf04314",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.093,
+    "end": 20.232,
+    "narration": "but inside Tokyo, military leadership still planned to fight to the last man.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "16:9 landscape aspect ratio. Painterly historical illustration of silhouettes of generals standing before a illuminated tactical wall map of the Pacific, dramatic chiaroscuro lighting, aged paper texture"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "51da59ead15e",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 20.232,
+    "end": 25.027,
+    "narration": "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
+    "kind": "ai_video",
+    "src": "assets/clip_05.mp4",
+    "duration": 5.1,
+    "still": "assets/img_05.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "16:9 landscape aspect ratio. Archival style video of tanks rolling through dusty open plains",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "79fb69d71c4e"
+   },
+   {
+    "id": "v6",
+    "start": 25.027,
+    "end": 28.511,
+    "narration": "wiping out their entire northern force and leaving them completely cornered,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "16:9 landscape aspect ratio. Painterly historical illustration of abandoned military encampments across cold northern plains, heavy fog, muted earth tones, dramatic shadows, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "af126d9c03bc",
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.72,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 28.511,
+    "end": 33.786,
+    "narration": "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "16:9 landscape aspect ratio. Painterly historical illustration of a single vintage radio microphone sitting under a bright spotlight on a dark wooden table, dramatic chiaroscuro lighting, aged paper texture"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6386280995b4",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 33.786,
+    "end": 39.24,
+    "narration": "ending it all on September second, nineteen forty-five, aboard the USS Missouri.",
+    "kind": "ai_video",
+    "src": "assets/clip_08.mp4",
+    "duration": 4.06,
+    "still": "assets/img_08.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "16:9 landscape aspect ratio. Painterly historical illustration of the massive deck of the USS Missouri surrounded by ocean waters, dramatic horizon lighting, muted golden tones, museum-diorama depth",
+     "motion": "cinematic slow pan across the battleship deck toward the open ocean",
+     "still": "flux"
+    },
+    "hash": "032640ce7233"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "On",
+     "start": 0.1,
+     "end": 0.275
+    },
+    {
+     "word": "May",
+     "start": 0.3,
+     "end": 0.475
+    },
+    {
+     "word": "eighth,",
+     "start": 0.5,
+     "end": 0.762
+    },
+    {
+     "word": "nineteen",
+     "start": 0.875,
+     "end": 1.3
+    },
+    {
+     "word": "forty-five,",
+     "start": 1.325,
+     "end": 1.925
+    },
+    {
+     "word": "victory",
+     "start": 2.112,
+     "end": 2.475
+    },
+    {
+     "word": "in",
+     "start": 2.5,
+     "end": 2.587
+    },
+    {
+     "word": "Europe",
+     "start": 2.612,
+     "end": 2.9
+    },
+    {
+     "word": "was",
+     "start": 2.913,
+     "end": 3.038
+    },
+    {
+     "word": "declared,",
+     "start": 3.062,
+     "end": 3.538
+    },
+    {
+     "word": "but",
+     "start": 3.688,
+     "end": 3.825
+    },
+    {
+     "word": "half",
+     "start": 3.85,
+     "end": 4.037
+    },
+    {
+     "word": "the",
+     "start": 4.062,
+     "end": 4.175
+    },
+    {
+     "word": "world",
+     "start": 4.2,
+     "end": 4.463,
+     "em": true
+    },
+    {
+     "word": "was",
+     "start": 4.487,
+     "end": 4.638
+    },
+    {
+     "word": "still",
+     "start": 4.662,
+     "end": 4.9
+    },
+    {
+     "word": "at",
+     "start": 4.925,
+     "end": 5.013
+    },
+    {
+     "word": "war,",
+     "start": 5.037,
+     "end": 5.287
+    },
+    {
+     "word": "because",
+     "start": 5.475,
+     "end": 5.763
+    },
+    {
+     "word": "Japan",
+     "start": 5.787,
+     "end": 6.138
+    },
+    {
+     "word": "refused",
+     "start": 6.162,
+     "end": 6.525
+    },
+    {
+     "word": "to",
+     "start": 6.55,
+     "end": 6.612
+    },
+    {
+     "word": "yield,",
+     "start": 6.638,
+     "end": 7.0
+    },
+    {
+     "word": "bound",
+     "start": 7.16,
+     "end": 7.398
+    },
+    {
+     "word": "by",
+     "start": 7.41,
+     "end": 7.536
+    },
+    {
+     "word": "a",
+     "start": 7.561,
+     "end": 7.623
+    },
+    {
+     "word": "command",
+     "start": 7.648,
+     "end": 8.048
+    },
+    {
+     "word": "that",
+     "start": 8.061,
+     "end": 8.173
+    },
+    {
+     "word": "saw",
+     "start": 8.198,
+     "end": 8.385
+    },
+    {
+     "word": "surrender",
+     "start": 8.41,
+     "end": 8.898
+    },
+    {
+     "word": "as",
+     "start": 8.923,
+     "end": 9.023
+    },
+    {
+     "word": "complete",
+     "start": 9.036,
+     "end": 9.398,
+     "em": true
+    },
+    {
+     "word": "dishonor.",
+     "start": 9.41,
+     "end": 9.985
+    },
+    {
+     "word": "You",
+     "start": 10.265,
+     "end": 10.415
+    },
+    {
+     "word": "think",
+     "start": 10.44,
+     "end": 10.627,
+     "em": true
+    },
+    {
+     "word": "atomic",
+     "start": 10.64,
+     "end": 11.052
+    },
+    {
+     "word": "bombs",
+     "start": 11.065,
+     "end": 11.377
+    },
+    {
+     "word": "instantly",
+     "start": 11.402,
+     "end": 11.84
+    },
+    {
+     "word": "ended",
+     "start": 11.865,
+     "end": 12.127
+    },
+    {
+     "word": "everything",
+     "start": 12.152,
+     "end": 12.54
+    },
+    {
+     "word": "when",
+     "start": 12.565,
+     "end": 12.678
+    },
+    {
+     "word": "Hiroshima",
+     "start": 12.703,
+     "end": 13.29
+    },
+    {
+     "word": "fell",
+     "start": 13.315,
+     "end": 13.54
+    },
+    {
+     "word": "August",
+     "start": 13.565,
+     "end": 13.865
+    },
+    {
+     "word": "sixth,",
+     "start": 13.877,
+     "end": 14.215
+    },
+    {
+     "word": "and",
+     "start": 14.428,
+     "end": 14.565
+    },
+    {
+     "word": "Nagasaki",
+     "start": 14.59,
+     "end": 15.178
+    },
+    {
+     "word": "three",
+     "start": 15.203,
+     "end": 15.415
+    },
+    {
+     "word": "days",
+     "start": 15.428,
+     "end": 15.653
+    },
+    {
+     "word": "later,",
+     "start": 15.678,
+     "end": 15.965
+    },
+    {
+     "word": "but",
+     "start": 16.153,
+     "end": 16.302
+    },
+    {
+     "word": "inside",
+     "start": 16.327,
+     "end": 16.702
+    },
+    {
+     "word": "Tokyo,",
+     "start": 16.728,
+     "end": 17.165
+    },
+    {
+     "word": "military",
+     "start": 17.325,
+     "end": 17.825
+    },
+    {
+     "word": "leadership",
+     "start": 17.837,
+     "end": 18.288
+    },
+    {
+     "word": "still",
+     "start": 18.313,
+     "end": 18.563,
+     "em": true
+    },
+    {
+     "word": "planned",
+     "start": 18.575,
+     "end": 18.837
+    },
+    {
+     "word": "to",
+     "start": 18.85,
+     "end": 18.925
+    },
+    {
+     "word": "fight",
+     "start": 18.937,
+     "end": 19.163
+    },
+    {
+     "word": "to",
+     "start": 19.187,
+     "end": 19.262
+    },
+    {
+     "word": "the",
+     "start": 19.275,
+     "end": 19.375
+    },
+    {
+     "word": "last",
+     "start": 19.387,
+     "end": 19.675
+    },
+    {
+     "word": "man.",
+     "start": 19.687,
+     "end": 20.012
+    },
+    {
+     "word": "What",
+     "start": 20.292,
+     "end": 20.479
+    },
+    {
+     "word": "shattered",
+     "start": 20.505,
+     "end": 20.892,
+     "em": true
+    },
+    {
+     "word": "them",
+     "start": 20.917,
+     "end": 21.067
+    },
+    {
+     "word": "was",
+     "start": 21.092,
+     "end": 21.255
+    },
+    {
+     "word": "August",
+     "start": 21.279,
+     "end": 21.604
+    },
+    {
+     "word": "ninth,",
+     "start": 21.617,
+     "end": 21.917
+    },
+    {
+     "word": "when",
+     "start": 22.077,
+     "end": 22.202
+    },
+    {
+     "word": "the",
+     "start": 22.227,
+     "end": 22.327
+    },
+    {
+     "word": "Soviet",
+     "start": 22.339,
+     "end": 22.74
+    },
+    {
+     "word": "Union",
+     "start": 22.764,
+     "end": 23.065
+    },
+    {
+     "word": "launched",
+     "start": 23.089,
+     "end": 23.365
+    },
+    {
+     "word": "a",
+     "start": 23.39,
+     "end": 23.44
+    },
+    {
+     "word": "massive",
+     "start": 23.464,
+     "end": 23.815
+    },
+    {
+     "word": "invasion",
+     "start": 23.827,
+     "end": 24.24
+    },
+    {
+     "word": "of",
+     "start": 24.264,
+     "end": 24.339
+    },
+    {
+     "word": "Manchuria,",
+     "start": 24.365,
+     "end": 24.927
+    },
+    {
+     "word": "wiping",
+     "start": 25.087,
+     "end": 25.436
+    },
+    {
+     "word": "out",
+     "start": 25.462,
+     "end": 25.587
+    },
+    {
+     "word": "their",
+     "start": 25.611,
+     "end": 25.762
+    },
+    {
+     "word": "entire",
+     "start": 25.787,
+     "end": 26.161
+    },
+    {
+     "word": "northern",
+     "start": 26.186,
+     "end": 26.537
+    },
+    {
+     "word": "force",
+     "start": 26.561,
+     "end": 26.911
+    },
+    {
+     "word": "and",
+     "start": 26.924,
+     "end": 27.024
+    },
+    {
+     "word": "leaving",
+     "start": 27.049,
+     "end": 27.337
+    },
+    {
+     "word": "them",
+     "start": 27.349,
+     "end": 27.486
+    },
+    {
+     "word": "completely",
+     "start": 27.499,
+     "end": 28.012,
+     "em": true
+    },
+    {
+     "word": "cornered,",
+     "start": 28.037,
+     "end": 28.411
+    },
+    {
+     "word": "so",
+     "start": 28.571,
+     "end": 28.721
+    },
+    {
+     "word": "Emperor",
+     "start": 28.746,
+     "end": 29.071
+    },
+    {
+     "word": "Hirohito",
+     "start": 29.096,
+     "end": 29.621
+    },
+    {
+     "word": "made",
+     "start": 29.633,
+     "end": 29.808
+    },
+    {
+     "word": "an",
+     "start": 29.821,
+     "end": 29.909
+    },
+    {
+     "word": "unprecedented",
+     "start": 29.934,
+     "end": 30.671
+    },
+    {
+     "word": "royal",
+     "start": 30.696,
+     "end": 30.958
+    },
+    {
+     "word": "broadcast,",
+     "start": 30.983,
+     "end": 31.571
+    },
+    {
+     "word": "ordering",
+     "start": 31.759,
+     "end": 32.096
+    },
+    {
+     "word": "his",
+     "start": 32.108,
+     "end": 32.233
+    },
+    {
+     "word": "troops",
+     "start": 32.246,
+     "end": 32.546
+    },
+    {
+     "word": "to",
+     "start": 32.558,
+     "end": 32.659
+    },
+    {
+     "word": "lay",
+     "start": 32.684,
+     "end": 32.833
+    },
+    {
+     "word": "down",
+     "start": 32.846,
+     "end": 33.046
+    },
+    {
+     "word": "their",
+     "start": 33.071,
+     "end": 33.221
+    },
+    {
+     "word": "weapons,",
+     "start": 33.246,
+     "end": 33.634
+    },
+    {
+     "word": "ending",
+     "start": 33.846,
+     "end": 34.108
+    },
+    {
+     "word": "it",
+     "start": 34.134,
+     "end": 34.208
+    },
+    {
+     "word": "all",
+     "start": 34.233,
+     "end": 34.421
+    },
+    {
+     "word": "on",
+     "start": 34.446,
+     "end": 34.546
+    },
+    {
+     "word": "September",
+     "start": 34.571,
+     "end": 35.034
+    },
+    {
+     "word": "second,",
+     "start": 35.058,
+     "end": 35.446
+    },
+    {
+     "word": "nineteen",
+     "start": 35.571,
+     "end": 35.996
+    },
+    {
+     "word": "forty-five,",
+     "start": 36.021,
+     "end": 36.659
+    },
+    {
+     "word": "aboard",
+     "start": 36.833,
+     "end": 37.159
+    },
+    {
+     "word": "the",
+     "start": 37.184,
+     "end": 37.246
+    },
+    {
+     "word": "USS",
+     "start": 37.259,
+     "end": 37.746
+    },
+    {
+     "word": "Missouri.",
+     "start": 37.759,
+     "end": 38.284,
+     "em": true
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-GuyNeural",
+     "rate": "+0%",
+     "text": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war, because Japan refused to yield, bound by a command that saw surrender as complete dishonor. You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later, but inside Tokyo, military leadership still planned to fight to the last man. What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria, wiping out their entire northern force and leaving them completely cornered, so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons, ending it all on September second, nineteen forty-five, aboard the USS Missouri."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/cinematic-min.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "cinematic-min"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 10.005,
+    "volume": 0.55,
+    "anchor": "v3",
+    "offset": -0.2
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 16.61,
+    "volume": 0.3,
+    "anchor": "v4",
+    "offset": 0.52
+   },
+   {
+    "id": "gs4",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 33.99,
+    "volume": 0.38,
+    "anchor": "v8",
+    "offset": 0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.37,
+    "text": "May 8, 1945",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.37,
+    "opacity": 0.35,
+    "seed": 2.0
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 16.49,
+    "end": 20.18,
+    "asset": "person",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   },
+   {
+    "id": "ly4",
+    "kind": "kinetic",
+    "anchor": "v8",
+    "delay": 0.2,
+    "start": 33.99,
+    "end": 39.19,
+    "text": "Sept 2, 1945",
+    "y": 0.14
+   },
+   {
+    "id": "ly5",
+    "kind": "draw-line",
+    "anchor": "v8",
+    "delay": 0.7,
+    "start": 34.49,
+    "end": 39.19,
+    "shape": "underline",
+    "x": 0.2,
+    "y": 0.21,
+    "w": 0.6
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794370797260,
+  "updated": 1794370797264,
+  "topic": "how the world war ii ended",
+  "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "landscape",
+  "assets_release": "project-how-world-war-two-really-ended-mwblp6v8",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
+   "music": "cinematic-min",
+   "project_id": "how-world-war-two-really-ended-mwblp6v8",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "How World War Two Really Ended",
+   "topic": "how the world war ii ended",
+   "voice": "en-US-GuyNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"On May eighth, nineteen forty-five,...\"): the hook. No subject cutout, so I put MAY 8, 1945 in the top band where it cannot cover the face.",
+   "Beat 3 (\"You think atomic bombs instantly en...\"): August 1945 is worth showing, but the subject is up in the top of the frame, so I left it off rather than cover it.",
+   "Beat 4 (\"but inside Tokyo, military leadersh...\"): a \"person\" illustration builds itself on the right after the words land.",
+   "Beat 8 (\"ending it all on September second, ...\"): Sept 2, 1945 goes big in the top band with an underline, clear of the subject.",
+   "Left 5 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax)."
+  ],
+  "qa": [],
+  "sound": "4 effects: hit_low, pop, swish"
+ }
+}
