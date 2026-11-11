@@ -1,6 +1,6 @@
 {
-  "last_update": 312538386,
-  "time": 1794366716891,
+  "last_update": 312538387,
+  "time": 1794369785609,
   "stage": "idle",
   "topic": "short about what is going on in the ai industry today",
   "research": {
@@ -2040,6 +2040,11 @@
   },
   "voice_pick": null,
   "disliked": [
+    {
+      "title": "The Real Money Behind AI",
+      "first": "Five hundred billion dollars poured into microchips and data centers this year alone,",
+      "at": 1794369785609
+    },
     {
       "title": "Edit Nine Sixteen Videos Fast",
       "first": "Ten million creators crop horizontal footage into vertical boxes.",
