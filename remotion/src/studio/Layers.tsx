@@ -193,6 +193,31 @@ const KINDS = {
   'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel,
 } as unknown as Record<string, React.ComponentType<P>>;
 
+type AnimatedLayerProps = P & { component: React.ComponentType<P> };
+
+const AnimatedLayer: React.FC<AnimatedLayerProps> = ({
+  component: C, l, L, accent, pid, palette, font, grade
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const localSeconds = frame / fps;
+  const animated = evaluateKeyframes(l.keyframes, localSeconds);
+  const style = motionStyle(animated, l.transform || {});
+
+  return (
+    <AbsoluteFill style={{
+      transform: style.transform,
+      opacity: style.opacity,
+      filter: style.filter,
+      width: style.width,
+      height: style.height
+    }}>
+      <C l={l} L={L} accent={accent} pid={pid}
+         palette={palette} font={font} grade={grade} />
+    </AbsoluteFill>
+  );
+};
+
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {
   const { fps } = useVideoConfig();
   if (!layers || !layers.length) return null;
@@ -202,20 +227,18 @@ export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string;
       {layers.map((l) => {
         const C = KINDS[l.kind];
         if (!C) return null;
-        const AnimatedLayer: React.FC = () => {
-          const frame = useCurrentFrame();
-          const localSeconds = frame / fps;
-          const animated = evaluateKeyframes(l.keyframes, localSeconds);
-          const style = motionStyle(animated, l.transform || {});
-          return (
-            <AbsoluteFill style={{ transform: style.transform, opacity: style.opacity, filter: style.filter, width: style.width, height: style.height }}>
-              <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} />
-            </AbsoluteFill>
-          );
-        };
         return (
           <Sequence key={l.id} from={Math.round(l.start * fps)} durationInFrames={Math.max(3, Math.round((l.end - l.start) * fps))}>
-            <AnimatedLayer />
+            <AnimatedLayer
+              component={C}
+              l={l}
+              L={L}
+              accent={accent}
+              pid={pid}
+              palette={pal}
+              font={font}
+              grade={grade}
+            />
           </Sequence>
         );
       })}

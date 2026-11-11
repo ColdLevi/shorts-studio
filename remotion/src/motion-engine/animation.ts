@@ -103,12 +103,20 @@ export function motionStyle(
   base: MotionTransform = {},
 ): { transform?: string; opacity?: number; filter?: string; width?: string; height?: string } {
   const v = { ...base, ...animated };
+  const hasTransform =
+    v.x !== undefined || v.y !== undefined ||
+    v.scale !== undefined || v.scaleX !== undefined ||
+    v.scaleY !== undefined || v.rotation !== undefined;
+
   const tx = v.x ?? 0;
   const ty = v.y ?? 0;
   const sx = v.scaleX ?? v.scale ?? 1;
   const sy = v.scaleY ?? v.scale ?? 1;
   const rotation = v.rotation ?? 0;
-  const transform = `translate(${tx}%, ${ty}%) scale(${sx}, ${sy}) rotate(${rotation}deg)`;
+
+  const transform = hasTransform
+    ? `translate(${tx}%, ${ty}%) scale(${sx}, ${sy}) rotate(${rotation}deg)`
+    : undefined;
   const filters: string[] = [];
   if (v.blur !== undefined && v.blur > 0) filters.push(`blur(${v.blur}px)`);
   if (v.brightness !== undefined) filters.push(`brightness(${v.brightness})`);

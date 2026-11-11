@@ -922,10 +922,76 @@ def director_pass(t, spec=None):
     layers, notes = [], []
     last_end, last_kind, left_clean = -99.0, None, 0
 
+    def _motion_preset(kind, duration):
+        presets = {
+            "chapter-card": (
+                {"y": 6, "scale": 0.97},
+                {"y": 0, "scale": 1},
+                "ease-out",
+            ),
+            "chart": (
+                {"y": 4, "scale": 0.985},
+                {"y": 0, "scale": 1},
+                "ease-out",
+            ),
+            "panel": (
+                {"y": 3, "scale": 0.985},
+                {"y": 0, "scale": 1},
+                "smooth",
+            ),
+            "illustration": (
+                {"y": 2, "scale": 0.98},
+                {"y": 0, "scale": 1},
+                "smooth",
+            ),
+            "asset": (
+                {"scale": 1.035},
+                {"scale": 1},
+                "smooth",
+            ),
+            "icon-pop": (
+                {"scale": 0.72},
+                {"scale": 1},
+                "back-out",
+            ),
+            "corner-text": (
+                {"x": -4},
+                {"x": 0},
+                "ease-out",
+            ),
+        }
+
+        preset = presets.get(kind)
+        if not preset:
+            return None
+
+        initial, final, easing = preset
+        enter = round(min(0.4, max(0.15, duration * 0.45)), 3)
+
+        return [
+            {"t": 0, "values": initial, "ease": easing},
+            {"t": enter, "values": final},
+        ]
+
     def put(kind, c, delay=0.15, **kw):
         s = round(c["start"] + delay, 2)
         e = round(max(s + 0.6, c["end"] - 0.05), 2)
-        layers.append(dict({"id": "ly%d" % (len(layers) + 1), "kind": kind, "anchor": c["id"], "delay": delay, "start": s, "end": e}, **kw))
+        duration = max(0.6, e - s)
+
+        # Explicit user/AI motion always takes priority.
+        if "keyframes" not in kw and "transform" not in kw:
+            motion = _motion_preset(kind, duration)
+            if motion:
+                kw["keyframes"] = motion
+
+        layers.append(dict({
+            "id": "ly%d" % (len(layers) + 1),
+            "kind": kind,
+            "anchor": c["id"],
+            "delay": delay,
+            "start": s,
+            "end": e
+        }, **kw))
 
     for i, c in enumerate(vis):
         text = (c.get("narration") or "").strip()
