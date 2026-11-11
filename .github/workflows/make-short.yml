@@ -110,7 +110,7 @@ jobs:
           cache-dependency-path: remotion/package-lock.json
 
       - name: Install tools
-        timeout-minutes: 12
+        timeout-minutes: 25
         run: |
           pip install -q -U edge-tts gtts pillow gradio_client
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
@@ -120,7 +120,7 @@ jobs:
           timeout 420 sudo apt-get $APT install -y --no-install-recommends ffmpeg fonts-dejavu-core \
             libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 \
             libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
-          sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
+          timeout 120 sudo apt-get $APT install -y libasound2t64 || timeout 120 sudo apt-get $APT install -y libasound2 || true
           
           # ffprobe hardening: '|| true' swallowed apt failures and the render died later on ffprobe
           for i in 1 2 3; do
