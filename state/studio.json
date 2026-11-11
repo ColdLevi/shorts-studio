@@ -1,28 +1,35 @@
 {
-  "last_update": 312538378,
-  "time": 1794303663359,
-  "stage": "idle",
-  "topic": "how to cheese the 90s, 9:16 format, purely",
+  "last_update": 312538379,
+  "time": 1794365250668,
+  "stage": "pitch",
+  "topic": "short about what is going on in the ai industry today",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "The Real Money Behind AI",
+    "hook": "Five hundred billion dollars poured into microchips and data centers this year alone.",
+    "angle": "Most people think tech giants make fortune selling ten dollar subscriptions to chatbots. The reality is an insane land rush for power plants and server racks just to keep up.",
+    "key_facts": [
+      "Tech companies spent over one hundred billion dollars on AI infrastructure in twenty twenty four.",
+      "A single modern AI cluster uses over one hundred thousand GPUs.",
+      "Training one frontier model burns millions of kilowatt hours of power.",
+      "Generative AI startups spend up to eighty percent of their capital on cloud computing."
+    ],
+    "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+    "length_seconds": 45,
+    "style": "fastedit2",
+    "style_reason": "High contrast UI graphics cleanly visualize massive tech infrastructure numbers fast.",
+    "music": "tech-pulse",
+    "accent": "teal",
+    "format": "vertical"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Write a YouTube short style video of how to edit like pro video editor make it 9:16",
-      "t": 1794245649884
-    },
-    {
-      "role": "bot",
-      "text": "Proposed edit to \"5 Dollar Thrift Store Goldmine\": Changed canvas to portrait 9:16 and rewrote the video about professional video editing techniques",
-      "t": 1794245680646
-    },
     {
       "role": "user",
       "text": "It's a new video Write a YouTube short style video of how to edit like pro video editor make it 9:16",
@@ -92,6 +99,16 @@
       "role": "bot",
       "text": "Rendering \"Cheese the 90s Fast\"",
       "t": 1794303663359
+    },
+    {
+      "role": "user",
+      "text": "Make a short video about what is going on in the ai industry today",
+      "t": 1794365233765
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"The Real Money Behind AI\": Five hundred billion dollars poured into microchips and data centers this year alone.",
+      "t": 1794365250668
     }
   ],
   "working": null,
@@ -1041,7 +1058,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.\n- (interest) The user approved a short about YouTube short of how to edit editor it 9:16.\n- (interest) The user is interested in professional video editing techniques.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about classic about getting up early and why I hate it.\n- (interest) The user approved a short about vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle caption\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (idea) The user likes YouTube Shorts ideas about tech facts, specifically why phone batteries die faster in the cold.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about YouTube short of how to edit editor it 9:16.\n- (interest) The user approved a short about vertical short: \"Why your package from China takes 14 days to reach Nigeria\". Beat 1 is the hook, with one big clear subject centered in the picture (a parcel box). Then cover the 14 day number, the route from China to Lagos by sea and air, what it costs per kilo in dollars, a warning about customs scams, and end with a question for the viewers. look, subtle caption\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about classic about getting up early and why I hate it.\n- (interest) The user approved a short about how I met my girlfriend.\n- (interest) The user approved a short about Why your phone battery dies faster in the cold (and 5 habits that fix it). 2 to , fast cuts, bold captions, hook in the first , end with a question to get comments.\n- (interest) The user approved a short about growing up as a developer in 2026.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1169,7 +1186,10 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": null,
+  "job": {
+    "format": "vertical",
+    "research": "full"
+  },
   "recent_styles": [
     "retro-vhs",
     "fastedit2",
