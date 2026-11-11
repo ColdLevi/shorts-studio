@@ -1,6 +1,6 @@
 {
-  "last_update": 312538412,
-  "time": 1794408199144,
+  "last_update": 312538413,
+  "time": 1794408255128,
   "stage": "idle",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -2087,99 +2087,7 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": {
-    "topic": "Make a video on how APIs work, how companies make money from selling APIs, and how you can do the same.",
-    "list": [
-      {
-        "id": "motion-explainer",
-        "kind": "recipe"
-      },
-      {
-        "id": "documentary",
-        "kind": "recipe"
-      },
-      {
-        "id": "stop-motion",
-        "kind": "recipe"
-      },
-      {
-        "id": "cinematic",
-        "kind": "recipe"
-      },
-      {
-        "id": "kinetic-news",
-        "kind": "recipe"
-      },
-      {
-        "id": "retro-vhs",
-        "kind": "recipe"
-      },
-      {
-        "id": "anime",
-        "kind": "recipe"
-      },
-      {
-        "id": "vlog",
-        "kind": "recipe"
-      },
-      {
-        "id": "blueprint",
-        "kind": "recipe"
-      },
-      {
-        "id": "what-if",
-        "kind": "recipe"
-      },
-      {
-        "id": "bold-pop",
-        "kind": "recipe"
-      },
-      {
-        "id": "youtube-1",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-2",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-3",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-4",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-5",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-6",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-7",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-8",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit2",
-        "kind": "learned"
-      }
-    ],
-    "job": {
-      "style": "motion-explainer"
-    },
-    "at": 1794408048204
-  },
+  "pick": null,
   "liked": [
     {
       "title": "How World War Two Really Ended",
@@ -2198,7 +2106,16 @@
     }
   ],
   "assets": null,
-  "intake": null,
+  "intake": {
+    "topic": "Make a video on how APIs work, how companies make money from selling APIs, and how you can do the same.",
+    "job": {
+      "style": "motion-explainer",
+      "format": "landscape"
+    },
+    "items": [],
+    "n": 0,
+    "at": 1794408255128
+  },
   "assets_at": 1794391192461,
   "narr": null
 }
