@@ -1,6 +1,6 @@
 {
-  "last_update": 312538409,
-  "time": 1794395422594,
+  "last_update": 312538410,
+  "time": 1794407969302,
   "stage": "idle",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Real Money Behind AI\": Five hundred billion dollars poured into microchips and data centers this year alone.",
-      "t": 1794365250668
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"The Real Money Behind AI\"",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Rendering \"How APIs Actually Move The Internet\"",
       "t": 1794391637901
+    },
+    {
+      "role": "user",
+      "text": "Make a video on this how API works and how companies make money from selling API and how you can to",
+      "t": 1794407969298
     }
   ],
   "working": null,
@@ -2088,7 +2088,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "Make a video on this how API works and how companies make money from selling API and how you can to",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794407969302
+  },
   "liked": [
     {
       "title": "How World War Two Really Ended",
