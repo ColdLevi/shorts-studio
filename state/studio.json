@@ -1,6 +1,6 @@
 {
-  "last_update": 312538410,
-  "time": 1794407969302,
+  "last_update": 312538411,
+  "time": 1794408048204,
   "stage": "idle",
   "topic": "Creat that's more of tech that teach people how API works",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Real Money Behind AI\"",
-      "t": 1794365322498
-    },
     {
       "role": "bot",
       "text": "Rendering \"The Real Money Behind AI\"",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "Make a video on this how API works and how companies make money from selling API and how you can to",
       "t": 1794407969298
+    },
+    {
+      "role": "user",
+      "text": "Make a video on how APIs work, how companies make money from selling APIs, and how you can do the same.",
+      "t": 1794408048203
     }
   ],
   "working": null,
@@ -2089,7 +2089,7 @@
   "narr_pick": "you",
   "editing": false,
   "pick": {
-    "topic": "Make a video on this how API works and how companies make money from selling API and how you can to",
+    "topic": "Make a video on how APIs work, how companies make money from selling APIs, and how you can do the same.",
     "list": [
       {
         "id": "motion-explainer",
@@ -2177,7 +2177,7 @@
       }
     ],
     "job": {},
-    "at": 1794407969302
+    "at": 1794408048204
   },
   "liked": [
     {
