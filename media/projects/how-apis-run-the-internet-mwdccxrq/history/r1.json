@@ -1,0 +1,1156 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-apis-run-the-internet-mwdccxrq",
+ "rev": 1,
+ "title": "How APIs Run the Internet",
+ "duration": 54.2,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.32,
+    "narration": "Uber processes millions of rides without owning a single mapping satellite.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a stylized map and route, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d8b42aa58d77",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.32,
+    "end": 7.88,
+    "narration": "You think giant apps build every single",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing massive server towers isolated, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "35dd1bcdfaab",
+    "cam": {
+     "move": "drift",
+     "amp": 0.61,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.88,
+    "end": 10.668,
+    "narration": "feature from scratch inside their own servers,",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing massive server towers isolated, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "35dd1bcdfaab",
+    "cam": {
+     "move": "truck",
+     "amp": 0.63,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v4",
+    "start": 10.668,
+    "end": 14.235,
+    "narration": "but they actually rely on digital messengers called APIs",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing packet traveling between nodes, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "31f61c66bc40",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.73,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v5",
+    "start": 14.235,
+    "end": 16.972,
+    "narration": "to fetch outside data in milliseconds,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing packet traveling between nodes, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "31f61c66bc40",
+    "cam": {
+     "move": "drift",
+     "amp": 0.63,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v6",
+    "start": 16.972,
+    "end": 20.407,
+    "narration": "because application programming interfaces act as standardized",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing two different code blocks connecting, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9ae25b2192d2",
+    "cam": {
+     "move": "truck",
+     "amp": 0.71,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v7",
+    "start": 20.407,
+    "end": 23.532,
+    "narration": "translators between completely separate software systems,",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing two different code blocks connecting, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9ae25b2192d2",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v8",
+    "start": 23.532,
+    "end": 27.365,
+    "narration": "so a client app simply sends a request payload to a host server,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing data packet launching upward, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "11044dea7378",
+    "cam": {
+     "move": "truck",
+     "amp": 0.76,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v9",
+    "start": 27.365,
+    "end": 32.201,
+    "narration": "which immediately returns structured data like clean JSON back down the line.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing neat brackets and text glowing, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a3d848767c62",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v10",
+    "start": 32.201,
+    "end": 35.499,
+    "narration": "Third party tools quietly handle critical app functions",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a credit card icon linked to a map pin, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c3ddc8079296",
+    "cam": {
+     "move": "truck",
+     "amp": 0.7,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v11",
+    "start": 35.499,
+    "end": 38.574,
+    "narration": "like credit card processing and live geolocation,",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a credit card icon linked to a map pin, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c3ddc8079296",
+    "cam": {
+     "move": "drift",
+     "amp": 0.67,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v12",
+    "start": 38.574,
+    "end": 43.444,
+    "narration": "so companies monetize these very connections by charging developers for metered access",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a digital meter ticking upward, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d02a7f18381e",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v13",
+    "start": 43.444,
+    "end": 47.956,
+    "narration": "through secret authentication keys that lock down every single request.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing security key icon, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "822718edce88",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v14",
+    "start": 47.956,
+    "end": 50.685,
+    "narration": "The entire modern internet is just invisible",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a vast network of interconnected glowing nodes, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "65247b09e494",
+    "cam": {
+     "move": "truck",
+     "amp": 0.63,
+     "dir": 1
+    },
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v15",
+    "start": 50.685,
+    "end": 53.4,
+    "narration": "software talking to other software.",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a vast network of interconnected glowing nodes, wide cinematic"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "65247b09e494",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.63,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Uber",
+     "start": 0.087,
+     "end": 0.375
+    },
+    {
+     "word": "processes",
+     "start": 0.375,
+     "end": 1.075
+    },
+    {
+     "word": "millions",
+     "start": 1.087,
+     "end": 1.775
+    },
+    {
+     "word": "of",
+     "start": 1.775,
+     "end": 1.863
+    },
+    {
+     "word": "rides",
+     "start": 1.863,
+     "end": 2.45
+    },
+    {
+     "word": "without",
+     "start": 2.587,
+     "end": 3.013
+    },
+    {
+     "word": "owning",
+     "start": 3.087,
+     "end": 3.525
+    },
+    {
+     "word": "a",
+     "start": 3.663,
+     "end": 3.7
+    },
+    {
+     "word": "single",
+     "start": 3.7,
+     "end": 4.088
+    },
+    {
+     "word": "mapping",
+     "start": 4.088,
+     "end": 4.45
+    },
+    {
+     "word": "satellite.",
+     "start": 4.463,
+     "end": 5.1
+    },
+    {
+     "word": "You",
+     "start": 5.38,
+     "end": 5.543
+    },
+    {
+     "word": "think",
+     "start": 5.543,
+     "end": 5.781
+    },
+    {
+     "word": "giant",
+     "start": 5.793,
+     "end": 6.218
+    },
+    {
+     "word": "apps",
+     "start": 6.231,
+     "end": 6.618
+    },
+    {
+     "word": "build",
+     "start": 6.63,
+     "end": 6.981
+    },
+    {
+     "word": "every",
+     "start": 7.143,
+     "end": 7.505
+    },
+    {
+     "word": "single",
+     "start": 7.518,
+     "end": 7.868
+    },
+    {
+     "word": "feature",
+     "start": 7.88,
+     "end": 8.305
+    },
+    {
+     "word": "from",
+     "start": 8.305,
+     "end": 8.455
+    },
+    {
+     "word": "scratch",
+     "start": 8.455,
+     "end": 9.03
+    },
+    {
+     "word": "inside",
+     "start": 9.043,
+     "end": 9.581
+    },
+    {
+     "word": "their",
+     "start": 9.581,
+     "end": 9.705
+    },
+    {
+     "word": "own",
+     "start": 9.718,
+     "end": 9.893
+    },
+    {
+     "word": "servers,",
+     "start": 9.893,
+     "end": 10.568
+    },
+    {
+     "word": "but",
+     "start": 10.728,
+     "end": 10.852
+    },
+    {
+     "word": "they",
+     "start": 10.865,
+     "end": 10.99
+    },
+    {
+     "word": "actually",
+     "start": 11.003,
+     "end": 11.365
+    },
+    {
+     "word": "rely",
+     "start": 11.365,
+     "end": 11.765
+    },
+    {
+     "word": "on",
+     "start": 11.765,
+     "end": 11.903
+    },
+    {
+     "word": "digital",
+     "start": 12.003,
+     "end": 12.34
+    },
+    {
+     "word": "messengers",
+     "start": 12.34,
+     "end": 12.865
+    },
+    {
+     "word": "called",
+     "start": 12.878,
+     "end": 13.128
+    },
+    {
+     "word": "APIs",
+     "start": 13.302,
+     "end": 14.115
+    },
+    {
+     "word": "to",
+     "start": 14.235,
+     "end": 14.322
+    },
+    {
+     "word": "fetch",
+     "start": 14.322,
+     "end": 14.735
+    },
+    {
+     "word": "outside",
+     "start": 14.822,
+     "end": 15.397
+    },
+    {
+     "word": "data",
+     "start": 15.409,
+     "end": 15.772
+    },
+    {
+     "word": "in",
+     "start": 15.935,
+     "end": 16.097
+    },
+    {
+     "word": "milliseconds,",
+     "start": 16.097,
+     "end": 16.872
+    },
+    {
+     "word": "because",
+     "start": 17.032,
+     "end": 17.319
+    },
+    {
+     "word": "application",
+     "start": 17.332,
+     "end": 18.057
+    },
+    {
+     "word": "programming",
+     "start": 18.069,
+     "end": 18.607
+    },
+    {
+     "word": "interfaces",
+     "start": 18.607,
+     "end": 19.194
+    },
+    {
+     "word": "act",
+     "start": 19.207,
+     "end": 19.545
+    },
+    {
+     "word": "as",
+     "start": 19.607,
+     "end": 19.732
+    },
+    {
+     "word": "standardized",
+     "start": 19.745,
+     "end": 20.407
+    },
+    {
+     "word": "translators",
+     "start": 20.407,
+     "end": 21.057
+    },
+    {
+     "word": "between",
+     "start": 21.069,
+     "end": 21.432
+    },
+    {
+     "word": "completely",
+     "start": 21.444,
+     "end": 22.019
+    },
+    {
+     "word": "separate",
+     "start": 22.019,
+     "end": 22.382
+    },
+    {
+     "word": "software",
+     "start": 22.382,
+     "end": 22.845
+    },
+    {
+     "word": "systems,",
+     "start": 22.857,
+     "end": 23.432
+    },
+    {
+     "word": "so",
+     "start": 23.592,
+     "end": 23.755
+    },
+    {
+     "word": "a",
+     "start": 23.755,
+     "end": 23.804
+    },
+    {
+     "word": "client",
+     "start": 23.804,
+     "end": 24.167
+    },
+    {
+     "word": "app",
+     "start": 24.167,
+     "end": 24.354
+    },
+    {
+     "word": "simply",
+     "start": 24.442,
+     "end": 24.842
+    },
+    {
+     "word": "sends",
+     "start": 24.854,
+     "end": 25.092
+    },
+    {
+     "word": "a",
+     "start": 25.092,
+     "end": 25.142
+    },
+    {
+     "word": "request",
+     "start": 25.154,
+     "end": 25.617
+    },
+    {
+     "word": "payload",
+     "start": 25.617,
+     "end": 26.117
+    },
+    {
+     "word": "to",
+     "start": 26.237,
+     "end": 26.362
+    },
+    {
+     "word": "a",
+     "start": 26.375,
+     "end": 26.438
+    },
+    {
+     "word": "host",
+     "start": 26.45,
+     "end": 26.75
+    },
+    {
+     "word": "server,",
+     "start": 26.75,
+     "end": 27.213
+    },
+    {
+     "word": "which",
+     "start": 27.425,
+     "end": 27.6
+    },
+    {
+     "word": "immediately",
+     "start": 27.612,
+     "end": 28.275
+    },
+    {
+     "word": "returns",
+     "start": 28.275,
+     "end": 28.775
+    },
+    {
+     "word": "structured",
+     "start": 28.9,
+     "end": 29.375
+    },
+    {
+     "word": "data",
+     "start": 29.375,
+     "end": 29.737
+    },
+    {
+     "word": "like",
+     "start": 29.857,
+     "end": 30.069
+    },
+    {
+     "word": "clean",
+     "start": 30.157,
+     "end": 30.482
+    },
+    {
+     "word": "JSON",
+     "start": 30.482,
+     "end": 30.982
+    },
+    {
+     "word": "back",
+     "start": 30.982,
+     "end": 31.356
+    },
+    {
+     "word": "down",
+     "start": 31.369,
+     "end": 31.557
+    },
+    {
+     "word": "the",
+     "start": 31.557,
+     "end": 31.606
+    },
+    {
+     "word": "line.",
+     "start": 31.606,
+     "end": 31.981
+    },
+    {
+     "word": "Third",
+     "start": 32.261,
+     "end": 32.549
+    },
+    {
+     "word": "party",
+     "start": 32.549,
+     "end": 32.874
+    },
+    {
+     "word": "tools",
+     "start": 32.874,
+     "end": 33.212
+    },
+    {
+     "word": "quietly",
+     "start": 33.224,
+     "end": 33.874
+    },
+    {
+     "word": "handle",
+     "start": 33.874,
+     "end": 34.286
+    },
+    {
+     "word": "critical",
+     "start": 34.286,
+     "end": 34.774
+    },
+    {
+     "word": "app",
+     "start": 34.774,
+     "end": 34.962
+    },
+    {
+     "word": "functions",
+     "start": 34.974,
+     "end": 35.499
+    },
+    {
+     "word": "like",
+     "start": 35.499,
+     "end": 35.661
+    },
+    {
+     "word": "credit",
+     "start": 35.724,
+     "end": 36.074
+    },
+    {
+     "word": "card",
+     "start": 36.074,
+     "end": 36.324
+    },
+    {
+     "word": "processing",
+     "start": 36.337,
+     "end": 37.099
+    },
+    {
+     "word": "and",
+     "start": 37.186,
+     "end": 37.311
+    },
+    {
+     "word": "live",
+     "start": 37.324,
+     "end": 37.674
+    },
+    {
+     "word": "geolocation,",
+     "start": 37.674,
+     "end": 38.474
+    },
+    {
+     "word": "so",
+     "start": 38.634,
+     "end": 38.771
+    },
+    {
+     "word": "companies",
+     "start": 38.783,
+     "end": 39.196
+    },
+    {
+     "word": "monetize",
+     "start": 39.196,
+     "end": 39.846
+    },
+    {
+     "word": "these",
+     "start": 39.846,
+     "end": 40.033
+    },
+    {
+     "word": "very",
+     "start": 40.046,
+     "end": 40.371
+    },
+    {
+     "word": "connections",
+     "start": 40.371,
+     "end": 40.933
+    },
+    {
+     "word": "by",
+     "start": 40.946,
+     "end": 41.159
+    },
+    {
+     "word": "charging",
+     "start": 41.308,
+     "end": 41.771
+    },
+    {
+     "word": "developers",
+     "start": 41.771,
+     "end": 42.271
+    },
+    {
+     "word": "for",
+     "start": 42.271,
+     "end": 42.396
+    },
+    {
+     "word": "metered",
+     "start": 42.396,
+     "end": 42.759
+    },
+    {
+     "word": "access",
+     "start": 42.771,
+     "end": 43.384
+    },
+    {
+     "word": "through",
+     "start": 43.504,
+     "end": 43.654
+    },
+    {
+     "word": "secret",
+     "start": 43.654,
+     "end": 44.116
+    },
+    {
+     "word": "authentication",
+     "start": 44.116,
+     "end": 44.828
+    },
+    {
+     "word": "keys",
+     "start": 44.841,
+     "end": 45.304
+    },
+    {
+     "word": "that",
+     "start": 45.424,
+     "end": 45.573
+    },
+    {
+     "word": "lock",
+     "start": 45.573,
+     "end": 45.886
+    },
+    {
+     "word": "down",
+     "start": 45.886,
+     "end": 46.323
+    },
+    {
+     "word": "every",
+     "start": 46.498,
+     "end": 46.799
+    },
+    {
+     "word": "single",
+     "start": 46.811,
+     "end": 47.149
+    },
+    {
+     "word": "request.",
+     "start": 47.149,
+     "end": 47.736
+    },
+    {
+     "word": "The",
+     "start": 48.016,
+     "end": 48.053
+    },
+    {
+     "word": "entire",
+     "start": 48.066,
+     "end": 48.653
+    },
+    {
+     "word": "modern",
+     "start": 48.653,
+     "end": 49.003
+    },
+    {
+     "word": "internet",
+     "start": 49.003,
+     "end": 49.416
+    },
+    {
+     "word": "is",
+     "start": 49.536,
+     "end": 49.661
+    },
+    {
+     "word": "just",
+     "start": 49.661,
+     "end": 49.973
+    },
+    {
+     "word": "invisible",
+     "start": 50.036,
+     "end": 50.685
+    },
+    {
+     "word": "software",
+     "start": 50.685,
+     "end": 51.448
+    },
+    {
+     "word": "talking",
+     "start": 51.568,
+     "end": 51.943
+    },
+    {
+     "word": "to",
+     "start": 51.943,
+     "end": 52.018
+    },
+    {
+     "word": "other",
+     "start": 52.018,
+     "end": 52.243
+    },
+    {
+     "word": "software.",
+     "start": 52.256,
+     "end": 52.968
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Uber processes millions of rides without owning a single mapping satellite. You think giant apps build every single feature from scratch inside their own servers, but they actually rely on digital messengers called APIs to fetch outside data in milliseconds, because application programming interfaces act as standardized translators between completely separate software systems, so a client app simply sends a request payload to a host server, which immediately returns structured data like clean JSON back down the line. Third party tools quietly handle critical app functions like credit card processing and live geolocation, so companies monetize these very connections by charging developers for metered access through secret authentication keys that lock down every single request. The entire modern internet is just invisible software talking to other software."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.27,
+    "text": "processes",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.27,
+    "opacity": 0.35,
+    "seed": 5.82
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v8",
+    "delay": 0.4,
+    "start": 23.93,
+    "end": 27.31,
+    "asset": "phone",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794475572316,
+  "updated": 1794475572319,
+  "topic": "how API works",
+  "hook": "Uber processes millions of rides without owning a single mapping satellite.",
+  "image_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways",
+  "format": "landscape",
+  "assets_release": "project-how-apis-run-the-internet-mwdccxrq",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Uber processes millions of rides without owning a single mapping satellite.",
+   "music": "tech-pulse",
+   "project_id": "how-apis-run-the-internet-mwdccxrq",
+   "style": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways",
+   "style_preset": "motion-explainer",
+   "title": "How APIs Run the Internet",
+   "topic": "how API works",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Uber processes millions of rides wi...\"): the hook. No subject cutout, so I put PROCESSES in the top band where it cannot cover the face.",
+   "Beat 8 (\"so a client app simply sends a requ...\"): a \"phone\" illustration builds itself on the right after the words land.",
+   "Left 13 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: truck (alive baseline (not the same move twice)).",
+   "Beat 7: drift (side move for variety (not the same move twice)).",
+   "Beat 8: truck (alive baseline (not the same move twice)).",
+   "Beat 9: drift (alive baseline).",
+   "Beat 10: truck (alive baseline (not the same move twice)).",
+   "Beat 11: drift (side move for variety (not the same move twice)).",
+   "Beat 12: truck (alive baseline (not the same move twice)).",
+   "Beat 13: drift (alive baseline).",
+   "Beat 14: truck (alive baseline (not the same move twice)).",
+   "Beat 15: pull-out (last picture: slow pull-out)."
+  ]
+ }
+}

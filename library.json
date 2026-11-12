@@ -487,6 +487,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-49",
+      "title": "How APIs Run the Internet",
+      "hook": "Uber processes millions of rides without owning a single mapping satellite.",
+      "accent": "#2EE6C5",
+      "duration": 54.3,
+      "created": 1794476911582,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-49/short-49.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-49/short-49.jpg",
+      "project": "how-apis-run-the-internet-mwdccxrq",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
