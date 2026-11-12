@@ -1,0 +1,812 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "treating-her-right-with-ancient-humo-mwdg8ek9",
+ "rev": 1,
+ "title": "Treating Her Right With Ancient Humor",
+ "duration": 38.07,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.19,
+    "narration": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A man in historical seventeenth century attire walking into a dim tavern holding a dried pig heart, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6a0f375a9f08",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.19,
+    "end": 8.859,
+    "narration": "You assume romance requires modern psychological tricks,",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A man staring blankly at a wooden wall in a rustic room, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a3bf11133f60",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.74,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.859,
+    "end": 13.213,
+    "narration": "but actual historical records show bizarre household chores work best.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A man staring blankly at a wooden wall in a rustic room, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a3bf11133f60",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.213,
+    "end": 16.372,
+    "narration": "Seventeenth century villagers used dried pig",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Close up of a weathered wooden table with an old ritual token and candles, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "bb3c4ec3b76d",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.68,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 16.372,
+    "end": 19.851,
+    "narration": "hearts in romantic rituals, hoping to spark affection.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Close up of a weathered wooden table with an old ritual token and candles, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "bb3c4ec3b76d",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.72,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 19.851,
+    "end": 24.144,
+    "narration": "Courtship manuals from the seventeen hundreds recommended staring blankly",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A person sitting rigidly on a wooden chair staring straight ahead in a candlelit parlor, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6be2723801fa",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 24.144,
+    "end": 28.064,
+    "narration": "at walls until your crush noticed your profound focus.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A person sitting rigidly on a wooden chair staring straight ahead in a candlelit parlor, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6be2723801fa",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.77,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 28.064,
+    "end": 32.647,
+    "narration": "Historical diaries show couples bonded over terrible poetry,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A couple reading a parchment manuscript by candlelight with expressions of mild confusion, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5f0a71d61992",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 32.647,
+    "end": 37.272,
+    "narration": "because bad rhymes apparently forged unbreakable emotional links.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A couple reading a parchment manuscript by candlelight with expressions of mild confusion, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5f0a71d61992",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.087,
+     "end": 0.138
+    },
+    {
+     "word": "seventeenth",
+     "start": 0.15,
+     "end": 0.688
+    },
+    {
+     "word": "century",
+     "start": 0.688,
+     "end": 1.15
+    },
+    {
+     "word": "suitor",
+     "start": 1.15,
+     "end": 1.675
+    },
+    {
+     "word": "walked",
+     "start": 1.837,
+     "end": 2.212
+    },
+    {
+     "word": "into",
+     "start": 2.212,
+     "end": 2.413
+    },
+    {
+     "word": "a",
+     "start": 2.413,
+     "end": 2.462
+    },
+    {
+     "word": "tavern",
+     "start": 2.462,
+     "end": 3.025
+    },
+    {
+     "word": "carrying",
+     "start": 3.145,
+     "end": 3.708
+    },
+    {
+     "word": "a",
+     "start": 3.846,
+     "end": 3.883
+    },
+    {
+     "word": "dried",
+     "start": 3.895,
+     "end": 4.32
+    },
+    {
+     "word": "pig",
+     "start": 4.32,
+     "end": 4.583
+    },
+    {
+     "word": "heart.",
+     "start": 4.583,
+     "end": 4.97
+    },
+    {
+     "word": "You",
+     "start": 5.25,
+     "end": 5.399
+    },
+    {
+     "word": "assume",
+     "start": 5.399,
+     "end": 5.762
+    },
+    {
+     "word": "romance",
+     "start": 5.762,
+     "end": 6.362
+    },
+    {
+     "word": "requires",
+     "start": 6.362,
+     "end": 6.849
+    },
+    {
+     "word": "modern",
+     "start": 6.862,
+     "end": 7.324
+    },
+    {
+     "word": "psychological",
+     "start": 7.337,
+     "end": 8.125
+    },
+    {
+     "word": "tricks,",
+     "start": 8.125,
+     "end": 8.699
+    },
+    {
+     "word": "but",
+     "start": 8.859,
+     "end": 8.984
+    },
+    {
+     "word": "actual",
+     "start": 8.997,
+     "end": 9.335
+    },
+    {
+     "word": "historical",
+     "start": 9.335,
+     "end": 9.96
+    },
+    {
+     "word": "records",
+     "start": 9.96,
+     "end": 10.435
+    },
+    {
+     "word": "show",
+     "start": 10.555,
+     "end": 10.843
+    },
+    {
+     "word": "bizarre",
+     "start": 10.843,
+     "end": 11.243
+    },
+    {
+     "word": "household",
+     "start": 11.243,
+     "end": 11.893
+    },
+    {
+     "word": "chores",
+     "start": 11.893,
+     "end": 12.255
+    },
+    {
+     "word": "work",
+     "start": 12.255,
+     "end": 12.505
+    },
+    {
+     "word": "best.",
+     "start": 12.505,
+     "end": 12.993
+    },
+    {
+     "word": "Seventeenth",
+     "start": 13.273,
+     "end": 13.935
+    },
+    {
+     "word": "century",
+     "start": 13.947,
+     "end": 14.398
+    },
+    {
+     "word": "villagers",
+     "start": 14.398,
+     "end": 15.01
+    },
+    {
+     "word": "used",
+     "start": 15.01,
+     "end": 15.422
+    },
+    {
+     "word": "dried",
+     "start": 15.51,
+     "end": 16.01
+    },
+    {
+     "word": "pig",
+     "start": 16.06,
+     "end": 16.372
+    },
+    {
+     "word": "hearts",
+     "start": 16.372,
+     "end": 16.885
+    },
+    {
+     "word": "in",
+     "start": 16.948,
+     "end": 17.085
+    },
+    {
+     "word": "romantic",
+     "start": 17.085,
+     "end": 17.597
+    },
+    {
+     "word": "rituals,",
+     "start": 17.597,
+     "end": 18.172
+    },
+    {
+     "word": "hoping",
+     "start": 18.332,
+     "end": 18.669
+    },
+    {
+     "word": "to",
+     "start": 18.681,
+     "end": 18.756
+    },
+    {
+     "word": "spark",
+     "start": 18.756,
+     "end": 19.082
+    },
+    {
+     "word": "affection.",
+     "start": 19.082,
+     "end": 19.631
+    },
+    {
+     "word": "Courtship",
+     "start": 19.911,
+     "end": 20.361
+    },
+    {
+     "word": "manuals",
+     "start": 20.361,
+     "end": 20.848
+    },
+    {
+     "word": "from",
+     "start": 20.848,
+     "end": 20.961
+    },
+    {
+     "word": "the",
+     "start": 20.961,
+     "end": 21.01
+    },
+    {
+     "word": "seventeen",
+     "start": 21.01,
+     "end": 21.56
+    },
+    {
+     "word": "hundreds",
+     "start": 21.56,
+     "end": 22.073
+    },
+    {
+     "word": "recommended",
+     "start": 22.086,
+     "end": 22.861
+    },
+    {
+     "word": "staring",
+     "start": 22.981,
+     "end": 23.568
+    },
+    {
+     "word": "blankly",
+     "start": 23.618,
+     "end": 24.131
+    },
+    {
+     "word": "at",
+     "start": 24.144,
+     "end": 24.231
+    },
+    {
+     "word": "walls",
+     "start": 24.231,
+     "end": 24.743
+    },
+    {
+     "word": "until",
+     "start": 24.894,
+     "end": 25.118
+    },
+    {
+     "word": "your",
+     "start": 25.118,
+     "end": 25.256
+    },
+    {
+     "word": "crush",
+     "start": 25.269,
+     "end": 25.769
+    },
+    {
+     "word": "noticed",
+     "start": 25.781,
+     "end": 26.331
+    },
+    {
+     "word": "your",
+     "start": 26.344,
+     "end": 26.443
+    },
+    {
+     "word": "profound",
+     "start": 26.443,
+     "end": 27.156
+    },
+    {
+     "word": "focus.",
+     "start": 27.156,
+     "end": 27.844
+    },
+    {
+     "word": "Historical",
+     "start": 28.124,
+     "end": 28.611
+    },
+    {
+     "word": "diaries",
+     "start": 28.611,
+     "end": 29.249
+    },
+    {
+     "word": "show",
+     "start": 29.374,
+     "end": 29.837
+    },
+    {
+     "word": "couples",
+     "start": 29.936,
+     "end": 30.361
+    },
+    {
+     "word": "bonded",
+     "start": 30.361,
+     "end": 30.987
+    },
+    {
+     "word": "over",
+     "start": 31.099,
+     "end": 31.349
+    },
+    {
+     "word": "terrible",
+     "start": 31.362,
+     "end": 31.836
+    },
+    {
+     "word": "poetry,",
+     "start": 31.849,
+     "end": 32.487
+    },
+    {
+     "word": "because",
+     "start": 32.647,
+     "end": 32.984
+    },
+    {
+     "word": "bad",
+     "start": 32.996,
+     "end": 33.309
+    },
+    {
+     "word": "rhymes",
+     "start": 33.321,
+     "end": 33.634
+    },
+    {
+     "word": "apparently",
+     "start": 33.634,
+     "end": 34.172
+    },
+    {
+     "word": "forged",
+     "start": 34.184,
+     "end": 34.784
+    },
+    {
+     "word": "unbreakable",
+     "start": 34.934,
+     "end": 35.721
+    },
+    {
+     "word": "emotional",
+     "start": 35.734,
+     "end": 36.334
+    },
+    {
+     "word": "links.",
+     "start": 36.346,
+     "end": 36.834
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "A seventeenth century suitor walked into a tavern carrying a dried pig heart. You assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best. Seventeenth century villagers used dried pig hearts in romantic rituals, hoping to spark affection. Courtship manuals from the seventeen hundreds recommended staring blankly at walls until your crush noticed your profound focus. Historical diaries show couples bonded over terrible poetry, because bad rhymes apparently forged unbreakable emotional links."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 12.943,
+    "volume": 0.34,
+    "anchor": "v4",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 19.651,
+    "volume": 0.55,
+    "anchor": "v6",
+    "offset": -0.2
+   },
+   {
+    "id": "gs4",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 27.794,
+    "volume": 0.34,
+    "anchor": "v8",
+    "offset": -0.27
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.14,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "seventeenth",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.14,
+    "opacity": 0.35,
+    "seed": 3.63
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794482105470,
+  "updated": 1794482105475,
+  "topic": "plus humour for how to treat a girl that will her fall for you",
+  "hook": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "landscape",
+  "assets_release": "project-treating-her-right-with-ancient-humo-mwdg8ek9",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+   "music": "docu-pluck",
+   "project_id": "treating-her-right-with-ancient-humo-mwdg8ek9",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "Treating Her Right With Ancient Humor",
+   "topic": "plus humour for how to treat a girl that will her fall for you",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"A seventeenth century suitor walked...\"): the hook. I set SEVENTEENTH huge BEHIND the subject (real cutout) and push in slowly.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: truck (alive baseline (not the same move twice)).",
+   "Beat 7: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 8: drift (alive baseline).",
+   "Beat 9: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "4 effects: hit_low, swish, whoosh_soft"
+ }
+}
