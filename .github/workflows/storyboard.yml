@@ -1,0 +1,92 @@
+name: Storyboard (What If scene videos)
+
+# The bot dispatches `storyboard` with {chat_id, spec} after a script is approved. This renders one picture per shot
+# (the scenes are drawn in code: no image generation, no voice, no quota), builds a labelled contact sheet and sends
+# it to Telegram with Render / Edit / Redo buttons. The real render only starts when the user taps Render.
+on:
+  repository_dispatch:
+    types: [storyboard]
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Spec JSON (same shape the bot sends to make-short)"
+        required: true
+      chat_id:
+        description: "Telegram chat id"
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: storyboard-${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CHAT_ID: ${{ github.event.client_payload.chat_id || github.event.inputs.chat_id || secrets.CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+      - name: Install
+        run: |
+          pip install -q pillow
+          sudo apt-get update -y || true
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
+          sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
+          cd remotion && npm ci --no-audit --no-fund
+      - name: Save the spec
+        env:
+          SPEC_DISPATCH: ${{ toJson(github.event.client_payload.spec) }}
+          SPEC_INPUT: ${{ github.event.inputs.spec }}
+        run: |
+          mkdir -p job
+          if [ -n "$SPEC_INPUT" ]; then printf '%s' "$SPEC_INPUT" > job/spec.json; else printf '%s' "$SPEC_DISPATCH" > job/spec.json; fi
+          python3 -c "import json,sys;s=json.load(open('job/spec.json'));s or sys.exit('No spec. The bot sends one; by hand, paste the spec JSON.');print(s['title'], len(s['beats']), 'beats')"
+      - name: Build the voiceless timeline
+        run: python3 tools/storyboard.py build job/spec.json job/timeline.json
+      - name: Render at half size
+        working-directory: remotion
+        run: |
+          mkdir -p out
+          npx remotion render src/studio-index.ts Studio out/storyboard.mp4 --props=../job/timeline.json --gl=swangle --scale=0.5 --crf=28 --log=error
+      - name: One frame per shot, then the sheet
+        run: |
+          mkdir -p job/frames
+          python3 - <<'PY'
+          import json, subprocess
+          tl = json.load(open('job/timeline.json'))
+          for i, v in enumerate(tl['tracks']['visuals']):
+              t = (v['start'] + v['end']) / 2
+              subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(t), '-i', 'remotion/out/storyboard.mp4', '-frames:v', '1', 'job/frames/s%02d.png' % i], check=True)
+          PY
+          python3 tools/storyboard.py sheet job/timeline.json job/frames job/board
+      - name: Send to Telegram
+        if: env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        run: |
+          curl -sS -F chat_id="$CHAT_ID" -F photo=@job/board/sheet.png \
+            --form-string caption="$(cat job/board/caption.txt)" -F reply_markup="$(cat job/board/markup.json)" \
+            "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendPhoto" | head -c 300
+      - uses: actions/upload-artifact@v4
+        with:
+          name: storyboard
+          path: |
+            job/board/sheet.png
+            remotion/out/storyboard.mp4
+          retention-days: 5
+      - name: Tell Telegram it failed
+        if: failure() && env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" -d chat_id="$CHAT_ID" \
+            --data-urlencode text="⚠️ The storyboard failed, so nothing is lost: tap approve again to render without it. Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
