@@ -22,18 +22,38 @@ PRESETS = [
     ("bold", {"contrast": 1.1, "sat": 1.25, "vig": 0.35, "grain": 0}),
 ]
 
+# stage6: keep every grade natural. Each value is pulled 25% back toward neutral, then held inside hard limits.
+# A spec grade of {"strong": true, ...} skips this on purpose.
+NEUTRAL = {"contrast": 1.0, "sat": 1.0, "gamma": 1.0, "warm": 0.0, "vig": 0.0, "grain": 0}
+LIMITS = {"contrast": (0.95, 1.08), "sat": (0.88, 1.12), "gamma": (0.96, 1.04), "warm": (-0.6, 0.6), "vig": (0.0, 0.45), "grain": (0, 6)}
+STRENGTH = 0.75
+
+def natural(p):
+    q = dict(p)
+    for k, n in NEUTRAL.items():
+        v = n + (float(p[k]) - n) * STRENGTH
+        lo, hi = LIMITS[k]
+        q[k] = min(hi, max(lo, v))
+    return q
+
 def params(spec):
     g = spec.get("grade")
     if g in ("off", False, 0):
         return None
     p = dict(DEFAULT)
     text = " ".join(str(spec.get(k, "")) for k in ("style_recipe", "style_preset", "learned_style")).lower()
+    # stage6: What If shorts arrive with style_preset "bold-pop", which used to pick the loud "bold" grade.
+    if any(isinstance(b, dict) and isinstance(b.get("scene"), dict) and b["scene"].get("pack", "whatif") == "whatif"
+           for b in spec.get("beats") or []):
+        text += " whatif"
     for key, vals in PRESETS:
         if key in text:
             p.update(vals)
             break
     if isinstance(g, dict):
         p.update({k: v for k, v in g.items() if k in p})
+    if not (isinstance(g, dict) and g.get("strong")):
+        p = natural(p)
     return p
 
 def build(p):
