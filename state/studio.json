@@ -1,7 +1,7 @@
 {
-  "last_update": 312538431,
-  "time": 1794475314453,
-  "stage": "pitch",
+  "last_update": 312538432,
+  "time": 1794475446107,
+  "stage": "script",
   "topic": "how API works",
   "research": {
     "text": "",
@@ -25,21 +25,88 @@
     "accent": "teal",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "How APIs Run the Internet",
+    "beats": [
+      {
+        "narration": "Uber processes millions of rides without owning a single mapping satellite.",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a stylized map and route, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "You think giant apps build every single feature from scratch inside their own servers,",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing massive server towers isolated, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "but they actually rely on digital messengers called APIs to fetch outside data in milliseconds,",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing packet traveling between nodes, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "because application programming interfaces act as standardized translators between completely separate software systems,",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing two different code blocks connecting, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "so a client app simply sends a request payload to a host server,",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing data packet launching upward, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "which immediately returns structured data like clean JSON back down the line.",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing neat brackets and text glowing, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "Third party tools quietly handle critical app functions like credit card processing and live geolocation,",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a credit card icon linked to a map pin, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "so companies monetize these very connections by charging developers for metered access",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a digital meter ticking upward, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "through secret authentication keys that lock down every single request.",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing security key icon, wide cinematic",
+        "tool": "flux"
+      },
+      {
+        "narration": "The entire modern internet is just invisible software talking to other software.",
+        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a vast network of interconnected glowing nodes, wide cinematic",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Uber processes millions of rides without owning mapping satellites",
+        "supported": true
+      },
+      {
+        "claim": "Application programming interfaces act as standardized translators between separate software systems",
+        "supported": true
+      },
+      {
+        "claim": "A client app sends a request payload to a host server which returns structured data like JSON",
+        "supported": true
+      },
+      {
+        "claim": "Third-party APIs handle critical app functions like credit card processing and live geolocation",
+        "supported": true
+      },
+      {
+        "claim": "Companies monetize APIs by charging developers for metered access through secret authentication keys",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
-      "t": 1794391509172
-    },
-    {
-      "role": "bot",
-      "text": "Rendering \"How APIs Actually Move The Internet\"",
-      "t": 1794391637901
-    },
     {
       "role": "user",
       "text": "Make a video on this how API works and how companies make money from selling API and how you can to",
@@ -109,6 +176,16 @@
       "role": "user",
       "text": "What's running",
       "t": 1794475312122
+    },
+    {
+      "role": "user",
+      "text": "How APIs Run the Internet",
+      "t": 1794475412095
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How APIs Run the Internet\"",
+      "t": 1794475446107
     }
   ],
   "working": null,
@@ -1994,7 +2071,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "sharp",
+  "narr_pick": "you",
   "editing": false,
   "pick": null,
   "liked": [
@@ -2033,5 +2110,6 @@
   "assets": null,
   "intake": null,
   "assets_at": 1794472189616,
-  "narr": null
+  "narr": null,
+  "sb": null
 }
