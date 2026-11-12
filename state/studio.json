@@ -1,6 +1,6 @@
 {
-  "last_update": 312538423,
-  "time": 1794472152317,
+  "last_update": 312538424,
+  "time": 1794472166269,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Creat an explainer video that's more of tech that teach people how API works",
-      "t": 1794391021980
-    },
     {
       "role": "user",
       "text": "Are you active?",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "/tools",
       "t": 1794464413765
+    },
+    {
+      "role": "user",
+      "text": "Lets create a video on how API works",
+      "t": 1794472162808
     }
   ],
   "working": null,
@@ -1975,7 +1975,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "host",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "how API works",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794472166269
+  },
   "liked": [
     {
       "title": "Seventeen Year Old Beer Heist",
