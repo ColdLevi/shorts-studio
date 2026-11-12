@@ -1,6 +1,6 @@
 {
-  "last_update": 312538420,
-  "time": 1794463199034,
+  "last_update": 312538421,
+  "time": 1794463678591,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -10,14 +10,9 @@
   "pitch": null,
   "script": null,
   "chat": "861854380",
-  "resumeAuto": true,
+  "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How World War Two Really Ended\"",
-      "t": 1794370108920
-    },
     {
       "role": "bot",
       "text": "Rendering \"How World War Two Really Ended\"",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Rendering \"Seventeen Year Old Beer Heist\"",
       "t": 1794463199033
+    },
+    {
+      "role": "user",
+      "text": "Is it running",
+      "t": 1794463676250
     }
   ],
   "working": null,
