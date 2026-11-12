@@ -185,6 +185,12 @@ jobs:
           curl -sS -X POST "$BASE/api/studio?event=paused" -H "x-studio-key: $KEY" -H "Content-Type: application/json" \
             --data "$(python3 -c 'import json,sys;print(json.dumps({"service":"images","reason":sys.argv[1]}))' "$REASON")"
 
+      - name: Identify what is in each picture (remake the wrong ones)
+        if: env.SKIP_RENDER != '1' && github.event.action != 'render-project'
+        continue-on-error: true
+        timeout-minutes: 8
+        run: python3 tools/identify.py "$PROJECT_ID" || true   # stage7: picture check, fresh builds only
+
       - name: Subject cutout for the hook (text behind subject)
         if: env.SKIP_RENDER != '1'
         continue-on-error: true
