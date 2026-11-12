@@ -1,6 +1,6 @@
 {
-  "last_update": 312538422,
-  "time": 1794464413782,
+  "last_update": 312538423,
+  "time": 1794472152317,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -1977,6 +1977,22 @@
   "editing": false,
   "pick": null,
   "liked": [
+    {
+      "title": "Seventeen Year Old Beer Heist",
+      "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+      "lines": [
+        "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
+        "Teens think sneaking a drink was harder back then.",
+        "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
+        "Anyone with a basic typewriter could alter a birth date in minutes.",
+        "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
+        "So store cashiers rarely even checked who was buying.",
+        "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
+        "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
+        "The analog beer run was just built on simpler rules."
+      ],
+      "at": 1794472152317
+    },
     {
       "title": "How World War Two Really Ended",
       "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
