@@ -1,6 +1,6 @@
 {
-  "last_update": 312538430,
-  "time": 1794475302197,
+  "last_update": 312538431,
+  "time": 1794475313600,
   "stage": "pitch",
   "topic": "how API works",
   "research": {
@@ -30,11 +30,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
-      "t": 1794391277650
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"How APIs Actually Move The Internet\"",
@@ -109,6 +104,11 @@
       "role": "user",
       "text": "/edit",
       "t": 1794475302197
+    },
+    {
+      "role": "user",
+      "text": "What's running",
+      "t": 1794475312122
     }
   ],
   "working": null,
