@@ -1,83 +1,18 @@
 {
-  "last_update": 312538439,
-  "time": 1794481928635,
-  "stage": "script",
+  "last_update": 312538443,
+  "time": 1794481971496,
+  "stage": "idle",
   "topic": "plus humour for how to treat a girl that will her fall for you",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "Treating Her Right With Ancient Humor",
-    "hook": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
-    "angle": "People assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best.",
-    "key_facts": [
-      "Seventeenth century villagers used dried pig hearts in romantic rituals.",
-      "Courtship manuals from the seventeen hundreds recommended staring blankly at walls.",
-      "Historical diaries show couples bonded over terrible poetry."
-    ],
-    "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-    "length_seconds": 40,
-    "style": "documentary",
-    "style_reason": "Historical facts delivered with dry satirical wit.",
-    "music": "docu-pluck",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Treating Her Right With Ancient Humor",
-    "beats": [
-      {
-        "narration": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
-        "image_prompt": "A man in historical seventeenth century attire walking into a dim tavern holding a dried pig heart, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "tool": "flux"
-      },
-      {
-        "narration": "You assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best.",
-        "image_prompt": "A man staring blankly at a wooden wall in a rustic room, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "tool": "flux"
-      },
-      {
-        "narration": "Seventeenth century villagers used dried pig hearts in romantic rituals, hoping to spark affection.",
-        "image_prompt": "Close up of a weathered wooden table with an old ritual token and candles, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "tool": "flux"
-      },
-      {
-        "narration": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls until your crush noticed your profound focus.",
-        "image_prompt": "A person sitting rigidly on a wooden chair staring straight ahead in a candlelit parlor, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "tool": "flux"
-      },
-      {
-        "narration": "Historical diaries show couples bonded over terrible poetry, because bad rhymes apparently forged unbreakable emotional links.",
-        "image_prompt": "A couple reading a parchment manuscript by candlelight with expressions of mild confusion, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Seventeenth century villagers used dried pig hearts in romantic rituals.",
-        "supported": true
-      },
-      {
-        "claim": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls.",
-        "supported": true
-      },
-      {
-        "claim": "Historical diaries show couples bonded over terrible poetry.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"The Secret Empire of API Keys\"",
-      "t": 1794408524904
-    },
     {
       "role": "user",
       "text": "Continue",
@@ -152,10 +87,88 @@
       "role": "bot",
       "text": "Wrote the script for \"Treating Her Right With Ancient Humor\"",
       "t": 1794481928635
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Treating Her Right With Ancient Humor\"",
+      "t": 1794481971496
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "treating-her-right-with-ancient-humo-mwdg8ek9",
+      "canvas": "16:9",
+      "title": "Treating Her Right With Ancient Humor",
+      "topic": "plus humour for how to treat a girl that will her fall for you",
+      "pitch": {
+        "title": "Treating Her Right With Ancient Humor",
+        "hook": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+        "angle": "People assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best.",
+        "key_facts": [
+          "Seventeenth century villagers used dried pig hearts in romantic rituals.",
+          "Courtship manuals from the seventeen hundreds recommended staring blankly at walls.",
+          "Historical diaries show couples bonded over terrible poetry."
+        ],
+        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "length_seconds": 40,
+        "style": "documentary",
+        "style_reason": "Historical facts delivered with dry satirical wit.",
+        "music": "docu-pluck",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Treating Her Right With Ancient Humor",
+        "beats": [
+          {
+            "narration": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+            "image_prompt": "A man in historical seventeenth century attire walking into a dim tavern holding a dried pig heart, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+            "tool": "flux"
+          },
+          {
+            "narration": "You assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best.",
+            "image_prompt": "A man staring blankly at a wooden wall in a rustic room, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+            "tool": "flux"
+          },
+          {
+            "narration": "Seventeenth century villagers used dried pig hearts in romantic rituals, hoping to spark affection.",
+            "image_prompt": "Close up of a weathered wooden table with an old ritual token and candles, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+            "tool": "flux"
+          },
+          {
+            "narration": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls until your crush noticed your profound focus.",
+            "image_prompt": "A person sitting rigidly on a wooden chair staring straight ahead in a candlelit parlor, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+            "tool": "flux"
+          },
+          {
+            "narration": "Historical diaries show couples bonded over terrible poetry, because bad rhymes apparently forged unbreakable emotional links.",
+            "image_prompt": "A couple reading a parchment manuscript by candlelight with expressions of mild confusion, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Seventeenth century villagers used dried pig hearts in romantic rituals.",
+            "supported": true
+          },
+          {
+            "claim": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls.",
+            "supported": true
+          },
+          {
+            "claim": "Historical diaries show couples bonded over terrible poetry.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794481971496
+    },
     {
       "id": "how-apis-run-the-internet-mwdccxrq",
       "canvas": "16:9",
@@ -976,99 +989,6 @@
         "sources": []
       },
       "at": 1794303663359
-    },
-    {
-      "id": "buying-beer-is-too-easy-now-mwacj6yz",
-      "canvas": "16:9",
-      "title": "Buying Beer Is Too Easy Now",
-      "topic": "for how easy it is to buy beer like a funny comparison of the old days and now then also it",
-      "pitch": {
-        "title": "Buying Beer Is Too Easy Now",
-        "hook": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack.",
-        "angle": "People think getting beer used to require extreme espionage, but today an app brings it to your sofa before you finish tying your shoes.",
-        "key_facts": [
-          "A seventeen year old teenager trying to sneak some beer in the old days faced strict age verification and cash only purchases",
-          "Modern delivery apps let customers order beer instantly through a smartphone",
-          "Old school beer buying required walking to a physical convenience store or gas station",
-          "Current alcohol delivery services operate late into the night with automated tracking"
-        ],
-        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain",
-        "length_seconds": 40,
-        "style": "retro-vhs",
-        "style_reason": "Matches the nostalgic eighties comparison perfectly.",
-        "music": "docu-pluck",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Buying Beer Is Too Easy Now",
-        "beats": [
-          {
-            "narration": "A seventeen year old in nineteen eighty five needed forged ID and pure panic to buy a warm six pack,",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, a nervous teenager holding a fake ID outside a convenience store at night",
-            "tool": "higgsfield",
-            "motion": "The camera slowly pushes in on the nervous teenager holding a fake ID.",
-            "still": "flux"
-          },
-          {
-            "narration": "because getting alcohol back then required high stakes espionage and sheer luck, but",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, dimly lit convenience store counter with an old cash register and beer displays",
-            "tool": "flux"
-          },
-          {
-            "narration": "today an app brings it to your sofa before you finish tying your shoes,",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, glowing smartphone screen displaying a food and alcohol delivery app in a modern living room",
-            "tool": "flux"
-          },
-          {
-            "narration": "so nobody has to endure the absolute humiliation of walking to a physical gas station,",
-            "image_prompt": "1980s retro photo, VHS tape, neon colors, film grain, empty retro gas station exterior under buzzing fluorescent lights",
-            "tool": "stock",
-            "query": "gas station night"
-          },
-          {
-            "narration": "and facing an unimpressed clerk checking cash only purchases.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, bored store clerk leaning against a counter with neon signs in the window",
-            "tool": "flux"
-          },
-          {
-            "narration": "Instead, modern delivery services operate late into the night with automated tracking,",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, modern smartphone showing a live delivery map with a moving car icon",
-            "tool": "flux"
-          },
-          {
-            "narration": "letting customers order instantly through a smartphone without ever standing up.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, person relaxing on a vintage sofa tapping a glowing phone screen",
-            "tool": "higgsfield",
-            "motion": "The camera pans slightly across the room as the phone screen glows brightly.",
-            "still": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "A seventeen year old teenager trying to sneak some beer in the old days faced strict age verification and cash only purchases",
-            "supported": true
-          },
-          {
-            "claim": "Modern delivery apps let customers order beer instantly through a smartphone",
-            "supported": true
-          },
-          {
-            "claim": "Old school beer buying required walking to a physical convenience store or gas station",
-            "supported": true
-          },
-          {
-            "claim": "Current alcohol delivery services operate late into the night with automated tracking",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794294357740
     }
   ],
   "lastRenderAuto": false,
@@ -1080,12 +1000,12 @@
   },
   "renders": [
     {
-      "title": "How APIs Run the Internet",
-      "at": 1794475464406,
-      "project": "how-apis-run-the-internet-mwdccxrq"
+      "title": "Treating Her Right With Ancient Humor",
+      "at": 1794481971496,
+      "project": "treating-her-right-with-ancient-humo-mwdg8ek9"
     }
   ],
-  "current_project": "how-apis-run-the-internet-mwdccxrq",
+  "current_project": "treating-her-right-with-ancient-humo-mwdg8ek9",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1095,16 +1015,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "style": "documentary",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "documentary",
     "upload-5",
     "motion-explainer",
     "retro-vhs",
-    "motion-explainer"
+    "motion-explainer",
+    "documentary"
   ],
   "learning": null,
   "styles": {
