@@ -1,6 +1,6 @@
 {
-  "last_update": 312538424,
-  "time": 1794472166269,
+  "last_update": 312538425,
+  "time": 1794472171888,
   "stage": "idle",
   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
@@ -2063,7 +2063,9 @@
         "kind": "learned"
       }
     ],
-    "job": {},
+    "job": {
+      "style": "motion-explainer"
+    },
     "at": 1794472166269
   },
   "liked": [
