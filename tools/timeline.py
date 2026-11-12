@@ -68,6 +68,9 @@ def aspect_label(c, choices=("1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9
 # Named looks. Every token can be overridden per project (style.caption.font, style.transition, ...).
 STYLE_PRESETS = {
     "bold-pop": {"caption": {"preset": "bold-pop"}, "transition": {"type": "fade", "duration": 0.35}, "motion": "kenburns"},
+    # stage5: the What If look. Hard cuts, word-highlight bold-pop captions, two words at a time.
+    # position is the one thing a render has to confirm: top | middle | bottom (edit: "captions at the top").
+    "whatif": {"caption": {"preset": "bold-pop", "position": "top", "words_per_group": 2}, "transition": {"type": "cut", "duration": 0}},
     "documentary": {"caption": {"preset": "clean", "font": "Inter"}, "transition": {"type": "dissolve", "duration": 0.6},
                     "grade": "contrast(1.06) saturate(0.92) sepia(0.08)", "font": "Playfair Display", "progress_bar": False},
     "minimal": {"caption": {"preset": "subtitle"}, "transition": {"type": "fade", "duration": 0.4}, "motion": "kenburns",
@@ -168,6 +171,12 @@ def style_from(spec):
     """Spec fields -> style tokens. spec.style is the image-prompt style text (kept in meta);
     spec.style_preset / spec.style_tokens / spec.caption_style choose the look."""
     st = deep_merge(STYLE_PRESETS["bold-pop"], STYLE_PRESETS.get(spec.get("style_preset") or "", {}))
+    # stage5: a spec whose beats are What If scenes gets the What If look unless a named look was chosen.
+    # captions="auto" keeps the look's own captions (the plain bold-pop look would be softened to subtitles below).
+    if (spec.get("style_preset") or "bold-pop") == "bold-pop" and any(
+            isinstance(b.get("scene"), dict) and b["scene"].get("pack", "whatif") == "whatif" for b in spec.get("beats") or []):
+        st = deep_merge(st, STYLE_PRESETS["whatif"])
+        spec = {**spec, "captions": spec.get("captions") or "auto"}
     # learned styles (style-fix): spec.style_preset may name a learned look -> merge its tokens
     _lid, _learned = find_learned(spec.get("style_preset") or "")
     if _learned:

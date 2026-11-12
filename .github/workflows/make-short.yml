@@ -197,6 +197,7 @@ jobs:
           python3 tools/qa.py pre "$PROJECT_ID" || true            # step4-sound: restraint budget
           python3 tools/sfx_gen.py || true
           python3 tools/sound_pass.py "$PROJECT_ID" || true
+          python3 tools/sound_whatif.py "$PROJECT_ID" || true   # stage5: What If sound
 
       - name: Render
         if: env.SKIP_RENDER != '1'
