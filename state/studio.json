@@ -1,6 +1,6 @@
 {
-  "last_update": 312538436,
-  "time": 1794475464406,
+  "last_update": 312538437,
+  "time": 1794477035108,
   "stage": "idle",
   "topic": "how API works",
   "research": {
@@ -1909,6 +1909,11 @@
   },
   "voice_pick": null,
   "disliked": [
+    {
+      "title": "How APIs Run the Internet",
+      "first": "Uber processes millions of rides without owning a single mapping satellite.",
+      "at": 1794477035108
+    },
     {
       "title": "How APIs Actually Move The Internet",
       "first": "You open a travel app expecting a direct peek inside an airline database, but",
