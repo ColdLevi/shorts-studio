@@ -96,7 +96,7 @@ jobs:
             echo "re-render project $PID_IN"
           else
             if [ -n "$SPEC_INPUT" ]; then printf '%s' "$SPEC_INPUT" > job/spec.json; else printf '%s' "$SPEC_DISPATCH" > job/spec.json; fi
-            python3 -c "import json;s=json.load(open('job/spec.json'));print(s['title'], len(s['beats']), 'beats')"
+            python3 -c "import json,sys;s=json.load(open('job/spec.json'));s or sys.exit('No spec and no project_id. Start renders from the bot, or fill project_id when running by hand.');print(s['title'], len(s['beats']), 'beats')"
           fi
 
       - uses: actions/setup-python@v5

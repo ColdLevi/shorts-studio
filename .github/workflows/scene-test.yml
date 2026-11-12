@@ -1,7 +1,7 @@
 name: Scene test (What If pack)
 
 # Manual only. Renders timeline/whatif-test.json with the Studio composition and attaches the MP4 plus
-# a contact sheet of stills as an artifact. No secrets, no image generation, no voice.
+# a contact sheet (one frame from the middle of every clip, in order). No secrets, no image generation, no voice.
 on:
   workflow_dispatch:
 
@@ -30,10 +30,18 @@ jobs:
         run: |
           mkdir -p out
           npx remotion render src/studio-index.ts Studio out/whatif-test.mp4 --props=../timeline/whatif-test.json --gl=swangle --crf=20 --log=error
-          for f in 15 60 105 150 195 240 270; do
-            npx remotion still src/studio-index.ts Studio out/still-$f.png --frame=$f --props=../timeline/whatif-test.json --gl=swangle --log=error || true
-          done
-          ffmpeg -y -pattern_type glob -i 'out/still-*.png' -filter_complex "scale=270:-1,tile=7x1" out/sheet.png || true
+      - name: Contact sheet (one frame per clip, in order)
+        working-directory: remotion
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          tl = json.load(open('../timeline/whatif-test.json'))
+          for i, v in enumerate(tl['tracks']['visuals']):
+              t = (v['start'] + v['end']) / 2
+              subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(t), '-i', 'out/whatif-test.mp4', '-frames:v', '1',
+                              '-vf', 'scale=270:-1', 'out/s%02d.png' % i], check=True)
+          PY
+          ffmpeg -y -v error -framerate 1 -i out/s%02d.png -filter_complex "tile=5x2:padding=4:color=black" -frames:v 1 out/sheet.png
       - uses: actions/upload-artifact@v4
         with:
           name: whatif-test
