@@ -1,6 +1,6 @@
 {
-  "last_update": 312538443,
-  "time": 1794481971496,
+  "last_update": 312538444,
+  "time": 1794499264516,
   "stage": "idle",
   "topic": "plus humour for how to treat a girl that will her fall for you",
   "research": {
@@ -1890,6 +1890,11 @@
   "voice_pick": null,
   "disliked": [
     {
+      "title": "Treating Her Right With Ancient Humor",
+      "first": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+      "at": 1794499264516
+    },
+    {
       "title": "How APIs Run the Internet",
       "first": "Uber processes millions of rides without owning a single mapping satellite.",
       "at": 1794477035108
@@ -1908,11 +1913,6 @@
       "title": "Edit Nine Sixteen Videos Fast",
       "first": "Ten million creators crop horizontal footage into vertical boxes.",
       "at": 1794290768652
-    },
-    {
-      "title": "5 Dollar Thrift Store Goldmine",
-      "first": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-      "at": 1794240086825
     }
   ],
   "ideas": [
