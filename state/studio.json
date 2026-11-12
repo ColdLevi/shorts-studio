@@ -1,7 +1,7 @@
 {
-  "last_update": 312538438,
-  "time": 1794481842927,
-  "stage": "pitch",
+  "last_update": 312538439,
+  "time": 1794481928635,
+  "stage": "script",
   "topic": "plus humour for how to treat a girl that will her fall for you",
   "research": {
     "text": "",
@@ -24,16 +24,55 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "Treating Her Right With Ancient Humor",
+    "beats": [
+      {
+        "narration": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
+        "image_prompt": "A man in historical seventeenth century attire walking into a dim tavern holding a dried pig heart, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "You assume romance requires modern psychological tricks, but actual historical records show bizarre household chores work best.",
+        "image_prompt": "A man staring blankly at a wooden wall in a rustic room, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "Seventeenth century villagers used dried pig hearts in romantic rituals, hoping to spark affection.",
+        "image_prompt": "Close up of a weathered wooden table with an old ritual token and candles, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls until your crush noticed your profound focus.",
+        "image_prompt": "A person sitting rigidly on a wooden chair staring straight ahead in a candlelit parlor, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "tool": "flux"
+      },
+      {
+        "narration": "Historical diaries show couples bonded over terrible poetry, because bad rhymes apparently forged unbreakable emotional links.",
+        "image_prompt": "A couple reading a parchment manuscript by candlelight with expressions of mild confusion, painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Seventeenth century villagers used dried pig hearts in romantic rituals.",
+        "supported": true
+      },
+      {
+        "claim": "Courtship manuals from the seventeen hundreds recommended staring blankly at walls.",
+        "supported": true
+      },
+      {
+        "claim": "Historical diaries show couples bonded over terrible poetry.",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"The Secret Empire of API Keys\"",
-      "t": 1794408425926
-    },
     {
       "role": "bot",
       "text": "Rendering \"The Secret Empire of API Keys\"",
@@ -108,6 +147,11 @@
       "role": "bot",
       "text": "Pitched \"Treating Her Right With Ancient Humor\": A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
       "t": 1794481842927
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"Treating Her Right With Ancient Humor\"",
+      "t": 1794481928635
     }
   ],
   "working": null,
