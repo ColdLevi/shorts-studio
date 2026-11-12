@@ -1,8 +1,8 @@
 {
-  "last_update": 312538419,
-  "time": 1794408524904,
+  "last_update": 312538420,
+  "time": 1794463199034,
   "stage": "idle",
-  "topic": "how APIs work, how companies money from selling APIs, and how you can the same",
+  "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
   "research": {
     "text": "",
     "sources": []
@@ -10,19 +10,9 @@
   "pitch": null,
   "script": null,
   "chat": "861854380",
-  "resumeAuto": false,
+  "resumeAuto": true,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Do a video about how the world war ii ended",
-      "t": 1794369845835
-    },
-    {
-      "role": "bot",
-      "text": "Pitched \"How World War Two Really Ended\": On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
-      "t": 1794370049732
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"How World War Two Really Ended\"",
@@ -92,10 +82,120 @@
       "role": "bot",
       "text": "Rendering \"The Secret Empire of API Keys\"",
       "t": 1794408524904
+    },
+    {
+      "role": "user",
+      "text": "Continue",
+      "t": 1794463197069
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Seventeen Year Old Beer Heist\"",
+      "t": 1794463199033
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "seventeen-year-old-beer-heist-mwd521rj",
+      "canvas": "16:9",
+      "title": "Seventeen Year Old Beer Heist",
+      "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
+      "pitch": {
+        "title": "Seventeen Year Old Beer Heist",
+        "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+        "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
+        "key_facts": [
+          "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
+          "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+          "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
+        ],
+        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
+        "length_seconds": 40,
+        "style": "retro-vhs",
+        "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
+        "music": "lofi-warm",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Seventeen Year Old Beer Heist",
+        "beats": [
+          {
+            "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
+            "tool": "higgsfield",
+            "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
+            "still": "flux"
+          },
+          {
+            "narration": "Teens think sneaking a drink was harder back then.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
+            "tool": "flux"
+          },
+          {
+            "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
+            "tool": "stock",
+            "query": "vintage paper document"
+          },
+          {
+            "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
+            "tool": "flux"
+          },
+          {
+            "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
+            "tool": "stock",
+            "query": "1980s supermarket aisle"
+          },
+          {
+            "narration": "So store cashiers rarely even checked who was buying.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
+            "tool": "stock",
+            "query": "retro TV static"
+          },
+          {
+            "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
+            "tool": "higgsfield",
+            "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
+            "still": "flux"
+          },
+          {
+            "narration": "The analog beer run was just built on simpler rules.",
+            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
+            "supported": true
+          },
+          {
+            "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
+            "supported": true
+          },
+          {
+            "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794463199033
+    },
     {
       "id": "the-secret-empire-of-api-keys-mwc8i6vk",
       "canvas": "16:9",
@@ -929,108 +1029,9 @@
         "sources": []
       },
       "at": 1794288234826
-    },
-    {
-      "id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
-      "canvas": "16:9",
-      "title": "5 Dollar Thrift Store Goldmine",
-      "topic": "that teach people how to money buying and selling old used items",
-      "pitch": {
-        "title": "5 Dollar Thrift Store Goldmine",
-        "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-        "angle": "Most people assume old gadgets are worthless junk destined for the trash. The twist is that vintage tech creates huge resale profit when moved from a local yard to a global online market.",
-        "key_facts": [
-          "Garage sale items are typically priced far below online market value.",
-          "Online resale platforms allow local items to reach international collectors instantly.",
-          "Nostalgia trends drive high demand for original nineteen eighties electronics."
-        ],
-        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "length_seconds": 40,
-        "style": "fastedit2",
-        "style_reason": "Clean UI mockups highlight fast resale profit margins.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "5 Dollar Thrift Store Goldmine",
-        "beats": [
-          {
-            "narration": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-            "image_prompt": "Minimalist digital app interface mockup of a retro cassette player on a solid teal background with crisp modern lighting",
-            "tool": "higgsfield",
-            "motion": "Slow camera zoom in on the vintage cassette player resting on the bright surface."
-          },
-          {
-            "narration": "Most people assume old gadgets are worthless junk destined for the trash.",
-            "image_prompt": "Playful 2D flat illustration of an old television set in a recycling bin on a vibrant coral background",
-            "tool": "flux"
-          },
-          {
-            "narration": "Garage sale items are typically priced far below online market value.",
-            "image_prompt": "Minimalist digital app interface mockup showing a price tag icon dropping from five dollars to zero on a solid yellow background",
-            "tool": "flux"
-          },
-          {
-            "narration": "Local yard finds sit quietly right next to massive global demand.",
-            "image_prompt": "Playful 2D flat illustration of a small cardboard box next to a glowing world map icon on a solid purple backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Online resale platforms allow local items to reach international collectors instantly.",
-            "image_prompt": "Minimalist digital app interface mockup displaying a shipping route connecting a small town to a giant globe",
-            "tool": "flux"
-          },
-          {
-            "narration": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
-            "image_prompt": "Playful 2D flat illustration of a vintage headphone icon pulsing with bright neon waves on a solid teal background",
-            "tool": "flux"
-          },
-          {
-            "narration": "Buyers across the planet search every day for working vintage gear.",
-            "image_prompt": "Minimalist digital app interface mockup showing a search bar filled with retro audio tags on a clean white backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "A tiny five dollar bill turns into serious profit when moved online.",
-            "image_prompt": "Playful 2D flat illustration of a small banknote transforming into a stack of golden coins on a solid mint background",
-            "tool": "higgsfield",
-            "motion": "Fast camera pan across the multiplying coins as they stack up high."
-          },
-          {
-            "narration": "Vintage tech creates huge resale profit when shifted to a global market.",
-            "image_prompt": "Minimalist digital app interface mockup highlighting a profit margin arrow shooting straight up on a vibrant orange backdrop",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
-            "supported": true
-          },
-          {
-            "claim": "Garage sale items are typically priced far below online market value.",
-            "supported": true
-          },
-          {
-            "claim": "Online resale platforms allow local items to reach international collectors instantly.",
-            "supported": true
-          },
-          {
-            "claim": "Nostalgia trends drive high demand for original nineteen eighties electronics.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794239683147
     }
   ],
-  "lastRenderAuto": false,
+  "lastRenderAuto": true,
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about Creat that's more of tech that teach people how API works.\n- (interest) The user approved a short about how the world war ii ended.\n- (interest) The user approved a short about short about what is going on in the ai industry today.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
@@ -1039,119 +1040,15 @@
   },
   "renders": [
     {
-      "title": "The Secret Empire of API Keys",
-      "at": 1794408524904,
-      "project": "the-secret-empire-of-api-keys-mwc8i6vk"
+      "title": "Seventeen Year Old Beer Heist",
+      "at": 1794463199033,
+      "project": "seventeen-year-old-beer-heist-mwd521rj"
     }
   ],
-  "current_project": "the-secret-empire-of-api-keys-mwc8i6vk",
+  "current_project": "seventeen-year-old-beer-heist-mwd521rj",
   "pending_edit": null,
   "edits": [],
-  "pending": {
-    "step": "render",
-    "title": "Seventeen Year Old Beer Heist",
-    "service": "images",
-    "reason": "images: flux-1-schnell: 429 {\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare",
-    "auto": true,
-    "asked": false,
-    "since": 1794223013050,
-    "snapshot": {
-      "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
-      "pitch": {
-        "title": "Seventeen Year Old Beer Heist",
-        "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
-        "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
-        "key_facts": [
-          "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-          "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-          "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
-        ],
-        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
-        "length_seconds": 40,
-        "style": "retro-vhs",
-        "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
-        "music": "lofi-warm",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Seventeen Year Old Beer Heist",
-        "beats": [
-          {
-            "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
-            "tool": "higgsfield",
-            "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
-            "still": "flux"
-          },
-          {
-            "narration": "Teens think sneaking a drink was harder back then.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
-            "tool": "flux"
-          },
-          {
-            "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
-            "tool": "stock",
-            "query": "vintage paper document"
-          },
-          {
-            "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
-            "tool": "flux"
-          },
-          {
-            "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
-            "tool": "stock",
-            "query": "1980s supermarket aisle"
-          },
-          {
-            "narration": "So store cashiers rarely even checked who was buying.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
-            "tool": "stock",
-            "query": "retro TV static"
-          },
-          {
-            "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
-            "tool": "higgsfield",
-            "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
-            "still": "flux"
-          },
-          {
-            "narration": "The analog beer run was just built on simpler rules.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-            "supported": true
-          },
-          {
-            "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-            "supported": true
-          },
-          {
-            "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      }
-    }
-  },
+  "pending": null,
   "awaitImage": null,
   "settings": {
     "format": "landscape",
@@ -1160,11 +1057,11 @@
   },
   "job": null,
   "recent_styles": [
-    "motion-explainer",
     "fastedit2",
     "documentary",
     "upload-5",
-    "motion-explainer"
+    "motion-explainer",
+    "retro-vhs"
   ],
   "learning": null,
   "styles": {
