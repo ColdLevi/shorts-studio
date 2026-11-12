@@ -1,0 +1,1045 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "seventeen-year-old-beer-heist-mwd521rj",
+ "rev": 1,
+ "title": "Seventeen Year Old Beer Heist",
+ "duration": 43.81,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "neon",
+   "font": "Rubik Mono One",
+   "weight": 400
+  },
+  "transition": {
+   "type": "blur",
+   "duration": 0.3
+  },
+  "motion": "kenburns",
+  "recipe": "retro-vhs",
+  "transitions": [
+   "blur",
+   "flash",
+   "slide-left",
+   "cut"
+  ],
+  "fx": {
+   "texture": "vhs",
+   "jitter": 2
+  },
+  "gfx": {
+   "scanlines": 0.4,
+   "grain": 0.16,
+   "chroma": 5,
+   "barrel": 0.08,
+   "vignette": 0.6
+  },
+  "backdrop": "grid",
+  "grade": "saturate(1.35) contrast(1.12) hue-rotate(-8deg)",
+  "font": "Rubik Mono One",
+  "preset": "retro-vhs",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.456,
+    "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
+     "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
+     "still": "flux"
+    },
+    "hash": "44a0c17d10f3"
+   },
+   {
+    "id": "v2",
+    "start": 6.456,
+    "end": 9.049,
+    "narration": "Teens think sneaking a drink was harder back then.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d9e46b70446f",
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.61,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.049,
+    "end": 11.709,
+    "narration": "Old paper IDs didn't have holograms,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d903176e887f",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.62,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 11.709,
+    "end": 14.097,
+    "narration": "chips, or tamper-proof plastic.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d903176e887f",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.59,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 14.097,
+    "end": 18.077,
+    "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "07101c0fba9a",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.78,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 18.077,
+    "end": 20.584,
+    "narration": "Before nineteen eighty-four, several American states",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "1809a03fb6f5",
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.6,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 20.584,
+    "end": 23.429,
+    "narration": "legally permitted eighteen year olds to buy beer.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "1809a03fb6f5",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.64,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 23.429,
+    "end": 26.496,
+    "narration": "So store cashiers rarely even checked who was buying.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "10c0667067d3",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.67,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 26.496,
+    "end": 32.17,
+    "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 5.97,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "261bdf1ce88c"
+   },
+   {
+    "id": "v10",
+    "start": 32.17,
+    "end": 36.566,
+    "narration": "Today, retail scanners read encoded PDF417",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "61cd3f5a3494",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 36.566,
+    "end": 39.556,
+    "narration": "barcodes to spot forged dates instantly.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "61cd3f5a3494",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cam": {
+     "move": "drift",
+     "amp": 0.66,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v12",
+    "start": 39.556,
+    "end": 43.008,
+    "narration": "The analog beer run was just built on simpler rules.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c25ec27f0cc0",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.71,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.15
+    },
+    {
+     "word": "nineteen",
+     "start": 0.163,
+     "end": 0.537
+    },
+    {
+     "word": "eighty-three,",
+     "start": 0.537,
+     "end": 1.15
+    },
+    {
+     "word": "a",
+     "start": 1.31,
+     "end": 1.373
+    },
+    {
+     "word": "seventeen",
+     "start": 1.386,
+     "end": 1.96
+    },
+    {
+     "word": "year",
+     "start": 1.96,
+     "end": 2.148
+    },
+    {
+     "word": "old",
+     "start": 2.148,
+     "end": 2.398
+    },
+    {
+     "word": "needed",
+     "start": 2.411,
+     "end": 2.748
+    },
+    {
+     "word": "three",
+     "start": 2.848,
+     "end": 3.198
+    },
+    {
+     "word": "dollars",
+     "start": 3.21,
+     "end": 3.736
+    },
+    {
+     "word": "and",
+     "start": 3.898,
+     "end": 4.01
+    },
+    {
+     "word": "a",
+     "start": 4.01,
+     "end": 4.073
+    },
+    {
+     "word": "paper",
+     "start": 4.073,
+     "end": 4.51
+    },
+    {
+     "word": "ID",
+     "start": 4.51,
+     "end": 4.998
+    },
+    {
+     "word": "to",
+     "start": 5.161,
+     "end": 5.26
+    },
+    {
+     "word": "grab",
+     "start": 5.273,
+     "end": 5.561
+    },
+    {
+     "word": "a",
+     "start": 5.561,
+     "end": 5.598
+    },
+    {
+     "word": "cold",
+     "start": 5.611,
+     "end": 5.873
+    },
+    {
+     "word": "beer.",
+     "start": 5.885,
+     "end": 6.236
+    },
+    {
+     "word": "Teens",
+     "start": 6.516,
+     "end": 6.791
+    },
+    {
+     "word": "think",
+     "start": 6.791,
+     "end": 6.953
+    },
+    {
+     "word": "sneaking",
+     "start": 6.966,
+     "end": 7.378
+    },
+    {
+     "word": "a",
+     "start": 7.378,
+     "end": 7.416
+    },
+    {
+     "word": "drink",
+     "start": 7.429,
+     "end": 7.829
+    },
+    {
+     "word": "was",
+     "start": 7.841,
+     "end": 8.016
+    },
+    {
+     "word": "harder",
+     "start": 8.016,
+     "end": 8.341
+    },
+    {
+     "word": "back",
+     "start": 8.341,
+     "end": 8.591
+    },
+    {
+     "word": "then.",
+     "start": 8.591,
+     "end": 8.829
+    },
+    {
+     "word": "Old",
+     "start": 9.109,
+     "end": 9.259
+    },
+    {
+     "word": "paper",
+     "start": 9.259,
+     "end": 9.584
+    },
+    {
+     "word": "IDs",
+     "start": 9.584,
+     "end": 10.234
+    },
+    {
+     "word": "didn't",
+     "start": 10.322,
+     "end": 10.534
+    },
+    {
+     "word": "have",
+     "start": 10.547,
+     "end": 10.672
+    },
+    {
+     "word": "holograms,",
+     "start": 10.684,
+     "end": 11.496
+    },
+    {
+     "word": "chips,",
+     "start": 11.709,
+     "end": 12.284
+    },
+    {
+     "word": "or",
+     "start": 12.444,
+     "end": 12.657
+    },
+    {
+     "word": "tamper-proof",
+     "start": 12.777,
+     "end": 13.302
+    },
+    {
+     "word": "plastic.",
+     "start": 13.314,
+     "end": 13.877
+    },
+    {
+     "word": "Anyone",
+     "start": 14.157,
+     "end": 14.52
+    },
+    {
+     "word": "with",
+     "start": 14.52,
+     "end": 14.645
+    },
+    {
+     "word": "a",
+     "start": 14.645,
+     "end": 14.707
+    },
+    {
+     "word": "basic",
+     "start": 14.807,
+     "end": 15.169
+    },
+    {
+     "word": "typewriter",
+     "start": 15.182,
+     "end": 15.732
+    },
+    {
+     "word": "could",
+     "start": 15.832,
+     "end": 15.945
+    },
+    {
+     "word": "alter",
+     "start": 15.957,
+     "end": 16.332
+    },
+    {
+     "word": "a",
+     "start": 16.332,
+     "end": 16.432
+    },
+    {
+     "word": "birth",
+     "start": 16.445,
+     "end": 16.807
+    },
+    {
+     "word": "date",
+     "start": 16.807,
+     "end": 17.107
+    },
+    {
+     "word": "in",
+     "start": 17.207,
+     "end": 17.32
+    },
+    {
+     "word": "minutes.",
+     "start": 17.32,
+     "end": 17.857
+    },
+    {
+     "word": "Before",
+     "start": 18.137,
+     "end": 18.362
+    },
+    {
+     "word": "nineteen",
+     "start": 18.362,
+     "end": 18.7
+    },
+    {
+     "word": "eighty-four,",
+     "start": 18.7,
+     "end": 19.262
+    },
+    {
+     "word": "several",
+     "start": 19.422,
+     "end": 19.772
+    },
+    {
+     "word": "American",
+     "start": 19.772,
+     "end": 20.134
+    },
+    {
+     "word": "states",
+     "start": 20.147,
+     "end": 20.572
+    },
+    {
+     "word": "legally",
+     "start": 20.584,
+     "end": 21.022
+    },
+    {
+     "word": "permitted",
+     "start": 21.034,
+     "end": 21.472
+    },
+    {
+     "word": "eighteen",
+     "start": 21.622,
+     "end": 22.022
+    },
+    {
+     "word": "year",
+     "start": 22.034,
+     "end": 22.247
+    },
+    {
+     "word": "olds",
+     "start": 22.247,
+     "end": 22.459
+    },
+    {
+     "word": "to",
+     "start": 22.459,
+     "end": 22.547
+    },
+    {
+     "word": "buy",
+     "start": 22.547,
+     "end": 22.76
+    },
+    {
+     "word": "beer.",
+     "start": 22.76,
+     "end": 23.209
+    },
+    {
+     "word": "So",
+     "start": 23.489,
+     "end": 23.676
+    },
+    {
+     "word": "store",
+     "start": 23.689,
+     "end": 23.951
+    },
+    {
+     "word": "cashiers",
+     "start": 23.951,
+     "end": 24.601
+    },
+    {
+     "word": "rarely",
+     "start": 24.614,
+     "end": 25.064
+    },
+    {
+     "word": "even",
+     "start": 25.064,
+     "end": 25.276
+    },
+    {
+     "word": "checked",
+     "start": 25.276,
+     "end": 25.651
+    },
+    {
+     "word": "who",
+     "start": 25.651,
+     "end": 25.726
+    },
+    {
+     "word": "was",
+     "start": 25.726,
+     "end": 25.864
+    },
+    {
+     "word": "buying.",
+     "start": 25.864,
+     "end": 26.276
+    },
+    {
+     "word": "Then",
+     "start": 26.556,
+     "end": 26.731
+    },
+    {
+     "word": "the",
+     "start": 26.743,
+     "end": 26.793
+    },
+    {
+     "word": "nineteen",
+     "start": 26.793,
+     "end": 27.218
+    },
+    {
+     "word": "eighty-four",
+     "start": 27.218,
+     "end": 27.63
+    },
+    {
+     "word": "Drinking",
+     "start": 27.63,
+     "end": 28.118
+    },
+    {
+     "word": "Age",
+     "start": 28.218,
+     "end": 28.63
+    },
+    {
+     "word": "Act",
+     "start": 28.756,
+     "end": 29.006
+    },
+    {
+     "word": "forced",
+     "start": 29.006,
+     "end": 29.53
+    },
+    {
+     "word": "every",
+     "start": 29.681,
+     "end": 29.955
+    },
+    {
+     "word": "state",
+     "start": 29.955,
+     "end": 30.368
+    },
+    {
+     "word": "to",
+     "start": 30.488,
+     "end": 30.562
+    },
+    {
+     "word": "set",
+     "start": 30.562,
+     "end": 30.8
+    },
+    {
+     "word": "the",
+     "start": 30.8,
+     "end": 30.888
+    },
+    {
+     "word": "limit",
+     "start": 30.9,
+     "end": 31.275
+    },
+    {
+     "word": "at",
+     "start": 31.275,
+     "end": 31.362
+    },
+    {
+     "word": "twenty-one.",
+     "start": 31.362,
+     "end": 31.95
+    },
+    {
+     "word": "Today,",
+     "start": 32.23,
+     "end": 32.643
+    },
+    {
+     "word": "retail",
+     "start": 32.803,
+     "end": 33.303
+    },
+    {
+     "word": "scanners",
+     "start": 33.303,
+     "end": 33.753
+    },
+    {
+     "word": "read",
+     "start": 33.753,
+     "end": 34.091
+    },
+    {
+     "word": "encoded",
+     "start": 34.103,
+     "end": 34.778
+    },
+    {
+     "word": "PDF417",
+     "start": 34.79,
+     "end": 36.566
+    },
+    {
+     "word": "barcodes",
+     "start": 36.566,
+     "end": 37.128
+    },
+    {
+     "word": "to",
+     "start": 37.248,
+     "end": 37.336
+    },
+    {
+     "word": "spot",
+     "start": 37.336,
+     "end": 37.636
+    },
+    {
+     "word": "forged",
+     "start": 37.636,
+     "end": 38.185
+    },
+    {
+     "word": "dates",
+     "start": 38.198,
+     "end": 38.598
+    },
+    {
+     "word": "instantly.",
+     "start": 38.76,
+     "end": 39.336
+    },
+    {
+     "word": "The",
+     "start": 39.616,
+     "end": 39.665
+    },
+    {
+     "word": "analog",
+     "start": 39.665,
+     "end": 40.078
+    },
+    {
+     "word": "beer",
+     "start": 40.078,
+     "end": 40.303
+    },
+    {
+     "word": "run",
+     "start": 40.303,
+     "end": 40.616
+    },
+    {
+     "word": "was",
+     "start": 40.79,
+     "end": 40.915
+    },
+    {
+     "word": "just",
+     "start": 40.915,
+     "end": 41.103
+    },
+    {
+     "word": "built",
+     "start": 41.116,
+     "end": 41.415
+    },
+    {
+     "word": "on",
+     "start": 41.415,
+     "end": 41.591
+    },
+    {
+     "word": "simpler",
+     "start": 41.591,
+     "end": 42.065
+    },
+    {
+     "word": "rules.",
+     "start": 42.078,
+     "end": 42.591
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer. Teens think sneaking a drink was harder back then. Old paper IDs didn't have holograms, chips, or tamper-proof plastic. Anyone with a basic typewriter could alter a birth date in minutes. Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer. So store cashiers rarely even checked who was buying. Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one. Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly. The analog beer run was just built on simpler rules."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/lofi-warm.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "lofi-warm"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 13.827,
+    "volume": 0.34,
+    "anchor": "v5",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 17.877,
+    "volume": 0.55,
+    "anchor": "v6",
+    "offset": -0.2
+   },
+   {
+    "id": "gs4",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 23.159,
+    "volume": 0.34,
+    "anchor": "v8",
+    "offset": -0.27
+   },
+   {
+    "id": "gs5",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 23.95,
+    "volume": 0.3,
+    "anchor": "v8",
+    "offset": 0.52
+   },
+   {
+    "id": "gs6",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 39.356,
+    "volume": 0.55,
+    "anchor": "v12",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 6.41,
+    "text": "seventeen",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 6.41,
+    "opacity": 0.35,
+    "seed": 4.32
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v8",
+    "delay": 0.4,
+    "start": 23.83,
+    "end": 26.45,
+    "asset": "store",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794463872931,
+  "updated": 1794463872936,
+  "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
+  "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+  "image_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
+  "format": "landscape",
+  "assets_release": "project-seventeen-year-old-beer-heist-mwd521rj",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+   "music": "lofi-warm",
+   "project_id": "seventeen-year-old-beer-heist-mwd521rj",
+   "style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
+   "style_preset": "retro-vhs",
+   "title": "Seventeen Year Old Beer Heist",
+   "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In nineteen eighty-three, a sevente...\"): the hook. No subject cutout, so I put SEVENTEEN in the top band where it cannot cover the face.",
+   "Beat 8 (\"So store cashiers rarely even check...\"): a \"store\" illustration builds itself on the right after the words land.",
+   "Left 10 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 2: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: truck (alive baseline (not the same move twice)).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 8: drift (alive baseline).",
+   "Beat 10: truck (alive baseline (not the same move twice)).",
+   "Beat 11: drift (side move for variety (not the same move twice)).",
+   "Beat 12: pull-out (last picture: slow pull-out)."
+  ],
+  "qa": [],
+  "sound": "6 effects: pop, swish, tick, whoosh_soft"
+ }
+}

@@ -473,6 +473,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-48",
+      "title": "Seventeen Year Old Beer Heist",
+      "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
+      "accent": "#2EE6C5",
+      "duration": 43.9,
+      "created": 1794466204546,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-48/short-48.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-48/short-48.jpg",
+      "project": "seventeen-year-old-beer-heist-mwd521rj",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
