@@ -1,117 +1,18 @@
 {
-  "last_update": 312538432,
-  "time": 1794475446107,
-  "stage": "script",
+  "last_update": 312538436,
+  "time": 1794475464406,
+  "stage": "idle",
   "topic": "how API works",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "How APIs Run the Internet",
-    "hook": "Uber processes millions of rides without owning a single mapping satellite.",
-    "angle": "Most people assume giant apps build every feature from scratch. They actually rely on digital messengers called APIs to fetch data from outside servers in milliseconds.",
-    "key_facts": [
-      "Application Programming Interfaces act as standardized messengers between separate software systems.",
-      "A client app sends a request payload to a host server, which returns structured data like JSON.",
-      "Companies monetize APIs by charging developers for metered access through secret authentication keys.",
-      "Third-party APIs handle critical app functions like credit card processing and live geolocation."
-    ],
-    "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways",
-    "length_seconds": 45,
-    "style": "motion-explainer",
-    "style_reason": "Bold flat vector shapes make abstract software connections visual and clear.",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How APIs Run the Internet",
-    "beats": [
-      {
-        "narration": "Uber processes millions of rides without owning a single mapping satellite.",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a stylized map and route, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "You think giant apps build every single feature from scratch inside their own servers,",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing massive server towers isolated, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "but they actually rely on digital messengers called APIs to fetch outside data in milliseconds,",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing packet traveling between nodes, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "because application programming interfaces act as standardized translators between completely separate software systems,",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing two different code blocks connecting, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "so a client app simply sends a request payload to a host server,",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing data packet launching upward, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "which immediately returns structured data like clean JSON back down the line.",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing neat brackets and text glowing, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "Third party tools quietly handle critical app functions like credit card processing and live geolocation,",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a credit card icon linked to a map pin, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "so companies monetize these very connections by charging developers for metered access",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a digital meter ticking upward, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "through secret authentication keys that lock down every single request.",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing security key icon, wide cinematic",
-        "tool": "flux"
-      },
-      {
-        "narration": "The entire modern internet is just invisible software talking to other software.",
-        "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a vast network of interconnected glowing nodes, wide cinematic",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Uber processes millions of rides without owning mapping satellites",
-        "supported": true
-      },
-      {
-        "claim": "Application programming interfaces act as standardized translators between separate software systems",
-        "supported": true
-      },
-      {
-        "claim": "A client app sends a request payload to a host server which returns structured data like JSON",
-        "supported": true
-      },
-      {
-        "claim": "Third-party APIs handle critical app functions like credit card processing and live geolocation",
-        "supported": true
-      },
-      {
-        "claim": "Companies monetize APIs by charging developers for metered access through secret authentication keys",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Make a video on this how API works and how companies make money from selling API and how you can to",
-      "t": 1794407969298
-    },
     {
       "role": "user",
       "text": "Make a video on how APIs work, how companies make money from selling APIs, and how you can do the same.",
@@ -186,10 +87,122 @@
       "role": "bot",
       "text": "Wrote the script for \"How APIs Run the Internet\"",
       "t": 1794475446107
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How APIs Run the Internet\"",
+      "t": 1794475464406
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-apis-run-the-internet-mwdccxrq",
+      "canvas": "16:9",
+      "title": "How APIs Run the Internet",
+      "topic": "how API works",
+      "pitch": {
+        "title": "How APIs Run the Internet",
+        "hook": "Uber processes millions of rides without owning a single mapping satellite.",
+        "angle": "Most people assume giant apps build every feature from scratch. They actually rely on digital messengers called APIs to fetch data from outside servers in milliseconds.",
+        "key_facts": [
+          "Application Programming Interfaces act as standardized messengers between separate software systems.",
+          "A client app sends a request payload to a host server, which returns structured data like JSON.",
+          "Companies monetize APIs by charging developers for metered access through secret authentication keys.",
+          "Third-party APIs handle critical app functions like credit card processing and live geolocation."
+        ],
+        "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways",
+        "length_seconds": 45,
+        "style": "motion-explainer",
+        "style_reason": "Bold flat vector shapes make abstract software connections visual and clear.",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How APIs Run the Internet",
+        "beats": [
+          {
+            "narration": "Uber processes millions of rides without owning a single mapping satellite.",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a stylized map and route, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "You think giant apps build every single feature from scratch inside their own servers,",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing massive server towers isolated, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "but they actually rely on digital messengers called APIs to fetch outside data in milliseconds,",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing packet traveling between nodes, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "because application programming interfaces act as standardized translators between completely separate software systems,",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing two different code blocks connecting, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "so a client app simply sends a request payload to a host server,",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing data packet launching upward, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "which immediately returns structured data like clean JSON back down the line.",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing neat brackets and text glowing, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "Third party tools quietly handle critical app functions like credit card processing and live geolocation,",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a credit card icon linked to a map pin, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "so companies monetize these very connections by charging developers for metered access",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a digital meter ticking upward, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "through secret authentication keys that lock down every single request.",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a glowing security key icon, wide cinematic",
+            "tool": "flux"
+          },
+          {
+            "narration": "The entire modern internet is just invisible software talking to other software.",
+            "image_prompt": "clean flat vector illustration, bold simple shapes, dark background, high contrast glowing data pathways showing a vast network of interconnected glowing nodes, wide cinematic",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Uber processes millions of rides without owning mapping satellites",
+            "supported": true
+          },
+          {
+            "claim": "Application programming interfaces act as standardized translators between separate software systems",
+            "supported": true
+          },
+          {
+            "claim": "A client app sends a request payload to a host server which returns structured data like JSON",
+            "supported": true
+          },
+          {
+            "claim": "Third-party APIs handle critical app functions like credit card processing and live geolocation",
+            "supported": true
+          },
+          {
+            "claim": "Companies monetize APIs by charging developers for metered access through secret authentication keys",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794475464406
+    },
     {
       "id": "seventeen-year-old-beer-heist-mwd521rj",
       "canvas": "16:9",
@@ -996,136 +1009,9 @@
         "sources": []
       },
       "at": 1794294357740
-    },
-    {
-      "id": "edit-nine-sixteen-videos-fast-mwa8vyja",
-      "canvas": "9:16",
-      "title": "Edit Nine Sixteen Videos Fast",
-      "topic": "YouTube short of how to edit editor it 9:16",
-      "pitch": {
-        "title": "Edit Nine Sixteen Videos Fast",
-        "hook": "Ten million creators crop horizontal footage into vertical boxes.",
-        "angle": "People believe cropping the center works, but moving the focal point ruins the pacing.",
-        "key_facts": [
-          "Nine sixteen is the standard aspect ratio for vertical video.",
-          "Standard horizontal timelines measure nineteen twenty by ten eighty pixels.",
-          "Vertical aspect ratios require ten eighty by nineteen twenty pixels.",
-          "Auto framing tools track movement across the frame automatically."
-        ],
-        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "length_seconds": 40,
-        "style": "fastedit2",
-        "style_reason": "High-contrast app showcase matches modern editing workflows.",
-        "music": "tech-pulse",
-        "accent": "blue",
-        "format": "vertical"
-      },
-      "script": {
-        "title": "Edit Nine Sixteen Videos Fast",
-        "beats": [
-          {
-            "narration": "Ten million creators crop horizontal footage into vertical boxes.",
-            "image_prompt": "Minimalist digital app interface mockup showing a wide video timeline being squeezed into a vertical phone screen on a solid electric blue backdrop",
-            "tool": "higgsfield",
-            "motion": "Camera zooms in fast on the center of the vertical phone mockup as the wide video frame snaps into place.",
-            "still": "flux"
-          },
-          {
-            "narration": "Standard horizontal timelines measure nineteen twenty by ten eighty pixels.",
-            "image_prompt": "Minimalist 2D flat illustration of a wide computer monitor displaying pixel dimensions on a solid pastel pink backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Vertical aspect ratios require ten eighty by nineteen twenty pixels.",
-            "image_prompt": "Minimalist 2D flat illustration of a tall smartphone screen showing vertical dimensions on a solid vibrant yellow backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "People think cropping the center works just fine.",
-            "image_prompt": "Minimalist digital app interface mockup showing a video cut off awkwardly on the sides inside a phone frame on a solid mint green backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Moving the focal point ruins the pacing completely.",
-            "image_prompt": "Minimalist 2D flat illustration of a playhead bouncing frantically across a broken video timeline on a solid coral orange backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Auto framing tools track movement across the frame automatically.",
-            "image_prompt": "Minimalist digital app interface mockup showing a bright tracking box locked onto a moving object inside a vertical phone on a solid deep purple backdrop",
-            "tool": "higgsfield",
-            "motion": "Camera pans smoothly across the vertical screen following the tracking box as it locks onto the moving object.",
-            "still": "flux"
-          },
-          {
-            "narration": "The software detects the action so you avoid manual keyframes.",
-            "image_prompt": "Minimalist 2D flat illustration of gears turning inside a glowing smartphone app icon on a solid teal backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Key subjects stay right in the center of the vertical crop.",
-            "image_prompt": "Minimalist digital app interface mockup showing a perfectly centered subject inside a vertical video player on a solid bright red backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "No boring dead space left on the sides.",
-            "image_prompt": "Minimalist 2D flat illustration of clean margins filling a vertical frame on a solid mustard yellow backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then export starts in seconds instead of hours.",
-            "image_prompt": "Minimalist digital app interface mockup showing a progress bar filling up rapidly on a solid electric blue backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Your clips look ready for any feed.",
-            "image_prompt": "Minimalist 2D flat illustration of multiple glowing vertical phone screens stacked neatly on a solid lavender backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Stop wasting time on manual framing.",
-            "image_prompt": "Minimalist 2D flat illustration of a hand tapping a glowing edit button on a solid turquoise backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Let the software do the heavy lifting.",
-            "image_prompt": "Minimalist digital app interface mockup showing an AI automation badge lighting up on a solid pastel pink backdrop",
-            "tool": "flux"
-          },
-          {
-            "narration": "Ready to reframe your next upload?",
-            "image_prompt": "Minimalist digital app interface mockup showing a clean export button ready to tap on a solid mint green backdrop",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Ten million creators crop horizontal footage into vertical boxes.",
-            "supported": true
-          },
-          {
-            "claim": "Standard horizontal timelines measure nineteen twenty by ten eighty pixels.",
-            "supported": true
-          },
-          {
-            "claim": "Vertical aspect ratios require ten eighty by nineteen twenty pixels.",
-            "supported": true
-          },
-          {
-            "claim": "Auto framing tools track movement across the frame automatically.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794288234826
     }
   ],
-  "lastRenderAuto": true,
+  "lastRenderAuto": false,
   "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about Creat that's more of tech that teach people how API works.\n- (lesson) The user encountered a browser rate limit while scraping a video grid, suggesting direct API requests should be used for channel video lists.\n- (interest) The user approved a short about how to money with selling API or say how companies money with selling API key it's a YouTube so it good.\n- (fact) Browser bot research on how to use termux for beginners in Issacverse style: - Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required out of the box (https://termux.dev/)\n- The app provides a minimal base system automatically installed, and additional packages are available using the APT package manager familiar\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about how APIs work, how companies money from selling APIs, and how you can the same.\n- (interest) The user approved a short about how the world war ii ended.\n- (interest) The user approved a short about short about what is going on in the ai industry today.\n- (interest) The user approved a short about how to cheese the 90s, 9:16 format, purely.\n- (interest) The user approved a short about for how easy it is to buy beer like a funny comparison of the old days and now then also it.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
@@ -1134,12 +1020,12 @@
   },
   "renders": [
     {
-      "title": "Seventeen Year Old Beer Heist",
-      "at": 1794463199033,
-      "project": "seventeen-year-old-beer-heist-mwd521rj"
+      "title": "How APIs Run the Internet",
+      "at": 1794475464406,
+      "project": "how-apis-run-the-internet-mwdccxrq"
     }
   ],
-  "current_project": "seventeen-year-old-beer-heist-mwd521rj",
+  "current_project": "how-apis-run-the-internet-mwdccxrq",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1149,17 +1035,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "style": "motion-explainer",
-    "format": "landscape",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "fastedit2",
     "documentary",
     "upload-5",
     "motion-explainer",
-    "retro-vhs"
+    "retro-vhs",
+    "motion-explainer"
   ],
   "learning": null,
   "styles": {
