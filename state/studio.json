@@ -1,6 +1,6 @@
 {
-  "last_update": 312538428,
-  "time": 1794472249204,
+  "last_update": 312538429,
+  "time": 1794475254698,
   "stage": "pitch",
   "topic": "how API works",
   "research": {
@@ -30,11 +30,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Yes, I'm active and ready to help you with your videos!",
-      "t": 1794391110554
-    },
     {
       "role": "bot",
       "text": "Pitched \"How APIs Actually Move The Internet\": Ten billion automated API requests fire across the internet every single hour.",
@@ -109,6 +104,11 @@
       "role": "bot",
       "text": "Pitched \"How APIs Run the Internet\": Uber processes millions of rides without owning a single mapping satellite.",
       "t": 1794472198040
+    },
+    {
+      "role": "user",
+      "text": "Check again",
+      "t": 1794475253138
     }
   ],
   "working": null,
