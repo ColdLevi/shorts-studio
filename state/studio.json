@@ -1,6 +1,6 @@
 {
-  "last_update": 312538482,
-  "time": 1794589114009,
+  "last_update": 312538483,
+  "time": 1794590930558,
   "stage": "idle",
   "topic": "a about how blogs money",
   "research": {
@@ -1874,6 +1874,11 @@
   "voice_pick": null,
   "disliked": [
     {
+      "title": "How Blogs Actually Make Money",
+      "first": "In two thousand twenty-six, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts,",
+      "at": 1794590930557
+    },
+    {
       "title": "The Zero Marginal Cost Money Engine",
       "first": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
       "at": 1794555843137
@@ -1892,11 +1897,6 @@
       "title": "How APIs Actually Move The Internet",
       "first": "You open a travel app expecting a direct peek inside an airline database, but",
       "at": 1794395422594
-    },
-    {
-      "title": "The Real Money Behind AI",
-      "first": "Five hundred billion dollars poured into microchips and data centers this year alone,",
-      "at": 1794369785609
     }
   ],
   "ideas": [
