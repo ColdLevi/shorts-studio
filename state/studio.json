@@ -1,6 +1,6 @@
 {
-  "last_update": 312538498,
-  "time": 1794601198745,
+  "last_update": 312538499,
+  "time": 1794611418613,
   "stage": "idle",
   "topic": "a about how a bill becomes law",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"How Blogs Actually Make Money\": In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
-      "t": 1794587714110
-    },
     {
       "role": "user",
       "text": "Turn on motion graphics",
@@ -92,6 +87,11 @@
       "role": "bot",
       "text": "Rendering \"How Draft Paper Overpowers the President\"",
       "t": 1794595896354
+    },
+    {
+      "role": "user",
+      "text": "short a 45 second video about how a bill becomes law",
+      "t": 1794611416347
     }
   ],
   "working": null,
@@ -2127,7 +2127,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "a 45 second video about how a bill becomes law",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794611418613
+  },
   "liked": [
     {
       "title": "How Draft Paper Overpowers the President",
