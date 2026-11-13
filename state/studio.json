@@ -1,151 +1,18 @@
 {
-  "last_update": 312538470,
-  "time": 1794580492893,
-  "stage": "script",
+  "last_update": 312538471,
+  "time": 1794580514778,
+  "stage": "idle",
   "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. Instagram Strategy to Book More Clients (https://www.youtube.com/watch?v=3OT7kRJu1ys): We cover the most effective content formats for service providers including B roll reels, talking head reels, carousel posts, and Instagram ...\n2. How to Get Clients Through Instagram | Tips for Converting Your Audience (https://brandgoodtime.com/how-to-get-clients-through-instagram/): Make sure what you're offering is clear and simple Always include a Call-To-Action in your Captions + Stories Take advantage of hashtags\n3. How To Find Clients On instagram (Full Guide) (https://www.youtube.com/watch?v=ZlrEW52-v0Q&vl=en-US): Learn how to find clients on Instagram with this comprehensive guide! Whether you're a freelancer, agency owner, or creative professional, ...\n4. Does anyone actually find clients on Instagram? : r/socialmedia (https://www.reddit.com/r/socialmedia/comments/5sl88u/does_anyone_actually_find_clients_on_instagram/): The only way to truly find out is to try. If your clients use it (which they do) it can work for you. It's HOW you use it that matters.\n5. Wanna grow fast and get clients from your posts? That's not gonna happen if (https://www.instagram.com/reel/De2x-D0MvX5/): \n6. Want More Clients From Instagram? Try These 5 Steps! (https://www.youtube.com/watch?v=jnxne8nevgc&vl=en): If you want to start attracting more clients directly from Instagram, this video breaks down five simple, strategic steps you can start ...\n7. How To Turn Your Instagram Followers Into Paying Clients (https://bookedin.com/blog/how-to-turn-instagram-followers-into-clients/): Learn how to turn followers and viewers of your service business's Instagram page into clients with clearer CTAs, proof content, and more.\n8. 10 Proven Strategies: How to get more Clients on Instagram (https://mysocialboutique.co/get-more-clients-on-instagram/): You have no idea where you next client is coming from? Discover 10 proven strategies for gaining clients for your small business on Instagram.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- Save and implement. 👐 [ig_play_count 4751664, like_count 50507, comment_count 15443, share_count 65991]\n- 7. You can verify emails for free using google chips This method is for people.. Who do not have 💲 to spend on softwares! But if you want to scale your business.. Best is to do it using cold-email softwares! Got any questions? Drop them below 👇🏻 —— I’ve mad [ig_play_count 4635750, like_count 64079, comment_count 3237, share_count 1557]\n- Instagram Bio Audit (Nail Tech Edition) 💅 If people are visiting your Instagram but you’re still not getting enough bookings, comment “BOOKED” and I’ll send you my free webinar on growing your beauty business! #beautyentrepreneur #nailtech #instagrambio #clie [ig_play_count 1886001, like_count 98304, comment_count 6275, share_count 44730]\n- Get clients using this simple technique ✅ Want to earn ₹2 Lakhs/month like I do? Start with my Social Media Manager blueprint course for beginners ✅ Grab the course now. Link in my bio 🔗 [ig_play_count 488511, like_count 19321, comment_count 294, share_count 19416]\n- how to get more leed? First It involves a personal touch, reaching out discreetly to individuals through channels like cold calls, direct messages, or emails. Second It hinges on the creation of captivating content, drawing people naturally toward your offerin [ig_play_count 3404640, like_count 151589, comment_count 793, share_count 214]\n- In 30 days, this is exactly what I would do if I wanted to not only grow my following, but turn my social media into a Cash cow as a business owner 🦾💰#30dayschallenge #instagramgrowth #iamjadenly [ig_play_count 1160658, like_count 60354, comment_count 2351, share_count 36367]\n- Realtors: Follow these 5 simple steps👇 Most agents overcomplicate Instagram. They chase trends, stress over looking smart, or wait for the ‘perfect’ time to post (which is never) 😅 Here’s what you actually need to focus on: ✅ A clear, optimized profile ✅ Con [ig_play_count 226593, like_count 6130, comment_count 3903, share_count 5137]\n- This prompt will build a 7 figure Instagram funnel for you 💰🚀 [ig_play_count 1055128, like_count 13669, comment_count 16303, share_count 25138]\n- Day 4 of getting over my fear and mastering talking online 🤍 Business owners, need new clients? Stop posting pretty pictures and post THIS instead: 1. Start with “If you’re looking for or “ I am (what your business is)…” 2. Your name + where you’re located 3. [ig_play_count 152249, like_count 5743, comment_count 328, share_count 2597]\n- How to run instagram ads like a professional! [ig_play_count 534911, like_count 12765, comment_count 348, share_count 17326]",
     "sources": []
   },
-  "pitch": {
-    "title": "Turn Instagram Views Into Paying Clients",
-    "hook": "A profile receiving thousands of visits can still generate zero client bookings.",
-    "angle": "Most creators believe aesthetic posts automatically bring in paying clients. High view counts mean nothing without a structured intake system.",
-    "key_facts": [
-      "Content strategies rely on B-roll reels, talking head videos, and carousel posts to drive authority.",
-      "Direct outreach via discreet messaging converts passive content viewers into warm leads.",
-      "Profile optimization and bio audits directly transform page traffic into client bookings.",
-      "Clear call-to-action lines in captions and stories direct audience members to complete an offer."
-    ],
-    "visual_style": "vector motion graphics, clean isometric style, high contrast dark theme",
-    "length_seconds": 45,
-    "style": "motion-explainer",
-    "style_reason": "Visualizes funnels and client conversion systems clearly",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Turn Instagram Views Into Paying Clients",
-    "beats": [
-      {
-        "narration": "I analyzed an Instagram account with thousands of profile visits that got zero booked clients,",
-        "callout": "0 BOOKINGS",
-        "image_prompt": "Clean isometric 3D graphic showing a dark themed Instagram profile dashboard with high traffic arrows pointing down to a glowing red zero icon, high contrast teal and dark background",
-        "tool": "higgsfield",
-        "motion": "Slow horizontal pan right across the glowing dark isometric dashboard UI",
-        "still": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            6
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "because most creators assume aesthetic posts automatically bring in paying customers.",
-        "image_prompt": "Vector motion graphic of sleek floating isometric art frames with glowing borders on a high contrast dark backdrop",
-        "tool": "stock",
-        "query": "3d isometric dark interface"
-      },
-      {
-        "narration": "They churn out B-roll reels, talking head videos, and carousels to build authority,",
-        "image_prompt": "Clean isometric arrangement of three floating digital media cards representing video reels and carousels, dark background with teal accents",
-        "tool": "stock",
-        "query": "isometric digital media panels"
-      },
-      {
-        "narration": "but high views mean nothing without a real intake system.",
-        "image_prompt": "Isometric dark theme flowchart showing a disconnected funnel pipeline with glowing traffic icons falling off the edge",
-        "tool": "stock",
-        "query": "isometric broken funnel network",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            1
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "I started with a profile cleanup and bio audit,",
-        "image_prompt": "Vector isometric graphic of a sleek user profile card being scanned and recalibrated by glowing teal grid lines, dark theme",
-        "tool": "flux"
-      },
-      {
-        "narration": "which turned passive traffic into active client bookings,",
-        "image_prompt": "Vector isometric visualization of traffic streams merging smoothly into a glowing green booking confirmation node, dark contrast",
-        "tool": "stock",
-        "query": "isometric data flow process",
-        "cues": {
-          "pauses": [
-            {
-              "after": 1,
-              "s": 0.3
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "so clear call-to-action lines in captions sent viewers straight to an offer.",
-        "image_prompt": "Isometric dark theme graphic showing glowing text lines flowing directly into a highlighted offer terminal with a single action button",
-        "tool": "flux",
-        "query": "isometric digital call to action"
-      },
-      {
-        "narration": "Then direct outreach through private messaging turned passive viewers into warm leads,",
-        "image_prompt": "Vector motion graphic of private message nodes connecting directly from a dark central hub to glowing client avatars",
-        "tool": "flux",
-        "query": "isometric direct messaging network"
-      },
-      {
-        "narration": "building a predictable client pipeline.",
-        "callout": "CLIENT PIPELINE",
-        "image_prompt": "Isometric futuristic pipeline network illuminated in bright teal accents glowing against a dark high contrast canvas",
-        "tool": "higgsfield",
-        "motion": "Cinematic forward zoom along the glowing isometric client funnel pipeline",
-        "still": "flux",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            2
-          ],
-          "sfx": []
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "A profile receiving thousands of visits can still generate zero client bookings without a intake system.",
-        "supported": true
-      },
-      {
-        "claim": "Content strategies rely on B-roll reels, talking head videos, and carousel posts to drive authority.",
-        "supported": true
-      },
-      {
-        "claim": "Profile optimization and bio audits directly transform page traffic into client bookings.",
-        "supported": true
-      },
-      {
-        "claim": "Direct outreach via discreet messaging converts passive content viewers into warm leads.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Zero Marginal Cost Money Engine\": A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
-      "t": 1794551998152
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"The Zero Marginal Cost Money Engine\"",
@@ -220,10 +87,156 @@
       "role": "bot",
       "text": "Wrote the script for \"Turn Instagram Views Into Paying Clients\"",
       "t": 1794573754075
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Turn Instagram Views Into Paying Clients\"",
+      "t": 1794580514778
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "turn-instagram-views-into-paying-cli-mwf2wj4q",
+      "canvas": "16:9",
+      "title": "Turn Instagram Views Into Paying Clients",
+      "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
+      "pitch": {
+        "title": "Turn Instagram Views Into Paying Clients",
+        "hook": "A profile receiving thousands of visits can still generate zero client bookings.",
+        "angle": "Most creators believe aesthetic posts automatically bring in paying clients. High view counts mean nothing without a structured intake system.",
+        "key_facts": [
+          "Content strategies rely on B-roll reels, talking head videos, and carousel posts to drive authority.",
+          "Direct outreach via discreet messaging converts passive content viewers into warm leads.",
+          "Profile optimization and bio audits directly transform page traffic into client bookings.",
+          "Clear call-to-action lines in captions and stories direct audience members to complete an offer."
+        ],
+        "visual_style": "vector motion graphics, clean isometric style, high contrast dark theme",
+        "length_seconds": 45,
+        "style": "motion-explainer",
+        "style_reason": "Visualizes funnels and client conversion systems clearly",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Turn Instagram Views Into Paying Clients",
+        "beats": [
+          {
+            "narration": "I analyzed an Instagram account with thousands of profile visits that got zero booked clients,",
+            "callout": "0 BOOKINGS",
+            "image_prompt": "Clean isometric 3D graphic showing a dark themed Instagram profile dashboard with high traffic arrows pointing down to a glowing red zero icon, high contrast teal and dark background",
+            "tool": "higgsfield",
+            "motion": "Slow horizontal pan right across the glowing dark isometric dashboard UI",
+            "still": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                6
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "because most creators assume aesthetic posts automatically bring in paying customers.",
+            "image_prompt": "Vector motion graphic of sleek floating isometric art frames with glowing borders on a high contrast dark backdrop",
+            "tool": "stock",
+            "query": "3d isometric dark interface"
+          },
+          {
+            "narration": "They churn out B-roll reels, talking head videos, and carousels to build authority,",
+            "image_prompt": "Clean isometric arrangement of three floating digital media cards representing video reels and carousels, dark background with teal accents",
+            "tool": "stock",
+            "query": "isometric digital media panels"
+          },
+          {
+            "narration": "but high views mean nothing without a real intake system.",
+            "image_prompt": "Isometric dark theme flowchart showing a disconnected funnel pipeline with glowing traffic icons falling off the edge",
+            "tool": "stock",
+            "query": "isometric broken funnel network",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                1
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "I started with a profile cleanup and bio audit,",
+            "image_prompt": "Vector isometric graphic of a sleek user profile card being scanned and recalibrated by glowing teal grid lines, dark theme",
+            "tool": "flux"
+          },
+          {
+            "narration": "which turned passive traffic into active client bookings,",
+            "image_prompt": "Vector isometric visualization of traffic streams merging smoothly into a glowing green booking confirmation node, dark contrast",
+            "tool": "stock",
+            "query": "isometric data flow process",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 1,
+                  "s": 0.3
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "so clear call-to-action lines in captions sent viewers straight to an offer.",
+            "image_prompt": "Isometric dark theme graphic showing glowing text lines flowing directly into a highlighted offer terminal with a single action button",
+            "tool": "flux",
+            "query": "isometric digital call to action"
+          },
+          {
+            "narration": "Then direct outreach through private messaging turned passive viewers into warm leads,",
+            "image_prompt": "Vector motion graphic of private message nodes connecting directly from a dark central hub to glowing client avatars",
+            "tool": "flux",
+            "query": "isometric direct messaging network"
+          },
+          {
+            "narration": "building a predictable client pipeline.",
+            "callout": "CLIENT PIPELINE",
+            "image_prompt": "Isometric futuristic pipeline network illuminated in bright teal accents glowing against a dark high contrast canvas",
+            "tool": "higgsfield",
+            "motion": "Cinematic forward zoom along the glowing isometric client funnel pipeline",
+            "still": "flux",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                2
+              ],
+              "sfx": []
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "A profile receiving thousands of visits can still generate zero client bookings without a intake system.",
+            "supported": true
+          },
+          {
+            "claim": "Content strategies rely on B-roll reels, talking head videos, and carousel posts to drive authority.",
+            "supported": true
+          },
+          {
+            "claim": "Profile optimization and bio audits directly transform page traffic into client bookings.",
+            "supported": true
+          },
+          {
+            "claim": "Direct outreach via discreet messaging converts passive content viewers into warm leads.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. Instagram Strategy to Book More Clients (https://www.youtube.com/watch?v=3OT7kRJu1ys): We cover the most effective content formats for service providers including B roll reels, talking head reels, carousel posts, and Instagram ...\n2. How to Get Clients Through Instagram | Tips for Converting Your Audience (https://brandgoodtime.com/how-to-get-clients-through-instagram/): Make sure what you're offering is clear and simple Always include a Call-To-Action in your Captions + Stories Take advantage of hashtags\n3. How To Find Clients On instagram (Full Guide) (https://www.youtube.com/watch?v=ZlrEW52-v0Q&vl=en-US): Learn how to find clients on Instagram with this comprehensive guide! Whether you're a freelancer, agency owner, or creative professional, ...\n4. Does anyone actually find clients on Instagram? : r/socialmedia (https://www.reddit.com/r/socialmedia/comments/5sl88u/does_anyone_actually_find_clients_on_instagram/): The only way to truly find out is to try. If your clients use it (which they do) it can work for you. It's HOW you use it that matters.\n5. Wanna grow fast and get clients from your posts? That's not gonna happen if (https://www.instagram.com/reel/De2x-D0MvX5/): \n6. Want More Clients From Instagram? Try These 5 Steps! (https://www.youtube.com/watch?v=jnxne8nevgc&vl=en): If you want to start attracting more clients directly from Instagram, this video breaks down five simple, strategic steps you can start ...\n7. How To Turn Your Instagram Followers Into Paying Clients (https://bookedin.com/blog/how-to-turn-instagram-followers-into-clients/): Learn how to turn followers and viewers of your service business's Instagram page into clients with clearer CTAs, proof content, and more.\n8. 10 Proven Strategies: How to get more Clients on Instagram (https://mysocialboutique.co/get-more-clients-on-instagram/): You have no idea where you next client is coming from? Discover 10 proven strategies for gaining clients for your small business on Instagram.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- Save and implement. 👐 [ig_play_count 4751664, like_count 50507, comment_count 15443, share_count 65991]\n- 7. You can verify emails for free using google chips This method is for people.. Who do not have 💲 to spend on softwares! But if you want to scale your business.. Best is to do it using cold-email softwares! Got any questions? Drop them below 👇🏻 —— I’ve mad [ig_play_count 4635750, like_count 64079, comment_count 3237, share_count 1557]\n- Instagram Bio Audit (Nail Tech Edition) 💅 If people are visiting your Instagram but you’re still not getting enough bookings, comment “BOOKED” and I’ll send you my free webinar on growing your beauty business! #beautyentrepreneur #nailtech #instagrambio #clie [ig_play_count 1886001, like_count 98304, comment_count 6275, share_count 44730]\n- Get clients using this simple technique ✅ Wan",
+        "sources": []
+      },
+      "at": 1794580514778
+    },
     {
       "id": "how-blogs-make-millions-in-2026-mwetjvrv",
       "canvas": "16:9",
@@ -969,162 +982,6 @@
         "sources": []
       },
       "at": 1794391637900
-    },
-    {
-      "id": "how-world-war-two-really-ended-mwblp6v8",
-      "canvas": "16:9",
-      "title": "How World War Two Really Ended",
-      "topic": "how the world war ii ended",
-      "pitch": {
-        "title": "How World War Two Really Ended",
-        "hook": "On May eighth, nineteen forty-five, Allied forces celebrated victory in Europe, but half the world was still at war.",
-        "angle": "Most people think World War Two ended instantly with the atomic bomb. In reality, it took nuclear strikes, a massive Soviet army invasion, and an unprecedented royal broadcast to break Japan's final stance.",
-        "key_facts": [
-          "Germany unconditionally surrendered on May eighth, nineteen forty-five, ending the conflict in Europe.",
-          "The United States dropped atomic bombs on Hiroshima on August sixth and Nagasaki on August ninth, nineteen forty-five.",
-          "The Soviet Union launched a massive invasion of Japanese-held Manchuria on August ninth, nineteen forty-five.",
-          "Japan officially signed the surrender documents aboard the USS Missouri on September second, nineteen forty-five."
-        ],
-        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-        "length_seconds": 45,
-        "style": "documentary",
-        "style_reason": "Gives historical events a cinematic museum quality with dramatic depth.",
-        "music": "cinematic-min",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "How World War Two Really Ended",
-        "beats": [
-          {
-            "narration": "On May eighth, nineteen forty-five, victory in Europe was declared, but half the world was still at war,",
-            "image_prompt": "16:9 landscape aspect ratio. A wide painterly historical illustration of Allied soldiers celebrating in ruined European streets, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, subject in lower two-thirds",
-            "tool": "higgsfield",
-            "motion": "slow push forward across the cheering crowd toward the smoky sky",
-            "still": "flux",
-            "callout": "May 8, 1945",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                13
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "because Japan refused to yield, bound by a command that saw surrender as complete dishonor.",
-            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of Japanese military officials seated around a dark wooden war room table, low key lighting, deep shadows, muted earth tones, museum-diorama depth",
-            "tool": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                13
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "You think atomic bombs instantly ended everything when Hiroshima fell August sixth, and Nagasaki three days later,",
-            "image_prompt": "16:9 landscape aspect ratio. Historical footage of a massive smoke plume rising over destroyed terrain, grainy archival look, dramatic contrast",
-            "tool": "stock",
-            "query": "vintage explosion smoke cloud",
-            "callout": "August 1945",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                1
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "but inside Tokyo, military leadership still planned to fight to the last man.",
-            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of silhouettes of generals standing before a illuminated tactical wall map of the Pacific, dramatic chiaroscuro lighting, aged paper texture",
-            "tool": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                5
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "What shattered them was August ninth, when the Soviet Union launched a massive invasion of Manchuria,",
-            "image_prompt": "16:9 landscape aspect ratio. Archival style video of tanks rolling through dusty open plains",
-            "tool": "stock",
-            "query": "tanks moving desert dust",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                1
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "wiping out their entire northern force and leaving them completely cornered,",
-            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of abandoned military encampments across cold northern plains, heavy fog, muted earth tones, dramatic shadows, museum-diorama depth",
-            "tool": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                9
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "so Emperor Hirohito made an unprecedented royal broadcast, ordering his troops to lay down their weapons,",
-            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of a single vintage radio microphone sitting under a bright spotlight on a dark wooden table, dramatic chiaroscuro lighting, aged paper texture",
-            "tool": "flux"
-          },
-          {
-            "narration": "ending it all on September second, nineteen forty-five, aboard the USS Missouri.",
-            "image_prompt": "16:9 landscape aspect ratio. Painterly historical illustration of the massive deck of the USS Missouri surrounded by ocean waters, dramatic horizon lighting, muted golden tones, museum-diorama depth",
-            "tool": "higgsfield",
-            "motion": "cinematic slow pan across the battleship deck toward the open ocean",
-            "still": "flux",
-            "callout": "Sept 2, 1945",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 0,
-                  "s": 0.3
-                }
-              ],
-              "emphasis": [
-                11
-              ],
-              "sfx": []
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Victory in Europe was celebrated on May 8, 1945.",
-            "supported": true
-          },
-          {
-            "claim": "Atomic bombs were dropped on Hiroshima on August 6 and Nagasaki on August 9, 1945.",
-            "supported": true
-          },
-          {
-            "claim": "The Soviet Union launched a massive invasion of Manchuria on August 9, 1945.",
-            "supported": true
-          },
-          {
-            "claim": "Japan officially signed surrender documents aboard the USS Missouri on September 2, 1945.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794370220245
     }
   ],
   "lastRenderAuto": false,
@@ -1136,12 +993,12 @@
   },
   "renders": [
     {
-      "title": "How Blogs Make Millions in 2026",
-      "at": 1794564808050,
-      "project": "how-blogs-make-millions-in-2026-mwetjvrv"
+      "title": "Turn Instagram Views Into Paying Clients",
+      "at": 1794580514778,
+      "project": "turn-instagram-views-into-paying-cli-mwf2wj4q"
     }
   ],
-  "current_project": "how-blogs-make-millions-in-2026-mwetjvrv",
+  "current_project": "turn-instagram-views-into-paying-cli-mwf2wj4q",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1152,15 +1009,13 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "retro-vhs",
     "motion-explainer",
     "documentary",
     "blueprint",
-    "kinetic-news"
+    "kinetic-news",
+    "motion-explainer"
   ],
   "learning": null,
   "styles": {
