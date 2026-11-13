@@ -1,0 +1,1119 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-a-simple-paper-becomes-law-mwf9rd6g",
+ "rev": 1,
+ "title": "How A Simple Paper Becomes Law",
+ "duration": 51.51,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#5AA9FF"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 7.058,
+    "narration": "One single written proposal turns into an official government rule, but you assume a president must sign every single page",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "The hidden ten day rule",
+     "text": "How A Bill Becomes Law",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 7.058,
+    "end": 12.151,
+    "narration": "to make it official, because every textbook says legislation requires a signature,",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "book",
+       "label": "Textbooks"
+      },
+      {
+       "icon": "shield",
+       "label": "The Veto"
+      }
+     ],
+     "title": "The Classic Myth",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.151,
+    "end": 19.123,
+    "narration": "but a bill is just a proposal for a new law or a change to an existing law, so it has to start somewhere simple,",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      "Written proposal",
+      "Assigned to committee"
+     ],
+     "title": "Starting Point",
+     "type": "list"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 19.123,
+    "end": 23.446,
+    "narration": "and once it is introduced, it is assigned to a committee for heavy debate,",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Draft",
+      "Debate",
+      "Vote"
+     ],
+     "title": "Committee Review",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 23.446,
+    "end": 29.917,
+    "narration": "then it has to be approved by both the House and Senate in identical form before reaching the president,",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "House",
+      "value": 1
+     },
+     "prefix": "",
+     "right": {
+      "label": "Senate",
+      "value": 1
+     },
+     "suffix": "",
+     "title": "Dual Approval",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 29.917,
+    "end": 32.175,
+    "narration": "so when the final paperwork lands on the desk,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 2d motion graphics, flat vector illustration of a desk holding a leather folder and a calendar showing ten days"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "da31a0d391bd",
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.57,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 32.175,
+    "end": 35.727,
+    "narration": "you expect a big public signing ceremony,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 2d motion graphics, flat vector illustration of a desk holding a leather folder and a calendar showing ten days"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "da31a0d391bd",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.73,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 35.727,
+    "end": 41.672,
+    "narration": "but if the president does not sign a bill within ten days of presentment while Congress is in session,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Session Clock",
+     "prefix": "",
+     "suffix": "Days",
+     "type": "counter",
+     "value": 10
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 41.672,
+    "end": 46.379,
+    "narration": "the bill automatically becomes law without a single stroke of a pen,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Automatic Enactment",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 46.379,
+    "end": 50.712,
+    "narration": "because the silence of the executive branch finishes the job on its own.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Automatic enactment",
+     "text": "Law Without Ink",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "One",
+     "start": 0.1,
+     "end": 0.438
+    },
+    {
+     "word": "single",
+     "start": 0.45,
+     "end": 0.887
+    },
+    {
+     "word": "written",
+     "start": 0.887,
+     "end": 1.163
+    },
+    {
+     "word": "proposal",
+     "start": 1.175,
+     "end": 1.887
+    },
+    {
+     "word": "turns",
+     "start": 2.007,
+     "end": 2.319
+    },
+    {
+     "word": "into",
+     "start": 2.319,
+     "end": 2.557
+    },
+    {
+     "word": "an",
+     "start": 2.557,
+     "end": 2.632
+    },
+    {
+     "word": "official",
+     "start": 2.632,
+     "end": 3.069
+    },
+    {
+     "word": "government",
+     "start": 3.069,
+     "end": 3.494
+    },
+    {
+     "word": "rule,",
+     "start": 3.494,
+     "end": 3.757
+    },
+    {
+     "word": "but",
+     "start": 3.917,
+     "end": 4.068
+    },
+    {
+     "word": "you",
+     "start": 4.068,
+     "end": 4.193
+    },
+    {
+     "word": "assume",
+     "start": 4.193,
+     "end": 4.53
+    },
+    {
+     "word": "a",
+     "start": 4.53,
+     "end": 4.592
+    },
+    {
+     "word": "president",
+     "start": 4.605,
+     "end": 5.18
+    },
+    {
+     "word": "must",
+     "start": 5.18,
+     "end": 5.417
+    },
+    {
+     "word": "sign",
+     "start": 5.417,
+     "end": 5.855
+    },
+    {
+     "word": "every",
+     "start": 6.017,
+     "end": 6.318
+    },
+    {
+     "word": "single",
+     "start": 6.318,
+     "end": 6.655
+    },
+    {
+     "word": "page",
+     "start": 6.655,
+     "end": 7.118
+    },
+    {
+     "word": "to",
+     "start": 7.118,
+     "end": 7.217
+    },
+    {
+     "word": "make",
+     "start": 7.23,
+     "end": 7.48
+    },
+    {
+     "word": "it",
+     "start": 7.48,
+     "end": 7.53
+    },
+    {
+     "word": "official,",
+     "start": 7.53,
+     "end": 8.068
+    },
+    {
+     "word": "because",
+     "start": 8.228,
+     "end": 8.553
+    },
+    {
+     "word": "every",
+     "start": 8.565,
+     "end": 8.841
+    },
+    {
+     "word": "textbook",
+     "start": 8.841,
+     "end": 9.415
+    },
+    {
+     "word": "says",
+     "start": 9.535,
+     "end": 9.798
+    },
+    {
+     "word": "legislation",
+     "start": 9.81,
+     "end": 10.498
+    },
+    {
+     "word": "requires",
+     "start": 10.498,
+     "end": 10.886
+    },
+    {
+     "word": "a",
+     "start": 10.886,
+     "end": 10.923
+    },
+    {
+     "word": "signature,",
+     "start": 10.935,
+     "end": 11.511
+    },
+    {
+     "word": "but",
+     "start": 12.211,
+     "end": 12.323
+    },
+    {
+     "word": "a",
+     "start": 12.323,
+     "end": 12.385
+    },
+    {
+     "word": "bill",
+     "start": 12.385,
+     "end": 12.686
+    },
+    {
+     "word": "is",
+     "start": 12.686,
+     "end": 12.798
+    },
+    {
+     "word": "just",
+     "start": 12.798,
+     "end": 13.01
+    },
+    {
+     "word": "a",
+     "start": 13.01,
+     "end": 13.061
+    },
+    {
+     "word": "proposal",
+     "start": 13.073,
+     "end": 13.785
+    },
+    {
+     "word": "for",
+     "start": 13.798,
+     "end": 13.973
+    },
+    {
+     "word": "a",
+     "start": 13.985,
+     "end": 14.01
+    },
+    {
+     "word": "new",
+     "start": 14.023,
+     "end": 14.311
+    },
+    {
+     "word": "law",
+     "start": 14.311,
+     "end": 14.773
+    },
+    {
+     "word": "or",
+     "start": 14.836,
+     "end": 15.01
+    },
+    {
+     "word": "a",
+     "start": 15.023,
+     "end": 15.061
+    },
+    {
+     "word": "change",
+     "start": 15.073,
+     "end": 15.535
+    },
+    {
+     "word": "to",
+     "start": 15.548,
+     "end": 15.623
+    },
+    {
+     "word": "an",
+     "start": 15.635,
+     "end": 15.711
+    },
+    {
+     "word": "existing",
+     "start": 15.711,
+     "end": 16.223
+    },
+    {
+     "word": "law,",
+     "start": 16.223,
+     "end": 16.586
+    },
+    {
+     "word": "so",
+     "start": 16.746,
+     "end": 16.909
+    },
+    {
+     "word": "it",
+     "start": 16.909,
+     "end": 16.959
+    },
+    {
+     "word": "has",
+     "start": 16.959,
+     "end": 17.171
+    },
+    {
+     "word": "to",
+     "start": 17.171,
+     "end": 17.246
+    },
+    {
+     "word": "start",
+     "start": 17.259,
+     "end": 17.509
+    },
+    {
+     "word": "somewhere",
+     "start": 17.509,
+     "end": 17.959
+    },
+    {
+     "word": "simple,",
+     "start": 17.971,
+     "end": 18.483
+    },
+    {
+     "word": "and",
+     "start": 19.183,
+     "end": 19.282
+    },
+    {
+     "word": "once",
+     "start": 19.295,
+     "end": 19.532
+    },
+    {
+     "word": "it",
+     "start": 19.532,
+     "end": 19.608
+    },
+    {
+     "word": "is",
+     "start": 19.608,
+     "end": 19.695
+    },
+    {
+     "word": "introduced,",
+     "start": 19.695,
+     "end": 20.383
+    },
+    {
+     "word": "it",
+     "start": 20.543,
+     "end": 20.606
+    },
+    {
+     "word": "is",
+     "start": 20.606,
+     "end": 20.693
+    },
+    {
+     "word": "assigned",
+     "start": 20.693,
+     "end": 21.156
+    },
+    {
+     "word": "to",
+     "start": 21.156,
+     "end": 21.243
+    },
+    {
+     "word": "a",
+     "start": 21.243,
+     "end": 21.306
+    },
+    {
+     "word": "committee",
+     "start": 21.318,
+     "end": 21.843
+    },
+    {
+     "word": "for",
+     "start": 21.856,
+     "end": 22.031
+    },
+    {
+     "word": "heavy",
+     "start": 22.031,
+     "end": 22.293
+    },
+    {
+     "word": "debate,",
+     "start": 22.293,
+     "end": 22.806
+    },
+    {
+     "word": "then",
+     "start": 23.506,
+     "end": 23.619
+    },
+    {
+     "word": "it",
+     "start": 23.619,
+     "end": 23.681
+    },
+    {
+     "word": "has",
+     "start": 23.694,
+     "end": 23.907
+    },
+    {
+     "word": "to",
+     "start": 23.919,
+     "end": 23.994
+    },
+    {
+     "word": "be",
+     "start": 23.994,
+     "end": 24.119
+    },
+    {
+     "word": "approved",
+     "start": 24.119,
+     "end": 24.744
+    },
+    {
+     "word": "by",
+     "start": 24.744,
+     "end": 24.931
+    },
+    {
+     "word": "both",
+     "start": 25.069,
+     "end": 25.431
+    },
+    {
+     "word": "the",
+     "start": 25.431,
+     "end": 25.519
+    },
+    {
+     "word": "House",
+     "start": 25.519,
+     "end": 25.881
+    },
+    {
+     "word": "and",
+     "start": 25.881,
+     "end": 25.956
+    },
+    {
+     "word": "Senate",
+     "start": 25.956,
+     "end": 26.407
+    },
+    {
+     "word": "in",
+     "start": 26.469,
+     "end": 26.581
+    },
+    {
+     "word": "identical",
+     "start": 26.581,
+     "end": 27.107
+    },
+    {
+     "word": "form",
+     "start": 27.107,
+     "end": 27.557
+    },
+    {
+     "word": "before",
+     "start": 27.677,
+     "end": 28.265
+    },
+    {
+     "word": "reaching",
+     "start": 28.277,
+     "end": 28.64
+    },
+    {
+     "word": "the",
+     "start": 28.64,
+     "end": 28.702
+    },
+    {
+     "word": "president,",
+     "start": 28.715,
+     "end": 29.277
+    },
+    {
+     "word": "so",
+     "start": 29.977,
+     "end": 30.089
+    },
+    {
+     "word": "when",
+     "start": 30.102,
+     "end": 30.202
+    },
+    {
+     "word": "the",
+     "start": 30.202,
+     "end": 30.277
+    },
+    {
+     "word": "final",
+     "start": 30.289,
+     "end": 30.615
+    },
+    {
+     "word": "paperwork",
+     "start": 30.615,
+     "end": 31.039
+    },
+    {
+     "word": "lands",
+     "start": 31.052,
+     "end": 31.315
+    },
+    {
+     "word": "on",
+     "start": 31.327,
+     "end": 31.402
+    },
+    {
+     "word": "the",
+     "start": 31.402,
+     "end": 31.464
+    },
+    {
+     "word": "desk,",
+     "start": 31.464,
+     "end": 32.015
+    },
+    {
+     "word": "you",
+     "start": 32.175,
+     "end": 32.388
+    },
+    {
+     "word": "expect",
+     "start": 32.388,
+     "end": 32.9
+    },
+    {
+     "word": "a",
+     "start": 33.037,
+     "end": 33.15
+    },
+    {
+     "word": "big",
+     "start": 33.3,
+     "end": 33.6
+    },
+    {
+     "word": "public",
+     "start": 33.613,
+     "end": 33.988
+    },
+    {
+     "word": "signing",
+     "start": 34.0,
+     "end": 34.425
+    },
+    {
+     "word": "ceremony,",
+     "start": 34.425,
+     "end": 35.087
+    },
+    {
+     "word": "but",
+     "start": 35.787,
+     "end": 35.899
+    },
+    {
+     "word": "if",
+     "start": 35.899,
+     "end": 35.961
+    },
+    {
+     "word": "the",
+     "start": 35.961,
+     "end": 36.049
+    },
+    {
+     "word": "president",
+     "start": 36.049,
+     "end": 36.486
+    },
+    {
+     "word": "does",
+     "start": 36.486,
+     "end": 36.611
+    },
+    {
+     "word": "not",
+     "start": 36.611,
+     "end": 36.912
+    },
+    {
+     "word": "sign",
+     "start": 36.912,
+     "end": 37.224
+    },
+    {
+     "word": "a",
+     "start": 37.224,
+     "end": 37.287
+    },
+    {
+     "word": "bill",
+     "start": 37.287,
+     "end": 37.599
+    },
+    {
+     "word": "within",
+     "start": 37.599,
+     "end": 37.999
+    },
+    {
+     "word": "ten",
+     "start": 38.086,
+     "end": 38.374
+    },
+    {
+     "word": "days",
+     "start": 38.374,
+     "end": 38.637
+    },
+    {
+     "word": "of",
+     "start": 38.649,
+     "end": 38.699
+    },
+    {
+     "word": "presentment",
+     "start": 38.699,
+     "end": 39.287
+    },
+    {
+     "word": "while",
+     "start": 39.407,
+     "end": 39.632
+    },
+    {
+     "word": "Congress",
+     "start": 39.644,
+     "end": 40.294
+    },
+    {
+     "word": "is",
+     "start": 40.307,
+     "end": 40.419
+    },
+    {
+     "word": "in",
+     "start": 40.419,
+     "end": 40.532
+    },
+    {
+     "word": "session,",
+     "start": 40.544,
+     "end": 41.032
+    },
+    {
+     "word": "the",
+     "start": 41.732,
+     "end": 41.832
+    },
+    {
+     "word": "bill",
+     "start": 41.845,
+     "end": 42.132
+    },
+    {
+     "word": "automatically",
+     "start": 42.22,
+     "end": 42.907
+    },
+    {
+     "word": "becomes",
+     "start": 42.919,
+     "end": 43.357
+    },
+    {
+     "word": "law",
+     "start": 43.357,
+     "end": 43.882
+    },
+    {
+     "word": "without",
+     "start": 44.002,
+     "end": 44.364
+    },
+    {
+     "word": "a",
+     "start": 44.377,
+     "end": 44.415
+    },
+    {
+     "word": "single",
+     "start": 44.427,
+     "end": 44.864
+    },
+    {
+     "word": "stroke",
+     "start": 44.877,
+     "end": 45.227
+    },
+    {
+     "word": "of",
+     "start": 45.227,
+     "end": 45.29
+    },
+    {
+     "word": "a",
+     "start": 45.302,
+     "end": 45.352
+    },
+    {
+     "word": "pen,",
+     "start": 45.352,
+     "end": 45.739
+    },
+    {
+     "word": "because",
+     "start": 46.439,
+     "end": 46.726
+    },
+    {
+     "word": "the",
+     "start": 46.726,
+     "end": 46.826
+    },
+    {
+     "word": "silence",
+     "start": 46.826,
+     "end": 47.402
+    },
+    {
+     "word": "of",
+     "start": 47.402,
+     "end": 47.452
+    },
+    {
+     "word": "the",
+     "start": 47.452,
+     "end": 47.514
+    },
+    {
+     "word": "executive",
+     "start": 47.527,
+     "end": 48.152
+    },
+    {
+     "word": "branch",
+     "start": 48.164,
+     "end": 48.639
+    },
+    {
+     "word": "finishes",
+     "start": 48.764,
+     "end": 49.302
+    },
+    {
+     "word": "the",
+     "start": 49.314,
+     "end": 49.402
+    },
+    {
+     "word": "job",
+     "start": 49.402,
+     "end": 49.777
+    },
+    {
+     "word": "on",
+     "start": 49.777,
+     "end": 49.889
+    },
+    {
+     "word": "its",
+     "start": 49.902,
+     "end": 50.052
+    },
+    {
+     "word": "own.",
+     "start": 50.052,
+     "end": 50.277
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "One single written proposal turns into an official government rule, but you assume a president must sign every single page to make it official, because every textbook says legislation requires a signature, but a bill is just a proposal for a new law or a change to an existing law, so it has to start somewhere simple, and once it is introduced, it is assigned to a committee for heavy debate, then it has to be approved by both the House and Senate in identical form before reaching the president, so when the final paperwork lands on the desk, you expect a big public signing ceremony, but if the president does not sign a bill within ten days of presentment while Congress is in session, the bill automatically becomes law without a single stroke of a pen, because the silence of the executive branch finishes the job on its own."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 12.67,
+    "volume": 0.3,
+    "anchor": "v3",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 7.01,
+    "text": "government",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 7.01,
+    "opacity": 0.35,
+    "seed": 3.07
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v3",
+    "delay": 0.4,
+    "start": 12.55,
+    "end": 19.07,
+    "asset": "document",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794592182989,
+  "updated": 1794592182993,
+  "topic": "a about how a bill becomes law",
+  "hook": "One single written proposal turns into an official government rule.",
+  "image_style": "clean 2d motion graphics, flat vector illustration, minimalist style",
+  "format": "landscape",
+  "assets_release": "project-how-a-simple-paper-becomes-law-mwf9rd6g",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "One single written proposal turns into an official government rule.",
+   "music": "tech-pulse",
+   "project_id": "how-a-simple-paper-becomes-law-mwf9rd6g",
+   "style": "clean 2d motion graphics, flat vector illustration, minimalist style",
+   "style_preset": "motion-explainer",
+   "title": "How A Simple Paper Becomes Law",
+   "topic": "a about how a bill becomes law",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"One single written proposal turns i...\"): the hook. No subject cutout, so I put GOVERNMENT in the top band where it cannot cover the face.",
+   "Beat 3 (\"but a bill is just a proposal for a...\"): a \"document\" illustration builds itself on the right after the words land.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 6: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}
