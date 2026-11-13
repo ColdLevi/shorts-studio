@@ -1,153 +1,18 @@
 {
-  "last_update": 312538449,
-  "time": 1794552404280,
-  "stage": "script",
+  "last_update": 312538451,
+  "time": 1794552469837,
+  "stage": "idle",
   "topic": "how we can sell digital products and money",
   "research": {
     "text": "",
     "sources": []
   },
-  "pitch": {
-    "title": "The Zero Marginal Cost Money Engine",
-    "hook": "A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
-    "angle": "Most people assume scaling a business requires buying physical inventory upfront. Digital products break this by costing almost zero dollars to duplicate and deliver endlessly.",
-    "key_facts": [
-      "Digital products operate on near-zero marginal cost per added unit sold",
-      "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
-      "Automated payment gateways deliver digital files to buyers in under three seconds without human labor"
-    ],
-    "visual_style": "sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas",
-    "length_seconds": 45,
-    "style": "blueprint",
-    "style_reason": "Technical blueprint visuals cleanly diagram the automated zero-cost file delivery system.",
-    "music": "tech-pulse",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "The Zero Marginal Cost Money Engine",
-    "beats": [
-      {
-        "narration": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a single digital file hovering above a glowing server stack",
-        "cues": {
-          "pauses": [
-            {
-              "after": 17,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "Most people assume scaling a business requires buying physical inventory upfront, but digital files break this rule by costing almost zero dollars to duplicate.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, rows of identical glowing data packets multiplying endlessly",
-        "cues": {
-          "pauses": [
-            {
-              "after": 11,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "You think creating digital income started with modern apps, but back in nineteen ninety six, Bill Gates published his famous essay Content is King, predicting exact digital publishing economics.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, an old terminal screen displaying text lines in glowing gold wireframe style",
-        "cues": {
-          "pauses": [
-            {
-              "after": 9,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "He laid out how electronic networks would let publishers distribute information worldwide for almost nothing, so the software copy costs nothing to make a million times.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a global grid of golden nodes interconnected by thin glowing lines",
-        "cues": {
-          "pauses": [
-            {
-              "after": 15,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "Then automated payment gateways arrived to handle the friction, delivering digital files to buyers in under three seconds without a single human worker touching the order.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a lightning fast schematic data stream flowing through a payment gateway valve",
-        "cues": {
-          "pauses": [
-            {
-              "after": 9,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "You just upload the asset once, and the server handles a million identical sales while you sleep.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a solitary glowing server rack pulsing with rhythmic gold light waves",
-        "cues": {
-          "pauses": [
-            {
-              "after": 6,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        },
-        "tool": "flux"
-      },
-      {
-        "narration": "The digital money engine was just built on simpler rules.",
-        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a master blueprint gear turning smoothly inside a golden framework",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Digital products operate on near zero marginal cost per added unit sold",
-        "supported": true
-      },
-      {
-        "claim": "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
-        "supported": true
-      },
-      {
-        "claim": "Automated payment gateways deliver digital files to buyers in under three seconds without human labor",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/tools",
-      "t": 1794464413765
-    },
     {
       "role": "user",
       "text": "Lets create a video on how API works",
@@ -222,10 +87,158 @@
       "role": "bot",
       "text": "Wrote the script for \"The Zero Marginal Cost Money Engine\"",
       "t": 1794552404279
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"The Zero Marginal Cost Money Engine\"",
+      "t": 1794552469837
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "the-zero-marginal-cost-money-engine-mwem7fiy",
+      "canvas": "16:9",
+      "title": "The Zero Marginal Cost Money Engine",
+      "topic": "how we can sell digital products and money",
+      "pitch": {
+        "title": "The Zero Marginal Cost Money Engine",
+        "hook": "A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
+        "angle": "Most people assume scaling a business requires buying physical inventory upfront. Digital products break this by costing almost zero dollars to duplicate and deliver endlessly.",
+        "key_facts": [
+          "Digital products operate on near-zero marginal cost per added unit sold",
+          "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
+          "Automated payment gateways deliver digital files to buyers in under three seconds without human labor"
+        ],
+        "visual_style": "sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas",
+        "length_seconds": 45,
+        "style": "blueprint",
+        "style_reason": "Technical blueprint visuals cleanly diagram the automated zero-cost file delivery system.",
+        "music": "tech-pulse",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "The Zero Marginal Cost Money Engine",
+        "beats": [
+          {
+            "narration": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a single digital file hovering above a glowing server stack",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 17,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "Most people assume scaling a business requires buying physical inventory upfront, but digital files break this rule by costing almost zero dollars to duplicate.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, rows of identical glowing data packets multiplying endlessly",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 11,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "You think creating digital income started with modern apps, but back in nineteen ninety six, Bill Gates published his famous essay Content is King, predicting exact digital publishing economics.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, an old terminal screen displaying text lines in glowing gold wireframe style",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 9,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "He laid out how electronic networks would let publishers distribute information worldwide for almost nothing, so the software copy costs nothing to make a million times.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a global grid of golden nodes interconnected by thin glowing lines",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 15,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "Then automated payment gateways arrived to handle the friction, delivering digital files to buyers in under three seconds without a single human worker touching the order.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a lightning fast schematic data stream flowing through a payment gateway valve",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 9,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "You just upload the asset once, and the server handles a million identical sales while you sleep.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a solitary glowing server rack pulsing with rhythmic gold light waves",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 6,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            },
+            "tool": "flux"
+          },
+          {
+            "narration": "The digital money engine was just built on simpler rules.",
+            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a master blueprint gear turning smoothly inside a golden framework",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Digital products operate on near zero marginal cost per added unit sold",
+            "supported": true
+          },
+          {
+            "claim": "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
+            "supported": true
+          },
+          {
+            "claim": "Automated payment gateways deliver digital files to buyers in under three seconds without human labor",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "",
+        "sources": []
+      },
+      "at": 1794552469837
+    },
     {
       "id": "treating-her-right-with-ancient-humo-mwdg8ek9",
       "canvas": "16:9",
@@ -964,161 +977,6 @@
         "sources": []
       },
       "at": 1794365572811
-    },
-    {
-      "id": "cheese-the-90s-fast-mwai2n89",
-      "canvas": "9:16",
-      "title": "Cheese the 90s Fast",
-      "topic": "how to cheese the 90s, 9:16 format, purely",
-      "pitch": {
-        "title": "Cheese the 90s Fast",
-        "hook": "A neon cassette spins in a dark room.",
-        "angle": "Creators assume 90s vibes feel overused. A few retro tricks turn any clip into fresh nostalgia.",
-        "key_facts": [
-          "Neon color palettes dominated MTV branding throughout the 1990s",
-          "VHS tapes were the primary home video format from 1990 to 1999",
-          "Dial‑up modems peaked at 56 kbps in 1995, producing the iconic connection sound",
-          "Pixel art rose from early console games like Super Mario World released in 1990"
-        ],
-        "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast",
-        "length_seconds": 90,
-        "style": "motion-explainer",
-        "style_reason": "captures bright retro vibe crisply",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "vertical"
-      },
-      "script": {
-        "title": "Cheese the 90s Fast",
-        "beats": [
-          {
-            "narration": "A neon cassette spins in a dark room,",
-            "image_prompt": "clean flat vector illustration of a glowing neon cassette tape spinning on a dark background, bold simple shapes, high contrast",
-            "tool": "higgsfield",
-            "motion": "Slow rotation of the cassette with pulsing neon glow lighting effects."
-          },
-          {
-            "narration": "because creators assume nineties vibes are totally overused,",
-            "image_prompt": "clean flat vector illustration of a vintage television showing abstract static lines, dark background, bold simple shapes, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "but neon color palettes actually dominated MTV branding throughout the nineteen nineties,",
-            "image_prompt": "clean flat vector illustration of a glowing retro music television logo with vibrant teal and pink tones on a dark background",
-            "tool": "flux"
-          },
-          {
-            "narration": "so adding bright primary shades instantly revives that era,",
-            "image_prompt": "clean flat vector illustration of bold abstract geometric shapes in bright teal and orange, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "and VHS tapes were the primary home video format from nineteen ninety to nineteen ninety nine,",
-            "image_prompt": "clean flat vector illustration of a chunky black video cassette tape with a bright teal label, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "meaning every digital clip needs that distinct analog grain to feel authentic,",
-            "image_prompt": "clean flat vector illustration of a computer monitor with horizontal scanlines and a glowing teal frame on a dark background",
-            "tool": "flux"
-          },
-          {
-            "narration": "because dial up modems peaked at fifty six kbps in nineteen ninety five,",
-            "image_prompt": "clean flat vector illustration of an old desktop computer connected to a chunky modem with glowing cables, dark background",
-            "tool": "flux"
-          },
-          {
-            "narration": "producing that iconic connection sound everyone remembers,",
-            "image_prompt": "clean flat vector illustration of sound wave frequency lines glowing in bright teal against a dark background, bold simple shapes",
-            "tool": "flux"
-          },
-          {
-            "narration": "so layering audio static transforms a modern edit immediately,",
-            "image_prompt": "clean flat vector illustration of a vintage audio mixing board with bright neon sliders, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "while pixel art rose straight from early console games like Super Mario World released in nineteen ninety,",
-            "image_prompt": "clean flat vector illustration of a pixelated arcade game coin floating above a block, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "giving modern transitions a blocky retro texture,",
-            "image_prompt": "clean flat vector illustration of a retro video game health bar with glowing squares, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "so you skip boring filters and build real nostalgia from scratch,",
-            "image_prompt": "clean flat vector illustration of a glowing neon pencil sketching a retro game controller, dark background, high contrast",
-            "tool": "higgsfield",
-            "motion": "Camera zooms in smoothly on the glowing controller as lines flash."
-          },
-          {
-            "narration": "because throwing random effects at a timeline wastes hours,",
-            "image_prompt": "clean flat vector illustration of a confused robot sitting in front of a messy computer screen, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "while a targeted retro color grade fixes your pacing instantly,",
-            "image_prompt": "clean flat vector illustration of a video timeline slider snapping neatly into place, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "and mixing MTV neon with chunky pixel fonts creates an elite visual contrast,",
-            "image_prompt": "clean flat vector illustration of bold typography spelling retro in bright teal against a dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "so your viewers stop scrolling to watch the whole loop,",
-            "image_prompt": "clean flat vector illustration of a smartphone screen displaying a glowing heart icon, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "because nobody clicks away from clean nostalgic design,",
-            "image_prompt": "clean flat vector illustration of an old handheld gaming console glowing brightly in the dark, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "and applying these three simple tricks takes less than two minutes,",
-            "image_prompt": "clean flat vector illustration of a digital stopwatch counting down with teal numbers, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "so open your editor right now and test them out,",
-            "image_prompt": "clean flat vector illustration of a computer mouse clicking a glowing play button, dark background, high contrast",
-            "tool": "flux"
-          },
-          {
-            "narration": "because your next upload deserves that vintage nineties magic.",
-            "image_prompt": "clean flat vector illustration of a glowing neon star bursting on a dark background, bold simple shapes, high contrast",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Neon color palettes dominated MTV branding throughout the 1990s",
-            "supported": true
-          },
-          {
-            "claim": "VHS tapes were the primary home video format from 1990 to 1999",
-            "supported": true
-          },
-          {
-            "claim": "Dial-up modems peaked at 56 kbps in 1995",
-            "supported": true
-          },
-          {
-            "claim": "Pixel art rose from early console games like Super Mario World released in 1990",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794303663359
     }
   ],
   "lastRenderAuto": false,
@@ -1130,12 +988,12 @@
   },
   "renders": [
     {
-      "title": "Treating Her Right With Ancient Humor",
-      "at": 1794481971496,
-      "project": "treating-her-right-with-ancient-humo-mwdg8ek9"
+      "title": "The Zero Marginal Cost Money Engine",
+      "at": 1794552469837,
+      "project": "the-zero-marginal-cost-money-engine-mwem7fiy"
     }
   ],
-  "current_project": "treating-her-right-with-ancient-humo-mwdg8ek9",
+  "current_project": "the-zero-marginal-cost-money-engine-mwem7fiy",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1145,15 +1003,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "upload-5",
     "motion-explainer",
     "retro-vhs",
     "motion-explainer",
-    "documentary"
+    "documentary",
+    "blueprint"
   ],
   "learning": null,
   "styles": {
