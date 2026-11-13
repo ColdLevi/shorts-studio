@@ -1,0 +1,772 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-blogs-actually-make-money-mwf80ue2",
+ "rev": 1,
+ "title": "How Blogs Actually Make Money",
+ "duration": 40.93,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "preset": "bold-pop",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.383,
+    "narration": "In two thousand twenty-six, millions of blog posts flood the web daily",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a massive wall of glowing glowing screens with millions of tiny blog post icons floating upward"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b243202b1df9",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.383,
+    "end": 8.423,
+    "narration": "while ninety-nine percent of creators fight over public follower counts,",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a massive wall of glowing glowing screens with millions of tiny blog post icons floating upward"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b243202b1df9",
+    "cam": {
+     "move": "drift",
+     "amp": 0.78,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.423,
+    "end": 16.53,
+    "narration": "because most writers assume blogs get rich from viral traffic and banner ads, / but real revenue comes from capturing email readers",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "because most writers assume blogs get",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.53,
+    "end": 20.387,
+    "narration": "to sell targeted digital products and affiliate recommendations,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a sleek email inbox envelope sorting golden digital course boxes and affiliate link badges"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9a9b38919153",
+    "cam": {
+     "move": "truck",
+     "amp": 0.76,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 20.387,
+    "end": 25.185,
+    "narration": "/ so building a direct reader list beats chasing empty clicks,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a sleek email inbox envelope sorting golden digital course boxes and affiliate link badges"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "9a9b38919153",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v6",
+    "start": 25.185,
+    "end": 32.298,
+    "narration": "since ad networks like Google AdSense only generate income by showing automated ad banners on post pages,",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 7.4,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a miniature automated web server rack flashing green lights beside a glowing search engine logo",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "b4cab7231fcd"
+   },
+   {
+    "id": "v7",
+    "start": 32.298,
+    "end": 40.128,
+    "narration": "while smart creators focus on direct digital product sales like courses, / because that turns casual visitors into steady income.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "while smart creators focus on direct",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.2
+    },
+    {
+     "word": "two",
+     "start": 0.212,
+     "end": 0.375
+    },
+    {
+     "word": "thousand",
+     "start": 0.375,
+     "end": 0.713
+    },
+    {
+     "word": "twenty-six,",
+     "start": 0.725,
+     "end": 1.538
+    },
+    {
+     "word": "millions",
+     "start": 1.725,
+     "end": 2.263
+    },
+    {
+     "word": "of",
+     "start": 2.275,
+     "end": 2.35
+    },
+    {
+     "word": "blog",
+     "start": 2.362,
+     "end": 2.737
+    },
+    {
+     "word": "posts",
+     "start": 2.737,
+     "end": 3.1
+    },
+    {
+     "word": "flood",
+     "start": 3.1,
+     "end": 3.462
+    },
+    {
+     "word": "the",
+     "start": 3.475,
+     "end": 3.55
+    },
+    {
+     "word": "web",
+     "start": 3.55,
+     "end": 3.85
+    },
+    {
+     "word": "daily",
+     "start": 3.85,
+     "end": 4.263
+    },
+    {
+     "word": "while",
+     "start": 4.383,
+     "end": 4.583
+    },
+    {
+     "word": "ninety-nine",
+     "start": 4.583,
+     "end": 5.358
+    },
+    {
+     "word": "percent",
+     "start": 5.358,
+     "end": 5.733
+    },
+    {
+     "word": "of",
+     "start": 5.746,
+     "end": 5.796
+    },
+    {
+     "word": "creators",
+     "start": 5.808,
+     "end": 6.258
+    },
+    {
+     "word": "fight",
+     "start": 6.258,
+     "end": 6.733
+    },
+    {
+     "word": "over",
+     "start": 6.883,
+     "end": 7.083
+    },
+    {
+     "word": "public",
+     "start": 7.096,
+     "end": 7.408
+    },
+    {
+     "word": "follower",
+     "start": 7.408,
+     "end": 7.783
+    },
+    {
+     "word": "counts,",
+     "start": 7.783,
+     "end": 8.295
+    },
+    {
+     "word": "because",
+     "start": 8.483,
+     "end": 8.771
+    },
+    {
+     "word": "most",
+     "start": 8.783,
+     "end": 9.083
+    },
+    {
+     "word": "writers",
+     "start": 9.096,
+     "end": 9.433
+    },
+    {
+     "word": "assume",
+     "start": 9.445,
+     "end": 9.808
+    },
+    {
+     "word": "blogs",
+     "start": 9.808,
+     "end": 10.195
+    },
+    {
+     "word": "get",
+     "start": 10.195,
+     "end": 10.483
+    },
+    {
+     "word": "rich",
+     "start": 10.483,
+     "end": 10.708
+    },
+    {
+     "word": "from",
+     "start": 10.72,
+     "end": 10.883
+    },
+    {
+     "word": "viral",
+     "start": 10.883,
+     "end": 11.258
+    },
+    {
+     "word": "traffic",
+     "start": 11.271,
+     "end": 11.67
+    },
+    {
+     "word": "and",
+     "start": 11.67,
+     "end": 11.72
+    },
+    {
+     "word": "banner",
+     "start": 11.72,
+     "end": 12.083
+    },
+    {
+     "word": "ads,",
+     "start": 12.083,
+     "end": 12.458
+    },
+    {
+     "word": "/",
+     "start": 12.618,
+     "end": 13.23
+    },
+    {
+     "word": "but",
+     "start": 13.35,
+     "end": 13.625
+    },
+    {
+     "word": "real",
+     "start": 13.637,
+     "end": 13.9
+    },
+    {
+     "word": "revenue",
+     "start": 13.9,
+     "end": 14.438
+    },
+    {
+     "word": "comes",
+     "start": 14.558,
+     "end": 14.845
+    },
+    {
+     "word": "from",
+     "start": 14.845,
+     "end": 14.995
+    },
+    {
+     "word": "capturing",
+     "start": 15.007,
+     "end": 15.582
+    },
+    {
+     "word": "email",
+     "start": 15.595,
+     "end": 15.983
+    },
+    {
+     "word": "readers",
+     "start": 15.983,
+     "end": 16.47
+    },
+    {
+     "word": "to",
+     "start": 16.59,
+     "end": 16.677
+    },
+    {
+     "word": "sell",
+     "start": 16.689,
+     "end": 17.09
+    },
+    {
+     "word": "targeted",
+     "start": 17.09,
+     "end": 17.652
+    },
+    {
+     "word": "digital",
+     "start": 17.664,
+     "end": 17.977
+    },
+    {
+     "word": "products",
+     "start": 17.977,
+     "end": 18.527
+    },
+    {
+     "word": "and",
+     "start": 18.702,
+     "end": 18.877
+    },
+    {
+     "word": "affiliate",
+     "start": 18.877,
+     "end": 19.34
+    },
+    {
+     "word": "recommendations,",
+     "start": 19.352,
+     "end": 20.227
+    },
+    {
+     "word": "/",
+     "start": 20.387,
+     "end": 20.937
+    },
+    {
+     "word": "so",
+     "start": 21.038,
+     "end": 21.325
+    },
+    {
+     "word": "building",
+     "start": 21.337,
+     "end": 21.675
+    },
+    {
+     "word": "a",
+     "start": 21.675,
+     "end": 21.725
+    },
+    {
+     "word": "direct",
+     "start": 21.725,
+     "end": 22.113
+    },
+    {
+     "word": "reader",
+     "start": 22.113,
+     "end": 22.538
+    },
+    {
+     "word": "list",
+     "start": 22.658,
+     "end": 23.008
+    },
+    {
+     "word": "beats",
+     "start": 23.008,
+     "end": 23.482
+    },
+    {
+     "word": "chasing",
+     "start": 23.633,
+     "end": 24.17
+    },
+    {
+     "word": "empty",
+     "start": 24.258,
+     "end": 24.508
+    },
+    {
+     "word": "clicks,",
+     "start": 24.508,
+     "end": 25.045
+    },
+    {
+     "word": "since",
+     "start": 25.245,
+     "end": 25.445
+    },
+    {
+     "word": "ad",
+     "start": 25.445,
+     "end": 25.645
+    },
+    {
+     "word": "networks",
+     "start": 25.645,
+     "end": 26.12
+    },
+    {
+     "word": "like",
+     "start": 26.133,
+     "end": 26.383
+    },
+    {
+     "word": "Google",
+     "start": 26.482,
+     "end": 26.833
+    },
+    {
+     "word": "AdSense",
+     "start": 26.833,
+     "end": 27.495
+    },
+    {
+     "word": "only",
+     "start": 27.62,
+     "end": 27.92
+    },
+    {
+     "word": "generate",
+     "start": 27.92,
+     "end": 28.37
+    },
+    {
+     "word": "income",
+     "start": 28.383,
+     "end": 28.92
+    },
+    {
+     "word": "by",
+     "start": 29.04,
+     "end": 29.378
+    },
+    {
+     "word": "showing",
+     "start": 29.478,
+     "end": 29.878
+    },
+    {
+     "word": "automated",
+     "start": 29.99,
+     "end": 30.478
+    },
+    {
+     "word": "ad",
+     "start": 30.478,
+     "end": 30.691
+    },
+    {
+     "word": "banners",
+     "start": 30.691,
+     "end": 31.028
+    },
+    {
+     "word": "on",
+     "start": 31.028,
+     "end": 31.291
+    },
+    {
+     "word": "post",
+     "start": 31.411,
+     "end": 31.649
+    },
+    {
+     "word": "pages,",
+     "start": 31.649,
+     "end": 32.198
+    },
+    {
+     "word": "while",
+     "start": 32.358,
+     "end": 32.546
+    },
+    {
+     "word": "smart",
+     "start": 32.558,
+     "end": 32.883
+    },
+    {
+     "word": "creators",
+     "start": 32.883,
+     "end": 33.296
+    },
+    {
+     "word": "focus",
+     "start": 33.296,
+     "end": 33.671
+    },
+    {
+     "word": "on",
+     "start": 33.671,
+     "end": 33.758
+    },
+    {
+     "word": "direct",
+     "start": 33.758,
+     "end": 34.233
+    },
+    {
+     "word": "digital",
+     "start": 34.245,
+     "end": 34.546
+    },
+    {
+     "word": "product",
+     "start": 34.546,
+     "end": 34.87
+    },
+    {
+     "word": "sales",
+     "start": 34.87,
+     "end": 35.233
+    },
+    {
+     "word": "like",
+     "start": 35.233,
+     "end": 35.408
+    },
+    {
+     "word": "courses,",
+     "start": 35.421,
+     "end": 36.095
+    },
+    {
+     "word": "/",
+     "start": 36.255,
+     "end": 36.818
+    },
+    {
+     "word": "because",
+     "start": 36.831,
+     "end": 37.093
+    },
+    {
+     "word": "that",
+     "start": 37.093,
+     "end": 37.255
+    },
+    {
+     "word": "turns",
+     "start": 37.255,
+     "end": 37.53
+    },
+    {
+     "word": "casual",
+     "start": 37.53,
+     "end": 38.081
+    },
+    {
+     "word": "visitors",
+     "start": 38.081,
+     "end": 38.706
+    },
+    {
+     "word": "into",
+     "start": 38.793,
+     "end": 38.968
+    },
+    {
+     "word": "steady",
+     "start": 38.981,
+     "end": 39.306
+    },
+    {
+     "word": "income.",
+     "start": 39.318,
+     "end": 39.718
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In two thousand twenty-six, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts, because most writers assume blogs get rich from viral traffic and banner ads, / but real revenue comes from capturing email readers to sell targeted digital products and affiliate recommendations, / so building a direct reader list beats chasing empty clicks, since ad networks like Google AdSense only generate income by showing automated ad banners on post pages, while smart creators focus on direct digital product sales like courses, / because that turns casual visitors into steady income."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.33,
+    "text": "thousand",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.33,
+    "opacity": 0.35,
+    "seed": 3.73
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v3",
+    "delay": 0.4,
+    "start": 8.82,
+    "end": 16.48,
+    "asset": "chart-up",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794589370510,
+  "updated": 1794589370514,
+  "topic": "a about how blogs money",
+  "hook": "In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
+  "image_style": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop",
+  "format": "landscape",
+  "assets_release": "project-how-blogs-actually-make-money-mwf80ue2",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
+   "music": "tech-pulse",
+   "project_id": "how-blogs-actually-make-money-mwf80ue2",
+   "style": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop",
+   "style_preset": "bold-pop",
+   "title": "How Blogs Actually Make Money",
+   "topic": "a about how blogs money",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In two thousand twenty-six, million...\"): the hook. No subject cutout, so I put THOUSAND in the top band where it cannot cover the face.",
+   "Beat 3 (\"because most writers assume blogs g...\"): a \"chart-up\" illustration builds itself on the right after the words land.",
+   "Left 5 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 4: truck (alive baseline (not the same move twice)).",
+   "Beat 5: drift (alive baseline)."
+  ]
+ }
+}
