@@ -515,6 +515,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-51",
+      "title": "The Zero Marginal Cost Money Engine",
+      "hook": "A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
+      "accent": "#FFD43B",
+      "duration": 67.1,
+      "created": 1794555470175,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-51/short-51.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-51/short-51.jpg",
+      "project": "the-zero-marginal-cost-money-engine-mwem7fiy",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
