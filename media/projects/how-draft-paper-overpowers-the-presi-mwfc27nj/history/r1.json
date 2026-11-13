@@ -1,0 +1,976 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-draft-paper-overpowers-the-presi-mwfc27nj",
+ "rev": 1,
+ "title": "How Draft Paper Overpowers the President",
+ "duration": 39.66,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "word-by-word",
+   "font": "Anton",
+   "weight": 400
+  },
+  "transition": {
+   "type": "flash",
+   "duration": 0.25
+  },
+  "motion": "kenburns",
+  "recipe": "kinetic-news",
+  "transitions": [
+   "flash",
+   "zoom-in",
+   "slide-left",
+   "cut",
+   "zoom-out"
+  ],
+  "backdrop": "dots",
+  "grade": "contrast(1.12) saturate(1.15)",
+  "gfx": {
+   "chroma_hit": 14,
+   "grain": 0.08,
+   "vignette": 0.3
+  },
+  "font": "Anton",
+  "preset": "kinetic-news",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.257,
+    "narration": "Ten days on a desk turns draft paper into law without a single signature.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 2D vector motion graphic of a formal paper bill resting on a mahogany desk under a soft spotlight, minimalist background with vector geometry and gold accents, upper third empty."
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "1fa69547c799",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.257,
+    "end": 8.005,
+    "narration": "You think every new law requires an active presidential stamp to pass,",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Passed automatically after 10 days",
+     "myth": "President must sign to make law",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.005,
+    "end": 11.71,
+    "narration": "but the system has a hidden automatic timer running in the background.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Minimalist 2D graphic of a sleek hourglass resting next to official rolled parchment, bold vector cutout style with gold trim, plain gradient background."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b6444ee0526b",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.74,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 11.71,
+    "end": 15.345,
+    "narration": "Members of the House or Senate draft, sponsor, and introduce a bill,",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 3.93,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Clean 2D vector silhouette of the United States Capitol dome with crisp paper cutouts floating into an inbox tray, lower two thirds composition.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "75ba449da8f2"
+   },
+   {
+    "id": "v5",
+    "start": 15.345,
+    "end": 18.688,
+    "narration": "pushing it through committee debates and formal legislative votes.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Draft Bill",
+      "Sponsor",
+      "Committee",
+      "Floor Vote"
+     ],
+     "title": "Legislative Process",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 18.688,
+    "end": 21.876,
+    "narration": "That bill must pass both the House and Senate in identical form",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Two identical paper bill cutouts side by side with a central equal sign, clean 2D vector artwork, simple dark background with gold outlines."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "edb1d1c7023f",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 21.876,
+    "end": 24.444,
+    "narration": "before reaching the president for final review.",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 2.87,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Crisp 2D vector graphics depicting a classic desk inside the White House Oval Office with a document folder sitting front and center.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "645dffebc16f"
+   },
+   {
+    "id": "v8",
+    "start": 24.444,
+    "end": 27.217,
+    "narration": "You expect an official signing ceremony at the desk,",
+    "kind": "ai_video",
+    "src": "assets/clip_08.mp4",
+    "duration": 3.07,
+    "still": "assets/img_08.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vector paper cutout of a fountain pen resting above a blank signature line on formal stationary, gold accent lines, clean top third frame.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "2b6eb8cd3696"
+   },
+   {
+    "id": "v9",
+    "start": 27.217,
+    "end": 29.804,
+    "narration": "but if the president does not sign within ten days,",
+    "kind": "graphic",
+    "graphic": {
+     "events": [
+      {
+       "date": "Day 1",
+       "label": "Bill Delivered"
+      },
+      {
+       "date": "Day 5",
+       "label": "No Action"
+      },
+      {
+       "date": "Day 10",
+       "label": "Deadline Reached"
+      }
+     ],
+     "title": "10-Day Window",
+     "type": "timeline"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 29.804,
+    "end": 31.454,
+    "narration": "and Congress remains in session,",
+    "kind": "image",
+    "src": "assets/img_10.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vector cutout graphic showing legislative chamber gavel resting on a block, simple flat color background, empty top frame."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a7326737ca10",
+    "cam": {
+     "move": "truck",
+     "amp": 0.5,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 31.454,
+    "end": 34.872,
+    "narration": "that silent paper becomes binding federal law automatically.",
+    "kind": "ai_video",
+    "src": "assets/clip_11.mp4",
+    "duration": 4.06,
+    "still": "assets/img_11.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "A pristine vector paper document transforming with glowing gold lines as an official federal seal animates onto the center page.",
+     "motion": "Camera pulls back smoothly as a golden official seal locks onto the untouched document.",
+     "still": "flux"
+    },
+    "hash": "bc483d93bbea"
+   },
+   {
+    "id": "v12",
+    "start": 34.872,
+    "end": 38.856,
+    "narration": "In Washington, ten quiet days overrule the president.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "10",
+      "QUIET",
+      "DAYS",
+      "BECOME",
+      "LAW"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Ten",
+     "start": 0.1,
+     "end": 0.312
+    },
+    {
+     "word": "days",
+     "start": 0.338,
+     "end": 0.588
+    },
+    {
+     "word": "on",
+     "start": 0.613,
+     "end": 0.725
+    },
+    {
+     "word": "a",
+     "start": 0.75,
+     "end": 0.812
+    },
+    {
+     "word": "desk",
+     "start": 0.825,
+     "end": 1.075
+    },
+    {
+     "word": "turns",
+     "start": 1.1,
+     "end": 1.387
+    },
+    {
+     "word": "draft",
+     "start": 1.413,
+     "end": 1.738
+    },
+    {
+     "word": "paper",
+     "start": 1.762,
+     "end": 2.1
+    },
+    {
+     "word": "into",
+     "start": 2.112,
+     "end": 2.3
+    },
+    {
+     "word": "law",
+     "start": 2.325,
+     "end": 2.575
+    },
+    {
+     "word": "without",
+     "start": 2.6,
+     "end": 2.938
+    },
+    {
+     "word": "a",
+     "start": 2.962,
+     "end": 3.025
+    },
+    {
+     "word": "single",
+     "start": 3.038,
+     "end": 3.375
+    },
+    {
+     "word": "signature.",
+     "start": 3.4,
+     "end": 4.037
+    },
+    {
+     "word": "You",
+     "start": 4.317,
+     "end": 4.48
+    },
+    {
+     "word": "think",
+     "start": 4.505,
+     "end": 4.717
+    },
+    {
+     "word": "every",
+     "start": 4.743,
+     "end": 4.955
+    },
+    {
+     "word": "new",
+     "start": 4.98,
+     "end": 5.13
+    },
+    {
+     "word": "law",
+     "start": 5.155,
+     "end": 5.355
+    },
+    {
+     "word": "requires",
+     "start": 5.368,
+     "end": 5.892
+    },
+    {
+     "word": "an",
+     "start": 5.918,
+     "end": 6.017
+    },
+    {
+     "word": "active",
+     "start": 6.043,
+     "end": 6.38
+    },
+    {
+     "word": "presidential",
+     "start": 6.405,
+     "end": 7.03
+    },
+    {
+     "word": "stamp",
+     "start": 7.055,
+     "end": 7.38
+    },
+    {
+     "word": "to",
+     "start": 7.392,
+     "end": 7.48
+    },
+    {
+     "word": "pass,",
+     "start": 7.505,
+     "end": 7.905
+    },
+    {
+     "word": "but",
+     "start": 8.065,
+     "end": 8.203
+    },
+    {
+     "word": "the",
+     "start": 8.227,
+     "end": 8.34
+    },
+    {
+     "word": "system",
+     "start": 8.365,
+     "end": 8.727
+    },
+    {
+     "word": "has",
+     "start": 8.752,
+     "end": 8.94
+    },
+    {
+     "word": "a",
+     "start": 8.965,
+     "end": 9.028
+    },
+    {
+     "word": "hidden",
+     "start": 9.053,
+     "end": 9.365
+    },
+    {
+     "word": "automatic",
+     "start": 9.39,
+     "end": 9.915
+    },
+    {
+     "word": "timer",
+     "start": 9.94,
+     "end": 10.315
+    },
+    {
+     "word": "running",
+     "start": 10.34,
+     "end": 10.627
+    },
+    {
+     "word": "in",
+     "start": 10.64,
+     "end": 10.703
+    },
+    {
+     "word": "the",
+     "start": 10.727,
+     "end": 10.828
+    },
+    {
+     "word": "background.",
+     "start": 10.84,
+     "end": 11.49
+    },
+    {
+     "word": "Members",
+     "start": 11.77,
+     "end": 12.195
+    },
+    {
+     "word": "of",
+     "start": 12.22,
+     "end": 12.282
+    },
+    {
+     "word": "the",
+     "start": 12.307,
+     "end": 12.382
+    },
+    {
+     "word": "House",
+     "start": 12.395,
+     "end": 12.645
+    },
+    {
+     "word": "or",
+     "start": 12.67,
+     "end": 12.77
+    },
+    {
+     "word": "Senate",
+     "start": 12.795,
+     "end": 13.108
+    },
+    {
+     "word": "draft,",
+     "start": 13.132,
+     "end": 13.495
+    },
+    {
+     "word": "sponsor,",
+     "start": 13.645,
+     "end": 14.132
+    },
+    {
+     "word": "and",
+     "start": 14.32,
+     "end": 14.407
+    },
+    {
+     "word": "introduce",
+     "start": 14.433,
+     "end": 14.858
+    },
+    {
+     "word": "a",
+     "start": 14.882,
+     "end": 14.945
+    },
+    {
+     "word": "bill,",
+     "start": 14.957,
+     "end": 15.245
+    },
+    {
+     "word": "pushing",
+     "start": 15.405,
+     "end": 15.743
+    },
+    {
+     "word": "it",
+     "start": 15.768,
+     "end": 15.843
+    },
+    {
+     "word": "through",
+     "start": 15.868,
+     "end": 16.056
+    },
+    {
+     "word": "committee",
+     "start": 16.081,
+     "end": 16.455
+    },
+    {
+     "word": "debates",
+     "start": 16.48,
+     "end": 16.893
+    },
+    {
+     "word": "and",
+     "start": 16.905,
+     "end": 17.006
+    },
+    {
+     "word": "formal",
+     "start": 17.03,
+     "end": 17.381
+    },
+    {
+     "word": "legislative",
+     "start": 17.405,
+     "end": 18.006
+    },
+    {
+     "word": "votes.",
+     "start": 18.03,
+     "end": 18.468
+    },
+    {
+     "word": "That",
+     "start": 18.748,
+     "end": 18.986
+    },
+    {
+     "word": "bill",
+     "start": 19.011,
+     "end": 19.211
+    },
+    {
+     "word": "must",
+     "start": 19.236,
+     "end": 19.461
+    },
+    {
+     "word": "pass",
+     "start": 19.486,
+     "end": 19.748
+    },
+    {
+     "word": "both",
+     "start": 19.761,
+     "end": 19.986
+    },
+    {
+     "word": "the",
+     "start": 20.011,
+     "end": 20.111
+    },
+    {
+     "word": "House",
+     "start": 20.123,
+     "end": 20.423
+    },
+    {
+     "word": "and",
+     "start": 20.449,
+     "end": 20.536
+    },
+    {
+     "word": "Senate",
+     "start": 20.561,
+     "end": 20.923
+    },
+    {
+     "word": "in",
+     "start": 20.949,
+     "end": 21.061
+    },
+    {
+     "word": "identical",
+     "start": 21.086,
+     "end": 21.623
+    },
+    {
+     "word": "form",
+     "start": 21.649,
+     "end": 21.923
+    },
+    {
+     "word": "before",
+     "start": 21.936,
+     "end": 22.274
+    },
+    {
+     "word": "reaching",
+     "start": 22.286,
+     "end": 22.598
+    },
+    {
+     "word": "the",
+     "start": 22.611,
+     "end": 22.711
+    },
+    {
+     "word": "president",
+     "start": 22.736,
+     "end": 23.211
+    },
+    {
+     "word": "for",
+     "start": 23.224,
+     "end": 23.373
+    },
+    {
+     "word": "final",
+     "start": 23.386,
+     "end": 23.736
+    },
+    {
+     "word": "review.",
+     "start": 23.748,
+     "end": 24.224
+    },
+    {
+     "word": "You",
+     "start": 24.504,
+     "end": 24.691
+    },
+    {
+     "word": "expect",
+     "start": 24.717,
+     "end": 25.092
+    },
+    {
+     "word": "an",
+     "start": 25.117,
+     "end": 25.191
+    },
+    {
+     "word": "official",
+     "start": 25.217,
+     "end": 25.617
+    },
+    {
+     "word": "signing",
+     "start": 25.641,
+     "end": 25.979
+    },
+    {
+     "word": "ceremony",
+     "start": 25.991,
+     "end": 26.516
+    },
+    {
+     "word": "at",
+     "start": 26.542,
+     "end": 26.617
+    },
+    {
+     "word": "the",
+     "start": 26.641,
+     "end": 26.741
+    },
+    {
+     "word": "desk,",
+     "start": 26.766,
+     "end": 27.117
+    },
+    {
+     "word": "but",
+     "start": 27.277,
+     "end": 27.402
+    },
+    {
+     "word": "if",
+     "start": 27.414,
+     "end": 27.489
+    },
+    {
+     "word": "the",
+     "start": 27.501,
+     "end": 27.614
+    },
+    {
+     "word": "president",
+     "start": 27.626,
+     "end": 28.089
+    },
+    {
+     "word": "does",
+     "start": 28.102,
+     "end": 28.277
+    },
+    {
+     "word": "not",
+     "start": 28.289,
+     "end": 28.489
+    },
+    {
+     "word": "sign",
+     "start": 28.514,
+     "end": 28.764
+    },
+    {
+     "word": "within",
+     "start": 28.789,
+     "end": 29.064
+    },
+    {
+     "word": "ten",
+     "start": 29.089,
+     "end": 29.302
+    },
+    {
+     "word": "days,",
+     "start": 29.326,
+     "end": 29.664
+    },
+    {
+     "word": "and",
+     "start": 29.864,
+     "end": 30.014
+    },
+    {
+     "word": "Congress",
+     "start": 30.039,
+     "end": 30.439
+    },
+    {
+     "word": "remains",
+     "start": 30.464,
+     "end": 30.814
+    },
+    {
+     "word": "in",
+     "start": 30.826,
+     "end": 30.926
+    },
+    {
+     "word": "session,",
+     "start": 30.951,
+     "end": 31.326
+    },
+    {
+     "word": "that",
+     "start": 31.514,
+     "end": 31.664
+    },
+    {
+     "word": "silent",
+     "start": 31.689,
+     "end": 32.076
+    },
+    {
+     "word": "paper",
+     "start": 32.101,
+     "end": 32.439
+    },
+    {
+     "word": "becomes",
+     "start": 32.451,
+     "end": 32.814
+    },
+    {
+     "word": "binding",
+     "start": 32.826,
+     "end": 33.214
+    },
+    {
+     "word": "federal",
+     "start": 33.239,
+     "end": 33.589
+    },
+    {
+     "word": "law",
+     "start": 33.614,
+     "end": 33.814
+    },
+    {
+     "word": "automatically.",
+     "start": 33.839,
+     "end": 34.652
+    },
+    {
+     "word": "In",
+     "start": 34.932,
+     "end": 35.132
+    },
+    {
+     "word": "Washington,",
+     "start": 35.157,
+     "end": 35.732
+    },
+    {
+     "word": "ten",
+     "start": 35.882,
+     "end": 36.094
+    },
+    {
+     "word": "quiet",
+     "start": 36.107,
+     "end": 36.445
+    },
+    {
+     "word": "days",
+     "start": 36.469,
+     "end": 36.782
+    },
+    {
+     "word": "overrule",
+     "start": 36.807,
+     "end": 37.207
+    },
+    {
+     "word": "the",
+     "start": 37.232,
+     "end": 37.344
+    },
+    {
+     "word": "president.",
+     "start": 37.357,
+     "end": 37.932
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Ten days on a desk turns draft paper into law without a single signature. You think every new law requires an active presidential stamp to pass, but the system has a hidden automatic timer running in the background. Members of the House or Senate draft, sponsor, and introduce a bill, pushing it through committee debates and formal legislative votes. That bill must pass both the House and Senate in identical form before reaching the president for final review. You expect an official signing ceremony at the desk, but if the president does not sign within ten days, and Congress remains in session, that silent paper becomes binding federal law automatically. In Washington, ten quiet days overrule the president."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.21,
+    "text": "10 DAYS",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.21,
+    "opacity": 0.35,
+    "seed": 2.14
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 12.11,
+    "end": 15.29,
+    "asset": "house",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794596512560,
+  "updated": 1794596512563,
+  "topic": "a about how a bill becomes law",
+  "hook": "Ten days on a desk can turn a piece of paper into federal law without a single signature.",
+  "image_style": "clean 2D vector motion graphics with crisp paper cutouts and bold graphic overlays",
+  "format": "landscape",
+  "assets_release": "project-how-draft-paper-overpowers-the-presi-mwfc27nj",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Ten days on a desk can turn a piece of paper into federal law without a single signature.",
+   "music": "tech-pulse",
+   "project_id": "how-draft-paper-overpowers-the-presi-mwfc27nj",
+   "style": "clean 2D vector motion graphics with crisp paper cutouts and bold graphic overlays",
+   "style_preset": "kinetic-news",
+   "title": "How Draft Paper Overpowers the President",
+   "topic": "a about how a bill becomes law",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Ten days on a desk turns draft pape...\"): the hook. No subject cutout, so I put 10 DAYS in the top band where it cannot cover the face.",
+   "Beat 4 (\"Members of the House or Senate draf...\"): a \"house\" illustration builds itself on the right after the words land.",
+   "Left 10 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 10: truck (alive baseline (not the same move twice))."
+  ]
+ }
+}
