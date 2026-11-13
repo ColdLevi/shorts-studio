@@ -1,7 +1,7 @@
 {
-  "last_update": 312538448,
-  "time": 1794551998152,
-  "stage": "pitch",
+  "last_update": 312538449,
+  "time": 1794552404280,
+  "stage": "script",
   "topic": "how we can sell digital products and money",
   "research": {
     "text": "",
@@ -24,16 +24,125 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "The Zero Marginal Cost Money Engine",
+    "beats": [
+      {
+        "narration": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a single digital file hovering above a glowing server stack",
+        "cues": {
+          "pauses": [
+            {
+              "after": 17,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "Most people assume scaling a business requires buying physical inventory upfront, but digital files break this rule by costing almost zero dollars to duplicate.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, rows of identical glowing data packets multiplying endlessly",
+        "cues": {
+          "pauses": [
+            {
+              "after": 11,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "You think creating digital income started with modern apps, but back in nineteen ninety six, Bill Gates published his famous essay Content is King, predicting exact digital publishing economics.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, an old terminal screen displaying text lines in glowing gold wireframe style",
+        "cues": {
+          "pauses": [
+            {
+              "after": 9,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "He laid out how electronic networks would let publishers distribute information worldwide for almost nothing, so the software copy costs nothing to make a million times.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a global grid of golden nodes interconnected by thin glowing lines",
+        "cues": {
+          "pauses": [
+            {
+              "after": 15,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "Then automated payment gateways arrived to handle the friction, delivering digital files to buyers in under three seconds without a single human worker touching the order.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a lightning fast schematic data stream flowing through a payment gateway valve",
+        "cues": {
+          "pauses": [
+            {
+              "after": 9,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "You just upload the asset once, and the server handles a million identical sales while you sleep.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a solitary glowing server rack pulsing with rhythmic gold light waves",
+        "cues": {
+          "pauses": [
+            {
+              "after": 6,
+              "s": 0.7
+            }
+          ],
+          "emphasis": [],
+          "sfx": []
+        },
+        "tool": "flux"
+      },
+      {
+        "narration": "The digital money engine was just built on simpler rules.",
+        "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a master blueprint gear turning smoothly inside a golden framework",
+        "tool": "flux"
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Digital products operate on near zero marginal cost per added unit sold",
+        "supported": true
+      },
+      {
+        "claim": "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
+        "supported": true
+      },
+      {
+        "claim": "Automated payment gateways deliver digital files to buyers in under three seconds without human labor",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Is it running",
-      "t": 1794463676250
-    },
     {
       "role": "user",
       "text": "/tools",
@@ -108,6 +217,11 @@
       "role": "bot",
       "text": "Pitched \"The Zero Marginal Cost Money Engine\": A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
       "t": 1794551998152
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"The Zero Marginal Cost Money Engine\"",
+      "t": 1794552404279
     }
   ],
   "working": null,
