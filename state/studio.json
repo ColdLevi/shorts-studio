@@ -1,23 +1,34 @@
 {
-  "last_update": 312538457,
-  "time": 1794564655542,
-  "stage": "idle",
-  "topic": "how we can sell digital products and money",
+  "last_update": 312538458,
+  "time": 1794564680943,
+  "stage": "pitch",
+  "topic": "educational entertainment on how to money blogging in 2026",
   "research": {
-    "text": "",
+    "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How to Start a Blog & Make Money in 2026 (Step by Step) (https://www.youtube.com/watch?v=EP41DYCSd-c): Want to learn how to start a blog and make money? In this step-by-step guide for beginners, we'll walk you through everything—from choosing ...\n2. 8 ways I make money blogging in 2026 (https://www.bloggeratlarge.com/6-ways-i-make-money-blogging/): This post is the cold hard truth about blogging, its ups and downs and the answer to THAT question, how do you make money blogging?\n3. Does blogging still make sense in 2026? (https://www.reddit.com/r/Blogging/comments/1quyjj5/does_blogging_still_make_sense_in_2026/): People keep saying blogging is dead and that everything has moved to social media and video. But blogs still show up in search, and many creators seem ...\n4. Can I make money blogging in 2026 as a complete ... (https://www.quora.com/Can-I-make-money-blogging-in-2026-as-a-complete-beginner): Can I make money blogging in 2026 as a complete beginner?\n5. How to Start a Blog in 2026 (What I'd Do Differently to Make ... (https://www.youtube.com/watch?v=B9whuKbf6FA): This guide is perfect for blogging for beginners who want to make money blogging, showing you how to find unlimited traffic using one ...\n6. How to make money blogging in 2026 (https://www.productiveblogging.com/how-do-blogs-make-money/): Essentially there are five main ways to make money from a blog in 2026: ads, affiliate links, sponsored posts, products and services…\n7. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n8. Top 10 highest earning bloggers 2026 (https://targetinternet.com/resources/top-10-highest-earning-bloggers-2021-earnings-analysis/): This article ranks the top 10 highest earning bloggers of 2026, explains what each one verifiably earns, and pulls out the strategic lessons any marketer or ...",
     "sources": []
   },
-  "pitch": null,
+  "pitch": {
+    "title": "How Blogs Make Millions in 2026",
+    "hook": "In 2026, millions of creators declared written blogs completely dead.",
+    "angle": "Beginners assume short video wiped out traditional websites. Modern publishers actually stack five distinct revenue streams directly from search traffic.",
+    "key_facts": [
+      "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
+      "Web blogs continue to secure top search rankings despite creator shifts to social media.",
+      "Selling digital products and courses directly to readers generates higher margins than basic display ads."
+    ],
+    "visual_style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
+    "length_seconds": 42,
+    "style": "kinetic-news",
+    "style_reason": "Fast paced breakdown of modern web monetization streams.",
+    "music": "tech-pulse",
+    "accent": "gold",
+    "format": "landscape"
+  },
   "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "How APIs Run the Internet",
-      "t": 1794475412095
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"How APIs Run the Internet\"",
@@ -92,6 +103,11 @@
       "role": "user",
       "text": "Make a educational entertainment video on how to make money blogging in 2026",
       "t": 1794564645070
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How Blogs Make Millions in 2026\": In 2026, millions of creators declared written blogs completely dead.",
+      "t": 1794564680943
     }
   ],
   "working": null,
@@ -980,7 +996,7 @@
     }
   ],
   "lastRenderAuto": false,
-  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user approved a short about how APIs work, how companies money from selling APIs, and how you can the same.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about how API works.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about plus humour for how to treat a girl that will her fall for you.\n- (interest) The user approved a short about Creat that's more of tech that teach people how API works.\n- (interest) The user approved a short about how the world war ii ended.",
+  "memory": "SHARED MEMORY (from both bots; use it to fit the user, never quote it back):\nAbout the user:\n- The user prefers YouTube Shorts formatted in 9:16 portrait canvas.\n- The user prefers videos without captions.\n- The user wants smooth scene transitions and dynamic camera movements, including zooms for highlights.\n- The user prefers not to use the browser bot for research tasks.\n- The user prefers to redo a video from scratch rather than edit it when a fresh take is needed.\n- The user prefers to use the auto style for YouTube Shorts and TikTok videos.\n- The user prefers to provide markdown files containing writing and YouTube scriptwriting skills to train the Shorts Studio bot.\n- The user prefers fun, first-person satirical storytelling over documentary-style formats for their Shorts.\n- The user wants high-end digital artwork images included in videos to create a 2k production feel.\n- The user prefers videos to have fluid animation effects with smooth motion entries and exits.\n- The user dislikes title boxes added to the start of rendered videos.\n- The user prefers receiving style extractions and structured data as JSON code blocks for AI agents.\n- The user requires a backend validation step at each stage of the pipeline to ensure quality control.\n- The user prefers using the best available models and settings to ensure top-quality output for their videos.\n- The user prefers an educational documentary style for their Shorts with a cinematic tone, third-person storytelling, and a script speed around 140 words per minute.\nRelevant memories:\n- (interest) The user approved a short about how money came to be under the gold like I know paper money and gold was on same standard so educate people on how it came to be lower than the gold today it in YouTube resolution.\n- (interest) The user is interested in creating documentary-style videos about the history of money.\n- (interest) The user approved a short about how we can sell digital products and money.\n- (interest) The user approved a short about how APIs work, how companies money from selling APIs, and how you can the same.\n- (interest) The user approved a short about that teach people how to money buying and selling old used items.\n- (interest) The user approved a short about growing up as a developer in 2026.\n- (interest) The user approved a short about how money came to be, documentary style like Issacverse, 3 minutes long for YouTube.\n- (lesson) The user requires dynamic camera movement and visually accurate images that match the video's core concept.\n- (interest) The user approved a short about how API works.\n- (interest) The user approved a short about classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour.\n- (interest) The user approved a short about YouTube Issacverse of about the idea of how to code for dummies.\n- (interest) The user approved a short about plus humour for how to treat a girl that will her fall for you.",
   "deep": {
     "topic": "YouTube Issacverse of about the idea of how to code for dummies",
     "status": "done",
@@ -1003,7 +1019,9 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": null,
+  "job": {
+    "research": "full"
+  },
   "recent_styles": [
     "motion-explainer",
     "retro-vhs",
@@ -1963,14 +1981,8 @@
     }
   ],
   "assets": null,
-  "intake": {
-    "topic": "Make a educational entertainment video on how to make money blogging in 2026",
-    "job": {},
-    "items": [],
-    "n": 0,
-    "at": 1794564655541
-  },
-  "assets_at": 1794551981800,
+  "intake": null,
+  "assets_at": 1794564663004,
   "narr": null,
   "sb": null
 }
