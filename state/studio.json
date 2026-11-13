@@ -1,169 +1,18 @@
 {
-  "last_update": 312538495,
-  "time": 1794595875397,
-  "stage": "script",
+  "last_update": 312538497,
+  "time": 1794595896354,
+  "stage": "idle",
   "topic": "a about how a bill becomes law",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How laws are made - USAGov (https://www.usa.gov/how-laws-are-made): If it passes, they present it to the president. The president then considers the bill. The president can approve the bill and sign it into law.\n2. How a Bill Becomes a Law (https://norton.house.gov/how-a-bill-becomes-a-law): A bill becomes law if signed by the President or if not signed within 10 days and Congress is in session.\n3. How a Bill Becomes a Law | ANCOR (https://www.ancor.org/advocacy/toolkit/how-a-bill-becomes-a-law/): After a bill has been approved by both the House and Senate in identical form, it is sent to the President. If the President approves of the legislation he or ...\n4. Schoolhouse Rock: How a Bill Becomes a Law - YouTube (https://www.youtube.com/watch?v=men-vp5jvzI): Schoolhouse Rock: How a Bill Becomes a Law. @JaredPolis31275527 likes140K views8 years ago more. Subscribe. Comments. 24. Comment.\n5. Legislative Process: United States: Bill to Law (https://lib.law.uw.edu/legproc): If the President signs the bill, it becomes a law. It may also become law if the President does not sign it for 10 days. If the president ...\n6. [PDF] HOW A BILL BECOMES A LAW STEP 1 - Zero to Three (https://www.zerotothree.org/wp-content/uploads/2022/06/How-a-Bill-Becomes-a-Law_-What-Role-Does-Congressional-Staff-Play_.pdf): STEP 1: The Creation of a Bill Members of the House or Senate draft, sponsor and introduce bills for consideration by Congress. If the President does not act ...\n7. Federal Legislative History: How a Bill becomes a Law (https://wcl.american.libguides.com/legislative_history/basics): A bill becomes a public law when: It passes the House and Senate in identical form and It is signed by the President or The President does ...\n8. Procedures: How a Bill Becomes a Law (https://nationalaglawcenter.org/procedures-how-a-bill-becomes-a-law/): Every law starts as a bill, works its way through congressional committees and debates, gets voted on by both houses of Congress, and then finally reaches the ...\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- On this day, 50 years ago: “I’m Just a Bill” from Schoolhouse Rock written by Dave Frishberg debuted. The song is sung by Jack Sheldon (the voice of Bill) and his son (the boy learning the process). This animated short was shown on Saturday morning TV and many [ig_play_count 15732, like_count 540, comment_count 5, share_count 526]\n- Introduction to law ⚖️ #lawyerlife #whatislaw #lawschool #lawyer #lawofattraction [ig_play_count 411009, like_count 9912, comment_count 23, share_count 3622]\n- What is a Bill? ⚖️📜 | How Laws Are Made – Part 3 Before a law is made, it begins as a Bill! 📄 Learn how a simple proposal goes through discussion, debate and approval to become a law. ✨ #HowLawsAreMade #LawStudy #WhatIsABill #LawStudent #LegalKnowledge LawSe [ig_play_count 2288, comment_count 0]\n- Meet Bill! 📜 Please enjoy this quick animation of him running past several versions of himself on his way to vote. A friendly reminder as we prepare for Election Day on Tuesday, November 3rd. Ever wondered how an idea actually becomes state law in New Jersey? [ig_play_count 407, like_count 15, comment_count 0, share_count 0]\n- What is a bill? What is an act? #Civiceducation #Politicslk #lawmaking #Instareels [ig_play_count 1094, like_count 24, comment_count 0, share_count 14]\n- How does a bill become a law in 60 seconds. This was a lot to squeeze in, did I do it? #politics #law #bill [ig_play_count 2096, like_count 81, comment_count 6, share_count 12]\n- 🏛️📜 PARLIAMENT PROCESS – How a Bill Becomes a Law in India 🇮🇳⚖️ Understanding the Parliament Process is essential for every UPSC aspirant. This one-page note explains how a Bill is introduced, debated, passed by Parliament, and finally becomes an Act after [ig_play_count 21151, comment_count 0, share_count 240]\n- AMERICAN GOVERNMENT SYSTEM EXPLAINED #usa #america #congress #donaldtrump #americanpolitics [ig_play_count 335569, like_count 13201, comment_count 185, share_count 4872]\n- How does parliament makes law? ⚖️👩🏻‍⚖️📚 #lawyerlife #lawyer #lawadmissiontest #llb #whatislaw [ig_play_count 3190, like_count 33, comment_count 0, share_count 6]\n- In this installment of State Government 101, I cover the final steps of how a bill finally becomes a law, and how long it can take for a bill to be signed and enacted! [ig_play_count 1492, like_count 93, comment_count 2, share_count 5]",
     "sources": []
   },
-  "pitch": {
-    "title": "How Draft Paper Overpowers the President",
-    "hook": "Ten days on a desk can turn a piece of paper into federal law without a single signature.",
-    "angle": "People assume a bill requires the president's active stamp to take effect. Presidential silence over a ten day window automatically creates law if Congress remains in session.",
-    "key_facts": [
-      "Members of the House or Senate draft, sponsor, and introduce bills for consideration.",
-      "A bill must pass both the House and Senate in identical form before reaching the president.",
-      "If the president does not sign a bill within 10 days while Congress is in session, it becomes law."
-    ],
-    "visual_style": "clean 2D vector motion graphics with crisp paper cutouts and bold graphic overlays",
-    "length_seconds": 45,
-    "style": "kinetic-news",
-    "style_reason": "fast legislative tracking demands bold visual graphics and clear step sequencing",
-    "music": "tech-pulse",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How Draft Paper Overpowers the President",
-    "beats": [
-      {
-        "narration": "Ten days on a desk turns draft paper into law without a single signature.",
-        "image_prompt": "Clean 2D vector motion graphic of a formal paper bill resting on a mahogany desk under a soft spotlight, minimalist background with vector geometry and gold accents, upper third empty.",
-        "tool": "higgsfield",
-        "motion": "Camera slowly zooms into the draft paper while a glowing gold ten day counter appears in the empty upper sky.",
-        "still": "flux",
-        "callout": "10 DAYS"
-      },
-      {
-        "narration": "You think every new law requires an active presidential stamp to pass,",
-        "image_prompt": "Vector paper cutout of an official document with a large red rubber stamp mark, clean flat graphic background, space in upper frame.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "President must sign to make law",
-          "fact": "Passed automatically after 10 days"
-        }
-      },
-      {
-        "narration": "but the system has a hidden automatic timer running in the background.",
-        "image_prompt": "Minimalist 2D graphic of a sleek hourglass resting next to official rolled parchment, bold vector cutout style with gold trim, plain gradient background.",
-        "tool": "flux"
-      },
-      {
-        "narration": "Members of the House or Senate draft, sponsor, and introduce a bill,",
-        "image_prompt": "Clean 2D vector silhouette of the United States Capitol dome with crisp paper cutouts floating into an inbox tray, lower two thirds composition.",
-        "tool": "stock",
-        "query": "capitol building congress"
-      },
-      {
-        "narration": "pushing it through committee debates and formal legislative votes.",
-        "image_prompt": "Vector motion diagram showing a paper bill document moving along a stylized assembly line with crisp icons, plain background, upper third clear.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Legislative Process",
-          "steps": [
-            "Draft Bill",
-            "Sponsor",
-            "Committee",
-            "Floor Vote"
-          ]
-        }
-      },
-      {
-        "narration": "That bill must pass both the House and Senate in identical form",
-        "image_prompt": "Two identical paper bill cutouts side by side with a central equal sign, clean 2D vector artwork, simple dark background with gold outlines.",
-        "tool": "flux"
-      },
-      {
-        "narration": "before reaching the president for final review.",
-        "image_prompt": "Crisp 2D vector graphics depicting a classic desk inside the White House Oval Office with a document folder sitting front and center.",
-        "tool": "stock",
-        "query": "white house oval office"
-      },
-      {
-        "narration": "You expect an official signing ceremony at the desk,",
-        "image_prompt": "Vector paper cutout of a fountain pen resting above a blank signature line on formal stationary, gold accent lines, clean top third frame.",
-        "tool": "stock",
-        "query": "signing document pen desk"
-      },
-      {
-        "narration": "but if the president does not sign within ten days,",
-        "image_prompt": "Clean graphic timeline of a calendar counting from day one to day ten, vector motion design with gold highlights.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "timeline",
-          "title": "10-Day Window",
-          "events": [
-            {
-              "date": "Day 1",
-              "label": "Bill Delivered"
-            },
-            {
-              "date": "Day 5",
-              "label": "No Action"
-            },
-            {
-              "date": "Day 10",
-              "label": "Deadline Reached"
-            }
-          ]
-        }
-      },
-      {
-        "narration": "and Congress remains in session,",
-        "image_prompt": "Vector cutout graphic showing legislative chamber gavel resting on a block, simple flat color background, empty top frame.",
-        "tool": "flux"
-      },
-      {
-        "narration": "that silent paper becomes binding federal law automatically.",
-        "image_prompt": "A pristine vector paper document transforming with glowing gold lines as an official federal seal animates onto the center page.",
-        "tool": "higgsfield",
-        "motion": "Camera pulls back smoothly as a golden official seal locks onto the untouched document.",
-        "still": "flux"
-      },
-      {
-        "narration": "In Washington, ten quiet days overrule the president.",
-        "image_prompt": "Bold 2D vector text cutout graphic featuring ten gold calendar pages fluttering away over a polished Capitol silhouette backdrop.",
-        "tool": "graphic",
-        "graphic": {
-          "type": "kinetic",
-          "words": [
-            "10",
-            "QUIET",
-            "DAYS",
-            "BECOME",
-            "LAW"
-          ]
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Members of the House or Senate draft, sponsor, and introduce bills for consideration.",
-        "supported": true
-      },
-      {
-        "claim": "A bill must pass both the House and Senate in identical form before reaching the president.",
-        "supported": true
-      },
-      {
-        "claim": "If the president does not sign a bill within 10 days while Congress is in session, it becomes law.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/short a 45 second video about how blogs make money",
-      "t": 1794587675260
-    },
     {
       "role": "bot",
       "text": "Pitched \"How Blogs Actually Make Money\": In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
@@ -238,10 +87,174 @@
       "role": "bot",
       "text": "Wrote the script for \"How Draft Paper Overpowers the President\"",
       "t": 1794595875397
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How Draft Paper Overpowers the President\"",
+      "t": 1794595896354
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-draft-paper-overpowers-the-presi-mwfc27nj",
+      "canvas": "16:9",
+      "title": "How Draft Paper Overpowers the President",
+      "topic": "a about how a bill becomes law",
+      "pitch": {
+        "title": "How Draft Paper Overpowers the President",
+        "hook": "Ten days on a desk can turn a piece of paper into federal law without a single signature.",
+        "angle": "People assume a bill requires the president's active stamp to take effect. Presidential silence over a ten day window automatically creates law if Congress remains in session.",
+        "key_facts": [
+          "Members of the House or Senate draft, sponsor, and introduce bills for consideration.",
+          "A bill must pass both the House and Senate in identical form before reaching the president.",
+          "If the president does not sign a bill within 10 days while Congress is in session, it becomes law."
+        ],
+        "visual_style": "clean 2D vector motion graphics with crisp paper cutouts and bold graphic overlays",
+        "length_seconds": 45,
+        "style": "kinetic-news",
+        "style_reason": "fast legislative tracking demands bold visual graphics and clear step sequencing",
+        "music": "tech-pulse",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How Draft Paper Overpowers the President",
+        "beats": [
+          {
+            "narration": "Ten days on a desk turns draft paper into law without a single signature.",
+            "image_prompt": "Clean 2D vector motion graphic of a formal paper bill resting on a mahogany desk under a soft spotlight, minimalist background with vector geometry and gold accents, upper third empty.",
+            "tool": "higgsfield",
+            "motion": "Camera slowly zooms into the draft paper while a glowing gold ten day counter appears in the empty upper sky.",
+            "still": "flux",
+            "callout": "10 DAYS"
+          },
+          {
+            "narration": "You think every new law requires an active presidential stamp to pass,",
+            "image_prompt": "Vector paper cutout of an official document with a large red rubber stamp mark, clean flat graphic background, space in upper frame.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "President must sign to make law",
+              "fact": "Passed automatically after 10 days"
+            }
+          },
+          {
+            "narration": "but the system has a hidden automatic timer running in the background.",
+            "image_prompt": "Minimalist 2D graphic of a sleek hourglass resting next to official rolled parchment, bold vector cutout style with gold trim, plain gradient background.",
+            "tool": "flux"
+          },
+          {
+            "narration": "Members of the House or Senate draft, sponsor, and introduce a bill,",
+            "image_prompt": "Clean 2D vector silhouette of the United States Capitol dome with crisp paper cutouts floating into an inbox tray, lower two thirds composition.",
+            "tool": "stock",
+            "query": "capitol building congress"
+          },
+          {
+            "narration": "pushing it through committee debates and formal legislative votes.",
+            "image_prompt": "Vector motion diagram showing a paper bill document moving along a stylized assembly line with crisp icons, plain background, upper third clear.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Legislative Process",
+              "steps": [
+                "Draft Bill",
+                "Sponsor",
+                "Committee",
+                "Floor Vote"
+              ]
+            }
+          },
+          {
+            "narration": "That bill must pass both the House and Senate in identical form",
+            "image_prompt": "Two identical paper bill cutouts side by side with a central equal sign, clean 2D vector artwork, simple dark background with gold outlines.",
+            "tool": "flux"
+          },
+          {
+            "narration": "before reaching the president for final review.",
+            "image_prompt": "Crisp 2D vector graphics depicting a classic desk inside the White House Oval Office with a document folder sitting front and center.",
+            "tool": "stock",
+            "query": "white house oval office"
+          },
+          {
+            "narration": "You expect an official signing ceremony at the desk,",
+            "image_prompt": "Vector paper cutout of a fountain pen resting above a blank signature line on formal stationary, gold accent lines, clean top third frame.",
+            "tool": "stock",
+            "query": "signing document pen desk"
+          },
+          {
+            "narration": "but if the president does not sign within ten days,",
+            "image_prompt": "Clean graphic timeline of a calendar counting from day one to day ten, vector motion design with gold highlights.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "timeline",
+              "title": "10-Day Window",
+              "events": [
+                {
+                  "date": "Day 1",
+                  "label": "Bill Delivered"
+                },
+                {
+                  "date": "Day 5",
+                  "label": "No Action"
+                },
+                {
+                  "date": "Day 10",
+                  "label": "Deadline Reached"
+                }
+              ]
+            }
+          },
+          {
+            "narration": "and Congress remains in session,",
+            "image_prompt": "Vector cutout graphic showing legislative chamber gavel resting on a block, simple flat color background, empty top frame.",
+            "tool": "flux"
+          },
+          {
+            "narration": "that silent paper becomes binding federal law automatically.",
+            "image_prompt": "A pristine vector paper document transforming with glowing gold lines as an official federal seal animates onto the center page.",
+            "tool": "higgsfield",
+            "motion": "Camera pulls back smoothly as a golden official seal locks onto the untouched document.",
+            "still": "flux"
+          },
+          {
+            "narration": "In Washington, ten quiet days overrule the president.",
+            "image_prompt": "Bold 2D vector text cutout graphic featuring ten gold calendar pages fluttering away over a polished Capitol silhouette backdrop.",
+            "tool": "graphic",
+            "graphic": {
+              "type": "kinetic",
+              "words": [
+                "10",
+                "QUIET",
+                "DAYS",
+                "BECOME",
+                "LAW"
+              ]
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Members of the House or Senate draft, sponsor, and introduce bills for consideration.",
+            "supported": true
+          },
+          {
+            "claim": "A bill must pass both the House and Senate in identical form before reaching the president.",
+            "supported": true
+          },
+          {
+            "claim": "If the president does not sign a bill within 10 days while Congress is in session, it becomes law.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How laws are made - USAGov (https://www.usa.gov/how-laws-are-made): If it passes, they present it to the president. The president then considers the bill. The president can approve the bill and sign it into law.\n2. How a Bill Becomes a Law (https://norton.house.gov/how-a-bill-becomes-a-law): A bill becomes law if signed by the President or if not signed within 10 days and Congress is in session.\n3. How a Bill Becomes a Law | ANCOR (https://www.ancor.org/advocacy/toolkit/how-a-bill-becomes-a-law/): After a bill has been approved by both the House and Senate in identical form, it is sent to the President. If the President approves of the legislation he or ...\n4. Schoolhouse Rock: How a Bill Becomes a Law - YouTube (https://www.youtube.com/watch?v=men-vp5jvzI): Schoolhouse Rock: How a Bill Becomes a Law. @JaredPolis31275527 likes140K views8 years ago more. Subscribe. Comments. 24. Comment.\n5. Legislative Process: United States: Bill to Law (https://lib.law.uw.edu/legproc): If the President signs the bill, it becomes a law. It may also become law if the President does not sign it for 10 days. If the president ...\n6. [PDF] HOW A BILL BECOMES A LAW STEP 1 - Zero to Three (https://www.zerotothree.org/wp-content/uploads/2022/06/How-a-Bill-Becomes-a-Law_-What-Role-Does-Congressional-Staff-Play_.pdf): STEP 1: The Creation of a Bill Members of the House or Senate draft, sponsor and introduce bills for consideration by Congress. If the President does not act ...\n7. Federal Legislative History: How a Bill becomes a Law (https://wcl.american.libguides.com/legislative_history/basics): A bill becomes a public law when: It passes the House and Senate in identical form and It is signed by the President or The President does ...\n8. Procedures: How a Bill Becomes a Law (https://nationalaglawcenter.org/procedures-how-a-bill-becomes-a-law/): Every law starts as a bill, works its way through congressional committees and debates, gets voted on by both houses of Congress, and then finally reaches the ...\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- On this day, 50 years ago: “I’m Just a Bill” from Schoolhouse Rock written by Dave Frishberg debuted. The song is sung by Jack Sheldon (the voice of Bill) and his son (the boy learning the process). This animated short was shown on Saturday morning TV and many [ig_play_count 15732, like_count 540, comment_count 5, share_count 526]\n- Introduction to law ⚖️ #lawyerlife #whatislaw #lawschool #lawyer #lawofattraction [ig_play_count 411009, like_count 9912, comment_count 23, share_count 3622]\n- What is a Bill? ⚖️📜 | How Laws Are Made – Part 3 Before a law is made, it begins as a Bill! 📄 Learn how a simple proposal goes through discussion, debate and approval to become a law. ✨ #HowLawsAreMade #LawStudy #WhatIsABill #LawStudent #LegalKnowledge LawSe [ig_play_count 2288, comment_count 0]\n- Meet Bill! ",
+        "sources": []
+      },
+      "at": 1794595896354
+    },
     {
       "id": "how-a-simple-paper-becomes-law-mwf9rd6g",
       "canvas": "16:9",
@@ -1162,106 +1175,6 @@
         "sources": []
       },
       "at": 1794475464406
-    },
-    {
-      "id": "seventeen-year-old-beer-heist-mwd521rj",
-      "canvas": "16:9",
-      "title": "Seventeen Year Old Beer Heist",
-      "topic": "classic old about getting a glass of beer then and now as a 17 year old teenager trying to snuck some beer it's supposed to be humour",
-      "pitch": {
-        "title": "Seventeen Year Old Beer Heist",
-        "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
-        "angle": "Teenagers assume sneaking alcohol was harder in the analog era. In reality, lower age limits and paper IDs made vintage beer runs surprisingly low-tech.",
-        "key_facts": [
-          "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-          "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-          "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly."
-        ],
-        "visual_style": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic",
-        "length_seconds": 40,
-        "style": "retro-vhs",
-        "style_reason": "Captures eighties nostalgia with warm neon hues and grainy tape static",
-        "music": "lofi-warm",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "Seventeen Year Old Beer Heist",
-        "beats": [
-          {
-            "narration": "In nineteen eighty-three, a seventeen year old needed three dollars and a paper ID to grab a cold beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a teenager in denim standing at a glowing neon convenience store counter holding dollar bills",
-            "tool": "higgsfield",
-            "motion": "Slow camera push in on retro convenience store counter as neon sign glows",
-            "still": "flux"
-          },
-          {
-            "narration": "Teens think sneaking a drink was harder back then.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide shot of teenagers leaning on a vintage car parked under streetlights glowing cyan and pink",
-            "tool": "flux"
-          },
-          {
-            "narration": "Old paper IDs didn't have holograms, chips, or tamper-proof plastic.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, close up of classic paper documents on a dark wooden table",
-            "tool": "stock",
-            "query": "vintage paper document"
-          },
-          {
-            "narration": "Anyone with a basic typewriter could alter a birth date in minutes.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, vintage mechanical typewriter under a soft yellow desk lamp light",
-            "tool": "flux"
-          },
-          {
-            "narration": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to buy beer.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, supermarket aisle lined with vintage beverage bottles under neon lighting",
-            "tool": "stock",
-            "query": "1980s supermarket aisle"
-          },
-          {
-            "narration": "So store cashiers rarely even checked who was buying.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro cash register sitting on a convenience store counter",
-            "tool": "flux"
-          },
-          {
-            "narration": "Then the nineteen eighty-four Drinking Age Act forced every state to set the limit at twenty-one.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, retro television in a dark room showing static scan lines",
-            "tool": "stock",
-            "query": "retro TV static"
-          },
-          {
-            "narration": "Today, retail scanners read encoded PDF417 barcodes to spot forged dates instantly.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, a modern laser scanner scanning a plastic card with red light beam",
-            "tool": "higgsfield",
-            "motion": "Dynamic fast zoom on the red laser scanner glowing against the card barcode",
-            "still": "flux"
-          },
-          {
-            "narration": "The analog beer run was just built on simpler rules.",
-            "image_prompt": "1980s retro photo, VHS tape look, neon colours, film grain, subtle scan lines, moody vintage aesthetic, wide view of a retro neon convenience store glowing on a quiet city street at night",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "In nineteen eighty-four, the United States passed the National Minimum Drinking Age Act setting twenty-one as the standard legal limit.",
-            "supported": true
-          },
-          {
-            "claim": "Before nineteen eighty-four, several American states legally permitted eighteen year olds to purchase beer.",
-            "supported": true
-          },
-          {
-            "claim": "Modern retail verification systems read encoded PDF417 barcodes to detect forged birth dates instantly.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794463199033
     }
   ],
   "lastRenderAuto": false,
@@ -1273,12 +1186,12 @@
   },
   "renders": [
     {
-      "title": "How A Simple Paper Becomes Law",
-      "at": 1794592031089,
-      "project": "how-a-simple-paper-becomes-law-mwf9rd6g"
+      "title": "How Draft Paper Overpowers the President",
+      "at": 1794595896354,
+      "project": "how-draft-paper-overpowers-the-presi-mwfc27nj"
     }
   ],
-  "current_project": "how-a-simple-paper-becomes-law-mwf9rd6g",
+  "current_project": "how-draft-paper-overpowers-the-presi-mwfc27nj",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1289,16 +1202,13 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "length": 45,
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "blueprint",
     "kinetic-news",
     "motion-explainer",
     "bold-pop",
-    "motion-explainer"
+    "motion-explainer",
+    "kinetic-news"
   ],
   "learning": null,
   "styles": {
