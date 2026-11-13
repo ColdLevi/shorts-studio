@@ -1,0 +1,850 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-blogs-make-millions-in-2026-mwetjvrv",
+ "rev": 1,
+ "title": "How Blogs Make Millions in 2026",
+ "duration": 41.12,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "word-by-word",
+   "font": "Anton",
+   "weight": 400
+  },
+  "transition": {
+   "type": "flash",
+   "duration": 0.25
+  },
+  "motion": "kenburns",
+  "recipe": "kinetic-news",
+  "transitions": [
+   "flash",
+   "zoom-in",
+   "slide-left",
+   "cut",
+   "zoom-out"
+  ],
+  "backdrop": "dots",
+  "grade": "contrast(1.12) saturate(1.15)",
+  "gfx": {
+   "chroma_hit": 14,
+   "grain": 0.08,
+   "vignette": 0.3
+  },
+  "font": "Anton",
+  "preset": "kinetic-news",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.673,
+    "narration": "In twenty twenty-six, millions of creators declared written blogs dead,",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.97,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork of a dark room with a glowing neon terminal screen displaying a tombstone vector graphic, isometric tech layout, moody blue and gold ambient lighting, upper fifth empty.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "f635c639e1de"
+   },
+   {
+    "id": "v2",
+    "start": 4.673,
+    "end": 8.478,
+    "narration": "assuming short video wiped out traditional websites overnight.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "Sleek 2k digital artwork of multiple glowing smartphone screens floating in dark space playing video streams, neon purple and cyan lighting, isometric tech visual style, upper fifth empty."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5139d851c93d",
+    "cam": {
+     "move": "drift",
+     "amp": 0.76,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.478,
+    "end": 10.513,
+    "narration": "But when I dug into top search results,",
+    "kind": "ai_video",
+    "src": "assets/clip_03.mp4",
+    "duration": 2.33,
+    "still": "assets/img_03.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork showing a clean neon search bar hovering in a dark cyberspace corridor, isometric tech graphics with subtle gold glow, moody ambient backdrop, upper fifth empty.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "558ca1fcb404"
+   },
+   {
+    "id": "v4",
+    "start": 10.513,
+    "end": 14.243,
+    "narration": "written articles were still quietly taking the top rankings.",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 4.03,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork of digital blog pages floating at the top of a glowing neon hierarchy tree, isometric tech design, moody gold ambient lighting, upper fifth clear.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "51468885ac4f"
+   },
+   {
+    "id": "v5",
+    "start": 14.243,
+    "end": 17.131,
+    "narration": "As creators rushed toward social algorithms,",
+    "kind": "ai_video",
+    "src": "assets/clip_05.mp4",
+    "duration": 3.2,
+    "still": "assets/img_05.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork of a crowded neon highway of social icons veering away, isometric tech graphics with sharp ambient lighting, upper fifth kept empty.",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "7c0a662b5a3e"
+   },
+   {
+    "id": "v6",
+    "start": 17.131,
+    "end": 20.973,
+    "narration": "traditional search traffic became a wide open goldmine.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek 2k digital artwork of glowing golden data streams flowing unobstructed into a central server node, isometric tech layout, moody ambient lighting, upper fifth empty."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e920347d437e",
+    "cam": {
+     "move": "truck",
+     "amp": 0.76,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 20.973,
+    "end": 24.853,
+    "narration": "I found modern publishers stack five different revenue streams.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek 2k digital artwork showing five glowing neon isometric layers stacking on top of each other, gold and blue tech accents, moody lighting, upper fifth clear."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "e5f63cda6160",
+    "cam": {
+     "move": "drift",
+     "amp": 0.77,
+     "dir": -1
+    },
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v8",
+    "start": 24.853,
+    "end": 29.001,
+    "narration": "They place display ads, share affiliate links, and publish sponsored posts,",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek 2k digital artwork of floating neon banners displaying ad and affiliate link symbols, isometric tech aesthetic, moody ambient lighting, upper fifth empty."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "dbd46f368b88",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v9",
+    "start": 29.001,
+    "end": 32.119,
+    "narration": "but standard display ads pay really low margins.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek 2k digital artwork of a glowing neon coin dropping into a small isometric container, moody blue lighting with sharp gold highlights, upper fifth left plain."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4385c5507ec8",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.67,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    }
+   },
+   {
+    "id": "v10",
+    "start": 32.119,
+    "end": 36.123,
+    "narration": "So publishers sell digital products and courses right to their readers,",
+    "kind": "ai_video",
+    "src": "assets/clip_10.mp4",
+    "duration": 4.06,
+    "still": "assets/img_10.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork of glowing golden digital course boxes and e-books sitting on a dark tech platform, isometric graphics, moody ambient lighting, upper fifth clear.",
+     "motion": "Slow camera pan left as neon course boxes open with brilliant golden glow.",
+     "still": "flux"
+    },
+    "hash": "2b8e3832e45c"
+   },
+   {
+    "id": "v11",
+    "start": 36.123,
+    "end": 40.32,
+    "narration": "pulling huge profits directly out of simple search traffic.",
+    "kind": "ai_video",
+    "src": "assets/clip_11.mp4",
+    "duration": 4.06,
+    "still": "assets/img_11.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek 2k digital artwork of an isometric digital vault opening up with glowing neon dollar symbols floating into dark space, moody ambient lighting, top fifth empty.",
+     "motion": "Slow pull-back camera motion revealing glowing golden numbers floating upwards.",
+     "still": "flux"
+    },
+    "hash": "8ac9f44b25b4"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.2
+    },
+    {
+     "word": "twenty",
+     "start": 0.2,
+     "end": 0.475
+    },
+    {
+     "word": "twenty-six,",
+     "start": 0.475,
+     "end": 1.288
+    },
+    {
+     "word": "millions",
+     "start": 1.488,
+     "end": 2.013
+    },
+    {
+     "word": "of",
+     "start": 2.013,
+     "end": 2.075
+    },
+    {
+     "word": "creators",
+     "start": 2.087,
+     "end": 2.625
+    },
+    {
+     "word": "declared",
+     "start": 2.625,
+     "end": 3.2
+    },
+    {
+     "word": "written",
+     "start": 3.3,
+     "end": 3.587
+    },
+    {
+     "word": "blogs",
+     "start": 3.587,
+     "end": 4.125
+    },
+    {
+     "word": "dead,",
+     "start": 4.125,
+     "end": 4.513
+    },
+    {
+     "word": "assuming",
+     "start": 4.673,
+     "end": 5.098
+    },
+    {
+     "word": "short",
+     "start": 5.11,
+     "end": 5.41
+    },
+    {
+     "word": "video",
+     "start": 5.423,
+     "end": 5.823
+    },
+    {
+     "word": "wiped",
+     "start": 5.973,
+     "end": 6.323
+    },
+    {
+     "word": "out",
+     "start": 6.323,
+     "end": 6.535
+    },
+    {
+     "word": "traditional",
+     "start": 6.548,
+     "end": 7.086
+    },
+    {
+     "word": "websites",
+     "start": 7.086,
+     "end": 7.648
+    },
+    {
+     "word": "overnight.",
+     "start": 7.648,
+     "end": 8.198
+    },
+    {
+     "word": "But",
+     "start": 8.478,
+     "end": 8.591
+    },
+    {
+     "word": "when",
+     "start": 8.591,
+     "end": 8.69
+    },
+    {
+     "word": "I",
+     "start": 8.69,
+     "end": 8.753
+    },
+    {
+     "word": "dug",
+     "start": 8.753,
+     "end": 9.015
+    },
+    {
+     "word": "into",
+     "start": 9.028,
+     "end": 9.14
+    },
+    {
+     "word": "top",
+     "start": 9.153,
+     "end": 9.466
+    },
+    {
+     "word": "search",
+     "start": 9.478,
+     "end": 9.765
+    },
+    {
+     "word": "results,",
+     "start": 9.765,
+     "end": 10.353
+    },
+    {
+     "word": "written",
+     "start": 10.513,
+     "end": 10.726
+    },
+    {
+     "word": "articles",
+     "start": 10.726,
+     "end": 11.188
+    },
+    {
+     "word": "were",
+     "start": 11.188,
+     "end": 11.338
+    },
+    {
+     "word": "still",
+     "start": 11.338,
+     "end": 11.863
+    },
+    {
+     "word": "quietly",
+     "start": 11.876,
+     "end": 12.575
+    },
+    {
+     "word": "taking",
+     "start": 12.638,
+     "end": 12.963
+    },
+    {
+     "word": "the",
+     "start": 12.976,
+     "end": 13.038
+    },
+    {
+     "word": "top",
+     "start": 13.05,
+     "end": 13.325
+    },
+    {
+     "word": "rankings.",
+     "start": 13.338,
+     "end": 13.963
+    },
+    {
+     "word": "As",
+     "start": 14.243,
+     "end": 14.368
+    },
+    {
+     "word": "creators",
+     "start": 14.368,
+     "end": 14.893
+    },
+    {
+     "word": "rushed",
+     "start": 14.893,
+     "end": 15.356
+    },
+    {
+     "word": "toward",
+     "start": 15.443,
+     "end": 15.718
+    },
+    {
+     "word": "social",
+     "start": 15.718,
+     "end": 16.168
+    },
+    {
+     "word": "algorithms,",
+     "start": 16.168,
+     "end": 16.931
+    },
+    {
+     "word": "traditional",
+     "start": 17.131,
+     "end": 17.593
+    },
+    {
+     "word": "search",
+     "start": 17.593,
+     "end": 17.855
+    },
+    {
+     "word": "traffic",
+     "start": 17.855,
+     "end": 18.318
+    },
+    {
+     "word": "became",
+     "start": 18.318,
+     "end": 18.768
+    },
+    {
+     "word": "a",
+     "start": 18.881,
+     "end": 18.968
+    },
+    {
+     "word": "wide",
+     "start": 18.968,
+     "end": 19.593
+    },
+    {
+     "word": "open",
+     "start": 19.768,
+     "end": 20.043
+    },
+    {
+     "word": "goldmine.",
+     "start": 20.043,
+     "end": 20.693
+    },
+    {
+     "word": "I",
+     "start": 20.973,
+     "end": 21.048
+    },
+    {
+     "word": "found",
+     "start": 21.048,
+     "end": 21.298
+    },
+    {
+     "word": "modern",
+     "start": 21.298,
+     "end": 21.585
+    },
+    {
+     "word": "publishers",
+     "start": 21.585,
+     "end": 22.048
+    },
+    {
+     "word": "stack",
+     "start": 22.048,
+     "end": 22.535
+    },
+    {
+     "word": "five",
+     "start": 22.686,
+     "end": 23.285
+    },
+    {
+     "word": "different",
+     "start": 23.423,
+     "end": 23.686
+    },
+    {
+     "word": "revenue",
+     "start": 23.686,
+     "end": 23.985
+    },
+    {
+     "word": "streams.",
+     "start": 23.985,
+     "end": 24.573
+    },
+    {
+     "word": "They place",
+     "start": 24.853,
+     "end": 25.203
+    },
+    {
+     "word": "display",
+     "start": 25.203,
+     "end": 25.666
+    },
+    {
+     "word": "ads,",
+     "start": 25.666,
+     "end": 26.216
+    },
+    {
+     "word": "share",
+     "start": 26.379,
+     "end": 26.629
+    },
+    {
+     "word": "affiliate",
+     "start": 26.629,
+     "end": 27.041
+    },
+    {
+     "word": "links,",
+     "start": 27.041,
+     "end": 27.466
+    },
+    {
+     "word": "and",
+     "start": 27.478,
+     "end": 27.579
+    },
+    {
+     "word": "publish",
+     "start": 27.579,
+     "end": 27.879
+    },
+    {
+     "word": "sponsored",
+     "start": 27.891,
+     "end": 28.254
+    },
+    {
+     "word": "posts,",
+     "start": 28.266,
+     "end": 28.841
+    },
+    {
+     "word": "but",
+     "start": 29.001,
+     "end": 29.126
+    },
+    {
+     "word": "standard",
+     "start": 29.138,
+     "end": 29.539
+    },
+    {
+     "word": "display",
+     "start": 29.539,
+     "end": 29.989
+    },
+    {
+     "word": "ads",
+     "start": 30.001,
+     "end": 30.251
+    },
+    {
+     "word": "pay",
+     "start": 30.251,
+     "end": 30.539
+    },
+    {
+     "word": "really",
+     "start": 30.539,
+     "end": 30.976
+    },
+    {
+     "word": "low",
+     "start": 30.976,
+     "end": 31.176
+    },
+    {
+     "word": "margins.",
+     "start": 31.176,
+     "end": 31.839
+    },
+    {
+     "word": "So",
+     "start": 32.119,
+     "end": 32.281
+    },
+    {
+     "word": "publishers",
+     "start": 32.281,
+     "end": 32.857
+    },
+    {
+     "word": "sell",
+     "start": 32.869,
+     "end": 33.231
+    },
+    {
+     "word": "digital",
+     "start": 33.244,
+     "end": 33.619
+    },
+    {
+     "word": "products",
+     "start": 33.619,
+     "end": 34.069
+    },
+    {
+     "word": "and",
+     "start": 34.069,
+     "end": 34.144
+    },
+    {
+     "word": "courses",
+     "start": 34.144,
+     "end": 34.731
+    },
+    {
+     "word": "right",
+     "start": 34.851,
+     "end": 35.151
+    },
+    {
+     "word": "to",
+     "start": 35.151,
+     "end": 35.251
+    },
+    {
+     "word": "their",
+     "start": 35.251,
+     "end": 35.451
+    },
+    {
+     "word": "readers,",
+     "start": 35.463,
+     "end": 35.963
+    },
+    {
+     "word": "pulling",
+     "start": 36.123,
+     "end": 36.473
+    },
+    {
+     "word": "huge",
+     "start": 36.486,
+     "end": 36.936
+    },
+    {
+     "word": "profits",
+     "start": 36.936,
+     "end": 37.511
+    },
+    {
+     "word": "directly",
+     "start": 37.598,
+     "end": 38.236
+    },
+    {
+     "word": "out",
+     "start": 38.336,
+     "end": 38.536
+    },
+    {
+     "word": "of",
+     "start": 38.536,
+     "end": 38.611
+    },
+    {
+     "word": "simple",
+     "start": 38.623,
+     "end": 39.074
+    },
+    {
+     "word": "search",
+     "start": 39.074,
+     "end": 39.348
+    },
+    {
+     "word": "traffic.",
+     "start": 39.348,
+     "end": 39.886
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In twenty twenty-six, millions of creators declared written blogs dead, assuming short video wiped out traditional websites overnight. But when I dug into top search results, written articles were still quietly taking the top rankings. As creators rushed toward social algorithms, traditional search traffic became a wide open goldmine. I found modern publishers stack five different revenue streams. They place display ads, share affiliate links, and publish sponsored posts, but standard display ads pay really low margins. So publishers sell digital products and courses right to their readers, pulling huge profits directly out of simple search traffic."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.62,
+    "text": "millions",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.62,
+    "opacity": 0.35,
+    "seed": 3.89
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v7",
+    "delay": 0.4,
+    "start": 21.37,
+    "end": 24.8,
+    "asset": "chart-up",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794565739979,
+  "updated": 1794565739984,
+  "topic": "educational entertainment on how to money blogging in 2026",
+  "hook": "In 2026, millions of creators declared written blogs completely dead.",
+  "image_style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
+  "format": "landscape",
+  "assets_release": "project-how-blogs-make-millions-in-2026-mwetjvrv",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In 2026, millions of creators declared written blogs completely dead.",
+   "music": "tech-pulse",
+   "project_id": "how-blogs-make-millions-in-2026-mwetjvrv",
+   "style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
+   "style_preset": "kinetic-news",
+   "title": "How Blogs Make Millions in 2026",
+   "topic": "educational entertainment on how to money blogging in 2026",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In twenty twenty-six, millions of c...\"): the hook. No subject cutout, so I put MILLIONS in the top band where it cannot cover the face.",
+   "Beat 7 (\"I found modern publishers stack fiv...\"): a \"chart-up\" illustration builds itself on the right after the words land.",
+   "Left 9 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 2: drift (alive baseline).",
+   "Beat 6: truck (alive baseline (not the same move twice)).",
+   "Beat 7: drift (side move for variety (not the same move twice)).",
+   "Beat 8: truck (alive baseline (not the same move twice)).",
+   "Beat 9: pull-out (a turn in the story: pull back to reveal)."
+  ]
+ }
+}
