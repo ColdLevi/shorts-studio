@@ -1,6 +1,6 @@
 {
-  "last_update": 312538453,
-  "time": 1794564561783,
+  "last_update": 312538454,
+  "time": 1794564574785,
   "stage": "idle",
   "topic": "how we can sell digital products and money",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Check again",
-      "t": 1794475253138
-    },
-    {
-      "role": "user",
-      "text": "/edit",
-      "t": 1794475302197
-    },
     {
       "role": "user",
       "text": "What's running",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Please use /settings to choose a style or recipe for your videos.",
       "t": 1794564561783
+    },
+    {
+      "role": "user",
+      "text": "/settings",
+      "t": 1794564573854
+    },
+    {
+      "role": "bot",
+      "text": "Updated tool settings",
+      "t": 1794564574785
     }
   ],
   "working": null,
