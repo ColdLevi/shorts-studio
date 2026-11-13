@@ -322,7 +322,7 @@ def from_props(props, spec=None, pid="job", cv=None):
         "voice": [{"id": "vo", "src": rel_src(pid, props.get("audio")), "start": 0, "volume": 1,
                    "gen": {"tool": "edge-tts", "voice": spec.get("voice") or "en-US-AndrewMultilingualNeural", "rate": spec.get("rate", "+0%"), "text": text}}]
         if props.get("audio") else [],
-        "music": [{"id": "m1", "src": props["music"], "start": 0, "volume": float(props.get("musicVolume", 0.1)), "loop": True,
+        "music": [{"id": "m1", "src": props["music"], "start": 0, "volume": float(props.get("musicVolume", 0.22)), "loop": True,
                    "fade_in": 0.5, "fade_out": 1.0, "duck": True, "gen": {"tool": "library", "name": spec.get("music") or ""}}]
         if props.get("music") else [],
         "sfx": [],

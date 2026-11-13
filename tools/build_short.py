@@ -902,7 +902,7 @@ def main():
         "title": spec.get("title", ""),
         "audio": f"{JOB}/voice.mp3",
         "music": mpath if os.path.exists(os.path.join(ROOT, "media", mpath)) else None,
-        "musicVolume": float(spec.get("music_volume", 0.1)),
+        "musicVolume": float(spec.get("music_volume", 0.22)),
         "accent": spec.get("accent", "#FFD43B"),
         "duration": round(total + 0.8, 2),
         "beats": [{"image": img, "text": b["narration"], **t, **clips.get(i, {}), **({"pixel": True} if i in PIXEL else {}),
