@@ -1,6 +1,6 @@
 {
-  "last_update": 312538472,
-  "time": 1794587659288,
+  "last_update": 312538473,
+  "time": 1794587675263,
   "stage": "idle",
   "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
   "research": {
@@ -13,11 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"The Zero Marginal Cost Money Engine\"",
-      "t": 1794552469837
-    },
     {
       "role": "user",
       "text": "/pickstyle",
@@ -92,6 +87,11 @@
       "role": "user",
       "text": "/tools",
       "t": 1794587659288
+    },
+    {
+      "role": "user",
+      "text": "/short a 45 second video about how blogs make money",
+      "t": 1794587675260
     }
   ],
   "working": null,
@@ -1934,7 +1934,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "me",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "a 45 second video about how blogs make money",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794587675263
+  },
   "liked": [
     {
       "title": "Seventeen Year Old Beer Heist",
