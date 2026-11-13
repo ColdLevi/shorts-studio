@@ -1,245 +1,18 @@
 {
-  "last_update": 312538488,
-  "time": 1794592014668,
-  "stage": "script",
+  "last_update": 312538490,
+  "time": 1794592031089,
+  "stage": "idle",
   "topic": "a about how a bill becomes law",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. Schoolhouse Rock: How a Bill Becomes a Law (https://www.youtube.com/watch?v=men-vp5jvzI): Schoolhouse Rock: How a Bill Becomes a. How a Bill Does Not Become a Law - SNL Saturday Night Live•9.6M views 29:01\n2. How laws are made (https://www.usa.gov/how-laws-are-made): How a bill becomes a law · A bill is a proposal for a new law or a change to an existing law. · Once a bill is introduced, it is assigned to a ...\n3. How a Bill Becomes a Law (https://www.ancor.org/advocacy/toolkit/how-a-bill-becomes-a-law/): After a bill has been approved by both the House and Senate in identical form, it is sent to the President. If the President approves of the legislation he or ...\n4. How a Bill Becomes a Law (http://norton.house.gov/how-a-bill-becomes-a-law): A bill becomes law if signed by the President or if not signed within 10 days and Congress is in session.\n5. Life Cycle of a Bill - California State Capitol Museum - CA.gov (https://capitolmuseum.ca.gov/engage/about-the-government/life-cycle-of-a-bill/): Sign Signed by Governor The bill becomes law and is chaptered. No Signature Becomes Law Without Signature The bill becomes law without the Governor signing it.\n6. Legislative Process: United States: Bill to Law (https://lib.law.uw.edu/legproc): If the President signs the bill, it becomes a law. It may also become law if the President does not sign it for 10 days. If the president ...\n7. ArtI.S7.C2.1 Overview of Presidential Approval or Veto of Bills (https://constitution.congress.gov/browse/essay/artI-S7-C2-1/ALDE_00013644/): If the President does not sign a bill within ten days of presentment while Congress is in session, the bill automatically becomes law.\n8. I'm Just a Bill - Schoolhouse Rock (https://www.youtube.com/watch?v=SZ8psP4S6BQ): It is about how a bill becomes a law, how it must go through Congress, and how it can be vetoed, etc.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- On this day, 50 years ago: “I’m Just a Bill” from Schoolhouse Rock written by Dave Frishberg debuted. The song is sung by Jack Sheldon (the voice of Bill) and his son (the boy learning the process). This animated short was shown on Saturday morning TV and many [ig_play_count 15732, like_count 540, comment_count 5, share_count 526]\n- Introduction to law ⚖️ #lawyerlife #whatislaw #lawschool #lawyer #lawofattraction [ig_play_count 411009, like_count 9912, comment_count 23, share_count 3622]\n- What is a Bill? ⚖️📜 | How Laws Are Made – Part 3 Before a law is made, it begins as a Bill! 📄 Learn how a simple proposal goes through discussion, debate and approval to become a law. ✨ #HowLawsAreMade #LawStudy #WhatIsABill #LawStudent #LegalKnowledge LawSe [ig_play_count 2288, comment_count 0]\n- Meet Bill! 📜 Please enjoy this quick animation of him running past several versions of himself on his way to vote. A friendly reminder as we prepare for Election Day on Tuesday, November 3rd. Ever wondered how an idea actually becomes state law in New Jersey? [ig_play_count 407, like_count 15, comment_count 0, share_count 0]\n- What is a bill? What is an act? #Civiceducation #Politicslk #lawmaking #Instareels [ig_play_count 1094, like_count 24, comment_count 0, share_count 14]\n- How does a bill become a law in 60 seconds. This was a lot to squeeze in, did I do it? #politics #law #bill [ig_play_count 2096, like_count 81, comment_count 6, share_count 12]\n- 🏛️📜 PARLIAMENT PROCESS – How a Bill Becomes a Law in India 🇮🇳⚖️ Understanding the Parliament Process is essential for every UPSC aspirant. This one-page note explains how a Bill is introduced, debated, passed by Parliament, and finally becomes an Act after [ig_play_count 21151, comment_count 0, share_count 240]\n- AMERICAN GOVERNMENT SYSTEM EXPLAINED #usa #america #congress #donaldtrump #americanpolitics [ig_play_count 335569, like_count 13201, comment_count 185, share_count 4872]\n- How does parliament makes law? ⚖️👩🏻‍⚖️📚 #lawyerlife #lawyer #lawadmissiontest #llb #whatislaw [ig_play_count 3190, like_count 33, comment_count 0, share_count 6]\n- In this installment of State Government 101, I cover the final steps of how a bill finally becomes a law, and how long it can take for a bill to be signed and enacted! [ig_play_count 1492, like_count 93, comment_count 2, share_count 5]",
     "sources": []
   },
-  "pitch": {
-    "title": "How A Simple Paper Becomes Law",
-    "hook": "One single written proposal turns into an official government rule.",
-    "angle": "People think bills require a presidential signature to become law, but a bill automatically becomes law if the president waits 10 days while Congress remains in session.",
-    "key_facts": [
-      "A bill is a proposal for a new law or a change to an existing law.",
-      "Once a bill is introduced, it is assigned to a committee.",
-      "A bill has to be approved by both the House and Senate in identical form before reaching the president.",
-      "If the president does not sign a bill within 10 days of presentment while Congress is in session, the bill automatically becomes law."
-    ],
-    "visual_style": "clean 2d motion graphics, flat vector illustration, minimalist style",
-    "length_seconds": 45,
-    "style": "motion-explainer",
-    "style_reason": "Clear vector animations fit legislative steps and official rules well.",
-    "music": "tech-pulse",
-    "accent": "blue",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How A Simple Paper Becomes Law",
-    "beats": [
-      {
-        "narration": "One single written proposal turns into an official government rule, but you assume a president must sign every single page",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a paper document transforming into a glowing official seal on a minimalist background",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "How A Bill Becomes Law",
-          "sub": "The hidden ten day rule"
-        }
-      },
-      {
-        "narration": "to make it official, because every textbook says legislation requires a signature,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a presidential desk with a golden fountain pen",
-        "tool": "graphic",
-        "graphic": {
-          "type": "icons",
-          "title": "The Classic Myth",
-          "items": [
-            {
-              "icon": "book",
-              "label": "Textbooks"
-            },
-            {
-              "icon": "shield",
-              "label": "The Veto"
-            }
-          ]
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 12,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "but a bill is just a proposal for a new law or a change to an existing law, so it has to start somewhere simple,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a stack of legislative papers on a wooden podium",
-        "tool": "graphic",
-        "graphic": {
-          "type": "list",
-          "title": "Starting Point",
-          "items": [
-            "Written proposal",
-            "Assigned to committee"
-          ]
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 25,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "and once it is introduced, it is assigned to a committee for heavy debate,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of lawmakers sitting around a large conference table reviewing documents",
-        "tool": "graphic",
-        "graphic": {
-          "type": "flow",
-          "title": "Committee Review",
-          "steps": [
-            "Draft",
-            "Debate",
-            "Vote"
-          ]
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 14,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "then it has to be approved by both the House and Senate in identical form before reaching the president,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of two grand capitol buildings side by side with matching checkmarks",
-        "tool": "graphic",
-        "graphic": {
-          "type": "versus",
-          "title": "Dual Approval",
-          "prefix": "",
-          "suffix": "",
-          "left": {
-            "label": "House",
-            "value": 1
-          },
-          "right": {
-            "label": "Senate",
-            "value": 1
-          }
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 19,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "so when the final paperwork lands on the desk, you expect a big public signing ceremony,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a desk holding a leather folder and a calendar showing ten days",
-        "tool": "flux",
-        "cues": {
-          "pauses": [
-            {
-              "after": 16,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "but if the president does not sign a bill within ten days of presentment while Congress is in session,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a calendar flipping pages past the ten day mark",
-        "tool": "graphic",
-        "graphic": {
-          "type": "counter",
-          "value": 10,
-          "prefix": "",
-          "suffix": "Days",
-          "label": "Session Clock"
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 19,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "the bill automatically becomes law without a single stroke of a pen,",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a document stamping itself automatically with an approved seal",
-        "tool": "graphic",
-        "graphic": {
-          "type": "percent",
-          "value": 100,
-          "label": "Automatic Enactment"
-        },
-        "cues": {
-          "pauses": [
-            {
-              "after": 12,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "because the silence of the executive branch finishes the job on its own.",
-        "image_prompt": "Clean 2d motion graphics, flat vector illustration of a completed statute book resting securely on a clean shelf",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Law Without Ink",
-          "sub": "Automatic enactment"
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "A bill is a proposal for a new law or a change to an existing law.",
-        "supported": true
-      },
-      {
-        "claim": "Once a bill is introduced, it is assigned to a committee.",
-        "supported": true
-      },
-      {
-        "claim": "A bill has to be approved by both the House and Senate in identical form before reaching the president.",
-        "supported": true
-      },
-      {
-        "claim": "If the president does not sign a bill within 10 days of presentment while Congress is in session, the bill automatically becomes law.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"Turn Instagram Views Into Paying Clients\": A profile receiving thousands of visits can still generate zero client bookings.",
-      "t": 1794573711254
-    },
     {
       "role": "bot",
       "text": "Wrote the script for \"Turn Instagram Views Into Paying Clients\"",
@@ -314,10 +87,250 @@
       "role": "bot",
       "text": "Wrote the script for \"How A Simple Paper Becomes Law\"",
       "t": 1794592014668
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How A Simple Paper Becomes Law\"",
+      "t": 1794592031089
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-a-simple-paper-becomes-law-mwf9rd6g",
+      "canvas": "16:9",
+      "title": "How A Simple Paper Becomes Law",
+      "topic": "a about how a bill becomes law",
+      "pitch": {
+        "title": "How A Simple Paper Becomes Law",
+        "hook": "One single written proposal turns into an official government rule.",
+        "angle": "People think bills require a presidential signature to become law, but a bill automatically becomes law if the president waits 10 days while Congress remains in session.",
+        "key_facts": [
+          "A bill is a proposal for a new law or a change to an existing law.",
+          "Once a bill is introduced, it is assigned to a committee.",
+          "A bill has to be approved by both the House and Senate in identical form before reaching the president.",
+          "If the president does not sign a bill within 10 days of presentment while Congress is in session, the bill automatically becomes law."
+        ],
+        "visual_style": "clean 2d motion graphics, flat vector illustration, minimalist style",
+        "length_seconds": 45,
+        "style": "motion-explainer",
+        "style_reason": "Clear vector animations fit legislative steps and official rules well.",
+        "music": "tech-pulse",
+        "accent": "blue",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How A Simple Paper Becomes Law",
+        "beats": [
+          {
+            "narration": "One single written proposal turns into an official government rule, but you assume a president must sign every single page",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a paper document transforming into a glowing official seal on a minimalist background",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "How A Bill Becomes Law",
+              "sub": "The hidden ten day rule"
+            }
+          },
+          {
+            "narration": "to make it official, because every textbook says legislation requires a signature,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a presidential desk with a golden fountain pen",
+            "tool": "graphic",
+            "graphic": {
+              "type": "icons",
+              "title": "The Classic Myth",
+              "items": [
+                {
+                  "icon": "book",
+                  "label": "Textbooks"
+                },
+                {
+                  "icon": "shield",
+                  "label": "The Veto"
+                }
+              ]
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 12,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "but a bill is just a proposal for a new law or a change to an existing law, so it has to start somewhere simple,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a stack of legislative papers on a wooden podium",
+            "tool": "graphic",
+            "graphic": {
+              "type": "list",
+              "title": "Starting Point",
+              "items": [
+                "Written proposal",
+                "Assigned to committee"
+              ]
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 25,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "and once it is introduced, it is assigned to a committee for heavy debate,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of lawmakers sitting around a large conference table reviewing documents",
+            "tool": "graphic",
+            "graphic": {
+              "type": "flow",
+              "title": "Committee Review",
+              "steps": [
+                "Draft",
+                "Debate",
+                "Vote"
+              ]
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 14,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "then it has to be approved by both the House and Senate in identical form before reaching the president,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of two grand capitol buildings side by side with matching checkmarks",
+            "tool": "graphic",
+            "graphic": {
+              "type": "versus",
+              "title": "Dual Approval",
+              "prefix": "",
+              "suffix": "",
+              "left": {
+                "label": "House",
+                "value": 1
+              },
+              "right": {
+                "label": "Senate",
+                "value": 1
+              }
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 19,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "so when the final paperwork lands on the desk, you expect a big public signing ceremony,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a desk holding a leather folder and a calendar showing ten days",
+            "tool": "flux",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 16,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "but if the president does not sign a bill within ten days of presentment while Congress is in session,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a calendar flipping pages past the ten day mark",
+            "tool": "graphic",
+            "graphic": {
+              "type": "counter",
+              "value": 10,
+              "prefix": "",
+              "suffix": "Days",
+              "label": "Session Clock"
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 19,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "the bill automatically becomes law without a single stroke of a pen,",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a document stamping itself automatically with an approved seal",
+            "tool": "graphic",
+            "graphic": {
+              "type": "percent",
+              "value": 100,
+              "label": "Automatic Enactment"
+            },
+            "cues": {
+              "pauses": [
+                {
+                  "after": 12,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "because the silence of the executive branch finishes the job on its own.",
+            "image_prompt": "Clean 2d motion graphics, flat vector illustration of a completed statute book resting securely on a clean shelf",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Law Without Ink",
+              "sub": "Automatic enactment"
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "A bill is a proposal for a new law or a change to an existing law.",
+            "supported": true
+          },
+          {
+            "claim": "Once a bill is introduced, it is assigned to a committee.",
+            "supported": true
+          },
+          {
+            "claim": "A bill has to be approved by both the House and Senate in identical form before reaching the president.",
+            "supported": true
+          },
+          {
+            "claim": "If the president does not sign a bill within 10 days of presentment while Congress is in session, the bill automatically becomes law.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. Schoolhouse Rock: How a Bill Becomes a Law (https://www.youtube.com/watch?v=men-vp5jvzI): Schoolhouse Rock: How a Bill Becomes a. How a Bill Does Not Become a Law - SNL Saturday Night Live•9.6M views 29:01\n2. How laws are made (https://www.usa.gov/how-laws-are-made): How a bill becomes a law · A bill is a proposal for a new law or a change to an existing law. · Once a bill is introduced, it is assigned to a ...\n3. How a Bill Becomes a Law (https://www.ancor.org/advocacy/toolkit/how-a-bill-becomes-a-law/): After a bill has been approved by both the House and Senate in identical form, it is sent to the President. If the President approves of the legislation he or ...\n4. How a Bill Becomes a Law (http://norton.house.gov/how-a-bill-becomes-a-law): A bill becomes law if signed by the President or if not signed within 10 days and Congress is in session.\n5. Life Cycle of a Bill - California State Capitol Museum - CA.gov (https://capitolmuseum.ca.gov/engage/about-the-government/life-cycle-of-a-bill/): Sign Signed by Governor The bill becomes law and is chaptered. No Signature Becomes Law Without Signature The bill becomes law without the Governor signing it.\n6. Legislative Process: United States: Bill to Law (https://lib.law.uw.edu/legproc): If the President signs the bill, it becomes a law. It may also become law if the President does not sign it for 10 days. If the president ...\n7. ArtI.S7.C2.1 Overview of Presidential Approval or Veto of Bills (https://constitution.congress.gov/browse/essay/artI-S7-C2-1/ALDE_00013644/): If the President does not sign a bill within ten days of presentment while Congress is in session, the bill automatically becomes law.\n8. I'm Just a Bill - Schoolhouse Rock (https://www.youtube.com/watch?v=SZ8psP4S6BQ): It is about how a bill becomes a law, how it must go through Congress, and how it can be vetoed, etc.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- On this day, 50 years ago: “I’m Just a Bill” from Schoolhouse Rock written by Dave Frishberg debuted. The song is sung by Jack Sheldon (the voice of Bill) and his son (the boy learning the process). This animated short was shown on Saturday morning TV and many [ig_play_count 15732, like_count 540, comment_count 5, share_count 526]\n- Introduction to law ⚖️ #lawyerlife #whatislaw #lawschool #lawyer #lawofattraction [ig_play_count 411009, like_count 9912, comment_count 23, share_count 3622]\n- What is a Bill? ⚖️📜 | How Laws Are Made – Part 3 Before a law is made, it begins as a Bill! 📄 Learn how a simple proposal goes through discussion, debate and approval to become a law. ✨ #HowLawsAreMade #LawStudy #WhatIsABill #LawStudent #LegalKnowledge LawSe [ig_play_count 2288, comment_count 0]\n- Meet Bill! 📜 Please enjoy this quick animation of him running past several versions of himself on his way to vote. A friendly reminder as we prepare for Election ",
+        "sources": []
+      },
+      "at": 1794592031089
+    },
     {
       "id": "how-blogs-actually-make-money-mwf80ue2",
       "canvas": "16:9",
@@ -1103,97 +1116,6 @@
         "sources": []
       },
       "at": 1794463199033
-    },
-    {
-      "id": "the-secret-empire-of-api-keys-mwc8i6vk",
-      "canvas": "16:9",
-      "title": "The Secret Empire of API Keys",
-      "topic": "how APIs work, how companies money from selling APIs, and how you can the same",
-      "pitch": {
-        "title": "The Secret Empire of API Keys",
-        "hook": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code.",
-        "angle": "Most people believe apps build all their features from scratch, but massive tech companies actually rent out single-function messengers called APIs. By wrapping useful data or AI tools into custom endpoints, anyone can sell access keys on a per-request subscription.",
-        "key_facts": [
-          "Stripe charges a fixed fee plus a percentage for every payment processed through its API code.",
-          "Twilio charges fractions of a cent per request to send text messages for apps like Uber.",
-          "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits.",
-          "Developers build wrapper APIs around public data sources to charge monthly fees for clean access."
-        ],
-        "visual_style": "clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents",
-        "length_seconds": 45,
-        "style": "motion-explainer",
-        "style_reason": "Clean vectors clarify complex data flows and backend connections visually.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "The Secret Empire of API Keys",
-        "beats": [
-          {
-            "narration": "In twenty eleven, a small payment company called Stripe started charging seven cents per transaction for just two lines of code,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing two lines of glowing code on a dark screen with a digital coin dropping",
-            "tool": "flux"
-          },
-          {
-            "narration": "because building apps from scratch is a trap, so massive tech companies rent out tiny tools called APIs,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a glowing messenger pod sending data blocks between two futuristic software blocks",
-            "tool": "flux"
-          },
-          {
-            "narration": "where Twilio charges fractions of a cent per request just to send text messages for apps like Uber,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a tiny text message bubble floating past a neon car icon",
-            "tool": "flux"
-          },
-          {
-            "narration": "and you think apps own every feature they show you, but they are just assembling rented parts like digital Lego blocks,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing various software modules clicking together with glowing neon joints",
-            "tool": "flux"
-          },
-          {
-            "narration": "so solo devs use marketplaces like RapidAPI to sell micro services with strict rate limits,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a marketplace storefront with neon pricing tiers floating above",
-            "tool": "flux"
-          },
-          {
-            "narration": "wrapping clunky public data sources into clean access points so they can charge monthly subscription fees,",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing messy data streams entering a neat teal box and emerging as shiny coins",
-            "tool": "flux"
-          },
-          {
-            "narration": "turning a simple software connection into a quiet machine that prints money while you sleep.",
-            "image_prompt": "Clean flat vector illustration, bold simple shapes, dark background, high contrast teal and neon accents, showing a sleek digital server rack pulsing with neon light under a starry sky",
-            "tool": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                12
-              ],
-              "sfx": []
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Stripe started charging seven cents per transaction for just two lines of code in 2011",
-            "supported": true
-          },
-          {
-            "claim": "Twilio charges fractions of a cent per request to send text messages for apps like Uber",
-            "supported": true
-          },
-          {
-            "claim": "API marketplaces like RapidAPI allow solo developers to monetize micro-services with tiered rate limits",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794408524904
     }
   ],
   "lastRenderAuto": false,
@@ -1205,12 +1127,12 @@
   },
   "renders": [
     {
-      "title": "How Blogs Actually Make Money",
-      "at": 1794589114009,
-      "project": "how-blogs-actually-make-money-mwf80ue2"
+      "title": "How A Simple Paper Becomes Law",
+      "at": 1794592031089,
+      "project": "how-a-simple-paper-becomes-law-mwf9rd6g"
     }
   ],
-  "current_project": "how-blogs-actually-make-money-mwf80ue2",
+  "current_project": "how-a-simple-paper-becomes-law-mwf9rd6g",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1221,16 +1143,13 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "length": 45,
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "documentary",
     "blueprint",
     "kinetic-news",
     "motion-explainer",
-    "bold-pop"
+    "bold-pop",
+    "motion-explainer"
   ],
   "learning": null,
   "styles": {
