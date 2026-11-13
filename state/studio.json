@@ -1,6 +1,6 @@
 {
-  "last_update": 312538497,
-  "time": 1794595896354,
+  "last_update": 312538498,
+  "time": 1794601198745,
   "stage": "idle",
   "topic": "a about how a bill becomes law",
   "research": {
@@ -2129,6 +2129,25 @@
   "editing": false,
   "pick": null,
   "liked": [
+    {
+      "title": "How Draft Paper Overpowers the President",
+      "hook": "Ten days on a desk can turn a piece of paper into federal law without a single signature.",
+      "lines": [
+        "Ten days on a desk turns draft paper into law without a single signature.",
+        "You think every new law requires an active presidential stamp to pass,",
+        "but the system has a hidden automatic timer running in the background.",
+        "Members of the House or Senate draft, sponsor, and introduce a bill,",
+        "pushing it through committee debates and formal legislative votes.",
+        "That bill must pass both the House and Senate in identical form",
+        "before reaching the president for final review.",
+        "You expect an official signing ceremony at the desk,",
+        "but if the president does not sign within ten days,",
+        "and Congress remains in session,",
+        "that silent paper becomes binding federal law automatically.",
+        "In Washington, ten quiet days overrule the president."
+      ],
+      "at": 1794601198745
+    },
     {
       "title": "Seventeen Year Old Beer Heist",
       "hook": "In nineteen eighty-three, a seventeen year old needed three dollars and a fake mustache to grab a cold beer.",
