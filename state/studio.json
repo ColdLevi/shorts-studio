@@ -1,6 +1,6 @@
 {
-  "last_update": 312538492,
-  "time": 1794595795031,
+  "last_update": 312538493,
+  "time": 1794595802331,
   "stage": "idle",
   "topic": "a about how a bill becomes law",
   "research": {
@@ -2068,97 +2068,7 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": {
-    "topic": "a 45 second video about how a bill becomes law",
-    "list": [
-      {
-        "id": "motion-explainer",
-        "kind": "recipe"
-      },
-      {
-        "id": "documentary",
-        "kind": "recipe"
-      },
-      {
-        "id": "stop-motion",
-        "kind": "recipe"
-      },
-      {
-        "id": "cinematic",
-        "kind": "recipe"
-      },
-      {
-        "id": "kinetic-news",
-        "kind": "recipe"
-      },
-      {
-        "id": "retro-vhs",
-        "kind": "recipe"
-      },
-      {
-        "id": "anime",
-        "kind": "recipe"
-      },
-      {
-        "id": "vlog",
-        "kind": "recipe"
-      },
-      {
-        "id": "blueprint",
-        "kind": "recipe"
-      },
-      {
-        "id": "what-if",
-        "kind": "recipe"
-      },
-      {
-        "id": "bold-pop",
-        "kind": "recipe"
-      },
-      {
-        "id": "youtube-1",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-2",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-3",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-4",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-5",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-6",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-7",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-8",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit2",
-        "kind": "learned"
-      }
-    ],
-    "job": {},
-    "at": 1794595785649
-  },
+  "pick": null,
   "liked": [
     {
       "title": "Seventeen Year Old Beer Heist",
@@ -2193,7 +2103,13 @@
     }
   ],
   "assets": null,
-  "intake": null,
+  "intake": {
+    "topic": "a 45 second video about how a bill becomes law",
+    "job": {},
+    "items": [],
+    "n": 0,
+    "at": 1794595802331
+  },
   "assets_at": 1794591953108,
   "narr": null,
   "sb": null
