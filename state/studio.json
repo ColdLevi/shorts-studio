@@ -1,6 +1,6 @@
 {
-  "last_update": 312538461,
-  "time": 1794564808050,
+  "last_update": 312538462,
+  "time": 1794566717192,
   "stage": "idle",
   "topic": "educational entertainment on how to money blogging in 2026",
   "research": {
@@ -1021,7 +1021,8 @@
   "settings": {
     "format": "landscape",
     "graphics": false,
-    "browser_bot": false
+    "browser_bot": false,
+    "pickstyle": true
   },
   "job": null,
   "recent_styles": [
