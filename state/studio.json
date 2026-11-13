@@ -1,148 +1,18 @@
 {
-  "last_update": 312538459,
-  "time": 1794564716493,
-  "stage": "script",
+  "last_update": 312538461,
+  "time": 1794564808050,
+  "stage": "idle",
   "topic": "educational entertainment on how to money blogging in 2026",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How to Start a Blog & Make Money in 2026 (Step by Step) (https://www.youtube.com/watch?v=EP41DYCSd-c): Want to learn how to start a blog and make money? In this step-by-step guide for beginners, we'll walk you through everything—from choosing ...\n2. 8 ways I make money blogging in 2026 (https://www.bloggeratlarge.com/6-ways-i-make-money-blogging/): This post is the cold hard truth about blogging, its ups and downs and the answer to THAT question, how do you make money blogging?\n3. Does blogging still make sense in 2026? (https://www.reddit.com/r/Blogging/comments/1quyjj5/does_blogging_still_make_sense_in_2026/): People keep saying blogging is dead and that everything has moved to social media and video. But blogs still show up in search, and many creators seem ...\n4. Can I make money blogging in 2026 as a complete ... (https://www.quora.com/Can-I-make-money-blogging-in-2026-as-a-complete-beginner): Can I make money blogging in 2026 as a complete beginner?\n5. How to Start a Blog in 2026 (What I'd Do Differently to Make ... (https://www.youtube.com/watch?v=B9whuKbf6FA): This guide is perfect for blogging for beginners who want to make money blogging, showing you how to find unlimited traffic using one ...\n6. How to make money blogging in 2026 (https://www.productiveblogging.com/how-do-blogs-make-money/): Essentially there are five main ways to make money from a blog in 2026: ads, affiliate links, sponsored posts, products and services…\n7. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n8. Top 10 highest earning bloggers 2026 (https://targetinternet.com/resources/top-10-highest-earning-bloggers-2021-earnings-analysis/): This article ranks the top 10 highest earning bloggers of 2026, explains what each one verifiably earns, and pulls out the strategic lessons any marketer or ...",
     "sources": []
   },
-  "pitch": {
-    "title": "How Blogs Make Millions in 2026",
-    "hook": "In 2026, millions of creators declared written blogs completely dead.",
-    "angle": "Beginners assume short video wiped out traditional websites. Modern publishers actually stack five distinct revenue streams directly from search traffic.",
-    "key_facts": [
-      "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
-      "Web blogs continue to secure top search rankings despite creator shifts to social media.",
-      "Selling digital products and courses directly to readers generates higher margins than basic display ads."
-    ],
-    "visual_style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
-    "length_seconds": 42,
-    "style": "kinetic-news",
-    "style_reason": "Fast paced breakdown of modern web monetization streams.",
-    "music": "tech-pulse",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How Blogs Make Millions in 2026",
-    "beats": [
-      {
-        "narration": "In twenty twenty-six, millions of creators declared written blogs dead,",
-        "image_prompt": "Sleek 2k digital artwork of a dark room with a glowing neon terminal screen displaying a tombstone vector graphic, isometric tech layout, moody blue and gold ambient lighting, upper fifth empty.",
-        "tool": "stock",
-        "query": "glowing computer server",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            1,
-            2
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "assuming short video wiped out traditional websites overnight.",
-        "image_prompt": "Sleek 2k digital artwork of multiple glowing smartphone screens floating in dark space playing video streams, neon purple and cyan lighting, isometric tech visual style, upper fifth empty.",
-        "tool": "stock",
-        "query": "vertical video smartphone"
-      },
-      {
-        "narration": "But when I dug into top search results,",
-        "image_prompt": "Sleek 2k digital artwork showing a clean neon search bar hovering in a dark cyberspace corridor, isometric tech graphics with subtle gold glow, moody ambient backdrop, upper fifth empty.",
-        "tool": "stock",
-        "query": "search engine query"
-      },
-      {
-        "narration": "written articles were still quietly taking the top rankings.",
-        "image_prompt": "Sleek 2k digital artwork of digital blog pages floating at the top of a glowing neon hierarchy tree, isometric tech design, moody gold ambient lighting, upper fifth clear.",
-        "tool": "stock",
-        "query": "digital document ranking"
-      },
-      {
-        "narration": "As creators rushed toward social algorithms,",
-        "image_prompt": "Sleek 2k digital artwork of a crowded neon highway of social icons veering away, isometric tech graphics with sharp ambient lighting, upper fifth kept empty.",
-        "tool": "stock",
-        "query": "social media analytics"
-      },
-      {
-        "narration": "traditional search traffic became a wide open goldmine.",
-        "image_prompt": "Sleek 2k digital artwork of glowing golden data streams flowing unobstructed into a central server node, isometric tech layout, moody ambient lighting, upper fifth empty.",
-        "tool": "flux",
-        "query": "digital gold matrix"
-      },
-      {
-        "narration": "I found modern publishers stack five different revenue streams.",
-        "image_prompt": "Sleek 2k digital artwork showing five glowing neon isometric layers stacking on top of each other, gold and blue tech accents, moody lighting, upper fifth clear.",
-        "tool": "flux",
-        "query": "digital revenue stack",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            5
-          ],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "They place display ads, share affiliate links, and publish sponsored posts,",
-        "image_prompt": "Sleek 2k digital artwork of floating neon banners displaying ad and affiliate link symbols, isometric tech aesthetic, moody ambient lighting, upper fifth empty.",
-        "tool": "flux",
-        "query": "online ad banner"
-      },
-      {
-        "narration": "but standard display ads pay really low margins.",
-        "image_prompt": "Sleek 2k digital artwork of a glowing neon coin dropping into a small isometric container, moody blue lighting with sharp gold highlights, upper fifth left plain.",
-        "tool": "flux",
-        "query": "low graph analytics"
-      },
-      {
-        "narration": "So publishers sell digital products and courses right to their readers,",
-        "image_prompt": "Sleek 2k digital artwork of glowing golden digital course boxes and e-books sitting on a dark tech platform, isometric graphics, moody ambient lighting, upper fifth clear.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow camera pan left as neon course boxes open with brilliant golden glow."
-      },
-      {
-        "narration": "pulling huge profits directly out of simple search traffic.",
-        "image_prompt": "Sleek 2k digital artwork of an isometric digital vault opening up with glowing neon dollar symbols floating into dark space, moody ambient lighting, top fifth empty.",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow pull-back camera motion revealing glowing golden numbers floating upwards.",
-        "cues": {
-          "pauses": [],
-          "emphasis": [
-            1
-          ],
-          "sfx": []
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
-        "supported": true
-      },
-      {
-        "claim": "Blogs continue to show up and hold top rankings in search results.",
-        "supported": true
-      },
-      {
-        "claim": "Selling digital products and courses directly generates higher margins than display ads.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"How APIs Run the Internet\"",
-      "t": 1794475464406
-    },
     {
       "role": "user",
       "text": "Create a documentary plus humour video for how to treat a girl that will make her fall for you",
@@ -217,10 +87,153 @@
       "role": "bot",
       "text": "Wrote the script for \"How Blogs Make Millions in 2026\"",
       "t": 1794564716493
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How Blogs Make Millions in 2026\"",
+      "t": 1794564808050
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-blogs-make-millions-in-2026-mwetjvrv",
+      "canvas": "16:9",
+      "title": "How Blogs Make Millions in 2026",
+      "topic": "educational entertainment on how to money blogging in 2026",
+      "pitch": {
+        "title": "How Blogs Make Millions in 2026",
+        "hook": "In 2026, millions of creators declared written blogs completely dead.",
+        "angle": "Beginners assume short video wiped out traditional websites. Modern publishers actually stack five distinct revenue streams directly from search traffic.",
+        "key_facts": [
+          "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
+          "Web blogs continue to secure top search rankings despite creator shifts to social media.",
+          "Selling digital products and courses directly to readers generates higher margins than basic display ads."
+        ],
+        "visual_style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
+        "length_seconds": 42,
+        "style": "kinetic-news",
+        "style_reason": "Fast paced breakdown of modern web monetization streams.",
+        "music": "tech-pulse",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How Blogs Make Millions in 2026",
+        "beats": [
+          {
+            "narration": "In twenty twenty-six, millions of creators declared written blogs dead,",
+            "image_prompt": "Sleek 2k digital artwork of a dark room with a glowing neon terminal screen displaying a tombstone vector graphic, isometric tech layout, moody blue and gold ambient lighting, upper fifth empty.",
+            "tool": "stock",
+            "query": "glowing computer server",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                1,
+                2
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "assuming short video wiped out traditional websites overnight.",
+            "image_prompt": "Sleek 2k digital artwork of multiple glowing smartphone screens floating in dark space playing video streams, neon purple and cyan lighting, isometric tech visual style, upper fifth empty.",
+            "tool": "stock",
+            "query": "vertical video smartphone"
+          },
+          {
+            "narration": "But when I dug into top search results,",
+            "image_prompt": "Sleek 2k digital artwork showing a clean neon search bar hovering in a dark cyberspace corridor, isometric tech graphics with subtle gold glow, moody ambient backdrop, upper fifth empty.",
+            "tool": "stock",
+            "query": "search engine query"
+          },
+          {
+            "narration": "written articles were still quietly taking the top rankings.",
+            "image_prompt": "Sleek 2k digital artwork of digital blog pages floating at the top of a glowing neon hierarchy tree, isometric tech design, moody gold ambient lighting, upper fifth clear.",
+            "tool": "stock",
+            "query": "digital document ranking"
+          },
+          {
+            "narration": "As creators rushed toward social algorithms,",
+            "image_prompt": "Sleek 2k digital artwork of a crowded neon highway of social icons veering away, isometric tech graphics with sharp ambient lighting, upper fifth kept empty.",
+            "tool": "stock",
+            "query": "social media analytics"
+          },
+          {
+            "narration": "traditional search traffic became a wide open goldmine.",
+            "image_prompt": "Sleek 2k digital artwork of glowing golden data streams flowing unobstructed into a central server node, isometric tech layout, moody ambient lighting, upper fifth empty.",
+            "tool": "flux",
+            "query": "digital gold matrix"
+          },
+          {
+            "narration": "I found modern publishers stack five different revenue streams.",
+            "image_prompt": "Sleek 2k digital artwork showing five glowing neon isometric layers stacking on top of each other, gold and blue tech accents, moody lighting, upper fifth clear.",
+            "tool": "flux",
+            "query": "digital revenue stack",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                5
+              ],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "They place display ads, share affiliate links, and publish sponsored posts,",
+            "image_prompt": "Sleek 2k digital artwork of floating neon banners displaying ad and affiliate link symbols, isometric tech aesthetic, moody ambient lighting, upper fifth empty.",
+            "tool": "flux",
+            "query": "online ad banner"
+          },
+          {
+            "narration": "but standard display ads pay really low margins.",
+            "image_prompt": "Sleek 2k digital artwork of a glowing neon coin dropping into a small isometric container, moody blue lighting with sharp gold highlights, upper fifth left plain.",
+            "tool": "flux",
+            "query": "low graph analytics"
+          },
+          {
+            "narration": "So publishers sell digital products and courses right to their readers,",
+            "image_prompt": "Sleek 2k digital artwork of glowing golden digital course boxes and e-books sitting on a dark tech platform, isometric graphics, moody ambient lighting, upper fifth clear.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow camera pan left as neon course boxes open with brilliant golden glow."
+          },
+          {
+            "narration": "pulling huge profits directly out of simple search traffic.",
+            "image_prompt": "Sleek 2k digital artwork of an isometric digital vault opening up with glowing neon dollar symbols floating into dark space, moody ambient lighting, top fifth empty.",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow pull-back camera motion revealing glowing golden numbers floating upwards.",
+            "cues": {
+              "pauses": [],
+              "emphasis": [
+                1
+              ],
+              "sfx": []
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
+            "supported": true
+          },
+          {
+            "claim": "Blogs continue to show up and hold top rankings in search results.",
+            "supported": true
+          },
+          {
+            "claim": "Selling digital products and courses directly generates higher margins than display ads.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How to Start a Blog & Make Money in 2026 (Step by Step) (https://www.youtube.com/watch?v=EP41DYCSd-c): Want to learn how to start a blog and make money? In this step-by-step guide for beginners, we'll walk you through everything—from choosing ...\n2. 8 ways I make money blogging in 2026 (https://www.bloggeratlarge.com/6-ways-i-make-money-blogging/): This post is the cold hard truth about blogging, its ups and downs and the answer to THAT question, how do you make money blogging?\n3. Does blogging still make sense in 2026? (https://www.reddit.com/r/Blogging/comments/1quyjj5/does_blogging_still_make_sense_in_2026/): People keep saying blogging is dead and that everything has moved to social media and video. But blogs still show up in search, and many creators seem ...\n4. Can I make money blogging in 2026 as a complete ... (https://www.quora.com/Can-I-make-money-blogging-in-2026-as-a-complete-beginner): Can I make money blogging in 2026 as a complete beginner?\n5. How to Start a Blog in 2026 (What I'd Do Differently to Make ... (https://www.youtube.com/watch?v=B9whuKbf6FA): This guide is perfect for blogging for beginners who want to make money blogging, showing you how to find unlimited traffic using one ...\n6. How to make money blogging in 2026 (https://www.productiveblogging.com/how-do-blogs-make-money/): Essentially there are five main ways to make money from a blog in 2026: ads, affiliate links, sponsored posts, products and services…\n7. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n8. Top 10 highest earning bloggers 2026 (https://targetinternet.com/resources/top-10-highest-earning-bloggers-2021-earnings-analysis/): This article ranks the top 10 highest earning bloggers of 2026, explains what each one verifiably earns, and pulls out the strategic lessons any marketer or ...",
+        "sources": []
+      },
+      "at": 1794564808050
+    },
     {
       "id": "the-zero-marginal-cost-money-engine-mwem7fiy",
       "canvas": "16:9",
@@ -984,124 +997,6 @@
         "sources": []
       },
       "at": 1794370220245
-    },
-    {
-      "id": "the-real-money-behind-ai-mwbixkwb",
-      "canvas": "9:16",
-      "title": "The Real Money Behind AI",
-      "topic": "short about what is going on in the ai industry today",
-      "pitch": {
-        "title": "The Real Money Behind AI",
-        "hook": "Five hundred billion dollars poured into microchips and data centers this year alone.",
-        "angle": "Most people think tech giants make fortune selling ten dollar subscriptions to chatbots. The reality is an insane land rush for power plants and server racks just to keep up.",
-        "key_facts": [
-          "Tech companies spent over one hundred billion dollars on AI infrastructure in twenty twenty four.",
-          "A single modern AI cluster uses over one hundred thousand GPUs.",
-          "Training one frontier model burns millions of kilowatt hours of power.",
-          "Generative AI startups spend up to eighty percent of their capital on cloud computing."
-        ],
-        "visual_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
-        "length_seconds": 45,
-        "style": "fastedit2",
-        "style_reason": "High contrast UI graphics cleanly visualize massive tech infrastructure numbers fast.",
-        "music": "tech-pulse",
-        "accent": "teal",
-        "format": "vertical"
-      },
-      "script": {
-        "title": "The Real Money Behind AI",
-        "beats": [
-          {
-            "narration": "Five hundred billion dollars poured into microchips and data centers this year alone,",
-            "image_prompt": "Minimalist digital app interface mockup of financial charts, bold solid teal background, crisp modern lighting, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "because most people think tech giants make fortunes selling ten dollar chat subscriptions,",
-            "image_prompt": "Playful 2D flat illustration of a chat bubble UI on a solid pastel background, clean vector style, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "but I learned the reality is an insane land rush for power plants",
-            "image_prompt": "Minimalist vector illustration of an electrical power plant, solid vibrant backdrop, modern studio lighting, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "and server racks just to keep up.",
-            "image_prompt": "Minimalist digital app mockup showing server rack load gauges, solid color backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "Tech companies spent over one hundred billion dollars on infrastructure in twenty twenty four,",
-            "image_prompt": "Playful 2D flat illustration of a massive bank vault with digital coin symbols, solid backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "so I checked how much hardware that actually buys,",
-            "image_prompt": "Minimalist digital app interface showing a shopping cart icon with microchips, solid pastel backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "and a single modern AI cluster uses over one hundred thousand GPUs,",
-            "image_prompt": "Playful 2D flat vector illustration of stacked computer processor chips, bold solid color backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "which sounds impressive until you realize",
-            "image_prompt": "Minimalist digital app UI dashboard with an exclamation warning icon, solid teal background, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "training one frontier model burns millions of kilowatt hours of power.",
-            "image_prompt": "Minimalist vector illustration of a lightning bolt next to a glowing battery indicator, solid backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "Generative AI startups spend up to eighty percent of their capital on cloud computing,",
-            "image_prompt": "Minimalist app interface showing a pie chart with eighty percent highlighted, solid color backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "leaving almost nothing for actual profits.",
-            "image_prompt": "Playful 2D flat illustration of an empty piggy bank with digital sparkles, solid pastel backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "So next time you prompt a chatbot, remember",
-            "image_prompt": "Minimalist vector illustration of a smartphone screen showing a blinking cursor, solid vibrant backdrop, vertical 9:16",
-            "tool": "flux"
-          },
-          {
-            "narration": "you are renting space in a very expensive power plant.",
-            "image_prompt": "Minimalist digital illustration of a glowing server cooling tower, solid teal backdrop, crisp modern lighting, vertical 9:16",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Tech companies spent over one hundred billion dollars on AI infrastructure in twenty twenty four.",
-            "supported": true
-          },
-          {
-            "claim": "A single modern AI cluster uses over one hundred thousand GPUs.",
-            "supported": true
-          },
-          {
-            "claim": "Training one frontier model burns millions of kilowatt hours of power.",
-            "supported": true
-          },
-          {
-            "claim": "Generative AI startups spend up to eighty percent of their capital on cloud computing.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794365572811
     }
   ],
   "lastRenderAuto": false,
@@ -1113,12 +1008,12 @@
   },
   "renders": [
     {
-      "title": "The Zero Marginal Cost Money Engine",
-      "at": 1794552469837,
-      "project": "the-zero-marginal-cost-money-engine-mwem7fiy"
+      "title": "How Blogs Make Millions in 2026",
+      "at": 1794564808050,
+      "project": "how-blogs-make-millions-in-2026-mwetjvrv"
     }
   ],
-  "current_project": "the-zero-marginal-cost-money-engine-mwem7fiy",
+  "current_project": "how-blogs-make-millions-in-2026-mwetjvrv",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1128,15 +1023,13 @@
     "graphics": false,
     "browser_bot": false
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "motion-explainer",
     "retro-vhs",
     "motion-explainer",
     "documentary",
-    "blueprint"
+    "blueprint",
+    "kinetic-news"
   ],
   "learning": null,
   "styles": {
