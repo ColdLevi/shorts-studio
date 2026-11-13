@@ -8,7 +8,7 @@ import type { TextOverlay } from './types';
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 
-export const Overlay: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: string; displayFont?: string }> = ({ o, L, accent, pid, displayFont }) => {
+const OverlayBase: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: string; displayFont?: string }> = ({ o, L, accent, pid, displayFont }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const len = Math.max(0.2, o.end - o.start);
@@ -30,7 +30,7 @@ export const Overlay: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid:
   if (o.kind === 'lower-third') {
     return (
       <AbsoluteFill style={{ opacity: out }}>
-        <div style={{ position: 'absolute', left: L.pad, top: typeof o.position === 'object' ? top : L.h * (L.shape === 'wide' ? 0.62 : 0.5),
+        <div style={{ position: 'absolute', left: L.pad, top: typeof o.position === 'object' ? top : L.h * (L.shape === 'wide' ? 0.62 : 0.8),
           transform: `translateX(${(1 - inP) * -60 * u}px)`, opacity: inP }}>
           <div style={{ background: o.background || accent, color: '#111', fontFamily: f.family, fontWeight: f.weight(900), fontSize: 46 * u,
             padding: `${10 * u}px ${22 * u}px`, borderRadius: 10 * u, display: 'inline-block' }}>{o.text}</div>
@@ -66,12 +66,36 @@ export const Overlay: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid:
     <AbsoluteFill style={{ alignItems: 'center', top, opacity: out }}>
       <div style={{
         transform: `translateY(${(1 - inP) * -60 * u}px)`, background: o.background || accent, color: o.color || '#111',
-        fontFamily: f.family, fontWeight: f.weight(900), fontSize: (L.shape === 'wide' ? 58 : 64) * u, lineHeight: 1.1, textAlign: 'center',
+        fontFamily: f.family, fontWeight: f.weight(900), fontSize: (L.shape === 'wide' ? 58 : 64) * u * (String(o.text || '').length > 70 ? 0.72 : String(o.text || '').length > 40 ? 0.86 : 1), lineHeight: 1.1, textAlign: 'center',
         padding: `${22 * u}px ${36 * u}px`, borderRadius: 18 * u, maxWidth: Math.min(L.w - L.pad * 2, (L.shape === 'wide' ? 1300 : 920) * u),
         textTransform: 'uppercase', boxShadow: '0 12px 40px rgba(0,0,0,0.45)',
       }}>{o.text}</div>
     </AbsoluteFill>
   );
+};
+
+type OvProps = React.ComponentProps<typeof OverlayBase>;
+const ENTR = ['slide-l', 'blur', 'rise', 'wipe', 'slide-r'] as const;
+// o1: act-aware entrance. Hook (first 4 s) punches in; the middle rotates styles so neighbours differ.
+export const Overlay: React.FC<OvProps> = (props) => {
+  const { o, L } = props;
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (o.kind === 'image' || o.kind === 'chapter') return <OverlayBase {...props} />;
+  const hook = o.start < 4;
+  const e = hook ? 'punch' : ENTR[Math.abs(Math.round(o.start)) % ENTR.length];
+  const p = spring({ frame, fps, config: hook ? { damping: 12, stiffness: 260 } : { damping: 18, stiffness: 120 } });
+  const q = 1 - Math.min(1, Math.max(0, p));
+  const w = interpolate(frame, [0, 0.45 * fps], [0, 1], CLAMP);
+  const u = L.u;
+  let transform = 'none', filter = 'none', clipPath = 'none';
+  if (e === 'punch') { transform = `scale(${1 + 0.3 * q})`; if (q > 0.01) filter = `blur(${10 * q * u}px)`; }
+  else if (e === 'slide-l') transform = `translateX(${-140 * u * q}px)`;
+  else if (e === 'slide-r') transform = `translateX(${140 * u * q}px)`;
+  else if (e === 'rise') transform = `translateY(${70 * u * q}px)`;
+  else if (e === 'blur') { if (q > 0.01) filter = `blur(${18 * q * u}px)`; }
+  else if (e === 'wipe') { if (w < 1) clipPath = `inset(0 ${(1 - w) * 100}% 0 0)`; }
+  return <AbsoluteFill style={{ transform, filter, clipPath, transformOrigin: '50% 20%' }}><OverlayBase {...props} /></AbsoluteFill>;
 };
 
 export const Progress: React.FC<{ accent: string; L: Layout }> = ({ accent, L }) => {
