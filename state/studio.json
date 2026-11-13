@@ -1,6 +1,6 @@
 {
-  "last_update": 312538476,
-  "time": 1794587714110,
+  "last_update": 312538477,
+  "time": 1794588140374,
   "stage": "pitch",
   "topic": "a about how blogs money",
   "research": {
@@ -29,16 +29,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Please use /settings to choose a style or recipe for your videos.",
-      "t": 1794564561783
-    },
-    {
-      "role": "user",
-      "text": "/settings",
-      "t": 1794564573854
-    },
     {
       "role": "bot",
       "text": "Updated tool settings",
@@ -108,6 +98,16 @@
       "role": "bot",
       "text": "Pitched \"How Blogs Actually Make Money\": In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
       "t": 1794587714110
+    },
+    {
+      "role": "user",
+      "text": "Turn on motion graphics",
+      "t": 1794588138059
+    },
+    {
+      "role": "bot",
+      "text": "Updated tool settings",
+      "t": 1794588140374
     }
   ],
   "working": null,
@@ -1021,7 +1021,7 @@
   "awaitImage": null,
   "settings": {
     "format": "landscape",
-    "graphics": false,
+    "graphics": true,
     "browser_bot": false,
     "pickstyle": true
   },
