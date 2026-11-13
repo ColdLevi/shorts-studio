@@ -1,94 +1,18 @@
 {
-  "last_update": 312538480,
-  "time": 1794589027505,
-  "stage": "script",
+  "last_update": 312538482,
+  "time": 1794589114009,
+  "stage": "idle",
   "topic": "a about how blogs money",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How I Make Money With Simple Blog Posts (Without Going ... (https://medium.com/practice-in-public/how-i-make-money-with-simple-blog-posts-without-going-viral-d88e5f1235e5): The key to making money with blog posts is to build an email list. (More on that later.) 99% of creators compete on subscriber count ...\n2. Can I earn by writing blogs? (https://www.reddit.com/r/Blogging/comments/1ha5fn2/can_i_earn_by_writing_blogs/): I want to write blogs on productivity or study tips. I am a student and love to write. So can I earn money from blogging. Where do people post it and ...\n3. How I Write Blog Posts That Actually Make Money (https://www.youtube.com/watch?v=6OWA4t6kBnI): Want to learn how to make money with a blog? I'm sharing my best blogging strategies to help you increase your blog revenue and convert readers ...\n4. How can one make money starting a blog? (https://www.quora.com/How-can-one-make-money-starting-a-blog): How can one make money starting a blog?\n5. How To Make Money Blogging (https://adsense.google.com/start/resources/how-to-make-money-from-blogging/): There are several ways to monetize a blog. Discover different online revenue models and popular strategies to make money from your blog.\n6. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n7. How to Make Money Blogging: A Beginner's Guide (https://www.awai.com/make-money-blogging/): Find out seven steps you can take to create and launch your own blog as. This chapter covers the main ways that blogs make money, from affiliate marketing to ...\n8. Writing is NOT Dead! How to Make Money Blogging in 2025 (8 ... (https://www.youtube.com/watch?v=8APe7V5mhWE): To determine how much money you can make from blogging, we'll walk you through the best tips, timelines, and promotional tactics to help you ...",
     "sources": []
   },
-  "pitch": {
-    "title": "How Blogs Actually Make Money",
-    "hook": "In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
-    "angle": "Most writers assume blogs get rich from viral traffic and banner ads. Real revenue comes from capturing email readers to sell targeted digital products and affiliate recommendations.",
-    "key_facts": [
-      "Ninety-nine percent of creators compete on subscriber counts rather than building direct reader lists.",
-      "Blog revenue builds heavily on affiliate marketing links and direct digital product sales like courses.",
-      "Ad networks like Google AdSense generate income by showing automated ad banners on post pages."
-    ],
-    "visual_style": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop",
-    "length_seconds": 45,
-    "style": "bold-pop",
-    "style_reason": "vibrant pop graphics simplify financial concepts into high-impact visuals",
-    "music": "tech-pulse",
-    "accent": "teal",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "How Blogs Actually Make Money",
-    "beats": [
-      {
-        "narration": "In two thousand twenty-six, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts,",
-        "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a massive wall of glowing glowing screens with millions of tiny blog post icons floating upward",
-        "tool": "flux"
-      },
-      {
-        "narration": "because most writers assume blogs get rich from viral traffic and banner ads, / but real revenue comes from capturing email readers",
-        "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a giant glossy banner ad on a digital billboard getting ignored by passing miniature cartoon figures",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "because most writers assume blogs get",
-          "sub": ""
-        }
-      },
-      {
-        "narration": "to sell targeted digital products and affiliate recommendations, / so building a direct reader list beats chasing empty clicks,",
-        "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a sleek email inbox envelope sorting golden digital course boxes and affiliate link badges",
-        "tool": "flux"
-      },
-      {
-        "narration": "since ad networks like Google AdSense only generate income by showing automated ad banners on post pages,",
-        "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a miniature automated web server rack flashing green lights beside a glowing search engine logo",
-        "tool": "stock",
-        "query": "digital server racks"
-      },
-      {
-        "narration": "while smart creators focus on direct digital product sales like courses, / because that turns casual visitors into steady income.",
-        "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a stack of colorful digital course modules and graduation cap icons resting on a clean wooden desk",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "while smart creators focus on direct",
-          "sub": ""
-        }
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "Ninety-nine percent of creators compete on subscriber counts rather than building direct reader lists.",
-        "supported": true
-      },
-      {
-        "claim": "Blog revenue builds heavily on affiliate marketing links and direct digital product sales like courses.",
-        "supported": true
-      },
-      {
-        "claim": "Ad networks like Google AdSense generate income by showing automated ad banners on post pages.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Rendering \"How Blogs Make Millions in 2026\"",
-      "t": 1794564808050
-    },
     {
       "role": "user",
       "text": "/key",
@@ -163,10 +87,99 @@
       "role": "bot",
       "text": "Wrote the script for \"How Blogs Actually Make Money\"",
       "t": 1794589027505
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"How Blogs Actually Make Money\"",
+      "t": 1794589114009
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "how-blogs-actually-make-money-mwf80ue2",
+      "canvas": "16:9",
+      "title": "How Blogs Actually Make Money",
+      "topic": "a about how blogs money",
+      "pitch": {
+        "title": "How Blogs Actually Make Money",
+        "hook": "In 2026, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts.",
+        "angle": "Most writers assume blogs get rich from viral traffic and banner ads. Real revenue comes from capturing email readers to sell targeted digital products and affiliate recommendations.",
+        "key_facts": [
+          "Ninety-nine percent of creators compete on subscriber counts rather than building direct reader lists.",
+          "Blog revenue builds heavily on affiliate marketing links and direct digital product sales like courses.",
+          "Ad networks like Google AdSense generate income by showing automated ad banners on post pages."
+        ],
+        "visual_style": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop",
+        "length_seconds": 45,
+        "style": "bold-pop",
+        "style_reason": "vibrant pop graphics simplify financial concepts into high-impact visuals",
+        "music": "tech-pulse",
+        "accent": "teal",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "How Blogs Actually Make Money",
+        "beats": [
+          {
+            "narration": "In two thousand twenty-six, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts,",
+            "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a massive wall of glowing glowing screens with millions of tiny blog post icons floating upward",
+            "tool": "flux"
+          },
+          {
+            "narration": "because most writers assume blogs get rich from viral traffic and banner ads, / but real revenue comes from capturing email readers",
+            "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a giant glossy banner ad on a digital billboard getting ignored by passing miniature cartoon figures",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "because most writers assume blogs get",
+              "sub": ""
+            }
+          },
+          {
+            "narration": "to sell targeted digital products and affiliate recommendations, / so building a direct reader list beats chasing empty clicks,",
+            "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a sleek email inbox envelope sorting golden digital course boxes and affiliate link badges",
+            "tool": "flux"
+          },
+          {
+            "narration": "since ad networks like Google AdSense only generate income by showing automated ad banners on post pages,",
+            "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a miniature automated web server rack flashing green lights beside a glowing search engine logo",
+            "tool": "stock",
+            "query": "digital server racks"
+          },
+          {
+            "narration": "while smart creators focus on direct digital product sales like courses, / because that turns casual visitors into steady income.",
+            "image_prompt": "vibrant 3D isometric graphic art, clean vector shapes, rich lighting, studio backdrop, showing a stack of colorful digital course modules and graduation cap icons resting on a clean wooden desk",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "while smart creators focus on direct",
+              "sub": ""
+            }
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "Ninety-nine percent of creators compete on subscriber counts rather than building direct reader lists.",
+            "supported": true
+          },
+          {
+            "claim": "Blog revenue builds heavily on affiliate marketing links and direct digital product sales like courses.",
+            "supported": true
+          },
+          {
+            "claim": "Ad networks like Google AdSense generate income by showing automated ad banners on post pages.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How I Make Money With Simple Blog Posts (Without Going ... (https://medium.com/practice-in-public/how-i-make-money-with-simple-blog-posts-without-going-viral-d88e5f1235e5): The key to making money with blog posts is to build an email list. (More on that later.) 99% of creators compete on subscriber count ...\n2. Can I earn by writing blogs? (https://www.reddit.com/r/Blogging/comments/1ha5fn2/can_i_earn_by_writing_blogs/): I want to write blogs on productivity or study tips. I am a student and love to write. So can I earn money from blogging. Where do people post it and ...\n3. How I Write Blog Posts That Actually Make Money (https://www.youtube.com/watch?v=6OWA4t6kBnI): Want to learn how to make money with a blog? I'm sharing my best blogging strategies to help you increase your blog revenue and convert readers ...\n4. How can one make money starting a blog? (https://www.quora.com/How-can-one-make-money-starting-a-blog): How can one make money starting a blog?\n5. How To Make Money Blogging (https://adsense.google.com/start/resources/how-to-make-money-from-blogging/): There are several ways to monetize a blog. Discover different online revenue models and popular strategies to make money from your blog.\n6. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n7. How to Make Money Blogging: A Beginner's Guide (https://www.awai.com/make-money-blogging/): Find out seven steps you can take to create and launch your own blog as. This chapter covers the main ways that blogs make money, from affiliate marketing to ...\n8. Writing is NOT Dead! How to Make Money Blogging in 2025 (8 ... (https://www.youtube.com/watch?v=8APe7V5mhWE): To determine how much money you can make from blogging, we'll walk you through the best tips, timelines, and promotional tactics to help you ...",
+        "sources": []
+      },
+      "at": 1794589114009
+    },
     {
       "id": "turn-instagram-views-into-paying-cli-mwf2wj4q",
       "canvas": "16:9",
@@ -959,100 +972,6 @@
         "sources": []
       },
       "at": 1794408524904
-    },
-    {
-      "id": "how-apis-actually-move-the-internet-mwbyg8u3",
-      "canvas": "16:9",
-      "title": "How APIs Actually Move The Internet",
-      "topic": "Creat that's more of tech that teach people how API works",
-      "pitch": {
-        "title": "How APIs Actually Move The Internet",
-        "hook": "Ten billion automated API requests fire across the internet every single hour.",
-        "angle": "People assume their phone apps directly tap into an airline or weather database. Software actually communicates through a strict digital courier that only accepts standardized question templates.",
-        "key_facts": [
-          "Application Programming Interfaces define specific rules and formats for separate software systems to exchange data.",
-          "Most modern web APIs transmit structured text using HTTP protocols and JSON payloads.",
-          "Apps use private API keys to authenticate requests and enforce rate limits on external developers.",
-          "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously."
-        ],
-        "visual_style": "Dark corporate digital UI mixed with desaturated grayscale webcam headshots and vivid scarlet red humanoid figures.",
-        "length_seconds": 45,
-        "style": "upload-5",
-        "style_reason": "Satirical remote call interface turns abstract digital handshakes into tangible bureaucratic absurdities.",
-        "music": "tech-pulse",
-        "accent": "red",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "How APIs Actually Move The Internet",
-        "beats": [
-          {
-            "narration": "You open a travel app expecting a direct peek inside an airline database, but",
-            "image_prompt": "Dark corporate digital UI framing a desaturated grayscale video conference grid with red data streams, landscape",
-            "tool": "higgsfield",
-            "motion": "Static corporate UI window with a subtle slow zoom toward a desaturated webcam tile as glowing red code lines activate",
-            "still": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                8
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "separate software systems won't speak directly, so your phone uses a strict digital courier that only takes standard question templates.",
-            "image_prompt": "Dark corporate digital UI featuring a vivid scarlet red humanoid figure acting as an office clerk handing paper-like digital forms to desaturated grayscale server icons, landscape",
-            "tool": "flux"
-          },
-          {
-            "narration": "They format every query into structured text using standard HTTP protocols and JSON payloads, so",
-            "image_prompt": "Dark corporate digital UI displaying desaturated grayscale terminal text blocks highlighted by glowing scarlet red brackets, landscape",
-            "tool": "flux"
-          },
-          {
-            "narration": "travel platforms can query multiple independent airline reservation engines all at once, but",
-            "image_prompt": "Dark corporate digital UI showing multiple desaturated grayscale webcam windows connecting to central airline server blocks, landscape",
-            "tool": "flux"
-          },
-          {
-            "narration": "the receiving servers will instantly freeze the data stream unless a private API key authenticates the call and enforces strict rate limits.",
-            "image_prompt": "Dark corporate digital UI featuring a vivid scarlet red key locking down desaturated grayscale network channels, landscape",
-            "tool": "flux",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                21
-              ],
-              "sfx": []
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Application Programming Interfaces define specific rules and formats for separate software systems to exchange data",
-            "supported": true
-          },
-          {
-            "claim": "Most modern web APIs transmit structured text using HTTP protocols and JSON payloads",
-            "supported": true
-          },
-          {
-            "claim": "Travel comparison platforms use APIs to query multiple independent airline reservation engines simultaneously",
-            "supported": true
-          },
-          {
-            "claim": "Apps use private API keys to authenticate requests and enforce rate limits on external developers",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794391637900
     }
   ],
   "lastRenderAuto": false,
@@ -1064,12 +983,12 @@
   },
   "renders": [
     {
-      "title": "Turn Instagram Views Into Paying Clients",
-      "at": 1794580514778,
-      "project": "turn-instagram-views-into-paying-cli-mwf2wj4q"
+      "title": "How Blogs Actually Make Money",
+      "at": 1794589114009,
+      "project": "how-blogs-actually-make-money-mwf80ue2"
     }
   ],
-  "current_project": "turn-instagram-views-into-paying-cli-mwf2wj4q",
+  "current_project": "how-blogs-actually-make-money-mwf80ue2",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1080,16 +999,13 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "length": 45,
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "motion-explainer",
     "documentary",
     "blueprint",
     "kinetic-news",
-    "motion-explainer"
+    "motion-explainer",
+    "bold-pop"
   ],
   "learning": null,
   "styles": {
