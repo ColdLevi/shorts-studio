@@ -1,6 +1,6 @@
 {
-  "last_update": 312538452,
-  "time": 1794555843138,
+  "last_update": 312538453,
+  "time": 1794564561783,
   "stage": "idle",
   "topic": "how we can sell digital products and money",
   "research": {
@@ -13,16 +13,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "Lets create a video on how API works",
-      "t": 1794472162808
-    },
-    {
-      "role": "bot",
-      "text": "Pitched \"How APIs Run the Internet\": Uber processes millions of rides without owning a single mapping satellite.",
-      "t": 1794472198040
-    },
     {
       "role": "user",
       "text": "Check again",
@@ -92,6 +82,16 @@
       "role": "bot",
       "text": "Rendering \"The Zero Marginal Cost Money Engine\"",
       "t": 1794552469837
+    },
+    {
+      "role": "user",
+      "text": "/pickstyle",
+      "t": 1794564559608
+    },
+    {
+      "role": "bot",
+      "text": "Please use /settings to choose a style or recipe for your videos.",
+      "t": 1794564561783
     }
   ],
   "working": null,
