@@ -1,6 +1,6 @@
 {
-  "last_update": 312538474,
-  "time": 1794587679410,
+  "last_update": 312538475,
+  "time": 1794587683063,
   "stage": "idle",
   "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
   "research": {
@@ -1934,97 +1934,7 @@
   "ideas_at": 1794243976053,
   "narr_pick": "me",
   "editing": false,
-  "pick": {
-    "topic": "a 45 second video about how blogs make money",
-    "list": [
-      {
-        "id": "motion-explainer",
-        "kind": "recipe"
-      },
-      {
-        "id": "documentary",
-        "kind": "recipe"
-      },
-      {
-        "id": "stop-motion",
-        "kind": "recipe"
-      },
-      {
-        "id": "cinematic",
-        "kind": "recipe"
-      },
-      {
-        "id": "kinetic-news",
-        "kind": "recipe"
-      },
-      {
-        "id": "retro-vhs",
-        "kind": "recipe"
-      },
-      {
-        "id": "anime",
-        "kind": "recipe"
-      },
-      {
-        "id": "vlog",
-        "kind": "recipe"
-      },
-      {
-        "id": "blueprint",
-        "kind": "recipe"
-      },
-      {
-        "id": "what-if",
-        "kind": "recipe"
-      },
-      {
-        "id": "bold-pop",
-        "kind": "recipe"
-      },
-      {
-        "id": "youtube-1",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-2",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-3",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-4",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-5",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-6",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-7",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-8",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit2",
-        "kind": "learned"
-      }
-    ],
-    "job": {},
-    "at": 1794587675263
-  },
+  "pick": null,
   "liked": [
     {
       "title": "Seventeen Year Old Beer Heist",
@@ -2059,7 +1969,13 @@
     }
   ],
   "assets": null,
-  "intake": null,
+  "intake": {
+    "topic": "a 45 second video about how blogs make money",
+    "job": {},
+    "items": [],
+    "n": 0,
+    "at": 1794587683063
+  },
   "assets_at": 1794573692829,
   "narr": null,
   "sb": null
