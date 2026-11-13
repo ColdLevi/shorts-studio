@@ -1,0 +1,861 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "turn-instagram-views-into-paying-cli-mwf2wj4q",
+ "rev": 1,
+ "title": "Turn Instagram Views Into Paying Clients",
+ "duration": 39.3,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.288,
+    "narration": "I analyzed an Instagram account with thousands of profile visits that got zero booked clients,",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Clean isometric 3D graphic showing a dark themed Instagram profile dashboard with high traffic arrows pointing down to a glowing red zero icon, high contrast teal and dark background",
+     "motion": "Slow horizontal pan right across the glowing dark isometric dashboard UI",
+     "still": "flux"
+    },
+    "hash": "ff525b784fc6"
+   },
+   {
+    "id": "v2",
+    "start": 5.288,
+    "end": 10.618,
+    "narration": "because most creators assume aesthetic posts automatically bring in paying customers.",
+    "kind": "ai_video",
+    "src": "assets/clip_02.mp4",
+    "duration": 5.63,
+    "still": "assets/img_02.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vector motion graphic of sleek floating isometric art frames with glowing borders on a high contrast dark backdrop",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "09c82a5d2f48"
+   },
+   {
+    "id": "v3",
+    "start": 10.618,
+    "end": 16.128,
+    "narration": "They churn out B-roll reels, talking head videos, and carousels to build authority,",
+    "kind": "ai_video",
+    "src": "assets/clip_03.mp4",
+    "duration": 5.8,
+    "still": "assets/img_03.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Clean isometric arrangement of three floating digital media cards representing video reels and carousels, dark background with teal accents",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "64f145393f5a"
+   },
+   {
+    "id": "v4",
+    "start": 16.128,
+    "end": 19.558,
+    "narration": "but high views mean nothing without a real intake system.",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 3.73,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Isometric dark theme flowchart showing a disconnected funnel pipeline with glowing traffic icons falling off the edge",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "7efc84e11262"
+   },
+   {
+    "id": "v5",
+    "start": 19.558,
+    "end": 22.605,
+    "narration": "I started with a profile cleanup and bio audit,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vector isometric graphic of a sleek user profile card being scanned and recalibrated by glowing teal grid lines, dark theme"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "854f6918f4f7",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.67,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 22.605,
+    "end": 26.003,
+    "narration": "which turned passive traffic into active client bookings,",
+    "kind": "ai_video",
+    "src": "assets/clip_06.mp4",
+    "duration": 3.7,
+    "still": "assets/img_06.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Vector isometric visualization of traffic streams merging smoothly into a glowing green booking confirmation node, dark contrast",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "714208510af8"
+   },
+   {
+    "id": "v7",
+    "start": 26.003,
+    "end": 30.245,
+    "narration": "so clear call-to-action lines in captions sent viewers straight to an offer.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Isometric dark theme graphic showing glowing text lines flowing directly into a highlighted offer terminal with a single action button"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "091ffbb61acc",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 30.245,
+    "end": 33.104,
+    "narration": "Then direct outreach through private messaging",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vector motion graphic of private message nodes connecting directly from a dark central hub to glowing client avatars"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6ec8bdef9a37",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.64,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 33.104,
+    "end": 35.842,
+    "narration": "turned passive viewers into warm leads,",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Vector motion graphic of private message nodes connecting directly from a dark central hub to glowing client avatars"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6ec8bdef9a37",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.63,
+     "dir": 1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v10",
+    "start": 35.842,
+    "end": 38.496,
+    "narration": "building a predictable client pipeline.",
+    "kind": "ai_video",
+    "src": "assets/clip_09.mp4",
+    "duration": 4.06,
+    "still": "assets/img_09.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Isometric futuristic pipeline network illuminated in bright teal accents glowing against a dark high contrast canvas",
+     "motion": "Cinematic forward zoom along the glowing isometric client funnel pipeline",
+     "still": "flux"
+    },
+    "hash": "9341aa6e57ad"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "I",
+     "start": 0.1,
+     "end": 0.2
+    },
+    {
+     "word": "analyzed",
+     "start": 0.2,
+     "end": 0.688
+    },
+    {
+     "word": "an",
+     "start": 0.688,
+     "end": 0.775
+    },
+    {
+     "word": "Instagram",
+     "start": 0.787,
+     "end": 1.3
+    },
+    {
+     "word": "account",
+     "start": 1.312,
+     "end": 1.75
+    },
+    {
+     "word": "with",
+     "start": 1.762,
+     "end": 1.925
+    },
+    {
+     "word": "thousands",
+     "start": 1.938,
+     "end": 2.487,
+     "em": true
+    },
+    {
+     "word": "of",
+     "start": 2.5,
+     "end": 2.562
+    },
+    {
+     "word": "profile",
+     "start": 2.562,
+     "end": 3.075
+    },
+    {
+     "word": "visits",
+     "start": 3.075,
+     "end": 3.5
+    },
+    {
+     "word": "that",
+     "start": 3.513,
+     "end": 3.65
+    },
+    {
+     "word": "got",
+     "start": 3.65,
+     "end": 3.862
+    },
+    {
+     "word": "zero",
+     "start": 3.862,
+     "end": 4.3
+    },
+    {
+     "word": "booked",
+     "start": 4.3,
+     "end": 4.575
+    },
+    {
+     "word": "clients,",
+     "start": 4.575,
+     "end": 5.188
+    },
+    {
+     "word": "because",
+     "start": 5.348,
+     "end": 5.648
+    },
+    {
+     "word": "most",
+     "start": 5.661,
+     "end": 5.96
+    },
+    {
+     "word": "creators",
+     "start": 5.96,
+     "end": 6.385
+    },
+    {
+     "word": "assume",
+     "start": 6.385,
+     "end": 6.848
+    },
+    {
+     "word": "aesthetic",
+     "start": 6.96,
+     "end": 7.348
+    },
+    {
+     "word": "posts",
+     "start": 7.348,
+     "end": 7.823
+    },
+    {
+     "word": "automatically",
+     "start": 7.948,
+     "end": 8.648
+    },
+    {
+     "word": "bring",
+     "start": 8.66,
+     "end": 9.173
+    },
+    {
+     "word": "in",
+     "start": 9.298,
+     "end": 9.386
+    },
+    {
+     "word": "paying",
+     "start": 9.398,
+     "end": 9.736
+    },
+    {
+     "word": "customers.",
+     "start": 9.736,
+     "end": 10.398
+    },
+    {
+     "word": "They",
+     "start": 10.678,
+     "end": 10.741
+    },
+    {
+     "word": "churn",
+     "start": 10.741,
+     "end": 11.004
+    },
+    {
+     "word": "out",
+     "start": 11.004,
+     "end": 11.291
+    },
+    {
+     "word": "B-roll",
+     "start": 11.416,
+     "end": 11.928
+    },
+    {
+     "word": "reels,",
+     "start": 11.928,
+     "end": 12.528
+    },
+    {
+     "word": "talking",
+     "start": 12.741,
+     "end": 13.129
+    },
+    {
+     "word": "head",
+     "start": 13.129,
+     "end": 13.416
+    },
+    {
+     "word": "videos,",
+     "start": 13.416,
+     "end": 14.129
+    },
+    {
+     "word": "and",
+     "start": 14.291,
+     "end": 14.466
+    },
+    {
+     "word": "carousels",
+     "start": 14.479,
+     "end": 15.116
+    },
+    {
+     "word": "to",
+     "start": 15.116,
+     "end": 15.216
+    },
+    {
+     "word": "build",
+     "start": 15.216,
+     "end": 15.441
+    },
+    {
+     "word": "authority,",
+     "start": 15.454,
+     "end": 16.028
+    },
+    {
+     "word": "but",
+     "start": 16.188,
+     "end": 16.3
+    },
+    {
+     "word": "high",
+     "start": 16.3,
+     "end": 16.5,
+     "em": true
+    },
+    {
+     "word": "views",
+     "start": 16.513,
+     "end": 16.813
+    },
+    {
+     "word": "mean",
+     "start": 16.813,
+     "end": 17.088
+    },
+    {
+     "word": "nothing",
+     "start": 17.1,
+     "end": 17.5
+    },
+    {
+     "word": "without",
+     "start": 17.513,
+     "end": 17.888
+    },
+    {
+     "word": "a",
+     "start": 17.9,
+     "end": 17.938
+    },
+    {
+     "word": "real",
+     "start": 17.938,
+     "end": 18.462
+    },
+    {
+     "word": "intake",
+     "start": 18.475,
+     "end": 18.85
+    },
+    {
+     "word": "system.",
+     "start": 18.862,
+     "end": 19.338
+    },
+    {
+     "word": "I",
+     "start": 19.618,
+     "end": 19.68
+    },
+    {
+     "word": "started",
+     "start": 19.68,
+     "end": 20.043
+    },
+    {
+     "word": "with",
+     "start": 20.043,
+     "end": 20.156
+    },
+    {
+     "word": "a",
+     "start": 20.156,
+     "end": 20.218
+    },
+    {
+     "word": "profile",
+     "start": 20.218,
+     "end": 20.906
+    },
+    {
+     "word": "cleanup",
+     "start": 20.906,
+     "end": 21.38
+    },
+    {
+     "word": "and",
+     "start": 21.505,
+     "end": 21.618
+    },
+    {
+     "word": "bio",
+     "start": 21.618,
+     "end": 22.143
+    },
+    {
+     "word": "audit,",
+     "start": 22.143,
+     "end": 22.505
+    },
+    {
+     "word": "which",
+     "start": 22.665,
+     "end": 23.153
+    },
+    {
+     "word": "turned",
+     "start": 23.153,
+     "end": 23.465
+    },
+    {
+     "word": "passive",
+     "start": 23.465,
+     "end": 23.952
+    },
+    {
+     "word": "traffic",
+     "start": 23.952,
+     "end": 24.452
+    },
+    {
+     "word": "into",
+     "start": 24.515,
+     "end": 24.69
+    },
+    {
+     "word": "active",
+     "start": 24.74,
+     "end": 25.09
+    },
+    {
+     "word": "client",
+     "start": 25.09,
+     "end": 25.415
+    },
+    {
+     "word": "bookings,",
+     "start": 25.415,
+     "end": 25.903
+    },
+    {
+     "word": "so",
+     "start": 26.063,
+     "end": 26.237
+    },
+    {
+     "word": "clear",
+     "start": 26.25,
+     "end": 26.525
+    },
+    {
+     "word": "call-to-action",
+     "start": 26.537,
+     "end": 27.237
+    },
+    {
+     "word": "lines",
+     "start": 27.237,
+     "end": 27.537
+    },
+    {
+     "word": "in",
+     "start": 27.537,
+     "end": 27.612
+    },
+    {
+     "word": "captions",
+     "start": 27.625,
+     "end": 28.138
+    },
+    {
+     "word": "sent",
+     "start": 28.15,
+     "end": 28.45
+    },
+    {
+     "word": "viewers",
+     "start": 28.462,
+     "end": 28.875
+    },
+    {
+     "word": "straight",
+     "start": 28.888,
+     "end": 29.263
+    },
+    {
+     "word": "to",
+     "start": 29.325,
+     "end": 29.438
+    },
+    {
+     "word": "an",
+     "start": 29.438,
+     "end": 29.525
+    },
+    {
+     "word": "offer.",
+     "start": 29.537,
+     "end": 30.025
+    },
+    {
+     "word": "Then",
+     "start": 30.305,
+     "end": 30.505
+    },
+    {
+     "word": "direct",
+     "start": 30.505,
+     "end": 30.93
+    },
+    {
+     "word": "outreach",
+     "start": 30.992,
+     "end": 31.53
+    },
+    {
+     "word": "through",
+     "start": 31.542,
+     "end": 31.879
+    },
+    {
+     "word": "private",
+     "start": 31.967,
+     "end": 32.467
+    },
+    {
+     "word": "messaging",
+     "start": 32.467,
+     "end": 33.092
+    },
+    {
+     "word": "turned",
+     "start": 33.104,
+     "end": 33.542
+    },
+    {
+     "word": "passive",
+     "start": 33.542,
+     "end": 34.042
+    },
+    {
+     "word": "viewers",
+     "start": 34.042,
+     "end": 34.53
+    },
+    {
+     "word": "into",
+     "start": 34.617,
+     "end": 34.854
+    },
+    {
+     "word": "warm",
+     "start": 34.854,
+     "end": 35.254
+    },
+    {
+     "word": "leads,",
+     "start": 35.254,
+     "end": 35.742
+    },
+    {
+     "word": "building",
+     "start": 35.902,
+     "end": 36.252
+    },
+    {
+     "word": "a",
+     "start": 36.252,
+     "end": 36.302
+    },
+    {
+     "word": "predictable",
+     "start": 36.315,
+     "end": 37.052,
+     "em": true
+    },
+    {
+     "word": "client",
+     "start": 37.065,
+     "end": 37.453
+    },
+    {
+     "word": "pipeline.",
+     "start": 37.465,
+     "end": 38.065
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "I analyzed an Instagram account with thousands of profile visits that got zero booked clients, because most creators assume aesthetic posts automatically bring in paying customers. They churn out B-roll reels, talking head videos, and carousels to build authority, but high views mean nothing without a real intake system. I started with a profile cleanup and bio audit, which turned passive traffic into active client bookings, so clear call-to-action lines in captions sent viewers straight to an offer. Then direct outreach through private messaging turned passive viewers into warm leads, building a predictable client pipeline."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.1,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 33.3,
+    "volume": 0.28,
+    "anchor": "v9",
+    "offset": 0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.24,
+    "text": "0 BOOKINGS",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.24,
+    "opacity": 0.35,
+    "seed": 0.6
+   },
+   {
+    "id": "ly3",
+    "kind": "kinetic",
+    "anchor": "v9",
+    "delay": 0.2,
+    "start": 33.3,
+    "end": 35.79,
+    "text": "CLIENT PIPELIN",
+    "y": 0.14
+   },
+   {
+    "id": "ly4",
+    "kind": "draw-line",
+    "anchor": "v9",
+    "delay": 0.7,
+    "start": 33.8,
+    "end": 35.79,
+    "shape": "underline",
+    "x": 0.2,
+    "y": 0.21,
+    "w": 0.6
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794581482893,
+  "updated": 1794581482897,
+  "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
+  "hook": "A profile receiving thousands of visits can still generate zero client bookings.",
+  "image_style": "vector motion graphics, clean isometric style, high contrast dark theme",
+  "format": "landscape",
+  "assets_release": "project-turn-instagram-views-into-paying-cli-mwf2wj4q",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A profile receiving thousands of visits can still generate zero client bookings.",
+   "music": "tech-pulse",
+   "project_id": "turn-instagram-views-into-paying-cli-mwf2wj4q",
+   "style": "vector motion graphics, clean isometric style, high contrast dark theme",
+   "style_preset": "motion-explainer",
+   "title": "Turn Instagram Views Into Paying Clients",
+   "topic": "that's about 2mons mins educational on how to use of Instagram to find clients",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"I analyzed an Instagram account wit...\"): the hook. No subject cutout, so I put 0 BOOKINGS in the top band where it cannot cover the face.",
+   "Beat 9 (\"turned passive viewers into warm le...\"): CLIENT PIPELIN goes big in the top band with an underline, clear of the subject.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 5: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 8: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 9: hold (evidence on screen: the camera stops)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, tick"
+ }
+}
