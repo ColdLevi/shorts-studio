@@ -1,6 +1,6 @@
 {
-  "last_update": 312538451,
-  "time": 1794552469837,
+  "last_update": 312538452,
+  "time": 1794555843138,
   "stage": "idle",
   "topic": "how we can sell digital products and money",
   "research": {
@@ -1878,6 +1878,11 @@
   "voice_pick": null,
   "disliked": [
     {
+      "title": "The Zero Marginal Cost Money Engine",
+      "first": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
+      "at": 1794555843137
+    },
+    {
       "title": "Treating Her Right With Ancient Humor",
       "first": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
       "at": 1794499264516
@@ -1896,11 +1901,6 @@
       "title": "The Real Money Behind AI",
       "first": "Five hundred billion dollars poured into microchips and data centers this year alone,",
       "at": 1794369785609
-    },
-    {
-      "title": "Edit Nine Sixteen Videos Fast",
-      "first": "Ten million creators crop horizontal footage into vertical boxes.",
-      "at": 1794290768652
     }
   ],
   "ideas": [
