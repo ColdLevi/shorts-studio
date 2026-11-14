@@ -655,6 +655,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-61",
+      "title": "From Robotic Mice to Autonomous Minds",
+      "hook": "In 1950, a tiny robotic mouse wound through a maze.",
+      "accent": "#FFD43B",
+      "duration": 53.9,
+      "created": 1794671346939,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-61/short-61.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-61/short-61.jpg",
+      "project": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }

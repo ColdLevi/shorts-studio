@@ -1,0 +1,1033 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
+ "rev": 1,
+ "title": "From Robotic Mice to Autonomous Minds",
+ "duration": 53.82,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.941,
+    "narration": "In nineteen fifty, a tiny robotic mouse wound through a physical maze.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "stock",
+     "prompt": "A mechanical mouse navigating a wooden maze under dramatic chiaroscuro lighting, painterly historical illustration, museum-diorama depth"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9c1f0dcfdf11",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.941,
+    "end": 12.158,
+    "narration": "You think AI was a sudden breakthrough from modern tech giants, but it actually started decades earlier.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You think AI was a sudden breakthrough",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.158,
+    "end": 16.414,
+    "narration": "Early engineers used basic logic to solve physical paths long",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A schematic diagram of logical circuits drawn on aged parchment with ink and quill, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "950ffc887b58",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.414,
+    "end": 20.408,
+    "narration": "before modern chips, because they wanted machines to think.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A schematic diagram of logical circuits drawn on aged parchment with ink and quill, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "950ffc887b58",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.78,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 20.408,
+    "end": 26.348,
+    "narration": "In nineteen fifty-two, Grace Hopper invented the first computer compiler called A-0 on the UNIVAC one.",
+    "kind": "graphic",
+    "graphic": {
+     "day": "16",
+     "label": "UNIVAC I compiler",
+     "month": "August",
+     "title": "",
+     "type": "date",
+     "year": "1952"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 26.348,
+    "end": 34.104,
+    "narration": "Programmers had to write instructions entirely in numeric machine code until her compiler translated words into commands.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Programmers had to write instructions en",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 34.104,
+    "end": 38.097,
+    "narration": "By twenty twenty-three, autonomous agents like AgentGPT",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A glowing digital network node expanding across an old leather-bound ledger, painterly illustration"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "af775ba44648",
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.78,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 38.097,
+    "end": 41.891,
+    "narration": "started making independent decisions without any human hands.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A glowing digital network node expanding across an old leather-bound ledger, painterly illustration"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "af775ba44648",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.76,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 41.891,
+    "end": 47.236,
+    "narration": "My own experiments show that machines stopped just following paths and started choosing them.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "My own experiments show that machines",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 47.236,
+    "end": 50.663,
+    "narration": "The robotic mouse of nineteen fifty just wanted cheese,",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A small brass mechanical gear mechanism resting on an open historical notebook, museum-diorama depth, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "d77b93b2baa1",
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.71,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 50.663,
+    "end": 53.016,
+    "narration": "but it built the mind we use today.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "A small brass mechanical gear mechanism resting on an open historical notebook, museum-diorama depth, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "d77b93b2baa1",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.58,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.087,
+     "end": 0.163
+    },
+    {
+     "word": "nineteen",
+     "start": 0.163,
+     "end": 0.613
+    },
+    {
+     "word": "fifty,",
+     "start": 0.613,
+     "end": 1.225
+    },
+    {
+     "word": "a",
+     "start": 1.438,
+     "end": 1.5
+    },
+    {
+     "word": "tiny",
+     "start": 1.5,
+     "end": 1.95
+    },
+    {
+     "word": "robotic",
+     "start": 1.95,
+     "end": 2.425
+    },
+    {
+     "word": "mouse",
+     "start": 2.425,
+     "end": 2.75
+    },
+    {
+     "word": "wound",
+     "start": 2.75,
+     "end": 3.263
+    },
+    {
+     "word": "through",
+     "start": 3.383,
+     "end": 3.596
+    },
+    {
+     "word": "a",
+     "start": 3.596,
+     "end": 3.659
+    },
+    {
+     "word": "physical",
+     "start": 3.671,
+     "end": 4.146
+    },
+    {
+     "word": "maze.",
+     "start": 4.159,
+     "end": 4.721
+    },
+    {
+     "word": "You",
+     "start": 5.001,
+     "end": 5.139
+    },
+    {
+     "word": "think",
+     "start": 5.139,
+     "end": 5.414
+    },
+    {
+     "word": "AI",
+     "start": 5.426,
+     "end": 6.039
+    },
+    {
+     "word": "was",
+     "start": 6.039,
+     "end": 6.227
+    },
+    {
+     "word": "a",
+     "start": 6.227,
+     "end": 6.264
+    },
+    {
+     "word": "sudden",
+     "start": 6.264,
+     "end": 6.652
+    },
+    {
+     "word": "breakthrough",
+     "start": 6.664,
+     "end": 7.289
+    },
+    {
+     "word": "from",
+     "start": 7.301,
+     "end": 7.452
+    },
+    {
+     "word": "modern",
+     "start": 7.452,
+     "end": 7.839
+    },
+    {
+     "word": "tech",
+     "start": 7.852,
+     "end": 8.089
+    },
+    {
+     "word": "giants,",
+     "start": 8.102,
+     "end": 8.714
+    },
+    {
+     "word": "but",
+     "start": 9.414,
+     "end": 9.526
+    },
+    {
+     "word": "it",
+     "start": 9.539,
+     "end": 9.588
+    },
+    {
+     "word": "actually",
+     "start": 9.588,
+     "end": 9.988
+    },
+    {
+     "word": "started",
+     "start": 10.001,
+     "end": 10.601
+    },
+    {
+     "word": "decades",
+     "start": 10.614,
+     "end": 11.276,
+     "em": true
+    },
+    {
+     "word": "earlier.",
+     "start": 11.401,
+     "end": 11.938
+    },
+    {
+     "word": "Early",
+     "start": 12.218,
+     "end": 12.518
+    },
+    {
+     "word": "engineers",
+     "start": 12.518,
+     "end": 13.08
+    },
+    {
+     "word": "used",
+     "start": 13.093,
+     "end": 13.481
+    },
+    {
+     "word": "basic",
+     "start": 13.605,
+     "end": 14.006
+    },
+    {
+     "word": "logic",
+     "start": 14.006,
+     "end": 14.518
+    },
+    {
+     "word": "to",
+     "start": 14.638,
+     "end": 14.738
+    },
+    {
+     "word": "solve",
+     "start": 14.738,
+     "end": 15.038
+    },
+    {
+     "word": "physical",
+     "start": 15.051,
+     "end": 15.513
+    },
+    {
+     "word": "paths",
+     "start": 15.513,
+     "end": 15.976
+    },
+    {
+     "word": "long",
+     "start": 15.976,
+     "end": 16.401
+    },
+    {
+     "word": "before",
+     "start": 16.414,
+     "end": 16.714
+    },
+    {
+     "word": "modern",
+     "start": 16.714,
+     "end": 17.026
+    },
+    {
+     "word": "chips,",
+     "start": 17.026,
+     "end": 17.514
+    },
+    {
+     "word": "because",
+     "start": 18.214,
+     "end": 18.488
+    },
+    {
+     "word": "they",
+     "start": 18.488,
+     "end": 18.601
+    },
+    {
+     "word": "wanted",
+     "start": 18.601,
+     "end": 18.914
+    },
+    {
+     "word": "machines",
+     "start": 18.914,
+     "end": 19.526
+    },
+    {
+     "word": "to",
+     "start": 19.539,
+     "end": 19.614
+    },
+    {
+     "word": "think.",
+     "start": 19.614,
+     "end": 20.188
+    },
+    {
+     "word": "In",
+     "start": 20.468,
+     "end": 20.543
+    },
+    {
+     "word": "nineteen",
+     "start": 20.543,
+     "end": 20.867
+    },
+    {
+     "word": "fifty-two,",
+     "start": 20.88,
+     "end": 21.593
+    },
+    {
+     "word": "Grace",
+     "start": 21.753,
+     "end": 22.079
+    },
+    {
+     "word": "Hopper",
+     "start": 22.079,
+     "end": 22.441
+    },
+    {
+     "word": "invented",
+     "start": 22.441,
+     "end": 22.816
+    },
+    {
+     "word": "the",
+     "start": 22.816,
+     "end": 22.878
+    },
+    {
+     "word": "first",
+     "start": 22.891,
+     "end": 23.266
+    },
+    {
+     "word": "computer",
+     "start": 23.266,
+     "end": 23.616
+    },
+    {
+     "word": "compiler",
+     "start": 23.616,
+     "end": 24.141
+    },
+    {
+     "word": "called",
+     "start": 24.154,
+     "end": 24.441
+    },
+    {
+     "word": "A-0",
+     "start": 24.604,
+     "end": 25.141
+    },
+    {
+     "word": "on",
+     "start": 25.154,
+     "end": 25.291
+    },
+    {
+     "word": "the",
+     "start": 25.291,
+     "end": 25.329
+    },
+    {
+     "word": "UNIVAC",
+     "start": 25.329,
+     "end": 25.841
+    },
+    {
+     "word": "one.",
+     "start": 25.841,
+     "end": 26.128
+    },
+    {
+     "word": "Programmers",
+     "start": 26.408,
+     "end": 26.92
+    },
+    {
+     "word": "had",
+     "start": 26.92,
+     "end": 27.07
+    },
+    {
+     "word": "to",
+     "start": 27.07,
+     "end": 27.132
+    },
+    {
+     "word": "write",
+     "start": 27.132,
+     "end": 27.42
+    },
+    {
+     "word": "instructions",
+     "start": 27.42,
+     "end": 28.107
+    },
+    {
+     "word": "entirely",
+     "start": 28.22,
+     "end": 29.182
+    },
+    {
+     "word": "in",
+     "start": 29.195,
+     "end": 29.307
+    },
+    {
+     "word": "numeric",
+     "start": 29.307,
+     "end": 29.733
+    },
+    {
+     "word": "machine",
+     "start": 29.745,
+     "end": 30.182
+    },
+    {
+     "word": "code",
+     "start": 30.182,
+     "end": 30.557
+    },
+    {
+     "word": "until",
+     "start": 30.677,
+     "end": 30.889
+    },
+    {
+     "word": "her",
+     "start": 30.889,
+     "end": 31.002
+    },
+    {
+     "word": "compiler",
+     "start": 31.002,
+     "end": 31.639
+    },
+    {
+     "word": "translated",
+     "start": 31.759,
+     "end": 32.421
+    },
+    {
+     "word": "words",
+     "start": 32.421,
+     "end": 32.897
+    },
+    {
+     "word": "into",
+     "start": 33.009,
+     "end": 33.209
+    },
+    {
+     "word": "commands.",
+     "start": 33.222,
+     "end": 33.884
+    },
+    {
+     "word": "By",
+     "start": 34.164,
+     "end": 34.215
+    },
+    {
+     "word": "twenty",
+     "start": 34.215,
+     "end": 34.502
+    },
+    {
+     "word": "twenty-three,",
+     "start": 34.515,
+     "end": 35.327
+    },
+    {
+     "word": "autonomous",
+     "start": 35.527,
+     "end": 36.152
+    },
+    {
+     "word": "agents",
+     "start": 36.152,
+     "end": 36.564
+    },
+    {
+     "word": "like",
+     "start": 36.577,
+     "end": 36.765
+    },
+    {
+     "word": "AgentGPT",
+     "start": 36.927,
+     "end": 37.977
+    },
+    {
+     "word": "started",
+     "start": 38.097,
+     "end": 38.459
+    },
+    {
+     "word": "making",
+     "start": 38.472,
+     "end": 38.884
+    },
+    {
+     "word": "independent",
+     "start": 38.884,
+     "end": 39.459
+    },
+    {
+     "word": "decisions",
+     "start": 39.459,
+     "end": 40.084
+    },
+    {
+     "word": "without",
+     "start": 40.084,
+     "end": 40.496
+    },
+    {
+     "word": "any",
+     "start": 40.584,
+     "end": 40.746
+    },
+    {
+     "word": "human",
+     "start": 40.759,
+     "end": 41.059
+    },
+    {
+     "word": "hands.",
+     "start": 41.059,
+     "end": 41.671
+    },
+    {
+     "word": "My",
+     "start": 41.951,
+     "end": 42.113
+    },
+    {
+     "word": "own",
+     "start": 42.113,
+     "end": 42.251
+    },
+    {
+     "word": "experiments",
+     "start": 42.251,
+     "end": 42.801
+    },
+    {
+     "word": "show",
+     "start": 42.814,
+     "end": 43.138
+    },
+    {
+     "word": "that",
+     "start": 43.138,
+     "end": 43.251
+    },
+    {
+     "word": "machines",
+     "start": 43.251,
+     "end": 43.876
+    },
+    {
+     "word": "stopped",
+     "start": 43.996,
+     "end": 44.371
+    },
+    {
+     "word": "just",
+     "start": 44.371,
+     "end": 44.608
+    },
+    {
+     "word": "following",
+     "start": 44.608,
+     "end": 45.095
+    },
+    {
+     "word": "paths",
+     "start": 45.095,
+     "end": 45.82
+    },
+    {
+     "word": "and",
+     "start": 45.94,
+     "end": 46.09
+    },
+    {
+     "word": "started",
+     "start": 46.09,
+     "end": 46.44
+    },
+    {
+     "word": "choosing",
+     "start": 46.453,
+     "end": 46.828
+    },
+    {
+     "word": "them.",
+     "start": 46.828,
+     "end": 47.016
+    },
+    {
+     "word": "The",
+     "start": 47.296,
+     "end": 47.359
+    },
+    {
+     "word": "robotic",
+     "start": 47.359,
+     "end": 47.833
+    },
+    {
+     "word": "mouse",
+     "start": 47.833,
+     "end": 48.183
+    },
+    {
+     "word": "of",
+     "start": 48.183,
+     "end": 48.234
+    },
+    {
+     "word": "nineteen",
+     "start": 48.246,
+     "end": 48.721
+    },
+    {
+     "word": "fifty",
+     "start": 48.721,
+     "end": 49.308
+    },
+    {
+     "word": "just",
+     "start": 49.428,
+     "end": 49.653
+    },
+    {
+     "word": "wanted",
+     "start": 49.653,
+     "end": 49.891
+    },
+    {
+     "word": "cheese,",
+     "start": 49.891,
+     "end": 50.503
+    },
+    {
+     "word": "but",
+     "start": 50.663,
+     "end": 50.75
+    },
+    {
+     "word": "it",
+     "start": 50.75,
+     "end": 50.85
+    },
+    {
+     "word": "built",
+     "start": 50.863,
+     "end": 51.063
+    },
+    {
+     "word": "the",
+     "start": 51.076,
+     "end": 51.15
+    },
+    {
+     "word": "mind",
+     "start": 51.15,
+     "end": 51.576
+    },
+    {
+     "word": "we",
+     "start": 51.576,
+     "end": 51.688
+    },
+    {
+     "word": "use",
+     "start": 51.688,
+     "end": 52.076
+    },
+    {
+     "word": "today.",
+     "start": 52.076,
+     "end": 52.6
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "In nineteen fifty, a tiny robotic mouse wound through a physical maze. You think AI was a sudden breakthrough from modern tech giants, but it actually started decades earlier. Early engineers used basic logic to solve physical paths long before modern chips, because they wanted machines to think. In nineteen fifty-two, Grace Hopper invented the first computer compiler called A-0 on the UNIVAC one. Programmers had to write instructions entirely in numeric machine code until her compiler translated words into commands. By twenty twenty-three, autonomous agents like AgentGPT started making independent decisions without any human hands. My own experiments show that machines stopped just following paths and started choosing them. The robotic mouse of nineteen fifty just wanted cheese, but it built the mind we use today."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.89,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "nineteen",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.89,
+    "opacity": 0.35,
+    "seed": 3.45
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794669355319,
+  "updated": 1794669355322,
+  "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World. The should: - Open with a powerful curiosity-driven hook. - Explain three real-world ways AI is changing everyday life. - Use factual information and credible research. - Include B-roll and animated diagrams. - Use dynamic typography and professional captions. - Maintain strong audience retention throughout. - Have , premium visual . - End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
+  "hook": "In 1950, a tiny robotic mouse wound through a maze.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "vertical",
+  "assets_release": "project-from-robotic-mice-to-autonomous-mind-mwgjfxso",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In 1950, a tiny robotic mouse wound through a maze.",
+   "music": "docu-pluck",
+   "project_id": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "From Robotic Mice to Autonomous Minds",
+   "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World. The should: - Open with a powerful curiosity-driven hook. - Explain three real-world ways AI is changing everyday life. - Use factual information and credible research. - Include B-roll and animated diagrams. - Use dynamic typography and professional captions. - Maintain strong audience retention throughout. - Have , premium visual . - End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In nineteen fifty, a tiny robotic m...\"): the hook. I set NINETEEN huge BEHIND the subject (real cutout) and push in slowly.",
+   "Left 10 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 7: drift (subject cutout: a small orbit with parallax (not the same move twice)).",
+   "Beat 8: truck (alive baseline (not the same move twice)).",
+   "Beat 10: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 11: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "1 effects: hit_low"
+ }
+}
