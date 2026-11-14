@@ -1,7 +1,7 @@
 {
-  "last_update": 312538535,
-  "time": 1794658462736,
-  "stage": "script",
+  "last_update": 312538537,
+  "time": 1794659769857,
+  "stage": "idle",
   "topic": "detailed explaining how bitcoin started",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. History of bitcoin (https://wikipedia.org/wiki/History_of_bitcoin): to generate what was described as \"a system for electronic transactions without relying on trust\". On 3 January 2009, the bitcoin network came into existence with Satoshi Nakamoto mining the genesis\n2. How do you explain how bitcoin is created and where it exists (https://www.reddit.com/r/Bitcoin/comments/1dlia4v/how_do_you_explain_how_bitcoin_is_created_and/): I have had many people who don’t understand bitcoin, ask how me how it is this magically produced thing floating in thin air. When I start talking ...\n3. The History Of Bitcoin: Who Invented It And How It Evolved (https://forbes.com/sites/digital-assets/article/the-history-of-bitcoin-who-invented-it): 22, 2010 when someone famously exchanged 10,000 bitcoins for two pizzas from Papa John’s worth $41. This moment, remembered annually as “Bitcoin Pizza Day,” gave bitcoin an exchange rate of 1 BTC =\n4. How and when did Bitcoin start? The complete Bitcoin history (https://cointelegraph.com/learn/the-history-of-bitcoin-when-did-bitcoin-start/amp): On Jan. 14, 2016, Joseph Poon and Thaddeus Dryja released a white paper detailing the Lightning Network, a layer-two scaling solution for Bitcoin in which transactions could occur over payment\n5. Bitcoin (https://en.wikipedia.org/wiki/Bitcoin): ideology, bitcoin was invented in 2008 when an unknown person published a white paper under the pseudonym of Satoshi Nakamoto. Use of bitcoin as a currency began in 2009, with the release of its\n6. The History of Bitcoin | Investing (https://money.usnews.com/investing/articles/the-history-of-bitcoin): 1983: American cryptographer David Chaum, the \"godfather of cryptocurrency,\" proposed a system for anonymous electronic money and later launched ...\n7. When Was Bitcoin Invented? The Complete History & Timeline (https://ledger.com/academy/topics/crypto/when-was-bitcoin-invented): ## **The Revolution That Started With a Whitepaper**\nOn Halloween 2008, an anonymous entity sent a nine-page document to a cryptography mailing list. While it aroused skepticism among academics,\n8. What is bitcoin and how does it work? (https://fidelity.com/viewpoints/active-investor/what-is-bitcoin): In 2008, a person or team referred to as Satoshi Nakamoto published a paper outlining the principles governing Bitcoin technology. Then, in 2009, BTC itself was launched. To this day, no one really\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- Bitcoin explained as a cartoon, Do you think this should be added to school curriculum?🤔 [ig_play_count 82837, like_count 2348, comment_count 43, share_count 2757]\n- How bitcoin works ? . . . #bitcoins #bitcoincash #explore #explorepage #webdeveloper #programming #tech #ai #viral #viralreels #viralvideos [ig_play_count 794982, like_count 71721, comment_count 214, share_count 7292]\n- Explaining how Bitcoin actually works in 60 seconds. When you send money normally, a bank sits in the middle. They verify, take a cut, can freeze your account. Bitcoin removes the middleman. Direct transfers, 24/7, no permission needed. It works through the bl [ig_play_count 13490, like_count 351, comment_count 17, share_count 193]\n- Like this? Follow us @coinsauce for more content like this Bitcoin explained [ig_play_count 6993578, like_count 327874, comment_count 920, share_count 321]\n- What would you add? Follow @tallguytycoon for more on crypto, tech and investing. Join me and @robertcroak on @cryptotrendspodcast the # crypto podcast on Spotify Think $500 isn’t enough to get started in crypto? Watch this strategy that could flip your mindse [ig_play_count 2486026, like_count 34752, comment_count 1322, share_count 34313]\n- 💰 How did Cryptocurrency actually begin? It all started with a mysterious person (or group) called Satoshi Nakamoto, who introduced Bitcoin in 2008 after the global financial crisis. 🌍 From one digital coin to a trillion-dollar industry, crypto has changed t [ig_play_count 1374, like_count 41, comment_count 1, share_count 28]\n- What is Bitcoin? • Started when people lost trust in banks after the 2008 financial crisis • Created in 2009 by someone using the name Satoshi Nakamoto • Nobody knows who this person really is Why People Like Bitcoin: • No banks needed (you’re your own bank!)  [ig_play_count 1914947, like_count 104745, comment_count 837, share_count 75805]\n- Bitcoin is the brainchild of the NSA/DARPA/CIA, not some mythical Japanese tech nerd. They left clues for those vigilant enough. It's the bait, a Trojan Horse wrapped in anonymity, privacy, and freedom to get useful idiots on board the digital system before th [ig_play_count 62767, like_count 2132, comment_count 191, share_count 1419]\n- A melhor explicação sobre o Bitcoin que você vai ver hoje 🤯👆 . . . . . . . . . . #criptomoedasbrasil #criptomoedas #criptomoedashoje #investiremcriptomoedas #mercadofinanceiro #investimentos #bitcoin [ig_play_count 2182996, like_count 94868, comment_count 447, share_count 7294]\n- A viral video a woman allegedly buying 900,000 BTC from a cryptocurrency exchange in 2009 has been exposed as an AI-generated video. Fact-checkers point out that crypto exchanges didn’t even exist back then, making the historic multi-billion-dollar transaction [ig_play_count 1079025, like_count 7315, comment_count 265, share_count 5814]",
@@ -9,118 +9,12 @@
     "tf": 8,
     "ap": 10
   },
-  "pitch": {
-    "title": "Ten Thousand Bitcoins for Two Pizzas",
-    "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
-    "angle": "People assume Bitcoin was created by a massive tech company to trade digital cash fast. It actually started as an anonymous paper from someone named Satoshi Nakamoto who wanted digital transactions without relying on banks.",
-    "key_facts": [
-      "In 2008, an unknown entity named Satoshi Nakamoto published a nine-page paper outlining Bitcoin.",
-      "On January 3, 2009, Satoshi Nakamoto mined the genesis block to launch the network.",
-      "On May 22, 2010, ten thousand bitcoins were traded for two Papa John's pizzas worth 41 dollars."
-    ],
-    "visual_style": "sleek dark vector graphics with glowing neon highlights",
-    "length_seconds": 45,
-    "style": "documentary",
-    "style_reason": "fits historical origins and mysterious real-world timeline",
-    "music": "tech-pulse",
-    "accent": "gold",
-    "format": "landscape"
-  },
-  "script": {
-    "title": "Ten Thousand Bitcoins for Two Pizzas",
-    "beats": [
-      {
-        "narration": "On Halloween in two thousand eight, a mysterious nine page whitepaper landed on a cryptography mailing list,",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing white nine-page document floating in a dark digital void grid, wide landscape 16:9 view, subject in lower two thirds, plain empty space above, no text, no letters, no numbers, no writing, no logos",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Slow cinematic zoom in on the glowing floating white document as glowing neon circuit lines ripple across the dark void."
-      },
-      {
-        "narration": "and while you might think a massive tech company created Bitcoin to speed up digital payments,",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a towering corporate skyscraper silhouette lit by neon blue lights, wide landscape 16:9 view, main subject in lower center",
-        "tool": "graphic",
-        "graphic": {
-          "type": "myth",
-          "myth": "Created by a tech giant for fast online cash",
-          "fact": "Anonymous whitepaper to remove reliance on banks"
-        }
-      },
-      {
-        "narration": "an anonymous inventor named Satoshi Nakamoto actually built it to cut out banks entirely.",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights showing peer nodes connecting directly around a crossed-out central bank vault, wide landscape 16:9 view, subject in lower center",
-        "tool": "flux"
-      },
-      {
-        "narration": "On January third, two thousand nine, Satoshi launched the network by mining its genesis block,",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing central gold cube radiating digital data streams across a dark grid, wide landscape 16:9 view",
-        "tool": "graphic",
-        "graphic": {
-          "type": "date",
-          "month": "Jan",
-          "day": "3",
-          "year": "2009",
-          "label": "Genesis block mined",
-          "title": ""
-        }
-      },
-      {
-        "narration": "establishing a decentralized system with zero central authority running in the background.",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing digital vault with a hard glowing gold barrier line, wide landscape 16:9 view",
-        "tool": "flux"
-      },
-      {
-        "narration": "Then on May twenty-second, two thousand ten, a user traded ten thousand bitcoins",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing retro terminal interface with green text prompts on a dark screen, wide landscape 16:9 view",
-        "tool": "graphic",
-        "graphic": {
-          "type": "post",
-          "site": "Bitcoin Forum",
-          "date": "May 18, 2010",
-          "subject": "Pizza for bitcoins?",
-          "user": "Laszlo",
-          "text": "I will pay 10,000 bitcoins for a couple of pizzas...",
-          "title": ""
-        }
-      },
-      {
-        "narration": "for two Papa John's pizzas worth forty-one dollars.",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of two stylized pizza boxes glowing in gold and cyan on a dark sleek surface, wide landscape 16:9 view",
-        "tool": "flux"
-      },
-      {
-        "narration": "That famous dinner gave digital cash its very first real-world value.",
-        "image_prompt": "Sleek dark vector graphics with glowing neon highlights of massive glowing golden bitcoin coins stacking up inside a dark digital vault, wide landscape 16:9 view, empty top space, no text, no letters, no numbers, no writing, no logos",
-        "tool": "higgsfield",
-        "still": "flux",
-        "motion": "Dynamic camera arc around glowing digital golden coins as bright neon light bursts across the background grid."
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "On Halloween in 2008, Satoshi Nakamoto published a whitepaper outlining Bitcoin on a cryptography mailing list.",
-        "supported": true
-      },
-      {
-        "claim": "On January 3, 2009, Satoshi Nakamoto mined the genesis block to launch the network.",
-        "supported": true
-      },
-      {
-        "claim": "On May 22, 2010, ten thousand bitcoins were traded for two Papa John's pizzas worth 41 dollars.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Pitched \"The Ten Day Law Loophole\": Ten days sitting on the President's desk can turn a proposal into federal law without a single signature.",
-      "t": 1794611463452
-    },
     {
       "role": "user",
       "text": "Retry",
@@ -195,10 +89,129 @@
       "role": "bot",
       "text": "Wrote the script for \"Ten Thousand Bitcoins for Two Pizzas\"",
       "t": 1794658462736
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"Ten Thousand Bitcoins for Two Pizzas\"",
+      "t": 1794659769857
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+      "canvas": "16:9",
+      "title": "Ten Thousand Bitcoins for Two Pizzas",
+      "topic": "detailed explaining how bitcoin started",
+      "pitch": {
+        "title": "Ten Thousand Bitcoins for Two Pizzas",
+        "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
+        "angle": "People assume Bitcoin was created by a massive tech company to trade digital cash fast. It actually started as an anonymous paper from someone named Satoshi Nakamoto who wanted digital transactions without relying on banks.",
+        "key_facts": [
+          "In 2008, an unknown entity named Satoshi Nakamoto published a nine-page paper outlining Bitcoin.",
+          "On January 3, 2009, Satoshi Nakamoto mined the genesis block to launch the network.",
+          "On May 22, 2010, ten thousand bitcoins were traded for two Papa John's pizzas worth 41 dollars."
+        ],
+        "visual_style": "sleek dark vector graphics with glowing neon highlights",
+        "length_seconds": 45,
+        "style": "documentary",
+        "style_reason": "fits historical origins and mysterious real-world timeline",
+        "music": "tech-pulse",
+        "accent": "gold",
+        "format": "landscape"
+      },
+      "script": {
+        "title": "Ten Thousand Bitcoins for Two Pizzas",
+        "beats": [
+          {
+            "narration": "On Halloween in two thousand eight, a mysterious nine page whitepaper landed on a cryptography mailing list,",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing white nine-page document floating in a dark digital void grid, wide landscape 16:9 view, subject in lower two thirds, plain empty space above, no text, no letters, no numbers, no writing, no logos",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Slow cinematic zoom in on the glowing floating white document as glowing neon circuit lines ripple across the dark void."
+          },
+          {
+            "narration": "and while you might think a massive tech company created Bitcoin to speed up digital payments,",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a towering corporate skyscraper silhouette lit by neon blue lights, wide landscape 16:9 view, main subject in lower center",
+            "tool": "graphic",
+            "graphic": {
+              "type": "myth",
+              "myth": "Created by a tech giant for fast online cash",
+              "fact": "Anonymous whitepaper to remove reliance on banks"
+            }
+          },
+          {
+            "narration": "an anonymous inventor named Satoshi Nakamoto actually built it to cut out banks entirely.",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights showing peer nodes connecting directly around a crossed-out central bank vault, wide landscape 16:9 view, subject in lower center",
+            "tool": "flux"
+          },
+          {
+            "narration": "On January third, two thousand nine, Satoshi launched the network by mining its genesis block,",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing central gold cube radiating digital data streams across a dark grid, wide landscape 16:9 view",
+            "tool": "graphic",
+            "graphic": {
+              "type": "date",
+              "month": "Jan",
+              "day": "3",
+              "year": "2009",
+              "label": "Genesis block mined",
+              "title": ""
+            }
+          },
+          {
+            "narration": "establishing a decentralized system with zero central authority running in the background.",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing digital vault with a hard glowing gold barrier line, wide landscape 16:9 view",
+            "tool": "flux"
+          },
+          {
+            "narration": "Then on May twenty-second, two thousand ten, a user traded ten thousand bitcoins",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing retro terminal interface with green text prompts on a dark screen, wide landscape 16:9 view",
+            "tool": "graphic",
+            "graphic": {
+              "type": "post",
+              "site": "Bitcoin Forum",
+              "date": "May 18, 2010",
+              "subject": "Pizza for bitcoins?",
+              "user": "Laszlo",
+              "text": "I will pay 10,000 bitcoins for a couple of pizzas...",
+              "title": ""
+            }
+          },
+          {
+            "narration": "for two Papa John's pizzas worth forty-one dollars.",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of two stylized pizza boxes glowing in gold and cyan on a dark sleek surface, wide landscape 16:9 view",
+            "tool": "flux"
+          },
+          {
+            "narration": "That famous dinner gave digital cash its very first real-world value.",
+            "image_prompt": "Sleek dark vector graphics with glowing neon highlights of massive glowing golden bitcoin coins stacking up inside a dark digital vault, wide landscape 16:9 view, empty top space, no text, no letters, no numbers, no writing, no logos",
+            "tool": "higgsfield",
+            "still": "flux",
+            "motion": "Dynamic camera arc around glowing digital golden coins as bright neon light bursts across the background grid."
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "On Halloween in 2008, Satoshi Nakamoto published a whitepaper outlining Bitcoin on a cryptography mailing list.",
+            "supported": true
+          },
+          {
+            "claim": "On January 3, 2009, Satoshi Nakamoto mined the genesis block to launch the network.",
+            "supported": true
+          },
+          {
+            "claim": "On May 22, 2010, ten thousand bitcoins were traded for two Papa John's pizzas worth 41 dollars.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. History of bitcoin (https://wikipedia.org/wiki/History_of_bitcoin): to generate what was described as \"a system for electronic transactions without relying on trust\". On 3 January 2009, the bitcoin network came into existence with Satoshi Nakamoto mining the genesis\n2. How do you explain how bitcoin is created and where it exists (https://www.reddit.com/r/Bitcoin/comments/1dlia4v/how_do_you_explain_how_bitcoin_is_created_and/): I have had many people who don’t understand bitcoin, ask how me how it is this magically produced thing floating in thin air. When I start talking ...\n3. The History Of Bitcoin: Who Invented It And How It Evolved (https://forbes.com/sites/digital-assets/article/the-history-of-bitcoin-who-invented-it): 22, 2010 when someone famously exchanged 10,000 bitcoins for two pizzas from Papa John’s worth $41. This moment, remembered annually as “Bitcoin Pizza Day,” gave bitcoin an exchange rate of 1 BTC =\n4. How and when did Bitcoin start? The complete Bitcoin history (https://cointelegraph.com/learn/the-history-of-bitcoin-when-did-bitcoin-start/amp): On Jan. 14, 2016, Joseph Poon and Thaddeus Dryja released a white paper detailing the Lightning Network, a layer-two scaling solution for Bitcoin in which transactions could occur over payment\n5. Bitcoin (https://en.wikipedia.org/wiki/Bitcoin): ideology, bitcoin was invented in 2008 when an unknown person published a white paper under the pseudonym of Satoshi Nakamoto. Use of bitcoin as a currency began in 2009, with the release of its\n6. The History of Bitcoin | Investing (https://money.usnews.com/investing/articles/the-history-of-bitcoin): 1983: American cryptographer David Chaum, the \"godfather of cryptocurrency,\" proposed a system for anonymous electronic money and later launched ...\n7. When Was Bitcoin Invented? The Complete History & Timeline (https://ledger.com/academy/topics/crypto/when-was-bitcoin-invented): ## **The Revolution That Started With a Whitepaper**\nOn Halloween 2008, an anonymous entity sent a nine-page document to a cryptography mailing list. While it aroused skepticism among academics,\n8. What is bitcoin and how does it work? (https://fidelity.com/viewpoints/active-investor/what-is-bitcoin): In 2008, a person or team referred to as Satoshi Nakamoto published a paper outlining the principles governing Bitcoin technology. Then, in 2009, BTC itself was launched. To this day, no one really\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- Bitcoin explained as a cartoon, Do you think this should be added to school curriculum?🤔 [ig_play_count 82837, like_count 2348, comment_count 43, share_count 2757]\n- How bitcoin works ? . . . #bitcoins #bitcoincash #explore #explorepage #webdeveloper #programming #tech #ai #viral #viralreels #viralvideos [ig_play_count 794982, like_count 71721, comment_count 214, share_count 7292]\n- Explaining how Bitcoin ",
+        "sources": []
+      },
+      "at": 1794659769857
+    },
     {
       "id": "how-bitcoin-actually-started-mwg8zoue",
       "canvas": "16:9",
@@ -1369,149 +1382,6 @@
         "sources": []
       },
       "at": 1794564808050
-    },
-    {
-      "id": "the-zero-marginal-cost-money-engine-mwem7fiy",
-      "canvas": "16:9",
-      "title": "The Zero Marginal Cost Money Engine",
-      "topic": "how we can sell digital products and money",
-      "pitch": {
-        "title": "The Zero Marginal Cost Money Engine",
-        "hook": "A single PDF file sitting on a server can generate millions without ever touching a shipping box.",
-        "angle": "Most people assume scaling a business requires buying physical inventory upfront. Digital products break this by costing almost zero dollars to duplicate and deliver endlessly.",
-        "key_facts": [
-          "Digital products operate on near-zero marginal cost per added unit sold",
-          "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
-          "Automated payment gateways deliver digital files to buyers in under three seconds without human labor"
-        ],
-        "visual_style": "sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas",
-        "length_seconds": 45,
-        "style": "blueprint",
-        "style_reason": "Technical blueprint visuals cleanly diagram the automated zero-cost file delivery system.",
-        "music": "tech-pulse",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "The Zero Marginal Cost Money Engine",
-        "beats": [
-          {
-            "narration": "A single PDF file sitting on a server can generate millions without ever touching a shipping box, because digital products operate on near zero marginal cost per added unit sold.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a single digital file hovering above a glowing server stack",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 17,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "Most people assume scaling a business requires buying physical inventory upfront, but digital files break this rule by costing almost zero dollars to duplicate.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, rows of identical glowing data packets multiplying endlessly",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 11,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "You think creating digital income started with modern apps, but back in nineteen ninety six, Bill Gates published his famous essay Content is King, predicting exact digital publishing economics.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, an old terminal screen displaying text lines in glowing gold wireframe style",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 9,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "He laid out how electronic networks would let publishers distribute information worldwide for almost nothing, so the software copy costs nothing to make a million times.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a global grid of golden nodes interconnected by thin glowing lines",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 15,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "Then automated payment gateways arrived to handle the friction, delivering digital files to buyers in under three seconds without a single human worker touching the order.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a lightning fast schematic data stream flowing through a payment gateway valve",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 9,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "You just upload the asset once, and the server handles a million identical sales while you sleep.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a solitary glowing server rack pulsing with rhythmic gold light waves",
-            "cues": {
-              "pauses": [
-                {
-                  "after": 6,
-                  "s": 0.7
-                }
-              ],
-              "emphasis": [],
-              "sfx": []
-            },
-            "tool": "flux"
-          },
-          {
-            "narration": "The digital money engine was just built on simpler rules.",
-            "image_prompt": "Sleek blueprint architectural wireframe, isometric schematic graphics, glowing gold highlights on midnight blue canvas, a master blueprint gear turning smoothly inside a golden framework",
-            "tool": "flux"
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Digital products operate on near zero marginal cost per added unit sold",
-            "supported": true
-          },
-          {
-            "claim": "In 1996 Bill Gates published the essay Content is King predicting digital publishing economics",
-            "supported": true
-          },
-          {
-            "claim": "Automated payment gateways deliver digital files to buyers in under three seconds without human labor",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "",
-        "sources": []
-      },
-      "at": 1794552469837
     }
   ],
   "lastRenderAuto": false,
@@ -1523,12 +1393,12 @@
   },
   "renders": [
     {
-      "title": "How Bitcoin Actually Started",
-      "at": 1794651205929,
-      "project": "how-bitcoin-actually-started-mwg8zoue"
+      "title": "Ten Thousand Bitcoins for Two Pizzas",
+      "at": 1794659769857,
+      "project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su"
     }
   ],
-  "current_project": "how-bitcoin-actually-started-mwg8zoue",
+  "current_project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1539,15 +1409,13 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "motion-explainer",
     "kinetic-news",
     "motion-explainer",
     "motion-explainer",
-    "motion-explainer"
+    "motion-explainer",
+    "documentary"
   ],
   "learning": null,
   "styles": {
