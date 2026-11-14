@@ -1,6 +1,6 @@
 {
-  "last_update": 312538518,
-  "time": 1794644310012,
+  "last_update": 312538519,
+  "time": 1794650977523,
   "stage": "idle",
   "topic": "detailed explaining how bitcoin started",
   "research": {
@@ -2229,6 +2229,11 @@
   "voice_pick": null,
   "disliked": [
     {
+      "title": "How Bitcoin Actually Started",
+      "first": "Nine pages published in 2008 changed global finance forever,",
+      "at": 1794650977523
+    },
+    {
       "title": "How Blogs Actually Make Money",
       "first": "In two thousand twenty-six, millions of blog posts flood the web daily while ninety-nine percent of creators fight over public follower counts,",
       "at": 1794590930557
@@ -2247,11 +2252,6 @@
       "title": "How APIs Run the Internet",
       "first": "Uber processes millions of rides without owning a single mapping satellite.",
       "at": 1794477035108
-    },
-    {
-      "title": "How APIs Actually Move The Internet",
-      "first": "You open a travel app expecting a direct peek inside an airline database, but",
-      "at": 1794395422594
     }
   ],
   "ideas": [
