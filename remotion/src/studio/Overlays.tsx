@@ -81,15 +81,18 @@ export const Overlay: React.FC<OvProps> = (props) => {
   const { o, L } = props;
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const durF = useVideoConfig().durationInFrames;
   if (o.kind === 'image' || o.kind === 'chapter') return <OverlayBase {...props} />;
   const hook = o.start < 4;
-  const e = hook ? 'punch' : ENTR[Math.abs(Math.round(o.start)) % ENTR.length];
-  const p = spring({ frame, fps, config: hook ? { damping: 12, stiffness: 260 } : { damping: 18, stiffness: 120 } });
+  const payoff = !hook && o.start >= durF / fps - 6;
+  const e = hook ? 'punch' : payoff ? 'hold' : ENTR[Math.abs(Math.round(o.start)) % ENTR.length];
+  const p = spring({ frame, fps, config: hook ? { damping: 12, stiffness: 260 } : payoff ? { damping: 30, stiffness: 50 } : { damping: 18, stiffness: 120 } });
   const q = 1 - Math.min(1, Math.max(0, p));
   const w = interpolate(frame, [0, 0.45 * fps], [0, 1], CLAMP);
   const u = L.u;
   let transform = 'none', filter = 'none', clipPath = 'none';
-  if (e === 'punch') { transform = `scale(${1 + 0.3 * q})`; if (q > 0.01) filter = `blur(${10 * q * u}px)`; }
+  if (e === 'hold') { transform = `translateY(${40 * u * q}px) scale(${1 - 0.05 * q})`; }
+  else if (e === 'punch') { transform = `scale(${1 + 0.3 * q})`; if (q > 0.01) filter = `blur(${10 * q * u}px)`; }
   else if (e === 'slide-l') transform = `translateX(${-140 * u * q}px)`;
   else if (e === 'slide-r') transform = `translateX(${140 * u * q}px)`;
   else if (e === 'rise') transform = `translateY(${70 * u * q}px)`;

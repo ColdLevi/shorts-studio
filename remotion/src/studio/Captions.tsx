@@ -50,6 +50,7 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const r = resolveCaption(style, accent, L);
+  const c1vc = useVideoConfig();
   const f = font(r.font);
   const maxW = L.w * r.max_width;
   // Rough line budget so a group never wraps past two lines at this size.
@@ -64,6 +65,20 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
   if (!g) return null;
   const startF = Math.round((g[0].start - 0.05) * fps);
   const pop = spring({ frame: frame - startF, fps, config: { damping: 14, stiffness: 220 } });
+  // a1: act-aware caption entrance (hook punches, body rotates, payoff is slow and soft)
+  const c1gi = groups.indexOf(g);
+  const c1end = c1vc.durationInFrames / fps;
+  const c1act = t < 4 ? 'hook' : t > c1end - 5 ? 'payoff' : 'body';
+  const c1p = c1act === 'payoff' ? spring({ frame: frame - startF, fps, config: { damping: 26, stiffness: 70 } }) : pop;
+  const c1q = 1 - Math.min(1, Math.max(0, c1p));
+  const c1v = c1act === 'hook' ? 'punch' : c1act === 'payoff' ? 'soft' : (['up', 'blur', 'slide', 'drop'] as const)[c1gi % 4];
+  let c1tf = 'none', c1fl = 'none';
+  if (c1v === 'punch') { c1tf = `scale(${1 + 0.22 * c1q})`; if (c1q > 0.02) c1fl = `blur(${7 * c1q * L.u}px)`; }
+  else if (c1v === 'soft') c1tf = `translateY(${26 * L.u * c1q}px)`;
+  else if (c1v === 'up') c1tf = `translateY(${44 * L.u * c1q}px)`;
+  else if (c1v === 'drop') c1tf = `translateY(${-44 * L.u * c1q}px)`;
+  else if (c1v === 'slide') c1tf = `translateX(${(c1gi % 8 < 4 ? -1 : 1) * 90 * L.u * c1q}px)`;
+  else if (c1v === 'blur') { if (c1q > 0.02) c1fl = `blur(${12 * c1q * L.u}px)`; }
   const lineH = r.size * 1.12;
   const top = captionTop(L, r.position, lineH * (r.words_per_group > 4 ? 2 : 1));
   const tx = (s: string) => (r.case === 'upper' ? s.toUpperCase() : r.case === 'lower' ? s.toLowerCase() : s);
@@ -123,7 +138,7 @@ export const Captions: React.FC<{ words: Word[]; style?: CaptionStyle; accent: s
   }
   return (
     <AbsoluteFill style={{ justifyContent: 'flex-start', alignItems: 'center', top, height: 'auto' }}>
-      {inner}
+      <div style={{ transform: c1tf, filter: c1fl }}>{inner}</div>
     </AbsoluteFill>
   );
 };

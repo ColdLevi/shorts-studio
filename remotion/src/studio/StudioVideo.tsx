@@ -63,6 +63,7 @@ const AudioTrack: React.FC<{ a: AudioClip; pid: string; total: number; words?: W
     if (fin > 0) v *= Math.min(1, (t - start) / fin);
     if (fout > 0) v *= Math.min(1, Math.max(0, (end - t) / fout));
     if (a.duck && words?.length) v *= 1 + 0.8 * Math.min(1, speechDistance(words, t) / 0.35);
+    if (a.duck) { const c1l = end - t; if (c1l < 4) v *= 1 + 0.6 * (1 - Math.max(0, c1l) / 4); } // a1: payoff swell
     return Math.max(0, Math.min(1, v));
   };
   return (
