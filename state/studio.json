@@ -1,6 +1,6 @@
 {
-  "last_update": 312538530,
-  "time": 1794651205929,
+  "last_update": 312538531,
+  "time": 1794658368508,
   "stage": "idle",
   "topic": "detailed explaining how bitcoin started",
   "research": {
@@ -15,11 +15,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How Draft Paper Overpowers the President\"",
-      "t": 1794595875397
-    },
     {
       "role": "bot",
       "text": "Rendering \"How Draft Paper Overpowers the President\"",
@@ -94,6 +89,11 @@
       "role": "bot",
       "text": "Rendering \"How Bitcoin Actually Started\"",
       "t": 1794651205929
+    },
+    {
+      "role": "user",
+      "text": "Make a detailed video explaining how bitcoin started",
+      "t": 1794658368495
     }
   ],
   "working": null,
@@ -2363,7 +2363,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "me",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "Make a detailed video explaining how bitcoin started",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794658368508
+  },
   "liked": [
     {
       "title": "How Draft Paper Overpowers the President",
