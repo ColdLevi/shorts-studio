@@ -122,7 +122,7 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
         );
       })}
       </Held>
-      <LayerStack layers={(t.tracks as any).layers} L={L} accent={accent} pid={pid} palette={st.palette} font={st.font} grade={st.grade} />
+      <LayerStack layers={((t.tracks as any).layers as any[] | undefined)?.filter((l: any) => { const m = (l.start + l.end) / 2; return !vis.some((c, i) => c.kind === 'graphic' && m >= c.start && m < ((c as any).end ?? vis[i + 1]?.start ?? total)); })} L={L} accent={accent} pid={pid} palette={st.palette} font={st.font} grade={st.grade} />
       <Finish fx={fxCss} L={L} />
       <GpuFinish g={g} L={L} hold={st.fx?.hold} />
       {st.vignette !== false ? (
