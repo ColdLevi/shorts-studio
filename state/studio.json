@@ -1,6 +1,6 @@
 {
-  "last_update": 312538552,
-  "time": 1794668760189,
+  "last_update": 312538557,
+  "time": 1794672653693,
   "stage": "idle",
   "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World. The should: - Open with a powerful curiosity-driven hook. - Explain three real-world ways AI is changing everyday life. - Use factual information and credible research. - Include B-roll and animated diagrams. - Use dynamic typography and professional captions. - Maintain strong audience retention throughout. - Have , premium visual . - End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
   "research": {
@@ -2362,6 +2362,11 @@
   "voice_pick": null,
   "disliked": [
     {
+      "title": "From Robotic Mice to Autonomous Minds",
+      "first": "In nineteen fifty, a tiny robotic mouse wound through a physical maze.",
+      "at": 1794672653692
+    },
+    {
       "title": "How Bitcoin Actually Started",
       "first": "Nine pages published in 2008 changed global finance forever,",
       "at": 1794650977523
@@ -2380,11 +2385,6 @@
       "title": "Treating Her Right With Ancient Humor",
       "first": "A seventeenth century suitor walked into a tavern carrying a dried pig heart.",
       "at": 1794499264516
-    },
-    {
-      "title": "How APIs Run the Internet",
-      "first": "Uber processes millions of rides without owning a single mapping satellite.",
-      "at": 1794477035108
     }
   ],
   "ideas": [
