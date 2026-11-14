@@ -683,6 +683,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-63",
+      "title": "Inside the Secret Wars of 1984",
+      "hook": "In nineteen eighty-four, Marvel Comics gathered every hero and villain onto a fabricated planet called Battleworld.",
+      "accent": "#FFD43B",
+      "duration": 43.6,
+      "created": 1794685742674,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-63/short-63.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-63/short-63.jpg",
+      "project": "inside-the-secret-wars-of-1984-mwgsxwu7",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
