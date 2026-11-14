@@ -136,7 +136,7 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
           <Overlay o={o} L={L} accent={accent} pid={pid} displayFont={st.title?.font || st.font} total={total} />
         </Sequence>
       ))}
-      {st.progress_bar !== false ? <Progress accent={accent} L={L} /> : null}
+      {st.progress_bar === true ? <Progress accent={accent} L={L} /> : null}
       {(t.tracks.voice || []).map((a) => <AudioTrack key={a.id} a={a} pid={pid} total={total} />)}
       {(t.tracks.music || []).map((a) => (
         <AudioTrack key={a.id} a={{ fade_out: 1, ...a }} pid={pid} total={total} words={words} />
