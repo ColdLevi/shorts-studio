@@ -1,6 +1,6 @@
 {
-  "last_update": 312538532,
-  "time": 1794658373076,
+  "last_update": 312538533,
+  "time": 1794658396097,
   "stage": "idle",
   "topic": "detailed explaining how bitcoin started",
   "research": {
@@ -2363,97 +2363,7 @@
   "ideas_at": 1794243976053,
   "narr_pick": "me",
   "editing": false,
-  "pick": {
-    "topic": "Make a detailed video explaining how bitcoin started",
-    "list": [
-      {
-        "id": "motion-explainer",
-        "kind": "recipe"
-      },
-      {
-        "id": "documentary",
-        "kind": "recipe"
-      },
-      {
-        "id": "stop-motion",
-        "kind": "recipe"
-      },
-      {
-        "id": "cinematic",
-        "kind": "recipe"
-      },
-      {
-        "id": "kinetic-news",
-        "kind": "recipe"
-      },
-      {
-        "id": "retro-vhs",
-        "kind": "recipe"
-      },
-      {
-        "id": "anime",
-        "kind": "recipe"
-      },
-      {
-        "id": "vlog",
-        "kind": "recipe"
-      },
-      {
-        "id": "blueprint",
-        "kind": "recipe"
-      },
-      {
-        "id": "what-if",
-        "kind": "recipe"
-      },
-      {
-        "id": "bold-pop",
-        "kind": "recipe"
-      },
-      {
-        "id": "youtube-1",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-2",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-3",
-        "kind": "learned"
-      },
-      {
-        "id": "youtu-4",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-5",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-6",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-7",
-        "kind": "learned"
-      },
-      {
-        "id": "upload-8",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit",
-        "kind": "learned"
-      },
-      {
-        "id": "fastedit2",
-        "kind": "learned"
-      }
-    ],
-    "job": {},
-    "at": 1794658368508
-  },
+  "pick": null,
   "liked": [
     {
       "title": "How Draft Paper Overpowers the President",
@@ -2507,7 +2417,13 @@
     }
   ],
   "assets": null,
-  "intake": null,
+  "intake": {
+    "topic": "Make a detailed video explaining how bitcoin started",
+    "job": {},
+    "items": [],
+    "n": 0,
+    "at": 1794658396097
+  },
   "assets_at": 1794651016009,
   "narr": null,
   "sb": null
