@@ -29,7 +29,7 @@ export type Graphic2 =
   | { type: 'icons'; title?: string; items: { icon: string; label: string }[] };
 
 import { Graphic3Beat } from './graphics3';
-export const GRAPHIC2_TYPES = ['versus', 'percent', 'pie', 'timeline', 'flow', 'quote', 'stats', 'myth', 'people', 'chat', 'kinetic', 'gauge', 'map', 'icons', 'network', 'cap', 'printing', 'shrink', 'crack'];
+export const GRAPHIC2_TYPES = ['versus', 'percent', 'pie', 'timeline', 'flow', 'quote', 'stats', 'myth', 'people', 'chat', 'kinetic', 'gauge', 'map', 'icons', 'network', 'cap', 'printing', 'shrink', 'crack', 'date', 'post', 'profile', 'pin', 'jump', 'tally'];
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);

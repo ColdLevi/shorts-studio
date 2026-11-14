@@ -2,6 +2,7 @@
 // network (hub | peer), cap, printing, shrink, crack. Self-contained: only depends on remotion.
 import React from 'react';
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Graphic4Beat } from './graphics4';
 
 export const GRAPHIC3_TYPES = ['network', 'cap', 'printing', 'shrink', 'crack'];
 
@@ -215,6 +216,6 @@ export const Graphic3Beat: React.FC<{ g: any; accent: string; len: number }> = (
     case 'printing': return <Printing g={g} accent={accent} len={len} />;
     case 'shrink': return <Shrink g={g} accent={accent} len={len} />;
     case 'crack': return <Crack g={g} accent={accent} len={len} />;
-    default: return null;
+    default: return <Graphic4Beat g={g} accent={accent} len={len} />;
   }
 };
