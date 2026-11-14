@@ -1,0 +1,44 @@
+{
+  "id": "audio.sound-design",
+  "name": "Sound Design",
+  "version": "1.0.0",
+  "category": "audio",
+  "description": "Use narration, music and effects to support rhythm, clarity and emotion.",
+  "triggers": [
+    "sound",
+    "music",
+    "sfx",
+    "voiceover",
+    "audio"
+  ],
+  "capabilities": [
+    "audio-mix",
+    "sound-effects",
+    "music-pacing"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "any"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "quality_checks": [
+    "speech-intelligibility",
+    "loudness",
+    "no-clipping"
+  ],
+  "engines": [
+    "remotion"
+  ],
+  "priority": 70,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}

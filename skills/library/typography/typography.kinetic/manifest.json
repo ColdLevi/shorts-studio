@@ -1,0 +1,49 @@
+{
+  "id": "typography.kinetic",
+  "name": "Kinetic Typography",
+  "version": "1.0.0",
+  "category": "typography",
+  "description": "Animate text with timing, hierarchy and strong mobile readability.",
+  "triggers": [
+    "kinetic typography",
+    "animated text",
+    "captions",
+    "word by word",
+    "typography"
+  ],
+  "capabilities": [
+    "kinetic-type",
+    "caption-animation",
+    "text-layout"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "social",
+    "music",
+    "advertising",
+    "education"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "quality_checks": [
+    "readability",
+    "safe-area",
+    "contrast",
+    "timing"
+  ],
+  "engines": [
+    "remotion",
+    "motion-engine"
+  ],
+  "priority": 82,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}

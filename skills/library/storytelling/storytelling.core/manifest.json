@@ -1,0 +1,43 @@
+{
+  "id": "storytelling.core",
+  "name": "Core Storytelling",
+  "version": "1.0.0",
+  "category": "storytelling",
+  "description": "Build a coherent narrative with a clear promise, progression and payoff.",
+  "triggers": [
+    "story",
+    "narrative",
+    "structure",
+    "hook"
+  ],
+  "capabilities": [
+    "story-structure",
+    "clarity",
+    "payoff"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "any"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "quality_checks": [
+    "narrative-arc",
+    "clear-premise",
+    "earned-payoff"
+  ],
+  "engines": [
+    "remotion"
+  ],
+  "priority": 90,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}
