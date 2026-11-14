@@ -431,7 +431,7 @@
                       "kinetic",
                       "gauge",
                       "map",
-                      "icons"
+                      "icons", "network", "cap", "printing", "shrink", "crack"
                     ]
                   }
                 },

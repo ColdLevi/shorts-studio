@@ -28,7 +28,8 @@ export type Graphic2 =
   | { type: 'map'; title?: string; countries: string[]; label?: string }
   | { type: 'icons'; title?: string; items: { icon: string; label: string }[] };
 
-export const GRAPHIC2_TYPES = ['versus', 'percent', 'pie', 'timeline', 'flow', 'quote', 'stats', 'myth', 'people', 'chat', 'kinetic', 'gauge', 'map', 'icons'];
+import { Graphic3Beat } from './graphics3';
+export const GRAPHIC2_TYPES = ['versus', 'percent', 'pie', 'timeline', 'flow', 'quote', 'stats', 'myth', 'people', 'chat', 'kinetic', 'gauge', 'map', 'icons', 'network', 'cap', 'printing', 'shrink', 'crack'];
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const EASE = Easing.bezier(0.33, 1, 0.68, 1);
@@ -520,6 +521,6 @@ export const Graphic2Beat: React.FC<{ g: Graphic2; accent: string; len: number }
     case 'gauge': return <Gauge g={g} accent={accent} len={len} />;
     case 'map': return <MapScene g={g} accent={accent} len={len} />;
     case 'icons': return <IconsScene g={g} accent={accent} len={len} />;
-    default: return null;
+    default: return <Graphic3Beat g={g as any} accent={accent} len={len} />;
   }
 };
