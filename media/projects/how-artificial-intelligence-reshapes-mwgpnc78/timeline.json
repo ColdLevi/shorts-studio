@@ -1,0 +1,788 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-artificial-intelligence-reshapes-mwgpnc78",
+ "rev": 1,
+ "title": "How Artificial Intelligence Reshapes Daily Life",
+ "duration": 39.9,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.3,
+    "narration": "Seventy eight percent of enterprise organizations already run on artificial intelligence,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Enterprise adoption rate",
+     "type": "percent",
+     "value": 78
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.3,
+    "end": 9.7,
+    "narration": "since you might think it is just a futuristic novelty, but quiet algorithms",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "premium contemporary technology documentary: cinematic server room racks with clean blue glowing indicator lights, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "b8aa39698589",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.7,
+    "end": 16.299,
+    "narration": "are already driving modern medical scans behind the scenes, helping doctors read X-rays and scans",
+    "kind": "ai_video",
+    "src": "assets/clip_03.mp4",
+    "duration": 6.87,
+    "still": "assets/img_03.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "stock",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "a4b76d202dd3"
+   },
+   {
+    "id": "v4",
+    "start": 16.299,
+    "end": 18.659,
+    "narration": "with wild precision every single day,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "with wild precision every single day",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 18.659,
+    "end": 23.972,
+    "narration": "so smartwatch sensors can flag irregular heartbeats long before symptoms appear,",
+    "kind": "ai_video",
+    "src": "assets/clip_05.mp4",
+    "duration": 5.6,
+    "still": "assets/img_05.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "stock",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "2f782431b4b8"
+   },
+   {
+    "id": "v6",
+    "start": 23.972,
+    "end": 28.617,
+    "narration": "while digital symptom checkers help people determine when to seek professional care,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "while digital symptom checkers help",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 28.617,
+    "end": 33.875,
+    "narration": "because technology has shifted from science fiction into everyday utility,",
+    "kind": "ai_video",
+    "src": "assets/clip_07.mp4",
+    "duration": 5.57,
+    "still": "assets/img_07.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "stock",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "b911b80b2d59"
+   },
+   {
+    "id": "v8",
+    "start": 33.875,
+    "end": 36.872,
+    "narration": "so these hidden algorithms keep reshaping",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "premium contemporary technology documentary: wide shot of a modern city skyline at dusk with subtle electric blue digital data overlays, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "8d7ac0efdc92",
+    "cam": {
+     "move": "drift",
+     "amp": 0.66,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 36.872,
+    "end": 39.096,
+    "narration": "our modern world quietly.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "premium contemporary technology documentary: wide shot of a modern city skyline at dusk with subtle electric blue digital data overlays, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "8d7ac0efdc92",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.57,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Seventy",
+     "start": 0.087,
+     "end": 0.45
+    },
+    {
+     "word": "eight",
+     "start": 0.45,
+     "end": 0.588
+    },
+    {
+     "word": "percent",
+     "start": 0.588,
+     "end": 1.125
+    },
+    {
+     "word": "of",
+     "start": 1.238,
+     "end": 1.375
+    },
+    {
+     "word": "enterprise",
+     "start": 1.5,
+     "end": 1.95
+    },
+    {
+     "word": "organizations",
+     "start": 1.962,
+     "end": 2.837
+    },
+    {
+     "word": "already",
+     "start": 2.95,
+     "end": 3.325
+    },
+    {
+     "word": "run",
+     "start": 3.325,
+     "end": 3.712
+    },
+    {
+     "word": "on",
+     "start": 3.725,
+     "end": 3.875
+    },
+    {
+     "word": "artificial",
+     "start": 3.888,
+     "end": 4.463
+    },
+    {
+     "word": "intelligence,",
+     "start": 4.475,
+     "end": 5.2
+    },
+    {
+     "word": "since",
+     "start": 5.36,
+     "end": 5.548
+    },
+    {
+     "word": "you",
+     "start": 5.56,
+     "end": 5.635
+    },
+    {
+     "word": "might",
+     "start": 5.635,
+     "end": 5.873
+    },
+    {
+     "word": "think",
+     "start": 5.873,
+     "end": 6.147
+    },
+    {
+     "word": "it",
+     "start": 6.147,
+     "end": 6.21
+    },
+    {
+     "word": "is",
+     "start": 6.21,
+     "end": 6.31
+    },
+    {
+     "word": "just",
+     "start": 6.31,
+     "end": 6.56
+    },
+    {
+     "word": "a",
+     "start": 6.635,
+     "end": 6.685
+    },
+    {
+     "word": "futuristic",
+     "start": 6.697,
+     "end": 7.397
+    },
+    {
+     "word": "novelty,",
+     "start": 7.397,
+     "end": 7.998
+    },
+    {
+     "word": "but",
+     "start": 8.698,
+     "end": 8.81
+    },
+    {
+     "word": "quiet",
+     "start": 8.81,
+     "end": 9.185
+    },
+    {
+     "word": "algorithms",
+     "start": 9.185,
+     "end": 9.76
+    },
+    {
+     "word": "are",
+     "start": 9.76,
+     "end": 9.948
+    },
+    {
+     "word": "already",
+     "start": 9.96,
+     "end": 10.36
+    },
+    {
+     "word": "driving",
+     "start": 10.372,
+     "end": 10.91
+    },
+    {
+     "word": "modern",
+     "start": 10.91,
+     "end": 11.26
+    },
+    {
+     "word": "medical",
+     "start": 11.272,
+     "end": 11.61
+    },
+    {
+     "word": "scans",
+     "start": 11.622,
+     "end": 12.035
+    },
+    {
+     "word": "behind",
+     "start": 12.048,
+     "end": 12.385
+    },
+    {
+     "word": "the",
+     "start": 12.385,
+     "end": 12.435
+    },
+    {
+     "word": "scenes,",
+     "start": 12.435,
+     "end": 13.022
+    },
+    {
+     "word": "helping",
+     "start": 13.722,
+     "end": 13.972
+    },
+    {
+     "word": "doctors",
+     "start": 13.972,
+     "end": 14.484
+    },
+    {
+     "word": "read",
+     "start": 14.484,
+     "end": 14.847
+    },
+    {
+     "word": "X-rays",
+     "start": 14.997,
+     "end": 15.671
+    },
+    {
+     "word": "and",
+     "start": 15.684,
+     "end": 15.796
+    },
+    {
+     "word": "scans",
+     "start": 15.796,
+     "end": 16.359
+    },
+    {
+     "word": "with",
+     "start": 16.359,
+     "end": 16.497
+    },
+    {
+     "word": "wild",
+     "start": 16.497,
+     "end": 16.884
+    },
+    {
+     "word": "precision",
+     "start": 16.896,
+     "end": 17.459
+    },
+    {
+     "word": "every",
+     "start": 17.622,
+     "end": 17.922
+    },
+    {
+     "word": "single",
+     "start": 17.934,
+     "end": 18.234
+    },
+    {
+     "word": "day,",
+     "start": 18.247,
+     "end": 18.559
+    },
+    {
+     "word": "so",
+     "start": 18.719,
+     "end": 18.881
+    },
+    {
+     "word": "smartwatch",
+     "start": 18.881,
+     "end": 19.444
+    },
+    {
+     "word": "sensors",
+     "start": 19.444,
+     "end": 19.819
+    },
+    {
+     "word": "can",
+     "start": 19.819,
+     "end": 19.944
+    },
+    {
+     "word": "flag",
+     "start": 19.957,
+     "end": 20.444
+    },
+    {
+     "word": "irregular",
+     "start": 20.544,
+     "end": 21.006
+    },
+    {
+     "word": "heartbeats",
+     "start": 21.006,
+     "end": 21.544
+    },
+    {
+     "word": "long",
+     "start": 21.556,
+     "end": 22.044
+    },
+    {
+     "word": "before",
+     "start": 22.056,
+     "end": 22.444
+    },
+    {
+     "word": "symptoms",
+     "start": 22.457,
+     "end": 22.832
+    },
+    {
+     "word": "appear,",
+     "start": 22.832,
+     "end": 23.332
+    },
+    {
+     "word": "while",
+     "start": 24.032,
+     "end": 24.232
+    },
+    {
+     "word": "digital",
+     "start": 24.245,
+     "end": 24.657
+    },
+    {
+     "word": "symptom",
+     "start": 24.657,
+     "end": 25.032
+    },
+    {
+     "word": "checkers",
+     "start": 25.032,
+     "end": 25.532
+    },
+    {
+     "word": "help",
+     "start": 25.67,
+     "end": 25.857
+    },
+    {
+     "word": "people",
+     "start": 25.869,
+     "end": 26.119
+    },
+    {
+     "word": "determine",
+     "start": 26.119,
+     "end": 26.657
+    },
+    {
+     "word": "when",
+     "start": 26.777,
+     "end": 26.914
+    },
+    {
+     "word": "to",
+     "start": 26.914,
+     "end": 27.014
+    },
+    {
+     "word": "seek",
+     "start": 27.014,
+     "end": 27.439
+    },
+    {
+     "word": "professional",
+     "start": 27.451,
+     "end": 28.076
+    },
+    {
+     "word": "care,",
+     "start": 28.089,
+     "end": 28.477
+    },
+    {
+     "word": "because",
+     "start": 28.677,
+     "end": 29.039
+    },
+    {
+     "word": "technology",
+     "start": 29.039,
+     "end": 29.677
+    },
+    {
+     "word": "has",
+     "start": 29.677,
+     "end": 29.814
+    },
+    {
+     "word": "shifted",
+     "start": 29.826,
+     "end": 30.402
+    },
+    {
+     "word": "from",
+     "start": 30.522,
+     "end": 30.635
+    },
+    {
+     "word": "science",
+     "start": 30.635,
+     "end": 31.072
+    },
+    {
+     "word": "fiction",
+     "start": 31.072,
+     "end": 31.623
+    },
+    {
+     "word": "into",
+     "start": 31.66,
+     "end": 31.973
+    },
+    {
+     "word": "everyday",
+     "start": 32.048,
+     "end": 32.61
+    },
+    {
+     "word": "utility,",
+     "start": 32.61,
+     "end": 33.235
+    },
+    {
+     "word": "so",
+     "start": 33.935,
+     "end": 34.047
+    },
+    {
+     "word": "these",
+     "start": 34.047,
+     "end": 34.247
+    },
+    {
+     "word": "hidden",
+     "start": 34.26,
+     "end": 34.647
+    },
+    {
+     "word": "algorithms",
+     "start": 34.647,
+     "end": 35.435
+    },
+    {
+     "word": "keep",
+     "start": 35.584,
+     "end": 35.897
+    },
+    {
+     "word": "reshaping",
+     "start": 35.897,
+     "end": 36.772
+    },
+    {
+     "word": "our",
+     "start": 36.872,
+     "end": 37.01
+    },
+    {
+     "word": "modern",
+     "start": 37.01,
+     "end": 37.484
+    },
+    {
+     "word": "world",
+     "start": 37.484,
+     "end": 37.885
+    },
+    {
+     "word": "quietly.",
+     "start": 37.959,
+     "end": 38.66
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Seventy eight percent of enterprise organizations already run on artificial intelligence, since you might think it is just a futuristic novelty, but quiet algorithms are already driving modern medical scans behind the scenes, helping doctors read X-rays and scans with wild precision every single day, so smartwatch sensors can flag irregular heartbeats long before symptoms appear, while digital symptom checkers help people determine when to seek professional care, because technology has shifted from science fiction into everyday utility, so these hidden algorithms keep reshaping our modern world quietly."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 24.49,
+    "volume": 0.3,
+    "anchor": "v6",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.25,
+    "text": "organizations",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.25,
+    "opacity": 0.35,
+    "seed": 5.06
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v6",
+    "delay": 0.4,
+    "start": 24.37,
+    "end": 28.57,
+    "asset": "person",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794679763055,
+  "updated": 1794679763058,
+  "topic": "titled: How Artificial Intelligence Is Changing the World The should: - Open with a powerful curiosity-driven hook.\n- Explain three real-world ways AI is changing everyday life.\n- Use factual information and credible research.\n- Include B-roll and animated diagrams.\n- Use dynamic typography and professional captions.\n- Maintain strong audience retention throughout.\n- Have , premium visual .\n- End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
+  "hook": "Seventy eight percent of enterprise organizations already run on artificial intelligence.",
+  "image_style": "premium contemporary technology documentary: realistic modern workplaces, research labs, factories and everyday technology applications; cinematic real-world B-roll, restrained electric-blue and cyan accents, clean modern environments, precise data visualisations and animated diagrams; avoid aged paper, historical paintings, museum dioramas and period costumes",
+  "format": "vertical",
+  "assets_release": "project-how-artificial-intelligence-reshapes-mwgpnc78",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "9:16",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Seventy eight percent of enterprise organizations already run on artificial intelligence.",
+   "music": "docu-pluck",
+   "project_id": "how-artificial-intelligence-reshapes-mwgpnc78",
+   "style": "premium contemporary technology documentary: realistic modern workplaces, research labs, factories and everyday technology applications; cinematic real-world B-roll, restrained electric-blue and cyan accents, clean modern environments, precise data visualisations and animated diagrams; avoid aged paper, historical paintings, museum dioramas and period costumes",
+   "style_preset": "documentary",
+   "title": "How Artificial Intelligence Reshapes Daily Life",
+   "topic": "titled: How Artificial Intelligence Is Changing the World The should: - Open with a powerful curiosity-driven hook.\n- Explain three real-world ways AI is changing everyday life.\n- Use factual information and credible research.\n- Include B-roll and animated diagrams.\n- Use dynamic typography and professional captions.\n- Maintain strong audience retention throughout.\n- Have , premium visual .\n- End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Seventy eight percent of enterprise...\"): the hook. No subject cutout, so I put ORGANIZATIONS in the top band where it cannot cover the face.",
+   "Beat 6 (\"while digital symptom checkers help...\"): a \"person\" illustration builds itself on the right after the words land.",
+   "Left 7 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 2: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 8: drift (alive baseline).",
+   "Beat 9: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}
