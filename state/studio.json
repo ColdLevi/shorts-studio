@@ -1,6 +1,6 @@
 {
-  "last_update": 312538538,
-  "time": 1794668112120,
+  "last_update": 312538539,
+  "time": 1794668341664,
   "stage": "pitch",
   "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World The should: - Open with a powerful curiosity-driven hook.\n- Explain three real-world ways AI is changing everyday life.\n- Use factual information and credible research.\n- Include B-roll and animated diagrams.\n- Use dynamic typography and professional captions.\n- Maintain strong audience retention throughout.\n- Have , premium visual .\n- End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
   "research": {
@@ -31,11 +31,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How A Simple Paper Survives Capitol Hill\"",
-      "t": 1794615739718
-    },
     {
       "role": "bot",
       "text": "Rendering \"How A Simple Paper Survives Capitol Hill\"",
@@ -110,6 +105,11 @@
       "role": "bot",
       "text": "Pitched \"AI Is Already Changing Everything\": A voice assistant on your phone.",
       "t": 1794668112120
+    },
+    {
+      "role": "user",
+      "text": "What is dry run, pull request, bash, commit, deploy and the other terms used on termux",
+      "t": 1794668340609
     }
   ],
   "working": null,
@@ -2354,7 +2354,97 @@
   "ideas_at": 1794243976053,
   "narr_pick": "you",
   "editing": false,
-  "pick": null,
+  "pick": {
+    "topic": "What is dry run, pull request, bash, commit, deploy and the other terms used on termux",
+    "list": [
+      {
+        "id": "motion-explainer",
+        "kind": "recipe"
+      },
+      {
+        "id": "documentary",
+        "kind": "recipe"
+      },
+      {
+        "id": "stop-motion",
+        "kind": "recipe"
+      },
+      {
+        "id": "cinematic",
+        "kind": "recipe"
+      },
+      {
+        "id": "kinetic-news",
+        "kind": "recipe"
+      },
+      {
+        "id": "retro-vhs",
+        "kind": "recipe"
+      },
+      {
+        "id": "anime",
+        "kind": "recipe"
+      },
+      {
+        "id": "vlog",
+        "kind": "recipe"
+      },
+      {
+        "id": "blueprint",
+        "kind": "recipe"
+      },
+      {
+        "id": "what-if",
+        "kind": "recipe"
+      },
+      {
+        "id": "bold-pop",
+        "kind": "recipe"
+      },
+      {
+        "id": "youtube-1",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-2",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-3",
+        "kind": "learned"
+      },
+      {
+        "id": "youtu-4",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-5",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-6",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-7",
+        "kind": "learned"
+      },
+      {
+        "id": "upload-8",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit",
+        "kind": "learned"
+      },
+      {
+        "id": "fastedit2",
+        "kind": "learned"
+      }
+    ],
+    "job": {},
+    "at": 1794668341664
+  },
   "liked": [
     {
       "title": "How Draft Paper Overpowers the President",
