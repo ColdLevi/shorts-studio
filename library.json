@@ -627,6 +627,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-59",
+      "title": "How Bitcoin Actually Started",
+      "hook": "Ten thousand bitcoins once bought two pizzas.",
+      "accent": "#2EE6C5",
+      "duration": 36.9,
+      "created": 1794651842620,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-59/short-59.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-59/short-59.jpg",
+      "project": "how-bitcoin-actually-started-mwg8zoue",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

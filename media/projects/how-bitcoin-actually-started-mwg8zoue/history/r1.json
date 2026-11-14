@@ -1,0 +1,912 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-bitcoin-actually-started-mwg8zoue",
+ "rev": 1,
+ "title": "How Bitcoin Actually Started",
+ "duration": 36.85,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 2.983,
+    "narration": "Ten thousand bitcoins once bought two pizzas.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "May 22, 2010",
+     "text": "10,000 Bitcoins for 2 Pizzas",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 2.983,
+    "end": 6.305,
+    "narration": "Most think bitcoin appeared as a massive global currency overnight,",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Began as a simple white paper in 2008",
+     "myth": "Appeared overnight as a global currency",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 6.305,
+    "end": 8.905,
+    "narration": "but it started as a simple white paper in two thousand eight",
+    "kind": "graphic",
+    "graphic": {
+     "events": [
+      {
+       "date": "2008",
+       "label": "White paper published"
+      },
+      {
+       "date": "2009",
+       "label": "Network launches"
+      }
+     ],
+     "title": "Origins",
+     "type": "timeline"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 8.905,
+    "end": 11.442,
+    "narration": "by a creator using the pseudonym Satoshi Nakamoto",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "shield",
+       "label": "Anonymous"
+      },
+      {
+       "icon": "book",
+       "label": "White Paper"
+      }
+     ],
+     "title": "Pseudonym Creator",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 11.442,
+    "end": 13.63,
+    "narration": "during the devastating global financial crisis",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Trust in Banks",
+       "value": 12
+      },
+      {
+       "label": "Market Drop",
+       "value": 45
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Financial Crisis Impact",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 13.63,
+    "end": 17.124,
+    "narration": "so the bitcoin network launched on January third, two thousand nine,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Network Launch Year",
+     "prefix": "",
+     "suffix": "",
+     "type": "counter",
+     "value": 2009
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 17.124,
+    "end": 19.829,
+    "narration": "when Satoshi Nakamoto mined the genesis block.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "White Paper",
+      "2008 Crisis",
+      "Block Mined"
+     ],
+     "title": "Genesis Block",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 19.829,
+    "end": 22.551,
+    "narration": "For months it had no real commercial value at all,",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean vector motion graphics, flat corporate illustration style, smooth UI elements showing a digital coin resting at a flat zero line on a chart"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "6c33ed715c04",
+    "cam": {
+     "move": "drift",
+     "amp": 0.63,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 22.551,
+    "end": 24.834,
+    "narration": "until May twenty-second, two thousand ten,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "until May twenty-second, two thousand",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 24.834,
+    "end": 29.196,
+    "narration": "when someone famously exchanged ten thousand bitcoins for two Papa John's pizzas",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "Bitcoins",
+      "value": 10000
+     },
+     "prefix": "",
+     "right": {
+      "label": "Pizzas",
+      "value": 2
+     },
+     "suffix": "",
+     "title": "The Pizza Trade",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v11",
+    "start": 29.196,
+    "end": 31.202,
+    "narration": "worth forty-one dollars back then.",
+    "kind": "image",
+    "src": "assets/img_11.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean vector motion graphics, flat corporate illustration style, smooth UI elements showing a price tag displaying forty-one dollars in bold digital numbers"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2d907756b908",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.54,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v12",
+    "start": 31.202,
+    "end": 36.048,
+    "narration": "Ten thousand bitcoins bought dinner, and a trillion-dollar industry was born.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Ten thousand bitcoins for dinner",
+     "text": "Trillion Dollar Industry",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Ten",
+     "start": 0.087,
+     "end": 0.275
+    },
+    {
+     "word": "thousand",
+     "start": 0.287,
+     "end": 0.675
+    },
+    {
+     "word": "bitcoins",
+     "start": 0.688,
+     "end": 1.288
+    },
+    {
+     "word": "once",
+     "start": 1.3,
+     "end": 1.663
+    },
+    {
+     "word": "bought",
+     "start": 1.675,
+     "end": 1.95
+    },
+    {
+     "word": "two",
+     "start": 1.962,
+     "end": 2.138
+    },
+    {
+     "word": "pizzas.",
+     "start": 2.15,
+     "end": 2.763
+    },
+    {
+     "word": "Most",
+     "start": 3.043,
+     "end": 3.33
+    },
+    {
+     "word": "think",
+     "start": 3.342,
+     "end": 3.555
+    },
+    {
+     "word": "bitcoin",
+     "start": 3.568,
+     "end": 3.93
+    },
+    {
+     "word": "appeared",
+     "start": 3.942,
+     "end": 4.33
+    },
+    {
+     "word": "as",
+     "start": 4.343,
+     "end": 4.442
+    },
+    {
+     "word": "a",
+     "start": 4.455,
+     "end": 4.505
+    },
+    {
+     "word": "massive",
+     "start": 4.518,
+     "end": 4.93
+    },
+    {
+     "word": "global",
+     "start": 4.942,
+     "end": 5.255
+    },
+    {
+     "word": "currency",
+     "start": 5.268,
+     "end": 5.692
+    },
+    {
+     "word": "overnight,",
+     "start": 5.705,
+     "end": 6.205
+    },
+    {
+     "word": "but",
+     "start": 6.365,
+     "end": 6.514
+    },
+    {
+     "word": "it",
+     "start": 6.527,
+     "end": 6.602
+    },
+    {
+     "word": "started",
+     "start": 6.615,
+     "end": 7.027
+    },
+    {
+     "word": "as",
+     "start": 7.039,
+     "end": 7.139
+    },
+    {
+     "word": "a",
+     "start": 7.152,
+     "end": 7.214
+    },
+    {
+     "word": "simple",
+     "start": 7.227,
+     "end": 7.589
+    },
+    {
+     "word": "white",
+     "start": 7.602,
+     "end": 7.827
+    },
+    {
+     "word": "paper",
+     "start": 7.84,
+     "end": 8.177
+    },
+    {
+     "word": "in",
+     "start": 8.19,
+     "end": 8.289
+    },
+    {
+     "word": "two",
+     "start": 8.302,
+     "end": 8.402
+    },
+    {
+     "word": "thousand",
+     "start": 8.415,
+     "end": 8.715
+    },
+    {
+     "word": "eight",
+     "start": 8.727,
+     "end": 8.952
+    },
+    {
+     "word": "by",
+     "start": 8.965,
+     "end": 9.09
+    },
+    {
+     "word": "a",
+     "start": 9.102,
+     "end": 9.165
+    },
+    {
+     "word": "creator",
+     "start": 9.177,
+     "end": 9.614
+    },
+    {
+     "word": "using",
+     "start": 9.627,
+     "end": 9.94
+    },
+    {
+     "word": "the",
+     "start": 9.952,
+     "end": 10.027
+    },
+    {
+     "word": "pseudonym",
+     "start": 10.039,
+     "end": 10.427
+    },
+    {
+     "word": "Satoshi",
+     "start": 10.44,
+     "end": 10.864
+    },
+    {
+     "word": "Nakamoto",
+     "start": 10.877,
+     "end": 11.489
+    },
+    {
+     "word": "during",
+     "start": 11.502,
+     "end": 11.764
+    },
+    {
+     "word": "the",
+     "start": 11.777,
+     "end": 11.864
+    },
+    {
+     "word": "devastating",
+     "start": 11.877,
+     "end": 12.44
+    },
+    {
+     "word": "global",
+     "start": 12.452,
+     "end": 12.789
+    },
+    {
+     "word": "financial",
+     "start": 12.802,
+     "end": 13.215
+    },
+    {
+     "word": "crisis",
+     "start": 13.227,
+     "end": 13.677
+    },
+    {
+     "word": "so",
+     "start": 13.69,
+     "end": 13.852
+    },
+    {
+     "word": "the",
+     "start": 13.864,
+     "end": 13.952
+    },
+    {
+     "word": "bitcoin",
+     "start": 13.965,
+     "end": 14.302
+    },
+    {
+     "word": "network",
+     "start": 14.315,
+     "end": 14.69
+    },
+    {
+     "word": "launched",
+     "start": 14.702,
+     "end": 15.077
+    },
+    {
+     "word": "on",
+     "start": 15.09,
+     "end": 15.202
+    },
+    {
+     "word": "January",
+     "start": 15.215,
+     "end": 15.627
+    },
+    {
+     "word": "third,",
+     "start": 15.639,
+     "end": 16.052
+    },
+    {
+     "word": "two",
+     "start": 16.212,
+     "end": 16.324
+    },
+    {
+     "word": "thousand",
+     "start": 16.337,
+     "end": 16.637
+    },
+    {
+     "word": "nine,",
+     "start": 16.649,
+     "end": 17.024
+    },
+    {
+     "word": "when",
+     "start": 17.184,
+     "end": 17.385
+    },
+    {
+     "word": "Satoshi",
+     "start": 17.397,
+     "end": 17.835
+    },
+    {
+     "word": "Nakamoto",
+     "start": 17.847,
+     "end": 18.347
+    },
+    {
+     "word": "mined",
+     "start": 18.359,
+     "end": 18.647
+    },
+    {
+     "word": "the",
+     "start": 18.66,
+     "end": 18.722
+    },
+    {
+     "word": "genesis",
+     "start": 18.734,
+     "end": 19.16
+    },
+    {
+     "word": "block.",
+     "start": 19.172,
+     "end": 19.609
+    },
+    {
+     "word": "For",
+     "start": 19.889,
+     "end": 20.039
+    },
+    {
+     "word": "months",
+     "start": 20.051,
+     "end": 20.413
+    },
+    {
+     "word": "it",
+     "start": 20.451,
+     "end": 20.551
+    },
+    {
+     "word": "had",
+     "start": 20.563,
+     "end": 20.764
+    },
+    {
+     "word": "no",
+     "start": 20.776,
+     "end": 21.039
+    },
+    {
+     "word": "real",
+     "start": 21.051,
+     "end": 21.313
+    },
+    {
+     "word": "commercial",
+     "start": 21.326,
+     "end": 21.726
+    },
+    {
+     "word": "value",
+     "start": 21.738,
+     "end": 22.101
+    },
+    {
+     "word": "at",
+     "start": 22.113,
+     "end": 22.176
+    },
+    {
+     "word": "all,",
+     "start": 22.188,
+     "end": 22.451
+    },
+    {
+     "word": "until",
+     "start": 22.611,
+     "end": 22.837
+    },
+    {
+     "word": "May",
+     "start": 22.849,
+     "end": 22.974
+    },
+    {
+     "word": "twenty-second,",
+     "start": 22.987,
+     "end": 23.737
+    },
+    {
+     "word": "two",
+     "start": 23.897,
+     "end": 24.022
+    },
+    {
+     "word": "thousand",
+     "start": 24.034,
+     "end": 24.397
+    },
+    {
+     "word": "ten,",
+     "start": 24.409,
+     "end": 24.734
+    },
+    {
+     "word": "when",
+     "start": 24.894,
+     "end": 25.069
+    },
+    {
+     "word": "someone",
+     "start": 25.081,
+     "end": 25.406
+    },
+    {
+     "word": "famously",
+     "start": 25.419,
+     "end": 25.932
+    },
+    {
+     "word": "exchanged",
+     "start": 25.944,
+     "end": 26.557
+    },
+    {
+     "word": "ten",
+     "start": 26.569,
+     "end": 26.781
+    },
+    {
+     "word": "thousand",
+     "start": 26.794,
+     "end": 27.169
+    },
+    {
+     "word": "bitcoins",
+     "start": 27.182,
+     "end": 27.719
+    },
+    {
+     "word": "for",
+     "start": 27.732,
+     "end": 27.882
+    },
+    {
+     "word": "two",
+     "start": 27.894,
+     "end": 28.094
+    },
+    {
+     "word": "Papa",
+     "start": 28.107,
+     "end": 28.419
+    },
+    {
+     "word": "John's",
+     "start": 28.432,
+     "end": 28.756
+    },
+    {
+     "word": "pizzas",
+     "start": 28.769,
+     "end": 29.244
+    },
+    {
+     "word": "worth",
+     "start": 29.256,
+     "end": 29.506
+    },
+    {
+     "word": "forty-one",
+     "start": 29.519,
+     "end": 30.006,
+     "em": true
+    },
+    {
+     "word": "dollars",
+     "start": 30.019,
+     "end": 30.406
+    },
+    {
+     "word": "back",
+     "start": 30.419,
+     "end": 30.669
+    },
+    {
+     "word": "then.",
+     "start": 30.681,
+     "end": 30.982
+    },
+    {
+     "word": "Ten",
+     "start": 31.262,
+     "end": 31.462
+    },
+    {
+     "word": "thousand",
+     "start": 31.474,
+     "end": 31.862
+    },
+    {
+     "word": "bitcoins",
+     "start": 31.874,
+     "end": 32.411
+    },
+    {
+     "word": "bought",
+     "start": 32.424,
+     "end": 32.699
+    },
+    {
+     "word": "dinner,",
+     "start": 32.712,
+     "end": 33.174
+    },
+    {
+     "word": "and",
+     "start": 33.334,
+     "end": 33.597
+    },
+    {
+     "word": "a",
+     "start": 33.61,
+     "end": 33.684
+    },
+    {
+     "word": "trillion-dollar",
+     "start": 33.697,
+     "end": 34.422
+    },
+    {
+     "word": "industry",
+     "start": 34.434,
+     "end": 34.947
+    },
+    {
+     "word": "was",
+     "start": 34.959,
+     "end": 35.147
+    },
+    {
+     "word": "born.",
+     "start": 35.159,
+     "end": 35.622
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-BrianNeural",
+     "rate": "+0%",
+     "text": "Ten thousand bitcoins once bought two pizzas. Most think bitcoin appeared as a massive global currency overnight, but it started as a simple white paper in two thousand eight by a creator using the pseudonym Satoshi Nakamoto during the devastating global financial crisis so the bitcoin network launched on January third, two thousand nine, when Satoshi Nakamoto mined the genesis block. For months it had no real commercial value at all, until May twenty-second, two thousand ten, when someone famously exchanged ten thousand bitcoins for two Papa John's pizzas worth forty-one dollars back then. Ten thousand bitcoins bought dinner, and a trillion-dollar industry was born."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 2.93,
+    "text": "thousand",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 2.93,
+    "opacity": 0.35,
+    "seed": 3.88
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v3",
+    "delay": 0.4,
+    "start": 6.71,
+    "end": 8.85,
+    "asset": "document",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794651302775,
+  "updated": 1794651302779,
+  "topic": "detailed explaining how bitcoin started",
+  "hook": "Ten thousand bitcoins once bought two pizzas.",
+  "image_style": "clean vector motion graphics, flat corporate illustration style, smooth UI elements",
+  "format": "landscape",
+  "assets_release": "project-how-bitcoin-actually-started-mwg8zoue",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Ten thousand bitcoins once bought two pizzas.",
+   "music": "tech-pulse",
+   "project_id": "how-bitcoin-actually-started-mwg8zoue",
+   "style": "clean vector motion graphics, flat corporate illustration style, smooth UI elements",
+   "style_preset": "motion-explainer",
+   "title": "How Bitcoin Actually Started",
+   "topic": "detailed explaining how bitcoin started",
+   "voice": "en-US-BrianNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Ten thousand bitcoins once bought t...\"): the hook. No subject cutout, so I put THOUSAND in the top band where it cannot cover the face.",
+   "Beat 3 (\"but it started as a simple white pa...\"): a \"document\" illustration builds itself on the right after the words land.",
+   "Left 10 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 8: drift (alive baseline).",
+   "Beat 11: pull-out (a turn in the story: pull back to reveal)."
+  ]
+ }
+}
