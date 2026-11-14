@@ -133,7 +133,7 @@ export const StudioVideo: React.FC<Timeline> = (t) => {
       ) : null}
       {overlays.map((o) => (
         <Sequence key={o.id} from={Math.round(o.start * fps)} durationInFrames={Math.max(1, Math.round((o.end - o.start) * fps))}>
-          <Overlay o={o} L={L} accent={accent} pid={pid} displayFont={st.title?.font || st.font} />
+          <Overlay o={o} L={L} accent={accent} pid={pid} displayFont={st.title?.font || st.font} total={total} />
         </Sequence>
       ))}
       {st.progress_bar !== false ? <Progress accent={accent} L={L} /> : null}

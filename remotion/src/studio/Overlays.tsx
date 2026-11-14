@@ -77,14 +77,14 @@ const OverlayBase: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: st
 type OvProps = React.ComponentProps<typeof OverlayBase>;
 const ENTR = ['slide-l', 'blur', 'rise', 'wipe', 'slide-r'] as const;
 // o1: act-aware entrance. Hook (first 4 s) punches in; the middle rotates styles so neighbours differ.
-export const Overlay: React.FC<OvProps> = (props) => {
+export const Overlay: React.FC<OvProps & { total?: number }> = (props) => {
   const { o, L } = props;
+  const total = props.total || 0;
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const durF = useVideoConfig().durationInFrames;
   if (o.kind === 'image' || o.kind === 'chapter') return <OverlayBase {...props} />;
   const hook = o.start < 4;
-  const payoff = !hook && o.start >= durF / fps - 6;
+  const payoff = !hook && total > 0 && o.start >= total - 6;
   const e = hook ? 'punch' : payoff ? 'hold' : ENTR[Math.abs(Math.round(o.start)) % ENTR.length];
   const p = spring({ frame, fps, config: hook ? { damping: 12, stiffness: 260 } : payoff ? { damping: 30, stiffness: 50 } : { damping: 18, stiffness: 120 } });
   const q = 1 - Math.min(1, Math.max(0, p));
