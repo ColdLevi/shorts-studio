@@ -1,0 +1,797 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-bitcoin-actually-started-mwg4vvwv",
+ "rev": 1,
+ "title": "How Bitcoin Actually Started",
+ "duration": 39.37,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.485,
+    "narration": "Nine pages published in 2008 changed global finance forever,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Changed global finance forever",
+     "text": "Nine pages in 2008",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.485,
+    "end": 11.542,
+    "narration": "because you think a massive corporate team built cryptocurrency, but an unknown person named Satoshi Nakamoto created it,",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Anonymous creator Satoshi",
+     "myth": "Built by corporate team",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 11.542,
+    "end": 14.921,
+    "narration": "publishing a whitepaper when the financial system broke down.",
+    "kind": "ai_video",
+    "src": "assets/clip_03.mp4",
+    "duration": 3.67,
+    "still": "assets/img_03.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, falling financial charts and rising digital currency icons",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "2cd278da97d7"
+   },
+   {
+    "id": "v4",
+    "start": 14.921,
+    "end": 17.555,
+    "narration": "You expect banks to control every dollar,",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 2.9,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, traditional banking vault door locked tight with heavy steel bars",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "dac95cfacd2f"
+   },
+   {
+    "id": "v5",
+    "start": 17.555,
+    "end": 23.102,
+    "narration": "but in 2009 Bitcoin launched as the world's first decentralized digital currency,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Decentralized launch year",
+     "prefix": "",
+     "suffix": "",
+     "type": "counter",
+     "value": 2009
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 23.102,
+    "end": 26.665,
+    "narration": "operating without any central authority or government permission.",
+    "kind": "ai_video",
+    "src": "assets/clip_06.mp4",
+    "duration": 3.87,
+    "still": "assets/img_06.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, independent nodes exchanging data streams in a peer to peer mesh",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "6d42e3ec85f1"
+   },
+   {
+    "id": "v7",
+    "start": 26.665,
+    "end": 31.385,
+    "narration": "Traditional money prints endlessly, so inflation destroys your savings over time,",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Fiat printing",
+       "value": 100
+      },
+      {
+       "label": "Bitcoin cap",
+       "value": 0
+      }
+     ],
+     "prefix": "",
+     "suffix": "%",
+     "title": "Money supply rules",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 31.385,
+    "end": 35.128,
+    "narration": "yet Bitcoin operates with a strict twenty-one million supply cap.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, a solid golden coin stamped with twenty-one million limit"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d0ea0c8de5e7",
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.75,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 35.128,
+    "end": 38.568,
+    "narration": "Nine pages and a hard cap replaced the central bank.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Nine pages",
+      "Hard cap",
+      "New money"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Nine",
+     "start": 0.1,
+     "end": 0.4
+    },
+    {
+     "word": "pages",
+     "start": 0.412,
+     "end": 0.8
+    },
+    {
+     "word": "published",
+     "start": 0.812,
+     "end": 1.3
+    },
+    {
+     "word": "in 2008",
+     "start": 1.312,
+     "end": 2.462
+    },
+    {
+     "word": "changed",
+     "start": 2.475,
+     "end": 2.962
+    },
+    {
+     "word": "global",
+     "start": 2.975,
+     "end": 3.4
+    },
+    {
+     "word": "finance",
+     "start": 3.413,
+     "end": 3.862
+    },
+    {
+     "word": "forever,",
+     "start": 3.875,
+     "end": 4.325
+    },
+    {
+     "word": "because",
+     "start": 4.485,
+     "end": 4.76
+    },
+    {
+     "word": "you",
+     "start": 4.772,
+     "end": 4.873
+    },
+    {
+     "word": "think",
+     "start": 4.885,
+     "end": 5.123
+    },
+    {
+     "word": "a",
+     "start": 5.135,
+     "end": 5.185
+    },
+    {
+     "word": "massive",
+     "start": 5.198,
+     "end": 5.81
+    },
+    {
+     "word": "corporate",
+     "start": 5.823,
+     "end": 6.248
+    },
+    {
+     "word": "team",
+     "start": 6.26,
+     "end": 6.56
+    },
+    {
+     "word": "built",
+     "start": 6.573,
+     "end": 6.835
+    },
+    {
+     "word": "cryptocurrency,",
+     "start": 6.847,
+     "end": 7.735
+    },
+    {
+     "word": "but",
+     "start": 7.895,
+     "end": 8.007
+    },
+    {
+     "word": "an",
+     "start": 8.019,
+     "end": 8.132
+    },
+    {
+     "word": "unknown",
+     "start": 8.145,
+     "end": 8.619
+    },
+    {
+     "word": "person",
+     "start": 8.632,
+     "end": 9.119
+    },
+    {
+     "word": "named",
+     "start": 9.295,
+     "end": 9.519
+    },
+    {
+     "word": "Satoshi",
+     "start": 9.532,
+     "end": 10.07
+    },
+    {
+     "word": "Nakamoto",
+     "start": 10.082,
+     "end": 10.744
+    },
+    {
+     "word": "created",
+     "start": 10.757,
+     "end": 11.219
+    },
+    {
+     "word": "it,",
+     "start": 11.232,
+     "end": 11.382
+    },
+    {
+     "word": "publishing",
+     "start": 11.542,
+     "end": 12.029
+    },
+    {
+     "word": "a",
+     "start": 12.042,
+     "end": 12.116
+    },
+    {
+     "word": "whitepaper",
+     "start": 12.129,
+     "end": 12.804
+    },
+    {
+     "word": "when",
+     "start": 12.954,
+     "end": 13.042
+    },
+    {
+     "word": "the",
+     "start": 13.054,
+     "end": 13.129
+    },
+    {
+     "word": "financial",
+     "start": 13.141,
+     "end": 13.667
+    },
+    {
+     "word": "system",
+     "start": 13.679,
+     "end": 14.029
+    },
+    {
+     "word": "broke",
+     "start": 14.042,
+     "end": 14.304
+    },
+    {
+     "word": "down.",
+     "start": 14.317,
+     "end": 14.641
+    },
+    {
+     "word": "You",
+     "start": 14.921,
+     "end": 15.058
+    },
+    {
+     "word": "expect",
+     "start": 15.07,
+     "end": 15.558
+    },
+    {
+     "word": "banks",
+     "start": 15.57,
+     "end": 15.908
+    },
+    {
+     "word": "to",
+     "start": 15.921,
+     "end": 16.033
+    },
+    {
+     "word": "control",
+     "start": 16.046,
+     "end": 16.596
+    },
+    {
+     "word": "every",
+     "start": 16.77,
+     "end": 16.983
+    },
+    {
+     "word": "dollar,",
+     "start": 16.995,
+     "end": 17.395
+    },
+    {
+     "word": "but",
+     "start": 17.555,
+     "end": 17.668
+    },
+    {
+     "word": "in 2009",
+     "start": 17.68,
+     "end": 18.755
+    },
+    {
+     "word": "Bitcoin",
+     "start": 18.767,
+     "end": 19.255
+    },
+    {
+     "word": "launched",
+     "start": 19.267,
+     "end": 19.692
+    },
+    {
+     "word": "as",
+     "start": 19.767,
+     "end": 19.892
+    },
+    {
+     "word": "the",
+     "start": 19.905,
+     "end": 19.993
+    },
+    {
+     "word": "world's",
+     "start": 20.005,
+     "end": 20.418
+    },
+    {
+     "word": "first",
+     "start": 20.43,
+     "end": 20.93
+    },
+    {
+     "word": "decentralized",
+     "start": 21.005,
+     "end": 21.993
+    },
+    {
+     "word": "digital",
+     "start": 22.005,
+     "end": 22.38
+    },
+    {
+     "word": "currency,",
+     "start": 22.392,
+     "end": 22.942
+    },
+    {
+     "word": "operating",
+     "start": 23.102,
+     "end": 23.615
+    },
+    {
+     "word": "without",
+     "start": 23.628,
+     "end": 23.99
+    },
+    {
+     "word": "any",
+     "start": 24.128,
+     "end": 24.328
+    },
+    {
+     "word": "central",
+     "start": 24.34,
+     "end": 24.715
+    },
+    {
+     "word": "authority",
+     "start": 24.727,
+     "end": 25.278
+    },
+    {
+     "word": "or",
+     "start": 25.398,
+     "end": 25.51
+    },
+    {
+     "word": "government",
+     "start": 25.523,
+     "end": 25.898
+    },
+    {
+     "word": "permission.",
+     "start": 25.911,
+     "end": 26.385
+    },
+    {
+     "word": "Traditional",
+     "start": 26.665,
+     "end": 27.165
+    },
+    {
+     "word": "money",
+     "start": 27.177,
+     "end": 27.44
+    },
+    {
+     "word": "prints",
+     "start": 27.452,
+     "end": 27.827
+    },
+    {
+     "word": "endlessly,",
+     "start": 27.952,
+     "end": 28.49
+    },
+    {
+     "word": "so",
+     "start": 28.65,
+     "end": 28.838
+    },
+    {
+     "word": "inflation",
+     "start": 28.85,
+     "end": 29.4
+    },
+    {
+     "word": "destroys",
+     "start": 29.413,
+     "end": 29.938
+    },
+    {
+     "word": "your",
+     "start": 29.951,
+     "end": 30.075
+    },
+    {
+     "word": "savings",
+     "start": 30.088,
+     "end": 30.6
+    },
+    {
+     "word": "over",
+     "start": 30.613,
+     "end": 30.813
+    },
+    {
+     "word": "time,",
+     "start": 30.825,
+     "end": 31.225
+    },
+    {
+     "word": "yet",
+     "start": 31.385,
+     "end": 31.573
+    },
+    {
+     "word": "Bitcoin",
+     "start": 31.585,
+     "end": 31.998
+    },
+    {
+     "word": "operates",
+     "start": 32.01,
+     "end": 32.485
+    },
+    {
+     "word": "with",
+     "start": 32.498,
+     "end": 32.635
+    },
+    {
+     "word": "a",
+     "start": 32.648,
+     "end": 32.698
+    },
+    {
+     "word": "strict",
+     "start": 32.711,
+     "end": 33.11
+    },
+    {
+     "word": "twenty-one",
+     "start": 33.123,
+     "end": 33.661
+    },
+    {
+     "word": "million",
+     "start": 33.673,
+     "end": 34.036
+    },
+    {
+     "word": "supply",
+     "start": 34.048,
+     "end": 34.448
+    },
+    {
+     "word": "cap.",
+     "start": 34.461,
+     "end": 34.848
+    },
+    {
+     "word": "Nine",
+     "start": 35.128,
+     "end": 35.378
+    },
+    {
+     "word": "pages",
+     "start": 35.391,
+     "end": 35.916
+    },
+    {
+     "word": "and",
+     "start": 36.003,
+     "end": 36.128
+    },
+    {
+     "word": "a",
+     "start": 36.141,
+     "end": 36.179
+    },
+    {
+     "word": "hard",
+     "start": 36.191,
+     "end": 36.529
+    },
+    {
+     "word": "cap",
+     "start": 36.541,
+     "end": 36.878
+    },
+    {
+     "word": "replaced",
+     "start": 36.941,
+     "end": 37.341
+    },
+    {
+     "word": "the",
+     "start": 37.353,
+     "end": 37.429
+    },
+    {
+     "word": "central",
+     "start": 37.441,
+     "end": 37.779
+    },
+    {
+     "word": "bank.",
+     "start": 37.791,
+     "end": 38.154
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewNeural",
+     "rate": "+0%",
+     "text": "Nine pages published in 2008 changed global finance forever, because you think a massive corporate team built cryptocurrency, but an unknown person named Satoshi Nakamoto created it, publishing a whitepaper when the financial system broke down. You expect banks to control every dollar, but in 2009 Bitcoin launched as the world's first decentralized digital currency, operating without any central authority or government permission. Traditional money prints endlessly, so inflation destroys your savings over time, yet Bitcoin operates with a strict twenty-one million supply cap. Nine pages and a hard cap replaced the central bank."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 11.86,
+    "volume": 0.3,
+    "anchor": "v3",
+    "offset": 0.32
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.44,
+    "text": "published",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.44,
+    "opacity": 0.35,
+    "seed": 0.01
+   },
+   {
+    "id": "ly3",
+    "kind": "icon-pop",
+    "anchor": "v3",
+    "delay": 0.2,
+    "start": 11.74,
+    "end": 14.87,
+    "icon": "coin",
+    "x": 0.2,
+    "y": 0.14
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794645059778,
+  "updated": 1794645059781,
+  "topic": "detailed explaining how bitcoin started",
+  "hook": "Nine pages published in 2008 changed global finance forever.",
+  "image_style": "motion-graphics explainer, clean vector lines, dynamic data streams",
+  "format": "landscape",
+  "assets_release": "project-how-bitcoin-actually-started-mwg4vvwv",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Nine pages published in 2008 changed global finance forever.",
+   "music": "tech-pulse",
+   "project_id": "how-bitcoin-actually-started-mwg4vvwv",
+   "style": "motion-graphics explainer, clean vector lines, dynamic data streams",
+   "style_preset": "motion-explainer",
+   "title": "How Bitcoin Actually Started",
+   "topic": "detailed explaining how bitcoin started",
+   "voice": "en-US-AndrewNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Nine pages published in 2008 change...\"): the hook. No subject cutout, so I put PUBLISHED in the top band where it cannot cover the face.",
+   "Beat 3 (\"publishing a whitepaper when the fi...\"): a \"coin\" icon pops in the top corner.",
+   "Left 7 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 8: pull-out (a turn in the story: pull back to reveal)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}

@@ -613,6 +613,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-58",
+      "title": "How Bitcoin Actually Started",
+      "hook": "Nine pages published in 2008 changed global finance forever.",
+      "accent": "#FFD43B",
+      "duration": 39.5,
+      "created": 1794645546616,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-58/short-58.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-58/short-58.jpg",
+      "project": "how-bitcoin-actually-started-mwg4vvwv",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
