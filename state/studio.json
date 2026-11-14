@@ -1,7 +1,7 @@
 {
-  "last_update": 312538511,
-  "time": 1794644124574,
-  "stage": "pitch",
+  "last_update": 312538512,
+  "time": 1794644180309,
+  "stage": "script",
   "topic": "detailed explaining how bitcoin started",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. History of bitcoin - Wikipedia (https://en.wikipedia.org/wiki/History_of_bitcoin): Originally designed as a medium of exchange, Bitcoin is now primarily regarded as a store of value. The history of bitcoin started with its invention and implementation by Satoshi Nakamoto, who integrated many existing ideas from the cryptography community.\n2. The Bitcoin Revolution: How BTC Started and Where It Stands Today (https://cryptal.com/en/blog/bitcoin-revolution-complete-history): Bitcoin began with a 9-page whitepaper in 2008 and grew into a $1.3 trillion global asset. Explore the complete history of BTC, from cypherpunks to strategic reserves.\n3. Bitcoin - Wikipedia (https://en.wikipedia.org/wiki/Bitcoin): Bitcoin (abbreviation: BTC; sign: ₿) is the first decentralized cryptocurrency. Based on a free-market ideology, bitcoin was invented in 2008 when an unknown person published a white paper under the pseudonym of Satoshi Nakamoto. [4] .\n4. The History Of Bitcoin: Who Invented It And How It Evolved (https://www.forbes.com/sites/digital-assets/article/the-history-of-bitcoin-who-invented-it/): Learn about Bitcoin's history such as its origins, Satoshi Nakamoto, and how Bitcoin evolved. Learn about its key milestones and the blockchain revolution.\n5. A Detailed Explanation of How Bitcoin Works - Analytics Insight (https://www.analyticsinsight.net/bitcoin/how-does-bitcoin-blockchain-work-explained-in-simple-terms): Learn how the Bitcoin Blockchain works in simple terms. Understand Bitcoin, Blockchain technology, digital currency, and the rise of modern cryptocurrencies.\n6. Bitcoin: The World's First Decentralized Digital Currency ... (https://www.gate.com/learn/articles/bitcoin-the-birth-and-impact-of-the-worlds-first-decentralized-digital-currency/10537): Bitcoin is the world's first decentralized digital currency, launched in 2009 by Satoshi Nakamoto. Learn how Bitcoin operates without central authority, its core features including 21 million supply cap and blockchain technology, and its transformative impact on global finance and the rise of DeFi.\n7. Who Started Bitcoin: The Real Story of Satoshi Nakamoto (https://usethebitcoin.com/guides/who-started-bitcoin/): Who started Bitcoin? Discover the real story of Satoshi Nakamoto, the anonymous creator behind the world's first decentralized digital currency.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- Bitcoin explained as a cartoon, Do you think this should be added to school curriculum?🤔 [ig_play_count 82837, like_count 2348, comment_count 43, share_count 2757]\n- How bitcoin works ? . . . #bitcoins #bitcoincash #explore #explorepage #webdeveloper #programming #tech #ai #viral #viralreels #viralvideos [ig_play_count 794982, like_count 71721, comment_count 214, share_count 7292]\n- Explaining how Bitcoin actually works in 60 seconds. When you send money normally, a bank sits in the middle. They verify, take a cut, can freeze your account. Bitcoin removes the middleman. Direct transfers, 24/7, no permission needed. It works through the bl [ig_play_count 13490, like_count 351, comment_count 17, share_count 193]\n- Like this? Follow us @coinsauce for more content like this Bitcoin explained [ig_play_count 6993578, like_count 327874, comment_count 920, share_count 321]\n- What would you add? Follow @tallguytycoon for more on crypto, tech and investing. Join me and @robertcroak on @cryptotrendspodcast the # crypto podcast on Spotify Think $500 isn’t enough to get started in crypto? Watch this strategy that could flip your mindse [ig_play_count 2486026, like_count 34752, comment_count 1322, share_count 34313]\n- 💰 How did Cryptocurrency actually begin? It all started with a mysterious person (or group) called Satoshi Nakamoto, who introduced Bitcoin in 2008 after the global financial crisis. 🌍 From one digital coin to a trillion-dollar industry, crypto has changed t [ig_play_count 1374, like_count 41, comment_count 1, share_count 28]\n- What is Bitcoin? • Started when people lost trust in banks after the 2008 financial crisis • Created in 2009 by someone using the name Satoshi Nakamoto • Nobody knows who this person really is Why People Like Bitcoin: • No banks needed (you’re your own bank!)  [ig_play_count 1914947, like_count 104745, comment_count 837, share_count 75805]\n- Bitcoin is the brainchild of the NSA/DARPA/CIA, not some mythical Japanese tech nerd. They left clues for those vigilant enough. It's the bait, a Trojan Horse wrapped in anonymity, privacy, and freedom to get useful idiots on board the digital system before th [ig_play_count 62767, like_count 2132, comment_count 191, share_count 1419]\n- A melhor explicação sobre o Bitcoin que você vai ver hoje 🤯👆 . . . . . . . . . . #criptomoedasbrasil #criptomoedas #criptomoedashoje #investiremcriptomoedas #mercadofinanceiro #investimentos #bitcoin [ig_play_count 2182996, like_count 94868, comment_count 447, share_count 7294]\n- A viral video a woman allegedly buying 900,000 BTC from a cryptocurrency exchange in 2009 has been exposed as an AI-generated video. Fact-checkers point out that crypto exchanges didn’t even exist back then, making the historic multi-billion-dollar transaction [ig_play_count 1079025, like_count 7315, comment_count 265, share_count 5814]",
@@ -27,16 +27,123 @@
     "accent": "gold",
     "format": "landscape"
   },
-  "script": null,
+  "script": {
+    "title": "How Bitcoin Actually Started",
+    "beats": [
+      {
+        "narration": "Nine pages published in 2008 changed global finance forever,",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, floating digital pages of a whitepaper, dark background with golden accents",
+        "tool": "graphic",
+        "graphic": {
+          "type": "title",
+          "text": "Nine pages in 2008",
+          "sub": "Changed global finance forever"
+        }
+      },
+      {
+        "narration": "because you think a massive corporate team built cryptocurrency, but an unknown person named Satoshi Nakamoto created it,",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, a mysterious hooded avatar silhouette made of glowing code and lines",
+        "tool": "graphic",
+        "graphic": {
+          "type": "myth",
+          "myth": "Built by corporate team",
+          "fact": "Anonymous creator Satoshi"
+        }
+      },
+      {
+        "narration": "publishing a whitepaper when the financial system broke down.",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, falling financial charts and rising digital currency icons",
+        "tool": "stock",
+        "query": "digital financial crash"
+      },
+      {
+        "narration": "You expect banks to control every dollar,",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, traditional banking vault door locked tight with heavy steel bars",
+        "tool": "stock",
+        "query": "heavy bank vault"
+      },
+      {
+        "narration": "but in 2009 Bitcoin launched as the world's first decentralized digital currency,",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, glowing global network nodes connecting across a dark sphere",
+        "tool": "graphic",
+        "graphic": {
+          "type": "counter",
+          "value": 2009,
+          "prefix": "",
+          "suffix": "",
+          "label": "Decentralized launch year"
+        }
+      },
+      {
+        "narration": "operating without any central authority or government permission.",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, independent nodes exchanging data streams in a peer to peer mesh",
+        "tool": "stock",
+        "query": "peer to peer network"
+      },
+      {
+        "narration": "Traditional money prints endlessly, so inflation destroys your savings over time,",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, printing press spewing out stacks of paper currency fading away",
+        "tool": "graphic",
+        "graphic": {
+          "type": "bars",
+          "title": "Money supply rules",
+          "prefix": "",
+          "suffix": "%",
+          "items": [
+            {
+              "label": "Fiat printing",
+              "value": 100
+            },
+            {
+              "label": "Bitcoin cap",
+              "value": 0
+            }
+          ]
+        }
+      },
+      {
+        "narration": "yet Bitcoin operates with a strict twenty-one million supply cap.",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, a solid golden coin stamped with twenty-one million limit",
+        "tool": "flux"
+      },
+      {
+        "narration": "Nine pages and a hard cap replaced the central bank.",
+        "image_prompt": "motion-graphics explainer, clean vector lines, dynamic data streams, golden digital coin shining bright above a glowing blockchain line",
+        "tool": "graphic",
+        "graphic": {
+          "type": "kinetic",
+          "words": [
+            "Nine pages",
+            "Hard cap",
+            "New money"
+          ]
+        }
+      }
+    ],
+    "fact_check": [
+      {
+        "claim": "Nine pages published in 2008 changed global finance",
+        "supported": true
+      },
+      {
+        "claim": "Bitcoin was invented by an unknown person using the pseudonym Satoshi Nakamoto",
+        "supported": true
+      },
+      {
+        "claim": "Bitcoin launched in 2009 as the world's first decentralized digital currency",
+        "supported": true
+      },
+      {
+        "claim": "Bitcoin operates with a 21 million supply cap",
+        "supported": true
+      }
+    ],
+    "chapters": []
+  },
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "user",
-      "text": "/short a 45 second video about how a bill becomes law",
-      "t": 1794591921368
-    },
     {
       "role": "bot",
       "text": "Pitched \"How A Simple Paper Becomes Law\": One single written proposal turns into an official government rule.",
@@ -111,6 +218,11 @@
       "role": "bot",
       "text": "Pitched \"How Bitcoin Actually Started\": Nine pages published in 2008 changed global finance forever.",
       "t": 1794644124574
+    },
+    {
+      "role": "bot",
+      "text": "Wrote the script for \"How Bitcoin Actually Started\"",
+      "t": 1794644180309
     }
   ],
   "working": null,
@@ -2227,7 +2339,7 @@
     }
   ],
   "ideas_at": 1794243976053,
-  "narr_pick": "host",
+  "narr_pick": "you",
   "editing": false,
   "pick": null,
   "liked": [
