@@ -1,6 +1,6 @@
 {
-  "last_update": 312538503,
-  "time": 1794611527143,
+  "last_update": 312538504,
+  "time": 1794615647588,
   "stage": "pitch",
   "topic": "a about how a bill becomes law",
   "research": {
@@ -8,21 +8,21 @@
     "sources": []
   },
   "pitch": {
-    "title": "The Ten Day Law Loophole",
-    "hook": "Ten days sitting on the President's desk can turn a proposal into federal law without a single signature.",
-    "angle": "People assume a bill requires a presidential signature to pass. Silence from the White House after ten days creates a new law automatically.",
+    "title": "How A Simple Paper Survives Capitol Hill",
+    "hook": "Thousands of rough drafts enter the Capitol every single year, but most of them vanish inside committee rooms.",
+    "angle": "People think writing a law is a quick signature process. Bills must survive endless committee reviews and floor debates in both houses before reaching the desk.",
     "key_facts": [
-      "A bill must pass both the House and the Senate in identical form before reaching the President.",
-      "If the President signs the bill, it becomes official law.",
-      "If the President takes no action for ten days, the bill automatically becomes law.",
+      "Bills are assigned to a committee for strict review.",
+      "Measures require approval from both the House and the Senate in identical form.",
+      "If the president takes no action for ten days, the bill automatically becomes law.",
       "Congress can override a presidential veto with votes from both chambers."
     ],
-    "visual_style": "technical blueprint schematic visual with clean white ink lines on deep navy blue grid paper",
+    "visual_style": "motion-graphics vector animation with flat clean shapes and smooth sliding panels",
     "length_seconds": 45,
-    "style": "blueprint",
-    "style_reason": "Schematic blueprints highlight the step-by-step mechanical flow of federal lawmaking.",
+    "style": "motion-explainer",
+    "style_reason": "Clean motion graphics map out the multi-step legislative flow clearly.",
     "music": "tech-pulse",
-    "accent": "gold",
+    "accent": "blue",
     "format": "landscape"
   },
   "script": null,
@@ -30,16 +30,6 @@
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Updated tool settings",
-      "t": 1794588140374
-    },
-    {
-      "role": "user",
-      "text": "/tools",
-      "t": 1794588392665
-    },
     {
       "role": "user",
       "text": "turn on graphics",
@@ -109,6 +99,16 @@
       "role": "bot",
       "text": "Pitched \"The Ten Day Law Loophole\": Ten days sitting on the President's desk can turn a proposal into federal law without a single signature.",
       "t": 1794611463452
+    },
+    {
+      "role": "user",
+      "text": "Retry",
+      "t": 1794615640789
+    },
+    {
+      "role": "bot",
+      "text": "Pitched \"How A Simple Paper Survives Capitol Hill\": Thousands of rough drafts enter the Capitol every single year, but most of them vanish inside committee rooms.",
+      "t": 1794615647588
     }
   ],
   "working": null,
