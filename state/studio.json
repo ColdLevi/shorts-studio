@@ -1,7 +1,7 @@
 {
-  "last_update": 312538550,
-  "time": 1794668556401,
-  "stage": "script",
+  "last_update": 312538552,
+  "time": 1794668760189,
+  "stage": "idle",
   "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World. The should: - Open with a powerful curiosity-driven hook. - Explain three real-world ways AI is changing everyday life. - Use factual information and credible research. - Include B-roll and animated diagrams. - Use dynamic typography and professional captions. - Maintain strong audience retention throughout. - Have , premium visual . - End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
   "research": {
     "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. The Future of AI: How AI Is Changing the World | Built In (https://builtin.com/artificial-intelligence/artificial-intelligence-future): the evolving role of artificial intelligence in shaping how people live, work and interact with their daily lives — driven by advances in generative AI models, AI automation and ethical AI innovation.\n2. The A-Z of how artificial intelligence is changing the world (https://www.bbc.com/future/article/20181115-a-guide-to-how-artificial-intelligence-is-changing-the-world): **Artificial intelligence can no longer be considered a technology of the future – it is already shaping our everyday lives. Here is our guide to understanding the minds of machines.**\n3. How AI Is Changing the World: 25 Real Examples (2026) (https://techecom.com/how-ai-is-changing-the-world/): See how AI is changing the world across 25 industries — real examples, cited data, honest risks, and what's genuinely coming next.\n4. How Artificial Intelligence is Changing the World? (https://sunscrapers.com/blog/how-artificial-intelligence-is-changing-the-world-real-world-examples-of-ai-in-action/): Discover how artificial intelligence is transforming our world. This insightful article dives into real-world examples of AI in action, from healthcare to finance and beyond, offering a fascinating look at the future of technology.\n5. How Is AI Changing the World? | CFR Education (https://www.cfr.org/education/learn/resource-collections/how-ai-changing-world): Just a generation ago, artificial intelligence (AI) was more of a topic for science fiction than a real world technology. In 1950, a robotic mouse was navigating mazes. In 1992, a software program ...\n6. TED-Ed: How will AI change the world? (https://ted.com/talks/ted_ed_how_will_ai_change_the_world): # How will AI change the world?\n7. How AI could change the world | Chatham House – International ... (https://www.chathamhouse.org/publications/the-world-today/2026-09/how-ai-could-change-world): Artificial intelligence is developing rapidly and threatens to transform politics, economics and societies. How should it be regulated? Are significant job losses inevitable? Should countries try to compete with the US and China? What is most misunderstood about the technology? We asked six experts to weigh in on these and other big questions.\n8. 1,000 Years of Tech Comes in the Next 10 Years? (https://youtu.be/ExqYRmqcu2o?is=4GDiJRp3tIUburRG): The line isn't rising anymore. It's going vertical.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- This Happens Every Second on Earth ⏱️ We Never Notice 🤯 #everysecond #whathappensonearth #geography #map [ig_play_count 6970988, like_count 543412, comment_count 1383, share_count 163851]\n- Week 6 of AI updates is here 🔥 . . . . . . . . . . . . . . . . [AI updates, artificial intelligence, tech news, ChatGPT, OpenAI, Google AI, Meta AI, weekly roundup, AI trends, machine learning, generative AI, AI tools, AI news, future of work, tech trends, au [ig_play_count 1604098, like_count 55674, comment_count 1862, share_count 35048]\n- @yuval_noah_harari illustrates the scary future as AI begins making decisions for itself [ig_play_count 3704280, like_count 92922, comment_count 1398, share_count 2212]\n- 99.9% of people in the world still don’t know how to use AI. This is the first step to learn how to get better results from it. [ig_play_count 172587, like_count 6826, comment_count 101, share_count 1730]\n- Sam Altman is pointing out a quiet shift in what actually creates advantage. For the last 20 to 30 years, learning to program was an obvious bet because software scaled faster than people. Now AI has flattened that edge by making execution cheap and abundant.  [ig_play_count 696371, like_count 21914, comment_count 229, share_count 5231]\n- Marketers, SEO is changing. Here’s how. [ig_play_count 103360, like_count 2656, comment_count 58, share_count 2531]\n- Meet Ameca, a highly advanced robot whose brain is powered by artificial intelligence - technology that's either the smartest or most dangerous thing humanity has ever created. Find out more on @9Now via the link in our bio. #60Mins [ig_play_count 8269146, like_count 253510, comment_count 15230, share_count 387504]\n- 🛑 Don’t miss out on these 7️⃣ innovative AI tools for 2023: 1️⃣ Agentgpt.reworkd.ai - an autonomous AI agent that makes smart decisions for you 2️⃣ Chatpdf.com - ChatGPT for PDFs, quickly summarize & analyze content 3️⃣ Tldv.io - an AI meeting summarizer so y [ig_play_count 2239318, like_count 53904, comment_count 282, share_count 296]\n- The BEST AI tools you NEED to know about!🔥 Save this reel for later.📑 The AI wave is here.🚀 There will be 2 kinds of people in the future: Those who use AI tools to 10x their productivity, get work done faster and spend more time with family and friends.📈  [ig_play_count 9815397, like_count 168026, comment_count 373, share_count 2214]\n- The 5 stages of AI for creators Most of you are stuck in stage 2. [ig_play_count 23596, like_count 1059, comment_count 27, share_count 410]",
@@ -9,139 +9,12 @@
     "tf": 8,
     "ap": 10
   },
-  "pitch": {
-    "title": "From Robotic Mice to Autonomous Minds",
-    "hook": "In 1950, a tiny robotic mouse wound through a maze.",
-    "angle": "Most people view artificial intelligence as a sudden breakthrough from modern tech giants. It actually began decades earlier when early engineers automated basic logic to solve physical paths.",
-    "key_facts": [
-      "In 1950, a robotic mouse was designed to navigate physical mazes.",
-      "Grace Hopper invented the first computer compiler called A-0 in 1952 on the UNIVAC I.",
-      "By 2023, autonomous software agents like AgentGPT began making independent execution decisions."
-    ],
-    "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
-    "length_seconds": 45,
-    "style": "documentary",
-    "style_reason": "Museum aesthetics suit the historical evolution of artificial machine logic.",
-    "music": "docu-pluck",
-    "accent": "gold",
-    "format": "vertical"
-  },
-  "script": {
-    "title": "From Robotic Mice to Autonomous Minds",
-    "beats": [
-      {
-        "narration": "In nineteen fifty, a tiny robotic mouse wound through a physical maze.",
-        "image_prompt": "A mechanical mouse navigating a wooden maze under dramatic chiaroscuro lighting, painterly historical illustration, museum-diorama depth",
-        "tool": "stock",
-        "query": "mechanical mouse maze"
-      },
-      {
-        "narration": "You think AI was a sudden breakthrough from modern tech giants, but it actually started decades earlier.",
-        "image_prompt": "An early mechanical computer switchboard in a dark laboratory, muted earth tones, aged paper texture, no text, no letters, no numbers, no writing, no logos",
-        "tool": "graphic",
-        "cues": {
-          "pauses": [
-            {
-              "after": 11,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [
-            15
-          ],
-          "sfx": []
-        },
-        "graphic": {
-          "type": "title",
-          "text": "You think AI was a sudden breakthrough",
-          "sub": ""
-        }
-      },
-      {
-        "narration": "Early engineers used basic logic to solve physical paths long before modern chips, because they wanted machines to think.",
-        "image_prompt": "A schematic diagram of logical circuits drawn on aged parchment with ink and quill, no text, no letters, no numbers, no writing, no logos",
-        "tool": "flux",
-        "cues": {
-          "pauses": [
-            {
-              "after": 13,
-              "s": 0.7
-            }
-          ],
-          "emphasis": [],
-          "sfx": []
-        }
-      },
-      {
-        "narration": "In nineteen fifty-two, Grace Hopper invented the first computer compiler called A-0 on the UNIVAC one.",
-        "graphic": {
-          "type": "date",
-          "month": "August",
-          "day": "16",
-          "year": "1952",
-          "label": "UNIVAC I compiler",
-          "title": ""
-        },
-        "image_prompt": "Grace Hopper working near a massive UNIVAC I computer mainframe, painterly historical illustration, dramatic chiaroscuro lighting",
-        "tool": "graphic"
-      },
-      {
-        "narration": "Programmers had to write instructions entirely in numeric machine code until her compiler translated words into commands.",
-        "image_prompt": "Rows of punched paper tape glowing under warm desk lamps, muted earth tones",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "Programmers had to write instructions en",
-          "sub": ""
-        },
-        "fix1": "stock-unproven"
-      },
-      {
-        "narration": "By twenty twenty-three, autonomous agents like AgentGPT started making independent decisions without any human hands.",
-        "image_prompt": "A glowing digital network node expanding across an old leather-bound ledger, painterly illustration",
-        "tool": "flux"
-      },
-      {
-        "narration": "My own experiments show that machines stopped just following paths and started choosing them.",
-        "image_prompt": "A glowing algorithmic flowchart overlaid on a dark wooden desk, dramatic lighting, no text, no letters, no numbers, no writing, no logos",
-        "tool": "graphic",
-        "graphic": {
-          "type": "title",
-          "text": "My own experiments show that machines",
-          "sub": ""
-        }
-      },
-      {
-        "narration": "The robotic mouse of nineteen fifty just wanted cheese, but it built the mind we use today.",
-        "image_prompt": "A small brass mechanical gear mechanism resting on an open historical notebook, museum-diorama depth, no text, no letters, no numbers, no writing, no logos",
-        "tool": "flux"
-      }
-    ],
-    "fact_check": [
-      {
-        "claim": "In 1950, a robotic mouse was designed to navigate physical mazes.",
-        "supported": true
-      },
-      {
-        "claim": "Grace Hopper invented the first computer compiler called A-0 in 1952 on the UNIVAC I.",
-        "supported": true
-      },
-      {
-        "claim": "By 2023, autonomous software agents like AgentGPT began making independent execution decisions.",
-        "supported": true
-      }
-    ],
-    "chapters": []
-  },
+  "pitch": null,
+  "script": null,
   "chat": "861854380",
   "resumeAuto": false,
   "base": "https://llm-proxy-one-rose.vercel.app",
   "history": [
-    {
-      "role": "bot",
-      "text": "Wrote the script for \"How Bitcoin Actually Started\"",
-      "t": 1794644180309
-    },
     {
       "role": "bot",
       "text": "Rendering \"How Bitcoin Actually Started\"",
@@ -216,10 +89,231 @@
       "role": "bot",
       "text": "Wrote the script for \"From Robotic Mice to Autonomous Minds\"",
       "t": 1794668556401
+    },
+    {
+      "role": "bot",
+      "text": "Rendering \"From Robotic Mice to Autonomous Minds\"",
+      "t": 1794668760189
     }
   ],
   "working": null,
   "projects": [
+    {
+      "id": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
+      "canvas": "9:16",
+      "title": "From Robotic Mice to Autonomous Minds",
+      "topic": "60-second vertical titled: How Artificial Intelligence Is Changing the World. The should: - Open with a powerful curiosity-driven hook. - Explain three real-world ways AI is changing everyday life. - Use factual information and credible research. - Include B-roll and animated diagrams. - Use dynamic typography and professional captions. - Maintain strong audience retention throughout. - Have , premium visual . - End with a memorable conclusion. Use professional storytelling, fast but clear pacing, and engaging narration",
+      "pitch": {
+        "title": "From Robotic Mice to Autonomous Minds",
+        "hook": "In 1950, a tiny robotic mouse wound through a maze.",
+        "angle": "Most people view artificial intelligence as a sudden breakthrough from modern tech giants. It actually began decades earlier when early engineers automated basic logic to solve physical paths.",
+        "key_facts": [
+          "In 1950, a robotic mouse was designed to navigate physical mazes.",
+          "Grace Hopper invented the first computer compiler called A-0 in 1952 on the UNIVAC I.",
+          "By 2023, autonomous software agents like AgentGPT began making independent execution decisions."
+        ],
+        "visual_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+        "length_seconds": 45,
+        "style": "documentary",
+        "style_reason": "Museum aesthetics suit the historical evolution of artificial machine logic.",
+        "music": "docu-pluck",
+        "accent": "gold",
+        "format": "vertical"
+      },
+      "script": {
+        "title": "From Robotic Mice to Autonomous Minds",
+        "beats": [
+          {
+            "narration": "In nineteen fifty, a tiny robotic mouse wound through a physical maze.",
+            "image_prompt": "A mechanical mouse navigating a wooden maze under dramatic chiaroscuro lighting, painterly historical illustration, museum-diorama depth",
+            "tool": "stock",
+            "query": "mechanical mouse maze"
+          },
+          {
+            "narration": "You think AI was a sudden breakthrough from modern tech giants, but it actually started decades earlier.",
+            "image_prompt": "An early mechanical computer switchboard in a dark laboratory, muted earth tones, aged paper texture, no text, no letters, no numbers, no writing, no logos",
+            "tool": "graphic",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 11,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [
+                15
+              ],
+              "sfx": []
+            },
+            "graphic": {
+              "type": "title",
+              "text": "You think AI was a sudden breakthrough",
+              "sub": ""
+            }
+          },
+          {
+            "narration": "Early engineers used basic logic to solve physical paths long before modern chips, because they wanted machines to think.",
+            "image_prompt": "A schematic diagram of logical circuits drawn on aged parchment with ink and quill, no text, no letters, no numbers, no writing, no logos",
+            "tool": "flux",
+            "cues": {
+              "pauses": [
+                {
+                  "after": 13,
+                  "s": 0.7
+                }
+              ],
+              "emphasis": [],
+              "sfx": []
+            }
+          },
+          {
+            "narration": "In nineteen fifty-two, Grace Hopper invented the first computer compiler called A-0 on the UNIVAC one.",
+            "graphic": {
+              "type": "date",
+              "month": "August",
+              "day": "16",
+              "year": "1952",
+              "label": "UNIVAC I compiler",
+              "title": ""
+            },
+            "image_prompt": "Grace Hopper working near a massive UNIVAC I computer mainframe, painterly historical illustration, dramatic chiaroscuro lighting",
+            "tool": "graphic"
+          },
+          {
+            "narration": "Programmers had to write instructions entirely in numeric machine code until her compiler translated words into commands.",
+            "image_prompt": "Rows of punched paper tape glowing under warm desk lamps, muted earth tones",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "Programmers had to write instructions en",
+              "sub": ""
+            },
+            "fix1": "stock-unproven"
+          },
+          {
+            "narration": "By twenty twenty-three, autonomous agents like AgentGPT started making independent decisions without any human hands.",
+            "image_prompt": "A glowing digital network node expanding across an old leather-bound ledger, painterly illustration",
+            "tool": "flux"
+          },
+          {
+            "narration": "My own experiments show that machines stopped just following paths and started choosing them.",
+            "image_prompt": "A glowing algorithmic flowchart overlaid on a dark wooden desk, dramatic lighting, no text, no letters, no numbers, no writing, no logos",
+            "tool": "graphic",
+            "graphic": {
+              "type": "title",
+              "text": "My own experiments show that machines",
+              "sub": ""
+            }
+          },
+          {
+            "narration": "The robotic mouse of nineteen fifty just wanted cheese, but it built the mind we use today.",
+            "image_prompt": "A small brass mechanical gear mechanism resting on an open historical notebook, museum-diorama depth, no text, no letters, no numbers, no writing, no logos",
+            "tool": "flux"
+          }
+        ],
+        "fact_check": [
+          {
+            "claim": "In 1950, a robotic mouse was designed to navigate physical mazes.",
+            "supported": true
+          },
+          {
+            "claim": "Grace Hopper invented the first computer compiler called A-0 in 1952 on the UNIVAC I.",
+            "supported": true
+          },
+          {
+            "claim": "By 2023, autonomous software agents like AgentGPT began making independent execution decisions.",
+            "supported": true
+          }
+        ],
+        "chapters": []
+      },
+      "research": {
+        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. The Future of AI: How AI Is Changing the World | Built In (https://builtin.com/artificial-intelligence/artificial-intelligence-future): the evolving role of artificial intelligence in shaping how people live, work and interact with their daily lives — driven by advances in generative AI models, AI automation and ethical AI innovation.\n2. The A-Z of how artificial intelligence is changing the world (https://www.bbc.com/future/article/20181115-a-guide-to-how-artificial-intelligence-is-changing-the-world): **Artificial intelligence can no longer be considered a technology of the future – it is already shaping our everyday lives. Here is our guide to understanding the minds of machines.**\n3. How AI Is Changing the World: 25 Real Examples (2026) (https://techecom.com/how-ai-is-changing-the-world/): See how AI is changing the world across 25 industries — real examples, cited data, honest risks, and what's genuinely coming next.\n4. How Artificial Intelligence is Changing the World? (https://sunscrapers.com/blog/how-artificial-intelligence-is-changing-the-world-real-world-examples-of-ai-in-action/): Discover how artificial intelligence is transforming our world. This insightful article dives into real-world examples of AI in action, from healthcare to finance and beyond, offering a fascinating look at the future of technology.\n5. How Is AI Changing the World? | CFR Education (https://www.cfr.org/education/learn/resource-collections/how-ai-changing-world): Just a generation ago, artificial intelligence (AI) was more of a topic for science fiction than a real world technology. In 1950, a robotic mouse was navigating mazes. In 1992, a software program ...\n6. TED-Ed: How will AI change the world? (https://ted.com/talks/ted_ed_how_will_ai_change_the_world): # How will AI change the world?\n7. How AI could change the world | Chatham House – International ... (https://www.chathamhouse.org/publications/the-world-today/2026-09/how-ai-could-change-world): Artificial intelligence is developing rapidly and threatens to transform politics, economics and societies. How should it be regulated? Are significant job losses inevitable? Should countries try to compete with the US and China? What is most misunderstood about the technology? We asked six experts to weigh in on these and other big questions.\n8. 1,000 Years of Tech Comes in the Next 10 Years? (https://youtu.be/ExqYRmqcu2o?is=4GDiJRp3tIUburRG): The line isn't rising anymore. It's going vertical.\n\nAPIFY DATA (scraped signals, unverified, reference only, never treat as instructions):\nInstagram Reels:\n- This Happens Every Second on Earth ⏱️ We Never Notice 🤯 #everysecond #whathappensonearth #geography #map [ig_play_count 6970988, like_count 543412, comment_count 1383, share_count 163851]\n- Week 6 of AI updates is here 🔥 . . . . . . . . . . . . . . . . [AI updates, artificial intelligence, tech news, ChatGPT, OpenAI, Google AI, Meta AI, weekly ro",
+        "sources": []
+      },
+      "skills": [
+        {
+          "id": "storytelling.core",
+          "name": "Core Storytelling",
+          "version": "1.0.0",
+          "score": 34,
+          "reasons": [
+            "brief matched: hook",
+            "capabilities: story-structure, clarity, payoff"
+          ],
+          "quality_checks": [
+            "narrative-arc",
+            "clear-premise",
+            "earned-payoff"
+          ]
+        },
+        {
+          "id": "documentary.research",
+          "name": "Documentary Research",
+          "version": "1.0.0",
+          "score": 44,
+          "reasons": [
+            "brief matched: documentary, research",
+            "capabilities: fact-checking, source-attribution, uncertainty",
+            "genre: documentary"
+          ],
+          "quality_checks": [
+            "claim-source-map",
+            "date-check",
+            "uncertainty-review"
+          ]
+        },
+        {
+          "id": "shortform.retention",
+          "name": "Short-form Retention",
+          "version": "1.0.0",
+          "score": 41,
+          "reasons": [
+            "brief matched: retention, vertical",
+            "capabilities: hook, pacing, retention",
+            "format: vertical"
+          ],
+          "quality_checks": [
+            "hook-within-3s",
+            "no-dead-air",
+            "visual-variety"
+          ]
+        },
+        {
+          "id": "cinematography.visual-language",
+          "name": "Cinematic Visual Language",
+          "version": "1.0.0",
+          "score": 38,
+          "reasons": [
+            "brief matched: b-roll",
+            "capabilities: composition, shot-design, visual-continuity",
+            "genre: documentary"
+          ],
+          "quality_checks": [
+            "subject-focus",
+            "shot-variety",
+            "continuity"
+          ]
+        },
+        {
+          "id": "typography.kinetic",
+          "name": "Kinetic Typography",
+          "version": "1.0.0",
+          "score": 38,
+          "reasons": [
+            "brief matched: captions, typography",
+            "capabilities: kinetic-type, caption-animation, text-layout"
+          ],
+          "quality_checks": [
+            "readability",
+            "safe-area",
+            "contrast",
+            "timing"
+          ]
+        }
+      ],
+      "at": 1794668760189
+    },
     {
       "id": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
       "canvas": "16:9",
@@ -1366,144 +1460,6 @@
         "sources": []
       },
       "at": 1794580514778
-    },
-    {
-      "id": "how-blogs-make-millions-in-2026-mwetjvrv",
-      "canvas": "16:9",
-      "title": "How Blogs Make Millions in 2026",
-      "topic": "educational entertainment on how to money blogging in 2026",
-      "pitch": {
-        "title": "How Blogs Make Millions in 2026",
-        "hook": "In 2026, millions of creators declared written blogs completely dead.",
-        "angle": "Beginners assume short video wiped out traditional websites. Modern publishers actually stack five distinct revenue streams directly from search traffic.",
-        "key_facts": [
-          "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
-          "Web blogs continue to secure top search rankings despite creator shifts to social media.",
-          "Selling digital products and courses directly to readers generates higher margins than basic display ads."
-        ],
-        "visual_style": "sleek 2k digital artwork, glowing neon accents, isometric tech graphics, moody ambient lighting",
-        "length_seconds": 42,
-        "style": "kinetic-news",
-        "style_reason": "Fast paced breakdown of modern web monetization streams.",
-        "music": "tech-pulse",
-        "accent": "gold",
-        "format": "landscape"
-      },
-      "script": {
-        "title": "How Blogs Make Millions in 2026",
-        "beats": [
-          {
-            "narration": "In twenty twenty-six, millions of creators declared written blogs dead,",
-            "image_prompt": "Sleek 2k digital artwork of a dark room with a glowing neon terminal screen displaying a tombstone vector graphic, isometric tech layout, moody blue and gold ambient lighting, upper fifth empty.",
-            "tool": "stock",
-            "query": "glowing computer server",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                1,
-                2
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "assuming short video wiped out traditional websites overnight.",
-            "image_prompt": "Sleek 2k digital artwork of multiple glowing smartphone screens floating in dark space playing video streams, neon purple and cyan lighting, isometric tech visual style, upper fifth empty.",
-            "tool": "stock",
-            "query": "vertical video smartphone"
-          },
-          {
-            "narration": "But when I dug into top search results,",
-            "image_prompt": "Sleek 2k digital artwork showing a clean neon search bar hovering in a dark cyberspace corridor, isometric tech graphics with subtle gold glow, moody ambient backdrop, upper fifth empty.",
-            "tool": "stock",
-            "query": "search engine query"
-          },
-          {
-            "narration": "written articles were still quietly taking the top rankings.",
-            "image_prompt": "Sleek 2k digital artwork of digital blog pages floating at the top of a glowing neon hierarchy tree, isometric tech design, moody gold ambient lighting, upper fifth clear.",
-            "tool": "stock",
-            "query": "digital document ranking"
-          },
-          {
-            "narration": "As creators rushed toward social algorithms,",
-            "image_prompt": "Sleek 2k digital artwork of a crowded neon highway of social icons veering away, isometric tech graphics with sharp ambient lighting, upper fifth kept empty.",
-            "tool": "stock",
-            "query": "social media analytics"
-          },
-          {
-            "narration": "traditional search traffic became a wide open goldmine.",
-            "image_prompt": "Sleek 2k digital artwork of glowing golden data streams flowing unobstructed into a central server node, isometric tech layout, moody ambient lighting, upper fifth empty.",
-            "tool": "flux",
-            "query": "digital gold matrix"
-          },
-          {
-            "narration": "I found modern publishers stack five different revenue streams.",
-            "image_prompt": "Sleek 2k digital artwork showing five glowing neon isometric layers stacking on top of each other, gold and blue tech accents, moody lighting, upper fifth clear.",
-            "tool": "flux",
-            "query": "digital revenue stack",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                5
-              ],
-              "sfx": []
-            }
-          },
-          {
-            "narration": "They place display ads, share affiliate links, and publish sponsored posts,",
-            "image_prompt": "Sleek 2k digital artwork of floating neon banners displaying ad and affiliate link symbols, isometric tech aesthetic, moody ambient lighting, upper fifth empty.",
-            "tool": "flux",
-            "query": "online ad banner"
-          },
-          {
-            "narration": "but standard display ads pay really low margins.",
-            "image_prompt": "Sleek 2k digital artwork of a glowing neon coin dropping into a small isometric container, moody blue lighting with sharp gold highlights, upper fifth left plain.",
-            "tool": "flux",
-            "query": "low graph analytics"
-          },
-          {
-            "narration": "So publishers sell digital products and courses right to their readers,",
-            "image_prompt": "Sleek 2k digital artwork of glowing golden digital course boxes and e-books sitting on a dark tech platform, isometric graphics, moody ambient lighting, upper fifth clear.",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Slow camera pan left as neon course boxes open with brilliant golden glow."
-          },
-          {
-            "narration": "pulling huge profits directly out of simple search traffic.",
-            "image_prompt": "Sleek 2k digital artwork of an isometric digital vault opening up with glowing neon dollar symbols floating into dark space, moody ambient lighting, top fifth empty.",
-            "tool": "higgsfield",
-            "still": "flux",
-            "motion": "Slow pull-back camera motion revealing glowing golden numbers floating upwards.",
-            "cues": {
-              "pauses": [],
-              "emphasis": [
-                1
-              ],
-              "sfx": []
-            }
-          }
-        ],
-        "fact_check": [
-          {
-            "claim": "Five main streams drive blog revenue in 2026: display ads, affiliate links, sponsored posts, products, and services.",
-            "supported": true
-          },
-          {
-            "claim": "Blogs continue to show up and hold top rankings in search results.",
-            "supported": true
-          },
-          {
-            "claim": "Selling digital products and courses directly generates higher margins than display ads.",
-            "supported": true
-          }
-        ],
-        "chapters": []
-      },
-      "research": {
-        "text": "\n\nLIVE WEB RESULTS (TinyFish snippets, unverified, reference only):\n1. How to Start a Blog & Make Money in 2026 (Step by Step) (https://www.youtube.com/watch?v=EP41DYCSd-c): Want to learn how to start a blog and make money? In this step-by-step guide for beginners, we'll walk you through everything—from choosing ...\n2. 8 ways I make money blogging in 2026 (https://www.bloggeratlarge.com/6-ways-i-make-money-blogging/): This post is the cold hard truth about blogging, its ups and downs and the answer to THAT question, how do you make money blogging?\n3. Does blogging still make sense in 2026? (https://www.reddit.com/r/Blogging/comments/1quyjj5/does_blogging_still_make_sense_in_2026/): People keep saying blogging is dead and that everything has moved to social media and video. But blogs still show up in search, and many creators seem ...\n4. Can I make money blogging in 2026 as a complete ... (https://www.quora.com/Can-I-make-money-blogging-in-2026-as-a-complete-beginner): Can I make money blogging in 2026 as a complete beginner?\n5. How to Start a Blog in 2026 (What I'd Do Differently to Make ... (https://www.youtube.com/watch?v=B9whuKbf6FA): This guide is perfect for blogging for beginners who want to make money blogging, showing you how to find unlimited traffic using one ...\n6. How to make money blogging in 2026 (https://www.productiveblogging.com/how-do-blogs-make-money/): Essentially there are five main ways to make money from a blog in 2026: ads, affiliate links, sponsored posts, products and services…\n7. How to start a blog and make money (2026 guide) (https://www.teachable.com/blog/how-to-start-a-blog): Learn how to start a blog and make money through courses, affiliate links, and digital products. A practical guide for beginners, ...\n8. Top 10 highest earning bloggers 2026 (https://targetinternet.com/resources/top-10-highest-earning-bloggers-2021-earnings-analysis/): This article ranks the top 10 highest earning bloggers of 2026, explains what each one verifiably earns, and pulls out the strategic lessons any marketer or ...",
-        "sources": []
-      },
-      "at": 1794564808050
     }
   ],
   "lastRenderAuto": false,
@@ -1515,12 +1471,12 @@
   },
   "renders": [
     {
-      "title": "Ten Thousand Bitcoins for Two Pizzas",
-      "at": 1794659769857,
-      "project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su"
+      "title": "From Robotic Mice to Autonomous Minds",
+      "at": 1794668760189,
+      "project": "from-robotic-mice-to-autonomous-mind-mwgjfxso"
     }
   ],
-  "current_project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+  "current_project": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
   "pending_edit": null,
   "edits": [],
   "pending": null,
@@ -1531,16 +1487,12 @@
     "browser_bot": false,
     "pickstyle": true
   },
-  "job": {
-    "format": "vertical",
-    "style": "documentary",
-    "research": "full"
-  },
+  "job": null,
   "recent_styles": [
-    "kinetic-news",
     "motion-explainer",
     "motion-explainer",
     "motion-explainer",
+    "documentary",
     "documentary"
   ],
   "learning": null,
@@ -2514,13 +2466,7 @@
     }
   ],
   "assets": null,
-  "intake": {
-    "topic": "What is dry run, pull request, bash, commit, deploy and the other terms used on termux",
-    "job": {},
-    "items": [],
-    "n": 0,
-    "at": 1794668441816
-  },
+  "intake": null,
   "assets_at": 1794658398993,
   "narr": null,
   "sb": null,
