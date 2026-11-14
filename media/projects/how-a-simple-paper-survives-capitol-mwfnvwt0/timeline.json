@@ -1,0 +1,841 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-a-simple-paper-survives-capitol-mwfnvwt0",
+ "rev": 1,
+ "title": "How A Simple Paper Survives Capitol Hill",
+ "duration": 31.35,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#5AA9FF"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.238,
+    "narration": "Thousands of rough drafts enter the Capitol every single year, but most of them vanish",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Surviving the process",
+     "text": "Capitol Bills",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.238,
+    "end": 5.743,
+    "narration": "inside committee rooms.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "shield",
+       "label": "Review"
+      },
+      {
+       "icon": "users",
+       "label": "Panel"
+      }
+     ],
+     "title": "Committee Review",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 5.743,
+    "end": 9.653,
+    "narration": "People think writing a law is a quick signature process, but bills must survive",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Endless committee reviews",
+     "myth": "Quick signature process",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 9.653,
+    "end": 12.353,
+    "narration": "endless committee reviews and floor debates in both houses",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Draft",
+      "Committee",
+      "Debate",
+      "Vote"
+     ],
+     "title": "Legislative Path",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 12.353,
+    "end": 13.808,
+    "narration": "before reaching the desk.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "motion-graphics vector animation with flat clean shapes and smooth sliding panels showing a bill resting on an oval desk"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "69d5166df4cb",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.47,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 13.808,
+    "end": 17.821,
+    "narration": "Measures require approval from both the House and the Senate in identical form",
+    "kind": "graphic",
+    "graphic": {
+     "left": {
+      "label": "House",
+      "sub": "Identical text",
+      "value": 1
+     },
+     "prefix": "",
+     "right": {
+      "label": "Senate",
+      "value": 1
+     },
+     "suffix": "",
+     "title": "Dual Approval",
+     "type": "versus"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 17.821,
+    "end": 19.576,
+    "narration": "before heading to the president.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "landmark",
+       "label": "White House"
+      },
+      {
+       "icon": "clock",
+       "label": "Ten Days"
+      }
+     ],
+     "title": "Final Stage",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 19.576,
+    "end": 23.832,
+    "narration": "If the president takes no action for ten days, the bill automatically becomes law,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Automatic Law Timer",
+     "prefix": "",
+     "suffix": "Days",
+     "type": "counter",
+     "value": 10
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 23.832,
+    "end": 25.887,
+    "narration": "so inaction can overrule a veto.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Automatic Passage",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 25.887,
+    "end": 30.552,
+    "narration": "Congress can override a presidential veto with votes from both chambers.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Vetoed",
+      "House Vote",
+      "Senate Vote",
+      "Law"
+     ],
+     "title": "Veto Override",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Thousands",
+     "start": 0.1,
+     "end": 0.562
+    },
+    {
+     "word": "of",
+     "start": 0.588,
+     "end": 0.688
+    },
+    {
+     "word": "rough",
+     "start": 0.713,
+     "end": 0.9
+    },
+    {
+     "word": "drafts",
+     "start": 0.912,
+     "end": 1.325
+    },
+    {
+     "word": "enter",
+     "start": 1.35,
+     "end": 1.562
+    },
+    {
+     "word": "the",
+     "start": 1.587,
+     "end": 1.688
+    },
+    {
+     "word": "Capitol",
+     "start": 1.712,
+     "end": 2.188
+    },
+    {
+     "word": "every",
+     "start": 2.2,
+     "end": 2.438
+    },
+    {
+     "word": "single",
+     "start": 2.462,
+     "end": 2.8
+    },
+    {
+     "word": "year,",
+     "start": 2.825,
+     "end": 3.075
+    },
+    {
+     "word": "but",
+     "start": 3.235,
+     "end": 3.398
+    },
+    {
+     "word": "most",
+     "start": 3.423,
+     "end": 3.673
+    },
+    {
+     "word": "of",
+     "start": 3.685,
+     "end": 3.735
+    },
+    {
+     "word": "them",
+     "start": 3.761,
+     "end": 3.91
+    },
+    {
+     "word": "vanish",
+     "start": 3.935,
+     "end": 4.273
+    },
+    {
+     "word": "inside",
+     "start": 4.298,
+     "end": 4.685
+    },
+    {
+     "word": "committee",
+     "start": 4.711,
+     "end": 5.098
+    },
+    {
+     "word": "rooms.",
+     "start": 5.123,
+     "end": 5.523
+    },
+    {
+     "word": "People",
+     "start": 5.803,
+     "end": 6.128
+    },
+    {
+     "word": "think",
+     "start": 6.153,
+     "end": 6.353
+    },
+    {
+     "word": "writing",
+     "start": 6.366,
+     "end": 6.666
+    },
+    {
+     "word": "a",
+     "start": 6.69,
+     "end": 6.728
+    },
+    {
+     "word": "law",
+     "start": 6.753,
+     "end": 6.966
+    },
+    {
+     "word": "is",
+     "start": 6.978,
+     "end": 7.09
+    },
+    {
+     "word": "a",
+     "start": 7.103,
+     "end": 7.166
+    },
+    {
+     "word": "quick",
+     "start": 7.19,
+     "end": 7.415
+    },
+    {
+     "word": "signature",
+     "start": 7.44,
+     "end": 7.903
+    },
+    {
+     "word": "process,",
+     "start": 7.928,
+     "end": 8.44
+    },
+    {
+     "word": "but",
+     "start": 8.6,
+     "end": 8.775
+    },
+    {
+     "word": "bills",
+     "start": 8.801,
+     "end": 9.063
+    },
+    {
+     "word": "must",
+     "start": 9.088,
+     "end": 9.275
+    },
+    {
+     "word": "survive",
+     "start": 9.288,
+     "end": 9.688
+    },
+    {
+     "word": "endless",
+     "start": 9.713,
+     "end": 10.038
+    },
+    {
+     "word": "committee",
+     "start": 10.051,
+     "end": 10.426
+    },
+    {
+     "word": "reviews",
+     "start": 10.451,
+     "end": 10.85
+    },
+    {
+     "word": "and",
+     "start": 10.863,
+     "end": 10.951
+    },
+    {
+     "word": "floor",
+     "start": 10.975,
+     "end": 11.238
+    },
+    {
+     "word": "debates",
+     "start": 11.25,
+     "end": 11.625
+    },
+    {
+     "word": "in",
+     "start": 11.651,
+     "end": 11.75
+    },
+    {
+     "word": "both",
+     "start": 11.775,
+     "end": 12.0
+    },
+    {
+     "word": "houses",
+     "start": 12.025,
+     "end": 12.388
+    },
+    {
+     "word": "before",
+     "start": 12.413,
+     "end": 12.738
+    },
+    {
+     "word": "reaching",
+     "start": 12.75,
+     "end": 13.063
+    },
+    {
+     "word": "the",
+     "start": 13.076,
+     "end": 13.163
+    },
+    {
+     "word": "desk.",
+     "start": 13.176,
+     "end": 13.588
+    },
+    {
+     "word": "Measures",
+     "start": 13.868,
+     "end": 14.331
+    },
+    {
+     "word": "require",
+     "start": 14.356,
+     "end": 14.818
+    },
+    {
+     "word": "approval",
+     "start": 14.844,
+     "end": 15.281
+    },
+    {
+     "word": "from",
+     "start": 15.306,
+     "end": 15.481
+    },
+    {
+     "word": "both",
+     "start": 15.506,
+     "end": 15.706
+    },
+    {
+     "word": "the",
+     "start": 15.731,
+     "end": 15.844
+    },
+    {
+     "word": "House",
+     "start": 15.856,
+     "end": 16.181
+    },
+    {
+     "word": "and",
+     "start": 16.206,
+     "end": 16.306
+    },
+    {
+     "word": "the",
+     "start": 16.331,
+     "end": 16.431
+    },
+    {
+     "word": "Senate",
+     "start": 16.456,
+     "end": 16.831
+    },
+    {
+     "word": "in",
+     "start": 16.856,
+     "end": 16.969
+    },
+    {
+     "word": "identical",
+     "start": 16.993,
+     "end": 17.531
+    },
+    {
+     "word": "form",
+     "start": 17.556,
+     "end": 17.868
+    },
+    {
+     "word": "before",
+     "start": 17.881,
+     "end": 18.206
+    },
+    {
+     "word": "heading",
+     "start": 18.231,
+     "end": 18.531
+    },
+    {
+     "word": "to",
+     "start": 18.544,
+     "end": 18.644
+    },
+    {
+     "word": "the",
+     "start": 18.668,
+     "end": 18.781
+    },
+    {
+     "word": "president.",
+     "start": 18.794,
+     "end": 19.356
+    },
+    {
+     "word": "If",
+     "start": 19.636,
+     "end": 19.798
+    },
+    {
+     "word": "the",
+     "start": 19.811,
+     "end": 19.923
+    },
+    {
+     "word": "president",
+     "start": 19.936,
+     "end": 20.41
+    },
+    {
+     "word": "takes",
+     "start": 20.423,
+     "end": 20.648
+    },
+    {
+     "word": "no",
+     "start": 20.673,
+     "end": 20.86
+    },
+    {
+     "word": "action",
+     "start": 20.886,
+     "end": 21.173
+    },
+    {
+     "word": "for",
+     "start": 21.198,
+     "end": 21.335
+    },
+    {
+     "word": "ten",
+     "start": 21.36,
+     "end": 21.585
+    },
+    {
+     "word": "days,",
+     "start": 21.598,
+     "end": 21.91
+    },
+    {
+     "word": "the",
+     "start": 22.07,
+     "end": 22.169
+    },
+    {
+     "word": "bill",
+     "start": 22.195,
+     "end": 22.407
+    },
+    {
+     "word": "automatically",
+     "start": 22.419,
+     "end": 23.044
+    },
+    {
+     "word": "becomes",
+     "start": 23.057,
+     "end": 23.432
+    },
+    {
+     "word": "law,",
+     "start": 23.457,
+     "end": 23.732
+    },
+    {
+     "word": "so",
+     "start": 23.892,
+     "end": 24.042
+    },
+    {
+     "word": "inaction",
+     "start": 24.068,
+     "end": 24.505
+    },
+    {
+     "word": "can",
+     "start": 24.53,
+     "end": 24.693
+    },
+    {
+     "word": "overrule",
+     "start": 24.717,
+     "end": 25.13
+    },
+    {
+     "word": "a",
+     "start": 25.155,
+     "end": 25.205
+    },
+    {
+     "word": "veto.",
+     "start": 25.23,
+     "end": 25.667
+    },
+    {
+     "word": "Congress",
+     "start": 25.947,
+     "end": 26.41
+    },
+    {
+     "word": "can",
+     "start": 26.434,
+     "end": 26.597
+    },
+    {
+     "word": "override",
+     "start": 26.622,
+     "end": 27.047
+    },
+    {
+     "word": "a",
+     "start": 27.072,
+     "end": 27.135
+    },
+    {
+     "word": "presidential",
+     "start": 27.147,
+     "end": 27.772
+    },
+    {
+     "word": "veto",
+     "start": 27.784,
+     "end": 28.097
+    },
+    {
+     "word": "with",
+     "start": 28.122,
+     "end": 28.297
+    },
+    {
+     "word": "votes",
+     "start": 28.322,
+     "end": 28.597
+    },
+    {
+     "word": "from",
+     "start": 28.622,
+     "end": 28.784
+    },
+    {
+     "word": "both",
+     "start": 28.809,
+     "end": 29.034
+    },
+    {
+     "word": "chambers.",
+     "start": 29.047,
+     "end": 29.597
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Thousands of rough drafts enter the Capitol every single year, but most of them vanish inside committee rooms. People think writing a law is a quick signature process, but bills must survive endless committee reviews and floor debates in both houses before reaching the desk. Measures require approval from both the House and the Senate in identical form before heading to the president. If the president takes no action for ten days, the bill automatically becomes law, so inaction can overrule a veto. Congress can override a presidential veto with votes from both chambers."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 10.17,
+    "volume": 0.3,
+    "anchor": "v4",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.19,
+    "text": "Thousands",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.19,
+    "opacity": 0.35,
+    "seed": 3.63
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 10.05,
+    "end": 12.3,
+    "asset": "house",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794615851218,
+  "updated": 1794615851220,
+  "topic": "a about how a bill becomes law",
+  "hook": "Thousands of rough drafts enter the Capitol every single year, but most of them vanish inside committee rooms.",
+  "image_style": "motion-graphics vector animation with flat clean shapes and smooth sliding panels",
+  "format": "landscape",
+  "assets_release": "project-how-a-simple-paper-survives-capitol-mwfnvwt0",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Thousands of rough drafts enter the Capitol every single year, but most of them vanish inside committee rooms.",
+   "music": "tech-pulse",
+   "project_id": "how-a-simple-paper-survives-capitol-mwfnvwt0",
+   "style": "motion-graphics vector animation with flat clean shapes and smooth sliding panels",
+   "style_preset": "motion-explainer",
+   "title": "How A Simple Paper Survives Capitol Hill",
+   "topic": "a about how a bill becomes law",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Thousands of rough drafts enter the...\"): the hook. No subject cutout, so I put THOUSANDS in the top band where it cannot cover the face.",
+   "Beat 4 (\"endless committee reviews and floor...\"): a \"house\" illustration builds itself on the right after the words land.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 5: drift (alive baseline)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}
