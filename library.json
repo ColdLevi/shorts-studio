@@ -641,6 +641,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-60",
+      "title": "Ten Thousand Bitcoins for Two Pizzas",
+      "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
+      "accent": "#FFD43B",
+      "duration": 42.0,
+      "created": 1794661895229,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-60/short-60.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-60/short-60.jpg",
+      "project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
