@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "schema": "../schema/skill.schema.json",
+  "skills": [
+    {
+      "id": "storytelling.core",
+      "manifest": "library/storytelling/storytelling.core/manifest.json"
+    },
+    {
+      "id": "shortform.retention",
+      "manifest": "library/social/shortform.retention/manifest.json"
+    },
+    {
+      "id": "motion.graphics",
+      "manifest": "library/motion/motion.graphics/manifest.json"
+    },
+    {
+      "id": "typography.kinetic",
+      "manifest": "library/typography/typography.kinetic/manifest.json"
+    },
+    {
+      "id": "documentary.research",
+      "manifest": "library/research/documentary.research/manifest.json"
+    },
+    {
+      "id": "audio.sound-design",
+      "manifest": "library/audio/audio.sound-design/manifest.json"
+    },
+    {
+      "id": "cinematography.visual-language",
+      "manifest": "library/cinematography/cinematography.visual-language/manifest.json"
+    }
+  ]
+}

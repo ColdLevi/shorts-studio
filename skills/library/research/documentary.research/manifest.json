@@ -1,0 +1,50 @@
+{
+  "id": "documentary.research",
+  "name": "Documentary Research",
+  "version": "1.0.0",
+  "category": "research",
+  "description": "Support factual storytelling with evidence, attribution and uncertainty handling.",
+  "triggers": [
+    "documentary",
+    "history",
+    "investigation",
+    "facts",
+    "research"
+  ],
+  "capabilities": [
+    "fact-checking",
+    "source-attribution",
+    "uncertainty"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "documentary",
+    "history",
+    "science",
+    "news",
+    "education"
+  ],
+  "dependencies": [
+    "storytelling.core"
+  ],
+  "conflicts": [],
+  "quality_checks": [
+    "claim-source-map",
+    "date-check",
+    "uncertainty-review"
+  ],
+  "engines": [
+    "remotion"
+  ],
+  "priority": 92,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "shortform.retention",
+  "name": "Short-form Retention",
+  "version": "1.0.0",
+  "category": "social",
+  "description": "Design a short video for immediate comprehension and sustained attention.",
+  "triggers": [
+    "short",
+    "reel",
+    "tiktok",
+    "youtube short",
+    "retention",
+    "vertical"
+  ],
+  "capabilities": [
+    "hook",
+    "pacing",
+    "pattern-interrupt",
+    "retention"
+  ],
+  "formats": [
+    "vertical",
+    "square"
+  ],
+  "genres": [
+    "social",
+    "education",
+    "marketing",
+    "entertainment"
+  ],
+  "dependencies": [
+    "storytelling.core"
+  ],
+  "conflicts": [],
+  "quality_checks": [
+    "hook-within-3s",
+    "no-dead-air",
+    "visual-variety"
+  ],
+  "engines": [
+    "remotion"
+  ],
+  "priority": 95,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}

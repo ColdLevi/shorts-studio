@@ -1,0 +1,48 @@
+{
+  "id": "motion.graphics",
+  "name": "Motion Graphics",
+  "version": "1.0.0",
+  "category": "motion",
+  "description": "Create purposeful animated diagrams, data visuals and graphic scenes.",
+  "triggers": [
+    "motion graphics",
+    "diagram",
+    "infographic",
+    "animated chart",
+    "explainer"
+  ],
+  "capabilities": [
+    "animated-diagrams",
+    "data-visualization",
+    "graphic-layout"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "education",
+    "business",
+    "technology",
+    "marketing"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "quality_checks": [
+    "label-legibility",
+    "visual-hierarchy",
+    "data-accuracy"
+  ],
+  "engines": [
+    "remotion",
+    "motion-engine"
+  ],
+  "priority": 80,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}

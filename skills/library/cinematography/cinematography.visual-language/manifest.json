@@ -1,0 +1,46 @@
+{
+  "id": "cinematography.visual-language",
+  "name": "Cinematic Visual Language",
+  "version": "1.0.0",
+  "category": "cinematography",
+  "description": "Compose shots with deliberate framing, light, depth and visual continuity.",
+  "triggers": [
+    "cinematic",
+    "camera",
+    "composition",
+    "lighting",
+    "b-roll"
+  ],
+  "capabilities": [
+    "composition",
+    "shot-design",
+    "visual-continuity"
+  ],
+  "formats": [
+    "any"
+  ],
+  "genres": [
+    "documentary",
+    "advertising",
+    "storytelling"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "quality_checks": [
+    "subject-focus",
+    "shot-variety",
+    "continuity"
+  ],
+  "engines": [
+    "remotion"
+  ],
+  "priority": 76,
+  "content_file": "SKILL.md",
+  "status": "active",
+  "provenance": {
+    "kind": "builtin",
+    "source": "Shorts Studio built-in foundation",
+    "license": "proprietary-project-content",
+    "imported_at": null
+  }
+}
