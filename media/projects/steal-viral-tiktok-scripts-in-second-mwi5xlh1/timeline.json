@@ -1,0 +1,818 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "steal-viral-tiktok-scripts-in-second-mwi5xlh1",
+ "rev": 1,
+ "title": "Steal Viral TikTok Scripts in Seconds",
+ "duration": 35.82,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "preset": "bold-pop",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.145,
+    "narration": "Two million videos processed with zero waiting.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a glowing high speed server rack in a dark data center, low angle shot, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "6fcc4365f482",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.68,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.145,
+    "end": 10.675,
+    "narration": "Creators think stealing winning hooks takes hours of manual transcribing, but TokScript pulls clean text in one click.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Zero manual typing",
+     "text": "1 Click Extraction",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.675,
+    "end": 13.983,
+    "narration": "Over seventy-one thousand creators use the platform daily,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a modern creator workspace with multiple glowing monitors displaying code and timelines, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "04f1d87e192a",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.7,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.983,
+    "end": 17.366,
+    "narration": "yet most waste hours retyping audio by hand.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a modern creator workspace with multiple glowing monitors displaying code and timelines, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "04f1d87e192a",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.71,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 17.366,
+    "end": 23.169,
+    "narration": "You drop a video URL into the input box, so the system extracts the full transcript instantly.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You drop a video URL into",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 23.169,
+    "end": 25.826,
+    "narration": "The Pro plan costs thirty-nine dollars a year,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a sleek gold credit card resting on a dark walnut desk beside a glowing monitor, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "09b62bb1fdb4",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.62,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 25.826,
+    "end": 28.978,
+    "narration": "giving you the AI writer and viral hook generator.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a sleek gold credit card resting on a dark walnut desk beside a glowing monitor, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "09b62bb1fdb4",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 28.978,
+    "end": 31.747,
+    "narration": "Start for free today, and turn any TikTok",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a smartphone displaying a clean productivity app interface on a dark wooden table, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a18ff1b0a5ee",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.63,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 31.747,
+    "end": 35.016,
+    "narration": "transcript into a script that actually sells.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a smartphone displaying a clean productivity app interface on a dark wooden table, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "a18ff1b0a5ee",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.69,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Two",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "million",
+     "start": 0.263,
+     "end": 0.625
+    },
+    {
+     "word": "videos",
+     "start": 0.625,
+     "end": 1.062
+    },
+    {
+     "word": "processed",
+     "start": 1.075,
+     "end": 1.9
+    },
+    {
+     "word": "with",
+     "start": 2.013,
+     "end": 2.125
+    },
+    {
+     "word": "zero",
+     "start": 2.125,
+     "end": 2.562
+    },
+    {
+     "word": "waiting.",
+     "start": 2.562,
+     "end": 2.925
+    },
+    {
+     "word": "Creators",
+     "start": 3.205,
+     "end": 3.668
+    },
+    {
+     "word": "think",
+     "start": 3.668,
+     "end": 3.893
+    },
+    {
+     "word": "stealing",
+     "start": 3.905,
+     "end": 4.38
+    },
+    {
+     "word": "winning",
+     "start": 4.38,
+     "end": 4.655
+    },
+    {
+     "word": "hooks",
+     "start": 4.655,
+     "end": 5.155
+    },
+    {
+     "word": "takes",
+     "start": 5.275,
+     "end": 5.7
+    },
+    {
+     "word": "hours",
+     "start": 5.825,
+     "end": 6.238
+    },
+    {
+     "word": "of",
+     "start": 6.238,
+     "end": 6.3
+    },
+    {
+     "word": "manual",
+     "start": 6.3,
+     "end": 6.787
+    },
+    {
+     "word": "transcribing,",
+     "start": 6.787,
+     "end": 7.488
+    },
+    {
+     "word": "but",
+     "start": 7.648,
+     "end": 7.773
+    },
+    {
+     "word": "TokScript",
+     "start": 7.773,
+     "end": 8.41
+    },
+    {
+     "word": "pulls",
+     "start": 8.41,
+     "end": 8.697
+    },
+    {
+     "word": "clean",
+     "start": 8.697,
+     "end": 9.01
+    },
+    {
+     "word": "text",
+     "start": 9.01,
+     "end": 9.472
+    },
+    {
+     "word": "in",
+     "start": 9.592,
+     "end": 9.755
+    },
+    {
+     "word": "one",
+     "start": 9.755,
+     "end": 10.018
+    },
+    {
+     "word": "click.",
+     "start": 10.018,
+     "end": 10.455
+    },
+    {
+     "word": "Over",
+     "start": 10.735,
+     "end": 10.923
+    },
+    {
+     "word": "seventy-one",
+     "start": 10.936,
+     "end": 11.561
+    },
+    {
+     "word": "thousand",
+     "start": 11.573,
+     "end": 12.036
+    },
+    {
+     "word": "creators",
+     "start": 12.036,
+     "end": 12.536
+    },
+    {
+     "word": "use",
+     "start": 12.536,
+     "end": 12.773
+    },
+    {
+     "word": "the",
+     "start": 12.773,
+     "end": 12.86
+    },
+    {
+     "word": "platform",
+     "start": 12.86,
+     "end": 13.436
+    },
+    {
+     "word": "daily,",
+     "start": 13.436,
+     "end": 13.823
+    },
+    {
+     "word": "yet",
+     "start": 13.983,
+     "end": 14.108
+    },
+    {
+     "word": "most",
+     "start": 14.108,
+     "end": 14.483
+    },
+    {
+     "word": "waste",
+     "start": 14.483,
+     "end": 14.87
+    },
+    {
+     "word": "hours",
+     "start": 14.883,
+     "end": 15.308
+    },
+    {
+     "word": "retyping",
+     "start": 15.308,
+     "end": 16.008
+    },
+    {
+     "word": "audio",
+     "start": 16.008,
+     "end": 16.433
+    },
+    {
+     "word": "by",
+     "start": 16.433,
+     "end": 16.621
+    },
+    {
+     "word": "hand.",
+     "start": 16.633,
+     "end": 17.146
+    },
+    {
+     "word": "You",
+     "start": 17.426,
+     "end": 17.489
+    },
+    {
+     "word": "drop",
+     "start": 17.502,
+     "end": 17.764
+    },
+    {
+     "word": "a",
+     "start": 17.764,
+     "end": 17.801
+    },
+    {
+     "word": "video",
+     "start": 17.801,
+     "end": 18.214
+    },
+    {
+     "word": "URL",
+     "start": 18.226,
+     "end": 18.827
+    },
+    {
+     "word": "into",
+     "start": 18.827,
+     "end": 18.952
+    },
+    {
+     "word": "the",
+     "start": 18.952,
+     "end": 19.039
+    },
+    {
+     "word": "input",
+     "start": 19.039,
+     "end": 19.452
+    },
+    {
+     "word": "box,",
+     "start": 19.464,
+     "end": 19.939
+    },
+    {
+     "word": "so",
+     "start": 20.099,
+     "end": 20.186
+    },
+    {
+     "word": "the",
+     "start": 20.186,
+     "end": 20.287
+    },
+    {
+     "word": "system",
+     "start": 20.287,
+     "end": 20.674
+    },
+    {
+     "word": "extracts",
+     "start": 20.787,
+     "end": 21.299
+    },
+    {
+     "word": "the",
+     "start": 21.299,
+     "end": 21.386
+    },
+    {
+     "word": "full",
+     "start": 21.386,
+     "end": 21.774
+    },
+    {
+     "word": "transcript",
+     "start": 21.774,
+     "end": 22.399
+    },
+    {
+     "word": "instantly.",
+     "start": 22.412,
+     "end": 22.949
+    },
+    {
+     "word": "The",
+     "start": 23.229,
+     "end": 23.291
+    },
+    {
+     "word": "Pro",
+     "start": 23.291,
+     "end": 23.553
+    },
+    {
+     "word": "plan",
+     "start": 23.553,
+     "end": 23.916
+    },
+    {
+     "word": "costs",
+     "start": 23.929,
+     "end": 24.354
+    },
+    {
+     "word": "thirty-nine",
+     "start": 24.366,
+     "end": 24.878
+    },
+    {
+     "word": "dollars",
+     "start": 24.878,
+     "end": 25.229
+    },
+    {
+     "word": "a",
+     "start": 25.229,
+     "end": 25.241
+    },
+    {
+     "word": "year,",
+     "start": 25.241,
+     "end": 25.666
+    },
+    {
+     "word": "giving",
+     "start": 25.826,
+     "end": 26.052
+    },
+    {
+     "word": "you",
+     "start": 26.052,
+     "end": 26.189
+    },
+    {
+     "word": "the",
+     "start": 26.189,
+     "end": 26.302
+    },
+    {
+     "word": "AI",
+     "start": 26.414,
+     "end": 26.814
+    },
+    {
+     "word": "writer",
+     "start": 26.814,
+     "end": 27.289
+    },
+    {
+     "word": "and",
+     "start": 27.409,
+     "end": 27.496
+    },
+    {
+     "word": "viral",
+     "start": 27.496,
+     "end": 27.996
+    },
+    {
+     "word": "hook",
+     "start": 27.996,
+     "end": 28.159
+    },
+    {
+     "word": "generator.",
+     "start": 28.159,
+     "end": 28.758
+    },
+    {
+     "word": "Start",
+     "start": 29.038,
+     "end": 29.3
+    },
+    {
+     "word": "for",
+     "start": 29.3,
+     "end": 29.425
+    },
+    {
+     "word": "free",
+     "start": 29.437,
+     "end": 29.687
+    },
+    {
+     "word": "today,",
+     "start": 29.687,
+     "end": 30.175
+    },
+    {
+     "word": "and",
+     "start": 30.335,
+     "end": 30.597
+    },
+    {
+     "word": "turn",
+     "start": 30.685,
+     "end": 30.948
+    },
+    {
+     "word": "any",
+     "start": 31.06,
+     "end": 31.285
+    },
+    {
+     "word": "TikTok",
+     "start": 31.298,
+     "end": 31.747
+    },
+    {
+     "word": "transcript",
+     "start": 31.747,
+     "end": 32.372
+    },
+    {
+     "word": "into",
+     "start": 32.472,
+     "end": 32.685
+    },
+    {
+     "word": "a",
+     "start": 32.685,
+     "end": 32.735
+    },
+    {
+     "word": "script",
+     "start": 32.735,
+     "end": 33.235
+    },
+    {
+     "word": "that",
+     "start": 33.355,
+     "end": 33.542
+    },
+    {
+     "word": "actually",
+     "start": 33.555,
+     "end": 33.955
+    },
+    {
+     "word": "sells.",
+     "start": 33.955,
+     "end": 34.605
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Two million videos processed with zero waiting. Creators think stealing winning hooks takes hours of manual transcribing, but TokScript pulls clean text in one click. Over seventy-one thousand creators use the platform daily, yet most waste hours retyping audio by hand. You drop a video URL into the input box, so the system extracts the full transcript instantly. The Pro plan costs thirty-nine dollars a year, giving you the AI writer and viral hook generator. Start for free today, and turn any TikTok transcript into a script that actually sells."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/impact-deep-soft.mp3",
+    "at": 0.1,
+    "volume": 0.266,
+    "anchor": "v1",
+    "offset": 0.1
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.1,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "processed",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.1,
+    "opacity": 0.35,
+    "seed": 0.24
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794767191874,
+  "updated": 1794767191877,
+  "topic": "product of this https://tokscript.com/",
+  "hook": "Two million videos processed with zero waiting.",
+  "image_style": "moody cinematic photo, film grain",
+  "format": "landscape",
+  "assets_release": "project-steal-viral-tiktok-scripts-in-second-mwi5xlh1",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "https://tokscript.com/",
+   "canvas": "16:9",
+   "category": "promo",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Two million videos processed with zero waiting.",
+   "music": "tech-pulse",
+   "project_id": "steal-viral-tiktok-scripts-in-second-mwi5xlh1",
+   "style": "moody cinematic photo, film grain",
+   "style_preset": "bold-pop",
+   "title": "Steal Viral TikTok Scripts in Seconds",
+   "topic": "product of this https://tokscript.com/",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": [
+    {
+     "kind": "image",
+     "path": "/tmp/capture/desktop_0.png",
+     "caption": "product screen 1",
+     "source": "capture"
+    },
+    {
+     "kind": "image",
+     "path": "/tmp/capture/desktop_1.png",
+     "caption": "product screen 2",
+     "source": "capture"
+    },
+    {
+     "kind": "image",
+     "path": "/tmp/capture/desktop_2.png",
+     "caption": "product screen 3",
+     "source": "capture"
+    }
+   ],
+   "brand": {
+    "url": "https://tokscript.com/",
+    "name": "TokScript - Video Transcript Downloader for TikTok, Reels & Shorts Transcripts I",
+    "color": "#00B8B2",
+    "og_image": "https://tokscript.com/og-image.png"
+   }
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Two million videos processed with z...\"): the hook. I set PROCESSED huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 6 (\"The Pro plan costs thirty-nine doll...\"): a \"coin\" prop fits, but the subject is up in the top of the frame, so I skipped it.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 8: drift (alive baseline).",
+   "Beat 9: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "1 effects: hit_low"
+ }
+}
