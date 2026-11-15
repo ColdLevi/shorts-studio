@@ -1,0 +1,923 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "inside-the-secret-wars-of-1984-mwgsxwu7",
+ "rev": 1,
+ "title": "Inside the Secret Wars of 1984",
+ "duration": 43.5,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.7
+  },
+  "motion": "drift",
+  "recipe": "cinematic",
+  "transitions": [
+   "dissolve",
+   "leak",
+   "focus",
+   "fade"
+  ],
+  "fx": {
+   "texture": "grain",
+   "letterbox": 0.1
+  },
+  "gfx": {
+   "grain": 0.14,
+   "vignette": 0.55,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.1) saturate(1.05) brightness(0.95)",
+  "progress_bar": false,
+  "font": "DM Serif Display",
+  "preset": "cinematic",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.38,
+    "narration": "In nineteen eighty-four, Marvel Comics put every hero and villain onto a fabricated planet called Battleworld.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, giant cosmic arena planet floating in deep space, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "cfff2d09b579",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 6.38,
+    "end": 12.135,
+    "narration": "You think crossover fiction stays on the page, but that twelve issue series mirrored real proxy battles.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Secret Wars",
+     "text": "Real Proxy Battles",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.135,
+    "end": 18.427,
+    "narration": "Max Hastings noted that intelligence and secret operations became a major growth industry during World War Two.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Max Hastings",
+     "text": "Intelligence Growth",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 18.427,
+    "end": 22.138,
+    "narration": "So nations constantly ran covert operations behind the scenes,",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, dark alleyway with dramatic smoke and neon glow, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3cd63f067156",
+    "cam": {
+     "move": "drift",
+     "amp": 0.75,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 22.138,
+    "end": 24.783,
+    "narration": "and readers watched those hidden themes play out.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, dark alleyway with dramatic smoke and neon glow, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3cd63f067156",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cam": {
+     "move": "truck",
+     "amp": 0.62,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 24.783,
+    "end": 30.288,
+    "narration": "Ronald Reagan was running a secret war, quietly selling arms to Iran to fund rebel forces.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Secret War",
+     "text": "Iran Arms Deal",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 30.288,
+    "end": 35.78,
+    "narration": "The series ran from May nineteen eighty-four to April nineteen eighty-five, matching that exact era.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Series Run",
+     "text": "May 1984",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 35.78,
+    "end": 38.813,
+    "narration": "Fiction exposes the quiet anxieties of its time,",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, dramatic cinematic shot of comic book heroes standing together, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "53b7db3e49a6",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.66,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 38.813,
+    "end": 42.696,
+    "narration": "turning real political proxies into cosmic battles.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field, dramatic cinematic shot of comic book heroes standing together, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "53b7db3e49a6",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.77,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.1,
+     "end": 0.275
+    },
+    {
+     "word": "nineteen",
+     "start": 0.287,
+     "end": 0.688
+    },
+    {
+     "word": "eighty-four,",
+     "start": 0.7,
+     "end": 1.2
+    },
+    {
+     "word": "Marvel",
+     "start": 1.36,
+     "end": 1.747
+    },
+    {
+     "word": "Comics",
+     "start": 1.76,
+     "end": 2.123
+    },
+    {
+     "word": "put",
+     "start": 2.135,
+     "end": 2.335
+    },
+    {
+     "word": "every",
+     "start": 2.348,
+     "end": 2.585
+    },
+    {
+     "word": "hero",
+     "start": 2.598,
+     "end": 3.047
+    },
+    {
+     "word": "and",
+     "start": 3.06,
+     "end": 3.21
+    },
+    {
+     "word": "villain",
+     "start": 3.223,
+     "end": 3.522
+    },
+    {
+     "word": "onto",
+     "start": 3.535,
+     "end": 3.86
+    },
+    {
+     "word": "a",
+     "start": 3.873,
+     "end": 3.935
+    },
+    {
+     "word": "fabricated",
+     "start": 3.948,
+     "end": 4.672
+    },
+    {
+     "word": "planet",
+     "start": 4.685,
+     "end": 5.06
+    },
+    {
+     "word": "called",
+     "start": 5.073,
+     "end": 5.373
+    },
+    {
+     "word": "Battleworld.",
+     "start": 5.385,
+     "end": 6.16
+    },
+    {
+     "word": "You",
+     "start": 6.44,
+     "end": 6.577
+    },
+    {
+     "word": "think",
+     "start": 6.59,
+     "end": 6.803
+    },
+    {
+     "word": "crossover",
+     "start": 6.815,
+     "end": 7.278
+    },
+    {
+     "word": "fiction",
+     "start": 7.29,
+     "end": 7.678
+    },
+    {
+     "word": "stays",
+     "start": 7.69,
+     "end": 8.04
+    },
+    {
+     "word": "on",
+     "start": 8.053,
+     "end": 8.152
+    },
+    {
+     "word": "the",
+     "start": 8.165,
+     "end": 8.252
+    },
+    {
+     "word": "page,",
+     "start": 8.265,
+     "end": 8.715
+    },
+    {
+     "word": "but",
+     "start": 8.915,
+     "end": 9.015
+    },
+    {
+     "word": "that",
+     "start": 9.028,
+     "end": 9.215
+    },
+    {
+     "word": "twelve",
+     "start": 9.227,
+     "end": 9.578
+    },
+    {
+     "word": "issue",
+     "start": 9.59,
+     "end": 9.865
+    },
+    {
+     "word": "series",
+     "start": 9.877,
+     "end": 10.303
+    },
+    {
+     "word": "mirrored",
+     "start": 10.315,
+     "end": 10.615
+    },
+    {
+     "word": "real",
+     "start": 10.627,
+     "end": 10.902
+    },
+    {
+     "word": "proxy",
+     "start": 10.915,
+     "end": 11.278
+    },
+    {
+     "word": "battles.",
+     "start": 11.29,
+     "end": 11.915
+    },
+    {
+     "word": "Max",
+     "start": 12.195,
+     "end": 12.532
+    },
+    {
+     "word": "Hastings",
+     "start": 12.545,
+     "end": 13.057
+    },
+    {
+     "word": "noted",
+     "start": 13.07,
+     "end": 13.407
+    },
+    {
+     "word": "that",
+     "start": 13.42,
+     "end": 13.557
+    },
+    {
+     "word": "intelligence",
+     "start": 13.57,
+     "end": 14.17
+    },
+    {
+     "word": "and",
+     "start": 14.183,
+     "end": 14.307
+    },
+    {
+     "word": "secret",
+     "start": 14.32,
+     "end": 14.733
+    },
+    {
+     "word": "operations",
+     "start": 14.745,
+     "end": 15.358
+    },
+    {
+     "word": "became",
+     "start": 15.37,
+     "end": 15.707
+    },
+    {
+     "word": "a",
+     "start": 15.72,
+     "end": 15.757
+    },
+    {
+     "word": "major",
+     "start": 15.77,
+     "end": 16.12
+    },
+    {
+     "word": "growth",
+     "start": 16.132,
+     "end": 16.47
+    },
+    {
+     "word": "industry",
+     "start": 16.483,
+     "end": 16.945
+    },
+    {
+     "word": "during",
+     "start": 16.957,
+     "end": 17.307
+    },
+    {
+     "word": "World",
+     "start": 17.32,
+     "end": 17.62
+    },
+    {
+     "word": "War",
+     "start": 17.632,
+     "end": 17.807
+    },
+    {
+     "word": "Two.",
+     "start": 17.82,
+     "end": 18.207
+    },
+    {
+     "word": "So",
+     "start": 18.487,
+     "end": 18.7
+    },
+    {
+     "word": "nations",
+     "start": 18.712,
+     "end": 19.15
+    },
+    {
+     "word": "constantly",
+     "start": 19.162,
+     "end": 19.7
+    },
+    {
+     "word": "ran",
+     "start": 19.712,
+     "end": 19.975
+    },
+    {
+     "word": "covert",
+     "start": 19.987,
+     "end": 20.425
+    },
+    {
+     "word": "operations",
+     "start": 20.438,
+     "end": 21.013
+    },
+    {
+     "word": "behind",
+     "start": 21.025,
+     "end": 21.388
+    },
+    {
+     "word": "the",
+     "start": 21.4,
+     "end": 21.487
+    },
+    {
+     "word": "scenes,",
+     "start": 21.5,
+     "end": 21.975
+    },
+    {
+     "word": "and",
+     "start": 22.138,
+     "end": 22.275
+    },
+    {
+     "word": "readers",
+     "start": 22.287,
+     "end": 22.662
+    },
+    {
+     "word": "watched",
+     "start": 22.675,
+     "end": 23.013
+    },
+    {
+     "word": "those",
+     "start": 23.025,
+     "end": 23.263
+    },
+    {
+     "word": "hidden",
+     "start": 23.275,
+     "end": 23.537
+    },
+    {
+     "word": "themes",
+     "start": 23.55,
+     "end": 23.9
+    },
+    {
+     "word": "play",
+     "start": 23.912,
+     "end": 24.162
+    },
+    {
+     "word": "out.",
+     "start": 24.175,
+     "end": 24.563
+    },
+    {
+     "word": "Ronald",
+     "start": 24.843,
+     "end": 25.255
+    },
+    {
+     "word": "Reagan",
+     "start": 25.267,
+     "end": 25.668
+    },
+    {
+     "word": "was",
+     "start": 25.68,
+     "end": 25.83
+    },
+    {
+     "word": "running",
+     "start": 25.843,
+     "end": 26.142
+    },
+    {
+     "word": "a",
+     "start": 26.155,
+     "end": 26.205
+    },
+    {
+     "word": "secret",
+     "start": 26.218,
+     "end": 26.642
+    },
+    {
+     "word": "war,",
+     "start": 26.655,
+     "end": 26.918
+    },
+    {
+     "word": "quietly",
+     "start": 27.093,
+     "end": 27.567
+    },
+    {
+     "word": "selling",
+     "start": 27.58,
+     "end": 27.918
+    },
+    {
+     "word": "arms",
+     "start": 27.93,
+     "end": 28.205
+    },
+    {
+     "word": "to",
+     "start": 28.218,
+     "end": 28.33
+    },
+    {
+     "word": "Iran",
+     "start": 28.343,
+     "end": 28.705
+    },
+    {
+     "word": "to",
+     "start": 28.718,
+     "end": 28.817
+    },
+    {
+     "word": "fund",
+     "start": 28.83,
+     "end": 29.155
+    },
+    {
+     "word": "rebel",
+     "start": 29.168,
+     "end": 29.455
+    },
+    {
+     "word": "forces.",
+     "start": 29.468,
+     "end": 30.068
+    },
+    {
+     "word": "The",
+     "start": 30.348,
+     "end": 30.46
+    },
+    {
+     "word": "series",
+     "start": 30.473,
+     "end": 30.885
+    },
+    {
+     "word": "ran",
+     "start": 30.898,
+     "end": 31.135
+    },
+    {
+     "word": "from",
+     "start": 31.148,
+     "end": 31.322
+    },
+    {
+     "word": "May",
+     "start": 31.335,
+     "end": 31.535
+    },
+    {
+     "word": "nineteen",
+     "start": 31.547,
+     "end": 31.998
+    },
+    {
+     "word": "eighty-four",
+     "start": 32.01,
+     "end": 32.485
+    },
+    {
+     "word": "to",
+     "start": 32.498,
+     "end": 32.66
+    },
+    {
+     "word": "April",
+     "start": 32.672,
+     "end": 33.022
+    },
+    {
+     "word": "nineteen",
+     "start": 33.035,
+     "end": 33.46
+    },
+    {
+     "word": "eighty-five,",
+     "start": 33.473,
+     "end": 34.098
+    },
+    {
+     "word": "matching",
+     "start": 34.285,
+     "end": 34.61
+    },
+    {
+     "word": "that",
+     "start": 34.623,
+     "end": 34.772
+    },
+    {
+     "word": "exact",
+     "start": 34.785,
+     "end": 35.185
+    },
+    {
+     "word": "era.",
+     "start": 35.197,
+     "end": 35.56
+    },
+    {
+     "word": "Fiction",
+     "start": 35.84,
+     "end": 36.253
+    },
+    {
+     "word": "exposes",
+     "start": 36.266,
+     "end": 36.816
+    },
+    {
+     "word": "the",
+     "start": 36.828,
+     "end": 36.928
+    },
+    {
+     "word": "quiet",
+     "start": 36.94,
+     "end": 37.328
+    },
+    {
+     "word": "anxieties",
+     "start": 37.34,
+     "end": 37.99
+    },
+    {
+     "word": "of",
+     "start": 38.003,
+     "end": 38.09
+    },
+    {
+     "word": "its",
+     "start": 38.103,
+     "end": 38.266
+    },
+    {
+     "word": "time,",
+     "start": 38.278,
+     "end": 38.653
+    },
+    {
+     "word": "turning",
+     "start": 38.813,
+     "end": 39.163
+    },
+    {
+     "word": "real",
+     "start": 39.175,
+     "end": 39.425
+    },
+    {
+     "word": "political",
+     "start": 39.438,
+     "end": 39.951
+    },
+    {
+     "word": "proxies",
+     "start": 39.963,
+     "end": 40.388
+    },
+    {
+     "word": "into",
+     "start": 40.4,
+     "end": 40.713
+    },
+    {
+     "word": "cosmic",
+     "start": 40.726,
+     "end": 41.138
+    },
+    {
+     "word": "battles.",
+     "start": 41.15,
+     "end": 41.751
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-GB-ThomasNeural",
+     "rate": "+0%",
+     "text": "In nineteen eighty-four, Marvel Comics put every hero and villain onto a fabricated planet called Battleworld. You think crossover fiction stays on the page, but that twelve issue series mirrored real proxy battles. Max Hastings noted that intelligence and secret operations became a major growth industry during World War Two. So nations constantly ran covert operations behind the scenes, and readers watched those hidden themes play out. Ronald Reagan was running a secret war, quietly selling arms to Iran to fund rebel forces. The series ran from May nineteen eighty-four to April nineteen eighty-five, matching that exact era. Fiction exposes the quiet anxieties of its time, turning real political proxies into cosmic battles."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/cinematic-min.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "cinematic-min"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 12.66,
+    "volume": 0.3,
+    "anchor": "v3",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 6.33,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "1984",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 6.33,
+    "opacity": 0.35,
+    "seed": 2.91
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v3",
+    "delay": 0.4,
+    "start": 12.54,
+    "end": 18.38,
+    "asset": "chart-up",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794684810734,
+  "updated": 1794684810737,
+  "topic": "The secret wars a parody of life and the secret battle we fight",
+  "hook": "In nineteen eighty-four, Marvel Comics gathered every hero and villain onto a fabricated planet called Battleworld.",
+  "image_style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
+  "format": "landscape",
+  "assets_release": "project-inside-the-secret-wars-of-1984-mwgsxwu7",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In nineteen eighty-four, Marvel Comics gathered every hero and villain onto a fabricated planet called Battleworld.",
+   "music": "cinematic-min",
+   "project_id": "inside-the-secret-wars-of-1984-mwgsxwu7",
+   "style": "cinematic film still, anamorphic, volumetric light, rich shadows, shallow depth of field",
+   "style_preset": "cinematic",
+   "title": "Inside the Secret Wars of 1984",
+   "topic": "The secret wars a parody of life and the secret battle we fight",
+   "voice": "en-GB-ThomasNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In nineteen eighty-four, Marvel Com...\"): the hook. I set 1984 huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 3 (\"Max Hastings noted that intelligenc...\"): a \"chart-up\" illustration builds itself on the right after the words land.",
+   "Left 7 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 4: drift (alive baseline).",
+   "Beat 5: truck (alive baseline (not the same move twice)).",
+   "Beat 8: drift (alive baseline).",
+   "Beat 9: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, pop"
+ }
+}

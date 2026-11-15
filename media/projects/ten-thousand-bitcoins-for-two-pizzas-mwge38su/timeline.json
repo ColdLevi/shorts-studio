@@ -1,0 +1,928 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+ "rev": 1,
+ "title": "Ten Thousand Bitcoins for Two Pizzas",
+ "duration": 41.94,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.772,
+    "narration": "On Halloween in two thousand eight, a mysterious nine page whitepaper landed on a cryptography mailing list,",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing white nine-page document floating in a dark digital void grid, wide landscape 16:9 view, subject in lower two thirds, plain empty space above, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "96df08ebb0f4",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 6.772,
+    "end": 11.32,
+    "narration": "and while you might think a massive tech company created Bitcoin to speed up digital payments,",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Anonymous whitepaper to remove reliance on banks",
+     "myth": "Created by a tech giant for fast online cash",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 11.32,
+    "end": 14.17,
+    "narration": "an anonymous inventor named Satoshi Nakamoto",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights showing peer nodes connecting directly around a crossed-out central bank vault, wide landscape 16:9 view, subject in lower center"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c486e3c701e8",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.64,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 14.17,
+    "end": 17.028,
+    "narration": "actually built it to cut out banks entirely.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights showing peer nodes connecting directly around a crossed-out central bank vault, wide landscape 16:9 view, subject in lower center"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c486e3c701e8",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.64,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 17.028,
+    "end": 23.02,
+    "narration": "On January third, two thousand nine, Satoshi launched the network by mining its genesis block,",
+    "kind": "graphic",
+    "graphic": {
+     "day": "3",
+     "label": "Genesis block mined",
+     "month": "Jan",
+     "title": "",
+     "type": "date",
+     "year": "2009"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 23.02,
+    "end": 25.617,
+    "narration": "establishing a decentralized system with",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing digital vault with a hard glowing gold barrier line, wide landscape 16:9 view"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f691cf4da9d0",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.61,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 25.617,
+    "end": 28.408,
+    "narration": "zero central authority running in the background.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights of a glowing digital vault with a hard glowing gold barrier line, wide landscape 16:9 view"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f691cf4da9d0",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.63,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 28.408,
+    "end": 33.079,
+    "narration": "Then on May twenty-second, two thousand ten, a user traded ten thousand bitcoins",
+    "kind": "graphic",
+    "graphic": {
+     "date": "May 18, 2010",
+     "site": "Bitcoin Forum",
+     "subject": "Pizza for bitcoins?",
+     "text": "I will pay 10,000 bitcoins for a couple of pizzas...",
+     "title": "",
+     "type": "post",
+     "user": "Laszlo"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 33.079,
+    "end": 36.396,
+    "narration": "for two Papa John's pizzas worth forty-one dollars.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights of two stylized pizza boxes glowing in gold and cyan on a dark sleek surface, wide landscape 16:9 view"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "72d2f8ccd67c",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.7,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v10",
+    "start": 36.396,
+    "end": 41.136,
+    "narration": "That famous dinner gave digital cash its very first real-world value.",
+    "kind": "ai_video",
+    "src": "assets/clip_08.mp4",
+    "duration": 4.06,
+    "still": "assets/img_08.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Sleek dark vector graphics with glowing neon highlights of massive glowing golden bitcoin coins stacking up inside a dark digital vault, wide landscape 16:9 view, empty top space, no text, no letters, no numbers, no writing, no logos",
+     "motion": "Dynamic camera arc around glowing digital golden coins as bright neon light bursts across the background grid.",
+     "still": "flux"
+    },
+    "hash": "4610a9f76a6b"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "On",
+     "start": 0.087,
+     "end": 0.2
+    },
+    {
+     "word": "Halloween",
+     "start": 0.2,
+     "end": 0.787
+    },
+    {
+     "word": "in",
+     "start": 0.787,
+     "end": 0.887
+    },
+    {
+     "word": "two",
+     "start": 0.887,
+     "end": 1.062
+    },
+    {
+     "word": "thousand",
+     "start": 1.062,
+     "end": 1.462
+    },
+    {
+     "word": "eight,",
+     "start": 1.462,
+     "end": 1.7
+    },
+    {
+     "word": "a",
+     "start": 1.86,
+     "end": 1.897
+    },
+    {
+     "word": "mysterious",
+     "start": 1.909,
+     "end": 2.622
+    },
+    {
+     "word": "nine",
+     "start": 2.635,
+     "end": 2.985
+    },
+    {
+     "word": "page",
+     "start": 2.997,
+     "end": 3.509
+    },
+    {
+     "word": "whitepaper",
+     "start": 3.572,
+     "end": 4.297
+    },
+    {
+     "word": "landed",
+     "start": 4.309,
+     "end": 4.734
+    },
+    {
+     "word": "on",
+     "start": 4.734,
+     "end": 4.822
+    },
+    {
+     "word": "a",
+     "start": 4.835,
+     "end": 4.872
+    },
+    {
+     "word": "cryptography",
+     "start": 4.885,
+     "end": 5.747
+    },
+    {
+     "word": "mailing",
+     "start": 5.747,
+     "end": 6.234
+    },
+    {
+     "word": "list,",
+     "start": 6.247,
+     "end": 6.672
+    },
+    {
+     "word": "and",
+     "start": 6.832,
+     "end": 6.907
+    },
+    {
+     "word": "while",
+     "start": 6.907,
+     "end": 7.02
+    },
+    {
+     "word": "you",
+     "start": 7.02,
+     "end": 7.119
+    },
+    {
+     "word": "might",
+     "start": 7.119,
+     "end": 7.332
+    },
+    {
+     "word": "think",
+     "start": 7.332,
+     "end": 7.507
+    },
+    {
+     "word": "a",
+     "start": 7.507,
+     "end": 7.544
+    },
+    {
+     "word": "massive",
+     "start": 7.557,
+     "end": 8.194
+    },
+    {
+     "word": "tech",
+     "start": 8.207,
+     "end": 8.432
+    },
+    {
+     "word": "company",
+     "start": 8.444,
+     "end": 8.794
+    },
+    {
+     "word": "created",
+     "start": 8.807,
+     "end": 9.257
+    },
+    {
+     "word": "Bitcoin",
+     "start": 9.257,
+     "end": 9.732
+    },
+    {
+     "word": "to",
+     "start": 9.732,
+     "end": 9.782
+    },
+    {
+     "word": "speed",
+     "start": 9.782,
+     "end": 10.169
+    },
+    {
+     "word": "up",
+     "start": 10.169,
+     "end": 10.32
+    },
+    {
+     "word": "digital",
+     "start": 10.32,
+     "end": 10.657
+    },
+    {
+     "word": "payments,",
+     "start": 10.657,
+     "end": 11.22
+    },
+    {
+     "word": "an",
+     "start": 11.38,
+     "end": 11.454
+    },
+    {
+     "word": "anonymous",
+     "start": 11.454,
+     "end": 11.967
+    },
+    {
+     "word": "inventor",
+     "start": 11.967,
+     "end": 12.467
+    },
+    {
+     "word": "named",
+     "start": 12.587,
+     "end": 12.812
+    },
+    {
+     "word": "Satoshi",
+     "start": 12.812,
+     "end": 13.3
+    },
+    {
+     "word": "Nakamoto",
+     "start": 13.3,
+     "end": 14.05
+    },
+    {
+     "word": "actually",
+     "start": 14.17,
+     "end": 14.571
+    },
+    {
+     "word": "built",
+     "start": 14.583,
+     "end": 14.87
+    },
+    {
+     "word": "it",
+     "start": 14.883,
+     "end": 14.983
+    },
+    {
+     "word": "to",
+     "start": 15.146,
+     "end": 15.233
+    },
+    {
+     "word": "cut",
+     "start": 15.233,
+     "end": 15.445
+    },
+    {
+     "word": "out",
+     "start": 15.445,
+     "end": 15.658
+    },
+    {
+     "word": "banks",
+     "start": 15.658,
+     "end": 16.021
+    },
+    {
+     "word": "entirely.",
+     "start": 16.033,
+     "end": 16.808
+    },
+    {
+     "word": "On",
+     "start": 17.088,
+     "end": 17.2
+    },
+    {
+     "word": "January",
+     "start": 17.2,
+     "end": 17.725
+    },
+    {
+     "word": "third,",
+     "start": 17.725,
+     "end": 18.25
+    },
+    {
+     "word": "two",
+     "start": 18.41,
+     "end": 18.572
+    },
+    {
+     "word": "thousand",
+     "start": 18.585,
+     "end": 18.935
+    },
+    {
+     "word": "nine,",
+     "start": 18.935,
+     "end": 19.335
+    },
+    {
+     "word": "Satoshi",
+     "start": 19.495,
+     "end": 19.995
+    },
+    {
+     "word": "launched",
+     "start": 20.007,
+     "end": 20.382
+    },
+    {
+     "word": "the",
+     "start": 20.382,
+     "end": 20.445
+    },
+    {
+     "word": "network",
+     "start": 20.445,
+     "end": 20.87
+    },
+    {
+     "word": "by",
+     "start": 20.882,
+     "end": 20.995
+    },
+    {
+     "word": "mining",
+     "start": 21.007,
+     "end": 21.658
+    },
+    {
+     "word": "its",
+     "start": 21.733,
+     "end": 21.882
+    },
+    {
+     "word": "genesis",
+     "start": 21.895,
+     "end": 22.408
+    },
+    {
+     "word": "block,",
+     "start": 22.42,
+     "end": 22.92
+    },
+    {
+     "word": "establishing",
+     "start": 23.08,
+     "end": 23.742
+    },
+    {
+     "word": "a",
+     "start": 23.755,
+     "end": 23.893
+    },
+    {
+     "word": "decentralized",
+     "start": 24.005,
+     "end": 24.955
+    },
+    {
+     "word": "system",
+     "start": 24.955,
+     "end": 25.355
+    },
+    {
+     "word": "with",
+     "start": 25.48,
+     "end": 25.617
+    },
+    {
+     "word": "zero",
+     "start": 25.617,
+     "end": 26.042
+    },
+    {
+     "word": "central",
+     "start": 26.042,
+     "end": 26.43
+    },
+    {
+     "word": "authority",
+     "start": 26.43,
+     "end": 26.968
+    },
+    {
+     "word": "running",
+     "start": 27.088,
+     "end": 27.401
+    },
+    {
+     "word": "in",
+     "start": 27.401,
+     "end": 27.451
+    },
+    {
+     "word": "the",
+     "start": 27.451,
+     "end": 27.513
+    },
+    {
+     "word": "background.",
+     "start": 27.513,
+     "end": 28.188
+    },
+    {
+     "word": "Then",
+     "start": 28.468,
+     "end": 28.631
+    },
+    {
+     "word": "on",
+     "start": 28.631,
+     "end": 28.756
+    },
+    {
+     "word": "May",
+     "start": 28.769,
+     "end": 28.944
+    },
+    {
+     "word": "twenty-second,",
+     "start": 28.956,
+     "end": 29.681
+    },
+    {
+     "word": "two",
+     "start": 29.841,
+     "end": 29.991
+    },
+    {
+     "word": "thousand",
+     "start": 29.991,
+     "end": 30.404
+    },
+    {
+     "word": "ten,",
+     "start": 30.417,
+     "end": 30.817
+    },
+    {
+     "word": "a",
+     "start": 30.977,
+     "end": 31.014
+    },
+    {
+     "word": "user",
+     "start": 31.014,
+     "end": 31.426
+    },
+    {
+     "word": "traded",
+     "start": 31.426,
+     "end": 31.889
+    },
+    {
+     "word": "ten",
+     "start": 31.889,
+     "end": 32.176
+    },
+    {
+     "word": "thousand",
+     "start": 32.189,
+     "end": 32.627
+    },
+    {
+     "word": "bitcoins",
+     "start": 32.627,
+     "end": 33.127
+    },
+    {
+     "word": "for",
+     "start": 33.139,
+     "end": 33.276
+    },
+    {
+     "word": "two",
+     "start": 33.276,
+     "end": 33.502
+    },
+    {
+     "word": "Papa",
+     "start": 33.502,
+     "end": 33.852
+    },
+    {
+     "word": "John's",
+     "start": 33.852,
+     "end": 34.164
+    },
+    {
+     "word": "pizzas",
+     "start": 34.164,
+     "end": 34.652
+    },
+    {
+     "word": "worth",
+     "start": 34.652,
+     "end": 34.939
+    },
+    {
+     "word": "forty-one",
+     "start": 35.014,
+     "end": 35.576
+    },
+    {
+     "word": "dollars.",
+     "start": 35.576,
+     "end": 36.176
+    },
+    {
+     "word": "That",
+     "start": 36.456,
+     "end": 36.606
+    },
+    {
+     "word": "famous",
+     "start": 36.606,
+     "end": 37.006
+    },
+    {
+     "word": "dinner",
+     "start": 37.019,
+     "end": 37.318
+    },
+    {
+     "word": "gave",
+     "start": 37.331,
+     "end": 37.643
+    },
+    {
+     "word": "digital",
+     "start": 37.656,
+     "end": 38.031
+    },
+    {
+     "word": "cash",
+     "start": 38.043,
+     "end": 38.531
+    },
+    {
+     "word": "its",
+     "start": 38.651,
+     "end": 38.788
+    },
+    {
+     "word": "very",
+     "start": 38.788,
+     "end": 39.138
+    },
+    {
+     "word": "first",
+     "start": 39.138,
+     "end": 39.638
+    },
+    {
+     "word": "real-world",
+     "start": 39.651,
+     "end": 40.238
+    },
+    {
+     "word": "value.",
+     "start": 40.238,
+     "end": 40.689
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "On Halloween in two thousand eight, a mysterious nine page whitepaper landed on a cryptography mailing list, and while you might think a massive tech company created Bitcoin to speed up digital payments, an anonymous inventor named Satoshi Nakamoto actually built it to cut out banks entirely. On January third, two thousand nine, Satoshi launched the network by mining its genesis block, establishing a decentralized system with zero central authority running in the background. Then on May twenty-second, two thousand ten, a user traded ten thousand bitcoins for two Papa John's pizzas worth forty-one dollars. That famous dinner gave digital cash its very first real-world value."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 14.69,
+    "volume": 0.3,
+    "anchor": "v4",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 6.72,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "mysterious",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 6.72,
+    "opacity": 0.35,
+    "seed": 2.93
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 14.57,
+    "end": 16.98,
+    "asset": "bank",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794659905908,
+  "updated": 1794659905912,
+  "topic": "detailed explaining how bitcoin started",
+  "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
+  "image_style": "sleek dark vector graphics with glowing neon highlights",
+  "format": "landscape",
+  "assets_release": "project-ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
+   "music": "tech-pulse",
+   "project_id": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+   "style": "sleek dark vector graphics with glowing neon highlights",
+   "style_preset": "documentary",
+   "title": "Ten Thousand Bitcoins for Two Pizzas",
+   "topic": "detailed explaining how bitcoin started",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"On Halloween in two thousand eight,...\"): the hook. I set MYSTERIOUS huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 4 (\"actually built it to cut out banks ...\"): a \"bank\" illustration builds itself on the right after the words land.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 9: drift (alive baseline)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, pop"
+ }
+}

@@ -641,6 +641,76 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-60",
+      "title": "Ten Thousand Bitcoins for Two Pizzas",
+      "hook": "On Halloween in 2008, a mysterious nine-page document hit a cryptography mailing list.",
+      "accent": "#FFD43B",
+      "duration": 42.0,
+      "created": 1794661895229,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-60/short-60.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-60/short-60.jpg",
+      "project": "ten-thousand-bitcoins-for-two-pizzas-mwge38su",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
+    },
+    {
+      "id": "short-61",
+      "title": "From Robotic Mice to Autonomous Minds",
+      "hook": "In 1950, a tiny robotic mouse wound through a maze.",
+      "accent": "#FFD43B",
+      "duration": 53.9,
+      "created": 1794671346939,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-61/short-61.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-61/short-61.jpg",
+      "project": "from-robotic-mice-to-autonomous-mind-mwgjfxso",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
+    },
+    {
+      "id": "short-62",
+      "title": "How Artificial Intelligence Reshapes Daily Life",
+      "hook": "Seventy eight percent of enterprise organizations already run on artificial intelligence.",
+      "accent": "#FFD43B",
+      "duration": 40.0,
+      "created": 1794680551059,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-62/short-62.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-62/short-62.jpg",
+      "project": "how-artificial-intelligence-reshapes-mwgpnc78",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
+    },
+    {
+      "id": "short-63",
+      "title": "Inside the Secret Wars of 1984",
+      "hook": "In nineteen eighty-four, Marvel Comics gathered every hero and villain onto a fabricated planet called Battleworld.",
+      "accent": "#FFD43B",
+      "duration": 43.6,
+      "created": 1794685742674,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-63/short-63.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-63/short-63.jpg",
+      "project": "inside-the-secret-wars-of-1984-mwgsxwu7",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
+    },
+    {
+      "id": "short-64",
+      "title": "Billionaire Teaches Economy With Simple Cartoon",
+      "hook": "In October 2013, hedge fund manager Ray Dalio released a thirty minute cartoon to explain global finance.",
+      "accent": "#2EE6C5",
+      "duration": 36.5,
+      "created": 1794709934460,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-64/short-64.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-64/short-64.jpg",
+      "project": "billionaire-teaches-economy-with-sim-mwh6t7jc",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
