@@ -6,7 +6,7 @@
 Rules: anchored to the picture clips (so a new voice re-times them), at least 0.45 s apart, the stronger effect wins a clash,
 and never more than about one effect per 2.2 s. Settle (the quick camera punch) stays silent on purpose.
 Regenerated each run: only the ones this pass made (ids gs1, gs2, ...) are replaced. Never fails the build."""
-import json, os, re, sys
+import json, os, re, sys, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import timeline as TL
 
@@ -14,6 +14,32 @@ SFX_DIR = "library/sfx/gen/"
 PRIO = {"whoosh_fast": 5, "hit_low": 4, "whoosh_soft": 3, "swish": 3, "pop": 2, "tick": 1, "riser": 4}
 VOL = {"whoosh_fast": 0.42, "whoosh_soft": 0.34, "swish": 0.55, "hit_low": 0.38, "pop": 0.3, "tick": 0.28, "riser": 0.3}
 _NUM = re.compile(r"\d")
+
+CL = "library/sfx/clips/"
+VARIANTS = {
+    "whoosh_fast": [(CL + "whoosh-soft.mp3", 0.85)],
+    "whoosh_soft": [(CL + "whoosh-soft.mp3", 0.85), (CL + "whoosh-wind.mp3", 0.85)],
+    "swish": [(CL + "whoosh-wind.mp3", 0.6)],
+    "hit_low": [(CL + "impact-soft.mp3", 0.85), (CL + "impact-deep-soft.mp3", 0.7)],
+    "tick": [(CL + "ui-click-soft.mp3", 0.9)],
+    "pop": [(CL + "pop-reveal.mp3", 0.85)],
+    "riser": [(CL + "riser-soft.mp3", 0.85)],
+}
+
+
+def _pk(name, n, seed):
+    key = (name, n)
+    if key in _pk.memo:
+        return _pk.memo[key]
+    k = _pk.cnt.get(name, 0)
+    _pk.cnt[name] = k + 1
+    root = getattr(TL, "ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    opts = [(SFX_DIR + name + ".wav", 1.0)] + [o for o in VARIANTS.get(name, []) if os.path.exists(os.path.join(root, "media", o[0]))]
+    _pk.memo[key] = opts[(seed + k) % len(opts)]
+    return _pk.memo[key]
+
+
+_pk.memo, _pk.cnt = {}, {}
 
 
 def sound_pass(t):
@@ -60,8 +86,10 @@ def sound_pass(t):
     cap = max(2, int(dur / 6))
     if len(keep) > cap:
         keep = sorted(sorted(keep, key=lambda e: -PRIO[e[1]])[:cap], key=lambda e: e[0])
+    _pk.memo.clear(); _pk.cnt.clear()
+    _seed = zlib.crc32(str((vis[0].get("narration") or vis[0].get("id") or "") + str(len(vis))).encode())
     old = [s for s in tr.get("sfx") or [] if not str(s.get("id", "")).startswith("gs")]
-    new = [{"id": "gs%d" % (n + 1), "src": SFX_DIR + e[1] + ".wav", "at": round(max(0.0, e[0]), 3), "volume": VOL[e[1]], "anchor": e[2], "offset": round(e[3], 3)}
+    new = [{"id": "gs%d" % (n + 1), "src": _pk(e[1], n, _seed)[0], "at": round(max(0.0, e[0]), 3), "volume": round(VOL[e[1]] * _pk(e[1], n, _seed)[1], 3), "anchor": e[2], "offset": round(e[3], 3)}
            for n, e in enumerate(keep)]
     tr["sfx"] = old + new
     t.setdefault("meta", {})["sound"] = "%d effects: %s" % (len(new), ", ".join(sorted({e[1] for e in keep})))
