@@ -1027,7 +1027,8 @@ def director_pass(t, spec=None):
             n_icon += 1
             last_end, last_kind = c["end"], "icon"
             continue
-        icon = next((ic for rx, ic in _ICONS2 if re.search(rx, low)), None)
+        _ptxt = str((c.get("gen") or {}).get("prompt") or "").lower()
+        icon = next((ic for rx, ic in _ICONS2 if re.search(rx, low) and not re.search(rx, _ptxt)), None)
         if icon and n_icon < cap_icon and last_kind != "icon":
             ibox = _subject_box(c, pid)
             if ibox and ibox[0] < 0.28:

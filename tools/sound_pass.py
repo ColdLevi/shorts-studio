@@ -51,13 +51,13 @@ def sound_pass(t):
     ev.sort(key=lambda e: (e[0], -PRIO[e[1]]))
     keep = []
     for e in ev:
-        if keep and e[0] - keep[-1][0] < 0.45:
+        if keep and e[0] - keep[-1][0] < 1.0:
             if PRIO[e[1]] > PRIO[keep[-1][1]]:
                 keep[-1] = e
             continue
         keep.append(e)
     dur = float(t.get("duration") or vis[-1]["end"])
-    cap = max(3, int(dur / 2.2))
+    cap = max(2, int(dur / 6))
     if len(keep) > cap:
         keep = sorted(sorted(keep, key=lambda e: -PRIO[e[1]])[:cap], key=lambda e: e[0])
     old = [s for s in tr.get("sfx") or [] if not str(s.get("id", "")).startswith("gs")]
