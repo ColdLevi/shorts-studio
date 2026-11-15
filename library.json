@@ -711,6 +711,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-65",
+      "title": "Stop Overcomplicating Your Monthly Budget",
+      "hook": "The Budgeting App gives everyday spenders fast expense tracking on iOS and Android with zero ads.",
+      "accent": "#2EE6C5",
+      "duration": 34.0,
+      "created": 1794761436356,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-65/short-65.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-65/short-65.jpg",
+      "project": "stop-overcomplicating-your-monthly-b-mwi271x0",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
