@@ -1,0 +1,829 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "billionaire-teaches-economy-with-sim-mwh6t7jc",
+ "rev": 1,
+ "title": "Billionaire Teaches Economy With Simple Cartoon",
+ "duration": 36.42,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "neon",
+   "font": "Rubik Mono One",
+   "weight": 400
+  },
+  "transition": {
+   "type": "blur",
+   "duration": 0.3
+  },
+  "motion": "kenburns",
+  "recipe": "retro-vhs",
+  "transitions": [
+   "blur",
+   "flash",
+   "slide-left",
+   "cut"
+  ],
+  "fx": {
+   "texture": "vhs",
+   "jitter": 2
+  },
+  "gfx": {
+   "scanlines": 0.4,
+   "grain": 0.16,
+   "chroma": 5,
+   "barrel": 0.08,
+   "vignette": 0.6
+  },
+  "backdrop": "grid",
+  "grade": "saturate(1.35) contrast(1.12) hue-rotate(-8deg)",
+  "font": "Rubik Mono One",
+  "preset": "retro-vhs",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.837,
+    "narration": "In October 2013, hedge fund founder Ray Dalio released a thirty minute animated cartoon.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo of a vintage computer monitor displaying cartoon graphics, VHS tape look, neon colours, film grain, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "ca5b9dc6b375",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.837,
+    "end": 10.085,
+    "narration": "You think global economics requires advanced math and complex banking degrees,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You think global economics requires",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.085,
+    "end": 13.703,
+    "narration": "but Dalio proved the entire system is just a mechanical engine.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo of a glowing mechanical gear system made of neon wireframes, VHS tape look, film grain, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "1ce268907d7d",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.73,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.703,
+    "end": 18.281,
+    "narration": "He founded Bridgewater Associates, which grew into the largest hedge fund in the world.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "He founded Bridgewater Associates",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 18.281,
+    "end": 22.649,
+    "narration": "His video illustrates money as a flowing river cascading over a water wheel.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo of a glowing neon water wheel turning in a digital river, VHS tape look, film grain, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "97e17ef1666e",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 22.649,
+    "end": 26.329,
+    "narration": "That constant stream drives production in a simple circular loop.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "That constant stream drives production",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 26.329,
+    "end": 28.885,
+    "narration": "Every buyer transaction powers the gear.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo of a simple neon shopping cart icon connected to a spinning gear, VHS tape look, film grain, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "0518d640aa54",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.61,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 28.885,
+    "end": 32.216,
+    "narration": "So the massive global market runs on basic mechanics.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "So the massive global market runs on",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 32.216,
+    "end": 35.616,
+    "narration": "A cartoon explains it better than a textbook.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo of an open animated sketchpad glowing with neon light, VHS tape look, film grain, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4fc3e28c84da",
+    "cutout": "assets/img_09_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.71,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "October 2013",
+     "start": 0.275,
+     "end": 1.762
+    },
+    {
+     "word": "hedge",
+     "start": 1.882,
+     "end": 2.095
+    },
+    {
+     "word": "fund",
+     "start": 2.119,
+     "end": 2.369
+    },
+    {
+     "word": "founder",
+     "start": 2.394,
+     "end": 2.757
+    },
+    {
+     "word": "Ray",
+     "start": 2.782,
+     "end": 2.945
+    },
+    {
+     "word": "Dalio",
+     "start": 2.957,
+     "end": 3.369
+    },
+    {
+     "word": "released",
+     "start": 3.382,
+     "end": 3.732
+    },
+    {
+     "word": "a",
+     "start": 3.757,
+     "end": 3.82
+    },
+    {
+     "word": "thirty",
+     "start": 3.845,
+     "end": 4.144
+    },
+    {
+     "word": "minute",
+     "start": 4.157,
+     "end": 4.469
+    },
+    {
+     "word": "animated",
+     "start": 4.482,
+     "end": 4.944
+    },
+    {
+     "word": "cartoon.",
+     "start": 4.969,
+     "end": 5.557
+    },
+    {
+     "word": "You",
+     "start": 5.837,
+     "end": 6.013
+    },
+    {
+     "word": "think",
+     "start": 6.037,
+     "end": 6.238
+    },
+    {
+     "word": "global",
+     "start": 6.263,
+     "end": 6.625
+    },
+    {
+     "word": "economics",
+     "start": 6.638,
+     "end": 7.212
+    },
+    {
+     "word": "requires",
+     "start": 7.238,
+     "end": 7.712
+    },
+    {
+     "word": "advanced",
+     "start": 7.738,
+     "end": 8.163
+    },
+    {
+     "word": "math",
+     "start": 8.187,
+     "end": 8.462
+    },
+    {
+     "word": "and",
+     "start": 8.488,
+     "end": 8.575
+    },
+    {
+     "word": "complex",
+     "start": 8.6,
+     "end": 9.1
+    },
+    {
+     "word": "banking",
+     "start": 9.112,
+     "end": 9.488
+    },
+    {
+     "word": "degrees,",
+     "start": 9.5,
+     "end": 9.925
+    },
+    {
+     "word": "but",
+     "start": 10.085,
+     "end": 10.26
+    },
+    {
+     "word": "Dalio",
+     "start": 10.285,
+     "end": 10.673
+    },
+    {
+     "word": "proved",
+     "start": 10.698,
+     "end": 10.985
+    },
+    {
+     "word": "the",
+     "start": 11.01,
+     "end": 11.085
+    },
+    {
+     "word": "entire",
+     "start": 11.097,
+     "end": 11.548
+    },
+    {
+     "word": "system",
+     "start": 11.573,
+     "end": 11.972
+    },
+    {
+     "word": "is",
+     "start": 11.985,
+     "end": 12.097
+    },
+    {
+     "word": "just",
+     "start": 12.122,
+     "end": 12.372
+    },
+    {
+     "word": "a",
+     "start": 12.398,
+     "end": 12.435
+    },
+    {
+     "word": "mechanical",
+     "start": 12.448,
+     "end": 13.01
+    },
+    {
+     "word": "engine.",
+     "start": 13.035,
+     "end": 13.423
+    },
+    {
+     "word": "He",
+     "start": 13.703,
+     "end": 13.853
+    },
+    {
+     "word": "founded",
+     "start": 13.865,
+     "end": 14.291
+    },
+    {
+     "word": "Bridgewater",
+     "start": 14.316,
+     "end": 14.878
+    },
+    {
+     "word": "Associates,",
+     "start": 14.903,
+     "end": 15.516
+    },
+    {
+     "word": "which",
+     "start": 15.676,
+     "end": 15.864
+    },
+    {
+     "word": "grew",
+     "start": 15.876,
+     "end": 16.101
+    },
+    {
+     "word": "into",
+     "start": 16.114,
+     "end": 16.277
+    },
+    {
+     "word": "the",
+     "start": 16.301,
+     "end": 16.414
+    },
+    {
+     "word": "largest",
+     "start": 16.439,
+     "end": 16.876
+    },
+    {
+     "word": "hedge",
+     "start": 16.902,
+     "end": 17.126
+    },
+    {
+     "word": "fund",
+     "start": 17.152,
+     "end": 17.389
+    },
+    {
+     "word": "in",
+     "start": 17.414,
+     "end": 17.477
+    },
+    {
+     "word": "the",
+     "start": 17.501,
+     "end": 17.601
+    },
+    {
+     "word": "world.",
+     "start": 17.614,
+     "end": 18.001
+    },
+    {
+     "word": "His",
+     "start": 18.281,
+     "end": 18.506
+    },
+    {
+     "word": "video",
+     "start": 18.531,
+     "end": 18.906
+    },
+    {
+     "word": "illustrates",
+     "start": 18.932,
+     "end": 19.506
+    },
+    {
+     "word": "money",
+     "start": 19.519,
+     "end": 19.781
+    },
+    {
+     "word": "as",
+     "start": 19.807,
+     "end": 19.932
+    },
+    {
+     "word": "a",
+     "start": 19.956,
+     "end": 20.019
+    },
+    {
+     "word": "flowing",
+     "start": 20.031,
+     "end": 20.419
+    },
+    {
+     "word": "river",
+     "start": 20.444,
+     "end": 20.732
+    },
+    {
+     "word": "cascading",
+     "start": 20.756,
+     "end": 21.369
+    },
+    {
+     "word": "over",
+     "start": 21.394,
+     "end": 21.607
+    },
+    {
+     "word": "a",
+     "start": 21.619,
+     "end": 21.682
+    },
+    {
+     "word": "water",
+     "start": 21.706,
+     "end": 22.031
+    },
+    {
+     "word": "wheel.",
+     "start": 22.044,
+     "end": 22.369
+    },
+    {
+     "word": "That",
+     "start": 22.649,
+     "end": 22.899
+    },
+    {
+     "word": "constant",
+     "start": 22.924,
+     "end": 23.375
+    },
+    {
+     "word": "stream",
+     "start": 23.387,
+     "end": 23.712
+    },
+    {
+     "word": "drives",
+     "start": 23.737,
+     "end": 24.062
+    },
+    {
+     "word": "production",
+     "start": 24.075,
+     "end": 24.587
+    },
+    {
+     "word": "in",
+     "start": 24.612,
+     "end": 24.712
+    },
+    {
+     "word": "a",
+     "start": 24.737,
+     "end": 24.799
+    },
+    {
+     "word": "simple",
+     "start": 24.825,
+     "end": 25.187
+    },
+    {
+     "word": "circular",
+     "start": 25.212,
+     "end": 25.712
+    },
+    {
+     "word": "loop.",
+     "start": 25.737,
+     "end": 26.049
+    },
+    {
+     "word": "Every",
+     "start": 26.329,
+     "end": 26.642
+    },
+    {
+     "word": "buyer",
+     "start": 26.667,
+     "end": 26.992
+    },
+    {
+     "word": "transaction",
+     "start": 27.017,
+     "end": 27.692
+    },
+    {
+     "word": "powers",
+     "start": 27.704,
+     "end": 28.054
+    },
+    {
+     "word": "the",
+     "start": 28.079,
+     "end": 28.18
+    },
+    {
+     "word": "gear.",
+     "start": 28.204,
+     "end": 28.605
+    },
+    {
+     "word": "So",
+     "start": 28.885,
+     "end": 29.123
+    },
+    {
+     "word": "the",
+     "start": 29.135,
+     "end": 29.235
+    },
+    {
+     "word": "massive",
+     "start": 29.248,
+     "end": 29.623
+    },
+    {
+     "word": "global",
+     "start": 29.648,
+     "end": 29.998
+    },
+    {
+     "word": "market",
+     "start": 30.01,
+     "end": 30.411
+    },
+    {
+     "word": "runs",
+     "start": 30.436,
+     "end": 30.686
+    },
+    {
+     "word": "on",
+     "start": 30.71,
+     "end": 30.848
+    },
+    {
+     "word": "basic",
+     "start": 30.873,
+     "end": 31.248
+    },
+    {
+     "word": "mechanics.",
+     "start": 31.273,
+     "end": 31.936
+    },
+    {
+     "word": "A",
+     "start": 32.216,
+     "end": 32.329
+    },
+    {
+     "word": "cartoon",
+     "start": 32.354,
+     "end": 32.816
+    },
+    {
+     "word": "explains",
+     "start": 32.841,
+     "end": 33.329
+    },
+    {
+     "word": "it",
+     "start": 33.354,
+     "end": 33.466
+    },
+    {
+     "word": "better",
+     "start": 33.491,
+     "end": 33.778
+    },
+    {
+     "word": "than",
+     "start": 33.803,
+     "end": 33.941
+    },
+    {
+     "word": "a",
+     "start": 33.966,
+     "end": 34.028
+    },
+    {
+     "word": "textbook.",
+     "start": 34.041,
+     "end": 34.666
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-GuyNeural",
+     "rate": "+0%",
+     "text": "In October 2013, hedge fund founder Ray Dalio released a thirty minute animated cartoon. You think global economics requires advanced math and complex banking degrees, but Dalio proved the entire system is just a mechanical engine. He founded Bridgewater Associates, which grew into the largest hedge fund in the world. His video illustrates money as a flowing river cascading over a water wheel. That constant stream drives production in a simple circular loop. Every buyer transaction powers the gear. So the massive global market runs on basic mechanics. A cartoon explains it better than a textbook."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 14.22,
+    "volume": 0.3,
+    "anchor": "v4",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.79,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "released",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.79,
+    "opacity": 0.35,
+    "seed": 0.86
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 14.1,
+    "end": 18.23,
+    "asset": "bank",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794708097135,
+  "updated": 1794708097139,
+  "topic": "in old cartoon \"How the economy works\" in 2d cartoon don't leave any details out write and choreograph it like you are the best director in the world",
+  "hook": "In October 2013, hedge fund manager Ray Dalio released a thirty minute cartoon to explain global finance.",
+  "image_style": "1980s retro photo, VHS tape look, neon colours, film grain",
+  "format": "landscape",
+  "assets_release": "project-billionaire-teaches-economy-with-sim-mwh6t7jc",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In October 2013, hedge fund manager Ray Dalio released a thirty minute cartoon to explain global finance.",
+   "music": "tech-pulse",
+   "project_id": "billionaire-teaches-economy-with-sim-mwh6t7jc",
+   "style": "1980s retro photo, VHS tape look, neon colours, film grain",
+   "style_preset": "retro-vhs",
+   "title": "Billionaire Teaches Economy With Simple Cartoon",
+   "topic": "in old cartoon \"How the economy works\" in 2d cartoon don't leave any details out write and choreograph it like you are the best director in the world",
+   "voice": "en-US-GuyNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In October 2013, hedge fund founder...\"): the hook. I set RELEASED huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 4 (\"He founded Bridgewater Associates, ...\"): a \"bank\" illustration builds itself on the right after the words land.",
+   "Left 7 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 9: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, pop"
+ }
+}

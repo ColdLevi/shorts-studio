@@ -697,6 +697,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-64",
+      "title": "Billionaire Teaches Economy With Simple Cartoon",
+      "hook": "In October 2013, hedge fund manager Ray Dalio released a thirty minute cartoon to explain global finance.",
+      "accent": "#2EE6C5",
+      "duration": 36.5,
+      "created": 1794709934460,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-64/short-64.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-64/short-64.jpg",
+      "project": "billionaire-teaches-economy-with-sim-mwh6t7jc",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
