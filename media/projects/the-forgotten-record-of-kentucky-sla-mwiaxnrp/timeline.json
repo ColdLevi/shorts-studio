@@ -1,0 +1,963 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-forgotten-record-of-kentucky-sla-mwiaxnrp",
+ "rev": 1,
+ "title": "The Forgotten Record of Kentucky Slavery",
+ "duration": 39.75,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.707,
+    "narration": "Isaac Johnson recorded how his own father sold his wife and four kids in Kentucky.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting showing Isaac Johnson holding a handwritten manuscript under dim candlelight, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "0b0df7d65103",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.707,
+    "end": 9.207,
+    "narration": "You think the history of American slavery survived only through plantation ledgers, but",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You think the history of American",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.207,
+    "end": 12.055,
+    "narration": "survivors preserved their own accounts in secret songs,",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting of enslaved workers resting by candlelight, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9888fe8b5432",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.64,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 12.055,
+    "end": 14.387,
+    "narration": "weekend work, and spoken testimonies.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting of enslaved workers resting by candlelight, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9888fe8b5432",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.58,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 14.387,
+    "end": 19.199,
+    "narration": "Federal Writers' Project interviews from nineteen thirty-six to nineteen thirty-eight recorded survivors",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Federal Writers' Project interviews",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 19.199,
+    "end": 23.271,
+    "narration": "comparing slave traders straight to horse and mule dealers, because human markets ran",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting of an outdoor market scene with livestock and traders, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4b86ba065323",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.79,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 23.271,
+    "end": 27.732,
+    "narration": "with cold business, and local rules let enslaved people work Saturday afternoons and Sundays",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "with cold business, and local rules",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 27.732,
+    "end": 31.392,
+    "narration": "on their own time for cash, while Hattie Brown proved that oral tradition in song",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting of a woman singing quietly in a dimly lit cabin, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "8b2671c5b43b",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.74,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 31.392,
+    "end": 34.71,
+    "narration": "and sermons saved history when reading and writing were banned by law.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "and sermons saved history when reading",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 34.71,
+    "end": 38.952,
+    "narration": "In Kentucky, song and testimony outlasted the ledger.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "high-end digital artwork, dark atmospheric historical painting of a quiet Kentucky landscape under a twilight sky, subtle dynamic lighting, 2k visual texture, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "588796c72fd0",
+    "cutout": "assets/img_09_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.8,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Isaac",
+     "start": 0.1,
+     "end": 0.463
+    },
+    {
+     "word": "Johnson",
+     "start": 0.487,
+     "end": 0.925
+    },
+    {
+     "word": "recorded",
+     "start": 0.95,
+     "end": 1.413
+    },
+    {
+     "word": "how",
+     "start": 1.438,
+     "end": 1.562
+    },
+    {
+     "word": "his",
+     "start": 1.587,
+     "end": 1.775
+    },
+    {
+     "word": "own",
+     "start": 1.8,
+     "end": 1.975,
+     "em": true
+    },
+    {
+     "word": "father",
+     "start": 2.0,
+     "end": 2.35
+    },
+    {
+     "word": "sold",
+     "start": 2.375,
+     "end": 2.612
+    },
+    {
+     "word": "his",
+     "start": 2.638,
+     "end": 2.775
+    },
+    {
+     "word": "wife",
+     "start": 2.8,
+     "end": 3.087
+    },
+    {
+     "word": "and",
+     "start": 3.1,
+     "end": 3.2
+    },
+    {
+     "word": "four",
+     "start": 3.225,
+     "end": 3.475
+    },
+    {
+     "word": "kids",
+     "start": 3.5,
+     "end": 3.775
+    },
+    {
+     "word": "in",
+     "start": 3.788,
+     "end": 3.888
+    },
+    {
+     "word": "Kentucky.",
+     "start": 3.913,
+     "end": 4.487
+    },
+    {
+     "word": "You",
+     "start": 4.767,
+     "end": 4.929
+    },
+    {
+     "word": "think",
+     "start": 4.954,
+     "end": 5.155
+    },
+    {
+     "word": "the",
+     "start": 5.179,
+     "end": 5.267
+    },
+    {
+     "word": "history",
+     "start": 5.28,
+     "end": 5.704
+    },
+    {
+     "word": "of",
+     "start": 5.73,
+     "end": 5.792
+    },
+    {
+     "word": "American",
+     "start": 5.804,
+     "end": 6.33
+    },
+    {
+     "word": "slavery",
+     "start": 6.355,
+     "end": 6.804
+    },
+    {
+     "word": "survived",
+     "start": 6.83,
+     "end": 7.28
+    },
+    {
+     "word": "only",
+     "start": 7.304,
+     "end": 7.529
+    },
+    {
+     "word": "through",
+     "start": 7.554,
+     "end": 7.755
+    },
+    {
+     "word": "plantation",
+     "start": 7.779,
+     "end": 8.392
+    },
+    {
+     "word": "ledgers,",
+     "start": 8.417,
+     "end": 8.817
+    },
+    {
+     "word": "but",
+     "start": 9.117,
+     "end": 9.254
+    },
+    {
+     "word": "survivors",
+     "start": 9.267,
+     "end": 9.792
+    },
+    {
+     "word": "preserved",
+     "start": 9.805,
+     "end": 10.217
+    },
+    {
+     "word": "their",
+     "start": 10.242,
+     "end": 10.392
+    },
+    {
+     "word": "own",
+     "start": 10.417,
+     "end": 10.542
+    },
+    {
+     "word": "accounts",
+     "start": 10.555,
+     "end": 10.905
+    },
+    {
+     "word": "in",
+     "start": 10.93,
+     "end": 11.042
+    },
+    {
+     "word": "secret",
+     "start": 11.067,
+     "end": 11.43
+    },
+    {
+     "word": "songs,",
+     "start": 11.454,
+     "end": 11.88
+    },
+    {
+     "word": "weekend",
+     "start": 12.055,
+     "end": 12.43
+    },
+    {
+     "word": "work,",
+     "start": 12.454,
+     "end": 12.704
+    },
+    {
+     "word": "and",
+     "start": 12.892,
+     "end": 12.979
+    },
+    {
+     "word": "spoken",
+     "start": 13.004,
+     "end": 13.38
+    },
+    {
+     "word": "testimonies.",
+     "start": 13.405,
+     "end": 14.167
+    },
+    {
+     "word": "Federal",
+     "start": 14.447,
+     "end": 14.846
+    },
+    {
+     "word": "Writers'",
+     "start": 14.872,
+     "end": 15.209
+    },
+    {
+     "word": "Project",
+     "start": 15.221,
+     "end": 15.634
+    },
+    {
+     "word": "interviews",
+     "start": 15.659,
+     "end": 16.096
+    },
+    {
+     "word": "from",
+     "start": 16.122,
+     "end": 16.284
+    },
+    {
+     "word": "nineteen",
+     "start": 16.296,
+     "end": 16.697
+    },
+    {
+     "word": "thirty-six",
+     "start": 16.721,
+     "end": 17.272
+    },
+    {
+     "word": "to",
+     "start": 17.284,
+     "end": 17.372
+    },
+    {
+     "word": "nineteen",
+     "start": 17.384,
+     "end": 17.796
+    },
+    {
+     "word": "thirty-eight",
+     "start": 17.822,
+     "end": 18.247
+    },
+    {
+     "word": "recorded",
+     "start": 18.272,
+     "end": 18.697
+    },
+    {
+     "word": "survivors",
+     "start": 18.721,
+     "end": 19.234
+    },
+    {
+     "word": "comparing",
+     "start": 19.259,
+     "end": 19.697
+    },
+    {
+     "word": "slave",
+     "start": 19.721,
+     "end": 20.022
+    },
+    {
+     "word": "traders",
+     "start": 20.046,
+     "end": 20.409
+    },
+    {
+     "word": "straight",
+     "start": 20.434,
+     "end": 20.709
+    },
+    {
+     "word": "to",
+     "start": 20.734,
+     "end": 20.822
+    },
+    {
+     "word": "horse",
+     "start": 20.846,
+     "end": 21.134
+    },
+    {
+     "word": "and",
+     "start": 21.159,
+     "end": 21.234
+    },
+    {
+     "word": "mule",
+     "start": 21.259,
+     "end": 21.471
+    },
+    {
+     "word": "dealers,",
+     "start": 21.497,
+     "end": 21.884
+    },
+    {
+     "word": "because",
+     "start": 22.044,
+     "end": 22.356
+    },
+    {
+     "word": "human",
+     "start": 22.381,
+     "end": 22.669
+    },
+    {
+     "word": "markets",
+     "start": 22.694,
+     "end": 23.106
+    },
+    {
+     "word": "ran",
+     "start": 23.119,
+     "end": 23.318
+    },
+    {
+     "word": "with",
+     "start": 23.331,
+     "end": 23.456
+    },
+    {
+     "word": "cold",
+     "start": 23.481,
+     "end": 23.731
+    },
+    {
+     "word": "business,",
+     "start": 23.756,
+     "end": 24.119
+    },
+    {
+     "word": "and",
+     "start": 24.279,
+     "end": 24.43
+    },
+    {
+     "word": "local",
+     "start": 24.454,
+     "end": 24.779
+    },
+    {
+     "word": "rules",
+     "start": 24.792,
+     "end": 25.08
+    },
+    {
+     "word": "let",
+     "start": 25.104,
+     "end": 25.242
+    },
+    {
+     "word": "enslaved",
+     "start": 25.267,
+     "end": 25.704
+    },
+    {
+     "word": "people",
+     "start": 25.729,
+     "end": 26.029
+    },
+    {
+     "word": "work",
+     "start": 26.055,
+     "end": 26.242
+    },
+    {
+     "word": "Saturday",
+     "start": 26.255,
+     "end": 26.692
+    },
+    {
+     "word": "afternoons",
+     "start": 26.717,
+     "end": 27.217
+    },
+    {
+     "word": "and",
+     "start": 27.229,
+     "end": 27.317
+    },
+    {
+     "word": "Sundays",
+     "start": 27.342,
+     "end": 27.767
+    },
+    {
+     "word": "on",
+     "start": 27.792,
+     "end": 27.88
+    },
+    {
+     "word": "their",
+     "start": 27.904,
+     "end": 28.055
+    },
+    {
+     "word": "own",
+     "start": 28.08,
+     "end": 28.192
+    },
+    {
+     "word": "time",
+     "start": 28.217,
+     "end": 28.417
+    },
+    {
+     "word": "for",
+     "start": 28.43,
+     "end": 28.567
+    },
+    {
+     "word": "cash,",
+     "start": 28.592,
+     "end": 28.992
+    },
+    {
+     "word": "while",
+     "start": 29.152,
+     "end": 29.327
+    },
+    {
+     "word": "Hattie",
+     "start": 29.34,
+     "end": 29.577
+    },
+    {
+     "word": "Brown",
+     "start": 29.602,
+     "end": 29.877
+    },
+    {
+     "word": "proved",
+     "start": 29.902,
+     "end": 30.165
+    },
+    {
+     "word": "that",
+     "start": 30.189,
+     "end": 30.327
+    },
+    {
+     "word": "oral",
+     "start": 30.352,
+     "end": 30.59
+    },
+    {
+     "word": "tradition",
+     "start": 30.602,
+     "end": 31.027
+    },
+    {
+     "word": "in",
+     "start": 31.039,
+     "end": 31.139
+    },
+    {
+     "word": "song",
+     "start": 31.164,
+     "end": 31.44
+    },
+    {
+     "word": "and",
+     "start": 31.452,
+     "end": 31.539
+    },
+    {
+     "word": "sermons",
+     "start": 31.565,
+     "end": 31.952
+    },
+    {
+     "word": "saved",
+     "start": 31.977,
+     "end": 32.227
+    },
+    {
+     "word": "history",
+     "start": 32.252,
+     "end": 32.627
+    },
+    {
+     "word": "when",
+     "start": 32.639,
+     "end": 32.815
+    },
+    {
+     "word": "reading",
+     "start": 32.84,
+     "end": 33.127
+    },
+    {
+     "word": "and",
+     "start": 33.139,
+     "end": 33.24
+    },
+    {
+     "word": "writing",
+     "start": 33.264,
+     "end": 33.577
+    },
+    {
+     "word": "were",
+     "start": 33.59,
+     "end": 33.715
+    },
+    {
+     "word": "banned",
+     "start": 33.74,
+     "end": 33.99
+    },
+    {
+     "word": "by",
+     "start": 34.002,
+     "end": 34.114
+    },
+    {
+     "word": "law.",
+     "start": 34.139,
+     "end": 34.49
+    },
+    {
+     "word": "In",
+     "start": 34.77,
+     "end": 34.958
+    },
+    {
+     "word": "Kentucky,",
+     "start": 34.983,
+     "end": 35.52
+    },
+    {
+     "word": "song",
+     "start": 35.721,
+     "end": 36.045
+    },
+    {
+     "word": "and",
+     "start": 36.146,
+     "end": 36.221
+    },
+    {
+     "word": "testimony",
+     "start": 36.233,
+     "end": 36.871
+    },
+    {
+     "word": "outlasted",
+     "start": 36.883,
+     "end": 37.445
+    },
+    {
+     "word": "the",
+     "start": 37.471,
+     "end": 37.558
+    },
+    {
+     "word": "ledger.",
+     "start": 37.583,
+     "end": 37.996
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Isaac Johnson recorded how his own father sold his wife and four kids in Kentucky. You think the history of American slavery survived only through plantation ledgers, but survivors preserved their own accounts in secret songs, weekend work, and spoken testimonies. Federal Writers' Project interviews from nineteen thirty-six to nineteen thirty-eight recorded survivors comparing slave traders straight to horse and mule dealers, because human markets ran with cold business, and local rules let enslaved people work Saturday afternoons and Sundays on their own time for cash, while Hattie Brown proved that oral tradition in song and sermons saved history when reading and writing were banned by law. In Kentucky, song and testimony outlasted the ledger."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 0.1,
+    "volume": 0.38,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 23.79,
+    "volume": 0.3,
+    "anchor": "v7",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.66,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "recorded",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.66,
+    "opacity": 0.35,
+    "seed": 2.74
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v7",
+    "delay": 0.4,
+    "start": 23.67,
+    "end": 27.68,
+    "asset": "thermometer",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794775513997,
+  "updated": 1794775514000,
+  "topic": "something about the old slavery days",
+  "hook": "Isaac Johnson documented how his own father sold his wife and four children in Kentucky.",
+  "image_style": "high-end digital artwork, dark atmospheric historical painting, subtle dynamic lighting, 2k visual texture",
+  "format": "vertical",
+  "assets_release": "project-the-forgotten-record-of-kentucky-sla-mwiaxnrp",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "9:16",
+   "category": "story",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Isaac Johnson documented how his own father sold his wife and four children in Kentucky.",
+   "music": "docu-pluck",
+   "project_id": "the-forgotten-record-of-kentucky-sla-mwiaxnrp",
+   "style": "high-end digital artwork, dark atmospheric historical painting, subtle dynamic lighting, 2k visual texture",
+   "style_preset": "documentary",
+   "title": "The Forgotten Record of Kentucky Slavery",
+   "topic": "something about the old slavery days",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Isaac Johnson recorded how his own ...\"): the hook. I set RECORDED huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 7 (\"with cold business, and local rules...\"): a \"thermometer\" illustration builds itself on the right after the words land.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 8: truck (alive baseline (not the same move twice)).",
+   "Beat 10: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, pop"
+ }
+}

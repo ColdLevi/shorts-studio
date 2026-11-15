@@ -753,6 +753,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-68",
+      "title": "The Forgotten Record of Kentucky Slavery",
+      "hook": "Isaac Johnson documented how his own father sold his wife and four children in Kentucky.",
+      "accent": "#FFD43B",
+      "duration": 39.8,
+      "created": 1794777482818,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-68/short-68.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-68/short-68.jpg",
+      "project": "the-forgotten-record-of-kentucky-sla-mwiaxnrp",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
