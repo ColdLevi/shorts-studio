@@ -6,7 +6,8 @@
       "name": "fastedit",
       "triggers": [
         "fastedit"
-      ]
+      ],
+      "category": "promo"
     },
     {
       "name": "fastedit2",
@@ -16,7 +17,8 @@
       "id": "fastedit2",
       "triggers": [
         "fastedit2"
-      ]
+      ],
+      "category": "promo"
     },
     {
       "name": "upload-3",
@@ -27,7 +29,8 @@
       "triggers": [
         "upload-3",
         "upload"
-      ]
+      ],
+      "category": "explainer"
     },
     {
       "name": "upload-5",
@@ -38,7 +41,8 @@
       "triggers": [
         "upload-5",
         "upload"
-      ]
+      ],
+      "category": "character"
     },
     {
       "name": "upload-6",
@@ -49,7 +53,8 @@
       "triggers": [
         "upload-6",
         "upload"
-      ]
+      ],
+      "category": "mood"
     },
     {
       "name": "upload-7",
@@ -60,7 +65,8 @@
       "triggers": [
         "upload-7",
         "upload"
-      ]
+      ],
+      "category": "mood"
     },
     {
       "name": "upload-8",
@@ -71,7 +77,8 @@
       "triggers": [
         "upload-8",
         "upload"
-      ]
+      ],
+      "category": "promo"
     },
     {
       "name": "youtu-2",
@@ -82,7 +89,8 @@
       "triggers": [
         "youtu-2",
         "youtu"
-      ]
+      ],
+      "category": "explainer"
     },
     {
       "name": "youtu-4",
@@ -93,7 +101,8 @@
       "triggers": [
         "youtu-4",
         "youtu"
-      ]
+      ],
+      "category": "story"
     },
     {
       "name": "youtube-1",
@@ -104,7 +113,8 @@
       "triggers": [
         "youtube-1",
         "youtube"
-      ]
+      ],
+      "category": "character"
     }
   ]
 }

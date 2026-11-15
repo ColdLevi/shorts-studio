@@ -71,8 +71,6 @@ STYLE_PRESETS = {
     # stage5: the What If look. Hard cuts, word-highlight bold-pop captions, two words at a time.
     # position is the one thing a render has to confirm: top | middle | bottom (edit: "captions at the top").
     "whatif": {"caption": {"preset": "bold-pop", "position": "top", "words_per_group": 2}, "transition": {"type": "cut", "duration": 0}},
-    "documentary": {"caption": {"preset": "clean", "font": "Inter"}, "transition": {"type": "dissolve", "duration": 0.6},
-                    "grade": "contrast(1.06) saturate(0.92) sepia(0.08)", "font": "Playfair Display", "progress_bar": False},
     "minimal": {"caption": {"preset": "subtitle"}, "transition": {"type": "fade", "duration": 0.4}, "motion": "kenburns",
                 "vignette": False, "progress_bar": False, "font": "Inter"},
     "neon": {"caption": {"preset": "neon"}, "transition": {"type": "flash", "duration": 0.3}, "grade": "contrast(1.12) saturate(1.3)"},
