@@ -145,6 +145,15 @@ jobs:
           fi
           cd remotion && npm ci --no-audit --no-fund
 
+      - name: Capture the product site (promo only)
+        continue-on-error: true
+        timeout-minutes: 8
+        run: |
+          [ -f job/spec.json ] || exit 0
+          python3 tools/capture.py --check job/spec.json || exit 0
+          pip install -q playwright
+          python3 -m playwright install --with-deps chromium
+          python3 tools/capture.py job/spec.json
       - name: Voice, images and motion (delegated per beat) -> project timeline
         env:
           GH_TOKEN: ${{ github.token }}
@@ -182,7 +191,7 @@ jobs:
           BASE="${APP_URL%/api/studio-app}"
           KEY=$(printf %s "$TELEGRAM_TOKEN" | sha256sum | cut -c1-32)
           REASON=$(head -c 200 job/paused.txt)
-          curl -sS -X POST "$BASE/api/studio?event=paused" -H "x-studio-key: $KEY" -H "Content-Type: application/json" \
+          curl -sS --retry 6 --retry-delay 5 --retry-all-errors -X POST "$BASE/api/studio?event=paused" -H "x-studio-key: $KEY" -H "Content-Type: application/json" \
             --data "$(python3 -c 'import json,sys;print(json.dumps({"service":"images","reason":sys.argv[1]}))' "$REASON")"
 
       - name: Identify what is in each picture (remake the wrong ones)
