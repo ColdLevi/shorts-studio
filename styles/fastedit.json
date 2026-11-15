@@ -6,11 +6,11 @@
   "mode": "motion-graphics",
   "graphic_ratio": 1,
   "beat_seconds": 1.5,
-  "image_style": "Flat minimalist vector illustrations, crisp mobile UI frames, vivid candy palette, clean digital vector textures.",
+  "image_style": "Flat minimalist vector illustrations, crisp mobile UI frames, vivid candy palette, clean digital vector textures. Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
   "format": "vertical",
   "music": "tech-pulse",
   "pacing": "Hyper-fast, rhythmic montage with quick jump cuts averaging around half a second per shot.",
-  "writer_notes": "Punchy, concise copy focused on ease and speed. Hooks instantly with bold brand value proposition and resolves with a clean logo sign-off.",
+  "writer_notes": "Punchy, concise copy focused on ease and speed. Hooks instantly with bold brand value proposition and resolves with a clean logo sign-off. Punchy, benefit-driven copy highlighting effortless finance management. Hooks instantly with bold branding followed by quick feature callouts, ending on a clear brand logo lockup.",
   "style_tokens": {
     "caption": {
       "preset": "bold-pop",
@@ -90,7 +90,8 @@
   "id": "fastedit",
   "learned_at": 1794151690854,
   "triggers": [
-    "fastedit"
+    "fastedit",
+    "fastedit2"
   ],
   "cuts": {
     "p25": 1.0,
@@ -115,5 +116,9 @@
     "saturation": 1.0
   },
   "_updated": "2026-11-08T17:47:49",
-  "category": "promo"
+  "category": "promo",
+  "merged_from": [
+    "fastedit",
+    "fastedit2"
+  ]
 }
