@@ -92,7 +92,7 @@ def ask(path, line, prompt):
 
 def faults(d):
     why = []
-    if d["match"] <= 2:
+    if d["match"] <= 3:
         why.append("does not show the line")
     if d["text"]:
         why.append("has text or a logo")
@@ -110,7 +110,7 @@ def stricter(c, line, why):
     add = []
     if "does not show the line" in why:
         add.append("Show clearly and literally: %s" % short(line, 16))
-    add.append("One clear subject. No text, no letters, no numbers, no logos, no watermarks. No realistic faces, no close-up people")
+    add.append("Only things the line names: no butterflies, flowers, animals, particles or decorative filler. One clear subject. No text, no letters, no numbers, no logos, no watermarks. No realistic faces, no close-up people")
     return (base + ". " + ". ".join(add) + ".").strip(". ") + "."
 
 
@@ -180,13 +180,17 @@ def run(pid):
     cap = max(1, len(items) // 3)
     flagged.sort(key=lambda x: -x[0])
     fix = flagged[:cap]
+    fix_ids = {f[1]["id"] for f in fix}
+    for f in flagged:
+        if f[1]["id"] not in fix_ids and idn["clips"][f[1]["id"]]["match"] <= 2 and len(fix) < 8:
+            fix.append(f); fix_ids.add(f[1]["id"])
     for _, c, why in fix:
         g = c.setdefault("gen", {})
         g["prompt"] = stricter(c, c.get("narration"), why)
         c["dirty"] = True
         idn["retried"].append(c["id"])
         notes.append("remaking %s: %s" % (c["id"], ", ".join(why)))
-    for _, c, why in flagged[cap:]:
+    for _, c, why in [f for f in flagged if f[1]["id"] not in fix_ids]:
         notes.append("kept %s despite: %s (limit reached)" % (c["id"], ", ".join(why)))
     save(tp, t)
     if fix:
@@ -207,6 +211,12 @@ def run(pid):
     meta["identify"]["summary"] = "%d of %d pictures clean" % (ok, len(idn["clips"]))
     save(tp, t)
     lines = ["Picture check: %s" % meta["identify"]["summary"]] + ["- " + n for n in notes[:10]]
+    narr = {c["id"]: c.get("narration") for c in (t["tracks"].get("visuals") or [])}
+    bad = [(k, v) for k, v in idn["clips"].items() if v.get("match", 5) <= 2]
+    if bad:
+        lines.append("Still not showing the line (check before posting):")
+        lines += ["- %s: \"%s\" shows %s" % (k, short(narr.get(k), 8), v.get("subject") or "?") for k, v in bad[:6]]
+        notes.append("unresolved")
     print("\n".join(lines))
     if notes:
         TL._director_say(lines)
