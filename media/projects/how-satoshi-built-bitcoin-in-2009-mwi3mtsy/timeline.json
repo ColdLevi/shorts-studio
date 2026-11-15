@@ -1,0 +1,934 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-satoshi-built-bitcoin-in-2009-mwi3mtsy",
+ "rev": 1,
+ "title": "How Satoshi Built Bitcoin in 2009",
+ "duration": 46.5,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "neon",
+   "font": "Rubik Mono One",
+   "weight": 400
+  },
+  "transition": {
+   "type": "blur",
+   "duration": 0.3
+  },
+  "motion": "kenburns",
+  "recipe": "retro-vhs",
+  "transitions": [
+   "blur",
+   "flash",
+   "slide-left",
+   "cut"
+  ],
+  "fx": {
+   "texture": "vhs",
+   "jitter": 2
+  },
+  "gfx": {
+   "scanlines": 0.4,
+   "grain": 0.16,
+   "chroma": 5,
+   "barrel": 0.08,
+   "vignette": 0.6
+  },
+  "backdrop": "grid",
+  "grade": "saturate(1.35) contrast(1.12) hue-rotate(-8deg)",
+  "font": "Rubik Mono One",
+  "preset": "retro-vhs",
+  "accent": "#2EE6C5"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 6.989,
+    "narration": "On January third, 2009, Satoshi Nakamoto embedded a newspaper headline straight into code.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork showing a vintage computer screen displaying glowing code and a newspaper, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "2a8427e1c4d9",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 6.989,
+    "end": 12.757,
+    "narration": "You might think sending money always requires central banks verifying every single transaction.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You might think sending money always",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.757,
+    "end": 15.445,
+    "narration": "So Satoshi proved automated proof of",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork of a glowing digital network diagram connecting independent nodes, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "19899f7cc43a",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.62,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 15.445,
+    "end": 18.577,
+    "narration": "work could cut out the middleman completely.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork of a glowing digital network diagram connecting independent nodes, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "19899f7cc43a",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 18.577,
+    "end": 22.487,
+    "narration": "Bitcoin launched to clear transactions without central bank approval,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Bitcoin launched to clear transactions w",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 22.487,
+    "end": 27.255,
+    "narration": "because the initial block encoded that exact bailout headline from The Times.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork showing vintage newspaper scrolling down a dark display, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "1ec5c08ac99f",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.8,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 27.255,
+    "end": 31.323,
+    "narration": "Proof of Work solved that double-spending problem using a shared ledger,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Proof of Work solved that",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 31.323,
+    "end": 34.153,
+    "narration": "allowing anyone to transact without permission.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork of glowing peer to peer nodes flashing in teal light, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "869122eb07e0",
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.64,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 34.153,
+    "end": 40.648,
+    "narration": "Yet illicit crypto transactions hit roughly one hundred fifty-eight billion dollars in 2025,",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Illicit Crypto 2025",
+     "prefix": "$",
+     "suffix": "B",
+     "type": "counter",
+     "value": 158
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 40.648,
+    "end": 43.135,
+    "narration": "proving that decentralized code scales way",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork of a vast glowing network grid stretching into a dark teal horizon, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "0250528f34e4",
+    "cutout": "assets/img_09_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.6,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 43.135,
+    "end": 45.696,
+    "narration": "beyond early banking experiments.",
+    "kind": "image",
+    "src": "assets/img_09.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork of a vast glowing network grid stretching into a dark teal horizon, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "0250528f34e4",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_09_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.61,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "On",
+     "start": 0.1,
+     "end": 0.212
+    },
+    {
+     "word": "January",
+     "start": 0.212,
+     "end": 0.7
+    },
+    {
+     "word": "third,",
+     "start": 0.713,
+     "end": 1.175
+    },
+    {
+     "word": "2009,",
+     "start": 1.335,
+     "end": 2.161
+    },
+    {
+     "word": "Satoshi",
+     "start": 2.321,
+     "end": 2.809
+    },
+    {
+     "word": "Nakamoto",
+     "start": 2.809,
+     "end": 3.509
+    },
+    {
+     "word": "embedded",
+     "start": 3.621,
+     "end": 4.034
+    },
+    {
+     "word": "a",
+     "start": 4.147,
+     "end": 4.159
+    },
+    {
+     "word": "newspaper",
+     "start": 4.171,
+     "end": 4.859
+    },
+    {
+     "word": "headline",
+     "start": 4.859,
+     "end": 5.509
+    },
+    {
+     "word": "straight",
+     "start": 5.671,
+     "end": 6.159
+    },
+    {
+     "word": "into",
+     "start": 6.171,
+     "end": 6.321
+    },
+    {
+     "word": "code.",
+     "start": 6.334,
+     "end": 6.709
+    },
+    {
+     "word": "You",
+     "start": 6.989,
+     "end": 7.051
+    },
+    {
+     "word": "might",
+     "start": 7.051,
+     "end": 7.239
+    },
+    {
+     "word": "think",
+     "start": 7.251,
+     "end": 7.426
+    },
+    {
+     "word": "sending",
+     "start": 7.426,
+     "end": 7.752
+    },
+    {
+     "word": "money",
+     "start": 7.752,
+     "end": 8.201
+    },
+    {
+     "word": "always",
+     "start": 8.339,
+     "end": 8.752
+    },
+    {
+     "word": "requires",
+     "start": 8.752,
+     "end": 9.239
+    },
+    {
+     "word": "central",
+     "start": 9.301,
+     "end": 9.676
+    },
+    {
+     "word": "banks",
+     "start": 9.676,
+     "end": 10.189
+    },
+    {
+     "word": "verifying",
+     "start": 10.314,
+     "end": 11.039
+    },
+    {
+     "word": "every",
+     "start": 11.201,
+     "end": 11.477
+    },
+    {
+     "word": "single",
+     "start": 11.477,
+     "end": 11.727
+    },
+    {
+     "word": "transaction.",
+     "start": 11.727,
+     "end": 12.477
+    },
+    {
+     "word": "So",
+     "start": 12.757,
+     "end": 12.995
+    },
+    {
+     "word": "Satoshi",
+     "start": 12.995,
+     "end": 13.745
+    },
+    {
+     "word": "proved",
+     "start": 13.745,
+     "end": 14.407
+    },
+    {
+     "word": "automated",
+     "start": 14.47,
+     "end": 14.97
+    },
+    {
+     "word": "proof",
+     "start": 14.97,
+     "end": 15.332
+    },
+    {
+     "word": "of",
+     "start": 15.345,
+     "end": 15.445
+    },
+    {
+     "word": "work",
+     "start": 15.445,
+     "end": 15.795
+    },
+    {
+     "word": "could",
+     "start": 15.915,
+     "end": 16.09
+    },
+    {
+     "word": "cut",
+     "start": 16.102,
+     "end": 16.352
+    },
+    {
+     "word": "out",
+     "start": 16.352,
+     "end": 16.615
+    },
+    {
+     "word": "the",
+     "start": 16.735,
+     "end": 16.81
+    },
+    {
+     "word": "middleman",
+     "start": 16.823,
+     "end": 17.497
+    },
+    {
+     "word": "completely.",
+     "start": 17.56,
+     "end": 18.297
+    },
+    {
+     "word": "Bitcoin",
+     "start": 18.577,
+     "end": 19.089
+    },
+    {
+     "word": "launched",
+     "start": 19.102,
+     "end": 19.489
+    },
+    {
+     "word": "to",
+     "start": 19.501,
+     "end": 19.626
+    },
+    {
+     "word": "clear",
+     "start": 19.626,
+     "end": 19.964
+    },
+    {
+     "word": "transactions",
+     "start": 19.964,
+     "end": 20.839
+    },
+    {
+     "word": "without",
+     "start": 20.852,
+     "end": 21.226
+    },
+    {
+     "word": "central",
+     "start": 21.226,
+     "end": 21.602
+    },
+    {
+     "word": "bank",
+     "start": 21.602,
+     "end": 21.864
+    },
+    {
+     "word": "approval,",
+     "start": 21.864,
+     "end": 22.327
+    },
+    {
+     "word": "because",
+     "start": 22.487,
+     "end": 22.824
+    },
+    {
+     "word": "the",
+     "start": 22.824,
+     "end": 22.887
+    },
+    {
+     "word": "initial",
+     "start": 22.887,
+     "end": 23.412
+    },
+    {
+     "word": "block",
+     "start": 23.412,
+     "end": 23.812
+    },
+    {
+     "word": "encoded",
+     "start": 23.824,
+     "end": 24.35
+    },
+    {
+     "word": "that",
+     "start": 24.35,
+     "end": 24.462
+    },
+    {
+     "word": "exact",
+     "start": 24.462,
+     "end": 25.024
+    },
+    {
+     "word": "bailout",
+     "start": 25.087,
+     "end": 25.524
+    },
+    {
+     "word": "headline",
+     "start": 25.537,
+     "end": 26.124
+    },
+    {
+     "word": "from",
+     "start": 26.124,
+     "end": 26.274
+    },
+    {
+     "word": "The",
+     "start": 26.287,
+     "end": 26.337
+    },
+    {
+     "word": "Times.",
+     "start": 26.337,
+     "end": 26.975
+    },
+    {
+     "word": "Proof",
+     "start": 27.255,
+     "end": 27.53
+    },
+    {
+     "word": "of",
+     "start": 27.53,
+     "end": 27.668
+    },
+    {
+     "word": "Work",
+     "start": 27.668,
+     "end": 27.918
+    },
+    {
+     "word": "solved",
+     "start": 27.918,
+     "end": 28.355
+    },
+    {
+     "word": "that",
+     "start": 28.355,
+     "end": 28.618
+    },
+    {
+     "word": "double-spending",
+     "start": 28.668,
+     "end": 29.267
+    },
+    {
+     "word": "problem",
+     "start": 29.267,
+     "end": 29.793
+    },
+    {
+     "word": "using",
+     "start": 29.913,
+     "end": 30.263
+    },
+    {
+     "word": "a",
+     "start": 30.276,
+     "end": 30.3
+    },
+    {
+     "word": "shared",
+     "start": 30.313,
+     "end": 30.738
+    },
+    {
+     "word": "ledger,",
+     "start": 30.751,
+     "end": 31.163
+    },
+    {
+     "word": "allowing",
+     "start": 31.323,
+     "end": 31.747
+    },
+    {
+     "word": "anyone",
+     "start": 31.76,
+     "end": 32.185
+    },
+    {
+     "word": "to",
+     "start": 32.185,
+     "end": 32.26
+    },
+    {
+     "word": "transact",
+     "start": 32.272,
+     "end": 32.997
+    },
+    {
+     "word": "without",
+     "start": 33.01,
+     "end": 33.348
+    },
+    {
+     "word": "permission.",
+     "start": 33.36,
+     "end": 33.873
+    },
+    {
+     "word": "Yet",
+     "start": 34.153,
+     "end": 34.354
+    },
+    {
+     "word": "illicit",
+     "start": 34.354,
+     "end": 34.979
+    },
+    {
+     "word": "crypto",
+     "start": 34.979,
+     "end": 35.504
+    },
+    {
+     "word": "transactions",
+     "start": 35.504,
+     "end": 36.416
+    },
+    {
+     "word": "hit",
+     "start": 36.553,
+     "end": 36.791
+    },
+    {
+     "word": "roughly",
+     "start": 36.866,
+     "end": 37.303
+    },
+    {
+     "word": "one",
+     "start": 37.416,
+     "end": 37.616
+    },
+    {
+     "word": "hundred",
+     "start": 37.616,
+     "end": 37.891
+    },
+    {
+     "word": "fifty-eight",
+     "start": 37.891,
+     "end": 38.553
+    },
+    {
+     "word": "billion",
+     "start": 38.653,
+     "end": 39.016
+    },
+    {
+     "word": "dollars",
+     "start": 39.016,
+     "end": 39.454
+    },
+    {
+     "word": "in 2025",
+     "start": 39.454,
+     "end": 40.528
+    },
+    {
+     "word": "proving",
+     "start": 40.648,
+     "end": 40.985
+    },
+    {
+     "word": "that",
+     "start": 40.985,
+     "end": 41.198
+    },
+    {
+     "word": "decentralized",
+     "start": 41.21,
+     "end": 42.048
+    },
+    {
+     "word": "code",
+     "start": 42.048,
+     "end": 42.322
+    },
+    {
+     "word": "scales",
+     "start": 42.322,
+     "end": 42.822
+    },
+    {
+     "word": "way",
+     "start": 42.822,
+     "end": 43.122
+    },
+    {
+     "word": "beyond",
+     "start": 43.135,
+     "end": 43.685
+    },
+    {
+     "word": "early",
+     "start": 43.773,
+     "end": 44.085
+    },
+    {
+     "word": "banking",
+     "start": 44.085,
+     "end": 44.472
+    },
+    {
+     "word": "experiments.",
+     "start": 44.472,
+     "end": 45.247
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "On January third, 2009, Satoshi Nakamoto embedded a newspaper headline straight into code. You might think sending money always requires central banks verifying every single transaction. So Satoshi proved automated proof of work could cut out the middleman completely. Bitcoin launched to clear transactions without central bank approval, because the initial block encoded that exact bailout headline from The Times. Proof of Work solved that double-spending problem using a shared ledger, allowing anyone to transact without permission. Yet illicit crypto transactions hit roughly one hundred fifty-eight billion dollars in 2025, proving that decentralized code scales way beyond early banking experiments."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/impact-deep-soft.mp3",
+    "at": 0.1,
+    "volume": 0.266,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 19.1,
+    "volume": 0.3,
+    "anchor": "v5",
+    "offset": 0.52
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/hit_low.wav",
+    "at": 34.35,
+    "volume": 0.38,
+    "anchor": "v9",
+    "offset": 0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 6.94,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "newspaper",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 6.94,
+    "opacity": 0.35,
+    "seed": 4.94
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v5",
+    "delay": 0.4,
+    "start": 18.98,
+    "end": 22.44,
+    "asset": "bank",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   },
+   {
+    "id": "ly4",
+    "kind": "kinetic",
+    "anchor": "v9",
+    "delay": 0.2,
+    "start": 34.35,
+    "end": 40.6,
+    "text": "2025",
+    "y": 0.14
+   },
+   {
+    "id": "ly5",
+    "kind": "draw-line",
+    "anchor": "v9",
+    "delay": 0.7,
+    "start": 34.85,
+    "end": 40.6,
+    "shape": "underline",
+    "x": 0.2,
+    "y": 0.21,
+    "w": 0.6
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794763307944,
+  "updated": 1794763307947,
+  "topic": "how bitcoin came to exist the issue behind normal banking Vs now with Blockchain tech, and it for days then modern for recent",
+  "hook": "Satoshi Nakamoto embedded a newspaper headline into code on January third, 2009.",
+  "image_style": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork",
+  "format": "landscape",
+  "assets_release": "project-how-satoshi-built-bitcoin-in-2009-mwi3mtsy",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Satoshi Nakamoto embedded a newspaper headline into code on January third, 2009.",
+   "music": "tech-pulse",
+   "project_id": "how-satoshi-built-bitcoin-in-2009-mwi3mtsy",
+   "style": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork",
+   "style_preset": "retro-vhs",
+   "title": "How Satoshi Built Bitcoin in 2009",
+   "topic": "how bitcoin came to exist the issue behind normal banking Vs now with Blockchain tech, and it for days then modern for recent",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"On January third, 2009, Satoshi Nak...\"): the hook. I set NEWSPAPER huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 5 (\"Bitcoin launched to clear transacti...\"): a \"bank\" illustration builds itself on the right after the words land.",
+   "Beat 9 (\"Yet illicit crypto transactions hit...\"): 2025 goes big in the top band with an underline, clear of the subject.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 8: truck (alive baseline (not the same move twice)).",
+   "Beat 10: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 11: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "3 effects: hit_low, pop"
+ }
+}
