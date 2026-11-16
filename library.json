@@ -781,6 +781,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 2
+    },
+    {
+      "id": "short-70",
+      "title": "How Stock Market Shares Actually Work",
+      "hook": "In nineteen fifty-two, a cartoon bakery needed a bigger oven, so it cut itself into one thousand paper pieces.",
+      "accent": "#FFD43B",
+      "duration": 35.2,
+      "created": 1794826900395,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-70/short-70.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-70/short-70.jpg",
+      "project": "how-stock-market-shares-actually-wor-mwj5c748",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

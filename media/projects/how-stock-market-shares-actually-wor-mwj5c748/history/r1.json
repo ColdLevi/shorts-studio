@@ -1,0 +1,836 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-stock-market-shares-actually-wor-mwj5c748",
+ "rev": 1,
+ "title": "How Stock Market Shares Actually Work",
+ "duration": 35.07,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.698,
+    "narration": "In nineteen fifty-two, a cartoon bakery needed a bigger oven,",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "How shares work",
+     "text": "1952 BAKERY",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.698,
+    "end": 6.754,
+    "narration": "so it cut itself into one thousand paper pieces.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Paper shares",
+     "prefix": "",
+     "suffix": "pieces",
+     "type": "counter",
+     "value": 1000
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 6.754,
+    "end": 10.263,
+    "narration": "You think buying stock is placing bets on a magical ticker screen,",
+    "kind": "graphic",
+    "graphic": {
+     "fact": "Buying real slices",
+     "myth": "Magic ticker screens",
+     "type": "myth"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 10.263,
+    "end": 14.056,
+    "narration": "but it is just owning tiny physical slices of a real company.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "factory",
+       "label": "Company"
+      },
+      {
+       "icon": "coins",
+       "label": "Share"
+      }
+     ],
+     "title": "Real Company Slices",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 14.056,
+    "end": 18.001,
+    "narration": "Corporations work with investment bankers to create and register shares",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Corporation",
+      "Bankers",
+      "Registered Shares"
+     ],
+     "title": "Creating Shares",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 18.001,
+    "end": 20.593,
+    "narration": "before selling those pieces to the public.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "users",
+       "label": "Public"
+      },
+      {
+       "icon": "book",
+       "label": "Shares"
+      }
+     ],
+     "title": "Public Offering",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 20.593,
+    "end": 24.393,
+    "narration": "Morningstar UK reports that companies typically pay out dividend earnings",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "clean 2D cartoon animation, bold outlines, vibrant flat colors, minimalist mid-century illustration of a coin bank spitting out shiny gold coins into a small cup"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "644b7d83d7d5",
+    "cam": {
+     "move": "truck",
+     "amp": 0.76,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 24.393,
+    "end": 26.386,
+    "narration": "twice or four times a year.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Twice",
+       "value": 2
+      },
+      {
+       "label": "Four times",
+       "value": 4
+      }
+     ],
+     "prefix": "",
+     "suffix": "x",
+     "title": "Payout Schedule",
+     "type": "bars"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v9",
+    "start": 26.386,
+    "end": 29.611,
+    "narration": "That animated short was preserved by the Library of Congress",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Preserved 1952 Film",
+     "text": "Library of Congress",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v10",
+    "start": 29.611,
+    "end": 34.272,
+    "narration": "because owning a stock just means collecting your share of the profits.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Own",
+      "The",
+      "Profits"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "nineteen",
+     "start": 0.263,
+     "end": 0.75
+    },
+    {
+     "word": "fifty-two,",
+     "start": 0.762,
+     "end": 1.413
+    },
+    {
+     "word": "a",
+     "start": 1.573,
+     "end": 1.635
+    },
+    {
+     "word": "cartoon",
+     "start": 1.648,
+     "end": 2.185
+    },
+    {
+     "word": "bakery",
+     "start": 2.198,
+     "end": 2.598
+    },
+    {
+     "word": "needed",
+     "start": 2.611,
+     "end": 2.898
+    },
+    {
+     "word": "a",
+     "start": 2.91,
+     "end": 2.973
+    },
+    {
+     "word": "bigger",
+     "start": 2.986,
+     "end": 3.285
+    },
+    {
+     "word": "oven,",
+     "start": 3.298,
+     "end": 3.598
+    },
+    {
+     "word": "so",
+     "start": 3.758,
+     "end": 3.933
+    },
+    {
+     "word": "it",
+     "start": 3.946,
+     "end": 4.046
+    },
+    {
+     "word": "cut",
+     "start": 4.058,
+     "end": 4.246
+    },
+    {
+     "word": "itself",
+     "start": 4.258,
+     "end": 4.683
+    },
+    {
+     "word": "into",
+     "start": 4.696,
+     "end": 4.921
+    },
+    {
+     "word": "one",
+     "start": 4.933,
+     "end": 5.208
+    },
+    {
+     "word": "thousand",
+     "start": 5.221,
+     "end": 5.646
+    },
+    {
+     "word": "paper",
+     "start": 5.659,
+     "end": 5.946
+    },
+    {
+     "word": "pieces.",
+     "start": 5.958,
+     "end": 6.534
+    },
+    {
+     "word": "You",
+     "start": 6.814,
+     "end": 6.951
+    },
+    {
+     "word": "think",
+     "start": 6.963,
+     "end": 7.226
+    },
+    {
+     "word": "buying",
+     "start": 7.239,
+     "end": 7.501
+    },
+    {
+     "word": "stock",
+     "start": 7.513,
+     "end": 7.913
+    },
+    {
+     "word": "is",
+     "start": 7.926,
+     "end": 8.051
+    },
+    {
+     "word": "placing",
+     "start": 8.064,
+     "end": 8.476
+    },
+    {
+     "word": "bets",
+     "start": 8.488,
+     "end": 8.763
+    },
+    {
+     "word": "on",
+     "start": 8.776,
+     "end": 8.901
+    },
+    {
+     "word": "a",
+     "start": 8.913,
+     "end": 8.951
+    },
+    {
+     "word": "magical",
+     "start": 8.964,
+     "end": 9.476
+    },
+    {
+     "word": "ticker",
+     "start": 9.488,
+     "end": 9.776
+    },
+    {
+     "word": "screen,",
+     "start": 9.788,
+     "end": 10.163
+    },
+    {
+     "word": "but",
+     "start": 10.323,
+     "end": 10.461
+    },
+    {
+     "word": "it",
+     "start": 10.474,
+     "end": 10.561
+    },
+    {
+     "word": "is",
+     "start": 10.573,
+     "end": 10.711
+    },
+    {
+     "word": "just",
+     "start": 10.724,
+     "end": 11.086
+    },
+    {
+     "word": "owning",
+     "start": 11.099,
+     "end": 11.323
+    },
+    {
+     "word": "tiny",
+     "start": 11.336,
+     "end": 11.773
+    },
+    {
+     "word": "physical",
+     "start": 11.786,
+     "end": 12.261
+    },
+    {
+     "word": "slices",
+     "start": 12.273,
+     "end": 12.923
+    },
+    {
+     "word": "of",
+     "start": 12.936,
+     "end": 13.023
+    },
+    {
+     "word": "a",
+     "start": 13.036,
+     "end": 13.086
+    },
+    {
+     "word": "real",
+     "start": 13.099,
+     "end": 13.374
+    },
+    {
+     "word": "company.",
+     "start": 13.386,
+     "end": 13.836
+    },
+    {
+     "word": "Corporations",
+     "start": 14.116,
+     "end": 14.841
+    },
+    {
+     "word": "work",
+     "start": 14.853,
+     "end": 15.141
+    },
+    {
+     "word": "with",
+     "start": 15.153,
+     "end": 15.303
+    },
+    {
+     "word": "investment",
+     "start": 15.315,
+     "end": 15.891
+    },
+    {
+     "word": "bankers",
+     "start": 15.903,
+     "end": 16.303
+    },
+    {
+     "word": "to",
+     "start": 16.315,
+     "end": 16.428
+    },
+    {
+     "word": "create",
+     "start": 16.44,
+     "end": 16.878
+    },
+    {
+     "word": "and",
+     "start": 16.998,
+     "end": 17.123
+    },
+    {
+     "word": "register",
+     "start": 17.136,
+     "end": 17.611
+    },
+    {
+     "word": "shares",
+     "start": 17.623,
+     "end": 18.048
+    },
+    {
+     "word": "before",
+     "start": 18.061,
+     "end": 18.399
+    },
+    {
+     "word": "selling",
+     "start": 18.411,
+     "end": 18.761
+    },
+    {
+     "word": "those",
+     "start": 18.774,
+     "end": 19.111
+    },
+    {
+     "word": "pieces",
+     "start": 19.123,
+     "end": 19.649
+    },
+    {
+     "word": "to",
+     "start": 19.661,
+     "end": 19.774
+    },
+    {
+     "word": "the",
+     "start": 19.786,
+     "end": 19.886
+    },
+    {
+     "word": "public.",
+     "start": 19.899,
+     "end": 20.373
+    },
+    {
+     "word": "Morningstar",
+     "start": 20.653,
+     "end": 21.203
+    },
+    {
+     "word": "UK",
+     "start": 21.216,
+     "end": 21.541
+    },
+    {
+     "word": "reports",
+     "start": 21.553,
+     "end": 22.028
+    },
+    {
+     "word": "that",
+     "start": 22.041,
+     "end": 22.241
+    },
+    {
+     "word": "companies",
+     "start": 22.253,
+     "end": 22.666
+    },
+    {
+     "word": "typically",
+     "start": 22.678,
+     "end": 23.14
+    },
+    {
+     "word": "pay",
+     "start": 23.153,
+     "end": 23.39
+    },
+    {
+     "word": "out",
+     "start": 23.403,
+     "end": 23.603
+    },
+    {
+     "word": "dividend",
+     "start": 23.616,
+     "end": 24.041
+    },
+    {
+     "word": "earnings",
+     "start": 24.053,
+     "end": 24.44
+    },
+    {
+     "word": "twice",
+     "start": 24.453,
+     "end": 24.916
+    },
+    {
+     "word": "or",
+     "start": 24.928,
+     "end": 25.065
+    },
+    {
+     "word": "four",
+     "start": 25.078,
+     "end": 25.291
+    },
+    {
+     "word": "times",
+     "start": 25.303,
+     "end": 25.69
+    },
+    {
+     "word": "a",
+     "start": 25.703,
+     "end": 25.741
+    },
+    {
+     "word": "year.",
+     "start": 25.753,
+     "end": 26.166
+    },
+    {
+     "word": "That",
+     "start": 26.446,
+     "end": 26.696
+    },
+    {
+     "word": "animated",
+     "start": 26.709,
+     "end": 27.171
+    },
+    {
+     "word": "short",
+     "start": 27.184,
+     "end": 27.596
+    },
+    {
+     "word": "was",
+     "start": 27.608,
+     "end": 27.771
+    },
+    {
+     "word": "preserved",
+     "start": 27.783,
+     "end": 28.283
+    },
+    {
+     "word": "by",
+     "start": 28.296,
+     "end": 28.408
+    },
+    {
+     "word": "the",
+     "start": 28.421,
+     "end": 28.546
+    },
+    {
+     "word": "Library",
+     "start": 28.559,
+     "end": 29.046
+    },
+    {
+     "word": "of",
+     "start": 29.059,
+     "end": 29.158
+    },
+    {
+     "word": "Congress",
+     "start": 29.171,
+     "end": 29.658
+    },
+    {
+     "word": "because",
+     "start": 29.671,
+     "end": 30.033
+    },
+    {
+     "word": "owning",
+     "start": 30.046,
+     "end": 30.308
+    },
+    {
+     "word": "a",
+     "start": 30.321,
+     "end": 30.384
+    },
+    {
+     "word": "stock",
+     "start": 30.396,
+     "end": 30.783
+    },
+    {
+     "word": "just",
+     "start": 30.796,
+     "end": 31.121
+    },
+    {
+     "word": "means",
+     "start": 31.134,
+     "end": 31.421
+    },
+    {
+     "word": "collecting",
+     "start": 31.433,
+     "end": 31.896
+    },
+    {
+     "word": "your",
+     "start": 31.908,
+     "end": 32.071
+    },
+    {
+     "word": "share",
+     "start": 32.083,
+     "end": 32.496
+    },
+    {
+     "word": "of",
+     "start": 32.509,
+     "end": 32.596
+    },
+    {
+     "word": "the",
+     "start": 32.609,
+     "end": 32.696
+    },
+    {
+     "word": "profits.",
+     "start": 32.708,
+     "end": 33.346
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "In nineteen fifty-two, a cartoon bakery needed a bigger oven, so it cut itself into one thousand paper pieces. You think buying stock is placing bets on a magical ticker screen, but it is just owning tiny physical slices of a real company. Corporations work with investment bankers to create and register shares before selling those pieces to the public. Morningstar UK reports that companies typically pay out dividend earnings twice or four times a year. That animated short was preserved by the Library of Congress because owning a stock just means collecting your share of the profits."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/lofi-warm.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "lofi-warm"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.65,
+    "text": "nineteen",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.65,
+    "opacity": 0.35,
+    "seed": 0.59
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v5",
+    "delay": 0.4,
+    "start": 14.46,
+    "end": 17.95,
+    "asset": "bank",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794826557057,
+  "updated": 1794826557060,
+  "topic": "how stock investment works it a cartoon illustrated",
+  "hook": "In nineteen fifty-two, a cartoon bakery needed a bigger oven, so it cut itself into one thousand paper pieces.",
+  "image_style": "clean 2D cartoon animation, bold outlines, vibrant flat colors, minimalist mid-century illustration",
+  "format": "landscape",
+  "assets_release": "project-how-stock-market-shares-actually-wor-mwj5c748",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "explainer",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In nineteen fifty-two, a cartoon bakery needed a bigger oven, so it cut itself into one thousand paper pieces.",
+   "music": "lofi-warm",
+   "project_id": "how-stock-market-shares-actually-wor-mwj5c748",
+   "style": "clean 2D cartoon animation, bold outlines, vibrant flat colors, minimalist mid-century illustration",
+   "style_preset": "motion-explainer",
+   "title": "How Stock Market Shares Actually Work",
+   "topic": "how stock investment works it a cartoon illustrated",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"In nineteen fifty-two, a cartoon ba...\"): the hook. No subject cutout, so I put NINETEEN in the top band where it cannot cover the face.",
+   "Beat 5 (\"Corporations work with investment b...\"): a \"bank\" illustration builds itself on the right after the words land.",
+   "Left 8 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 7: truck (side move for variety)."
+  ]
+ }
+}
