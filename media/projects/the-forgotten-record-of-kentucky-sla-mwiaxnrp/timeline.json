@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "the-forgotten-record-of-kentucky-sla-mwiaxnrp",
- "rev": 1,
+ "rev": 2,
  "title": "The Forgotten Record of Kentucky Slavery",
  "duration": 39.75,
  "canvas": {
@@ -86,6 +86,10 @@
     },
     "gen": {
      "tool": "graphic"
+    },
+    "transition": {
+     "duration": 1.37,
+     "type": "dissolve"
     }
    },
    {
@@ -103,6 +107,10 @@
     "h": 1360,
     "hash": "9888fe8b5432",
     "cutout": "assets/img_03_cut.png",
+    "transition": {
+     "duration": 1.09,
+     "type": "blur"
+    },
     "cam": {
      "move": "truck",
      "amp": 0.64,
@@ -147,6 +155,10 @@
     },
     "gen": {
      "tool": "graphic"
+    },
+    "transition": {
+     "duration": 0.91,
+     "type": "page-turn"
     }
    },
    {
@@ -164,6 +176,10 @@
     "h": 1360,
     "hash": "4b86ba065323",
     "cutout": "assets/img_05_cut.png",
+    "transition": {
+     "duration": 1.01,
+     "type": "focus"
+    },
     "cam": {
      "move": "drift",
      "amp": 0.79,
@@ -183,6 +199,10 @@
     },
     "gen": {
      "tool": "graphic"
+    },
+    "transition": {
+     "duration": 1.22,
+     "type": "dissolve"
     }
    },
    {
@@ -200,6 +220,10 @@
     "h": 1360,
     "hash": "8b2671c5b43b",
     "cutout": "assets/img_07_cut.png",
+    "transition": {
+     "duration": 1.23,
+     "type": "leak"
+    },
     "cam": {
      "move": "truck",
      "amp": 0.74,
@@ -219,6 +243,10 @@
     },
     "gen": {
      "tool": "graphic"
+    },
+    "transition": {
+     "duration": 0.99,
+     "type": "settle"
     }
    },
    {
@@ -236,6 +264,10 @@
     "h": 1360,
     "hash": "588796c72fd0",
     "cutout": "assets/img_09_cut.png",
+    "transition": {
+     "duration": 1.04,
+     "type": "fade"
+    },
     "cam": {
      "move": "pull-out",
      "amp": 0.8,
@@ -835,7 +867,684 @@
      "voice": "en-US-AndrewMultilingualNeural",
      "rate": "+0%",
      "text": "Isaac Johnson recorded how his own father sold his wife and four kids in Kentucky. You think the history of American slavery survived only through plantation ledgers, but survivors preserved their own accounts in secret songs, weekend work, and spoken testimonies. Federal Writers' Project interviews from nineteen thirty-six to nineteen thirty-eight recorded survivors comparing slave traders straight to horse and mule dealers, because human markets ran with cold business, and local rules let enslaved people work Saturday afternoons and Sundays on their own time for cash, while Hattie Brown proved that oral tradition in song and sermons saved history when reading and writing were banned by law. In Kentucky, song and testimony outlasted the ledger."
-    }
+    },
+    "segments": [
+     {
+      "clip": "v1",
+      "text": "Isaac Johnson recorded how his own father sold his wife and four kids in Kentucky.",
+      "from": "assets/voice.mp3",
+      "t0": 0.0,
+      "t1": 4.707,
+      "words": [
+       {
+        "word": "Isaac",
+        "start": 0.1,
+        "end": 0.463
+       },
+       {
+        "word": "Johnson",
+        "start": 0.487,
+        "end": 0.925
+       },
+       {
+        "word": "recorded",
+        "start": 0.95,
+        "end": 1.413
+       },
+       {
+        "word": "how",
+        "start": 1.438,
+        "end": 1.562
+       },
+       {
+        "word": "his",
+        "start": 1.587,
+        "end": 1.775
+       },
+       {
+        "word": "own",
+        "start": 1.8,
+        "end": 1.975
+       },
+       {
+        "word": "father",
+        "start": 2.0,
+        "end": 2.35
+       },
+       {
+        "word": "sold",
+        "start": 2.375,
+        "end": 2.612
+       },
+       {
+        "word": "his",
+        "start": 2.638,
+        "end": 2.775
+       },
+       {
+        "word": "wife",
+        "start": 2.8,
+        "end": 3.087
+       },
+       {
+        "word": "and",
+        "start": 3.1,
+        "end": 3.2
+       },
+       {
+        "word": "four",
+        "start": 3.225,
+        "end": 3.475
+       },
+       {
+        "word": "kids",
+        "start": 3.5,
+        "end": 3.775
+       },
+       {
+        "word": "in",
+        "start": 3.788,
+        "end": 3.888
+       },
+       {
+        "word": "Kentucky.",
+        "start": 3.913,
+        "end": 4.487
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v2",
+      "text": "You think the history of American slavery survived only through plantation ledgers, but",
+      "from": "assets/voice.mp3",
+      "t0": 4.707,
+      "t1": 9.207,
+      "words": [
+       {
+        "word": "You",
+        "start": 0.06,
+        "end": 0.222
+       },
+       {
+        "word": "think",
+        "start": 0.247,
+        "end": 0.448
+       },
+       {
+        "word": "the",
+        "start": 0.472,
+        "end": 0.56
+       },
+       {
+        "word": "history",
+        "start": 0.573,
+        "end": 0.997
+       },
+       {
+        "word": "of",
+        "start": 1.023,
+        "end": 1.085
+       },
+       {
+        "word": "American",
+        "start": 1.097,
+        "end": 1.623
+       },
+       {
+        "word": "slavery",
+        "start": 1.648,
+        "end": 2.097
+       },
+       {
+        "word": "survived",
+        "start": 2.123,
+        "end": 2.573
+       },
+       {
+        "word": "only",
+        "start": 2.597,
+        "end": 2.822
+       },
+       {
+        "word": "through",
+        "start": 2.847,
+        "end": 3.048
+       },
+       {
+        "word": "plantation",
+        "start": 3.072,
+        "end": 3.685
+       },
+       {
+        "word": "ledgers,",
+        "start": 3.71,
+        "end": 4.11
+       },
+       {
+        "word": "but",
+        "start": 4.41,
+        "end": 4.547
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v3",
+      "text": "survivors preserved their own accounts in secret songs,",
+      "from": "assets/voice.mp3",
+      "t0": 9.207,
+      "t1": 12.055,
+      "words": [
+       {
+        "word": "survivors",
+        "start": 0.06,
+        "end": 0.585
+       },
+       {
+        "word": "preserved",
+        "start": 0.598,
+        "end": 1.01
+       },
+       {
+        "word": "their",
+        "start": 1.035,
+        "end": 1.185
+       },
+       {
+        "word": "own",
+        "start": 1.21,
+        "end": 1.335
+       },
+       {
+        "word": "accounts",
+        "start": 1.348,
+        "end": 1.698
+       },
+       {
+        "word": "in",
+        "start": 1.723,
+        "end": 1.835
+       },
+       {
+        "word": "secret",
+        "start": 1.86,
+        "end": 2.223
+       },
+       {
+        "word": "songs,",
+        "start": 2.247,
+        "end": 2.673
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v4",
+      "text": "weekend work, and spoken testimonies.",
+      "from": "assets/voice.mp3",
+      "t0": 12.055,
+      "t1": 14.387,
+      "words": [
+       {
+        "word": "weekend",
+        "start": 0.0,
+        "end": 0.375
+       },
+       {
+        "word": "work,",
+        "start": 0.399,
+        "end": 0.649
+       },
+       {
+        "word": "and",
+        "start": 0.837,
+        "end": 0.924
+       },
+       {
+        "word": "spoken",
+        "start": 0.949,
+        "end": 1.325
+       },
+       {
+        "word": "testimonies.",
+        "start": 1.35,
+        "end": 2.112
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v5",
+      "text": "Federal Writers' Project interviews from nineteen thirty-six to nineteen thirty-eight recorded survivors",
+      "from": "assets/voice.mp3",
+      "t0": 14.387,
+      "t1": 19.199,
+      "words": [
+       {
+        "word": "Federal",
+        "start": 0.06,
+        "end": 0.459
+       },
+       {
+        "word": "Writers'",
+        "start": 0.485,
+        "end": 0.822
+       },
+       {
+        "word": "Project",
+        "start": 0.834,
+        "end": 1.247
+       },
+       {
+        "word": "interviews",
+        "start": 1.272,
+        "end": 1.709
+       },
+       {
+        "word": "from",
+        "start": 1.735,
+        "end": 1.897
+       },
+       {
+        "word": "nineteen",
+        "start": 1.909,
+        "end": 2.31
+       },
+       {
+        "word": "thirty-six",
+        "start": 2.334,
+        "end": 2.885
+       },
+       {
+        "word": "to",
+        "start": 2.897,
+        "end": 2.985
+       },
+       {
+        "word": "nineteen",
+        "start": 2.997,
+        "end": 3.409
+       },
+       {
+        "word": "thirty-eight",
+        "start": 3.435,
+        "end": 3.86
+       },
+       {
+        "word": "recorded",
+        "start": 3.885,
+        "end": 4.31
+       },
+       {
+        "word": "survivors",
+        "start": 4.334,
+        "end": 4.847
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v6",
+      "text": "comparing slave traders straight to horse and mule dealers, because human markets ran",
+      "from": "assets/voice.mp3",
+      "t0": 19.199,
+      "t1": 23.271,
+      "words": [
+       {
+        "word": "comparing",
+        "start": 0.06,
+        "end": 0.498
+       },
+       {
+        "word": "slave",
+        "start": 0.522,
+        "end": 0.823
+       },
+       {
+        "word": "traders",
+        "start": 0.847,
+        "end": 1.21
+       },
+       {
+        "word": "straight",
+        "start": 1.235,
+        "end": 1.51
+       },
+       {
+        "word": "to",
+        "start": 1.535,
+        "end": 1.623
+       },
+       {
+        "word": "horse",
+        "start": 1.647,
+        "end": 1.935
+       },
+       {
+        "word": "and",
+        "start": 1.96,
+        "end": 2.035
+       },
+       {
+        "word": "mule",
+        "start": 2.06,
+        "end": 2.272
+       },
+       {
+        "word": "dealers,",
+        "start": 2.298,
+        "end": 2.685
+       },
+       {
+        "word": "because",
+        "start": 2.845,
+        "end": 3.157
+       },
+       {
+        "word": "human",
+        "start": 3.182,
+        "end": 3.47
+       },
+       {
+        "word": "markets",
+        "start": 3.495,
+        "end": 3.907
+       },
+       {
+        "word": "ran",
+        "start": 3.92,
+        "end": 4.119
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v7",
+      "text": "with cold business, and local rules let enslaved people work Saturday afternoons and Sundays",
+      "from": "assets/voice.mp3",
+      "t0": 23.271,
+      "t1": 27.732,
+      "words": [
+       {
+        "word": "with",
+        "start": 0.06,
+        "end": 0.185
+       },
+       {
+        "word": "cold",
+        "start": 0.21,
+        "end": 0.46
+       },
+       {
+        "word": "business,",
+        "start": 0.485,
+        "end": 0.848
+       },
+       {
+        "word": "and",
+        "start": 1.008,
+        "end": 1.159
+       },
+       {
+        "word": "local",
+        "start": 1.183,
+        "end": 1.508
+       },
+       {
+        "word": "rules",
+        "start": 1.521,
+        "end": 1.809
+       },
+       {
+        "word": "let",
+        "start": 1.833,
+        "end": 1.971
+       },
+       {
+        "word": "enslaved",
+        "start": 1.996,
+        "end": 2.433
+       },
+       {
+        "word": "people",
+        "start": 2.458,
+        "end": 2.758
+       },
+       {
+        "word": "work",
+        "start": 2.784,
+        "end": 2.971
+       },
+       {
+        "word": "Saturday",
+        "start": 2.984,
+        "end": 3.421
+       },
+       {
+        "word": "afternoons",
+        "start": 3.446,
+        "end": 3.946
+       },
+       {
+        "word": "and",
+        "start": 3.958,
+        "end": 4.046
+       },
+       {
+        "word": "Sundays",
+        "start": 4.071,
+        "end": 4.496
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v8",
+      "text": "on their own time for cash, while Hattie Brown proved that oral tradition in song",
+      "from": "assets/voice.mp3",
+      "t0": 27.732,
+      "t1": 31.392,
+      "words": [
+       {
+        "word": "on",
+        "start": 0.06,
+        "end": 0.148
+       },
+       {
+        "word": "their",
+        "start": 0.172,
+        "end": 0.323
+       },
+       {
+        "word": "own",
+        "start": 0.348,
+        "end": 0.46
+       },
+       {
+        "word": "time",
+        "start": 0.485,
+        "end": 0.685
+       },
+       {
+        "word": "for",
+        "start": 0.698,
+        "end": 0.835
+       },
+       {
+        "word": "cash,",
+        "start": 0.86,
+        "end": 1.26
+       },
+       {
+        "word": "while",
+        "start": 1.42,
+        "end": 1.595
+       },
+       {
+        "word": "Hattie",
+        "start": 1.608,
+        "end": 1.845
+       },
+       {
+        "word": "Brown",
+        "start": 1.87,
+        "end": 2.145
+       },
+       {
+        "word": "proved",
+        "start": 2.17,
+        "end": 2.433
+       },
+       {
+        "word": "that",
+        "start": 2.457,
+        "end": 2.595
+       },
+       {
+        "word": "oral",
+        "start": 2.62,
+        "end": 2.858
+       },
+       {
+        "word": "tradition",
+        "start": 2.87,
+        "end": 3.295
+       },
+       {
+        "word": "in",
+        "start": 3.307,
+        "end": 3.407
+       },
+       {
+        "word": "song",
+        "start": 3.432,
+        "end": 3.708
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v9",
+      "text": "and sermons saved history when reading and writing were banned by law.",
+      "from": "assets/voice.mp3",
+      "t0": 31.392,
+      "t1": 34.71,
+      "words": [
+       {
+        "word": "and",
+        "start": 0.06,
+        "end": 0.147
+       },
+       {
+        "word": "sermons",
+        "start": 0.173,
+        "end": 0.56
+       },
+       {
+        "word": "saved",
+        "start": 0.585,
+        "end": 0.835
+       },
+       {
+        "word": "history",
+        "start": 0.86,
+        "end": 1.235
+       },
+       {
+        "word": "when",
+        "start": 1.247,
+        "end": 1.423
+       },
+       {
+        "word": "reading",
+        "start": 1.448,
+        "end": 1.735
+       },
+       {
+        "word": "and",
+        "start": 1.747,
+        "end": 1.848
+       },
+       {
+        "word": "writing",
+        "start": 1.872,
+        "end": 2.185
+       },
+       {
+        "word": "were",
+        "start": 2.198,
+        "end": 2.323
+       },
+       {
+        "word": "banned",
+        "start": 2.348,
+        "end": 2.598
+       },
+       {
+        "word": "by",
+        "start": 2.61,
+        "end": 2.722
+       },
+       {
+        "word": "law.",
+        "start": 2.747,
+        "end": 3.098
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     },
+     {
+      "clip": "v10",
+      "text": "In Kentucky, song and testimony outlasted the ledger.",
+      "from": "assets/voice.mp3",
+      "t0": 34.71,
+      "t1": 39.202,
+      "words": [
+       {
+        "word": "In",
+        "start": 0.06,
+        "end": 0.248
+       },
+       {
+        "word": "Kentucky,",
+        "start": 0.273,
+        "end": 0.81
+       },
+       {
+        "word": "song",
+        "start": 1.011,
+        "end": 1.335
+       },
+       {
+        "word": "and",
+        "start": 1.436,
+        "end": 1.511
+       },
+       {
+        "word": "testimony",
+        "start": 1.523,
+        "end": 2.161
+       },
+       {
+        "word": "outlasted",
+        "start": 2.173,
+        "end": 2.735
+       },
+       {
+        "word": "the",
+        "start": 2.761,
+        "end": 2.848
+       },
+       {
+        "word": "ledger.",
+        "start": 2.873,
+        "end": 3.286
+       }
+      ],
+      "voice": "en-US-AndrewMultilingualNeural|+0%|"
+     }
+    ]
    }
   ],
   "music": [
@@ -913,7 +1622,7 @@
  },
  "meta": {
   "created": 1794775513997,
-  "updated": 1794775514000,
+  "updated": 1794816672107,
   "topic": "something about the old slavery days",
   "hook": "Isaac Johnson documented how his own father sold his wife and four children in Kentucky.",
   "image_style": "high-end digital artwork, dark atmospheric historical painting, subtle dynamic lighting, 2k visual texture",
