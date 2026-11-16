@@ -1,0 +1,616 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-stock-prices-actually-move-mwj6dybs",
+ "rev": 1,
+ "title": "How Stock Prices Actually Move",
+ "duration": 26.48,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.09,
+    "narration": "You buy one hundred Apple shares at three hundred thirty-five dollars.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth showing a parchment stock certificate with one hundred shares, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5edfb7ab3117",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.79,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.09,
+    "end": 7.954,
+    "narration": "A few moments later, the price drops to three hundred thirty dollars.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "A few moments later, the price drops",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.954,
+    "end": 11.858,
+    "narration": "You think a computer algorithm randomly decides stock prices, but",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth showing an intricate wooden gear clock mechanism stopped in darkness, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "22305898d252",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.77,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 11.858,
+    "end": 16.164,
+    "narration": "prices are determined purely through the interaction of buyers and sellers.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "prices are determined purely through",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 16.164,
+    "end": 20.286,
+    "narration": "Sellers seek to sell financial assets at the highest available price,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth showing a merchant holding a gold coin balance scale, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "f143df6cc188",
+    "cam": {
+     "move": "drift",
+     "amp": 0.79,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 20.286,
+    "end": 25.68,
+    "narration": "while intermediaries accept financial risk on behalf of clients in exchange for a fee.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "while intermediaries accept financial",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "You",
+     "start": 0.087,
+     "end": 0.188
+    },
+    {
+     "word": "buy",
+     "start": 0.188,
+     "end": 0.338
+    },
+    {
+     "word": "one",
+     "start": 0.338,
+     "end": 0.588
+    },
+    {
+     "word": "hundred",
+     "start": 0.588,
+     "end": 0.9
+    },
+    {
+     "word": "Apple",
+     "start": 0.9,
+     "end": 1.188
+    },
+    {
+     "word": "shares",
+     "start": 1.188,
+     "end": 1.738
+    },
+    {
+     "word": "at",
+     "start": 1.858,
+     "end": 1.996
+    },
+    {
+     "word": "three",
+     "start": 2.008,
+     "end": 2.37
+    },
+    {
+     "word": "hundred",
+     "start": 2.383,
+     "end": 2.645
+    },
+    {
+     "word": "thirty-five",
+     "start": 2.658,
+     "end": 3.283
+    },
+    {
+     "word": "dollars.",
+     "start": 3.283,
+     "end": 3.87
+    },
+    {
+     "word": "A",
+     "start": 4.15,
+     "end": 4.2
+    },
+    {
+     "word": "few",
+     "start": 4.212,
+     "end": 4.362
+    },
+    {
+     "word": "moments",
+     "start": 4.362,
+     "end": 4.662
+    },
+    {
+     "word": "later,",
+     "start": 4.662,
+     "end": 5.012
+    },
+    {
+     "word": "the",
+     "start": 5.172,
+     "end": 5.26
+    },
+    {
+     "word": "price",
+     "start": 5.272,
+     "end": 5.622
+    },
+    {
+     "word": "drops",
+     "start": 5.622,
+     "end": 6.122
+    },
+    {
+     "word": "to",
+     "start": 6.122,
+     "end": 6.222
+    },
+    {
+     "word": "three",
+     "start": 6.234,
+     "end": 6.572
+    },
+    {
+     "word": "hundred",
+     "start": 6.572,
+     "end": 6.872
+    },
+    {
+     "word": "thirty",
+     "start": 6.884,
+     "end": 7.147
+    },
+    {
+     "word": "dollars.",
+     "start": 7.16,
+     "end": 7.734
+    },
+    {
+     "word": "You",
+     "start": 8.014,
+     "end": 8.101
+    },
+    {
+     "word": "think",
+     "start": 8.101,
+     "end": 8.289
+    },
+    {
+     "word": "a",
+     "start": 8.302,
+     "end": 8.364
+    },
+    {
+     "word": "computer",
+     "start": 8.364,
+     "end": 8.851
+    },
+    {
+     "word": "algorithm",
+     "start": 8.851,
+     "end": 9.451
+    },
+    {
+     "word": "randomly",
+     "start": 9.571,
+     "end": 10.096
+    },
+    {
+     "word": "decides",
+     "start": 10.096,
+     "end": 10.671
+    },
+    {
+     "word": "stock",
+     "start": 10.683,
+     "end": 11.009
+    },
+    {
+     "word": "prices,",
+     "start": 11.009,
+     "end": 11.596
+    },
+    {
+     "word": "but",
+     "start": 11.756,
+     "end": 11.906
+    },
+    {
+     "word": "prices",
+     "start": 11.918,
+     "end": 12.394
+    },
+    {
+     "word": "are",
+     "start": 12.406,
+     "end": 12.468
+    },
+    {
+     "word": "determined",
+     "start": 12.468,
+     "end": 13.106
+    },
+    {
+     "word": "purely",
+     "start": 13.119,
+     "end": 13.706
+    },
+    {
+     "word": "through",
+     "start": 13.718,
+     "end": 13.931
+    },
+    {
+     "word": "the",
+     "start": 13.931,
+     "end": 14.019
+    },
+    {
+     "word": "interaction",
+     "start": 14.031,
+     "end": 14.693
+    },
+    {
+     "word": "of",
+     "start": 14.693,
+     "end": 14.781
+    },
+    {
+     "word": "buyers",
+     "start": 14.781,
+     "end": 15.218
+    },
+    {
+     "word": "and",
+     "start": 15.231,
+     "end": 15.306
+    },
+    {
+     "word": "sellers.",
+     "start": 15.306,
+     "end": 15.944
+    },
+    {
+     "word": "Sellers",
+     "start": 16.224,
+     "end": 16.611
+    },
+    {
+     "word": "seek",
+     "start": 16.611,
+     "end": 16.886
+    },
+    {
+     "word": "to",
+     "start": 16.886,
+     "end": 16.998
+    },
+    {
+     "word": "sell",
+     "start": 16.998,
+     "end": 17.311
+    },
+    {
+     "word": "financial",
+     "start": 17.311,
+     "end": 17.824
+    },
+    {
+     "word": "assets",
+     "start": 17.824,
+     "end": 18.423
+    },
+    {
+     "word": "at",
+     "start": 18.436,
+     "end": 18.511
+    },
+    {
+     "word": "the",
+     "start": 18.511,
+     "end": 18.586
+    },
+    {
+     "word": "highest",
+     "start": 18.598,
+     "end": 19.149
+    },
+    {
+     "word": "available",
+     "start": 19.149,
+     "end": 19.561
+    },
+    {
+     "word": "price,",
+     "start": 19.574,
+     "end": 20.186
+    },
+    {
+     "word": "while",
+     "start": 20.346,
+     "end": 20.521
+    },
+    {
+     "word": "intermediaries",
+     "start": 20.521,
+     "end": 21.359
+    },
+    {
+     "word": "accept",
+     "start": 21.434,
+     "end": 21.833
+    },
+    {
+     "word": "financial",
+     "start": 21.833,
+     "end": 22.471
+    },
+    {
+     "word": "risk",
+     "start": 22.471,
+     "end": 22.833
+    },
+    {
+     "word": "on",
+     "start": 22.946,
+     "end": 23.071
+    },
+    {
+     "word": "behalf",
+     "start": 23.083,
+     "end": 23.484
+    },
+    {
+     "word": "of",
+     "start": 23.496,
+     "end": 23.559
+    },
+    {
+     "word": "clients",
+     "start": 23.571,
+     "end": 24.096
+    },
+    {
+     "word": "in",
+     "start": 24.109,
+     "end": 24.234
+    },
+    {
+     "word": "exchange",
+     "start": 24.246,
+     "end": 24.721
+    },
+    {
+     "word": "for",
+     "start": 24.721,
+     "end": 24.871
+    },
+    {
+     "word": "a",
+     "start": 24.871,
+     "end": 24.896
+    },
+    {
+     "word": "fee.",
+     "start": 24.896,
+     "end": 25.259
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "You buy one hundred Apple shares at three hundred thirty-five dollars. A few moments later, the price drops to three hundred thirty dollars. You think a computer algorithm randomly decides stock prices, but prices are determined purely through the interaction of buyers and sellers. Sellers seek to sell financial assets at the highest available price, while intermediaries accept financial risk on behalf of clients in exchange for a fee."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 4.04,
+    "text": "hundred",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.04,
+    "opacity": 0.35,
+    "seed": 0.7
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 12.26,
+    "end": 16.11,
+    "asset": "coin",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794828374193,
+  "updated": 1794828374195,
+  "topic": "how finance market works",
+  "hook": "You buy one hundred Apple shares at three hundred thirty-five dollars.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "landscape",
+  "assets_release": "project-how-stock-prices-actually-move-mwj6dybs",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "explainer",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "You buy one hundred Apple shares at three hundred thirty-five dollars.",
+   "music": "tech-pulse",
+   "project_id": "how-stock-prices-actually-move-mwj6dybs",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "How Stock Prices Actually Move",
+   "topic": "how finance market works",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"You buy one hundred Apple shares at...\"): the hook. No subject cutout, so I put HUNDRED in the top band where it cannot cover the face.",
+   "Beat 4 (\"prices are determined purely throug...\"): a \"coin\" illustration builds itself on the right after the words land.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 5: drift (alive baseline)."
+  ]
+ }
+}

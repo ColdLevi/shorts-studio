@@ -795,6 +795,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-71",
+      "title": "How Stock Prices Actually Move",
+      "hook": "You buy one hundred Apple shares at three hundred thirty-five dollars.",
+      "accent": "#FFD43B",
+      "duration": 26.6,
+      "created": 1794829190826,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-71/short-71.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-71/short-71.jpg",
+      "project": "how-stock-prices-actually-move-mwj6dybs",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
