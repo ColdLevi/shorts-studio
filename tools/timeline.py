@@ -1008,6 +1008,8 @@ def director_pass(t, spec=None):
                 if m:
                     fact = m.group(0).strip()
                     break
+        if not fact and dstyle.get("spoken"):
+            fact = _dst.spoken_fact(text) or ""
         if fact and n_callout < cap_callout and last_kind != "callout":
             box = _subject_box(c, pid)
             if box and box[0] < 0.22:
@@ -1120,6 +1122,16 @@ def camera_pass(t, spec=None):
     if not vis:
         return t
     notes, whips, last_whip = [], 0, -99.0
+    cstyle = {"name": "classic", "blurb": "the standard camera", "orbit_every": 3, "orbit_phase": 0, "truck_every": 4,
+              "truck_phase": 2, "base": ["drift"], "amp_mul": 1.0, "whips": 2, "last": "pull-out", "pt_mod": 2}   # = old behaviour
+    try:
+        try:
+            from tools import director_styles as _dcs
+        except ImportError:
+            import director_styles as _dcs
+        cstyle = _dcs.pick_camera(t, spec)
+    except Exception as _e:
+        print("camera styles off:", _e)
     laid = {}
     for l in tr.get("layers") or []:
         laid.setdefault(l.get("anchor"), set()).add(l.get("kind"))
@@ -1137,21 +1149,21 @@ def camera_pass(t, spec=None):
         fact = bool(str(sbi.get("callout") or "").strip()) or any(re.search(rx, text) for rx in _FACT_RX)
         has_cut = bool(c.get("cutout"))
         dirn = -dirn
-        amp = round(max(0.35, min(0.8, 0.3 + 0.12 * dur)), 2)
+        amp = round(max(0.35, min(0.8, 0.3 + 0.12 * dur)) * cstyle["amp_mul"], 2)
         if i == 0:
             move, why = ("hold", "hook: the text is behind the subject, the camera stays out of its way") if "depth-text" in k else ("push-in", "hook: slow push-in")
         elif k & {"kinetic", "icon-pop", "depth-text", "corner-text", "chart", "panel", "chapter-card"} or (fact and k):
             move, why = "hold", "evidence on screen: the camera stops"
         elif _CAM_REVEAL.search(text):
             move, why = "pull-out", "a turn in the story: pull back to reveal"
-        elif has_cut and i % 3 == 0:
+        elif has_cut and i % cstyle["orbit_every"] == cstyle["orbit_phase"]:
             move, why = "orbit", "subject cutout: a small orbit with parallax"
-        elif i % 4 == 2:
+        elif i % cstyle["truck_every"] == cstyle["truck_phase"]:
             move, why = "truck", "side move for variety"
         else:
-            move, why = "drift", "alive baseline"
+            move, why = cstyle["base"][i % len(cstyle["base"])], "alive baseline"
         if i == len(vis) - 1 and i > 0:
-            move, why = "pull-out", "last picture: slow pull-out"
+            move, why = cstyle["last"], "last picture: " + ("slow pull-out" if cstyle["last"] == "pull-out" else cstyle["last"])
         if move == prev_move and move not in ("hold",):
             move, why = ("drift", why + " (not the same move twice)") if move != "drift" else ("truck", why + " (not the same move twice)")
         cam = {"move": move, "amp": amp, "dir": dirn}
@@ -1169,15 +1181,15 @@ def camera_pass(t, spec=None):
         pm = (a.get("cam") or {}).get("move")
         pd = (a.get("cam") or {}).get("dir") or 1
         nxt = (b.get("narration") or "")
-        if ends and whips < 2 and b["start"] - last_whip > 8.0 and _CAM_ENERGY.search(nxt):
+        if ends and whips < cstyle["whips"] and b["start"] - last_whip > 8.0 and _CAM_ENERGY.search(nxt):
             ty, du = ("whip-left" if pd > 0 else "whip-right"), 0.27
             whips += 1
             last_whip = b["start"]
         elif ends:
             carried += 1
-            if pm == "push-in" or (carried % 2 == 0 and pm in ("hold", "orbit", "pull-out", None)):
+            if pm == "push-in" or (carried % cstyle["pt_mod"] == 0 and pm in ("hold", "orbit", "pull-out", None)):
                 ty, du = "push-through", 0.45
-            elif pm in ("drift", "truck") and carried % 2 == 1:
+            elif pm in ("drift", "truck") and carried % cstyle["pt_mod"] != 0:
                 ty, du = ("carry-left" if pd > 0 else "carry-right"), 0.4
             else:
                 ty, du = "settle", 0.5
@@ -1191,7 +1203,7 @@ def camera_pass(t, spec=None):
             ty = (c.get("transition") or {}).get("type")
             if ty:
                 kinds[ty] = kinds.get(ty, 0) + 1
-        _director_say(["Camera (%d moves; changes: %s)" % (len(notes), ", ".join("%s x%d" % kv for kv in sorted(kinds.items())))] + ["- " + n for n in notes[:24]])
+        _director_say(["Camera (%d moves; changes: %s)" % (len(notes), ", ".join("%s x%d" % kv for kv in sorted(kinds.items())))] + ["- " + n for n in notes[:24]] + ["- Camera style: %s (%s)." % (cstyle["name"], cstyle["blurb"])])
     return t
 # ---- end camera ----
 

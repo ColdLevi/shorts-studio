@@ -52,5 +52,54 @@ class T(unittest.TestCase):
         self.assertIn(ds.pick({})["name"], ds.STYLES)
 
 
+class Spoken(unittest.TestCase):
+    def test_years(self):
+        f = ds.spoken_fact
+        self.assertEqual(f("A nineteen eighty-five Sony Walkman"), "1985")
+        self.assertEqual(f("in eighteen sixty-three the law changed"), "1863")
+        self.assertEqual(f("back in nineteen oh seven"), "1907")
+        self.assertEqual(f("around nineteen hundred"), "1900")
+        self.assertEqual(f("by twenty twenty-four"), "2024")
+        self.assertEqual(f("In Twenty Twenty we waited"), "2020")
+        self.assertEqual(f("sixteen fifteen was a year"), "1615")
+
+    def test_non_years(self):
+        for s in ("nineteen people came", "twenty things", "she bought nineteen", "ninety nine problems", ""):
+            self.assertEqual(ds.spoken_fact(s), "", s)
+
+    def test_classic_is_off_others_on(self):
+        self.assertFalse(ds.STYLES["classic"]["spoken"]); self.assertFalse(ds.DEFAULT["spoken"])
+        self.assertTrue(all(v["spoken"] for k, v in ds.STYLES.items() if k != "classic"))
+
+
+class Camera(unittest.TestCase):
+    def tl(self, i, recipe="documentary"):
+        return {"id": "proj-%d" % i, "style": {"recipe": recipe}}
+
+    def test_classic_equals_old_constants(self):
+        c = ds.pick_camera(self.tl(1), {"camera_style": "classic"})
+        self.assertEqual((c["orbit_every"], c["orbit_phase"], c["truck_every"], c["truck_phase"], c["base"], c["amp_mul"], c["whips"], c["pt_mod"], c["last"]),
+                         (3, 0, 4, 2, ["drift"], 1.0, 2, 2, "pull-out"))
+
+    def test_deterministic_and_varied(self):
+        self.assertEqual(ds.pick_camera(self.tl(5)), ds.pick_camera(self.tl(5)))
+        names = {ds.pick_camera(self.tl(i))["name"] for i in range(300)}
+        self.assertGreaterEqual(len(names), 4)
+        self.assertNotIn("restless", names)         # not for documentary
+
+    def test_news_never_steady_and_recent_avoided(self):
+        for i in range(150):
+            self.assertNotIn(ds.pick_camera(self.tl(i, "kinetic-news"))["name"], ("steady", "observational"))
+            self.assertNotIn(ds.pick_camera(self.tl(i), {"recent_camera": ["classic", "steady"]})["name"], ("classic", "steady"))
+
+    def test_moves_are_known_and_phases_in_range(self):
+        ok = {"hold", "push-in", "pull-out", "orbit", "truck", "drift"}
+        for i in range(200):
+            c = ds.pick_camera(self.tl(i))
+            self.assertTrue(set(c["base"]) <= ok and c["last"] in ok)
+            self.assertTrue(0 <= c["orbit_phase"] < c["orbit_every"] and 0 <= c["truck_phase"] < c["truck_every"])
+            self.assertTrue(0 <= c["whips"] <= 3 and 1 <= c["pt_mod"] <= 3)
+
+
 if __name__ == "__main__":
     unittest.main()
