@@ -739,6 +739,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-73",
+      "title": "How Satoshi Built Bitcoin in 2009",
+      "hook": "Satoshi Nakamoto embedded a newspaper headline into code on January third, 2009.",
+      "accent": "#2EE6C5",
+      "duration": 46.6,
+      "created": 1794864768632,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-73/short-73.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-73/short-73.jpg",
+      "project": "how-satoshi-built-bitcoin-in-2009-mwi3mtsy",
+      "width": 1920,
+      "height": 1080,
+      "rev": 2
     }
   ]
 }
