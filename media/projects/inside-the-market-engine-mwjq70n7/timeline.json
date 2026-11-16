@@ -1,0 +1,839 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "inside-the-market-engine-mwjq70n7",
+ "rev": 1,
+ "title": "Inside the Market Engine",
+ "duration": 38.48,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.43,
+    "narration": "Wall Street floors run on flashing screens while high speed trades fire every millisecond.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, crowded trading floor with old ticker tapes and glowing monitors, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "504810cf819a",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": -1,
+     "wobble": 0
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.43,
+    "end": 12.694,
+    "narration": "You think financial markets are just chaotic gambling halls where lucky speculators place wild bets, but they are organized arenas.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "You think financial markets are just",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.694,
+    "end": 16.132,
+    "narration": "Buyers and sellers meet here to transact in financial assets",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, two merchants exchanging parchment agreements in a grand hall, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b33ddd6fdc7a",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.71,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.132,
+    "end": 19.671,
+    "narration": "and contracts, setting every price through direct interaction.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, two merchants exchanging parchment agreements in a grand hall, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "b33ddd6fdc7a",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.72,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 19.671,
+    "end": 24.764,
+    "narration": "Companies or governments issue brand new bonds directly to investors in the primary market.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Companies or governments issue brand",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 24.764,
+    "end": 27.46,
+    "narration": "Once those assets are issued, they move straight to the",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, bustling secondary exchange market with brokers reviewing paper ledgers, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "fbd410370782",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.62,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 27.46,
+    "end": 30.49,
+    "narration": "secondary market where investors trade them endlessly.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, bustling secondary exchange market with brokers reviewing paper ledgers, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "fbd410370782",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.66,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 30.49,
+    "end": 37.68,
+    "narration": "These systems rely entirely on informational transparency to allocate capital efficiently across the whole economy.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "These systems rely entirely on",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Wall Street",
+     "start": 0.1,
+     "end": 0.725
+    },
+    {
+     "word": "floors",
+     "start": 0.738,
+     "end": 1.188
+    },
+    {
+     "word": "run",
+     "start": 1.2,
+     "end": 1.4
+    },
+    {
+     "word": "on",
+     "start": 1.413,
+     "end": 1.538
+    },
+    {
+     "word": "flashing",
+     "start": 1.55,
+     "end": 2.013
+    },
+    {
+     "word": "screens",
+     "start": 2.025,
+     "end": 2.513
+    },
+    {
+     "word": "while",
+     "start": 2.525,
+     "end": 2.7
+    },
+    {
+     "word": "high",
+     "start": 2.712,
+     "end": 2.888
+    },
+    {
+     "word": "speed",
+     "start": 2.9,
+     "end": 3.263
+    },
+    {
+     "word": "trades",
+     "start": 3.275,
+     "end": 3.663
+    },
+    {
+     "word": "fire",
+     "start": 3.675,
+     "end": 4.138
+    },
+    {
+     "word": "every",
+     "start": 4.15,
+     "end": 4.375
+    },
+    {
+     "word": "millisecond.",
+     "start": 4.388,
+     "end": 5.15
+    },
+    {
+     "word": "You",
+     "start": 5.43,
+     "end": 5.567
+    },
+    {
+     "word": "think",
+     "start": 5.579,
+     "end": 5.855
+    },
+    {
+     "word": "financial",
+     "start": 5.867,
+     "end": 6.404
+    },
+    {
+     "word": "markets",
+     "start": 6.417,
+     "end": 6.829
+    },
+    {
+     "word": "are",
+     "start": 6.842,
+     "end": 6.954
+    },
+    {
+     "word": "just",
+     "start": 6.967,
+     "end": 7.217
+    },
+    {
+     "word": "chaotic",
+     "start": 7.23,
+     "end": 7.617
+    },
+    {
+     "word": "gambling",
+     "start": 7.629,
+     "end": 8.067
+    },
+    {
+     "word": "halls",
+     "start": 8.08,
+     "end": 8.43
+    },
+    {
+     "word": "where",
+     "start": 8.442,
+     "end": 8.592
+    },
+    {
+     "word": "lucky",
+     "start": 8.604,
+     "end": 8.917
+    },
+    {
+     "word": "speculators",
+     "start": 8.93,
+     "end": 9.629
+    },
+    {
+     "word": "place",
+     "start": 9.642,
+     "end": 9.992
+    },
+    {
+     "word": "wild",
+     "start": 10.004,
+     "end": 10.305
+    },
+    {
+     "word": "bets,",
+     "start": 10.317,
+     "end": 10.717
+    },
+    {
+     "word": "but",
+     "start": 10.877,
+     "end": 11.027
+    },
+    {
+     "word": "they",
+     "start": 11.039,
+     "end": 11.177
+    },
+    {
+     "word": "are",
+     "start": 11.189,
+     "end": 11.289
+    },
+    {
+     "word": "organized",
+     "start": 11.302,
+     "end": 11.84
+    },
+    {
+     "word": "arenas.",
+     "start": 11.852,
+     "end": 12.414
+    },
+    {
+     "word": "Buyers",
+     "start": 12.694,
+     "end": 13.182
+    },
+    {
+     "word": "and",
+     "start": 13.194,
+     "end": 13.281
+    },
+    {
+     "word": "sellers",
+     "start": 13.294,
+     "end": 13.707
+    },
+    {
+     "word": "meet",
+     "start": 13.719,
+     "end": 13.906
+    },
+    {
+     "word": "here",
+     "start": 13.919,
+     "end": 14.156
+    },
+    {
+     "word": "to",
+     "start": 14.169,
+     "end": 14.269
+    },
+    {
+     "word": "transact",
+     "start": 14.281,
+     "end": 14.919
+    },
+    {
+     "word": "in",
+     "start": 14.932,
+     "end": 15.019
+    },
+    {
+     "word": "financial",
+     "start": 15.031,
+     "end": 15.632
+    },
+    {
+     "word": "assets",
+     "start": 15.644,
+     "end": 16.119
+    },
+    {
+     "word": "and",
+     "start": 16.132,
+     "end": 16.231
+    },
+    {
+     "word": "contracts,",
+     "start": 16.244,
+     "end": 16.944
+    },
+    {
+     "word": "setting",
+     "start": 17.104,
+     "end": 17.504
+    },
+    {
+     "word": "every",
+     "start": 17.516,
+     "end": 17.741
+    },
+    {
+     "word": "price",
+     "start": 17.754,
+     "end": 18.179
+    },
+    {
+     "word": "through",
+     "start": 18.191,
+     "end": 18.342
+    },
+    {
+     "word": "direct",
+     "start": 18.354,
+     "end": 18.729
+    },
+    {
+     "word": "interaction.",
+     "start": 18.741,
+     "end": 19.391
+    },
+    {
+     "word": "Companies",
+     "start": 19.671,
+     "end": 20.196
+    },
+    {
+     "word": "or",
+     "start": 20.208,
+     "end": 20.321
+    },
+    {
+     "word": "governments",
+     "start": 20.333,
+     "end": 20.809
+    },
+    {
+     "word": "issue",
+     "start": 20.821,
+     "end": 21.083
+    },
+    {
+     "word": "brand",
+     "start": 21.096,
+     "end": 21.484
+    },
+    {
+     "word": "new",
+     "start": 21.496,
+     "end": 21.658
+    },
+    {
+     "word": "bonds",
+     "start": 21.671,
+     "end": 22.096
+    },
+    {
+     "word": "directly",
+     "start": 22.109,
+     "end": 22.559
+    },
+    {
+     "word": "to",
+     "start": 22.571,
+     "end": 22.721
+    },
+    {
+     "word": "investors",
+     "start": 22.734,
+     "end": 23.309
+    },
+    {
+     "word": "in",
+     "start": 23.321,
+     "end": 23.384
+    },
+    {
+     "word": "the",
+     "start": 23.396,
+     "end": 23.484
+    },
+    {
+     "word": "primary",
+     "start": 23.496,
+     "end": 23.946
+    },
+    {
+     "word": "market.",
+     "start": 23.958,
+     "end": 24.484
+    },
+    {
+     "word": "Once",
+     "start": 24.764,
+     "end": 25.038
+    },
+    {
+     "word": "those",
+     "start": 25.051,
+     "end": 25.314
+    },
+    {
+     "word": "assets",
+     "start": 25.326,
+     "end": 25.751
+    },
+    {
+     "word": "are",
+     "start": 25.764,
+     "end": 25.863
+    },
+    {
+     "word": "issued,",
+     "start": 25.876,
+     "end": 26.226
+    },
+    {
+     "word": "they",
+     "start": 26.386,
+     "end": 26.498
+    },
+    {
+     "word": "move",
+     "start": 26.511,
+     "end": 26.811
+    },
+    {
+     "word": "straight",
+     "start": 26.823,
+     "end": 27.223
+    },
+    {
+     "word": "to",
+     "start": 27.236,
+     "end": 27.323
+    },
+    {
+     "word": "the",
+     "start": 27.335,
+     "end": 27.448
+    },
+    {
+     "word": "secondary",
+     "start": 27.46,
+     "end": 28.023
+    },
+    {
+     "word": "market",
+     "start": 28.035,
+     "end": 28.486
+    },
+    {
+     "word": "where",
+     "start": 28.498,
+     "end": 28.66
+    },
+    {
+     "word": "investors",
+     "start": 28.673,
+     "end": 29.16
+    },
+    {
+     "word": "trade",
+     "start": 29.173,
+     "end": 29.46
+    },
+    {
+     "word": "them",
+     "start": 29.473,
+     "end": 29.623
+    },
+    {
+     "word": "endlessly.",
+     "start": 29.636,
+     "end": 30.21
+    },
+    {
+     "word": "These",
+     "start": 30.49,
+     "end": 30.752
+    },
+    {
+     "word": "systems",
+     "start": 30.765,
+     "end": 31.252
+    },
+    {
+     "word": "rely",
+     "start": 31.265,
+     "end": 31.578
+    },
+    {
+     "word": "entirely",
+     "start": 31.59,
+     "end": 32.127
+    },
+    {
+     "word": "on",
+     "start": 32.14,
+     "end": 32.265
+    },
+    {
+     "word": "informational",
+     "start": 32.277,
+     "end": 32.94
+    },
+    {
+     "word": "transparency",
+     "start": 32.953,
+     "end": 33.79
+    },
+    {
+     "word": "to",
+     "start": 33.803,
+     "end": 33.915
+    },
+    {
+     "word": "allocate",
+     "start": 33.928,
+     "end": 34.402
+    },
+    {
+     "word": "capital",
+     "start": 34.415,
+     "end": 34.865
+    },
+    {
+     "word": "efficiently",
+     "start": 34.877,
+     "end": 35.428
+    },
+    {
+     "word": "across",
+     "start": 35.44,
+     "end": 35.852
+    },
+    {
+     "word": "the",
+     "start": 35.865,
+     "end": 35.953
+    },
+    {
+     "word": "whole",
+     "start": 35.965,
+     "end": 36.203
+    },
+    {
+     "word": "economy.",
+     "start": 36.215,
+     "end": 36.74
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "Wall Street floors run on flashing screens while high speed trades fire every millisecond. You think financial markets are just chaotic gambling halls where lucky speculators place wild bets, but they are organized arenas. Buyers and sellers meet here to transact in financial assets and contracts, setting every price through direct interaction. Companies or governments issue brand new bonds directly to investors in the primary market. Once those assets are issued, they move straight to the secondary market where investors trade them endlessly. These systems rely entirely on informational transparency to allocate capital efficiently across the whole economy."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/cinematic-min.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "cinematic-min"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/impact-soft.mp3",
+    "at": 0.1,
+    "volume": 0.323,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 16.65,
+    "volume": 0.3,
+    "anchor": "v4",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "depth-text",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.38,
+    "src": "assets/img_01.jpg",
+    "cutout": "assets/img_01_cut.png",
+    "text": "flashing",
+    "y": 0.3,
+    "push": 0.12
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.38,
+    "opacity": 0.35,
+    "seed": 4.75
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 16.53,
+    "end": 19.62,
+    "asset": "coin",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794861618930,
+  "updated": 1794861618933,
+  "topic": "how finance market works",
+  "hook": "Wall Street awash with flashing screens as a trade fires.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "landscape",
+  "assets_release": "project-inside-the-market-engine-mwjq70n7",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "explainer",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Wall Street awash with flashing screens as a trade fires.",
+   "music": "cinematic-min",
+   "project_id": "inside-the-market-engine-mwjq70n7",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "Inside the Market Engine",
+   "topic": "how finance market works",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"Wall Street floors run on flashing ...\"): the hook. I set FLASHING huge BEHIND the subject (real cutout) and push in slowly.",
+   "Beat 4 (\"and contracts, setting every price ...\"): a \"coin\" illustration builds itself on the right after the words land.",
+   "Left 6 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: hold (hook: the text is behind the subject, the camera stays out of its way).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 6: drift (alive baseline).",
+   "Beat 7: orbit (subject cutout: a small orbit with parallax)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: hit_low, pop"
+ }
+}

@@ -809,6 +809,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-72",
+      "title": "Inside the Market Engine",
+      "hook": "Wall Street awash with flashing screens as a trade fires.",
+      "accent": "#FFD43B",
+      "duration": 38.6,
+      "created": 1794862805259,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-72/short-72.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-72/short-72.jpg",
+      "project": "inside-the-market-engine-mwjq70n7",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
