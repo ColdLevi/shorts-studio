@@ -920,13 +920,27 @@ def director_pass(t, spec=None):
     sb = spec.get("beats") or []
     pid = t.get("id") or "job"
     rnd = _random.Random(str(t.get("id")))
+    dstyle = {"name": "classic", "blurb": "the standard plan", "gap_mul": 1.0, "callout_mul": 1.0, "icon_mul": 1.0,
+              "hook": "behind", "wash": 0.35, "callout": "mixed"}          # = behaviour before styles existed
+    try:
+        try:
+            from tools import director_styles as _dst
+        except ImportError:
+            import director_styles as _dst
+        dstyle = _dst.pick(t, spec)
+    except Exception as _e:
+        print("director styles off:", _e)
     dur = float(t.get("duration") or vis[-1]["end"])
     gap = {"documentary": 4.5, "cinematic": 4.5, "stop-motion": 4.5, "kinetic-news": 2.2}.get(st.get("recipe") or "", 3.0)
     if (st.get("preset") or "") == "minimal":
         gap = 5.0
+    gap *= dstyle["gap_mul"]
     cap_callout, cap_icon = 3 + int(dur // 60), 2 + int(dur // 45)
+    cap_callout = max(1, round(cap_callout * dstyle["callout_mul"]))
+    cap_icon = max(1, round(cap_icon * dstyle["icon_mul"]))
     n_callout = n_icon = 0
     layers, notes = [], []
+    notes.append("Directing style: %s (%s)." % (dstyle["name"], dstyle["blurb"]))
     last_end, last_kind, left_clean = -99.0, None, 0
 
     def put(kind, c, delay=0.15, **kw):
@@ -945,19 +959,24 @@ def director_pass(t, spec=None):
         co = str(sbi.get("callout") or "").strip()[:14]
         if i == 0:
             word = co or _key_word(text) or text.split()[0]
+            if dstyle["hook"] == "quiet":
+                notes.append('%s: a quiet open. No hook text, the picture and the voice carry it.' % tag)
+                put("color-wash", c, 0.0, opacity=dstyle["wash"], seed=round(rnd.random() * 6, 2))
+                last_end, last_kind = c["end"], "hook"
+                continue
             cut = None
             if c.get("kind") == "image" and c.get("src"):
                 cand = os.path.splitext(c["src"])[0] + "_cut.png"
                 p = asset_path(pid, cand)
                 if p and os.path.exists(p):
                     cut = cand
-            if cut:
+            if cut and dstyle["hook"] == "behind":
                 put("depth-text", c, 0.1, src=c["src"], cutout=cut, text=word, y=0.3, push=0.12)
                 notes.append('%s: the hook. I set %s huge BEHIND the subject (real cutout) and push in slowly.' % (tag, word.upper()))
             else:
                 put("kinetic", c, 0.1, text=word, y=0.14)
                 notes.append('%s: the hook. No subject cutout, so I put %s in the top band where it cannot cover the face.' % (tag, word.upper()))
-            put("color-wash", c, 0.0, opacity=0.35, seed=round(rnd.random() * 6, 2))
+            put("color-wash", c, 0.0, opacity=dstyle["wash"], seed=round(rnd.random() * 6, 2))
             last_end, last_kind = c["end"], "hook"
             continue
         ch = _chapter_of(text, sbi.get("chapter"))                    # step6-data
@@ -995,12 +1014,13 @@ def director_pass(t, spec=None):
                 notes.append('%s: %s is worth showing, but the subject is up in the top of the frame, so I left it off rather than cover it.' % (tag, fact))
                 left_clean += 1
                 continue
-            corner = n_callout % 2 == 1 and len(fact) <= 12     # step3-assets: alternate with tilted corner text
+            corner = len(fact) <= 12 and (dstyle["callout"] == "corner" or (dstyle["callout"] == "mixed" and n_callout % 2 == 1))     # step3-assets: alternate with tilted corner text
             if corner:
                 put("corner-text", c, 0.2, text=fact, side=("tr" if n_callout % 4 == 1 else "tl"), y=0.12)
             else:
                 put("kinetic", c, 0.2, text=fact, y=0.14)
-                put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
+                if dstyle["callout"] != "plain":
+                    put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
             n_callout += 1
             last_end, last_kind = c["end"], "callout"
             notes.append(('%s: %s sits tilted in a corner, revealed through a mask, clear of the subject.' if corner else
