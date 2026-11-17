@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "when-new-york-burned-in-1886-mwkfdud8",
- "rev": 2,
+ "rev": 3,
  "title": "When New York Burned in 1886",
  "duration": 38.56,
  "canvas": {
@@ -1354,6 +1354,14 @@
   "sfx": [
    {
     "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
     "src": "library/sfx/clips/whoosh-soft.mp3",
     "at": 5.274,
     "volume": 0.289,
@@ -1361,20 +1369,12 @@
     "offset": -0.27
    },
    {
-    "id": "gs2",
+    "id": "gs3",
     "src": "library/sfx/clips/whoosh-wind.mp3",
     "at": 13.389,
     "volume": 0.289,
     "anchor": "v4",
     "offset": -0.27
-   },
-   {
-    "id": "gs3",
-    "src": "library/sfx/gen/pop.wav",
-    "at": 17.83,
-    "volume": 0.3,
-    "anchor": "v5",
-    "offset": 0.52
    },
    {
     "id": "gs4",
@@ -1409,8 +1409,8 @@
     "anchor": "v1",
     "delay": 0.1,
     "start": 0.1,
-    "end": 5.49,
-    "text": "eighteen",
+    "end": 6.5,
+    "text": "apocalyptic",
     "y": 0.14
    },
    {
@@ -1419,27 +1419,26 @@
     "anchor": "v1",
     "delay": 0.0,
     "start": 0.0,
-    "end": 5.49,
+    "end": 6.5,
     "opacity": 0.3,
     "seed": 5.07
    },
    {
     "id": "ly3",
-    "kind": "illustration",
+    "kind": "settle-title",
     "anchor": "v5",
     "delay": 0.4,
-    "start": 17.71,
-    "end": 21.01,
-    "asset": "chart-down",
-    "x": 0.8,
-    "y": 0.2,
-    "w": 0.3
+    "start": 18.71,
+    "end": 22.02,
+    "text": "1886",
+    "sub": "New York burned",
+    "y": 0.14
    }
   ]
  },
  "meta": {
   "created": 1794903984203,
-  "updated": 1794929549131,
+  "updated": 1794948844802,
   "topic": "illustration of American history the horror version",
   "hook": "In 1886, Joaquín Miller drew a violent apocalyptic vision of New York burning to the ground.",
   "image_style": "dark gothic ink illustration, moody sepia tones, dramatic lighting",
@@ -1490,6 +1489,6 @@
    "summary": "0 of 0 pictures clean"
   },
   "qa": [],
-  "sound": "6 effects: pop, swish, whoosh_soft"
+  "sound": "6 effects: swish, tick, whoosh_soft"
  }
 }
