@@ -920,6 +920,7 @@ def director_pass(t, spec=None):
     sb = spec.get("beats") or []
     pid = t.get("id") or "job"
     rnd = _random.Random(str(t.get("id")))
+    _st = (str(spec.get("title_style") or "").lower() == "settle") or __import__("os").environ.get("STUDIO_SETTLE_TITLE", "").lower() == "on"
     dstyle = {"name": "classic", "blurb": "the standard plan", "gap_mul": 1.0, "callout_mul": 1.0, "icon_mul": 1.0,
               "hook": "behind", "wash": 0.35, "callout": "mixed"}          # = behaviour before styles existed
     try:
@@ -1020,8 +1021,8 @@ def director_pass(t, spec=None):
             if corner:
                 put("corner-text", c, 0.2, text=fact, side=("tr" if n_callout % 4 == 1 else "tl"), y=0.12)
             else:
-                put("kinetic", c, 0.2, text=fact, y=0.14)
-                if dstyle["callout"] != "plain":
+                put("settle-title" if _st else "kinetic", c, 0.2, text=fact, y=0.14)
+                if dstyle["callout"] != "plain" and not _st:
                     put("draw-line", c, 0.7, shape="underline", x=0.2, y=0.21, w=0.6)
             n_callout += 1
             last_end, last_kind = c["end"], "callout"
