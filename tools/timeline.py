@@ -1153,7 +1153,7 @@ def camera_pass(t, spec=None):
         amp = round(max(0.35, min(0.8, 0.3 + 0.12 * dur)) * cstyle["amp_mul"], 2)
         if i == 0:
             move, why = ("hold", "hook: the text is behind the subject, the camera stays out of its way") if "depth-text" in k else ("push-in", "hook: slow push-in")
-        elif k & {"kinetic", "icon-pop", "depth-text", "corner-text", "chart", "panel", "chapter-card"} or (fact and k):
+        elif k & {"kinetic", "settle-title", "icon-pop", "depth-text", "corner-text", "chart", "panel", "chapter-card"} or (fact and k):
             move, why = "hold", "evidence on screen: the camera stops"
         elif _CAM_REVEAL.search(text):
             move, why = "pull-out", "a turn in the story: pull back to reveal"

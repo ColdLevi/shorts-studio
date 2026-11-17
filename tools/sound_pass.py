@@ -69,7 +69,7 @@ def sound_pass(t):
         if not a:
             continue
         at, off = l["start"], round(float(l.get("delay") or 0.15), 3)
-        if k in ("kinetic", "corner-text", "depth-text", "chapter-card"):
+        if k in ("kinetic", "settle-title", "corner-text", "depth-text", "chapter-card"):
             hard = bool(_NUM.search(l.get("text") or "")) or k in ("depth-text", "chapter-card")
             ev.append((at, "hit_low" if hard else "tick", a["id"], off))
         elif k in ("illustration", "asset", "icon-pop", "chart", "panel"):
