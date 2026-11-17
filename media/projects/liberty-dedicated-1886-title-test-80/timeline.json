@@ -1,0 +1,596 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "liberty-dedicated-1886-title-test-80",
+ "rev": 1,
+ "title": "Liberty Dedicated 1886 (title test)",
+ "duration": 23.38,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle"
+  },
+  "transition": {
+   "type": "fade",
+   "duration": 0.35
+  },
+  "motion": "kenburns",
+  "accent": "#C8A15A"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.455,
+    "narration": "A gift from France arrived in New York Harbor in pieces.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "wooden crates holding huge copper statue pieces on a harbor dock, vintage engraving, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7bd91fa57be4",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.71,
+     "dir": -1
+    },
+    "cutout": "assets/img_01_cut.png"
+   },
+   {
+    "id": "v2",
+    "start": 3.455,
+    "end": 7.818,
+    "narration": "In 1886, the Statue of Liberty was finally dedicated.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Statue of Liberty on Liberty Island at dusk, vintage engraving, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c0ff7eb76410",
+    "cam": {
+     "move": "hold",
+     "amp": 0.8,
+     "dir": 1,
+     "wobble": 0
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_02_cut.png"
+   },
+   {
+    "id": "v3",
+    "start": 7.818,
+    "end": 11.861,
+    "narration": "President Grover Cleveland spoke as ships filled the harbor.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "crowd and many ships in New York Harbor for a ceremony, vintage engraving, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "661fad0dd985",
+    "cam": {
+     "move": "truck",
+     "amp": 0.79,
+     "dir": -1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v4",
+    "start": 11.861,
+    "end": 15.752,
+    "narration": "From the ground to the torch, it stands about 305 feet tall.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "low angle view of the Statue of Liberty and pedestal against the sky, vintage engraving, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "765b690a1755",
+    "cam": {
+     "move": "drift",
+     "amp": 0.77,
+     "dir": 1
+    },
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_04_cut.png"
+   },
+   {
+    "id": "v5",
+    "start": 15.752,
+    "end": 19.169,
+    "narration": "Its copper skin slowly turned from bright brown to green.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "close up of green weathered copper statue surface, vintage engraving, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "53377d81b6f1",
+    "cam": {
+     "move": "truck",
+     "amp": 0.71,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_05_cut.png"
+   },
+   {
+    "id": "v6",
+    "start": 19.169,
+    "end": 22.584,
+    "narration": "Today it still greets every ship entering the harbor.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "ship passing the Statue of Liberty at sunrise, vintage engraving, dark moody light, vertical"
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "33ad2057ca61",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.71,
+     "dir": 1
+    },
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_06_cut.png"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "A",
+     "start": 0.1,
+     "end": 0.163
+    },
+    {
+     "word": "gift",
+     "start": 0.175,
+     "end": 0.412
+    },
+    {
+     "word": "from",
+     "start": 0.412,
+     "end": 0.575
+    },
+    {
+     "word": "France",
+     "start": 0.588,
+     "end": 1.075
+    },
+    {
+     "word": "arrived",
+     "start": 1.2,
+     "end": 1.65
+    },
+    {
+     "word": "in",
+     "start": 1.65,
+     "end": 1.762
+    },
+    {
+     "word": "New",
+     "start": 1.762,
+     "end": 1.9
+    },
+    {
+     "word": "York",
+     "start": 1.9,
+     "end": 2.15
+    },
+    {
+     "word": "Harbor",
+     "start": 2.15,
+     "end": 2.462
+    },
+    {
+     "word": "in",
+     "start": 2.475,
+     "end": 2.55
+    },
+    {
+     "word": "pieces.",
+     "start": 2.55,
+     "end": 3.175
+    },
+    {
+     "word": "In 1886",
+     "start": 3.455,
+     "end": 4.805
+    },
+    {
+     "word": "the",
+     "start": 4.925,
+     "end": 5.013
+    },
+    {
+     "word": "Statue",
+     "start": 5.013,
+     "end": 5.538
+    },
+    {
+     "word": "of",
+     "start": 5.538,
+     "end": 5.625
+    },
+    {
+     "word": "Liberty",
+     "start": 5.625,
+     "end": 6.112
+    },
+    {
+     "word": "was",
+     "start": 6.25,
+     "end": 6.4
+    },
+    {
+     "word": "finally",
+     "start": 6.4,
+     "end": 6.9
+    },
+    {
+     "word": "dedicated.",
+     "start": 6.9,
+     "end": 7.538
+    },
+    {
+     "word": "President",
+     "start": 7.818,
+     "end": 8.256
+    },
+    {
+     "word": "Grover",
+     "start": 8.256,
+     "end": 8.669
+    },
+    {
+     "word": "Cleveland",
+     "start": 8.681,
+     "end": 9.156
+    },
+    {
+     "word": "spoke",
+     "start": 9.156,
+     "end": 9.631
+    },
+    {
+     "word": "as",
+     "start": 9.794,
+     "end": 9.968
+    },
+    {
+     "word": "ships",
+     "start": 9.981,
+     "end": 10.568
+    },
+    {
+     "word": "filled",
+     "start": 10.718,
+     "end": 11.031
+    },
+    {
+     "word": "the",
+     "start": 11.031,
+     "end": 11.081
+    },
+    {
+     "word": "harbor.",
+     "start": 11.081,
+     "end": 11.581
+    },
+    {
+     "word": "From",
+     "start": 11.861,
+     "end": 11.961
+    },
+    {
+     "word": "the",
+     "start": 11.961,
+     "end": 12.024
+    },
+    {
+     "word": "ground",
+     "start": 12.024,
+     "end": 12.399
+    },
+    {
+     "word": "to",
+     "start": 12.412,
+     "end": 12.487
+    },
+    {
+     "word": "the",
+     "start": 12.487,
+     "end": 12.586
+    },
+    {
+     "word": "torch,",
+     "start": 12.586,
+     "end": 13.137
+    },
+    {
+     "word": "it",
+     "start": 13.297,
+     "end": 13.371
+    },
+    {
+     "word": "stands",
+     "start": 13.371,
+     "end": 13.697
+    },
+    {
+     "word": "about",
+     "start": 13.697,
+     "end": 13.959
+    },
+    {
+     "word": "305 feet",
+     "start": 13.959,
+     "end": 15.072
+    },
+    {
+     "word": "tall.",
+     "start": 15.084,
+     "end": 15.472
+    },
+    {
+     "word": "Its",
+     "start": 15.752,
+     "end": 15.852
+    },
+    {
+     "word": "copper",
+     "start": 15.865,
+     "end": 16.252
+    },
+    {
+     "word": "skin",
+     "start": 16.264,
+     "end": 16.589
+    },
+    {
+     "word": "slowly",
+     "start": 16.602,
+     "end": 17.227
+    },
+    {
+     "word": "turned",
+     "start": 17.24,
+     "end": 17.54
+    },
+    {
+     "word": "from",
+     "start": 17.54,
+     "end": 17.69
+    },
+    {
+     "word": "bright",
+     "start": 17.702,
+     "end": 18.102
+    },
+    {
+     "word": "brown",
+     "start": 18.102,
+     "end": 18.44
+    },
+    {
+     "word": "to",
+     "start": 18.44,
+     "end": 18.502
+    },
+    {
+     "word": "green.",
+     "start": 18.502,
+     "end": 18.889
+    },
+    {
+     "word": "Today",
+     "start": 19.169,
+     "end": 19.444
+    },
+    {
+     "word": "it",
+     "start": 19.444,
+     "end": 19.519
+    },
+    {
+     "word": "still",
+     "start": 19.532,
+     "end": 19.907
+    },
+    {
+     "word": "greets",
+     "start": 19.907,
+     "end": 20.444
+    },
+    {
+     "word": "every",
+     "start": 20.564,
+     "end": 20.84
+    },
+    {
+     "word": "ship",
+     "start": 20.852,
+     "end": 21.227
+    },
+    {
+     "word": "entering",
+     "start": 21.377,
+     "end": 21.627
+    },
+    {
+     "word": "the",
+     "start": 21.627,
+     "end": 21.677
+    },
+    {
+     "word": "harbor.",
+     "start": 21.677,
+     "end": 22.165
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "A gift from France arrived in New York Harbor in pieces. In 1886, the Statue of Liberty was finally dedicated. President Grover Cleveland spoke as ships filled the harbor. From the ground to the torch, it stands about 305 feet tall. Its copper skin slowly turned from bright brown to green. Today it still greets every ship entering the harbor."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": ""
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/whoosh-soft.mp3",
+    "at": 3.185,
+    "volume": 0.289,
+    "anchor": "v2",
+    "offset": -0.27
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 7.548,
+    "volume": 0.289,
+    "anchor": "v3",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 11.661,
+    "volume": 0.55,
+    "anchor": "v4",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.41,
+    "text": "arrived",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.41,
+    "opacity": 0.35,
+    "seed": 4.16
+   },
+   {
+    "id": "ly3",
+    "kind": "settle-title",
+    "anchor": "v2",
+    "delay": 0.2,
+    "start": 3.66,
+    "end": 7.77,
+    "text": "1886",
+    "y": 0.14
+   }
+  ]
+ },
+ "meta": {
+  "created": 1794948077178,
+  "updated": 1794948077183,
+  "topic": "",
+  "hook": "",
+  "image_style": "vintage engraving, dark moody light",
+  "format": "vertical",
+  "assets_release": "project-liberty-dedicated-1886-title-test-80",
+  "spec": {
+   "title": "Liberty Dedicated 1886 (title test)",
+   "style": "vintage engraving, dark moody light",
+   "accent": "#C8A15A",
+   "director_style": "classic",
+   "title_style": "settle",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: classic (the standard plan).",
+   "Beat 1 (\"A gift from France arrived in New Y...\"): the hook. No subject cutout, so I put ARRIVED in the top band where it cannot cover the face.",
+   "Beat 2 (\"In 1886, the Statue of Liberty was ...\"): 1886 goes big in the top band with an underline, clear of the subject.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: hold (evidence on screen: the camera stops).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: drift (alive baseline).",
+   "Beat 5: truck (alive baseline (not the same move twice)).",
+   "Beat 6: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "3 effects: swish, whoosh_soft"
+ }
+}
