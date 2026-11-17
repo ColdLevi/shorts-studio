@@ -37,6 +37,10 @@ WEIGHTS = {
 }
 
 
+# the huge word behind the subject is the signature look: let it open at most about 1 video in 4
+BEHIND_SHARE = 0.25
+
+
 def pick(t, spec=None):
     spec = spec or {}
     forced = str(spec.get("director_style") or "").strip().lower()
@@ -50,6 +54,10 @@ def pick(t, spec=None):
         w[k] = 0
     if sum(w.values()) <= 0:                       # never end up with nothing to choose
         w = dict(WEIGHTS.get(recipe, _W_DEFAULT))
+    if random.Random("%s|%s|hook" % (t.get("id"), spec.get("variation_seed", 0))).random() > BEHIND_SHARE:
+        calm = {k: v for k, v in w.items() if STYLES[k]["hook"] != "behind"}
+        if sum(calm.values()) > 0:
+            w = calm
     rng = random.Random("%s|%s" % (t.get("id"), spec.get("variation_seed", 0)))
     names = sorted(w)
     total = sum(w[n] for n in names)
