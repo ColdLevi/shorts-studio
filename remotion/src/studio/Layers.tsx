@@ -187,8 +187,72 @@ const Kinetic: React.FC<P> = ({ l, L, accent, font }) => {
   );
 };
 
+// ---- settle-title (Tool Drop "settle-in title" recipe, r30 0.75 -> stiffness 335, damping 37) ----
+// Motion: rises 60 px (scaled by L.u) and settles; opacity = 1 - 0.75^frame; no bounce, no flashing.
+// Layout: text <= 90% of width, wrapped to <= 3 lines, never under 40 px (x L.u), kept inside the
+// phone-safe band (top 10%, bottom 20%). Optional second line in l.sub, optional accent rule.
+export const settleFit = (text: string, w: number, h: number, u: number, tall: boolean) => {
+  const words = text.split(/\s+/).filter(Boolean).slice(0, 8);
+  const minS = 40 * u;
+  let S = (tall ? 118 : 104) * u;
+  let lines: string[] = [];
+  for (let i = 0; i < 40; i++) {
+    const maxChars = Math.max(4, Math.floor((w * 0.9) / (0.58 * S)));
+    lines = [];
+    let cur = '';
+    for (const wd of words) {
+      const next = cur ? cur + ' ' + wd : wd;
+      if (next.length <= maxChars || !cur) cur = next; else { lines.push(cur); cur = wd; }
+    }
+    if (cur) lines.push(cur);
+    const widest = lines.reduce((m, s) => Math.max(m, s.length), 0);
+    if (lines.length <= 3 && widest * 0.58 * S <= w * 0.9) break;
+    if (S <= minS) break;
+    S = Math.max(minS, S * 0.94);
+  }
+  return { S, lines };
+};
+
+const SettleTitle: React.FC<P> = ({ l, L, accent, font }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const env = useEnv(6);
+  const sub = ((l as unknown as { sub?: string }).sub || '').trim();
+  const { S, lines } = settleFit(l.text || '', L.w, L.h, L.u, L.shape === 'tall' || L.shape === 'portrait');
+  const subS = Math.max(40 * L.u, S * 0.36);
+  const blockH = lines.length * S * 1.08 + (sub ? subS * 2 : 0);
+  const topPx = Math.min(Math.max((l.y ?? 0.16) * L.h, L.h * 0.1), L.h * 0.8 - blockH);
+  const rise = (fr: number) => {
+    const s = spring({ frame: fr, fps, config: { stiffness: 335, damping: 37 } });
+    return { y: (1 - s) * 60 * L.u, o: fr < 0 ? 0 : 1 - Math.pow(0.75, fr) };
+  };
+  const a = rise(f);
+  const b = rise(f - 8);
+  const ruleW = Math.min(1, Math.max(0, (f - 6) / 14)) * L.w * 0.26;
+  const shadow = `0 ${4 * L.u}px ${18 * L.u}px rgba(0,0,0,0.65)`;
+  return (
+    <AbsoluteFill style={{ opacity: env }}>
+      <div style={{ position: 'absolute', top: topPx, left: L.pad, right: L.pad, textAlign: 'center' }}>
+        <div style={{ transform: `translateY(${a.y}px)`, opacity: a.o, fontFamily: fam(font), fontWeight: 900,
+          fontSize: S, lineHeight: 1.08, letterSpacing: -0.02 * S, color: '#ffffff', textShadow: shadow }}>
+          {lines.map((ln, i) => <div key={i}>{ln}</div>)}
+        </div>
+        {sub ? (
+          <>
+            <div style={{ width: ruleW, height: Math.max(3, 4 * L.u), background: accent, margin: `${subS * 0.45}px auto 0` }} />
+            <div style={{ transform: `translateY(${b.y}px)`, opacity: b.o, marginTop: subS * 0.4, fontFamily: fam(font),
+              fontWeight: 800, fontSize: subS, letterSpacing: 0.12 * subS, color: '#ffffff', textShadow: shadow }}>
+              {sub.toUpperCase()}
+            </div>
+          </>
+        ) : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const KINDS = {
-  'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic,
+  'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic, 'settle-title': SettleTitle,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
   'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel,
 } as unknown as Record<string, React.ComponentType<P>>;
