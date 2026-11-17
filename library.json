@@ -837,6 +837,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-76",
+      "title": "When New York Burned in 1886",
+      "hook": "In 1886, Joaqu\u00edn Miller drew a violent apocalyptic vision of New York burning to the ground.",
+      "accent": "#FF5A5F",
+      "duration": 39.7,
+      "created": 1794906077214,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-76/short-76.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-76/short-76.jpg",
+      "project": "when-new-york-burned-in-1886-mwkfdud8",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
