@@ -823,6 +823,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-75",
+      "title": "Johnny Spends Twenty Minutes Staring At Cheese",
+      "hook": "Johnny stands in front of the open fridge at two in the morning.",
+      "accent": "#FFFFFF",
+      "duration": 31.8,
+      "created": 1794901299253,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-75/short-75.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-75/short-75.jpg",
+      "project": "johnny-spends-twenty-minutes-staring-mwkdhmg5",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
