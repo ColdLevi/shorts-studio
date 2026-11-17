@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "when-new-york-burned-in-1886-mwkfdud8",
- "rev": 2,
+ "rev": 3,
  "title": "When New York Burned in 1886",
  "duration": 39.61,
  "canvas": {
@@ -1383,6 +1383,14 @@
   "sfx": [
    {
     "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
     "src": "library/sfx/gen/whoosh_soft.wav",
     "at": 6.275,
     "volume": 0.34,
@@ -1390,20 +1398,12 @@
     "offset": -0.27
    },
    {
-    "id": "gs2",
+    "id": "gs3",
     "src": "library/sfx/clips/whoosh-soft.mp3",
     "at": 14.39,
     "volume": 0.289,
     "anchor": "v4",
     "offset": -0.27
-   },
-   {
-    "id": "gs3",
-    "src": "library/sfx/gen/pop.wav",
-    "at": 18.83,
-    "volume": 0.3,
-    "anchor": "v5",
-    "offset": 0.52
    },
    {
     "id": "gs4",
@@ -1454,21 +1454,20 @@
    },
    {
     "id": "ly3",
-    "kind": "illustration",
+    "kind": "settle-title",
     "anchor": "v5",
     "delay": 0.4,
     "start": 18.71,
     "end": 22.02,
-    "asset": "chart-down",
-    "x": 0.8,
-    "y": 0.2,
-    "w": 0.3
+    "text": "1886",
+    "sub": "New York burned",
+    "y": 0.14
    }
   ]
  },
  "meta": {
   "created": 1794903984203,
-  "updated": 1794916974404,
+  "updated": 1794926968751,
   "topic": "illustration of American history the horror version",
   "hook": "In 1886, Joaquín Miller drew a violent apocalyptic vision of New York burning to the ground.",
   "image_style": "dark gothic ink illustration, moody sepia tones, dramatic lighting",
@@ -1519,6 +1518,6 @@
    "summary": "0 of 0 pictures clean"
   },
   "qa": [],
-  "sound": "6 effects: pop, swish, whoosh_soft"
+  "sound": "6 effects: swish, tick, whoosh_soft"
  }
 }
