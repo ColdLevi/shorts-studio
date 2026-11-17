@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "how-satoshi-built-bitcoin-in-2009-mwi3mtsy",
- "rev": 2,
+ "rev": 3,
  "title": "How Satoshi Built Bitcoin in 2009",
  "duration": 46.5,
  "canvas": {
@@ -1491,7 +1491,7 @@
  },
  "meta": {
   "created": 1794763307944,
-  "updated": 1794863302548,
+  "updated": 1794897053633,
   "topic": "how bitcoin came to exist the issue behind normal banking Vs now with Blockchain tech, and it for days then modern for recent",
   "hook": "Satoshi Nakamoto embedded a newspaper headline into code on January third, 2009.",
   "image_style": "1980s retro photo style with glowing VHS tape scanlines, neon teal accents, heavy film grain, and crisp 1980s computer artwork",
