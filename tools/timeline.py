@@ -1011,13 +1011,13 @@ def director_pass(t, spec=None):
                     break
         if not fact and dstyle.get("spoken"):
             fact = _dst.spoken_fact(text) or ""
-        if fact and n_callout < cap_callout and last_kind != "callout":
+        if fact and n_callout < cap_callout and (last_kind != "callout" or (co and _st)):
             box = _subject_box(c, pid)
             if box and box[0] < 0.22:
                 notes.append('%s: %s is worth showing, but the subject is up in the top of the frame, so I left it off rather than cover it.' % (tag, fact))
                 left_clean += 1
                 continue
-            corner = len(fact) <= 12 and (dstyle["callout"] == "corner" or (dstyle["callout"] == "mixed" and n_callout % 2 == 1))     # step3-assets: alternate with tilted corner text
+            corner = (not _st) and len(fact) <= 12 and (dstyle["callout"] == "corner" or (dstyle["callout"] == "mixed" and n_callout % 2 == 1))     # step3-assets: alternate with tilted corner text
             if corner:
                 put("corner-text", c, 0.2, text=fact, side=("tr" if n_callout % 4 == 1 else "tl"), y=0.12)
             else:
