@@ -1,9 +1,9 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "when-new-york-burned-in-1886-mwkfdud8",
- "rev": 1,
+ "rev": 2,
  "title": "When New York Burned in 1886",
- "duration": 39.61,
+ "duration": 38.56,
  "canvas": {
   "width": 1080,
   "height": 1920,
@@ -11,8 +11,10 @@
  },
  "style": {
   "caption": {
-   "preset": "none",
-   "font": "Inter"
+   "preset": "neon",
+   "font": "Playfair Display",
+   "position": "middle",
+   "size": 110
   },
   "transition": {
    "type": "dissolve",
@@ -54,8 +56,8 @@
    {
     "id": "v1",
     "start": 0.0,
-    "end": 6.545,
-    "narration": "In eighteen eighty-six, Joaquín Miller drew a violent apocalyptic vision of New York burning to the ground.",
+    "end": 5.544,
+    "narration": "In eighteen eighty-six, Joaquín Miller drew a violent vision of New York burning to the ground.",
     "kind": "image",
     "src": "assets/img_01.jpg",
     "gen": {
@@ -74,8 +76,8 @@
    },
    {
     "id": "v2",
-    "start": 6.545,
-    "end": 10.215,
+    "start": 5.544,
+    "end": 9.214,
     "narration": "That harrowing scene filled the pages of The Destruction of Gotham,",
     "kind": "image",
     "src": "assets/img_02.jpg",
@@ -99,8 +101,8 @@
    },
    {
     "id": "v3",
-    "start": 10.215,
-    "end": 14.66,
+    "start": 9.214,
+    "end": 13.659,
     "narration": "turning real urban anxieties into prophecies of absolute doom.",
     "kind": "image",
     "src": "assets/img_02.jpg",
@@ -124,8 +126,8 @@
    },
    {
     "id": "v4",
-    "start": 14.66,
-    "end": 18.308,
+    "start": 13.659,
+    "end": 17.307,
     "narration": "Nineteenth-century American writers frequently channeled societal",
     "kind": "image",
     "src": "assets/img_03.jpg",
@@ -149,8 +151,8 @@
    },
    {
     "id": "v5",
-    "start": 18.308,
-    "end": 22.065,
+    "start": 17.307,
+    "end": 21.064,
     "narration": "fears of total collapse into vivid apocalyptic fiction.",
     "kind": "image",
     "src": "assets/img_03.jpg",
@@ -174,8 +176,8 @@
    },
    {
     "id": "v6",
-    "start": 22.065,
-    "end": 24.512,
+    "start": 21.064,
+    "end": 23.511,
     "narration": "Centuries of phantasmal visions were later",
     "kind": "image",
     "src": "assets/img_04.jpg",
@@ -199,8 +201,8 @@
    },
    {
     "id": "v7",
-    "start": 24.512,
-    "end": 27.52,
+    "start": 23.511,
+    "end": 26.519,
     "narration": "carefully gathered together by Robert Weinberg.",
     "kind": "image",
     "src": "assets/img_04.jpg",
@@ -224,8 +226,8 @@
    },
    {
     "id": "v8",
-    "start": 27.52,
-    "end": 30.443,
+    "start": 26.519,
+    "end": 29.442,
     "narration": "Those historic nightmares filled a two hundred fifty six",
     "kind": "image",
     "src": "assets/img_05.jpg",
@@ -249,8 +251,8 @@
    },
    {
     "id": "v9",
-    "start": 30.443,
-    "end": 33.282,
+    "start": 29.442,
+    "end": 32.281,
     "narration": "page hardcover released in two thousand.",
     "kind": "image",
     "src": "assets/img_05.jpg",
@@ -274,8 +276,8 @@
    },
    {
     "id": "v10",
-    "start": 33.282,
-    "end": 36.017,
+    "start": 32.281,
+    "end": 35.016,
     "narration": "Horror of the Twentieth Century preserved these dark",
     "kind": "image",
     "src": "assets/img_06.jpg",
@@ -299,8 +301,8 @@
    },
    {
     "id": "v11",
-    "start": 36.017,
-    "end": 38.808,
+    "start": 35.016,
+    "end": 37.758,
     "narration": "American prophecies for modern readers.",
     "kind": "image",
     "src": "assets/img_06.jpg",
@@ -318,7 +320,7 @@
     "cutout": "assets/img_06_cut.png",
     "cam": {
      "move": "pull-out",
-     "amp": 0.7,
+     "amp": 0.69,
      "dir": -1
     }
    }
@@ -329,472 +331,1008 @@
     {
      "word": "In",
      "start": 0.1,
-     "end": 0.237
+     "end": 0.287
     },
     {
      "word": "eighteen",
-     "start": 0.25,
+     "start": 0.312,
      "end": 0.588
     },
     {
      "word": "eighty-six,",
-     "start": 0.6,
-     "end": 1.312
+     "start": 0.613,
+     "end": 1.188
     },
     {
      "word": "Joaquín",
-     "start": 1.5,
-     "end": 1.913
+     "start": 1.375,
+     "end": 1.75
     },
     {
      "word": "Miller",
-     "start": 1.925,
-     "end": 2.2
+     "start": 1.775,
+     "end": 2.075
     },
     {
      "word": "drew",
-     "start": 2.212,
-     "end": 2.45
+     "start": 2.1,
+     "end": 2.275
     },
     {
      "word": "a",
-     "start": 2.462,
-     "end": 2.513
+     "start": 2.3,
+     "end": 2.362
     },
     {
      "word": "violent",
-     "start": 2.525,
-     "end": 3.1
-    },
-    {
-     "word": "apocalyptic",
-     "start": 3.112,
-     "end": 3.913
+     "start": 2.388,
+     "end": 2.788
     },
     {
      "word": "vision",
-     "start": 3.925,
-     "end": 4.338
+     "start": 2.8,
+     "end": 3.112
     },
     {
      "word": "of",
-     "start": 4.45,
-     "end": 4.562
+     "start": 3.138,
+     "end": 3.225
     },
     {
      "word": "New",
-     "start": 4.575,
-     "end": 4.812
+     "start": 3.25,
+     "end": 3.375
     },
     {
      "word": "York",
-     "start": 4.825,
-     "end": 5.188
+     "start": 3.4,
+     "end": 3.625
     },
     {
      "word": "burning",
-     "start": 5.263,
-     "end": 5.662
+     "start": 3.65,
+     "end": 3.938
     },
     {
      "word": "to",
-     "start": 5.675,
-     "end": 5.775
+     "start": 3.962,
+     "end": 4.062
     },
     {
      "word": "the",
-     "start": 5.787,
-     "end": 5.875
+     "start": 4.088,
+     "end": 4.188
     },
     {
      "word": "ground.",
-     "start": 5.888,
-     "end": 6.325
+     "start": 4.2,
+     "end": 4.638
     },
     {
      "word": "That",
-     "start": 6.605,
-     "end": 6.743
+     "start": 5.604,
+     "end": 5.742
     },
     {
      "word": "harrowing",
-     "start": 6.755,
-     "end": 7.293
+     "start": 5.754,
+     "end": 6.292
     },
     {
      "word": "scene",
-     "start": 7.305,
-     "end": 7.717
+     "start": 6.304,
+     "end": 6.716
     },
     {
      "word": "filled",
-     "start": 7.73,
-     "end": 8.017
+     "start": 6.729,
+     "end": 7.016
     },
     {
      "word": "the",
-     "start": 8.03,
-     "end": 8.117
+     "start": 7.029,
+     "end": 7.116
     },
     {
      "word": "pages",
-     "start": 8.13,
-     "end": 8.667
+     "start": 7.129,
+     "end": 7.666
     },
     {
      "word": "of",
-     "start": 8.68,
-     "end": 8.755
+     "start": 7.679,
+     "end": 7.754
     },
     {
      "word": "The",
-     "start": 8.767,
-     "end": 8.843
+     "start": 7.766,
+     "end": 7.842
     },
     {
      "word": "Destruction",
-     "start": 8.855,
-     "end": 9.468
+     "start": 7.854,
+     "end": 8.467
     },
     {
      "word": "of",
-     "start": 9.48,
-     "end": 9.593
+     "start": 8.479,
+     "end": 8.592
     },
     {
      "word": "Gotham,",
-     "start": 9.605,
-     "end": 10.055
+     "start": 8.604,
+     "end": 9.054
     },
     {
      "word": "turning",
-     "start": 10.215,
-     "end": 10.628
+     "start": 9.214,
+     "end": 9.627
     },
     {
      "word": "real",
-     "start": 10.641,
-     "end": 10.953
+     "start": 9.64,
+     "end": 9.952
     },
     {
      "word": "urban",
-     "start": 11.053,
-     "end": 11.315
+     "start": 10.052,
+     "end": 10.314
     },
     {
      "word": "anxieties",
-     "start": 11.328,
-     "end": 12.078
+     "start": 10.327,
+     "end": 11.077
     },
     {
      "word": "into",
-     "start": 12.165,
-     "end": 12.366
+     "start": 11.164,
+     "end": 11.365
     },
     {
      "word": "prophecies",
-     "start": 12.378,
-     "end": 13.178
+     "start": 11.377,
+     "end": 12.177
     },
     {
      "word": "of",
-     "start": 13.328,
-     "end": 13.453
+     "start": 12.327,
+     "end": 12.452
     },
     {
      "word": "absolute",
-     "start": 13.528,
-     "end": 14.141
+     "start": 12.527,
+     "end": 13.14
     },
     {
      "word": "doom.",
-     "start": 14.153,
-     "end": 14.44
+     "start": 13.152,
+     "end": 13.439
     },
     {
      "word": "Nineteenth-century",
-     "start": 14.72,
-     "end": 15.607
+     "start": 13.719,
+     "end": 14.606
     },
     {
      "word": "American",
-     "start": 15.62,
-     "end": 16.12
+     "start": 14.619,
+     "end": 15.119
     },
     {
      "word": "writers",
-     "start": 16.133,
-     "end": 16.57
+     "start": 15.132,
+     "end": 15.569
     },
     {
      "word": "frequently",
-     "start": 16.582,
-     "end": 17.195
+     "start": 15.581,
+     "end": 16.194
     },
     {
      "word": "channeled",
-     "start": 17.208,
-     "end": 17.62
+     "start": 16.207,
+     "end": 16.619
     },
     {
      "word": "societal",
-     "start": 17.633,
-     "end": 18.295
+     "start": 16.632,
+     "end": 17.294
     },
     {
      "word": "fears",
-     "start": 18.308,
-     "end": 18.782
+     "start": 17.307,
+     "end": 17.781
     },
     {
      "word": "of",
-     "start": 18.795,
-     "end": 18.895
+     "start": 17.794,
+     "end": 17.894
     },
     {
      "word": "total",
-     "start": 18.907,
-     "end": 19.308
+     "start": 17.906,
+     "end": 18.307
     },
     {
      "word": "collapse",
-     "start": 19.32,
-     "end": 19.933
+     "start": 18.319,
+     "end": 18.932
     },
     {
      "word": "into",
-     "start": 20.107,
-     "end": 20.32
+     "start": 19.106,
+     "end": 19.319
     },
     {
      "word": "vivid",
-     "start": 20.332,
-     "end": 20.695
+     "start": 19.331,
+     "end": 19.694
     },
     {
      "word": "apocalyptic",
-     "start": 20.708,
-     "end": 21.395
+     "start": 19.707,
+     "end": 20.394
     },
     {
      "word": "fiction.",
-     "start": 21.407,
-     "end": 21.845
+     "start": 20.406,
+     "end": 20.844
     },
     {
      "word": "Centuries",
-     "start": 22.125,
-     "end": 22.663
+     "start": 21.124,
+     "end": 21.662
     },
     {
      "word": "of",
-     "start": 22.675,
-     "end": 22.762
+     "start": 21.674,
+     "end": 21.761
     },
     {
      "word": "phantasmal",
-     "start": 22.775,
-     "end": 23.512
+     "start": 21.774,
+     "end": 22.511
     },
     {
      "word": "visions",
-     "start": 23.525,
-     "end": 23.95
+     "start": 22.524,
+     "end": 22.949
     },
     {
      "word": "were",
-     "start": 23.962,
-     "end": 24.113
+     "start": 22.961,
+     "end": 23.112
     },
     {
      "word": "later",
-     "start": 24.125,
-     "end": 24.5
+     "start": 23.124,
+     "end": 23.499
     },
     {
      "word": "carefully",
-     "start": 24.512,
-     "end": 25.113
+     "start": 23.511,
+     "end": 24.112
     },
     {
      "word": "gathered",
-     "start": 25.187,
-     "end": 25.55
+     "start": 24.186,
+     "end": 24.549
     },
     {
      "word": "together",
-     "start": 25.563,
-     "end": 26.063
+     "start": 24.562,
+     "end": 25.062
     },
     {
      "word": "by",
-     "start": 26.163,
-     "end": 26.3
+     "start": 25.162,
+     "end": 25.299
     },
     {
      "word": "Robert",
-     "start": 26.313,
-     "end": 26.7
+     "start": 25.312,
+     "end": 25.699
     },
     {
      "word": "Weinberg.",
-     "start": 26.712,
-     "end": 27.3
+     "start": 25.711,
+     "end": 26.299
     },
     {
      "word": "Those",
-     "start": 27.58,
-     "end": 27.83
+     "start": 26.579,
+     "end": 26.829
     },
     {
      "word": "historic",
-     "start": 27.843,
-     "end": 28.343
+     "start": 26.842,
+     "end": 27.342
     },
     {
      "word": "nightmares",
-     "start": 28.356,
-     "end": 28.893
+     "start": 27.355,
+     "end": 27.892
     },
     {
      "word": "filled",
-     "start": 28.906,
-     "end": 29.143
+     "start": 27.905,
+     "end": 28.142
     },
     {
      "word": "a",
-     "start": 29.156,
-     "end": 29.205
+     "start": 28.155,
+     "end": 28.204
     },
     {
      "word": "two",
-     "start": 29.218,
-     "end": 29.468
+     "start": 28.217,
+     "end": 28.467
     },
     {
      "word": "hundred",
-     "start": 29.481,
-     "end": 29.781
+     "start": 28.48,
+     "end": 28.78
     },
     {
      "word": "fifty",
-     "start": 29.793,
-     "end": 30.143
+     "start": 28.792,
+     "end": 29.142
     },
     {
      "word": "six",
-     "start": 30.156,
-     "end": 30.431
+     "start": 29.155,
+     "end": 29.43
     },
     {
      "word": "page",
-     "start": 30.443,
-     "end": 30.843
+     "start": 29.442,
+     "end": 29.842
     },
     {
      "word": "hardcover",
-     "start": 30.981,
-     "end": 31.631
+     "start": 29.98,
+     "end": 30.63
     },
     {
      "word": "released",
-     "start": 31.643,
-     "end": 32.118
+     "start": 30.642,
+     "end": 31.117
     },
     {
      "word": "in",
-     "start": 32.238,
-     "end": 32.325
+     "start": 31.237,
+     "end": 31.324
     },
     {
      "word": "two",
-     "start": 32.337,
-     "end": 32.538
+     "start": 31.336,
+     "end": 31.537
     },
     {
      "word": "thousand.",
-     "start": 32.55,
-     "end": 33.062
+     "start": 31.549,
+     "end": 32.061
     },
     {
      "word": "Horror",
-     "start": 33.342,
-     "end": 33.642
+     "start": 32.341,
+     "end": 32.641
     },
     {
      "word": "of",
-     "start": 33.655,
-     "end": 33.73
+     "start": 32.654,
+     "end": 32.729
     },
     {
      "word": "the",
-     "start": 33.742,
-     "end": 33.817
+     "start": 32.741,
+     "end": 32.816
     },
     {
      "word": "Twentieth",
-     "start": 33.829,
-     "end": 34.292
+     "start": 32.828,
+     "end": 33.291
     },
     {
      "word": "Century",
-     "start": 34.304,
-     "end": 34.817
+     "start": 33.303,
+     "end": 33.816
     },
     {
      "word": "preserved",
-     "start": 34.829,
-     "end": 35.392
+     "start": 33.828,
+     "end": 34.391
     },
     {
      "word": "these",
-     "start": 35.405,
-     "end": 35.667
+     "start": 34.404,
+     "end": 34.666
     },
     {
      "word": "dark",
-     "start": 35.73,
-     "end": 36.005
+     "start": 34.729,
+     "end": 35.004
     },
     {
      "word": "American",
-     "start": 36.017,
-     "end": 36.505
+     "start": 35.016,
+     "end": 35.504
     },
     {
      "word": "prophecies",
-     "start": 36.517,
-     "end": 37.179
+     "start": 35.516,
+     "end": 36.178
     },
     {
      "word": "for",
-     "start": 37.292,
-     "end": 37.467
+     "start": 36.291,
+     "end": 36.466
     },
     {
      "word": "modern",
-     "start": 37.48,
-     "end": 37.88
+     "start": 36.479,
+     "end": 36.879
     },
     {
      "word": "readers.",
-     "start": 37.892,
-     "end": 38.38
+     "start": 36.891,
+     "end": 37.379
     }
    ]
   },
   "voice": [
    {
     "id": "vo",
-    "src": "assets/voice.mp3",
+    "src": "assets/voice_r2.mp3",
     "start": 0,
     "volume": 1,
     "gen": {
      "tool": "edge-tts",
      "voice": "en-US-AndrewNeural",
      "rate": "+0%",
-     "text": "In eighteen eighty-six, Joaquín Miller drew a violent apocalyptic vision of New York burning to the ground. That harrowing scene filled the pages of The Destruction of Gotham, turning real urban anxieties into prophecies of absolute doom. Nineteenth-century American writers frequently channeled societal fears of total collapse into vivid apocalyptic fiction. Centuries of phantasmal visions were later carefully gathered together by Robert Weinberg. Those historic nightmares filled a two hundred fifty six page hardcover released in two thousand. Horror of the Twentieth Century preserved these dark American prophecies for modern readers."
-    }
+     "text": "In eighteen eighty-six, Joaquín Miller drew a violent vision of New York burning to the ground. That harrowing scene filled the pages of The Destruction of Gotham, turning real urban anxieties into prophecies of absolute doom. Nineteenth-century American writers frequently channeled societal fears of total collapse into vivid apocalyptic fiction. Centuries of phantasmal visions were later carefully gathered together by Robert Weinberg. Those historic nightmares filled a two hundred fifty six page hardcover released in two thousand. Horror of the Twentieth Century preserved these dark American prophecies for modern readers."
+    },
+    "segments": [
+     {
+      "clip": "v1",
+      "text": "In eighteen eighty-six, Joaquín Miller drew a violent vision of New York burning to the ground.",
+      "src": "assets/vo_v1_0c80c07d.mp3",
+      "words": [
+       {
+        "word": "In",
+        "start": 0.1,
+        "end": 0.287
+       },
+       {
+        "word": "eighteen",
+        "start": 0.312,
+        "end": 0.588
+       },
+       {
+        "word": "eighty-six,",
+        "start": 0.613,
+        "end": 1.188
+       },
+       {
+        "word": "Joaquín",
+        "start": 1.375,
+        "end": 1.75
+       },
+       {
+        "word": "Miller",
+        "start": 1.775,
+        "end": 2.075
+       },
+       {
+        "word": "drew",
+        "start": 2.1,
+        "end": 2.275
+       },
+       {
+        "word": "a",
+        "start": 2.3,
+        "end": 2.362
+       },
+       {
+        "word": "violent",
+        "start": 2.388,
+        "end": 2.788
+       },
+       {
+        "word": "vision",
+        "start": 2.8,
+        "end": 3.112
+       },
+       {
+        "word": "of",
+        "start": 3.138,
+        "end": 3.225
+       },
+       {
+        "word": "New",
+        "start": 3.25,
+        "end": 3.375
+       },
+       {
+        "word": "York",
+        "start": 3.4,
+        "end": 3.625
+       },
+       {
+        "word": "burning",
+        "start": 3.65,
+        "end": 3.938
+       },
+       {
+        "word": "to",
+        "start": 3.962,
+        "end": 4.062
+       },
+       {
+        "word": "the",
+        "start": 4.088,
+        "end": 4.188
+       },
+       {
+        "word": "ground.",
+        "start": 4.2,
+        "end": 4.638
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v2",
+      "text": "That harrowing scene filled the pages of The Destruction of Gotham,",
+      "src": "assets/vo_v2_b775ad86.mp3",
+      "words": [
+       {
+        "word": "That",
+        "start": 0.06,
+        "end": 0.198
+       },
+       {
+        "word": "harrowing",
+        "start": 0.21,
+        "end": 0.748
+       },
+       {
+        "word": "scene",
+        "start": 0.76,
+        "end": 1.172
+       },
+       {
+        "word": "filled",
+        "start": 1.185,
+        "end": 1.472
+       },
+       {
+        "word": "the",
+        "start": 1.485,
+        "end": 1.572
+       },
+       {
+        "word": "pages",
+        "start": 1.585,
+        "end": 2.122
+       },
+       {
+        "word": "of",
+        "start": 2.135,
+        "end": 2.21
+       },
+       {
+        "word": "The",
+        "start": 2.222,
+        "end": 2.298
+       },
+       {
+        "word": "Destruction",
+        "start": 2.31,
+        "end": 2.923
+       },
+       {
+        "word": "of",
+        "start": 2.935,
+        "end": 3.048
+       },
+       {
+        "word": "Gotham,",
+        "start": 3.06,
+        "end": 3.51
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v3",
+      "text": "turning real urban anxieties into prophecies of absolute doom.",
+      "src": "assets/vo_v3_fd87d36b.mp3",
+      "words": [
+       {
+        "word": "turning",
+        "start": 0.0,
+        "end": 0.413
+       },
+       {
+        "word": "real",
+        "start": 0.426,
+        "end": 0.738
+       },
+       {
+        "word": "urban",
+        "start": 0.838,
+        "end": 1.1
+       },
+       {
+        "word": "anxieties",
+        "start": 1.113,
+        "end": 1.863
+       },
+       {
+        "word": "into",
+        "start": 1.95,
+        "end": 2.151
+       },
+       {
+        "word": "prophecies",
+        "start": 2.163,
+        "end": 2.963
+       },
+       {
+        "word": "of",
+        "start": 3.113,
+        "end": 3.238
+       },
+       {
+        "word": "absolute",
+        "start": 3.313,
+        "end": 3.926
+       },
+       {
+        "word": "doom.",
+        "start": 3.938,
+        "end": 4.225
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v4",
+      "text": "Nineteenth-century American writers frequently channeled societal",
+      "src": "assets/vo_v4_d7270cd0.mp3",
+      "words": [
+       {
+        "word": "Nineteenth-century",
+        "start": 0.06,
+        "end": 0.947
+       },
+       {
+        "word": "American",
+        "start": 0.96,
+        "end": 1.46
+       },
+       {
+        "word": "writers",
+        "start": 1.473,
+        "end": 1.91
+       },
+       {
+        "word": "frequently",
+        "start": 1.922,
+        "end": 2.535
+       },
+       {
+        "word": "channeled",
+        "start": 2.548,
+        "end": 2.96
+       },
+       {
+        "word": "societal",
+        "start": 2.973,
+        "end": 3.635
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v5",
+      "text": "fears of total collapse into vivid apocalyptic fiction.",
+      "src": "assets/vo_v5_fdd2d631.mp3",
+      "words": [
+       {
+        "word": "fears",
+        "start": 0.0,
+        "end": 0.474
+       },
+       {
+        "word": "of",
+        "start": 0.487,
+        "end": 0.587
+       },
+       {
+        "word": "total",
+        "start": 0.599,
+        "end": 1.0
+       },
+       {
+        "word": "collapse",
+        "start": 1.012,
+        "end": 1.625
+       },
+       {
+        "word": "into",
+        "start": 1.799,
+        "end": 2.012
+       },
+       {
+        "word": "vivid",
+        "start": 2.024,
+        "end": 2.387
+       },
+       {
+        "word": "apocalyptic",
+        "start": 2.4,
+        "end": 3.087
+       },
+       {
+        "word": "fiction.",
+        "start": 3.099,
+        "end": 3.537
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v6",
+      "text": "Centuries of phantasmal visions were later",
+      "src": "assets/vo_v6_e40ab65b.mp3",
+      "words": [
+       {
+        "word": "Centuries",
+        "start": 0.06,
+        "end": 0.598
+       },
+       {
+        "word": "of",
+        "start": 0.61,
+        "end": 0.697
+       },
+       {
+        "word": "phantasmal",
+        "start": 0.71,
+        "end": 1.447
+       },
+       {
+        "word": "visions",
+        "start": 1.46,
+        "end": 1.885
+       },
+       {
+        "word": "were",
+        "start": 1.897,
+        "end": 2.048
+       },
+       {
+        "word": "later",
+        "start": 2.06,
+        "end": 2.435
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v7",
+      "text": "carefully gathered together by Robert Weinberg.",
+      "src": "assets/vo_v7_9629c066.mp3",
+      "words": [
+       {
+        "word": "carefully",
+        "start": 0.0,
+        "end": 0.601
+       },
+       {
+        "word": "gathered",
+        "start": 0.675,
+        "end": 1.038
+       },
+       {
+        "word": "together",
+        "start": 1.051,
+        "end": 1.551
+       },
+       {
+        "word": "by",
+        "start": 1.651,
+        "end": 1.788
+       },
+       {
+        "word": "Robert",
+        "start": 1.801,
+        "end": 2.188
+       },
+       {
+        "word": "Weinberg.",
+        "start": 2.2,
+        "end": 2.788
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v8",
+      "text": "Those historic nightmares filled a two hundred fifty six",
+      "src": "assets/vo_v8_794259a2.mp3",
+      "words": [
+       {
+        "word": "Those",
+        "start": 0.06,
+        "end": 0.31
+       },
+       {
+        "word": "historic",
+        "start": 0.323,
+        "end": 0.823
+       },
+       {
+        "word": "nightmares",
+        "start": 0.836,
+        "end": 1.373
+       },
+       {
+        "word": "filled",
+        "start": 1.386,
+        "end": 1.623
+       },
+       {
+        "word": "a",
+        "start": 1.636,
+        "end": 1.685
+       },
+       {
+        "word": "two",
+        "start": 1.698,
+        "end": 1.948
+       },
+       {
+        "word": "hundred",
+        "start": 1.961,
+        "end": 2.261
+       },
+       {
+        "word": "fifty",
+        "start": 2.273,
+        "end": 2.623
+       },
+       {
+        "word": "six",
+        "start": 2.636,
+        "end": 2.911
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v9",
+      "text": "page hardcover released in two thousand.",
+      "src": "assets/vo_v9_784860db.mp3",
+      "words": [
+       {
+        "word": "page",
+        "start": 0.0,
+        "end": 0.4
+       },
+       {
+        "word": "hardcover",
+        "start": 0.538,
+        "end": 1.188
+       },
+       {
+        "word": "released",
+        "start": 1.2,
+        "end": 1.675
+       },
+       {
+        "word": "in",
+        "start": 1.795,
+        "end": 1.882
+       },
+       {
+        "word": "two",
+        "start": 1.894,
+        "end": 2.095
+       },
+       {
+        "word": "thousand.",
+        "start": 2.107,
+        "end": 2.619
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v10",
+      "text": "Horror of the Twentieth Century preserved these dark",
+      "src": "assets/vo_v10_8cccae61.mp3",
+      "words": [
+       {
+        "word": "Horror",
+        "start": 0.06,
+        "end": 0.36
+       },
+       {
+        "word": "of",
+        "start": 0.373,
+        "end": 0.448
+       },
+       {
+        "word": "the",
+        "start": 0.46,
+        "end": 0.535
+       },
+       {
+        "word": "Twentieth",
+        "start": 0.547,
+        "end": 1.01
+       },
+       {
+        "word": "Century",
+        "start": 1.022,
+        "end": 1.535
+       },
+       {
+        "word": "preserved",
+        "start": 1.547,
+        "end": 2.11
+       },
+       {
+        "word": "these",
+        "start": 2.123,
+        "end": 2.385
+       },
+       {
+        "word": "dark",
+        "start": 2.448,
+        "end": 2.723
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     },
+     {
+      "clip": "v11",
+      "text": "American prophecies for modern readers.",
+      "src": "assets/vo_v11_78902338.mp3",
+      "words": [
+       {
+        "word": "American",
+        "start": 0.0,
+        "end": 0.488
+       },
+       {
+        "word": "prophecies",
+        "start": 0.5,
+        "end": 1.162
+       },
+       {
+        "word": "for",
+        "start": 1.275,
+        "end": 1.45
+       },
+       {
+        "word": "modern",
+        "start": 1.463,
+        "end": 1.863
+       },
+       {
+        "word": "readers.",
+        "start": 1.875,
+        "end": 2.363
+       }
+      ],
+      "voice": "en-US-AndrewNeural|+0%|"
+     }
+    ],
+    "hash": "72268cf68ca9"
    }
   ],
   "music": [
@@ -816,16 +1354,16 @@
   "sfx": [
    {
     "id": "gs1",
-    "src": "library/sfx/gen/whoosh_soft.wav",
-    "at": 6.275,
-    "volume": 0.34,
+    "src": "library/sfx/clips/whoosh-soft.mp3",
+    "at": 5.274,
+    "volume": 0.289,
     "anchor": "v2",
     "offset": -0.27
    },
    {
     "id": "gs2",
-    "src": "library/sfx/clips/whoosh-soft.mp3",
-    "at": 14.39,
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 13.389,
     "volume": 0.289,
     "anchor": "v4",
     "offset": -0.27
@@ -833,7 +1371,7 @@
    {
     "id": "gs3",
     "src": "library/sfx/gen/pop.wav",
-    "at": 18.83,
+    "at": 17.83,
     "volume": 0.3,
     "anchor": "v5",
     "offset": 0.52
@@ -841,24 +1379,24 @@
    {
     "id": "gs4",
     "src": "library/sfx/gen/swish.wav",
-    "at": 21.865,
+    "at": 20.864,
     "volume": 0.55,
     "anchor": "v6",
     "offset": -0.2
    },
    {
     "id": "gs5",
-    "src": "library/sfx/clips/whoosh-wind.mp3",
-    "at": 27.25,
-    "volume": 0.289,
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 26.249,
+    "volume": 0.34,
     "anchor": "v8",
     "offset": -0.27
    },
    {
     "id": "gs6",
-    "src": "library/sfx/gen/whoosh_soft.wav",
-    "at": 33.012,
-    "volume": 0.34,
+    "src": "library/sfx/clips/whoosh-soft.mp3",
+    "at": 32.011,
+    "volume": 0.289,
     "anchor": "v10",
     "offset": -0.27
    }
@@ -871,8 +1409,8 @@
     "anchor": "v1",
     "delay": 0.1,
     "start": 0.1,
-    "end": 6.5,
-    "text": "apocalyptic",
+    "end": 5.49,
+    "text": "eighteen",
     "y": 0.14
    },
    {
@@ -881,7 +1419,7 @@
     "anchor": "v1",
     "delay": 0.0,
     "start": 0.0,
-    "end": 6.5,
+    "end": 5.49,
     "opacity": 0.3,
     "seed": 5.07
    },
@@ -890,8 +1428,8 @@
     "kind": "illustration",
     "anchor": "v5",
     "delay": 0.4,
-    "start": 18.71,
-    "end": 22.02,
+    "start": 17.71,
+    "end": 21.01,
     "asset": "chart-down",
     "x": 0.8,
     "y": 0.2,
@@ -901,7 +1439,7 @@
  },
  "meta": {
   "created": 1794903984203,
-  "updated": 1794903984208,
+  "updated": 1794929549131,
   "topic": "illustration of American history the horror version",
   "hook": "In 1886, Joaquín Miller drew a violent apocalyptic vision of New York burning to the ground.",
   "image_style": "dark gothic ink illustration, moody sepia tones, dramatic lighting",
@@ -929,7 +1467,7 @@
   "renders": [],
   "director": [
    "Directing style: data-forward (numbers first).",
-   "Beat 1 (\"In eighteen eighty-six, Joaquín Mil...\"): the hook. No subject cutout, so I put APOCALYPTIC in the top band where it cannot cover the face.",
+   "Beat 1 (\"In eighteen eighty-six, Joaquín Mil...\"): the hook. No subject cutout, so I put EIGHTEEN in the top band where it cannot cover the face.",
    "Beat 5 (\"fears of total collapse into vivid ...\"): a \"chart-down\" illustration builds itself on the right after the words land.",
    "Left 9 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
   ],

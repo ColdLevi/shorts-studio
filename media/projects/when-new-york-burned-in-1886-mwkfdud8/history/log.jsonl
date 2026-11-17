@@ -1,1 +1,2 @@
 {"rev": 1, "at": 1794903984208, "message": "first build from the bot's spec"}
+{"rev": 2, "at": 1794929549131, "message": "Updated captions and text style", "patch": [{"op": "replace", "path": "/tracks/visuals/@v1/narration", "value": "In eighteen eighty-six, Joaquín Miller drew a violent vision of New York burning to the ground."}, {"op": "merge", "path": "/style/caption", "value": {"font": "Playfair Display", "position": "middle", "preset": "neon", "size": 110}}], "edit_id": "emwkulp24cw1", "kind": "edit", "remade": {"revoiced": ["v1"], "repainted": [], "failed": []}}
