@@ -74,6 +74,9 @@ def redirect(pid, t):
     if not spec.get("beats"):
         return None
     old = (t.get("tracks") or {}).get("layers")
+    if any(isinstance(x, dict) and x.get("kind") == "settle-title" for x in (old or [])):
+        print("subjects: settle-title layer present, layers left as they are")
+        return None
     os.environ.pop("DIRECTOR_DEFER", None)
     t["tracks"].pop("layers", None)
     try:
