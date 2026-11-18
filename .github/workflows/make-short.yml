@@ -110,7 +110,7 @@ jobs:
           cache-dependency-path: remotion/package-lock.json
 
       - name: Install tools
-        timeout-minutes: 12
+        timeout-minutes: 25
         run: |
           pip install -q -U edge-tts gtts pillow gradio_client
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
