@@ -1,0 +1,647 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-raise-that-vanished-mwm38je6",
+ "rev": 1,
+ "title": "The Raise That Vanished",
+ "duration": 24.13,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 2.983,
+    "narration": "Ten thousand dollars extra hits your bank account.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, a leather ledger book resting on a dark mahogany desk with glowing golden coins beside it, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "1515b5040eb6",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.59,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 2.983,
+    "end": 7.26,
+    "narration": "You think a bigger paycheck keeps you safe, but your spending just grows right with it.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, a solitary figure sitting in a dimly lit study reviewing stacked bills, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "dcb0e764d952",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.72,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.26,
+    "end": 10.928,
+    "narration": "A promotion leads straight to a nicer apartment with a higher rent.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, an elegant multi-story brick apartment facade under a heavy evening sky, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c0ebe1d86ac8",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.67,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v4",
+    "start": 10.928,
+    "end": 14.658,
+    "narration": "More cash goes to eating out and piling up monthly subscriptions.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, a wooden dining table set with fine porcelain dishes and silver goblets, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7ff0efb68ff0",
+    "cam": {
+     "move": "drift",
+     "amp": 0.67,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v5",
+    "start": 14.658,
+    "end": 18.725,
+    "narration": "Savings get left behind as lifestyle inflation eats every single penny.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, an empty ceramic piggy bank resting on a dusty wooden shelf, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "a3b18e4fb00d",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.71,
+     "dir": -1
+    },
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v6",
+    "start": 18.725,
+    "end": 23.328,
+    "narration": "Your income climbs higher, yet your net worth remains completely flat.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, a set of old brass balancing scales with equal weights on both sides, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "bf3c0497ec38",
+    "cam": {
+     "move": "drift",
+     "amp": 0.72,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Ten",
+     "start": 0.1,
+     "end": 0.35
+    },
+    {
+     "word": "thousand",
+     "start": 0.375,
+     "end": 0.775
+    },
+    {
+     "word": "dollars",
+     "start": 0.8,
+     "end": 1.225
+    },
+    {
+     "word": "extra",
+     "start": 1.25,
+     "end": 1.587
+    },
+    {
+     "word": "hits",
+     "start": 1.613,
+     "end": 1.863
+    },
+    {
+     "word": "your",
+     "start": 1.875,
+     "end": 2.025
+    },
+    {
+     "word": "bank",
+     "start": 2.05,
+     "end": 2.3
+    },
+    {
+     "word": "account.",
+     "start": 2.312,
+     "end": 2.763
+    },
+    {
+     "word": "You",
+     "start": 3.043,
+     "end": 3.193
+    },
+    {
+     "word": "think",
+     "start": 3.217,
+     "end": 3.418
+    },
+    {
+     "word": "a",
+     "start": 3.43,
+     "end": 3.493
+    },
+    {
+     "word": "bigger",
+     "start": 3.517,
+     "end": 3.805
+    },
+    {
+     "word": "paycheck",
+     "start": 3.817,
+     "end": 4.217
+    },
+    {
+     "word": "keeps",
+     "start": 4.243,
+     "end": 4.467
+    },
+    {
+     "word": "you",
+     "start": 4.48,
+     "end": 4.58
+    },
+    {
+     "word": "safe,",
+     "start": 4.605,
+     "end": 4.98
+    },
+    {
+     "word": "but",
+     "start": 5.14,
+     "end": 5.29
+    },
+    {
+     "word": "your",
+     "start": 5.315,
+     "end": 5.452
+    },
+    {
+     "word": "spending",
+     "start": 5.478,
+     "end": 5.878,
+     "em": true
+    },
+    {
+     "word": "just",
+     "start": 5.902,
+     "end": 6.128
+    },
+    {
+     "word": "grows",
+     "start": 6.152,
+     "end": 6.428
+    },
+    {
+     "word": "right",
+     "start": 6.452,
+     "end": 6.652
+    },
+    {
+     "word": "with",
+     "start": 6.678,
+     "end": 6.852
+    },
+    {
+     "word": "it.",
+     "start": 6.865,
+     "end": 7.04
+    },
+    {
+     "word": "A",
+     "start": 7.32,
+     "end": 7.458
+    },
+    {
+     "word": "promotion",
+     "start": 7.483,
+     "end": 8.046
+    },
+    {
+     "word": "leads",
+     "start": 8.07,
+     "end": 8.296
+    },
+    {
+     "word": "straight",
+     "start": 8.308,
+     "end": 8.608
+    },
+    {
+     "word": "to",
+     "start": 8.633,
+     "end": 8.758
+    },
+    {
+     "word": "a",
+     "start": 8.771,
+     "end": 8.833
+    },
+    {
+     "word": "nicer",
+     "start": 8.845,
+     "end": 9.233
+    },
+    {
+     "word": "apartment",
+     "start": 9.258,
+     "end": 9.758
+    },
+    {
+     "word": "with",
+     "start": 9.783,
+     "end": 9.908
+    },
+    {
+     "word": "a",
+     "start": 9.933,
+     "end": 9.983
+    },
+    {
+     "word": "higher",
+     "start": 9.995,
+     "end": 10.32
+    },
+    {
+     "word": "rent.",
+     "start": 10.345,
+     "end": 10.708
+    },
+    {
+     "word": "More",
+     "start": 10.988,
+     "end": 11.263
+    },
+    {
+     "word": "cash",
+     "start": 11.288,
+     "end": 11.588
+    },
+    {
+     "word": "goes",
+     "start": 11.613,
+     "end": 11.85
+    },
+    {
+     "word": "to",
+     "start": 11.875,
+     "end": 12.0
+    },
+    {
+     "word": "eating",
+     "start": 12.026,
+     "end": 12.313
+    },
+    {
+     "word": "out",
+     "start": 12.326,
+     "end": 12.526
+    },
+    {
+     "word": "and",
+     "start": 12.538,
+     "end": 12.65
+    },
+    {
+     "word": "piling",
+     "start": 12.663,
+     "end": 13.038
+    },
+    {
+     "word": "up",
+     "start": 13.063,
+     "end": 13.188
+    },
+    {
+     "word": "monthly",
+     "start": 13.213,
+     "end": 13.588
+    },
+    {
+     "word": "subscriptions.",
+     "start": 13.613,
+     "end": 14.438
+    },
+    {
+     "word": "Savings",
+     "start": 14.718,
+     "end": 15.231
+    },
+    {
+     "word": "get",
+     "start": 15.255,
+     "end": 15.418
+    },
+    {
+     "word": "left",
+     "start": 15.431,
+     "end": 15.656
+    },
+    {
+     "word": "behind",
+     "start": 15.668,
+     "end": 16.018
+    },
+    {
+     "word": "as",
+     "start": 16.043,
+     "end": 16.168
+    },
+    {
+     "word": "lifestyle",
+     "start": 16.193,
+     "end": 16.731
+    },
+    {
+     "word": "inflation",
+     "start": 16.743,
+     "end": 17.268
+    },
+    {
+     "word": "eats",
+     "start": 17.293,
+     "end": 17.481
+    },
+    {
+     "word": "every",
+     "start": 17.493,
+     "end": 17.743
+    },
+    {
+     "word": "single",
+     "start": 17.768,
+     "end": 18.08,
+     "em": true
+    },
+    {
+     "word": "penny.",
+     "start": 18.106,
+     "end": 18.505
+    },
+    {
+     "word": "Your",
+     "start": 18.785,
+     "end": 19.01
+    },
+    {
+     "word": "income",
+     "start": 19.035,
+     "end": 19.373
+    },
+    {
+     "word": "climbs",
+     "start": 19.397,
+     "end": 19.71
+    },
+    {
+     "word": "higher,",
+     "start": 19.735,
+     "end": 20.085
+    },
+    {
+     "word": "yet",
+     "start": 20.272,
+     "end": 20.41
+    },
+    {
+     "word": "your",
+     "start": 20.435,
+     "end": 20.573
+    },
+    {
+     "word": "net",
+     "start": 20.597,
+     "end": 20.798
+    },
+    {
+     "word": "worth",
+     "start": 20.823,
+     "end": 21.073
+    },
+    {
+     "word": "remains",
+     "start": 21.097,
+     "end": 21.46
+    },
+    {
+     "word": "completely",
+     "start": 21.472,
+     "end": 21.947
+    },
+    {
+     "word": "flat.",
+     "start": 21.972,
+     "end": 22.385
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Ten thousand dollars extra hits your bank account. You think a bigger paycheck keeps you safe, but your spending just grows right with it. A promotion leads straight to a nicer apartment with a higher rent. More cash goes to eating out and piling up monthly subscriptions. Savings get left behind as lifestyle inflation eats every single penny. Your income climbs higher, yet your net worth remains completely flat."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/cinematic-min.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "cinematic-min"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 2.93,
+    "opacity": 0.15,
+    "seed": 4.49
+   },
+   {
+    "id": "ly2",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 11.33,
+    "end": 14.61,
+    "asset": "coin",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795015243715,
+  "updated": 1795015243723,
+  "topic": "THE INVISIBLE TAX ON YOUR MONEY: Lifestyle Inflation financial",
+  "hook": "Ten thousand dollars extra hits your bank account.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "vertical",
+  "assets_release": "project-the-raise-that-vanished-mwm38je6",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "9:16",
+   "category": "explainer",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Ten thousand dollars extra hits your bank account.",
+   "music": "cinematic-min",
+   "project_id": "the-raise-that-vanished-mwm38je6",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "The Raise That Vanished",
+   "topic": "THE INVISIBLE TAX ON YOUR MONEY: Lifestyle Inflation financial",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: cold-open (opens quiet and lets the picture speak).",
+   "Beat 1 (\"Ten thousand dollars extra hits you...\"): a quiet open. No hook text, the picture and the voice carry it.",
+   "Beat 4 (\"More cash goes to eating out and pi...\"): a \"coin\" illustration builds itself on the right after the words land.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 3: push-in (alive baseline).",
+   "Beat 4: drift (alive baseline).",
+   "Beat 5: push-in (alive baseline).",
+   "Beat 6: drift (last picture: push-in (not the same move twice))."
+  ]
+ }
+}

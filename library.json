@@ -907,6 +907,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-84",
+      "title": "The Raise That Vanished",
+      "hook": "Ten thousand dollars extra hits your bank account.",
+      "accent": "#FFD43B",
+      "duration": 24.2,
+      "created": 1795017414932,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-84/short-84.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-84/short-84.jpg",
+      "project": "the-raise-that-vanished-mwm38je6",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
