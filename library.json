@@ -893,6 +893,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 3
+    },
+    {
+      "id": "short-83",
+      "title": "Liberty Dedicated 1886 (title test)",
+      "hook": "A gift from France arrived in New York Harbor in pieces.",
+      "accent": "#C8A15A",
+      "duration": 23.5,
+      "created": 1794981877741,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-83/short-83.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-83/short-83.jpg",
+      "project": "liberty-dedicated-1886-title-test-83",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
