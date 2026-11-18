@@ -113,9 +113,11 @@ jobs:
       - name: Install tools
         timeout-minutes: 25
         run: |
+          echo "t=$(date +%T) stage: pip"
           pip install -q -U edge-tts gtts pillow gradio_client
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
           sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
+          echo "t=$(date +%T) stage: apt"
           APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Dpkg::Use-Pty=0"
           timeout 240 sudo apt-get $APT update -y || true
           timeout 420 sudo apt-get $APT install -y --no-install-recommends ffmpeg fonts-dejavu-core \
@@ -123,6 +125,7 @@ jobs:
             libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
           
+          echo "t=$(date +%T) stage: ffprobe-check"
           # ffprobe hardening: '|| true' swallowed apt failures and the render died later on ffprobe
           for i in 1 2 3; do
             command -v ffprobe >/dev/null 2>&1 && break
@@ -144,7 +147,9 @@ jobs:
             echo "::error::ffprobe unavailable after apt retries AND the static build - not starting the render"
             exit 1
           fi
+          echo "t=$(date +%T) stage: npm-ci"
           cd remotion && npm ci --no-audit --no-fund
+          echo "t=$(date +%T) stage: install-done"
 
       - name: Capture the product site (promo only)
         continue-on-error: true
