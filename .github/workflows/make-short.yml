@@ -111,16 +111,23 @@ jobs:
           cache-dependency-path: remotion/package-lock.json
 
       - name: Install tools
-        timeout-minutes: 25
+        timeout-minutes: 40
         run: |
           echo "t=$(date +%T) stage: pip"
           pip install -q -U edge-tts gtts pillow gradio_client
           # Skip slow mirrors: only the main Ubuntu archive, with short timeouts and retries.
           sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
+          echo "t=$(date +%T) stage: static-ffmpeg"
+          mkdir -p "$HOME/.local/bin"
+          if curl -fsSL --connect-timeout 20 --max-time 240 --retry 1 --retry-delay 5 -o /tmp/ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp; then
+            cp /tmp/ffmpeg-*-amd64-static/ffprobe /tmp/ffmpeg-*-amd64-static/ffmpeg "$HOME/.local/bin/" || true
+          fi
+          export PATH="$HOME/.local/bin:$PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           echo "t=$(date +%T) stage: apt"
           APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Dpkg::Use-Pty=0"
           timeout 240 sudo apt-get $APT update -y || true
-          timeout 420 sudo apt-get $APT install -y --no-install-recommends ffmpeg fonts-dejavu-core \
+          timeout 420 sudo apt-get $APT install -y --no-install-recommends fonts-dejavu-core \
             libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 \
             libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 || true
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2 || true
