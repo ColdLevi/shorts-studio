@@ -1064,6 +1064,18 @@ def director_pass(t, spec=None):
             notes.append('%s: a "%s" icon pops in the top corner.' % (tag, icon))
             continue
         left_clean += 1
+    if os.environ.get("STUDIO_VARIETY") == "on":      # variety guard: off unless switched on
+        try:
+            try:
+                import variety_guard as _vg
+            except ImportError:
+                from tools import variety_guard as _vg
+            _vlock = {c["id"] for i, c in enumerate(vis)
+                      if str((sb[i] if i < len(sb) and isinstance(sb[i], dict) else {}).get("callout") or "").strip()}
+            layers, _vn = _vg.enforce(layers, [c["id"] for c in vis], _vlock, window=5, settle=bool(_st))
+            notes.extend(_vn)
+        except Exception as _e:
+            print("variety guard off:", _e)
     notes.append("Left %d beat(s) clean on purpose: no random lines, no map lines, nothing over a face." % left_clean)
     if layers:
         tr["layers"] = layers
