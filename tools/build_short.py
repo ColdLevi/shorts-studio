@@ -713,6 +713,9 @@ def split_long_holds(props, beats, spec, max_hold=None):
                     if t < last + 1.8 or t > end - 1.8:
                         continue
                     punct = j > 0 and str(ws[j - 1]["word"])[-1:] in ".?!,;:"
+                    # HOLD_GUARD: no mid-phrase cut on holds up to 1.4x max_hold
+                    if dur <= mh * 1.4 and not (punct or str(w["word"]).lower().strip(".,;:!?") in ("and","but","because","so","while","which","then","yet","or","when","where","after","before","until","if","since","although","though")):
+                        continue
                     sc = abs(t - target) - (0.8 if punct else 0.0)
                     if sc < bs:
                         best, bs = t, sc
