@@ -27,6 +27,7 @@ jobs:
       ROLE: ${{ github.event.client_payload.role || github.event.inputs.role }}
       TAGS: ${{ github.event.client_payload.tags || github.event.inputs.tags }}
       SFX_NAME: ${{ github.event.client_payload.name || github.event.inputs.name }}
+      BATCH: ${{ github.event.client_payload.batch }}
       CHAT_ID: ${{ github.event.client_payload.chat_id || secrets.CHAT_ID }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
     steps:
@@ -43,7 +44,7 @@ jobs:
       - name: Add the sound
         run: |
           set +e
-          python3 tools/add_sfx.py --file-id "$FILE_ID" --role "$ROLE" --tags "$TAGS" --name "$SFX_NAME" > "$RUNNER_TEMP/out.txt" 2>&1
+          python3 "$([ -n "$BATCH" ] && echo tools/add_sfx_zip.py || echo tools/add_sfx.py)" --file-id "$FILE_ID" --role "$ROLE" --tags "$TAGS" --name "$SFX_NAME" > "$RUNNER_TEMP/out.txt" 2>&1
           code=$?
           cat "$RUNNER_TEMP/out.txt"
           last="$(tail -n 1 "$RUNNER_TEMP/out.txt")"
