@@ -16,7 +16,7 @@ export type Layer = {
   /** Optional layer-local animation keyframes (seconds). */
   keyframes?: MotionKeyframe[];
   /** Static transform defaults used when no keyframe overrides them. */
-  transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number }; unit?: string;
+  transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number; rotateX?: number; rotateY?: number; glow?: number }; blend?: string; glowColor?: string; unit?: string;
   tiles?: { label: string; value: string }[]; alert?: string; log?: string[];
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
@@ -270,9 +270,9 @@ export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string;
           const frame = useCurrentFrame();
           const localSeconds = frame / fps;
           const animated = evaluateKeyframes(l.keyframes, localSeconds);
-          const style = motionStyle(animated, l.transform || {});
+          const style = motionStyle(animated, l.transform || {}, { glowColor: l.glowColor || accent });
           return (
-            <AbsoluteFill style={{ transform: style.transform, opacity: style.opacity, filter: style.filter, width: style.width, height: style.height }}>
+            <AbsoluteFill style={{ transform: style.transform, opacity: style.opacity, filter: style.filter, width: style.width, height: style.height, mixBlendMode: (l.blend || undefined) as React.CSSProperties['mixBlendMode'] }}>
               <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} />
             </AbsoluteFill>
           );

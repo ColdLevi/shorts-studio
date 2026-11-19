@@ -15,7 +15,8 @@ export type EaseName =
 export type MotionProperty =
   | 'x' | 'y' | 'scale' | 'scaleX' | 'scaleY'
   | 'rotation' | 'opacity' | 'width' | 'height'
-  | 'blur' | 'brightness' | 'saturation';
+  | 'blur' | 'brightness' | 'saturation'
+  | 'rotateX' | 'rotateY' | 'glow';
 
 export type MotionKeyframe = {
   /** Seconds from the start of the layer. */
@@ -101,6 +102,7 @@ export function evaluateKeyframes(
 export function motionStyle(
   animated: MotionTransform,
   base: MotionTransform = {},
+  opts: { glowColor?: string; perspective?: number } = {},
 ): { transform?: string; opacity?: number; filter?: string; width?: string; height?: string } {
   const v = { ...base, ...animated };
   const tx = v.x ?? 0;
@@ -108,11 +110,20 @@ export function motionStyle(
   const sx = v.scaleX ?? v.scale ?? 1;
   const sy = v.scaleY ?? v.scale ?? 1;
   const rotation = v.rotation ?? 0;
-  const transform = `translate(${tx}%, ${ty}%) scale(${sx}, ${sy}) rotate(${rotation}deg)`;
+  const rx = v.rotateX ?? 0;
+  const ry = v.rotateY ?? 0;
+  const flat = `translate(${tx}%, ${ty}%) scale(${sx}, ${sy}) rotate(${rotation}deg)`;
+  const transform = rx || ry
+    ? `perspective(${opts.perspective ?? 1200}px) ${flat} rotateX(${rx}deg) rotateY(${ry}deg)`
+    : flat;
   const filters: string[] = [];
   if (v.blur !== undefined && v.blur > 0) filters.push(`blur(${v.blur}px)`);
   if (v.brightness !== undefined) filters.push(`brightness(${v.brightness})`);
   if (v.saturation !== undefined) filters.push(`saturate(${v.saturation})`);
+  if (v.glow !== undefined && v.glow > 0) {
+    const gc = opts.glowColor || '#ffffff';
+    filters.push(`drop-shadow(0 0 ${v.glow}px ${gc})`, `drop-shadow(0 0 ${v.glow * 2.5}px ${gc})`);
+  }
   return {
     transform,
     opacity: v.opacity === undefined ? undefined : clamp01(v.opacity),
