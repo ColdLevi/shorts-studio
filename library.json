@@ -921,6 +921,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-85",
+      "title": "How to Buy Your First Property",
+      "hook": "Five percent is all you need for a deposit on a home.",
+      "accent": "#5AA9FF",
+      "duration": 31.3,
+      "created": 1795061152768,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-85/short-85.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-85/short-85.jpg",
+      "project": "how-to-buy-your-first-property-mwn0thsp",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

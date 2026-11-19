@@ -1,0 +1,702 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "how-to-buy-your-first-property-mwn0thsp",
+ "rev": 1,
+ "title": "How to Buy Your First Property",
+ "duration": 31.18,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#5AA9FF"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.563,
+    "narration": "Five percent down is all you need for a deposit on a home.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "kinetic",
+     "words": [
+      "Five percent",
+      "down",
+      "deposit"
+     ]
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.563,
+    "end": 8.269,
+    "narration": "Buyers typically provide between five and twenty percent of the purchase price.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "label": "Minimum",
+       "prefix": "",
+       "suffix": "%",
+       "value": 5
+      },
+      {
+       "label": "Standard",
+       "prefix": "",
+       "suffix": "%",
+       "value": 20
+      }
+     ],
+     "title": "Deposit Range",
+     "type": "stats"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.269,
+    "end": 12.949,
+    "narration": "Government backed FHA loans allow a three point five percent payment.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "FHA minimum down payment",
+     "type": "percent",
+     "value": 3.5
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 12.949,
+    "end": 16.916,
+    "narration": "Buyers in England and Wales follow a structured guide to purchase.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Structured buying guide",
+     "text": "England and Wales",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 16.916,
+    "end": 21.233,
+    "narration": "Real estate agents provide extensive knowledge of the local housing market.",
+    "kind": "graphic",
+    "graphic": {
+     "items": [
+      {
+       "icon": "landmark",
+       "label": "Local Market"
+      },
+      {
+       "icon": "users",
+       "label": "Agents"
+      }
+     ],
+     "title": "Market Expertise",
+     "type": "icons"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v6",
+    "start": 21.233,
+    "end": 25.595,
+    "narration": "Signing a contract binds both buyer and seller to the sale terms.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Review terms",
+      "Sign contract",
+      "Binding sale"
+     ],
+     "title": "Contract Steps",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 25.595,
+    "end": 30.384,
+    "narration": "Keeping an emergency buffer ensures you stay comfortable after settlement.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Emergency buffer",
+     "max": 100,
+     "min": 0,
+     "suffix": "%",
+     "type": "gauge",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Five",
+     "start": 0.163,
+     "end": 0.362
+    },
+    {
+     "word": "percent",
+     "start": 0.362,
+     "end": 0.713
+    },
+    {
+     "word": "down",
+     "start": 0.713,
+     "end": 1.113
+    },
+    {
+     "word": "is",
+     "start": 1.233,
+     "end": 1.408
+    },
+    {
+     "word": "all",
+     "start": 1.42,
+     "end": 1.62
+    },
+    {
+     "word": "you",
+     "start": 1.62,
+     "end": 1.745
+    },
+    {
+     "word": "need",
+     "start": 1.745,
+     "end": 2.082
+    },
+    {
+     "word": "for",
+     "start": 2.095,
+     "end": 2.258
+    },
+    {
+     "word": "a",
+     "start": 2.258,
+     "end": 2.295
+    },
+    {
+     "word": "deposit",
+     "start": 2.308,
+     "end": 2.77
+    },
+    {
+     "word": "on",
+     "start": 2.77,
+     "end": 2.883
+    },
+    {
+     "word": "a",
+     "start": 2.895,
+     "end": 2.92
+    },
+    {
+     "word": "home.",
+     "start": 2.932,
+     "end": 3.283
+    },
+    {
+     "word": "Buyers",
+     "start": 3.563,
+     "end": 4.014
+    },
+    {
+     "word": "typically",
+     "start": 4.026,
+     "end": 4.488
+    },
+    {
+     "word": "provide",
+     "start": 4.488,
+     "end": 5.026
+    },
+    {
+     "word": "between",
+     "start": 5.026,
+     "end": 5.413
+    },
+    {
+     "word": "five",
+     "start": 5.488,
+     "end": 5.913
+    },
+    {
+     "word": "and",
+     "start": 5.913,
+     "end": 6.001
+    },
+    {
+     "word": "twenty",
+     "start": 6.014,
+     "end": 6.363
+    },
+    {
+     "word": "percent",
+     "start": 6.363,
+     "end": 6.901
+    },
+    {
+     "word": "of",
+     "start": 6.913,
+     "end": 6.976
+    },
+    {
+     "word": "the",
+     "start": 6.988,
+     "end": 7.051
+    },
+    {
+     "word": "purchase",
+     "start": 7.063,
+     "end": 7.426
+    },
+    {
+     "word": "price.",
+     "start": 7.426,
+     "end": 7.989
+    },
+    {
+     "word": "Government",
+     "start": 8.269,
+     "end": 8.707
+    },
+    {
+     "word": "backed",
+     "start": 8.719,
+     "end": 9.044
+    },
+    {
+     "word": "FHA",
+     "start": 9.057,
+     "end": 9.607
+    },
+    {
+     "word": "loans",
+     "start": 9.607,
+     "end": 10.144
+    },
+    {
+     "word": "allow",
+     "start": 10.269,
+     "end": 10.644
+    },
+    {
+     "word": "a",
+     "start": 10.656,
+     "end": 10.719
+    },
+    {
+     "word": "three",
+     "start": 10.719,
+     "end": 11.131
+    },
+    {
+     "word": "point",
+     "start": 11.131,
+     "end": 11.457
+    },
+    {
+     "word": "five",
+     "start": 11.469,
+     "end": 11.894
+    },
+    {
+     "word": "percent",
+     "start": 11.894,
+     "end": 12.256
+    },
+    {
+     "word": "payment.",
+     "start": 12.256,
+     "end": 12.669
+    },
+    {
+     "word": "Buyers",
+     "start": 12.949,
+     "end": 13.324
+    },
+    {
+     "word": "in",
+     "start": 13.324,
+     "end": 13.424
+    },
+    {
+     "word": "England",
+     "start": 13.437,
+     "end": 13.737
+    },
+    {
+     "word": "and",
+     "start": 13.737,
+     "end": 13.824
+    },
+    {
+     "word": "Wales",
+     "start": 13.837,
+     "end": 14.286
+    },
+    {
+     "word": "follow",
+     "start": 14.424,
+     "end": 14.786
+    },
+    {
+     "word": "a",
+     "start": 14.786,
+     "end": 14.837
+    },
+    {
+     "word": "structured",
+     "start": 14.849,
+     "end": 15.487
+    },
+    {
+     "word": "guide",
+     "start": 15.499,
+     "end": 15.836
+    },
+    {
+     "word": "to",
+     "start": 15.836,
+     "end": 15.912
+    },
+    {
+     "word": "purchase.",
+     "start": 15.912,
+     "end": 16.636
+    },
+    {
+     "word": "Real estate",
+     "start": 16.916,
+     "end": 17.478
+    },
+    {
+     "word": "agents",
+     "start": 17.491,
+     "end": 17.84
+    },
+    {
+     "word": "provide",
+     "start": 17.84,
+     "end": 18.291
+    },
+    {
+     "word": "extensive",
+     "start": 18.303,
+     "end": 18.928
+    },
+    {
+     "word": "knowledge",
+     "start": 18.928,
+     "end": 19.453
+    },
+    {
+     "word": "of",
+     "start": 19.566,
+     "end": 19.653
+    },
+    {
+     "word": "the",
+     "start": 19.653,
+     "end": 19.753
+    },
+    {
+     "word": "local",
+     "start": 19.765,
+     "end": 20.14
+    },
+    {
+     "word": "housing",
+     "start": 20.14,
+     "end": 20.491
+    },
+    {
+     "word": "market.",
+     "start": 20.503,
+     "end": 20.953
+    },
+    {
+     "word": "Signing",
+     "start": 21.233,
+     "end": 21.595
+    },
+    {
+     "word": "a",
+     "start": 21.608,
+     "end": 21.671
+    },
+    {
+     "word": "contract",
+     "start": 21.671,
+     "end": 22.458
+    },
+    {
+     "word": "binds",
+     "start": 22.458,
+     "end": 22.858
+    },
+    {
+     "word": "both",
+     "start": 22.858,
+     "end": 23.108
+    },
+    {
+     "word": "buyer",
+     "start": 23.121,
+     "end": 23.558
+    },
+    {
+     "word": "and",
+     "start": 23.678,
+     "end": 23.765
+    },
+    {
+     "word": "seller",
+     "start": 23.765,
+     "end": 24.24
+    },
+    {
+     "word": "to",
+     "start": 24.24,
+     "end": 24.328
+    },
+    {
+     "word": "the",
+     "start": 24.341,
+     "end": 24.428
+    },
+    {
+     "word": "sale",
+     "start": 24.44,
+     "end": 24.765
+    },
+    {
+     "word": "terms.",
+     "start": 24.778,
+     "end": 25.315
+    },
+    {
+     "word": "Keeping",
+     "start": 25.595,
+     "end": 25.845
+    },
+    {
+     "word": "an",
+     "start": 25.845,
+     "end": 25.907
+    },
+    {
+     "word": "emergency",
+     "start": 25.907,
+     "end": 26.457
+    },
+    {
+     "word": "buffer",
+     "start": 26.457,
+     "end": 26.982
+    },
+    {
+     "word": "ensures",
+     "start": 27.102,
+     "end": 27.676
+    },
+    {
+     "word": "you",
+     "start": 27.689,
+     "end": 27.827
+    },
+    {
+     "word": "stay",
+     "start": 27.839,
+     "end": 28.364
+    },
+    {
+     "word": "comfortable",
+     "start": 28.376,
+     "end": 29.051
+    },
+    {
+     "word": "after",
+     "start": 29.164,
+     "end": 29.439
+    },
+    {
+     "word": "settlement.",
+     "start": 29.439,
+     "end": 29.976
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Five percent down is all you need for a deposit on a home. Buyers typically provide between five and twenty percent of the purchase price. Government backed FHA loans allow a three point five percent payment. Buyers in England and Wales follow a structured guide to purchase. Real estate agents provide extensive knowledge of the local housing market. Signing a contract binds both buyer and seller to the sale terms. Keeping an emergency buffer ensures you stay comfortable after settlement."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/tech-pulse.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "tech-pulse"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 8.79,
+    "volume": 0.3,
+    "anchor": "v3",
+    "offset": 0.52
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.51,
+    "text": "percent",
+    "y": 0.14
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.51,
+    "opacity": 0.25,
+    "seed": 5.81
+   },
+   {
+    "id": "ly3",
+    "kind": "illustration",
+    "anchor": "v3",
+    "delay": 0.4,
+    "start": 8.67,
+    "end": 12.9,
+    "asset": "bank",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795060834442,
+  "updated": 1795060834451,
+  "topic": "How to buy a property guide",
+  "hook": "Five percent is all you need for a deposit on a home.",
+  "image_style": "clean corporate architectural photography, sharp focus, modern interior lighting",
+  "format": "landscape",
+  "assets_release": "project-how-to-buy-your-first-property-mwn0thsp",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "explainer",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Five percent is all you need for a deposit on a home.",
+   "music": "tech-pulse",
+   "project_id": "how-to-buy-your-first-property-mwn0thsp",
+   "style": "clean corporate architectural photography, sharp focus, modern interior lighting",
+   "style_preset": "motion-explainer",
+   "title": "How to Buy Your First Property",
+   "topic": "How to buy a property guide",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: editorial (corner type and clean top lines).",
+   "Beat 1 (\"Five percent down is all you need f...\"): the hook. No subject cutout, so I put PERCENT in the top band where it cannot cover the face.",
+   "Beat 3 (\"Government backed FHA loans allow a...\"): a \"bank\" illustration builds itself on the right after the words land.",
+   "Left 5 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}
