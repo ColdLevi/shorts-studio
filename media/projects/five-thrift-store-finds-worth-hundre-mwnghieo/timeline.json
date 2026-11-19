@@ -1,0 +1,739 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "five-thrift-store-finds-worth-hundre-mwnghieo",
+ "rev": 1,
+ "title": "Five Thrift Store Finds Worth Hundreds",
+ "duration": 27.13,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#14b8a6",
+  "theme": {
+   "accent": "#14b8a6",
+   "mode": "dark"
+  }
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.282,
+    "narration": "Four hundred dollars for a pair of black satin pumps found tucked away on a thrift store rack.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a pair of black satin designer pumps resting on a dusty wooden thrift store shelf, dramatic side lighting, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "3c1be314bdbe",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.282,
+    "end": 9.199,
+    "narration": "Most folks walk past old stuff thinking it's just worthless junk.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "Most folks walk past old stuff",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 9.199,
+    "end": 13.154,
+    "narration": "Hidden vintage pieces sitting right there sell online for huge money.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, an antique porcelain vase sitting on a weathered wooden table with soft warm highlights, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "67025c7e82b4",
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.66,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.154,
+    "end": 17.46,
+    "narration": "Smart resellers hunt down cheap hidden gems at local thrift shops.",
+    "kind": "ai_video",
+    "src": "assets/clip_04.mp4",
+    "duration": 4.6,
+    "still": "assets/img_04.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "Moody cinematic photo, film grain, a person holding a vintage brass clock in a dimly lit antique shop interior",
+     "motion": "",
+     "still": "flux"
+    },
+    "hash": "f2a1b5f53473"
+   },
+   {
+    "id": "v5",
+    "start": 17.46,
+    "end": 21.303,
+    "narration": "Keep an eye out for solid wood furniture and rare decor items.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a well crafted mid century wooden armchair in a quiet room with moody shadows, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "8ce01016a571",
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.65,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 21.303,
+    "end": 26.328,
+    "narration": "Even old storage units and yard sales hide prizes worth a grand.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a dark dusty storage locker filled with stacked vintage trunks and covered furniture under a single bulb, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "d9847d4ea559",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.68,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Four",
+     "start": 0.1,
+     "end": 0.338
+    },
+    {
+     "word": "hundred",
+     "start": 0.35,
+     "end": 0.662
+    },
+    {
+     "word": "dollars",
+     "start": 0.675,
+     "end": 1.075
+    },
+    {
+     "word": "for",
+     "start": 1.087,
+     "end": 1.225
+    },
+    {
+     "word": "a",
+     "start": 1.238,
+     "end": 1.288
+    },
+    {
+     "word": "pair",
+     "start": 1.3,
+     "end": 1.625
+    },
+    {
+     "word": "of",
+     "start": 1.637,
+     "end": 1.738
+    },
+    {
+     "word": "black",
+     "start": 1.75,
+     "end": 2.1
+    },
+    {
+     "word": "satin",
+     "start": 2.112,
+     "end": 2.513
+    },
+    {
+     "word": "pumps",
+     "start": 2.525,
+     "end": 2.862
+    },
+    {
+     "word": "found",
+     "start": 2.875,
+     "end": 3.163
+    },
+    {
+     "word": "tucked",
+     "start": 3.175,
+     "end": 3.425
+    },
+    {
+     "word": "away",
+     "start": 3.438,
+     "end": 3.775
+    },
+    {
+     "word": "on",
+     "start": 3.788,
+     "end": 3.913
+    },
+    {
+     "word": "a",
+     "start": 3.925,
+     "end": 3.962
+    },
+    {
+     "word": "thrift",
+     "start": 3.975,
+     "end": 4.312
+    },
+    {
+     "word": "store",
+     "start": 4.325,
+     "end": 4.625
+    },
+    {
+     "word": "rack.",
+     "start": 4.638,
+     "end": 5.062
+    },
+    {
+     "word": "Most",
+     "start": 5.342,
+     "end": 5.704
+    },
+    {
+     "word": "folks",
+     "start": 5.717,
+     "end": 6.029
+    },
+    {
+     "word": "walk",
+     "start": 6.042,
+     "end": 6.355
+    },
+    {
+     "word": "past",
+     "start": 6.367,
+     "end": 6.779
+    },
+    {
+     "word": "old",
+     "start": 6.792,
+     "end": 6.93
+    },
+    {
+     "word": "stuff",
+     "start": 6.942,
+     "end": 7.255
+    },
+    {
+     "word": "thinking",
+     "start": 7.267,
+     "end": 7.617
+    },
+    {
+     "word": "it's",
+     "start": 7.629,
+     "end": 7.792
+    },
+    {
+     "word": "just",
+     "start": 7.805,
+     "end": 8.08
+    },
+    {
+     "word": "worthless",
+     "start": 8.092,
+     "end": 8.529
+    },
+    {
+     "word": "junk.",
+     "start": 8.542,
+     "end": 8.979
+    },
+    {
+     "word": "Hidden",
+     "start": 9.259,
+     "end": 9.559
+    },
+    {
+     "word": "vintage",
+     "start": 9.572,
+     "end": 9.971
+    },
+    {
+     "word": "pieces",
+     "start": 9.984,
+     "end": 10.422
+    },
+    {
+     "word": "sitting",
+     "start": 10.434,
+     "end": 10.759
+    },
+    {
+     "word": "right",
+     "start": 10.772,
+     "end": 10.984
+    },
+    {
+     "word": "there",
+     "start": 10.996,
+     "end": 11.159
+    },
+    {
+     "word": "sell",
+     "start": 11.172,
+     "end": 11.534
+    },
+    {
+     "word": "online",
+     "start": 11.547,
+     "end": 12.034
+    },
+    {
+     "word": "for",
+     "start": 12.047,
+     "end": 12.221
+    },
+    {
+     "word": "huge",
+     "start": 12.234,
+     "end": 12.534
+    },
+    {
+     "word": "money.",
+     "start": 12.547,
+     "end": 12.934
+    },
+    {
+     "word": "Smart",
+     "start": 13.214,
+     "end": 13.739
+    },
+    {
+     "word": "resellers",
+     "start": 13.777,
+     "end": 14.302
+    },
+    {
+     "word": "hunt",
+     "start": 14.314,
+     "end": 14.502
+    },
+    {
+     "word": "down",
+     "start": 14.515,
+     "end": 14.814
+    },
+    {
+     "word": "cheap",
+     "start": 14.827,
+     "end": 15.115
+    },
+    {
+     "word": "hidden",
+     "start": 15.127,
+     "end": 15.402
+    },
+    {
+     "word": "gems",
+     "start": 15.414,
+     "end": 15.802
+    },
+    {
+     "word": "at",
+     "start": 15.815,
+     "end": 15.952
+    },
+    {
+     "word": "local",
+     "start": 15.964,
+     "end": 16.252
+    },
+    {
+     "word": "thrift",
+     "start": 16.265,
+     "end": 16.589
+    },
+    {
+     "word": "shops.",
+     "start": 16.602,
+     "end": 17.24
+    },
+    {
+     "word": "Keep",
+     "start": 17.52,
+     "end": 17.745
+    },
+    {
+     "word": "an",
+     "start": 17.757,
+     "end": 17.87
+    },
+    {
+     "word": "eye",
+     "start": 17.882,
+     "end": 18.057
+    },
+    {
+     "word": "out",
+     "start": 18.07,
+     "end": 18.233
+    },
+    {
+     "word": "for",
+     "start": 18.245,
+     "end": 18.382
+    },
+    {
+     "word": "solid",
+     "start": 18.395,
+     "end": 18.82
+    },
+    {
+     "word": "wood",
+     "start": 18.833,
+     "end": 18.97
+    },
+    {
+     "word": "furniture",
+     "start": 18.983,
+     "end": 19.583
+    },
+    {
+     "word": "and",
+     "start": 19.733,
+     "end": 19.845
+    },
+    {
+     "word": "rare",
+     "start": 19.858,
+     "end": 20.083,
+     "em": true
+    },
+    {
+     "word": "decor",
+     "start": 20.095,
+     "end": 20.507
+    },
+    {
+     "word": "items.",
+     "start": 20.52,
+     "end": 21.083
+    },
+    {
+     "word": "Even",
+     "start": 21.363,
+     "end": 21.688
+    },
+    {
+     "word": "old",
+     "start": 21.7,
+     "end": 21.876
+    },
+    {
+     "word": "storage",
+     "start": 21.888,
+     "end": 22.35
+    },
+    {
+     "word": "units",
+     "start": 22.363,
+     "end": 22.801
+    },
+    {
+     "word": "and",
+     "start": 22.963,
+     "end": 23.088
+    },
+    {
+     "word": "yard",
+     "start": 23.1,
+     "end": 23.4
+    },
+    {
+     "word": "sales",
+     "start": 23.413,
+     "end": 23.826
+    },
+    {
+     "word": "hide",
+     "start": 23.838,
+     "end": 24.113
+    },
+    {
+     "word": "prizes",
+     "start": 24.126,
+     "end": 24.588
+    },
+    {
+     "word": "worth",
+     "start": 24.6,
+     "end": 24.85
+    },
+    {
+     "word": "a",
+     "start": 24.863,
+     "end": 24.9
+    },
+    {
+     "word": "grand.",
+     "start": 24.913,
+     "end": 25.4
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "Four hundred dollars for a pair of black satin pumps found tucked away on a thrift store rack. Most folks walk past old stuff thinking it's just worthless junk. Hidden vintage pieces sitting right there sell online for huge money. Smart resellers hunt down cheap hidden gems at local thrift shops. Keep an eye out for solid wood furniture and rare decor items. Even old storage units and yard sales hide prizes worth a grand."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/pop-reveal.mp3",
+    "at": 13.67,
+    "volume": 0.255,
+    "anchor": "v4",
+    "offset": 0.52
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 21.103,
+    "volume": 0.33,
+    "anchor": "v6",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.23,
+    "opacity": 0.15,
+    "seed": 0.93
+   },
+   {
+    "id": "ly2",
+    "kind": "illustration",
+    "anchor": "v4",
+    "delay": 0.4,
+    "start": 13.55,
+    "end": 17.41,
+    "asset": "coin",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795087733177,
+  "updated": 1795088661526,
+  "topic": "short about 5 thrift store finds that are secretly worth hundreds. 9 quick scenes, a strong hook, and one scene where someone searches google for what an item sells for",
+  "hook": "Four hundred dollars for a pair of black satin pumps found tucked away on a thrift store rack.",
+  "image_style": "moody cinematic photo, film grain",
+  "format": "vertical",
+  "assets_release": "project-five-thrift-store-finds-worth-hundre-mwnghieo",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "9:16",
+   "category": "story",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Four hundred dollars for a pair of black satin pumps found tucked away on a thrift store rack.",
+   "music": "docu-pluck",
+   "project_id": "five-thrift-store-finds-worth-hundre-mwnghieo",
+   "style": "moody cinematic photo, film grain",
+   "style_preset": "documentary",
+   "title": "Five Thrift Store Finds Worth Hundreds",
+   "topic": "short about 5 thrift store finds that are secretly worth hundreds. 9 quick scenes, a strong hook, and one scene where someone searches google for what an item sells for",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: cold-open (opens quiet and lets the picture speak).",
+   "Beat 1 (\"Four hundred dollars for a pair of ...\"): a quiet open. No hook text, the picture and the voice carry it.",
+   "Beat 4 (\"Smart resellers hunt down cheap hid...\"): a \"coin\" illustration builds itself on the right after the words land.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face."
+  ],
+  "directions": [
+   {
+    "scene": 1,
+    "direction": "callout $400, slow push-in",
+    "followed": [
+     "callout",
+     "cam"
+    ],
+    "unsupported": []
+   },
+   {
+    "scene": 2,
+    "direction": "clean scene, no overlays",
+    "followed": [
+     "clean"
+    ],
+    "unsupported": []
+   },
+   {
+    "scene": 3,
+    "direction": "camera truck, whip-left into this scene",
+    "followed": [
+     "cam",
+     "transition"
+    ],
+    "unsupported": []
+   },
+   {
+    "scene": 4,
+    "direction": "screen scene, pointer enters from the left on an arc-down path, types \"black satin pumps price\", clicks the search butto",
+    "followed": [
+     "kit",
+     "ptr",
+     "screen"
+    ],
+    "unsupported": []
+   },
+   {
+    "scene": 5,
+    "direction": "dissolve into this scene, drift camera",
+    "followed": [
+     "cam",
+     "transition"
+    ],
+    "unsupported": []
+   },
+   {
+    "scene": 6,
+    "direction": "rain effect, theme accent teal #14b8a6 dark mode",
+    "followed": [
+     "theme"
+    ],
+    "unsupported": [
+     "rain effect"
+    ]
+   }
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 3: drift (alive baseline).",
+   "Beat 5: truck (alive baseline (not the same move twice)).",
+   "Beat 6: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, swish"
+ }
+}
