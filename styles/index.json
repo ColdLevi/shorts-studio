@@ -1,74 +1,34 @@
 {
-  "version": 1,
-  "styles": [
-    {
-      "id": "fastedit",
-      "name": "fastedit",
-      "triggers": [
-        "fastedit",
-        "fastedit2"
-      ],
-      "category": "promo"
+  "styles": {
+    "my-style": {
+      "name": "My Style",
+      "base": "",
+      "summary": "",
+      "learned_at": 0
     },
-    {
+    "fastedit": {
+      "name": "fastedit",
+      "base": "bold-pop",
+      "summary": "A punchy, modern app promo featuring rapid-fire UI mockups against bold, colorful flat backgrounds. Kinetic typography and floating graphica",
+      "learned_at": 1794151690854
+    },
+    "upload-3": {
       "name": "upload-3",
       "base": "motion-explainer",
       "summary": "Minimalist high-contrast tech explainer featuring sleek software UI cards, wireframe schematics, and structured step-by-step workflows. Buil",
-      "learned_at": 1794151690836,
-      "id": "upload-3",
-      "triggers": [
-        "upload-3",
-        "upload"
-      ],
-      "category": "explainer"
+      "learned_at": 1794151690836
     },
-    {
+    "upload-6": {
       "name": "upload-6",
       "base": "neon",
       "summary": "High-contrast neon contour animation against deep black backgrounds, accented by golden-yellow glowing linework. Minimalist cinematic storyt",
-      "learned_at": 1794151690845,
-      "id": "upload-6",
-      "triggers": [
-        "upload-6",
-        "upload"
-      ],
-      "category": "mood"
+      "learned_at": 1794151690845
     },
-    {
+    "upload-7": {
       "name": "upload-7",
       "base": "cinematic",
       "summary": "A moody, cinematic desk-setup aesthetic paired with sleek UI motion graphics and sci-fi HUD elements. Desaturated, high-contrast live-action",
-      "learned_at": 1794151690847,
-      "id": "upload-7",
-      "triggers": [
-        "upload-7",
-        "upload"
-      ],
-      "category": "mood"
-    },
-    {
-      "name": "youtu-2",
-      "base": "motion-explainer",
-      "summary": "A dark-mode tech explainer combining terminal mockups, UI diagrams, and Wojak meme art. It uses high-contrast neon accents, code animations,",
-      "learned_at": 1794151690833,
-      "id": "youtu-2",
-      "triggers": [
-        "youtu-2",
-        "youtu"
-      ],
-      "category": "explainer"
-    },
-    {
-      "name": "youtu-4",
-      "base": "motion-explainer",
-      "summary": "A moody cybercrime documentary style blending photorealistic live-action plates with minimalist line-drawn NPC meme faces. Dark-mode tech UI",
-      "learned_at": 1794151690838,
-      "id": "youtu-4",
-      "triggers": [
-        "youtu-4",
-        "youtu"
-      ],
-      "category": "story"
+      "learned_at": 1794151690847
     }
-  ]
+  }
 }
