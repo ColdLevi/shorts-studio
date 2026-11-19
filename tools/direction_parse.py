@@ -138,7 +138,7 @@ def compile_one(raw, beat, key):
             txt, err = gm.generate(key, [{"text": prompt}], config={"temperature": 0}, timeout=60)
             if txt:
                 return parse_answer(txt)
-        return {}, ["could not read the direction (%s)" % _s(err, 60)]
+        return {}, ["could not read the direction (%s)" % _s(err, 300)]
     except Exception as e:
         return {}, ["could not read the direction (%s)" % _s(e, 60)]
 

@@ -9,7 +9,10 @@ rep = (tl.get("meta") or {}).get("directions") or []
 lines = []
 for r in rep:
     for u in r.get("unsupported") or []:
-        lines.append(f"Scene {r.get('scene')}: couldn't do \"{u}\"")
+        if str(u).startswith("could not read"):
+            lines.append(f"Scene {r.get('scene')}: the AI service did not answer, so this note was not applied")
+        else:
+            lines.append(f"Scene {r.get('scene')}: couldn't do \"{u}\"")
 if not lines:
     raise SystemExit(0)
 msg = ("📝 Some of your directions weren't followed:\n" + "\n".join(lines))[:3800]
