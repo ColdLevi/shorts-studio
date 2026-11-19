@@ -27,6 +27,23 @@ VARIANTS = {
 }
 
 
+def _user_opts(root, name):
+    """The owner's own uploaded sounds for this role (catalog.json, source user-upload*). Preferred when present."""
+    if os.environ.get("SFX_USER_PREFER", "on").lower() == "off":
+        return []
+    try:
+        cat = json.load(open(os.path.join(root, "media", "library", "sfx", "catalog.json"), encoding="utf-8"))
+        out = []
+        for c in cat.get("clips") or []:
+            if c.get("role") == name and str(c.get("source", "")).startswith("user-upload"):
+                rel = "library/sfx/" + str(c.get("file", ""))
+                if os.path.exists(os.path.join(root, "media", rel)):
+                    out.append((rel, 0.85))
+        return out
+    except Exception:
+        return []
+
+
 def _pk(name, n, seed):
     key = (name, n)
     if key in _pk.memo:
@@ -35,6 +52,7 @@ def _pk(name, n, seed):
     _pk.cnt[name] = k + 1
     root = getattr(TL, "ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     opts = [(SFX_DIR + name + ".wav", 1.0)] + [o for o in VARIANTS.get(name, []) if os.path.exists(os.path.join(root, "media", o[0]))]
+    opts = _user_opts(root, name) or opts
     _pk.memo[key] = opts[(seed + k) % len(opts)]
     return _pk.memo[key]
 
