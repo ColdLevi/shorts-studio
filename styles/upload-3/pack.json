@@ -133,5 +133,11 @@
     },
     "_updated": "2026-11-08T17:22:54",
     "category": "explainer"
+  },
+  "cursor": {
+    "file": "cursor.svg",
+    "size": 48,
+    "tipX": 0.06,
+    "tipY": 0.05
   }
 }
