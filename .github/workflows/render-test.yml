@@ -1,0 +1,44 @@
+# Manual test render of remotion/test-timelines/<file>.json, sent to Telegram.
+name: render-test
+on:
+  workflow_dispatch:
+    inputs:
+      timeline: { description: "File in remotion/test-timelines", required: false, default: "screen_test.json" }
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
+      TL: ${{ github.event.inputs.timeline }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install
+        working-directory: remotion
+        run: npm ci --no-audit --no-fund
+      - name: Prepare the test timeline
+        run: |
+          python3 - <<'PYEOF'
+          import json, os
+          p = "remotion/test-timelines/" + os.environ["TL"]
+          t = json.load(open(p))
+          t["tracks"]["captions"] = {"enabled": False, "words": []}
+          json.dump(t, open(p, "w"))
+          print("ok", p, t.get("duration"))
+          PYEOF
+      - name: Render
+        working-directory: remotion
+        run: npx remotion render src/studio-index.ts Studio out/test.mp4 --props=test-timelines/$TL --gl=swangle --crf=20 --log=error
+      - name: Send to Telegram
+        run: |
+          curl -sS -F chat_id="$CHAT_ID" -F supports_streaming=true -F video=@remotion/out/test.mp4 \
+            "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: render-test-${{ github.run_number }}
+          path: remotion/out/test.mp4
+          retention-days: 7
