@@ -74,7 +74,10 @@
         "steps": [
           {
             "type": "move",
-            "to": "bar"
+            "to": "bar",
+            "from": "left",
+            "path": "arc-up",
+            "ease": "out-cubic"
           },
           {
             "type": "click",
@@ -86,7 +89,9 @@
           },
           {
             "type": "move",
-            "to": "button"
+            "to": "button",
+            "path": "wobble",
+            "ease": "back-soft"
           },
           {
             "type": "click",

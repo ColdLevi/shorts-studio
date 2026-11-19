@@ -12,6 +12,40 @@ const OUT = Easing.bezier(0.16, 1, 0.3, 1);
 const IN_OUT = Easing.bezier(0.65, 0, 0.35, 1);
 const fam = (font?: string) => (font ? `'${font}', Inter, sans-serif` : 'Inter, sans-serif');
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
+// pointer menus: every field is chosen by the director per move; without any field the old look renders unchanged
+const EASES: Record<string, (x: number) => number> = {
+  'in-out': IN_OUT, out: OUT,
+  'out-cubic': Easing.bezier(0.33, 1, 0.68, 1), 'out-quint': Easing.bezier(0.22, 1, 0.36, 1),
+  soft: Easing.bezier(0.4, 0, 0.2, 1), snap: Easing.bezier(0.76, 0, 0.24, 1),
+  'back-soft': Easing.bezier(0.34, 1.3, 0.64, 1), linear: (x: number) => x,
+};
+const easeFn = (e: unknown): ((x: number) => number) =>
+  Array.isArray(e) && e.length === 4 && e.every((n) => typeof n === 'number') ? Easing.bezier(e[0], e[1], e[2], e[3]) : EASES[String(e)] || IN_OUT;
+const ptrStart = (v: unknown, W: number, H: number, u: number): [number, number] => {
+  if (Array.isArray(v) && v.length === 2) return [W * Number(v[0]), H * Number(v[1])];
+  switch (v) {
+    case 'left': return [-0.1 * W, 0.45 * H];
+    case 'right': return [1.1 * W, 0.45 * H];
+    case 'top': return [0.55 * W, -0.12 * H];
+    case 'bottom': return [0.5 * W, 1.12 * H];
+    case 'center': return [0.5 * W, 0.5 * H];
+    case 'bar': return [W * 0.38, 116 * u];
+    default: return [W * 0.8, H * 0.75];
+  }
+};
+const pathPt = (a: [number, number], b: [number, number], p: number, kind: unknown): [number, number] => {
+  const dx = b[0] - a[0];
+  const dy = b[1] - a[1];
+  const dist = Math.hypot(dx, dy) || 1;
+  let nx = -dy / dist;
+  let ny = dx / dist;
+  if (ny > 0) { nx = -nx; ny = -ny; }
+  let off = 0;
+  if (kind === 'arc-up') off = 0.18 * dist * Math.sin(Math.PI * p);
+  else if (kind === 'arc-down') off = -0.18 * dist * Math.sin(Math.PI * p);
+  else if (kind === 'wobble') off = 0.035 * dist * Math.sin(Math.PI * 3 * p) * (1 - p);
+  return [a[0] + dx * p + nx * off, a[1] + dy * p + ny * off];
+};
 
 export const ScreenScene: React.FC<P> = ({ l, L, accent, font, pid }) => {
   const f = useCurrentFrame();
@@ -49,13 +83,13 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font, pid }) => {
   // pointer: glides between targets, window-relative
   const targets: Record<string, [number, number]> = { bar: [W * 0.38, 116 * u], button: [W - 70 * u, 116 * u] };
   const moves = plan.filter((s) => s.type === 'move');
-  let from: [number, number] = [W * 0.8, H * 0.75];
+  let from: [number, number] = ptrStart((moves[0] as any)?.from ?? (l as any).ptr?.from, W, H, u);
   let cur: [number, number] = from;
   for (const m of moves) {
     if (ft < m.start) break;
     const to = targets[m.to || 'bar'] || targets.bar;
-    const p = IN_OUT(clamp01((ft - m.start) / Math.max(0.1, m.end - m.start)));
-    cur = [from[0] + (to[0] - from[0]) * p, from[1] + (to[1] - from[1]) * p];
+    const p = easeFn((m as any).ease ?? (l as any).ptr?.ease)(clamp01((ft - m.start) / Math.max(0.1, m.end - m.start)));
+    cur = pathPt(from, to, p, (m as any).path ?? (l as any).ptr?.path);
     from = to;
   }
   const lastClick = [...clicks].reverse().find((s) => s.start <= ft && ft < s.start + 0.5);

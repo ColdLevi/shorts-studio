@@ -939,7 +939,7 @@ def _kit_plan(sbi, text, hit, avail):
         for s in own[:14]:
             if isinstance(s, dict) and s.get("type") in _KIT_STEP_TYPES:
                 x = {"type": s["type"]}
-                for k in ("side", "to"):
+                for k in ("side", "to", "from", "path", "ease"):
                     if s.get(k):
                         x[k] = str(s[k])[:10]
                 if s.get("text"):
@@ -973,6 +973,33 @@ def _kit_cam(pid, i, sbi, steps):
         if r < 0:
             return k
     return "static"
+
+
+_PTR_FROM = ["left", "right", "top", "bottom", "center"]
+_PTR_PATH = ["straight", "arc-up", "arc-down", "wobble"]
+_PTR_EASE = ["in-out", "out", "out-cubic", "out-quint", "soft", "snap", "back-soft"]
+
+
+def _kit_ptr(pid, i, sbi, steps):
+    """Pointer choices per move, drawn evenly from the menus (no preferred option).
+    The owner's own step fields and a beat-level "ptr" dict win; only gaps are filled."""
+    forced = sbi.get("ptr") if isinstance(sbi.get("ptr"), dict) else {}
+    r = _random.Random("%s|ptr|%d" % (pid, i))
+    out, first = [], True
+    for s in steps:
+        x = dict(s)
+        if x.get("type") == "move":
+            for k, menu in (("path", _PTR_PATH), ("ease", _PTR_EASE)):
+                pick = r.choice(menu)
+                v = x.get(k) or forced.get(k)
+                x[k] = v if v in menu else pick
+            if first:
+                pick = r.choice(_PTR_FROM)
+                v = x.get("from") or forced.get("from")
+                x["from"] = v if v in _PTR_FROM else pick
+                first = False
+        out.append(x)
+    return out
 
 
 def director_pass(t, spec=None):
@@ -1078,7 +1105,7 @@ def director_pass(t, spec=None):
             if (_forced and i - _kb["last"] >= 2) or (_hit and i - _kb["last"] >= _space):
                 _ks = _kit_plan(sbi, text, _hit, c["end"] - c["start"] - 0.4)
                 if _ks:
-                    _kw = {"steps": _ks, "cam": _kit_cam(pid, i, sbi, _ks)}
+                    _kw = {"steps": _kit_ptr(pid, i, sbi, _ks), "cam": _kit_cam(pid, i, sbi, _ks)}
                     if isinstance(st.get("cursor"), dict) and st["cursor"].get("src"):
                         _kw["cursor"] = st["cursor"]
                     put("screen-scene", c, 0.3, **_kw)
