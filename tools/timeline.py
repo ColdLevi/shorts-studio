@@ -1227,6 +1227,26 @@ def director_pass(t, spec=None):
         _director_say(["Director notes (%d layers on %d beats)" % (len(layers), len(vis))] + ["- " + n for n in notes[:30]])
     return t
 
+def _apply_clean(t, spec):
+    """Scenes the owner marked clean in their direction keep no overlay layers."""
+    sb = spec.get("beats") or []
+    tk = t.get("tracks") or {}
+    vis = tk.get("visuals") or []
+    ids = {vis[i].get("id") for i in range(min(len(vis), len(sb))) if isinstance(sb[i], dict) and sb[i].get("clean") is True}
+    if ids and tk.get("layers"):
+        tk["layers"] = [l for l in tk["layers"] if l.get("anchor") not in ids]
+
+def _apply_theme(t, spec):
+    """A colour theme from the script direction goes onto the style; the direction report goes into the metadata."""
+    th = spec.get("theme")
+    if isinstance(th, dict) and th:
+        st = t.setdefault("style", {})
+        st["theme"] = th
+        if re.match(r"^#[0-9a-fA-F]{6}$", str(th.get("accent") or "")):
+            st["accent"] = th["accent"]
+    if spec.get("_direction_report"):
+        t.setdefault("meta", {})["directions"] = spec["_direction_report"]
+
 _from_props_orig = from_props
 
 
@@ -1234,7 +1254,20 @@ def from_props(props, spec=None, pid="job", cv=None):
     t = _from_props_orig(props, spec, pid, cv)
     if spec and spec.get("beats"):
         try:
+            try:
+                try:
+                    import direction_parse as _DP
+                except ImportError:
+                    from tools import direction_parse as _DP
+                _DP.apply(spec)
+            except Exception as _e:
+                print("directions skipped:", _e)
             director_pass(t, spec)
+            try:
+                _apply_clean(t, spec)
+                _apply_theme(t, spec)
+            except Exception as _e:
+                print("direction post-pass failed (ignored):", _e)
         except Exception as e:
             print("director_pass failed (ignored):", e)
     try:
@@ -1326,6 +1359,10 @@ def camera_pass(t, spec=None):
         cam = {"move": move, "amp": amp, "dir": dirn}
         if move == "hold":
             cam["wobble"] = 0
+        _lk = sbi.get("cam") if isinstance(sbi.get("cam"), dict) else None
+        if _lk:
+            cam = dict(cam, **_lk)
+            move, why = cam.get("move", move), "the script direction (locked)"
         c["cam"] = cam
         notes.append("Beat %d: %s (%s)." % (i + 1, move, why))
         prev_move = move
@@ -1352,7 +1389,9 @@ def camera_pass(t, spec=None):
                 ty, du = "settle", 0.5
         else:
             ty, du = "settle", 0.22      # mid-sentence slice: a quick camera punch, not a slide
-        b["transition"] = {"type": ty, "duration": du}
+        _tb = sb[i] if i < len(sb) and isinstance(sb[i], dict) else {}
+        _lt = _tb.get("transition") if isinstance(_tb.get("transition"), dict) else None
+        b["transition"] = dict(_lt) if _lt else {"type": ty, "duration": du}
     if notes:
         t.setdefault("meta", {})["camera"] = notes
         kinds = {}
