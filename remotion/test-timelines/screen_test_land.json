@@ -1,0 +1,194 @@
+{
+  "schema": "shorts-studio/timeline@1",
+  "id": "screen-test-1920x1080",
+  "rev": 1,
+  "title": "screen scene test",
+  "duration": 9.0,
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "style": {
+    "caption": {
+      "preset": "subtitle",
+      "case": "none",
+      "color": "#FFFFFF",
+      "font": "Poppins",
+      "highlight": "#FF4B6E",
+      "position": "top"
+    },
+    "transition": {
+      "type": "cut",
+      "duration": 0
+    },
+    "motion": "static",
+    "preset": "bold-pop",
+    "accent": "#2EE6C5",
+    "backdrop": "none",
+    "font": "Poppins",
+    "fx": {
+      "flicker": false,
+      "hold": 1,
+      "jitter": 0,
+      "letterbox": 0,
+      "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "palette": [
+      "#1952E8",
+      "#0E9E56",
+      "#FF647C"
+    ],
+    "progress_bar": false,
+    "transitions": [
+      "cut",
+      "slide-up",
+      "zoom-in"
+    ],
+    "vignette": false
+  },
+  "tracks": {
+    "visuals": [
+      {
+        "id": "v1",
+        "kind": "color",
+        "color": "#0b0f1a",
+        "start": 0.0,
+        "end": 9.0
+      }
+    ],
+    "captions": {},
+    "voice": [],
+    "music": [],
+    "sfx": [],
+    "overlays": [],
+    "layers": [
+      {
+        "id": "ly1",
+        "kind": "screen-scene",
+        "anchor": "v1",
+        "delay": 0.3,
+        "start": 0.3,
+        "end": 8.8,
+        "steps": [
+          {
+            "type": "move",
+            "to": "bar",
+            "from": "left",
+            "path": "arc-up",
+            "ease": "out-cubic"
+          },
+          {
+            "type": "click",
+            "to": "bar"
+          },
+          {
+            "type": "type",
+            "text": "buy cheap laptop online"
+          },
+          {
+            "type": "move",
+            "to": "button",
+            "path": "wobble",
+            "ease": "back-soft"
+          },
+          {
+            "type": "click",
+            "to": "button"
+          },
+          {
+            "type": "spinner"
+          },
+          {
+            "type": "bubble",
+            "side": "right",
+            "text": "Is it still available?"
+          },
+          {
+            "type": "bubble",
+            "side": "left",
+            "text": "Yes. Pay today and it ships tonight."
+          }
+        ],
+        "cam": "follow-out"
+      }
+    ]
+  },
+  "meta": {
+    "created": 1794239818862,
+    "updated": 1794239819261,
+    "topic": "that teach people how to money buying and selling old used items",
+    "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+    "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+    "format": "landscape",
+    "assets_release": "project-5-dollar-thrift-store-goldmine-mw9fzbsz",
+    "spec": {
+      "accent": "#2EE6C5",
+      "allow_plain": false,
+      "canvas": "16:9",
+      "format": "landscape",
+      "fps": 30,
+      "gemini_images": false,
+      "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+      "learned_style": "fastedit2",
+      "music": "tech-pulse",
+      "project_id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+      "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+      "style_preset": "bold-pop",
+      "style_tokens": {
+        "accent": "#FF4B6E",
+        "backdrop": "none",
+        "caption": {
+          "case": "none",
+          "color": "#FFFFFF",
+          "font": "Poppins",
+          "highlight": "#FF4B6E",
+          "position": "top",
+          "preset": "bold-pop"
+        },
+        "font": "Poppins",
+        "fx": {
+          "flicker": false,
+          "hold": 1,
+          "jitter": 0,
+          "letterbox": 0,
+          "texture": "none"
+        },
+        "grade": "contrast(1.05) saturate(1.15)",
+        "motion": "static",
+        "palette": [
+          "#1952E8",
+          "#0E9E56",
+          "#FF647C"
+        ],
+        "progress_bar": false,
+        "transition": {
+          "duration": 0,
+          "type": "cut"
+        },
+        "transitions": [
+          "cut",
+          "slide-up",
+          "zoom-in"
+        ],
+        "vignette": false
+      },
+      "title": "5 Dollar Thrift Store Goldmine",
+      "topic": "that teach people how to money buying and selling old used items",
+      "voice": "en-US-BrianMultilingualNeural"
+    },
+    "renders": [],
+    "director": [
+      "Beat 1 (\"A nineteen eighty-five Sony Walkman...\"): this is the hook, so it needs weight. I am setting NINETEEN huge behind the subject (no cutout yet, using a soft mask) and pushing in slowly, under a moving colour wash.",
+      "Beat 2 (\"Most people assume old gadgets are ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+      "Beat 3 (\"Garage sale items are typically pri...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+      "Beat 4 (\"Local yard finds sit quietly right ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+      "Beat 5 (\"Online resale platforms allow local...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+      "Beat 6 (\"Nostalgia trends drive high demand ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+      "Beat 7 (\"Buyers across the planet search eve...\"): this is about movement, so I am drawing a route across a map grid with a travelling dot.",
+      "Beat 8 (\"A tiny five dollar bill turns into ...\"): nothing new to add here. I am letting the picture breathe.",
+      "Beat 9 (\"Vintage tech creates huge resale pr...\"): this beat is about 'coin', so I am popping a 'coin' icon in."
+    ]
+  }
+}
