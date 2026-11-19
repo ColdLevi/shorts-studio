@@ -11,7 +11,15 @@
   "kits": {
     "search-chat": {
       "layer_kind": "screen-scene",
-      "use_when": ["searching online", "typing", "messaging", "chat or DM", "buying or selling online", "marketplace", "hook that shows someone using a computer"],
+      "use_when": [
+        "searching online",
+        "typing",
+        "messaging",
+        "chat or DM",
+        "buying or selling online",
+        "marketplace",
+        "hook that shows someone using a computer"
+      ],
       "min_scene_seconds": 5.2,
       "steps": {
         "move": "pointer glides to {to: bar|button}",
@@ -22,11 +30,80 @@
         "bubble": "chat bubble {side: left|right, text}, typing dots first"
       },
       "default_steps": [
-        {"type": "move", "to": "bar"}, {"type": "click", "to": "bar"}, {"type": "type", "text": "<search text from the narration>"},
-        {"type": "move", "to": "button"}, {"type": "click", "to": "button"}, {"type": "spinner"},
-        {"type": "bubble", "side": "right", "text": "<buyer line>"}, {"type": "bubble", "side": "left", "text": "<seller reply>"}
+        {
+          "type": "move",
+          "to": "bar"
+        },
+        {
+          "type": "click",
+          "to": "bar"
+        },
+        {
+          "type": "type",
+          "text": "<search text from the narration>"
+        },
+        {
+          "type": "move",
+          "to": "button"
+        },
+        {
+          "type": "click",
+          "to": "button"
+        },
+        {
+          "type": "spinner"
+        },
+        {
+          "type": "bubble",
+          "side": "right",
+          "text": "<buyer line>"
+        },
+        {
+          "type": "bubble",
+          "side": "left",
+          "text": "<seller reply>"
+        }
       ]
+    },
+    "glass-ui": {
+      "layer_kind": "glass-ui",
+      "use_when": [
+        "music app",
+        "now playing",
+        "premium app promo",
+        "iOS-style interface",
+        "tab bar",
+        "search button"
+      ],
+      "min_scene_seconds": 3.5,
+      "steps": {
+        "pill": "now-playing pill drops in {text, sub}",
+        "tab": "tab bar highlight moves to {to: 0-3}",
+        "search": "round search button expands and types {text}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [
+        {
+          "type": "pill"
+        },
+        {
+          "type": "tab",
+          "to": 2
+        },
+        {
+          "type": "search"
+        }
+      ],
+      "how_to_use": "forced only: kit: glass-ui on a scene; never auto-picked yet"
     }
   },
-  "planned_kits": ["terminal-typing", "notification-stack", "browser-page-load", "checkout", "counter-graph", "alert-glitch", "transfer-progress", "glass-ui"]
+  "planned_kits": [
+    "terminal-typing",
+    "notification-stack",
+    "browser-page-load",
+    "checkout",
+    "counter-graph",
+    "alert-glitch",
+    "transfer-progress"
+  ]
 }

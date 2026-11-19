@@ -973,6 +973,39 @@ def _kit_secs(steps):
     return t
 
 
+def _glass_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += (0.5 + len(x.get("text", "")) / 18.0 if x["type"] == "search" else x.get("dur", 0.6) if x["type"] == "hold" else 0.8) + 0.15
+    return t
+
+
+def _glass_steps(sbi, text, avail):
+    steps = []
+    own = sbi.get("glass")
+    if isinstance(own, list):
+        for s in own[:10]:
+            if isinstance(s, dict) and s.get("type") in ("pill", "tab", "search", "hold"):
+                x = {"type": s["type"]}
+                if s.get("text"):
+                    x["text"] = str(s["text"])[:40]
+                if s.get("sub"):
+                    x["sub"] = str(s["sub"])[:40]
+                if isinstance(s.get("to"), int):
+                    x["to"] = max(0, min(3, s["to"]))
+                if isinstance(s.get("dur"), (int, float)):
+                    x["dur"] = float(s["dur"])
+                steps.append(x)
+    if not steps:
+        w = re.findall(r"[A-Za-z0-9']+", text)
+        steps = [{"type": "pill", "text": " ".join(w[:4]).title() or "Now Playing", "sub": "Now playing"},
+                 {"type": "tab", "to": 2},
+                 {"type": "search", "text": " ".join(w[-3:]).lower() or "search"}]
+    while len(steps) > 1 and _glass_secs(steps) > avail:
+        steps.pop()
+    return steps if _glass_secs(steps) <= avail else None
+
+
 def _kit_menu():
     import os as _o, json as _j
     try:
@@ -1178,6 +1211,16 @@ def director_pass(t, spec=None):
             last_end, last_kind = c["end"], "panel"
             continue
         _kit = str(sbi.get("kit") or "").strip().lower()
+        if _kit == "glass-ui":
+            _gs = _glass_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.5 and i - _kb["last"] >= 2 and _gs:
+                put("glass-ui", c, 0.3, steps=_gs)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a liquid-glass scene (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _gs)))
+                continue
+            notes.append("%s: glass-ui asked for, but the scene is too short or too close to another kit, so none here." % tag)
+            _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
             _forced = _kit in ("search-chat", "screen", "screen-scene")
