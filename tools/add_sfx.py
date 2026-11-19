@@ -83,6 +83,14 @@ def main():
         if dur is None: die("that file has no audio I can read")
         if dur > MAX_S: die("%.1f s is too long for a sound effect (max %d s)" % (dur, MAX_S))
         if dur < MIN_S: die("that sound is too short (%.3f s)" % dur)
+        if not role and not a.role.strip() and os.environ.get("SFX_AUTO_ROLE", "on").lower() != "off":
+            try:
+                import sfx_classify
+                g, how_g = sfx_classify.classify(src, a.name + " " + a.tags)
+                if g in ROLES:
+                    role = g; warn += " (role guessed from %s: %s)" % (how_g, g)
+            except Exception:
+                pass
         used = {c.get("id") for c in clips}
         base = slug(a.name) or slug((role or "sfx") + "-" + a.tags) or "sfx"
         cid, n = base, 2

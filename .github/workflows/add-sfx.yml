@@ -30,6 +30,7 @@ jobs:
       BATCH: ${{ github.event.client_payload.batch }}
       CHAT_ID: ${{ github.event.client_payload.chat_id || secrets.CHAT_ID }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - name: ffmpeg
