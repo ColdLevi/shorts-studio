@@ -110,7 +110,8 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font, pid, theme }) => 
   if (plan0 === 'follow-out') {
     const endT = (typeStep ? typeStep.end : 3) + 0.4;
     const k = IN_OUT(clamp01((ft - 0.2) / Math.max(0.5, endT - 0.2)));
-    camScale = 1 + 0.6 * (1 - k);
+    const z0 = (l as any).camzoom ?? Math.max(1.6, (1.15 * L.w) / W);
+    camScale = 1 + (z0 - 1) * (1 - k);
     camOrigin = `${(W * 0.55).toFixed(1)}px ${(116 * u).toFixed(1)}px`;
   } else if (plan0 === 'push-reply' && bubbles.length) {
     camScale = 1 + 0.1 * IN_OUT(clamp01((ft - bubbles[0].start) / 2.2));
