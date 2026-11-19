@@ -1,0 +1,84 @@
+# Add one of the owner's own sounds to the SFX library (media/library/sfx).
+# Started by the bot: repository_dispatch add-sfx {file_id, role, tags, name, chat_id}
+name: add-sfx
+on:
+  repository_dispatch:
+    types: [add-sfx]
+  workflow_dispatch:
+    inputs:
+      file_id: { description: "Telegram file_id of the sound", required: true }
+      role: { description: "hit, whoosh, tick, pop, riser, swish", required: false, default: "" }
+      tags: { description: "Words describing the sound", required: false, default: "" }
+      name: { description: "Optional name for the clip", required: false, default: "" }
+permissions:
+  contents: write
+
+# One at a time: every upload edits the same catalog.json.
+concurrency:
+  group: add-sfx
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      FILE_ID: ${{ github.event.client_payload.file_id || github.event.inputs.file_id }}
+      ROLE: ${{ github.event.client_payload.role || github.event.inputs.role }}
+      TAGS: ${{ github.event.client_payload.tags || github.event.inputs.tags }}
+      SFX_NAME: ${{ github.event.client_payload.name || github.event.inputs.name }}
+      CHAT_ID: ${{ github.event.client_payload.chat_id || secrets.CHAT_ID }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        timeout-minutes: 8
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            timeout 240 sudo apt-get update -y -o Acquire::Retries=2 || true
+            timeout 300 sudo apt-get install -y --no-install-recommends ffmpeg || true
+          fi
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+      - name: Add the sound
+        run: |
+          set +e
+          python3 tools/add_sfx.py --file-id "$FILE_ID" --role "$ROLE" --tags "$TAGS" --name "$SFX_NAME" > "$RUNNER_TEMP/out.txt" 2>&1
+          code=$?
+          cat "$RUNNER_TEMP/out.txt"
+          last="$(tail -n 1 "$RUNNER_TEMP/out.txt")"
+          if [ "$code" -eq 0 ] && [ "${last#OK }" != "$last" ]; then
+            printf '🔊 Added to the sound library: %s' "${last#OK }" > "$RUNNER_TEMP/msg.txt"
+            touch "$RUNNER_TEMP/added"
+          elif [ "${last#ERROR: }" != "$last" ]; then
+            printf '❌ Could not add that sound: %s' "${last#ERROR: }" > "$RUNNER_TEMP/msg.txt"
+          else
+            printf '❌ Adding that sound failed unexpectedly. Log: %s/%s/actions/runs/%s' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$RUNNER_TEMP/msg.txt"
+          fi
+          exit 0
+      - name: Commit the new clip
+        run: |
+          [ -f "$RUNNER_TEMP/added" ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/library/sfx
+          git commit -m "sfx: add a user sound to the library [skip ci]"
+          ok=""
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            sleep $((i * 5))
+          done
+          if [ -z "$ok" ]; then
+            printf '❌ The sound was converted but saving it to the repo failed. Log: %s/%s/actions/runs/%s' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$RUNNER_TEMP/msg.txt"
+            exit 1
+          fi
+      - name: Tell Telegram
+        if: always()
+        run: |
+          [ -n "$CHAT_ID" ] && [ -n "$TELEGRAM_TOKEN" ] || exit 0
+          if [ -f "$RUNNER_TEMP/msg.txt" ]; then
+            msg="$(cat "$RUNNER_TEMP/msg.txt")"
+          else
+            msg="❌ Adding that sound failed before it started. Log: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+          curl -sS --max-time 30 -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" -d chat_id="$CHAT_ID" --data-urlencode text="$msg" > /dev/null || true
