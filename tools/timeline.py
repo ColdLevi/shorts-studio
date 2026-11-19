@@ -1002,6 +1002,36 @@ def _kit_ptr(pid, i, sbi, steps):
     return out
 
 
+def _kit_win(t, pid, sbi=None):
+    """Screen-scene window size in type units (u = 1 at a 1080 px short side). Picked ONCE per video from ranges that
+    suit the canvas shape, so every screen scene in the video matches. An owner "win" on the beat wins."""
+    cv = t.get("canvas") or {}
+    w, h = float(cv.get("width") or 1080), float(cv.get("height") or 1920)
+    u = min(w, h) / 1080.0
+    a = w / h
+    if a < 0.7:
+        rw, rh = (900, 1000), (760, 900)
+    elif a < 1.25:
+        rw, rh = (900, 1000), (560, 700)
+    else:
+        rw, rh = (960, 1120), (520, 640)
+    r = _random.Random("%s|kitwin" % pid)
+    wu, hu = r.uniform(*rw), r.uniform(*rh)
+    if a < 0.7:
+        y = r.uniform(0.21, 0.27)
+    else:
+        y = (1 - hu * u / h) / 2 + r.uniform(-0.03, 0.03)
+    own = (sbi or {}).get("win")
+    if isinstance(own, dict):
+        try:
+            wu = min(1400.0, max(600.0, float(own.get("w", wu))))
+            hu = min(1000.0, max(400.0, float(own.get("h", hu))))
+            y = min(0.6, max(0.0, float(own.get("y", y))))
+        except (TypeError, ValueError):
+            pass
+    return {"w": round(wu), "h": round(hu), "y": round(y, 3)}
+
+
 def director_pass(t, spec=None):
     """Director v2. Few layers, each one motivated, none over a face.
     - hook beat: the key word behind the subject when a cutout exists, else big in the top band
@@ -1105,7 +1135,7 @@ def director_pass(t, spec=None):
             if (_forced and i - _kb["last"] >= 2) or (_hit and i - _kb["last"] >= _space):
                 _ks = _kit_plan(sbi, text, _hit, c["end"] - c["start"] - 0.4)
                 if _ks:
-                    _kw = {"steps": _kit_ptr(pid, i, sbi, _ks), "cam": _kit_cam(pid, i, sbi, _ks)}
+                    _kw = {"steps": _kit_ptr(pid, i, sbi, _ks), "cam": _kit_cam(pid, i, sbi, _ks), "win": _kit_win(t, pid, sbi)}
                     if isinstance(st.get("cursor"), dict) and st["cursor"].get("src"):
                         _kw["cursor"] = st["cursor"]
                     put("screen-scene", c, 0.3, **_kw)

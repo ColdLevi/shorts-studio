@@ -1,3 +1,5 @@
+import { makeTheme } from './theme';
+import type { Theme } from './theme';
 // Layers.tsx: pro layer engine for the Studio composition. Driven by timeline.tracks.layers (written by tools/timeline.py director_pass).
 import React from 'react';
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
@@ -258,10 +260,11 @@ const KINDS = {
   'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene,
 } as unknown as Record<string, React.ComponentType<P>>;
 
-export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {
+export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string; theme?: Partial<Theme> }> = ({ layers, L, accent, pid, palette, font, grade, theme }) => {
   const { fps } = useVideoConfig();
   if (!layers || !layers.length) return null;
-  const pal = palette && palette.length ? palette : [accent, '#7c3aed', '#06b6d4'];
+  const th = makeTheme({ accent, palette, ...(theme || {}) });
+  const pal = [(palette && palette[0]) || th.accent, (palette && palette[1]) || th.accent2, (palette && palette[2]) || th.accent3];
   return (
     <>
       {layers.map((l) => {
@@ -274,7 +277,7 @@ export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string;
           const style = motionStyle(animated, l.transform || {}, { glowColor: l.glowColor || accent });
           return (
             <AbsoluteFill style={{ transform: style.transform, opacity: style.opacity, filter: style.filter, width: style.width, height: style.height, mixBlendMode: (l.blend || undefined) as React.CSSProperties['mixBlendMode'] }}>
-              <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} />
+              <C l={l} L={L} accent={accent} pid={pid} palette={pal} font={font} grade={grade} {...({ theme: th } as any)} />
             </AbsoluteFill>
           );
         };
