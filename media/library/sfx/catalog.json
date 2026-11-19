@@ -833,6 +833,24 @@
       "used_in": [
         "short-9-chords"
       ]
+    },
+    {
+      "id": "hit-low-discord-leave",
+      "file": "clips/hit-low-discord-leave.mp3",
+      "category": "impact",
+      "tags": [
+        "discord",
+        "hit_low",
+        "leave"
+      ],
+      "duration_s": 1.2,
+      "peak_dbfs": -9.2,
+      "loudness_lufs": -20.0,
+      "source": "user-upload:telegram",
+      "license": "supplied by the repo owner; the owner is responsible for the licence",
+      "prompt": "",
+      "used_in": [],
+      "role": "hit_low"
     }
   ]
 }
