@@ -5,7 +5,8 @@ import { url } from './assets';
 import type { Layout } from './layout';
 import { evaluateKeyframes, motionStyle, type MotionKeyframe } from '../motion-engine';
 import { AssetPng, CornerText, GlyphChip, Illustration } from './Layers2';   // step3-assets
-import { BarChart, ChapterCard, UiPanel } from './Layers3';   // step6-data
+import { BarChart, ChapterCard, UiPanel } from './Layers3';
+import { ScreenScene } from './Layers4';   // step6-data
 
 export type Layer = {
   id: string; kind: string; start: number; end: number; text?: string; src?: string; cutout?: string | null;
@@ -17,7 +18,7 @@ export type Layer = {
   keyframes?: MotionKeyframe[];
   /** Static transform defaults used when no keyframe overrides them. */
   transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number; rotateX?: number; rotateY?: number; glow?: number }; blend?: string; glowColor?: string; unit?: string;
-  tiles?: { label: string; value: string }[]; alert?: string; log?: string[];
+  tiles?: { label: string; value: string }[]; alert?: string; log?: string[]; steps?: { type: string; text?: string; side?: string; at?: number; dur?: number }[];
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
@@ -254,7 +255,7 @@ const SettleTitle: React.FC<P> = ({ l, L, accent, font }) => {
 const KINDS = {
   'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic, 'settle-title': SettleTitle,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
-  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel,
+  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene,
 } as unknown as Record<string, React.ComponentType<P>>;
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string }> = ({ layers, L, accent, pid, palette, font, grade }) => {
