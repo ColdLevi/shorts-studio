@@ -1,6 +1,5 @@
-// Layers4.tsx: screen-scene kit. A fake browser window plays a scripted sequence:
-// typed search text, Enter, spinner, then chat bubbles from both sides with typing dots first.
-// Steps: [{type:'type',text}, {type:'enter'}, {type:'spinner'}, {type:'bubble',side:'left'|'right',text}]
+// Layers4.tsx: screen-scene kit. A fake browser window plays a scripted sequence.
+// Steps: move{to:'bar'|'button'}, click{to}, type{text}, enter, spinner, bubble{side,text}
 import React from 'react';
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Layer } from './Layers';
@@ -9,6 +8,7 @@ import { planSteps } from './screen-plan';
 type P = { l: Layer; L: { w: number; h: number; u: number }; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 const OUT = Easing.bezier(0.16, 1, 0.3, 1);
+const IN_OUT = Easing.bezier(0.65, 0, 0.35, 1);
 const fam = (font?: string) => (font ? `'${font}', Inter, sans-serif` : 'Inter, sans-serif');
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
 
@@ -29,14 +29,38 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
     : 0;
   const typing = !!typeStep && ft < typeStep.end;
   const caretOn = typing || Math.floor(f / (fps / 2)) % 2 === 0;
+
   const enterStep = plan.find((s) => s.type === 'enter' && s.start <= ft);
-  const press = enterStep ? 1 - clamp01((ft - enterStep.start) / 0.25) : 0;
+  const enterPress = enterStep ? 1 - clamp01((ft - enterStep.start) / 0.25) : 0;
+  const clicks = plan.filter((s) => s.type === 'click');
+  const btnClick = clicks.find((s) => s.to === 'button' && s.start <= ft && ft < s.start + 0.35);
+  const btnPress = btnClick ? 1 - clamp01((ft - btnClick.start) / 0.3) : 0;
+  const press = Math.max(enterPress, btnPress);
+  const focused = typing || !!typeStep || clicks.some((s) => (s.to || 'bar') === 'bar' && s.start <= ft);
+
   const spin = plan.find((s) => s.type === 'spinner' && s.start <= ft && ft < s.end);
   const bubbles = plan.filter((s) => s.type === 'bubble');
   const chatOn = bubbles.some((b) => b.start <= ft);
   const shown = bubbles.filter((b) => b.start + b.dots <= ft).slice(-5);
   const dotsNow = bubbles.find((b) => b.start <= ft && ft < b.start + b.dots);
   const appear = OUT(clamp01(f / (0.45 * fps)));
+
+  // pointer: glides between targets, window-relative
+  const targets: Record<string, [number, number]> = { bar: [W * 0.38, 116 * u], button: [W - 70 * u, 116 * u] };
+  const moves = plan.filter((s) => s.type === 'move');
+  let from: [number, number] = [W * 0.8, H * 0.75];
+  let cur: [number, number] = from;
+  for (const m of moves) {
+    if (ft < m.start) break;
+    const to = targets[m.to || 'bar'] || targets.bar;
+    const p = IN_OUT(clamp01((ft - m.start) / Math.max(0.1, m.end - m.start)));
+    cur = [from[0] + (to[0] - from[0]) * p, from[1] + (to[1] - from[1]) * p];
+    from = to;
+  }
+  const lastClick = [...clicks].reverse().find((s) => s.start <= ft && ft < s.start + 0.5);
+  const ck = lastClick ? clamp01((ft - lastClick.start) / 0.5) : 0;
+  const dip = lastClick ? 1 - 0.18 * Math.sin(Math.PI * clamp01((ft - lastClick.start) / 0.3)) : 1;
+  const showCursor = moves.length > 0 && !chatOn;
 
   const bubble = (side: string | undefined, key: string, body: React.ReactNode, a: number) => (
     <div key={key} style={{ display: 'flex', justifyContent: side === 'right' ? 'flex-end' : 'flex-start', opacity: a, transform: `translateY(${(1 - a) * 18 * u}px)` }}>
@@ -61,12 +85,22 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
         {!chatOn ? (
           <div style={{ padding: 28 * u }}>
             <div style={{
-              display: 'flex', alignItems: 'center', height: 84 * u, padding: `0 ${28 * u}px`, borderRadius: 42 * u, background: 'rgba(255,255,255,0.08)',
-              border: `${2 * u}px solid ${press > 0 ? accent : 'rgba(255,255,255,0.14)'}`, boxShadow: press > 0 ? `0 0 ${24 * u * press}px ${accent}` : undefined,
-              transform: `scale(${1 - 0.02 * press})`, fontFamily: fam(font), fontSize: 38 * u, color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden',
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 84 * u, padding: `0 ${10 * u}px 0 ${28 * u}px`, borderRadius: 42 * u,
+              background: 'rgba(255,255,255,0.08)', border: `${2 * u}px solid ${focused || press > 0 ? accent : 'rgba(255,255,255,0.14)'}`,
+              boxShadow: press > 0 ? `0 0 ${24 * u * press}px ${accent}` : undefined, fontFamily: fam(font), fontSize: 38 * u, color: '#fff',
             }}>
-              <span>{(typeStep?.text || '').slice(0, typed)}</span>
-              <span style={{ display: 'inline-block', width: 3 * u, height: 44 * u, marginLeft: 3 * u, background: caretOn ? '#fff' : 'transparent' }} />
+              <div style={{ flex: 1, whiteSpace: 'nowrap', overflow: 'hidden' }}>
+                <span>{(typeStep?.text || '').slice(0, typed)}</span>
+                <span style={{ display: 'inline-block', width: 3 * u, height: 44 * u, marginLeft: 3 * u, verticalAlign: 'middle', background: focused && caretOn ? '#fff' : 'transparent' }} />
+              </div>
+              <div style={{
+                width: 64 * u, height: 64 * u, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: press > 0 ? accent : 'rgba(255,255,255,0.12)', transform: `scale(${1 - 0.12 * press})`,
+              }}>
+                <svg width={34 * u} height={34 * u} viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2.6} strokeLinecap="round">
+                  <circle cx="10.5" cy="10.5" r="6.5" /><line x1="15.5" y1="15.5" x2="21" y2="21" />
+                </svg>
+              </div>
             </div>
             {spin ? (
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: 56 * u }}>
@@ -84,6 +118,14 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
             ), 1) : null}
           </div>
         )}
+        {showCursor ? (
+          <>
+            {lastClick ? <div style={{ position: 'absolute', left: cur[0] - 40 * u * (0.3 + ck), top: cur[1] - 40 * u * (0.3 + ck), width: 80 * u * (0.3 + ck), height: 80 * u * (0.3 + ck), borderRadius: '50%', border: `${3 * u}px solid ${accent}`, opacity: 1 - ck }} /> : null}
+            <svg width={34 * u} height={44 * u} viewBox="0 0 17 26" style={{ position: 'absolute', left: cur[0] - 2 * u, top: cur[1] - 2 * u, transform: `scale(${dip})`, transformOrigin: '2px 2px', filter: `drop-shadow(0 ${3 * u}px ${6 * u}px rgba(0,0,0,0.6))` }}>
+              <path d="M0 0 L0 22 L6 17 L10 26 L13 24.5 L9 16 L17 16 Z" fill="#fff" stroke="#111" strokeWidth={1.2} strokeLinejoin="round" />
+            </svg>
+          </>
+        ) : null}
       </div>
     </AbsoluteFill>
   );

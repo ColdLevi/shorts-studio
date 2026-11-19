@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "rules": {
+    "baseline": "subtle animated text and graphics; a scene kit is a special moment",
+    "budget": "at most 1 kit per 4 scenes",
+    "no_back_to_back": true,
+    "no_same_kit_three_in_row": true,
+    "script_direction_wins": "a direction written by the owner can force or ban any kit and is never rewritten",
+    "pack_override": "each style pack may set its own budget"
+  },
+  "kits": {
+    "search-chat": {
+      "layer_kind": "screen-scene",
+      "use_when": ["searching online", "typing", "messaging", "chat or DM", "buying or selling online", "marketplace", "hook that shows someone using a computer"],
+      "min_scene_seconds": 7.5,
+      "steps": {
+        "move": "pointer glides to {to: bar|button}",
+        "click": "pointer clicks {to: bar|button}, ripple and press",
+        "type": "text typed word for word {text}",
+        "enter": "bar glows as Enter is pressed",
+        "spinner": "loading spinner",
+        "bubble": "chat bubble {side: left|right, text}, typing dots first"
+      },
+      "default_steps": [
+        {"type": "move", "to": "bar"}, {"type": "click", "to": "bar"}, {"type": "type", "text": "<search text from the narration>"},
+        {"type": "move", "to": "button"}, {"type": "click", "to": "button"}, {"type": "spinner"},
+        {"type": "bubble", "side": "right", "text": "<buyer line>"}, {"type": "bubble", "side": "left", "text": "<seller reply>"}
+      ]
+    }
+  },
+  "planned_kits": ["terminal-typing", "notification-stack", "browser-page-load", "checkout", "counter-graph", "alert-glitch", "transfer-progress", "glass-ui"]
+}

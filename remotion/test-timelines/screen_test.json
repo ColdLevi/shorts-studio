@@ -3,7 +3,7 @@
   "id": "screen-test",
   "rev": 1,
   "title": "screen scene test",
-  "duration": 7.5,
+  "duration": 9.0,
   "canvas": {
     "width": 1080,
     "height": 1920,
@@ -55,7 +55,7 @@
         "kind": "color",
         "color": "#0b0f1a",
         "start": 0.0,
-        "end": 7.5
+        "end": 9.0
       }
     ],
     "captions": {},
@@ -70,14 +70,27 @@
         "anchor": "v1",
         "delay": 0.3,
         "start": 0.3,
-        "end": 7.2,
+        "end": 8.8,
         "steps": [
+          {
+            "type": "move",
+            "to": "bar"
+          },
+          {
+            "type": "click",
+            "to": "bar"
+          },
           {
             "type": "type",
             "text": "buy cheap laptop online"
           },
           {
-            "type": "enter"
+            "type": "move",
+            "to": "button"
+          },
+          {
+            "type": "click",
+            "to": "button"
           },
           {
             "type": "spinner"
