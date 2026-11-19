@@ -300,6 +300,11 @@ jobs:
             --form-string caption="$CAPTION" -F reply_markup="$MARKUP" \
             "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendVideo" | head -c 300
 
+      - name: Note directions that could not be followed
+        if: env.SKIP_RENDER != '1' && env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        continue-on-error: true
+        run: python3 tools/direction_notice.py
+
       - name: Keep a copy (artifact)
         if: env.SKIP_RENDER != '1'
         uses: actions/upload-artifact@v4
