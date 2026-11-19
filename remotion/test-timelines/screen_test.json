@@ -105,7 +105,8 @@
             "side": "left",
             "text": "Yes. Pay today and it ships tonight."
           }
-        ]
+        ],
+        "cam": "follow-out"
       }
     ]
   },

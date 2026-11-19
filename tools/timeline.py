@@ -905,6 +905,76 @@ def _subject_box(c, pid):
     return None
 
 
+_KIT_RX = r"\b(google|search(?:ed|es|ing)?|typed?|typing|types|dm|message[sd]?|messaging|chat(?:ted|ting)?|marketplace|craigslist|ebay|amazon|seller|buyer|log(?:ged)? ?in|website)\b"
+_KIT_STEP_TYPES = {"move", "click", "type", "enter", "spinner", "bubble"}
+
+
+def _kit_secs(steps):
+    """Mirror of planSteps in remotion/src/studio/screen-plan.ts (seconds the steps take)."""
+    t = 0.3
+    for s in steps:
+        k = s.get("type")
+        if k == "type":
+            d, g = max(0.5, len(s.get("text") or "") / 18.0), 0.1
+        elif k == "enter":
+            d, g = 0.3, 0.1
+        elif k == "move":
+            d, g = 0.6, 0.05
+        elif k == "click":
+            d, g = 0.3, 0.15
+        elif k == "spinner":
+            d, g = 0.9, 0.1
+        elif k == "bubble":
+            d, g = 1.3, 0.25
+        else:
+            continue
+        t += d + g
+    return t
+
+
+def _kit_plan(sbi, text, hit, avail):
+    own = sbi.get("screen")
+    if isinstance(own, list):                       # the owner wrote the steps: use them as written
+        steps = []
+        for s in own[:14]:
+            if isinstance(s, dict) and s.get("type") in _KIT_STEP_TYPES:
+                x = {"type": s["type"]}
+                for k in ("side", "to"):
+                    if s.get(k):
+                        x[k] = str(s[k])[:10]
+                if s.get("text"):
+                    x["text"] = str(s["text"])[:80]
+                steps.append(x)
+        if steps:
+            return steps
+    src = text[hit.start():] if hit else text
+    q = " ".join(re.findall(r"[A-Za-z0-9']+", src)[:4]).lower() or "search"
+    search = [{"type": "move", "to": "bar"}, {"type": "click", "to": "bar"}, {"type": "type", "text": q},
+              {"type": "move", "to": "button"}, {"type": "click", "to": "button"}, {"type": "spinner"}]
+    bub = []
+    for b in (sbi.get("chat") or [])[:2]:
+        if isinstance(b, dict) and b.get("text"):
+            bub.append({"type": "bubble", "side": "left" if str(b.get("side")) == "left" else "right", "text": str(b["text"])[:80]})
+    cands = [search + bub[:n] for n in range(len(bub), -1, -1)]
+    for c in cands:
+        if _kit_secs(c) <= avail:
+            return c
+    return None
+
+
+def _kit_cam(pid, i, sbi, steps):
+    forced = str(sbi.get("kitcam") or "").strip().lower()
+    if forced in ("follow-out", "focus-pull", "push-reply", "static"):
+        return forced
+    w = {"follow-out": 3, "focus-pull": 2, "push-reply": 2 if any(s.get("type") == "bubble" for s in steps) else 0, "static": 1}
+    r = _random.Random("%s|kitcam|%d" % (pid, i)).random() * sum(w.values())
+    for k, v in w.items():
+        r -= v
+        if r < 0:
+            return k
+    return "static"
+
+
 def director_pass(t, spec=None):
     """Director v2. Few layers, each one motivated, none over a face.
     - hook beat: the key word behind the subject when a cutout exists, else big in the top band
@@ -941,6 +1011,7 @@ def director_pass(t, spec=None):
     cap_icon = max(1, round(cap_icon * dstyle["icon_mul"]))
     n_callout = n_icon = 0
     layers, notes = [], []
+    _kb = {"last": -99}
     notes.append("Directing style: %s (%s)." % (dstyle["name"], dstyle["blurb"]))
     last_end, last_kind, left_clean = -99.0, None, 0
 
@@ -999,6 +1070,22 @@ def director_pass(t, spec=None):
             notes.append('%s: a dashboard panel the writer asked for.' % tag)
             last_end, last_kind = c["end"], "panel"
             continue
+        _kit = str(sbi.get("kit") or "").strip().lower()
+        if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
+            _hit = re.search(_KIT_RX, low)
+            _forced = _kit in ("search-chat", "screen", "screen-scene")
+            _space = 8 if dstyle.get("name") in ("restrained", "cold-open") else 4
+            if (_forced and i - _kb["last"] >= 2) or (_hit and i - _kb["last"] >= _space):
+                _ks = _kit_plan(sbi, text, _hit, c["end"] - c["start"] - 0.4)
+                if _ks:
+                    _kw = {"steps": _ks, "cam": _kit_cam(pid, i, sbi, _ks)}
+                    if isinstance(st.get("cursor"), dict) and st["cursor"].get("src"):
+                        _kw["cursor"] = st["cursor"]
+                    put("screen-scene", c, 0.3, **_kw)
+                    _kb["last"] = i
+                    last_end, last_kind = c["end"], "kit"
+                    notes.append('%s: a screen scene (%s) because the line is about something done on a computer; camera plan: %s.' % (tag, "written by the owner" if isinstance(sbi.get("screen"), list) else "search" + (" and chat" if any(s.get("type") == "bubble" for s in _ks) else ""), _kw["cam"]))
+                    continue
         if c["start"] < last_end + gap and not co:   # a callout the writer chose skips the spacing rule
             left_clean += 1
             continue

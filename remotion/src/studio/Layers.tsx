@@ -18,7 +18,7 @@ export type Layer = {
   keyframes?: MotionKeyframe[];
   /** Static transform defaults used when no keyframe overrides them. */
   transform?: { x?: number; y?: number; scale?: number; scaleX?: number; scaleY?: number; rotation?: number; opacity?: number; blur?: number; brightness?: number; saturation?: number; rotateX?: number; rotateY?: number; glow?: number }; blend?: string; glowColor?: string; unit?: string;
-  tiles?: { label: string; value: string }[]; alert?: string; log?: string[]; steps?: { type: string; text?: string; side?: string; at?: number; dur?: number }[];
+  tiles?: { label: string; value: string }[]; alert?: string; log?: string[]; steps?: { type: string; text?: string; side?: string; to?: string; at?: number; dur?: number }[]; cam?: string; cursor?: { src: string; tipX?: number; tipY?: number; size?: number };
 };
 type P = { l: Layer; L: Layout; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };

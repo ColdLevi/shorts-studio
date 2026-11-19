@@ -4,6 +4,7 @@ import React from 'react';
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Layer } from './Layers';
 import { planSteps } from './screen-plan';
+import { url } from './assets';
 
 type P = { l: Layer; L: { w: number; h: number; u: number }; accent: string; pid: string; palette: string[]; font?: string; grade?: string };
 const CL = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
@@ -12,7 +13,7 @@ const IN_OUT = Easing.bezier(0.65, 0, 0.35, 1);
 const fam = (font?: string) => (font ? `'${font}', Inter, sans-serif` : 'Inter, sans-serif');
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
 
-export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
+export const ScreenScene: React.FC<P> = ({ l, L, accent, font, pid }) => {
   const f = useCurrentFrame();
   const { fps, durationInFrames: d } = useVideoConfig();
   const ft = f / fps;
@@ -62,6 +63,26 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
   const dip = lastClick ? 1 - 0.18 * Math.sin(Math.PI * clamp01((ft - lastClick.start) / 0.3)) : 1;
   const showCursor = moves.length > 0 && !chatOn;
 
+  // camera plan: chosen by the director (follow-out, focus-pull, push-reply, static)
+  const plan0 = l.cam || 'static';
+  let camScale = 1;
+  let camOrigin = '50% 50%';
+  let camBlur: string | undefined;
+  if (plan0 === 'follow-out') {
+    const endT = (typeStep ? typeStep.end : 3) + 0.4;
+    const k = IN_OUT(clamp01((ft - 0.2) / Math.max(0.5, endT - 0.2)));
+    camScale = 1 + 0.6 * (1 - k);
+    camOrigin = `${(W * 0.55).toFixed(1)}px ${(116 * u).toFixed(1)}px`;
+  } else if (plan0 === 'push-reply' && bubbles.length) {
+    camScale = 1 + 0.1 * IN_OUT(clamp01((ft - bubbles[0].start) / 2.2));
+    camOrigin = '50% 100%';
+  } else if (plan0 === 'focus-pull') {
+    const b = 8 * u * (1 - OUT(clamp01(ft / 0.9)));
+    camBlur = b > 0.2 ? `blur(${b.toFixed(2)}px)` : undefined;
+  }
+  const cs = l.cursor;
+  const csz = (cs?.size ?? 48) * u;
+
   const bubble = (side: string | undefined, key: string, body: React.ReactNode, a: number) => (
     <div key={key} style={{ display: 'flex', justifyContent: side === 'right' ? 'flex-end' : 'flex-start', opacity: a, transform: `translateY(${(1 - a) * 18 * u}px)` }}>
       <div style={{
@@ -77,7 +98,7 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
       <div style={{
         position: 'absolute', left: (L.w - W) / 2, top: L.h * 0.24, width: W, height: H, boxSizing: 'border-box', overflow: 'hidden',
         background: 'linear-gradient(160deg, rgba(20,26,42,0.96), rgba(10,13,24,0.95))', border: `${Math.max(1, u)}px solid rgba(255,255,255,0.1)`,
-        borderRadius: 26 * u, boxShadow: `0 ${24 * u}px ${60 * u}px rgba(0,0,0,0.5)`, opacity: appear, transform: `translateY(${(1 - appear) * 30 * u}px)`,
+        borderRadius: 26 * u, boxShadow: `0 ${24 * u}px ${60 * u}px rgba(0,0,0,0.5)`, opacity: appear, transform: `translateY(${(1 - appear) * 30 * u}px) scale(${camScale.toFixed(4)})`, transformOrigin: camOrigin, filter: camBlur,
       }}>
         <div style={{ display: 'flex', gap: 9 * u, alignItems: 'center', padding: `${16 * u}px ${20 * u}px`, borderBottom: `${Math.max(1, u)}px solid rgba(255,255,255,0.07)` }}>
           {['#ff5f57', '#febc2e', '#28c840'].map((c) => <span key={c} style={{ width: 14 * u, height: 14 * u, borderRadius: '50%', background: c }} />)}
@@ -121,7 +142,8 @@ export const ScreenScene: React.FC<P> = ({ l, L, accent, font }) => {
         {showCursor ? (
           <>
             {lastClick ? <div style={{ position: 'absolute', left: cur[0] - 40 * u * (0.3 + ck), top: cur[1] - 40 * u * (0.3 + ck), width: 80 * u * (0.3 + ck), height: 80 * u * (0.3 + ck), borderRadius: '50%', border: `${3 * u}px solid ${accent}`, opacity: 1 - ck }} /> : null}
-            <svg width={34 * u} height={44 * u} viewBox="0 0 17 26" style={{ position: 'absolute', left: cur[0] - 2 * u, top: cur[1] - 2 * u, transform: `scale(${dip})`, transformOrigin: '2px 2px', filter: `drop-shadow(0 ${3 * u}px ${6 * u}px rgba(0,0,0,0.6))` }}>
+            {cs?.src ? <img src={url(cs.src, pid)} style={{ position: 'absolute', left: cur[0] - (cs.tipX ?? 0) * csz, top: cur[1] - (cs.tipY ?? 0) * csz, width: csz, height: csz, transform: `scale(${dip})`, transformOrigin: `${(cs.tipX ?? 0) * 100}% ${(cs.tipY ?? 0) * 100}%` }} /> : null}
+            <svg width={34 * u} height={44 * u} viewBox="0 0 17 26" style={{ display: cs?.src ? 'none' : undefined, position: 'absolute', left: cur[0] - 2 * u, top: cur[1] - 2 * u, transform: `scale(${dip})`, transformOrigin: '2px 2px', filter: `drop-shadow(0 ${3 * u}px ${6 * u}px rgba(0,0,0,0.6))` }}>
               <path d="M0 0 L0 22 L6 17 L10 26 L13 24.5 L9 16 L17 16 Z" fill="#fff" stroke="#111" strokeWidth={1.2} strokeLinejoin="round" />
             </svg>
           </>
