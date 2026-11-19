@@ -949,6 +949,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-88",
+      "title": "Why Rockets Never Fly Straight Up",
+      "hook": "Space is only one hundred kilometres straight up, but rockets never fly there.",
+      "accent": "#5AA9FF",
+      "duration": 36.3,
+      "created": 1795098373820,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-88/short-88.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-88/short-88.jpg",
+      "project": "why-rockets-never-fly-straight-up-mwnmrxif",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

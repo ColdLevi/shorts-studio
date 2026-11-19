@@ -1,0 +1,885 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "why-rockets-never-fly-straight-up-mwnmrxif",
+ "rev": 1,
+ "title": "Why Rockets Never Fly Straight Up",
+ "duration": 36.22,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Montserrat"
+  },
+  "transition": {
+   "type": "slide-left",
+   "duration": 0.4
+  },
+  "motion": "static",
+  "recipe": "motion-explainer",
+  "transitions": [
+   "slide-left",
+   "zoom-in",
+   "page-turn",
+   "wipe",
+   "zoom-out",
+   "slide-right"
+  ],
+  "backdrop": "grid",
+  "vignette": false,
+  "font": "Montserrat",
+  "gfx": {
+   "grain": 0.05,
+   "vignette": 0.25
+  },
+  "preset": "motion-explainer",
+  "accent": "#5AA9FF"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.498,
+    "narration": "Most people think rockets launch straight up. They don't.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "Why rockets never fly straight",
+     "text": "Space is 100km up",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.498,
+    "end": 7.291,
+    "narration": "Within seconds, the rocket tilts and curves toward the horizon.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 3d motion graphics of a vertical vector arrow pulling downward against a glowing spacecraft ascent line."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "0388ef0507c0",
+    "cam": {
+     "move": "drift",
+     "amp": 0.76,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.291,
+    "end": 12.381,
+    "narration": "That curve, called a gravity turn, saves fuel and keeps the rocket from tearing apart.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "second of speed every single second",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v4",
+    "start": 12.381,
+    "end": 18.021,
+    "narration": "By the time it reaches orbit, it is moving almost sideways at 17,000 miles per hour.",
+    "kind": "graphic",
+    "graphic": {
+     "steps": [
+      "Vertical climb",
+      "Gravity turn",
+      "Sideways burn"
+     ],
+     "title": "Flight path tilt",
+     "type": "flow"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v5",
+    "start": 18.021,
+    "end": 20.352,
+    "narration": "so engineers tilt the flight path.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 3d motion graphics showing a rocket trajectory curving away from the vertical axis., no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "4983ab84317f",
+    "cam": {
+     "move": "truck",
+     "amp": 0.58,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 20.352,
+    "end": 25.245,
+    "narration": "Reaching orbit requires a horizontal speed of seventeen thousand miles per hour.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Orbital speed",
+     "prefix": "",
+     "suffix": "mph",
+     "type": "counter",
+     "value": 17000
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v7",
+    "start": 25.245,
+    "end": 30.123,
+    "narration": "Altitude alone keeps nothing aloft, because falling objects simply miss the planet.",
+    "kind": "graphic",
+    "graphic": {
+     "label": "Speed beats altitude",
+     "type": "percent",
+     "value": 100
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v8",
+    "start": 30.123,
+    "end": 32.498,
+    "narration": "That sideways momentum turns a brief jump",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Clean 3d motion graphics showing a satellite circling the globe along a glowing orbital track."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "3089416385ee",
+    "cam": {
+     "move": "drift",
+     "amp": 0.58,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 32.498,
+    "end": 35.424,
+    "narration": "into a permanent fall around the world.",
+    "kind": "graphic",
+    "graphic": {
+     "sub": "",
+     "text": "into a permanent fall around the world",
+     "type": "title"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Most",
+     "start": 0.1,
+     "end": 0.45
+    },
+    {
+     "word": "people",
+     "start": 0.463,
+     "end": 0.738
+    },
+    {
+     "word": "think",
+     "start": 0.75,
+     "end": 1.0
+    },
+    {
+     "word": "rockets",
+     "start": 1.012,
+     "end": 1.45
+    },
+    {
+     "word": "launch",
+     "start": 1.462,
+     "end": 1.788
+    },
+    {
+     "word": "straight",
+     "start": 1.8,
+     "end": 2.1
+    },
+    {
+     "word": "up.",
+     "start": 2.112,
+     "end": 2.388
+    },
+    {
+     "word": "They",
+     "start": 2.668,
+     "end": 2.793
+    },
+    {
+     "word": "don't.",
+     "start": 2.805,
+     "end": 3.218
+    },
+    {
+     "word": "Within",
+     "start": 3.498,
+     "end": 3.836
+    },
+    {
+     "word": "seconds,",
+     "start": 3.848,
+     "end": 4.386
+    },
+    {
+     "word": "the",
+     "start": 4.398,
+     "end": 4.511
+    },
+    {
+     "word": "rocket",
+     "start": 4.523,
+     "end": 4.911
+    },
+    {
+     "word": "tilts",
+     "start": 4.923,
+     "end": 5.398
+    },
+    {
+     "word": "and",
+     "start": 5.498,
+     "end": 5.61
+    },
+    {
+     "word": "curves",
+     "start": 5.623,
+     "end": 6.011
+    },
+    {
+     "word": "toward",
+     "start": 6.023,
+     "end": 6.323
+    },
+    {
+     "word": "the",
+     "start": 6.336,
+     "end": 6.398
+    },
+    {
+     "word": "horizon.",
+     "start": 6.411,
+     "end": 7.011
+    },
+    {
+     "word": "That",
+     "start": 7.291,
+     "end": 7.541
+    },
+    {
+     "word": "curve,",
+     "start": 7.553,
+     "end": 7.966
+    },
+    {
+     "word": "called",
+     "start": 8.053,
+     "end": 8.341
+    },
+    {
+     "word": "a",
+     "start": 8.353,
+     "end": 8.404
+    },
+    {
+     "word": "gravity",
+     "start": 8.416,
+     "end": 8.803
+    },
+    {
+     "word": "turn,",
+     "start": 8.816,
+     "end": 9.166
+    },
+    {
+     "word": "saves",
+     "start": 9.326,
+     "end": 9.738
+    },
+    {
+     "word": "fuel",
+     "start": 9.751,
+     "end": 10.201
+    },
+    {
+     "word": "and",
+     "start": 10.213,
+     "end": 10.313
+    },
+    {
+     "word": "keeps",
+     "start": 10.326,
+     "end": 10.613
+    },
+    {
+     "word": "the",
+     "start": 10.626,
+     "end": 10.738
+    },
+    {
+     "word": "rocket",
+     "start": 10.751,
+     "end": 11.139
+    },
+    {
+     "word": "from",
+     "start": 11.151,
+     "end": 11.351
+    },
+    {
+     "word": "tearing",
+     "start": 11.363,
+     "end": 11.688
+    },
+    {
+     "word": "apart.",
+     "start": 11.701,
+     "end": 12.101
+    },
+    {
+     "word": "By",
+     "start": 12.381,
+     "end": 12.531
+    },
+    {
+     "word": "the",
+     "start": 12.543,
+     "end": 12.668
+    },
+    {
+     "word": "time",
+     "start": 12.68,
+     "end": 13.006
+    },
+    {
+     "word": "it",
+     "start": 13.018,
+     "end": 13.131
+    },
+    {
+     "word": "reaches",
+     "start": 13.143,
+     "end": 13.506
+    },
+    {
+     "word": "orbit,",
+     "start": 13.518,
+     "end": 13.856
+    },
+    {
+     "word": "it",
+     "start": 14.016,
+     "end": 14.078
+    },
+    {
+     "word": "is",
+     "start": 14.091,
+     "end": 14.229
+    },
+    {
+     "word": "moving",
+     "start": 14.241,
+     "end": 14.616
+    },
+    {
+     "word": "almost",
+     "start": 14.628,
+     "end": 14.966
+    },
+    {
+     "word": "sideways",
+     "start": 14.979,
+     "end": 15.529
+    },
+    {
+     "word": "at",
+     "start": 15.541,
+     "end": 15.666
+    },
+    {
+     "word": "17,000 miles",
+     "start": 15.678,
+     "end": 17.128
+    },
+    {
+     "word": "per",
+     "start": 17.141,
+     "end": 17.303
+    },
+    {
+     "word": "hour.",
+     "start": 17.316,
+     "end": 17.741
+    },
+    {
+     "word": "so",
+     "start": 18.021,
+     "end": 18.297
+    },
+    {
+     "word": "engineers",
+     "start": 18.309,
+     "end": 18.946
+    },
+    {
+     "word": "tilt",
+     "start": 18.959,
+     "end": 19.184
+    },
+    {
+     "word": "the",
+     "start": 19.196,
+     "end": 19.284
+    },
+    {
+     "word": "flight",
+     "start": 19.297,
+     "end": 19.596
+    },
+    {
+     "word": "path.",
+     "start": 19.609,
+     "end": 20.072
+    },
+    {
+     "word": "Reaching",
+     "start": 20.352,
+     "end": 20.79
+    },
+    {
+     "word": "orbit",
+     "start": 20.802,
+     "end": 21.078
+    },
+    {
+     "word": "requires",
+     "start": 21.09,
+     "end": 21.64
+    },
+    {
+     "word": "a",
+     "start": 21.652,
+     "end": 21.703
+    },
+    {
+     "word": "horizontal",
+     "start": 21.715,
+     "end": 22.378
+    },
+    {
+     "word": "speed",
+     "start": 22.39,
+     "end": 22.79
+    },
+    {
+     "word": "of",
+     "start": 22.802,
+     "end": 22.89
+    },
+    {
+     "word": "seventeen",
+     "start": 22.902,
+     "end": 23.552
+    },
+    {
+     "word": "thousand",
+     "start": 23.565,
+     "end": 23.99
+    },
+    {
+     "word": "miles",
+     "start": 24.003,
+     "end": 24.365
+    },
+    {
+     "word": "per",
+     "start": 24.378,
+     "end": 24.54
+    },
+    {
+     "word": "hour.",
+     "start": 24.552,
+     "end": 24.965
+    },
+    {
+     "word": "Altitude",
+     "start": 25.245,
+     "end": 25.833
+    },
+    {
+     "word": "alone",
+     "start": 25.846,
+     "end": 26.195
+    },
+    {
+     "word": "keeps",
+     "start": 26.208,
+     "end": 26.52
+    },
+    {
+     "word": "nothing",
+     "start": 26.533,
+     "end": 26.883
+    },
+    {
+     "word": "aloft,",
+     "start": 26.895,
+     "end": 27.37
+    },
+    {
+     "word": "because",
+     "start": 27.53,
+     "end": 27.843
+    },
+    {
+     "word": "falling",
+     "start": 27.855,
+     "end": 28.243
+    },
+    {
+     "word": "objects",
+     "start": 28.256,
+     "end": 28.655
+    },
+    {
+     "word": "simply",
+     "start": 28.668,
+     "end": 28.993
+    },
+    {
+     "word": "miss",
+     "start": 29.006,
+     "end": 29.231
+    },
+    {
+     "word": "the",
+     "start": 29.243,
+     "end": 29.356
+    },
+    {
+     "word": "planet.",
+     "start": 29.368,
+     "end": 29.843
+    },
+    {
+     "word": "That",
+     "start": 30.123,
+     "end": 30.348
+    },
+    {
+     "word": "sideways",
+     "start": 30.361,
+     "end": 30.935
+    },
+    {
+     "word": "momentum",
+     "start": 30.948,
+     "end": 31.448
+    },
+    {
+     "word": "turns",
+     "start": 31.46,
+     "end": 31.786
+    },
+    {
+     "word": "a",
+     "start": 31.798,
+     "end": 31.861
+    },
+    {
+     "word": "brief",
+     "start": 31.873,
+     "end": 32.136
+    },
+    {
+     "word": "jump",
+     "start": 32.148,
+     "end": 32.486
+    },
+    {
+     "word": "into",
+     "start": 32.498,
+     "end": 32.748
+    },
+    {
+     "word": "a",
+     "start": 32.761,
+     "end": 32.823
+    },
+    {
+     "word": "permanent",
+     "start": 32.835,
+     "end": 33.273
+    },
+    {
+     "word": "fall",
+     "start": 33.286,
+     "end": 33.623
+    },
+    {
+     "word": "around",
+     "start": 33.636,
+     "end": 33.935
+    },
+    {
+     "word": "the",
+     "start": 33.948,
+     "end": 34.036
+    },
+    {
+     "word": "world.",
+     "start": 34.048,
+     "end": 34.498
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "Most people think rockets launch straight up. They don't. Within seconds, the rocket tilts and curves toward the horizon. That curve, called a gravity turn, saves fuel and keeps the rocket from tearing apart. By the time it reaches orbit, it is moving almost sideways at 17,000 miles per hour. so engineers tilt the flight path. Reaching orbit requires a horizontal speed of seventeen thousand miles per hour. Altitude alone keeps nothing aloft, because falling objects simply miss the planet. That sideways momentum turns a brief jump into a permanent fall around the world."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/lofi-warm.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "lofi-warm"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/tick.wav",
+    "at": 0.1,
+    "volume": 0.28,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/pop.wav",
+    "at": 20.67,
+    "volume": 0.3,
+    "anchor": "v6",
+    "offset": 0.32
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.45,
+    "text": "straight",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.5,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.04,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.35,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.45,
+    "opacity": 0.25,
+    "seed": 3.06
+   },
+   {
+    "id": "ly3",
+    "kind": "icon-pop",
+    "anchor": "v6",
+    "delay": 0.2,
+    "start": 20.55,
+    "end": 25.2,
+    "icon": "bolt",
+    "x": 0.2,
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.78
+      },
+      "ease": "out-back-soft"
+     },
+     {
+      "t": 0.36,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.3,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.65,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795097679238,
+  "updated": 1795098090951,
+  "topic": "Why rockets don't launch straight up: gravity turn, orbital mechanics, and moving sideways at 17000 mph",
+  "hook": "Space is only one hundred kilometres straight up, but rockets never fly there.",
+  "image_style": "clean 3d motion graphics, dark space background, glowing telemetry lines",
+  "format": "landscape",
+  "assets_release": "project-why-rockets-never-fly-straight-up-mwnmrxif",
+  "spec": {
+   "accent": "#5AA9FF",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "explainer",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Space is only one hundred kilometres straight up, but rockets never fly there.",
+   "music": "lofi-warm",
+   "project_id": "why-rockets-never-fly-straight-up-mwnmrxif",
+   "style": "clean 3d motion graphics, dark space background, glowing telemetry lines",
+   "style_preset": "motion-explainer",
+   "title": "Why Rockets Never Fly Straight Up",
+   "topic": "Why rockets don't launch straight up: gravity turn, orbital mechanics, and moving sideways at 17000 mph",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: editorial (corner type and clean top lines).",
+   "Beat 1 (\"Most people think rockets launch st...\"): the hook. No subject cutout, so I put STRAIGHT in the top band where it cannot cover the face.",
+   "Beat 6 (\"Reaching orbit requires a horizonta...\"): a \"bolt\" icon pops in the top corner.",
+   "Left 7 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-quint x1, pop out-back-soft x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "directions": [
+   {
+    "scene": 1,
+    "direction": "slow push-in, warm orange theme",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 503 UNAVAILABLE: This model is currently e)"
+    ]
+   },
+   {
+    "scene": 2,
+    "direction": "confetti burst",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 429 RESOURCE_EXHAUSTED: You exceeded your )"
+    ]
+   }
+  ],
+  "camera": [
+   "Beat 2: drift (alive baseline).",
+   "Beat 5: truck (alive baseline (not the same move twice)).",
+   "Beat 8: drift (alive baseline)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "2 effects: pop, tick"
+ }
+}
