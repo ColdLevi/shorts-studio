@@ -23,8 +23,9 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene) or "screen" (a fake browser or search screen scene)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
+"glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -73,7 +74,7 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen"):
+    if d.get("kit") in ("none", "screen", "glass-ui"):
         out["kit"] = d["kit"]
     st = d.get("screen")
     if isinstance(st, list):
@@ -90,6 +91,21 @@ def validate(d):
                 steps.append(y)
         if steps:
             out["screen"] = steps
+    gl = d.get("glass")
+    if isinstance(gl, list):
+        gsteps = []
+        for x in gl[:10]:
+            if isinstance(x, dict) and x.get("type") in ("pill", "tab", "search", "hold"):
+                y = {"type": x["type"]}
+                if x.get("text"):
+                    y["text"] = _s(x["text"], 40)
+                if x.get("sub"):
+                    y["sub"] = _s(x["sub"], 40)
+                if isinstance(x.get("to"), int):
+                    y["to"] = max(0, min(3, x["to"]))
+                gsteps.append(y)
+        if gsteps:
+            out["glass"] = gsteps
     ch = d.get("chat")
     if isinstance(ch, list):
         bub = [{"side": "left" if x.get("side") == "left" else "right", "text": _s(x["text"], 80)} for x in ch[:2] if isinstance(x, dict) and x.get("text")]
