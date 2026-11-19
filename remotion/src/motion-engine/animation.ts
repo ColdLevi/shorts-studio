@@ -10,7 +10,11 @@
 export type EaseName =
   | 'linear' | 'hold'
   | 'ease-in' | 'ease-out' | 'ease-in-out'
-  | 'smooth' | 'back-out';
+  | 'smooth' | 'back-out'
+  | 'out-cubic' | 'out-quint' | 'in-cubic' | 'in-out-cubic'
+  | 'out-back-soft' | 'bounce-out' | 'bounce-soft';
+/** A named curve, or a custom cubic-bezier [x1, y1, x2, y2]. */
+export type Ease = EaseName | [number, number, number, number];
 
 export type MotionProperty =
   | 'x' | 'y' | 'scale' | 'scaleX' | 'scaleY'
@@ -24,14 +28,43 @@ export type MotionKeyframe = {
   /** Numeric property values at this time. */
   values: Partial<Record<MotionProperty, number>>;
   /** Easing from this keyframe to the next. */
-  ease?: EaseName;
+  ease?: Ease;
 };
 
 export type MotionTransform = Partial<Record<MotionProperty, number>>;
 
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
 
-export function applyEase(t: number, ease: EaseName = 'linear'): number {
+const bez = (x1: number, y1: number, x2: number, y2: number) => (x: number): number => {
+  if (x <= 0) return 0;
+  if (x >= 1) return 1;
+  let lo = 0, hi = 1, t = x;
+  for (let i = 0; i < 30; i++) {
+    const bx = 3 * (1 - t) * (1 - t) * t * x1 + 3 * (1 - t) * t * t * x2 + t * t * t;
+    if (Math.abs(bx - x) < 1e-5) break;
+    if (bx < x) lo = t; else hi = t;
+    t = (lo + hi) / 2;
+  }
+  return 3 * (1 - t) * (1 - t) * t * y1 + 3 * (1 - t) * t * t * y2 + t * t * t;
+};
+const NAMED: Record<string, number[]> = {
+  'out-cubic': [0.33, 1, 0.68, 1],
+  'out-quint': [0.22, 1, 0.36, 1],
+  'in-cubic': [0.32, 0, 0.67, 0],
+  'in-out-cubic': [0.65, 0, 0.35, 1],
+  'out-back-soft': [0.34, 1.25, 0.64, 1],
+};
+const bounceOut = (x: number): number => {
+  const n = 7.5625, d = 2.75;
+  if (x < 1 / d) return n * x * x;
+  if (x < 2 / d) { x -= 1.5 / d; return n * x * x + 0.75; }
+  if (x < 2.5 / d) { x -= 2.25 / d; return n * x * x + 0.9375; }
+  x -= 2.625 / d;
+  return n * x * x + 0.984375;
+};
+
+export function applyEase(t: number, ease: Ease = 'linear'): number {
+  if (Array.isArray(ease)) return bez(ease[0], ease[1], ease[2], ease[3])(clamp01(t));
   const x = clamp01(t);
   switch (ease) {
     case 'hold': return 0;
@@ -43,7 +76,9 @@ export function applyEase(t: number, ease: EaseName = 'linear'): number {
       const c1 = 1.70158, c3 = c1 + 1;
       return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
     }
-    default: return x;
+    case 'bounce-out': return bounceOut(x);
+    case 'bounce-soft': return 0.6 * bez(0.33, 1, 0.68, 1)(x) + 0.4 * bounceOut(x);
+    default: { const c = NAMED[ease as string]; return c ? bez(c[0], c[1], c[2], c[3])(x) : x; }
   }
 }
 

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "source": "editing conventions, NOT measured. A style pack with measured recipes overrides these.",
+  "curves": {
+    "out-cubic": "fast start, soft landing. The everyday entrance",
+    "out-quint": "very fast start, long gentle settle. Hero entrances, big objects",
+    "in-cubic": "slow start, fast end. Exits only",
+    "in-out-cubic": "smooth both ends. Moves inside a scene, camera",
+    "out-back-soft": "small overshoot then settle. Pops, badges, buttons",
+    "bounce-soft": "a gentle bounce on landing. Playful or light topics only",
+    "bounce-out": "full bounce. Rare, comedy or toy-like moments",
+    "linear": "constant speed. Spinners and loops only",
+    "custom": "a keyframe may carry [x1,y1,x2,y2] to tune a curve to the moment"
+  },
+  "roles": {
+    "entrance": {"curve": "out-cubic", "hero": "out-quint", "seconds": [0.4, 0.6]},
+    "exit": {"curve": "in-cubic", "seconds": [0.25, 0.35], "note": "about 60 percent of the entrance length"},
+    "move": {"curve": "in-out-cubic", "seconds": [0.5, 0.9]},
+    "pop": {"curve": "out-back-soft", "seconds": [0.35, 0.5]},
+    "emphasis": {"curve": "bounce-soft", "seconds": [0.5, 0.7], "limit": "once per scene, light topics only"},
+    "camera": {"curve": "in-out-cubic"},
+    "loop": {"curve": "linear"}
+  },
+  "timing": [
+    "stagger grouped items 0.06 to 0.12 s apart, never all at once",
+    "bigger or farther moves take longer; small moves stay quick",
+    "at most one bouncy move per scene; none on serious or dark topics",
+    "never the same curve and timing on every object in a scene",
+    "land a move on a spoken word or a beat, not between them",
+    "a short hold after a move settles lets the eye read it",
+    "an optional anticipation (a tiny pull back, about 0.1 s) before a big push"
+  ],
+  "script_direction_wins": true,
+  "pack_override": "measured recipes in the active style pack replace these defaults"
+}
