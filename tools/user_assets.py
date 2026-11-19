@@ -168,6 +168,81 @@ def _estimate(beats, total):
     return out
 
 
+def _norm(t):
+    return re.sub(r"[^0-9a-z]", "", str(t).lower())
+
+
+def _script_cuts(beats, words, fallback):
+    """Index of the spoken word where each beat after the first starts, found by aligning the script to the spoken words
+    (so a skipped, added or reworded line does not shift the cuts). Returns (cuts, per-beat match scores), or (fallback, None)
+    when too little of the script was found in the speech."""
+    import difflib
+    W = len(words)
+    stoks, owner, bounds = [], [], []
+    for bi, b in enumerate(beats):
+        for x in str(b["narration"]).split():
+            x = _norm(x)
+            if x:
+                stoks.append(x)
+                owner.append(bi)
+        bounds.append(len(stoks))
+    wtoks = [(_norm(w["word"]) or "\0%d" % k) for k, w in enumerate(words)]
+    if not stoks or not W:
+        return fallback, None
+    anchors = []
+    for a, b, n in difflib.SequenceMatcher(None, stoks, wtoks, autojunk=False).get_matching_blocks():
+        for k in range(n):
+            anchors.append((a + k, b + k))
+    if len(anchors) < 0.5 * len(stoks):
+        return fallback, None
+
+    def where(sp):
+        prev, nxt = (-1, -1), (len(stoks), W)
+        for a in anchors:
+            if a[0] < sp:
+                prev = a
+            else:
+                nxt = a
+                break
+        gs, gw = nxt[0] - prev[0] - 1, nxt[1] - prev[1] - 1
+        return prev[1] + 1 + int(round((sp - (prev[0] + 1)) * gw / max(1, gs)))
+
+    cuts = [where(bounds[k]) for k in range(len(beats) - 1)]
+    hit = [0] * len(beats)
+    for a in anchors:
+        hit[owner[a[0]]] += 1
+    cnt = [max(1, sum(1 for o in owner if o == bi)) for bi in range(len(beats))]
+    return cuts, [round(hit[bi] / cnt[bi], 2) for bi in range(len(beats))]
+
+
+def _report(tg, est, beats, words, total):
+    """Plain-language check of the voice-over cut: estimates, too short or too long scenes, lines said differently."""
+    notes = []
+    if est:
+        notes.append("I could not read the timing of your voice-over, so the cuts are estimates")
+    k = 0
+    for i, b in enumerate(beats):
+        c = len(str(b["narration"]).split())
+        if not c or k >= len(words):
+            continue
+        t0 = float(words[k]["start"]) if i else 0.0
+        t1 = float(words[min(len(words), k + c) - 1]["end"])
+        k += c
+        if t1 - t0 < 1.0:
+            notes.append("scene %d is short (%.1fs)" % (i + 1, t1 - t0))
+        elif t1 - t0 > 6.0:
+            notes.append("scene %d runs long (%.1fs)" % (i + 1, t1 - t0))
+        m = b.get("vo_match")
+        if m is not None and m < 0.6:
+            notes.append("scene %d: you said it differently from the script" % (i + 1))
+    print("VO REPORT:", notes or "all scenes matched the script")
+    if notes:
+        try:
+            tg("🎙️ Voice-over check: " + "; ".join(notes[:6]))
+        except Exception:
+            pass
+
+
 def align(beats, words):
     # re-cut the beats on the voice-over's own words, near the old proportions, snapped to sentence ends
     n, W = len(beats), len(words)
@@ -179,6 +254,8 @@ def align(beats, words):
     for c in old[:-1]:
         acc += c
         cuts.append(int(round(acc / tot * W)))
+    cuts, scores = _script_cuts(beats, words, cuts)
+    orig = [str(b["narration"]) for b in beats]
     snapped, prev = [], 0
     for k, c in enumerate(cuts):
         lo, hi = prev + 1, W - (n - 1 - k)
@@ -193,6 +270,9 @@ def align(beats, words):
     edges = [0] + snapped + [W]
     for i, b in enumerate(beats):
         b["narration"] = " ".join(w["word"] for w in words[edges[i]:edges[i + 1]])
+        b["script_text"] = orig[i]
+        if scores is not None:
+            b["vo_match"] = scores[i]
 
 
 def _to_mp3(src, dst, limit=None):
@@ -212,9 +292,12 @@ def voiceover(spec, items, beats, voice_path, tg=print):
         return None
     tg("🎙️ Using your voice-over (replacing the AI voice)...")
     words = _asr(voice_path)
+    est = False
     if len(words) < len(beats):
         words = _estimate(beats, total)
+        est = True
     align(beats, words)
+    _report(tg, est, beats, words, total)
     return words, total
 
 
