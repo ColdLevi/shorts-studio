@@ -137,6 +137,13 @@ def _pack_as_learned(p, legacy_entry):
         tokens["transitions"] = mo["transitions"]
     if ok(mo.get("motion")):
         tokens["motion"] = mo["motion"]
+    cur = p.get("cursor")
+    if isinstance(cur, dict) and ok(cur.get("file")):
+        cu = {"src": "library/cursor/%s/%s" % (p["id"], cur["file"]), "pack": p["id"], "file": cur["file"]}
+        for k in ("size", "tipX", "tipY"):
+            if isinstance(cur.get(k), (int, float)) and not isinstance(cur.get(k), bool):
+                cu[k] = cur[k]
+        tokens["cursor"] = cu
     base["style_tokens"] = tokens
     base["pack"] = True
     base["pack_sounds"] = p.get("sounds")
@@ -1006,6 +1013,26 @@ def _glass_steps(sbi, text, avail):
     return steps if _glass_secs(steps) <= avail else None
 
 
+def _cursor_ready(cur):
+    """A pack's cursor image is copied to media/library/cursor/<pack>/ so the renderer can load it, like pack sounds.
+    Returns the layer cursor dict, or None (built-in arrow) when the file is missing."""
+    import shutil as _sh
+    if not isinstance(cur, dict) or not cur.get("src"):
+        return None
+    pk, fn = cur.get("pack"), cur.get("file")
+    if pk and fn:
+        src = os.path.join(ROOT, "styles", str(pk), "cursor", str(fn))
+        if not os.path.isfile(src):
+            return None
+        dst = os.path.join(MEDIA, cur["src"])
+        try:
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            _sh.copyfile(src, dst)
+        except Exception:
+            return None
+    return {k: v for k, v in cur.items() if k not in ("pack", "file")}
+
+
 def _kit_menu():
     import os as _o, json as _j
     try:
@@ -1235,8 +1262,9 @@ def director_pass(t, spec=None):
                 _ks = _kit_plan(sbi, text, _hit, c["end"] - c["start"] - 0.4)
                 if _ks:
                     _kw = {"steps": _kit_ptr(pid, i, sbi, _ks), "cam": _kit_cam(pid, i, sbi, _ks), "win": _kit_win(t, pid, sbi)}
-                    if isinstance(st.get("cursor"), dict) and st["cursor"].get("src"):
-                        _kw["cursor"] = st["cursor"]
+                    _cu = _cursor_ready(st.get("cursor"))
+                    if _cu:
+                        _kw["cursor"] = _cu
                     put("screen-scene", c, 0.3, **_kw)
                     _kb["last"] = i
                     last_end, last_kind = c["end"], "kit"
