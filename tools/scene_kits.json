@@ -12,7 +12,7 @@
     "search-chat": {
       "layer_kind": "screen-scene",
       "use_when": ["searching online", "typing", "messaging", "chat or DM", "buying or selling online", "marketplace", "hook that shows someone using a computer"],
-      "min_scene_seconds": 7.5,
+      "min_scene_seconds": 5.2,
       "steps": {
         "move": "pointer glides to {to: bar|button}",
         "click": "pointer clicks {to: bar|button}, ripple and press",

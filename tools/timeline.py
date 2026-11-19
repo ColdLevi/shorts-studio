@@ -973,6 +973,15 @@ def _kit_secs(steps):
     return t
 
 
+def _kit_menu():
+    import os as _o, json as _j
+    try:
+        with open(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "scene_kits.json")) as f:
+            return _j.load(f)
+    except Exception:
+        return {}
+
+
 def _kit_plan(sbi, text, hit, avail):
     own = sbi.get("screen")
     if isinstance(own, list):                       # the owner wrote the steps: use them as written
@@ -1172,6 +1181,12 @@ def director_pass(t, spec=None):
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
             _forced = _kit in ("search-chat", "screen", "screen-scene")
+            if _kit and _kit not in ("none", "off", "no") and not _forced:
+                _kd = _kit_menu()
+                if _kit in _kd.get("planned_kits", []):
+                    notes.append("%s: kit '%s' is planned but not built yet, so no screen scene here." % (tag, _kit))
+                else:
+                    notes.append("%s: unknown kit '%s'. Menu: %s." % (tag, _kit, ", ".join(_kd.get("kits", {}))))
             _space = 8 if dstyle.get("name") in ("restrained", "cold-open") else 4
             if (_forced and i - _kb["last"] >= 2) or (_hit and i - _kb["last"] >= _space):
                 _ks = _kit_plan(sbi, text, _hit, c["end"] - c["start"] - 0.4)
