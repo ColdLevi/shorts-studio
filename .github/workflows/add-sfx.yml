@@ -36,8 +36,20 @@ jobs:
         timeout-minutes: 8
         run: |
           if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$HOME/.local/bin"
+            if curl -fsSL --connect-timeout 20 --max-time 240 --retry 2 --retry-delay 5 -o "$RUNNER_TEMP/ff.tar.xz" https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && tar -xJf "$RUNNER_TEMP/ff.tar.xz" -C "$RUNNER_TEMP"; then
+              cp "$RUNNER_TEMP"/ffmpeg-*-amd64-static/ffmpeg "$RUNNER_TEMP"/ffmpeg-*-amd64-static/ffprobe "$HOME/.local/bin/" || true
+            fi
+            export PATH="$HOME/.local/bin:$PATH"
+            echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          fi
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/*azure* 2>/dev/null || true
             timeout 240 sudo apt-get update -y -o Acquire::Retries=2 || true
             timeout 300 sudo apt-get install -y --no-install-recommends ffmpeg || true
+          fi
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            echo "ffmpeg could not be installed on this runner"; exit 1
           fi
           ffmpeg -version | head -1
           ffprobe -version | head -1
