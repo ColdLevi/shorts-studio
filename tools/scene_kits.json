@@ -95,10 +95,27 @@
         }
       ],
       "how_to_use": "forced only: kit: glass-ui on a scene; never auto-picked yet"
+    },
+    "terminal-typing": {
+      "layer_kind": "terminal-typing",
+      "use_when": [
+        "coding",
+        "command line",
+        "developer tools",
+        "install or deploy",
+        "hacker or tech scene"
+      ],
+      "min_scene_seconds": 3.5,
+      "steps": {
+        "cmd": "a command is typed after a $ prompt {text}",
+        "out": "an output line appears {text}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: terminal-typing plus term steps on a scene; no default text, the writer says what the terminal shows"
     }
   },
   "planned_kits": [
-    "terminal-typing",
     "notification-stack",
     "browser-page-load",
     "checkout",

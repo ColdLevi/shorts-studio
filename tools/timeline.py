@@ -980,6 +980,34 @@ def _kit_secs(steps):
     return t
 
 
+def _term_secs(steps):
+    t = 0.3
+    for x in steps:
+        d = 0.3 + len(x.get("text", "")) / 22.0 if x["type"] == "cmd" else (x.get("dur", 0.6) if x["type"] == "hold" else 0.35)
+        t += d + 0.15
+    return t
+
+
+def _term_steps(sbi, text, avail):
+    steps = []
+    own = sbi.get("term")
+    if isinstance(own, list):
+        for s in own[:10]:
+            if not isinstance(s, dict) or s.get("type") not in ("cmd", "out", "hold"):
+                continue
+            x = {"type": s["type"]}
+            if s["type"] in ("cmd", "out"):
+                if not s.get("text"):
+                    continue
+                x["text"] = str(s["text"])[:60]
+            if isinstance(s.get("dur"), (int, float)):
+                x["dur"] = float(s["dur"])
+            steps.append(x)
+    while len(steps) > 1 and _term_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _term_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1247,6 +1275,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a liquid-glass scene (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _gs)))
                 continue
             notes.append("%s: glass-ui asked for, but the scene is too short or too close to another kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "terminal-typing":
+            _ts = _term_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.5 and i - _kb["last"] >= 2 and _ts:
+                put("terminal-typing", c, 0.3, steps=_ts)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a terminal scene (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _ts)))
+                continue
+            notes.append("%s: terminal-typing asked for, but it needs written steps, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)

@@ -23,9 +23,10 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
 "glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
+"term": list of steps for a terminal-typing scene, each {"type": "cmd" (a typed command) or "out" (an output line) or "hold", "text": "...", "dur": seconds, for hold only}
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -74,8 +75,21 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen", "glass-ui"):
+    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing"):
         out["kit"] = d["kit"]
+    tm = d.get("term")
+    if isinstance(tm, list):
+        ts = []
+        for x in tm[:10]:
+            if isinstance(x, dict) and x.get("type") in ("cmd", "out", "hold"):
+                y = {"type": x["type"]}
+                if x.get("text"):
+                    y["text"] = _s(x["text"], 60)
+                if isinstance(x.get("dur"), (int, float)):
+                    y["dur"] = float(x["dur"])
+                ts.append(y)
+        if ts:
+            out["term"] = ts
     st = d.get("screen")
     if isinstance(st, list):
         steps = []
