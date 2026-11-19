@@ -1387,6 +1387,20 @@ def _apply_theme(t, spec):
 _from_props_orig = from_props
 
 
+def _add_keyed(t, spec):
+    # the owner's keyed green-screen clips (spec["keyed"], made by user_assets.key_clips) become keyed-clip layers
+    tk = t.setdefault("tracks", {})
+    vis = tk.get("visuals") or []
+    lay = tk.setdefault("layers", [])
+    for k in (spec or {}).get("keyed") or []:
+        i = k.get("beat")
+        if not isinstance(i, int) or not (0 <= i < len(vis)):
+            continue
+        c = vis[i]
+        lay.append({"id": "key%d" % (i + 1), "kind": "keyed-clip", "anchor": c["id"], "start": c["start"], "end": c["end"],
+                    "src": k["src"], "ar": k["ar"], "x": k["x"], "y": k["y"], "w": k["w"]})
+
+
 def from_props(props, spec=None, pid="job", cv=None):
     t = _from_props_orig(props, spec, pid, cv)
     if spec and spec.get("beats"):
@@ -1407,6 +1421,10 @@ def from_props(props, spec=None, pid="job", cv=None):
                 print("direction post-pass failed (ignored):", _e)
         except Exception as e:
             print("director_pass failed (ignored):", e)
+    try:
+        _add_keyed(t, spec)
+    except Exception as _e:
+        print("keyed clips skipped:", _e)
     try:
         camera_pass(t, spec)      # step2-camera
     except Exception as e:

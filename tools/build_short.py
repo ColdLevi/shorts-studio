@@ -776,6 +776,7 @@ def main():
     try:   # step-assets
         import user_assets as UA
         UA_ITEMS = UA.fetch_all(spec)
+        UA.split_key(spec)
         UMAP = UA.plan(spec, beats, tg)
     except Exception as _e:
         print("user assets skipped:", _e)
@@ -837,6 +838,11 @@ def main():
     clips = {}
     if UA and UMAP:   # step-assets
         UA.apply_videos(UMAP, clips, times, cv, OUT, JOB, tg)
+    if UA:
+        try:
+            UA.key_clips(spec, beats, times, cv, OUT, JOB, tg, taken=UMAP)
+        except Exception as _e:
+            print("keyed clips skipped:", _e)
     motion = [i for i, b in enumerate(beats) if (b.get("tool") or "").lower() in ("higgsfield", "huggingface") and (i + 1) not in fallbacks]
     if motion:
         tg(f"🎥 Animating {len(motion)} key shot(s) with Hugging Face...")

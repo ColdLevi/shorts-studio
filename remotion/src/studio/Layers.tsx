@@ -10,6 +10,7 @@ import { AssetPng, CornerText, GlyphChip, Illustration } from './Layers2';   // 
 import { BarChart, ChapterCard, UiPanel } from './Layers3';
 import { ScreenScene } from './Layers4';   // step6-data
 import { GlassUI } from './Layers5';
+import { KeyedClip } from './Layers6';
 
 export type Layer = {
   id: string; kind: string; start: number; end: number; text?: string; src?: string; cutout?: string | null;
@@ -258,7 +259,7 @@ const SettleTitle: React.FC<P> = ({ l, L, accent, font }) => {
 const KINDS = {
   'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic, 'settle-title': SettleTitle,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
-  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene, 'glass-ui': GlassUI,
+  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene, 'glass-ui': GlassUI, 'keyed-clip': KeyedClip,
 } as unknown as Record<string, React.ComponentType<P>>;
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string; theme?: Partial<Theme> }> = ({ layers, L, accent, pid, palette, font, grade, theme }) => {

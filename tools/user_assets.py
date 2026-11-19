@@ -306,3 +306,90 @@ def music_path(spec, items, OUT, JOB, default):
     if mu and _to_mp3(mu["path"], os.path.join(OUT, "user_music.mp3"), 240):
         return f"{JOB}/user_music.mp3"
     return default
+
+
+KEY_RX = re.compile(r"green\s*-?screen|blue\s*-?screen|chroma\s*-?key|^\s*key\b", re.I)
+KEY_POS = {"full": (0.5, 0.5, 1.0), "center": (0.5, 0.6, 0.7), "left": (0.3, 0.6, 0.55), "right": (0.7, 0.6, 0.55)}
+KEY_MENU = [(8, 0.08, 0.04), (20, 0.14, 0.08), (999, 0.22, 0.12)]   # edge colour spread -> (similarity, blend)
+
+
+def split_key(spec):
+    try:
+        keep, keyed = [], []
+        for it in spec.get("user_assets") or []:
+            if it.get("kind") == "video" and KEY_RX.search(it.get("caption") or ""):
+                keyed.append(it)
+            else:
+                keep.append(it)
+        if keyed:
+            spec["user_assets"] = keep
+            spec["_key_items"] = keyed
+        return keyed
+    except Exception as e:
+        print("key split skipped:", e)
+        return []
+
+
+def key_clips(spec, beats, times, cv, OUT, JOB, tg=print, taken=None):
+    import subprocess, tempfile
+    items = spec.pop("_key_items", None) or []
+    if not items:
+        return
+    from PIL import Image
+
+    def has(flag, name):
+        r = subprocess.run(["ffmpeg", "-hide_banner", flag], capture_output=True, text=True)
+        return name in (r.stdout or "") + (r.stderr or "")
+
+    if not (has("-filters", "chromakey") and has("-encoders", "libvpx-vp9")):
+        tg("🟩 Your green-screen clip is left out: ffmpeg on this machine cannot make transparent video.")
+        return
+    n, used, done = len(beats), set(taken or {}), []
+    spec["keyed"] = done
+    for k, it in enumerate(items):
+        cap = it.get("caption") or ""
+        m = re.search(r"(?:beat|scene|shot|slide|clip|line|#)\s*(\d{1,2})", cap, re.I)
+        i = int(m.group(1)) - 1 if m else (n // 2 if len(items) == 1 else round(k * (n - 1) / (len(items) - 1)))
+        while i in used and i < n - 1:
+            i += 1
+        if not (0 <= i < n) or i in used or i >= len(times):
+            tg("🟩 No free beat for a green-screen clip, so I left it out.")
+            continue
+        src = it.get("path")
+        if not src or not os.path.exists(src):
+            tg("🟩 I could not read your green-screen clip, so I left it out.")
+            continue
+        fr = os.path.join(tempfile.mkdtemp(), "f.jpg")
+        for ss in (["-ss", "0.3"], []):
+            if not os.path.exists(fr):
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + ss + ["-i", src, "-frames:v", "1", fr], capture_output=True)
+        if not os.path.exists(fr):
+            tg("🟩 I could not read a frame from your green-screen clip, so I left it out.")
+            continue
+        im = Image.open(fr).convert("RGB")
+        ar = im.size[0] / float(im.size[1])
+        sm = im.resize((48, 48))
+        px = [sm.getpixel((x, y)) for x in range(48) for y in range(48) if min(x, y, 47 - x, 47 - y) < 3]
+        mean = [sum(p[c] for p in px) / float(len(px)) for c in range(3)]
+        spread = sum(abs(p[c] - mean[c]) for p in px for c in range(3)) / (3.0 * len(px))
+        if not (mean[1] - max(mean[0], mean[2]) > 40 or mean[2] - max(mean[0], mean[1]) > 40):
+            tg("🟩 Beat %d: the clip has no flat green or blue background at its edges, so I left it out." % (i + 1))
+            continue
+        sim, blend = next((a, b) for lim, a, b in KEY_MENU if spread < lim)
+        hexc = "0x%02x%02x%02x" % tuple(int(round(v)) for v in mean)
+        want = (times[i]["end"] - times[i]["start"]) + 0.4
+        out = os.path.join(OUT, "key_%02d.webm" % (i + 1))
+        vf = "scale='min(720,iw)':-2,chromakey=%s:%.2f:%.2f,format=yuva420p" % (hexc, sim, blend)
+        r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", src, "-t", "%.2f" % want, "-vf", vf, "-an",
+                            "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-auto-alt-ref", "0", "-b:v", "0", "-crf", "34",
+                            "-deadline", "realtime", "-cpu-used", "5", out], capture_output=True, text=True, timeout=900)
+        if r.returncode or not os.path.exists(out):
+            print("key encode failed:", (r.stderr or "")[:200])
+            tg("🟩 Beat %d: keying your clip failed, so I left it out." % (i + 1))
+            continue
+        pos = next((w for w in ("left", "right", "center", "full") if re.search(r"\b" + w + r"\b", cap, re.I)), None)
+        pos = pos or ("center" if ar < 0.8 else "full")
+        x, y, w = KEY_POS[pos]
+        done.append({"beat": i, "src": "%s/key_%02d.webm" % (JOB, i + 1), "ar": round(ar, 4), "x": x, "y": y, "w": w, "pos": pos})
+        used.add(i)
+        tg("🟩 Green-screen clip keyed on beat %d (%s)." % (i + 1, pos))
