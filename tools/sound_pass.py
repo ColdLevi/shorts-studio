@@ -53,11 +53,51 @@ def _pk(name, n, seed):
     root = getattr(TL, "ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     opts = [(SFX_DIR + name + ".wav", 1.0)] + [o for o in VARIANTS.get(name, []) if os.path.exists(os.path.join(root, "media", o[0]))]
     opts = _user_opts(root, name) or opts
+    _po = _pack_opts(root, _ACTIVE.get("id"), name)
+    if _po:
+        opts = _po
     _pk.memo[key] = opts[(seed + k) % len(opts)]
     return _pk.memo[key]
 
 
 _pk.memo, _pk.cnt = {}, {}
+
+
+_ACTIVE = {}
+
+
+def _pack_opts(root, pid, name):
+    """None = pack not configured (keep old behaviour); [] = pack-only and this role has no pack sound (silent); list = pack sounds."""
+    if not pid:
+        return None
+    try:
+        import shutil
+        pk = json.load(open(os.path.join(root, "styles", pid, "pack.json"), encoding="utf-8"))
+        sn = pk.get("sounds") or {}
+        roles = sn.get("roles") or {}
+        if not roles or sn.get("mode", "pack-only") != "pack-only":
+            return None
+        f = roles.get(name)
+        if not f:
+            return []
+        out = []
+        for fn in (f if isinstance(f, list) else [f]):
+            src = os.path.join(root, "styles", pid, "sounds", str(fn))
+            if os.path.isfile(src):
+                rel = "library/sfx/pack/%s/%s" % (pid, fn)
+                dst = os.path.join(root, "media", rel)
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                shutil.copyfile(src, dst)
+                out.append((rel, 1.0))
+        return out
+    except Exception:
+        return None
+
+
+def _pack_gate(t, ev):
+    _ACTIVE["id"] = str((t.get("style") or {}).get("learned") or "")
+    root = getattr(TL, "ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    return [e for e in ev if _pack_opts(root, _ACTIVE["id"], e[1]) != []]
 
 
 def sound_pass(t):
@@ -92,6 +132,7 @@ def sound_pass(t):
             ev.append((at, "hit_low" if hard else "tick", a["id"], off))
         elif k in ("illustration", "asset", "icon-pop", "chart", "panel"):
             ev.append((at + 0.12, "pop", a["id"], round(off + 0.12, 3)))
+    ev = _pack_gate(t, ev)
     ev.sort(key=lambda e: (e[0], -PRIO[e[1]]))
     keep = []
     for e in ev:

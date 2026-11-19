@@ -11,7 +11,7 @@ This module is used by tools/build_short.py (spec -> timeline) and tools/project
 revert, reformat). Step 2's re-edit agent only has to produce a JSON patch: apply_patch() applies it,
 marks the clips whose recipe changed as dirty, and project.py build remakes only those.
 """
-import copy, hashlib, json, math, os, re, time
+import copy, hashlib, json, math, os, re, sys, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA = os.path.join(ROOT, "media")
@@ -115,6 +115,35 @@ RECIPES = [k for k, v in STYLE_PRESETS.items() if v.get("recipe")]
 _learned_cache = None
 
 
+def _pack_as_learned(p, legacy_entry):
+    """A style pack (styles/<id>/pack.json) shaped like the learned-style dict the renderer reads.
+    Starts from the pack's legacy block, overlays the pack's own look/motion, skips 'not measured' text."""
+    import copy as _copy
+    base = dict(legacy_entry or {})
+    for k, v in (p.get("legacy") or {}).items():
+        base.setdefault(k, v)
+    base["id"] = p["id"]
+    base["name"] = p.get("name") or p["id"]
+    tokens = _copy.deepcopy(base.get("style_tokens") or {})
+    ok = lambda v: v not in (None, "", []) and not (isinstance(v, str) and v.startswith("not measured"))
+    look, mo = p.get("look") or {}, p.get("motion") or {}
+    for k in ("caption", "font", "backdrop", "grade", "accent", "palette"):
+        if k in look and ok(look[k]):
+            if isinstance(look[k], dict):
+                tokens[k] = {**(tokens.get(k) or {}), **look[k]}
+            else:
+                tokens[k] = look[k]
+    if ok(mo.get("transitions")):
+        tokens["transitions"] = mo["transitions"]
+    if ok(mo.get("motion")):
+        tokens["motion"] = mo["motion"]
+    base["style_tokens"] = tokens
+    base["pack"] = True
+    base["pack_sounds"] = p.get("sounds")
+    base["pack_recipes"] = mo.get("recipes")
+    return base
+
+
 def learned_styles():
     """id -> full learned style recipe, read from styles/ (every *.json except index.json)."""
     global _learned_cache
@@ -129,6 +158,18 @@ def learned_styles():
                         out[str(s.get("id") or f[:-5])] = s
                     except Exception:
                         pass
+        except Exception:
+            pass
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import style_pack as _sp
+            for _pid in _sp.list_packs():
+                try:
+                    _pk = _sp.load_pack(_pid)
+                    if _pk:
+                        out[_pid] = _pack_as_learned(_pk, out.get(_pid))
+                except Exception:
+                    pass
         except Exception:
             pass
         _learned_cache = out
