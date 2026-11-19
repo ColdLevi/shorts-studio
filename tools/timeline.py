@@ -1222,6 +1222,16 @@ def director_pass(t, spec=None):
             print("variety guard off:", _e)
     notes.append("Left %d beat(s) clean on purpose: no random lines, no map lines, nothing over a face." % left_clean)
     if layers:
+        try:
+            try:
+                import curve_pass as _cp
+            except ImportError:
+                from tools import curve_pass as _cp
+            layers, _cn = _cp.apply(layers, spec, seed=str(t.get("id") or "job"))
+            notes.extend(_cn)
+        except Exception as _e:
+            print("curve pass off:", _e)
+    if layers:
         tr["layers"] = layers
         t.setdefault("meta", {})["director"] = notes
         _director_say(["Director notes (%d layers on %d beats)" % (len(layers), len(vis))] + ["- " + n for n in notes[:30]])
