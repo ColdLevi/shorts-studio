@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "why-lagos-never-sleeps-mwpbsdny",
- "rev": 1,
+ "rev": 2,
  "title": "Why Lagos never sleeps",
  "duration": 11.82,
  "canvas": {
@@ -11,8 +11,8 @@
  },
  "style": {
   "caption": {
-   "preset": "none",
-   "font": "Inter"
+   "preset": "bold-pop",
+   "font": "Poppins"
   },
   "transition": {
    "type": "dissolve",
@@ -323,7 +323,224 @@
      "voice": "en-NG-AbeoNeural",
      "rate": "+0%",
      "text": "Lagos has more than 15 million people, and most of them are awake right now. Traffic here is not a problem to solve. It is a way of life. And at dawn, the whole city starts again."
-    }
+    },
+    "segments": [
+     {
+      "clip": "v1",
+      "text": "Lagos has more than 15 million people, and most of them are awake right now.",
+      "from": "assets/voice.mp3",
+      "t0": 0.0,
+      "t1": 4.267,
+      "words": [
+       {
+        "word": "Lagos",
+        "start": 0.1,
+        "end": 0.55
+       },
+       {
+        "word": "has",
+        "start": 0.575,
+        "end": 0.738
+       },
+       {
+        "word": "more",
+        "start": 0.775,
+        "end": 0.925
+       },
+       {
+        "word": "than",
+        "start": 0.988,
+        "end": 1.125
+       },
+       {
+        "word": "15",
+        "start": 1.15,
+        "end": 1.562
+       },
+       {
+        "word": "million",
+        "start": 1.575,
+        "end": 1.863
+       },
+       {
+        "word": "people,",
+        "start": 1.925,
+        "end": 2.25
+       },
+       {
+        "word": "and",
+        "start": 2.41,
+        "end": 2.535
+       },
+       {
+        "word": "most",
+        "start": 2.535,
+        "end": 2.772
+       },
+       {
+        "word": "of",
+        "start": 2.81,
+        "end": 2.897
+       },
+       {
+        "word": "them",
+        "start": 2.972,
+        "end": 3.172
+       },
+       {
+        "word": "are",
+        "start": 3.185,
+        "end": 3.335
+       },
+       {
+        "word": "awake",
+        "start": 3.335,
+        "end": 3.597
+       },
+       {
+        "word": "right",
+        "start": 3.634,
+        "end": 3.835
+       },
+       {
+        "word": "now.",
+        "start": 3.872,
+        "end": 4.047
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     },
+     {
+      "clip": "v2",
+      "text": "Traffic here is not a problem to solve. It is a way of life.",
+      "from": "assets/voice.mp3",
+      "t0": 4.267,
+      "t1": 7.914,
+      "words": [
+       {
+        "word": "Traffic",
+        "start": 0.06,
+        "end": 0.485
+       },
+       {
+        "word": "here",
+        "start": 0.56,
+        "end": 0.697
+       },
+       {
+        "word": "is",
+        "start": 0.735,
+        "end": 0.822
+       },
+       {
+        "word": "not",
+        "start": 0.86,
+        "end": 1.047
+       },
+       {
+        "word": "a",
+        "start": 1.047,
+        "end": 1.084
+       },
+       {
+        "word": "problem",
+        "start": 1.172,
+        "end": 1.497
+       },
+       {
+        "word": "to",
+        "start": 1.547,
+        "end": 1.647
+       },
+       {
+        "word": "solve.",
+        "start": 1.672,
+        "end": 2.022
+       },
+       {
+        "word": "It",
+        "start": 2.302,
+        "end": 2.49
+       },
+       {
+        "word": "is",
+        "start": 2.49,
+        "end": 2.628
+       },
+       {
+        "word": "a",
+        "start": 2.628,
+        "end": 2.69
+       },
+       {
+        "word": "way",
+        "start": 2.778,
+        "end": 2.903
+       },
+       {
+        "word": "of",
+        "start": 2.915,
+        "end": 3.052
+       },
+       {
+        "word": "life.",
+        "start": 3.09,
+        "end": 3.427
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     },
+     {
+      "clip": "v3",
+      "text": "And at dawn, the whole city starts again.",
+      "from": "assets/voice.mp3",
+      "t0": 7.914,
+      "t1": 11.266,
+      "words": [
+       {
+        "word": "And",
+        "start": 0.06,
+        "end": 0.234
+       },
+       {
+        "word": "at",
+        "start": 0.234,
+        "end": 0.359
+       },
+       {
+        "word": "dawn,",
+        "start": 0.435,
+        "end": 0.734
+       },
+       {
+        "word": "the",
+        "start": 0.894,
+        "end": 0.969
+       },
+       {
+        "word": "whole",
+        "start": 1.006,
+        "end": 1.181
+       },
+       {
+        "word": "city",
+        "start": 1.219,
+        "end": 1.494
+       },
+       {
+        "word": "starts",
+        "start": 1.519,
+        "end": 1.818
+       },
+       {
+        "word": "again.",
+        "start": 1.818,
+        "end": 2.156
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     }
+    ]
    }
   ],
   "music": [
@@ -368,7 +585,7 @@
  },
  "meta": {
   "created": 1795200179500,
-  "updated": 1795200441416,
+  "updated": 1795201739870,
   "topic": "Why Lagos never sleeps",
   "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
   "image_style": "",
