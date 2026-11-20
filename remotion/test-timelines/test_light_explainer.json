@@ -65,14 +65,13 @@
     "id": "v1",
     "start": 0,
     "end": 3,
-    "narration": "In 2008 prices doubled every day.",
+    "narration": "In 2008, prices in Zimbabwe doubled about every day.",
     "kind": "graphic",
     "graphic": {
      "type": "counter",
-     "value": 79600000000,
-     "suffix": "",
-     "label": "percent inflation in one month",
-     "words": true
+     "value": 24,
+     "suffix": " hours",
+     "label": "for prices to double"
     },
     "gen": {
      "tool": "graphic"
