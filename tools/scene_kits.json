@@ -130,12 +130,29 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: notification-stack plus stack steps on a scene; no default text, the writer says what each banner shows"
+    },
+    "counter-graph": {
+      "layer_kind": "counter-graph",
+      "use_when": [
+        "a statistic",
+        "growth or decline",
+        "numbers over time",
+        "percentages",
+        "price or score"
+      ],
+      "min_scene_seconds": 3.0,
+      "steps": {
+        "counter": "a big number counts to {value} with {label}, {prefix}, {suffix}",
+        "line": "a line graph draws through {points}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: counter-graph plus graph steps on a scene; the numbers come from the writer, never invented"
     }
   },
   "planned_kits": [
     "browser-page-load",
     "checkout",
-    "counter-graph",
     "alert-glitch",
     "transfer-progress"
   ]

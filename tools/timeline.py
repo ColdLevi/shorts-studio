@@ -1036,6 +1036,40 @@ def _stack_steps(sbi, text, avail):
     return steps if steps and _stack_secs(steps) <= avail else None
 
 
+def _graph_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += (x.get("dur", 0.6) if x["type"] == "hold" else 1.4 if x["type"] == "counter" else 1.6) + 0.2
+    return t
+
+
+def _graph_steps(sbi, text, avail):
+    isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    steps = []
+    own = sbi.get("graph")
+    if isinstance(own, list):
+        for s in own[:6]:
+            if not isinstance(s, dict):
+                continue
+            if s.get("type") == "counter" and isnum(s.get("value")):
+                x = {"type": "counter", "value": float(s["value"])}
+                for k, n in (("label", 28), ("prefix", 4), ("suffix", 4)):
+                    if s.get(k):
+                        x[k] = str(s[k])[:n]
+                if isnum(s.get("from")):
+                    x["from"] = float(s["from"])
+                steps.append(x)
+            elif s.get("type") == "line" and isinstance(s.get("points"), list):
+                pts = [float(v) for v in s["points"][:12] if isnum(v)]
+                if len(pts) >= 2:
+                    steps.append({"type": "line", "points": pts})
+            elif s.get("type") == "hold":
+                steps.append({"type": "hold", "dur": float(s["dur"]) if isnum(s.get("dur")) else 0.6})
+    while len(steps) > 1 and _graph_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _graph_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1323,6 +1357,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a notification stack (%d banners) as the writer asked." % (tag, sum(1 for x in _ns if x["type"] == "note")))
                 continue
             notes.append("%s: notification-stack asked for, but it needs written banners, a scene of 3 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "counter-graph":
+            _gr = _graph_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.0 and i - _kb["last"] >= 2 and _gr:
+                put("counter-graph", c, 0.3, steps=_gr)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a counter and graph (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _gr)))
+                continue
+            notes.append("%s: counter-graph asked for, but it needs written numbers, a scene of 3 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
