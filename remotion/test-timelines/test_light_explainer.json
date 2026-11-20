@@ -70,8 +70,9 @@
     "graphic": {
      "type": "counter",
      "value": 79600000000,
-     "suffix": "%",
-     "label": "monthly inflation"
+     "suffix": "",
+     "label": "percent inflation in one month",
+     "words": true
     },
     "gen": {
      "tool": "graphic"
@@ -88,7 +89,8 @@
      "value": 100000000000000,
      "suffix": "",
      "label": "dollar note",
-     "prefix": "$"
+     "prefix": "$",
+     "words": true
     },
     "gen": {
      "tool": "graphic"

@@ -14,7 +14,7 @@ import { Graphic2, Graphic2Beat, GRAPHIC2_TYPES, Sfx2Context } from './graphics2
 const { fontFamily } = loadFont('normal', { weights: ['600', '800', '900'], subsets: ['latin'] });
 
 export type Graphic =
-  | { type: 'counter'; value: number; from?: number; prefix?: string; suffix?: string; label?: string; decimals?: number; plain?: boolean }
+  | { type: 'counter'; value: number; from?: number; prefix?: string; suffix?: string; label?: string; decimals?: number; plain?: boolean; words?: boolean }
   | { type: 'bars'; title?: string; prefix?: string; suffix?: string; items: { label: string; value: number }[]; highlight?: number }
   | { type: 'line'; title?: string; prefix?: string; suffix?: string; x_labels?: string[]; series: { label: string; values: number[] }[] }
   | { type: 'title'; text: string; sub?: string }
@@ -35,10 +35,14 @@ const PALETTE = ['#8b96a5', '#ef5f6b', '#4fc3f7', '#9ccc65', '#ba68c8'];
 const TOP = 300;
 const BOTTOM = 1090;
 
-export const fmt = (v: number, prefix = '', suffix = '', decimals?: number, plain = false) => {
+export const fmt = (v: number, prefix = '', suffix = '', decimals?: number, plain = false, words = false) => {
   const abs = Math.abs(v);
   const d = decimals ?? (abs < 10 && abs % 1 !== 0 ? 1 : 0);
+  const unit = (n: number, name: string) => `${parseFloat((abs / n).toFixed(1))} ${name}`;
   const body = plain ? String(Math.round(abs))
+    : words && abs >= 1e12 ? unit(1e12, 'trillion')
+    : words && abs >= 1e9 ? unit(1e9, 'billion')
+    : words && abs >= 1e6 ? unit(1e6, 'million')
     : abs >= 1e12 && !decimals ? `${(abs / 1e12).toFixed(abs >= 1e13 ? 0 : 1)}T`
     : abs >= 1e9 && !decimals ? `${(abs / 1e9).toFixed(abs >= 1e10 ? 0 : 1)}B`
     : abs >= 1e7 && !decimals ? `${(abs / 1e6).toFixed(abs >= 1e8 ? 0 : 1)}M`
@@ -94,8 +98,8 @@ const Counter: React.FC<{ g: Extract<Graphic, { type: 'counter' }>; accent: stri
   const p = interpolate(frame, [0.2 * fps, 0.2 * fps + dur], [0, 1], { ...CLAMP, easing: EASE });
   const v = (g.from ?? 0) + (g.value - (g.from ?? 0)) * p;
   const land = spring({ frame: frame - (0.2 * fps + dur), fps, config: { damping: 9, stiffness: 180 } });
-  const text = fmt(v, g.prefix, g.suffix, g.decimals, g.plain);
-  const size = Math.min(230, Math.floor(1300 / Math.max(4, fmt(g.value, g.prefix, g.suffix, g.decimals, g.plain).length)));
+  const text = fmt(v, g.prefix, g.suffix, g.decimals, g.plain, g.words);
+  const size = Math.min(230, Math.floor(1300 / Math.max(4, fmt(g.value, g.prefix, g.suffix, g.decimals, g.plain, g.words).length)));
   const lIn = spring({ frame: frame - 6, fps, config: { damping: 16 } });
   return (
     <AbsoluteFill style={{ top: TOP, height: BOTTOM - TOP, alignItems: 'center', justifyContent: 'center' }}>
