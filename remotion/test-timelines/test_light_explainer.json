@@ -85,9 +85,10 @@
     "kind": "graphic",
     "graphic": {
      "type": "counter",
-     "value": 100,
-     "suffix": "T",
-     "label": "dollar note"
+     "value": 100000000000000,
+     "suffix": "",
+     "label": "dollar note",
+     "prefix": "$"
     },
     "gen": {
      "tool": "graphic"
@@ -103,7 +104,8 @@
      "type": "counter",
      "value": 2009,
      "suffix": "",
-     "label": "year it ended"
+     "label": "year it ended",
+     "plain": true
     },
     "gen": {
      "tool": "graphic"
