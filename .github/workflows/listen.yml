@@ -1,0 +1,59 @@
+name: listen
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_path:
+        description: "Path of a video inside the repo (leave empty if you give a link)"
+        required: false
+        default: ""
+      video_url:
+        description: "Direct download link of a video (leave empty if you give a path)"
+        required: false
+        default: ""
+      model:
+        description: "Whisper model size: tiny, base or small"
+        required: false
+        default: "base"
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg and Python packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg
+          pip install numpy faster-whisper
+
+      - name: Get the video
+        env:
+          VIDEO_PATH: ${{ github.event.inputs.video_path }}
+          VIDEO_URL: ${{ github.event.inputs.video_url }}
+        run: |
+          mkdir -p work
+          if [ -n "$VIDEO_URL" ]; then
+            curl -L --fail -o work/input.mp4 "$VIDEO_URL"
+          elif [ -n "$VIDEO_PATH" ]; then
+            cp "$VIDEO_PATH" work/input.mp4
+          else
+            echo "Give video_path or video_url"; exit 1
+          fi
+          ls -la work
+
+      - name: Listen
+        env:
+          MODEL: ${{ github.event.inputs.model }}
+        run: python3 tools/listen.py work/input.mp4 listen-out --model "$MODEL"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: listen-evidence
+          path: listen-out
