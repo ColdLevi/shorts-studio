@@ -1,0 +1,1377 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "kit-a-6b0001e5",
+ "rev": 1,
+ "title": "Kit Test A: A Phone's Busy Day",
+ "duration": 44.36,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "position": "bottom",
+   "highlight": "#FF3333",
+   "color": "#FFFFFF"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "font": "Inter",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "fx": {
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none",
+   "flicker": false
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.05) brightness(1.0)",
+  "accent": "#FFD43B",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false,
+  "vignette": false,
+  "cursor": {
+   "src": "library/cursor/upload-3/cursor.svg",
+   "pack": "upload-3",
+   "file": "cursor.svg",
+   "size": 48,
+   "tipX": 0.06,
+   "tipY": 0.05
+  },
+  "learned": "upload-3",
+  "preset": "upload-3"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.243,
+    "narration": "Your phone has a busy life, and most of it happens before you have even had breakfast.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone glowing on a bedside table at dawn, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "ba100f381d8a",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.243,
+    "end": 10.395,
+    "narration": "It wakes you with messages from your mum, your bank, and three group chats before you even sit up.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone lighting up a dark bedroom, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "1c4d710280c6",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.395,
+    "end": 16.91,
+    "narration": "Then comes the daily routine of checking everything, one small habit at a time, until the battery starts to drop.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a person walking down a city street looking at a phone, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "0d8fa0461290",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.68,
+     "dir": -1
+    },
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v4",
+    "start": 16.91,
+    "end": 22.537,
+    "narration": "By midday the battery has fallen to half, and that quiet drop is where the real panic begins.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a close view of a phone on a cafe table, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c90c7f0a4641",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.68,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v5",
+    "start": 22.537,
+    "end": 27.453,
+    "narration": "So you do what everyone does, and look for a charger before the afternoon meeting begins at three.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a power socket on a wall in an office, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4521315eafdd",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": -1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v6",
+    "start": 27.453,
+    "end": 33.031,
+    "narration": "You open a shop page to order a spare cable, and wait while the page slowly loads on weak wifi.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a laptop on a desk in a bright office, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "14fb9326db03",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.68,
+     "dir": 1
+    },
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v7",
+    "start": 33.031,
+    "end": 38.354,
+    "narration": "It feels like a small win, so you scroll a little longer while the rest of the afternoon slips away.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a person on a sofa scrolling a phone at dusk, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "2e0222aa57a0",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": -1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v8",
+    "start": 38.354,
+    "end": 43.56,
+    "narration": "Then you buy the cable, press pay, and wait for the little green check to confirm your order today.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a hand holding a credit card over a phone, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "65d2b05d4f7b",
+    "cam": {
+     "move": "hold",
+     "amp": 0.68,
+     "dir": 1,
+     "wobble": 0
+    },
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Your",
+     "start": 0.087,
+     "end": 0.2
+    },
+    {
+     "word": "phone",
+     "start": 0.2,
+     "end": 0.662
+    },
+    {
+     "word": "has",
+     "start": 0.762,
+     "end": 1.05
+    },
+    {
+     "word": "a",
+     "start": 1.062,
+     "end": 1.137
+    },
+    {
+     "word": "busy",
+     "start": 1.2,
+     "end": 1.538
+    },
+    {
+     "word": "life,",
+     "start": 1.538,
+     "end": 2.075
+    },
+    {
+     "word": "and",
+     "start": 2.235,
+     "end": 2.36
+    },
+    {
+     "word": "most",
+     "start": 2.36,
+     "end": 2.661
+    },
+    {
+     "word": "of",
+     "start": 2.673,
+     "end": 2.723
+    },
+    {
+     "word": "it",
+     "start": 2.723,
+     "end": 2.786
+    },
+    {
+     "word": "happens",
+     "start": 2.786,
+     "end": 3.223
+    },
+    {
+     "word": "before",
+     "start": 3.223,
+     "end": 3.648
+    },
+    {
+     "word": "you",
+     "start": 3.648,
+     "end": 3.735
+    },
+    {
+     "word": "have",
+     "start": 3.735,
+     "end": 3.986
+    },
+    {
+     "word": "even",
+     "start": 4.048,
+     "end": 4.236
+    },
+    {
+     "word": "had",
+     "start": 4.248,
+     "end": 4.411
+    },
+    {
+     "word": "breakfast.",
+     "start": 4.411,
+     "end": 5.023
+    },
+    {
+     "word": "It",
+     "start": 5.303,
+     "end": 5.415
+    },
+    {
+     "word": "wakes",
+     "start": 5.428,
+     "end": 5.628
+    },
+    {
+     "word": "you",
+     "start": 5.628,
+     "end": 5.715
+    },
+    {
+     "word": "with",
+     "start": 5.715,
+     "end": 5.84
+    },
+    {
+     "word": "messages",
+     "start": 5.852,
+     "end": 6.402
+    },
+    {
+     "word": "from",
+     "start": 6.402,
+     "end": 6.54
+    },
+    {
+     "word": "your",
+     "start": 6.54,
+     "end": 6.628
+    },
+    {
+     "word": "mum,",
+     "start": 6.64,
+     "end": 7.04
+    },
+    {
+     "word": "your",
+     "start": 7.2,
+     "end": 7.313
+    },
+    {
+     "word": "bank,",
+     "start": 7.313,
+     "end": 7.863
+    },
+    {
+     "word": "and",
+     "start": 8.075,
+     "end": 8.187
+    },
+    {
+     "word": "three",
+     "start": 8.2,
+     "end": 8.513
+    },
+    {
+     "word": "group",
+     "start": 8.513,
+     "end": 8.712
+    },
+    {
+     "word": "chats",
+     "start": 8.712,
+     "end": 9.05
+    },
+    {
+     "word": "before",
+     "start": 9.05,
+     "end": 9.375
+    },
+    {
+     "word": "you",
+     "start": 9.388,
+     "end": 9.475
+    },
+    {
+     "word": "even",
+     "start": 9.487,
+     "end": 9.712
+    },
+    {
+     "word": "sit",
+     "start": 9.725,
+     "end": 9.95
+    },
+    {
+     "word": "up.",
+     "start": 9.95,
+     "end": 10.175
+    },
+    {
+     "word": "Then",
+     "start": 10.455,
+     "end": 10.717
+    },
+    {
+     "word": "comes",
+     "start": 10.867,
+     "end": 11.105
+    },
+    {
+     "word": "the",
+     "start": 11.117,
+     "end": 11.268
+    },
+    {
+     "word": "daily",
+     "start": 11.28,
+     "end": 11.617
+    },
+    {
+     "word": "routine",
+     "start": 11.617,
+     "end": 12.217
+    },
+    {
+     "word": "of",
+     "start": 12.23,
+     "end": 12.367
+    },
+    {
+     "word": "checking",
+     "start": 12.367,
+     "end": 12.817
+    },
+    {
+     "word": "everything,",
+     "start": 12.83,
+     "end": 13.455
+    },
+    {
+     "word": "one",
+     "start": 13.655,
+     "end": 13.905
+    },
+    {
+     "word": "small",
+     "start": 13.905,
+     "end": 14.192
+    },
+    {
+     "word": "habit",
+     "start": 14.205,
+     "end": 14.505
+    },
+    {
+     "word": "at",
+     "start": 14.505,
+     "end": 14.58
+    },
+    {
+     "word": "a",
+     "start": 14.592,
+     "end": 14.617
+    },
+    {
+     "word": "time,",
+     "start": 14.617,
+     "end": 15.018
+    },
+    {
+     "word": "until",
+     "start": 15.178,
+     "end": 15.378
+    },
+    {
+     "word": "the",
+     "start": 15.391,
+     "end": 15.478
+    },
+    {
+     "word": "battery",
+     "start": 15.478,
+     "end": 15.891
+    },
+    {
+     "word": "starts",
+     "start": 15.903,
+     "end": 16.19
+    },
+    {
+     "word": "to",
+     "start": 16.203,
+     "end": 16.253
+    },
+    {
+     "word": "drop.",
+     "start": 16.253,
+     "end": 16.69
+    },
+    {
+     "word": "By",
+     "start": 16.97,
+     "end": 17.045
+    },
+    {
+     "word": "midday",
+     "start": 17.045,
+     "end": 17.395
+    },
+    {
+     "word": "the",
+     "start": 17.407,
+     "end": 17.494
+    },
+    {
+     "word": "battery",
+     "start": 17.507,
+     "end": 17.907
+    },
+    {
+     "word": "has",
+     "start": 17.907,
+     "end": 18.045
+    },
+    {
+     "word": "fallen",
+     "start": 18.057,
+     "end": 18.457
+    },
+    {
+     "word": "to",
+     "start": 18.457,
+     "end": 18.494
+    },
+    {
+     "word": "half,",
+     "start": 18.494,
+     "end": 19.007
+    },
+    {
+     "word": "and",
+     "start": 19.167,
+     "end": 19.33
+    },
+    {
+     "word": "that",
+     "start": 19.342,
+     "end": 19.554
+    },
+    {
+     "word": "quiet",
+     "start": 19.554,
+     "end": 19.992
+    },
+    {
+     "word": "drop",
+     "start": 20.004,
+     "end": 20.392
+    },
+    {
+     "word": "is",
+     "start": 20.53,
+     "end": 20.629
+    },
+    {
+     "word": "where",
+     "start": 20.629,
+     "end": 20.742
+    },
+    {
+     "word": "the",
+     "start": 20.742,
+     "end": 20.842
+    },
+    {
+     "word": "real",
+     "start": 20.854,
+     "end": 21.292
+    },
+    {
+     "word": "panic",
+     "start": 21.292,
+     "end": 21.642
+    },
+    {
+     "word": "begins.",
+     "start": 21.642,
+     "end": 22.317
+    },
+    {
+     "word": "So",
+     "start": 22.597,
+     "end": 22.709
+    },
+    {
+     "word": "you",
+     "start": 22.722,
+     "end": 22.784
+    },
+    {
+     "word": "do",
+     "start": 22.784,
+     "end": 22.984
+    },
+    {
+     "word": "what",
+     "start": 22.984,
+     "end": 23.109
+    },
+    {
+     "word": "everyone",
+     "start": 23.209,
+     "end": 23.597
+    },
+    {
+     "word": "does,",
+     "start": 23.609,
+     "end": 24.172
+    },
+    {
+     "word": "and",
+     "start": 24.332,
+     "end": 24.457
+    },
+    {
+     "word": "look",
+     "start": 24.457,
+     "end": 24.595
+    },
+    {
+     "word": "for",
+     "start": 24.595,
+     "end": 24.733
+    },
+    {
+     "word": "a",
+     "start": 24.733,
+     "end": 24.77
+    },
+    {
+     "word": "charger",
+     "start": 24.77,
+     "end": 25.257
+    },
+    {
+     "word": "before",
+     "start": 25.257,
+     "end": 25.57
+    },
+    {
+     "word": "the",
+     "start": 25.57,
+     "end": 25.658
+    },
+    {
+     "word": "afternoon",
+     "start": 25.658,
+     "end": 26.132
+    },
+    {
+     "word": "meeting",
+     "start": 26.132,
+     "end": 26.37
+    },
+    {
+     "word": "begins",
+     "start": 26.37,
+     "end": 26.72
+    },
+    {
+     "word": "at",
+     "start": 26.72,
+     "end": 26.783
+    },
+    {
+     "word": "three.",
+     "start": 26.783,
+     "end": 27.233
+    },
+    {
+     "word": "You",
+     "start": 27.513,
+     "end": 27.626
+    },
+    {
+     "word": "open",
+     "start": 27.638,
+     "end": 27.826
+    },
+    {
+     "word": "a",
+     "start": 27.826,
+     "end": 27.851
+    },
+    {
+     "word": "shop",
+     "start": 27.851,
+     "end": 28.164
+    },
+    {
+     "word": "page",
+     "start": 28.164,
+     "end": 28.526
+    },
+    {
+     "word": "to",
+     "start": 28.526,
+     "end": 28.626
+    },
+    {
+     "word": "order",
+     "start": 28.626,
+     "end": 28.864
+    },
+    {
+     "word": "a",
+     "start": 28.864,
+     "end": 28.914
+    },
+    {
+     "word": "spare",
+     "start": 28.926,
+     "end": 29.289
+    },
+    {
+     "word": "cable,",
+     "start": 29.301,
+     "end": 29.726
+    },
+    {
+     "word": "and",
+     "start": 29.886,
+     "end": 29.998
+    },
+    {
+     "word": "wait",
+     "start": 30.011,
+     "end": 30.248
+    },
+    {
+     "word": "while",
+     "start": 30.261,
+     "end": 30.411
+    },
+    {
+     "word": "the",
+     "start": 30.411,
+     "end": 30.51
+    },
+    {
+     "word": "page",
+     "start": 30.523,
+     "end": 30.948
+    },
+    {
+     "word": "slowly",
+     "start": 30.961,
+     "end": 31.423
+    },
+    {
+     "word": "loads",
+     "start": 31.423,
+     "end": 31.848
+    },
+    {
+     "word": "on",
+     "start": 31.86,
+     "end": 31.973
+    },
+    {
+     "word": "weak",
+     "start": 31.973,
+     "end": 32.186
+    },
+    {
+     "word": "wifi.",
+     "start": 32.186,
+     "end": 32.811
+    },
+    {
+     "word": "It",
+     "start": 33.091,
+     "end": 33.166
+    },
+    {
+     "word": "feels",
+     "start": 33.166,
+     "end": 33.429
+    },
+    {
+     "word": "like",
+     "start": 33.429,
+     "end": 33.541
+    },
+    {
+     "word": "a",
+     "start": 33.541,
+     "end": 33.591
+    },
+    {
+     "word": "small",
+     "start": 33.591,
+     "end": 34.029
+    },
+    {
+     "word": "win,",
+     "start": 34.029,
+     "end": 34.404
+    },
+    {
+     "word": "so",
+     "start": 34.564,
+     "end": 34.689
+    },
+    {
+     "word": "you",
+     "start": 34.689,
+     "end": 34.802
+    },
+    {
+     "word": "scroll",
+     "start": 34.814,
+     "end": 35.189
+    },
+    {
+     "word": "a",
+     "start": 35.189,
+     "end": 35.239
+    },
+    {
+     "word": "little",
+     "start": 35.251,
+     "end": 35.514
+    },
+    {
+     "word": "longer",
+     "start": 35.514,
+     "end": 35.876
+    },
+    {
+     "word": "while",
+     "start": 35.876,
+     "end": 35.964
+    },
+    {
+     "word": "the",
+     "start": 35.964,
+     "end": 36.039
+    },
+    {
+     "word": "rest",
+     "start": 36.052,
+     "end": 36.414
+    },
+    {
+     "word": "of",
+     "start": 36.427,
+     "end": 36.464
+    },
+    {
+     "word": "the",
+     "start": 36.464,
+     "end": 36.552
+    },
+    {
+     "word": "afternoon",
+     "start": 36.552,
+     "end": 37.189
+    },
+    {
+     "word": "slips",
+     "start": 37.309,
+     "end": 37.659
+    },
+    {
+     "word": "away.",
+     "start": 37.672,
+     "end": 38.134
+    },
+    {
+     "word": "Then",
+     "start": 38.414,
+     "end": 38.527
+    },
+    {
+     "word": "you",
+     "start": 38.527,
+     "end": 38.602
+    },
+    {
+     "word": "buy",
+     "start": 38.602,
+     "end": 38.752
+    },
+    {
+     "word": "the",
+     "start": 38.764,
+     "end": 38.84
+    },
+    {
+     "word": "cable,",
+     "start": 38.852,
+     "end": 39.34
+    },
+    {
+     "word": "press",
+     "start": 39.5,
+     "end": 39.824
+    },
+    {
+     "word": "pay,",
+     "start": 39.824,
+     "end": 40.25
+    },
+    {
+     "word": "and",
+     "start": 40.41,
+     "end": 40.584
+    },
+    {
+     "word": "wait",
+     "start": 40.584,
+     "end": 40.822
+    },
+    {
+     "word": "for",
+     "start": 40.822,
+     "end": 40.922
+    },
+    {
+     "word": "the",
+     "start": 40.922,
+     "end": 41.022
+    },
+    {
+     "word": "little",
+     "start": 41.022,
+     "end": 41.247
+    },
+    {
+     "word": "green",
+     "start": 41.247,
+     "end": 41.559
+    },
+    {
+     "word": "check",
+     "start": 41.572,
+     "end": 41.885
+    },
+    {
+     "word": "to",
+     "start": 41.897,
+     "end": 41.997
+    },
+    {
+     "word": "confirm",
+     "start": 42.01,
+     "end": 42.422
+    },
+    {
+     "word": "your",
+     "start": 42.422,
+     "end": 42.535
+    },
+    {
+     "word": "order",
+     "start": 42.535,
+     "end": 42.734
+    },
+    {
+     "word": "today.",
+     "start": 42.747,
+     "end": 43.147
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Your phone has a busy life, and most of it happens before you have even had breakfast. It wakes you with messages from your mum, your bank, and three group chats before you even sit up. Then comes the daily routine of checking everything, one small habit at a time, until the battery starts to drop. By midday the battery has fallen to half, and that quiet drop is where the real panic begins. So you do what everyone does, and look for a charger before the afternoon meeting begins at three. You open a shop page to order a spare cable, and wait while the page slowly loads on weak wifi. It feels like a small win, so you scroll a little longer while the rest of the afternoon slips away. Then you buy the cable, press pay, and wait for the little green check to confirm your order today."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.19,
+    "text": "breakfast",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.52,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.82,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 5.09,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.19,
+    "opacity": 0.2,
+    "seed": 3.65
+   },
+   {
+    "id": "ly3",
+    "kind": "notification-stack",
+    "anchor": "v2",
+    "delay": 0.3,
+    "start": 5.54,
+    "end": 10.34,
+    "steps": [
+     {
+      "type": "note",
+      "title": "Mum",
+      "text": "Are you awake yet?"
+     },
+     {
+      "type": "note",
+      "title": "Bank",
+      "text": "Payment received"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.51,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.46,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.8,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly4",
+    "kind": "counter-graph",
+    "anchor": "v4",
+    "delay": 0.3,
+    "start": 17.21,
+    "end": 22.49,
+    "steps": [
+     {
+      "type": "counter",
+      "value": 50.0,
+      "label": "Battery",
+      "suffix": "%"
+     },
+     {
+      "type": "line",
+      "points": [
+       100.0,
+       90.0,
+       80.0,
+       70.0,
+       60.0,
+       50.0
+      ]
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.49,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.98,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 5.28,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly5",
+    "kind": "browser-page-load",
+    "anchor": "v6",
+    "delay": 0.3,
+    "start": 27.75,
+    "end": 32.98,
+    "steps": [
+     {
+      "type": "url",
+      "text": "shop.example.com"
+     },
+     {
+      "type": "load",
+      "dur": 1.2
+     },
+     {
+      "type": "page",
+      "title": "Spare Cable",
+      "text": "Fast charging, ships today"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.51,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.95,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 5.23,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly6",
+    "kind": "checkout",
+    "anchor": "v8",
+    "delay": 0.3,
+    "start": 38.65,
+    "end": 43.51,
+    "steps": [
+     {
+      "type": "item",
+      "text": "USB-C cable",
+      "price": "$9"
+     },
+     {
+      "type": "total",
+      "text": "Total",
+      "price": "$9"
+     },
+     {
+      "type": "pay",
+      "text": "Pay now"
+     },
+     {
+      "type": "done",
+      "text": "Order placed"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.56,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.53,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.86,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795162720073,
+  "updated": 1795162720080,
+  "topic": "a day in the life of a phone",
+  "hook": "Your phone has a busy life, and most of it happens before you have even had breakfast.",
+  "image_style": "",
+  "format": "vertical",
+  "assets_release": "project-kit-a-6b0001e5",
+  "spec": {
+   "title": "Kit Test A: A Phone's Busy Day",
+   "hook": "Your phone has a busy life, and most of it happens before you have even had breakfast.",
+   "style": "",
+   "music": "docu-pluck",
+   "accent": "#FFD43B",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "allow_plain": false,
+   "gemini_images": false,
+   "format": "vertical",
+   "fps": 30,
+   "topic": "a day in the life of a phone",
+   "category": "",
+   "style_preset": "upload-3",
+   "max_hold": 10,
+   "project_id": "kit-a-6b0001e5",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: restrained (few layers, lots of air).",
+   "Beat 1 (\"Your phone has a busy life, and mos...\"): the hook. No subject cutout, so I put BREAKFAST in the top band where it cannot cover the face.",
+   "Beat 2 (\"It wakes you with messages from you...\"): a notification stack (2 banners) as the writer asked.",
+   "Beat 4 (\"By midday the battery has fallen to...\"): a counter and graph (counter, line) as the writer asked.",
+   "Beat 6 (\"You open a shop page to order a spa...\"): a browser page load (url, load, page) as the writer asked.",
+   "Beat 8 (\"Then you buy the cable, press pay, ...\"): a checkout screen (item, total, pay, done) as the writer asked.",
+   "Left 3 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-cubic x4, entrance out-quint x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline (not the same move twice)).",
+   "Beat 3: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 4: push-in (alive baseline).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: push-in (alive baseline).",
+   "Beat 7: drift (alive baseline).",
+   "Beat 8: hold (last picture: hold)."
+  ]
+ }
+}
