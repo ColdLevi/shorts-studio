@@ -1008,6 +1008,34 @@ def _term_steps(sbi, text, avail):
     return steps if steps and _term_secs(steps) <= avail else None
 
 
+def _stack_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += (x.get("dur", 0.6) if x["type"] == "hold" else 0.7) + 0.2
+    return t
+
+
+def _stack_steps(sbi, text, avail):
+    steps = []
+    own = sbi.get("stack")
+    if isinstance(own, list):
+        for s in own[:8]:
+            if not isinstance(s, dict) or s.get("type") not in ("note", "hold"):
+                continue
+            x = {"type": s["type"]}
+            if s["type"] == "note":
+                if not (s.get("title") or s.get("text")):
+                    continue
+                x["title"] = str(s.get("title") or "")[:24]
+                x["text"] = str(s.get("text") or "")[:70]
+            if isinstance(s.get("dur"), (int, float)):
+                x["dur"] = float(s["dur"])
+            steps.append(x)
+    while len(steps) > 1 and _stack_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _stack_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1285,6 +1313,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a terminal scene (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _ts)))
                 continue
             notes.append("%s: terminal-typing asked for, but it needs written steps, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "notification-stack":
+            _ns = _stack_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.0 and i - _kb["last"] >= 2 and _ns:
+                put("notification-stack", c, 0.3, steps=_ns)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a notification stack (%d banners) as the writer asked." % (tag, sum(1 for x in _ns if x["type"] == "note")))
+                continue
+            notes.append("%s: notification-stack asked for, but it needs written banners, a scene of 3 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)

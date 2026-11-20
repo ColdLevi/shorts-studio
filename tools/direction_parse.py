@@ -23,10 +23,11 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
 "glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
 "term": list of steps for a terminal-typing scene, each {"type": "cmd" (a typed command) or "out" (an output line) or "hold", "text": "...", "dur": seconds, for hold only}
+"stack": list of steps for a notification-stack scene, each {"type": "note" (a banner: "title" up to 24 characters, "text" up to 70) or "hold", "dur": seconds, for hold only}
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -75,8 +76,23 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing"):
+    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack"):
         out["kit"] = d["kit"]
+    sk = d.get("stack")
+    if isinstance(sk, list):
+        ss = []
+        for x in sk[:8]:
+            if isinstance(x, dict) and x.get("type") in ("note", "hold"):
+                y = {"type": x["type"]}
+                if x.get("title"):
+                    y["title"] = _s(x["title"], 24)
+                if x.get("text"):
+                    y["text"] = _s(x["text"], 70)
+                if isinstance(x.get("dur"), (int, float)):
+                    y["dur"] = float(x["dur"])
+                ss.append(y)
+        if ss:
+            out["stack"] = ss
     tm = d.get("term")
     if isinstance(tm, list):
         ts = []

@@ -113,10 +113,26 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: terminal-typing plus term steps on a scene; no default text, the writer says what the terminal shows"
+    },
+    "notification-stack": {
+      "layer_kind": "notification-stack",
+      "use_when": [
+        "messages piling up",
+        "social media",
+        "alerts",
+        "app notifications",
+        "busy phone"
+      ],
+      "min_scene_seconds": 3.0,
+      "steps": {
+        "note": "a banner slides in {title, text}, older ones slide down and fade",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: notification-stack plus stack steps on a scene; no default text, the writer says what each banner shows"
     }
   },
   "planned_kits": [
-    "notification-stack",
     "browser-page-load",
     "checkout",
     "counter-graph",
