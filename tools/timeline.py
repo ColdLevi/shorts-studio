@@ -1470,7 +1470,7 @@ def director_pass(t, spec=None):
         if _kit == "notification-stack":
             _ns = _stack_steps(sbi, text, c["end"] - c["start"] - 0.4)
             if i > 0 and (c["end"] - c["start"]) >= 3.0 and i - _kb["last"] >= 2 and _ns:
-                put("notification-stack", c, 0.3, steps=_ns)
+                put("notification-stack", c, 0.3, steps=_ns, **({"frame": "phone"} if str(sbi.get("frame") or "").strip().lower() == "phone" else {}))
                 _kb["last"] = i
                 last_end, last_kind = c["end"], "kit"
                 notes.append("%s: a notification stack (%d banners) as the writer asked." % (tag, sum(1 for x in _ns if x["type"] == "note")))
