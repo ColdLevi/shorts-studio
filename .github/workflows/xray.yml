@@ -1,0 +1,110 @@
+name: X-ray reference clips
+
+# Manual only. Measures 2 to 3 reference clips and sends a PROPOSAL for a style pack to Telegram.
+# It never writes to a pack and never renders a short.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Direct links to 2 or 3 reference clips, separated by spaces"
+        required: true
+      pack:
+        description: "Style pack id, for example upload-3"
+        required: true
+      licence_ok:
+        description: "Type yes only if these clips are your own or licensed"
+        required: true
+      chat_id:
+        description: "Telegram chat id (optional)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  xray:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CHAT_ID: ${{ github.event.inputs.chat_id || secrets.CHAT_ID }}
+      URLS: ${{ github.event.inputs.urls }}
+      PACK: ${{ github.event.inputs.pack }}
+      LICENCE_OK: ${{ github.event.inputs.licence_ok }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate
+        run: |
+          if [ "$LICENCE_OK" != "yes" ]; then
+            echo "Stopped: licence_ok must be yes (clips must be your own or licensed)."; exit 1
+          fi
+          case "$PACK" in *[!a-z0-9-]*|"") echo "Bad pack id"; exit 1;; esac
+          test -f "styles/$PACK/pack.json" || { echo "No styles/$PACK/pack.json"; exit 1; }
+          N=$(echo $URLS | wc -w); echo "clips: $N"
+          if [ "$N" -lt 1 ] || [ "$N" -gt 3 ]; then echo "Give 1 to 3 links"; exit 1; fi
+
+      - name: Install
+        run: |
+          sudo apt-get update -y || true
+          sudo apt-get install -y --no-install-recommends ffmpeg || true
+          pip install -q numpy pillow
+          ffmpeg -version | head -1
+
+      - name: Download clips
+        run: |
+          mkdir -p clips out
+          i=0
+          for u in $URLS; do
+            i=$((i+1))
+            curl -sSL --max-filesize 262144000 --max-time 300 -o "clips/clip_$i.mp4" "$u" || { echo "download $i failed"; exit 1; }
+            ffprobe -v error -show_entries format=duration -of csv=p=0 "clips/clip_$i.mp4" || { echo "clip $i is not a video"; exit 1; }
+          done
+
+      - name: X-ray each clip
+        run: |
+          for f in clips/clip_*.mp4; do
+            n=$(basename "$f" .mp4)
+            python3 tools/xray/video-xray/scripts/video_xray.py analyze "$f" --out "out/$n" --no-ocr
+          done
+
+      - name: Brain proposal
+        run: |
+          python3 tools/xray_brain.py out/clip_*/evidence.json --pack "styles/$PACK/pack.json" --licence-ok --out out/proposal.json | tee out/proposal.txt
+          python3 - <<'EOF' > out/message.txt
+          import json, glob
+          d = json.load(open("out/proposal.json"))
+          print("X-ray proposal for %s (%d clip(s)). Nothing was written to the pack." % ("$PACK", len(d["clips"])))
+          print()
+          for k, v in d["fields"].items():
+              print("%s: %s  (now: %s)" % (k, v, d.get("current", {}).get(k)))
+          print()
+          for n in d["notes"]:
+              print("- " + n)
+          for s in d["skipped"]:
+              print("skipped: " + s)
+          rev = 0
+          for p in glob.glob("out/clip_*/evidence.json"):
+              rev += len(json.load(open(p)).get("review_ids", []))
+          if rev:
+              print()
+              print("%d shot(s) are undecided and need a visual review." % rev)
+          EOF
+          cat out/message.txt
+
+      - name: Send to Telegram
+        if: env.TELEGRAM_TOKEN != '' && env.CHAT_ID != ''
+        run: |
+          head -c 3800 out/message.txt > out/message_short.txt
+          curl -sS -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" \
+            -d chat_id="$CHAT_ID" --data-urlencode "text@out/message_short.txt" | head -c 200
+
+      - name: Keep the measurements (no clips)
+        uses: actions/upload-artifact@v4
+        with:
+          name: xray-evidence
+          path: |
+            out/proposal.json
+            out/clip_*/evidence.json
+            out/clip_*/VIDEO.md
+          retention-days: 7
