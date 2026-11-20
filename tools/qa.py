@@ -9,6 +9,9 @@ import json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import timeline as TL
 
+KIT_KINDS = ("screen-scene", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout", "alert-glitch", "transfer-progress", "keyed-clip")
+STEPPED = tuple(k for k in KIT_KINDS if k not in ("screen-scene", "keyed-clip"))
+
 MOMENT = ("kinetic", "corner-text", "depth-text", "illustration", "asset", "icon-pop", "chapter-card", "chart", "panel", "settle-title")
 PRIO = {"depth-text": 6, "chapter-card": 6, "kinetic": 5, "settle-title": 5, "corner-text": 5, "chart": 5, "asset": 4, "panel": 4, "illustration": 3, "icon-pop": 2}
 
@@ -57,6 +60,24 @@ def prune(t):
         if not hit:
             break
         drop(hit, "more than 6 graphic moments in a minute")
+    ids = {v.get("id") for v in (tr.get("visuals") or [])}
+    for l in [x for x in layers if x.get("kind") in KIT_KINDS]:   # kit scenes: a guard for edited or odd timelines
+        if l.get("anchor") and ids and l["anchor"] not in ids:
+            drop(l, "its scene is not in the timeline")
+        elif l.get("kind") in STEPPED and not l.get("steps"):
+            drop(l, "a kit scene with nothing written in it")
+        elif l.get("kind") == "keyed-clip" and not l.get("src"):
+            drop(l, "a green-screen clip with no file")
+    for _ in range(20):    # two kit scenes never share the screen; a green-screen clip gives way to a kit scene
+        ks = sorted([x for x in layers if x.get("kind") in KIT_KINDS], key=lambda y: (y.get("kind") == "keyed-clip", y.get("start", 0)))
+        hit = None
+        for i, x in enumerate(ks):
+            hit = next((y for y in ks[i + 1:] if y.get("start", 0) < x.get("end", 0) and y.get("end", 0) > x.get("start", 0)), None)
+            if hit:
+                break
+        if not hit:
+            break
+        drop(hit, "a green-screen clip on a kit scene" if hit.get("kind") == "keyed-clip" else "two kit scenes on screen at once")
     if notes or "layers" in tr:
         tr["layers"] = layers
     vis = tr.get("visuals") or []
@@ -107,6 +128,20 @@ def post(video, pid=""):
         lines.append("audio peaks at %s dB, it may clip" % mx.group(1))
     if mean and float(mean.group(1)) < -32:
         lines.append("audio is very quiet (mean %s dB)" % mean.group(1))
+    try:   # black stretches and a video that is not the length the timeline promised (reports only)
+        bk = subprocess.run(["ffmpeg", "-hide_banner", "-i", video, "-vf", "blackdetect=d=1.0:pic_th=0.98:pix_th=0.04", "-an", "-f", "null", "-"], capture_output=True, text=True)
+        dm = re.search(r"Duration: (\d+):(\d+):([\d.]+)", bk.stderr)
+        vd = int(dm.group(1)) * 3600 + int(dm.group(2)) * 60 + float(dm.group(3)) if dm else 0.0
+        bl = [(float(a0), float(z0)) for a0, z0 in re.findall(r"black_start:([\d.]+)\s+black_end:([\d.]+)", bk.stderr)]
+        bl = [x for x in bl if not (vd and x[1] >= vd - 0.3)]
+        if bl:
+            lines.append("black picture for 1 s or more starting at %s s" % ", ".join("%.1f" % x[0] for x in bl[:5]))
+        if pid and vd:
+            want = float(json.load(open(os.path.join(TL.project_dir(pid), "timeline.json"))).get("duration") or 0)
+            if want and abs(vd - want) > 2.0:
+                lines.append("the video is %.1f s long but the timeline says %.1f s" % (vd, want))
+    except Exception as e:
+        print("qa: extra checks skipped (", e, ")")
     print("QA after the render:", "; ".join(lines) or "no frozen stretches, audio levels fine")
     if lines:
         TL._director_say(["QA after the render"] + ["- " + x for x in lines])
