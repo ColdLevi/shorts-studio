@@ -15,6 +15,7 @@ import { TerminalTyping } from './Layers7';
 import { NotificationStack } from './Layers8';
 import { CounterGraph } from './Layers9';
 import { BrowserPageLoad } from './Layers10';
+import { CheckoutKit } from './Layers11';
 
 export type Layer = {
   id: string; kind: string; start: number; end: number; text?: string; src?: string; cutout?: string | null;
@@ -263,7 +264,7 @@ const SettleTitle: React.FC<P> = ({ l, L, accent, font }) => {
 const KINDS = {
   'color-wash': ColorWash, 'depth-text': DepthText, 'draw-line': DrawLine, 'route-map': RouteMap, 'icon-pop': GlyphChip, kinetic: Kinetic, 'settle-title': SettleTitle,
   illustration: Illustration, asset: AssetPng, 'corner-text': CornerText,
-  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene, 'glass-ui': GlassUI, 'keyed-clip': KeyedClip, 'terminal-typing': TerminalTyping, 'notification-stack': NotificationStack, 'counter-graph': CounterGraph, 'browser-page-load': BrowserPageLoad,
+  'chapter-card': ChapterCard, chart: BarChart, panel: UiPanel, 'screen-scene': ScreenScene, 'glass-ui': GlassUI, 'keyed-clip': KeyedClip, 'terminal-typing': TerminalTyping, 'notification-stack': NotificationStack, 'counter-graph': CounterGraph, 'browser-page-load': BrowserPageLoad, checkout: CheckoutKit,
 } as unknown as Record<string, React.ComponentType<P>>;
 
 export const LayerStack: React.FC<{ layers?: Layer[]; L: Layout; accent: string; pid: string; palette?: string[]; font?: string; grade?: string; theme?: Partial<Theme> }> = ({ layers, L, accent, pid, palette, font, grade, theme }) => {

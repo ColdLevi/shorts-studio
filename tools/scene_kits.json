@@ -167,10 +167,29 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: browser-page-load plus page steps on a scene; the writer says the address and what the page shows"
+    },
+    "checkout": {
+      "layer_kind": "checkout",
+      "use_when": [
+        "buying something",
+        "a payment",
+        "an order",
+        "subscription",
+        "price or cost"
+      ],
+      "min_scene_seconds": 3.5,
+      "steps": {
+        "item": "an item row slides in {text, price}",
+        "total": "the total row appears {text, price}",
+        "pay": "the pay button is pressed {text}",
+        "done": "a success check draws {text}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: checkout plus checkout steps on a scene; every name and price comes from the writer, nothing is added up or invented"
     }
   },
   "planned_kits": [
-    "checkout",
     "alert-glitch",
     "transfer-progress"
   ]

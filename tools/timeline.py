@@ -1100,6 +1100,38 @@ def _page_steps(sbi, text, avail):
     return steps if steps and _page_secs(steps) <= avail else None
 
 
+def _checkout_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += {"item": 0.5, "total": 0.6, "pay": 0.9, "done": 1.0}.get(x["type"], x.get("dur", 0.6)) + 0.2
+    return t
+
+
+def _checkout_steps(sbi, text, avail):
+    isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    steps = []
+    own = sbi.get("checkout")
+    if isinstance(own, list):
+        for s in own[:8]:
+            if not isinstance(s, dict):
+                continue
+            ty = s.get("type")
+            if ty == "item" and s.get("text"):
+                x = {"type": "item", "text": str(s["text"])[:34]}
+                if s.get("price"):
+                    x["price"] = str(s["price"])[:12]
+                steps.append(x)
+            elif ty == "total" and (s.get("text") or s.get("price")):
+                steps.append({"type": "total", "text": str(s.get("text") or "")[:20], "price": str(s.get("price") or "")[:12]})
+            elif ty in ("pay", "done") and s.get("text"):
+                steps.append({"type": ty, "text": str(s["text"])[:30]})
+            elif ty == "hold":
+                steps.append({"type": "hold", "dur": float(s["dur"]) if isnum(s.get("dur")) else 0.6})
+    while len(steps) > 1 and _checkout_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _checkout_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1407,6 +1439,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a browser page load (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _pg)))
                 continue
             notes.append("%s: browser-page-load asked for, but it needs written steps, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "checkout":
+            _co = _checkout_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.5 and i - _kb["last"] >= 2 and _co:
+                put("checkout", c, 0.3, steps=_co)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a checkout screen (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _co)))
+                continue
+            notes.append("%s: checkout asked for, but it needs written items, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
