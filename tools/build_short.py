@@ -693,10 +693,12 @@ def _kit_hold(b, p, dur):
         import re as _re
         if not (3.5 <= dur <= 9.0):
             return False
-        if b.get("kit") in ("screen", "glass-ui", "terminal-typing"):
+        if b.get("kit") in ("screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout", "alert-glitch", "transfer-progress"):
+            return True
+        if any(b.get(f) for f in ("screen", "glass", "term", "stack", "graph", "page", "checkout", "alert", "transfer")):
             return True
         d = str(b.get("direction") or "")
-        if d and _re.search(r"search|chat|screen|glass|terminal|kit", d, _re.I):
+        if d and _re.search(r"search|chat|screen|glass|terminal|kit|notif|counter|graph|page|checkout|alert|glitch|transfer", d, _re.I):
             return True
         return dur >= 5.2 and bool(_re.search(TL._KIT_RX, str(b.get("narration") or p.get("text") or "").lower()))
     except Exception:
