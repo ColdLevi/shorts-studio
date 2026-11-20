@@ -1,0 +1,199 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "test-dark-mono",
+ "rev": 1,
+ "title": "test dark-mono",
+ "duration": 9.0,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "subtitle",
+   "case": "none",
+   "color": "#FFFFFF",
+   "font": "Poppins",
+   "highlight": "#FF4B6E",
+   "position": "top"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "static",
+  "preset": "bold-pop",
+  "accent": "#3ddc84",
+  "backdrop": "none",
+  "font": "Poppins",
+  "fx": {
+   "flicker": false,
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none"
+  },
+  "grade": "contrast(1.05) saturate(1.15)",
+  "palette": [
+   "#1952E8",
+   "#0E9E56",
+   "#FF647C"
+  ],
+  "progress_bar": false,
+  "transitions": [
+   "cut",
+   "slide-up",
+   "zoom-in"
+  ],
+  "vignette": false,
+  "theme": {
+   "mode": "dark",
+   "accent": "#3ddc84",
+   "accent2": "#4d9bff",
+   "accent3": "#f2c14e",
+   "surface": "#0b0d0c",
+   "surface2": "#121513",
+   "text": "#e6ebe8",
+   "onAccent": "#0b0d0c",
+   "muted": "#8a918d"
+  }
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0,
+    "end": 3,
+    "narration": "In 2008 prices doubled every day.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "counter",
+     "value": 79600000000,
+     "suffix": "%",
+     "label": "monthly inflation"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3,
+    "end": 6,
+    "narration": "A loaf of bread cost billions.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "counter",
+     "value": 100,
+     "suffix": "T",
+     "label": "dollar note"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   },
+   {
+    "id": "v3",
+    "start": 6,
+    "end": 9,
+    "narration": "Then the money was dropped.",
+    "kind": "graphic",
+    "graphic": {
+     "type": "counter",
+     "value": 2009,
+     "suffix": "",
+     "label": "year it ended"
+    },
+    "gen": {
+     "tool": "graphic"
+    }
+   }
+  ],
+  "captions": {
+   "enabled": false,
+   "words": []
+  },
+  "voice": [],
+  "music": [],
+  "sfx": [],
+  "overlays": [],
+  "layers": []
+ },
+ "meta": {
+  "created": 1794239818862,
+  "updated": 1794239819261,
+  "topic": "that teach people how to money buying and selling old used items",
+  "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+  "image_style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+  "format": "landscape",
+  "assets_release": "project-5-dollar-thrift-store-goldmine-mw9fzbsz",
+  "spec": {
+   "accent": "#2EE6C5",
+   "allow_plain": false,
+   "canvas": "16:9",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "A nineteen eighty-five Sony Walkman sat in a dusty box labeled five dollars at a garage sale.",
+   "learned_style": "fastedit2",
+   "music": "tech-pulse",
+   "project_id": "5-dollar-thrift-store-goldmine-mw9fzbsz",
+   "style": "Minimalist digital app interface mockups and playful 2D flat illustrations, rendered on bold solid color backdrops with crisp modern lighting.",
+   "style_preset": "bold-pop",
+   "style_tokens": {
+    "accent": "#FF4B6E",
+    "backdrop": "none",
+    "caption": {
+     "case": "none",
+     "color": "#FFFFFF",
+     "font": "Poppins",
+     "highlight": "#FF4B6E",
+     "position": "top",
+     "preset": "bold-pop"
+    },
+    "font": "Poppins",
+    "fx": {
+     "flicker": false,
+     "hold": 1,
+     "jitter": 0,
+     "letterbox": 0,
+     "texture": "none"
+    },
+    "grade": "contrast(1.05) saturate(1.15)",
+    "motion": "static",
+    "palette": [
+     "#1952E8",
+     "#0E9E56",
+     "#FF647C"
+    ],
+    "progress_bar": false,
+    "transition": {
+     "duration": 0,
+     "type": "cut"
+    },
+    "transitions": [
+     "cut",
+     "slide-up",
+     "zoom-in"
+    ],
+    "vignette": false
+   },
+   "title": "5 Dollar Thrift Store Goldmine",
+   "topic": "that teach people how to money buying and selling old used items",
+   "voice": "en-US-BrianMultilingualNeural"
+  },
+  "renders": [],
+  "director": [
+   "Beat 1 (\"A nineteen eighty-five Sony Walkman...\"): this is the hook, so it needs weight. I am setting NINETEEN huge behind the subject (no cutout yet, using a soft mask) and pushing in slowly, under a moving colour wash.",
+   "Beat 2 (\"Most people assume old gadgets are ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 3 (\"Garage sale items are typically pri...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 4 (\"Local yard finds sit quietly right ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 5 (\"Online resale platforms allow local...\"): I just used a wash, so I am hand-drawing a highlight mark instead.",
+   "Beat 6 (\"Nostalgia trends drive high demand ...\"): no strong visual hook, so I am shifting the colour mood with a gradient wash.",
+   "Beat 7 (\"Buyers across the planet search eve...\"): this is about movement, so I am drawing a route across a map grid with a travelling dot.",
+   "Beat 8 (\"A tiny five dollar bill turns into ...\"): nothing new to add here. I am letting the picture breathe.",
+   "Beat 9 (\"Vintage tech creates huge resale pr...\"): this beat is about 'coin', so I am popping a 'coin' icon in."
+  ]
+ }
+}
