@@ -23,7 +23,7 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it) or "browser-page-load" (a browser window: the address types, a progress bar fills, the page appears) or "checkout" (a payment panel: items, a total, a pay button, a success check)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it) or "browser-page-load" (a browser window: the address types, a progress bar fills, the page appears) or "checkout" (a payment panel: items, a total, a pay button, a success check) or "alert-glitch" (a warning panel that glitches with colour-split ghosts)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
 "glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
 "term": list of steps for a terminal-typing scene, each {"type": "cmd" (a typed command) or "out" (an output line) or "hold", "text": "...", "dur": seconds, for hold only}
@@ -31,6 +31,7 @@ VOCABULARY
 "graph": list of steps for a counter-graph scene, each {"type": "counter" ("value": a number, optional "from" number, "label" up to 28 characters, "prefix" and "suffix" up to 4, like $ or %) or "line" ("points": 2 to 12 numbers) or "hold", "dur": seconds}. Only use numbers the writer gave.
 "page": list of steps for a browser-page-load scene, each {"type": "url" ("text": the address) or "load" ("dur": seconds) or "page" ("title" up to 40 characters, "text" up to 120) or "hold", "dur": seconds}
 "checkout": list of steps for a checkout scene, each {"type": "item" ("text": item name, optional "price" text) or "total" ("text" label, "price" text) or "pay" ("text": button label) or "done" ("text": success message) or "hold", "dur": seconds}. Only use names and prices the writer gave.
+"alert": list of steps for an alert-glitch scene, each {"type": "alert" ("title" up to 30 characters, "text" up to 80) or "glitch" ("dur": seconds) or "hold", "dur": seconds}. Only use words the writer gave.
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -79,8 +80,22 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout"):
+    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout", "alert-glitch"):
         out["kit"] = d["kit"]
+    al = d.get("alert")
+    if isinstance(al, list):
+        _n3 = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+        als = []
+        for x in al[:6]:
+            if not isinstance(x, dict):
+                continue
+            ty = x.get("type")
+            if ty == "alert" and (x.get("title") or x.get("text")):
+                als.append({"type": "alert", "title": _s(x.get("title") or "", 30), "text": _s(x.get("text") or "", 80)})
+            elif ty in ("glitch", "hold"):
+                als.append({"type": ty, "dur": float(x["dur"]) if _n3(x.get("dur")) else (0.7 if ty == "glitch" else 0.6)})
+        if als:
+            out["alert"] = als
     co = d.get("checkout")
     if isinstance(co, list):
         _n2 = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)

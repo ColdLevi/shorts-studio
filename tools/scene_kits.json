@@ -187,10 +187,27 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: checkout plus checkout steps on a scene; every name and price comes from the writer, nothing is added up or invented"
+    },
+    "alert-glitch": {
+      "layer_kind": "alert-glitch",
+      "use_when": [
+        "a warning",
+        "an error",
+        "a hack or breach",
+        "danger",
+        "something going wrong"
+      ],
+      "min_scene_seconds": 3.0,
+      "steps": {
+        "alert": "a warning panel appears {title, text}",
+        "glitch": "colour-split ghosts, jitter and flicker for {dur}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: alert-glitch plus alert steps on a scene; the writer says what the alert says"
     }
   },
   "planned_kits": [
-    "alert-glitch",
     "transfer-progress"
   ]
 }

@@ -1132,6 +1132,31 @@ def _checkout_steps(sbi, text, avail):
     return steps if steps and _checkout_secs(steps) <= avail else None
 
 
+def _alert_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += (0.8 if x["type"] == "alert" else x.get("dur", 0.7 if x["type"] == "glitch" else 0.6)) + 0.2
+    return t
+
+
+def _alert_steps(sbi, text, avail):
+    isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    steps = []
+    own = sbi.get("alert")
+    if isinstance(own, list):
+        for s in own[:6]:
+            if not isinstance(s, dict):
+                continue
+            ty = s.get("type")
+            if ty == "alert" and (s.get("title") or s.get("text")):
+                steps.append({"type": "alert", "title": str(s.get("title") or "")[:30], "text": str(s.get("text") or "")[:80]})
+            elif ty in ("glitch", "hold"):
+                steps.append({"type": ty, "dur": float(s["dur"]) if isnum(s.get("dur")) else (0.7 if ty == "glitch" else 0.6)})
+    while len(steps) > 1 and _alert_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _alert_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1449,6 +1474,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a checkout screen (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _co)))
                 continue
             notes.append("%s: checkout asked for, but it needs written items, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "alert-glitch":
+            _al = _alert_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.0 and i - _kb["last"] >= 2 and _al:
+                put("alert-glitch", c, 0.3, steps=_al)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a glitching alert (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _al)))
+                continue
+            notes.append("%s: alert-glitch asked for, but it needs written alert text, a scene of 3 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
