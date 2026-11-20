@@ -1,0 +1,369 @@
+{
+  "tool": "video-xray",
+  "version": "0.1.0",
+  "generated_at": "2026-11-20T05:11:22",
+  "args": {
+    "fps": 2.0,
+    "scene_threshold": 0.25,
+    "min_shot": 0.8
+  },
+  "info": {
+    "file": "test_video.mp4",
+    "duration_s": 30.0,
+    "width": 640,
+    "height": 360,
+    "nominal_fps": 30.033,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "bit_rate": "3640292"
+  },
+  "metadata_scan": {
+    "generators": [],
+    "editors": [],
+    "all_tags": [
+      {
+        "where": "format.tags.major_brand",
+        "value": "isom"
+      },
+      {
+        "where": "format.tags.minor_version",
+        "value": "512"
+      },
+      {
+        "where": "format.tags.compatible_brands",
+        "value": "isomiso2avc1mp41"
+      },
+      {
+        "where": "format.tags.encoder",
+        "value": "Lavf61.7.103"
+      },
+      {
+        "where": "format.tags.comment",
+        "value": "synthetic 4-segment test video for video-xray"
+      },
+      {
+        "where": "stream[0].tags.language",
+        "value": "und"
+      },
+      {
+        "where": "stream[0].tags.handler_name",
+        "value": "VideoHandler"
+      },
+      {
+        "where": "stream[0].tags.vendor_id",
+        "value": "[0][0][0][0]"
+      },
+      {
+        "where": "stream[0].tags.encoder",
+        "value": "Lavc61.19.101 libx264"
+      },
+      {
+        "where": "stream[1].tags.language",
+        "value": "und"
+      },
+      {
+        "where": "stream[1].tags.handler_name",
+        "value": "SoundHandler"
+      },
+      {
+        "where": "stream[1].tags.vendor_id",
+        "value": "[0][0][0][0]"
+      }
+    ]
+  },
+  "cadence": {
+    "effective_fps": 18.78,
+    "nominal_fps": 30.03,
+    "duplicate_ratio": 0.375,
+    "sampled_seconds": 9.96,
+    "note": "measured at video midpoint at native fps"
+  },
+  "pacing": {
+    "shots": 4,
+    "cuts_per_minute": 6.0,
+    "median_shot_s": 8.0,
+    "shortest_s": 6.0,
+    "longest_s": 8.0,
+    "beat_alignment": {
+      "on_beat_pct": 33.3,
+      "phase": 0.64,
+      "bpm_used": 122.4,
+      "note": "grid-aligned phase search, \u00b160 ms tolerance"
+    }
+  },
+  "audio": {
+    "duration_s": 30.0,
+    "bpm_estimate": 122.4,
+    "bpm_prominence": 34.47,
+    "onsets": [
+      0.49,
+      0.99,
+      1.49,
+      1.99,
+      2.49,
+      2.99,
+      3.49,
+      3.99,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.51,
+      9.01,
+      9.51,
+      10.01,
+      10.51,
+      11.01,
+      11.51,
+      12.01,
+      12.51,
+      13.02,
+      13.52,
+      14.02,
+      14.52,
+      15.02,
+      15.52,
+      16.02,
+      16.52,
+      17.02,
+      17.53,
+      18.03,
+      18.53,
+      19.03,
+      19.53,
+      20.03,
+      20.53,
+      21.03,
+      21.53,
+      22.04,
+      22.54,
+      23.04,
+      23.54,
+      24.04,
+      24.54,
+      25.04,
+      25.54,
+      26.05,
+      26.55,
+      27.05,
+      27.55,
+      28.05,
+      28.55,
+      29.05,
+      29.55
+    ],
+    "onset_count": 59,
+    "sound_class_estimate": "music-like",
+    "pause_ratio": 0.0,
+    "lead_silence_s": 0.0,
+    "trail_silence_s": 29.62,
+    "note": "voice/music/SFX separation is heuristic; UVR-class models give real stems"
+  },
+  "shots": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.0,
+      "dur": 8.0,
+      "cut_score": 1.0,
+      "frames_used": 16,
+      "frame_times": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "noise_sigma": 0.00775,
+      "edge_crispness": 0.337,
+      "flat_top8_coverage": 0.804,
+      "unique_colors": 531,
+      "mean_saturation": 0.968,
+      "motion": {
+        "class": "organic",
+        "total": 0.02595,
+        "rigid_ratio": -0.155,
+        "median_dx": 0,
+        "median_dy": 1,
+        "jitter": 36.7,
+        "zoom": 0.01
+      },
+      "camera_estimate": "handheld jitter",
+      "caption_bands": [],
+      "verdict": {
+        "verdict": "live",
+        "confidence": 0.8,
+        "uncertain": false,
+        "reasons": [
+          "sensor grain present (sigma 0.0077)",
+          "organic motion (rigid ratio -0.15)"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 16.0,
+      "dur": 8.0,
+      "cut_score": 0.968,
+      "frames_used": 16,
+      "frame_times": [
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0,
+        10.5,
+        11.0,
+        11.5
+      ],
+      "noise_sigma": 0.0,
+      "edge_crispness": 1.0,
+      "flat_top8_coverage": 0.984,
+      "unique_colors": 27,
+      "mean_saturation": 0.043,
+      "motion": {
+        "class": "organic",
+        "total": 0.02329,
+        "rigid_ratio": -0.23,
+        "median_dx": 20,
+        "median_dy": 0,
+        "jitter": 13.44,
+        "zoom": 0.064
+      },
+      "camera_estimate": "no physical camera (content motion, not sensor)",
+      "caption_bands": [
+        {
+          "row0": 149,
+          "row1": 163,
+          "col0": 54,
+          "col1": 315,
+          "persist": 0.349,
+          "start": 8.0,
+          "end": 16.0,
+          "pos": "bottom"
+        }
+      ],
+      "verdict": {
+        "verdict": "code",
+        "confidence": 0.75,
+        "uncertain": false,
+        "reasons": [
+          "vector-crisp edges (100%) + near-total flat fills (98%) with only 27 colours \u2014 flat-design graphics",
+          "multi-layer motion breaks single-plane tracking, but AI video never renders this flat and this crisp"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 24.0,
+      "dur": 8.0,
+      "cut_score": 0.375,
+      "frames_used": 16,
+      "frame_times": [
+        16.0,
+        16.5,
+        17.0,
+        17.5,
+        18.0,
+        18.5,
+        19.0,
+        19.5
+      ],
+      "noise_sigma": 0.0,
+      "edge_crispness": 1.0,
+      "flat_top8_coverage": 0.994,
+      "unique_colors": 18,
+      "mean_saturation": 0.339,
+      "motion": {
+        "class": "static",
+        "total": 0.0051,
+        "rigid_ratio": 0.0,
+        "median_dx": 0,
+        "median_dy": 0,
+        "jitter": 36.79,
+        "zoom": 0.019
+      },
+      "camera_estimate": "locked-off / tripod",
+      "caption_bands": [],
+      "verdict": {
+        "verdict": "code",
+        "confidence": 0.8,
+        "uncertain": false,
+        "reasons": [
+          "no sensor grain (sigma 0.0000)",
+          "flat fills 99%",
+          "crisp edges 100%",
+          "static motion"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "start": 24.0,
+      "end": 30.0,
+      "dur": 6.0,
+      "cut_score": 0.703,
+      "frames_used": 12,
+      "frame_times": [
+        24.0,
+        24.5,
+        25.0,
+        25.5,
+        26.0,
+        26.5,
+        27.0,
+        27.5
+      ],
+      "noise_sigma": 0.0,
+      "edge_crispness": 0.0,
+      "flat_top8_coverage": 0.847,
+      "unique_colors": 50,
+      "mean_saturation": 0.463,
+      "motion": {
+        "class": "organic",
+        "total": 0.05696,
+        "rigid_ratio": -0.001,
+        "median_dx": 3,
+        "median_dy": 2,
+        "jitter": 39.71,
+        "zoom": 0.246
+      },
+      "camera_estimate": "no physical camera (content motion, not sensor)",
+      "caption_bands": [],
+      "verdict": {
+        "verdict": "ai",
+        "confidence": 0.55,
+        "uncertain": true,
+        "reasons": [
+          "no sensor grain yet organic/parallax motion \u2014 typical of AI video",
+          "50 unique colours (quantised)"
+        ]
+      }
+    }
+  ],
+  "caption_tracks": [
+    {
+      "row0": 149,
+      "row1": 163,
+      "col0": 54,
+      "col1": 315,
+      "persist": 0.349,
+      "start": 8.0,
+      "end": 16.0,
+      "pos": "bottom",
+      "text": "MOTION GRAP"
+    }
+  ],
+  "review_ids": [
+    4
+  ]
+}
