@@ -1,0 +1,857 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "kit-test-b-alert-transfer-search-93",
+ "rev": 1,
+ "title": "Kit test B (alert, transfer, search)",
+ "duration": 25.14,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "position": "bottom",
+   "highlight": "#FF3333",
+   "color": "#FFFFFF"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "font": "Inter",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "fx": {
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none",
+   "flicker": false
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.05) brightness(1.0)",
+  "accent": "#C8A15A",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false,
+  "vignette": false,
+  "cursor": {
+   "src": "library/cursor/upload-3/cursor.svg",
+   "pack": "upload-3",
+   "file": "cursor.svg",
+   "size": 48,
+   "tipX": 0.06,
+   "tipY": 0.05
+  },
+  "learned": "upload-3",
+  "preset": "upload-3"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.87,
+    "narration": "Last week a small shop owner got a message that looked completely normal.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "woman at a small shop counter reading a message on her phone, clean modern illustration, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "73210b297770",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.92,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.87,
+    "end": 8.11,
+    "narration": "Then a warning flashed on her phone, and her whole screen started to glitch.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "close view of a phone screen with a red warning glow in a dark room, clean modern illustration, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "52fa1ef48e04",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.96,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.11,
+    "end": 12.462,
+    "narration": "She had no idea that one tap earlier, she had given her password away.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "finger hovering over a phone link, clean modern illustration, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c918b3f863c2",
+    "cam": {
+     "move": "truck",
+     "amp": 0.96,
+     "dir": -1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v4",
+    "start": 12.462,
+    "end": 17.178,
+    "narration": "Within seconds, her private files began copying to a stranger's computer.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "stack of glowing folders drifting out of a laptop into the dark, clean modern illustration, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "13607b859214",
+    "cam": {
+     "move": "drift",
+     "amp": 0.96,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v5",
+    "start": 17.178,
+    "end": 19.843,
+    "narration": "She tried to stop it, but she did not know where to look.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "worried woman staring at a laptop in a dark shop, clean modern illustration, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "0a1925d11efd",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.74,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v6",
+    "start": 19.843,
+    "end": 24.336,
+    "narration": "So she opened her browser, searched for how to lock her account, and asked a friend in chat.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "laptop on a desk with a glowing screen, clean modern illustration, dark moody light, vertical"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "392866c887c6",
+    "cam": {
+     "move": "drift",
+     "amp": 0.96,
+     "dir": 1
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Last",
+     "start": 0.075,
+     "end": 0.362
+    },
+    {
+     "word": "week",
+     "start": 0.362,
+     "end": 0.487
+    },
+    {
+     "word": "a",
+     "start": 0.487,
+     "end": 0.537
+    },
+    {
+     "word": "small",
+     "start": 0.537,
+     "end": 0.85
+    },
+    {
+     "word": "shop",
+     "start": 0.85,
+     "end": 1.163
+    },
+    {
+     "word": "owner",
+     "start": 1.175,
+     "end": 1.363
+    },
+    {
+     "word": "got",
+     "start": 1.363,
+     "end": 1.512
+    },
+    {
+     "word": "a",
+     "start": 1.512,
+     "end": 1.538
+    },
+    {
+     "word": "message",
+     "start": 1.55,
+     "end": 2.175
+    },
+    {
+     "word": "that",
+     "start": 2.288,
+     "end": 2.413
+    },
+    {
+     "word": "looked",
+     "start": 2.425,
+     "end": 2.625
+    },
+    {
+     "word": "completely",
+     "start": 2.625,
+     "end": 3.175
+    },
+    {
+     "word": "normal.",
+     "start": 3.175,
+     "end": 3.65
+    },
+    {
+     "word": "Then",
+     "start": 3.93,
+     "end": 4.042
+    },
+    {
+     "word": "a",
+     "start": 4.055,
+     "end": 4.117
+    },
+    {
+     "word": "warning",
+     "start": 4.117,
+     "end": 4.518
+    },
+    {
+     "word": "flashed",
+     "start": 4.518,
+     "end": 4.942
+    },
+    {
+     "word": "on",
+     "start": 4.942,
+     "end": 5.042
+    },
+    {
+     "word": "her",
+     "start": 5.055,
+     "end": 5.143
+    },
+    {
+     "word": "phone,",
+     "start": 5.143,
+     "end": 5.555
+    },
+    {
+     "word": "and",
+     "start": 5.715,
+     "end": 5.777
+    },
+    {
+     "word": "her",
+     "start": 5.777,
+     "end": 5.915
+    },
+    {
+     "word": "whole",
+     "start": 5.915,
+     "end": 6.24
+    },
+    {
+     "word": "screen",
+     "start": 6.24,
+     "end": 6.815
+    },
+    {
+     "word": "started",
+     "start": 6.915,
+     "end": 7.24
+    },
+    {
+     "word": "to",
+     "start": 7.253,
+     "end": 7.303
+    },
+    {
+     "word": "glitch.",
+     "start": 7.303,
+     "end": 7.89
+    },
+    {
+     "word": "She",
+     "start": 8.17,
+     "end": 8.307
+    },
+    {
+     "word": "had",
+     "start": 8.32,
+     "end": 8.494
+    },
+    {
+     "word": "no",
+     "start": 8.507,
+     "end": 8.744
+    },
+    {
+     "word": "idea",
+     "start": 8.744,
+     "end": 9.282
+    },
+    {
+     "word": "that",
+     "start": 9.282,
+     "end": 9.445
+    },
+    {
+     "word": "one",
+     "start": 9.445,
+     "end": 9.744
+    },
+    {
+     "word": "tap",
+     "start": 9.744,
+     "end": 10.095
+    },
+    {
+     "word": "earlier,",
+     "start": 10.17,
+     "end": 10.619
+    },
+    {
+     "word": "she",
+     "start": 10.779,
+     "end": 10.929
+    },
+    {
+     "word": "had",
+     "start": 10.929,
+     "end": 11.041
+    },
+    {
+     "word": "given",
+     "start": 11.041,
+     "end": 11.242
+    },
+    {
+     "word": "her",
+     "start": 11.254,
+     "end": 11.354
+    },
+    {
+     "word": "password",
+     "start": 11.354,
+     "end": 11.854
+    },
+    {
+     "word": "away.",
+     "start": 11.867,
+     "end": 12.242
+    },
+    {
+     "word": "Within",
+     "start": 12.522,
+     "end": 12.81
+    },
+    {
+     "word": "seconds,",
+     "start": 12.81,
+     "end": 13.372
+    },
+    {
+     "word": "her",
+     "start": 13.532,
+     "end": 13.645
+    },
+    {
+     "word": "private",
+     "start": 13.657,
+     "end": 14.108
+    },
+    {
+     "word": "files",
+     "start": 14.108,
+     "end": 14.557
+    },
+    {
+     "word": "began",
+     "start": 14.57,
+     "end": 14.995
+    },
+    {
+     "word": "copying",
+     "start": 14.995,
+     "end": 15.595
+    },
+    {
+     "word": "to",
+     "start": 15.607,
+     "end": 15.745
+    },
+    {
+     "word": "a",
+     "start": 15.745,
+     "end": 15.82
+    },
+    {
+     "word": "stranger's",
+     "start": 15.82,
+     "end": 16.383
+    },
+    {
+     "word": "computer.",
+     "start": 16.395,
+     "end": 16.958
+    },
+    {
+     "word": "She",
+     "start": 17.238,
+     "end": 17.35
+    },
+    {
+     "word": "tried",
+     "start": 17.363,
+     "end": 17.576
+    },
+    {
+     "word": "to",
+     "start": 17.588,
+     "end": 17.626
+    },
+    {
+     "word": "stop",
+     "start": 17.638,
+     "end": 17.975
+    },
+    {
+     "word": "it,",
+     "start": 17.988,
+     "end": 18.138
+    },
+    {
+     "word": "but",
+     "start": 18.298,
+     "end": 18.423
+    },
+    {
+     "word": "she",
+     "start": 18.436,
+     "end": 18.573
+    },
+    {
+     "word": "did",
+     "start": 18.573,
+     "end": 18.686
+    },
+    {
+     "word": "not",
+     "start": 18.698,
+     "end": 18.886
+    },
+    {
+     "word": "know",
+     "start": 18.886,
+     "end": 19.035
+    },
+    {
+     "word": "where",
+     "start": 19.035,
+     "end": 19.173
+    },
+    {
+     "word": "to",
+     "start": 19.173,
+     "end": 19.223
+    },
+    {
+     "word": "look.",
+     "start": 19.235,
+     "end": 19.623
+    },
+    {
+     "word": "So",
+     "start": 19.903,
+     "end": 20.004
+    },
+    {
+     "word": "she",
+     "start": 20.004,
+     "end": 20.179
+    },
+    {
+     "word": "opened",
+     "start": 20.179,
+     "end": 20.379
+    },
+    {
+     "word": "her",
+     "start": 20.379,
+     "end": 20.466
+    },
+    {
+     "word": "browser,",
+     "start": 20.466,
+     "end": 20.978
+    },
+    {
+     "word": "searched",
+     "start": 21.138,
+     "end": 21.426
+    },
+    {
+     "word": "for",
+     "start": 21.426,
+     "end": 21.526
+    },
+    {
+     "word": "how",
+     "start": 21.526,
+     "end": 21.601
+    },
+    {
+     "word": "to",
+     "start": 21.601,
+     "end": 21.664
+    },
+    {
+     "word": "lock",
+     "start": 21.664,
+     "end": 21.938
+    },
+    {
+     "word": "her",
+     "start": 21.938,
+     "end": 22.063
+    },
+    {
+     "word": "account,",
+     "start": 22.076,
+     "end": 22.513
+    },
+    {
+     "word": "and",
+     "start": 22.673,
+     "end": 22.798
+    },
+    {
+     "word": "asked",
+     "start": 22.81,
+     "end": 23.048
+    },
+    {
+     "word": "a",
+     "start": 23.048,
+     "end": 23.073
+    },
+    {
+     "word": "friend",
+     "start": 23.073,
+     "end": 23.36
+    },
+    {
+     "word": "in",
+     "start": 23.36,
+     "end": 23.423
+    },
+    {
+     "word": "chat.",
+     "start": 23.423,
+     "end": 23.885
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Last week a small shop owner got a message that looked completely normal. Then a warning flashed on her phone, and her whole screen started to glitch. She had no idea that one tap earlier, she had given her password away. Within seconds, her private files began copying to a stranger's computer. She tried to stop it, but she did not know where to look. So she opened her browser, searched for how to lock her account, and asked a friend in chat."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": ""
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.82,
+    "text": "completely",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.49,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.45,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.72,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.82,
+    "opacity": 0.25,
+    "seed": 2.57
+   },
+   {
+    "id": "ly3",
+    "kind": "alert-glitch",
+    "anchor": "v2",
+    "delay": 0.3,
+    "start": 4.17,
+    "end": 8.06,
+    "steps": [
+     {
+      "type": "alert",
+      "title": "Security alert",
+      "text": "Unknown login detected"
+     },
+     {
+      "type": "glitch",
+      "dur": 0.8
+     },
+     {
+      "type": "hold",
+      "dur": 0.6
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.55,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.59,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.89,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly4",
+    "kind": "transfer-progress",
+    "anchor": "v4",
+    "delay": 0.3,
+    "start": 12.76,
+    "end": 17.13,
+    "steps": [
+     {
+      "type": "file",
+      "text": "customer-list.xlsx",
+      "size": "2.4 MB"
+     },
+     {
+      "type": "progress",
+      "to": 100.0,
+      "dur": 1.8
+     },
+     {
+      "type": "done",
+      "text": "Sent"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.46,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.12,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.37,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795164548363,
+  "updated": 1795164548372,
+  "topic": "",
+  "hook": "",
+  "image_style": "clean modern illustration, dark moody light",
+  "format": "vertical",
+  "assets_release": "project-kit-test-b-alert-transfer-search-93",
+  "spec": {
+   "title": "Kit test B (alert, transfer, search)",
+   "style": "clean modern illustration, dark moody light",
+   "accent": "#C8A15A",
+   "style_preset": "upload-3",
+   "max_hold": 10,
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: editorial (corner type and clean top lines).",
+   "Beat 1 (\"Last week a small shop owner got a ...\"): the hook. No subject cutout, so I put COMPLETELY in the top band where it cannot cover the face.",
+   "Beat 2 (\"Then a warning flashed on her phone...\"): a glitching alert (alert, glitch, hold) as the writer asked.",
+   "Beat 4 (\"Within seconds, her private files b...\"): a transfer progress card (file, progress, done) as the writer asked.",
+   "Left 3 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-cubic x2, entrance out-quint x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: drift (alive baseline).",
+   "Beat 5: pull-out (a turn in the story: pull back to reveal).",
+   "Beat 6: drift (last picture: slow pull-out (not the same move twice))."
+  ]
+ }
+}

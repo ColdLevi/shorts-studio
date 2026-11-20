@@ -1019,6 +1019,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-93",
+      "title": "Kit test B (alert, transfer, search)",
+      "hook": "Last week a small shop owner got a message that looked completely normal.",
+      "accent": "#C8A15A",
+      "duration": 25.2,
+      "created": 1795165695809,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-93/short-93.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-93/short-93.jpg",
+      "project": "kit-test-b-alert-transfer-search-93",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
