@@ -124,7 +124,6 @@ const Percent: React.FC<{ g: Extract<Graphic2, { type: 'percent' }>; accent: str
         </div>
         {g.label ? <div style={{ ...txt(54, 'white', 800), textAlign: 'center', textTransform: 'uppercase', opacity: lab, transform: `translateY(${(1 - lab) * 20}px)` }}>{g.label}</div> : null}
       </Zone>
-      <Audio src={SFX('riser-soft')} volume={0.16} />
     </AbsoluteFill>
   );
 };

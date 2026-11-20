@@ -103,8 +103,6 @@ const Counter: React.FC<{ g: Extract<Graphic, { type: 'counter' }>; accent: stri
         <div style={{ ...label(58, 'white', 800), marginTop: 26, textTransform: 'uppercase', textAlign: 'center', padding: '0 90px',
           opacity: lIn, transform: `translateY(${(1 - lIn) * 24}px)` }}>{g.label}</div>
       ) : null}
-      <Audio src={SFX('riser-soft')} volume={0.18} />
-      <Sequence from={Math.round(0.2 * fps + dur)}><Audio src={SFX('impact-soft')} volume={0.35} /></Sequence>
     </AbsoluteFill>
   );
 };
