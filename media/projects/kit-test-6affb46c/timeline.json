@@ -1,0 +1,1192 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "kit-test-6affb46c",
+ "rev": 1,
+ "title": "Kit Test: App in One Evening",
+ "duration": 35.86,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "position": "bottom",
+   "highlight": "#FF3333",
+   "color": "#FFFFFF"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "font": "Inter",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "fx": {
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none",
+   "flicker": false
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.05) brightness(1.0)",
+  "accent": "#FFD43B",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false,
+  "vignette": false,
+  "cursor": {
+   "src": "library/cursor/upload-3/cursor.svg",
+   "pack": "upload-3",
+   "file": "cursor.svg",
+   "size": 48,
+   "tipX": 0.06,
+   "tipY": 0.05
+  },
+  "learned": "upload-3",
+  "preset": "upload-3"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 2.62,
+    "narration": "You can ship a small music app in one evening.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a laptop and headphones on a dark desk at night, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c592e8cd1904",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.52,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 2.62,
+    "end": 8.207,
+    "narration": "First, name one annoying problem, like finding a calm playlist without scrolling for ten minutes.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a person scrolling a phone on a sofa in dim light, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "e1c634452c37",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 8.207,
+    "end": 13.446,
+    "narration": "Look at how people search: type a few words, press enter, and a seller replies.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone on a wooden table showing a blurred marketplace, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "bc908a798ce2",
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 13.446,
+    "end": 17.637,
+    "narration": "Copy that speed, not the screens, and your idea gets sharper.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, hands sketching an app layout on paper, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "30696e2ae4a9",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.68,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 17.637,
+    "end": 22.784,
+    "narration": "Next comes the look: a calm glass interface with a pill, a tab bar, and a search button.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, soft blurred colored lights behind frosted glass, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "66db1a1df76f",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 22.784,
+    "end": 26.774,
+    "narration": "Keep every screen to one job, so nothing fights for attention.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a tidy minimal desk with one notebook, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "44db003b7ef1",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.66,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 26.774,
+    "end": 30.302,
+    "narration": "When it works on your phone, shipping is one command in the terminal.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a dark room lit by a single monitor, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "5cf39d7913d8",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.61,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 30.302,
+    "end": 35.064,
+    "narration": "Push it, share one honest post, and let the first users tell you what to fix.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a sunrise over a city skyline, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "64fe0c4cb7b6",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_08_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.68,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "You",
+     "start": 0.1,
+     "end": 0.175
+    },
+    {
+     "word": "can",
+     "start": 0.175,
+     "end": 0.263
+    },
+    {
+     "word": "ship",
+     "start": 0.263,
+     "end": 0.5
+    },
+    {
+     "word": "a",
+     "start": 0.5,
+     "end": 0.55
+    },
+    {
+     "word": "small",
+     "start": 0.562,
+     "end": 0.912
+    },
+    {
+     "word": "music",
+     "start": 0.925,
+     "end": 1.262
+    },
+    {
+     "word": "app",
+     "start": 1.275,
+     "end": 1.562
+    },
+    {
+     "word": "in",
+     "start": 1.675,
+     "end": 1.8
+    },
+    {
+     "word": "one",
+     "start": 1.8,
+     "end": 2.013
+    },
+    {
+     "word": "evening.",
+     "start": 2.013,
+     "end": 2.4
+    },
+    {
+     "word": "First,",
+     "start": 2.68,
+     "end": 3.08
+    },
+    {
+     "word": "name",
+     "start": 3.24,
+     "end": 3.59
+    },
+    {
+     "word": "one",
+     "start": 3.59,
+     "end": 3.79
+    },
+    {
+     "word": "annoying",
+     "start": 3.803,
+     "end": 4.278
+    },
+    {
+     "word": "problem,",
+     "start": 4.29,
+     "end": 4.828
+    },
+    {
+     "word": "like",
+     "start": 4.988,
+     "end": 5.1
+    },
+    {
+     "word": "finding",
+     "start": 5.1,
+     "end": 5.475
+    },
+    {
+     "word": "a",
+     "start": 5.475,
+     "end": 5.512
+    },
+    {
+     "word": "calm",
+     "start": 5.512,
+     "end": 5.762
+    },
+    {
+     "word": "playlist",
+     "start": 5.762,
+     "end": 6.212
+    },
+    {
+     "word": "without",
+     "start": 6.225,
+     "end": 6.55
+    },
+    {
+     "word": "scrolling",
+     "start": 6.55,
+     "end": 7.1
+    },
+    {
+     "word": "for",
+     "start": 7.1,
+     "end": 7.225
+    },
+    {
+     "word": "ten",
+     "start": 7.225,
+     "end": 7.475
+    },
+    {
+     "word": "minutes.",
+     "start": 7.487,
+     "end": 7.987
+    },
+    {
+     "word": "Look",
+     "start": 8.267,
+     "end": 8.417
+    },
+    {
+     "word": "at",
+     "start": 8.417,
+     "end": 8.492
+    },
+    {
+     "word": "how",
+     "start": 8.492,
+     "end": 8.742
+    },
+    {
+     "word": "people",
+     "start": 8.742,
+     "end": 9.105
+    },
+    {
+     "word": "search:",
+     "start": 9.105,
+     "end": 9.693
+    },
+    {
+     "word": "type",
+     "start": 9.853,
+     "end": 10.041
+    },
+    {
+     "word": "a",
+     "start": 10.041,
+     "end": 10.103
+    },
+    {
+     "word": "few",
+     "start": 10.116,
+     "end": 10.429
+    },
+    {
+     "word": "words,",
+     "start": 10.441,
+     "end": 10.903
+    },
+    {
+     "word": "press",
+     "start": 11.103,
+     "end": 11.441
+    },
+    {
+     "word": "enter,",
+     "start": 11.579,
+     "end": 11.954
+    },
+    {
+     "word": "and",
+     "start": 12.114,
+     "end": 12.177
+    },
+    {
+     "word": "a",
+     "start": 12.177,
+     "end": 12.214
+    },
+    {
+     "word": "seller",
+     "start": 12.214,
+     "end": 12.577
+    },
+    {
+     "word": "replies.",
+     "start": 12.577,
+     "end": 13.226
+    },
+    {
+     "word": "Copy",
+     "start": 13.506,
+     "end": 13.819
+    },
+    {
+     "word": "that",
+     "start": 13.819,
+     "end": 13.932
+    },
+    {
+     "word": "speed,",
+     "start": 13.932,
+     "end": 14.532
+    },
+    {
+     "word": "not",
+     "start": 14.692,
+     "end": 14.905
+    },
+    {
+     "word": "the",
+     "start": 14.905,
+     "end": 14.98
+    },
+    {
+     "word": "screens,",
+     "start": 14.98,
+     "end": 15.717
+    },
+    {
+     "word": "and",
+     "start": 15.905,
+     "end": 15.992
+    },
+    {
+     "word": "your",
+     "start": 16.004,
+     "end": 16.129
+    },
+    {
+     "word": "idea",
+     "start": 16.129,
+     "end": 16.605
+    },
+    {
+     "word": "gets",
+     "start": 16.605,
+     "end": 16.78
+    },
+    {
+     "word": "sharper.",
+     "start": 16.78,
+     "end": 17.417
+    },
+    {
+     "word": "Next",
+     "start": 17.697,
+     "end": 17.922
+    },
+    {
+     "word": "comes",
+     "start": 17.935,
+     "end": 18.159
+    },
+    {
+     "word": "the",
+     "start": 18.172,
+     "end": 18.272
+    },
+    {
+     "word": "look:",
+     "start": 18.272,
+     "end": 18.547
+    },
+    {
+     "word": "a",
+     "start": 18.707,
+     "end": 18.77
+    },
+    {
+     "word": "calm",
+     "start": 18.782,
+     "end": 19.207
+    },
+    {
+     "word": "glass",
+     "start": 19.207,
+     "end": 19.57
+    },
+    {
+     "word": "interface",
+     "start": 19.57,
+     "end": 20.07
+    },
+    {
+     "word": "with",
+     "start": 20.07,
+     "end": 20.207
+    },
+    {
+     "word": "a",
+     "start": 20.207,
+     "end": 20.27
+    },
+    {
+     "word": "pill,",
+     "start": 20.282,
+     "end": 20.795
+    },
+    {
+     "word": "a",
+     "start": 20.955,
+     "end": 20.992
+    },
+    {
+     "word": "tab",
+     "start": 20.992,
+     "end": 21.28
+    },
+    {
+     "word": "bar,",
+     "start": 21.28,
+     "end": 21.617
+    },
+    {
+     "word": "and",
+     "start": 21.777,
+     "end": 21.852
+    },
+    {
+     "word": "a",
+     "start": 21.852,
+     "end": 21.889
+    },
+    {
+     "word": "search",
+     "start": 21.889,
+     "end": 22.264
+    },
+    {
+     "word": "button.",
+     "start": 22.264,
+     "end": 22.564
+    },
+    {
+     "word": "Keep",
+     "start": 22.844,
+     "end": 23.044
+    },
+    {
+     "word": "every",
+     "start": 23.194,
+     "end": 23.419
+    },
+    {
+     "word": "screen",
+     "start": 23.419,
+     "end": 23.919
+    },
+    {
+     "word": "to",
+     "start": 23.931,
+     "end": 24.044
+    },
+    {
+     "word": "one",
+     "start": 24.044,
+     "end": 24.369
+    },
+    {
+     "word": "job,",
+     "start": 24.381,
+     "end": 24.769
+    },
+    {
+     "word": "so",
+     "start": 24.929,
+     "end": 25.08
+    },
+    {
+     "word": "nothing",
+     "start": 25.192,
+     "end": 25.567
+    },
+    {
+     "word": "fights",
+     "start": 25.58,
+     "end": 25.929
+    },
+    {
+     "word": "for",
+     "start": 25.929,
+     "end": 26.067
+    },
+    {
+     "word": "attention.",
+     "start": 26.067,
+     "end": 26.554
+    },
+    {
+     "word": "When",
+     "start": 26.834,
+     "end": 26.909
+    },
+    {
+     "word": "it",
+     "start": 26.909,
+     "end": 26.984
+    },
+    {
+     "word": "works",
+     "start": 26.984,
+     "end": 27.221
+    },
+    {
+     "word": "on",
+     "start": 27.221,
+     "end": 27.309
+    },
+    {
+     "word": "your",
+     "start": 27.322,
+     "end": 27.421
+    },
+    {
+     "word": "phone,",
+     "start": 27.421,
+     "end": 27.847
+    },
+    {
+     "word": "shipping",
+     "start": 28.007,
+     "end": 28.419
+    },
+    {
+     "word": "is",
+     "start": 28.419,
+     "end": 28.544
+    },
+    {
+     "word": "one",
+     "start": 28.544,
+     "end": 28.932
+    },
+    {
+     "word": "command",
+     "start": 28.932,
+     "end": 29.469
+    },
+    {
+     "word": "in",
+     "start": 29.469,
+     "end": 29.519
+    },
+    {
+     "word": "the",
+     "start": 29.519,
+     "end": 29.582
+    },
+    {
+     "word": "terminal.",
+     "start": 29.582,
+     "end": 30.082
+    },
+    {
+     "word": "Push",
+     "start": 30.362,
+     "end": 30.575
+    },
+    {
+     "word": "it,",
+     "start": 30.575,
+     "end": 30.713
+    },
+    {
+     "word": "share",
+     "start": 30.873,
+     "end": 31.223
+    },
+    {
+     "word": "one",
+     "start": 31.223,
+     "end": 31.536
+    },
+    {
+     "word": "honest",
+     "start": 31.548,
+     "end": 31.873
+    },
+    {
+     "word": "post,",
+     "start": 31.873,
+     "end": 32.323
+    },
+    {
+     "word": "and",
+     "start": 32.483,
+     "end": 32.545
+    },
+    {
+     "word": "let",
+     "start": 32.558,
+     "end": 32.67
+    },
+    {
+     "word": "the",
+     "start": 32.683,
+     "end": 32.77
+    },
+    {
+     "word": "first",
+     "start": 32.77,
+     "end": 33.196
+    },
+    {
+     "word": "users",
+     "start": 33.208,
+     "end": 33.571
+    },
+    {
+     "word": "tell",
+     "start": 33.571,
+     "end": 33.758
+    },
+    {
+     "word": "you",
+     "start": 33.758,
+     "end": 33.846
+    },
+    {
+     "word": "what",
+     "start": 33.858,
+     "end": 33.946
+    },
+    {
+     "word": "to",
+     "start": 33.946,
+     "end": 33.983
+    },
+    {
+     "word": "fix.",
+     "start": 33.996,
+     "end": 34.62
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "You can ship a small music app in one evening. First, name one annoying problem, like finding a calm playlist without scrolling for ten minutes. Look at how people search: type a few words, press enter, and a seller replies. Copy that speed, not the screens, and your idea gets sharper. Next comes the look: a calm glass interface with a pill, a tab bar, and a search button. Keep every screen to one job, so nothing fights for attention. When it works on your phone, shipping is one command in the terminal. Push it, share one honest post, and let the first users tell you what to fix."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/ui-click-soft.mp3",
+    "at": 0.1,
+    "volume": 0.252,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 2.35,
+    "volume": 0.289,
+    "anchor": "v2",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 8.007,
+    "volume": 0.33,
+    "anchor": "v3",
+    "offset": -0.2
+   },
+   {
+    "id": "gs4",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 22.584,
+    "volume": 0.55,
+    "anchor": "v6",
+    "offset": -0.2
+   },
+   {
+    "id": "gs5",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 30.102,
+    "volume": 0.33,
+    "anchor": "v8",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 2.57,
+    "text": "evening",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.4,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 2.2,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 2.47,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 2.57,
+    "opacity": 0.2,
+    "seed": 0.06
+   },
+   {
+    "id": "ly3",
+    "kind": "screen-scene",
+    "anchor": "v3",
+    "delay": 0.3,
+    "start": 8.51,
+    "end": 13.4,
+    "steps": [
+     {
+      "type": "move",
+      "to": "bar",
+      "path": "straight",
+      "ease": "out",
+      "from": "left"
+     },
+     {
+      "type": "click",
+      "to": "bar"
+     },
+     {
+      "type": "type",
+      "text": "search type a few"
+     },
+     {
+      "type": "move",
+      "to": "button",
+      "path": "arc-up",
+      "ease": "back-soft"
+     },
+     {
+      "type": "click",
+      "to": "button"
+     },
+     {
+      "type": "spinner"
+     }
+    ],
+    "cam": "follow-out",
+    "win": {
+     "w": 991,
+     "h": 854,
+     "y": 0.231
+    },
+    "cursor": {
+     "src": "library/cursor/upload-3/cursor.svg",
+     "size": 48,
+     "tipX": 0.06,
+     "tipY": 0.05
+    },
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.46,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.55,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.89,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly4",
+    "kind": "glass-ui",
+    "anchor": "v5",
+    "delay": 0.3,
+    "start": 17.94,
+    "end": 22.73,
+    "steps": [
+     {
+      "type": "pill",
+      "text": "Lo-fi Beats",
+      "sub": "Now playing"
+     },
+     {
+      "type": "tab",
+      "to": 2
+     },
+     {
+      "type": "search",
+      "text": "chill mix"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.52,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 4.52,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 4.79,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly5",
+    "kind": "terminal-typing",
+    "anchor": "v7",
+    "delay": 0.3,
+    "start": 27.07,
+    "end": 30.25,
+    "steps": [
+     {
+      "type": "cmd",
+      "text": "git push origin main"
+     },
+     {
+      "type": "out",
+      "text": "Deploy complete"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.47,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 2.88,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.18,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795142905990,
+  "updated": 1795143054740,
+  "topic": "shipping a small music app in one evening",
+  "hook": "You can ship a small music app in one evening.",
+  "image_style": "",
+  "format": "vertical",
+  "assets_release": "project-kit-test-6affb46c",
+  "spec": {
+   "title": "Kit Test: App in One Evening",
+   "hook": "You can ship a small music app in one evening.",
+   "style": "",
+   "music": "docu-pluck",
+   "accent": "#FFD43B",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "allow_plain": false,
+   "gemini_images": false,
+   "format": "vertical",
+   "fps": 30,
+   "topic": "shipping a small music app in one evening",
+   "category": "",
+   "style_preset": "upload-3",
+   "project_id": "kit-test-6affb46c",
+   "max_hold": 10,
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: restrained (few layers, lots of air).",
+   "Beat 1 (\"You can ship a small music app in o...\"): the hook. No subject cutout, so I put EVENING in the top band where it cannot cover the face.",
+   "Beat 3 (\"Look at how people search: type a f...\"): a screen scene (search) because the line is about something done on a computer; camera plan: follow-out.",
+   "Beat 5 (\"Next comes the look: a calm glass i...\"): a liquid-glass scene (pill, tab, search) as the writer asked.",
+   "Beat 7 (\"When it works on your phone, shippi...\"): a terminal scene (cmd, out) as the writer asked.",
+   "Left 4 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-cubic x3, entrance out-quint x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "directions": [
+   {
+    "scene": 3,
+    "direction": "search chat: type used studio speakers, press enter, then a reply bubble from the seller saying it is still available",
+    "followed": [
+     "kit",
+     "screen"
+    ],
+    "unsupported": []
+   }
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline (not the same move twice)).",
+   "Beat 3: truck (alive baseline (not the same move twice)).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: truck (side move for variety).",
+   "Beat 7: drift (alive baseline).",
+   "Beat 8: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "5 effects: swish, tick, whoosh_soft"
+ }
+}

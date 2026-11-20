@@ -977,6 +977,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-90",
+      "title": "Kit Test: App in One Evening",
+      "hook": "You can ship a small music app in one evening.",
+      "accent": "#FFD43B",
+      "duration": 35.9,
+      "created": 1795144777120,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-90/short-90.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-90/short-90.jpg",
+      "project": "kit-test-6affb46c",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
