@@ -688,6 +688,21 @@ def project_id(spec):
     return pid
 
 
+def _kit_hold(b, p, dur):
+    try:
+        import re as _re
+        if not (3.5 <= dur <= 9.0):
+            return False
+        if b.get("kit") in ("screen", "glass-ui", "terminal-typing"):
+            return True
+        d = str(b.get("direction") or "")
+        if d and _re.search(r"search|chat|screen|glass|terminal|kit", d, _re.I):
+            return True
+        return dur >= 5.2 and bool(_re.search(TL._KIT_RX, str(b.get("narration") or p.get("text") or "").lower()))
+    except Exception:
+        return False
+
+
 def split_long_holds(props, beats, spec, max_hold=None):
     # step-holds: a still that stays on screen too long is cut into 2 or 3 shots (same picture, a new camera move each)
     import math
@@ -700,6 +715,9 @@ def split_long_holds(props, beats, spec, max_hold=None):
         start, end = float(p["start"]), float(p["end"])
         dur = end - start
         plain = not (p.get("video") or p.get("graphic") or p.get("scene") or b.get("graphic") or b.get("scene"))
+        # KIT_HOLD: a scene that asks for a screen kit keeps its length so the kit has room
+        if plain and _kit_hold(b, p, dur):
+            plain = False
         cuts = []
         if plain and dur > (7.0 if i == 0 else mh):
             n = min(int(math.ceil(dur / mh)), int(dur // 2.2))
