@@ -148,10 +148,28 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: counter-graph plus graph steps on a scene; the numbers come from the writer, never invented"
+    },
+    "browser-page-load": {
+      "layer_kind": "browser-page-load",
+      "use_when": [
+        "a website",
+        "a page loading",
+        "opening a link",
+        "a landing page",
+        "a web app"
+      ],
+      "min_scene_seconds": 3.5,
+      "steps": {
+        "url": "the address bar types {text}",
+        "load": "the progress bar fills over {dur}",
+        "page": "the page content appears {title, text}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: browser-page-load plus page steps on a scene; the writer says the address and what the page shows"
     }
   },
   "planned_kits": [
-    "browser-page-load",
     "checkout",
     "alert-glitch",
     "transfer-progress"

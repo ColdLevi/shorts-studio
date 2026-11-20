@@ -23,12 +23,13 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it) or "browser-page-load" (a browser window: the address types, a progress bar fills, the page appears)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
 "glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
 "term": list of steps for a terminal-typing scene, each {"type": "cmd" (a typed command) or "out" (an output line) or "hold", "text": "...", "dur": seconds, for hold only}
 "stack": list of steps for a notification-stack scene, each {"type": "note" (a banner: "title" up to 24 characters, "text" up to 70) or "hold", "dur": seconds, for hold only}
 "graph": list of steps for a counter-graph scene, each {"type": "counter" ("value": a number, optional "from" number, "label" up to 28 characters, "prefix" and "suffix" up to 4, like $ or %) or "line" ("points": 2 to 12 numbers) or "hold", "dur": seconds}. Only use numbers the writer gave.
+"page": list of steps for a browser-page-load scene, each {"type": "url" ("text": the address) or "load" ("dur": seconds) or "page" ("title" up to 40 characters, "text" up to 120) or "hold", "dur": seconds}
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -77,8 +78,24 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph"):
+    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load"):
         out["kit"] = d["kit"]
+    pg = d.get("page")
+    if isinstance(pg, list):
+        _num = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+        ps = []
+        for x in pg[:6]:
+            if not isinstance(x, dict):
+                continue
+            ty = x.get("type")
+            if ty == "url" and x.get("text"):
+                ps.append({"type": "url", "text": _s(x["text"], 48)})
+            elif ty in ("load", "hold"):
+                ps.append({"type": ty, "dur": float(x["dur"]) if _num(x.get("dur")) else (1.2 if ty == "load" else 0.6)})
+            elif ty == "page" and (x.get("title") or x.get("text")):
+                ps.append({"type": "page", "title": _s(x.get("title") or "", 40), "text": _s(x.get("text") or "", 120)})
+        if ps:
+            out["page"] = ps
     gr = d.get("graph")
     if isinstance(gr, list):
         _isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)

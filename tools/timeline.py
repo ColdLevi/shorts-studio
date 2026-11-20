@@ -1070,6 +1070,36 @@ def _graph_steps(sbi, text, avail):
     return steps if steps and _graph_secs(steps) <= avail else None
 
 
+def _page_secs(steps):
+    t = 0.3
+    for x in steps:
+        d = (0.4 + len(x.get("text", "")) / 25.0) if x["type"] == "url" else x.get("dur", 1.2) if x["type"] == "load" else 0.8 if x["type"] == "page" else x.get("dur", 0.6)
+        t += d + 0.2
+    return t
+
+
+def _page_steps(sbi, text, avail):
+    isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    steps = []
+    own = sbi.get("page")
+    if isinstance(own, list):
+        for s in own[:6]:
+            if not isinstance(s, dict):
+                continue
+            ty = s.get("type")
+            if ty == "url" and s.get("text"):
+                steps.append({"type": "url", "text": str(s["text"])[:48]})
+            elif ty == "load":
+                steps.append({"type": "load", "dur": float(s["dur"]) if isnum(s.get("dur")) else 1.2})
+            elif ty == "page" and (s.get("title") or s.get("text")):
+                steps.append({"type": "page", "title": str(s.get("title") or "")[:40], "text": str(s.get("text") or "")[:120]})
+            elif ty == "hold":
+                steps.append({"type": "hold", "dur": float(s["dur"]) if isnum(s.get("dur")) else 0.6})
+    while len(steps) > 1 and _page_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _page_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1367,6 +1397,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a counter and graph (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _gr)))
                 continue
             notes.append("%s: counter-graph asked for, but it needs written numbers, a scene of 3 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "browser-page-load":
+            _pg = _page_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.5 and i - _kb["last"] >= 2 and _pg:
+                put("browser-page-load", c, 0.3, steps=_pg)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a browser page load (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _pg)))
+                continue
+            notes.append("%s: browser-page-load asked for, but it needs written steps, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
