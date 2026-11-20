@@ -205,9 +205,26 @@
       },
       "default_steps": [],
       "how_to_use": "forced only: kit: alert-glitch plus alert steps on a scene; the writer says what the alert says"
+    },
+    "transfer-progress": {
+      "layer_kind": "transfer-progress",
+      "use_when": [
+        "uploading or downloading",
+        "a file transfer",
+        "backing up",
+        "syncing",
+        "waiting for something to finish"
+      ],
+      "min_scene_seconds": 3.5,
+      "steps": {
+        "file": "the file card appears {text, size}",
+        "progress": "the bar fills to {to} percent over {dur}",
+        "done": "a completion check draws {text}",
+        "hold": "pause {dur}"
+      },
+      "default_steps": [],
+      "how_to_use": "forced only: kit: transfer-progress plus transfer steps on a scene; file names and percentages come from the writer"
     }
   },
-  "planned_kits": [
-    "transfer-progress"
-  ]
+  "planned_kits": []
 }

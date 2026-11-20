@@ -23,7 +23,7 @@ VOCABULARY
 "clean": true   no overlays at all on this scene
 "callout": short text, at most 14 characters, shown big on screen
 "asset": a prop to show, at most 5 words
-"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it) or "browser-page-load" (a browser window: the address types, a progress bar fills, the page appears) or "checkout" (a payment panel: items, a total, a pay button, a success check) or "alert-glitch" (a warning panel that glitches with colour-split ghosts)
+"kit": "none" (no screen scene), "screen" (a fake browser or search screen scene) or "glass-ui" (a liquid glass app interface: now-playing pill, tab bar, round search button) or "terminal-typing" (a fake terminal window: typed commands and output lines) or "notification-stack" (phone-style notification banners that slide in one after another) or "counter-graph" (a big number counting up with a line graph drawing under it) or "browser-page-load" (a browser window: the address types, a progress bar fills, the page appears) or "checkout" (a payment panel: items, a total, a pay button, a success check) or "alert-glitch" (a warning panel that glitches with colour-split ghosts) or "transfer-progress" (a file transfer card: a file name, a progress bar filling, a percentage, a completion check)
 "screen": list of steps, each {"type": one of <<STEPS>>, "text": "...", "side": "left" or "right", "to": "bar" or "button"}
 "glass": list of steps for a glass-ui scene, each {"type": "pill" or "tab" or "search" or "hold", "text": "...", "sub": "...", "to": 0 to 3}
 "term": list of steps for a terminal-typing scene, each {"type": "cmd" (a typed command) or "out" (an output line) or "hold", "text": "...", "dur": seconds, for hold only}
@@ -32,6 +32,7 @@ VOCABULARY
 "page": list of steps for a browser-page-load scene, each {"type": "url" ("text": the address) or "load" ("dur": seconds) or "page" ("title" up to 40 characters, "text" up to 120) or "hold", "dur": seconds}
 "checkout": list of steps for a checkout scene, each {"type": "item" ("text": item name, optional "price" text) or "total" ("text" label, "price" text) or "pay" ("text": button label) or "done" ("text": success message) or "hold", "dur": seconds}. Only use names and prices the writer gave.
 "alert": list of steps for an alert-glitch scene, each {"type": "alert" ("title" up to 30 characters, "text" up to 80) or "glitch" ("dur": seconds) or "hold", "dur": seconds}. Only use words the writer gave.
+"transfer": list of steps for a transfer-progress scene, each {"type": "file" ("text": file name, optional "size" text) or "progress" ("to": 0 to 100, optional "dur": seconds) or "done" ("text": message) or "hold", "dur": seconds}. Only use names and numbers the writer gave.
 "chat": list of up to 2 {"side": "left" or "right", "text": "..."}
 "kitcam": one of <<KITCAM>>   camera inside a screen scene
 "ptr": {"from": one of <<PFROM>>, "path": one of <<PPATH>>, "ease": one of <<PEASE>>}   mouse pointer in a screen scene
@@ -80,8 +81,29 @@ def validate(d):
         out["callout"] = _s(d["callout"], 14)
     if d.get("asset"):
         out["asset"] = _s(d["asset"], 40)
-    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout", "alert-glitch"):
+    if d.get("kit") in ("none", "screen", "glass-ui", "terminal-typing", "notification-stack", "counter-graph", "browser-page-load", "checkout", "alert-glitch", "transfer-progress"):
         out["kit"] = d["kit"]
+    tr = d.get("transfer")
+    if isinstance(tr, list):
+        _n4 = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+        trs = []
+        for x in tr[:6]:
+            if not isinstance(x, dict):
+                continue
+            ty = x.get("type")
+            if ty == "file" and x.get("text"):
+                y = {"type": "file", "text": _s(x["text"], 34)}
+                if x.get("size"):
+                    y["size"] = _s(x["size"], 16)
+                trs.append(y)
+            elif ty == "progress" and _n4(x.get("to")):
+                trs.append({"type": "progress", "to": max(0.0, min(100.0, float(x["to"]))), "dur": float(x["dur"]) if _n4(x.get("dur")) else 1.5})
+            elif ty == "done" and x.get("text"):
+                trs.append({"type": "done", "text": _s(x["text"], 30)})
+            elif ty == "hold":
+                trs.append({"type": "hold", "dur": float(x["dur"]) if _n4(x.get("dur")) else 0.6})
+        if trs:
+            out["transfer"] = trs
     al = d.get("alert")
     if isinstance(al, list):
         _n3 = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)

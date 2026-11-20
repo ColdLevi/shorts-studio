@@ -1157,6 +1157,38 @@ def _alert_steps(sbi, text, avail):
     return steps if steps and _alert_secs(steps) <= avail else None
 
 
+def _transfer_secs(steps):
+    t = 0.3
+    for x in steps:
+        t += (0.5 if x["type"] == "file" else x.get("dur", 1.5) if x["type"] == "progress" else 0.8 if x["type"] == "done" else x.get("dur", 0.6)) + 0.2
+    return t
+
+
+def _transfer_steps(sbi, text, avail):
+    isnum = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    steps = []
+    own = sbi.get("transfer")
+    if isinstance(own, list):
+        for s in own[:6]:
+            if not isinstance(s, dict):
+                continue
+            ty = s.get("type")
+            if ty == "file" and s.get("text"):
+                x = {"type": "file", "text": str(s["text"])[:34]}
+                if s.get("size"):
+                    x["size"] = str(s["size"])[:16]
+                steps.append(x)
+            elif ty == "progress" and isnum(s.get("to")):
+                steps.append({"type": "progress", "to": max(0.0, min(100.0, float(s["to"]))), "dur": float(s["dur"]) if isnum(s.get("dur")) else 1.5})
+            elif ty == "done" and s.get("text"):
+                steps.append({"type": "done", "text": str(s["text"])[:30]})
+            elif ty == "hold":
+                steps.append({"type": "hold", "dur": float(s["dur"]) if isnum(s.get("dur")) else 0.6})
+    while len(steps) > 1 and _transfer_secs(steps) > avail:
+        steps.pop()
+    return steps if steps and _transfer_secs(steps) <= avail else None
+
+
 def _glass_secs(steps):
     t = 0.3
     for x in steps:
@@ -1484,6 +1516,16 @@ def director_pass(t, spec=None):
                 notes.append("%s: a glitching alert (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _al)))
                 continue
             notes.append("%s: alert-glitch asked for, but it needs written alert text, a scene of 3 s or more, and room from the last kit, so none here." % tag)
+            _kit = "none"
+        if _kit == "transfer-progress":
+            _tr = _transfer_steps(sbi, text, c["end"] - c["start"] - 0.4)
+            if i > 0 and (c["end"] - c["start"]) >= 3.5 and i - _kb["last"] >= 2 and _tr:
+                put("transfer-progress", c, 0.3, steps=_tr)
+                _kb["last"] = i
+                last_end, last_kind = c["end"], "kit"
+                notes.append("%s: a transfer progress card (%s) as the writer asked." % (tag, ", ".join(x["type"] for x in _tr)))
+                continue
+            notes.append("%s: transfer-progress asked for, but it needs written steps, a scene of 3.5 s or more, and room from the last kit, so none here." % tag)
             _kit = "none"
         if _kit not in ("none", "off", "no") and i > 0 and (c["end"] - c["start"]) >= 5.2:
             _hit = re.search(_KIT_RX, low)
