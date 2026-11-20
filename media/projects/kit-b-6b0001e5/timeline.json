@@ -1,0 +1,1119 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "kit-b-6b0001e5",
+ "rev": 1,
+ "title": "Kit Test B: Phone After Dark",
+ "duration": 37.98,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "clean",
+   "font": "Inter",
+   "case": "none",
+   "position": "bottom",
+   "highlight": "#FF3333",
+   "color": "#FFFFFF"
+  },
+  "transition": {
+   "type": "cut",
+   "duration": 0
+  },
+  "motion": "drift",
+  "font": "Inter",
+  "transitions": [
+   "cut",
+   "slide-up",
+   "fade"
+  ],
+  "fx": {
+   "hold": 1,
+   "jitter": 0,
+   "letterbox": 0,
+   "texture": "none",
+   "flicker": false
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.05) brightness(1.0)",
+  "accent": "#FFD43B",
+  "palette": [
+   "#0D0D0D",
+   "#F4F4F4"
+  ],
+  "progress_bar": false,
+  "vignette": false,
+  "cursor": {
+   "src": "library/cursor/upload-3/cursor.svg",
+   "pack": "upload-3",
+   "file": "cursor.svg",
+   "size": 48,
+   "tipX": 0.06,
+   "tipY": 0.05
+  },
+  "learned": "upload-3",
+  "preset": "upload-3"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 5.805,
+    "narration": "Not every notification is friendly, and some of them arrive at the worst possible moment of the day.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone screen glowing red in a dark room, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9ad7da738d2f",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.72,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 5.805,
+    "end": 12.371,
+    "narration": "When the battery hits ten percent the phone starts shouting at you, and every warning feels louder than the last.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a dim hallway lit by a single red light, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "568530c2fb20",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.72,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 12.371,
+    "end": 18.48,
+    "narration": "You plug in at last, and the screen settles down while the long evening finally begins to feel calm.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone plugged into a wall charger at night, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9d858a183031",
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.72,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 18.48,
+    "end": 24.767,
+    "narration": "Meanwhile the phone quietly backs up your photos in the background, one big file after another, all night long.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone charging beside a lamp on a nightstand, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "3afc712a3226",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.72,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 24.767,
+    "end": 30.619,
+    "narration": "By morning everything is safe, and your phone is ready to start the whole busy cycle again for you.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, morning light falling across a quiet bedroom, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "fe40c10e4eee",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.72,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 30.619,
+    "end": 37.176,
+    "narration": "Look at how people search: type a few words, press enter, and a seller replies within seconds.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Moody cinematic photo, film grain, a phone on a wooden table showing a blurred marketplace, no text, no letters"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "9cc3404300f3",
+    "transition": {
+     "type": "carry-right",
+     "duration": 0.4
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.72,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Not",
+     "start": 0.1,
+     "end": 0.362
+    },
+    {
+     "word": "every",
+     "start": 0.375,
+     "end": 0.613
+    },
+    {
+     "word": "notification",
+     "start": 0.613,
+     "end": 1.35
+    },
+    {
+     "word": "is",
+     "start": 1.35,
+     "end": 1.462
+    },
+    {
+     "word": "friendly,",
+     "start": 1.475,
+     "end": 2.05
+    },
+    {
+     "word": "and",
+     "start": 2.21,
+     "end": 2.372
+    },
+    {
+     "word": "some",
+     "start": 2.523,
+     "end": 2.735
+    },
+    {
+     "word": "of",
+     "start": 2.735,
+     "end": 2.822
+    },
+    {
+     "word": "them",
+     "start": 2.822,
+     "end": 2.935
+    },
+    {
+     "word": "arrive",
+     "start": 2.935,
+     "end": 3.523
+    },
+    {
+     "word": "at",
+     "start": 3.698,
+     "end": 3.785
+    },
+    {
+     "word": "the",
+     "start": 3.785,
+     "end": 3.872
+    },
+    {
+     "word": "worst",
+     "start": 3.885,
+     "end": 4.223
+    },
+    {
+     "word": "possible",
+     "start": 4.223,
+     "end": 4.735
+    },
+    {
+     "word": "moment",
+     "start": 4.735,
+     "end": 5.047
+    },
+    {
+     "word": "of",
+     "start": 5.06,
+     "end": 5.11
+    },
+    {
+     "word": "the",
+     "start": 5.11,
+     "end": 5.172
+    },
+    {
+     "word": "day.",
+     "start": 5.172,
+     "end": 5.585
+    },
+    {
+     "word": "When",
+     "start": 5.865,
+     "end": 5.94
+    },
+    {
+     "word": "the",
+     "start": 5.952,
+     "end": 6.028
+    },
+    {
+     "word": "battery",
+     "start": 6.028,
+     "end": 6.39
+    },
+    {
+     "word": "hits",
+     "start": 6.39,
+     "end": 6.615
+    },
+    {
+     "word": "ten",
+     "start": 6.615,
+     "end": 6.952
+    },
+    {
+     "word": "percent",
+     "start": 6.952,
+     "end": 7.44
+    },
+    {
+     "word": "the",
+     "start": 7.502,
+     "end": 7.603
+    },
+    {
+     "word": "phone",
+     "start": 7.603,
+     "end": 8.078
+    },
+    {
+     "word": "starts",
+     "start": 8.177,
+     "end": 8.552
+    },
+    {
+     "word": "shouting",
+     "start": 8.552,
+     "end": 9.015
+    },
+    {
+     "word": "at",
+     "start": 9.015,
+     "end": 9.115
+    },
+    {
+     "word": "you,",
+     "start": 9.128,
+     "end": 9.328
+    },
+    {
+     "word": "and",
+     "start": 9.488,
+     "end": 9.725
+    },
+    {
+     "word": "every",
+     "start": 9.738,
+     "end": 10.001
+    },
+    {
+     "word": "warning",
+     "start": 10.013,
+     "end": 10.413
+    },
+    {
+     "word": "feels",
+     "start": 10.425,
+     "end": 10.901
+    },
+    {
+     "word": "louder",
+     "start": 10.901,
+     "end": 11.401
+    },
+    {
+     "word": "than",
+     "start": 11.401,
+     "end": 11.513
+    },
+    {
+     "word": "the",
+     "start": 11.513,
+     "end": 11.588
+    },
+    {
+     "word": "last.",
+     "start": 11.588,
+     "end": 12.151
+    },
+    {
+     "word": "You",
+     "start": 12.431,
+     "end": 12.506
+    },
+    {
+     "word": "plug",
+     "start": 12.506,
+     "end": 12.744
+    },
+    {
+     "word": "in",
+     "start": 12.744,
+     "end": 12.818
+    },
+    {
+     "word": "at",
+     "start": 12.818,
+     "end": 12.906
+    },
+    {
+     "word": "last,",
+     "start": 12.919,
+     "end": 13.506
+    },
+    {
+     "word": "and",
+     "start": 13.666,
+     "end": 13.716
+    },
+    {
+     "word": "the",
+     "start": 13.716,
+     "end": 13.79
+    },
+    {
+     "word": "screen",
+     "start": 13.803,
+     "end": 14.265
+    },
+    {
+     "word": "settles",
+     "start": 14.265,
+     "end": 14.615
+    },
+    {
+     "word": "down",
+     "start": 14.615,
+     "end": 14.99
+    },
+    {
+     "word": "while",
+     "start": 15.003,
+     "end": 15.128
+    },
+    {
+     "word": "the",
+     "start": 15.128,
+     "end": 15.24
+    },
+    {
+     "word": "long",
+     "start": 15.253,
+     "end": 15.815
+    },
+    {
+     "word": "evening",
+     "start": 15.94,
+     "end": 16.428
+    },
+    {
+     "word": "finally",
+     "start": 16.548,
+     "end": 17.085
+    },
+    {
+     "word": "begins",
+     "start": 17.085,
+     "end": 17.498
+    },
+    {
+     "word": "to",
+     "start": 17.498,
+     "end": 17.573
+    },
+    {
+     "word": "feel",
+     "start": 17.573,
+     "end": 17.898
+    },
+    {
+     "word": "calm.",
+     "start": 17.898,
+     "end": 18.26
+    },
+    {
+     "word": "Meanwhile",
+     "start": 18.54,
+     "end": 18.852
+    },
+    {
+     "word": "the",
+     "start": 18.852,
+     "end": 18.94
+    },
+    {
+     "word": "phone",
+     "start": 18.953,
+     "end": 19.378
+    },
+    {
+     "word": "quietly",
+     "start": 19.44,
+     "end": 20.003
+    },
+    {
+     "word": "backs",
+     "start": 20.003,
+     "end": 20.428
+    },
+    {
+     "word": "up",
+     "start": 20.428,
+     "end": 20.515
+    },
+    {
+     "word": "your",
+     "start": 20.527,
+     "end": 20.628
+    },
+    {
+     "word": "photos",
+     "start": 20.64,
+     "end": 21.152
+    },
+    {
+     "word": "in",
+     "start": 21.165,
+     "end": 21.203
+    },
+    {
+     "word": "the",
+     "start": 21.215,
+     "end": 21.277
+    },
+    {
+     "word": "background,",
+     "start": 21.277,
+     "end": 21.915
+    },
+    {
+     "word": "one",
+     "start": 22.075,
+     "end": 22.35
+    },
+    {
+     "word": "big",
+     "start": 22.362,
+     "end": 22.587
+    },
+    {
+     "word": "file",
+     "start": 22.587,
+     "end": 22.987
+    },
+    {
+     "word": "after",
+     "start": 22.987,
+     "end": 23.263
+    },
+    {
+     "word": "another,",
+     "start": 23.263,
+     "end": 23.65
+    },
+    {
+     "word": "all",
+     "start": 23.81,
+     "end": 23.985
+    },
+    {
+     "word": "night",
+     "start": 23.985,
+     "end": 24.235
+    },
+    {
+     "word": "long.",
+     "start": 24.235,
+     "end": 24.547
+    },
+    {
+     "word": "By",
+     "start": 24.827,
+     "end": 24.939
+    },
+    {
+     "word": "morning",
+     "start": 24.952,
+     "end": 25.352
+    },
+    {
+     "word": "everything",
+     "start": 25.465,
+     "end": 25.965
+    },
+    {
+     "word": "is",
+     "start": 25.965,
+     "end": 26.077
+    },
+    {
+     "word": "safe,",
+     "start": 26.077,
+     "end": 26.627
+    },
+    {
+     "word": "and",
+     "start": 26.787,
+     "end": 26.849
+    },
+    {
+     "word": "your",
+     "start": 26.849,
+     "end": 26.949
+    },
+    {
+     "word": "phone",
+     "start": 26.949,
+     "end": 27.299
+    },
+    {
+     "word": "is",
+     "start": 27.299,
+     "end": 27.412
+    },
+    {
+     "word": "ready",
+     "start": 27.412,
+     "end": 27.611
+    },
+    {
+     "word": "to",
+     "start": 27.611,
+     "end": 27.674
+    },
+    {
+     "word": "start",
+     "start": 27.686,
+     "end": 28.011
+    },
+    {
+     "word": "the",
+     "start": 28.024,
+     "end": 28.099
+    },
+    {
+     "word": "whole",
+     "start": 28.111,
+     "end": 28.724
+    },
+    {
+     "word": "busy",
+     "start": 28.886,
+     "end": 29.186
+    },
+    {
+     "word": "cycle",
+     "start": 29.186,
+     "end": 29.662
+    },
+    {
+     "word": "again",
+     "start": 29.662,
+     "end": 29.936
+    },
+    {
+     "word": "for",
+     "start": 29.936,
+     "end": 30.174
+    },
+    {
+     "word": "you.",
+     "start": 30.174,
+     "end": 30.399
+    },
+    {
+     "word": "Look",
+     "start": 30.679,
+     "end": 30.942
+    },
+    {
+     "word": "at",
+     "start": 30.991,
+     "end": 31.092
+    },
+    {
+     "word": "how",
+     "start": 31.092,
+     "end": 31.354
+    },
+    {
+     "word": "people",
+     "start": 31.367,
+     "end": 31.754
+    },
+    {
+     "word": "search:",
+     "start": 31.754,
+     "end": 32.342
+    },
+    {
+     "word": "type",
+     "start": 32.502,
+     "end": 32.69
+    },
+    {
+     "word": "a",
+     "start": 32.69,
+     "end": 32.765
+    },
+    {
+     "word": "few",
+     "start": 32.765,
+     "end": 33.09
+    },
+    {
+     "word": "words,",
+     "start": 33.103,
+     "end": 33.627
+    },
+    {
+     "word": "press",
+     "start": 33.803,
+     "end": 34.203
+    },
+    {
+     "word": "enter,",
+     "start": 34.328,
+     "end": 34.703
+    },
+    {
+     "word": "and",
+     "start": 34.863,
+     "end": 34.926
+    },
+    {
+     "word": "a",
+     "start": 34.926,
+     "end": 34.963
+    },
+    {
+     "word": "seller",
+     "start": 34.963,
+     "end": 35.376
+    },
+    {
+     "word": "replies",
+     "start": 35.376,
+     "end": 35.851
+    },
+    {
+     "word": "within",
+     "start": 35.851,
+     "end": 36.126
+    },
+    {
+     "word": "seconds.",
+     "start": 36.126,
+     "end": 36.738
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-AndrewMultilingualNeural",
+     "rate": "+0%",
+     "text": "Not every notification is friendly, and some of them arrive at the worst possible moment of the day. When the battery hits ten percent the phone starts shouting at you, and every warning feels louder than the last. You plug in at last, and the screen settles down while the long evening finally begins to feel calm. Meanwhile the phone quietly backs up your photos in the background, one big file after another, all night long. By morning everything is safe, and your phone is ready to start the whole busy cycle again for you. Look at how people search: type a few words, press enter, and a seller replies within seconds."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/ui-click-soft.mp3",
+    "at": 0.1,
+    "volume": 0.252,
+    "anchor": "v1",
+    "offset": 0.1
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 5.535,
+    "volume": 0.34,
+    "anchor": "v2",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 12.171,
+    "volume": 0.33,
+    "anchor": "v3",
+    "offset": -0.2
+   },
+   {
+    "id": "gs4",
+    "src": "library/sfx/clips/whoosh-soft.mp3",
+    "at": 18.21,
+    "volume": 0.289,
+    "anchor": "v4",
+    "offset": -0.27
+   },
+   {
+    "id": "gs5",
+    "src": "library/sfx/gen/swish.wav",
+    "at": 30.419,
+    "volume": 0.55,
+    "anchor": "v6",
+    "offset": -0.2
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 5.75,
+    "text": "notification",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.55,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 5.37,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 5.65,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 5.75,
+    "opacity": 0.3,
+    "seed": 4.56
+   },
+   {
+    "id": "ly3",
+    "kind": "alert-glitch",
+    "anchor": "v2",
+    "delay": 0.3,
+    "start": 6.1,
+    "end": 12.32,
+    "steps": [
+     {
+      "type": "alert",
+      "title": "Low battery",
+      "text": "10% left"
+     },
+     {
+      "type": "glitch",
+      "dur": 0.8
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.49,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 5.89,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 6.22,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly4",
+    "kind": "transfer-progress",
+    "anchor": "v4",
+    "delay": 0.3,
+    "start": 18.78,
+    "end": 24.72,
+    "steps": [
+     {
+      "type": "file",
+      "text": "holiday-photos.zip",
+      "size": "2.4 GB"
+     },
+     {
+      "type": "progress",
+      "to": 100.0,
+      "dur": 1.5
+     },
+     {
+      "type": "done",
+      "text": "Backup complete"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.49,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 5.67,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 5.94,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly5",
+    "kind": "illustration",
+    "anchor": "v6",
+    "delay": 0.4,
+    "start": 31.02,
+    "end": 37.13,
+    "asset": "person",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.46,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 5.8,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 6.11,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795162727555,
+  "updated": 1795162872764,
+  "topic": "a day in the life of a phone",
+  "hook": "Not every notification is friendly, and some of them arrive at the worst possible moment of the day.",
+  "image_style": "",
+  "format": "vertical",
+  "assets_release": "project-kit-b-6b0001e5",
+  "spec": {
+   "title": "Kit Test B: Phone After Dark",
+   "hook": "Not every notification is friendly, and some of them arrive at the worst possible moment of the day.",
+   "style": "",
+   "music": "docu-pluck",
+   "accent": "#FFD43B",
+   "voice": "en-US-AndrewMultilingualNeural",
+   "allow_plain": false,
+   "gemini_images": false,
+   "format": "vertical",
+   "fps": 30,
+   "topic": "a day in the life of a phone",
+   "category": "",
+   "style_preset": "upload-3",
+   "max_hold": 10,
+   "project_id": "kit-b-6b0001e5",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: data-forward (numbers first).",
+   "Beat 1 (\"Not every notification is friendly,...\"): the hook. No subject cutout, so I put NOTIFICATION in the top band where it cannot cover the face.",
+   "Beat 2 (\"When the battery hits ten percent t...\"): a glitching alert (alert, glitch) as the writer asked.",
+   "Beat 4 (\"Meanwhile the phone quietly backs u...\"): a transfer progress card (file, progress, done) as the writer asked.",
+   "Beat 6 (\"Look at how people search: type a f...\"): a \"person\" illustration builds itself on the right after the words land.",
+   "Left 2 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-cubic x3, entrance out-quint x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "directions": [
+   {
+    "scene": 6,
+    "direction": "search chat: type used studio speakers, press enter, then a reply bubble from the seller saying it is still available",
+    "followed": [
+     "kit",
+     "screen"
+    ],
+    "unsupported": []
+   }
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: push-in (alive baseline).",
+   "Beat 4: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 5: truck (side move for variety).",
+   "Beat 6: push-in (last picture: push-in)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "5 effects: swish, tick, whoosh_soft"
+ }
+}
