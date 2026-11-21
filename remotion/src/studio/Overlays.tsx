@@ -8,6 +8,52 @@ import type { TextOverlay } from './types';
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 
+// charrise: anim 'char-rise' - one character at a time rises into place with a small bounce, slow fade-out, optional black scrim
+const charBackOut = (p: number, k: number) => { const s = 1.70158 * k; const x = p - 1; return 1 + (s + 1) * x * x * x + s * x * x; };
+const CharRise: React.FC<{ o: TextOverlay; L: Layout; f: any; frame: number; fps: number; len: number; top: number }> = ({ o, L, f, frame, fps, len, top }) => {
+  const u = L.u;
+  const stagger = Math.max(0.01, Math.min(0.2, o.stagger ?? 0.045));
+  const bounce = Math.max(0, Math.min(1, o.bounce ?? 0.45));
+  const fadeOut = Math.max(0.2, Math.min(4, o.fadeOut ?? 1.2));
+  const size = (o.size ?? 120) * u;
+  const text = String(o.text || '');
+  const words = text.split(' ');
+  const settle = 0.5;
+  const out = interpolate(frame, [Math.max(0, len - fadeOut) * fps, len * fps], [1, 0], CLAMP);
+  const subAt = Math.max(0, Math.min(len - fadeOut - 0.3, Array.from(text).length * stagger + 0.1));
+  const subP = interpolate(frame, [subAt * fps, (subAt + 0.6) * fps], [0, 1], CLAMP);
+  const scrimIn = interpolate(frame, [0, 0.4 * fps], [0, 1], CLAMP);
+  let idx = 0;
+  return (
+    <AbsoluteFill>
+      {o.gradient === 'black' ? (
+        <div style={{ position: 'absolute', left: 0, right: 0, top: top - 240 * u, height: size * 2.6 + 480 * u, opacity: scrimIn * out,
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7) 38%, rgba(0,0,0,0.7) 62%, rgba(0,0,0,0))' }} />
+      ) : null}
+      <AbsoluteFill style={{ alignItems: 'center', top, opacity: out }}>
+        <div style={{ textAlign: 'center', maxWidth: L.w - L.pad * 2 }}>
+          <div style={{ color: o.color || 'white', fontFamily: f.family, fontWeight: f.weight(900), fontSize: size, lineHeight: 1.05, textShadow: '0 4px 18px rgba(0,0,0,0.6)' }}>
+            {words.map((w, wi) => (
+              <span key={wi} style={{ display: 'inline-block', whiteSpace: 'nowrap', marginRight: wi < words.length - 1 ? 0.28 * size : 0 }}>
+                {Array.from(w).map((ch, ci) => {
+                  const k = idx++;
+                  const p = Math.min(1, Math.max(0, (frame - k * stagger * fps) / (settle * fps)));
+                  const e = charBackOut(p, bounce * 2);
+                  return <span key={ci} style={{ display: 'inline-block', opacity: Math.min(1, p * 3), transform: `translateY(${(1 - e) * 0.55 * size}px)` }}>{ch}</span>;
+                })}
+              </span>
+            ))}
+          </div>
+          {o.sub ? (
+            <div style={{ marginTop: 10 * u, color: o.subColor || o.color || 'white', fontFamily: f.family, fontWeight: f.weight(600), fontSize: size * 0.36, letterSpacing: 2 * u,
+              opacity: subP, transform: `translateY(${(1 - subP) * 0.2 * size}px)`, textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}>{o.sub}</div>
+          ) : null}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 const OverlayBase: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: string; displayFont?: string }> = ({ o, L, accent, pid, displayFont }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -39,6 +85,9 @@ const OverlayBase: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: st
         </div>
       </AbsoluteFill>
     );
+  }
+  if (o.kind === 'text' && o.anim === 'char-rise') {
+    return <CharRise o={o} L={L} f={f} frame={frame} fps={fps} len={len} top={top} />;
   }
   if (o.kind === 'text') {
     return (
@@ -82,7 +131,7 @@ export const Overlay: React.FC<OvProps & { total?: number }> = (props) => {
   const total = props.total || 0;
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  if (o.kind === 'image' || o.kind === 'chapter') return <OverlayBase {...props} />;
+  if (o.kind === 'image' || o.kind === 'chapter' || (o.kind === 'text' && o.anim)) return <OverlayBase {...props} />;
   const hook = o.start < 4;
   const payoff = !hook && total > 0 && o.start >= total - 6;
   const e = hook ? 'punch' : payoff ? 'hold' : ENTR[Math.abs(Math.round(o.start)) % ENTR.length];

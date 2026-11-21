@@ -431,7 +431,18 @@
                       "kinetic",
                       "gauge",
                       "map",
-                      "icons", "network", "cap", "printing", "shrink", "crack", "date", "post", "profile", "pin", "jump", "tally"
+                      "icons",
+                      "network",
+                      "cap",
+                      "printing",
+                      "shrink",
+                      "crack",
+                      "date",
+                      "post",
+                      "profile",
+                      "pin",
+                      "jump",
+                      "tally"
                     ]
                   }
                 },
@@ -850,6 +861,32 @@
                 "type": "string"
               },
               "anchor": {
+                "type": "string"
+              },
+              "anim": {
+                "enum": [
+                  "char-rise"
+                ]
+              },
+              "size": {
+                "type": "number"
+              },
+              "stagger": {
+                "type": "number"
+              },
+              "bounce": {
+                "type": "number"
+              },
+              "fadeOut": {
+                "type": "number"
+              },
+              "gradient": {
+                "enum": [
+                  "black",
+                  "none"
+                ]
+              },
+              "subColor": {
                 "type": "string"
               }
             },
