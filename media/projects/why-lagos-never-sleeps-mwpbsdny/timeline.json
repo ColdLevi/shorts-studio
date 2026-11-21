@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "why-lagos-never-sleeps-mwpbsdny",
- "rev": 2,
+ "rev": 3,
  "title": "Why Lagos never sleeps",
  "duration": 11.82,
  "canvas": {
@@ -33,7 +33,8 @@
   "gfx": {
    "grain": 0.18,
    "vignette": 0.5,
-   "focus_pull": true
+   "focus_pull": true,
+   "bend": 0.5
   },
   "backdrop": "gradient",
   "palette": [
@@ -569,7 +570,19 @@
     "offset": -0.27
    }
   ],
-  "overlays": [],
+  "overlays": [
+   {
+    "id": "o1",
+    "kind": "text",
+    "start": 1.0,
+    "end": 6.0,
+    "text": "50",
+    "sub": "million",
+    "anim": "char-rise",
+    "gradient": "black",
+    "fadeOut": 1.2
+   }
+  ],
   "layers": [
    {
     "id": "ly1",
@@ -585,7 +598,7 @@
  },
  "meta": {
   "created": 1795200179500,
-  "updated": 1795201739870,
+  "updated": 1795281834494,
   "topic": "Why Lagos never sleeps",
   "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
   "image_style": "",

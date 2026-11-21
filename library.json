@@ -1061,6 +1061,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 2
+    },
+    {
+      "id": "short-102",
+      "title": "Why Lagos never sleeps",
+      "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
+      "accent": "#FFD43B",
+      "duration": 11.9,
+      "created": 1795282765559,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-102/short-102.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-102/short-102.jpg",
+      "project": "why-lagos-never-sleeps-mwpbsdny",
+      "width": 1080,
+      "height": 1920,
+      "rev": 3
     }
   ]
 }
