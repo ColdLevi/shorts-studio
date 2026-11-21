@@ -922,7 +922,10 @@ def main():
     if PAID_NOTES:
         tg(f"ℹ️ A paid tool didn't deliver ({PAID_NOTES[0][:120]}), so I used a still for that shot.")
     json.dump({**USAGE, "motion_requested": len(motion), "motion_used": len([i for i in clips if i in motion]), "stock_requested": len(stock), "stock_used": len(stock_ok)}, open(os.path.join(OUT, "usage.json"), "w"))
-    music = spec.get("music") or "docu-pluck"
+    # variety: no music named by the director -> pick a track from the clips folder, stable for the same title
+    _mdir = os.path.join(ROOT, "media", "library", "music", "clips")
+    _mall = sorted(f[:-4] for f in os.listdir(_mdir) if f.endswith(".mp3")) if os.path.isdir(_mdir) else []
+    music = spec.get("music") or (__import__("random").Random(str(spec.get("title", ""))).choice(_mall) if _mall else "docu-pluck")
     mpath = f"library/music/clips/{music}.mp3"
     if UA:   # step-assets
         mpath = UA.music_path(spec, UA_ITEMS, OUT, JOB, mpath)

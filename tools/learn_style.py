@@ -36,6 +36,17 @@ CAPTIONS = ["bold-pop", "karaoke-box", "clean", "subtitle", "neon", "word-by-wor
 FONTS = ["Montserrat", "Anton", "Bebas Neue", "Inter", "Poppins", "Oswald", "Roboto", "Playfair Display", "Bangers", "Space Grotesk",
          "Archivo Black", "Lora", "DM Serif Display", "Permanent Marker", "Rubik Mono One"]
 MUSIC = ["docu-pluck", "cinematic-min", "ambient-pad", "lofi-warm", "tech-pulse", "lullaby-tender"]
+# variety: every track in the music catalog becomes a choice
+try:
+    import json as _vj, os as _vo
+    _vroot = _vo.path.dirname(_vo.path.dirname(_vo.path.abspath(__file__)))
+    _vcat = _vj.load(open(_vo.path.join(_vroot, 'media', 'library', 'music', 'catalog.json'), encoding='utf-8'))
+    for _vc in (_vcat.get('clips') or []):
+        _vid = _vc.get('id')
+        if _vid and _vid not in MUSIC and _vo.path.exists(_vo.path.join(_vroot, 'media', 'library', 'music', 'clips', _vid + '.mp3')):
+            MUSIC.append(_vid)
+except Exception:
+    pass
 
 
 def tg(text):
@@ -294,7 +305,7 @@ def clean(r, metrics):
     return {"name": NAME, "source": SRC if not SRC.startswith("tg:") else "telegram upload", "summary": str(r.get("summary") or "")[:400],
             "base": r.get("base") if r.get("base") in RECIPES else "bold-pop", "mode": r.get("mode") if r.get("mode") in ("motion-graphics", "footage", "illustrated", "stop-motion", "mixed") else "mixed",
             "graphic_ratio": round(gr, 2), "beat_seconds": round(beat, 1), "image_style": str(r.get("image_style") or "")[:300],
-            "format": fmt, "music": r.get("music") if r.get("music") in MUSIC else "docu-pluck", "pacing": str(r.get("pacing") or "")[:200],
+            "format": fmt, "music": r.get("music") if r.get("music") in MUSIC else __import__("random").choice(MUSIC), "pacing": str(r.get("pacing") or "")[:200],
             "writer_notes": str(r.get("writer_notes") or "")[:500], "style_tokens": tokens, "metrics": metrics, "rhythm": sm.rhythm_summary(metrics)}
 
 

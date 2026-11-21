@@ -170,6 +170,13 @@ def _candidates(query, W, H, beat_len):
         match = (int(r.get("height") or 0) > int(r.get("width") or 0)) == portrait
         ranked.append((not match, rank, h))
     ranked.sort(key=lambda t: t[:2])
+    # variety: shuffle the first 12 clips that match the orientation, so each video judges different candidates
+    import random
+    _good = [t for t in ranked if not t[0]]
+    _rest = [t for t in ranked if t[0]]
+    _head = _good[:12]
+    random.shuffle(_head)
+    ranked = _head + _good[12:] + _rest
     return [h for _, _, h in ranked]
 
 
