@@ -2,7 +2,9 @@
 // The virtual camera: a pose (x, y, zoom, roll, tilt) per moment, hard ceilings, edge safety, and camera-led transitions.
 // Ceilings follow the motion-graphics skill (2.4): pan 8% of the frame, zoom +15%, roll 1.5 deg, tilt 3 deg.
 export type CamMove = 'push-in' | 'pull-out' | 'drift' | 'truck' | 'orbit' | 'hold' | 'handheld';
-export type Cam = { move: CamMove; amp?: number; dir?: 1 | -1; wobble?: number };
+export type CamKey = { t: number; x?: number; y?: number; zoom?: number; rot?: number; tilt?: number; ease?: 'linear' | 'in-out' | 'out' };
+// keys: t is 0..1 across the clip; x,y are fractions of the frame (ceiling still applies); blur = far-layer blur in px (cutout scenes).
+export type Cam = { move: CamMove; amp?: number; dir?: 1 | -1; wobble?: number; keys?: CamKey[]; blur?: number };
 export type Pose = { x: number; y: number; zoom: number; rot: number; tilt: number };
 type Sty = { opacity?: number; transform?: string; filter?: string };
 
@@ -58,6 +60,18 @@ export function pose(c: Cam, p: number, frame = 0, fps = 30, seed = 0): Pose {
     case 'truck': x = d * (0.03 - 0.06 * e) * k; zoom = 1.02; break;
     case 'orbit': x = d * (0.02 - 0.04 * e) * k; tilt = d * (1 - 2 * e) * k; zoom = 1.03; break;
     default: break;                  // hold, handheld
+  }
+  if (c.keys && c.keys.length >= 2) {
+    const ks = [...c.keys].filter((k) => k && typeof k.t === 'number').sort((m, n2) => m.t - n2.t);
+    if (ks.length >= 2) {
+      let i = 0;
+      while (i < ks.length - 2 && q > ks[i + 1].t) i++;
+      const A = ks[i], B = ks[i + 1];
+      const r = clamp((q - A.t) / Math.max(1e-6, B.t - A.t), 0, 1);
+      const f = B.ease === 'linear' ? r : B.ease === 'out' ? OUT(r) : IN_OUT(r);
+      const mix = (a: number | undefined, b: number | undefined, d: number) => (a ?? d) + ((b ?? d) - (a ?? d)) * f;
+      x = mix(A.x, B.x, 0); y = mix(A.y, B.y, 0); zoom = mix(A.zoom, B.zoom, 1); rot = mix(A.rot, B.rot, 0); tilt = mix(A.tilt, B.tilt, 0);
+    }
   }
   const w = wobbleAmt(c);
   if (w) {

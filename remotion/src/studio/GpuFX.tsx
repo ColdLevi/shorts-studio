@@ -17,6 +17,7 @@
 import React from 'react';
 import { AbsoluteFill, Solid, interpolate, random, useCurrentFrame, useVideoConfig } from 'remotion';
 import { barrelDistortion } from '@remotion/effects/barrel-distortion';
+import { wave } from '@remotion/effects/wave';
 import { chromaticAberration } from '@remotion/effects/chromatic-aberration';
 import { glow } from '@remotion/effects/glow';
 import { lensBlur } from '@remotion/effects/lens-blur';
@@ -33,6 +34,7 @@ export type GFX = {
   grain?: number; scanlines?: number; paper?: number; vignette?: number;
   chroma?: number; chroma_hit?: number; barrel?: number; glow?: number; vibrance?: number;
   focus_pull?: boolean;
+  bend?: number;   // 0..1 gentle ripple (wave effect), animated
 };
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
@@ -44,7 +46,7 @@ export function resolveGfx(g?: GFX | null): GFX | undefined {
   const r: GFX = {
     grain: num(g.grain, 0, 0.4), scanlines: num(g.scanlines, 0, 0.6), paper: num(g.paper, 0, 1), vignette: num(g.vignette, 0, 1),
     chroma: num(g.chroma, 0, 20), chroma_hit: num(g.chroma_hit, 0, 40), barrel: num(g.barrel, 0, 0.3), glow: num(g.glow, 0, 1.5),
-    vibrance: num(g.vibrance, -1, 1), focus_pull: !!g.focus_pull,
+    vibrance: num(g.vibrance, -1, 1), focus_pull: !!g.focus_pull, bend: num(g.bend, 0, 1),
   };
   const any = Object.entries(r).some(([, v]) => (typeof v === 'number' ? v !== 0 : v === true));
   return any ? r : undefined;
@@ -52,7 +54,7 @@ export function resolveGfx(g?: GFX | null): GFX | undefined {
 
 /** True when this picture needs the canvas pipeline (an effect on the picture itself). */
 export const wantsPictureFx = (g: GFX | undefined, transition?: string) =>
-  !!g && (!!g.chroma || !!g.chroma_hit || !!g.barrel || !!g.glow || !!g.vibrance || !!g.focus_pull || transition === 'focus');
+  !!g && (!!g.chroma || !!g.chroma_hit || !!g.barrel || !!g.glow || !!g.vibrance || !!g.bend || !!g.focus_pull || transition === 'focus');
 
 /** Effects on one still picture. `frame` is frames since the clip started coming in. */
 export function pictureEffects(g: GFX, frame: number, fps: number, L: Layout, transition?: string, enterLen = 0.5) {
@@ -65,6 +67,8 @@ export function pictureEffects(g: GFX, frame: number, fps: number, L: Layout, tr
   if (g.vibrance) fx.push(vibrance({ amount: g.vibrance }));
   if (g.glow) fx.push(glow({ radius: 26 * L.u, intensity: g.glow, threshold: 0.78 }));
   if (g.barrel) fx.push(barrelDistortion({ amount: g.barrel }));
+  // bend: amplitude and wavelength units are a first guess, tune after a test render
+  if (g.bend) fx.push(wave({ amplitude: g.bend * 14 * L.u, wavelength: 340 * L.u, phase: (frame / fps) * 1.4, direction: 'vertical' }));
   const hit = g.chroma_hit ? interpolate(frame, [0, 0.12 * fps, 0.45 * fps], [g.chroma_hit, g.chroma_hit, 0], CLAMP) : 0;
   const ca = (g.chroma || 0) + hit;
   if (ca > 0.2) fx.push(chromaticAberration({ amount: ca * L.u, angle: 0 }));

@@ -13,7 +13,7 @@ export const CamStack: React.FC<{ cam: Cam; p: number; seed: number; W: number; 
     const base = baseScale(cam);
     return (
       <AbsoluteFill style={{ overflow: 'hidden' }}>
-        <AbsoluteFill style={{ transform: poseTransform(po, base, W, H, fg ? 0.75 : 1, fg ? 0.8 : 1), transformOrigin: '50% 50%', filter: fg ? `blur(${(3 * u).toFixed(2)}px)` : undefined }}>
+        <AbsoluteFill style={{ transform: poseTransform(po, base, W, H, fg ? 0.75 : 1, fg ? 0.8 : 1), transformOrigin: '50% 50%', filter: fg ? `blur(${((cam.blur ?? 3) * u).toFixed(2)}px)` : undefined }}>
           {children}
         </AbsoluteFill>
         {fg ? <AbsoluteFill style={{ transform: poseTransform(po, base, W, H, 1, 1), transformOrigin: '50% 50%' }}>{fg}</AbsoluteFill> : null}
