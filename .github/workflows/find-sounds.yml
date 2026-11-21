@@ -1,0 +1,50 @@
+name: find-sounds
+
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "sfx, music or both"
+        required: false
+        default: "both"
+      per_query:
+        description: "Sounds to keep per search (music keeps 2 fewer, minimum 1)"
+        required: false
+        default: "3"
+      query:
+        description: "One custom search instead of the built-in list (leave empty for the list)"
+        required: false
+        default: ""
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg
+
+      - name: Find sounds
+        env:
+          KIND: ${{ github.event.inputs.kind }}
+          PER: ${{ github.event.inputs.per_query }}
+          QUERY: ${{ github.event.inputs.query }}
+        run: |
+          if [ -n "$QUERY" ]; then
+            python3 tools/sound_finder.py --kind "$KIND" --per-query "$PER" --query "$QUERY" --out sounds
+          else
+            python3 tools/sound_finder.py --kind "$KIND" --per-query "$PER" --out sounds
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sound-candidates
+          path: sounds
