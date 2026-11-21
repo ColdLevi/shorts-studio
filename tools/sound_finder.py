@@ -67,11 +67,31 @@ def http_get(url, binary=False, limit=None, tries=3):
     raise RuntimeError(f"download failed: {last}")
 
 
-def search(q, category, page_size=20):
-    params = {"q": q, "category": category, "page_size": page_size,
-              "license_type": "commercial,modification"}
+def search_params(q, extra, page=1, page_size=20):
+    params = {"q": q, "page_size": page_size, "page": page}
+    params.update(extra)
     url = API + "?" + urllib.parse.urlencode(params)
     return json.loads(http_get(url)).get("results", [])
+
+
+def search_multi(q, category, kind, need):
+    """Try strict filters first, then looser ones. Licence is always re-checked
+    on our side, so loosening the server filters never loosens safety."""
+    attempts = [("category+commercial", {"category": category, "license_type": "commercial"}, 1),
+                ("commercial", {"license_type": "commercial"}, 1),
+                ("no filter p1", {}, 1),
+                ("no filter p2", {}, 2)]
+    seen, notes = {}, []
+    for label, extra, page in attempts:
+        items = search_params(q, extra, page)
+        for it in items:
+            seen.setdefault(it["id"], it)
+        good = [i for i in seen.values() if usable(i, kind)]
+        notes.append(f"{label}={len(items)}")
+        if len(good) >= need:
+            break
+        time.sleep(0.5)
+    return list(seen.values()), " ".join(notes)
 
 
 def lic_code(item):
@@ -80,6 +100,11 @@ def lic_code(item):
 
 def usable(item, kind):
     if lic_code(item) not in OK_LICENSES or not item.get("url"):
+        return False
+    cat = (item.get("category") or "").lower()
+    bad = {"music", "audiobook", "podcast", "news", "pronunciation"} if kind == "sfx" \
+        else {"sound_effect", "audiobook", "podcast", "news", "pronunciation"}
+    if cat in bad:
         return False
     dur = (item.get("duration") or 0) / 1000.0
     lo, hi = SFX_LEN if kind == "sfx" else MUSIC_LEN
@@ -157,7 +182,7 @@ def find(kind, queries, per_query, out, manifest):
     kept = []
     for q in queries:
         try:
-            items = search(q, category)
+            items, notes = search_multi(q, category, kind, per_query * 2)
         except RateLimited as e:
             print(f"RATE LIMITED by Openverse (retry after {e}). Stopping; partial results kept.")
             return kept, True
@@ -165,7 +190,7 @@ def find(kind, queries, per_query, out, manifest):
             print(f"search failed for '{q}': {e}")
             continue
         cands = sorted([i for i in items if usable(i, kind)], key=rank)
-        print(f"[{kind}] '{q}': {len(items)} results, {len(cands)} usable", flush=True)
+        print(f"[{kind}] '{q}': {len(items)} results, {len(cands)} usable  ({notes})", flush=True)
         got = 0
         for it in cands:
             if got >= per_query:
