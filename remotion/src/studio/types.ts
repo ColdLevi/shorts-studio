@@ -112,6 +112,13 @@ export type TextOverlay = {
   font?: string;
   color?: string;
   background?: string;
+  anim?: 'char-rise';
+  size?: number;
+  stagger?: number;
+  bounce?: number;
+  fadeOut?: number;
+  gradient?: 'black' | 'none';
+  subColor?: string;
 };
 
 export type TimelineLayerKeyframe = {
