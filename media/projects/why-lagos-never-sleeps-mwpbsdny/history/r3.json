@@ -1,0 +1,666 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "why-lagos-never-sleeps-mwpbsdny",
+ "rev": 3,
+ "title": "Why Lagos never sleeps",
+ "duration": 11.82,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Poppins"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.267,
+    "narration": "Lagos has more than 15 million people, and most of them are awake right now.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Lagos has more than 15 million people, and most of them are awake right now."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "6f835972eded",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.8,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.267,
+    "end": 7.914,
+    "narration": "Traffic here is not a problem to solve. It is a way of life.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Traffic here is not a problem to solve. It is a way of life."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "c23c99c54c78",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cam": {
+     "move": "drift",
+     "amp": 0.74,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.914,
+    "end": 11.016,
+    "narration": "And at dawn, the whole city starts again.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "And at dawn, the whole city starts again."
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "7ed6822f9dbd",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.67,
+     "dir": -1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Lagos",
+     "start": 0.1,
+     "end": 0.55
+    },
+    {
+     "word": "has",
+     "start": 0.575,
+     "end": 0.738
+    },
+    {
+     "word": "more",
+     "start": 0.775,
+     "end": 0.925
+    },
+    {
+     "word": "than",
+     "start": 0.988,
+     "end": 1.125
+    },
+    {
+     "word": "15",
+     "start": 1.15,
+     "end": 1.562
+    },
+    {
+     "word": "million",
+     "start": 1.575,
+     "end": 1.863
+    },
+    {
+     "word": "people,",
+     "start": 1.925,
+     "end": 2.25
+    },
+    {
+     "word": "and",
+     "start": 2.41,
+     "end": 2.535
+    },
+    {
+     "word": "most",
+     "start": 2.535,
+     "end": 2.772
+    },
+    {
+     "word": "of",
+     "start": 2.81,
+     "end": 2.897
+    },
+    {
+     "word": "them",
+     "start": 2.972,
+     "end": 3.172
+    },
+    {
+     "word": "are",
+     "start": 3.185,
+     "end": 3.335
+    },
+    {
+     "word": "awake",
+     "start": 3.335,
+     "end": 3.597
+    },
+    {
+     "word": "right",
+     "start": 3.634,
+     "end": 3.835
+    },
+    {
+     "word": "now.",
+     "start": 3.872,
+     "end": 4.047
+    },
+    {
+     "word": "Traffic",
+     "start": 4.327,
+     "end": 4.752
+    },
+    {
+     "word": "here",
+     "start": 4.827,
+     "end": 4.964
+    },
+    {
+     "word": "is",
+     "start": 5.002,
+     "end": 5.089
+    },
+    {
+     "word": "not",
+     "start": 5.127,
+     "end": 5.314
+    },
+    {
+     "word": "a",
+     "start": 5.314,
+     "end": 5.351
+    },
+    {
+     "word": "problem",
+     "start": 5.439,
+     "end": 5.764
+    },
+    {
+     "word": "to",
+     "start": 5.814,
+     "end": 5.914
+    },
+    {
+     "word": "solve.",
+     "start": 5.939,
+     "end": 6.289
+    },
+    {
+     "word": "It",
+     "start": 6.569,
+     "end": 6.757
+    },
+    {
+     "word": "is",
+     "start": 6.757,
+     "end": 6.895
+    },
+    {
+     "word": "a",
+     "start": 6.895,
+     "end": 6.957
+    },
+    {
+     "word": "way",
+     "start": 7.045,
+     "end": 7.17
+    },
+    {
+     "word": "of",
+     "start": 7.182,
+     "end": 7.319
+    },
+    {
+     "word": "life.",
+     "start": 7.357,
+     "end": 7.694
+    },
+    {
+     "word": "And",
+     "start": 7.974,
+     "end": 8.148
+    },
+    {
+     "word": "at",
+     "start": 8.148,
+     "end": 8.273
+    },
+    {
+     "word": "dawn,",
+     "start": 8.349,
+     "end": 8.648
+    },
+    {
+     "word": "the",
+     "start": 8.808,
+     "end": 8.883
+    },
+    {
+     "word": "whole",
+     "start": 8.92,
+     "end": 9.095
+    },
+    {
+     "word": "city",
+     "start": 9.133,
+     "end": 9.408
+    },
+    {
+     "word": "starts",
+     "start": 9.433,
+     "end": 9.732
+    },
+    {
+     "word": "again.",
+     "start": 9.732,
+     "end": 10.07
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-NG-AbeoNeural",
+     "rate": "+0%",
+     "text": "Lagos has more than 15 million people, and most of them are awake right now. Traffic here is not a problem to solve. It is a way of life. And at dawn, the whole city starts again."
+    },
+    "segments": [
+     {
+      "clip": "v1",
+      "text": "Lagos has more than 15 million people, and most of them are awake right now.",
+      "from": "assets/voice.mp3",
+      "t0": 0.0,
+      "t1": 4.267,
+      "words": [
+       {
+        "word": "Lagos",
+        "start": 0.1,
+        "end": 0.55
+       },
+       {
+        "word": "has",
+        "start": 0.575,
+        "end": 0.738
+       },
+       {
+        "word": "more",
+        "start": 0.775,
+        "end": 0.925
+       },
+       {
+        "word": "than",
+        "start": 0.988,
+        "end": 1.125
+       },
+       {
+        "word": "15",
+        "start": 1.15,
+        "end": 1.562
+       },
+       {
+        "word": "million",
+        "start": 1.575,
+        "end": 1.863
+       },
+       {
+        "word": "people,",
+        "start": 1.925,
+        "end": 2.25
+       },
+       {
+        "word": "and",
+        "start": 2.41,
+        "end": 2.535
+       },
+       {
+        "word": "most",
+        "start": 2.535,
+        "end": 2.772
+       },
+       {
+        "word": "of",
+        "start": 2.81,
+        "end": 2.897
+       },
+       {
+        "word": "them",
+        "start": 2.972,
+        "end": 3.172
+       },
+       {
+        "word": "are",
+        "start": 3.185,
+        "end": 3.335
+       },
+       {
+        "word": "awake",
+        "start": 3.335,
+        "end": 3.597
+       },
+       {
+        "word": "right",
+        "start": 3.634,
+        "end": 3.835
+       },
+       {
+        "word": "now.",
+        "start": 3.872,
+        "end": 4.047
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     },
+     {
+      "clip": "v2",
+      "text": "Traffic here is not a problem to solve. It is a way of life.",
+      "from": "assets/voice.mp3",
+      "t0": 4.267,
+      "t1": 7.914,
+      "words": [
+       {
+        "word": "Traffic",
+        "start": 0.06,
+        "end": 0.485
+       },
+       {
+        "word": "here",
+        "start": 0.56,
+        "end": 0.697
+       },
+       {
+        "word": "is",
+        "start": 0.735,
+        "end": 0.822
+       },
+       {
+        "word": "not",
+        "start": 0.86,
+        "end": 1.047
+       },
+       {
+        "word": "a",
+        "start": 1.047,
+        "end": 1.084
+       },
+       {
+        "word": "problem",
+        "start": 1.172,
+        "end": 1.497
+       },
+       {
+        "word": "to",
+        "start": 1.547,
+        "end": 1.647
+       },
+       {
+        "word": "solve.",
+        "start": 1.672,
+        "end": 2.022
+       },
+       {
+        "word": "It",
+        "start": 2.302,
+        "end": 2.49
+       },
+       {
+        "word": "is",
+        "start": 2.49,
+        "end": 2.628
+       },
+       {
+        "word": "a",
+        "start": 2.628,
+        "end": 2.69
+       },
+       {
+        "word": "way",
+        "start": 2.778,
+        "end": 2.903
+       },
+       {
+        "word": "of",
+        "start": 2.915,
+        "end": 3.052
+       },
+       {
+        "word": "life.",
+        "start": 3.09,
+        "end": 3.427
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     },
+     {
+      "clip": "v3",
+      "text": "And at dawn, the whole city starts again.",
+      "from": "assets/voice.mp3",
+      "t0": 7.914,
+      "t1": 11.266,
+      "words": [
+       {
+        "word": "And",
+        "start": 0.06,
+        "end": 0.234
+       },
+       {
+        "word": "at",
+        "start": 0.234,
+        "end": 0.359
+       },
+       {
+        "word": "dawn,",
+        "start": 0.435,
+        "end": 0.734
+       },
+       {
+        "word": "the",
+        "start": 0.894,
+        "end": 0.969
+       },
+       {
+        "word": "whole",
+        "start": 1.006,
+        "end": 1.181
+       },
+       {
+        "word": "city",
+        "start": 1.219,
+        "end": 1.494
+       },
+       {
+        "word": "starts",
+        "start": 1.519,
+        "end": 1.818
+       },
+       {
+        "word": "again.",
+        "start": 1.818,
+        "end": 2.156
+       }
+      ],
+      "voice": "en-NG-AbeoNeural|+0%|"
+     }
+    ]
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 3.997,
+    "volume": 0.34,
+    "anchor": "v2",
+    "offset": -0.27
+   }
+  ],
+  "overlays": [
+   {
+    "anim": "char-rise",
+    "end": 6,
+    "fadeOut": 1.2,
+    "gradient": "black",
+    "id": "o1",
+    "kind": "text",
+    "start": 1,
+    "sub": "million",
+    "text": "50"
+   }
+  ],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.22,
+    "opacity": 0.15,
+    "seed": 3.11
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795200179500,
+  "updated": 1795284114872,
+  "topic": "Why Lagos never sleeps",
+  "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
+  "image_style": "",
+  "format": "vertical",
+  "assets_release": "project-why-lagos-never-sleeps-mwpbsdny",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "9:16",
+   "category": "",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
+   "music": "docu-pluck",
+   "project_id": "why-lagos-never-sleeps-mwpbsdny",
+   "style": "",
+   "style_preset": "documentary",
+   "title": "Why Lagos never sleeps",
+   "topic": "Why Lagos never sleeps",
+   "voice": "en-NG-AbeoNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: cold-open (opens quiet and lets the picture speak).",
+   "Beat 1 (\"Lagos has more than 15 million peop...\"): a quiet open. No hook text, the picture and the voice carry it.",
+   "Left 2 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: nothing to animate (1 layer(s) left alone)."
+  ],
+  "directions": [
+   {
+    "scene": 1,
+    "direction": "camera: slow push-in on a night market; sound effect: crowd murmur",
+    "followed": [
+     "asset",
+     "cam"
+    ],
+    "unsupported": [
+     "crowd murmur sound effect"
+    ]
+   },
+   {
+    "scene": 3,
+    "direction": "transition: hard cut",
+    "followed": [
+     "transition"
+    ],
+    "unsupported": []
+   }
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: drift (alive baseline).",
+   "Beat 3: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "1 effects: whoosh_soft"
+ }
+}
