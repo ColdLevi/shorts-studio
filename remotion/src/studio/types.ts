@@ -44,7 +44,7 @@ export type Style = {
   transitions?: TransitionType[]; // cycled between clips that set none (variety instead of one fade)
   fx?: { hold?: number; jitter?: number; texture?: 'paper' | 'grain' | 'film' | 'vhs' | 'none'; letterbox?: number; flicker?: boolean };
   // Remotion effects (GpuFX.tsx): grain, scanlines, paper, vignette, chroma, chroma_hit, barrel, glow, vibrance, focus_pull, off
-  gfx?: { off?: boolean; grain?: number; scanlines?: number; paper?: number; vignette?: number; chroma?: number; chroma_hit?: number;
+  gfx?: { bend?: number; off?: boolean; grain?: number; scanlines?: number; paper?: number; vignette?: number; chroma?: number; chroma_hit?: number;
     barrel?: number; glow?: number; vibrance?: number; focus_pull?: boolean };
   backdrop?: 'none' | 'grid' | 'gradient' | 'paper' | 'blueprint' | 'dots'; // shared animated backdrop under graphics
   recipe?: string;          // style recipe name (stop-motion, documentary, motion-explainer, ...)
