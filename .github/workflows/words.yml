@@ -33,7 +33,7 @@ jobs:
           AUDIO: ${{ github.event.inputs.audio_path }}
           SCRIPT: ${{ github.event.inputs.script_path }}
           MODEL: ${{ github.event.inputs.model }}
-        run: python3 tools/word_times.py "$AUDIO" "$SCRIPT" words-out --model "$MODEL" | tee words-out/summary.txt
+        run: mkdir -p words-out && python3 tools/word_times.py "$AUDIO" "$SCRIPT" words-out --model "$MODEL" | tee words-out/summary.txt
       - uses: actions/upload-artifact@v4
         with:
           name: word-times
