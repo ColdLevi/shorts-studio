@@ -1,0 +1,40 @@
+name: words
+
+on:
+  workflow_dispatch:
+    inputs:
+      audio_path:
+        description: "Voice-over file inside the repo"
+        required: true
+      script_path:
+        description: "Script .md inside the repo (## Scene N + narration: lines)"
+        required: true
+      model:
+        description: "Whisper model: tiny, base or small"
+        required: false
+        default: "small"
+
+jobs:
+  words:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg
+          pip install numpy faster-whisper
+      - name: Word times
+        env:
+          AUDIO: ${{ github.event.inputs.audio_path }}
+          SCRIPT: ${{ github.event.inputs.script_path }}
+          MODEL: ${{ github.event.inputs.model }}
+        run: python3 tools/word_times.py "$AUDIO" "$SCRIPT" words-out --model "$MODEL" | tee words-out/summary.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: word-times
+          path: words-out
