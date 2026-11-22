@@ -10,6 +10,7 @@ import { Workstation } from './desk';
 import type { ScreenSpec } from './desk';
 import { mouthFor } from './desk-math';
 import { ROOMS, Room, RoomKind } from './rooms';
+import { BOARDS } from './Board';
 
 export type SceneSpec = {
   pack?: string;
@@ -30,6 +31,7 @@ export type SceneSpec = {
   desk?: boolean;                // Pip sits at a desk (chair, keyboard, monitor)
   screen?: ScreenSpec;           // desk: monitor text { title, lines[], tone[] } (tone ok | bad per line)
   calc?: string;                 // desk: calculator key presses, e.g. "64340-64100="
+  board?: string;                // directed graphic big, Pip in a small window: cards book lanes triangle funding bars leg check close
   talk?: string;                 // mouth levels, one digit per 1/12 s (0 silent .. 9 loud), made from the voice file
 };
 
@@ -195,6 +197,34 @@ const Fact: React.FC<{ s: SceneSpec }> = ({ s }) => {
   );
 };
 
+// Directed scene: the scripted graphic fills the frame, Pip (the same Stage) sits in a small window and keeps talking.
+const Directed: React.FC<{ s: SceneSpec }> = ({ s }) => {
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames, width, height, vw, vh, portrait } = useView();
+  const Board = BOARDS[s.board || ''];
+  const k = portrait ? 0.5 : 0.45;
+  const cx = portrait ? 0 : -450, cy = portrait ? -450 : 0;
+  const fade = s.board === 'close' ? interpolate(frame, [durationInFrames - Math.round(fps * 0.9), durationInFrames], [0, 1], CLAMP) : 0;
+  const left = portrait ? (width - width * k) / 2 : width - width * k - 40;
+  const bottom = portrait ? 0 : 40;
+  const { board: _b, ...rest } = s;
+  return (
+    <AbsoluteFill style={{ background: '#150c26', overflow: 'hidden' }}>
+      <svg width={width} height={height} viewBox={`${-vw / 2} ${-vh / 2} ${vw} ${vh}`} style={{ position: 'absolute', inset: 0 }}>
+        <defs><radialGradient id="bd-bg" cx="0.5" cy="0.4" r="0.8"><stop offset="0" stopColor="#2a1850" /><stop offset="1" stopColor="#120a22" /></radialGradient></defs>
+        <rect x={-vw / 2} y={-vh / 2} width={vw} height={vh} fill="url(#bd-bg)" />
+        <g transform={`translate(${cx} ${cy})`}>{Board ? <Board frame={frame} fps={fps} dur={durationInFrames} /> : null}</g>
+      </svg>
+      <div style={{ position: 'absolute', left, bottom, width: width * k, height: height * k, borderRadius: 28, overflow: 'hidden', border: '5px solid #f6efe6', boxShadow: '0 10px 40px rgba(0,0,0,0.5)' }}>
+        <div style={{ width, height, transform: `scale(${k})`, transformOrigin: 'top left', position: 'relative' }}>
+          <Stage s={rest as SceneSpec} />
+        </div>
+      </div>
+      {fade > 0 ? <AbsoluteFill style={{ background: '#000', opacity: fade }} /> : null}
+    </AbsoluteFill>
+  );
+};
+
 export const SceneBeat: React.FC<{ spec: SceneSpec }> = ({ spec }) => {
   switch (spec.scene) {
     case 'title': return <Title s={spec} />;
@@ -202,6 +232,6 @@ export const SceneBeat: React.FC<{ spec: SceneSpec }> = ({ spec }) => {
     case 'insert': return <Stage s={{ shot: 'insert', pose: 'hold', ...spec }} />;
     case 'stage':
     case 'demo':
-    default: return <Stage s={spec} />;
+    default: return spec.board ? <Directed s={spec} /> : <Stage s={spec} />;
   }
 };
