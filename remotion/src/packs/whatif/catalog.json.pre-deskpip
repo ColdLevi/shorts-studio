@@ -1,0 +1,29 @@
+{
+  "pack": "whatif",
+  "about": "Stick-figure 'What If' explainers. Pip is the only character. Each shot is one scene clip: pick a scene, then its options. Every option below is a closed list: the director must not invent values.",
+  "scenes": {
+    "stage": "Pip in a room, optionally holding a prop. Use for most shots.",
+    "insert": "Extreme close-up following Pip's hand and the prop. Use for the object or action that matters.",
+    "title": "Title card with up to 4 lines and one rule line. First shot only.",
+    "fact": "Big count-up number with a label. Use for the one number the video is about."
+  },
+  "options": {
+    "shot": ["wide", "medium", "close", "insert"],
+    "room": ["study", "kitchen", "rooftop", "void"],
+    "pose": ["stand", "point", "hold", "present", "shrug", "cheer", "react", "think", "walk"],
+    "pose2": "same list as pose; Pip moves into it at `at` with a springy overshoot",
+    "at": "0..1, when pose2 happens in the clip (default 0.4)",
+    "prop": ["cookie", "phone", "coin", "bulb", "globe", "laptop", "box", "battery", "rocket"],
+    "fx": ["none", "pop", "vanish", "multiply"],
+    "count": "multiply: number of copies, 1..5",
+    "x": "Pip's horizontal position, -250..250 (default -90)",
+    "to": "walk target x; with pose 'walk' Pip crosses the frame",
+    "action": "short mono tag at the top, 1 to 3 words, e.g. 'copy'",
+    "readout": "big number that pops in, e.g. '13 min'",
+    "title": "title scene only: array of lines, each 18 characters or fewer is best",
+    "rule": "title scene only: the one rule of the video, short",
+    "number": "fact scene only: e.g. '13 min', '2,400', '7.5%'",
+    "label": "fact scene only: what the number is"
+  },
+  "pacing": "Cut every 1.5 to 3 seconds. Vary shot size on every cut. Never use the same room and shot twice in a row. Hold a wide shot at most 3 seconds."
+}

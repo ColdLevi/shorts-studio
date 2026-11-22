@@ -6,12 +6,15 @@ import { ACCENT, CLAMP, INK, MONO, PS, SANS } from './theme';
 import { POSES, mixPose, rigAt } from './rig';
 import { Pip } from './Pip';
 import { Prop } from './props';
+import { Workstation } from './desk';
+import type { ScreenSpec } from './desk';
+import { mouthFor } from './desk-math';
 import { ROOMS, Room, RoomKind } from './rooms';
 
 export type SceneSpec = {
   pack?: string;
   scene: string;                 // 'stage' | 'insert' | 'title' | 'fact' ('demo' = 'stage')
-  shot?: 'wide' | 'medium' | 'close' | 'insert';
+  shot?: 'wide' | 'medium' | 'close' | 'insert' | 'desk';
   room?: RoomKind;               // study | kitchen | rooftop | void
   pose?: string;                 // starting pose: stand point hold present shrug cheer react think walk
   pose2?: string;                // pose Pip moves into (with a springy overshoot) at `at`
@@ -24,6 +27,10 @@ export type SceneSpec = {
   readout?: string;              // big mono number that pops in, e.g. "13 min"
   title?: string[]; rule?: string; number?: string; label?: string;
   seed?: number;
+  desk?: boolean;                // Pip sits at a desk (chair, keyboard, monitor)
+  screen?: ScreenSpec;           // desk: monitor text { title, lines[], tone[] } (tone ok | bad per line)
+  calc?: string;                 // desk: calculator key presses, e.g. "64340-64100="
+  talk?: string;                 // mouth levels, one digit per 1/12 s (0 silent .. 9 loud), made from the voice file
 };
 
 type XY = [number, number];
@@ -66,15 +73,16 @@ const Stage: React.FC<{ s: SceneSpec }> = ({ s }) => {
   const shot = s.shot || 'wide';
 
   // pose: start pose, then a springy move into pose2
-  const A = POSES[s.pose || 'stand'] || POSES.stand;
+  const A = POSES[s.pose || (s.desk ? 'type' : 'stand')] || POSES.stand;
   const B = s.pose2 ? POSES[s.pose2] || A : undefined;
   const atF = Math.round((s.at ?? 0.4) * durationInFrames);
   const m = B ? spring({ frame: frame - atF, fps, config: { damping: 13, stiffness: 120, mass: 0.7 } }) : 0;
   const pose = B ? mixPose(A, B, m) : A;
   const J = rigAt(pose, t);
+  const mouth = mouthFor(s.talk, t, pose.mouth);
 
   // position: stand still, or walk from x to `to`
-  const x0 = s.x ?? -90;
+  const x0 = s.x ?? (s.desk ? 100 : -90);
   const px = s.to !== undefined ? interpolate(frame, [0, durationInFrames], [x0, s.to], { ...CLAMP, easing: ease }) : x0;
   const W = (p: XY): XY => [px + p[0] * PS, p[1] * PS];
   const head = W(J.head), hand = W(J.rHand), chest = W(J.neck);
@@ -85,6 +93,7 @@ const Stage: React.FC<{ s: SceneSpec }> = ({ s }) => {
     medium: { f: [px * 0.7 + 40, chest[1] + 40], k: 1.9 },
     close: { f: [head[0] * 0.9, head[1] + 60], k: 2.9 },
     insert: { f: hand, k: 3.4 },
+    desk: { f: [250, -270], k: 1.25 },
   };
   const cam = focus[shot] || focus.wide;
   const push = 1 + 0.05 * (frame / Math.max(1, durationInFrames));
@@ -111,8 +120,9 @@ const Stage: React.FC<{ s: SceneSpec }> = ({ s }) => {
     <Frame>
       <g transform={`scale(${cam.k * push}) translate(${-fx} ${-fy})`}>
         <Room kind={room} glow={glow} />
+        {s.desk ? <Workstation frame={frame} fps={fps} dur={durationInFrames} px={px} screen={s.screen} calc={s.calc} /> : null}
         <ellipse cx={px} cy="8" rx="120" ry="16" fill="#000" opacity="0.38" />
-        <Pip j={J} eyes={pose.eyes} mouth={pose.mouth} blink={blink} rimSide={rm.side} rim={rm.rim} x={px} lw={1 / Math.pow(cam.k, 0.5)} />
+        <Pip j={J} eyes={pose.eyes} mouth={mouth} blink={blink} rimSide={rm.side} rim={rm.rim} x={px} lw={1 / Math.pow(cam.k, 0.5)} />
         {s.prop && heldScale > 0.01 ? (
           <g transform={`translate(${hand[0] + 16 * PS * 0.6} ${hand[1] - 22 * PS * 0.6}) scale(${PS * heldScale * 0.9})`}><Prop kind={s.prop} /></g>
         ) : null}

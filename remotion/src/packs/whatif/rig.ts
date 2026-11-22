@@ -6,7 +6,7 @@ export type Pose = {
   la: [number, number]; ra: [number, number];   // left (-x) and right (+x) arm: upper arm, forearm
   ll: [number, number]; rl: [number, number];   // left and right leg: thigh, shin
   lean: number; tilt: number; lift: number; sh: number;
-  eyes: Eyes; mouth: Mouth; walk?: boolean;
+  eyes: Eyes; mouth: Mouth; walk?: boolean; typing?: boolean;
 };
 
 export const POSES: Record<string, Pose> = {
@@ -19,6 +19,8 @@ export const POSES: Record<string, Pose> = {
   react:   { la: [-38, -64],  ra: [38, 64],    ll: [12, 2], rl: [-12, -2], lean: -7, tilt: -4, lift: -4,  sh: 6,  eyes: 'wide',  mouth: 'o' },
   think:   { la: [-10, -6],   ra: [30, 162],   ll: [10, 2], rl: [-10, -2], lean: 2,  tilt: 11, lift: 0,   sh: 0,  eyes: 'open',  mouth: 'flat' },
   walk:    { la: [-10, -6],   ra: [10, 6],     ll: [0, 0],  rl: [0, 0],  lean: 3,  tilt: 0,  lift: 0,   sh: 0,  eyes: 'open',  mouth: 'smile', walk: true },
+  sit:     { la: [22, 90],    ra: [28, 96],    ll: [88, 3], rl: [82, -3], lean: 6,  tilt: 2,  lift: 55,  sh: 0,  eyes: 'open',  mouth: 'smile' },
+  type:    { la: [22, 90],    ra: [28, 96],    ll: [88, 3], rl: [82, -3], lean: 9,  tilt: 6,  lift: 55,  sh: 0,  eyes: 'open',  mouth: 'smile', typing: true },
 };
 
 const lerp = (a: number, b: number, m: number) => a + (b - a) * m;
@@ -30,7 +32,7 @@ export function mixPose(a: Pose, b: Pose, m: number): Pose {
   return {
     la: lerp2(a.la, b.la, m), ra: lerp2(a.ra, b.ra, m), ll: lerp2(a.ll, b.ll, m), rl: lerp2(a.rl, b.rl, m),
     lean: lerp(a.lean, b.lean, m), tilt: lerp(a.tilt, b.tilt, m), lift: lerp(a.lift, b.lift, m), sh: lerp(a.sh, b.sh, m),
-    eyes: pick.eyes, mouth: pick.mouth, walk: pick.walk,
+    eyes: pick.eyes, mouth: pick.mouth, walk: pick.walk, typing: pick.typing,
   };
 }
 
@@ -57,6 +59,11 @@ export function rigAt(p: Pose, t: number): Joints {
     rl = [-28 * s, -28 * s * 0.2 - 14 * Math.max(0, -Math.cos(ph))];
     la = [-10 - 26 * s, -6 - 26 * s]; ra = [10 - 26 * s, 6 - 26 * s];
     bob = -Math.abs(s) * 5;
+  }
+  if (p.typing) {
+    const k1 = Math.sin(t * 13), k2 = Math.sin(t * 11 + 1.9);
+    la = [la[0], la[1] + 9 * k1]; ra = [ra[0] + 4 * k2, ra[1] + 9 * k2];
+    bob += Math.sin(t * 3.1) * 1.2;
   }
   const hip: P2 = [0, HIP_Y + p.lift + bob];
   const lean = p.lean;
