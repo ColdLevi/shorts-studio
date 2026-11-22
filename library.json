@@ -1131,6 +1131,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-108",
+      "title": "How Crypto Arbitrage Actually Works",
+      "hook": "Two exchanges.",
+      "accent": "#FFD43B",
+      "duration": 206.6,
+      "created": 1795362364773,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-108/short-108.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-108/short-108.jpg",
+      "project": "how-crypto-arbitrage-actually-works-108",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
