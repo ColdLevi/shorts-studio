@@ -92,7 +92,7 @@ export const Book: React.FC<B> = (b) => {
 const Lane: React.FC<{ y: number; label: string; color: string }> = ({ y, label, color }) => (
   <g>
     <rect x="-470" y={y - 110} width="940" height="230" rx="22" fill="#1c1233" stroke={color} strokeWidth="4" />
-    <Txt x={-440} y={y - 76} size={26} fill={color} anchor="start" bold>{label}</Txt>
+    <Txt x={-440} y={y - 76} size={30} fill={color} anchor="start" bold>{label}</Txt>
   </g>
 );
 
@@ -116,7 +116,7 @@ export const Lanes: React.FC<B> = (b) => {
         return (
           <g key={s} transform={`translate(${xs[i]} -230) scale(${mn(o)})`}>
             <rect x="-100" y="-44" width="200" height="88" rx="14" fill={CARD} stroke={i >= 2 && stuck ? RED : INK} strokeWidth="3" />
-            <Txt x={0} y={8} size={s.length > 8 ? 21 : 26} bold>{s}</Txt>
+            <Txt x={0} y={8} size={s.length > 8 ? 25 : 30} bold>{s}</Txt>
           </g>
         );
       })}
@@ -125,7 +125,7 @@ export const Lanes: React.FC<B> = (b) => {
         <g transform="translate(115 -126)">
           <circle r="22" fill="#120a22" stroke={RED} strokeWidth="4" />
           <line x1="0" y1="0" x2="0" y2="-14" stroke={RED} strokeWidth="4" strokeLinecap="round" transform={`rotate(${spin})`} />
-          <Txt x={0} y={52} size={22} fill={RED} bold>PENDING WITHDRAWAL</Txt>
+          <Txt x={0} y={52} size={28} fill={RED} bold>PENDING WITHDRAWAL</Txt>
         </g>
       ) : null}
       <Txt x={0} y={-12} size={34} fill={gap > 0 ? ACCENT : RED} bold>{`GAP  $${gap}`}</Txt>
@@ -185,9 +185,10 @@ export const Triangle: React.FC<B> = (b) => {
           </g>
         );
       })}
-      <g transform={`translate(0 20) scale(${Math.max(0, ratio)})`}>
-        <Txt x={0} y={0} size={72} fill={col(1)} bold>1.0018x</Txt>
-        <Txt x={0} y={44} size={26} fill="#b9a9d9">LOOP RATIO, BEFORE FEES</Txt>
+      <g transform={`translate(0 345) scale(${Math.max(0, ratio)})`}>
+        <rect x="-210" y="-70" width="420" height="140" rx="22" fill="#150c26" stroke={GREEN} strokeWidth="4" />
+        <Txt x={0} y={14} size={72} fill={col(1)} bold>1.0018x</Txt>
+        <Txt x={0} y={52} size={24} fill="#b9a9d9">LOOP RATIO, BEFORE FEES</Txt>
       </g>
     </g>
   );
@@ -243,7 +244,7 @@ export const Bars: React.FC<B> = (b) => {
   const g = pop(b, 0.06, 15, 120);
   const fees = ramp(b, 0.28, 0.5);
   const slip = ramp(b, 0.5, 0.86);
-  const eaten = 320 * fees + 384.1 * slip;
+  const eaten = 320 * fees + 384.083 * slip;
   const net = 240 * (1 - eaten / W);
   const neg = net < 0;
   const gw = W * mn(g);
@@ -252,14 +253,14 @@ export const Bars: React.FC<B> = (b) => {
       <Txt x={0} y={-330} size={34} fill={GREEN} bold>GROSS SPREAD</Txt>
       <g transform="translate(-350 -280)">
         <rect x="0" y="0" width={gw} height="120" rx="16" fill={GREEN} />
-        <Txt x={20} y={76} size={52} fill="#0f2a1f" anchor="start" bold op={mn(g)}>+$240</Txt>
+        <Txt x={20} y={76} size={52} fill="#0f2a1f" anchor="start" bold op={mn(g) * (1 - mn(fees * 2))}>+$240</Txt>
         {[0, 1].map((i) => {
           const w = 160 * fees;
           return w > 1 ? <rect key={i} x={W - 160 * (i + 1) * fees} y="0" width={160 * fees} height="120" fill={RED} stroke="#150c26" strokeWidth="3" /> : null;
         })}
         {slip > 0 ? (() => {
-          const sx = W - 320 * fees - 384.1 * slip;
-          return <rect x={Math.max(0, sx)} y="0" width={sx < 0 ? 384.1 * slip + sx : 384.1 * slip} height="120" fill="#c0392b" stroke="#150c26" strokeWidth="3" />;
+          const sx = W - 320 * fees - 384.083 * slip;
+          return <rect x={Math.max(0, sx)} y="0" width={sx < 0 ? 384.083 * slip + sx : 384.083 * slip} height="120" fill="#c0392b" stroke="#150c26" strokeWidth="3" />;
         })() : null}
       </g>
       <Txt x={-350} y={-130} size={26} fill={RED} anchor="start" bold op={fees > 0.1 ? 1 : 0}>TAKER FEES x2</Txt>
@@ -348,8 +349,8 @@ export const Close: React.FC<B> = (b) => {
   const box = pop(b, 0.5, 14, 120);
   return (
     <g>
-      <PriceCard x={-215} y={-300} name="EXCHANGE A" price="$64,100" sc={0.55 * mn(a)} />
-      <PriceCard x={215} y={-300} name="EXCHANGE B" price="$64,340" sc={0.55 * mn(z)} />
+      <PriceCard x={-250} y={-300} name="EXCHANGE A" price="$64,100" sc={0.8 * mn(a)} />
+      <PriceCard x={250} y={-300} name="EXCHANGE B" price="$64,340" sc={0.8 * mn(z)} />
       <g transform={`translate(0 -140) scale(${Math.max(0, tag)})`}>
         <rect x="-330" y="-46" width="660" height="92" rx="46" fill="rgba(60,0,0,0.6)" stroke={RED} strokeWidth="6" />
         <Txt x={0} y={16} size={42} fill={RED} bold>NET AFTER FEES  -$1.40</Txt>
@@ -365,6 +366,13 @@ export const Close: React.FC<B> = (b) => {
   );
 };
 
-export const BOARDS: Record<string, React.FC<B>> = { cards: Cards, book: Book, lanes: Lanes, triangle: Triangle, funding: Funding, bars: Bars, leg: Leg, check: Check, close: Close };
+// the boards are drawn on a 960 box; each is scaled (and nudged down) so it fills it and reads on a phone
+const big = (C: React.FC<B>, k: number, cy = 0): React.FC<B> => (p) => (
+  <g transform={`translate(0 ${cy}) scale(${k})`}><C {...p} /></g>
+);
+export const BOARDS: Record<string, React.FC<B>> = {
+  cards: big(Cards, 1.06, 40), book: big(Book, 1, 0), lanes: big(Lanes, 1, 0), triangle: big(Triangle, 1.1, -30),
+  funding: big(Funding, 1.12, -10), bars: big(Bars, 1.3, 90), leg: big(Leg, 1.18, 10), check: big(Check, 1.04, 40), close: big(Close, 1.1, 0),
+};
 export const BoardNames = Object.keys(BOARDS);
 void SANS;
