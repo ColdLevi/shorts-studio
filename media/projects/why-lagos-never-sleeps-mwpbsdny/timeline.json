@@ -1,7 +1,7 @@
 {
  "schema": "shorts-studio/timeline@1",
  "id": "why-lagos-never-sleeps-mwpbsdny",
- "rev": 3,
+ "rev": 4,
  "title": "Why Lagos never sleeps",
  "duration": 11.82,
  "canvas": {
@@ -116,9 +116,61 @@
     },
     "cutout": "assets/img_03_cut.png",
     "cam": {
-     "move": "pull-out",
+     "move": "truck",
      "amp": 0.67,
      "dir": -1
+    }
+   },
+   {
+    "id": "v9",
+    "kind": "scene",
+    "start": 11.016,
+    "end": 17.0,
+    "scene": {
+     "pack": "whatif",
+     "scene": "stage",
+     "desk": true,
+     "shot": "desk",
+     "room": "study",
+     "calc": "64340-64100=",
+     "talk": "074296418630852074296418630852074296418630852074296418630852074296418630",
+     "seed": 3
+    },
+    "gen": {
+     "tool": "scene"
+    }
+   },
+   {
+    "id": "v10",
+    "kind": "scene",
+    "start": 17.0,
+    "end": 23.0,
+    "scene": {
+     "pack": "whatif",
+     "scene": "stage",
+     "desk": true,
+     "shot": "desk",
+     "room": "study",
+     "screen": {
+      "title": "BTC PRICES",
+      "lines": [
+       "EXCHANGE A  64,100",
+       "EXCHANGE B  64,340",
+       "GAP  +$240",
+       "FEES+SLIPPAGE -$240"
+      ],
+      "tone": [
+       "",
+       "",
+       "ok",
+       "bad"
+      ]
+     },
+     "talk": "074296418630852074296418630852074296418630852074296418630852074296418630",
+     "seed": 5
+    },
+    "gen": {
+     "tool": "scene"
     }
    }
   ],
@@ -562,9 +614,9 @@
   "sfx": [
    {
     "id": "gs1",
-    "src": "library/sfx/gen/whoosh_soft.wav",
+    "src": "library/sfx/clips/whoosh-soft.mp3",
     "at": 3.997,
-    "volume": 0.34,
+    "volume": 0.289,
     "anchor": "v2",
     "offset": -0.27
    }
@@ -597,7 +649,7 @@
  },
  "meta": {
   "created": 1795200179500,
-  "updated": 1795284114872,
+  "updated": 1795341152835,
   "topic": "Why Lagos never sleeps",
   "hook": "Lagos has more than 15 million people, and most of them are awake right now.",
   "image_style": "",
@@ -653,7 +705,7 @@
   "camera": [
    "Beat 1: push-in (hook: slow push-in).",
    "Beat 2: drift (alive baseline).",
-   "Beat 3: pull-out (last picture: slow pull-out)."
+   "Beat 3: truck (side move for variety)."
   ],
   "identify": {
    "clips": {},
@@ -661,6 +713,6 @@
    "summary": "0 of 0 pictures clean"
   },
   "qa": [],
-  "sound": "1 effects: whoosh_soft"
+  "sound": "1 effects: whoosh_soft; what-if: 0 effects"
  }
 }
