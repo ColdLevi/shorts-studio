@@ -842,7 +842,8 @@
                   "text",
                   "lower-third",
                   "image",
-                  "chapter"
+                  "chapter",
+                  "board"
                 ]
               },
               "start": {
@@ -887,6 +888,9 @@
                 ]
               },
               "subColor": {
+                "type": "string"
+              },
+              "board": {
                 "type": "string"
               }
             },

@@ -102,7 +102,7 @@ export type SfxClip = { id: string; src: string; at: number; volume?: number; an
 
 export type TextOverlay = {
   id: string;
-  kind: 'title' | 'text' | 'lower-third' | 'image' | 'chapter';
+  kind: 'title' | 'text' | 'lower-third' | 'image' | 'chapter' | 'board';
   start: number;
   end: number;
   text?: string;
@@ -119,6 +119,7 @@ export type TextOverlay = {
   fadeOut?: number;
   gradient?: 'black' | 'none';
   subColor?: string;
+  board?: string;   // kind 'board': cards book lanes triangle funding bars leg check close
 };
 
 export type TimelineLayerKeyframe = {

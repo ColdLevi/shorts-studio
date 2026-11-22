@@ -5,6 +5,7 @@ import { url } from './assets';
 import { font } from './fonts';
 import { Layout } from './layout';
 import type { TextOverlay } from './types';
+import { BOARDS } from '../packs/whatif/Board';
 
 const CLAMP = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const };
 
@@ -123,6 +124,25 @@ const OverlayBase: React.FC<{ o: TextOverlay; L: Layout; accent: string; pid: st
   );
 };
 
+// board: a scripted graphic (price cards, lanes, triangle ...) over the footage, on a soft dark scrim. Timed by anchor/start/end like any overlay.
+const BoardOverlay: React.FC<{ o: TextOverlay; L: Layout }> = ({ o, L }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const Board = BOARDS[o.board || ''];
+  if (!Board) return null;
+  const dur = Math.max(15, Math.round(Math.max(0.5, o.end - o.start) * fps));
+  const op = Math.min(interpolate(frame, [0, 0.35 * fps], [0, 1], CLAMP), interpolate(frame, [dur - 0.4 * fps, dur], [1, 0], CLAMP));
+  const vw = L.w / L.u, vh = L.h / L.u;
+  return (
+    <AbsoluteFill style={{ opacity: op }}>
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(14,8,32,0.80) 0%, rgba(14,8,32,0.55) 100%)' }} />
+      <svg width={L.w} height={L.h} viewBox={`${-vw / 2} ${-vh / 2} ${vw} ${vh}`} style={{ position: 'absolute', inset: 0 }}>
+        <Board frame={frame} fps={fps} dur={dur} />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
 type OvProps = React.ComponentProps<typeof OverlayBase>;
 const ENTR = ['slide-l', 'blur', 'rise', 'wipe', 'slide-r'] as const;
 // o1: act-aware entrance. Hook (first 4 s) punches in; the middle rotates styles so neighbours differ.
@@ -131,6 +151,7 @@ export const Overlay: React.FC<OvProps & { total?: number }> = (props) => {
   const total = props.total || 0;
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  if (o.kind === 'board') return <BoardOverlay o={o} L={L} />;
   if (o.kind === 'image' || o.kind === 'chapter' || (o.kind === 'text' && o.anim)) return <OverlayBase {...props} />;
   const hook = o.start < 4;
   const payoff = !hook && total > 0 && o.start >= total - 6;
