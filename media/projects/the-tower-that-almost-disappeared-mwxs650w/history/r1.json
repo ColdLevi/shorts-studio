@@ -1,0 +1,1050 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-tower-that-almost-disappeared-mwxs650w",
+ "rev": 1,
+ "title": "The Tower That Almost Disappeared",
+ "duration": 32.62,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.702,
+    "narration": "In nineteen oh nine, the Eiffel Tower was running out of time.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "In nineteen oh nine, the Eiffel Tower was running out of time."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "52e6a3e7ba6a",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.2,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 3.702,
+    "end": 7.295,
+    "narration": "It was built for the 1889 World's Fair in Paris.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "It was built for the 1889 World's Fair in Paris."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "d93430e7537f",
+    "cam": {
+     "move": "drift",
+     "amp": 0.66,
+     "dir": 1,
+     "wobble": 0
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v3",
+    "start": 7.295,
+    "end": 10.288,
+    "narration": "Gustave Eiffel's permit gave it just twenty years.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Gustave Eiffel's permit gave it just twenty years."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "69d9d6db94ec",
+    "cam": {
+     "move": "truck",
+     "amp": 0.59,
+     "dir": -1
+    },
+    "transition": {
+     "type": "carry-left",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v4",
+    "start": 10.288,
+    "end": 12.668,
+    "narration": "After that, the city could tear it down.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "After that, the city could tear it down."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "23c5f746d798",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.53,
+     "dir": 1
+    },
+    "transition": {
+     "type": "cut",
+     "duration": 0.4
+    }
+   },
+   {
+    "id": "v5",
+    "start": 12.668,
+    "end": 17.381,
+    "narration": "So Eiffel made it useful, backing experiments in a new technology: radio.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "So Eiffel made it useful, backing experiments in a new technology: radio."
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "894b6f8ced47",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.72,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v6",
+    "start": 17.381,
+    "end": 21.897,
+    "narration": "Its great height made it a powerful antenna, valuable to the French military.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Its great height made it a powerful antenna, valuable to the French military."
+    },
+    "w": 1024,
+    "h": 1024,
+    "hash": "01328c96be75",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.72,
+     "dir": 1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v7",
+    "start": 21.897,
+    "end": 26.09,
+    "narration": "In 1910, Paris renewed the permit. The tower was saved.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "In 1910, Paris renewed the permit. The tower was saved."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "5833271341bd",
+    "cam": {
+     "move": "hold",
+     "amp": 0.72,
+     "dir": -1,
+     "wobble": 0
+    },
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    }
+   },
+   {
+    "id": "v8",
+    "start": 26.09,
+    "end": 28.945,
+    "narration": "Today it stands 330 metres tall.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Today it stands 330 metres tall. Not bad for a temporary structure."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c747e72c9267",
+    "cam": {
+     "move": "hold",
+     "amp": 0.58,
+     "dir": 1,
+     "wobble": 0
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   },
+   {
+    "id": "v9",
+    "start": 28.945,
+    "end": 31.824,
+    "narration": "Not bad for a temporary structure.",
+    "kind": "image",
+    "src": "assets/img_08.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "Today it stands 330 metres tall. Not bad for a temporary structure."
+    },
+    "w": 1360,
+    "h": 768,
+    "hash": "c747e72c9267",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.58,
+     "dir": -1
+    },
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.1,
+     "end": 0.25
+    },
+    {
+     "word": "nineteen",
+     "start": 0.263,
+     "end": 0.738
+    },
+    {
+     "word": "oh",
+     "start": 0.75,
+     "end": 0.838
+    },
+    {
+     "word": "nine,",
+     "start": 0.85,
+     "end": 1.262
+    },
+    {
+     "word": "the",
+     "start": 1.422,
+     "end": 1.535
+    },
+    {
+     "word": "Eiffel",
+     "start": 1.547,
+     "end": 1.872
+    },
+    {
+     "word": "Tower",
+     "start": 1.885,
+     "end": 2.272
+    },
+    {
+     "word": "was",
+     "start": 2.285,
+     "end": 2.459
+    },
+    {
+     "word": "running",
+     "start": 2.472,
+     "end": 2.76
+    },
+    {
+     "word": "out",
+     "start": 2.772,
+     "end": 2.897
+    },
+    {
+     "word": "of",
+     "start": 2.909,
+     "end": 2.985
+    },
+    {
+     "word": "time.",
+     "start": 2.997,
+     "end": 3.422
+    },
+    {
+     "word": "It",
+     "start": 3.702,
+     "end": 3.84
+    },
+    {
+     "word": "was",
+     "start": 3.852,
+     "end": 4.015
+    },
+    {
+     "word": "built",
+     "start": 4.027,
+     "end": 4.277
+    },
+    {
+     "word": "for",
+     "start": 4.289,
+     "end": 4.414
+    },
+    {
+     "word": "the",
+     "start": 4.427,
+     "end": 4.527
+    },
+    {
+     "word": "1889",
+     "start": 4.539,
+     "end": 5.652
+    },
+    {
+     "word": "World's",
+     "start": 5.664,
+     "end": 6.027
+    },
+    {
+     "word": "Fair",
+     "start": 6.039,
+     "end": 6.315
+    },
+    {
+     "word": "in",
+     "start": 6.327,
+     "end": 6.427
+    },
+    {
+     "word": "Paris.",
+     "start": 6.44,
+     "end": 7.015
+    },
+    {
+     "word": "Gustave",
+     "start": 7.295,
+     "end": 7.745
+    },
+    {
+     "word": "Eiffel's",
+     "start": 7.758,
+     "end": 8.12
+    },
+    {
+     "word": "permit",
+     "start": 8.133,
+     "end": 8.445
+    },
+    {
+     "word": "gave",
+     "start": 8.457,
+     "end": 8.695
+    },
+    {
+     "word": "it",
+     "start": 8.707,
+     "end": 8.77
+    },
+    {
+     "word": "just",
+     "start": 8.783,
+     "end": 9.095
+    },
+    {
+     "word": "twenty",
+     "start": 9.108,
+     "end": 9.445
+    },
+    {
+     "word": "years.",
+     "start": 9.457,
+     "end": 10.008
+    },
+    {
+     "word": "After",
+     "start": 10.288,
+     "end": 10.65
+    },
+    {
+     "word": "that,",
+     "start": 10.663,
+     "end": 10.925
+    },
+    {
+     "word": "the",
+     "start": 11.038,
+     "end": 11.175
+    },
+    {
+     "word": "city",
+     "start": 11.188,
+     "end": 11.488
+    },
+    {
+     "word": "could",
+     "start": 11.501,
+     "end": 11.675
+    },
+    {
+     "word": "tear",
+     "start": 11.688,
+     "end": 11.888
+    },
+    {
+     "word": "it",
+     "start": 11.9,
+     "end": 11.988
+    },
+    {
+     "word": "down.",
+     "start": 12.001,
+     "end": 12.388
+    },
+    {
+     "word": "So",
+     "start": 12.668,
+     "end": 12.943
+    },
+    {
+     "word": "Eiffel",
+     "start": 12.956,
+     "end": 13.28
+    },
+    {
+     "word": "made",
+     "start": 13.293,
+     "end": 13.493
+    },
+    {
+     "word": "it",
+     "start": 13.505,
+     "end": 13.581
+    },
+    {
+     "word": "useful,",
+     "start": 13.593,
+     "end": 14.03
+    },
+    {
+     "word": "backing",
+     "start": 14.19,
+     "end": 14.628
+    },
+    {
+     "word": "experiments",
+     "start": 14.64,
+     "end": 15.291
+    },
+    {
+     "word": "in",
+     "start": 15.303,
+     "end": 15.403
+    },
+    {
+     "word": "a",
+     "start": 15.416,
+     "end": 15.466
+    },
+    {
+     "word": "new",
+     "start": 15.478,
+     "end": 15.753
+    },
+    {
+     "word": "technology:",
+     "start": 15.765,
+     "end": 16.466
+    },
+    {
+     "word": "radio.",
+     "start": 16.626,
+     "end": 17.101
+    },
+    {
+     "word": "Its",
+     "start": 17.381,
+     "end": 17.581
+    },
+    {
+     "word": "great",
+     "start": 17.594,
+     "end": 17.857
+    },
+    {
+     "word": "height",
+     "start": 17.869,
+     "end": 18.232
+    },
+    {
+     "word": "made",
+     "start": 18.244,
+     "end": 18.469
+    },
+    {
+     "word": "it",
+     "start": 18.482,
+     "end": 18.569
+    },
+    {
+     "word": "a",
+     "start": 18.581,
+     "end": 18.644
+    },
+    {
+     "word": "powerful",
+     "start": 18.657,
+     "end": 19.206
+    },
+    {
+     "word": "antenna,",
+     "start": 19.219,
+     "end": 19.669
+    },
+    {
+     "word": "valuable",
+     "start": 19.829,
+     "end": 20.379
+    },
+    {
+     "word": "to",
+     "start": 20.391,
+     "end": 20.492
+    },
+    {
+     "word": "the",
+     "start": 20.504,
+     "end": 20.604
+    },
+    {
+     "word": "French",
+     "start": 20.617,
+     "end": 20.942
+    },
+    {
+     "word": "military.",
+     "start": 20.954,
+     "end": 21.617
+    },
+    {
+     "word": "In 1910",
+     "start": 21.897,
+     "end": 22.91
+    },
+    {
+     "word": "Paris",
+     "start": 23.03,
+     "end": 23.431
+    },
+    {
+     "word": "renewed",
+     "start": 23.443,
+     "end": 23.78
+    },
+    {
+     "word": "the",
+     "start": 23.793,
+     "end": 23.868
+    },
+    {
+     "word": "permit.",
+     "start": 23.881,
+     "end": 24.28
+    },
+    {
+     "word": "The",
+     "start": 24.56,
+     "end": 24.698
+    },
+    {
+     "word": "tower",
+     "start": 24.711,
+     "end": 25.098
+    },
+    {
+     "word": "was",
+     "start": 25.11,
+     "end": 25.273
+    },
+    {
+     "word": "saved.",
+     "start": 25.285,
+     "end": 25.81
+    },
+    {
+     "word": "Today",
+     "start": 26.09,
+     "end": 26.415
+    },
+    {
+     "word": "it",
+     "start": 26.428,
+     "end": 26.54
+    },
+    {
+     "word": "stands",
+     "start": 26.553,
+     "end": 26.978
+    },
+    {
+     "word": "330",
+     "start": 26.99,
+     "end": 27.915
+    },
+    {
+     "word": "metres",
+     "start": 27.928,
+     "end": 28.303
+    },
+    {
+     "word": "tall.",
+     "start": 28.315,
+     "end": 28.665
+    },
+    {
+     "word": "Not",
+     "start": 28.945,
+     "end": 29.207
+    },
+    {
+     "word": "bad",
+     "start": 29.219,
+     "end": 29.507
+    },
+    {
+     "word": "for",
+     "start": 29.519,
+     "end": 29.682
+    },
+    {
+     "word": "a",
+     "start": 29.695,
+     "end": 29.744
+    },
+    {
+     "word": "temporary",
+     "start": 29.757,
+     "end": 30.282
+    },
+    {
+     "word": "structure.",
+     "start": 30.295,
+     "end": 30.882
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "In nineteen oh nine, the Eiffel Tower was running out of time. It was built for the 1889 World's Fair in Paris. Gustave Eiffel's permit gave it just twenty years. After that, the city could tear it down. So Eiffel made it useful, backing experiments in a new technology: radio. Its great height made it a powerful antenna, valuable to the French military. In 1910, Paris renewed the permit. The tower was saved. Today it stands 330 metres tall. Not bad for a temporary structure."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "kinetic",
+    "anchor": "v1",
+    "delay": 0.1,
+    "start": 0.1,
+    "end": 3.65,
+    "text": "1909",
+    "y": 0.14,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-quint"
+     },
+     {
+      "t": 0.58,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.22,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.55,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly2",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.65,
+    "opacity": 0.25,
+    "seed": 5.5
+   },
+   {
+    "id": "ly3",
+    "kind": "corner-text",
+    "anchor": "v2",
+    "delay": 0.2,
+    "start": 3.9,
+    "end": 7.25,
+    "text": "1889",
+    "side": "tl",
+    "y": 0.12,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.5,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.05,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.35,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly4",
+    "kind": "illustration",
+    "anchor": "v7",
+    "delay": 0.4,
+    "start": 22.3,
+    "end": 26.04,
+    "asset": "building",
+    "x": 0.8,
+    "y": 0.2,
+    "w": 0.3,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.44,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 3.47,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 3.74,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   },
+   {
+    "id": "ly5",
+    "kind": "corner-text",
+    "anchor": "v8",
+    "delay": 0.2,
+    "start": 26.29,
+    "end": 28.89,
+    "text": "330 m",
+    "side": "tr",
+    "y": 0.12,
+    "keyframes": [
+     {
+      "t": 0,
+      "values": {
+       "opacity": 0,
+       "scale": 0.92
+      },
+      "ease": "out-cubic"
+     },
+     {
+      "t": 0.49,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "linear"
+     },
+     {
+      "t": 2.28,
+      "values": {
+       "opacity": 1,
+       "scale": 1
+      },
+      "ease": "in-cubic"
+     },
+     {
+      "t": 2.6,
+      "values": {
+       "opacity": 0,
+       "scale": 0.97
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795711414547,
+  "updated": 1795712816978,
+  "topic": "The Tower That Almost Disappeared",
+  "hook": "In nineteen oh nine, the Eiffel Tower was running out of time.",
+  "image_style": "",
+  "format": "landscape",
+  "assets_release": "project-the-tower-that-almost-disappeared-mwxs650w",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In nineteen oh nine, the Eiffel Tower was running out of time.",
+   "music": "docu-pluck",
+   "project_id": "the-tower-that-almost-disappeared-mwxs650w",
+   "style": "",
+   "style_preset": "documentary",
+   "title": "The Tower That Almost Disappeared",
+   "topic": "The Tower That Almost Disappeared",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: editorial (corner type and clean top lines).",
+   "Beat 1 (\"In nineteen oh nine, the Eiffel Tow...\"): the hook. No subject cutout, so I put 1909 in the top band where it cannot cover the face.",
+   "Beat 2 (\"It was built for the 1889 World's F...\"): 1889 sits tilted in a corner, revealed through a mask, clear of the subject.",
+   "Beat 7 (\"In 1910, Paris renewed the permit. ...\"): a \"building\" illustration builds itself on the right after the words land.",
+   "Beat 8 (\"Today it stands 330 metres tall.\"): 330 m sits tilted in a corner, revealed through a mask, clear of the subject.",
+   "Left 5 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: entrance out-cubic x3, entrance out-quint x1; 1 layer(s) left alone (washes, short layers, or script-set motion)."
+  ],
+  "directions": [
+   {
+    "scene": 1,
+    "direction": "camera: slow push-in; sound effect: none",
+    "followed": [
+     "cam"
+    ],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   },
+   {
+    "scene": 2,
+    "direction": "camera: drift; sound effect: none",
+    "followed": [
+     "cam"
+    ],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   },
+   {
+    "scene": 3,
+    "direction": "camera: push-in; sound effect: none",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 503 UNAVAILABLE: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.; gemini-3.7-flash: 429 RESOURCE_EXHAUSTED: You exceeded your current quota, please check your plan and billing details. For more information on this er)"
+    ]
+   },
+   {
+    "scene": 4,
+    "direction": "camera: pull-out; transition: cut; sound effect: none",
+    "followed": [
+     "cam",
+     "transition"
+    ],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   },
+   {
+    "scene": 5,
+    "direction": "camera: orbit; sound effect: none",
+    "followed": [
+     "cam"
+    ],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   },
+   {
+    "scene": 6,
+    "direction": "camera: slow push-in; sound effect: none",
+    "followed": [
+     "cam"
+    ],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   },
+   {
+    "scene": 7,
+    "direction": "camera: drift; sound effect: none",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 429 RESOURCE_EXHAUSTED: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for m)"
+    ]
+   },
+   {
+    "scene": 8,
+    "direction": "camera: pull-out; sound effect: none",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 429 RESOURCE_EXHAUSTED: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for m)"
+    ]
+   },
+   {
+    "scene": 9,
+    "direction": "camera: pull-out; sound effect: none",
+    "followed": [],
+    "unsupported": [
+     "could not read the direction (gemini-3.8-flash: 429 RESOURCE_EXHAUSTED: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for m)"
+    ]
+   }
+  ],
+  "camera": [
+   "Beat 1: push-in (the script direction (locked)).",
+   "Beat 2: drift (the script direction (locked)).",
+   "Beat 3: truck (side move for variety).",
+   "Beat 4: pull-out (the script direction (locked)).",
+   "Beat 5: orbit (the script direction (locked)).",
+   "Beat 6: push-in (the script direction (locked)).",
+   "Beat 7: hold (evidence on screen: the camera stops).",
+   "Beat 8: hold (evidence on screen: the camera stops).",
+   "Beat 9: push-in (last picture: push-in)."
+  ]
+ }
+}

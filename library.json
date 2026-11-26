@@ -1103,6 +1103,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 1
+    },
+    {
+      "id": "short-116",
+      "title": "The Tower That Almost Disappeared",
+      "hook": "In nineteen oh nine, the Eiffel Tower was running out of time.",
+      "accent": "#FFD43B",
+      "duration": 32.7,
+      "created": 1795715076261,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-116/short-116.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-116/short-116.jpg",
+      "project": "the-tower-that-almost-disappeared-mwxs650w",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }
