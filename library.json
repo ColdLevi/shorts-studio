@@ -1075,6 +1075,20 @@
       "width": 1080,
       "height": 1920,
       "rev": 3
+    },
+    {
+      "id": "short-114",
+      "title": "The Eiffel Tower's Planned Demolition",
+      "hook": "In 1909, Paris prepared to tear down the Eiffel Tower.",
+      "accent": "#FFD43B",
+      "duration": 45.9,
+      "created": 1795697261278,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-114/short-114.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-114/short-114.jpg",
+      "project": "the-eiffel-tower-s-planned-demolitio-mwxhqdwx",
+      "width": 1080,
+      "height": 1920,
+      "rev": 1
     }
   ]
 }
