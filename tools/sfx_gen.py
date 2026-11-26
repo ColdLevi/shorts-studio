@@ -12,10 +12,10 @@ ST = "pan=stereo|c0=c0|c1=c0"
 
 # name -> (inputs, filter_complex). Every graph ends in one stereo stream labelled [o].
 SFX = {
-    "whoosh_fast": ([N(0.5, 0.9), E("0.35*sin(2*PI*(250*t+9000*t*t))", 0.5)],
+    "whoosh_fast": ([N(0.5, 0.9), E("0*sin(2*PI*(250*t+9000*t*t))", 0.5)],
                     "[0]highpass=f=350,lowpass=f=7000,afade=t=in:d=0.18,afade=t=out:st=0.2:d=0.3[n];[1]afade=t=in:d=0.1,afade=t=out:st=0.25:d=0.25[c];"
                     "[n][c]amix=inputs=2:normalize=0,alimiter=limit=0.7:level=0," + ST + "[o]"),
-    "whoosh_soft": ([N(0.75, 0.7), E("0.2*sin(2*PI*(180*t+3000*t*t))", 0.75)],
+    "whoosh_soft": ([N(0.75, 0.7), E("0*sin(2*PI*(180*t+3000*t*t))", 0.75)],
                     "[0]highpass=f=200,lowpass=f=4200,afade=t=in:d=0.3,afade=t=out:st=0.3:d=0.45[n];[1]afade=t=in:d=0.25,afade=t=out:st=0.35:d=0.4[c];"
                     "[n][c]amix=inputs=2:normalize=0,alimiter=limit=0.6:level=0," + ST + "[o]"),
     "swish": ([N(0.5, 0.8)],
@@ -24,7 +24,7 @@ SFX = {
                 "[1]highpass=f=1500,afade=t=out:st=0:d=0.035[k];[0][k]amix=inputs=2:normalize=0,alimiter=limit=0.8:level=0," + ST + "[o]"),
     "pop": ([E("0.6*sin(2*PI*(650*t+3000*t*t))*exp(-16*t)", 0.22)], "[0]alimiter=limit=0.6:level=0," + ST + "[o]"),
     "tick": ([N(0.1, 0.55, "white")], "[0]highpass=f=2500,afade=t=out:st=0:d=0.06,alimiter=limit=0.5:level=0," + ST + "[o]"),
-    "riser": ([N(1.4, 0.7), E("0.22*sin(2*PI*(200*t+1500*t*t))", 1.4)],
+    "riser": ([N(1.4, 0.7), E("0*sin(2*PI*(200*t+1500*t*t))", 1.4)],
               "[0]highpass=f=700,afade=t=in:d=1.2,afade=t=out:st=1.3:d=0.1[n];[1]afade=t=in:d=1.2,afade=t=out:st=1.3:d=0.1[c];"
               "[n][c]amix=inputs=2:normalize=0,alimiter=limit=0.6:level=0," + ST + "[o]"),
 }
