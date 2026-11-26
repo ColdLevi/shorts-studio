@@ -1,0 +1,1074 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "the-eiffel-tower-s-planned-demolitio-mwxnzfpr",
+ "rev": 1,
+ "title": "The Eiffel Tower's Planned Demolition",
+ "duration": 45.82,
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.8
+  },
+  "motion": "parallax",
+  "recipe": "documentary",
+  "transitions": [
+   "dissolve",
+   "focus",
+   "dissolve",
+   "leak"
+  ],
+  "fx": {
+   "texture": "film",
+   "letterbox": 0.06
+  },
+  "gfx": {
+   "grain": 0.18,
+   "vignette": 0.5,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "palette": [
+   "#15110c",
+   "#6b4a2b"
+  ],
+  "grade": "contrast(1.08) saturate(0.82) sepia(0.2)",
+  "font": "Playfair Display",
+  "progress_bar": false,
+  "title": {
+   "font": "Playfair Display"
+  },
+  "preset": "documentary",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 4.218,
+    "narration": "In nineteen hundred and nine, Paris almost tore down the Eiffel Tower.",
+    "kind": "image",
+    "src": "assets/img_01.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, towering wrought-iron structure casting long shadows over a Parisian street, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4335cd2fa23a",
+    "cutout": "assets/img_01_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.68,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v2",
+    "start": 4.218,
+    "end": 10.698,
+    "narration": "Workers built the framework as a temporary centerpiece for the eighteen eighty-nine World's Fair on a strict twenty-year permit.",
+    "kind": "image",
+    "src": "assets/img_02.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, grand iron exhibition hall filled with milling crowds, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "05b7bc8a8202",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_02_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.68,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v3",
+    "start": 10.698,
+    "end": 14.608,
+    "narration": "Workers assembled the massive iron lattice using two point five million",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, ironworkers climbing high steel beams against a cloudy sky, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "614b46e71478",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.65,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v4",
+    "start": 14.608,
+    "end": 18.188,
+    "narration": "rivets across two years, two months, and five days.",
+    "kind": "image",
+    "src": "assets/img_03.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, ironworkers climbing high steel beams against a cloudy sky, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "614b46e71478",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_03_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.62,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v5",
+    "start": 18.188,
+    "end": 21.648,
+    "narration": "City officials intended to scrap the entire monument once the",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, municipal bureaucrats studying blueprints over a wooden desk, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "348519c65cf9",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.61,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v6",
+    "start": 21.648,
+    "end": 25.278,
+    "narration": "permit expired, returning the Champ de Mars to empty ground.",
+    "kind": "image",
+    "src": "assets/img_04.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, municipal bureaucrats studying blueprints over a wooden desk, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "348519c65cf9",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_04_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.63,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v7",
+    "start": 25.278,
+    "end": 29.364,
+    "narration": "Engineers mounted radio and wireless telegraph antennas at its top,",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, massive copper wires and tall radio masts erected at the peak of the iron tower, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "04c0595b9c85",
+    "transition": {
+     "type": "settle",
+     "duration": 0.5
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.67,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v8",
+    "start": 29.364,
+    "end": 32.458,
+    "narration": "turning the doomed tower into a high-altitude transmitter.",
+    "kind": "image",
+    "src": "assets/img_05.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, massive copper wires and tall radio masts erected at the peak of the iron tower, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "04c0595b9c85",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_05_cut.png",
+    "cam": {
+     "move": "push-in",
+     "amp": 0.57,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v9",
+    "start": 32.458,
+    "end": 36.278,
+    "narration": "Military commanders tested those wireless signals across the city,",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, military officers operating a spark-gap telegraph machine in a dark room, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "28bb8b0df565",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "truck",
+     "amp": 0.64,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v10",
+    "start": 36.278,
+    "end": 39.473,
+    "narration": "proving the structure indispensable for national defense.",
+    "kind": "image",
+    "src": "assets/img_06.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, military officers operating a spark-gap telegraph machine in a dark room, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "28bb8b0df565",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_06_cut.png",
+    "cam": {
+     "move": "orbit",
+     "amp": 0.58,
+     "dir": 1
+    }
+   },
+   {
+    "id": "v11",
+    "start": 39.473,
+    "end": 41.446,
+    "narration": "Wrecking crews stayed away permanently",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, heavy iron tower glowing under the twilight sky of Paris, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4e9b0fd2e404",
+    "transition": {
+     "type": "push-through",
+     "duration": 0.45
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "drift",
+     "amp": 0.46,
+     "dir": -1
+    }
+   },
+   {
+    "id": "v12",
+    "start": 41.446,
+    "end": 45.024,
+    "narration": "because the antenna kept the iron giant standing.",
+    "kind": "image",
+    "src": "assets/img_07.jpg",
+    "gen": {
+     "tool": "flux",
+     "prompt": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth, heavy iron tower glowing under the twilight sky of Paris, no , no , no numbers, no writing, no, no text, no letters, no numbers, no writing, no logos"
+    },
+    "w": 768,
+    "h": 1360,
+    "hash": "4e9b0fd2e404",
+    "transition": {
+     "type": "settle",
+     "duration": 0.22
+    },
+    "cutout": "assets/img_07_cut.png",
+    "cam": {
+     "move": "pull-out",
+     "amp": 0.62,
+     "dir": 1
+    }
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "In",
+     "start": 0.1,
+     "end": 0.263
+    },
+    {
+     "word": "nineteen",
+     "start": 0.275,
+     "end": 0.775
+    },
+    {
+     "word": "hundred",
+     "start": 0.787,
+     "end": 1.062
+    },
+    {
+     "word": "and",
+     "start": 1.075,
+     "end": 1.188
+    },
+    {
+     "word": "nine,",
+     "start": 1.2,
+     "end": 1.55
+    },
+    {
+     "word": "Paris",
+     "start": 1.71,
+     "end": 2.111
+    },
+    {
+     "word": "almost",
+     "start": 2.123,
+     "end": 2.535
+    },
+    {
+     "word": "tore",
+     "start": 2.548,
+     "end": 2.761
+    },
+    {
+     "word": "down",
+     "start": 2.773,
+     "end": 3.035
+    },
+    {
+     "word": "the",
+     "start": 3.048,
+     "end": 3.148
+    },
+    {
+     "word": "Eiffel",
+     "start": 3.16,
+     "end": 3.523
+    },
+    {
+     "word": "Tower.",
+     "start": 3.535,
+     "end": 3.998
+    },
+    {
+     "word": "Workers",
+     "start": 4.278,
+     "end": 4.679
+    },
+    {
+     "word": "built",
+     "start": 4.691,
+     "end": 4.954
+    },
+    {
+     "word": "the",
+     "start": 4.966,
+     "end": 5.054
+    },
+    {
+     "word": "framework",
+     "start": 5.066,
+     "end": 5.641
+    },
+    {
+     "word": "as",
+     "start": 5.653,
+     "end": 5.816
+    },
+    {
+     "word": "a",
+     "start": 5.829,
+     "end": 5.891
+    },
+    {
+     "word": "temporary",
+     "start": 5.903,
+     "end": 6.454
+    },
+    {
+     "word": "centerpiece",
+     "start": 6.466,
+     "end": 7.054
+    },
+    {
+     "word": "for",
+     "start": 7.066,
+     "end": 7.179
+    },
+    {
+     "word": "the",
+     "start": 7.191,
+     "end": 7.291
+    },
+    {
+     "word": "eighteen",
+     "start": 7.304,
+     "end": 7.741
+    },
+    {
+     "word": "eighty-nine",
+     "start": 7.754,
+     "end": 8.303
+    },
+    {
+     "word": "World's",
+     "start": 8.316,
+     "end": 8.691
+    },
+    {
+     "word": "Fair",
+     "start": 8.703,
+     "end": 9.016
+    },
+    {
+     "word": "on",
+     "start": 9.029,
+     "end": 9.154
+    },
+    {
+     "word": "a",
+     "start": 9.166,
+     "end": 9.216
+    },
+    {
+     "word": "strict",
+     "start": 9.228,
+     "end": 9.553
+    },
+    {
+     "word": "twenty-year",
+     "start": 9.566,
+     "end": 10.053
+    },
+    {
+     "word": "permit.",
+     "start": 10.066,
+     "end": 10.478
+    },
+    {
+     "word": "Workers",
+     "start": 10.758,
+     "end": 11.133
+    },
+    {
+     "word": "assembled",
+     "start": 11.146,
+     "end": 11.57
+    },
+    {
+     "word": "the",
+     "start": 11.583,
+     "end": 11.658
+    },
+    {
+     "word": "massive",
+     "start": 11.67,
+     "end": 12.183
+    },
+    {
+     "word": "iron",
+     "start": 12.208,
+     "end": 12.558
+    },
+    {
+     "word": "lattice",
+     "start": 12.57,
+     "end": 12.945
+    },
+    {
+     "word": "using",
+     "start": 12.958,
+     "end": 13.246
+    },
+    {
+     "word": "two",
+     "start": 13.258,
+     "end": 13.496
+    },
+    {
+     "word": "point",
+     "start": 13.508,
+     "end": 13.846
+    },
+    {
+     "word": "five",
+     "start": 13.858,
+     "end": 14.221
+    },
+    {
+     "word": "million",
+     "start": 14.233,
+     "end": 14.596
+    },
+    {
+     "word": "rivets",
+     "start": 14.608,
+     "end": 14.908
+    },
+    {
+     "word": "across",
+     "start": 14.92,
+     "end": 15.333
+    },
+    {
+     "word": "two",
+     "start": 15.345,
+     "end": 15.52
+    },
+    {
+     "word": "years,",
+     "start": 15.533,
+     "end": 15.996
+    },
+    {
+     "word": "two",
+     "start": 16.208,
+     "end": 16.395
+    },
+    {
+     "word": "months,",
+     "start": 16.408,
+     "end": 16.808
+    },
+    {
+     "word": "and",
+     "start": 16.968,
+     "end": 17.093
+    },
+    {
+     "word": "five",
+     "start": 17.106,
+     "end": 17.418
+    },
+    {
+     "word": "days.",
+     "start": 17.431,
+     "end": 17.968
+    },
+    {
+     "word": "City",
+     "start": 18.248,
+     "end": 18.623
+    },
+    {
+     "word": "officials",
+     "start": 18.635,
+     "end": 19.135
+    },
+    {
+     "word": "intended",
+     "start": 19.148,
+     "end": 19.597
+    },
+    {
+     "word": "to",
+     "start": 19.61,
+     "end": 19.698
+    },
+    {
+     "word": "scrap",
+     "start": 19.71,
+     "end": 20.123
+    },
+    {
+     "word": "the",
+     "start": 20.135,
+     "end": 20.21
+    },
+    {
+     "word": "entire",
+     "start": 20.222,
+     "end": 20.685
+    },
+    {
+     "word": "monument",
+     "start": 20.698,
+     "end": 21.26
+    },
+    {
+     "word": "once",
+     "start": 21.273,
+     "end": 21.51
+    },
+    {
+     "word": "the",
+     "start": 21.523,
+     "end": 21.635
+    },
+    {
+     "word": "permit",
+     "start": 21.648,
+     "end": 21.935
+    },
+    {
+     "word": "expired,",
+     "start": 21.948,
+     "end": 22.535
+    },
+    {
+     "word": "returning",
+     "start": 22.695,
+     "end": 23.12
+    },
+    {
+     "word": "the",
+     "start": 23.132,
+     "end": 23.22
+    },
+    {
+     "word": "Champ",
+     "start": 23.233,
+     "end": 23.608
+    },
+    {
+     "word": "de",
+     "start": 23.62,
+     "end": 23.72
+    },
+    {
+     "word": "Mars",
+     "start": 23.733,
+     "end": 24.132
+    },
+    {
+     "word": "to",
+     "start": 24.145,
+     "end": 24.257
+    },
+    {
+     "word": "empty",
+     "start": 24.27,
+     "end": 24.582
+    },
+    {
+     "word": "ground.",
+     "start": 24.595,
+     "end": 25.058
+    },
+    {
+     "word": "Engineers",
+     "start": 25.338,
+     "end": 25.913
+    },
+    {
+     "word": "mounted",
+     "start": 25.926,
+     "end": 26.314
+    },
+    {
+     "word": "radio",
+     "start": 26.326,
+     "end": 26.814
+    },
+    {
+     "word": "and",
+     "start": 26.826,
+     "end": 26.951
+    },
+    {
+     "word": "wireless",
+     "start": 26.963,
+     "end": 27.451
+    },
+    {
+     "word": "telegraph",
+     "start": 27.463,
+     "end": 28.051
+    },
+    {
+     "word": "antennas",
+     "start": 28.064,
+     "end": 28.526
+    },
+    {
+     "word": "at",
+     "start": 28.538,
+     "end": 28.626
+    },
+    {
+     "word": "its",
+     "start": 28.639,
+     "end": 28.788
+    },
+    {
+     "word": "top,",
+     "start": 28.801,
+     "end": 29.151
+    },
+    {
+     "word": "turning",
+     "start": 29.364,
+     "end": 29.663
+    },
+    {
+     "word": "the",
+     "start": 29.676,
+     "end": 29.814
+    },
+    {
+     "word": "doomed",
+     "start": 29.826,
+     "end": 30.113
+    },
+    {
+     "word": "tower",
+     "start": 30.126,
+     "end": 30.513
+    },
+    {
+     "word": "into",
+     "start": 30.526,
+     "end": 30.789
+    },
+    {
+     "word": "a",
+     "start": 30.801,
+     "end": 30.851
+    },
+    {
+     "word": "high-altitude",
+     "start": 30.863,
+     "end": 31.551
+    },
+    {
+     "word": "transmitter.",
+     "start": 31.564,
+     "end": 32.238
+    },
+    {
+     "word": "Military",
+     "start": 32.518,
+     "end": 33.105
+    },
+    {
+     "word": "commanders",
+     "start": 33.118,
+     "end": 33.681
+    },
+    {
+     "word": "tested",
+     "start": 33.693,
+     "end": 34.068
+    },
+    {
+     "word": "those",
+     "start": 34.081,
+     "end": 34.331
+    },
+    {
+     "word": "wireless",
+     "start": 34.343,
+     "end": 34.855
+    },
+    {
+     "word": "signals",
+     "start": 34.868,
+     "end": 35.268
+    },
+    {
+     "word": "across",
+     "start": 35.28,
+     "end": 35.643
+    },
+    {
+     "word": "the",
+     "start": 35.655,
+     "end": 35.768
+    },
+    {
+     "word": "city,",
+     "start": 35.78,
+     "end": 36.118
+    },
+    {
+     "word": "proving",
+     "start": 36.278,
+     "end": 36.604
+    },
+    {
+     "word": "the",
+     "start": 36.616,
+     "end": 36.716
+    },
+    {
+     "word": "structure",
+     "start": 36.728,
+     "end": 37.191
+    },
+    {
+     "word": "indispensable",
+     "start": 37.204,
+     "end": 37.966
+    },
+    {
+     "word": "for",
+     "start": 37.978,
+     "end": 38.128
+    },
+    {
+     "word": "national",
+     "start": 38.141,
+     "end": 38.604
+    },
+    {
+     "word": "defense.",
+     "start": 38.616,
+     "end": 39.253
+    },
+    {
+     "word": "Wrecking",
+     "start": 39.533,
+     "end": 39.859
+    },
+    {
+     "word": "crews",
+     "start": 39.871,
+     "end": 40.271
+    },
+    {
+     "word": "stayed",
+     "start": 40.283,
+     "end": 40.571
+    },
+    {
+     "word": "away",
+     "start": 40.584,
+     "end": 40.821
+    },
+    {
+     "word": "permanently",
+     "start": 40.834,
+     "end": 41.434
+    },
+    {
+     "word": "because",
+     "start": 41.446,
+     "end": 41.771
+    },
+    {
+     "word": "the",
+     "start": 41.783,
+     "end": 41.871
+    },
+    {
+     "word": "antenna",
+     "start": 41.883,
+     "end": 42.346
+    },
+    {
+     "word": "kept",
+     "start": 42.359,
+     "end": 42.609
+    },
+    {
+     "word": "the",
+     "start": 42.621,
+     "end": 42.734
+    },
+    {
+     "word": "iron",
+     "start": 42.746,
+     "end": 43.133
+    },
+    {
+     "word": "giant",
+     "start": 43.146,
+     "end": 43.496
+    },
+    {
+     "word": "standing.",
+     "start": 43.508,
+     "end": 44.084
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "In nineteen hundred and nine, Paris almost tore down the Eiffel Tower. Workers built the framework as a temporary centerpiece for the eighteen eighty-nine World's Fair on a strict twenty-year permit. Workers assembled the massive iron lattice using two point five million rivets across two years, two months, and five days. City officials intended to scrap the entire monument once the permit expired, returning the Champ de Mars to empty ground. Engineers mounted radio and wireless telegraph antennas at its top, turning the doomed tower into a high-altitude transmitter. Military commanders tested those wireless signals across the city, proving the structure indispensable for national defense. Wrecking crews stayed away permanently because the antenna kept the iron giant standing."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/cinematic-min.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "cinematic-min"
+    }
+   }
+  ],
+  "sfx": [
+   {
+    "id": "gs1",
+    "src": "library/sfx/clips/whoosh-wind.mp3",
+    "at": 3.948,
+    "volume": 0.289,
+    "anchor": "v2",
+    "offset": -0.27
+   },
+   {
+    "id": "gs2",
+    "src": "library/sfx/gen/whoosh_soft.wav",
+    "at": 32.188,
+    "volume": 0.34,
+    "anchor": "v9",
+    "offset": -0.27
+   },
+   {
+    "id": "gs3",
+    "src": "library/sfx/clips/whoosh-soft.mp3",
+    "at": 39.203,
+    "volume": 0.289,
+    "anchor": "v11",
+    "offset": -0.27
+   }
+  ],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 4.17,
+    "opacity": 0.15,
+    "seed": 4.36
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795704376389,
+  "updated": 1795704376403,
+  "topic": "the Eiffel Tower, about",
+  "hook": "In 1909, Paris prepared to tear down the Eiffel Tower.",
+  "image_style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+  "format": "vertical",
+  "assets_release": "project-the-eiffel-tower-s-planned-demolitio-mwxnzfpr",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "9:16",
+   "category": "story",
+   "format": "vertical",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "In 1909, Paris prepared to tear down the Eiffel Tower.",
+   "music": "cinematic-min",
+   "project_id": "the-eiffel-tower-s-planned-demolitio-mwxnzfpr",
+   "style": "painterly historical illustration, dramatic chiaroscuro lighting, muted earth tones, aged paper texture, museum-diorama depth",
+   "style_preset": "documentary",
+   "title": "The Eiffel Tower's Planned Demolition",
+   "topic": "the Eiffel Tower, about",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: cold-open (opens quiet and lets the picture speak).",
+   "Beat 1 (\"In nineteen hundred and nine, Paris...\"): a quiet open. No hook text, the picture and the voice carry it.",
+   "Beat 3 (\"Workers assembled the massive iron ...\"): a \"person\" prop fits, but the subject is up in the top of the frame, so I skipped it.",
+   "Beat 8 (\"turning the doomed tower into a hig...\"): a \"building\" prop fits, but the subject is up in the top of the frame, so I skipped it.",
+   "Left 11 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: nothing to animate (1 layer(s) left alone)."
+  ],
+  "camera": [
+   "Beat 1: push-in (hook: slow push-in).",
+   "Beat 2: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 3: drift (alive baseline).",
+   "Beat 4: truck (side move for variety).",
+   "Beat 5: drift (alive baseline).",
+   "Beat 6: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 7: drift (alive baseline).",
+   "Beat 8: push-in (alive baseline).",
+   "Beat 9: truck (side move for variety).",
+   "Beat 10: orbit (subject cutout: a small orbit with parallax).",
+   "Beat 11: drift (alive baseline).",
+   "Beat 12: pull-out (last picture: slow pull-out)."
+  ],
+  "identify": {
+   "clips": {},
+   "retried": [],
+   "summary": "0 of 0 pictures clean"
+  },
+  "qa": [],
+  "sound": "3 effects: whoosh_soft"
+ }
+}
