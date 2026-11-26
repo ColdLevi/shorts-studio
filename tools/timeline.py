@@ -1700,6 +1700,11 @@ def from_props(props, spec=None, pid="job", cv=None):
                 print("direction post-pass failed (ignored):", _e)
         except Exception as e:
             print("director_pass failed (ignored):", e)
+    import re as _sre
+    _fx = [v.strip().lower() for b in ((spec or {}).get("beats") or []) for v in _sre.findall(r"sound effect:\s*([^;]+)", str(b.get("direction") or ""))]
+    if _fx and all(v in ("none", "off") for v in _fx):
+        t.setdefault("meta", {})["sound"] = "off"
+        t.setdefault("tracks", {})["sfx"] = []
     try:
         _add_keyed(t, spec)
     except Exception as _e:
