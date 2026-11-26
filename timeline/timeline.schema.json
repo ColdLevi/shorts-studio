@@ -945,7 +945,14 @@
                         "ease-out",
                         "ease-in-out",
                         "smooth",
-                        "back-out"
+                        "back-out",
+                        "out-cubic",
+                        "out-quint",
+                        "in-cubic",
+                        "in-out-cubic",
+                        "out-back-soft",
+                        "bounce-out",
+                        "bounce-soft"
                       ]
                     },
                     "values": {

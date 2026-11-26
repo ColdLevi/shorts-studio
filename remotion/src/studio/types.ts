@@ -124,7 +124,7 @@ export type TextOverlay = {
 export type TimelineLayerKeyframe = {
   t: number;
   values: Partial<Record<'x' | 'y' | 'scale' | 'scaleX' | 'scaleY' | 'rotation' | 'opacity' | 'width' | 'height' | 'blur' | 'brightness' | 'saturation', number>>;
-  ease?: 'linear' | 'hold' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'smooth' | 'back-out';
+  ease?: 'linear' | 'hold' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'smooth' | 'back-out' | 'out-cubic' | 'out-quint' | 'in-cubic' | 'in-out-cubic' | 'out-back-soft' | 'bounce-out' | 'bounce-soft';
 };
 
 export type Timeline = {
