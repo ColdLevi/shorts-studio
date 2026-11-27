@@ -1117,6 +1117,20 @@
       "width": 1920,
       "height": 1080,
       "rev": 1
+    },
+    {
+      "id": "short-117",
+      "title": "Bar Door Motion Test",
+      "hook": "Then he burst through the doors, and the whole bar froze.",
+      "accent": "#FFD43B",
+      "duration": 4.8,
+      "created": 1795779130700,
+      "url": "https://github.com/ColdLevi/shorts-studio/releases/download/short-117/short-117.mp4",
+      "poster": "https://github.com/ColdLevi/shorts-studio/releases/download/short-117/short-117.jpg",
+      "project": "bar-door-motion-test-mwyw9od2",
+      "width": 1920,
+      "height": 1080,
+      "rev": 1
     }
   ]
 }

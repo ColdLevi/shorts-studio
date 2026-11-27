@@ -1,0 +1,217 @@
+{
+ "schema": "shorts-studio/timeline@1",
+ "id": "bar-door-motion-test-mwyw9od2",
+ "rev": 1,
+ "title": "Bar Door Motion Test",
+ "duration": 4.75,
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "style": {
+  "caption": {
+   "preset": "none",
+   "font": "Inter"
+  },
+  "transition": {
+   "type": "dissolve",
+   "duration": 0.7
+  },
+  "motion": "drift",
+  "recipe": "cinematic",
+  "transitions": [
+   "dissolve",
+   "leak",
+   "focus",
+   "fade"
+  ],
+  "fx": {
+   "texture": "grain",
+   "letterbox": 0.1
+  },
+  "gfx": {
+   "grain": 0.14,
+   "vignette": 0.55,
+   "focus_pull": true
+  },
+  "backdrop": "gradient",
+  "grade": "contrast(1.1) saturate(1.05) brightness(0.95)",
+  "progress_bar": false,
+  "font": "DM Serif Display",
+  "preset": "cinematic",
+  "accent": "#FFD43B"
+ },
+ "tracks": {
+  "visuals": [
+   {
+    "id": "v1",
+    "start": 0.0,
+    "end": 3.954,
+    "narration": "Then he burst through the doors, and the whole bar froze.",
+    "kind": "ai_video",
+    "src": "assets/clip_01.mp4",
+    "duration": 4.06,
+    "still": "assets/img_01.jpg",
+    "gen": {
+     "tool": "higgsfield",
+     "prompt": "A man kicking open wooden saloon doors, one customer at the counter holding a glass of beer, warm cinematic light, wide shot",
+     "motion": "slow motion, the saloon doors swing open, the customer's beer glass tips and spills, heads turn slowly",
+     "still": "flux"
+    },
+    "hash": "a4146ed789e2"
+   }
+  ],
+  "captions": {
+   "enabled": true,
+   "words": [
+    {
+     "word": "Then",
+     "start": 0.1,
+     "end": 0.275
+    },
+    {
+     "word": "he",
+     "start": 0.287,
+     "end": 0.438
+    },
+    {
+     "word": "burst",
+     "start": 0.45,
+     "end": 0.787
+    },
+    {
+     "word": "through",
+     "start": 0.8,
+     "end": 0.912
+    },
+    {
+     "word": "the",
+     "start": 0.925,
+     "end": 1.05
+    },
+    {
+     "word": "doors,",
+     "start": 1.062,
+     "end": 1.55
+    },
+    {
+     "word": "and",
+     "start": 1.71,
+     "end": 1.848
+    },
+    {
+     "word": "the",
+     "start": 1.86,
+     "end": 1.936
+    },
+    {
+     "word": "whole",
+     "start": 1.948,
+     "end": 2.21
+    },
+    {
+     "word": "bar",
+     "start": 2.223,
+     "end": 2.436
+    },
+    {
+     "word": "froze.",
+     "start": 2.448,
+     "end": 3.073
+    }
+   ]
+  },
+  "voice": [
+   {
+    "id": "vo",
+    "src": "assets/voice.mp3",
+    "start": 0,
+    "volume": 1,
+    "gen": {
+     "tool": "edge-tts",
+     "voice": "en-US-SteffanNeural",
+     "rate": "+0%",
+     "text": "Then he burst through the doors, and the whole bar froze."
+    }
+   }
+  ],
+  "music": [
+   {
+    "id": "m1",
+    "src": "library/music/clips/docu-pluck.mp3",
+    "start": 0,
+    "volume": 0.22,
+    "loop": true,
+    "fade_in": 0.5,
+    "fade_out": 1.0,
+    "duck": true,
+    "gen": {
+     "tool": "library",
+     "name": "docu-pluck"
+    }
+   }
+  ],
+  "sfx": [],
+  "overlays": [],
+  "layers": [
+   {
+    "id": "ly1",
+    "kind": "color-wash",
+    "anchor": "v1",
+    "delay": 0.0,
+    "start": 0.0,
+    "end": 3.9,
+    "opacity": 0.15,
+    "seed": 5.67
+   }
+  ]
+ },
+ "meta": {
+  "created": 1795778846561,
+  "updated": 1795779029029,
+  "topic": "Bar Door Motion Test",
+  "hook": "Then he burst through the doors, and the whole bar froze.",
+  "image_style": "",
+  "format": "landscape",
+  "assets_release": "project-bar-door-motion-test-mwyw9od2",
+  "spec": {
+   "accent": "#FFD43B",
+   "allow_plain": false,
+   "brand_url": "",
+   "canvas": "16:9",
+   "category": "",
+   "format": "landscape",
+   "fps": 30,
+   "gemini_images": false,
+   "hook": "Then he burst through the doors, and the whole bar froze.",
+   "music": "docu-pluck",
+   "project_id": "bar-door-motion-test-mwyw9od2",
+   "style": "",
+   "style_preset": "cinematic",
+   "title": "Bar Door Motion Test",
+   "topic": "Bar Door Motion Test",
+   "voice": "en-US-SteffanNeural",
+   "user_assets": []
+  },
+  "renders": [],
+  "director": [
+   "Directing style: cold-open (opens quiet and lets the picture speak).",
+   "Beat 1 (\"Then he burst through the doors, an...\"): a quiet open. No hook text, the picture and the voice carry it.",
+   "Left 0 beat(s) clean on purpose: no random lines, no map lines, nothing over a face.",
+   "Curves: nothing to animate (1 layer(s) left alone)."
+  ],
+  "directions": [
+   {
+    "scene": 1,
+    "direction": "sound effect: none",
+    "followed": [],
+    "unsupported": [
+     "sound effect: none"
+    ]
+   }
+  ],
+  "sound": "off",
+  "qa": []
+ }
+}
